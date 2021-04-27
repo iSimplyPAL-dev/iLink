@@ -1,0 +1,2067 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.WsStradario.Stradario
+  commentId: T:DichiarazioniICI.WsStradario.Stradario
+  id: Stradario
+  parent: DichiarazioniICI.WsStradario
+  children:
+  - DichiarazioniICI.WsStradario.Stradario.#ctor
+  - DichiarazioniICI.WsStradario.Stradario.GetStrade(OggettiComuniStrade.OggettoStrada)
+  - DichiarazioniICI.WsStradario.Stradario.GetTipiStrade(OggettiComuniStrade.OggettoTipoStrada)
+  langs:
+  - csharp
+  - vb
+  name: Stradario
+  nameWithType: Stradario
+  fullName: DichiarazioniICI.WsStradario.Stradario
+  type: Class
+  source:
+    id: Stradario
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\StradarioWS\ReferenceWs.cs
+    startLine: 26
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WsStradario
+  syntax:
+    content: >-
+      [WebServiceBinding(Name = "StradarioSoap", Namespace = "http://tempuri.org/")]
+
+      public class Stradario : SoapHttpClientProtocol, IComponent, IDisposable
+    content.vb: >-
+      <WebServiceBinding(Name:="StradarioSoap", Namespace:="http://tempuri.org/")>
+
+      Public Class Stradario
+
+          Inherits SoapHttpClientProtocol
+
+          Implements IComponent, IDisposable
+  inheritance:
+  - System.Object
+  - System.MarshalByRefObject
+  - System.ComponentModel.Component
+  - System.Web.Services.Protocols.WebClientProtocol
+  - System.Web.Services.Protocols.HttpWebClientProtocol
+  - System.Web.Services.Protocols.SoapHttpClientProtocol
+  implements:
+  - System.ComponentModel.IComponent
+  - System.IDisposable
+  inheritedMembers:
+  - System.Web.Services.Protocols.SoapHttpClientProtocol.Discover
+  - System.Web.Services.Protocols.SoapHttpClientProtocol.GetWebRequest(System.Uri)
+  - System.Web.Services.Protocols.SoapHttpClientProtocol.GetWriterForMessage(System.Web.Services.Protocols.SoapClientMessage,System.Int32)
+  - System.Web.Services.Protocols.SoapHttpClientProtocol.GetReaderForMessage(System.Web.Services.Protocols.SoapClientMessage,System.Int32)
+  - System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(System.String,System.Object[])
+  - System.Web.Services.Protocols.SoapHttpClientProtocol.BeginInvoke(System.String,System.Object[],System.AsyncCallback,System.Object)
+  - System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke(System.IAsyncResult)
+  - System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String,System.Object[],System.Threading.SendOrPostCallback)
+  - System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String,System.Object[],System.Threading.SendOrPostCallback,System.Object)
+  - System.Web.Services.Protocols.SoapHttpClientProtocol.SoapVersion
+  - System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest)
+  - System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest,System.IAsyncResult)
+  - System.Web.Services.Protocols.HttpWebClientProtocol.CancelAsync(System.Object)
+  - System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type,System.Collections.ArrayList)
+  - System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type[],System.Collections.ArrayList)
+  - System.Web.Services.Protocols.HttpWebClientProtocol.AllowAutoRedirect
+  - System.Web.Services.Protocols.HttpWebClientProtocol.CookieContainer
+  - System.Web.Services.Protocols.HttpWebClientProtocol.ClientCertificates
+  - System.Web.Services.Protocols.HttpWebClientProtocol.EnableDecompression
+  - System.Web.Services.Protocols.HttpWebClientProtocol.UserAgent
+  - System.Web.Services.Protocols.HttpWebClientProtocol.Proxy
+  - System.Web.Services.Protocols.HttpWebClientProtocol.UnsafeAuthenticatedConnectionSharing
+  - System.Web.Services.Protocols.WebClientProtocol.Abort
+  - System.Web.Services.Protocols.WebClientProtocol.GetFromCache(System.Type)
+  - System.Web.Services.Protocols.WebClientProtocol.AddToCache(System.Type,System.Object)
+  - System.Web.Services.Protocols.WebClientProtocol.Credentials
+  - System.Web.Services.Protocols.WebClientProtocol.UseDefaultCredentials
+  - System.Web.Services.Protocols.WebClientProtocol.ConnectionGroupName
+  - System.Web.Services.Protocols.WebClientProtocol.PreAuthenticate
+  - System.Web.Services.Protocols.WebClientProtocol.Url
+  - System.Web.Services.Protocols.WebClientProtocol.RequestEncoding
+  - System.Web.Services.Protocols.WebClientProtocol.Timeout
+  - System.ComponentModel.Component.Dispose
+  - System.ComponentModel.Component.Dispose(System.Boolean)
+  - System.ComponentModel.Component.GetService(System.Type)
+  - System.ComponentModel.Component.ToString
+  - System.ComponentModel.Component.CanRaiseEvents
+  - System.ComponentModel.Component.Events
+  - System.ComponentModel.Component.Site
+  - System.ComponentModel.Component.Container
+  - System.ComponentModel.Component.DesignMode
+  - System.ComponentModel.Component.Disposed
+  - System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  - System.MarshalByRefObject.GetLifetimeService
+  - System.MarshalByRefObject.InitializeLifetimeService
+  - System.MarshalByRefObject.CreateObjRef(System.Type)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.Web.Services.WebServiceBindingAttribute
+    ctor: System.Web.Services.WebServiceBindingAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: StradarioSoap
+    - name: Namespace
+      type: System.String
+      value: http://tempuri.org/
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DichiarazioniICI.WsStradario.Stradario.#ctor
+  commentId: M:DichiarazioniICI.WsStradario.Stradario.#ctor
+  id: '#ctor'
+  parent: DichiarazioniICI.WsStradario.Stradario
+  langs:
+  - csharp
+  - vb
+  name: Stradario()
+  nameWithType: Stradario.Stradario()
+  fullName: DichiarazioniICI.WsStradario.Stradario.Stradario()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\StradarioWS\ReferenceWs.cs
+    startLine: 33
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WsStradario
+  syntax:
+    content: public Stradario()
+    content.vb: Public Sub New
+  overload: DichiarazioniICI.WsStradario.Stradario.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WsStradario.Stradario.GetStrade(OggettiComuniStrade.OggettoStrada)
+  commentId: M:DichiarazioniICI.WsStradario.Stradario.GetStrade(OggettiComuniStrade.OggettoStrada)
+  id: GetStrade(OggettiComuniStrade.OggettoStrada)
+  parent: DichiarazioniICI.WsStradario.Stradario
+  langs:
+  - csharp
+  - vb
+  name: GetStrade(OggettoStrada)
+  nameWithType: Stradario.GetStrade(OggettoStrada)
+  fullName: DichiarazioniICI.WsStradario.Stradario.GetStrade(OggettiComuniStrade.OggettoStrada)
+  type: Method
+  source:
+    id: GetStrade
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\StradarioWS\ReferenceWs.cs
+    startLine: 40
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WsStradario
+  syntax:
+    content: >-
+      [SoapDocumentMethod("http://tempuri.org/GetStrade", RequestNamespace = "http://tempuri.org/", ResponseNamespace = "http://tempuri.org/", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+
+      public OggettoStrada[] GetStrade(OggettoStrada objStrada)
+    parameters:
+    - id: objStrada
+      type: OggettiComuniStrade.OggettoStrada
+    return:
+      type: OggettiComuniStrade.OggettoStrada[]
+    content.vb: >-
+      <SoapDocumentMethod("http://tempuri.org/GetStrade", RequestNamespace:="http://tempuri.org/", ResponseNamespace:="http://tempuri.org/", Use:=SoapBindingUse.Literal, ParameterStyle:=SoapParameterStyle.Wrapped)>
+
+      Public Function GetStrade(objStrada As OggettoStrada) As OggettoStrada()
+  overload: DichiarazioniICI.WsStradario.Stradario.GetStrade*
+  attributes:
+  - type: System.Web.Services.Protocols.SoapDocumentMethodAttribute
+    ctor: System.Web.Services.Protocols.SoapDocumentMethodAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: http://tempuri.org/GetStrade
+    namedArguments:
+    - name: RequestNamespace
+      type: System.String
+      value: http://tempuri.org/
+    - name: ResponseNamespace
+      type: System.String
+      value: http://tempuri.org/
+    - name: Use
+      type: System.Web.Services.Description.SoapBindingUse
+      value: 2
+    - name: ParameterStyle
+      type: System.Web.Services.Protocols.SoapParameterStyle
+      value: 2
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WsStradario.Stradario.GetTipiStrade(OggettiComuniStrade.OggettoTipoStrada)
+  commentId: M:DichiarazioniICI.WsStradario.Stradario.GetTipiStrade(OggettiComuniStrade.OggettoTipoStrada)
+  id: GetTipiStrade(OggettiComuniStrade.OggettoTipoStrada)
+  parent: DichiarazioniICI.WsStradario.Stradario
+  langs:
+  - csharp
+  - vb
+  name: GetTipiStrade(OggettoTipoStrada)
+  nameWithType: Stradario.GetTipiStrade(OggettoTipoStrada)
+  fullName: DichiarazioniICI.WsStradario.Stradario.GetTipiStrade(OggettiComuniStrade.OggettoTipoStrada)
+  type: Method
+  source:
+    id: GetTipiStrade
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\StradarioWS\ReferenceWs.cs
+    startLine: 50
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WsStradario
+  syntax:
+    content: >-
+      [SoapDocumentMethod("http://tempuri.org/GetTipiStrade", RequestNamespace = "http://tempuri.org/", ResponseNamespace = "http://tempuri.org/", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+
+      public OggettoTipoStrada[] GetTipiStrade(OggettoTipoStrada objTipoStrada)
+    parameters:
+    - id: objTipoStrada
+      type: OggettiComuniStrade.OggettoTipoStrada
+    return:
+      type: OggettiComuniStrade.OggettoTipoStrada[]
+    content.vb: >-
+      <SoapDocumentMethod("http://tempuri.org/GetTipiStrade", RequestNamespace:="http://tempuri.org/", ResponseNamespace:="http://tempuri.org/", Use:=SoapBindingUse.Literal, ParameterStyle:=SoapParameterStyle.Wrapped)>
+
+      Public Function GetTipiStrade(objTipoStrada As OggettoTipoStrada) As OggettoTipoStrada()
+  overload: DichiarazioniICI.WsStradario.Stradario.GetTipiStrade*
+  attributes:
+  - type: System.Web.Services.Protocols.SoapDocumentMethodAttribute
+    ctor: System.Web.Services.Protocols.SoapDocumentMethodAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: http://tempuri.org/GetTipiStrade
+    namedArguments:
+    - name: RequestNamespace
+      type: System.String
+      value: http://tempuri.org/
+    - name: ResponseNamespace
+      type: System.String
+      value: http://tempuri.org/
+    - name: Use
+      type: System.Web.Services.Description.SoapBindingUse
+      value: 2
+    - name: ParameterStyle
+      type: System.Web.Services.Protocols.SoapParameterStyle
+      value: 2
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: DichiarazioniICI.WsStradario
+  commentId: N:DichiarazioniICI.WsStradario
+  name: DichiarazioniICI.WsStradario
+  nameWithType: DichiarazioniICI.WsStradario
+  fullName: DichiarazioniICI.WsStradario
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.MarshalByRefObject
+  commentId: T:System.MarshalByRefObject
+  parent: System
+  isExternal: true
+  name: MarshalByRefObject
+  nameWithType: MarshalByRefObject
+  fullName: System.MarshalByRefObject
+- uid: System.ComponentModel.Component
+  commentId: T:System.ComponentModel.Component
+  parent: System.ComponentModel
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: System.ComponentModel.Component
+- uid: System.Web.Services.Protocols.WebClientProtocol
+  commentId: T:System.Web.Services.Protocols.WebClientProtocol
+  parent: System.Web.Services.Protocols
+  isExternal: true
+  name: WebClientProtocol
+  nameWithType: WebClientProtocol
+  fullName: System.Web.Services.Protocols.WebClientProtocol
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol
+  commentId: T:System.Web.Services.Protocols.HttpWebClientProtocol
+  parent: System.Web.Services.Protocols
+  isExternal: true
+  name: HttpWebClientProtocol
+  nameWithType: HttpWebClientProtocol
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol
+- uid: System.Web.Services.Protocols.SoapHttpClientProtocol
+  commentId: T:System.Web.Services.Protocols.SoapHttpClientProtocol
+  parent: System.Web.Services.Protocols
+  isExternal: true
+  name: SoapHttpClientProtocol
+  nameWithType: SoapHttpClientProtocol
+  fullName: System.Web.Services.Protocols.SoapHttpClientProtocol
+- uid: System.ComponentModel.IComponent
+  commentId: T:System.ComponentModel.IComponent
+  parent: System.ComponentModel
+  isExternal: true
+  name: IComponent
+  nameWithType: IComponent
+  fullName: System.ComponentModel.IComponent
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Web.Services.Protocols.SoapHttpClientProtocol.Discover
+  commentId: M:System.Web.Services.Protocols.SoapHttpClientProtocol.Discover
+  parent: System.Web.Services.Protocols.SoapHttpClientProtocol
+  isExternal: true
+  name: Discover()
+  nameWithType: SoapHttpClientProtocol.Discover()
+  fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.Discover()
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.Discover
+    name: Discover
+    nameWithType: SoapHttpClientProtocol.Discover
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.Discover
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.Discover
+    name: Discover
+    nameWithType: SoapHttpClientProtocol.Discover
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.Discover
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.SoapHttpClientProtocol.GetWebRequest(System.Uri)
+  commentId: M:System.Web.Services.Protocols.SoapHttpClientProtocol.GetWebRequest(System.Uri)
+  parent: System.Web.Services.Protocols.SoapHttpClientProtocol
+  isExternal: true
+  name: GetWebRequest(Uri)
+  nameWithType: SoapHttpClientProtocol.GetWebRequest(Uri)
+  fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.GetWebRequest(System.Uri)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.GetWebRequest(System.Uri)
+    name: GetWebRequest
+    nameWithType: SoapHttpClientProtocol.GetWebRequest
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.GetWebRequest
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Uri
+    name: Uri
+    nameWithType: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.GetWebRequest(System.Uri)
+    name: GetWebRequest
+    nameWithType: SoapHttpClientProtocol.GetWebRequest
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.GetWebRequest
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Uri
+    name: Uri
+    nameWithType: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.SoapHttpClientProtocol.GetWriterForMessage(System.Web.Services.Protocols.SoapClientMessage,System.Int32)
+  commentId: M:System.Web.Services.Protocols.SoapHttpClientProtocol.GetWriterForMessage(System.Web.Services.Protocols.SoapClientMessage,System.Int32)
+  parent: System.Web.Services.Protocols.SoapHttpClientProtocol
+  isExternal: true
+  name: GetWriterForMessage(SoapClientMessage, Int32)
+  nameWithType: SoapHttpClientProtocol.GetWriterForMessage(SoapClientMessage, Int32)
+  fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.GetWriterForMessage(System.Web.Services.Protocols.SoapClientMessage, System.Int32)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.GetWriterForMessage(System.Web.Services.Protocols.SoapClientMessage,System.Int32)
+    name: GetWriterForMessage
+    nameWithType: SoapHttpClientProtocol.GetWriterForMessage
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.GetWriterForMessage
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Web.Services.Protocols.SoapClientMessage
+    name: SoapClientMessage
+    nameWithType: SoapClientMessage
+    fullName: System.Web.Services.Protocols.SoapClientMessage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.GetWriterForMessage(System.Web.Services.Protocols.SoapClientMessage,System.Int32)
+    name: GetWriterForMessage
+    nameWithType: SoapHttpClientProtocol.GetWriterForMessage
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.GetWriterForMessage
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Web.Services.Protocols.SoapClientMessage
+    name: SoapClientMessage
+    nameWithType: SoapClientMessage
+    fullName: System.Web.Services.Protocols.SoapClientMessage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.SoapHttpClientProtocol.GetReaderForMessage(System.Web.Services.Protocols.SoapClientMessage,System.Int32)
+  commentId: M:System.Web.Services.Protocols.SoapHttpClientProtocol.GetReaderForMessage(System.Web.Services.Protocols.SoapClientMessage,System.Int32)
+  parent: System.Web.Services.Protocols.SoapHttpClientProtocol
+  isExternal: true
+  name: GetReaderForMessage(SoapClientMessage, Int32)
+  nameWithType: SoapHttpClientProtocol.GetReaderForMessage(SoapClientMessage, Int32)
+  fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.GetReaderForMessage(System.Web.Services.Protocols.SoapClientMessage, System.Int32)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.GetReaderForMessage(System.Web.Services.Protocols.SoapClientMessage,System.Int32)
+    name: GetReaderForMessage
+    nameWithType: SoapHttpClientProtocol.GetReaderForMessage
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.GetReaderForMessage
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Web.Services.Protocols.SoapClientMessage
+    name: SoapClientMessage
+    nameWithType: SoapClientMessage
+    fullName: System.Web.Services.Protocols.SoapClientMessage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.GetReaderForMessage(System.Web.Services.Protocols.SoapClientMessage,System.Int32)
+    name: GetReaderForMessage
+    nameWithType: SoapHttpClientProtocol.GetReaderForMessage
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.GetReaderForMessage
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Web.Services.Protocols.SoapClientMessage
+    name: SoapClientMessage
+    nameWithType: SoapClientMessage
+    fullName: System.Web.Services.Protocols.SoapClientMessage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(System.String,System.Object[])
+  commentId: M:System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(System.String,System.Object[])
+  parent: System.Web.Services.Protocols.SoapHttpClientProtocol
+  isExternal: true
+  name: Invoke(String, Object[])
+  nameWithType: SoapHttpClientProtocol.Invoke(String, Object[])
+  fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(System.String, System.Object[])
+  nameWithType.vb: SoapHttpClientProtocol.Invoke(String, Object())
+  fullName.vb: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(System.String, System.Object())
+  name.vb: Invoke(String, Object())
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(System.String,System.Object[])
+    name: Invoke
+    nameWithType: SoapHttpClientProtocol.Invoke
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(System.String,System.Object[])
+    name: Invoke
+    nameWithType: SoapHttpClientProtocol.Invoke
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.SoapHttpClientProtocol.BeginInvoke(System.String,System.Object[],System.AsyncCallback,System.Object)
+  commentId: M:System.Web.Services.Protocols.SoapHttpClientProtocol.BeginInvoke(System.String,System.Object[],System.AsyncCallback,System.Object)
+  parent: System.Web.Services.Protocols.SoapHttpClientProtocol
+  isExternal: true
+  name: BeginInvoke(String, Object[], AsyncCallback, Object)
+  nameWithType: SoapHttpClientProtocol.BeginInvoke(String, Object[], AsyncCallback, Object)
+  fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.BeginInvoke(System.String, System.Object[], System.AsyncCallback, System.Object)
+  nameWithType.vb: SoapHttpClientProtocol.BeginInvoke(String, Object(), AsyncCallback, Object)
+  fullName.vb: System.Web.Services.Protocols.SoapHttpClientProtocol.BeginInvoke(System.String, System.Object(), System.AsyncCallback, System.Object)
+  name.vb: BeginInvoke(String, Object(), AsyncCallback, Object)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.BeginInvoke(System.String,System.Object[],System.AsyncCallback,System.Object)
+    name: BeginInvoke
+    nameWithType: SoapHttpClientProtocol.BeginInvoke
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.BeginInvoke
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    nameWithType: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.BeginInvoke(System.String,System.Object[],System.AsyncCallback,System.Object)
+    name: BeginInvoke
+    nameWithType: SoapHttpClientProtocol.BeginInvoke
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.BeginInvoke
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    nameWithType: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke(System.IAsyncResult)
+  commentId: M:System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke(System.IAsyncResult)
+  parent: System.Web.Services.Protocols.SoapHttpClientProtocol
+  isExternal: true
+  name: EndInvoke(IAsyncResult)
+  nameWithType: SoapHttpClientProtocol.EndInvoke(IAsyncResult)
+  fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke(System.IAsyncResult)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke(System.IAsyncResult)
+    name: EndInvoke
+    nameWithType: SoapHttpClientProtocol.EndInvoke
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    nameWithType: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke(System.IAsyncResult)
+    name: EndInvoke
+    nameWithType: SoapHttpClientProtocol.EndInvoke
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    nameWithType: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String,System.Object[],System.Threading.SendOrPostCallback)
+  commentId: M:System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String,System.Object[],System.Threading.SendOrPostCallback)
+  parent: System.Web.Services.Protocols.SoapHttpClientProtocol
+  isExternal: true
+  name: InvokeAsync(String, Object[], SendOrPostCallback)
+  nameWithType: SoapHttpClientProtocol.InvokeAsync(String, Object[], SendOrPostCallback)
+  fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String, System.Object[], System.Threading.SendOrPostCallback)
+  nameWithType.vb: SoapHttpClientProtocol.InvokeAsync(String, Object(), SendOrPostCallback)
+  fullName.vb: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String, System.Object(), System.Threading.SendOrPostCallback)
+  name.vb: InvokeAsync(String, Object(), SendOrPostCallback)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String,System.Object[],System.Threading.SendOrPostCallback)
+    name: InvokeAsync
+    nameWithType: SoapHttpClientProtocol.InvokeAsync
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.SendOrPostCallback
+    name: SendOrPostCallback
+    nameWithType: SendOrPostCallback
+    fullName: System.Threading.SendOrPostCallback
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String,System.Object[],System.Threading.SendOrPostCallback)
+    name: InvokeAsync
+    nameWithType: SoapHttpClientProtocol.InvokeAsync
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.SendOrPostCallback
+    name: SendOrPostCallback
+    nameWithType: SendOrPostCallback
+    fullName: System.Threading.SendOrPostCallback
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String,System.Object[],System.Threading.SendOrPostCallback,System.Object)
+  commentId: M:System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String,System.Object[],System.Threading.SendOrPostCallback,System.Object)
+  parent: System.Web.Services.Protocols.SoapHttpClientProtocol
+  isExternal: true
+  name: InvokeAsync(String, Object[], SendOrPostCallback, Object)
+  nameWithType: SoapHttpClientProtocol.InvokeAsync(String, Object[], SendOrPostCallback, Object)
+  fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String, System.Object[], System.Threading.SendOrPostCallback, System.Object)
+  nameWithType.vb: SoapHttpClientProtocol.InvokeAsync(String, Object(), SendOrPostCallback, Object)
+  fullName.vb: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String, System.Object(), System.Threading.SendOrPostCallback, System.Object)
+  name.vb: InvokeAsync(String, Object(), SendOrPostCallback, Object)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String,System.Object[],System.Threading.SendOrPostCallback,System.Object)
+    name: InvokeAsync
+    nameWithType: SoapHttpClientProtocol.InvokeAsync
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.SendOrPostCallback
+    name: SendOrPostCallback
+    nameWithType: SendOrPostCallback
+    fullName: System.Threading.SendOrPostCallback
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String,System.Object[],System.Threading.SendOrPostCallback,System.Object)
+    name: InvokeAsync
+    nameWithType: SoapHttpClientProtocol.InvokeAsync
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.SendOrPostCallback
+    name: SendOrPostCallback
+    nameWithType: SendOrPostCallback
+    fullName: System.Threading.SendOrPostCallback
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.SoapHttpClientProtocol.SoapVersion
+  commentId: P:System.Web.Services.Protocols.SoapHttpClientProtocol.SoapVersion
+  parent: System.Web.Services.Protocols.SoapHttpClientProtocol
+  isExternal: true
+  name: SoapVersion
+  nameWithType: SoapHttpClientProtocol.SoapVersion
+  fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.SoapVersion
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest)
+  commentId: M:System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest)
+  parent: System.Web.Services.Protocols.HttpWebClientProtocol
+  isExternal: true
+  name: GetWebResponse(WebRequest)
+  nameWithType: HttpWebClientProtocol.GetWebResponse(WebRequest)
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest)
+    name: GetWebResponse
+    nameWithType: HttpWebClientProtocol.GetWebResponse
+    fullName: System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Net.WebRequest
+    name: WebRequest
+    nameWithType: WebRequest
+    fullName: System.Net.WebRequest
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest)
+    name: GetWebResponse
+    nameWithType: HttpWebClientProtocol.GetWebResponse
+    fullName: System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Net.WebRequest
+    name: WebRequest
+    nameWithType: WebRequest
+    fullName: System.Net.WebRequest
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest,System.IAsyncResult)
+  commentId: M:System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest,System.IAsyncResult)
+  parent: System.Web.Services.Protocols.HttpWebClientProtocol
+  isExternal: true
+  name: GetWebResponse(WebRequest, IAsyncResult)
+  nameWithType: HttpWebClientProtocol.GetWebResponse(WebRequest, IAsyncResult)
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest, System.IAsyncResult)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest,System.IAsyncResult)
+    name: GetWebResponse
+    nameWithType: HttpWebClientProtocol.GetWebResponse
+    fullName: System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Net.WebRequest
+    name: WebRequest
+    nameWithType: WebRequest
+    fullName: System.Net.WebRequest
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    nameWithType: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest,System.IAsyncResult)
+    name: GetWebResponse
+    nameWithType: HttpWebClientProtocol.GetWebResponse
+    fullName: System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Net.WebRequest
+    name: WebRequest
+    nameWithType: WebRequest
+    fullName: System.Net.WebRequest
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    nameWithType: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol.CancelAsync(System.Object)
+  commentId: M:System.Web.Services.Protocols.HttpWebClientProtocol.CancelAsync(System.Object)
+  parent: System.Web.Services.Protocols.HttpWebClientProtocol
+  isExternal: true
+  name: CancelAsync(Object)
+  nameWithType: HttpWebClientProtocol.CancelAsync(Object)
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol.CancelAsync(System.Object)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.HttpWebClientProtocol.CancelAsync(System.Object)
+    name: CancelAsync
+    nameWithType: HttpWebClientProtocol.CancelAsync
+    fullName: System.Web.Services.Protocols.HttpWebClientProtocol.CancelAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.HttpWebClientProtocol.CancelAsync(System.Object)
+    name: CancelAsync
+    nameWithType: HttpWebClientProtocol.CancelAsync
+    fullName: System.Web.Services.Protocols.HttpWebClientProtocol.CancelAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type,System.Collections.ArrayList)
+  commentId: M:System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type,System.Collections.ArrayList)
+  parent: System.Web.Services.Protocols.HttpWebClientProtocol
+  isExternal: true
+  name: GenerateXmlMappings(Type, ArrayList)
+  nameWithType: HttpWebClientProtocol.GenerateXmlMappings(Type, ArrayList)
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type, System.Collections.ArrayList)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type,System.Collections.ArrayList)
+    name: GenerateXmlMappings
+    nameWithType: HttpWebClientProtocol.GenerateXmlMappings
+    fullName: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.ArrayList
+    name: ArrayList
+    nameWithType: ArrayList
+    fullName: System.Collections.ArrayList
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type,System.Collections.ArrayList)
+    name: GenerateXmlMappings
+    nameWithType: HttpWebClientProtocol.GenerateXmlMappings
+    fullName: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.ArrayList
+    name: ArrayList
+    nameWithType: ArrayList
+    fullName: System.Collections.ArrayList
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type[],System.Collections.ArrayList)
+  commentId: M:System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type[],System.Collections.ArrayList)
+  parent: System.Web.Services.Protocols.HttpWebClientProtocol
+  isExternal: true
+  name: GenerateXmlMappings(Type[], ArrayList)
+  nameWithType: HttpWebClientProtocol.GenerateXmlMappings(Type[], ArrayList)
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type[], System.Collections.ArrayList)
+  nameWithType.vb: HttpWebClientProtocol.GenerateXmlMappings(Type(), ArrayList)
+  fullName.vb: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type(), System.Collections.ArrayList)
+  name.vb: GenerateXmlMappings(Type(), ArrayList)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type[],System.Collections.ArrayList)
+    name: GenerateXmlMappings
+    nameWithType: HttpWebClientProtocol.GenerateXmlMappings
+    fullName: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.ArrayList
+    name: ArrayList
+    nameWithType: ArrayList
+    fullName: System.Collections.ArrayList
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type[],System.Collections.ArrayList)
+    name: GenerateXmlMappings
+    nameWithType: HttpWebClientProtocol.GenerateXmlMappings
+    fullName: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.ArrayList
+    name: ArrayList
+    nameWithType: ArrayList
+    fullName: System.Collections.ArrayList
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol.AllowAutoRedirect
+  commentId: P:System.Web.Services.Protocols.HttpWebClientProtocol.AllowAutoRedirect
+  parent: System.Web.Services.Protocols.HttpWebClientProtocol
+  isExternal: true
+  name: AllowAutoRedirect
+  nameWithType: HttpWebClientProtocol.AllowAutoRedirect
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol.AllowAutoRedirect
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol.CookieContainer
+  commentId: P:System.Web.Services.Protocols.HttpWebClientProtocol.CookieContainer
+  parent: System.Web.Services.Protocols.HttpWebClientProtocol
+  isExternal: true
+  name: CookieContainer
+  nameWithType: HttpWebClientProtocol.CookieContainer
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol.CookieContainer
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol.ClientCertificates
+  commentId: P:System.Web.Services.Protocols.HttpWebClientProtocol.ClientCertificates
+  parent: System.Web.Services.Protocols.HttpWebClientProtocol
+  isExternal: true
+  name: ClientCertificates
+  nameWithType: HttpWebClientProtocol.ClientCertificates
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol.ClientCertificates
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol.EnableDecompression
+  commentId: P:System.Web.Services.Protocols.HttpWebClientProtocol.EnableDecompression
+  parent: System.Web.Services.Protocols.HttpWebClientProtocol
+  isExternal: true
+  name: EnableDecompression
+  nameWithType: HttpWebClientProtocol.EnableDecompression
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol.EnableDecompression
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol.UserAgent
+  commentId: P:System.Web.Services.Protocols.HttpWebClientProtocol.UserAgent
+  parent: System.Web.Services.Protocols.HttpWebClientProtocol
+  isExternal: true
+  name: UserAgent
+  nameWithType: HttpWebClientProtocol.UserAgent
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol.UserAgent
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol.Proxy
+  commentId: P:System.Web.Services.Protocols.HttpWebClientProtocol.Proxy
+  parent: System.Web.Services.Protocols.HttpWebClientProtocol
+  isExternal: true
+  name: Proxy
+  nameWithType: HttpWebClientProtocol.Proxy
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol.Proxy
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol.UnsafeAuthenticatedConnectionSharing
+  commentId: P:System.Web.Services.Protocols.HttpWebClientProtocol.UnsafeAuthenticatedConnectionSharing
+  parent: System.Web.Services.Protocols.HttpWebClientProtocol
+  isExternal: true
+  name: UnsafeAuthenticatedConnectionSharing
+  nameWithType: HttpWebClientProtocol.UnsafeAuthenticatedConnectionSharing
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol.UnsafeAuthenticatedConnectionSharing
+- uid: System.Web.Services.Protocols.WebClientProtocol.Abort
+  commentId: M:System.Web.Services.Protocols.WebClientProtocol.Abort
+  parent: System.Web.Services.Protocols.WebClientProtocol
+  isExternal: true
+  name: Abort()
+  nameWithType: WebClientProtocol.Abort()
+  fullName: System.Web.Services.Protocols.WebClientProtocol.Abort()
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.WebClientProtocol.Abort
+    name: Abort
+    nameWithType: WebClientProtocol.Abort
+    fullName: System.Web.Services.Protocols.WebClientProtocol.Abort
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.WebClientProtocol.Abort
+    name: Abort
+    nameWithType: WebClientProtocol.Abort
+    fullName: System.Web.Services.Protocols.WebClientProtocol.Abort
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.WebClientProtocol.GetFromCache(System.Type)
+  commentId: M:System.Web.Services.Protocols.WebClientProtocol.GetFromCache(System.Type)
+  parent: System.Web.Services.Protocols.WebClientProtocol
+  isExternal: true
+  name: GetFromCache(Type)
+  nameWithType: WebClientProtocol.GetFromCache(Type)
+  fullName: System.Web.Services.Protocols.WebClientProtocol.GetFromCache(System.Type)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.WebClientProtocol.GetFromCache(System.Type)
+    name: GetFromCache
+    nameWithType: WebClientProtocol.GetFromCache
+    fullName: System.Web.Services.Protocols.WebClientProtocol.GetFromCache
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.WebClientProtocol.GetFromCache(System.Type)
+    name: GetFromCache
+    nameWithType: WebClientProtocol.GetFromCache
+    fullName: System.Web.Services.Protocols.WebClientProtocol.GetFromCache
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.WebClientProtocol.AddToCache(System.Type,System.Object)
+  commentId: M:System.Web.Services.Protocols.WebClientProtocol.AddToCache(System.Type,System.Object)
+  parent: System.Web.Services.Protocols.WebClientProtocol
+  isExternal: true
+  name: AddToCache(Type, Object)
+  nameWithType: WebClientProtocol.AddToCache(Type, Object)
+  fullName: System.Web.Services.Protocols.WebClientProtocol.AddToCache(System.Type, System.Object)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.WebClientProtocol.AddToCache(System.Type,System.Object)
+    name: AddToCache
+    nameWithType: WebClientProtocol.AddToCache
+    fullName: System.Web.Services.Protocols.WebClientProtocol.AddToCache
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.WebClientProtocol.AddToCache(System.Type,System.Object)
+    name: AddToCache
+    nameWithType: WebClientProtocol.AddToCache
+    fullName: System.Web.Services.Protocols.WebClientProtocol.AddToCache
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.WebClientProtocol.Credentials
+  commentId: P:System.Web.Services.Protocols.WebClientProtocol.Credentials
+  parent: System.Web.Services.Protocols.WebClientProtocol
+  isExternal: true
+  name: Credentials
+  nameWithType: WebClientProtocol.Credentials
+  fullName: System.Web.Services.Protocols.WebClientProtocol.Credentials
+- uid: System.Web.Services.Protocols.WebClientProtocol.UseDefaultCredentials
+  commentId: P:System.Web.Services.Protocols.WebClientProtocol.UseDefaultCredentials
+  parent: System.Web.Services.Protocols.WebClientProtocol
+  isExternal: true
+  name: UseDefaultCredentials
+  nameWithType: WebClientProtocol.UseDefaultCredentials
+  fullName: System.Web.Services.Protocols.WebClientProtocol.UseDefaultCredentials
+- uid: System.Web.Services.Protocols.WebClientProtocol.ConnectionGroupName
+  commentId: P:System.Web.Services.Protocols.WebClientProtocol.ConnectionGroupName
+  parent: System.Web.Services.Protocols.WebClientProtocol
+  isExternal: true
+  name: ConnectionGroupName
+  nameWithType: WebClientProtocol.ConnectionGroupName
+  fullName: System.Web.Services.Protocols.WebClientProtocol.ConnectionGroupName
+- uid: System.Web.Services.Protocols.WebClientProtocol.PreAuthenticate
+  commentId: P:System.Web.Services.Protocols.WebClientProtocol.PreAuthenticate
+  parent: System.Web.Services.Protocols.WebClientProtocol
+  isExternal: true
+  name: PreAuthenticate
+  nameWithType: WebClientProtocol.PreAuthenticate
+  fullName: System.Web.Services.Protocols.WebClientProtocol.PreAuthenticate
+- uid: System.Web.Services.Protocols.WebClientProtocol.Url
+  commentId: P:System.Web.Services.Protocols.WebClientProtocol.Url
+  parent: System.Web.Services.Protocols.WebClientProtocol
+  isExternal: true
+  name: Url
+  nameWithType: WebClientProtocol.Url
+  fullName: System.Web.Services.Protocols.WebClientProtocol.Url
+- uid: System.Web.Services.Protocols.WebClientProtocol.RequestEncoding
+  commentId: P:System.Web.Services.Protocols.WebClientProtocol.RequestEncoding
+  parent: System.Web.Services.Protocols.WebClientProtocol
+  isExternal: true
+  name: RequestEncoding
+  nameWithType: WebClientProtocol.RequestEncoding
+  fullName: System.Web.Services.Protocols.WebClientProtocol.RequestEncoding
+- uid: System.Web.Services.Protocols.WebClientProtocol.Timeout
+  commentId: P:System.Web.Services.Protocols.WebClientProtocol.Timeout
+  parent: System.Web.Services.Protocols.WebClientProtocol
+  isExternal: true
+  name: Timeout
+  nameWithType: WebClientProtocol.Timeout
+  fullName: System.Web.Services.Protocols.WebClientProtocol.Timeout
+- uid: System.ComponentModel.Component.Dispose
+  commentId: M:System.ComponentModel.Component.Dispose
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: Dispose()
+  nameWithType: Component.Dispose()
+  fullName: System.ComponentModel.Component.Dispose()
+  spec.csharp:
+  - uid: System.ComponentModel.Component.Dispose
+    name: Dispose
+    nameWithType: Component.Dispose
+    fullName: System.ComponentModel.Component.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.Dispose
+    name: Dispose
+    nameWithType: Component.Dispose
+    fullName: System.ComponentModel.Component.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.Component.Dispose(System.Boolean)
+  commentId: M:System.ComponentModel.Component.Dispose(System.Boolean)
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: Dispose(Boolean)
+  nameWithType: Component.Dispose(Boolean)
+  fullName: System.ComponentModel.Component.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.ComponentModel.Component.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: Component.Dispose
+    fullName: System.ComponentModel.Component.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: Component.Dispose
+    fullName: System.ComponentModel.Component.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.Component.GetService(System.Type)
+  commentId: M:System.ComponentModel.Component.GetService(System.Type)
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: GetService(Type)
+  nameWithType: Component.GetService(Type)
+  fullName: System.ComponentModel.Component.GetService(System.Type)
+  spec.csharp:
+  - uid: System.ComponentModel.Component.GetService(System.Type)
+    name: GetService
+    nameWithType: Component.GetService
+    fullName: System.ComponentModel.Component.GetService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.GetService(System.Type)
+    name: GetService
+    nameWithType: Component.GetService
+    fullName: System.ComponentModel.Component.GetService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.Component.ToString
+  commentId: M:System.ComponentModel.Component.ToString
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: ToString()
+  nameWithType: Component.ToString()
+  fullName: System.ComponentModel.Component.ToString()
+  spec.csharp:
+  - uid: System.ComponentModel.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: System.ComponentModel.Component.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: System.ComponentModel.Component.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.Component.CanRaiseEvents
+  commentId: P:System.ComponentModel.Component.CanRaiseEvents
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: CanRaiseEvents
+  nameWithType: Component.CanRaiseEvents
+  fullName: System.ComponentModel.Component.CanRaiseEvents
+- uid: System.ComponentModel.Component.Events
+  commentId: P:System.ComponentModel.Component.Events
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: Events
+  nameWithType: Component.Events
+  fullName: System.ComponentModel.Component.Events
+- uid: System.ComponentModel.Component.Site
+  commentId: P:System.ComponentModel.Component.Site
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: Site
+  nameWithType: Component.Site
+  fullName: System.ComponentModel.Component.Site
+- uid: System.ComponentModel.Component.Container
+  commentId: P:System.ComponentModel.Component.Container
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: Container
+  nameWithType: Component.Container
+  fullName: System.ComponentModel.Component.Container
+- uid: System.ComponentModel.Component.DesignMode
+  commentId: P:System.ComponentModel.Component.DesignMode
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: DesignMode
+  nameWithType: Component.DesignMode
+  fullName: System.ComponentModel.Component.DesignMode
+- uid: System.ComponentModel.Component.Disposed
+  commentId: E:System.ComponentModel.Component.Disposed
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: Disposed
+  nameWithType: Component.Disposed
+  fullName: System.ComponentModel.Component.Disposed
+- uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  commentId: M:System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: MemberwiseClone(Boolean)
+  nameWithType: MarshalByRefObject.MemberwiseClone(Boolean)
+  fullName: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: MemberwiseClone
+    nameWithType: MarshalByRefObject.MemberwiseClone
+    fullName: System.MarshalByRefObject.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: MemberwiseClone
+    nameWithType: MarshalByRefObject.MemberwiseClone
+    fullName: System.MarshalByRefObject.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.MarshalByRefObject.GetLifetimeService
+  commentId: M:System.MarshalByRefObject.GetLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: GetLifetimeService()
+  nameWithType: MarshalByRefObject.GetLifetimeService()
+  fullName: System.MarshalByRefObject.GetLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    nameWithType: MarshalByRefObject.GetLifetimeService
+    fullName: System.MarshalByRefObject.GetLifetimeService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    nameWithType: MarshalByRefObject.GetLifetimeService
+    fullName: System.MarshalByRefObject.GetLifetimeService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.MarshalByRefObject.InitializeLifetimeService
+  commentId: M:System.MarshalByRefObject.InitializeLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: InitializeLifetimeService()
+  nameWithType: MarshalByRefObject.InitializeLifetimeService()
+  fullName: System.MarshalByRefObject.InitializeLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    nameWithType: MarshalByRefObject.InitializeLifetimeService
+    fullName: System.MarshalByRefObject.InitializeLifetimeService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    nameWithType: MarshalByRefObject.InitializeLifetimeService
+    fullName: System.MarshalByRefObject.InitializeLifetimeService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+  commentId: M:System.MarshalByRefObject.CreateObjRef(System.Type)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: CreateObjRef(Type)
+  nameWithType: MarshalByRefObject.CreateObjRef(Type)
+  fullName: System.MarshalByRefObject.CreateObjRef(System.Type)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+    name: CreateObjRef
+    nameWithType: MarshalByRefObject.CreateObjRef
+    fullName: System.MarshalByRefObject.CreateObjRef
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+    name: CreateObjRef
+    nameWithType: MarshalByRefObject.CreateObjRef
+    fullName: System.MarshalByRefObject.CreateObjRef
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: System.Web.Services.Protocols
+  commentId: N:System.Web.Services.Protocols
+  isExternal: true
+  name: System.Web.Services.Protocols
+  nameWithType: System.Web.Services.Protocols
+  fullName: System.Web.Services.Protocols
+- uid: DichiarazioniICI.WsStradario.Stradario.#ctor*
+  commentId: Overload:DichiarazioniICI.WsStradario.Stradario.#ctor
+  name: Stradario
+  nameWithType: Stradario.Stradario
+  fullName: DichiarazioniICI.WsStradario.Stradario.Stradario
+- uid: DichiarazioniICI.WsStradario.Stradario.GetStrade*
+  commentId: Overload:DichiarazioniICI.WsStradario.Stradario.GetStrade
+  name: GetStrade
+  nameWithType: Stradario.GetStrade
+  fullName: DichiarazioniICI.WsStradario.Stradario.GetStrade
+- uid: OggettiComuniStrade.OggettoStrada
+  commentId: T:OggettiComuniStrade.OggettoStrada
+  parent: OggettiComuniStrade
+  isExternal: true
+  name: OggettoStrada
+  nameWithType: OggettoStrada
+  fullName: OggettiComuniStrade.OggettoStrada
+- uid: OggettiComuniStrade.OggettoStrada[]
+  isExternal: true
+  name: OggettoStrada[]
+  nameWithType: OggettoStrada[]
+  fullName: OggettiComuniStrade.OggettoStrada[]
+  nameWithType.vb: OggettoStrada()
+  fullName.vb: OggettiComuniStrade.OggettoStrada()
+  name.vb: OggettoStrada()
+  spec.csharp:
+  - uid: OggettiComuniStrade.OggettoStrada
+    name: OggettoStrada
+    nameWithType: OggettoStrada
+    fullName: OggettiComuniStrade.OggettoStrada
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: OggettiComuniStrade.OggettoStrada
+    name: OggettoStrada
+    nameWithType: OggettoStrada
+    fullName: OggettiComuniStrade.OggettoStrada
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: OggettiComuniStrade
+  commentId: N:OggettiComuniStrade
+  isExternal: true
+  name: OggettiComuniStrade
+  nameWithType: OggettiComuniStrade
+  fullName: OggettiComuniStrade
+- uid: DichiarazioniICI.WsStradario.Stradario.GetTipiStrade*
+  commentId: Overload:DichiarazioniICI.WsStradario.Stradario.GetTipiStrade
+  name: GetTipiStrade
+  nameWithType: Stradario.GetTipiStrade
+  fullName: DichiarazioniICI.WsStradario.Stradario.GetTipiStrade
+- uid: OggettiComuniStrade.OggettoTipoStrada
+  commentId: T:OggettiComuniStrade.OggettoTipoStrada
+  parent: OggettiComuniStrade
+  isExternal: true
+  name: OggettoTipoStrada
+  nameWithType: OggettoTipoStrada
+  fullName: OggettiComuniStrade.OggettoTipoStrada
+- uid: OggettiComuniStrade.OggettoTipoStrada[]
+  isExternal: true
+  name: OggettoTipoStrada[]
+  nameWithType: OggettoTipoStrada[]
+  fullName: OggettiComuniStrade.OggettoTipoStrada[]
+  nameWithType.vb: OggettoTipoStrada()
+  fullName.vb: OggettiComuniStrade.OggettoTipoStrada()
+  name.vb: OggettoTipoStrada()
+  spec.csharp:
+  - uid: OggettiComuniStrade.OggettoTipoStrada
+    name: OggettoTipoStrada
+    nameWithType: OggettoTipoStrada
+    fullName: OggettiComuniStrade.OggettoTipoStrada
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: OggettiComuniStrade.OggettoTipoStrada
+    name: OggettoTipoStrada
+    nameWithType: OggettoTipoStrada
+    fullName: OggettiComuniStrade.OggettoTipoStrada
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

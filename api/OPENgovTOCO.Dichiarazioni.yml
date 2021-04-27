@@ -1,0 +1,58 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENgovTOCO.Dichiarazioni
+  commentId: N:OPENgovTOCO.Dichiarazioni
+  id: OPENgovTOCO.Dichiarazioni
+  children:
+  - OPENgovTOCO.Dichiarazioni.ArticoliAdd
+  - OPENgovTOCO.Dichiarazioni.ArticoliEdit
+  - OPENgovTOCO.Dichiarazioni.ArticoliView
+  - OPENgovTOCO.Dichiarazioni.DichiarazioniAdd
+  - OPENgovTOCO.Dichiarazioni.DichiarazioniEdit
+  - OPENgovTOCO.Dichiarazioni.DichiarazioniSearch
+  - OPENgovTOCO.Dichiarazioni.DichiarazioniView
+  langs:
+  - csharp
+  - vb
+  name: OPENgovTOCO.Dichiarazioni
+  nameWithType: OPENgovTOCO.Dichiarazioni
+  fullName: OPENgovTOCO.Dichiarazioni
+  type: Namespace
+  assemblies:
+  - OPENGovTOCO
+references:
+- uid: OPENgovTOCO.Dichiarazioni.ArticoliAdd
+  commentId: T:OPENgovTOCO.Dichiarazioni.ArticoliAdd
+  name: ArticoliAdd
+  nameWithType: ArticoliAdd
+  fullName: OPENgovTOCO.Dichiarazioni.ArticoliAdd
+- uid: OPENgovTOCO.Dichiarazioni.ArticoliEdit
+  commentId: T:OPENgovTOCO.Dichiarazioni.ArticoliEdit
+  name: ArticoliEdit
+  nameWithType: ArticoliEdit
+  fullName: OPENgovTOCO.Dichiarazioni.ArticoliEdit
+- uid: OPENgovTOCO.Dichiarazioni.ArticoliView
+  commentId: T:OPENgovTOCO.Dichiarazioni.ArticoliView
+  name: ArticoliView
+  nameWithType: ArticoliView
+  fullName: OPENgovTOCO.Dichiarazioni.ArticoliView
+- uid: OPENgovTOCO.Dichiarazioni.DichiarazioniAdd
+  commentId: T:OPENgovTOCO.Dichiarazioni.DichiarazioniAdd
+  name: DichiarazioniAdd
+  nameWithType: DichiarazioniAdd
+  fullName: OPENgovTOCO.Dichiarazioni.DichiarazioniAdd
+- uid: OPENgovTOCO.Dichiarazioni.DichiarazioniEdit
+  commentId: T:OPENgovTOCO.Dichiarazioni.DichiarazioniEdit
+  name: DichiarazioniEdit
+  nameWithType: DichiarazioniEdit
+  fullName: OPENgovTOCO.Dichiarazioni.DichiarazioniEdit
+- uid: OPENgovTOCO.Dichiarazioni.DichiarazioniSearch
+  commentId: T:OPENgovTOCO.Dichiarazioni.DichiarazioniSearch
+  name: DichiarazioniSearch
+  nameWithType: DichiarazioniSearch
+  fullName: OPENgovTOCO.Dichiarazioni.DichiarazioniSearch
+- uid: OPENgovTOCO.Dichiarazioni.DichiarazioniView
+  commentId: T:OPENgovTOCO.Dichiarazioni.DichiarazioniView
+  name: DichiarazioniView
+  nameWithType: DichiarazioniView
+  fullName: OPENgovTOCO.Dichiarazioni.DichiarazioniView

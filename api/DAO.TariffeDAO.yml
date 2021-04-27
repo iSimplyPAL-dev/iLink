@@ -1,0 +1,763 @@
+### YamlMime:ManagedReference
+items:
+- uid: DAO.TariffeDAO
+  commentId: T:DAO.TariffeDAO
+  id: TariffeDAO
+  parent: DAO
+  children:
+  - DAO.TariffeDAO.#ctor
+  - DAO.TariffeDAO.connessioneDB
+  - DAO.TariffeDAO.connessioneDB(System.String)
+  - DAO.TariffeDAO.DeleteTariffa(System.Int32)
+  - DAO.TariffeDAO.GetAllTariffe(System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+  - DAO.TariffeDAO.GetAnniTariffe(System.String,System.String)
+  - DAO.TariffeDAO.GetTariffa(System.Int32)
+  - DAO.TariffeDAO.InsertRibalta(System.Int32,System.Int32,System.String)
+  - DAO.TariffeDAO.InsertTariffa(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Decimal,System.Decimal)
+  - DAO.TariffeDAO.UpdateTariffa(System.Int32,System.Decimal,System.Decimal)
+  langs:
+  - csharp
+  - vb
+  name: TariffeDAO
+  nameWithType: TariffeDAO
+  fullName: DAO.TariffeDAO
+  type: Class
+  source:
+    id: TariffeDAO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\TariffeDAO.cs
+    startLine: 12
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  summary: "\nClasse interfacciamento DB per la gestione Tariffe.\n"
+  example: []
+  syntax:
+    content: public class TariffeDAO
+    content.vb: Public Class TariffeDAO
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DAO.TariffeDAO.#ctor
+  commentId: M:DAO.TariffeDAO.#ctor
+  id: '#ctor'
+  parent: DAO.TariffeDAO
+  langs:
+  - csharp
+  - vb
+  name: TariffeDAO()
+  nameWithType: TariffeDAO.TariffeDAO()
+  fullName: DAO.TariffeDAO.TariffeDAO()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\TariffeDAO.cs
+    startLine: 19
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public TariffeDAO()
+    content.vb: Public Sub New
+  overload: DAO.TariffeDAO.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.TariffeDAO.DeleteTariffa(System.Int32)
+  commentId: M:DAO.TariffeDAO.DeleteTariffa(System.Int32)
+  id: DeleteTariffa(System.Int32)
+  parent: DAO.TariffeDAO
+  langs:
+  - csharp
+  - vb
+  name: DeleteTariffa(Int32)
+  nameWithType: TariffeDAO.DeleteTariffa(Int32)
+  fullName: DAO.TariffeDAO.DeleteTariffa(System.Int32)
+  type: Method
+  source:
+    id: DeleteTariffa
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\TariffeDAO.cs
+    startLine: 26
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public int DeleteTariffa(int IdTariffa)
+    parameters:
+    - id: IdTariffa
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function DeleteTariffa(IdTariffa As Integer) As Integer
+  overload: DAO.TariffeDAO.DeleteTariffa*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.TariffeDAO.InsertTariffa(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Decimal,System.Decimal)
+  commentId: M:DAO.TariffeDAO.InsertTariffa(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Decimal,System.Decimal)
+  id: InsertTariffa(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Decimal,System.Decimal)
+  parent: DAO.TariffeDAO
+  langs:
+  - csharp
+  - vb
+  name: InsertTariffa(String, String, String, Int32, Int32, Int32, Int32, Decimal, Decimal)
+  nameWithType: TariffeDAO.InsertTariffa(String, String, String, Int32, Int32, Int32, Int32, Decimal, Decimal)
+  fullName: DAO.TariffeDAO.InsertTariffa(System.String, System.String, System.String, System.Int32, System.Int32, System.Int32, System.Int32, System.Decimal, System.Decimal)
+  type: Method
+  source:
+    id: InsertTariffa
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\TariffeDAO.cs
+    startLine: 96
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public int InsertTariffa(string ConnectionString, string IdEnte, string IdTributo, int IdCategoria, int IdTipologiaOccupazione, int IdDurata, int Anno, decimal Valore, decimal MinimoApplicabile)
+    parameters:
+    - id: ConnectionString
+      type: System.String
+    - id: IdEnte
+      type: System.String
+    - id: IdTributo
+      type: System.String
+    - id: IdCategoria
+      type: System.Int32
+    - id: IdTipologiaOccupazione
+      type: System.Int32
+    - id: IdDurata
+      type: System.Int32
+    - id: Anno
+      type: System.Int32
+    - id: Valore
+      type: System.Decimal
+    - id: MinimoApplicabile
+      type: System.Decimal
+    return:
+      type: System.Int32
+    content.vb: Public Function InsertTariffa(ConnectionString As String, IdEnte As String, IdTributo As String, IdCategoria As Integer, IdTipologiaOccupazione As Integer, IdDurata As Integer, Anno As Integer, Valore As Decimal, MinimoApplicabile As Decimal) As Integer
+  overload: DAO.TariffeDAO.InsertTariffa*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.TariffeDAO.UpdateTariffa(System.Int32,System.Decimal,System.Decimal)
+  commentId: M:DAO.TariffeDAO.UpdateTariffa(System.Int32,System.Decimal,System.Decimal)
+  id: UpdateTariffa(System.Int32,System.Decimal,System.Decimal)
+  parent: DAO.TariffeDAO
+  langs:
+  - csharp
+  - vb
+  name: UpdateTariffa(Int32, Decimal, Decimal)
+  nameWithType: TariffeDAO.UpdateTariffa(Int32, Decimal, Decimal)
+  fullName: DAO.TariffeDAO.UpdateTariffa(System.Int32, System.Decimal, System.Decimal)
+  type: Method
+  source:
+    id: UpdateTariffa
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\TariffeDAO.cs
+    startLine: 182
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public int UpdateTariffa(int IdTariffa, decimal Valore, decimal MinimoApplicabile)
+    parameters:
+    - id: IdTariffa
+      type: System.Int32
+    - id: Valore
+      type: System.Decimal
+    - id: MinimoApplicabile
+      type: System.Decimal
+    return:
+      type: System.Int32
+    content.vb: Public Function UpdateTariffa(IdTariffa As Integer, Valore As Decimal, MinimoApplicabile As Decimal) As Integer
+  overload: DAO.TariffeDAO.UpdateTariffa*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.TariffeDAO.GetAnniTariffe(System.String,System.String)
+  commentId: M:DAO.TariffeDAO.GetAnniTariffe(System.String,System.String)
+  id: GetAnniTariffe(System.String,System.String)
+  parent: DAO.TariffeDAO
+  langs:
+  - csharp
+  - vb
+  name: GetAnniTariffe(String, String)
+  nameWithType: TariffeDAO.GetAnniTariffe(String, String)
+  fullName: DAO.TariffeDAO.GetAnniTariffe(System.String, System.String)
+  type: Method
+  source:
+    id: GetAnniTariffe
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\TariffeDAO.cs
+    startLine: 254
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public DataTable GetAnniTariffe(string IdEnte, string IdTributo)
+    parameters:
+    - id: IdEnte
+      type: System.String
+    - id: IdTributo
+      type: System.String
+    return:
+      type: System.Data.DataTable
+    content.vb: Public Function GetAnniTariffe(IdEnte As String, IdTributo As String) As DataTable
+  overload: DAO.TariffeDAO.GetAnniTariffe*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.TariffeDAO.GetAllTariffe(System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:DAO.TariffeDAO.GetAllTariffe(System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+  id: GetAllTariffe(System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: DAO.TariffeDAO
+  langs:
+  - csharp
+  - vb
+  name: GetAllTariffe(String, String, Int32, Int32, Int32, Int32)
+  nameWithType: TariffeDAO.GetAllTariffe(String, String, Int32, Int32, Int32, Int32)
+  fullName: DAO.TariffeDAO.GetAllTariffe(System.String, System.String, System.Int32, System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    id: GetAllTariffe
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\TariffeDAO.cs
+    startLine: 283
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public DataTable GetAllTariffe(string IdEnte, string IdTributo, int IdCategoria, int IdTipologiaOccupazione, int IdDurata, int Anno)
+    parameters:
+    - id: IdEnte
+      type: System.String
+    - id: IdTributo
+      type: System.String
+    - id: IdCategoria
+      type: System.Int32
+    - id: IdTipologiaOccupazione
+      type: System.Int32
+    - id: IdDurata
+      type: System.Int32
+    - id: Anno
+      type: System.Int32
+    return:
+      type: System.Data.DataTable
+    content.vb: Public Function GetAllTariffe(IdEnte As String, IdTributo As String, IdCategoria As Integer, IdTipologiaOccupazione As Integer, IdDurata As Integer, Anno As Integer) As DataTable
+  overload: DAO.TariffeDAO.GetAllTariffe*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.TariffeDAO.GetTariffa(System.Int32)
+  commentId: M:DAO.TariffeDAO.GetTariffa(System.Int32)
+  id: GetTariffa(System.Int32)
+  parent: DAO.TariffeDAO
+  langs:
+  - csharp
+  - vb
+  name: GetTariffa(Int32)
+  nameWithType: TariffeDAO.GetTariffa(Int32)
+  fullName: DAO.TariffeDAO.GetTariffa(System.Int32)
+  type: Method
+  source:
+    id: GetTariffa
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\TariffeDAO.cs
+    startLine: 361
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public DataTable GetTariffa(int IdTariffa)
+    parameters:
+    - id: IdTariffa
+      type: System.Int32
+    return:
+      type: System.Data.DataTable
+    content.vb: Public Function GetTariffa(IdTariffa As Integer) As DataTable
+  overload: DAO.TariffeDAO.GetTariffa*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.TariffeDAO.connessioneDB
+  commentId: M:DAO.TariffeDAO.connessioneDB
+  id: connessioneDB
+  parent: DAO.TariffeDAO
+  langs:
+  - csharp
+  - vb
+  name: connessioneDB()
+  nameWithType: TariffeDAO.connessioneDB()
+  fullName: DAO.TariffeDAO.connessioneDB()
+  type: Method
+  source:
+    id: connessioneDB
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\TariffeDAO.cs
+    startLine: 418
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public void connessioneDB()
+    content.vb: Public Sub connessioneDB
+  overload: DAO.TariffeDAO.connessioneDB*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.TariffeDAO.InsertRibalta(System.Int32,System.Int32,System.String)
+  commentId: M:DAO.TariffeDAO.InsertRibalta(System.Int32,System.Int32,System.String)
+  id: InsertRibalta(System.Int32,System.Int32,System.String)
+  parent: DAO.TariffeDAO
+  langs:
+  - csharp
+  - vb
+  name: InsertRibalta(Int32, Int32, String)
+  nameWithType: TariffeDAO.InsertRibalta(Int32, Int32, String)
+  fullName: DAO.TariffeDAO.InsertRibalta(System.Int32, System.Int32, System.String)
+  type: Method
+  source:
+    id: InsertRibalta
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\TariffeDAO.cs
+    startLine: 446
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public int InsertRibalta(int ribaltaDa, int ribaltaA, string IdEnte)
+    parameters:
+    - id: ribaltaDa
+      type: System.Int32
+    - id: ribaltaA
+      type: System.Int32
+    - id: IdEnte
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Function InsertRibalta(ribaltaDa As Integer, ribaltaA As Integer, IdEnte As String) As Integer
+  overload: DAO.TariffeDAO.InsertRibalta*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.TariffeDAO.connessioneDB(System.String)
+  commentId: M:DAO.TariffeDAO.connessioneDB(System.String)
+  id: connessioneDB(System.String)
+  parent: DAO.TariffeDAO
+  langs:
+  - csharp
+  - vb
+  name: connessioneDB(String)
+  nameWithType: TariffeDAO.connessioneDB(String)
+  fullName: DAO.TariffeDAO.connessioneDB(System.String)
+  type: Method
+  source:
+    id: connessioneDB
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\TariffeDAO.cs
+    startLine: 480
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public void connessioneDB(string ConnectionString)
+    parameters:
+    - id: ConnectionString
+      type: System.String
+    content.vb: Public Sub connessioneDB(ConnectionString As String)
+  overload: DAO.TariffeDAO.connessioneDB*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: DAO
+  commentId: N:DAO
+  name: DAO
+  nameWithType: DAO
+  fullName: DAO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DAO.TariffeDAO.#ctor*
+  commentId: Overload:DAO.TariffeDAO.#ctor
+  name: TariffeDAO
+  nameWithType: TariffeDAO.TariffeDAO
+  fullName: DAO.TariffeDAO.TariffeDAO
+- uid: DAO.TariffeDAO.DeleteTariffa*
+  commentId: Overload:DAO.TariffeDAO.DeleteTariffa
+  name: DeleteTariffa
+  nameWithType: TariffeDAO.DeleteTariffa
+  fullName: DAO.TariffeDAO.DeleteTariffa
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DAO.TariffeDAO.InsertTariffa*
+  commentId: Overload:DAO.TariffeDAO.InsertTariffa
+  name: InsertTariffa
+  nameWithType: TariffeDAO.InsertTariffa
+  fullName: DAO.TariffeDAO.InsertTariffa
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  nameWithType: Decimal
+  fullName: System.Decimal
+- uid: DAO.TariffeDAO.UpdateTariffa*
+  commentId: Overload:DAO.TariffeDAO.UpdateTariffa
+  name: UpdateTariffa
+  nameWithType: TariffeDAO.UpdateTariffa
+  fullName: DAO.TariffeDAO.UpdateTariffa
+- uid: DAO.TariffeDAO.GetAnniTariffe*
+  commentId: Overload:DAO.TariffeDAO.GetAnniTariffe
+  name: GetAnniTariffe
+  nameWithType: TariffeDAO.GetAnniTariffe
+  fullName: DAO.TariffeDAO.GetAnniTariffe
+- uid: System.Data.DataTable
+  commentId: T:System.Data.DataTable
+  parent: System.Data
+  isExternal: true
+  name: DataTable
+  nameWithType: DataTable
+  fullName: System.Data.DataTable
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+- uid: DAO.TariffeDAO.GetAllTariffe*
+  commentId: Overload:DAO.TariffeDAO.GetAllTariffe
+  name: GetAllTariffe
+  nameWithType: TariffeDAO.GetAllTariffe
+  fullName: DAO.TariffeDAO.GetAllTariffe
+- uid: DAO.TariffeDAO.GetTariffa*
+  commentId: Overload:DAO.TariffeDAO.GetTariffa
+  name: GetTariffa
+  nameWithType: TariffeDAO.GetTariffa
+  fullName: DAO.TariffeDAO.GetTariffa
+- uid: DAO.TariffeDAO.connessioneDB*
+  commentId: Overload:DAO.TariffeDAO.connessioneDB
+  name: connessioneDB
+  nameWithType: TariffeDAO.connessioneDB
+  fullName: DAO.TariffeDAO.connessioneDB
+- uid: DAO.TariffeDAO.InsertRibalta*
+  commentId: Overload:DAO.TariffeDAO.InsertRibalta
+  name: InsertRibalta
+  nameWithType: TariffeDAO.InsertRibalta
+  fullName: DAO.TariffeDAO.InsertRibalta

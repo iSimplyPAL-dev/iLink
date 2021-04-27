@@ -1,0 +1,100 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento
+  commentId: T:DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento
+  id: TpSituazioneFinaleIci.TipoOrdinamento
+  parent: DichiarazioniICI.Database
+  children:
+  - DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento.CognomeNome
+  - DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento.Indirizzo
+  langs:
+  - csharp
+  - vb
+  name: TpSituazioneFinaleIci.TipoOrdinamento
+  nameWithType: TpSituazioneFinaleIci.TipoOrdinamento
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento
+  type: Enum
+  source:
+    id: TipoOrdinamento
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 18
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public enum TipoOrdinamento
+    content.vb: Public Enum TipoOrdinamento
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento.CognomeNome
+  commentId: F:DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento.CognomeNome
+  id: CognomeNome
+  parent: DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento
+  langs:
+  - csharp
+  - vb
+  name: CognomeNome
+  nameWithType: TpSituazioneFinaleIci.TipoOrdinamento.CognomeNome
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento.CognomeNome
+  type: Field
+  source:
+    id: CognomeNome
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 20
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: CognomeNome = 0
+    return:
+      type: DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento.Indirizzo
+  commentId: F:DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento.Indirizzo
+  id: Indirizzo
+  parent: DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento
+  langs:
+  - csharp
+  - vb
+  name: Indirizzo
+  nameWithType: TpSituazioneFinaleIci.TipoOrdinamento.Indirizzo
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento.Indirizzo
+  type: Field
+  source:
+    id: Indirizzo
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 20
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: Indirizzo = 1
+    return:
+      type: DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: DichiarazioniICI.Database
+  commentId: N:DichiarazioniICI.Database
+  name: DichiarazioniICI.Database
+  nameWithType: DichiarazioniICI.Database
+  fullName: DichiarazioniICI.Database
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento
+  commentId: T:DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento
+  parent: DichiarazioniICI.Database
+  name: TpSituazioneFinaleIci.TipoOrdinamento
+  nameWithType: TpSituazioneFinaleIci.TipoOrdinamento
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento

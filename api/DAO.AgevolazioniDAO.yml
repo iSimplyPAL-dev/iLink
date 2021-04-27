@@ -1,0 +1,587 @@
+### YamlMime:ManagedReference
+items:
+- uid: DAO.AgevolazioniDAO
+  commentId: T:DAO.AgevolazioniDAO
+  id: AgevolazioniDAO
+  parent: DAO
+  children:
+  - DAO.AgevolazioniDAO.#ctor
+  - DAO.AgevolazioniDAO.connessioneDB
+  - DAO.AgevolazioniDAO.DeleteAgevolazione(System.Int32)
+  - DAO.AgevolazioniDAO.GetAllAgevolazioni(System.String)
+  - DAO.AgevolazioniDAO.InsertOrUpdateDescrizione(System.String,System.Int32,System.String)
+  - DAO.AgevolazioniDAO.InsertRibalta(System.Int32,System.Int32,System.String)
+  langs:
+  - csharp
+  - vb
+  name: AgevolazioniDAO
+  nameWithType: AgevolazioniDAO
+  fullName: DAO.AgevolazioniDAO
+  type: Class
+  source:
+    id: AgevolazioniDAO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\AgevolazioniDAO.cs
+    startLine: 20
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  summary: "\nClasse interfacciamento DB per la gestione Agevolazioni.\n"
+  example: []
+  syntax:
+    content: public class AgevolazioniDAO
+    content.vb: Public Class AgevolazioniDAO
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DAO.AgevolazioniDAO.#ctor
+  commentId: M:DAO.AgevolazioniDAO.#ctor
+  id: '#ctor'
+  parent: DAO.AgevolazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: AgevolazioniDAO()
+  nameWithType: AgevolazioniDAO.AgevolazioniDAO()
+  fullName: DAO.AgevolazioniDAO.AgevolazioniDAO()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\AgevolazioniDAO.cs
+    startLine: 27
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public AgevolazioniDAO()
+    content.vb: Public Sub New
+  overload: DAO.AgevolazioniDAO.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.AgevolazioniDAO.DeleteAgevolazione(System.Int32)
+  commentId: M:DAO.AgevolazioniDAO.DeleteAgevolazione(System.Int32)
+  id: DeleteAgevolazione(System.Int32)
+  parent: DAO.AgevolazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: DeleteAgevolazione(Int32)
+  nameWithType: AgevolazioniDAO.DeleteAgevolazione(Int32)
+  fullName: DAO.AgevolazioniDAO.DeleteAgevolazione(System.Int32)
+  type: Method
+  source:
+    id: DeleteAgevolazione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\AgevolazioniDAO.cs
+    startLine: 34
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public int DeleteAgevolazione(int IdAgevolazione)
+    parameters:
+    - id: IdAgevolazione
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function DeleteAgevolazione(IdAgevolazione As Integer) As Integer
+  overload: DAO.AgevolazioniDAO.DeleteAgevolazione*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.AgevolazioniDAO.InsertOrUpdateDescrizione(System.String,System.Int32,System.String)
+  commentId: M:DAO.AgevolazioniDAO.InsertOrUpdateDescrizione(System.String,System.Int32,System.String)
+  id: InsertOrUpdateDescrizione(System.String,System.Int32,System.String)
+  parent: DAO.AgevolazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: InsertOrUpdateDescrizione(String, Int32, String)
+  nameWithType: AgevolazioniDAO.InsertOrUpdateDescrizione(String, Int32, String)
+  fullName: DAO.AgevolazioniDAO.InsertOrUpdateDescrizione(System.String, System.Int32, System.String)
+  type: Method
+  source:
+    id: InsertOrUpdateDescrizione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\AgevolazioniDAO.cs
+    startLine: 103
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public int InsertOrUpdateDescrizione(string IdEnte, int IdAgevolazione, string Descrizione)
+    parameters:
+    - id: IdEnte
+      type: System.String
+    - id: IdAgevolazione
+      type: System.Int32
+    - id: Descrizione
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Function InsertOrUpdateDescrizione(IdEnte As String, IdAgevolazione As Integer, Descrizione As String) As Integer
+  overload: DAO.AgevolazioniDAO.InsertOrUpdateDescrizione*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.AgevolazioniDAO.GetAllAgevolazioni(System.String)
+  commentId: M:DAO.AgevolazioniDAO.GetAllAgevolazioni(System.String)
+  id: GetAllAgevolazioni(System.String)
+  parent: DAO.AgevolazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: GetAllAgevolazioni(String)
+  nameWithType: AgevolazioniDAO.GetAllAgevolazioni(String)
+  fullName: DAO.AgevolazioniDAO.GetAllAgevolazioni(System.String)
+  type: Method
+  source:
+    id: GetAllAgevolazioni
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\AgevolazioniDAO.cs
+    startLine: 181
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public DataTable GetAllAgevolazioni(string IdEnte)
+    parameters:
+    - id: IdEnte
+      type: System.String
+    return:
+      type: System.Data.DataTable
+    content.vb: Public Function GetAllAgevolazioni(IdEnte As String) As DataTable
+  overload: DAO.AgevolazioniDAO.GetAllAgevolazioni*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.AgevolazioniDAO.InsertRibalta(System.Int32,System.Int32,System.String)
+  commentId: M:DAO.AgevolazioniDAO.InsertRibalta(System.Int32,System.Int32,System.String)
+  id: InsertRibalta(System.Int32,System.Int32,System.String)
+  parent: DAO.AgevolazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: InsertRibalta(Int32, Int32, String)
+  nameWithType: AgevolazioniDAO.InsertRibalta(Int32, Int32, String)
+  fullName: DAO.AgevolazioniDAO.InsertRibalta(System.Int32, System.Int32, System.String)
+  type: Method
+  source:
+    id: InsertRibalta
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\AgevolazioniDAO.cs
+    startLine: 237
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public int InsertRibalta(int ribaltaDa, int ribaltaA, string IdEnte)
+    parameters:
+    - id: ribaltaDa
+      type: System.Int32
+    - id: ribaltaA
+      type: System.Int32
+    - id: IdEnte
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Function InsertRibalta(ribaltaDa As Integer, ribaltaA As Integer, IdEnte As String) As Integer
+  overload: DAO.AgevolazioniDAO.InsertRibalta*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.AgevolazioniDAO.connessioneDB
+  commentId: M:DAO.AgevolazioniDAO.connessioneDB
+  id: connessioneDB
+  parent: DAO.AgevolazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: connessioneDB()
+  nameWithType: AgevolazioniDAO.connessioneDB()
+  fullName: DAO.AgevolazioniDAO.connessioneDB()
+  type: Method
+  source:
+    id: connessioneDB
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\AgevolazioniDAO.cs
+    startLine: 281
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public void connessioneDB()
+    content.vb: Public Sub connessioneDB
+  overload: DAO.AgevolazioniDAO.connessioneDB*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: DAO
+  commentId: N:DAO
+  name: DAO
+  nameWithType: DAO
+  fullName: DAO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DAO.AgevolazioniDAO.#ctor*
+  commentId: Overload:DAO.AgevolazioniDAO.#ctor
+  name: AgevolazioniDAO
+  nameWithType: AgevolazioniDAO.AgevolazioniDAO
+  fullName: DAO.AgevolazioniDAO.AgevolazioniDAO
+- uid: DAO.AgevolazioniDAO.DeleteAgevolazione*
+  commentId: Overload:DAO.AgevolazioniDAO.DeleteAgevolazione
+  name: DeleteAgevolazione
+  nameWithType: AgevolazioniDAO.DeleteAgevolazione
+  fullName: DAO.AgevolazioniDAO.DeleteAgevolazione
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DAO.AgevolazioniDAO.InsertOrUpdateDescrizione*
+  commentId: Overload:DAO.AgevolazioniDAO.InsertOrUpdateDescrizione
+  name: InsertOrUpdateDescrizione
+  nameWithType: AgevolazioniDAO.InsertOrUpdateDescrizione
+  fullName: DAO.AgevolazioniDAO.InsertOrUpdateDescrizione
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DAO.AgevolazioniDAO.GetAllAgevolazioni*
+  commentId: Overload:DAO.AgevolazioniDAO.GetAllAgevolazioni
+  name: GetAllAgevolazioni
+  nameWithType: AgevolazioniDAO.GetAllAgevolazioni
+  fullName: DAO.AgevolazioniDAO.GetAllAgevolazioni
+- uid: System.Data.DataTable
+  commentId: T:System.Data.DataTable
+  parent: System.Data
+  isExternal: true
+  name: DataTable
+  nameWithType: DataTable
+  fullName: System.Data.DataTable
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+- uid: DAO.AgevolazioniDAO.InsertRibalta*
+  commentId: Overload:DAO.AgevolazioniDAO.InsertRibalta
+  name: InsertRibalta
+  nameWithType: AgevolazioniDAO.InsertRibalta
+  fullName: DAO.AgevolazioniDAO.InsertRibalta
+- uid: DAO.AgevolazioniDAO.connessioneDB*
+  commentId: Overload:DAO.AgevolazioniDAO.connessioneDB
+  name: connessioneDB
+  nameWithType: AgevolazioniDAO.connessioneDB
+  fullName: DAO.AgevolazioniDAO.connessioneDB

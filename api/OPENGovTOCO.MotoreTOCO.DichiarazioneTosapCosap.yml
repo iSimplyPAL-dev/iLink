@@ -1,0 +1,634 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap
+  commentId: T:OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap
+  id: DichiarazioneTosapCosap
+  parent: OPENGovTOCO.MotoreTOCO
+  children:
+  - OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.AnagraficaContribuente
+  - OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.ArticoliDichiarazione
+  - OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.CodTributo
+  - OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.IdDichiarazione
+  - OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.IdEnte
+  - OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.TestataDichiarazione
+  langs:
+  - csharp
+  - vb
+  name: DichiarazioneTosapCosap
+  nameWithType: DichiarazioneTosapCosap
+  fullName: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap
+  type: Class
+  source:
+    id: DichiarazioneTosapCosap
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 422
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class DichiarazioneTosapCosap
+    content.vb: >-
+      <Serializable>
+
+      Public Class DichiarazioneTosapCosap
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.TestataDichiarazione
+  commentId: P:OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.TestataDichiarazione
+  id: TestataDichiarazione
+  parent: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap
+  langs:
+  - csharp
+  - vb
+  name: TestataDichiarazione
+  nameWithType: DichiarazioneTosapCosap.TestataDichiarazione
+  fullName: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.TestataDichiarazione
+  type: Property
+  source:
+    id: TestataDichiarazione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 442
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public DichiarazioneTosapCosapTestata TestataDichiarazione { get; set; }
+    parameters: []
+    return:
+      type: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosapTestata
+    content.vb: Public Property TestataDichiarazione As DichiarazioneTosapCosapTestata
+  overload: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.TestataDichiarazione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.AnagraficaContribuente
+  commentId: P:OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.AnagraficaContribuente
+  id: AnagraficaContribuente
+  parent: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap
+  langs:
+  - csharp
+  - vb
+  name: AnagraficaContribuente
+  nameWithType: DichiarazioneTosapCosap.AnagraficaContribuente
+  fullName: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.AnagraficaContribuente
+  type: Property
+  source:
+    id: AnagraficaContribuente
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 452
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public DettaglioAnagrafica AnagraficaContribuente { get; set; }
+    parameters: []
+    return:
+      type: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+    content.vb: Public Property AnagraficaContribuente As DettaglioAnagrafica
+  overload: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.AnagraficaContribuente*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.ArticoliDichiarazione
+  commentId: P:OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.ArticoliDichiarazione
+  id: ArticoliDichiarazione
+  parent: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap
+  langs:
+  - csharp
+  - vb
+  name: ArticoliDichiarazione
+  nameWithType: DichiarazioneTosapCosap.ArticoliDichiarazione
+  fullName: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.ArticoliDichiarazione
+  type: Property
+  source:
+    id: ArticoliDichiarazione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 462
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public Articolo[] ArticoliDichiarazione { get; set; }
+    parameters: []
+    return:
+      type: OPENGovTOCO.MotoreTOCO.Articolo[]
+    content.vb: Public Property ArticoliDichiarazione As Articolo()
+  overload: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.ArticoliDichiarazione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.IdEnte
+  commentId: P:OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.IdEnte
+  id: IdEnte
+  parent: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap
+  langs:
+  - csharp
+  - vb
+  name: IdEnte
+  nameWithType: DichiarazioneTosapCosap.IdEnte
+  fullName: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.IdEnte
+  type: Property
+  source:
+    id: IdEnte
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 472
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string IdEnte { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property IdEnte As String
+  overload: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.IdEnte*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.CodTributo
+  commentId: P:OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.CodTributo
+  id: CodTributo
+  parent: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap
+  langs:
+  - csharp
+  - vb
+  name: CodTributo
+  nameWithType: DichiarazioneTosapCosap.CodTributo
+  fullName: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.CodTributo
+  type: Property
+  source:
+    id: CodTributo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 482
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string CodTributo { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CodTributo As String
+  overload: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.CodTributo*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.IdDichiarazione
+  commentId: P:OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.IdDichiarazione
+  id: IdDichiarazione
+  parent: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap
+  langs:
+  - csharp
+  - vb
+  name: IdDichiarazione
+  nameWithType: DichiarazioneTosapCosap.IdDichiarazione
+  fullName: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.IdDichiarazione
+  type: Property
+  source:
+    id: IdDichiarazione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 492
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public int IdDichiarazione { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IdDichiarazione As Integer
+  overload: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.IdDichiarazione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: OPENGovTOCO.MotoreTOCO
+  commentId: N:OPENGovTOCO.MotoreTOCO
+  name: OPENGovTOCO.MotoreTOCO
+  nameWithType: OPENGovTOCO.MotoreTOCO
+  fullName: OPENGovTOCO.MotoreTOCO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.TestataDichiarazione*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.TestataDichiarazione
+  name: TestataDichiarazione
+  nameWithType: DichiarazioneTosapCosap.TestataDichiarazione
+  fullName: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.TestataDichiarazione
+- uid: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosapTestata
+  commentId: T:OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosapTestata
+  parent: OPENGovTOCO.MotoreTOCO
+  name: DichiarazioneTosapCosapTestata
+  nameWithType: DichiarazioneTosapCosapTestata
+  fullName: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosapTestata
+- uid: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.AnagraficaContribuente*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.AnagraficaContribuente
+  name: AnagraficaContribuente
+  nameWithType: DichiarazioneTosapCosap.AnagraficaContribuente
+  fullName: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.AnagraficaContribuente
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  commentId: T:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  parent: OPENGovTOCO.MotoreTOCO
+  name: DettaglioAnagrafica
+  nameWithType: DettaglioAnagrafica
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+- uid: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.ArticoliDichiarazione*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.ArticoliDichiarazione
+  name: ArticoliDichiarazione
+  nameWithType: DichiarazioneTosapCosap.ArticoliDichiarazione
+  fullName: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.ArticoliDichiarazione
+- uid: OPENGovTOCO.MotoreTOCO.Articolo[]
+  isExternal: true
+  name: Articolo[]
+  nameWithType: Articolo[]
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo[]
+  nameWithType.vb: Articolo()
+  fullName.vb: OPENGovTOCO.MotoreTOCO.Articolo()
+  name.vb: Articolo()
+  spec.csharp:
+  - uid: OPENGovTOCO.MotoreTOCO.Articolo
+    name: Articolo
+    nameWithType: Articolo
+    fullName: OPENGovTOCO.MotoreTOCO.Articolo
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: OPENGovTOCO.MotoreTOCO.Articolo
+    name: Articolo
+    nameWithType: Articolo
+    fullName: OPENGovTOCO.MotoreTOCO.Articolo
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.IdEnte*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.IdEnte
+  name: IdEnte
+  nameWithType: DichiarazioneTosapCosap.IdEnte
+  fullName: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.IdEnte
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.CodTributo*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.CodTributo
+  name: CodTributo
+  nameWithType: DichiarazioneTosapCosap.CodTributo
+  fullName: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.CodTributo
+- uid: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.IdDichiarazione*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.IdDichiarazione
+  name: IdDichiarazione
+  nameWithType: DichiarazioneTosapCosap.IdDichiarazione
+  fullName: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.IdDichiarazione
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

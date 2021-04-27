@@ -1,0 +1,845 @@
+### YamlMime:ManagedReference
+items:
+- uid: Business.STARTUPINFO
+  commentId: T:Business.STARTUPINFO
+  id: STARTUPINFO
+  parent: Business
+  children:
+  - Business.STARTUPINFO.cb
+  - Business.STARTUPINFO.cbReserved2
+  - Business.STARTUPINFO.dwFillAttribute
+  - Business.STARTUPINFO.dwFlags
+  - Business.STARTUPINFO.dwX
+  - Business.STARTUPINFO.dwXCountChars
+  - Business.STARTUPINFO.dwXSize
+  - Business.STARTUPINFO.dwY
+  - Business.STARTUPINFO.dwYCountChars
+  - Business.STARTUPINFO.dwYSize
+  - Business.STARTUPINFO.hStdError
+  - Business.STARTUPINFO.hStdInput
+  - Business.STARTUPINFO.hStdOutput
+  - Business.STARTUPINFO.lpDesktop
+  - Business.STARTUPINFO.lpReserved
+  - Business.STARTUPINFO.lpReserved2
+  - Business.STARTUPINFO.lpTitle
+  - Business.STARTUPINFO.wShowWindow
+  langs:
+  - csharp
+  - vb
+  name: STARTUPINFO
+  nameWithType: STARTUPINFO
+  fullName: Business.STARTUPINFO
+  type: Struct
+  source:
+    id: STARTUPINFO
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 32
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public struct STARTUPINFO
+    content.vb: Public Structure STARTUPINFO
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Business.STARTUPINFO.cb
+  commentId: F:Business.STARTUPINFO.cb
+  id: cb
+  parent: Business.STARTUPINFO
+  langs:
+  - csharp
+  - vb
+  name: cb
+  nameWithType: STARTUPINFO.cb
+  fullName: Business.STARTUPINFO.cb
+  type: Field
+  source:
+    id: cb
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 35
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public uint cb
+    return:
+      type: System.UInt32
+    content.vb: Public cb As UInteger
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.STARTUPINFO.lpReserved
+  commentId: F:Business.STARTUPINFO.lpReserved
+  id: lpReserved
+  parent: Business.STARTUPINFO
+  langs:
+  - csharp
+  - vb
+  name: lpReserved
+  nameWithType: STARTUPINFO.lpReserved
+  fullName: Business.STARTUPINFO.lpReserved
+  type: Field
+  source:
+    id: lpReserved
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 36
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public string lpReserved
+    return:
+      type: System.String
+    content.vb: Public lpReserved As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.STARTUPINFO.lpDesktop
+  commentId: F:Business.STARTUPINFO.lpDesktop
+  id: lpDesktop
+  parent: Business.STARTUPINFO
+  langs:
+  - csharp
+  - vb
+  name: lpDesktop
+  nameWithType: STARTUPINFO.lpDesktop
+  fullName: Business.STARTUPINFO.lpDesktop
+  type: Field
+  source:
+    id: lpDesktop
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 37
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public string lpDesktop
+    return:
+      type: System.String
+    content.vb: Public lpDesktop As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.STARTUPINFO.lpTitle
+  commentId: F:Business.STARTUPINFO.lpTitle
+  id: lpTitle
+  parent: Business.STARTUPINFO
+  langs:
+  - csharp
+  - vb
+  name: lpTitle
+  nameWithType: STARTUPINFO.lpTitle
+  fullName: Business.STARTUPINFO.lpTitle
+  type: Field
+  source:
+    id: lpTitle
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 38
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public string lpTitle
+    return:
+      type: System.String
+    content.vb: Public lpTitle As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.STARTUPINFO.dwX
+  commentId: F:Business.STARTUPINFO.dwX
+  id: dwX
+  parent: Business.STARTUPINFO
+  langs:
+  - csharp
+  - vb
+  name: dwX
+  nameWithType: STARTUPINFO.dwX
+  fullName: Business.STARTUPINFO.dwX
+  type: Field
+  source:
+    id: dwX
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 39
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public uint dwX
+    return:
+      type: System.UInt32
+    content.vb: Public dwX As UInteger
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.STARTUPINFO.dwY
+  commentId: F:Business.STARTUPINFO.dwY
+  id: dwY
+  parent: Business.STARTUPINFO
+  langs:
+  - csharp
+  - vb
+  name: dwY
+  nameWithType: STARTUPINFO.dwY
+  fullName: Business.STARTUPINFO.dwY
+  type: Field
+  source:
+    id: dwY
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 40
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public uint dwY
+    return:
+      type: System.UInt32
+    content.vb: Public dwY As UInteger
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.STARTUPINFO.dwXSize
+  commentId: F:Business.STARTUPINFO.dwXSize
+  id: dwXSize
+  parent: Business.STARTUPINFO
+  langs:
+  - csharp
+  - vb
+  name: dwXSize
+  nameWithType: STARTUPINFO.dwXSize
+  fullName: Business.STARTUPINFO.dwXSize
+  type: Field
+  source:
+    id: dwXSize
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 41
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public uint dwXSize
+    return:
+      type: System.UInt32
+    content.vb: Public dwXSize As UInteger
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.STARTUPINFO.dwYSize
+  commentId: F:Business.STARTUPINFO.dwYSize
+  id: dwYSize
+  parent: Business.STARTUPINFO
+  langs:
+  - csharp
+  - vb
+  name: dwYSize
+  nameWithType: STARTUPINFO.dwYSize
+  fullName: Business.STARTUPINFO.dwYSize
+  type: Field
+  source:
+    id: dwYSize
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 42
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public uint dwYSize
+    return:
+      type: System.UInt32
+    content.vb: Public dwYSize As UInteger
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.STARTUPINFO.dwXCountChars
+  commentId: F:Business.STARTUPINFO.dwXCountChars
+  id: dwXCountChars
+  parent: Business.STARTUPINFO
+  langs:
+  - csharp
+  - vb
+  name: dwXCountChars
+  nameWithType: STARTUPINFO.dwXCountChars
+  fullName: Business.STARTUPINFO.dwXCountChars
+  type: Field
+  source:
+    id: dwXCountChars
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 43
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public uint dwXCountChars
+    return:
+      type: System.UInt32
+    content.vb: Public dwXCountChars As UInteger
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.STARTUPINFO.dwYCountChars
+  commentId: F:Business.STARTUPINFO.dwYCountChars
+  id: dwYCountChars
+  parent: Business.STARTUPINFO
+  langs:
+  - csharp
+  - vb
+  name: dwYCountChars
+  nameWithType: STARTUPINFO.dwYCountChars
+  fullName: Business.STARTUPINFO.dwYCountChars
+  type: Field
+  source:
+    id: dwYCountChars
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 44
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public uint dwYCountChars
+    return:
+      type: System.UInt32
+    content.vb: Public dwYCountChars As UInteger
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.STARTUPINFO.dwFillAttribute
+  commentId: F:Business.STARTUPINFO.dwFillAttribute
+  id: dwFillAttribute
+  parent: Business.STARTUPINFO
+  langs:
+  - csharp
+  - vb
+  name: dwFillAttribute
+  nameWithType: STARTUPINFO.dwFillAttribute
+  fullName: Business.STARTUPINFO.dwFillAttribute
+  type: Field
+  source:
+    id: dwFillAttribute
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 45
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public uint dwFillAttribute
+    return:
+      type: System.UInt32
+    content.vb: Public dwFillAttribute As UInteger
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.STARTUPINFO.dwFlags
+  commentId: F:Business.STARTUPINFO.dwFlags
+  id: dwFlags
+  parent: Business.STARTUPINFO
+  langs:
+  - csharp
+  - vb
+  name: dwFlags
+  nameWithType: STARTUPINFO.dwFlags
+  fullName: Business.STARTUPINFO.dwFlags
+  type: Field
+  source:
+    id: dwFlags
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 46
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public uint dwFlags
+    return:
+      type: System.UInt32
+    content.vb: Public dwFlags As UInteger
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.STARTUPINFO.wShowWindow
+  commentId: F:Business.STARTUPINFO.wShowWindow
+  id: wShowWindow
+  parent: Business.STARTUPINFO
+  langs:
+  - csharp
+  - vb
+  name: wShowWindow
+  nameWithType: STARTUPINFO.wShowWindow
+  fullName: Business.STARTUPINFO.wShowWindow
+  type: Field
+  source:
+    id: wShowWindow
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 47
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public short wShowWindow
+    return:
+      type: System.Int16
+    content.vb: Public wShowWindow As Short
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.STARTUPINFO.cbReserved2
+  commentId: F:Business.STARTUPINFO.cbReserved2
+  id: cbReserved2
+  parent: Business.STARTUPINFO
+  langs:
+  - csharp
+  - vb
+  name: cbReserved2
+  nameWithType: STARTUPINFO.cbReserved2
+  fullName: Business.STARTUPINFO.cbReserved2
+  type: Field
+  source:
+    id: cbReserved2
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 48
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public short cbReserved2
+    return:
+      type: System.Int16
+    content.vb: Public cbReserved2 As Short
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.STARTUPINFO.lpReserved2
+  commentId: F:Business.STARTUPINFO.lpReserved2
+  id: lpReserved2
+  parent: Business.STARTUPINFO
+  langs:
+  - csharp
+  - vb
+  name: lpReserved2
+  nameWithType: STARTUPINFO.lpReserved2
+  fullName: Business.STARTUPINFO.lpReserved2
+  type: Field
+  source:
+    id: lpReserved2
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 49
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public IntPtr lpReserved2
+    return:
+      type: System.IntPtr
+    content.vb: Public lpReserved2 As IntPtr
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.STARTUPINFO.hStdInput
+  commentId: F:Business.STARTUPINFO.hStdInput
+  id: hStdInput
+  parent: Business.STARTUPINFO
+  langs:
+  - csharp
+  - vb
+  name: hStdInput
+  nameWithType: STARTUPINFO.hStdInput
+  fullName: Business.STARTUPINFO.hStdInput
+  type: Field
+  source:
+    id: hStdInput
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 50
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public IntPtr hStdInput
+    return:
+      type: System.IntPtr
+    content.vb: Public hStdInput As IntPtr
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.STARTUPINFO.hStdOutput
+  commentId: F:Business.STARTUPINFO.hStdOutput
+  id: hStdOutput
+  parent: Business.STARTUPINFO
+  langs:
+  - csharp
+  - vb
+  name: hStdOutput
+  nameWithType: STARTUPINFO.hStdOutput
+  fullName: Business.STARTUPINFO.hStdOutput
+  type: Field
+  source:
+    id: hStdOutput
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 51
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public IntPtr hStdOutput
+    return:
+      type: System.IntPtr
+    content.vb: Public hStdOutput As IntPtr
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.STARTUPINFO.hStdError
+  commentId: F:Business.STARTUPINFO.hStdError
+  id: hStdError
+  parent: Business.STARTUPINFO
+  langs:
+  - csharp
+  - vb
+  name: hStdError
+  nameWithType: STARTUPINFO.hStdError
+  fullName: Business.STARTUPINFO.hStdError
+  type: Field
+  source:
+    id: hStdError
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 52
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public IntPtr hStdError
+    return:
+      type: System.IntPtr
+    content.vb: Public hStdError As IntPtr
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Business
+  commentId: N:Business
+  name: Business
+  nameWithType: Business
+  fullName: Business
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  nameWithType: Int16
+  fullName: System.Int16
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  name: IntPtr
+  nameWithType: IntPtr
+  fullName: System.IntPtr

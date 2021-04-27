@@ -1,0 +1,519 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENGovTOCO.MotoreTOCO.CalcoloResult
+  commentId: T:OPENGovTOCO.MotoreTOCO.CalcoloResult
+  id: CalcoloResult
+  parent: OPENGovTOCO.MotoreTOCO
+  children:
+  - OPENGovTOCO.MotoreTOCO.CalcoloResult.ImportoCalcolato
+  - OPENGovTOCO.MotoreTOCO.CalcoloResult.ImportoLordo
+  - OPENGovTOCO.MotoreTOCO.CalcoloResult.Result
+  - OPENGovTOCO.MotoreTOCO.CalcoloResult.TariffaApplicata
+  langs:
+  - csharp
+  - vb
+  name: CalcoloResult
+  nameWithType: CalcoloResult
+  fullName: OPENGovTOCO.MotoreTOCO.CalcoloResult
+  type: Class
+  source:
+    id: CalcoloResult
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 617
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class CalcoloResult
+    content.vb: >-
+      <Serializable>
+
+      Public Class CalcoloResult
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: OPENGovTOCO.MotoreTOCO.CalcoloResult.TariffaApplicata
+  commentId: P:OPENGovTOCO.MotoreTOCO.CalcoloResult.TariffaApplicata
+  id: TariffaApplicata
+  parent: OPENGovTOCO.MotoreTOCO.CalcoloResult
+  langs:
+  - csharp
+  - vb
+  name: TariffaApplicata
+  nameWithType: CalcoloResult.TariffaApplicata
+  fullName: OPENGovTOCO.MotoreTOCO.CalcoloResult.TariffaApplicata
+  type: Property
+  source:
+    id: TariffaApplicata
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 633
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public double TariffaApplicata { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property TariffaApplicata As Double
+  overload: OPENGovTOCO.MotoreTOCO.CalcoloResult.TariffaApplicata*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.CalcoloResult.ImportoLordo
+  commentId: P:OPENGovTOCO.MotoreTOCO.CalcoloResult.ImportoLordo
+  id: ImportoLordo
+  parent: OPENGovTOCO.MotoreTOCO.CalcoloResult
+  langs:
+  - csharp
+  - vb
+  name: ImportoLordo
+  nameWithType: CalcoloResult.ImportoLordo
+  fullName: OPENGovTOCO.MotoreTOCO.CalcoloResult.ImportoLordo
+  type: Property
+  source:
+    id: ImportoLordo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 643
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public double ImportoLordo { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ImportoLordo As Double
+  overload: OPENGovTOCO.MotoreTOCO.CalcoloResult.ImportoLordo*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.CalcoloResult.ImportoCalcolato
+  commentId: P:OPENGovTOCO.MotoreTOCO.CalcoloResult.ImportoCalcolato
+  id: ImportoCalcolato
+  parent: OPENGovTOCO.MotoreTOCO.CalcoloResult
+  langs:
+  - csharp
+  - vb
+  name: ImportoCalcolato
+  nameWithType: CalcoloResult.ImportoCalcolato
+  fullName: OPENGovTOCO.MotoreTOCO.CalcoloResult.ImportoCalcolato
+  type: Property
+  source:
+    id: ImportoCalcolato
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 653
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public double ImportoCalcolato { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ImportoCalcolato As Double
+  overload: OPENGovTOCO.MotoreTOCO.CalcoloResult.ImportoCalcolato*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.CalcoloResult.Result
+  commentId: P:OPENGovTOCO.MotoreTOCO.CalcoloResult.Result
+  id: Result
+  parent: OPENGovTOCO.MotoreTOCO.CalcoloResult
+  langs:
+  - csharp
+  - vb
+  name: Result
+  nameWithType: CalcoloResult.Result
+  fullName: OPENGovTOCO.MotoreTOCO.CalcoloResult.Result
+  type: Property
+  source:
+    id: Result
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 663
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public E_CALCOLORESULT Result { get; set; }
+    parameters: []
+    return:
+      type: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT
+    content.vb: Public Property Result As E_CALCOLORESULT
+  overload: OPENGovTOCO.MotoreTOCO.CalcoloResult.Result*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: OPENGovTOCO.MotoreTOCO
+  commentId: N:OPENGovTOCO.MotoreTOCO
+  name: OPENGovTOCO.MotoreTOCO
+  nameWithType: OPENGovTOCO.MotoreTOCO
+  fullName: OPENGovTOCO.MotoreTOCO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OPENGovTOCO.MotoreTOCO.CalcoloResult.TariffaApplicata*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.CalcoloResult.TariffaApplicata
+  name: TariffaApplicata
+  nameWithType: CalcoloResult.TariffaApplicata
+  fullName: OPENGovTOCO.MotoreTOCO.CalcoloResult.TariffaApplicata
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: OPENGovTOCO.MotoreTOCO.CalcoloResult.ImportoLordo*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.CalcoloResult.ImportoLordo
+  name: ImportoLordo
+  nameWithType: CalcoloResult.ImportoLordo
+  fullName: OPENGovTOCO.MotoreTOCO.CalcoloResult.ImportoLordo
+- uid: OPENGovTOCO.MotoreTOCO.CalcoloResult.ImportoCalcolato*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.CalcoloResult.ImportoCalcolato
+  name: ImportoCalcolato
+  nameWithType: CalcoloResult.ImportoCalcolato
+  fullName: OPENGovTOCO.MotoreTOCO.CalcoloResult.ImportoCalcolato
+- uid: OPENGovTOCO.MotoreTOCO.CalcoloResult.Result*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.CalcoloResult.Result
+  name: Result
+  nameWithType: CalcoloResult.Result
+  fullName: OPENGovTOCO.MotoreTOCO.CalcoloResult.Result
+- uid: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT
+  commentId: T:OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT
+  parent: OPENGovTOCO.MotoreTOCO
+  name: E_CALCOLORESULT
+  nameWithType: E_CALCOLORESULT
+  fullName: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT

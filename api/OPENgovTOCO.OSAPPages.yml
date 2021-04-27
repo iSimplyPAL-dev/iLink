@@ -1,0 +1,769 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENgovTOCO.OSAPPages
+  commentId: T:OPENgovTOCO.OSAPPages
+  id: OSAPPages
+  parent: OPENgovTOCO
+  children:
+  - OPENgovTOCO.OSAPPages.#ctor
+  - OPENgovTOCO.OSAPPages.ArticoliAdd
+  - OPENgovTOCO.OSAPPages.ArticoliEdit
+  - OPENgovTOCO.OSAPPages.ArticoliView
+  - OPENgovTOCO.OSAPPages.DichiarazioniAdd
+  - OPENgovTOCO.OSAPPages.DichiarazioniEdit
+  - OPENgovTOCO.OSAPPages.DichiarazioniSearch
+  - OPENgovTOCO.OSAPPages.DichiarazioniView
+  - OPENgovTOCO.OSAPPages.ElaborazioneAvvisi
+  - OPENgovTOCO.OSAPPages.GestionePagamentiAdd
+  - OPENgovTOCO.OSAPPages.GestionePagamentiEdit
+  - OPENgovTOCO.OSAPPages.GestionePagamentiSearch
+  - OPENgovTOCO.OSAPPages.SituazioneAvvisi
+  - OPENgovTOCO.OSAPPages.SituazioneAvvisiSearch
+  langs:
+  - csharp
+  - vb
+  name: OSAPPages
+  nameWithType: OSAPPages
+  fullName: OPENgovTOCO.OSAPPages
+  type: Class
+  source:
+    id: OSAPPages
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\TocoPages.cs
+    startLine: 126
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  summary: "\nClasse per il reindirizzamento delle pagine.\n"
+  example: []
+  syntax:
+    content: public class OSAPPages
+    content.vb: Public Class OSAPPages
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: OPENgovTOCO.OSAPPages.DichiarazioniAdd
+  commentId: F:OPENgovTOCO.OSAPPages.DichiarazioniAdd
+  id: DichiarazioniAdd
+  parent: OPENgovTOCO.OSAPPages
+  langs:
+  - csharp
+  - vb
+  name: DichiarazioniAdd
+  nameWithType: OSAPPages.DichiarazioniAdd
+  fullName: OPENgovTOCO.OSAPPages.DichiarazioniAdd
+  type: Field
+  source:
+    id: DichiarazioniAdd
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\TocoPages.cs
+    startLine: 129
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string DichiarazioniAdd
+    return:
+      type: System.String
+    content.vb: Public Shared DichiarazioniAdd As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.OSAPPages.DichiarazioniEdit
+  commentId: F:OPENgovTOCO.OSAPPages.DichiarazioniEdit
+  id: DichiarazioniEdit
+  parent: OPENgovTOCO.OSAPPages
+  langs:
+  - csharp
+  - vb
+  name: DichiarazioniEdit
+  nameWithType: OSAPPages.DichiarazioniEdit
+  fullName: OPENgovTOCO.OSAPPages.DichiarazioniEdit
+  type: Field
+  source:
+    id: DichiarazioniEdit
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\TocoPages.cs
+    startLine: 130
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string DichiarazioniEdit
+    return:
+      type: System.String
+    content.vb: Public Shared DichiarazioniEdit As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.OSAPPages.DichiarazioniView
+  commentId: F:OPENgovTOCO.OSAPPages.DichiarazioniView
+  id: DichiarazioniView
+  parent: OPENgovTOCO.OSAPPages
+  langs:
+  - csharp
+  - vb
+  name: DichiarazioniView
+  nameWithType: OSAPPages.DichiarazioniView
+  fullName: OPENgovTOCO.OSAPPages.DichiarazioniView
+  type: Field
+  source:
+    id: DichiarazioniView
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\TocoPages.cs
+    startLine: 131
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string DichiarazioniView
+    return:
+      type: System.String
+    content.vb: Public Shared DichiarazioniView As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.OSAPPages.ArticoliView
+  commentId: F:OPENgovTOCO.OSAPPages.ArticoliView
+  id: ArticoliView
+  parent: OPENgovTOCO.OSAPPages
+  langs:
+  - csharp
+  - vb
+  name: ArticoliView
+  nameWithType: OSAPPages.ArticoliView
+  fullName: OPENgovTOCO.OSAPPages.ArticoliView
+  type: Field
+  source:
+    id: ArticoliView
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\TocoPages.cs
+    startLine: 132
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string ArticoliView
+    return:
+      type: System.String
+    content.vb: Public Shared ArticoliView As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.OSAPPages.ArticoliAdd
+  commentId: F:OPENgovTOCO.OSAPPages.ArticoliAdd
+  id: ArticoliAdd
+  parent: OPENgovTOCO.OSAPPages
+  langs:
+  - csharp
+  - vb
+  name: ArticoliAdd
+  nameWithType: OSAPPages.ArticoliAdd
+  fullName: OPENgovTOCO.OSAPPages.ArticoliAdd
+  type: Field
+  source:
+    id: ArticoliAdd
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\TocoPages.cs
+    startLine: 133
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string ArticoliAdd
+    return:
+      type: System.String
+    content.vb: Public Shared ArticoliAdd As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.OSAPPages.ArticoliEdit
+  commentId: F:OPENgovTOCO.OSAPPages.ArticoliEdit
+  id: ArticoliEdit
+  parent: OPENgovTOCO.OSAPPages
+  langs:
+  - csharp
+  - vb
+  name: ArticoliEdit
+  nameWithType: OSAPPages.ArticoliEdit
+  fullName: OPENgovTOCO.OSAPPages.ArticoliEdit
+  type: Field
+  source:
+    id: ArticoliEdit
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\TocoPages.cs
+    startLine: 134
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string ArticoliEdit
+    return:
+      type: System.String
+    content.vb: Public Shared ArticoliEdit As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.OSAPPages.DichiarazioniSearch
+  commentId: F:OPENgovTOCO.OSAPPages.DichiarazioniSearch
+  id: DichiarazioniSearch
+  parent: OPENgovTOCO.OSAPPages
+  langs:
+  - csharp
+  - vb
+  name: DichiarazioniSearch
+  nameWithType: OSAPPages.DichiarazioniSearch
+  fullName: OPENgovTOCO.OSAPPages.DichiarazioniSearch
+  type: Field
+  source:
+    id: DichiarazioniSearch
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\TocoPages.cs
+    startLine: 135
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string DichiarazioniSearch
+    return:
+      type: System.String
+    content.vb: Public Shared DichiarazioniSearch As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.OSAPPages.SituazioneAvvisiSearch
+  commentId: F:OPENgovTOCO.OSAPPages.SituazioneAvvisiSearch
+  id: SituazioneAvvisiSearch
+  parent: OPENgovTOCO.OSAPPages
+  langs:
+  - csharp
+  - vb
+  name: SituazioneAvvisiSearch
+  nameWithType: OSAPPages.SituazioneAvvisiSearch
+  fullName: OPENgovTOCO.OSAPPages.SituazioneAvvisiSearch
+  type: Field
+  source:
+    id: SituazioneAvvisiSearch
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\TocoPages.cs
+    startLine: 137
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string SituazioneAvvisiSearch
+    return:
+      type: System.String
+    content.vb: Public Shared SituazioneAvvisiSearch As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.OSAPPages.SituazioneAvvisi
+  commentId: F:OPENgovTOCO.OSAPPages.SituazioneAvvisi
+  id: SituazioneAvvisi
+  parent: OPENgovTOCO.OSAPPages
+  langs:
+  - csharp
+  - vb
+  name: SituazioneAvvisi
+  nameWithType: OSAPPages.SituazioneAvvisi
+  fullName: OPENgovTOCO.OSAPPages.SituazioneAvvisi
+  type: Field
+  source:
+    id: SituazioneAvvisi
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\TocoPages.cs
+    startLine: 138
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string SituazioneAvvisi
+    return:
+      type: System.String
+    content.vb: Public Shared SituazioneAvvisi As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.OSAPPages.ElaborazioneAvvisi
+  commentId: F:OPENgovTOCO.OSAPPages.ElaborazioneAvvisi
+  id: ElaborazioneAvvisi
+  parent: OPENgovTOCO.OSAPPages
+  langs:
+  - csharp
+  - vb
+  name: ElaborazioneAvvisi
+  nameWithType: OSAPPages.ElaborazioneAvvisi
+  fullName: OPENgovTOCO.OSAPPages.ElaborazioneAvvisi
+  type: Field
+  source:
+    id: ElaborazioneAvvisi
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\TocoPages.cs
+    startLine: 139
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string ElaborazioneAvvisi
+    return:
+      type: System.String
+    content.vb: Public Shared ElaborazioneAvvisi As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.OSAPPages.GestionePagamentiSearch
+  commentId: F:OPENgovTOCO.OSAPPages.GestionePagamentiSearch
+  id: GestionePagamentiSearch
+  parent: OPENgovTOCO.OSAPPages
+  langs:
+  - csharp
+  - vb
+  name: GestionePagamentiSearch
+  nameWithType: OSAPPages.GestionePagamentiSearch
+  fullName: OPENgovTOCO.OSAPPages.GestionePagamentiSearch
+  type: Field
+  source:
+    id: GestionePagamentiSearch
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\TocoPages.cs
+    startLine: 141
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string GestionePagamentiSearch
+    return:
+      type: System.String
+    content.vb: Public Shared GestionePagamentiSearch As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.OSAPPages.GestionePagamentiAdd
+  commentId: F:OPENgovTOCO.OSAPPages.GestionePagamentiAdd
+  id: GestionePagamentiAdd
+  parent: OPENgovTOCO.OSAPPages
+  langs:
+  - csharp
+  - vb
+  name: GestionePagamentiAdd
+  nameWithType: OSAPPages.GestionePagamentiAdd
+  fullName: OPENgovTOCO.OSAPPages.GestionePagamentiAdd
+  type: Field
+  source:
+    id: GestionePagamentiAdd
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\TocoPages.cs
+    startLine: 142
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string GestionePagamentiAdd
+    return:
+      type: System.String
+    content.vb: Public Shared GestionePagamentiAdd As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.OSAPPages.GestionePagamentiEdit
+  commentId: F:OPENgovTOCO.OSAPPages.GestionePagamentiEdit
+  id: GestionePagamentiEdit
+  parent: OPENgovTOCO.OSAPPages
+  langs:
+  - csharp
+  - vb
+  name: GestionePagamentiEdit
+  nameWithType: OSAPPages.GestionePagamentiEdit
+  fullName: OPENgovTOCO.OSAPPages.GestionePagamentiEdit
+  type: Field
+  source:
+    id: GestionePagamentiEdit
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\TocoPages.cs
+    startLine: 143
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string GestionePagamentiEdit
+    return:
+      type: System.String
+    content.vb: Public Shared GestionePagamentiEdit As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.OSAPPages.#ctor
+  commentId: M:OPENgovTOCO.OSAPPages.#ctor
+  id: '#ctor'
+  parent: OPENgovTOCO.OSAPPages
+  langs:
+  - csharp
+  - vb
+  name: OSAPPages()
+  nameWithType: OSAPPages.OSAPPages()
+  fullName: OPENgovTOCO.OSAPPages.OSAPPages()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\TocoPages.cs
+    startLine: 145
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public OSAPPages()
+    content.vb: Public Sub New
+  overload: OPENgovTOCO.OSAPPages.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: OPENgovTOCO
+  commentId: N:OPENgovTOCO
+  name: OPENgovTOCO
+  nameWithType: OPENgovTOCO
+  fullName: OPENgovTOCO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: OPENgovTOCO.OSAPPages.#ctor*
+  commentId: Overload:OPENgovTOCO.OSAPPages.#ctor
+  name: OSAPPages
+  nameWithType: OSAPPages.OSAPPages
+  fullName: OPENgovTOCO.OSAPPages.OSAPPages

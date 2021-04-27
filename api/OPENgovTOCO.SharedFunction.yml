@@ -1,0 +1,1408 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENgovTOCO.SharedFunction
+  commentId: T:OPENgovTOCO.SharedFunction
+  id: SharedFunction
+  parent: OPENgovTOCO
+  children:
+  - OPENgovTOCO.SharedFunction.CellByName(System.Web.UI.WebControls.TableRow,System.String)
+  - OPENgovTOCO.SharedFunction.ChangeControlStatus(System.Boolean,System.Web.UI.Control)
+  - OPENgovTOCO.SharedFunction.ClearControls(System.Web.UI.Control)
+  - OPENgovTOCO.SharedFunction.DateFormatToDbNull(System.Object)
+  - OPENgovTOCO.SharedFunction.DateToDbNull(System.DateTime)
+  - OPENgovTOCO.SharedFunction.DbNullToInteger(System.Object)
+  - OPENgovTOCO.SharedFunction.DbNullToString(System.Object)
+  - OPENgovTOCO.SharedFunction.DecimaltryParse(System.String,System.Decimal)
+  - OPENgovTOCO.SharedFunction.EnableDisableButton(System.Web.UI.WebControls.ImageButton@,System.Boolean)
+  - OPENgovTOCO.SharedFunction.EnumStringValueOf(System.Enum)
+  - OPENgovTOCO.SharedFunction.EnumValueOf(System.String,System.Type)
+  - OPENgovTOCO.SharedFunction.FormatDoubleToDb(System.String)
+  - OPENgovTOCO.SharedFunction.FormattaCFPIVA(System.Object,System.Object)
+  - OPENgovTOCO.SharedFunction.FormattaData(System.Object)
+  - OPENgovTOCO.SharedFunction.FormattaIsSgravato(System.Object)
+  - OPENgovTOCO.SharedFunction.FormattaToolTipIsSgravato(System.Object,System.Object)
+  - OPENgovTOCO.SharedFunction.FormattaVia(System.Object,System.Object,System.Object,System.Object,System.Object)
+  - OPENgovTOCO.SharedFunction.IntegerFormatToDbNull(System.Object)
+  - OPENgovTOCO.SharedFunction.IntegerToDbNull(System.Int32)
+  - OPENgovTOCO.SharedFunction.IntTryParse(System.String,System.Int32)
+  - OPENgovTOCO.SharedFunction.IsNullOrEmpty(System.Object)
+  - OPENgovTOCO.SharedFunction.ReplaceDataForDB(System.String)
+  - OPENgovTOCO.SharedFunction.SplitStringAt(System.Int32,System.String)
+  - OPENgovTOCO.SharedFunction.StringToDbNull(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: SharedFunction
+  nameWithType: SharedFunction
+  fullName: OPENgovTOCO.SharedFunction
+  type: Class
+  source:
+    id: SharedFunction
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 20
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  summary: "\nClasse per le funzioni generali di utilità\n"
+  example: []
+  syntax:
+    content: public class SharedFunction
+    content.vb: Public Class SharedFunction
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: OPENgovTOCO.SharedFunction.CellByName(System.Web.UI.WebControls.TableRow,System.String)
+  commentId: M:OPENgovTOCO.SharedFunction.CellByName(System.Web.UI.WebControls.TableRow,System.String)
+  id: CellByName(System.Web.UI.WebControls.TableRow,System.String)
+  parent: OPENgovTOCO.SharedFunction
+  langs:
+  - csharp
+  - vb
+  name: CellByName(TableRow, String)
+  nameWithType: SharedFunction.CellByName(TableRow, String)
+  fullName: OPENgovTOCO.SharedFunction.CellByName(System.Web.UI.WebControls.TableRow, System.String)
+  type: Method
+  source:
+    id: CellByName
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 24
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static TableCell CellByName(TableRow item, string name)
+    parameters:
+    - id: item
+      type: System.Web.UI.WebControls.TableRow
+    - id: name
+      type: System.String
+    return:
+      type: System.Web.UI.WebControls.TableCell
+    content.vb: Public Shared Function CellByName(item As TableRow, name As String) As TableCell
+  overload: OPENgovTOCO.SharedFunction.CellByName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.SharedFunction.DbNullToString(System.Object)
+  commentId: M:OPENgovTOCO.SharedFunction.DbNullToString(System.Object)
+  id: DbNullToString(System.Object)
+  parent: OPENgovTOCO.SharedFunction
+  langs:
+  - csharp
+  - vb
+  name: DbNullToString(Object)
+  nameWithType: SharedFunction.DbNullToString(Object)
+  fullName: OPENgovTOCO.SharedFunction.DbNullToString(System.Object)
+  type: Method
+  source:
+    id: DbNullToString
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 57
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string DbNullToString(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.String
+    content.vb: Public Shared Function DbNullToString(obj As Object) As String
+  overload: OPENgovTOCO.SharedFunction.DbNullToString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.SharedFunction.StringToDbNull(System.Object)
+  commentId: M:OPENgovTOCO.SharedFunction.StringToDbNull(System.Object)
+  id: StringToDbNull(System.Object)
+  parent: OPENgovTOCO.SharedFunction
+  langs:
+  - csharp
+  - vb
+  name: StringToDbNull(Object)
+  nameWithType: SharedFunction.StringToDbNull(Object)
+  fullName: OPENgovTOCO.SharedFunction.StringToDbNull(System.Object)
+  type: Method
+  source:
+    id: StringToDbNull
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 75
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static object StringToDbNull(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: Public Shared Function StringToDbNull(obj As Object) As Object
+  overload: OPENgovTOCO.SharedFunction.StringToDbNull*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.SharedFunction.IntegerToDbNull(System.Int32)
+  commentId: M:OPENgovTOCO.SharedFunction.IntegerToDbNull(System.Int32)
+  id: IntegerToDbNull(System.Int32)
+  parent: OPENgovTOCO.SharedFunction
+  langs:
+  - csharp
+  - vb
+  name: IntegerToDbNull(Int32)
+  nameWithType: SharedFunction.IntegerToDbNull(Int32)
+  fullName: OPENgovTOCO.SharedFunction.IntegerToDbNull(System.Int32)
+  type: Method
+  source:
+    id: IntegerToDbNull
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 93
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static object IntegerToDbNull(int intValue)
+    parameters:
+    - id: intValue
+      type: System.Int32
+    return:
+      type: System.Object
+    content.vb: Public Shared Function IntegerToDbNull(intValue As Integer) As Object
+  overload: OPENgovTOCO.SharedFunction.IntegerToDbNull*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.SharedFunction.IntegerFormatToDbNull(System.Object)
+  commentId: M:OPENgovTOCO.SharedFunction.IntegerFormatToDbNull(System.Object)
+  id: IntegerFormatToDbNull(System.Object)
+  parent: OPENgovTOCO.SharedFunction
+  langs:
+  - csharp
+  - vb
+  name: IntegerFormatToDbNull(Object)
+  nameWithType: SharedFunction.IntegerFormatToDbNull(Object)
+  fullName: OPENgovTOCO.SharedFunction.IntegerFormatToDbNull(System.Object)
+  type: Method
+  source:
+    id: IntegerFormatToDbNull
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 112
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static object IntegerFormatToDbNull(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: Public Shared Function IntegerFormatToDbNull(obj As Object) As Object
+  overload: OPENgovTOCO.SharedFunction.IntegerFormatToDbNull*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.SharedFunction.DbNullToInteger(System.Object)
+  commentId: M:OPENgovTOCO.SharedFunction.DbNullToInteger(System.Object)
+  id: DbNullToInteger(System.Object)
+  parent: OPENgovTOCO.SharedFunction
+  langs:
+  - csharp
+  - vb
+  name: DbNullToInteger(Object)
+  nameWithType: SharedFunction.DbNullToInteger(Object)
+  fullName: OPENgovTOCO.SharedFunction.DbNullToInteger(System.Object)
+  type: Method
+  source:
+    id: DbNullToInteger
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 138
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static object DbNullToInteger(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: Public Shared Function DbNullToInteger(obj As Object) As Object
+  overload: OPENgovTOCO.SharedFunction.DbNullToInteger*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.SharedFunction.DateToDbNull(System.DateTime)
+  commentId: M:OPENgovTOCO.SharedFunction.DateToDbNull(System.DateTime)
+  id: DateToDbNull(System.DateTime)
+  parent: OPENgovTOCO.SharedFunction
+  langs:
+  - csharp
+  - vb
+  name: DateToDbNull(DateTime)
+  nameWithType: SharedFunction.DateToDbNull(DateTime)
+  fullName: OPENgovTOCO.SharedFunction.DateToDbNull(System.DateTime)
+  type: Method
+  source:
+    id: DateToDbNull
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 165
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static object DateToDbNull(DateTime dateValue)
+    parameters:
+    - id: dateValue
+      type: System.DateTime
+    return:
+      type: System.Object
+    content.vb: Public Shared Function DateToDbNull(dateValue As Date) As Object
+  overload: OPENgovTOCO.SharedFunction.DateToDbNull*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.SharedFunction.DateFormatToDbNull(System.Object)
+  commentId: M:OPENgovTOCO.SharedFunction.DateFormatToDbNull(System.Object)
+  id: DateFormatToDbNull(System.Object)
+  parent: OPENgovTOCO.SharedFunction
+  langs:
+  - csharp
+  - vb
+  name: DateFormatToDbNull(Object)
+  nameWithType: SharedFunction.DateFormatToDbNull(Object)
+  fullName: OPENgovTOCO.SharedFunction.DateFormatToDbNull(System.Object)
+  type: Method
+  source:
+    id: DateFormatToDbNull
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 183
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static object DateFormatToDbNull(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: Public Shared Function DateFormatToDbNull(obj As Object) As Object
+  overload: OPENgovTOCO.SharedFunction.DateFormatToDbNull*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.SharedFunction.FormatDoubleToDb(System.String)
+  commentId: M:OPENgovTOCO.SharedFunction.FormatDoubleToDb(System.String)
+  id: FormatDoubleToDb(System.String)
+  parent: OPENgovTOCO.SharedFunction
+  langs:
+  - csharp
+  - vb
+  name: FormatDoubleToDb(String)
+  nameWithType: SharedFunction.FormatDoubleToDb(String)
+  fullName: OPENgovTOCO.SharedFunction.FormatDoubleToDb(System.String)
+  type: Method
+  source:
+    id: FormatDoubleToDb
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 209
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static double FormatDoubleToDb(string obj)
+    parameters:
+    - id: obj
+      type: System.String
+    return:
+      type: System.Double
+    content.vb: Public Shared Function FormatDoubleToDb(obj As String) As Double
+  overload: OPENgovTOCO.SharedFunction.FormatDoubleToDb*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.SharedFunction.FormattaCFPIVA(System.Object,System.Object)
+  commentId: M:OPENgovTOCO.SharedFunction.FormattaCFPIVA(System.Object,System.Object)
+  id: FormattaCFPIVA(System.Object,System.Object)
+  parent: OPENgovTOCO.SharedFunction
+  langs:
+  - csharp
+  - vb
+  name: FormattaCFPIVA(Object, Object)
+  nameWithType: SharedFunction.FormattaCFPIVA(Object, Object)
+  fullName: OPENgovTOCO.SharedFunction.FormattaCFPIVA(System.Object, System.Object)
+  type: Method
+  source:
+    id: FormattaCFPIVA
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 224
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static object FormattaCFPIVA(object CodFiscale, object PartitaIva)
+    parameters:
+    - id: CodFiscale
+      type: System.Object
+    - id: PartitaIva
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: Public Shared Function FormattaCFPIVA(CodFiscale As Object, PartitaIva As Object) As Object
+  overload: OPENgovTOCO.SharedFunction.FormattaCFPIVA*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.SharedFunction.FormattaVia(System.Object,System.Object,System.Object,System.Object,System.Object)
+  commentId: M:OPENgovTOCO.SharedFunction.FormattaVia(System.Object,System.Object,System.Object,System.Object,System.Object)
+  id: FormattaVia(System.Object,System.Object,System.Object,System.Object,System.Object)
+  parent: OPENgovTOCO.SharedFunction
+  langs:
+  - csharp
+  - vb
+  name: FormattaVia(Object, Object, Object, Object, Object)
+  nameWithType: SharedFunction.FormattaVia(Object, Object, Object, Object, Object)
+  fullName: OPENgovTOCO.SharedFunction.FormattaVia(System.Object, System.Object, System.Object, System.Object, System.Object)
+  type: Method
+  source:
+    id: FormattaVia
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 243
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static object FormattaVia(object Via, object Civico, object Interno, object Esponente, object Scala)
+    parameters:
+    - id: Via
+      type: System.Object
+    - id: Civico
+      type: System.Object
+    - id: Interno
+      type: System.Object
+    - id: Esponente
+      type: System.Object
+    - id: Scala
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: Public Shared Function FormattaVia(Via As Object, Civico As Object, Interno As Object, Esponente As Object, Scala As Object) As Object
+  overload: OPENgovTOCO.SharedFunction.FormattaVia*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.SharedFunction.FormattaData(System.Object)
+  commentId: M:OPENgovTOCO.SharedFunction.FormattaData(System.Object)
+  id: FormattaData(System.Object)
+  parent: OPENgovTOCO.SharedFunction
+  langs:
+  - csharp
+  - vb
+  name: FormattaData(Object)
+  nameWithType: SharedFunction.FormattaData(Object)
+  fullName: OPENgovTOCO.SharedFunction.FormattaData(System.Object)
+  type: Method
+  source:
+    id: FormattaData
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 322
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string FormattaData(object objData)
+    parameters:
+    - id: objData
+      type: System.Object
+    return:
+      type: System.String
+    content.vb: Public Shared Function FormattaData(objData As Object) As String
+  overload: OPENgovTOCO.SharedFunction.FormattaData*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.SharedFunction.FormattaIsSgravato(System.Object)
+  commentId: M:OPENgovTOCO.SharedFunction.FormattaIsSgravato(System.Object)
+  id: FormattaIsSgravato(System.Object)
+  parent: OPENgovTOCO.SharedFunction
+  langs:
+  - csharp
+  - vb
+  name: FormattaIsSgravato(Object)
+  nameWithType: SharedFunction.FormattaIsSgravato(Object)
+  fullName: OPENgovTOCO.SharedFunction.FormattaIsSgravato(System.Object)
+  type: Method
+  source:
+    id: FormattaIsSgravato
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 340
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string FormattaIsSgravato(object nSgravio)
+    parameters:
+    - id: nSgravio
+      type: System.Object
+    return:
+      type: System.String
+    content.vb: Public Shared Function FormattaIsSgravato(nSgravio As Object) As String
+  overload: OPENgovTOCO.SharedFunction.FormattaIsSgravato*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.SharedFunction.FormattaToolTipIsSgravato(System.Object,System.Object)
+  commentId: M:OPENgovTOCO.SharedFunction.FormattaToolTipIsSgravato(System.Object,System.Object)
+  id: FormattaToolTipIsSgravato(System.Object,System.Object)
+  parent: OPENgovTOCO.SharedFunction
+  langs:
+  - csharp
+  - vb
+  name: FormattaToolTipIsSgravato(Object, Object)
+  nameWithType: SharedFunction.FormattaToolTipIsSgravato(Object, Object)
+  fullName: OPENgovTOCO.SharedFunction.FormattaToolTipIsSgravato(System.Object, System.Object)
+  type: Method
+  source:
+    id: FormattaToolTipIsSgravato
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 356
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string FormattaToolTipIsSgravato(object nSgravio, object impOrg)
+    parameters:
+    - id: nSgravio
+      type: System.Object
+    - id: impOrg
+      type: System.Object
+    return:
+      type: System.String
+    content.vb: Public Shared Function FormattaToolTipIsSgravato(nSgravio As Object, impOrg As Object) As String
+  overload: OPENgovTOCO.SharedFunction.FormattaToolTipIsSgravato*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.SharedFunction.SplitStringAt(System.Int32,System.String)
+  commentId: M:OPENgovTOCO.SharedFunction.SplitStringAt(System.Int32,System.String)
+  id: SplitStringAt(System.Int32,System.String)
+  parent: OPENgovTOCO.SharedFunction
+  langs:
+  - csharp
+  - vb
+  name: SplitStringAt(Int32, String)
+  nameWithType: SharedFunction.SplitStringAt(Int32, String)
+  fullName: OPENgovTOCO.SharedFunction.SplitStringAt(System.Int32, System.String)
+  type: Method
+  source:
+    id: SplitStringAt
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 384
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  summary: "\nA function that splits a string with a fixed interval\nof characters.\n"
+  example: []
+  syntax:
+    content: public static string SplitStringAt(int number, string contents)
+    parameters:
+    - id: number
+      type: System.Int32
+      description: The number of characters to be separated.
+    - id: contents
+      type: System.String
+      description: String contents to be formatted.
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function SplitStringAt(number As Integer, contents As String) As String
+  overload: OPENgovTOCO.SharedFunction.SplitStringAt*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.SharedFunction.ChangeControlStatus(System.Boolean,System.Web.UI.Control)
+  commentId: M:OPENgovTOCO.SharedFunction.ChangeControlStatus(System.Boolean,System.Web.UI.Control)
+  id: ChangeControlStatus(System.Boolean,System.Web.UI.Control)
+  parent: OPENgovTOCO.SharedFunction
+  langs:
+  - csharp
+  - vb
+  name: ChangeControlStatus(Boolean, Control)
+  nameWithType: SharedFunction.ChangeControlStatus(Boolean, Control)
+  fullName: OPENgovTOCO.SharedFunction.ChangeControlStatus(System.Boolean, System.Web.UI.Control)
+  type: Method
+  source:
+    id: ChangeControlStatus
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 422
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static void ChangeControlStatus(bool status, Control ctrlRef)
+    parameters:
+    - id: status
+      type: System.Boolean
+    - id: ctrlRef
+      type: System.Web.UI.Control
+    content.vb: Public Shared Sub ChangeControlStatus(status As Boolean, ctrlRef As Control)
+  overload: OPENgovTOCO.SharedFunction.ChangeControlStatus*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.SharedFunction.ClearControls(System.Web.UI.Control)
+  commentId: M:OPENgovTOCO.SharedFunction.ClearControls(System.Web.UI.Control)
+  id: ClearControls(System.Web.UI.Control)
+  parent: OPENgovTOCO.SharedFunction
+  langs:
+  - csharp
+  - vb
+  name: ClearControls(Control)
+  nameWithType: SharedFunction.ClearControls(Control)
+  fullName: OPENgovTOCO.SharedFunction.ClearControls(System.Web.UI.Control)
+  type: Method
+  source:
+    id: ClearControls
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 505
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static void ClearControls(Control ctrlRef)
+    parameters:
+    - id: ctrlRef
+      type: System.Web.UI.Control
+    content.vb: Public Shared Sub ClearControls(ctrlRef As Control)
+  overload: OPENgovTOCO.SharedFunction.ClearControls*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.SharedFunction.EnumStringValueOf(System.Enum)
+  commentId: M:OPENgovTOCO.SharedFunction.EnumStringValueOf(System.Enum)
+  id: EnumStringValueOf(System.Enum)
+  parent: OPENgovTOCO.SharedFunction
+  langs:
+  - csharp
+  - vb
+  name: EnumStringValueOf(Enum)
+  nameWithType: SharedFunction.EnumStringValueOf(Enum)
+  fullName: OPENgovTOCO.SharedFunction.EnumStringValueOf(System.Enum)
+  type: Method
+  source:
+    id: EnumStringValueOf
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 526
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string EnumStringValueOf(Enum value)
+    parameters:
+    - id: value
+      type: System.Enum
+    return:
+      type: System.String
+    content.vb: Public Shared Function EnumStringValueOf(value As  Enum) As String
+  overload: OPENgovTOCO.SharedFunction.EnumStringValueOf*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.SharedFunction.EnumValueOf(System.String,System.Type)
+  commentId: M:OPENgovTOCO.SharedFunction.EnumValueOf(System.String,System.Type)
+  id: EnumValueOf(System.String,System.Type)
+  parent: OPENgovTOCO.SharedFunction
+  langs:
+  - csharp
+  - vb
+  name: EnumValueOf(String, Type)
+  nameWithType: SharedFunction.EnumValueOf(String, Type)
+  fullName: OPENgovTOCO.SharedFunction.EnumValueOf(System.String, System.Type)
+  type: Method
+  source:
+    id: EnumValueOf
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 547
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static object EnumValueOf(string value, Type enumType)
+    parameters:
+    - id: value
+      type: System.String
+    - id: enumType
+      type: System.Type
+    return:
+      type: System.Object
+    content.vb: Public Shared Function EnumValueOf(value As String, enumType As Type) As Object
+  overload: OPENgovTOCO.SharedFunction.EnumValueOf*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.SharedFunction.EnableDisableButton(System.Web.UI.WebControls.ImageButton@,System.Boolean)
+  commentId: M:OPENgovTOCO.SharedFunction.EnableDisableButton(System.Web.UI.WebControls.ImageButton@,System.Boolean)
+  id: EnableDisableButton(System.Web.UI.WebControls.ImageButton@,System.Boolean)
+  parent: OPENgovTOCO.SharedFunction
+  langs:
+  - csharp
+  - vb
+  name: EnableDisableButton(ref ImageButton, Boolean)
+  nameWithType: SharedFunction.EnableDisableButton(ref ImageButton, Boolean)
+  fullName: OPENgovTOCO.SharedFunction.EnableDisableButton(ref System.Web.UI.WebControls.ImageButton, System.Boolean)
+  type: Method
+  source:
+    id: EnableDisableButton
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 570
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static void EnableDisableButton(ref ImageButton btn, bool EnableState)
+    parameters:
+    - id: btn
+      type: System.Web.UI.WebControls.ImageButton
+    - id: EnableState
+      type: System.Boolean
+    content.vb: Public Shared Sub EnableDisableButton(ByRef btn As ImageButton, EnableState As Boolean)
+  overload: OPENgovTOCO.SharedFunction.EnableDisableButton*
+  nameWithType.vb: SharedFunction.EnableDisableButton(ByRef ImageButton, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: OPENgovTOCO.SharedFunction.EnableDisableButton(ByRef System.Web.UI.WebControls.ImageButton, System.Boolean)
+  name.vb: EnableDisableButton(ByRef ImageButton, Boolean)
+- uid: OPENgovTOCO.SharedFunction.IsNullOrEmpty(System.Object)
+  commentId: M:OPENgovTOCO.SharedFunction.IsNullOrEmpty(System.Object)
+  id: IsNullOrEmpty(System.Object)
+  parent: OPENgovTOCO.SharedFunction
+  langs:
+  - csharp
+  - vb
+  name: IsNullOrEmpty(Object)
+  nameWithType: SharedFunction.IsNullOrEmpty(Object)
+  fullName: OPENgovTOCO.SharedFunction.IsNullOrEmpty(System.Object)
+  type: Method
+  source:
+    id: IsNullOrEmpty
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 601
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  summary: "\nl&apos;equivalente inserita nel FW 2\n"
+  example: []
+  syntax:
+    content: public static bool IsNullOrEmpty(object objInput)
+    parameters:
+    - id: objInput
+      type: System.Object
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function IsNullOrEmpty(objInput As Object) As Boolean
+  overload: OPENgovTOCO.SharedFunction.IsNullOrEmpty*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.SharedFunction.IntTryParse(System.String,System.Int32)
+  commentId: M:OPENgovTOCO.SharedFunction.IntTryParse(System.String,System.Int32)
+  id: IntTryParse(System.String,System.Int32)
+  parent: OPENgovTOCO.SharedFunction
+  langs:
+  - csharp
+  - vb
+  name: IntTryParse(String, Int32)
+  nameWithType: SharedFunction.IntTryParse(String, Int32)
+  fullName: OPENgovTOCO.SharedFunction.IntTryParse(System.String, System.Int32)
+  type: Method
+  source:
+    id: IntTryParse
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 619
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static int IntTryParse(string Number, int DefaultValue)
+    parameters:
+    - id: Number
+      type: System.String
+    - id: DefaultValue
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function IntTryParse(Number As String, DefaultValue As Integer) As Integer
+  overload: OPENgovTOCO.SharedFunction.IntTryParse*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.SharedFunction.DecimaltryParse(System.String,System.Decimal)
+  commentId: M:OPENgovTOCO.SharedFunction.DecimaltryParse(System.String,System.Decimal)
+  id: DecimaltryParse(System.String,System.Decimal)
+  parent: OPENgovTOCO.SharedFunction
+  langs:
+  - csharp
+  - vb
+  name: DecimaltryParse(String, Decimal)
+  nameWithType: SharedFunction.DecimaltryParse(String, Decimal)
+  fullName: OPENgovTOCO.SharedFunction.DecimaltryParse(System.String, System.Decimal)
+  type: Method
+  source:
+    id: DecimaltryParse
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 631
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static decimal DecimaltryParse(string Number, decimal DefaultValue)
+    parameters:
+    - id: Number
+      type: System.String
+    - id: DefaultValue
+      type: System.Decimal
+    return:
+      type: System.Decimal
+    content.vb: Public Shared Function DecimaltryParse(Number As String, DefaultValue As Decimal) As Decimal
+  overload: OPENgovTOCO.SharedFunction.DecimaltryParse*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.SharedFunction.ReplaceDataForDB(System.String)
+  commentId: M:OPENgovTOCO.SharedFunction.ReplaceDataForDB(System.String)
+  id: ReplaceDataForDB(System.String)
+  parent: OPENgovTOCO.SharedFunction
+  langs:
+  - csharp
+  - vb
+  name: ReplaceDataForDB(String)
+  nameWithType: SharedFunction.ReplaceDataForDB(String)
+  fullName: OPENgovTOCO.SharedFunction.ReplaceDataForDB(System.String)
+  type: Method
+  source:
+    id: ReplaceDataForDB
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\SharedFunction.cs
+    startLine: 646
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public static string ReplaceDataForDB(string dataStrInput)
+    parameters:
+    - id: dataStrInput
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function ReplaceDataForDB(dataStrInput As String) As String
+  overload: OPENgovTOCO.SharedFunction.ReplaceDataForDB*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: OPENgovTOCO
+  commentId: N:OPENgovTOCO
+  name: OPENgovTOCO
+  nameWithType: OPENgovTOCO
+  fullName: OPENgovTOCO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OPENgovTOCO.SharedFunction.CellByName*
+  commentId: Overload:OPENgovTOCO.SharedFunction.CellByName
+  name: CellByName
+  nameWithType: SharedFunction.CellByName
+  fullName: OPENgovTOCO.SharedFunction.CellByName
+- uid: System.Web.UI.WebControls.TableRow
+  commentId: T:System.Web.UI.WebControls.TableRow
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: TableRow
+  nameWithType: TableRow
+  fullName: System.Web.UI.WebControls.TableRow
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Web.UI.WebControls.TableCell
+  commentId: T:System.Web.UI.WebControls.TableCell
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: TableCell
+  nameWithType: TableCell
+  fullName: System.Web.UI.WebControls.TableCell
+- uid: System.Web.UI.WebControls
+  commentId: N:System.Web.UI.WebControls
+  isExternal: true
+  name: System.Web.UI.WebControls
+  nameWithType: System.Web.UI.WebControls
+  fullName: System.Web.UI.WebControls
+- uid: OPENgovTOCO.SharedFunction.DbNullToString*
+  commentId: Overload:OPENgovTOCO.SharedFunction.DbNullToString
+  name: DbNullToString
+  nameWithType: SharedFunction.DbNullToString
+  fullName: OPENgovTOCO.SharedFunction.DbNullToString
+- uid: OPENgovTOCO.SharedFunction.StringToDbNull*
+  commentId: Overload:OPENgovTOCO.SharedFunction.StringToDbNull
+  name: StringToDbNull
+  nameWithType: SharedFunction.StringToDbNull
+  fullName: OPENgovTOCO.SharedFunction.StringToDbNull
+- uid: OPENgovTOCO.SharedFunction.IntegerToDbNull*
+  commentId: Overload:OPENgovTOCO.SharedFunction.IntegerToDbNull
+  name: IntegerToDbNull
+  nameWithType: SharedFunction.IntegerToDbNull
+  fullName: OPENgovTOCO.SharedFunction.IntegerToDbNull
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: OPENgovTOCO.SharedFunction.IntegerFormatToDbNull*
+  commentId: Overload:OPENgovTOCO.SharedFunction.IntegerFormatToDbNull
+  name: IntegerFormatToDbNull
+  nameWithType: SharedFunction.IntegerFormatToDbNull
+  fullName: OPENgovTOCO.SharedFunction.IntegerFormatToDbNull
+- uid: OPENgovTOCO.SharedFunction.DbNullToInteger*
+  commentId: Overload:OPENgovTOCO.SharedFunction.DbNullToInteger
+  name: DbNullToInteger
+  nameWithType: SharedFunction.DbNullToInteger
+  fullName: OPENgovTOCO.SharedFunction.DbNullToInteger
+- uid: OPENgovTOCO.SharedFunction.DateToDbNull*
+  commentId: Overload:OPENgovTOCO.SharedFunction.DateToDbNull
+  name: DateToDbNull
+  nameWithType: SharedFunction.DateToDbNull
+  fullName: OPENgovTOCO.SharedFunction.DateToDbNull
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: OPENgovTOCO.SharedFunction.DateFormatToDbNull*
+  commentId: Overload:OPENgovTOCO.SharedFunction.DateFormatToDbNull
+  name: DateFormatToDbNull
+  nameWithType: SharedFunction.DateFormatToDbNull
+  fullName: OPENgovTOCO.SharedFunction.DateFormatToDbNull
+- uid: OPENgovTOCO.SharedFunction.FormatDoubleToDb*
+  commentId: Overload:OPENgovTOCO.SharedFunction.FormatDoubleToDb
+  name: FormatDoubleToDb
+  nameWithType: SharedFunction.FormatDoubleToDb
+  fullName: OPENgovTOCO.SharedFunction.FormatDoubleToDb
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: OPENgovTOCO.SharedFunction.FormattaCFPIVA*
+  commentId: Overload:OPENgovTOCO.SharedFunction.FormattaCFPIVA
+  name: FormattaCFPIVA
+  nameWithType: SharedFunction.FormattaCFPIVA
+  fullName: OPENgovTOCO.SharedFunction.FormattaCFPIVA
+- uid: OPENgovTOCO.SharedFunction.FormattaVia*
+  commentId: Overload:OPENgovTOCO.SharedFunction.FormattaVia
+  name: FormattaVia
+  nameWithType: SharedFunction.FormattaVia
+  fullName: OPENgovTOCO.SharedFunction.FormattaVia
+- uid: OPENgovTOCO.SharedFunction.FormattaData*
+  commentId: Overload:OPENgovTOCO.SharedFunction.FormattaData
+  name: FormattaData
+  nameWithType: SharedFunction.FormattaData
+  fullName: OPENgovTOCO.SharedFunction.FormattaData
+- uid: OPENgovTOCO.SharedFunction.FormattaIsSgravato*
+  commentId: Overload:OPENgovTOCO.SharedFunction.FormattaIsSgravato
+  name: FormattaIsSgravato
+  nameWithType: SharedFunction.FormattaIsSgravato
+  fullName: OPENgovTOCO.SharedFunction.FormattaIsSgravato
+- uid: OPENgovTOCO.SharedFunction.FormattaToolTipIsSgravato*
+  commentId: Overload:OPENgovTOCO.SharedFunction.FormattaToolTipIsSgravato
+  name: FormattaToolTipIsSgravato
+  nameWithType: SharedFunction.FormattaToolTipIsSgravato
+  fullName: OPENgovTOCO.SharedFunction.FormattaToolTipIsSgravato
+- uid: OPENgovTOCO.SharedFunction.SplitStringAt*
+  commentId: Overload:OPENgovTOCO.SharedFunction.SplitStringAt
+  name: SplitStringAt
+  nameWithType: SharedFunction.SplitStringAt
+  fullName: OPENgovTOCO.SharedFunction.SplitStringAt
+- uid: OPENgovTOCO.SharedFunction.ChangeControlStatus*
+  commentId: Overload:OPENgovTOCO.SharedFunction.ChangeControlStatus
+  name: ChangeControlStatus
+  nameWithType: SharedFunction.ChangeControlStatus
+  fullName: OPENgovTOCO.SharedFunction.ChangeControlStatus
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Web.UI.Control
+  commentId: T:System.Web.UI.Control
+  parent: System.Web.UI
+  isExternal: true
+  name: Control
+  nameWithType: Control
+  fullName: System.Web.UI.Control
+- uid: System.Web.UI
+  commentId: N:System.Web.UI
+  isExternal: true
+  name: System.Web.UI
+  nameWithType: System.Web.UI
+  fullName: System.Web.UI
+- uid: OPENgovTOCO.SharedFunction.ClearControls*
+  commentId: Overload:OPENgovTOCO.SharedFunction.ClearControls
+  name: ClearControls
+  nameWithType: SharedFunction.ClearControls
+  fullName: OPENgovTOCO.SharedFunction.ClearControls
+- uid: OPENgovTOCO.SharedFunction.EnumStringValueOf*
+  commentId: Overload:OPENgovTOCO.SharedFunction.EnumStringValueOf
+  name: EnumStringValueOf
+  nameWithType: SharedFunction.EnumStringValueOf
+  fullName: OPENgovTOCO.SharedFunction.EnumStringValueOf
+- uid: System.Enum
+  commentId: T:System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
+- uid: OPENgovTOCO.SharedFunction.EnumValueOf*
+  commentId: Overload:OPENgovTOCO.SharedFunction.EnumValueOf
+  name: EnumValueOf
+  nameWithType: SharedFunction.EnumValueOf
+  fullName: OPENgovTOCO.SharedFunction.EnumValueOf
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: OPENgovTOCO.SharedFunction.EnableDisableButton*
+  commentId: Overload:OPENgovTOCO.SharedFunction.EnableDisableButton
+  name: EnableDisableButton
+  nameWithType: SharedFunction.EnableDisableButton
+  fullName: OPENgovTOCO.SharedFunction.EnableDisableButton
+- uid: System.Web.UI.WebControls.ImageButton
+  commentId: T:System.Web.UI.WebControls.ImageButton
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: ImageButton
+  nameWithType: ImageButton
+  fullName: System.Web.UI.WebControls.ImageButton
+- uid: OPENgovTOCO.SharedFunction.IsNullOrEmpty*
+  commentId: Overload:OPENgovTOCO.SharedFunction.IsNullOrEmpty
+  name: IsNullOrEmpty
+  nameWithType: SharedFunction.IsNullOrEmpty
+  fullName: OPENgovTOCO.SharedFunction.IsNullOrEmpty
+- uid: OPENgovTOCO.SharedFunction.IntTryParse*
+  commentId: Overload:OPENgovTOCO.SharedFunction.IntTryParse
+  name: IntTryParse
+  nameWithType: SharedFunction.IntTryParse
+  fullName: OPENgovTOCO.SharedFunction.IntTryParse
+- uid: OPENgovTOCO.SharedFunction.DecimaltryParse*
+  commentId: Overload:OPENgovTOCO.SharedFunction.DecimaltryParse
+  name: DecimaltryParse
+  nameWithType: SharedFunction.DecimaltryParse
+  fullName: OPENgovTOCO.SharedFunction.DecimaltryParse
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  nameWithType: Decimal
+  fullName: System.Decimal
+- uid: OPENgovTOCO.SharedFunction.ReplaceDataForDB*
+  commentId: Overload:OPENgovTOCO.SharedFunction.ReplaceDataForDB
+  name: ReplaceDataForDB
+  nameWithType: SharedFunction.ReplaceDataForDB
+  fullName: OPENgovTOCO.SharedFunction.ReplaceDataForDB

@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE2CompletedEventHandler
+  commentId: T:DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE2CompletedEventHandler
+  id: PopolaTabAppoggioAE2CompletedEventHandler
+  parent: DichiarazioniICI.WServiceOPENae
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: PopolaTabAppoggioAE2CompletedEventHandler
+  nameWithType: PopolaTabAppoggioAE2CompletedEventHandler
+  fullName: DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE2CompletedEventHandler
+  type: Delegate
+  source:
+    id: PopolaTabAppoggioAE2CompletedEventHandler
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1495
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public delegate void PopolaTabAppoggioAE2CompletedEventHandler(object sender, PopolaTabAppoggioAE2CompletedEventArgs e);
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE2CompletedEventArgs
+    content.vb: Public Delegate Sub PopolaTabAppoggioAE2CompletedEventHandler(sender As Object, e As PopolaTabAppoggioAE2CompletedEventArgs)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: DichiarazioniICI.WServiceOPENae
+  commentId: N:DichiarazioniICI.WServiceOPENae
+  name: DichiarazioniICI.WServiceOPENae
+  nameWithType: DichiarazioniICI.WServiceOPENae
+  fullName: DichiarazioniICI.WServiceOPENae
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE2CompletedEventArgs
+  commentId: T:DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE2CompletedEventArgs
+  parent: DichiarazioniICI.WServiceOPENae
+  name: PopolaTabAppoggioAE2CompletedEventArgs
+  nameWithType: PopolaTabAppoggioAE2CompletedEventArgs
+  fullName: DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE2CompletedEventArgs
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

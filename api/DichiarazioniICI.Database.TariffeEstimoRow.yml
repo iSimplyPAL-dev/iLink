@@ -1,0 +1,591 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.Database.TariffeEstimoRow
+  commentId: T:DichiarazioniICI.Database.TariffeEstimoRow
+  id: TariffeEstimoRow
+  parent: DichiarazioniICI.Database
+  children:
+  - DichiarazioniICI.Database.TariffeEstimoRow.Categoria
+  - DichiarazioniICI.Database.TariffeEstimoRow.Classe
+  - DichiarazioniICI.Database.TariffeEstimoRow.DataFineValidita
+  - DichiarazioniICI.Database.TariffeEstimoRow.DataInizioValidita
+  - DichiarazioniICI.Database.TariffeEstimoRow.Ente
+  - DichiarazioniICI.Database.TariffeEstimoRow.ID
+  - DichiarazioniICI.Database.TariffeEstimoRow.Note
+  - DichiarazioniICI.Database.TariffeEstimoRow.TariffaEuro
+  - DichiarazioniICI.Database.TariffeEstimoRow.Zona
+  langs:
+  - csharp
+  - vb
+  name: TariffeEstimoRow
+  nameWithType: TariffeEstimoRow
+  fullName: DichiarazioniICI.Database.TariffeEstimoRow
+  type: Struct
+  source:
+    id: TariffeEstimoRow
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\Aliquote.cs
+    startLine: 649
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public struct TariffeEstimoRow
+    content.vb: Public Structure TariffeEstimoRow
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: DichiarazioniICI.Database.TariffeEstimoRow.ID
+  commentId: F:DichiarazioniICI.Database.TariffeEstimoRow.ID
+  id: ID
+  parent: DichiarazioniICI.Database.TariffeEstimoRow
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: TariffeEstimoRow.ID
+  fullName: DichiarazioniICI.Database.TariffeEstimoRow.ID
+  type: Field
+  source:
+    id: ID
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\Aliquote.cs
+    startLine: 651
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int ID
+    return:
+      type: System.Int32
+    content.vb: Public ID As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TariffeEstimoRow.Ente
+  commentId: F:DichiarazioniICI.Database.TariffeEstimoRow.Ente
+  id: Ente
+  parent: DichiarazioniICI.Database.TariffeEstimoRow
+  langs:
+  - csharp
+  - vb
+  name: Ente
+  nameWithType: TariffeEstimoRow.Ente
+  fullName: DichiarazioniICI.Database.TariffeEstimoRow.Ente
+  type: Field
+  source:
+    id: Ente
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\Aliquote.cs
+    startLine: 652
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string Ente
+    return:
+      type: System.String
+    content.vb: Public Ente As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TariffeEstimoRow.Zona
+  commentId: F:DichiarazioniICI.Database.TariffeEstimoRow.Zona
+  id: Zona
+  parent: DichiarazioniICI.Database.TariffeEstimoRow
+  langs:
+  - csharp
+  - vb
+  name: Zona
+  nameWithType: TariffeEstimoRow.Zona
+  fullName: DichiarazioniICI.Database.TariffeEstimoRow.Zona
+  type: Field
+  source:
+    id: Zona
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\Aliquote.cs
+    startLine: 653
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string Zona
+    return:
+      type: System.String
+    content.vb: Public Zona As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TariffeEstimoRow.Categoria
+  commentId: F:DichiarazioniICI.Database.TariffeEstimoRow.Categoria
+  id: Categoria
+  parent: DichiarazioniICI.Database.TariffeEstimoRow
+  langs:
+  - csharp
+  - vb
+  name: Categoria
+  nameWithType: TariffeEstimoRow.Categoria
+  fullName: DichiarazioniICI.Database.TariffeEstimoRow.Categoria
+  type: Field
+  source:
+    id: Categoria
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\Aliquote.cs
+    startLine: 654
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string Categoria
+    return:
+      type: System.String
+    content.vb: Public Categoria As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TariffeEstimoRow.Classe
+  commentId: F:DichiarazioniICI.Database.TariffeEstimoRow.Classe
+  id: Classe
+  parent: DichiarazioniICI.Database.TariffeEstimoRow
+  langs:
+  - csharp
+  - vb
+  name: Classe
+  nameWithType: TariffeEstimoRow.Classe
+  fullName: DichiarazioniICI.Database.TariffeEstimoRow.Classe
+  type: Field
+  source:
+    id: Classe
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\Aliquote.cs
+    startLine: 655
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string Classe
+    return:
+      type: System.String
+    content.vb: Public Classe As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TariffeEstimoRow.TariffaEuro
+  commentId: F:DichiarazioniICI.Database.TariffeEstimoRow.TariffaEuro
+  id: TariffaEuro
+  parent: DichiarazioniICI.Database.TariffeEstimoRow
+  langs:
+  - csharp
+  - vb
+  name: TariffaEuro
+  nameWithType: TariffeEstimoRow.TariffaEuro
+  fullName: DichiarazioniICI.Database.TariffeEstimoRow.TariffaEuro
+  type: Field
+  source:
+    id: TariffaEuro
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\Aliquote.cs
+    startLine: 656
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public decimal TariffaEuro
+    return:
+      type: System.Decimal
+    content.vb: Public TariffaEuro As Decimal
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TariffeEstimoRow.DataInizioValidita
+  commentId: F:DichiarazioniICI.Database.TariffeEstimoRow.DataInizioValidita
+  id: DataInizioValidita
+  parent: DichiarazioniICI.Database.TariffeEstimoRow
+  langs:
+  - csharp
+  - vb
+  name: DataInizioValidita
+  nameWithType: TariffeEstimoRow.DataInizioValidita
+  fullName: DichiarazioniICI.Database.TariffeEstimoRow.DataInizioValidita
+  type: Field
+  source:
+    id: DataInizioValidita
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\Aliquote.cs
+    startLine: 657
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public DateTime DataInizioValidita
+    return:
+      type: System.DateTime
+    content.vb: Public DataInizioValidita As Date
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TariffeEstimoRow.DataFineValidita
+  commentId: F:DichiarazioniICI.Database.TariffeEstimoRow.DataFineValidita
+  id: DataFineValidita
+  parent: DichiarazioniICI.Database.TariffeEstimoRow
+  langs:
+  - csharp
+  - vb
+  name: DataFineValidita
+  nameWithType: TariffeEstimoRow.DataFineValidita
+  fullName: DichiarazioniICI.Database.TariffeEstimoRow.DataFineValidita
+  type: Field
+  source:
+    id: DataFineValidita
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\Aliquote.cs
+    startLine: 658
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public DateTime DataFineValidita
+    return:
+      type: System.DateTime
+    content.vb: Public DataFineValidita As Date
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TariffeEstimoRow.Note
+  commentId: F:DichiarazioniICI.Database.TariffeEstimoRow.Note
+  id: Note
+  parent: DichiarazioniICI.Database.TariffeEstimoRow
+  langs:
+  - csharp
+  - vb
+  name: Note
+  nameWithType: TariffeEstimoRow.Note
+  fullName: DichiarazioniICI.Database.TariffeEstimoRow.Note
+  type: Field
+  source:
+    id: Note
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\Aliquote.cs
+    startLine: 659
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string Note
+    return:
+      type: System.String
+    content.vb: Public Note As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: DichiarazioniICI.Database
+  commentId: N:DichiarazioniICI.Database
+  name: DichiarazioniICI.Database
+  nameWithType: DichiarazioniICI.Database
+  fullName: DichiarazioniICI.Database
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  nameWithType: Decimal
+  fullName: System.Decimal
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime

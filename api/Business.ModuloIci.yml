@@ -1,0 +1,529 @@
+### YamlMime:ManagedReference
+items:
+- uid: Business.ModuloIci
+  commentId: T:Business.ModuloIci
+  id: ModuloIci
+  parent: Business
+  children:
+  - Business.ModuloIci.#ctor(System.String)
+  - Business.ModuloIci.BonificaContitolare(System.Int32,System.Int32)
+  - Business.ModuloIci.BonificaImmobile(System.Int32,System.Int32)
+  - Business.ModuloIci.SetQuestionario(System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: ModuloIci
+  nameWithType: ModuloIci
+  fullName: Business.ModuloIci
+  type: Class
+  source:
+    id: ModuloIci
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 13
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nClasse per l&apos;incapsulamento di tutti i metodi necessari\nalla gestione del modulo ici\n"
+  remarks: In ottemperanza alle linee guida di sviluppo 1.0
+  example: []
+  syntax:
+    content: public class ModuloIci
+    content.vb: Public Class ModuloIci
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Business.ModuloIci.#ctor(System.String)
+  commentId: M:Business.ModuloIci.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Business.ModuloIci
+  langs:
+  - csharp
+  - vb
+  name: ModuloIci(String)
+  nameWithType: ModuloIci.ModuloIci(String)
+  fullName: Business.ModuloIci.ModuloIci(System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 22
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nCostruttore del modulo ICI\n"
+  example: []
+  syntax:
+    content: public ModuloIci(string userName)
+    parameters:
+    - id: userName
+      type: System.String
+      description: L&apos;utente per l&apos;accesso al Framework Ribes
+    content.vb: Public Sub New(userName As String)
+  overload: Business.ModuloIci.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.ModuloIci.BonificaImmobile(System.Int32,System.Int32)
+  commentId: M:Business.ModuloIci.BonificaImmobile(System.Int32,System.Int32)
+  id: BonificaImmobile(System.Int32,System.Int32)
+  parent: Business.ModuloIci
+  langs:
+  - csharp
+  - vb
+  name: BonificaImmobile(Int32, Int32)
+  nameWithType: ModuloIci.BonificaImmobile(Int32, Int32)
+  fullName: Business.ModuloIci.BonificaImmobile(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: BonificaImmobile
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 177
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public bool BonificaImmobile(int idTestata, int IdOggetto)
+    parameters:
+    - id: idTestata
+      type: System.Int32
+      description: ''
+    - id: IdOggetto
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function BonificaImmobile(idTestata As Integer, IdOggetto As Integer) As Boolean
+  overload: Business.ModuloIci.BonificaImmobile*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.ModuloIci.BonificaContitolare(System.Int32,System.Int32)
+  commentId: M:Business.ModuloIci.BonificaContitolare(System.Int32,System.Int32)
+  id: BonificaContitolare(System.Int32,System.Int32)
+  parent: Business.ModuloIci
+  langs:
+  - csharp
+  - vb
+  name: BonificaContitolare(Int32, Int32)
+  nameWithType: ModuloIci.BonificaContitolare(Int32, Int32)
+  fullName: Business.ModuloIci.BonificaContitolare(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: BonificaContitolare
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 269
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public bool BonificaContitolare(int idTestata, int IdOggetto)
+    parameters:
+    - id: idTestata
+      type: System.Int32
+      description: ''
+    - id: IdOggetto
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function BonificaContitolare(idTestata As Integer, IdOggetto As Integer) As Boolean
+  overload: Business.ModuloIci.BonificaContitolare*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.ModuloIci.SetQuestionario(System.Int32,System.Int32)
+  commentId: M:Business.ModuloIci.SetQuestionario(System.Int32,System.Int32)
+  id: SetQuestionario(System.Int32,System.Int32)
+  parent: Business.ModuloIci
+  langs:
+  - csharp
+  - vb
+  name: SetQuestionario(Int32, Int32)
+  nameWithType: ModuloIci.SetQuestionario(Int32, Int32)
+  fullName: Business.ModuloIci.SetQuestionario(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: SetQuestionario
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 327
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nImposta l&apos;id questionario della dichiarazione passata.\n"
+  example: []
+  syntax:
+    content: public void SetQuestionario(int idDichiarazione, int idQuestionario)
+    parameters:
+    - id: idDichiarazione
+      type: System.Int32
+      description: ''
+    - id: idQuestionario
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub SetQuestionario(idDichiarazione As Integer, idQuestionario As Integer)
+  overload: Business.ModuloIci.SetQuestionario*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Business
+  commentId: N:Business
+  name: Business
+  nameWithType: Business
+  fullName: Business
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Business.ModuloIci.#ctor*
+  commentId: Overload:Business.ModuloIci.#ctor
+  name: ModuloIci
+  nameWithType: ModuloIci.ModuloIci
+  fullName: Business.ModuloIci.ModuloIci
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Business.ModuloIci.BonificaImmobile*
+  commentId: Overload:Business.ModuloIci.BonificaImmobile
+  name: BonificaImmobile
+  nameWithType: ModuloIci.BonificaImmobile
+  fullName: Business.ModuloIci.BonificaImmobile
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Business.ModuloIci.BonificaContitolare*
+  commentId: Overload:Business.ModuloIci.BonificaContitolare
+  name: BonificaContitolare
+  nameWithType: ModuloIci.BonificaContitolare
+  fullName: Business.ModuloIci.BonificaContitolare
+- uid: Business.ModuloIci.SetQuestionario*
+  commentId: Overload:Business.ModuloIci.SetQuestionario
+  name: SetQuestionario
+  nameWithType: ModuloIci.SetQuestionario
+  fullName: Business.ModuloIci.SetQuestionario

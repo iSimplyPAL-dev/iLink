@@ -1,0 +1,482 @@
+### YamlMime:ManagedReference
+items:
+- uid: DTO.MetodiDurata
+  commentId: T:DTO.MetodiDurata
+  id: MetodiDurata
+  parent: DTO
+  children:
+  - DTO.MetodiDurata.GetDurata(System.String,System.Int32)
+  - DTO.MetodiDurata.GetDurate(System.String,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: MetodiDurata
+  nameWithType: MetodiDurata
+  fullName: DTO.MetodiDurata
+  type: Class
+  source:
+    id: MetodiDurata
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Durata.cs
+    startLine: 12
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  summary: "\nClasse per la gestione durata\n"
+  example: []
+  syntax:
+    content: public class MetodiDurata
+    content.vb: Public Class MetodiDurata
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DTO.MetodiDurata.GetDurate(System.String,System.Boolean)
+  commentId: M:DTO.MetodiDurata.GetDurate(System.String,System.Boolean)
+  id: GetDurate(System.String,System.Boolean)
+  parent: DTO.MetodiDurata
+  langs:
+  - csharp
+  - vb
+  name: GetDurate(String, Boolean)
+  nameWithType: MetodiDurata.GetDurate(String, Boolean)
+  fullName: DTO.MetodiDurata.GetDurate(System.String, System.Boolean)
+  type: Method
+  source:
+    id: GetDurate
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Durata.cs
+    startLine: 18
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static Durata[] GetDurate(string ConnectionString, bool DefaultValue)
+    parameters:
+    - id: ConnectionString
+      type: System.String
+    - id: DefaultValue
+      type: System.Boolean
+    return:
+      type: IRemInterfaceOSAP.Durata[]
+    content.vb: Public Shared Function GetDurate(ConnectionString As String, DefaultValue As Boolean) As Durata()
+  overload: DTO.MetodiDurata.GetDurate*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiDurata.GetDurata(System.String,System.Int32)
+  commentId: M:DTO.MetodiDurata.GetDurata(System.String,System.Int32)
+  id: GetDurata(System.String,System.Int32)
+  parent: DTO.MetodiDurata
+  langs:
+  - csharp
+  - vb
+  name: GetDurata(String, Int32)
+  nameWithType: MetodiDurata.GetDurata(String, Int32)
+  fullName: DTO.MetodiDurata.GetDurata(System.String, System.Int32)
+  type: Method
+  source:
+    id: GetDurata
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Durata.cs
+    startLine: 36
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static Durata GetDurata(string ConnectionString, int IdDurata)
+    parameters:
+    - id: ConnectionString
+      type: System.String
+    - id: IdDurata
+      type: System.Int32
+    return:
+      type: IRemInterfaceOSAP.Durata
+    content.vb: Public Shared Function GetDurata(ConnectionString As String, IdDurata As Integer) As Durata
+  overload: DTO.MetodiDurata.GetDurata*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: DTO
+  commentId: N:DTO
+  name: DTO
+  nameWithType: DTO
+  fullName: DTO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DTO.MetodiDurata.GetDurate*
+  commentId: Overload:DTO.MetodiDurata.GetDurate
+  name: GetDurate
+  nameWithType: MetodiDurata.GetDurate
+  fullName: DTO.MetodiDurata.GetDurate
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: IRemInterfaceOSAP.Durata[]
+  isExternal: true
+  name: Durata[]
+  nameWithType: Durata[]
+  fullName: IRemInterfaceOSAP.Durata[]
+  nameWithType.vb: Durata()
+  fullName.vb: IRemInterfaceOSAP.Durata()
+  name.vb: Durata()
+  spec.csharp:
+  - uid: IRemInterfaceOSAP.Durata
+    name: Durata
+    nameWithType: Durata
+    fullName: IRemInterfaceOSAP.Durata
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: IRemInterfaceOSAP.Durata
+    name: Durata
+    nameWithType: Durata
+    fullName: IRemInterfaceOSAP.Durata
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: DTO.MetodiDurata.GetDurata*
+  commentId: Overload:DTO.MetodiDurata.GetDurata
+  name: GetDurata
+  nameWithType: MetodiDurata.GetDurata
+  fullName: DTO.MetodiDurata.GetDurata
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: IRemInterfaceOSAP.Durata
+  commentId: T:IRemInterfaceOSAP.Durata
+  parent: IRemInterfaceOSAP
+  isExternal: true
+  name: Durata
+  nameWithType: Durata
+  fullName: IRemInterfaceOSAP.Durata
+- uid: IRemInterfaceOSAP
+  commentId: N:IRemInterfaceOSAP
+  isExternal: true
+  name: IRemInterfaceOSAP
+  nameWithType: IRemInterfaceOSAP
+  fullName: IRemInterfaceOSAP

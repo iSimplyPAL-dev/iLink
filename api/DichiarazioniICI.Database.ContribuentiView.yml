@@ -1,0 +1,1164 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.Database.ContribuentiView
+  commentId: T:DichiarazioniICI.Database.ContribuentiView
+  id: ContribuentiView
+  parent: DichiarazioniICI.Database
+  children:
+  - DichiarazioniICI.Database.ContribuentiView.#ctor
+  - DichiarazioniICI.Database.ContribuentiView.List(DichiarazioniICI.Database.Bonificato)
+  - DichiarazioniICI.Database.ContribuentiView.ListContribuenti(System.String,System.String,System.String,System.String,DichiarazioniICI.Database.Bonificato)
+  langs:
+  - csharp
+  - vb
+  name: ContribuentiView
+  nameWithType: ContribuentiView
+  fullName: DichiarazioniICI.Database.ContribuentiView
+  type: Class
+  source:
+    id: ContribuentiView
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ContribuentiView.cs
+    startLine: 11
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nClasse di gestione della vista viewContribuenti.\n"
+  remarks: In ottemperanza alle linee guida di sviluppo 1.0
+  example: []
+  syntax:
+    content: 'public class ContribuentiView : Database'
+    content.vb: >-
+      Public Class ContribuentiView
+
+          Inherits Database
+  inheritance:
+  - System.Object
+  - DichiarazioniICI.Database.Database
+  inheritedMembers:
+  - DichiarazioniICI.Database.Database._DbConnection
+  - DichiarazioniICI.Database.Database.TableName
+  - DichiarazioniICI.Database.Database.ProcedureName
+  - DichiarazioniICI.Database.Database.AlredyOpened
+  - DichiarazioniICI.Database.Database.kill
+  - DichiarazioniICI.Database.Database.List
+  - DichiarazioniICI.Database.Database.List(System.String)
+  - DichiarazioniICI.Database.Database.ListFromSP
+  - DichiarazioniICI.Database.Database.List(System.Int32)
+  - DichiarazioniICI.Database.Database.Query(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  - DichiarazioniICI.Database.Database.QueryScalar(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  - DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  - DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.Int32@)
+  - DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.String,System.Int32@)
+  - DichiarazioniICI.Database.Database.GetIdentity(System.Data.SqlClient.SqlConnection)
+  - DichiarazioniICI.Database.Database.PrepareGetRow(System.Int32)
+  - DichiarazioniICI.Database.Database.PrepareGetRowCaricoFigli(System.Int32,System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DichiarazioniICI.Database.ContribuentiView.#ctor
+  commentId: M:DichiarazioniICI.Database.ContribuentiView.#ctor
+  id: '#ctor'
+  parent: DichiarazioniICI.Database.ContribuentiView
+  langs:
+  - csharp
+  - vb
+  name: ContribuentiView()
+  nameWithType: ContribuentiView.ContribuentiView()
+  fullName: DichiarazioniICI.Database.ContribuentiView.ContribuentiView()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ContribuentiView.cs
+    startLine: 17
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nCostruttore della classe\n"
+  example: []
+  syntax:
+    content: public ContribuentiView()
+    content.vb: Public Sub New
+  overload: DichiarazioniICI.Database.ContribuentiView.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.ContribuentiView.ListContribuenti(System.String,System.String,System.String,System.String,DichiarazioniICI.Database.Bonificato)
+  commentId: M:DichiarazioniICI.Database.ContribuentiView.ListContribuenti(System.String,System.String,System.String,System.String,DichiarazioniICI.Database.Bonificato)
+  id: ListContribuenti(System.String,System.String,System.String,System.String,DichiarazioniICI.Database.Bonificato)
+  parent: DichiarazioniICI.Database.ContribuentiView
+  langs:
+  - csharp
+  - vb
+  name: ListContribuenti(String, String, String, String, Bonificato)
+  nameWithType: ContribuentiView.ListContribuenti(String, String, String, String, Bonificato)
+  fullName: DichiarazioniICI.Database.ContribuentiView.ListContribuenti(System.String, System.String, System.String, System.String, DichiarazioniICI.Database.Bonificato)
+  type: Method
+  source:
+    id: ListContribuenti
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ContribuentiView.cs
+    startLine: 33
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nRestituisce una DataView con la lista dei contribuenti filtrati per cognome, nome,\ncodice fiscale e/o partita Iva.\n"
+  example: []
+  syntax:
+    content: public DataView ListContribuenti(string cognome, string nome, string codiceFiscale, string partitaIVA, Bonificato bonificato)
+    parameters:
+    - id: cognome
+      type: System.String
+      description: Parametro di tipo <code>String</code> che identifica il Cognome del Contribuente
+    - id: nome
+      type: System.String
+      description: Parametro di tipo <code>String</code> che identifica il Nome del Contribuente
+    - id: codiceFiscale
+      type: System.String
+      description: Parametro di tipo <code>String</code> che identifica il Codice Fiscle del Contribuente
+    - id: partitaIVA
+      type: System.String
+      description: Parametro di tipo <code>String</code> che identifica la Partita IVA del Contribuente
+    - id: bonificato
+      type: DichiarazioniICI.Database.Bonificato
+      description: Parametro di tipo <code>Bonificato</code> che identifica se il Contribuente è stato bonificato
+    return:
+      type: System.Data.DataView
+      description: Restituisce una DataView con la lista dei contribuenti filtrati
+    content.vb: Public Function ListContribuenti(cognome As String, nome As String, codiceFiscale As String, partitaIVA As String, bonificato As Bonificato) As DataView
+  overload: DichiarazioniICI.Database.ContribuentiView.ListContribuenti*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.ContribuentiView.List(DichiarazioniICI.Database.Bonificato)
+  commentId: M:DichiarazioniICI.Database.ContribuentiView.List(DichiarazioniICI.Database.Bonificato)
+  id: List(DichiarazioniICI.Database.Bonificato)
+  parent: DichiarazioniICI.Database.ContribuentiView
+  langs:
+  - csharp
+  - vb
+  name: List(Bonificato)
+  nameWithType: ContribuentiView.List(Bonificato)
+  fullName: DichiarazioniICI.Database.ContribuentiView.List(DichiarazioniICI.Database.Bonificato)
+  type: Method
+  source:
+    id: List
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ContribuentiView.cs
+    startLine: 74
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nRestituisce una DataView con la lista dei contribuenti filtrati  in base al flag bonificato.\n"
+  example: []
+  syntax:
+    content: public DataView List(Bonificato bonificato)
+    parameters:
+    - id: bonificato
+      type: DichiarazioniICI.Database.Bonificato
+      description: Parametro di tipo <code>Bonificato</code> che identifica se il Contribuente è stato bonificato
+    return:
+      type: System.Data.DataView
+      description: Restituisce una DataView con la lista dei contribuenti filtrati
+    content.vb: Public Function List(bonificato As Bonificato) As DataView
+  overload: DichiarazioniICI.Database.ContribuentiView.List*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: DichiarazioniICI.Database
+  commentId: N:DichiarazioniICI.Database
+  name: DichiarazioniICI.Database
+  nameWithType: DichiarazioniICI.Database
+  fullName: DichiarazioniICI.Database
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DichiarazioniICI.Database.Database
+  commentId: T:DichiarazioniICI.Database.Database
+  parent: DichiarazioniICI.Database
+  name: Database
+  nameWithType: Database
+  fullName: DichiarazioniICI.Database.Database
+- uid: DichiarazioniICI.Database.Database._DbConnection
+  commentId: F:DichiarazioniICI.Database.Database._DbConnection
+  parent: DichiarazioniICI.Database.Database
+  name: _DbConnection
+  nameWithType: Database._DbConnection
+  fullName: DichiarazioniICI.Database.Database._DbConnection
+- uid: DichiarazioniICI.Database.Database.TableName
+  commentId: F:DichiarazioniICI.Database.Database.TableName
+  parent: DichiarazioniICI.Database.Database
+  name: TableName
+  nameWithType: Database.TableName
+  fullName: DichiarazioniICI.Database.Database.TableName
+- uid: DichiarazioniICI.Database.Database.ProcedureName
+  commentId: F:DichiarazioniICI.Database.Database.ProcedureName
+  parent: DichiarazioniICI.Database.Database
+  name: ProcedureName
+  nameWithType: Database.ProcedureName
+  fullName: DichiarazioniICI.Database.Database.ProcedureName
+- uid: DichiarazioniICI.Database.Database.AlredyOpened
+  commentId: F:DichiarazioniICI.Database.Database.AlredyOpened
+  parent: DichiarazioniICI.Database.Database
+  name: AlredyOpened
+  nameWithType: Database.AlredyOpened
+  fullName: DichiarazioniICI.Database.Database.AlredyOpened
+- uid: DichiarazioniICI.Database.Database.kill
+  commentId: M:DichiarazioniICI.Database.Database.kill
+  parent: DichiarazioniICI.Database.Database
+  name: kill()
+  nameWithType: Database.kill()
+  fullName: DichiarazioniICI.Database.Database.kill()
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.kill
+    name: kill
+    nameWithType: Database.kill
+    fullName: DichiarazioniICI.Database.Database.kill
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.kill
+    name: kill
+    nameWithType: Database.kill
+    fullName: DichiarazioniICI.Database.Database.kill
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.List
+  commentId: M:DichiarazioniICI.Database.Database.List
+  parent: DichiarazioniICI.Database.Database
+  name: List()
+  nameWithType: Database.List()
+  fullName: DichiarazioniICI.Database.Database.List()
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.List
+    name: List
+    nameWithType: Database.List
+    fullName: DichiarazioniICI.Database.Database.List
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.List
+    name: List
+    nameWithType: Database.List
+    fullName: DichiarazioniICI.Database.Database.List
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.List(System.String)
+  commentId: M:DichiarazioniICI.Database.Database.List(System.String)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: List(String)
+  nameWithType: Database.List(String)
+  fullName: DichiarazioniICI.Database.Database.List(System.String)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.List(System.String)
+    name: List
+    nameWithType: Database.List
+    fullName: DichiarazioniICI.Database.Database.List
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.List(System.String)
+    name: List
+    nameWithType: Database.List
+    fullName: DichiarazioniICI.Database.Database.List
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.ListFromSP
+  commentId: M:DichiarazioniICI.Database.Database.ListFromSP
+  parent: DichiarazioniICI.Database.Database
+  name: ListFromSP()
+  nameWithType: Database.ListFromSP()
+  fullName: DichiarazioniICI.Database.Database.ListFromSP()
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.ListFromSP
+    name: ListFromSP
+    nameWithType: Database.ListFromSP
+    fullName: DichiarazioniICI.Database.Database.ListFromSP
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.ListFromSP
+    name: ListFromSP
+    nameWithType: Database.ListFromSP
+    fullName: DichiarazioniICI.Database.Database.ListFromSP
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.List(System.Int32)
+  commentId: M:DichiarazioniICI.Database.Database.List(System.Int32)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: List(Int32)
+  nameWithType: Database.List(Int32)
+  fullName: DichiarazioniICI.Database.Database.List(System.Int32)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.List(System.Int32)
+    name: List
+    nameWithType: Database.List
+    fullName: DichiarazioniICI.Database.Database.List
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.List(System.Int32)
+    name: List
+    nameWithType: Database.List
+    fullName: DichiarazioniICI.Database.Database.List
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.Query(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  commentId: M:DichiarazioniICI.Database.Database.Query(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: Query(SqlCommand, SqlConnection)
+  nameWithType: Database.Query(SqlCommand, SqlConnection)
+  fullName: DichiarazioniICI.Database.Database.Query(System.Data.SqlClient.SqlCommand, System.Data.SqlClient.SqlConnection)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.Query(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+    name: Query
+    nameWithType: Database.Query
+    fullName: DichiarazioniICI.Database.Database.Query
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.Query(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+    name: Query
+    nameWithType: Database.Query
+    fullName: DichiarazioniICI.Database.Database.Query
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.QueryScalar(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  commentId: M:DichiarazioniICI.Database.Database.QueryScalar(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: QueryScalar(SqlCommand, SqlConnection)
+  nameWithType: Database.QueryScalar(SqlCommand, SqlConnection)
+  fullName: DichiarazioniICI.Database.Database.QueryScalar(System.Data.SqlClient.SqlCommand, System.Data.SqlClient.SqlConnection)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.QueryScalar(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+    name: QueryScalar
+    nameWithType: Database.QueryScalar
+    fullName: DichiarazioniICI.Database.Database.QueryScalar
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.QueryScalar(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+    name: QueryScalar
+    nameWithType: Database.QueryScalar
+    fullName: DichiarazioniICI.Database.Database.QueryScalar
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  commentId: M:DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: Execute(SqlCommand, SqlConnection)
+  nameWithType: Database.Execute(SqlCommand, SqlConnection)
+  fullName: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand, System.Data.SqlClient.SqlConnection)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+    name: Execute
+    nameWithType: Database.Execute
+    fullName: DichiarazioniICI.Database.Database.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+    name: Execute
+    nameWithType: Database.Execute
+    fullName: DichiarazioniICI.Database.Database.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.Int32@)
+  commentId: M:DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.Int32@)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: Execute(SqlCommand, SqlConnection, Int32)
+  nameWithType: Database.Execute(SqlCommand, SqlConnection, Int32)
+  fullName: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand, System.Data.SqlClient.SqlConnection, System.Int32)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.Int32@)
+    name: Execute
+    nameWithType: Database.Execute
+    fullName: DichiarazioniICI.Database.Database.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.Int32@)
+    name: Execute
+    nameWithType: Database.Execute
+    fullName: DichiarazioniICI.Database.Database.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.String,System.Int32@)
+  commentId: M:DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.String,System.Int32@)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: Execute(SqlCommand, SqlConnection, String, Int32)
+  nameWithType: Database.Execute(SqlCommand, SqlConnection, String, Int32)
+  fullName: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand, System.Data.SqlClient.SqlConnection, System.String, System.Int32)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.String,System.Int32@)
+    name: Execute
+    nameWithType: Database.Execute
+    fullName: DichiarazioniICI.Database.Database.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.String,System.Int32@)
+    name: Execute
+    nameWithType: Database.Execute
+    fullName: DichiarazioniICI.Database.Database.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.GetIdentity(System.Data.SqlClient.SqlConnection)
+  commentId: M:DichiarazioniICI.Database.Database.GetIdentity(System.Data.SqlClient.SqlConnection)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: GetIdentity(SqlConnection)
+  nameWithType: Database.GetIdentity(SqlConnection)
+  fullName: DichiarazioniICI.Database.Database.GetIdentity(System.Data.SqlClient.SqlConnection)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.GetIdentity(System.Data.SqlClient.SqlConnection)
+    name: GetIdentity
+    nameWithType: Database.GetIdentity
+    fullName: DichiarazioniICI.Database.Database.GetIdentity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.GetIdentity(System.Data.SqlClient.SqlConnection)
+    name: GetIdentity
+    nameWithType: Database.GetIdentity
+    fullName: DichiarazioniICI.Database.Database.GetIdentity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.PrepareGetRow(System.Int32)
+  commentId: M:DichiarazioniICI.Database.Database.PrepareGetRow(System.Int32)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: PrepareGetRow(Int32)
+  nameWithType: Database.PrepareGetRow(Int32)
+  fullName: DichiarazioniICI.Database.Database.PrepareGetRow(System.Int32)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.PrepareGetRow(System.Int32)
+    name: PrepareGetRow
+    nameWithType: Database.PrepareGetRow
+    fullName: DichiarazioniICI.Database.Database.PrepareGetRow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.PrepareGetRow(System.Int32)
+    name: PrepareGetRow
+    nameWithType: Database.PrepareGetRow
+    fullName: DichiarazioniICI.Database.Database.PrepareGetRow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.PrepareGetRowCaricoFigli(System.Int32,System.String)
+  commentId: M:DichiarazioniICI.Database.Database.PrepareGetRowCaricoFigli(System.Int32,System.String)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: PrepareGetRowCaricoFigli(Int32, String)
+  nameWithType: Database.PrepareGetRowCaricoFigli(Int32, String)
+  fullName: DichiarazioniICI.Database.Database.PrepareGetRowCaricoFigli(System.Int32, System.String)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.PrepareGetRowCaricoFigli(System.Int32,System.String)
+    name: PrepareGetRowCaricoFigli
+    nameWithType: Database.PrepareGetRowCaricoFigli
+    fullName: DichiarazioniICI.Database.Database.PrepareGetRowCaricoFigli
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.PrepareGetRowCaricoFigli(System.Int32,System.String)
+    name: PrepareGetRowCaricoFigli
+    nameWithType: Database.PrepareGetRowCaricoFigli
+    fullName: DichiarazioniICI.Database.Database.PrepareGetRowCaricoFigli
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DichiarazioniICI.Database.ContribuentiView.#ctor*
+  commentId: Overload:DichiarazioniICI.Database.ContribuentiView.#ctor
+  name: ContribuentiView
+  nameWithType: ContribuentiView.ContribuentiView
+  fullName: DichiarazioniICI.Database.ContribuentiView.ContribuentiView
+- uid: DichiarazioniICI.Database.ContribuentiView.ListContribuenti*
+  commentId: Overload:DichiarazioniICI.Database.ContribuentiView.ListContribuenti
+  name: ListContribuenti
+  nameWithType: ContribuentiView.ListContribuenti
+  fullName: DichiarazioniICI.Database.ContribuentiView.ListContribuenti
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DichiarazioniICI.Database.Bonificato
+  commentId: T:DichiarazioniICI.Database.Bonificato
+  parent: DichiarazioniICI.Database
+  name: Bonificato
+  nameWithType: Bonificato
+  fullName: DichiarazioniICI.Database.Bonificato
+- uid: System.Data.DataView
+  commentId: T:System.Data.DataView
+  parent: System.Data
+  isExternal: true
+  name: DataView
+  nameWithType: DataView
+  fullName: System.Data.DataView
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+- uid: DichiarazioniICI.Database.ContribuentiView.List*
+  commentId: Overload:DichiarazioniICI.Database.ContribuentiView.List
+  name: List
+  nameWithType: ContribuentiView.List
+  fullName: DichiarazioniICI.Database.ContribuentiView.List

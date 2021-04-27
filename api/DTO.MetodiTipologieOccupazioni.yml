@@ -1,0 +1,911 @@
+### YamlMime:ManagedReference
+items:
+- uid: DTO.MetodiTipologieOccupazioni
+  commentId: T:DTO.MetodiTipologieOccupazioni
+  id: MetodiTipologieOccupazioni
+  parent: DTO
+  children:
+  - DTO.MetodiTipologieOccupazioni.DeleteCoefficiente(System.Int32,System.Int32)
+  - DTO.MetodiTipologieOccupazioni.DeleteTipologiaOccupazione(System.Int32)
+  - DTO.MetodiTipologieOccupazioni.GetAllCoefficienti(System.String)
+  - DTO.MetodiTipologieOccupazioni.GetAllTipologieOccupazioni(System.String,System.String,System.Boolean)
+  - DTO.MetodiTipologieOccupazioni.GetCoefficiente(System.Int32,System.Int32)
+  - DTO.MetodiTipologieOccupazioni.GetTipologiaOccupazione(System.String,System.Int32,System.String,System.String,System.String)
+  - DTO.MetodiTipologieOccupazioni.GetTipologieOccupazioni(System.Int32,System.Boolean,System.String)
+  - DTO.MetodiTipologieOccupazioni.GetTipologieOccupazioniForMotore(System.String,System.Int32,System.String,System.String)
+  - DTO.MetodiTipologieOccupazioni.InsertOrUpdateCoefficiente(System.Int32,System.Int32,System.Decimal)
+  - DTO.MetodiTipologieOccupazioni.InsertOrUpdateDescrizione(System.String,System.String,System.String,System.Int32,System.String)
+  - DTO.MetodiTipologieOccupazioni.SetRibalta(System.Int32,System.Int32,System.String)
+  langs:
+  - csharp
+  - vb
+  name: MetodiTipologieOccupazioni
+  nameWithType: MetodiTipologieOccupazioni
+  fullName: DTO.MetodiTipologieOccupazioni
+  type: Class
+  source:
+    id: MetodiTipologieOccupazioni
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\TipologieOccupazioni.cs
+    startLine: 13
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  summary: "\nClasse per la gestione tipo occupazioni\n"
+  example: []
+  syntax:
+    content: public class MetodiTipologieOccupazioni
+    content.vb: Public Class MetodiTipologieOccupazioni
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DTO.MetodiTipologieOccupazioni.DeleteTipologiaOccupazione(System.Int32)
+  commentId: M:DTO.MetodiTipologieOccupazioni.DeleteTipologiaOccupazione(System.Int32)
+  id: DeleteTipologiaOccupazione(System.Int32)
+  parent: DTO.MetodiTipologieOccupazioni
+  langs:
+  - csharp
+  - vb
+  name: DeleteTipologiaOccupazione(Int32)
+  nameWithType: MetodiTipologieOccupazioni.DeleteTipologiaOccupazione(Int32)
+  fullName: DTO.MetodiTipologieOccupazioni.DeleteTipologiaOccupazione(System.Int32)
+  type: Method
+  source:
+    id: DeleteTipologiaOccupazione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\TipologieOccupazioni.cs
+    startLine: 19
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static int DeleteTipologiaOccupazione(int IdTipologiaOccupazione)
+    parameters:
+    - id: IdTipologiaOccupazione
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function DeleteTipologiaOccupazione(IdTipologiaOccupazione As Integer) As Integer
+  overload: DTO.MetodiTipologieOccupazioni.DeleteTipologiaOccupazione*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiTipologieOccupazioni.DeleteCoefficiente(System.Int32,System.Int32)
+  commentId: M:DTO.MetodiTipologieOccupazioni.DeleteCoefficiente(System.Int32,System.Int32)
+  id: DeleteCoefficiente(System.Int32,System.Int32)
+  parent: DTO.MetodiTipologieOccupazioni
+  langs:
+  - csharp
+  - vb
+  name: DeleteCoefficiente(Int32, Int32)
+  nameWithType: MetodiTipologieOccupazioni.DeleteCoefficiente(Int32, Int32)
+  fullName: DTO.MetodiTipologieOccupazioni.DeleteCoefficiente(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: DeleteCoefficiente
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\TipologieOccupazioni.cs
+    startLine: 32
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static int DeleteCoefficiente(int IdTipologiaOccupazione, int Anno)
+    parameters:
+    - id: IdTipologiaOccupazione
+      type: System.Int32
+    - id: Anno
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function DeleteCoefficiente(IdTipologiaOccupazione As Integer, Anno As Integer) As Integer
+  overload: DTO.MetodiTipologieOccupazioni.DeleteCoefficiente*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiTipologieOccupazioni.InsertOrUpdateDescrizione(System.String,System.String,System.String,System.Int32,System.String)
+  commentId: M:DTO.MetodiTipologieOccupazioni.InsertOrUpdateDescrizione(System.String,System.String,System.String,System.Int32,System.String)
+  id: InsertOrUpdateDescrizione(System.String,System.String,System.String,System.Int32,System.String)
+  parent: DTO.MetodiTipologieOccupazioni
+  langs:
+  - csharp
+  - vb
+  name: InsertOrUpdateDescrizione(String, String, String, Int32, String)
+  nameWithType: MetodiTipologieOccupazioni.InsertOrUpdateDescrizione(String, String, String, Int32, String)
+  fullName: DTO.MetodiTipologieOccupazioni.InsertOrUpdateDescrizione(System.String, System.String, System.String, System.Int32, System.String)
+  type: Method
+  source:
+    id: InsertOrUpdateDescrizione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\TipologieOccupazioni.cs
+    startLine: 45
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static int InsertOrUpdateDescrizione(string ConnectionString, string IdEnte, string IdTributo, int IdTipologiaOccupazione, string Descrizione)
+    parameters:
+    - id: ConnectionString
+      type: System.String
+    - id: IdEnte
+      type: System.String
+    - id: IdTributo
+      type: System.String
+    - id: IdTipologiaOccupazione
+      type: System.Int32
+    - id: Descrizione
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function InsertOrUpdateDescrizione(ConnectionString As String, IdEnte As String, IdTributo As String, IdTipologiaOccupazione As Integer, Descrizione As String) As Integer
+  overload: DTO.MetodiTipologieOccupazioni.InsertOrUpdateDescrizione*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiTipologieOccupazioni.InsertOrUpdateCoefficiente(System.Int32,System.Int32,System.Decimal)
+  commentId: M:DTO.MetodiTipologieOccupazioni.InsertOrUpdateCoefficiente(System.Int32,System.Int32,System.Decimal)
+  id: InsertOrUpdateCoefficiente(System.Int32,System.Int32,System.Decimal)
+  parent: DTO.MetodiTipologieOccupazioni
+  langs:
+  - csharp
+  - vb
+  name: InsertOrUpdateCoefficiente(Int32, Int32, Decimal)
+  nameWithType: MetodiTipologieOccupazioni.InsertOrUpdateCoefficiente(Int32, Int32, Decimal)
+  fullName: DTO.MetodiTipologieOccupazioni.InsertOrUpdateCoefficiente(System.Int32, System.Int32, System.Decimal)
+  type: Method
+  source:
+    id: InsertOrUpdateCoefficiente
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\TipologieOccupazioni.cs
+    startLine: 58
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static int InsertOrUpdateCoefficiente(int IdTipologiaOccupazione, int Anno, decimal Coefficiente)
+    parameters:
+    - id: IdTipologiaOccupazione
+      type: System.Int32
+    - id: Anno
+      type: System.Int32
+    - id: Coefficiente
+      type: System.Decimal
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function InsertOrUpdateCoefficiente(IdTipologiaOccupazione As Integer, Anno As Integer, Coefficiente As Decimal) As Integer
+  overload: DTO.MetodiTipologieOccupazioni.InsertOrUpdateCoefficiente*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiTipologieOccupazioni.GetAllTipologieOccupazioni(System.String,System.String,System.Boolean)
+  commentId: M:DTO.MetodiTipologieOccupazioni.GetAllTipologieOccupazioni(System.String,System.String,System.Boolean)
+  id: GetAllTipologieOccupazioni(System.String,System.String,System.Boolean)
+  parent: DTO.MetodiTipologieOccupazioni
+  langs:
+  - csharp
+  - vb
+  name: GetAllTipologieOccupazioni(String, String, Boolean)
+  nameWithType: MetodiTipologieOccupazioni.GetAllTipologieOccupazioni(String, String, Boolean)
+  fullName: DTO.MetodiTipologieOccupazioni.GetAllTipologieOccupazioni(System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    id: GetAllTipologieOccupazioni
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\TipologieOccupazioni.cs
+    startLine: 71
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static TipologieOccupazioni[] GetAllTipologieOccupazioni(string IdEnte, string IdTributo, bool DefaultValue)
+    parameters:
+    - id: IdEnte
+      type: System.String
+    - id: IdTributo
+      type: System.String
+    - id: DefaultValue
+      type: System.Boolean
+    return:
+      type: IRemInterfaceOSAP.TipologieOccupazioni[]
+    content.vb: Public Shared Function GetAllTipologieOccupazioni(IdEnte As String, IdTributo As String, DefaultValue As Boolean) As TipologieOccupazioni()
+  overload: DTO.MetodiTipologieOccupazioni.GetAllTipologieOccupazioni*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiTipologieOccupazioni.GetAllCoefficienti(System.String)
+  commentId: M:DTO.MetodiTipologieOccupazioni.GetAllCoefficienti(System.String)
+  id: GetAllCoefficienti(System.String)
+  parent: DTO.MetodiTipologieOccupazioni
+  langs:
+  - csharp
+  - vb
+  name: GetAllCoefficienti(String)
+  nameWithType: MetodiTipologieOccupazioni.GetAllCoefficienti(String)
+  fullName: DTO.MetodiTipologieOccupazioni.GetAllCoefficienti(System.String)
+  type: Method
+  source:
+    id: GetAllCoefficienti
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\TipologieOccupazioni.cs
+    startLine: 86
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static Coefficienti[] GetAllCoefficienti(string IdEnte)
+    parameters:
+    - id: IdEnte
+      type: System.String
+    return:
+      type: IRemInterfaceOSAP.Coefficienti[]
+    content.vb: Public Shared Function GetAllCoefficienti(IdEnte As String) As Coefficienti()
+  overload: DTO.MetodiTipologieOccupazioni.GetAllCoefficienti*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiTipologieOccupazioni.GetCoefficiente(System.Int32,System.Int32)
+  commentId: M:DTO.MetodiTipologieOccupazioni.GetCoefficiente(System.Int32,System.Int32)
+  id: GetCoefficiente(System.Int32,System.Int32)
+  parent: DTO.MetodiTipologieOccupazioni
+  langs:
+  - csharp
+  - vb
+  name: GetCoefficiente(Int32, Int32)
+  nameWithType: MetodiTipologieOccupazioni.GetCoefficiente(Int32, Int32)
+  fullName: DTO.MetodiTipologieOccupazioni.GetCoefficiente(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: GetCoefficiente
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\TipologieOccupazioni.cs
+    startLine: 100
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static Coefficienti GetCoefficiente(int IdTipologiaOccupazione, int Anno)
+    parameters:
+    - id: IdTipologiaOccupazione
+      type: System.Int32
+    - id: Anno
+      type: System.Int32
+    return:
+      type: IRemInterfaceOSAP.Coefficienti
+    content.vb: Public Shared Function GetCoefficiente(IdTipologiaOccupazione As Integer, Anno As Integer) As Coefficienti
+  overload: DTO.MetodiTipologieOccupazioni.GetCoefficiente*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiTipologieOccupazioni.GetTipologieOccupazioni(System.Int32,System.Boolean,System.String)
+  commentId: M:DTO.MetodiTipologieOccupazioni.GetTipologieOccupazioni(System.Int32,System.Boolean,System.String)
+  id: GetTipologieOccupazioni(System.Int32,System.Boolean,System.String)
+  parent: DTO.MetodiTipologieOccupazioni
+  langs:
+  - csharp
+  - vb
+  name: GetTipologieOccupazioni(Int32, Boolean, String)
+  nameWithType: MetodiTipologieOccupazioni.GetTipologieOccupazioni(Int32, Boolean, String)
+  fullName: DTO.MetodiTipologieOccupazioni.GetTipologieOccupazioni(System.Int32, System.Boolean, System.String)
+  type: Method
+  source:
+    id: GetTipologieOccupazioni
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\TipologieOccupazioni.cs
+    startLine: 117
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static TipologieOccupazioni[] GetTipologieOccupazioni(int Anno, bool DefaultValue, string idEnte)
+    parameters:
+    - id: Anno
+      type: System.Int32
+    - id: DefaultValue
+      type: System.Boolean
+    - id: idEnte
+      type: System.String
+    return:
+      type: IRemInterfaceOSAP.TipologieOccupazioni[]
+    content.vb: Public Shared Function GetTipologieOccupazioni(Anno As Integer, DefaultValue As Boolean, idEnte As String) As TipologieOccupazioni()
+  overload: DTO.MetodiTipologieOccupazioni.GetTipologieOccupazioni*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiTipologieOccupazioni.GetTipologieOccupazioniForMotore(System.String,System.Int32,System.String,System.String)
+  commentId: M:DTO.MetodiTipologieOccupazioni.GetTipologieOccupazioniForMotore(System.String,System.Int32,System.String,System.String)
+  id: GetTipologieOccupazioniForMotore(System.String,System.Int32,System.String,System.String)
+  parent: DTO.MetodiTipologieOccupazioni
+  langs:
+  - csharp
+  - vb
+  name: GetTipologieOccupazioniForMotore(String, Int32, String, String)
+  nameWithType: MetodiTipologieOccupazioni.GetTipologieOccupazioniForMotore(String, Int32, String, String)
+  fullName: DTO.MetodiTipologieOccupazioni.GetTipologieOccupazioniForMotore(System.String, System.Int32, System.String, System.String)
+  type: Method
+  source:
+    id: GetTipologieOccupazioniForMotore
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\TipologieOccupazioni.cs
+    startLine: 132
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static TipologieOccupazioni[] GetTipologieOccupazioniForMotore(string ConnectionString, int Anno, string idEnte, string IdTributo)
+    parameters:
+    - id: ConnectionString
+      type: System.String
+    - id: Anno
+      type: System.Int32
+    - id: idEnte
+      type: System.String
+    - id: IdTributo
+      type: System.String
+    return:
+      type: IRemInterfaceOSAP.TipologieOccupazioni[]
+    content.vb: Public Shared Function GetTipologieOccupazioniForMotore(ConnectionString As String, Anno As Integer, idEnte As String, IdTributo As String) As TipologieOccupazioni()
+  overload: DTO.MetodiTipologieOccupazioni.GetTipologieOccupazioniForMotore*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiTipologieOccupazioni.GetTipologiaOccupazione(System.String,System.Int32,System.String,System.String,System.String)
+  commentId: M:DTO.MetodiTipologieOccupazioni.GetTipologiaOccupazione(System.String,System.Int32,System.String,System.String,System.String)
+  id: GetTipologiaOccupazione(System.String,System.Int32,System.String,System.String,System.String)
+  parent: DTO.MetodiTipologieOccupazioni
+  langs:
+  - csharp
+  - vb
+  name: GetTipologiaOccupazione(String, Int32, String, String, String)
+  nameWithType: MetodiTipologieOccupazioni.GetTipologiaOccupazione(String, Int32, String, String, String)
+  fullName: DTO.MetodiTipologieOccupazioni.GetTipologiaOccupazione(System.String, System.Int32, System.String, System.String, System.String)
+  type: Method
+  source:
+    id: GetTipologiaOccupazione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\TipologieOccupazioni.cs
+    startLine: 147
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static TipologieOccupazioni GetTipologiaOccupazione(string ConnectionString, int IdTipologiaOccupazione, string Descrizione, string idEnte, string CodTributo)
+    parameters:
+    - id: ConnectionString
+      type: System.String
+    - id: IdTipologiaOccupazione
+      type: System.Int32
+    - id: Descrizione
+      type: System.String
+    - id: idEnte
+      type: System.String
+    - id: CodTributo
+      type: System.String
+    return:
+      type: IRemInterfaceOSAP.TipologieOccupazioni
+    content.vb: Public Shared Function GetTipologiaOccupazione(ConnectionString As String, IdTipologiaOccupazione As Integer, Descrizione As String, idEnte As String, CodTributo As String) As TipologieOccupazioni
+  overload: DTO.MetodiTipologieOccupazioni.GetTipologiaOccupazione*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiTipologieOccupazioni.SetRibalta(System.Int32,System.Int32,System.String)
+  commentId: M:DTO.MetodiTipologieOccupazioni.SetRibalta(System.Int32,System.Int32,System.String)
+  id: SetRibalta(System.Int32,System.Int32,System.String)
+  parent: DTO.MetodiTipologieOccupazioni
+  langs:
+  - csharp
+  - vb
+  name: SetRibalta(Int32, Int32, String)
+  nameWithType: MetodiTipologieOccupazioni.SetRibalta(Int32, Int32, String)
+  fullName: DTO.MetodiTipologieOccupazioni.SetRibalta(System.Int32, System.Int32, System.String)
+  type: Method
+  source:
+    id: SetRibalta
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\TipologieOccupazioni.cs
+    startLine: 166
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static int SetRibalta(int RibaltaDa, int RibaltaA, string IdEnte)
+    parameters:
+    - id: RibaltaDa
+      type: System.Int32
+    - id: RibaltaA
+      type: System.Int32
+    - id: IdEnte
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function SetRibalta(RibaltaDa As Integer, RibaltaA As Integer, IdEnte As String) As Integer
+  overload: DTO.MetodiTipologieOccupazioni.SetRibalta*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: DTO
+  commentId: N:DTO
+  name: DTO
+  nameWithType: DTO
+  fullName: DTO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DTO.MetodiTipologieOccupazioni.DeleteTipologiaOccupazione*
+  commentId: Overload:DTO.MetodiTipologieOccupazioni.DeleteTipologiaOccupazione
+  name: DeleteTipologiaOccupazione
+  nameWithType: MetodiTipologieOccupazioni.DeleteTipologiaOccupazione
+  fullName: DTO.MetodiTipologieOccupazioni.DeleteTipologiaOccupazione
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DTO.MetodiTipologieOccupazioni.DeleteCoefficiente*
+  commentId: Overload:DTO.MetodiTipologieOccupazioni.DeleteCoefficiente
+  name: DeleteCoefficiente
+  nameWithType: MetodiTipologieOccupazioni.DeleteCoefficiente
+  fullName: DTO.MetodiTipologieOccupazioni.DeleteCoefficiente
+- uid: DTO.MetodiTipologieOccupazioni.InsertOrUpdateDescrizione*
+  commentId: Overload:DTO.MetodiTipologieOccupazioni.InsertOrUpdateDescrizione
+  name: InsertOrUpdateDescrizione
+  nameWithType: MetodiTipologieOccupazioni.InsertOrUpdateDescrizione
+  fullName: DTO.MetodiTipologieOccupazioni.InsertOrUpdateDescrizione
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DTO.MetodiTipologieOccupazioni.InsertOrUpdateCoefficiente*
+  commentId: Overload:DTO.MetodiTipologieOccupazioni.InsertOrUpdateCoefficiente
+  name: InsertOrUpdateCoefficiente
+  nameWithType: MetodiTipologieOccupazioni.InsertOrUpdateCoefficiente
+  fullName: DTO.MetodiTipologieOccupazioni.InsertOrUpdateCoefficiente
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  nameWithType: Decimal
+  fullName: System.Decimal
+- uid: DTO.MetodiTipologieOccupazioni.GetAllTipologieOccupazioni*
+  commentId: Overload:DTO.MetodiTipologieOccupazioni.GetAllTipologieOccupazioni
+  name: GetAllTipologieOccupazioni
+  nameWithType: MetodiTipologieOccupazioni.GetAllTipologieOccupazioni
+  fullName: DTO.MetodiTipologieOccupazioni.GetAllTipologieOccupazioni
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: IRemInterfaceOSAP.TipologieOccupazioni[]
+  isExternal: true
+  name: TipologieOccupazioni[]
+  nameWithType: TipologieOccupazioni[]
+  fullName: IRemInterfaceOSAP.TipologieOccupazioni[]
+  nameWithType.vb: TipologieOccupazioni()
+  fullName.vb: IRemInterfaceOSAP.TipologieOccupazioni()
+  name.vb: TipologieOccupazioni()
+  spec.csharp:
+  - uid: IRemInterfaceOSAP.TipologieOccupazioni
+    name: TipologieOccupazioni
+    nameWithType: TipologieOccupazioni
+    fullName: IRemInterfaceOSAP.TipologieOccupazioni
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: IRemInterfaceOSAP.TipologieOccupazioni
+    name: TipologieOccupazioni
+    nameWithType: TipologieOccupazioni
+    fullName: IRemInterfaceOSAP.TipologieOccupazioni
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: DTO.MetodiTipologieOccupazioni.GetAllCoefficienti*
+  commentId: Overload:DTO.MetodiTipologieOccupazioni.GetAllCoefficienti
+  name: GetAllCoefficienti
+  nameWithType: MetodiTipologieOccupazioni.GetAllCoefficienti
+  fullName: DTO.MetodiTipologieOccupazioni.GetAllCoefficienti
+- uid: IRemInterfaceOSAP.Coefficienti[]
+  isExternal: true
+  name: Coefficienti[]
+  nameWithType: Coefficienti[]
+  fullName: IRemInterfaceOSAP.Coefficienti[]
+  nameWithType.vb: Coefficienti()
+  fullName.vb: IRemInterfaceOSAP.Coefficienti()
+  name.vb: Coefficienti()
+  spec.csharp:
+  - uid: IRemInterfaceOSAP.Coefficienti
+    name: Coefficienti
+    nameWithType: Coefficienti
+    fullName: IRemInterfaceOSAP.Coefficienti
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: IRemInterfaceOSAP.Coefficienti
+    name: Coefficienti
+    nameWithType: Coefficienti
+    fullName: IRemInterfaceOSAP.Coefficienti
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: DTO.MetodiTipologieOccupazioni.GetCoefficiente*
+  commentId: Overload:DTO.MetodiTipologieOccupazioni.GetCoefficiente
+  name: GetCoefficiente
+  nameWithType: MetodiTipologieOccupazioni.GetCoefficiente
+  fullName: DTO.MetodiTipologieOccupazioni.GetCoefficiente
+- uid: IRemInterfaceOSAP.Coefficienti
+  commentId: T:IRemInterfaceOSAP.Coefficienti
+  parent: IRemInterfaceOSAP
+  isExternal: true
+  name: Coefficienti
+  nameWithType: Coefficienti
+  fullName: IRemInterfaceOSAP.Coefficienti
+- uid: IRemInterfaceOSAP
+  commentId: N:IRemInterfaceOSAP
+  isExternal: true
+  name: IRemInterfaceOSAP
+  nameWithType: IRemInterfaceOSAP
+  fullName: IRemInterfaceOSAP
+- uid: DTO.MetodiTipologieOccupazioni.GetTipologieOccupazioni*
+  commentId: Overload:DTO.MetodiTipologieOccupazioni.GetTipologieOccupazioni
+  name: GetTipologieOccupazioni
+  nameWithType: MetodiTipologieOccupazioni.GetTipologieOccupazioni
+  fullName: DTO.MetodiTipologieOccupazioni.GetTipologieOccupazioni
+- uid: DTO.MetodiTipologieOccupazioni.GetTipologieOccupazioniForMotore*
+  commentId: Overload:DTO.MetodiTipologieOccupazioni.GetTipologieOccupazioniForMotore
+  name: GetTipologieOccupazioniForMotore
+  nameWithType: MetodiTipologieOccupazioni.GetTipologieOccupazioniForMotore
+  fullName: DTO.MetodiTipologieOccupazioni.GetTipologieOccupazioniForMotore
+- uid: DTO.MetodiTipologieOccupazioni.GetTipologiaOccupazione*
+  commentId: Overload:DTO.MetodiTipologieOccupazioni.GetTipologiaOccupazione
+  name: GetTipologiaOccupazione
+  nameWithType: MetodiTipologieOccupazioni.GetTipologiaOccupazione
+  fullName: DTO.MetodiTipologieOccupazioni.GetTipologiaOccupazione
+- uid: IRemInterfaceOSAP.TipologieOccupazioni
+  commentId: T:IRemInterfaceOSAP.TipologieOccupazioni
+  parent: IRemInterfaceOSAP
+  isExternal: true
+  name: TipologieOccupazioni
+  nameWithType: TipologieOccupazioni
+  fullName: IRemInterfaceOSAP.TipologieOccupazioni
+- uid: DTO.MetodiTipologieOccupazioni.SetRibalta*
+  commentId: Overload:DTO.MetodiTipologieOccupazioni.SetRibalta
+  name: SetRibalta
+  nameWithType: MetodiTipologieOccupazioni.SetRibalta
+  fullName: DTO.MetodiTipologieOccupazioni.SetRibalta

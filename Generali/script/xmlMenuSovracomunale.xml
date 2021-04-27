@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MenuRoot>
+	<Menu id="GestPwd" text="Account" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+		<SubMenu id="ResetPwd" text="Cambio Password" urlVisualizza="../../Login/ResetPassword.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspVuotaRemoveComandi.aspx"></SubMenu>
+	</Menu>
+	<Menu id="CruscottoGen" text="Cruscotto" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+		<SubMenu id="Cruscotto" text="Cruscotto" urlVisualizza="../../Interrogazioni/Cruscotto.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+		<SubMenu id="Anagrafe" text="Anagrafica" urlVisualizza="../../Anagrafica/RicercaAnagrafica.aspx?popup=0" urlComandi="../../Anagrafica/Comandi/ComandiRicercaAnagrafica.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+		<SubMenu id="8852Dich" text="Dichiarazioni ICI/IMU" urlVisualizza="../../OPENgovICI/Gestione.aspx" urlComandi="../../OPENgovICI/CGestione.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+		<SubMenu id="0434Dich" text="Dichiarazioni TARES/TARI" urlVisualizza="../../OPENgovTIA/Dichiarazioni/RicercaDichiarazione.aspx" urlComandi="../../OPENgovTIA/Dichiarazioni/ComandiRicDichiarazione.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    <SubMenu id="9000Contatori" text="Contatori Acquedotto" urlVisualizza="../../OPENgovH2O/DataEntryContatori/RicercaContatori.aspx" urlComandi="../../OPENgovH2O/DataEntryContatori/ComandiRicercaContatori.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    <SubMenu id="Provv" text="Provvedimenti" urlVisualizza="../../OPENgovPROVVEDIMENTI/GestioneAtti/RicercaAvanzata/RicercaAvanzata.aspx" urlComandi="../../aspVuota.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+		<SubMenu id="0434Simula" text="Simulazione Tariffaria" urlVisualizza="../../20/TARES/Simulazione/Simulazione.aspx?ENTE=myidente" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+		<SubMenu id="Aliquote" text="Aliquote/Tariffe" urlVisualizza="../../Interrogazioni/Aliquote.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+		<SubMenu id="Analisi0434" text="Analisi TARES/TARI" urlVisualizza="../../Interrogazioni/FattVSIncas.aspx?Tributo=0434" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+		<SubMenu id="Analisi8852" text="Analisi ICI/IMU/TASI" urlVisualizza="../../Interrogazioni/FattVSIncas.aspx?Tributo=8852" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+		<SubMenu id="Analisi9000" text="Analisi Acquedotto" urlVisualizza="../../Interrogazioni/FattVSIncas.aspx?Tributo=9000" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+		<SubMenu id="Interrogazioni" text="Interrogazioni" urlVisualizza="../../Interrogazioni/DichEmesso.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+	</Menu>
+</MenuRoot>

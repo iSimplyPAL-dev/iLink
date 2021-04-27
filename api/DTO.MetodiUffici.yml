@@ -1,0 +1,515 @@
+### YamlMime:ManagedReference
+items:
+- uid: DTO.MetodiUffici
+  commentId: T:DTO.MetodiUffici
+  id: MetodiUffici
+  parent: DTO
+  children:
+  - DTO.MetodiUffici.GetUffici
+  - DTO.MetodiUffici.GetUfficio(System.Int32)
+  - DTO.MetodiUffici.GetUfficio(System.String,System.String,System.String,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: MetodiUffici
+  nameWithType: MetodiUffici
+  fullName: DTO.MetodiUffici
+  type: Class
+  source:
+    id: MetodiUffici
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Uffici.cs
+    startLine: 14
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  summary: "\nClasse per la gestione uffici\n"
+  example: []
+  syntax:
+    content: public class MetodiUffici
+    content.vb: Public Class MetodiUffici
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DTO.MetodiUffici.GetUffici
+  commentId: M:DTO.MetodiUffici.GetUffici
+  id: GetUffici
+  parent: DTO.MetodiUffici
+  langs:
+  - csharp
+  - vb
+  name: GetUffici()
+  nameWithType: MetodiUffici.GetUffici()
+  fullName: DTO.MetodiUffici.GetUffici()
+  type: Method
+  source:
+    id: GetUffici
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Uffici.cs
+    startLine: 19
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static Uffici[] GetUffici()
+    return:
+      type: IRemInterfaceOSAP.Uffici[]
+    content.vb: Public Shared Function GetUffici As Uffici()
+  overload: DTO.MetodiUffici.GetUffici*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiUffici.GetUfficio(System.Int32)
+  commentId: M:DTO.MetodiUffici.GetUfficio(System.Int32)
+  id: GetUfficio(System.Int32)
+  parent: DTO.MetodiUffici
+  langs:
+  - csharp
+  - vb
+  name: GetUfficio(Int32)
+  nameWithType: MetodiUffici.GetUfficio(Int32)
+  fullName: DTO.MetodiUffici.GetUfficio(System.Int32)
+  type: Method
+  source:
+    id: GetUfficio
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Uffici.cs
+    startLine: 38
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static Uffici GetUfficio(int IdUfficio)
+    parameters:
+    - id: IdUfficio
+      type: System.Int32
+    return:
+      type: IRemInterfaceOSAP.Uffici
+    content.vb: Public Shared Function GetUfficio(IdUfficio As Integer) As Uffici
+  overload: DTO.MetodiUffici.GetUfficio*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiUffici.GetUfficio(System.String,System.String,System.String,System.Boolean)
+  commentId: M:DTO.MetodiUffici.GetUfficio(System.String,System.String,System.String,System.Boolean)
+  id: GetUfficio(System.String,System.String,System.String,System.Boolean)
+  parent: DTO.MetodiUffici
+  langs:
+  - csharp
+  - vb
+  name: GetUfficio(String, String, String, Boolean)
+  nameWithType: MetodiUffici.GetUfficio(String, String, String, Boolean)
+  fullName: DTO.MetodiUffici.GetUfficio(System.String, System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    id: GetUfficio
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Uffici.cs
+    startLine: 56
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static Uffici GetUfficio(string ConnectionString, string IdEnte, string Descrizione, bool defaultValue)
+    parameters:
+    - id: ConnectionString
+      type: System.String
+    - id: IdEnte
+      type: System.String
+    - id: Descrizione
+      type: System.String
+    - id: defaultValue
+      type: System.Boolean
+    return:
+      type: IRemInterfaceOSAP.Uffici
+    content.vb: Public Shared Function GetUfficio(ConnectionString As String, IdEnte As String, Descrizione As String, defaultValue As Boolean) As Uffici
+  overload: DTO.MetodiUffici.GetUfficio*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: DTO
+  commentId: N:DTO
+  name: DTO
+  nameWithType: DTO
+  fullName: DTO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DTO.MetodiUffici.GetUffici*
+  commentId: Overload:DTO.MetodiUffici.GetUffici
+  name: GetUffici
+  nameWithType: MetodiUffici.GetUffici
+  fullName: DTO.MetodiUffici.GetUffici
+- uid: IRemInterfaceOSAP.Uffici[]
+  isExternal: true
+  name: Uffici[]
+  nameWithType: Uffici[]
+  fullName: IRemInterfaceOSAP.Uffici[]
+  nameWithType.vb: Uffici()
+  fullName.vb: IRemInterfaceOSAP.Uffici()
+  name.vb: Uffici()
+  spec.csharp:
+  - uid: IRemInterfaceOSAP.Uffici
+    name: Uffici
+    nameWithType: Uffici
+    fullName: IRemInterfaceOSAP.Uffici
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: IRemInterfaceOSAP.Uffici
+    name: Uffici
+    nameWithType: Uffici
+    fullName: IRemInterfaceOSAP.Uffici
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: DTO.MetodiUffici.GetUfficio*
+  commentId: Overload:DTO.MetodiUffici.GetUfficio
+  name: GetUfficio
+  nameWithType: MetodiUffici.GetUfficio
+  fullName: DTO.MetodiUffici.GetUfficio
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: IRemInterfaceOSAP.Uffici
+  commentId: T:IRemInterfaceOSAP.Uffici
+  parent: IRemInterfaceOSAP
+  isExternal: true
+  name: Uffici
+  nameWithType: Uffici
+  fullName: IRemInterfaceOSAP.Uffici
+- uid: IRemInterfaceOSAP
+  commentId: N:IRemInterfaceOSAP
+  isExternal: true
+  name: IRemInterfaceOSAP
+  nameWithType: IRemInterfaceOSAP
+  fullName: IRemInterfaceOSAP
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

@@ -1,0 +1,3765 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  commentId: T:DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  id: ServiceOPENae
+  parent: DichiarazioniICI.WServiceOPENae
+  children:
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.#ctor
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginEstraiTracciatoAE(System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginEstraiTracciatoAE1(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.AsyncCallback,System.Object)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginGetFlussiTracciatiAE(System.String,System.String,System.String,System.AsyncCallback,System.Object)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE(System.String,System.String,System.String,System.AsyncCallback,System.Object)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE1(DichiarazioniICI.WServiceOPENae.DisposizioneAE[],System.AsyncCallback,System.Object)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE2(System.String,System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.CancelAsync(System.Object)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndEstraiTracciatoAE(System.IAsyncResult,System.String@)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndEstraiTracciatoAE1(System.IAsyncResult,System.String@)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndGetFlussiTracciatiAE(System.IAsyncResult,System.String@)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndPopolaTabAppoggioAE(System.IAsyncResult)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndPopolaTabAppoggioAE1(System.IAsyncResult)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndPopolaTabAppoggioAE2(System.IAsyncResult)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String@)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE(System.String,System.String,System.String,System.String@)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE1Async(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE1Async(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.Object)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE1Completed
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAEAsync(System.String,System.String,System.String,System.String)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAEAsync(System.String,System.String,System.String,System.String,System.Object)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAECompleted
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAE(System.String,System.String,System.String@)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAEAsync(System.String,System.String,System.String)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAEAsync(System.String,System.String,System.String,System.Object)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAECompleted
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE(DichiarazioniICI.WServiceOPENae.DisposizioneAE[])
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE(System.String,System.String,System.String)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE(System.String,System.String,System.String,System.String,System.String)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE1Async(DichiarazioniICI.WServiceOPENae.DisposizioneAE[])
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE1Async(DichiarazioniICI.WServiceOPENae.DisposizioneAE[],System.Object)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE1Completed
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE2Async(System.String,System.String,System.String,System.String,System.String)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE2Async(System.String,System.String,System.String,System.String,System.String,System.Object)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE2Completed
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAEAsync(System.String,System.String,System.String)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAEAsync(System.String,System.String,System.String,System.Object)
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAECompleted
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.Url
+  - DichiarazioniICI.WServiceOPENae.ServiceOPENae.UseDefaultCredentials
+  langs:
+  - csharp
+  - vb
+  name: ServiceOPENae
+  nameWithType: ServiceOPENae
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  type: Class
+  source:
+    id: ServiceOPENae
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 26
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: >-
+      [WebServiceBinding(Name = "ServiceOPENaeSoap", Namespace = "http://localhost/OPENaeWS/")]
+
+      public class ServiceOPENae : SoapHttpClientProtocol, IComponent, IDisposable
+    content.vb: >-
+      <WebServiceBinding(Name:="ServiceOPENaeSoap", Namespace:="http://localhost/OPENaeWS/")>
+
+      Public Class ServiceOPENae
+
+          Inherits SoapHttpClientProtocol
+
+          Implements IComponent, IDisposable
+  inheritance:
+  - System.Object
+  - System.MarshalByRefObject
+  - System.ComponentModel.Component
+  - System.Web.Services.Protocols.WebClientProtocol
+  - System.Web.Services.Protocols.HttpWebClientProtocol
+  - System.Web.Services.Protocols.SoapHttpClientProtocol
+  implements:
+  - System.ComponentModel.IComponent
+  - System.IDisposable
+  inheritedMembers:
+  - System.Web.Services.Protocols.SoapHttpClientProtocol.Discover
+  - System.Web.Services.Protocols.SoapHttpClientProtocol.GetWebRequest(System.Uri)
+  - System.Web.Services.Protocols.SoapHttpClientProtocol.GetWriterForMessage(System.Web.Services.Protocols.SoapClientMessage,System.Int32)
+  - System.Web.Services.Protocols.SoapHttpClientProtocol.GetReaderForMessage(System.Web.Services.Protocols.SoapClientMessage,System.Int32)
+  - System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(System.String,System.Object[])
+  - System.Web.Services.Protocols.SoapHttpClientProtocol.BeginInvoke(System.String,System.Object[],System.AsyncCallback,System.Object)
+  - System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke(System.IAsyncResult)
+  - System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String,System.Object[],System.Threading.SendOrPostCallback)
+  - System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String,System.Object[],System.Threading.SendOrPostCallback,System.Object)
+  - System.Web.Services.Protocols.SoapHttpClientProtocol.SoapVersion
+  - System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest)
+  - System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest,System.IAsyncResult)
+  - System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type,System.Collections.ArrayList)
+  - System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type[],System.Collections.ArrayList)
+  - System.Web.Services.Protocols.HttpWebClientProtocol.AllowAutoRedirect
+  - System.Web.Services.Protocols.HttpWebClientProtocol.CookieContainer
+  - System.Web.Services.Protocols.HttpWebClientProtocol.ClientCertificates
+  - System.Web.Services.Protocols.HttpWebClientProtocol.EnableDecompression
+  - System.Web.Services.Protocols.HttpWebClientProtocol.UserAgent
+  - System.Web.Services.Protocols.HttpWebClientProtocol.Proxy
+  - System.Web.Services.Protocols.HttpWebClientProtocol.UnsafeAuthenticatedConnectionSharing
+  - System.Web.Services.Protocols.WebClientProtocol.Abort
+  - System.Web.Services.Protocols.WebClientProtocol.GetFromCache(System.Type)
+  - System.Web.Services.Protocols.WebClientProtocol.AddToCache(System.Type,System.Object)
+  - System.Web.Services.Protocols.WebClientProtocol.Credentials
+  - System.Web.Services.Protocols.WebClientProtocol.ConnectionGroupName
+  - System.Web.Services.Protocols.WebClientProtocol.PreAuthenticate
+  - System.Web.Services.Protocols.WebClientProtocol.RequestEncoding
+  - System.Web.Services.Protocols.WebClientProtocol.Timeout
+  - System.ComponentModel.Component.Dispose
+  - System.ComponentModel.Component.Dispose(System.Boolean)
+  - System.ComponentModel.Component.GetService(System.Type)
+  - System.ComponentModel.Component.ToString
+  - System.ComponentModel.Component.CanRaiseEvents
+  - System.ComponentModel.Component.Events
+  - System.ComponentModel.Component.Site
+  - System.ComponentModel.Component.Container
+  - System.ComponentModel.Component.DesignMode
+  - System.ComponentModel.Component.Disposed
+  - System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  - System.MarshalByRefObject.GetLifetimeService
+  - System.MarshalByRefObject.InitializeLifetimeService
+  - System.MarshalByRefObject.CreateObjRef(System.Type)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.Web.Services.WebServiceBindingAttribute
+    ctor: System.Web.Services.WebServiceBindingAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: ServiceOPENaeSoap
+    - name: Namespace
+      type: System.String
+      value: http://localhost/OPENaeWS/
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.#ctor
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.#ctor
+  id: '#ctor'
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: ServiceOPENae()
+  nameWithType: ServiceOPENae.ServiceOPENae()
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.ServiceOPENae()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 47
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public ServiceOPENae()
+    content.vb: Public Sub New
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.Url
+  commentId: P:DichiarazioniICI.WServiceOPENae.ServiceOPENae.Url
+  id: Url
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: Url
+  nameWithType: ServiceOPENae.Url
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.Url
+  type: Property
+  source:
+    id: Url
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 66
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  syntax:
+    content: public string Url { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Url As String
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.Url*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.UseDefaultCredentials
+  commentId: P:DichiarazioniICI.WServiceOPENae.ServiceOPENae.UseDefaultCredentials
+  id: UseDefaultCredentials
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: UseDefaultCredentials
+  nameWithType: ServiceOPENae.UseDefaultCredentials
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.UseDefaultCredentials
+  type: Property
+  source:
+    id: UseDefaultCredentials
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 86
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  syntax:
+    content: public bool UseDefaultCredentials { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property UseDefaultCredentials As Boolean
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.UseDefaultCredentials*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAECompleted
+  commentId: E:DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAECompleted
+  id: PopolaTabAppoggioAECompleted
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: PopolaTabAppoggioAECompleted
+  nameWithType: ServiceOPENae.PopolaTabAppoggioAECompleted
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAECompleted
+  type: Event
+  source:
+    id: PopolaTabAppoggioAECompleted
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 97
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public event PopolaTabAppoggioAECompletedEventHandler PopolaTabAppoggioAECompleted
+    return:
+      type: DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAECompletedEventHandler
+    content.vb: Public Event PopolaTabAppoggioAECompleted As PopolaTabAppoggioAECompletedEventHandler
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE1Completed
+  commentId: E:DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE1Completed
+  id: PopolaTabAppoggioAE1Completed
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: PopolaTabAppoggioAE1Completed
+  nameWithType: ServiceOPENae.PopolaTabAppoggioAE1Completed
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE1Completed
+  type: Event
+  source:
+    id: PopolaTabAppoggioAE1Completed
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 100
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public event PopolaTabAppoggioAE1CompletedEventHandler PopolaTabAppoggioAE1Completed
+    return:
+      type: DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE1CompletedEventHandler
+    content.vb: Public Event PopolaTabAppoggioAE1Completed As PopolaTabAppoggioAE1CompletedEventHandler
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAECompleted
+  commentId: E:DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAECompleted
+  id: EstraiTracciatoAECompleted
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: EstraiTracciatoAECompleted
+  nameWithType: ServiceOPENae.EstraiTracciatoAECompleted
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAECompleted
+  type: Event
+  source:
+    id: EstraiTracciatoAECompleted
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 103
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public event EstraiTracciatoAECompletedEventHandler EstraiTracciatoAECompleted
+    return:
+      type: DichiarazioniICI.WServiceOPENae.EstraiTracciatoAECompletedEventHandler
+    content.vb: Public Event EstraiTracciatoAECompleted As EstraiTracciatoAECompletedEventHandler
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAECompleted
+  commentId: E:DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAECompleted
+  id: GetFlussiTracciatiAECompleted
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: GetFlussiTracciatiAECompleted
+  nameWithType: ServiceOPENae.GetFlussiTracciatiAECompleted
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAECompleted
+  type: Event
+  source:
+    id: GetFlussiTracciatiAECompleted
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 106
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public event GetFlussiTracciatiAECompletedEventHandler GetFlussiTracciatiAECompleted
+    return:
+      type: DichiarazioniICI.WServiceOPENae.GetFlussiTracciatiAECompletedEventHandler
+    content.vb: Public Event GetFlussiTracciatiAECompleted As GetFlussiTracciatiAECompletedEventHandler
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE2Completed
+  commentId: E:DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE2Completed
+  id: PopolaTabAppoggioAE2Completed
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: PopolaTabAppoggioAE2Completed
+  nameWithType: ServiceOPENae.PopolaTabAppoggioAE2Completed
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE2Completed
+  type: Event
+  source:
+    id: PopolaTabAppoggioAE2Completed
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 109
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public event PopolaTabAppoggioAE2CompletedEventHandler PopolaTabAppoggioAE2Completed
+    return:
+      type: DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE2CompletedEventHandler
+    content.vb: Public Event PopolaTabAppoggioAE2Completed As PopolaTabAppoggioAE2CompletedEventHandler
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE1Completed
+  commentId: E:DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE1Completed
+  id: EstraiTracciatoAE1Completed
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: EstraiTracciatoAE1Completed
+  nameWithType: ServiceOPENae.EstraiTracciatoAE1Completed
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE1Completed
+  type: Event
+  source:
+    id: EstraiTracciatoAE1Completed
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 112
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public event EstraiTracciatoAE1CompletedEventHandler EstraiTracciatoAE1Completed
+    return:
+      type: DichiarazioniICI.WServiceOPENae.EstraiTracciatoAE1CompletedEventHandler
+    content.vb: Public Event EstraiTracciatoAE1Completed As EstraiTracciatoAE1CompletedEventHandler
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE(System.String,System.String,System.String)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE(System.String,System.String,System.String)
+  id: PopolaTabAppoggioAE(System.String,System.String,System.String)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: PopolaTabAppoggioAE(String, String, String)
+  nameWithType: ServiceOPENae.PopolaTabAppoggioAE(String, String, String)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE(System.String, System.String, System.String)
+  type: Method
+  source:
+    id: PopolaTabAppoggioAE
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 115
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: >-
+      [SoapDocumentMethod("http://localhost/OPENaeWS/PopolaDaQuery", RequestElementName = "PopolaDaQuery", RequestNamespace = "http://localhost/OPENaeWS/", ResponseElementName = "PopolaDaQueryResponse", ResponseNamespace = "http://localhost/OPENaeWS/", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+
+      public bool PopolaTabAppoggioAE(string sTributo, string sAnnoRif, string sCodiceISTAT)
+    parameters:
+    - id: sTributo
+      type: System.String
+    - id: sAnnoRif
+      type: System.String
+    - id: sCodiceISTAT
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <SoapDocumentMethod("http://localhost/OPENaeWS/PopolaDaQuery", RequestElementName:="PopolaDaQuery", RequestNamespace:="http://localhost/OPENaeWS/", ResponseElementName:="PopolaDaQueryResponse", ResponseNamespace:="http://localhost/OPENaeWS/", Use:=SoapBindingUse.Literal, ParameterStyle:=SoapParameterStyle.Wrapped)>
+
+      Public Function PopolaTabAppoggioAE(sTributo As String, sAnnoRif As String, sCodiceISTAT As String) As Boolean
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE*
+  attributes:
+  - type: System.Web.Services.Protocols.SoapDocumentMethodAttribute
+    ctor: System.Web.Services.Protocols.SoapDocumentMethodAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: http://localhost/OPENaeWS/PopolaDaQuery
+    namedArguments:
+    - name: RequestElementName
+      type: System.String
+      value: PopolaDaQuery
+    - name: RequestNamespace
+      type: System.String
+      value: http://localhost/OPENaeWS/
+    - name: ResponseElementName
+      type: System.String
+      value: PopolaDaQueryResponse
+    - name: ResponseNamespace
+      type: System.String
+      value: http://localhost/OPENaeWS/
+    - name: Use
+      type: System.Web.Services.Description.SoapBindingUse
+      value: 2
+    - name: ParameterStyle
+      type: System.Web.Services.Protocols.SoapParameterStyle
+      value: 2
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE(System.String,System.String,System.String,System.AsyncCallback,System.Object)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE(System.String,System.String,System.String,System.AsyncCallback,System.Object)
+  id: BeginPopolaTabAppoggioAE(System.String,System.String,System.String,System.AsyncCallback,System.Object)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: BeginPopolaTabAppoggioAE(String, String, String, AsyncCallback, Object)
+  nameWithType: ServiceOPENae.BeginPopolaTabAppoggioAE(String, String, String, AsyncCallback, Object)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE(System.String, System.String, System.String, System.AsyncCallback, System.Object)
+  type: Method
+  source:
+    id: BeginPopolaTabAppoggioAE
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 126
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public IAsyncResult BeginPopolaTabAppoggioAE(string sTributo, string sAnnoRif, string sCodiceISTAT, AsyncCallback callback, object asyncState)
+    parameters:
+    - id: sTributo
+      type: System.String
+    - id: sAnnoRif
+      type: System.String
+    - id: sCodiceISTAT
+      type: System.String
+    - id: callback
+      type: System.AsyncCallback
+    - id: asyncState
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Function BeginPopolaTabAppoggioAE(sTributo As String, sAnnoRif As String, sCodiceISTAT As String, callback As AsyncCallback, asyncState As Object) As IAsyncResult
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndPopolaTabAppoggioAE(System.IAsyncResult)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndPopolaTabAppoggioAE(System.IAsyncResult)
+  id: EndPopolaTabAppoggioAE(System.IAsyncResult)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: EndPopolaTabAppoggioAE(IAsyncResult)
+  nameWithType: ServiceOPENae.EndPopolaTabAppoggioAE(IAsyncResult)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndPopolaTabAppoggioAE(System.IAsyncResult)
+  type: Method
+  source:
+    id: EndPopolaTabAppoggioAE
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 134
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public bool EndPopolaTabAppoggioAE(IAsyncResult asyncResult)
+    parameters:
+    - id: asyncResult
+      type: System.IAsyncResult
+    return:
+      type: System.Boolean
+    content.vb: Public Function EndPopolaTabAppoggioAE(asyncResult As IAsyncResult) As Boolean
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndPopolaTabAppoggioAE*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAEAsync(System.String,System.String,System.String)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAEAsync(System.String,System.String,System.String)
+  id: PopolaTabAppoggioAEAsync(System.String,System.String,System.String)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: PopolaTabAppoggioAEAsync(String, String, String)
+  nameWithType: ServiceOPENae.PopolaTabAppoggioAEAsync(String, String, String)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAEAsync(System.String, System.String, System.String)
+  type: Method
+  source:
+    id: PopolaTabAppoggioAEAsync
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 140
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public void PopolaTabAppoggioAEAsync(string sTributo, string sAnnoRif, string sCodiceISTAT)
+    parameters:
+    - id: sTributo
+      type: System.String
+    - id: sAnnoRif
+      type: System.String
+    - id: sCodiceISTAT
+      type: System.String
+    content.vb: Public Sub PopolaTabAppoggioAEAsync(sTributo As String, sAnnoRif As String, sCodiceISTAT As String)
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAEAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAEAsync(System.String,System.String,System.String,System.Object)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAEAsync(System.String,System.String,System.String,System.Object)
+  id: PopolaTabAppoggioAEAsync(System.String,System.String,System.String,System.Object)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: PopolaTabAppoggioAEAsync(String, String, String, Object)
+  nameWithType: ServiceOPENae.PopolaTabAppoggioAEAsync(String, String, String, Object)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAEAsync(System.String, System.String, System.String, System.Object)
+  type: Method
+  source:
+    id: PopolaTabAppoggioAEAsync
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 145
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public void PopolaTabAppoggioAEAsync(string sTributo, string sAnnoRif, string sCodiceISTAT, object userState)
+    parameters:
+    - id: sTributo
+      type: System.String
+    - id: sAnnoRif
+      type: System.String
+    - id: sCodiceISTAT
+      type: System.String
+    - id: userState
+      type: System.Object
+    content.vb: Public Sub PopolaTabAppoggioAEAsync(sTributo As String, sAnnoRif As String, sCodiceISTAT As String, userState As Object)
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAEAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE(DichiarazioniICI.WServiceOPENae.DisposizioneAE[])
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE(DichiarazioniICI.WServiceOPENae.DisposizioneAE[])
+  id: PopolaTabAppoggioAE(DichiarazioniICI.WServiceOPENae.DisposizioneAE[])
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: PopolaTabAppoggioAE(DisposizioneAE[])
+  nameWithType: ServiceOPENae.PopolaTabAppoggioAE(DisposizioneAE[])
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE(DichiarazioniICI.WServiceOPENae.DisposizioneAE[])
+  type: Method
+  source:
+    id: PopolaTabAppoggioAE
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 175
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: >-
+      [WebMethod(MessageName = "PopolaTabAppoggioAE1")]
+
+      [SoapDocumentMethod("http://localhost/OPENaeWS/PopolaDaOggetti", RequestElementName = "PopolaDaOggetti", RequestNamespace = "http://localhost/OPENaeWS/", ResponseElementName = "PopolaDaOggettiResponse", ResponseNamespace = "http://localhost/OPENaeWS/", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+
+      public bool PopolaTabAppoggioAE(DisposizioneAE[] oDati)
+    parameters:
+    - id: oDati
+      type: DichiarazioniICI.WServiceOPENae.DisposizioneAE[]
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <WebMethod(MessageName:="PopolaTabAppoggioAE1")>
+
+      <SoapDocumentMethod("http://localhost/OPENaeWS/PopolaDaOggetti", RequestElementName:="PopolaDaOggetti", RequestNamespace:="http://localhost/OPENaeWS/", ResponseElementName:="PopolaDaOggettiResponse", ResponseNamespace:="http://localhost/OPENaeWS/", Use:=SoapBindingUse.Literal, ParameterStyle:=SoapParameterStyle.Wrapped)>
+
+      Public Function PopolaTabAppoggioAE(oDati As DisposizioneAE()) As Boolean
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE*
+  attributes:
+  - type: System.Web.Services.WebMethodAttribute
+    ctor: System.Web.Services.WebMethodAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: MessageName
+      type: System.String
+      value: PopolaTabAppoggioAE1
+  - type: System.Web.Services.Protocols.SoapDocumentMethodAttribute
+    ctor: System.Web.Services.Protocols.SoapDocumentMethodAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: http://localhost/OPENaeWS/PopolaDaOggetti
+    namedArguments:
+    - name: RequestElementName
+      type: System.String
+      value: PopolaDaOggetti
+    - name: RequestNamespace
+      type: System.String
+      value: http://localhost/OPENaeWS/
+    - name: ResponseElementName
+      type: System.String
+      value: PopolaDaOggettiResponse
+    - name: ResponseNamespace
+      type: System.String
+      value: http://localhost/OPENaeWS/
+    - name: Use
+      type: System.Web.Services.Description.SoapBindingUse
+      value: 2
+    - name: ParameterStyle
+      type: System.Web.Services.Protocols.SoapParameterStyle
+      value: 2
+  nameWithType.vb: ServiceOPENae.PopolaTabAppoggioAE(DisposizioneAE())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE(DichiarazioniICI.WServiceOPENae.DisposizioneAE())
+  name.vb: PopolaTabAppoggioAE(DisposizioneAE())
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE1(DichiarazioniICI.WServiceOPENae.DisposizioneAE[],System.AsyncCallback,System.Object)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE1(DichiarazioniICI.WServiceOPENae.DisposizioneAE[],System.AsyncCallback,System.Object)
+  id: BeginPopolaTabAppoggioAE1(DichiarazioniICI.WServiceOPENae.DisposizioneAE[],System.AsyncCallback,System.Object)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: BeginPopolaTabAppoggioAE1(DisposizioneAE[], AsyncCallback, Object)
+  nameWithType: ServiceOPENae.BeginPopolaTabAppoggioAE1(DisposizioneAE[], AsyncCallback, Object)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE1(DichiarazioniICI.WServiceOPENae.DisposizioneAE[], System.AsyncCallback, System.Object)
+  type: Method
+  source:
+    id: BeginPopolaTabAppoggioAE1
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 185
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public IAsyncResult BeginPopolaTabAppoggioAE1(DisposizioneAE[] oDati, AsyncCallback callback, object asyncState)
+    parameters:
+    - id: oDati
+      type: DichiarazioniICI.WServiceOPENae.DisposizioneAE[]
+    - id: callback
+      type: System.AsyncCallback
+    - id: asyncState
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Function BeginPopolaTabAppoggioAE1(oDati As DisposizioneAE(), callback As AsyncCallback, asyncState As Object) As IAsyncResult
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE1*
+  nameWithType.vb: ServiceOPENae.BeginPopolaTabAppoggioAE1(DisposizioneAE(), AsyncCallback, Object)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE1(DichiarazioniICI.WServiceOPENae.DisposizioneAE(), System.AsyncCallback, System.Object)
+  name.vb: BeginPopolaTabAppoggioAE1(DisposizioneAE(), AsyncCallback, Object)
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndPopolaTabAppoggioAE1(System.IAsyncResult)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndPopolaTabAppoggioAE1(System.IAsyncResult)
+  id: EndPopolaTabAppoggioAE1(System.IAsyncResult)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: EndPopolaTabAppoggioAE1(IAsyncResult)
+  nameWithType: ServiceOPENae.EndPopolaTabAppoggioAE1(IAsyncResult)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndPopolaTabAppoggioAE1(System.IAsyncResult)
+  type: Method
+  source:
+    id: EndPopolaTabAppoggioAE1
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 191
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public bool EndPopolaTabAppoggioAE1(IAsyncResult asyncResult)
+    parameters:
+    - id: asyncResult
+      type: System.IAsyncResult
+    return:
+      type: System.Boolean
+    content.vb: Public Function EndPopolaTabAppoggioAE1(asyncResult As IAsyncResult) As Boolean
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndPopolaTabAppoggioAE1*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE1Async(DichiarazioniICI.WServiceOPENae.DisposizioneAE[])
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE1Async(DichiarazioniICI.WServiceOPENae.DisposizioneAE[])
+  id: PopolaTabAppoggioAE1Async(DichiarazioniICI.WServiceOPENae.DisposizioneAE[])
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: PopolaTabAppoggioAE1Async(DisposizioneAE[])
+  nameWithType: ServiceOPENae.PopolaTabAppoggioAE1Async(DisposizioneAE[])
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE1Async(DichiarazioniICI.WServiceOPENae.DisposizioneAE[])
+  type: Method
+  source:
+    id: PopolaTabAppoggioAE1Async
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 197
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public void PopolaTabAppoggioAE1Async(DisposizioneAE[] oDati)
+    parameters:
+    - id: oDati
+      type: DichiarazioniICI.WServiceOPENae.DisposizioneAE[]
+    content.vb: Public Sub PopolaTabAppoggioAE1Async(oDati As DisposizioneAE())
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE1Async*
+  nameWithType.vb: ServiceOPENae.PopolaTabAppoggioAE1Async(DisposizioneAE())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE1Async(DichiarazioniICI.WServiceOPENae.DisposizioneAE())
+  name.vb: PopolaTabAppoggioAE1Async(DisposizioneAE())
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE1Async(DichiarazioniICI.WServiceOPENae.DisposizioneAE[],System.Object)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE1Async(DichiarazioniICI.WServiceOPENae.DisposizioneAE[],System.Object)
+  id: PopolaTabAppoggioAE1Async(DichiarazioniICI.WServiceOPENae.DisposizioneAE[],System.Object)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: PopolaTabAppoggioAE1Async(DisposizioneAE[], Object)
+  nameWithType: ServiceOPENae.PopolaTabAppoggioAE1Async(DisposizioneAE[], Object)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE1Async(DichiarazioniICI.WServiceOPENae.DisposizioneAE[], System.Object)
+  type: Method
+  source:
+    id: PopolaTabAppoggioAE1Async
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 202
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public void PopolaTabAppoggioAE1Async(DisposizioneAE[] oDati, object userState)
+    parameters:
+    - id: oDati
+      type: DichiarazioniICI.WServiceOPENae.DisposizioneAE[]
+    - id: userState
+      type: System.Object
+    content.vb: Public Sub PopolaTabAppoggioAE1Async(oDati As DisposizioneAE(), userState As Object)
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE1Async*
+  nameWithType.vb: ServiceOPENae.PopolaTabAppoggioAE1Async(DisposizioneAE(), Object)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE1Async(DichiarazioniICI.WServiceOPENae.DisposizioneAE(), System.Object)
+  name.vb: PopolaTabAppoggioAE1Async(DisposizioneAE(), Object)
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE(System.String,System.String,System.String,System.String@)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE(System.String,System.String,System.String,System.String@)
+  id: EstraiTracciatoAE(System.String,System.String,System.String,System.String@)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: EstraiTracciatoAE(String, String, String, ref String)
+  nameWithType: ServiceOPENae.EstraiTracciatoAE(String, String, String, ref String)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE(System.String, System.String, System.String, ref System.String)
+  type: Method
+  source:
+    id: EstraiTracciatoAE
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 230
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: >-
+      [SoapDocumentMethod("http://localhost/OPENaeWS/EstraiTracciatoAE", RequestNamespace = "http://localhost/OPENaeWS/", ResponseNamespace = "http://localhost/OPENaeWS/", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+
+      public string EstraiTracciatoAE(string sTributo, string sAnnoRif, string sCodiceISTAT, ref string sNomeFileTracciati)
+    parameters:
+    - id: sTributo
+      type: System.String
+    - id: sAnnoRif
+      type: System.String
+    - id: sCodiceISTAT
+      type: System.String
+    - id: sNomeFileTracciati
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <SoapDocumentMethod("http://localhost/OPENaeWS/EstraiTracciatoAE", RequestNamespace:="http://localhost/OPENaeWS/", ResponseNamespace:="http://localhost/OPENaeWS/", Use:=SoapBindingUse.Literal, ParameterStyle:=SoapParameterStyle.Wrapped)>
+
+      Public Function EstraiTracciatoAE(sTributo As String, sAnnoRif As String, sCodiceISTAT As String, ByRef sNomeFileTracciati As String) As String
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE*
+  attributes:
+  - type: System.Web.Services.Protocols.SoapDocumentMethodAttribute
+    ctor: System.Web.Services.Protocols.SoapDocumentMethodAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: http://localhost/OPENaeWS/EstraiTracciatoAE
+    namedArguments:
+    - name: RequestNamespace
+      type: System.String
+      value: http://localhost/OPENaeWS/
+    - name: ResponseNamespace
+      type: System.String
+      value: http://localhost/OPENaeWS/
+    - name: Use
+      type: System.Web.Services.Description.SoapBindingUse
+      value: 2
+    - name: ParameterStyle
+      type: System.Web.Services.Protocols.SoapParameterStyle
+      value: 2
+  nameWithType.vb: ServiceOPENae.EstraiTracciatoAE(String, String, String, ByRef String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE(System.String, System.String, System.String, ByRef System.String)
+  name.vb: EstraiTracciatoAE(String, String, String, ByRef String)
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginEstraiTracciatoAE(System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginEstraiTracciatoAE(System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)
+  id: BeginEstraiTracciatoAE(System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: BeginEstraiTracciatoAE(String, String, String, String, AsyncCallback, Object)
+  nameWithType: ServiceOPENae.BeginEstraiTracciatoAE(String, String, String, String, AsyncCallback, Object)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginEstraiTracciatoAE(System.String, System.String, System.String, System.String, System.AsyncCallback, System.Object)
+  type: Method
+  source:
+    id: BeginEstraiTracciatoAE
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 242
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public IAsyncResult BeginEstraiTracciatoAE(string sTributo, string sAnnoRif, string sCodiceISTAT, string sNomeFileTracciati, AsyncCallback callback, object asyncState)
+    parameters:
+    - id: sTributo
+      type: System.String
+    - id: sAnnoRif
+      type: System.String
+    - id: sCodiceISTAT
+      type: System.String
+    - id: sNomeFileTracciati
+      type: System.String
+    - id: callback
+      type: System.AsyncCallback
+    - id: asyncState
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Function BeginEstraiTracciatoAE(sTributo As String, sAnnoRif As String, sCodiceISTAT As String, sNomeFileTracciati As String, callback As AsyncCallback, asyncState As Object) As IAsyncResult
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginEstraiTracciatoAE*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndEstraiTracciatoAE(System.IAsyncResult,System.String@)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndEstraiTracciatoAE(System.IAsyncResult,System.String@)
+  id: EndEstraiTracciatoAE(System.IAsyncResult,System.String@)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: EndEstraiTracciatoAE(IAsyncResult, out String)
+  nameWithType: ServiceOPENae.EndEstraiTracciatoAE(IAsyncResult, out String)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndEstraiTracciatoAE(System.IAsyncResult, out System.String)
+  type: Method
+  source:
+    id: EndEstraiTracciatoAE
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 251
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string EndEstraiTracciatoAE(IAsyncResult asyncResult, out string sNomeFileTracciati)
+    parameters:
+    - id: asyncResult
+      type: System.IAsyncResult
+    - id: sNomeFileTracciati
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function EndEstraiTracciatoAE(asyncResult As IAsyncResult, ByRef sNomeFileTracciati As String) As String
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndEstraiTracciatoAE*
+  nameWithType.vb: ServiceOPENae.EndEstraiTracciatoAE(IAsyncResult, ByRef String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndEstraiTracciatoAE(System.IAsyncResult, ByRef System.String)
+  name.vb: EndEstraiTracciatoAE(IAsyncResult, ByRef String)
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAEAsync(System.String,System.String,System.String,System.String)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAEAsync(System.String,System.String,System.String,System.String)
+  id: EstraiTracciatoAEAsync(System.String,System.String,System.String,System.String)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: EstraiTracciatoAEAsync(String, String, String, String)
+  nameWithType: ServiceOPENae.EstraiTracciatoAEAsync(String, String, String, String)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAEAsync(System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    id: EstraiTracciatoAEAsync
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 258
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public void EstraiTracciatoAEAsync(string sTributo, string sAnnoRif, string sCodiceISTAT, string sNomeFileTracciati)
+    parameters:
+    - id: sTributo
+      type: System.String
+    - id: sAnnoRif
+      type: System.String
+    - id: sCodiceISTAT
+      type: System.String
+    - id: sNomeFileTracciati
+      type: System.String
+    content.vb: Public Sub EstraiTracciatoAEAsync(sTributo As String, sAnnoRif As String, sCodiceISTAT As String, sNomeFileTracciati As String)
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAEAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAEAsync(System.String,System.String,System.String,System.String,System.Object)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAEAsync(System.String,System.String,System.String,System.String,System.Object)
+  id: EstraiTracciatoAEAsync(System.String,System.String,System.String,System.String,System.Object)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: EstraiTracciatoAEAsync(String, String, String, String, Object)
+  nameWithType: ServiceOPENae.EstraiTracciatoAEAsync(String, String, String, String, Object)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAEAsync(System.String, System.String, System.String, System.String, System.Object)
+  type: Method
+  source:
+    id: EstraiTracciatoAEAsync
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 263
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public void EstraiTracciatoAEAsync(string sTributo, string sAnnoRif, string sCodiceISTAT, string sNomeFileTracciati, object userState)
+    parameters:
+    - id: sTributo
+      type: System.String
+    - id: sAnnoRif
+      type: System.String
+    - id: sCodiceISTAT
+      type: System.String
+    - id: sNomeFileTracciati
+      type: System.String
+    - id: userState
+      type: System.Object
+    content.vb: Public Sub EstraiTracciatoAEAsync(sTributo As String, sAnnoRif As String, sCodiceISTAT As String, sNomeFileTracciati As String, userState As Object)
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAEAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAE(System.String,System.String,System.String@)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAE(System.String,System.String,System.String@)
+  id: GetFlussiTracciatiAE(System.String,System.String,System.String@)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: GetFlussiTracciatiAE(String, String, ref String)
+  nameWithType: ServiceOPENae.GetFlussiTracciatiAE(String, String, ref String)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAE(System.String, System.String, ref System.String)
+  type: Method
+  source:
+    id: GetFlussiTracciatiAE
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 294
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: >-
+      [SoapDocumentMethod("http://localhost/OPENaeWS/GetFlussiTracciati", RequestElementName = "GetFlussiTracciati", RequestNamespace = "http://localhost/OPENaeWS/", ResponseElementName = "GetFlussiTracciatiResponse", ResponseNamespace = "http://localhost/OPENaeWS/", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+
+      public objFlussoAE[] GetFlussiTracciatiAE(string sTributo, string sCodiceISTAT, ref string sMyErr)
+    parameters:
+    - id: sTributo
+      type: System.String
+    - id: sCodiceISTAT
+      type: System.String
+    - id: sMyErr
+      type: System.String
+    return:
+      type: DichiarazioniICI.WServiceOPENae.objFlussoAE[]
+    content.vb: >-
+      <SoapDocumentMethod("http://localhost/OPENaeWS/GetFlussiTracciati", RequestElementName:="GetFlussiTracciati", RequestNamespace:="http://localhost/OPENaeWS/", ResponseElementName:="GetFlussiTracciatiResponse", ResponseNamespace:="http://localhost/OPENaeWS/", Use:=SoapBindingUse.Literal, ParameterStyle:=SoapParameterStyle.Wrapped)>
+
+      Public Function GetFlussiTracciatiAE(sTributo As String, sCodiceISTAT As String, ByRef sMyErr As String) As objFlussoAE()
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAE*
+  attributes:
+  - type: System.Web.Services.Protocols.SoapDocumentMethodAttribute
+    ctor: System.Web.Services.Protocols.SoapDocumentMethodAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: http://localhost/OPENaeWS/GetFlussiTracciati
+    namedArguments:
+    - name: RequestElementName
+      type: System.String
+      value: GetFlussiTracciati
+    - name: RequestNamespace
+      type: System.String
+      value: http://localhost/OPENaeWS/
+    - name: ResponseElementName
+      type: System.String
+      value: GetFlussiTracciatiResponse
+    - name: ResponseNamespace
+      type: System.String
+      value: http://localhost/OPENaeWS/
+    - name: Use
+      type: System.Web.Services.Description.SoapBindingUse
+      value: 2
+    - name: ParameterStyle
+      type: System.Web.Services.Protocols.SoapParameterStyle
+      value: 2
+  nameWithType.vb: ServiceOPENae.GetFlussiTracciatiAE(String, String, ByRef String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAE(System.String, System.String, ByRef System.String)
+  name.vb: GetFlussiTracciatiAE(String, String, ByRef String)
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginGetFlussiTracciatiAE(System.String,System.String,System.String,System.AsyncCallback,System.Object)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginGetFlussiTracciatiAE(System.String,System.String,System.String,System.AsyncCallback,System.Object)
+  id: BeginGetFlussiTracciatiAE(System.String,System.String,System.String,System.AsyncCallback,System.Object)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: BeginGetFlussiTracciatiAE(String, String, String, AsyncCallback, Object)
+  nameWithType: ServiceOPENae.BeginGetFlussiTracciatiAE(String, String, String, AsyncCallback, Object)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginGetFlussiTracciatiAE(System.String, System.String, System.String, System.AsyncCallback, System.Object)
+  type: Method
+  source:
+    id: BeginGetFlussiTracciatiAE
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 306
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public IAsyncResult BeginGetFlussiTracciatiAE(string sTributo, string sCodiceISTAT, string sMyErr, AsyncCallback callback, object asyncState)
+    parameters:
+    - id: sTributo
+      type: System.String
+    - id: sCodiceISTAT
+      type: System.String
+    - id: sMyErr
+      type: System.String
+    - id: callback
+      type: System.AsyncCallback
+    - id: asyncState
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Function BeginGetFlussiTracciatiAE(sTributo As String, sCodiceISTAT As String, sMyErr As String, callback As AsyncCallback, asyncState As Object) As IAsyncResult
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginGetFlussiTracciatiAE*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndGetFlussiTracciatiAE(System.IAsyncResult,System.String@)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndGetFlussiTracciatiAE(System.IAsyncResult,System.String@)
+  id: EndGetFlussiTracciatiAE(System.IAsyncResult,System.String@)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: EndGetFlussiTracciatiAE(IAsyncResult, out String)
+  nameWithType: ServiceOPENae.EndGetFlussiTracciatiAE(IAsyncResult, out String)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndGetFlussiTracciatiAE(System.IAsyncResult, out System.String)
+  type: Method
+  source:
+    id: EndGetFlussiTracciatiAE
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 314
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public objFlussoAE[] EndGetFlussiTracciatiAE(IAsyncResult asyncResult, out string sMyErr)
+    parameters:
+    - id: asyncResult
+      type: System.IAsyncResult
+    - id: sMyErr
+      type: System.String
+    return:
+      type: DichiarazioniICI.WServiceOPENae.objFlussoAE[]
+    content.vb: Public Function EndGetFlussiTracciatiAE(asyncResult As IAsyncResult, ByRef sMyErr As String) As objFlussoAE()
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndGetFlussiTracciatiAE*
+  nameWithType.vb: ServiceOPENae.EndGetFlussiTracciatiAE(IAsyncResult, ByRef String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndGetFlussiTracciatiAE(System.IAsyncResult, ByRef System.String)
+  name.vb: EndGetFlussiTracciatiAE(IAsyncResult, ByRef String)
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAEAsync(System.String,System.String,System.String)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAEAsync(System.String,System.String,System.String)
+  id: GetFlussiTracciatiAEAsync(System.String,System.String,System.String)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: GetFlussiTracciatiAEAsync(String, String, String)
+  nameWithType: ServiceOPENae.GetFlussiTracciatiAEAsync(String, String, String)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAEAsync(System.String, System.String, System.String)
+  type: Method
+  source:
+    id: GetFlussiTracciatiAEAsync
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 321
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public void GetFlussiTracciatiAEAsync(string sTributo, string sCodiceISTAT, string sMyErr)
+    parameters:
+    - id: sTributo
+      type: System.String
+    - id: sCodiceISTAT
+      type: System.String
+    - id: sMyErr
+      type: System.String
+    content.vb: Public Sub GetFlussiTracciatiAEAsync(sTributo As String, sCodiceISTAT As String, sMyErr As String)
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAEAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAEAsync(System.String,System.String,System.String,System.Object)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAEAsync(System.String,System.String,System.String,System.Object)
+  id: GetFlussiTracciatiAEAsync(System.String,System.String,System.String,System.Object)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: GetFlussiTracciatiAEAsync(String, String, String, Object)
+  nameWithType: ServiceOPENae.GetFlussiTracciatiAEAsync(String, String, String, Object)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAEAsync(System.String, System.String, System.String, System.Object)
+  type: Method
+  source:
+    id: GetFlussiTracciatiAEAsync
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 326
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public void GetFlussiTracciatiAEAsync(string sTributo, string sCodiceISTAT, string sMyErr, object userState)
+    parameters:
+    - id: sTributo
+      type: System.String
+    - id: sCodiceISTAT
+      type: System.String
+    - id: sMyErr
+      type: System.String
+    - id: userState
+      type: System.Object
+    content.vb: Public Sub GetFlussiTracciatiAEAsync(sTributo As String, sCodiceISTAT As String, sMyErr As String, userState As Object)
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAEAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE(System.String,System.String,System.String,System.String,System.String)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE(System.String,System.String,System.String,System.String,System.String)
+  id: PopolaTabAppoggioAE(System.String,System.String,System.String,System.String,System.String)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: PopolaTabAppoggioAE(String, String, String, String, String)
+  nameWithType: ServiceOPENae.PopolaTabAppoggioAE(String, String, String, String, String)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE(System.String, System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    id: PopolaTabAppoggioAE
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 356
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: >-
+      [WebMethod(MessageName = "PopolaTabAppoggioAE2")]
+
+      [SoapDocumentMethod("http://localhost/OPENaeWS/PopolaDaFile", RequestElementName = "PopolaDaFile", RequestNamespace = "http://localhost/OPENaeWS/", ResponseElementName = "PopolaDaFileResponse", ResponseNamespace = "http://localhost/OPENaeWS/", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+
+      public bool PopolaTabAppoggioAE(string sTributo, string sAnnoRif, string sCodiceISTAT, string sFileImport, string sProvenienza)
+    parameters:
+    - id: sTributo
+      type: System.String
+    - id: sAnnoRif
+      type: System.String
+    - id: sCodiceISTAT
+      type: System.String
+    - id: sFileImport
+      type: System.String
+    - id: sProvenienza
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <WebMethod(MessageName:="PopolaTabAppoggioAE2")>
+
+      <SoapDocumentMethod("http://localhost/OPENaeWS/PopolaDaFile", RequestElementName:="PopolaDaFile", RequestNamespace:="http://localhost/OPENaeWS/", ResponseElementName:="PopolaDaFileResponse", ResponseNamespace:="http://localhost/OPENaeWS/", Use:=SoapBindingUse.Literal, ParameterStyle:=SoapParameterStyle.Wrapped)>
+
+      Public Function PopolaTabAppoggioAE(sTributo As String, sAnnoRif As String, sCodiceISTAT As String, sFileImport As String, sProvenienza As String) As Boolean
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE*
+  attributes:
+  - type: System.Web.Services.WebMethodAttribute
+    ctor: System.Web.Services.WebMethodAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: MessageName
+      type: System.String
+      value: PopolaTabAppoggioAE2
+  - type: System.Web.Services.Protocols.SoapDocumentMethodAttribute
+    ctor: System.Web.Services.Protocols.SoapDocumentMethodAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: http://localhost/OPENaeWS/PopolaDaFile
+    namedArguments:
+    - name: RequestElementName
+      type: System.String
+      value: PopolaDaFile
+    - name: RequestNamespace
+      type: System.String
+      value: http://localhost/OPENaeWS/
+    - name: ResponseElementName
+      type: System.String
+      value: PopolaDaFileResponse
+    - name: ResponseNamespace
+      type: System.String
+      value: http://localhost/OPENaeWS/
+    - name: Use
+      type: System.Web.Services.Description.SoapBindingUse
+      value: 2
+    - name: ParameterStyle
+      type: System.Web.Services.Protocols.SoapParameterStyle
+      value: 2
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE2(System.String,System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE2(System.String,System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)
+  id: BeginPopolaTabAppoggioAE2(System.String,System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: BeginPopolaTabAppoggioAE2(String, String, String, String, String, AsyncCallback, Object)
+  nameWithType: ServiceOPENae.BeginPopolaTabAppoggioAE2(String, String, String, String, String, AsyncCallback, Object)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE2(System.String, System.String, System.String, System.String, System.String, System.AsyncCallback, System.Object)
+  type: Method
+  source:
+    id: BeginPopolaTabAppoggioAE2
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 370
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public IAsyncResult BeginPopolaTabAppoggioAE2(string sTributo, string sAnnoRif, string sCodiceISTAT, string sFileImport, string sProvenienza, AsyncCallback callback, object asyncState)
+    parameters:
+    - id: sTributo
+      type: System.String
+    - id: sAnnoRif
+      type: System.String
+    - id: sCodiceISTAT
+      type: System.String
+    - id: sFileImport
+      type: System.String
+    - id: sProvenienza
+      type: System.String
+    - id: callback
+      type: System.AsyncCallback
+    - id: asyncState
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Function BeginPopolaTabAppoggioAE2(sTributo As String, sAnnoRif As String, sCodiceISTAT As String, sFileImport As String, sProvenienza As String, callback As AsyncCallback, asyncState As Object) As IAsyncResult
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE2*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndPopolaTabAppoggioAE2(System.IAsyncResult)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndPopolaTabAppoggioAE2(System.IAsyncResult)
+  id: EndPopolaTabAppoggioAE2(System.IAsyncResult)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: EndPopolaTabAppoggioAE2(IAsyncResult)
+  nameWithType: ServiceOPENae.EndPopolaTabAppoggioAE2(IAsyncResult)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndPopolaTabAppoggioAE2(System.IAsyncResult)
+  type: Method
+  source:
+    id: EndPopolaTabAppoggioAE2
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 380
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public bool EndPopolaTabAppoggioAE2(IAsyncResult asyncResult)
+    parameters:
+    - id: asyncResult
+      type: System.IAsyncResult
+    return:
+      type: System.Boolean
+    content.vb: Public Function EndPopolaTabAppoggioAE2(asyncResult As IAsyncResult) As Boolean
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndPopolaTabAppoggioAE2*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE2Async(System.String,System.String,System.String,System.String,System.String)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE2Async(System.String,System.String,System.String,System.String,System.String)
+  id: PopolaTabAppoggioAE2Async(System.String,System.String,System.String,System.String,System.String)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: PopolaTabAppoggioAE2Async(String, String, String, String, String)
+  nameWithType: ServiceOPENae.PopolaTabAppoggioAE2Async(String, String, String, String, String)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE2Async(System.String, System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    id: PopolaTabAppoggioAE2Async
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 386
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public void PopolaTabAppoggioAE2Async(string sTributo, string sAnnoRif, string sCodiceISTAT, string sFileImport, string sProvenienza)
+    parameters:
+    - id: sTributo
+      type: System.String
+    - id: sAnnoRif
+      type: System.String
+    - id: sCodiceISTAT
+      type: System.String
+    - id: sFileImport
+      type: System.String
+    - id: sProvenienza
+      type: System.String
+    content.vb: Public Sub PopolaTabAppoggioAE2Async(sTributo As String, sAnnoRif As String, sCodiceISTAT As String, sFileImport As String, sProvenienza As String)
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE2Async*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE2Async(System.String,System.String,System.String,System.String,System.String,System.Object)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE2Async(System.String,System.String,System.String,System.String,System.String,System.Object)
+  id: PopolaTabAppoggioAE2Async(System.String,System.String,System.String,System.String,System.String,System.Object)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: PopolaTabAppoggioAE2Async(String, String, String, String, String, Object)
+  nameWithType: ServiceOPENae.PopolaTabAppoggioAE2Async(String, String, String, String, String, Object)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE2Async(System.String, System.String, System.String, System.String, System.String, System.Object)
+  type: Method
+  source:
+    id: PopolaTabAppoggioAE2Async
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 391
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public void PopolaTabAppoggioAE2Async(string sTributo, string sAnnoRif, string sCodiceISTAT, string sFileImport, string sProvenienza, object userState)
+    parameters:
+    - id: sTributo
+      type: System.String
+    - id: sAnnoRif
+      type: System.String
+    - id: sCodiceISTAT
+      type: System.String
+    - id: sFileImport
+      type: System.String
+    - id: sProvenienza
+      type: System.String
+    - id: userState
+      type: System.Object
+    content.vb: Public Sub PopolaTabAppoggioAE2Async(sTributo As String, sAnnoRif As String, sCodiceISTAT As String, sFileImport As String, sProvenienza As String, userState As Object)
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE2Async*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String@)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String@)
+  id: EstraiTracciatoAE(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String@)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: EstraiTracciatoAE(String, String, String, String, String, String, String, Int32, ref String)
+  nameWithType: ServiceOPENae.EstraiTracciatoAE(String, String, String, String, String, String, String, Int32, ref String)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.Int32, ref System.String)
+  type: Method
+  source:
+    id: EstraiTracciatoAE
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 423
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: >-
+      [WebMethod(MessageName = "EstraiTracciatoAE1")]
+
+      [SoapDocumentMethod("http://localhost/OPENaeWS/EstraiICI", RequestElementName = "EstraiICI", RequestNamespace = "http://localhost/OPENaeWS/", ResponseElementName = "EstraiICIResponse", ResponseNamespace = "http://localhost/OPENaeWS/", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+
+      public string EstraiTracciatoAE(string sTributo, string sAnnoRif, string sCodiceISTAT, string sCodBelfiore, string sDescrEnte, string sCAPEnte, string sDataScadenza, int nProgInvio, ref string sNomeFileTracciati)
+    parameters:
+    - id: sTributo
+      type: System.String
+    - id: sAnnoRif
+      type: System.String
+    - id: sCodiceISTAT
+      type: System.String
+    - id: sCodBelfiore
+      type: System.String
+    - id: sDescrEnte
+      type: System.String
+    - id: sCAPEnte
+      type: System.String
+    - id: sDataScadenza
+      type: System.String
+    - id: nProgInvio
+      type: System.Int32
+    - id: sNomeFileTracciati
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <WebMethod(MessageName:="EstraiTracciatoAE1")>
+
+      <SoapDocumentMethod("http://localhost/OPENaeWS/EstraiICI", RequestElementName:="EstraiICI", RequestNamespace:="http://localhost/OPENaeWS/", ResponseElementName:="EstraiICIResponse", ResponseNamespace:="http://localhost/OPENaeWS/", Use:=SoapBindingUse.Literal, ParameterStyle:=SoapParameterStyle.Wrapped)>
+
+      Public Function EstraiTracciatoAE(sTributo As String, sAnnoRif As String, sCodiceISTAT As String, sCodBelfiore As String, sDescrEnte As String, sCAPEnte As String, sDataScadenza As String, nProgInvio As Integer, ByRef sNomeFileTracciati As String) As String
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE*
+  attributes:
+  - type: System.Web.Services.WebMethodAttribute
+    ctor: System.Web.Services.WebMethodAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: MessageName
+      type: System.String
+      value: EstraiTracciatoAE1
+  - type: System.Web.Services.Protocols.SoapDocumentMethodAttribute
+    ctor: System.Web.Services.Protocols.SoapDocumentMethodAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: http://localhost/OPENaeWS/EstraiICI
+    namedArguments:
+    - name: RequestElementName
+      type: System.String
+      value: EstraiICI
+    - name: RequestNamespace
+      type: System.String
+      value: http://localhost/OPENaeWS/
+    - name: ResponseElementName
+      type: System.String
+      value: EstraiICIResponse
+    - name: ResponseNamespace
+      type: System.String
+      value: http://localhost/OPENaeWS/
+    - name: Use
+      type: System.Web.Services.Description.SoapBindingUse
+      value: 2
+    - name: ParameterStyle
+      type: System.Web.Services.Protocols.SoapParameterStyle
+      value: 2
+  nameWithType.vb: ServiceOPENae.EstraiTracciatoAE(String, String, String, String, String, String, String, Int32, ByRef String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.Int32, ByRef System.String)
+  name.vb: EstraiTracciatoAE(String, String, String, String, String, String, String, Int32, ByRef String)
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginEstraiTracciatoAE1(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.AsyncCallback,System.Object)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginEstraiTracciatoAE1(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.AsyncCallback,System.Object)
+  id: BeginEstraiTracciatoAE1(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.AsyncCallback,System.Object)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: BeginEstraiTracciatoAE1(String, String, String, String, String, String, String, Int32, String, AsyncCallback, Object)
+  nameWithType: ServiceOPENae.BeginEstraiTracciatoAE1(String, String, String, String, String, String, String, Int32, String, AsyncCallback, Object)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginEstraiTracciatoAE1(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.Int32, System.String, System.AsyncCallback, System.Object)
+  type: Method
+  source:
+    id: BeginEstraiTracciatoAE1
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 442
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public IAsyncResult BeginEstraiTracciatoAE1(string sTributo, string sAnnoRif, string sCodiceISTAT, string sCodBelfiore, string sDescrEnte, string sCAPEnte, string sDataScadenza, int nProgInvio, string sNomeFileTracciati, AsyncCallback callback, object asyncState)
+    parameters:
+    - id: sTributo
+      type: System.String
+    - id: sAnnoRif
+      type: System.String
+    - id: sCodiceISTAT
+      type: System.String
+    - id: sCodBelfiore
+      type: System.String
+    - id: sDescrEnte
+      type: System.String
+    - id: sCAPEnte
+      type: System.String
+    - id: sDataScadenza
+      type: System.String
+    - id: nProgInvio
+      type: System.Int32
+    - id: sNomeFileTracciati
+      type: System.String
+    - id: callback
+      type: System.AsyncCallback
+    - id: asyncState
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Function BeginEstraiTracciatoAE1(sTributo As String, sAnnoRif As String, sCodiceISTAT As String, sCodBelfiore As String, sDescrEnte As String, sCAPEnte As String, sDataScadenza As String, nProgInvio As Integer, sNomeFileTracciati As String, callback As AsyncCallback, asyncState As Object) As IAsyncResult
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginEstraiTracciatoAE1*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndEstraiTracciatoAE1(System.IAsyncResult,System.String@)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndEstraiTracciatoAE1(System.IAsyncResult,System.String@)
+  id: EndEstraiTracciatoAE1(System.IAsyncResult,System.String@)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: EndEstraiTracciatoAE1(IAsyncResult, out String)
+  nameWithType: ServiceOPENae.EndEstraiTracciatoAE1(IAsyncResult, out String)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndEstraiTracciatoAE1(System.IAsyncResult, out System.String)
+  type: Method
+  source:
+    id: EndEstraiTracciatoAE1
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 456
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string EndEstraiTracciatoAE1(IAsyncResult asyncResult, out string sNomeFileTracciati)
+    parameters:
+    - id: asyncResult
+      type: System.IAsyncResult
+    - id: sNomeFileTracciati
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function EndEstraiTracciatoAE1(asyncResult As IAsyncResult, ByRef sNomeFileTracciati As String) As String
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndEstraiTracciatoAE1*
+  nameWithType.vb: ServiceOPENae.EndEstraiTracciatoAE1(IAsyncResult, ByRef String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndEstraiTracciatoAE1(System.IAsyncResult, ByRef System.String)
+  name.vb: EndEstraiTracciatoAE1(IAsyncResult, ByRef String)
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE1Async(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE1Async(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String)
+  id: EstraiTracciatoAE1Async(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: EstraiTracciatoAE1Async(String, String, String, String, String, String, String, Int32, String)
+  nameWithType: ServiceOPENae.EstraiTracciatoAE1Async(String, String, String, String, String, String, String, Int32, String)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE1Async(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.Int32, System.String)
+  type: Method
+  source:
+    id: EstraiTracciatoAE1Async
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 463
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public void EstraiTracciatoAE1Async(string sTributo, string sAnnoRif, string sCodiceISTAT, string sCodBelfiore, string sDescrEnte, string sCAPEnte, string sDataScadenza, int nProgInvio, string sNomeFileTracciati)
+    parameters:
+    - id: sTributo
+      type: System.String
+    - id: sAnnoRif
+      type: System.String
+    - id: sCodiceISTAT
+      type: System.String
+    - id: sCodBelfiore
+      type: System.String
+    - id: sDescrEnte
+      type: System.String
+    - id: sCAPEnte
+      type: System.String
+    - id: sDataScadenza
+      type: System.String
+    - id: nProgInvio
+      type: System.Int32
+    - id: sNomeFileTracciati
+      type: System.String
+    content.vb: Public Sub EstraiTracciatoAE1Async(sTributo As String, sAnnoRif As String, sCodiceISTAT As String, sCodBelfiore As String, sDescrEnte As String, sCAPEnte As String, sDataScadenza As String, nProgInvio As Integer, sNomeFileTracciati As String)
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE1Async*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE1Async(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.Object)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE1Async(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.Object)
+  id: EstraiTracciatoAE1Async(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.Object)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: EstraiTracciatoAE1Async(String, String, String, String, String, String, String, Int32, String, Object)
+  nameWithType: ServiceOPENae.EstraiTracciatoAE1Async(String, String, String, String, String, String, String, Int32, String, Object)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE1Async(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.Int32, System.String, System.Object)
+  type: Method
+  source:
+    id: EstraiTracciatoAE1Async
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 468
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public void EstraiTracciatoAE1Async(string sTributo, string sAnnoRif, string sCodiceISTAT, string sCodBelfiore, string sDescrEnte, string sCAPEnte, string sDataScadenza, int nProgInvio, string sNomeFileTracciati, object userState)
+    parameters:
+    - id: sTributo
+      type: System.String
+    - id: sAnnoRif
+      type: System.String
+    - id: sCodiceISTAT
+      type: System.String
+    - id: sCodBelfiore
+      type: System.String
+    - id: sDescrEnte
+      type: System.String
+    - id: sCAPEnte
+      type: System.String
+    - id: sDataScadenza
+      type: System.String
+    - id: nProgInvio
+      type: System.Int32
+    - id: sNomeFileTracciati
+      type: System.String
+    - id: userState
+      type: System.Object
+    content.vb: Public Sub EstraiTracciatoAE1Async(sTributo As String, sAnnoRif As String, sCodiceISTAT As String, sCodBelfiore As String, sDescrEnte As String, sCAPEnte As String, sDataScadenza As String, nProgInvio As Integer, sNomeFileTracciati As String, userState As Object)
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE1Async*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.CancelAsync(System.Object)
+  commentId: M:DichiarazioniICI.WServiceOPENae.ServiceOPENae.CancelAsync(System.Object)
+  id: CancelAsync(System.Object)
+  parent: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+  langs:
+  - csharp
+  - vb
+  name: CancelAsync(Object)
+  nameWithType: ServiceOPENae.CancelAsync(Object)
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.CancelAsync(System.Object)
+  type: Method
+  source:
+    id: CancelAsync
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 504
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public void CancelAsync(object userState)
+    parameters:
+    - id: userState
+      type: System.Object
+    content.vb: Public Sub CancelAsync(userState As Object)
+  overload: DichiarazioniICI.WServiceOPENae.ServiceOPENae.CancelAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: DichiarazioniICI.WServiceOPENae
+  commentId: N:DichiarazioniICI.WServiceOPENae
+  name: DichiarazioniICI.WServiceOPENae
+  nameWithType: DichiarazioniICI.WServiceOPENae
+  fullName: DichiarazioniICI.WServiceOPENae
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.MarshalByRefObject
+  commentId: T:System.MarshalByRefObject
+  parent: System
+  isExternal: true
+  name: MarshalByRefObject
+  nameWithType: MarshalByRefObject
+  fullName: System.MarshalByRefObject
+- uid: System.ComponentModel.Component
+  commentId: T:System.ComponentModel.Component
+  parent: System.ComponentModel
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: System.ComponentModel.Component
+- uid: System.Web.Services.Protocols.WebClientProtocol
+  commentId: T:System.Web.Services.Protocols.WebClientProtocol
+  parent: System.Web.Services.Protocols
+  isExternal: true
+  name: WebClientProtocol
+  nameWithType: WebClientProtocol
+  fullName: System.Web.Services.Protocols.WebClientProtocol
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol
+  commentId: T:System.Web.Services.Protocols.HttpWebClientProtocol
+  parent: System.Web.Services.Protocols
+  isExternal: true
+  name: HttpWebClientProtocol
+  nameWithType: HttpWebClientProtocol
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol
+- uid: System.Web.Services.Protocols.SoapHttpClientProtocol
+  commentId: T:System.Web.Services.Protocols.SoapHttpClientProtocol
+  parent: System.Web.Services.Protocols
+  isExternal: true
+  name: SoapHttpClientProtocol
+  nameWithType: SoapHttpClientProtocol
+  fullName: System.Web.Services.Protocols.SoapHttpClientProtocol
+- uid: System.ComponentModel.IComponent
+  commentId: T:System.ComponentModel.IComponent
+  parent: System.ComponentModel
+  isExternal: true
+  name: IComponent
+  nameWithType: IComponent
+  fullName: System.ComponentModel.IComponent
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Web.Services.Protocols.SoapHttpClientProtocol.Discover
+  commentId: M:System.Web.Services.Protocols.SoapHttpClientProtocol.Discover
+  parent: System.Web.Services.Protocols.SoapHttpClientProtocol
+  isExternal: true
+  name: Discover()
+  nameWithType: SoapHttpClientProtocol.Discover()
+  fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.Discover()
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.Discover
+    name: Discover
+    nameWithType: SoapHttpClientProtocol.Discover
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.Discover
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.Discover
+    name: Discover
+    nameWithType: SoapHttpClientProtocol.Discover
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.Discover
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.SoapHttpClientProtocol.GetWebRequest(System.Uri)
+  commentId: M:System.Web.Services.Protocols.SoapHttpClientProtocol.GetWebRequest(System.Uri)
+  parent: System.Web.Services.Protocols.SoapHttpClientProtocol
+  isExternal: true
+  name: GetWebRequest(Uri)
+  nameWithType: SoapHttpClientProtocol.GetWebRequest(Uri)
+  fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.GetWebRequest(System.Uri)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.GetWebRequest(System.Uri)
+    name: GetWebRequest
+    nameWithType: SoapHttpClientProtocol.GetWebRequest
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.GetWebRequest
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Uri
+    name: Uri
+    nameWithType: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.GetWebRequest(System.Uri)
+    name: GetWebRequest
+    nameWithType: SoapHttpClientProtocol.GetWebRequest
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.GetWebRequest
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Uri
+    name: Uri
+    nameWithType: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.SoapHttpClientProtocol.GetWriterForMessage(System.Web.Services.Protocols.SoapClientMessage,System.Int32)
+  commentId: M:System.Web.Services.Protocols.SoapHttpClientProtocol.GetWriterForMessage(System.Web.Services.Protocols.SoapClientMessage,System.Int32)
+  parent: System.Web.Services.Protocols.SoapHttpClientProtocol
+  isExternal: true
+  name: GetWriterForMessage(SoapClientMessage, Int32)
+  nameWithType: SoapHttpClientProtocol.GetWriterForMessage(SoapClientMessage, Int32)
+  fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.GetWriterForMessage(System.Web.Services.Protocols.SoapClientMessage, System.Int32)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.GetWriterForMessage(System.Web.Services.Protocols.SoapClientMessage,System.Int32)
+    name: GetWriterForMessage
+    nameWithType: SoapHttpClientProtocol.GetWriterForMessage
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.GetWriterForMessage
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Web.Services.Protocols.SoapClientMessage
+    name: SoapClientMessage
+    nameWithType: SoapClientMessage
+    fullName: System.Web.Services.Protocols.SoapClientMessage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.GetWriterForMessage(System.Web.Services.Protocols.SoapClientMessage,System.Int32)
+    name: GetWriterForMessage
+    nameWithType: SoapHttpClientProtocol.GetWriterForMessage
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.GetWriterForMessage
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Web.Services.Protocols.SoapClientMessage
+    name: SoapClientMessage
+    nameWithType: SoapClientMessage
+    fullName: System.Web.Services.Protocols.SoapClientMessage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.SoapHttpClientProtocol.GetReaderForMessage(System.Web.Services.Protocols.SoapClientMessage,System.Int32)
+  commentId: M:System.Web.Services.Protocols.SoapHttpClientProtocol.GetReaderForMessage(System.Web.Services.Protocols.SoapClientMessage,System.Int32)
+  parent: System.Web.Services.Protocols.SoapHttpClientProtocol
+  isExternal: true
+  name: GetReaderForMessage(SoapClientMessage, Int32)
+  nameWithType: SoapHttpClientProtocol.GetReaderForMessage(SoapClientMessage, Int32)
+  fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.GetReaderForMessage(System.Web.Services.Protocols.SoapClientMessage, System.Int32)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.GetReaderForMessage(System.Web.Services.Protocols.SoapClientMessage,System.Int32)
+    name: GetReaderForMessage
+    nameWithType: SoapHttpClientProtocol.GetReaderForMessage
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.GetReaderForMessage
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Web.Services.Protocols.SoapClientMessage
+    name: SoapClientMessage
+    nameWithType: SoapClientMessage
+    fullName: System.Web.Services.Protocols.SoapClientMessage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.GetReaderForMessage(System.Web.Services.Protocols.SoapClientMessage,System.Int32)
+    name: GetReaderForMessage
+    nameWithType: SoapHttpClientProtocol.GetReaderForMessage
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.GetReaderForMessage
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Web.Services.Protocols.SoapClientMessage
+    name: SoapClientMessage
+    nameWithType: SoapClientMessage
+    fullName: System.Web.Services.Protocols.SoapClientMessage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(System.String,System.Object[])
+  commentId: M:System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(System.String,System.Object[])
+  parent: System.Web.Services.Protocols.SoapHttpClientProtocol
+  isExternal: true
+  name: Invoke(String, Object[])
+  nameWithType: SoapHttpClientProtocol.Invoke(String, Object[])
+  fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(System.String, System.Object[])
+  nameWithType.vb: SoapHttpClientProtocol.Invoke(String, Object())
+  fullName.vb: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(System.String, System.Object())
+  name.vb: Invoke(String, Object())
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(System.String,System.Object[])
+    name: Invoke
+    nameWithType: SoapHttpClientProtocol.Invoke
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(System.String,System.Object[])
+    name: Invoke
+    nameWithType: SoapHttpClientProtocol.Invoke
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.SoapHttpClientProtocol.BeginInvoke(System.String,System.Object[],System.AsyncCallback,System.Object)
+  commentId: M:System.Web.Services.Protocols.SoapHttpClientProtocol.BeginInvoke(System.String,System.Object[],System.AsyncCallback,System.Object)
+  parent: System.Web.Services.Protocols.SoapHttpClientProtocol
+  isExternal: true
+  name: BeginInvoke(String, Object[], AsyncCallback, Object)
+  nameWithType: SoapHttpClientProtocol.BeginInvoke(String, Object[], AsyncCallback, Object)
+  fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.BeginInvoke(System.String, System.Object[], System.AsyncCallback, System.Object)
+  nameWithType.vb: SoapHttpClientProtocol.BeginInvoke(String, Object(), AsyncCallback, Object)
+  fullName.vb: System.Web.Services.Protocols.SoapHttpClientProtocol.BeginInvoke(System.String, System.Object(), System.AsyncCallback, System.Object)
+  name.vb: BeginInvoke(String, Object(), AsyncCallback, Object)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.BeginInvoke(System.String,System.Object[],System.AsyncCallback,System.Object)
+    name: BeginInvoke
+    nameWithType: SoapHttpClientProtocol.BeginInvoke
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.BeginInvoke
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    nameWithType: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.BeginInvoke(System.String,System.Object[],System.AsyncCallback,System.Object)
+    name: BeginInvoke
+    nameWithType: SoapHttpClientProtocol.BeginInvoke
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.BeginInvoke
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    nameWithType: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke(System.IAsyncResult)
+  commentId: M:System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke(System.IAsyncResult)
+  parent: System.Web.Services.Protocols.SoapHttpClientProtocol
+  isExternal: true
+  name: EndInvoke(IAsyncResult)
+  nameWithType: SoapHttpClientProtocol.EndInvoke(IAsyncResult)
+  fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke(System.IAsyncResult)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke(System.IAsyncResult)
+    name: EndInvoke
+    nameWithType: SoapHttpClientProtocol.EndInvoke
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    nameWithType: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke(System.IAsyncResult)
+    name: EndInvoke
+    nameWithType: SoapHttpClientProtocol.EndInvoke
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    nameWithType: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String,System.Object[],System.Threading.SendOrPostCallback)
+  commentId: M:System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String,System.Object[],System.Threading.SendOrPostCallback)
+  parent: System.Web.Services.Protocols.SoapHttpClientProtocol
+  isExternal: true
+  name: InvokeAsync(String, Object[], SendOrPostCallback)
+  nameWithType: SoapHttpClientProtocol.InvokeAsync(String, Object[], SendOrPostCallback)
+  fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String, System.Object[], System.Threading.SendOrPostCallback)
+  nameWithType.vb: SoapHttpClientProtocol.InvokeAsync(String, Object(), SendOrPostCallback)
+  fullName.vb: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String, System.Object(), System.Threading.SendOrPostCallback)
+  name.vb: InvokeAsync(String, Object(), SendOrPostCallback)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String,System.Object[],System.Threading.SendOrPostCallback)
+    name: InvokeAsync
+    nameWithType: SoapHttpClientProtocol.InvokeAsync
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.SendOrPostCallback
+    name: SendOrPostCallback
+    nameWithType: SendOrPostCallback
+    fullName: System.Threading.SendOrPostCallback
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String,System.Object[],System.Threading.SendOrPostCallback)
+    name: InvokeAsync
+    nameWithType: SoapHttpClientProtocol.InvokeAsync
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.SendOrPostCallback
+    name: SendOrPostCallback
+    nameWithType: SendOrPostCallback
+    fullName: System.Threading.SendOrPostCallback
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String,System.Object[],System.Threading.SendOrPostCallback,System.Object)
+  commentId: M:System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String,System.Object[],System.Threading.SendOrPostCallback,System.Object)
+  parent: System.Web.Services.Protocols.SoapHttpClientProtocol
+  isExternal: true
+  name: InvokeAsync(String, Object[], SendOrPostCallback, Object)
+  nameWithType: SoapHttpClientProtocol.InvokeAsync(String, Object[], SendOrPostCallback, Object)
+  fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String, System.Object[], System.Threading.SendOrPostCallback, System.Object)
+  nameWithType.vb: SoapHttpClientProtocol.InvokeAsync(String, Object(), SendOrPostCallback, Object)
+  fullName.vb: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String, System.Object(), System.Threading.SendOrPostCallback, System.Object)
+  name.vb: InvokeAsync(String, Object(), SendOrPostCallback, Object)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String,System.Object[],System.Threading.SendOrPostCallback,System.Object)
+    name: InvokeAsync
+    nameWithType: SoapHttpClientProtocol.InvokeAsync
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.SendOrPostCallback
+    name: SendOrPostCallback
+    nameWithType: SendOrPostCallback
+    fullName: System.Threading.SendOrPostCallback
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String,System.Object[],System.Threading.SendOrPostCallback,System.Object)
+    name: InvokeAsync
+    nameWithType: SoapHttpClientProtocol.InvokeAsync
+    fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.SendOrPostCallback
+    name: SendOrPostCallback
+    nameWithType: SendOrPostCallback
+    fullName: System.Threading.SendOrPostCallback
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.SoapHttpClientProtocol.SoapVersion
+  commentId: P:System.Web.Services.Protocols.SoapHttpClientProtocol.SoapVersion
+  parent: System.Web.Services.Protocols.SoapHttpClientProtocol
+  isExternal: true
+  name: SoapVersion
+  nameWithType: SoapHttpClientProtocol.SoapVersion
+  fullName: System.Web.Services.Protocols.SoapHttpClientProtocol.SoapVersion
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest)
+  commentId: M:System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest)
+  parent: System.Web.Services.Protocols.HttpWebClientProtocol
+  isExternal: true
+  name: GetWebResponse(WebRequest)
+  nameWithType: HttpWebClientProtocol.GetWebResponse(WebRequest)
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest)
+    name: GetWebResponse
+    nameWithType: HttpWebClientProtocol.GetWebResponse
+    fullName: System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Net.WebRequest
+    name: WebRequest
+    nameWithType: WebRequest
+    fullName: System.Net.WebRequest
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest)
+    name: GetWebResponse
+    nameWithType: HttpWebClientProtocol.GetWebResponse
+    fullName: System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Net.WebRequest
+    name: WebRequest
+    nameWithType: WebRequest
+    fullName: System.Net.WebRequest
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest,System.IAsyncResult)
+  commentId: M:System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest,System.IAsyncResult)
+  parent: System.Web.Services.Protocols.HttpWebClientProtocol
+  isExternal: true
+  name: GetWebResponse(WebRequest, IAsyncResult)
+  nameWithType: HttpWebClientProtocol.GetWebResponse(WebRequest, IAsyncResult)
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest, System.IAsyncResult)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest,System.IAsyncResult)
+    name: GetWebResponse
+    nameWithType: HttpWebClientProtocol.GetWebResponse
+    fullName: System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Net.WebRequest
+    name: WebRequest
+    nameWithType: WebRequest
+    fullName: System.Net.WebRequest
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    nameWithType: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest,System.IAsyncResult)
+    name: GetWebResponse
+    nameWithType: HttpWebClientProtocol.GetWebResponse
+    fullName: System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Net.WebRequest
+    name: WebRequest
+    nameWithType: WebRequest
+    fullName: System.Net.WebRequest
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    nameWithType: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type,System.Collections.ArrayList)
+  commentId: M:System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type,System.Collections.ArrayList)
+  parent: System.Web.Services.Protocols.HttpWebClientProtocol
+  isExternal: true
+  name: GenerateXmlMappings(Type, ArrayList)
+  nameWithType: HttpWebClientProtocol.GenerateXmlMappings(Type, ArrayList)
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type, System.Collections.ArrayList)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type,System.Collections.ArrayList)
+    name: GenerateXmlMappings
+    nameWithType: HttpWebClientProtocol.GenerateXmlMappings
+    fullName: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.ArrayList
+    name: ArrayList
+    nameWithType: ArrayList
+    fullName: System.Collections.ArrayList
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type,System.Collections.ArrayList)
+    name: GenerateXmlMappings
+    nameWithType: HttpWebClientProtocol.GenerateXmlMappings
+    fullName: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.ArrayList
+    name: ArrayList
+    nameWithType: ArrayList
+    fullName: System.Collections.ArrayList
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type[],System.Collections.ArrayList)
+  commentId: M:System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type[],System.Collections.ArrayList)
+  parent: System.Web.Services.Protocols.HttpWebClientProtocol
+  isExternal: true
+  name: GenerateXmlMappings(Type[], ArrayList)
+  nameWithType: HttpWebClientProtocol.GenerateXmlMappings(Type[], ArrayList)
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type[], System.Collections.ArrayList)
+  nameWithType.vb: HttpWebClientProtocol.GenerateXmlMappings(Type(), ArrayList)
+  fullName.vb: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type(), System.Collections.ArrayList)
+  name.vb: GenerateXmlMappings(Type(), ArrayList)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type[],System.Collections.ArrayList)
+    name: GenerateXmlMappings
+    nameWithType: HttpWebClientProtocol.GenerateXmlMappings
+    fullName: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.ArrayList
+    name: ArrayList
+    nameWithType: ArrayList
+    fullName: System.Collections.ArrayList
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type[],System.Collections.ArrayList)
+    name: GenerateXmlMappings
+    nameWithType: HttpWebClientProtocol.GenerateXmlMappings
+    fullName: System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.ArrayList
+    name: ArrayList
+    nameWithType: ArrayList
+    fullName: System.Collections.ArrayList
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol.AllowAutoRedirect
+  commentId: P:System.Web.Services.Protocols.HttpWebClientProtocol.AllowAutoRedirect
+  parent: System.Web.Services.Protocols.HttpWebClientProtocol
+  isExternal: true
+  name: AllowAutoRedirect
+  nameWithType: HttpWebClientProtocol.AllowAutoRedirect
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol.AllowAutoRedirect
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol.CookieContainer
+  commentId: P:System.Web.Services.Protocols.HttpWebClientProtocol.CookieContainer
+  parent: System.Web.Services.Protocols.HttpWebClientProtocol
+  isExternal: true
+  name: CookieContainer
+  nameWithType: HttpWebClientProtocol.CookieContainer
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol.CookieContainer
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol.ClientCertificates
+  commentId: P:System.Web.Services.Protocols.HttpWebClientProtocol.ClientCertificates
+  parent: System.Web.Services.Protocols.HttpWebClientProtocol
+  isExternal: true
+  name: ClientCertificates
+  nameWithType: HttpWebClientProtocol.ClientCertificates
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol.ClientCertificates
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol.EnableDecompression
+  commentId: P:System.Web.Services.Protocols.HttpWebClientProtocol.EnableDecompression
+  parent: System.Web.Services.Protocols.HttpWebClientProtocol
+  isExternal: true
+  name: EnableDecompression
+  nameWithType: HttpWebClientProtocol.EnableDecompression
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol.EnableDecompression
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol.UserAgent
+  commentId: P:System.Web.Services.Protocols.HttpWebClientProtocol.UserAgent
+  parent: System.Web.Services.Protocols.HttpWebClientProtocol
+  isExternal: true
+  name: UserAgent
+  nameWithType: HttpWebClientProtocol.UserAgent
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol.UserAgent
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol.Proxy
+  commentId: P:System.Web.Services.Protocols.HttpWebClientProtocol.Proxy
+  parent: System.Web.Services.Protocols.HttpWebClientProtocol
+  isExternal: true
+  name: Proxy
+  nameWithType: HttpWebClientProtocol.Proxy
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol.Proxy
+- uid: System.Web.Services.Protocols.HttpWebClientProtocol.UnsafeAuthenticatedConnectionSharing
+  commentId: P:System.Web.Services.Protocols.HttpWebClientProtocol.UnsafeAuthenticatedConnectionSharing
+  parent: System.Web.Services.Protocols.HttpWebClientProtocol
+  isExternal: true
+  name: UnsafeAuthenticatedConnectionSharing
+  nameWithType: HttpWebClientProtocol.UnsafeAuthenticatedConnectionSharing
+  fullName: System.Web.Services.Protocols.HttpWebClientProtocol.UnsafeAuthenticatedConnectionSharing
+- uid: System.Web.Services.Protocols.WebClientProtocol.Abort
+  commentId: M:System.Web.Services.Protocols.WebClientProtocol.Abort
+  parent: System.Web.Services.Protocols.WebClientProtocol
+  isExternal: true
+  name: Abort()
+  nameWithType: WebClientProtocol.Abort()
+  fullName: System.Web.Services.Protocols.WebClientProtocol.Abort()
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.WebClientProtocol.Abort
+    name: Abort
+    nameWithType: WebClientProtocol.Abort
+    fullName: System.Web.Services.Protocols.WebClientProtocol.Abort
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.WebClientProtocol.Abort
+    name: Abort
+    nameWithType: WebClientProtocol.Abort
+    fullName: System.Web.Services.Protocols.WebClientProtocol.Abort
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.WebClientProtocol.GetFromCache(System.Type)
+  commentId: M:System.Web.Services.Protocols.WebClientProtocol.GetFromCache(System.Type)
+  parent: System.Web.Services.Protocols.WebClientProtocol
+  isExternal: true
+  name: GetFromCache(Type)
+  nameWithType: WebClientProtocol.GetFromCache(Type)
+  fullName: System.Web.Services.Protocols.WebClientProtocol.GetFromCache(System.Type)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.WebClientProtocol.GetFromCache(System.Type)
+    name: GetFromCache
+    nameWithType: WebClientProtocol.GetFromCache
+    fullName: System.Web.Services.Protocols.WebClientProtocol.GetFromCache
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.WebClientProtocol.GetFromCache(System.Type)
+    name: GetFromCache
+    nameWithType: WebClientProtocol.GetFromCache
+    fullName: System.Web.Services.Protocols.WebClientProtocol.GetFromCache
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.WebClientProtocol.AddToCache(System.Type,System.Object)
+  commentId: M:System.Web.Services.Protocols.WebClientProtocol.AddToCache(System.Type,System.Object)
+  parent: System.Web.Services.Protocols.WebClientProtocol
+  isExternal: true
+  name: AddToCache(Type, Object)
+  nameWithType: WebClientProtocol.AddToCache(Type, Object)
+  fullName: System.Web.Services.Protocols.WebClientProtocol.AddToCache(System.Type, System.Object)
+  spec.csharp:
+  - uid: System.Web.Services.Protocols.WebClientProtocol.AddToCache(System.Type,System.Object)
+    name: AddToCache
+    nameWithType: WebClientProtocol.AddToCache
+    fullName: System.Web.Services.Protocols.WebClientProtocol.AddToCache
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Web.Services.Protocols.WebClientProtocol.AddToCache(System.Type,System.Object)
+    name: AddToCache
+    nameWithType: WebClientProtocol.AddToCache
+    fullName: System.Web.Services.Protocols.WebClientProtocol.AddToCache
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Web.Services.Protocols.WebClientProtocol.Credentials
+  commentId: P:System.Web.Services.Protocols.WebClientProtocol.Credentials
+  parent: System.Web.Services.Protocols.WebClientProtocol
+  isExternal: true
+  name: Credentials
+  nameWithType: WebClientProtocol.Credentials
+  fullName: System.Web.Services.Protocols.WebClientProtocol.Credentials
+- uid: System.Web.Services.Protocols.WebClientProtocol.ConnectionGroupName
+  commentId: P:System.Web.Services.Protocols.WebClientProtocol.ConnectionGroupName
+  parent: System.Web.Services.Protocols.WebClientProtocol
+  isExternal: true
+  name: ConnectionGroupName
+  nameWithType: WebClientProtocol.ConnectionGroupName
+  fullName: System.Web.Services.Protocols.WebClientProtocol.ConnectionGroupName
+- uid: System.Web.Services.Protocols.WebClientProtocol.PreAuthenticate
+  commentId: P:System.Web.Services.Protocols.WebClientProtocol.PreAuthenticate
+  parent: System.Web.Services.Protocols.WebClientProtocol
+  isExternal: true
+  name: PreAuthenticate
+  nameWithType: WebClientProtocol.PreAuthenticate
+  fullName: System.Web.Services.Protocols.WebClientProtocol.PreAuthenticate
+- uid: System.Web.Services.Protocols.WebClientProtocol.RequestEncoding
+  commentId: P:System.Web.Services.Protocols.WebClientProtocol.RequestEncoding
+  parent: System.Web.Services.Protocols.WebClientProtocol
+  isExternal: true
+  name: RequestEncoding
+  nameWithType: WebClientProtocol.RequestEncoding
+  fullName: System.Web.Services.Protocols.WebClientProtocol.RequestEncoding
+- uid: System.Web.Services.Protocols.WebClientProtocol.Timeout
+  commentId: P:System.Web.Services.Protocols.WebClientProtocol.Timeout
+  parent: System.Web.Services.Protocols.WebClientProtocol
+  isExternal: true
+  name: Timeout
+  nameWithType: WebClientProtocol.Timeout
+  fullName: System.Web.Services.Protocols.WebClientProtocol.Timeout
+- uid: System.ComponentModel.Component.Dispose
+  commentId: M:System.ComponentModel.Component.Dispose
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: Dispose()
+  nameWithType: Component.Dispose()
+  fullName: System.ComponentModel.Component.Dispose()
+  spec.csharp:
+  - uid: System.ComponentModel.Component.Dispose
+    name: Dispose
+    nameWithType: Component.Dispose
+    fullName: System.ComponentModel.Component.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.Dispose
+    name: Dispose
+    nameWithType: Component.Dispose
+    fullName: System.ComponentModel.Component.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.Component.Dispose(System.Boolean)
+  commentId: M:System.ComponentModel.Component.Dispose(System.Boolean)
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: Dispose(Boolean)
+  nameWithType: Component.Dispose(Boolean)
+  fullName: System.ComponentModel.Component.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.ComponentModel.Component.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: Component.Dispose
+    fullName: System.ComponentModel.Component.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: Component.Dispose
+    fullName: System.ComponentModel.Component.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.Component.GetService(System.Type)
+  commentId: M:System.ComponentModel.Component.GetService(System.Type)
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: GetService(Type)
+  nameWithType: Component.GetService(Type)
+  fullName: System.ComponentModel.Component.GetService(System.Type)
+  spec.csharp:
+  - uid: System.ComponentModel.Component.GetService(System.Type)
+    name: GetService
+    nameWithType: Component.GetService
+    fullName: System.ComponentModel.Component.GetService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.GetService(System.Type)
+    name: GetService
+    nameWithType: Component.GetService
+    fullName: System.ComponentModel.Component.GetService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.Component.ToString
+  commentId: M:System.ComponentModel.Component.ToString
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: ToString()
+  nameWithType: Component.ToString()
+  fullName: System.ComponentModel.Component.ToString()
+  spec.csharp:
+  - uid: System.ComponentModel.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: System.ComponentModel.Component.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: System.ComponentModel.Component.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.Component.CanRaiseEvents
+  commentId: P:System.ComponentModel.Component.CanRaiseEvents
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: CanRaiseEvents
+  nameWithType: Component.CanRaiseEvents
+  fullName: System.ComponentModel.Component.CanRaiseEvents
+- uid: System.ComponentModel.Component.Events
+  commentId: P:System.ComponentModel.Component.Events
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: Events
+  nameWithType: Component.Events
+  fullName: System.ComponentModel.Component.Events
+- uid: System.ComponentModel.Component.Site
+  commentId: P:System.ComponentModel.Component.Site
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: Site
+  nameWithType: Component.Site
+  fullName: System.ComponentModel.Component.Site
+- uid: System.ComponentModel.Component.Container
+  commentId: P:System.ComponentModel.Component.Container
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: Container
+  nameWithType: Component.Container
+  fullName: System.ComponentModel.Component.Container
+- uid: System.ComponentModel.Component.DesignMode
+  commentId: P:System.ComponentModel.Component.DesignMode
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: DesignMode
+  nameWithType: Component.DesignMode
+  fullName: System.ComponentModel.Component.DesignMode
+- uid: System.ComponentModel.Component.Disposed
+  commentId: E:System.ComponentModel.Component.Disposed
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: Disposed
+  nameWithType: Component.Disposed
+  fullName: System.ComponentModel.Component.Disposed
+- uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  commentId: M:System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: MemberwiseClone(Boolean)
+  nameWithType: MarshalByRefObject.MemberwiseClone(Boolean)
+  fullName: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: MemberwiseClone
+    nameWithType: MarshalByRefObject.MemberwiseClone
+    fullName: System.MarshalByRefObject.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: MemberwiseClone
+    nameWithType: MarshalByRefObject.MemberwiseClone
+    fullName: System.MarshalByRefObject.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.MarshalByRefObject.GetLifetimeService
+  commentId: M:System.MarshalByRefObject.GetLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: GetLifetimeService()
+  nameWithType: MarshalByRefObject.GetLifetimeService()
+  fullName: System.MarshalByRefObject.GetLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    nameWithType: MarshalByRefObject.GetLifetimeService
+    fullName: System.MarshalByRefObject.GetLifetimeService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    nameWithType: MarshalByRefObject.GetLifetimeService
+    fullName: System.MarshalByRefObject.GetLifetimeService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.MarshalByRefObject.InitializeLifetimeService
+  commentId: M:System.MarshalByRefObject.InitializeLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: InitializeLifetimeService()
+  nameWithType: MarshalByRefObject.InitializeLifetimeService()
+  fullName: System.MarshalByRefObject.InitializeLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    nameWithType: MarshalByRefObject.InitializeLifetimeService
+    fullName: System.MarshalByRefObject.InitializeLifetimeService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    nameWithType: MarshalByRefObject.InitializeLifetimeService
+    fullName: System.MarshalByRefObject.InitializeLifetimeService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+  commentId: M:System.MarshalByRefObject.CreateObjRef(System.Type)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: CreateObjRef(Type)
+  nameWithType: MarshalByRefObject.CreateObjRef(Type)
+  fullName: System.MarshalByRefObject.CreateObjRef(System.Type)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+    name: CreateObjRef
+    nameWithType: MarshalByRefObject.CreateObjRef
+    fullName: System.MarshalByRefObject.CreateObjRef
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+    name: CreateObjRef
+    nameWithType: MarshalByRefObject.CreateObjRef
+    fullName: System.MarshalByRefObject.CreateObjRef
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: System.Web.Services.Protocols
+  commentId: N:System.Web.Services.Protocols
+  isExternal: true
+  name: System.Web.Services.Protocols
+  nameWithType: System.Web.Services.Protocols
+  fullName: System.Web.Services.Protocols
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.#ctor*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.#ctor
+  name: ServiceOPENae
+  nameWithType: ServiceOPENae.ServiceOPENae
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.ServiceOPENae
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.Url*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.Url
+  name: Url
+  nameWithType: ServiceOPENae.Url
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.Url
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.UseDefaultCredentials*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.UseDefaultCredentials
+  name: UseDefaultCredentials
+  nameWithType: ServiceOPENae.UseDefaultCredentials
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.UseDefaultCredentials
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAECompletedEventHandler
+  commentId: T:DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAECompletedEventHandler
+  parent: DichiarazioniICI.WServiceOPENae
+  name: PopolaTabAppoggioAECompletedEventHandler
+  nameWithType: PopolaTabAppoggioAECompletedEventHandler
+  fullName: DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAECompletedEventHandler
+- uid: DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE1CompletedEventHandler
+  commentId: T:DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE1CompletedEventHandler
+  parent: DichiarazioniICI.WServiceOPENae
+  name: PopolaTabAppoggioAE1CompletedEventHandler
+  nameWithType: PopolaTabAppoggioAE1CompletedEventHandler
+  fullName: DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE1CompletedEventHandler
+- uid: DichiarazioniICI.WServiceOPENae.EstraiTracciatoAECompletedEventHandler
+  commentId: T:DichiarazioniICI.WServiceOPENae.EstraiTracciatoAECompletedEventHandler
+  parent: DichiarazioniICI.WServiceOPENae
+  name: EstraiTracciatoAECompletedEventHandler
+  nameWithType: EstraiTracciatoAECompletedEventHandler
+  fullName: DichiarazioniICI.WServiceOPENae.EstraiTracciatoAECompletedEventHandler
+- uid: DichiarazioniICI.WServiceOPENae.GetFlussiTracciatiAECompletedEventHandler
+  commentId: T:DichiarazioniICI.WServiceOPENae.GetFlussiTracciatiAECompletedEventHandler
+  parent: DichiarazioniICI.WServiceOPENae
+  name: GetFlussiTracciatiAECompletedEventHandler
+  nameWithType: GetFlussiTracciatiAECompletedEventHandler
+  fullName: DichiarazioniICI.WServiceOPENae.GetFlussiTracciatiAECompletedEventHandler
+- uid: DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE2CompletedEventHandler
+  commentId: T:DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE2CompletedEventHandler
+  parent: DichiarazioniICI.WServiceOPENae
+  name: PopolaTabAppoggioAE2CompletedEventHandler
+  nameWithType: PopolaTabAppoggioAE2CompletedEventHandler
+  fullName: DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE2CompletedEventHandler
+- uid: DichiarazioniICI.WServiceOPENae.EstraiTracciatoAE1CompletedEventHandler
+  commentId: T:DichiarazioniICI.WServiceOPENae.EstraiTracciatoAE1CompletedEventHandler
+  parent: DichiarazioniICI.WServiceOPENae
+  name: EstraiTracciatoAE1CompletedEventHandler
+  nameWithType: EstraiTracciatoAE1CompletedEventHandler
+  fullName: DichiarazioniICI.WServiceOPENae.EstraiTracciatoAE1CompletedEventHandler
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE
+  name: PopolaTabAppoggioAE
+  nameWithType: ServiceOPENae.PopolaTabAppoggioAE
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE
+  name: BeginPopolaTabAppoggioAE
+  nameWithType: ServiceOPENae.BeginPopolaTabAppoggioAE
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndPopolaTabAppoggioAE*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndPopolaTabAppoggioAE
+  name: EndPopolaTabAppoggioAE
+  nameWithType: ServiceOPENae.EndPopolaTabAppoggioAE
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndPopolaTabAppoggioAE
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAEAsync*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAEAsync
+  name: PopolaTabAppoggioAEAsync
+  nameWithType: ServiceOPENae.PopolaTabAppoggioAEAsync
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAEAsync
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE[]
+  isExternal: true
+  name: DisposizioneAE[]
+  nameWithType: DisposizioneAE[]
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE[]
+  nameWithType.vb: DisposizioneAE()
+  fullName.vb: DichiarazioniICI.WServiceOPENae.DisposizioneAE()
+  name.vb: DisposizioneAE()
+  spec.csharp:
+  - uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+    name: DisposizioneAE
+    nameWithType: DisposizioneAE
+    fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+    name: DisposizioneAE
+    nameWithType: DisposizioneAE
+    fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE1*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE1
+  name: BeginPopolaTabAppoggioAE1
+  nameWithType: ServiceOPENae.BeginPopolaTabAppoggioAE1
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE1
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndPopolaTabAppoggioAE1*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndPopolaTabAppoggioAE1
+  name: EndPopolaTabAppoggioAE1
+  nameWithType: ServiceOPENae.EndPopolaTabAppoggioAE1
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndPopolaTabAppoggioAE1
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE1Async*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE1Async
+  name: PopolaTabAppoggioAE1Async
+  nameWithType: ServiceOPENae.PopolaTabAppoggioAE1Async
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE1Async
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE
+  name: EstraiTracciatoAE
+  nameWithType: ServiceOPENae.EstraiTracciatoAE
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginEstraiTracciatoAE*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginEstraiTracciatoAE
+  name: BeginEstraiTracciatoAE
+  nameWithType: ServiceOPENae.BeginEstraiTracciatoAE
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginEstraiTracciatoAE
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndEstraiTracciatoAE*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndEstraiTracciatoAE
+  name: EndEstraiTracciatoAE
+  nameWithType: ServiceOPENae.EndEstraiTracciatoAE
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndEstraiTracciatoAE
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAEAsync*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAEAsync
+  name: EstraiTracciatoAEAsync
+  nameWithType: ServiceOPENae.EstraiTracciatoAEAsync
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAEAsync
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAE*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAE
+  name: GetFlussiTracciatiAE
+  nameWithType: ServiceOPENae.GetFlussiTracciatiAE
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAE
+- uid: DichiarazioniICI.WServiceOPENae.objFlussoAE[]
+  isExternal: true
+  name: objFlussoAE[]
+  nameWithType: objFlussoAE[]
+  fullName: DichiarazioniICI.WServiceOPENae.objFlussoAE[]
+  nameWithType.vb: objFlussoAE()
+  fullName.vb: DichiarazioniICI.WServiceOPENae.objFlussoAE()
+  name.vb: objFlussoAE()
+  spec.csharp:
+  - uid: DichiarazioniICI.WServiceOPENae.objFlussoAE
+    name: objFlussoAE
+    nameWithType: objFlussoAE
+    fullName: DichiarazioniICI.WServiceOPENae.objFlussoAE
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: DichiarazioniICI.WServiceOPENae.objFlussoAE
+    name: objFlussoAE
+    nameWithType: objFlussoAE
+    fullName: DichiarazioniICI.WServiceOPENae.objFlussoAE
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginGetFlussiTracciatiAE*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginGetFlussiTracciatiAE
+  name: BeginGetFlussiTracciatiAE
+  nameWithType: ServiceOPENae.BeginGetFlussiTracciatiAE
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginGetFlussiTracciatiAE
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndGetFlussiTracciatiAE*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndGetFlussiTracciatiAE
+  name: EndGetFlussiTracciatiAE
+  nameWithType: ServiceOPENae.EndGetFlussiTracciatiAE
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndGetFlussiTracciatiAE
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAEAsync*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAEAsync
+  name: GetFlussiTracciatiAEAsync
+  nameWithType: ServiceOPENae.GetFlussiTracciatiAEAsync
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.GetFlussiTracciatiAEAsync
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE2*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE2
+  name: BeginPopolaTabAppoggioAE2
+  nameWithType: ServiceOPENae.BeginPopolaTabAppoggioAE2
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginPopolaTabAppoggioAE2
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndPopolaTabAppoggioAE2*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndPopolaTabAppoggioAE2
+  name: EndPopolaTabAppoggioAE2
+  nameWithType: ServiceOPENae.EndPopolaTabAppoggioAE2
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndPopolaTabAppoggioAE2
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE2Async*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE2Async
+  name: PopolaTabAppoggioAE2Async
+  nameWithType: ServiceOPENae.PopolaTabAppoggioAE2Async
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.PopolaTabAppoggioAE2Async
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginEstraiTracciatoAE1*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginEstraiTracciatoAE1
+  name: BeginEstraiTracciatoAE1
+  nameWithType: ServiceOPENae.BeginEstraiTracciatoAE1
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.BeginEstraiTracciatoAE1
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndEstraiTracciatoAE1*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndEstraiTracciatoAE1
+  name: EndEstraiTracciatoAE1
+  nameWithType: ServiceOPENae.EndEstraiTracciatoAE1
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EndEstraiTracciatoAE1
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE1Async*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE1Async
+  name: EstraiTracciatoAE1Async
+  nameWithType: ServiceOPENae.EstraiTracciatoAE1Async
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.EstraiTracciatoAE1Async
+- uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae.CancelAsync*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.ServiceOPENae.CancelAsync
+  name: CancelAsync
+  nameWithType: ServiceOPENae.CancelAsync
+  fullName: DichiarazioniICI.WServiceOPENae.ServiceOPENae.CancelAsync

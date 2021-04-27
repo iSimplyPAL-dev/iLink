@@ -1,0 +1,620 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Catasto
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Catasto
+   ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DichiarazioniICI.Catasto">
+  
+  
+  <h1 id="DichiarazioniICI_Catasto" data-uid="DichiarazioniICI.Catasto" class="text-break">Class Catasto
+  </h1>
+  <div class="markdown level0 summary"><p>Classe per l'aggiornamento della banca dati tributaria con i dati repertiti da flusso catastale.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="DichiarazioniICI.Database.Database.html">Database</a></div>
+    <div class="level2"><span class="xref">Catasto</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database__DbConnection">Database._DbConnection</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_TableName">Database.TableName</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_ProcedureName">Database.ProcedureName</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_AlredyOpened">Database.AlredyOpened</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_kill">Database.kill()</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_List">Database.List()</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_List_System_String_">Database.List(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_ListFromSP">Database.ListFromSP()</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_List_System_Int32_">Database.List(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_Query_System_Data_SqlClient_SqlCommand_System_Data_SqlClient_SqlConnection_">Database.Query(SqlCommand, SqlConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_QueryScalar_System_Data_SqlClient_SqlCommand_System_Data_SqlClient_SqlConnection_">Database.QueryScalar(SqlCommand, SqlConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_Execute_System_Data_SqlClient_SqlCommand_System_Data_SqlClient_SqlConnection_">Database.Execute(SqlCommand, SqlConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_Execute_System_Data_SqlClient_SqlCommand_System_Data_SqlClient_SqlConnection_System_Int32__">Database.Execute(SqlCommand, SqlConnection, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_Execute_System_Data_SqlClient_SqlCommand_System_Data_SqlClient_SqlConnection_System_String_System_Int32__">Database.Execute(SqlCommand, SqlConnection, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_GetIdentity_System_Data_SqlClient_SqlConnection_">Database.GetIdentity(SqlConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_PrepareGetRow_System_Int32_">Database.PrepareGetRow(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_PrepareGetRowCaricoFigli_System_Int32_System_String_">Database.PrepareGetRowCaricoFigli(Int32, String)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DichiarazioniICI.html">DichiarazioniICI</a></h6>
+  <h6><strong>Assembly</strong>: DichiarazioniICI.dll</h6>
+  <h5 id="DichiarazioniICI_Catasto_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Catasto : Database</code></pre>
+  </div>
+  <h5 id="DichiarazioniICI_Catasto_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>In ottemperanza alle linee guida di sviluppo 1.0</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="DichiarazioniICI_Catasto_CheckElabInCorso_" data-uid="DichiarazioniICI.Catasto.CheckElabInCorso*"></a>
+  <h4 id="DichiarazioniICI_Catasto_CheckElabInCorso_System_String_System_Boolean_CatastoInterface_Elaborazione__" data-uid="DichiarazioniICI.Catasto.CheckElabInCorso(System.String,System.Boolean,CatastoInterface.Elaborazione@)">CheckElabInCorso(String, Boolean, out Elaborazione)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckElabInCorso(string IdCatastale, bool IsForExport, out Elaborazione myElab)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">IdCatastale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">IsForExport</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CatastoInterface.Elaborazione</span></td>
+        <td><span class="parametername">myElab</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DichiarazioniICI_Catasto_Monitoring_" data-uid="DichiarazioniICI.Catasto.Monitoring*"></a>
+  <h4 id="DichiarazioniICI_Catasto_Monitoring_System_String_System_Int32_System_Data_DataTable__System_String__" data-uid="DichiarazioniICI.Catasto.Monitoring(System.String,System.Int32,System.Data.DataTable@,System.String@)">Monitoring(String, Int32, out DataTable, out String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Monitoring(string IdEnte, int IDElaborazione, out DataTable myDati, out string sErr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">IdEnte</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">IDElaborazione</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.DataTable</span></td>
+        <td><span class="parametername">myDati</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sErr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DichiarazioniICI_Catasto_SearchAnomalie_" data-uid="DichiarazioniICI.Catasto.SearchAnomalie*"></a>
+  <h4 id="DichiarazioniICI_Catasto_SearchAnomalie_System_String_System_Int32_System_Boolean_System_String_System_String_System_String_System_Data_DataTable__System_String__" data-uid="DichiarazioniICI.Catasto.SearchAnomalie(System.String,System.Int32,System.Boolean,System.String,System.String,System.String,System.Data.DataTable@,System.String@)">SearchAnomalie(String, Int32, Boolean, String, String, String, out DataTable, out String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SearchAnomalie(string CodCatastale, int nType, bool IsEstraz, string sFoglio, string sNumero, string sSubalterno, out DataTable myDati, out string sErr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">CodCatastale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">IsEstraz</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sFoglio</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sNumero</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sSubalterno</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.DataTable</span></td>
+        <td><span class="parametername">myDati</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sErr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DichiarazioniICI_Catasto_SearchBancaDati_" data-uid="DichiarazioniICI.Catasto.SearchBancaDati*"></a>
+  <h4 id="DichiarazioniICI_Catasto_SearchBancaDati_System_String_System_String_System_DateTime_System_DateTime_System_Data_DataTable__System_String__" data-uid="DichiarazioniICI.Catasto.SearchBancaDati(System.String,System.String,System.DateTime,System.DateTime,System.Data.DataTable@,System.String@)">SearchBancaDati(String, String, DateTime, DateTime, out DataTable, out String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SearchBancaDati(string IdEnte, string CodCatastale, DateTime Dal, DateTime Al, out DataTable myDati, out string sErr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">IdEnte</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">CodCatastale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="parametername">Dal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="parametername">Al</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.DataTable</span></td>
+        <td><span class="parametername">myDati</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sErr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DichiarazioniICI_Catasto_SearchDichWork_" data-uid="DichiarazioniICI.Catasto.SearchDichWork*"></a>
+  <h4 id="DichiarazioniICI_Catasto_SearchDichWork_System_String_System_Boolean_System_Data_DataTable__System_String__" data-uid="DichiarazioniICI.Catasto.SearchDichWork(System.String,System.Boolean,System.Data.DataTable@,System.String@)">SearchDichWork(String, Boolean, out DataTable, out String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SearchDichWork(string CodCatastale, bool IsEstraz, out DataTable myDati, out string sErr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">CodCatastale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">IsEstraz</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.DataTable</span></td>
+        <td><span class="parametername">myDati</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sErr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DichiarazioniICI_Catasto_UploadFiles_" data-uid="DichiarazioniICI.Catasto.UploadFiles*"></a>
+  <h4 id="DichiarazioniICI_Catasto_UploadFiles_System_String_System_Web_HttpFileCollection_System_String__" data-uid="DichiarazioniICI.Catasto.UploadFiles(System.String,System.Web.HttpFileCollection,System.String@)">UploadFiles(String, HttpFileCollection, out String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UploadFiles(string CodCatastale, HttpFileCollection ListFiles, out string sErr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">CodCatastale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Web.HttpFileCollection</span></td>
+        <td><span class="parametername">ListFiles</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sErr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DichiarazioniICI_Catasto_UploadRibaltaFiles_" data-uid="DichiarazioniICI.Catasto.UploadRibaltaFiles*"></a>
+  <h4 id="DichiarazioniICI_Catasto_UploadRibaltaFiles_System_String_System_Web_HttpFileCollection_System_String__" data-uid="DichiarazioniICI.Catasto.UploadRibaltaFiles(System.String,System.Web.HttpFileCollection,System.String@)">UploadRibaltaFiles(String, HttpFileCollection, out String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UploadRibaltaFiles(string CodCatastale, HttpFileCollection ListFiles, out string sErr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">CodCatastale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Web.HttpFileCollection</span></td>
+        <td><span class="parametername">ListFiles</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sErr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,271 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali
+  commentId: T:DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali
+  id: AssenzaDatiCatastali
+  parent: DichiarazioniICI.WServiceOPENae
+  children:
+  - DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.Condominii
+  - DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.DatiNonDisponibili_Preesistente
+  - DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.FornitureTemporanee
+  - DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.NonAccatastabile
+  - DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.NonAccatastato
+  - DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.NonSpecificato
+  - DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.OmessaDichiarazione
+  langs:
+  - csharp
+  - vb
+  name: AssenzaDatiCatastali
+  nameWithType: AssenzaDatiCatastali
+  fullName: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali
+  type: Enum
+  source:
+    id: AssenzaDatiCatastali
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1220
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public enum AssenzaDatiCatastali
+    content.vb: >-
+      <Serializable>
+
+      Public Enum AssenzaDatiCatastali
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.NonSpecificato
+  commentId: F:DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.NonSpecificato
+  id: NonSpecificato
+  parent: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali
+  langs:
+  - csharp
+  - vb
+  name: NonSpecificato
+  nameWithType: AssenzaDatiCatastali.NonSpecificato
+  fullName: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.NonSpecificato
+  type: Field
+  source:
+    id: NonSpecificato
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1226
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: NonSpecificato = 0
+    return:
+      type: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.NonAccatastato
+  commentId: F:DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.NonAccatastato
+  id: NonAccatastato
+  parent: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali
+  langs:
+  - csharp
+  - vb
+  name: NonAccatastato
+  nameWithType: AssenzaDatiCatastali.NonAccatastato
+  fullName: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.NonAccatastato
+  type: Field
+  source:
+    id: NonAccatastato
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1229
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: NonAccatastato = 1
+    return:
+      type: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.NonAccatastabile
+  commentId: F:DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.NonAccatastabile
+  id: NonAccatastabile
+  parent: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali
+  langs:
+  - csharp
+  - vb
+  name: NonAccatastabile
+  nameWithType: AssenzaDatiCatastali.NonAccatastabile
+  fullName: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.NonAccatastabile
+  type: Field
+  source:
+    id: NonAccatastabile
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1232
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: NonAccatastabile = 2
+    return:
+      type: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.DatiNonDisponibili_Preesistente
+  commentId: F:DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.DatiNonDisponibili_Preesistente
+  id: DatiNonDisponibili_Preesistente
+  parent: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali
+  langs:
+  - csharp
+  - vb
+  name: DatiNonDisponibili_Preesistente
+  nameWithType: AssenzaDatiCatastali.DatiNonDisponibili_Preesistente
+  fullName: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.DatiNonDisponibili_Preesistente
+  type: Field
+  source:
+    id: DatiNonDisponibili_Preesistente
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1235
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: DatiNonDisponibili_Preesistente = 3
+    return:
+      type: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.OmessaDichiarazione
+  commentId: F:DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.OmessaDichiarazione
+  id: OmessaDichiarazione
+  parent: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali
+  langs:
+  - csharp
+  - vb
+  name: OmessaDichiarazione
+  nameWithType: AssenzaDatiCatastali.OmessaDichiarazione
+  fullName: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.OmessaDichiarazione
+  type: Field
+  source:
+    id: OmessaDichiarazione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1238
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: OmessaDichiarazione = 4
+    return:
+      type: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.FornitureTemporanee
+  commentId: F:DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.FornitureTemporanee
+  id: FornitureTemporanee
+  parent: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali
+  langs:
+  - csharp
+  - vb
+  name: FornitureTemporanee
+  nameWithType: AssenzaDatiCatastali.FornitureTemporanee
+  fullName: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.FornitureTemporanee
+  type: Field
+  source:
+    id: FornitureTemporanee
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1241
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: FornitureTemporanee = 5
+    return:
+      type: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.Condominii
+  commentId: F:DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.Condominii
+  id: Condominii
+  parent: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali
+  langs:
+  - csharp
+  - vb
+  name: Condominii
+  nameWithType: AssenzaDatiCatastali.Condominii
+  fullName: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.Condominii
+  type: Field
+  source:
+    id: Condominii
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1244
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: Condominii = 6
+    return:
+      type: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: DichiarazioniICI.WServiceOPENae
+  commentId: N:DichiarazioniICI.WServiceOPENae
+  name: DichiarazioniICI.WServiceOPENae
+  nameWithType: DichiarazioniICI.WServiceOPENae
+  fullName: DichiarazioniICI.WServiceOPENae
+- uid: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali
+  commentId: T:DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali
+  parent: DichiarazioniICI.WServiceOPENae
+  name: AssenzaDatiCatastali
+  nameWithType: AssenzaDatiCatastali
+  fullName: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali

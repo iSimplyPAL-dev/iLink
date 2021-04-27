@@ -1,0 +1,419 @@
+### YamlMime:ManagedReference
+items:
+- uid: Business.ClsAnalisi.TypeCheckRifCatastali
+  commentId: T:Business.ClsAnalisi.TypeCheckRifCatastali
+  id: ClsAnalisi.TypeCheckRifCatastali
+  parent: Business
+  children:
+  - Business.ClsAnalisi.TypeCheckRifCatastali.CatDifferentDic
+  - Business.ClsAnalisi.TypeCheckRifCatastali.CatEqualDic
+  - Business.ClsAnalisi.TypeCheckRifCatastali.CatNoDic
+  - Business.ClsAnalisi.TypeCheckRifCatastali.DicNoCat
+  - Business.ClsAnalisi.TypeCheckRifCatastali.ICInoTARSU
+  - Business.ClsAnalisi.TypeCheckRifCatastali.PropCatDifferentDic
+  - Business.ClsAnalisi.TypeCheckRifCatastali.RenCatDifferentDic
+  - Business.ClsAnalisi.TypeCheckRifCatastali.RifAccertati
+  - Business.ClsAnalisi.TypeCheckRifCatastali.RifChiusi
+  - Business.ClsAnalisi.TypeCheckRifCatastali.RifDoppi
+  - Business.ClsAnalisi.TypeCheckRifCatastali.RifErrataCopertura
+  - Business.ClsAnalisi.TypeCheckRifCatastali.RifMancanti
+  - Business.ClsAnalisi.TypeCheckRifCatastali.TARSUnoICI
+  langs:
+  - csharp
+  - vb
+  name: ClsAnalisi.TypeCheckRifCatastali
+  nameWithType: ClsAnalisi.TypeCheckRifCatastali
+  fullName: Business.ClsAnalisi.TypeCheckRifCatastali
+  type: Enum
+  source:
+    id: TypeCheckRifCatastali
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ClsAnalisi.cs
+    startLine: 18
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public enum TypeCheckRifCatastali
+    content.vb: Public Enum TypeCheckRifCatastali
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Business.ClsAnalisi.TypeCheckRifCatastali.RifChiusi
+  commentId: F:Business.ClsAnalisi.TypeCheckRifCatastali.RifChiusi
+  id: RifChiusi
+  parent: Business.ClsAnalisi.TypeCheckRifCatastali
+  langs:
+  - csharp
+  - vb
+  name: RifChiusi
+  nameWithType: ClsAnalisi.TypeCheckRifCatastali.RifChiusi
+  fullName: Business.ClsAnalisi.TypeCheckRifCatastali.RifChiusi
+  type: Field
+  source:
+    id: RifChiusi
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ClsAnalisi.cs
+    startLine: 20
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: RifChiusi = 0
+    return:
+      type: Business.ClsAnalisi.TypeCheckRifCatastali
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ClsAnalisi.TypeCheckRifCatastali.RifMancanti
+  commentId: F:Business.ClsAnalisi.TypeCheckRifCatastali.RifMancanti
+  id: RifMancanti
+  parent: Business.ClsAnalisi.TypeCheckRifCatastali
+  langs:
+  - csharp
+  - vb
+  name: RifMancanti
+  nameWithType: ClsAnalisi.TypeCheckRifCatastali.RifMancanti
+  fullName: Business.ClsAnalisi.TypeCheckRifCatastali.RifMancanti
+  type: Field
+  source:
+    id: RifMancanti
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ClsAnalisi.cs
+    startLine: 21
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: RifMancanti = 1
+    return:
+      type: Business.ClsAnalisi.TypeCheckRifCatastali
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ClsAnalisi.TypeCheckRifCatastali.RifDoppi
+  commentId: F:Business.ClsAnalisi.TypeCheckRifCatastali.RifDoppi
+  id: RifDoppi
+  parent: Business.ClsAnalisi.TypeCheckRifCatastali
+  langs:
+  - csharp
+  - vb
+  name: RifDoppi
+  nameWithType: ClsAnalisi.TypeCheckRifCatastali.RifDoppi
+  fullName: Business.ClsAnalisi.TypeCheckRifCatastali.RifDoppi
+  type: Field
+  source:
+    id: RifDoppi
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ClsAnalisi.cs
+    startLine: 22
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: RifDoppi = 2
+    return:
+      type: Business.ClsAnalisi.TypeCheckRifCatastali
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ClsAnalisi.TypeCheckRifCatastali.RifAccertati
+  commentId: F:Business.ClsAnalisi.TypeCheckRifCatastali.RifAccertati
+  id: RifAccertati
+  parent: Business.ClsAnalisi.TypeCheckRifCatastali
+  langs:
+  - csharp
+  - vb
+  name: RifAccertati
+  nameWithType: ClsAnalisi.TypeCheckRifCatastali.RifAccertati
+  fullName: Business.ClsAnalisi.TypeCheckRifCatastali.RifAccertati
+  type: Field
+  source:
+    id: RifAccertati
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ClsAnalisi.cs
+    startLine: 23
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: RifAccertati = 3
+    return:
+      type: Business.ClsAnalisi.TypeCheckRifCatastali
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ClsAnalisi.TypeCheckRifCatastali.CatNoDic
+  commentId: F:Business.ClsAnalisi.TypeCheckRifCatastali.CatNoDic
+  id: CatNoDic
+  parent: Business.ClsAnalisi.TypeCheckRifCatastali
+  langs:
+  - csharp
+  - vb
+  name: CatNoDic
+  nameWithType: ClsAnalisi.TypeCheckRifCatastali.CatNoDic
+  fullName: Business.ClsAnalisi.TypeCheckRifCatastali.CatNoDic
+  type: Field
+  source:
+    id: CatNoDic
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ClsAnalisi.cs
+    startLine: 24
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: CatNoDic = 4
+    return:
+      type: Business.ClsAnalisi.TypeCheckRifCatastali
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ClsAnalisi.TypeCheckRifCatastali.DicNoCat
+  commentId: F:Business.ClsAnalisi.TypeCheckRifCatastali.DicNoCat
+  id: DicNoCat
+  parent: Business.ClsAnalisi.TypeCheckRifCatastali
+  langs:
+  - csharp
+  - vb
+  name: DicNoCat
+  nameWithType: ClsAnalisi.TypeCheckRifCatastali.DicNoCat
+  fullName: Business.ClsAnalisi.TypeCheckRifCatastali.DicNoCat
+  type: Field
+  source:
+    id: DicNoCat
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ClsAnalisi.cs
+    startLine: 25
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: DicNoCat = 5
+    return:
+      type: Business.ClsAnalisi.TypeCheckRifCatastali
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ClsAnalisi.TypeCheckRifCatastali.CatEqualDic
+  commentId: F:Business.ClsAnalisi.TypeCheckRifCatastali.CatEqualDic
+  id: CatEqualDic
+  parent: Business.ClsAnalisi.TypeCheckRifCatastali
+  langs:
+  - csharp
+  - vb
+  name: CatEqualDic
+  nameWithType: ClsAnalisi.TypeCheckRifCatastali.CatEqualDic
+  fullName: Business.ClsAnalisi.TypeCheckRifCatastali.CatEqualDic
+  type: Field
+  source:
+    id: CatEqualDic
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ClsAnalisi.cs
+    startLine: 26
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: CatEqualDic = 6
+    return:
+      type: Business.ClsAnalisi.TypeCheckRifCatastali
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ClsAnalisi.TypeCheckRifCatastali.CatDifferentDic
+  commentId: F:Business.ClsAnalisi.TypeCheckRifCatastali.CatDifferentDic
+  id: CatDifferentDic
+  parent: Business.ClsAnalisi.TypeCheckRifCatastali
+  langs:
+  - csharp
+  - vb
+  name: CatDifferentDic
+  nameWithType: ClsAnalisi.TypeCheckRifCatastali.CatDifferentDic
+  fullName: Business.ClsAnalisi.TypeCheckRifCatastali.CatDifferentDic
+  type: Field
+  source:
+    id: CatDifferentDic
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ClsAnalisi.cs
+    startLine: 27
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: CatDifferentDic = 7
+    return:
+      type: Business.ClsAnalisi.TypeCheckRifCatastali
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ClsAnalisi.TypeCheckRifCatastali.RenCatDifferentDic
+  commentId: F:Business.ClsAnalisi.TypeCheckRifCatastali.RenCatDifferentDic
+  id: RenCatDifferentDic
+  parent: Business.ClsAnalisi.TypeCheckRifCatastali
+  langs:
+  - csharp
+  - vb
+  name: RenCatDifferentDic
+  nameWithType: ClsAnalisi.TypeCheckRifCatastali.RenCatDifferentDic
+  fullName: Business.ClsAnalisi.TypeCheckRifCatastali.RenCatDifferentDic
+  type: Field
+  source:
+    id: RenCatDifferentDic
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ClsAnalisi.cs
+    startLine: 28
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: RenCatDifferentDic = 8
+    return:
+      type: Business.ClsAnalisi.TypeCheckRifCatastali
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ClsAnalisi.TypeCheckRifCatastali.PropCatDifferentDic
+  commentId: F:Business.ClsAnalisi.TypeCheckRifCatastali.PropCatDifferentDic
+  id: PropCatDifferentDic
+  parent: Business.ClsAnalisi.TypeCheckRifCatastali
+  langs:
+  - csharp
+  - vb
+  name: PropCatDifferentDic
+  nameWithType: ClsAnalisi.TypeCheckRifCatastali.PropCatDifferentDic
+  fullName: Business.ClsAnalisi.TypeCheckRifCatastali.PropCatDifferentDic
+  type: Field
+  source:
+    id: PropCatDifferentDic
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ClsAnalisi.cs
+    startLine: 29
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: PropCatDifferentDic = 9
+    return:
+      type: Business.ClsAnalisi.TypeCheckRifCatastali
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ClsAnalisi.TypeCheckRifCatastali.RifErrataCopertura
+  commentId: F:Business.ClsAnalisi.TypeCheckRifCatastali.RifErrataCopertura
+  id: RifErrataCopertura
+  parent: Business.ClsAnalisi.TypeCheckRifCatastali
+  langs:
+  - csharp
+  - vb
+  name: RifErrataCopertura
+  nameWithType: ClsAnalisi.TypeCheckRifCatastali.RifErrataCopertura
+  fullName: Business.ClsAnalisi.TypeCheckRifCatastali.RifErrataCopertura
+  type: Field
+  source:
+    id: RifErrataCopertura
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ClsAnalisi.cs
+    startLine: 30
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: RifErrataCopertura = 10
+    return:
+      type: Business.ClsAnalisi.TypeCheckRifCatastali
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ClsAnalisi.TypeCheckRifCatastali.ICInoTARSU
+  commentId: F:Business.ClsAnalisi.TypeCheckRifCatastali.ICInoTARSU
+  id: ICInoTARSU
+  parent: Business.ClsAnalisi.TypeCheckRifCatastali
+  langs:
+  - csharp
+  - vb
+  name: ICInoTARSU
+  nameWithType: ClsAnalisi.TypeCheckRifCatastali.ICInoTARSU
+  fullName: Business.ClsAnalisi.TypeCheckRifCatastali.ICInoTARSU
+  type: Field
+  source:
+    id: ICInoTARSU
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ClsAnalisi.cs
+    startLine: 31
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: ICInoTARSU = 11
+    return:
+      type: Business.ClsAnalisi.TypeCheckRifCatastali
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ClsAnalisi.TypeCheckRifCatastali.TARSUnoICI
+  commentId: F:Business.ClsAnalisi.TypeCheckRifCatastali.TARSUnoICI
+  id: TARSUnoICI
+  parent: Business.ClsAnalisi.TypeCheckRifCatastali
+  langs:
+  - csharp
+  - vb
+  name: TARSUnoICI
+  nameWithType: ClsAnalisi.TypeCheckRifCatastali.TARSUnoICI
+  fullName: Business.ClsAnalisi.TypeCheckRifCatastali.TARSUnoICI
+  type: Field
+  source:
+    id: TARSUnoICI
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ClsAnalisi.cs
+    startLine: 32
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: TARSUnoICI = 12
+    return:
+      type: Business.ClsAnalisi.TypeCheckRifCatastali
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Business
+  commentId: N:Business
+  name: Business
+  nameWithType: Business
+  fullName: Business
+- uid: Business.ClsAnalisi.TypeCheckRifCatastali
+  commentId: T:Business.ClsAnalisi.TypeCheckRifCatastali
+  parent: Business
+  name: ClsAnalisi.TypeCheckRifCatastali
+  nameWithType: ClsAnalisi.TypeCheckRifCatastali
+  fullName: Business.ClsAnalisi.TypeCheckRifCatastali

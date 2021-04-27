@@ -1,0 +1,52 @@
+### YamlMime:ManagedReference
+items:
+- uid: Business.FileUploader.FileUploaded
+  commentId: T:Business.FileUploader.FileUploaded
+  id: FileUploader.FileUploaded
+  parent: Business
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: FileUploader.FileUploaded
+  nameWithType: FileUploader.FileUploaded
+  fullName: Business.FileUploader.FileUploaded
+  type: Delegate
+  source:
+    id: FileUploaded
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\FileUploader.cs
+    startLine: 14
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public delegate void FileUploaded(string FileName);
+    parameters:
+    - id: FileName
+      type: System.String
+    content.vb: Public Delegate Sub FileUploaded(FileName As String)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: Business
+  commentId: N:Business
+  name: Business
+  nameWithType: Business
+  fullName: Business
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

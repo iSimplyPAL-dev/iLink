@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENGovTOCO
+  commentId: N:OPENGovTOCO
+  id: OPENGovTOCO
+  children:
+  - OPENGovTOCO.Default
+  langs:
+  - csharp
+  - vb
+  name: OPENGovTOCO
+  nameWithType: OPENGovTOCO
+  fullName: OPENGovTOCO
+  type: Namespace
+  assemblies:
+  - OPENGovTOCO
+references:
+- uid: OPENGovTOCO.Default
+  commentId: T:OPENGovTOCO.Default
+  name: Default
+  nameWithType: Default
+  fullName: OPENGovTOCO.Default

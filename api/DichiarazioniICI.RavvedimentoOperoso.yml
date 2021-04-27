@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.RavvedimentoOperoso
+  commentId: N:DichiarazioniICI.RavvedimentoOperoso
+  id: DichiarazioniICI.RavvedimentoOperoso
+  children:
+  - DichiarazioniICI.RavvedimentoOperoso.CGestioneRavvedimento
+  langs:
+  - csharp
+  - vb
+  name: DichiarazioniICI.RavvedimentoOperoso
+  nameWithType: DichiarazioniICI.RavvedimentoOperoso
+  fullName: DichiarazioniICI.RavvedimentoOperoso
+  type: Namespace
+  assemblies:
+  - DichiarazioniICI
+references:
+- uid: DichiarazioniICI.RavvedimentoOperoso.CGestioneRavvedimento
+  commentId: T:DichiarazioniICI.RavvedimentoOperoso.CGestioneRavvedimento
+  name: CGestioneRavvedimento
+  nameWithType: CGestioneRavvedimento
+  fullName: DichiarazioniICI.RavvedimentoOperoso.CGestioneRavvedimento

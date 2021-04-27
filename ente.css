@@ -1,0 +1,172 @@
+/* colori da modificare in base a ente*/
+
+html body 
+{
+scrollbar-face-color: #999999; 
+scrollbar-highlight-color: #f7fff7; 
+scrollbar-shadow-color: #999999; 
+scrollbar-3dlight-color: #999999; 
+scrollbar-arrow-color: #fff; 
+scrollbar-track-color: #f7fff7; 
+scrollbar-base-color: #f7fff7
+}
+
+.SfondoVisualizza,.Sfondo,.CartListFooter,.bodypage,.bodydiv,.lstTab{background-color:#fcfcfc;}
+.SfondoGenerale, .CartListHead, .ContentHead_Title{background-color: #006E8E;}
+#DivAttesa,#attesaCarica,#attesaElabAccertamento,#divElaborazioneInCorso,#attesa,#attesaGestioneAtti,#attesaGestioneAtti_popup,#attesaGestioneAtti_ATTI{background-color:#fff;}
+#btnRibaltaTesto,#btnDownload{background-color:#A0A0A0;}
+#infoEnte
+,.Input_Label,.Input_Label_14,.Input_Text_Enable_Red_Left
+, .Input_CheckBox_NoBorder
+, .Input_Radio
+,.CartListFooter
+,.NormalBold_title, .Combo, .DettagliContribuente
+,.lstTabRow,.AnagraficaRow, .linkDenunciante
+,#btnRibaltaTesto,#divchiudi a,#tblRiduzioni thead,.btnList,.BottoniAccertamenti,.BottoniAccertamentiOver,.RigaSelezionata,.riga_tabella,.header,.LABELBOLD,.a_nascodi,.a_nascodi:visited
+,.riga_tabella_Normal
+,.btnAccedi,.btnList_botton{color: #000;}
+.Menu,.ContentHead_Title
+,.labellogOff,.logOff,.Input_Label_login_Account14,.Input_Label_login_Account,.Input_Label_login
+,#lblTitolo,#info,.CartListHead,#Subtitle{color: #fff;}
+
+.Input_Label_title, .Legend,.lead_Emphasized,.ErrorMessage,.Input_Emphasized{color:#099497;}
+
+.Input_Label_UpperCase,.Input_Label_PopUp,.Input_Text_Normal,.Input_Text_No_Upper,.Input_Text_bold,.Input_Text_Enable_Red_Left,.Input_Text_Enable_Red_Right,.Input_Text_LowerCase,.Input_Text_Numbers,.Input_CheckBox
+,.TableRisultRicerca,.BottoniLink,riga_tabella_mouse_over,.riga_tabella_mouse_over_Normal,.Footer,.ContentHead,.Link_Label,.riga_menu,.divricerca a,.divricerca a:visited,.divricerca a,.divricerca a:visited,.Input_Text_Default
+,.Header_Label{color:#099497;}
+.Input_Label_disabled{color:#C0C0C0;}
+
+.PannelloAttesa{border: #b3d4dd;background-color:white;}
+
+.lstTabRow{border-bottom:#006E8E}
+.lstTab,.Input_Text_No_Upper,.Input_Text_bold,.Input_Text_Enable_Red_Right,.Input_Text_Enable_Red_Left,.Input_Text_LowerCase,.Input_Text_Numbers,.Input_CheckBox{border:#ADC3FF;}
+
+.tableTotali { BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; FONT-SIZE: 10px; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid }
+.tableTotali TR TD { BACKGROUND-COLOR: white; HEIGHT: 18px }
+.tableTotali THEAD TR TD { BACKGROUND-COLOR: #ccc; HEIGHT: 22px; COLOR: black }
+
+.Bottone{background-color:Transparent;}
+
+.classeFieldSetRicerca,.FiledSetRicerca, .Combo{border:#099497;}
+.CartListHead{border-left: #696969;border-bottom: #696969;}
+.CartListItem:hover, .CartListItem_Normal:hover,.CartListItemAlt:hover, .CartListItemAlt_Normal:hover {background-color:#B3D4DD;}
+.CartListItemSel{color:#0ff;}
+.CartListHead a,CartListHead a:hover{color:#FFF;border-bottom:#696969;}
+
+.text-warning {color: #c09853;}
+.text-danger {color: #891f16;}
+.text-success {color: #468847;}
+.text-info {color: #31708f;}
+
+.RigaSelezionata{background-color:#ccff66;}
+.SottoMenu,.MenuOver,.SottoMenuOver,.intest_riga_tabella,.chiudi a{color:#FFF;}
+.btnList_botton{background-color:#006E8E;}
+
+.btnList,.BottoniAccertamenti{background-color:#ffffff;}
+.BottoniAccertamentiOver{background-color:#D2DCFF;}
+.btnAccedi{background-color:#FFDBC6;}
+.BottoniLink{color:#099497;background-color:#aed4f8;}
+.Input_Text_Normal{border: #edee6e;}
+.TableParamRicerca,.bordoIFRAME,.TableRisultRicerca{border:#099497;}
+.TableRisultRicerca,.classeFiledSetIframe,.classeFiledSetIframe100{border-top:#099497;}
+.TableFrame{background-color:#0079ff;border:#0079ff;}
+.BottoniLink{background-color:#aed4f8;}
+.riga_tabella_mouse_over,.riga_tabella_mouse_over_Normal{background-color:#e1f8ff;}
+.header{background-color:#993366;}
+.Footer,.ContentHead,.wait{background-color:#E8F8FF;}
+.classeFiledSet,.classeFiledSet_WHITE,.classeFiledSet100,fieldset{border-top:#d3d3d3}
+.classeFiledSet_WHITE{background-color:#fff;}
+.SFONDO_TABELLA_TOTALI{border: #4682B4;background-color: #fafad2}
+.intest_riga_tabella{border: #993366;background-color: #774970;}
+.divMotivazionev{background-color:#F8F8F8;border: #4682B4;}
+.TableWithBorder{BORDER-RIGHT: darkblue;BORDER-TOP: darkblue;BORDER-LEFT: darkblue;BORDER-BOTTOM: darkblue;}
+/*modal*/
+.modal-box {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+}
+.modal-alert {
+    border-color:#888;
+    color: #fff;
+}
+.modal-alert.success {color:#3c763d;background-color: #dff0d8;border-color:#d6e9c6;}
+.modal-alert.info {color:#31708f;background-color: #d9edf7;border-color:#bce8f1;}
+.modal-alert.warning {color:#8a6d3b;background-color: #fcf8e3;border-color:#faebcc;}
+.modal-alert.danger {color:#a94442;background-color: #f2dede;border-color:#ebccd1;}
+.modal-alert.question {color:#fff;background-color:#607d8b;border-color:#527189;}
+.closebtnalert {
+    color: #404040;
+}
+.closebtnalert:hover {
+    color: #606060;
+}
+/*end*/
+/*#region "Tooltip"*/
+.tooltip {
+  border-bottom: #000;
+}
+.tooltip .tooltiptext {
+  background-color: #006e8e;
+  color: #fff;
+}
+.tooltip .tooltiptext::after {
+  border-color: transparent transparent #006e8e transparent;
+}
+/*end region*/
+/*region Lista Rilasci*/
+#divRelease .collapsible {
+    background-color: #f1f1f1;
+    color: #000;
+}
+#divRelease .active,#divRelease .collapsible:hover {
+  background-color: #777;
+  color:#fff;
+}
+#divRelease .collapsible:after {
+    color: #000;
+}
+#divRelease .active:after {
+    color: #fff;
+}
+#divRelease .content {
+  background-color: #f1f1f1;
+  color: #000;
+}
+#divRelease .success {
+	color: #4CAF50;
+}
+#divRelease ul, #divRelease li:hover {
+  background: #f1f1f1;
+}
+/*end region*/
+#btnDownload{
+    color: #fff;
+}
+/*region Analisi Eventi*/
+.bar-container {
+  background-color: #f1f1f1;
+  color: #fff;
+}
+.bar-5 {background-color: #4CAF50;}
+.bar-4 {background-color: #2196F3;}
+.bar-3 {background-color: #00bcd4;}
+.bar-2 {background-color: #ff9800;}
+.bar-1 {background-color: #f44336;}
+/*end region*/
+/*region Estrazione Completa*/
+#myProgress {
+  background-color: #ddd;
+}
+#myBarTot,#myBarSingleFile {
+  background-color: #48ADA5;
+}
+#myRecap a{
+    color:#000;
+}
+/*end region*/
+/* Modal Residenti */
+.modal-header {
+  background-color: #5cb85c;
+  color: #fff;
+}
+/*end */

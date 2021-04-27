@@ -1,0 +1,1860 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CheckRifCatastali
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CheckRifCatastali
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DichiarazioniICI.CheckRifCatastali">
+  
+  
+  <h1 id="DichiarazioniICI_CheckRifCatastali" data-uid="DichiarazioniICI.CheckRifCatastali" class="text-break">Class CheckRifCatastali
+  </h1>
+  <div class="markdown level0 summary"><p>Pagina per le estrazioni di confronto dei riferimenti catastali fra banche dati.
+Indicando l&apos;anno le possibili opzioni sono:</p>
+<ul>
+<li>Riferimenti mancanti in IMU</li>
+<li>Riferimenti con errata copertura di possesso</li>
+<li>Riferimenti chiusi e non riaperti</li>
+<li>Riferimenti doppi per lo stesso periodo</li>
+<li>Riferimenti IMU accertati</li>
+<li>Rif.Dichiarati in ICI/IMU e non in TARI</li>
+<li>Rif.Dichiarati in TARI e non in ICI/IMU</li>
+<li>Rif.Catastali non in Dichiarazioni</li>
+<li>Rif.Dichiarati non a catasto</li>
+<li>Posizione Dichiarata uguale a Catastale</li>
+<li>Cat. e/o Classe Dichiarata diversa da Catastale</li>
+<li>Rendita e/o Consistenza Catastale diversa da Dichiarata</li>
+<li>Proprietario e/o Copertura Catastale diverso da Dichiarato</li>
+</ul>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.Web.UI.Control</span></div>
+    <div class="level2"><span class="xref">System.Web.UI.TemplateControl</span></div>
+    <div class="level3"><span class="xref">System.Web.UI.Page</span></div>
+    <div class="level4"><a class="xref" href="DichiarazioniICI.BasePage.html">BasePage</a></div>
+    <div class="level5"><span class="xref">CheckRifCatastali</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.IComponent</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">System.Web.UI.IParserAccessor</span></div>
+    <div><span class="xref">System.Web.UI.IUrlResolutionService</span></div>
+    <div><span class="xref">System.Web.UI.IDataBindingsAccessor</span></div>
+    <div><span class="xref">System.Web.UI.IControlBuilderAccessor</span></div>
+    <div><span class="xref">System.Web.UI.IControlDesignerAccessor</span></div>
+    <div><span class="xref">System.Web.UI.IExpressionsAccessor</span></div>
+    <div><span class="xref">System.Web.UI.INamingContainer</span></div>
+    <div><span class="xref">System.Web.UI.IFilterResolutionService</span></div>
+    <div><span class="xref">System.Web.IHttpHandler</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DichiarazioniICI.BasePage.html#DichiarazioniICI_BasePage_authCookie">BasePage.authCookie</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.BasePage.html#DichiarazioniICI_BasePage_RegisterScript_System_String_System_Type_">BasePage.RegisterScript(String, Type)</a>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.CreateHtmlTextWriter(System.IO.TextWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.CreateHtmlTextWriterFromType(System.IO.TextWriter, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.FindControl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.DeterminePostBackMode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.LoadPageStateFromPersistenceMedium()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SetFocus(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SetFocus(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetPostBackEventReference(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetPostBackEventReference(System.Web.UI.Control, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetPostBackClientEvent(System.Web.UI.Control, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetPostBackClientHyperlink(System.Web.UI.Control, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsClientScriptBlockRegistered(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsStartupScriptRegistered(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterArrayDeclaration(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterHiddenField(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterClientScriptBlock(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterStartupScript(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterOnSubmitStatement(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterRequiresControlState(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RequiresControlState(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.UnregisterRequiresControlState(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterRequiresPostBack(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RaisePostBackEvent(System.Web.UI.IPostBackEventHandler, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterRequiresRaiseEvent(System.Web.UI.IPostBackEventHandler)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.MapPath(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnLoadComplete(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnPreRenderComplete(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.FrameworkInitialize()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.InitializeCulture()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnPreInit(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnInitComplete(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnPreLoad(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterRequiresViewStateEncryption()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnSaveStateComplete(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Render(System.Web.UI.HtmlTextWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterViewStateHandler()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SavePageStateToPersistenceMedium(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ExecuteRegisteredAsyncTasks()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterAsyncTask(System.Web.UI.PageAsyncTask)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.AddOnPreRenderCompleteAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.AddOnPreRenderCompleteAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Validate()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Validate(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetValidators(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.VerifyRenderingInServerForm(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetDataItem()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Application</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Context</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ClientScript</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ClientTarget</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ClientQueryString</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ErrorPage</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsCallback</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.UniqueFilePathSuffix</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.AutoPostBackControl</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Header</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.MaintainScrollPositionOnPostBack</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Master</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.MasterPageFile</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PageStatePersister</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Trace</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Request</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Response</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Server</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Cache</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Session</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Title</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Theme</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.StyleSheetTheme</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.User</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsCrossPagePostBack</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsPostBack</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.EnableViewState</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ViewStateUserKey</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Visible</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsPostBackEventControlRegistered</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsValid</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Validators</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PreviousPage</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Culture</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.UICulture</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.AsyncTimeout</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SmartNavigation</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsAsync</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Form</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PageAdapter</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Items</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.LoadComplete</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PreInit</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PreLoad</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PreRenderComplete</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.InitComplete</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SaveStateComplete</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.Construct()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.OnCommitTransaction(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.OnAbortTransaction(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.OnError(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.CreateResourceBasedLiteralControl(System.Int32, System.Int32, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.TestDeviceFilter(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.LoadControl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.LoadControl(System.Type, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.LoadTemplate(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.ParseControl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.ParseControl(System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.Eval(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.Eval(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPath(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPath(System.String, System.Xml.IXmlNamespaceResolver)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPath(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPath(System.String, System.String, System.Xml.IXmlNamespaceResolver)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPathSelect(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPathSelect(System.String, System.Xml.IXmlNamespaceResolver)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.GetLocalResourceObject(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.GetLocalResourceObject(System.String, System.Type, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.GetGlobalResourceObject(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.GetGlobalResourceObject(System.String, System.String, System.Type, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.System.Web.UI.IFilterResolutionService.EvaluateFilter(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.System.Web.UI.IFilterResolutionService.CompareFilters(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.EnableTheming</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.AppRelativeVirtualPath</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.CommitTransaction</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.AbortTransaction</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.Error</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ResolveAdapter()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.HasEvents()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ApplyStyleSheetSkin(System.Web.UI.Page)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnDataBinding(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DataBind()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DataBind(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DataBindChildren()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.AddParsedSubObject(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.EnsureID()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClearChildState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClearChildControlState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClearChildViewState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Focus()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.LoadControlState(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.LoadViewState(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.MapPathSecure(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OpenFile(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnLoad(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnPreRender(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.BuildProfileTree(System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SaveControlState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SaveViewState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RenderChildren(System.Web.UI.HtmlTextWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter, System.Web.UI.Adapters.ControlAdapter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnUnload(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RaiseBubbleEvent(System.Object, System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnBubbleEvent(System.Object, System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.AddedControl(System.Web.UI.Control, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.CreateControlCollection()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.CreateChildControls()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ResolveUrl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ResolveClientUrl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.FindControl(System.String, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.GetDesignModeState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.HasControls()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IsLiteralContent()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.TrackViewState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.EnsureChildControls()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RemovedControl(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SetDesignModeState(System.Collections.IDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SetRenderMethodDelegate(System.Web.UI.RenderMethod)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlDesignerAccessor.GetDesignModeState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlDesignerAccessor.SetDesignModeState(System.Collections.IDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlDesignerAccessor.SetOwnerControl(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClientID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClientIDSeparator</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Adapter</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DesignMode</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Events</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IsChildControlStateCleared</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SkinID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IsViewStateEnabled</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.NamingContainer</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IdSeparator</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.LoadViewStateByID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Page</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.TemplateControl</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Parent</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.TemplateSourceDirectory</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.AppRelativeTemplateSourceDirectory</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Site</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.UniqueID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.HasChildViewState</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Controls</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ViewState</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ViewStateIgnoresCase</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ChildControlsCreated</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IsTrackingViewState</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IDataBindingsAccessor.HasDataBindings</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IDataBindingsAccessor.DataBindings</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlDesignerAccessor.UserData</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlBuilderAccessor.ControlBuilder</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IExpressionsAccessor.HasExpressions</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IExpressionsAccessor.Expressions</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Disposed</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DataBinding</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Init</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Load</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.PreRender</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Unload</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DichiarazioniICI.html">DichiarazioniICI</a></h6>
+  <h6><strong>Assembly</strong>: DichiarazioniICI.dll</h6>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CheckRifCatastali : BasePage, IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, INamingContainer, IFilterResolutionService, IHttpHandler</code></pre>
+  </div>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>In ottemperanza alle linee guida di sviluppo 1.0</p>
+</div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_CmdRicerca" data-uid="DichiarazioniICI.CheckRifCatastali.CmdRicerca">CmdRicerca</h4>
+  <div class="markdown level1 summary"><p>Controllo CmdRicerca.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Button CmdRicerca</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_CmdRicerca_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_CmdStampa" data-uid="DichiarazioniICI.CheckRifCatastali.CmdStampa">CmdStampa</h4>
+  <div class="markdown level1 summary"><p>Controllo CmdStampa.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Button CmdStampa</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_CmdStampa_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_DdlAnno" data-uid="DichiarazioniICI.CheckRifCatastali.DdlAnno">DdlAnno</h4>
+  <div class="markdown level1 summary"><p>Controllo DdlAnno.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DropDownList DdlAnno</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.DropDownList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_DdlAnno_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_DivAttesa" data-uid="DichiarazioniICI.CheckRifCatastali.DivAttesa">DivAttesa</h4>
+  <div class="markdown level1 summary"><p>Controllo DivAttesa.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HtmlGenericControl DivAttesa</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.HtmlControls.HtmlGenericControl</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_DivAttesa_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_FrmEstrazioni" data-uid="DichiarazioniICI.CheckRifCatastali.FrmEstrazioni">FrmEstrazioni</h4>
+  <div class="markdown level1 summary"><p>Controllo FrmEstrazioni.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HtmlForm FrmEstrazioni</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.HtmlControls.HtmlForm</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_FrmEstrazioni_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_GrdDichCatRifCatastali" data-uid="DichiarazioniICI.CheckRifCatastali.GrdDichCatRifCatastali">GrdDichCatRifCatastali</h4>
+  <div class="markdown level1 summary"><p>Controllo GrdDichCatRifCatastali.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RibesGridView GrdDichCatRifCatastali</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Ribes.OPENgov.WebControls.RibesGridView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_GrdDichCatRifCatastali_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_GrdDichRifCatastali" data-uid="DichiarazioniICI.CheckRifCatastali.GrdDichRifCatastali">GrdDichRifCatastali</h4>
+  <div class="markdown level1 summary"><p>Controllo GrdDichRifCatastali.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RibesGridView GrdDichRifCatastali</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Ribes.OPENgov.WebControls.RibesGridView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_GrdDichRifCatastali_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_GrdDichRifErrataCopertura" data-uid="DichiarazioniICI.CheckRifCatastali.GrdDichRifErrataCopertura">GrdDichRifErrataCopertura</h4>
+  <div class="markdown level1 summary"><p>Controllo GrdDichRifErrataCopertura.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RibesGridView GrdDichRifErrataCopertura</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Ribes.OPENgov.WebControls.RibesGridView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_GrdDichRifErrataCopertura_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_GrdDichTARSUnoICI" data-uid="DichiarazioniICI.CheckRifCatastali.GrdDichTARSUnoICI">GrdDichTARSUnoICI</h4>
+  <div class="markdown level1 summary"><p>Controllo GrdDichTARSUnoICI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RibesGridView GrdDichTARSUnoICI</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Ribes.OPENgov.WebControls.RibesGridView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_GrdDichTARSUnoICI_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_Label6" data-uid="DichiarazioniICI.CheckRifCatastali.Label6">Label6</h4>
+  <div class="markdown level1 summary"><p>Controllo Label6.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label6</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_Label6_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_LblDownloadFile" data-uid="DichiarazioniICI.CheckRifCatastali.LblDownloadFile">LblDownloadFile</h4>
+  <div class="markdown level1 summary"><p>Controllo LblDownloadFile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected LinkButton LblDownloadFile</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.LinkButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_LblDownloadFile_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_LblResult" data-uid="DichiarazioniICI.CheckRifCatastali.LblResult">LblResult</h4>
+  <div class="markdown level1 summary"><p>Controllo LblResult.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblResult</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_LblResult_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_lblTitolo" data-uid="DichiarazioniICI.CheckRifCatastali.lblTitolo">lblTitolo</h4>
+  <div class="markdown level1 summary"><p>Controllo lblTitolo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblTitolo</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_lblTitolo_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_OptCatDifferentDic" data-uid="DichiarazioniICI.CheckRifCatastali.OptCatDifferentDic">OptCatDifferentDic</h4>
+  <div class="markdown level1 summary"><p>Controllo OptCatDifferentDic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RadioButton OptCatDifferentDic</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.RadioButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_OptCatDifferentDic_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_OptCatEqualDic" data-uid="DichiarazioniICI.CheckRifCatastali.OptCatEqualDic">OptCatEqualDic</h4>
+  <div class="markdown level1 summary"><p>Controllo OptCatEqualDic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RadioButton OptCatEqualDic</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.RadioButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_OptCatEqualDic_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_OptCatNoDic" data-uid="DichiarazioniICI.CheckRifCatastali.OptCatNoDic">OptCatNoDic</h4>
+  <div class="markdown level1 summary"><p>Controllo OptCatNoDic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RadioButton OptCatNoDic</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.RadioButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_OptCatNoDic_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_OptDicNoCat" data-uid="DichiarazioniICI.CheckRifCatastali.OptDicNoCat">OptDicNoCat</h4>
+  <div class="markdown level1 summary"><p>Controllo OptDicNoCat.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RadioButton OptDicNoCat</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.RadioButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_OptDicNoCat_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_OptICInoTARSU" data-uid="DichiarazioniICI.CheckRifCatastali.OptICInoTARSU">OptICInoTARSU</h4>
+  <div class="markdown level1 summary"><p>Controllo OptICInoTARSU.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RadioButton OptICInoTARSU</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.RadioButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_OptICInoTARSU_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_OptPropCatDifferentDic" data-uid="DichiarazioniICI.CheckRifCatastali.OptPropCatDifferentDic">OptPropCatDifferentDic</h4>
+  <div class="markdown level1 summary"><p>Controllo OptPropCatDifferentDic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RadioButton OptPropCatDifferentDic</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.RadioButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_OptPropCatDifferentDic_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_OptRenCatDifferentDic" data-uid="DichiarazioniICI.CheckRifCatastali.OptRenCatDifferentDic">OptRenCatDifferentDic</h4>
+  <div class="markdown level1 summary"><p>Controllo OptRenCatDifferentDic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RadioButton OptRenCatDifferentDic</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.RadioButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_OptRenCatDifferentDic_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_OptRifAccertati" data-uid="DichiarazioniICI.CheckRifCatastali.OptRifAccertati">OptRifAccertati</h4>
+  <div class="markdown level1 summary"><p>Controllo OptRifAccertati.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RadioButton OptRifAccertati</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.RadioButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_OptRifAccertati_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_OptRifChiusi" data-uid="DichiarazioniICI.CheckRifCatastali.OptRifChiusi">OptRifChiusi</h4>
+  <div class="markdown level1 summary"><p>Controllo OptRifChiusi.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RadioButton OptRifChiusi</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.RadioButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_OptRifChiusi_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_OptRifDoppi" data-uid="DichiarazioniICI.CheckRifCatastali.OptRifDoppi">OptRifDoppi</h4>
+  <div class="markdown level1 summary"><p>Controllo OptRifDoppi.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RadioButton OptRifDoppi</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.RadioButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_OptRifDoppi_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_OptRifErrataCopertura" data-uid="DichiarazioniICI.CheckRifCatastali.OptRifErrataCopertura">OptRifErrataCopertura</h4>
+  <div class="markdown level1 summary"><p>Controllo OptRifErrataCopertura.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RadioButton OptRifErrataCopertura</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.RadioButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_OptRifErrataCopertura_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_OptRifMancanti" data-uid="DichiarazioniICI.CheckRifCatastali.OptRifMancanti">OptRifMancanti</h4>
+  <div class="markdown level1 summary"><p>Controllo OptRifMancanti.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RadioButton OptRifMancanti</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.RadioButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_OptRifMancanti_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_CheckRifCatastali_OptTARSUnoICI" data-uid="DichiarazioniICI.CheckRifCatastali.OptTARSUnoICI">OptTARSUnoICI</h4>
+  <div class="markdown level1 summary"><p>Controllo OptTARSUnoICI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RadioButton OptTARSUnoICI</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.RadioButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_CheckRifCatastali_OptTARSUnoICI_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="DichiarazioniICI_CheckRifCatastali_ClearTypeCheck_" data-uid="DichiarazioniICI.CheckRifCatastali.ClearTypeCheck*"></a>
+  <h4 id="DichiarazioniICI_CheckRifCatastali_ClearTypeCheck_System_Object_System_EventArgs_" data-uid="DichiarazioniICI.CheckRifCatastali.ClearTypeCheck(System.Object,System.EventArgs)">ClearTypeCheck(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ClearTypeCheck(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DichiarazioniICI_CheckRifCatastali_CmdRicerca_Click_" data-uid="DichiarazioniICI.CheckRifCatastali.CmdRicerca_Click*"></a>
+  <h4 id="DichiarazioniICI_CheckRifCatastali_CmdRicerca_Click_System_Object_System_EventArgs_" data-uid="DichiarazioniICI.CheckRifCatastali.CmdRicerca_Click(System.Object,System.EventArgs)">CmdRicerca_Click(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void CmdRicerca_Click(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DichiarazioniICI_CheckRifCatastali_CmdStampa_Click_" data-uid="DichiarazioniICI.CheckRifCatastali.CmdStampa_Click*"></a>
+  <h4 id="DichiarazioniICI_CheckRifCatastali_CmdStampa_Click_System_Object_System_EventArgs_" data-uid="DichiarazioniICI.CheckRifCatastali.CmdStampa_Click(System.Object,System.EventArgs)">CmdStampa_Click(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void CmdStampa_Click(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DichiarazioniICI_CheckRifCatastali_GrdPageIndexChanging_" data-uid="DichiarazioniICI.CheckRifCatastali.GrdPageIndexChanging*"></a>
+  <h4 id="DichiarazioniICI_CheckRifCatastali_GrdPageIndexChanging_System_Object_System_Web_UI_WebControls_GridViewPageEventArgs_" data-uid="DichiarazioniICI.CheckRifCatastali.GrdPageIndexChanging(System.Object,System.Web.UI.WebControls.GridViewPageEventArgs)">GrdPageIndexChanging(Object, GridViewPageEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Gestione del cambio pagina della griglia.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GrdPageIndexChanging(object sender, GridViewPageEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.GridViewPageEventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DichiarazioniICI_CheckRifCatastali_GrdRowCommand_" data-uid="DichiarazioniICI.CheckRifCatastali.GrdRowCommand*"></a>
+  <h4 id="DichiarazioniICI_CheckRifCatastali_GrdRowCommand_System_Object_System_Web_UI_WebControls_GridViewCommandEventArgs_" data-uid="DichiarazioniICI.CheckRifCatastali.GrdRowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)">GrdRowCommand(Object, GridViewCommandEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GrdRowCommand(object sender, GridViewCommandEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.GridViewCommandEventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DichiarazioniICI_CheckRifCatastali_LblDownloadFile_Click_" data-uid="DichiarazioniICI.CheckRifCatastali.LblDownloadFile_Click*"></a>
+  <h4 id="DichiarazioniICI_CheckRifCatastali_LblDownloadFile_Click_System_Object_System_EventArgs_" data-uid="DichiarazioniICI.CheckRifCatastali.LblDownloadFile_Click(System.Object,System.EventArgs)">LblDownloadFile_Click(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LblDownloadFile_Click(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DichiarazioniICI_CheckRifCatastali_OnInit_" data-uid="DichiarazioniICI.CheckRifCatastali.OnInit*"></a>
+  <h4 id="DichiarazioniICI_CheckRifCatastali_OnInit_System_EventArgs_" data-uid="DichiarazioniICI.CheckRifCatastali.OnInit(System.EventArgs)">OnInit(EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnInit(EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DichiarazioniICI.BasePage.html#DichiarazioniICI_BasePage_OnInit_System_EventArgs_">BasePage.OnInit(EventArgs)</a></div>
+  
+  
+  <a id="DichiarazioniICI_CheckRifCatastali_Page_Load_" data-uid="DichiarazioniICI.CheckRifCatastali.Page_Load*"></a>
+  <h4 id="DichiarazioniICI_CheckRifCatastali_Page_Load_System_Object_System_EventArgs_" data-uid="DichiarazioniICI.CheckRifCatastali.Page_Load(System.Object,System.EventArgs)">Page_Load(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Page_Load(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.IComponent</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IParserAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IUrlResolutionService</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IDataBindingsAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IControlBuilderAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IControlDesignerAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IExpressionsAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.INamingContainer</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IFilterResolutionService</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.IHttpHandler</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

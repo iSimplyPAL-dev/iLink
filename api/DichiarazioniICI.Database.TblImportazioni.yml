@@ -1,0 +1,822 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.Database.TblImportazioni
+  commentId: T:DichiarazioniICI.Database.TblImportazioni
+  id: TblImportazioni
+  parent: DichiarazioniICI.Database
+  children:
+  - DichiarazioniICI.Database.TblImportazioni.Codice
+  - DichiarazioniICI.Database.TblImportazioni.Data
+  - DichiarazioniICI.Database.TblImportazioni.FileName
+  - DichiarazioniICI.Database.TblImportazioni.Importato
+  - DichiarazioniICI.Database.TblImportazioni.importoTotImportato
+  - DichiarazioniICI.Database.TblImportazioni.importTotFile
+  - DichiarazioniICI.Database.TblImportazioni.Operatore
+  - DichiarazioniICI.Database.TblImportazioni.tipoImportazione
+  - DichiarazioniICI.Database.TblImportazioni.Tipologia
+  - DichiarazioniICI.Database.TblImportazioni.toTRecord
+  - DichiarazioniICI.Database.TblImportazioni.toTRecordImportati
+  - DichiarazioniICI.Database.TblImportazioni.Tributo
+  langs:
+  - csharp
+  - vb
+  name: TblImportazioni
+  nameWithType: TblImportazioni
+  fullName: DichiarazioniICI.Database.TblImportazioni
+  type: Class
+  source:
+    id: TblImportazioni
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneTable.cs
+    startLine: 431
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public class TblImportazioni
+    content.vb: Public Class TblImportazioni
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DichiarazioniICI.Database.TblImportazioni.Codice
+  commentId: P:DichiarazioniICI.Database.TblImportazioni.Codice
+  id: Codice
+  parent: DichiarazioniICI.Database.TblImportazioni
+  langs:
+  - csharp
+  - vb
+  name: Codice
+  nameWithType: TblImportazioni.Codice
+  fullName: DichiarazioniICI.Database.TblImportazioni.Codice
+  type: Property
+  source:
+    id: Codice
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneTable.cs
+    startLine: 449
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public string Codice { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Codice As String
+  overload: DichiarazioniICI.Database.TblImportazioni.Codice*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TblImportazioni.Tributo
+  commentId: P:DichiarazioniICI.Database.TblImportazioni.Tributo
+  id: Tributo
+  parent: DichiarazioniICI.Database.TblImportazioni
+  langs:
+  - csharp
+  - vb
+  name: Tributo
+  nameWithType: TblImportazioni.Tributo
+  fullName: DichiarazioniICI.Database.TblImportazioni.Tributo
+  type: Property
+  source:
+    id: Tributo
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneTable.cs
+    startLine: 464
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public string Tributo { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Tributo As String
+  overload: DichiarazioniICI.Database.TblImportazioni.Tributo*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TblImportazioni.Tipologia
+  commentId: P:DichiarazioniICI.Database.TblImportazioni.Tipologia
+  id: Tipologia
+  parent: DichiarazioniICI.Database.TblImportazioni
+  langs:
+  - csharp
+  - vb
+  name: Tipologia
+  nameWithType: TblImportazioni.Tipologia
+  fullName: DichiarazioniICI.Database.TblImportazioni.Tipologia
+  type: Property
+  source:
+    id: Tipologia
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneTable.cs
+    startLine: 479
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public string Tipologia { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Tipologia As String
+  overload: DichiarazioniICI.Database.TblImportazioni.Tipologia*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TblImportazioni.Data
+  commentId: P:DichiarazioniICI.Database.TblImportazioni.Data
+  id: Data
+  parent: DichiarazioniICI.Database.TblImportazioni
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: TblImportazioni.Data
+  fullName: DichiarazioniICI.Database.TblImportazioni.Data
+  type: Property
+  source:
+    id: Data
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneTable.cs
+    startLine: 494
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public string Data { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Data As String
+  overload: DichiarazioniICI.Database.TblImportazioni.Data*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TblImportazioni.Operatore
+  commentId: P:DichiarazioniICI.Database.TblImportazioni.Operatore
+  id: Operatore
+  parent: DichiarazioniICI.Database.TblImportazioni
+  langs:
+  - csharp
+  - vb
+  name: Operatore
+  nameWithType: TblImportazioni.Operatore
+  fullName: DichiarazioniICI.Database.TblImportazioni.Operatore
+  type: Property
+  source:
+    id: Operatore
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneTable.cs
+    startLine: 509
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public string Operatore { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Operatore As String
+  overload: DichiarazioniICI.Database.TblImportazioni.Operatore*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TblImportazioni.FileName
+  commentId: P:DichiarazioniICI.Database.TblImportazioni.FileName
+  id: FileName
+  parent: DichiarazioniICI.Database.TblImportazioni
+  langs:
+  - csharp
+  - vb
+  name: FileName
+  nameWithType: TblImportazioni.FileName
+  fullName: DichiarazioniICI.Database.TblImportazioni.FileName
+  type: Property
+  source:
+    id: FileName
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneTable.cs
+    startLine: 524
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public string FileName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FileName As String
+  overload: DichiarazioniICI.Database.TblImportazioni.FileName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TblImportazioni.Importato
+  commentId: P:DichiarazioniICI.Database.TblImportazioni.Importato
+  id: Importato
+  parent: DichiarazioniICI.Database.TblImportazioni
+  langs:
+  - csharp
+  - vb
+  name: Importato
+  nameWithType: TblImportazioni.Importato
+  fullName: DichiarazioniICI.Database.TblImportazioni.Importato
+  type: Property
+  source:
+    id: Importato
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneTable.cs
+    startLine: 539
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public int Importato { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Importato As Integer
+  overload: DichiarazioniICI.Database.TblImportazioni.Importato*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TblImportazioni.toTRecord
+  commentId: P:DichiarazioniICI.Database.TblImportazioni.toTRecord
+  id: toTRecord
+  parent: DichiarazioniICI.Database.TblImportazioni
+  langs:
+  - csharp
+  - vb
+  name: toTRecord
+  nameWithType: TblImportazioni.toTRecord
+  fullName: DichiarazioniICI.Database.TblImportazioni.toTRecord
+  type: Property
+  source:
+    id: toTRecord
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneTable.cs
+    startLine: 554
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public int toTRecord { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property toTRecord As Integer
+  overload: DichiarazioniICI.Database.TblImportazioni.toTRecord*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TblImportazioni.toTRecordImportati
+  commentId: P:DichiarazioniICI.Database.TblImportazioni.toTRecordImportati
+  id: toTRecordImportati
+  parent: DichiarazioniICI.Database.TblImportazioni
+  langs:
+  - csharp
+  - vb
+  name: toTRecordImportati
+  nameWithType: TblImportazioni.toTRecordImportati
+  fullName: DichiarazioniICI.Database.TblImportazioni.toTRecordImportati
+  type: Property
+  source:
+    id: toTRecordImportati
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneTable.cs
+    startLine: 569
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public int toTRecordImportati { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property toTRecordImportati As Integer
+  overload: DichiarazioniICI.Database.TblImportazioni.toTRecordImportati*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TblImportazioni.importTotFile
+  commentId: P:DichiarazioniICI.Database.TblImportazioni.importTotFile
+  id: importTotFile
+  parent: DichiarazioniICI.Database.TblImportazioni
+  langs:
+  - csharp
+  - vb
+  name: importTotFile
+  nameWithType: TblImportazioni.importTotFile
+  fullName: DichiarazioniICI.Database.TblImportazioni.importTotFile
+  type: Property
+  source:
+    id: importTotFile
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneTable.cs
+    startLine: 584
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public string importTotFile { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property importTotFile As String
+  overload: DichiarazioniICI.Database.TblImportazioni.importTotFile*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TblImportazioni.importoTotImportato
+  commentId: P:DichiarazioniICI.Database.TblImportazioni.importoTotImportato
+  id: importoTotImportato
+  parent: DichiarazioniICI.Database.TblImportazioni
+  langs:
+  - csharp
+  - vb
+  name: importoTotImportato
+  nameWithType: TblImportazioni.importoTotImportato
+  fullName: DichiarazioniICI.Database.TblImportazioni.importoTotImportato
+  type: Property
+  source:
+    id: importoTotImportato
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneTable.cs
+    startLine: 599
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public string importoTotImportato { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property importoTotImportato As String
+  overload: DichiarazioniICI.Database.TblImportazioni.importoTotImportato*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TblImportazioni.tipoImportazione
+  commentId: P:DichiarazioniICI.Database.TblImportazioni.tipoImportazione
+  id: tipoImportazione
+  parent: DichiarazioniICI.Database.TblImportazioni
+  langs:
+  - csharp
+  - vb
+  name: tipoImportazione
+  nameWithType: TblImportazioni.tipoImportazione
+  fullName: DichiarazioniICI.Database.TblImportazioni.tipoImportazione
+  type: Property
+  source:
+    id: tipoImportazione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneTable.cs
+    startLine: 614
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public string tipoImportazione { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property tipoImportazione As String
+  overload: DichiarazioniICI.Database.TblImportazioni.tipoImportazione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: DichiarazioniICI.Database
+  commentId: N:DichiarazioniICI.Database
+  name: DichiarazioniICI.Database
+  nameWithType: DichiarazioniICI.Database
+  fullName: DichiarazioniICI.Database
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DichiarazioniICI.Database.TblImportazioni.Codice*
+  commentId: Overload:DichiarazioniICI.Database.TblImportazioni.Codice
+  name: Codice
+  nameWithType: TblImportazioni.Codice
+  fullName: DichiarazioniICI.Database.TblImportazioni.Codice
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DichiarazioniICI.Database.TblImportazioni.Tributo*
+  commentId: Overload:DichiarazioniICI.Database.TblImportazioni.Tributo
+  name: Tributo
+  nameWithType: TblImportazioni.Tributo
+  fullName: DichiarazioniICI.Database.TblImportazioni.Tributo
+- uid: DichiarazioniICI.Database.TblImportazioni.Tipologia*
+  commentId: Overload:DichiarazioniICI.Database.TblImportazioni.Tipologia
+  name: Tipologia
+  nameWithType: TblImportazioni.Tipologia
+  fullName: DichiarazioniICI.Database.TblImportazioni.Tipologia
+- uid: DichiarazioniICI.Database.TblImportazioni.Data*
+  commentId: Overload:DichiarazioniICI.Database.TblImportazioni.Data
+  name: Data
+  nameWithType: TblImportazioni.Data
+  fullName: DichiarazioniICI.Database.TblImportazioni.Data
+- uid: DichiarazioniICI.Database.TblImportazioni.Operatore*
+  commentId: Overload:DichiarazioniICI.Database.TblImportazioni.Operatore
+  name: Operatore
+  nameWithType: TblImportazioni.Operatore
+  fullName: DichiarazioniICI.Database.TblImportazioni.Operatore
+- uid: DichiarazioniICI.Database.TblImportazioni.FileName*
+  commentId: Overload:DichiarazioniICI.Database.TblImportazioni.FileName
+  name: FileName
+  nameWithType: TblImportazioni.FileName
+  fullName: DichiarazioniICI.Database.TblImportazioni.FileName
+- uid: DichiarazioniICI.Database.TblImportazioni.Importato*
+  commentId: Overload:DichiarazioniICI.Database.TblImportazioni.Importato
+  name: Importato
+  nameWithType: TblImportazioni.Importato
+  fullName: DichiarazioniICI.Database.TblImportazioni.Importato
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DichiarazioniICI.Database.TblImportazioni.toTRecord*
+  commentId: Overload:DichiarazioniICI.Database.TblImportazioni.toTRecord
+  name: toTRecord
+  nameWithType: TblImportazioni.toTRecord
+  fullName: DichiarazioniICI.Database.TblImportazioni.toTRecord
+- uid: DichiarazioniICI.Database.TblImportazioni.toTRecordImportati*
+  commentId: Overload:DichiarazioniICI.Database.TblImportazioni.toTRecordImportati
+  name: toTRecordImportati
+  nameWithType: TblImportazioni.toTRecordImportati
+  fullName: DichiarazioniICI.Database.TblImportazioni.toTRecordImportati
+- uid: DichiarazioniICI.Database.TblImportazioni.importTotFile*
+  commentId: Overload:DichiarazioniICI.Database.TblImportazioni.importTotFile
+  name: importTotFile
+  nameWithType: TblImportazioni.importTotFile
+  fullName: DichiarazioniICI.Database.TblImportazioni.importTotFile
+- uid: DichiarazioniICI.Database.TblImportazioni.importoTotImportato*
+  commentId: Overload:DichiarazioniICI.Database.TblImportazioni.importoTotImportato
+  name: importoTotImportato
+  nameWithType: TblImportazioni.importoTotImportato
+  fullName: DichiarazioniICI.Database.TblImportazioni.importoTotImportato
+- uid: DichiarazioniICI.Database.TblImportazioni.tipoImportazione*
+  commentId: Overload:DichiarazioniICI.Database.TblImportazioni.tipoImportazione
+  name: tipoImportazione
+  nameWithType: TblImportazioni.tipoImportazione
+  fullName: DichiarazioniICI.Database.TblImportazioni.tipoImportazione

@@ -1,0 +1,593 @@
+### YamlMime:ManagedReference
+items:
+- uid: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  commentId: T:DTO.MetodiPagamento.E_COLUMNS_NoPag
+  id: MetodiPagamento.E_COLUMNS_NoPag
+  parent: DTO
+  children:
+  - DTO.MetodiPagamento.E_COLUMNS_NoPag.ANNO
+  - DTO.MetodiPagamento.E_COLUMNS_NoPag.CAP_RES
+  - DTO.MetodiPagamento.E_COLUMNS_NoPag.CAPCO
+  - DTO.MetodiPagamento.E_COLUMNS_NoPag.CFPIVA
+  - DTO.MetodiPagamento.E_COLUMNS_NoPag.CIVICO_RES
+  - DTO.MetodiPagamento.E_COLUMNS_NoPag.CIVICOCO
+  - DTO.MetodiPagamento.E_COLUMNS_NoPag.CODICE_CARTELLA
+  - DTO.MetodiPagamento.E_COLUMNS_NoPag.COMUNE_RES
+  - DTO.MetodiPagamento.E_COLUMNS_NoPag.COMUNECO
+  - DTO.MetodiPagamento.E_COLUMNS_NoPag.DATA_EMISSIONE
+  - DTO.MetodiPagamento.E_COLUMNS_NoPag.IMPORTO_CARICO
+  - DTO.MetodiPagamento.E_COLUMNS_NoPag.IMPORTO_INSOLUTO
+  - DTO.MetodiPagamento.E_COLUMNS_NoPag.IMPORTO_PAGATO
+  - DTO.MetodiPagamento.E_COLUMNS_NoPag.INDIRIZZOCO
+  - DTO.MetodiPagamento.E_COLUMNS_NoPag.NOMINATIVO
+  - DTO.MetodiPagamento.E_COLUMNS_NoPag.NOMINATIVOCO
+  - DTO.MetodiPagamento.E_COLUMNS_NoPag.PROVINCIA_RES
+  - DTO.MetodiPagamento.E_COLUMNS_NoPag.PVCO
+  - DTO.MetodiPagamento.E_COLUMNS_NoPag.VIA_RES
+  langs:
+  - csharp
+  - vb
+  name: MetodiPagamento.E_COLUMNS_NoPag
+  nameWithType: MetodiPagamento.E_COLUMNS_NoPag
+  fullName: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  type: Enum
+  source:
+    id: E_COLUMNS_NoPag
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 73
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public enum E_COLUMNS_NoPag
+    content.vb: Public Enum E_COLUMNS_NoPag
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: DTO.MetodiPagamento.E_COLUMNS_NoPag.NOMINATIVO
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_NoPag.NOMINATIVO
+  id: NOMINATIVO
+  parent: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  langs:
+  - csharp
+  - vb
+  name: NOMINATIVO
+  nameWithType: MetodiPagamento.E_COLUMNS_NoPag.NOMINATIVO
+  fullName: DTO.MetodiPagamento.E_COLUMNS_NoPag.NOMINATIVO
+  type: Field
+  source:
+    id: NOMINATIVO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 75
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: NOMINATIVO = 0
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DTO.MetodiPagamento.E_COLUMNS_NoPag.CFPIVA
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_NoPag.CFPIVA
+  id: CFPIVA
+  parent: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  langs:
+  - csharp
+  - vb
+  name: CFPIVA
+  nameWithType: MetodiPagamento.E_COLUMNS_NoPag.CFPIVA
+  fullName: DTO.MetodiPagamento.E_COLUMNS_NoPag.CFPIVA
+  type: Field
+  source:
+    id: CFPIVA
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 76
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: CFPIVA = 1
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DTO.MetodiPagamento.E_COLUMNS_NoPag.VIA_RES
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_NoPag.VIA_RES
+  id: VIA_RES
+  parent: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  langs:
+  - csharp
+  - vb
+  name: VIA_RES
+  nameWithType: MetodiPagamento.E_COLUMNS_NoPag.VIA_RES
+  fullName: DTO.MetodiPagamento.E_COLUMNS_NoPag.VIA_RES
+  type: Field
+  source:
+    id: VIA_RES
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 77
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: VIA_RES = 2
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DTO.MetodiPagamento.E_COLUMNS_NoPag.CIVICO_RES
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_NoPag.CIVICO_RES
+  id: CIVICO_RES
+  parent: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  langs:
+  - csharp
+  - vb
+  name: CIVICO_RES
+  nameWithType: MetodiPagamento.E_COLUMNS_NoPag.CIVICO_RES
+  fullName: DTO.MetodiPagamento.E_COLUMNS_NoPag.CIVICO_RES
+  type: Field
+  source:
+    id: CIVICO_RES
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 77
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: CIVICO_RES = 3
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DTO.MetodiPagamento.E_COLUMNS_NoPag.CAP_RES
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_NoPag.CAP_RES
+  id: CAP_RES
+  parent: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  langs:
+  - csharp
+  - vb
+  name: CAP_RES
+  nameWithType: MetodiPagamento.E_COLUMNS_NoPag.CAP_RES
+  fullName: DTO.MetodiPagamento.E_COLUMNS_NoPag.CAP_RES
+  type: Field
+  source:
+    id: CAP_RES
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 77
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: CAP_RES = 4
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DTO.MetodiPagamento.E_COLUMNS_NoPag.COMUNE_RES
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_NoPag.COMUNE_RES
+  id: COMUNE_RES
+  parent: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  langs:
+  - csharp
+  - vb
+  name: COMUNE_RES
+  nameWithType: MetodiPagamento.E_COLUMNS_NoPag.COMUNE_RES
+  fullName: DTO.MetodiPagamento.E_COLUMNS_NoPag.COMUNE_RES
+  type: Field
+  source:
+    id: COMUNE_RES
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 77
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: COMUNE_RES = 5
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DTO.MetodiPagamento.E_COLUMNS_NoPag.PROVINCIA_RES
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_NoPag.PROVINCIA_RES
+  id: PROVINCIA_RES
+  parent: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  langs:
+  - csharp
+  - vb
+  name: PROVINCIA_RES
+  nameWithType: MetodiPagamento.E_COLUMNS_NoPag.PROVINCIA_RES
+  fullName: DTO.MetodiPagamento.E_COLUMNS_NoPag.PROVINCIA_RES
+  type: Field
+  source:
+    id: PROVINCIA_RES
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 77
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: PROVINCIA_RES = 6
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DTO.MetodiPagamento.E_COLUMNS_NoPag.NOMINATIVOCO
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_NoPag.NOMINATIVOCO
+  id: NOMINATIVOCO
+  parent: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  langs:
+  - csharp
+  - vb
+  name: NOMINATIVOCO
+  nameWithType: MetodiPagamento.E_COLUMNS_NoPag.NOMINATIVOCO
+  fullName: DTO.MetodiPagamento.E_COLUMNS_NoPag.NOMINATIVOCO
+  type: Field
+  source:
+    id: NOMINATIVOCO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 78
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: NOMINATIVOCO = 7
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DTO.MetodiPagamento.E_COLUMNS_NoPag.INDIRIZZOCO
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_NoPag.INDIRIZZOCO
+  id: INDIRIZZOCO
+  parent: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  langs:
+  - csharp
+  - vb
+  name: INDIRIZZOCO
+  nameWithType: MetodiPagamento.E_COLUMNS_NoPag.INDIRIZZOCO
+  fullName: DTO.MetodiPagamento.E_COLUMNS_NoPag.INDIRIZZOCO
+  type: Field
+  source:
+    id: INDIRIZZOCO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 79
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: INDIRIZZOCO = 8
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DTO.MetodiPagamento.E_COLUMNS_NoPag.CIVICOCO
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_NoPag.CIVICOCO
+  id: CIVICOCO
+  parent: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  langs:
+  - csharp
+  - vb
+  name: CIVICOCO
+  nameWithType: MetodiPagamento.E_COLUMNS_NoPag.CIVICOCO
+  fullName: DTO.MetodiPagamento.E_COLUMNS_NoPag.CIVICOCO
+  type: Field
+  source:
+    id: CIVICOCO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 79
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: CIVICOCO = 9
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DTO.MetodiPagamento.E_COLUMNS_NoPag.CAPCO
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_NoPag.CAPCO
+  id: CAPCO
+  parent: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  langs:
+  - csharp
+  - vb
+  name: CAPCO
+  nameWithType: MetodiPagamento.E_COLUMNS_NoPag.CAPCO
+  fullName: DTO.MetodiPagamento.E_COLUMNS_NoPag.CAPCO
+  type: Field
+  source:
+    id: CAPCO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 79
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: CAPCO = 10
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DTO.MetodiPagamento.E_COLUMNS_NoPag.COMUNECO
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_NoPag.COMUNECO
+  id: COMUNECO
+  parent: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  langs:
+  - csharp
+  - vb
+  name: COMUNECO
+  nameWithType: MetodiPagamento.E_COLUMNS_NoPag.COMUNECO
+  fullName: DTO.MetodiPagamento.E_COLUMNS_NoPag.COMUNECO
+  type: Field
+  source:
+    id: COMUNECO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 79
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: COMUNECO = 11
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DTO.MetodiPagamento.E_COLUMNS_NoPag.PVCO
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_NoPag.PVCO
+  id: PVCO
+  parent: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  langs:
+  - csharp
+  - vb
+  name: PVCO
+  nameWithType: MetodiPagamento.E_COLUMNS_NoPag.PVCO
+  fullName: DTO.MetodiPagamento.E_COLUMNS_NoPag.PVCO
+  type: Field
+  source:
+    id: PVCO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 79
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: PVCO = 12
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DTO.MetodiPagamento.E_COLUMNS_NoPag.ANNO
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_NoPag.ANNO
+  id: ANNO
+  parent: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  langs:
+  - csharp
+  - vb
+  name: ANNO
+  nameWithType: MetodiPagamento.E_COLUMNS_NoPag.ANNO
+  fullName: DTO.MetodiPagamento.E_COLUMNS_NoPag.ANNO
+  type: Field
+  source:
+    id: ANNO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 80
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: ANNO = 13
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DTO.MetodiPagamento.E_COLUMNS_NoPag.CODICE_CARTELLA
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_NoPag.CODICE_CARTELLA
+  id: CODICE_CARTELLA
+  parent: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  langs:
+  - csharp
+  - vb
+  name: CODICE_CARTELLA
+  nameWithType: MetodiPagamento.E_COLUMNS_NoPag.CODICE_CARTELLA
+  fullName: DTO.MetodiPagamento.E_COLUMNS_NoPag.CODICE_CARTELLA
+  type: Field
+  source:
+    id: CODICE_CARTELLA
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 81
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: CODICE_CARTELLA = 14
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DTO.MetodiPagamento.E_COLUMNS_NoPag.DATA_EMISSIONE
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_NoPag.DATA_EMISSIONE
+  id: DATA_EMISSIONE
+  parent: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  langs:
+  - csharp
+  - vb
+  name: DATA_EMISSIONE
+  nameWithType: MetodiPagamento.E_COLUMNS_NoPag.DATA_EMISSIONE
+  fullName: DTO.MetodiPagamento.E_COLUMNS_NoPag.DATA_EMISSIONE
+  type: Field
+  source:
+    id: DATA_EMISSIONE
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 82
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: DATA_EMISSIONE = 15
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DTO.MetodiPagamento.E_COLUMNS_NoPag.IMPORTO_CARICO
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_NoPag.IMPORTO_CARICO
+  id: IMPORTO_CARICO
+  parent: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  langs:
+  - csharp
+  - vb
+  name: IMPORTO_CARICO
+  nameWithType: MetodiPagamento.E_COLUMNS_NoPag.IMPORTO_CARICO
+  fullName: DTO.MetodiPagamento.E_COLUMNS_NoPag.IMPORTO_CARICO
+  type: Field
+  source:
+    id: IMPORTO_CARICO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 83
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: IMPORTO_CARICO = 16
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DTO.MetodiPagamento.E_COLUMNS_NoPag.IMPORTO_PAGATO
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_NoPag.IMPORTO_PAGATO
+  id: IMPORTO_PAGATO
+  parent: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  langs:
+  - csharp
+  - vb
+  name: IMPORTO_PAGATO
+  nameWithType: MetodiPagamento.E_COLUMNS_NoPag.IMPORTO_PAGATO
+  fullName: DTO.MetodiPagamento.E_COLUMNS_NoPag.IMPORTO_PAGATO
+  type: Field
+  source:
+    id: IMPORTO_PAGATO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 84
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: IMPORTO_PAGATO = 17
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DTO.MetodiPagamento.E_COLUMNS_NoPag.IMPORTO_INSOLUTO
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_NoPag.IMPORTO_INSOLUTO
+  id: IMPORTO_INSOLUTO
+  parent: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  langs:
+  - csharp
+  - vb
+  name: IMPORTO_INSOLUTO
+  nameWithType: MetodiPagamento.E_COLUMNS_NoPag.IMPORTO_INSOLUTO
+  fullName: DTO.MetodiPagamento.E_COLUMNS_NoPag.IMPORTO_INSOLUTO
+  type: Field
+  source:
+    id: IMPORTO_INSOLUTO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 85
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: IMPORTO_INSOLUTO = 18
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: DTO
+  commentId: N:DTO
+  name: DTO
+  nameWithType: DTO
+  fullName: DTO
+- uid: DTO.MetodiPagamento.E_COLUMNS_NoPag
+  commentId: T:DTO.MetodiPagamento.E_COLUMNS_NoPag
+  parent: DTO
+  name: MetodiPagamento.E_COLUMNS_NoPag
+  nameWithType: MetodiPagamento.E_COLUMNS_NoPag
+  fullName: DTO.MetodiPagamento.E_COLUMNS_NoPag

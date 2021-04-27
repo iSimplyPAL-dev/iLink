@@ -1,0 +1,131 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.Database.Bonificato
+  commentId: T:DichiarazioniICI.Database.Bonificato
+  id: Bonificato
+  parent: DichiarazioniICI.Database
+  children:
+  - DichiarazioniICI.Database.Bonificato.Bonificate
+  - DichiarazioniICI.Database.Bonificato.DaBonificare
+  - DichiarazioniICI.Database.Bonificato.Tutte
+  langs:
+  - csharp
+  - vb
+  name: Bonificato
+  nameWithType: Bonificato
+  fullName: DichiarazioniICI.Database.Bonificato
+  type: Enum
+  source:
+    id: Bonificato
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 49
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public enum Bonificato
+    content.vb: Public Enum Bonificato
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: DichiarazioniICI.Database.Bonificato.Tutte
+  commentId: F:DichiarazioniICI.Database.Bonificato.Tutte
+  id: Tutte
+  parent: DichiarazioniICI.Database.Bonificato
+  langs:
+  - csharp
+  - vb
+  name: Tutte
+  nameWithType: Bonificato.Tutte
+  fullName: DichiarazioniICI.Database.Bonificato.Tutte
+  type: Field
+  source:
+    id: Tutte
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 51
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: Tutte = -1
+    return:
+      type: DichiarazioniICI.Database.Bonificato
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.Database.Bonificato.Bonificate
+  commentId: F:DichiarazioniICI.Database.Bonificato.Bonificate
+  id: Bonificate
+  parent: DichiarazioniICI.Database.Bonificato
+  langs:
+  - csharp
+  - vb
+  name: Bonificate
+  nameWithType: Bonificato.Bonificate
+  fullName: DichiarazioniICI.Database.Bonificato.Bonificate
+  type: Field
+  source:
+    id: Bonificate
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 52
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: Bonificate = 0
+    return:
+      type: DichiarazioniICI.Database.Bonificato
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.Database.Bonificato.DaBonificare
+  commentId: F:DichiarazioniICI.Database.Bonificato.DaBonificare
+  id: DaBonificare
+  parent: DichiarazioniICI.Database.Bonificato
+  langs:
+  - csharp
+  - vb
+  name: DaBonificare
+  nameWithType: Bonificato.DaBonificare
+  fullName: DichiarazioniICI.Database.Bonificato.DaBonificare
+  type: Field
+  source:
+    id: DaBonificare
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 53
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: DaBonificare = 1
+    return:
+      type: DichiarazioniICI.Database.Bonificato
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: DichiarazioniICI.Database
+  commentId: N:DichiarazioniICI.Database
+  name: DichiarazioniICI.Database
+  nameWithType: DichiarazioniICI.Database
+  fullName: DichiarazioniICI.Database
+- uid: DichiarazioniICI.Database.Bonificato
+  commentId: T:DichiarazioniICI.Database.Bonificato
+  parent: DichiarazioniICI.Database
+  name: Bonificato
+  nameWithType: Bonificato
+  fullName: DichiarazioniICI.Database.Bonificato

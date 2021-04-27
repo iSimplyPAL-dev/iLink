@@ -1,0 +1,209 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.WServiceOPENae.TipologiaUtenza
+  commentId: T:DichiarazioniICI.WServiceOPENae.TipologiaUtenza
+  id: TipologiaUtenza
+  parent: DichiarazioniICI.WServiceOPENae
+  children:
+  - DichiarazioniICI.WServiceOPENae.TipologiaUtenza.DomesticaNonRes
+  - DichiarazioniICI.WServiceOPENae.TipologiaUtenza.DomesticaRes
+  - DichiarazioniICI.WServiceOPENae.TipologiaUtenza.GrandeUtenza
+  - DichiarazioniICI.WServiceOPENae.TipologiaUtenza.NonDomestica
+  - DichiarazioniICI.WServiceOPENae.TipologiaUtenza.NonSpecificato
+  langs:
+  - csharp
+  - vb
+  name: TipologiaUtenza
+  nameWithType: TipologiaUtenza
+  fullName: DichiarazioniICI.WServiceOPENae.TipologiaUtenza
+  type: Enum
+  source:
+    id: TipologiaUtenza
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1248
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public enum TipologiaUtenza
+    content.vb: >-
+      <Serializable>
+
+      Public Enum TipologiaUtenza
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: DichiarazioniICI.WServiceOPENae.TipologiaUtenza.NonSpecificato
+  commentId: F:DichiarazioniICI.WServiceOPENae.TipologiaUtenza.NonSpecificato
+  id: NonSpecificato
+  parent: DichiarazioniICI.WServiceOPENae.TipologiaUtenza
+  langs:
+  - csharp
+  - vb
+  name: NonSpecificato
+  nameWithType: TipologiaUtenza.NonSpecificato
+  fullName: DichiarazioniICI.WServiceOPENae.TipologiaUtenza.NonSpecificato
+  type: Field
+  source:
+    id: NonSpecificato
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1254
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: NonSpecificato = 0
+    return:
+      type: DichiarazioniICI.WServiceOPENae.TipologiaUtenza
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.WServiceOPENae.TipologiaUtenza.DomesticaRes
+  commentId: F:DichiarazioniICI.WServiceOPENae.TipologiaUtenza.DomesticaRes
+  id: DomesticaRes
+  parent: DichiarazioniICI.WServiceOPENae.TipologiaUtenza
+  langs:
+  - csharp
+  - vb
+  name: DomesticaRes
+  nameWithType: TipologiaUtenza.DomesticaRes
+  fullName: DichiarazioniICI.WServiceOPENae.TipologiaUtenza.DomesticaRes
+  type: Field
+  source:
+    id: DomesticaRes
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1257
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: DomesticaRes = 1
+    return:
+      type: DichiarazioniICI.WServiceOPENae.TipologiaUtenza
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.WServiceOPENae.TipologiaUtenza.DomesticaNonRes
+  commentId: F:DichiarazioniICI.WServiceOPENae.TipologiaUtenza.DomesticaNonRes
+  id: DomesticaNonRes
+  parent: DichiarazioniICI.WServiceOPENae.TipologiaUtenza
+  langs:
+  - csharp
+  - vb
+  name: DomesticaNonRes
+  nameWithType: TipologiaUtenza.DomesticaNonRes
+  fullName: DichiarazioniICI.WServiceOPENae.TipologiaUtenza.DomesticaNonRes
+  type: Field
+  source:
+    id: DomesticaNonRes
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1260
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: DomesticaNonRes = 2
+    return:
+      type: DichiarazioniICI.WServiceOPENae.TipologiaUtenza
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.WServiceOPENae.TipologiaUtenza.NonDomestica
+  commentId: F:DichiarazioniICI.WServiceOPENae.TipologiaUtenza.NonDomestica
+  id: NonDomestica
+  parent: DichiarazioniICI.WServiceOPENae.TipologiaUtenza
+  langs:
+  - csharp
+  - vb
+  name: NonDomestica
+  nameWithType: TipologiaUtenza.NonDomestica
+  fullName: DichiarazioniICI.WServiceOPENae.TipologiaUtenza.NonDomestica
+  type: Field
+  source:
+    id: NonDomestica
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1263
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: NonDomestica = 3
+    return:
+      type: DichiarazioniICI.WServiceOPENae.TipologiaUtenza
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.WServiceOPENae.TipologiaUtenza.GrandeUtenza
+  commentId: F:DichiarazioniICI.WServiceOPENae.TipologiaUtenza.GrandeUtenza
+  id: GrandeUtenza
+  parent: DichiarazioniICI.WServiceOPENae.TipologiaUtenza
+  langs:
+  - csharp
+  - vb
+  name: GrandeUtenza
+  nameWithType: TipologiaUtenza.GrandeUtenza
+  fullName: DichiarazioniICI.WServiceOPENae.TipologiaUtenza.GrandeUtenza
+  type: Field
+  source:
+    id: GrandeUtenza
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1266
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: GrandeUtenza = 4
+    return:
+      type: DichiarazioniICI.WServiceOPENae.TipologiaUtenza
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: DichiarazioniICI.WServiceOPENae
+  commentId: N:DichiarazioniICI.WServiceOPENae
+  name: DichiarazioniICI.WServiceOPENae
+  nameWithType: DichiarazioniICI.WServiceOPENae
+  fullName: DichiarazioniICI.WServiceOPENae
+- uid: DichiarazioniICI.WServiceOPENae.TipologiaUtenza
+  commentId: T:DichiarazioniICI.WServiceOPENae.TipologiaUtenza
+  parent: DichiarazioniICI.WServiceOPENae
+  name: TipologiaUtenza
+  nameWithType: TipologiaUtenza
+  fullName: DichiarazioniICI.WServiceOPENae.TipologiaUtenza

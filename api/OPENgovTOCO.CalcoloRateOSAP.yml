@@ -1,0 +1,607 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENgovTOCO.CalcoloRateOSAP
+  commentId: T:OPENgovTOCO.CalcoloRateOSAP
+  id: CalcoloRateOSAP
+  parent: OPENgovTOCO
+  children:
+  - OPENgovTOCO.CalcoloRateOSAP.#ctor
+  - OPENgovTOCO.CalcoloRateOSAP.CalcoloSync(System.Boolean,System.Int32,System.String,IRemInterfaceOSAP.ElaborazioneEffettuata,IRemInterfaceOSAP.Rate[],System.String,OPENUtility.objContoCorrente,System.String)
+  - OPENgovTOCO.CalcoloRateOSAP.GetCodiceCartella(System.String,System.String,System.Int32)
+  - OPENgovTOCO.CalcoloRateOSAP.StartCalcolo(System.Int32,System.String,IRemInterfaceOSAP.ElaborazioneEffettuata,IRemInterfaceOSAP.Rate[],System.String,OPENUtility.objContoCorrente,System.String)
+  langs:
+  - csharp
+  - vb
+  name: CalcoloRateOSAP
+  nameWithType: CalcoloRateOSAP
+  fullName: OPENgovTOCO.CalcoloRateOSAP
+  type: Class
+  source:
+    id: CalcoloRateOSAP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloRateTOCO.cs
+    startLine: 15
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  summary: "\nClasse per la gestione rate.\n"
+  example: []
+  syntax:
+    content: public class CalcoloRateOSAP
+    content.vb: Public Class CalcoloRateOSAP
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: OPENgovTOCO.CalcoloRateOSAP.#ctor
+  commentId: M:OPENgovTOCO.CalcoloRateOSAP.#ctor
+  id: '#ctor'
+  parent: OPENgovTOCO.CalcoloRateOSAP
+  langs:
+  - csharp
+  - vb
+  name: CalcoloRateOSAP()
+  nameWithType: CalcoloRateOSAP.CalcoloRateOSAP()
+  fullName: OPENgovTOCO.CalcoloRateOSAP.CalcoloRateOSAP()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloRateTOCO.cs
+    startLine: 38
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public CalcoloRateOSAP()
+    content.vb: Public Sub New
+  overload: OPENgovTOCO.CalcoloRateOSAP.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: OPENgovTOCO.CalcoloRateOSAP.StartCalcolo(System.Int32,System.String,IRemInterfaceOSAP.ElaborazioneEffettuata,IRemInterfaceOSAP.Rate[],System.String,OPENUtility.objContoCorrente,System.String)
+  commentId: M:OPENgovTOCO.CalcoloRateOSAP.StartCalcolo(System.Int32,System.String,IRemInterfaceOSAP.ElaborazioneEffettuata,IRemInterfaceOSAP.Rate[],System.String,OPENUtility.objContoCorrente,System.String)
+  id: StartCalcolo(System.Int32,System.String,IRemInterfaceOSAP.ElaborazioneEffettuata,IRemInterfaceOSAP.Rate[],System.String,OPENUtility.objContoCorrente,System.String)
+  parent: OPENgovTOCO.CalcoloRateOSAP
+  langs:
+  - csharp
+  - vb
+  name: StartCalcolo(Int32, String, ElaborazioneEffettuata, Rate[], String, objContoCorrente, String)
+  nameWithType: CalcoloRateOSAP.StartCalcolo(Int32, String, ElaborazioneEffettuata, Rate[], String, objContoCorrente, String)
+  fullName: OPENgovTOCO.CalcoloRateOSAP.StartCalcolo(System.Int32, System.String, IRemInterfaceOSAP.ElaborazioneEffettuata, IRemInterfaceOSAP.Rate[], System.String, OPENUtility.objContoCorrente, System.String)
+  type: Method
+  source:
+    id: StartCalcolo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloRateTOCO.cs
+    startLine: 58
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  summary: "\nMetodo che richiama il calcolo rate.\nInizio la transazione e recupero l&apos;istanza della connessione al db. Devo farlo qui visto che sto eseguendo codice ancora nel thread della PostBack da FE, per cui ho il HttpContext disponibile con tutti i suoi oggetti (DichiarazioneSession, HttpSession, ecc.), mentre nel thread non ho queste informazioni\n"
+  example: []
+  syntax:
+    content: public void StartCalcolo(int Anno, string IdEnte, ElaborazioneEffettuata Elab, Rate[] ConfigRate, string Username, objContoCorrente CC, string IdTributo)
+    parameters:
+    - id: Anno
+      type: System.Int32
+      description: ''
+    - id: IdEnte
+      type: System.String
+      description: ''
+    - id: Elab
+      type: IRemInterfaceOSAP.ElaborazioneEffettuata
+      description: ''
+    - id: ConfigRate
+      type: IRemInterfaceOSAP.Rate[]
+      description: ''
+    - id: Username
+      type: System.String
+      description: ''
+    - id: CC
+      type: OPENUtility.objContoCorrente
+      description: ''
+    - id: IdTributo
+      type: System.String
+      description: ''
+    content.vb: Public Sub StartCalcolo(Anno As Integer, IdEnte As String, Elab As ElaborazioneEffettuata, ConfigRate As Rate(), Username As String, CC As objContoCorrente, IdTributo As String)
+  overload: OPENgovTOCO.CalcoloRateOSAP.StartCalcolo*
+  nameWithType.vb: CalcoloRateOSAP.StartCalcolo(Int32, String, ElaborazioneEffettuata, Rate(), String, objContoCorrente, String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: OPENgovTOCO.CalcoloRateOSAP.StartCalcolo(System.Int32, System.String, IRemInterfaceOSAP.ElaborazioneEffettuata, IRemInterfaceOSAP.Rate(), System.String, OPENUtility.objContoCorrente, System.String)
+  name.vb: StartCalcolo(Int32, String, ElaborazioneEffettuata, Rate(), String, objContoCorrente, String)
+- uid: OPENgovTOCO.CalcoloRateOSAP.CalcoloSync(System.Boolean,System.Int32,System.String,IRemInterfaceOSAP.ElaborazioneEffettuata,IRemInterfaceOSAP.Rate[],System.String,OPENUtility.objContoCorrente,System.String)
+  commentId: M:OPENgovTOCO.CalcoloRateOSAP.CalcoloSync(System.Boolean,System.Int32,System.String,IRemInterfaceOSAP.ElaborazioneEffettuata,IRemInterfaceOSAP.Rate[],System.String,OPENUtility.objContoCorrente,System.String)
+  id: CalcoloSync(System.Boolean,System.Int32,System.String,IRemInterfaceOSAP.ElaborazioneEffettuata,IRemInterfaceOSAP.Rate[],System.String,OPENUtility.objContoCorrente,System.String)
+  parent: OPENgovTOCO.CalcoloRateOSAP
+  langs:
+  - csharp
+  - vb
+  name: CalcoloSync(Boolean, Int32, String, ElaborazioneEffettuata, Rate[], String, objContoCorrente, String)
+  nameWithType: CalcoloRateOSAP.CalcoloSync(Boolean, Int32, String, ElaborazioneEffettuata, Rate[], String, objContoCorrente, String)
+  fullName: OPENgovTOCO.CalcoloRateOSAP.CalcoloSync(System.Boolean, System.Int32, System.String, IRemInterfaceOSAP.ElaborazioneEffettuata, IRemInterfaceOSAP.Rate[], System.String, OPENUtility.objContoCorrente, System.String)
+  type: Method
+  source:
+    id: CalcoloSync
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloRateTOCO.cs
+    startLine: 235
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  summary: "\nMetodo sincrono che richiama il calcolo rate.\n"
+  example: []
+  syntax:
+    content: public void CalcoloSync(bool Simula, int Anno, string IdEnte, ElaborazioneEffettuata Elab, Rate[] ConfigRate, string Username, objContoCorrente CC, string IdTributo)
+    parameters:
+    - id: Simula
+      type: System.Boolean
+      description: ''
+    - id: Anno
+      type: System.Int32
+      description: ''
+    - id: IdEnte
+      type: System.String
+      description: ''
+    - id: Elab
+      type: IRemInterfaceOSAP.ElaborazioneEffettuata
+      description: ''
+    - id: ConfigRate
+      type: IRemInterfaceOSAP.Rate[]
+      description: ''
+    - id: Username
+      type: System.String
+      description: ''
+    - id: CC
+      type: OPENUtility.objContoCorrente
+      description: ''
+    - id: IdTributo
+      type: System.String
+      description: ''
+    content.vb: Public Sub CalcoloSync(Simula As Boolean, Anno As Integer, IdEnte As String, Elab As ElaborazioneEffettuata, ConfigRate As Rate(), Username As String, CC As objContoCorrente, IdTributo As String)
+  overload: OPENgovTOCO.CalcoloRateOSAP.CalcoloSync*
+  nameWithType.vb: CalcoloRateOSAP.CalcoloSync(Boolean, Int32, String, ElaborazioneEffettuata, Rate(), String, objContoCorrente, String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: OPENgovTOCO.CalcoloRateOSAP.CalcoloSync(System.Boolean, System.Int32, System.String, IRemInterfaceOSAP.ElaborazioneEffettuata, IRemInterfaceOSAP.Rate(), System.String, OPENUtility.objContoCorrente, System.String)
+  name.vb: CalcoloSync(Boolean, Int32, String, ElaborazioneEffettuata, Rate(), String, objContoCorrente, String)
+- uid: OPENgovTOCO.CalcoloRateOSAP.GetCodiceCartella(System.String,System.String,System.Int32)
+  commentId: M:OPENgovTOCO.CalcoloRateOSAP.GetCodiceCartella(System.String,System.String,System.Int32)
+  id: GetCodiceCartella(System.String,System.String,System.Int32)
+  parent: OPENgovTOCO.CalcoloRateOSAP
+  langs:
+  - csharp
+  - vb
+  name: GetCodiceCartella(String, String, Int32)
+  nameWithType: CalcoloRateOSAP.GetCodiceCartella(String, String, Int32)
+  fullName: OPENgovTOCO.CalcoloRateOSAP.GetCodiceCartella(System.String, System.String, System.Int32)
+  type: Method
+  source:
+    id: GetCodiceCartella
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloRateTOCO.cs
+    startLine: 583
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public string GetCodiceCartella(string sCodiceConcessione, string Anno, int nProgressivo)
+    parameters:
+    - id: sCodiceConcessione
+      type: System.String
+    - id: Anno
+      type: System.String
+    - id: nProgressivo
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function GetCodiceCartella(sCodiceConcessione As String, Anno As String, nProgressivo As Integer) As String
+  overload: OPENgovTOCO.CalcoloRateOSAP.GetCodiceCartella*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: OPENgovTOCO
+  commentId: N:OPENgovTOCO
+  name: OPENgovTOCO
+  nameWithType: OPENgovTOCO
+  fullName: OPENgovTOCO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OPENgovTOCO.CalcoloRateOSAP.#ctor*
+  commentId: Overload:OPENgovTOCO.CalcoloRateOSAP.#ctor
+  name: CalcoloRateOSAP
+  nameWithType: CalcoloRateOSAP.CalcoloRateOSAP
+  fullName: OPENgovTOCO.CalcoloRateOSAP.CalcoloRateOSAP
+- uid: OPENgovTOCO.CalcoloRateOSAP.StartCalcolo*
+  commentId: Overload:OPENgovTOCO.CalcoloRateOSAP.StartCalcolo
+  name: StartCalcolo
+  nameWithType: CalcoloRateOSAP.StartCalcolo
+  fullName: OPENgovTOCO.CalcoloRateOSAP.StartCalcolo
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: IRemInterfaceOSAP.ElaborazioneEffettuata
+  commentId: T:IRemInterfaceOSAP.ElaborazioneEffettuata
+  parent: IRemInterfaceOSAP
+  isExternal: true
+  name: ElaborazioneEffettuata
+  nameWithType: ElaborazioneEffettuata
+  fullName: IRemInterfaceOSAP.ElaborazioneEffettuata
+- uid: IRemInterfaceOSAP.Rate[]
+  isExternal: true
+  name: Rate[]
+  nameWithType: Rate[]
+  fullName: IRemInterfaceOSAP.Rate[]
+  nameWithType.vb: Rate()
+  fullName.vb: IRemInterfaceOSAP.Rate()
+  name.vb: Rate()
+  spec.csharp:
+  - uid: IRemInterfaceOSAP.Rate
+    name: Rate
+    nameWithType: Rate
+    fullName: IRemInterfaceOSAP.Rate
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: IRemInterfaceOSAP.Rate
+    name: Rate
+    nameWithType: Rate
+    fullName: IRemInterfaceOSAP.Rate
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: OPENUtility.objContoCorrente
+  commentId: T:OPENUtility.objContoCorrente
+  parent: OPENUtility
+  isExternal: true
+  name: objContoCorrente
+  nameWithType: objContoCorrente
+  fullName: OPENUtility.objContoCorrente
+- uid: IRemInterfaceOSAP
+  commentId: N:IRemInterfaceOSAP
+  isExternal: true
+  name: IRemInterfaceOSAP
+  nameWithType: IRemInterfaceOSAP
+  fullName: IRemInterfaceOSAP
+- uid: OPENUtility
+  commentId: N:OPENUtility
+  isExternal: true
+  name: OPENUtility
+  nameWithType: OPENUtility
+  fullName: OPENUtility
+- uid: OPENgovTOCO.CalcoloRateOSAP.CalcoloSync*
+  commentId: Overload:OPENgovTOCO.CalcoloRateOSAP.CalcoloSync
+  name: CalcoloSync
+  nameWithType: CalcoloRateOSAP.CalcoloSync
+  fullName: OPENgovTOCO.CalcoloRateOSAP.CalcoloSync
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: OPENgovTOCO.CalcoloRateOSAP.GetCodiceCartella*
+  commentId: Overload:OPENgovTOCO.CalcoloRateOSAP.GetCodiceCartella
+  name: GetCodiceCartella
+  nameWithType: CalcoloRateOSAP.GetCodiceCartella
+  fullName: OPENgovTOCO.CalcoloRateOSAP.GetCodiceCartella

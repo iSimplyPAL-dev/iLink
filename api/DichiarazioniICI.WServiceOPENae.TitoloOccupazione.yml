@@ -1,0 +1,209 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.WServiceOPENae.TitoloOccupazione
+  commentId: T:DichiarazioniICI.WServiceOPENae.TitoloOccupazione
+  id: TitoloOccupazione
+  parent: DichiarazioniICI.WServiceOPENae
+  children:
+  - DichiarazioniICI.WServiceOPENae.TitoloOccupazione.AltroDiritto_Rappresentante
+  - DichiarazioniICI.WServiceOPENae.TitoloOccupazione.Locazione_AltroDiritto
+  - DichiarazioniICI.WServiceOPENae.TitoloOccupazione.NonSpecificato
+  - DichiarazioniICI.WServiceOPENae.TitoloOccupazione.Proprieta
+  - DichiarazioniICI.WServiceOPENae.TitoloOccupazione.Usufrutto
+  langs:
+  - csharp
+  - vb
+  name: TitoloOccupazione
+  nameWithType: TitoloOccupazione
+  fullName: DichiarazioniICI.WServiceOPENae.TitoloOccupazione
+  type: Enum
+  source:
+    id: TitoloOccupazione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1151
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public enum TitoloOccupazione
+    content.vb: >-
+      <Serializable>
+
+      Public Enum TitoloOccupazione
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: DichiarazioniICI.WServiceOPENae.TitoloOccupazione.NonSpecificato
+  commentId: F:DichiarazioniICI.WServiceOPENae.TitoloOccupazione.NonSpecificato
+  id: NonSpecificato
+  parent: DichiarazioniICI.WServiceOPENae.TitoloOccupazione
+  langs:
+  - csharp
+  - vb
+  name: NonSpecificato
+  nameWithType: TitoloOccupazione.NonSpecificato
+  fullName: DichiarazioniICI.WServiceOPENae.TitoloOccupazione.NonSpecificato
+  type: Field
+  source:
+    id: NonSpecificato
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1157
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: NonSpecificato = 0
+    return:
+      type: DichiarazioniICI.WServiceOPENae.TitoloOccupazione
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.WServiceOPENae.TitoloOccupazione.Proprieta
+  commentId: F:DichiarazioniICI.WServiceOPENae.TitoloOccupazione.Proprieta
+  id: Proprieta
+  parent: DichiarazioniICI.WServiceOPENae.TitoloOccupazione
+  langs:
+  - csharp
+  - vb
+  name: Proprieta
+  nameWithType: TitoloOccupazione.Proprieta
+  fullName: DichiarazioniICI.WServiceOPENae.TitoloOccupazione.Proprieta
+  type: Field
+  source:
+    id: Proprieta
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1160
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: Proprieta = 1
+    return:
+      type: DichiarazioniICI.WServiceOPENae.TitoloOccupazione
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.WServiceOPENae.TitoloOccupazione.Usufrutto
+  commentId: F:DichiarazioniICI.WServiceOPENae.TitoloOccupazione.Usufrutto
+  id: Usufrutto
+  parent: DichiarazioniICI.WServiceOPENae.TitoloOccupazione
+  langs:
+  - csharp
+  - vb
+  name: Usufrutto
+  nameWithType: TitoloOccupazione.Usufrutto
+  fullName: DichiarazioniICI.WServiceOPENae.TitoloOccupazione.Usufrutto
+  type: Field
+  source:
+    id: Usufrutto
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1163
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: Usufrutto = 2
+    return:
+      type: DichiarazioniICI.WServiceOPENae.TitoloOccupazione
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.WServiceOPENae.TitoloOccupazione.Locazione_AltroDiritto
+  commentId: F:DichiarazioniICI.WServiceOPENae.TitoloOccupazione.Locazione_AltroDiritto
+  id: Locazione_AltroDiritto
+  parent: DichiarazioniICI.WServiceOPENae.TitoloOccupazione
+  langs:
+  - csharp
+  - vb
+  name: Locazione_AltroDiritto
+  nameWithType: TitoloOccupazione.Locazione_AltroDiritto
+  fullName: DichiarazioniICI.WServiceOPENae.TitoloOccupazione.Locazione_AltroDiritto
+  type: Field
+  source:
+    id: Locazione_AltroDiritto
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1166
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: Locazione_AltroDiritto = 3
+    return:
+      type: DichiarazioniICI.WServiceOPENae.TitoloOccupazione
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.WServiceOPENae.TitoloOccupazione.AltroDiritto_Rappresentante
+  commentId: F:DichiarazioniICI.WServiceOPENae.TitoloOccupazione.AltroDiritto_Rappresentante
+  id: AltroDiritto_Rappresentante
+  parent: DichiarazioniICI.WServiceOPENae.TitoloOccupazione
+  langs:
+  - csharp
+  - vb
+  name: AltroDiritto_Rappresentante
+  nameWithType: TitoloOccupazione.AltroDiritto_Rappresentante
+  fullName: DichiarazioniICI.WServiceOPENae.TitoloOccupazione.AltroDiritto_Rappresentante
+  type: Field
+  source:
+    id: AltroDiritto_Rappresentante
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1169
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: AltroDiritto_Rappresentante = 4
+    return:
+      type: DichiarazioniICI.WServiceOPENae.TitoloOccupazione
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: DichiarazioniICI.WServiceOPENae
+  commentId: N:DichiarazioniICI.WServiceOPENae
+  name: DichiarazioniICI.WServiceOPENae
+  nameWithType: DichiarazioniICI.WServiceOPENae
+  fullName: DichiarazioniICI.WServiceOPENae
+- uid: DichiarazioniICI.WServiceOPENae.TitoloOccupazione
+  commentId: T:DichiarazioniICI.WServiceOPENae.TitoloOccupazione
+  parent: DichiarazioniICI.WServiceOPENae
+  name: TitoloOccupazione
+  nameWithType: TitoloOccupazione
+  fullName: DichiarazioniICI.WServiceOPENae.TitoloOccupazione

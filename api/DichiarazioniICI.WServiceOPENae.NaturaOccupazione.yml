@@ -1,0 +1,209 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.WServiceOPENae.NaturaOccupazione
+  commentId: T:DichiarazioniICI.WServiceOPENae.NaturaOccupazione
+  id: NaturaOccupazione
+  parent: DichiarazioniICI.WServiceOPENae
+  children:
+  - DichiarazioniICI.WServiceOPENae.NaturaOccupazione.AltraTipologia
+  - DichiarazioniICI.WServiceOPENae.NaturaOccupazione.AttivitaCommerciale
+  - DichiarazioniICI.WServiceOPENae.NaturaOccupazione.NonSpecificato
+  - DichiarazioniICI.WServiceOPENae.NaturaOccupazione.NucleoFamiliare
+  - DichiarazioniICI.WServiceOPENae.NaturaOccupazione.Singolo
+  langs:
+  - csharp
+  - vb
+  name: NaturaOccupazione
+  nameWithType: NaturaOccupazione
+  fullName: DichiarazioniICI.WServiceOPENae.NaturaOccupazione
+  type: Enum
+  source:
+    id: NaturaOccupazione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1173
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public enum NaturaOccupazione
+    content.vb: >-
+      <Serializable>
+
+      Public Enum NaturaOccupazione
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: DichiarazioniICI.WServiceOPENae.NaturaOccupazione.NonSpecificato
+  commentId: F:DichiarazioniICI.WServiceOPENae.NaturaOccupazione.NonSpecificato
+  id: NonSpecificato
+  parent: DichiarazioniICI.WServiceOPENae.NaturaOccupazione
+  langs:
+  - csharp
+  - vb
+  name: NonSpecificato
+  nameWithType: NaturaOccupazione.NonSpecificato
+  fullName: DichiarazioniICI.WServiceOPENae.NaturaOccupazione.NonSpecificato
+  type: Field
+  source:
+    id: NonSpecificato
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1179
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: NonSpecificato = 0
+    return:
+      type: DichiarazioniICI.WServiceOPENae.NaturaOccupazione
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.WServiceOPENae.NaturaOccupazione.Singolo
+  commentId: F:DichiarazioniICI.WServiceOPENae.NaturaOccupazione.Singolo
+  id: Singolo
+  parent: DichiarazioniICI.WServiceOPENae.NaturaOccupazione
+  langs:
+  - csharp
+  - vb
+  name: Singolo
+  nameWithType: NaturaOccupazione.Singolo
+  fullName: DichiarazioniICI.WServiceOPENae.NaturaOccupazione.Singolo
+  type: Field
+  source:
+    id: Singolo
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1182
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: Singolo = 1
+    return:
+      type: DichiarazioniICI.WServiceOPENae.NaturaOccupazione
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.WServiceOPENae.NaturaOccupazione.NucleoFamiliare
+  commentId: F:DichiarazioniICI.WServiceOPENae.NaturaOccupazione.NucleoFamiliare
+  id: NucleoFamiliare
+  parent: DichiarazioniICI.WServiceOPENae.NaturaOccupazione
+  langs:
+  - csharp
+  - vb
+  name: NucleoFamiliare
+  nameWithType: NaturaOccupazione.NucleoFamiliare
+  fullName: DichiarazioniICI.WServiceOPENae.NaturaOccupazione.NucleoFamiliare
+  type: Field
+  source:
+    id: NucleoFamiliare
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1185
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: NucleoFamiliare = 2
+    return:
+      type: DichiarazioniICI.WServiceOPENae.NaturaOccupazione
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.WServiceOPENae.NaturaOccupazione.AttivitaCommerciale
+  commentId: F:DichiarazioniICI.WServiceOPENae.NaturaOccupazione.AttivitaCommerciale
+  id: AttivitaCommerciale
+  parent: DichiarazioniICI.WServiceOPENae.NaturaOccupazione
+  langs:
+  - csharp
+  - vb
+  name: AttivitaCommerciale
+  nameWithType: NaturaOccupazione.AttivitaCommerciale
+  fullName: DichiarazioniICI.WServiceOPENae.NaturaOccupazione.AttivitaCommerciale
+  type: Field
+  source:
+    id: AttivitaCommerciale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1188
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: AttivitaCommerciale = 3
+    return:
+      type: DichiarazioniICI.WServiceOPENae.NaturaOccupazione
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.WServiceOPENae.NaturaOccupazione.AltraTipologia
+  commentId: F:DichiarazioniICI.WServiceOPENae.NaturaOccupazione.AltraTipologia
+  id: AltraTipologia
+  parent: DichiarazioniICI.WServiceOPENae.NaturaOccupazione
+  langs:
+  - csharp
+  - vb
+  name: AltraTipologia
+  nameWithType: NaturaOccupazione.AltraTipologia
+  fullName: DichiarazioniICI.WServiceOPENae.NaturaOccupazione.AltraTipologia
+  type: Field
+  source:
+    id: AltraTipologia
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1191
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: AltraTipologia = 4
+    return:
+      type: DichiarazioniICI.WServiceOPENae.NaturaOccupazione
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: DichiarazioniICI.WServiceOPENae
+  commentId: N:DichiarazioniICI.WServiceOPENae
+  name: DichiarazioniICI.WServiceOPENae
+  nameWithType: DichiarazioniICI.WServiceOPENae
+  fullName: DichiarazioniICI.WServiceOPENae
+- uid: DichiarazioniICI.WServiceOPENae.NaturaOccupazione
+  commentId: T:DichiarazioniICI.WServiceOPENae.NaturaOccupazione
+  parent: DichiarazioniICI.WServiceOPENae
+  name: NaturaOccupazione
+  nameWithType: NaturaOccupazione
+  fullName: DichiarazioniICI.WServiceOPENae.NaturaOccupazione

@@ -1,0 +1,2083 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" Condition="Exists('packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" />
+  <Import Project="packages\Microsoft.NetFramework.Analyzers.2.9.8\build\Microsoft.NetFramework.Analyzers.props" Condition="Exists('packages\Microsoft.NetFramework.Analyzers.2.9.8\build\Microsoft.NetFramework.Analyzers.props')" />
+  <Import Project="packages\Microsoft.NetCore.Analyzers.2.9.8\build\Microsoft.NetCore.Analyzers.props" Condition="Exists('packages\Microsoft.NetCore.Analyzers.2.9.8\build\Microsoft.NetCore.Analyzers.props')" />
+  <Import Project="packages\Microsoft.CodeQuality.Analyzers.2.9.8\build\Microsoft.CodeQuality.Analyzers.props" Condition="Exists('packages\Microsoft.CodeQuality.Analyzers.2.9.8\build\Microsoft.CodeQuality.Analyzers.props')" />
+  <Import Project="..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" />
+  <Import Project="..\packages\Text.Analyzers.2.6.3\build\Text.Analyzers.props" Condition="Exists('..\packages\Text.Analyzers.2.6.3\build\Text.Analyzers.props')" />
+  <Import Project="..\packages\Microsoft.NetFramework.Analyzers.2.6.3\build\Microsoft.NetFramework.Analyzers.props" Condition="Exists('..\packages\Microsoft.NetFramework.Analyzers.2.6.3\build\Microsoft.NetFramework.Analyzers.props')" />
+  <Import Project="..\packages\Microsoft.NetCore.Analyzers.2.6.3\build\Microsoft.NetCore.Analyzers.props" Condition="Exists('..\packages\Microsoft.NetCore.Analyzers.2.6.3\build\Microsoft.NetCore.Analyzers.props')" />
+  <Import Project="..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\build\Microsoft.CodeQuality.Analyzers.props" Condition="Exists('..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\build\Microsoft.CodeQuality.Analyzers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{71F6AE02-83EC-4945-8C11-31B34EA6B5CD}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>OpenUtenze</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>OpenUtenze</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <WebReference_EnableProperties>true</WebReference_EnableProperties>
+    <WebReference_EnableSQLTypes>false</WebReference_EnableSQLTypes>
+    <WebReference_EnableLegacyEventingModel>true</WebReference_EnableLegacyEventingModel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>OpenUtenze.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>OpenUtenze.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AgenziaEntrateDLL">
+      <HintPath>..\..\..\DLLComuni\AgenziaEntrateDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="AnagInterface">
+      <HintPath>..\..\..\DLLComuni\AnagInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="Anagrafica">
+      <HintPath>..\..\..\DLLComuni\Anagrafica.dll</HintPath>
+    </Reference>
+    <Reference Include="ElaborazioneDatiStampeInterface">
+      <HintPath>..\..\..\DLLComuni\ElaborazioneDatiStampeInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\DLLComuni\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLComuni\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="OggettiComuniStrade">
+      <HintPath>..\..\..\DLLComuni\OggettiComuniStrade.dll</HintPath>
+    </Reference>
+    <Reference Include="OPENgov_AgenziaEntrate">
+      <HintPath>..\..\..\DLLComuni\OPENgov_AgenziaEntrate.dll</HintPath>
+    </Reference>
+    <Reference Include="OPENUtility">
+      <HintPath>..\..\..\DLLComuni\OPENUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="RemotingInterfaceAnater">
+      <HintPath>..\..\..\DLLComuni\RemotingInterfaceAnater.dll</HintPath>
+    </Reference>
+    <Reference Include="RemotingInterfaceMotoreH2O">
+      <HintPath>..\..\..\DLLComuni\RemotingInterfaceMotoreH2O.dll</HintPath>
+    </Reference>
+    <Reference Include="RemotingInterfaceMotoreTarsu">
+      <HintPath>..\..\..\DLLComuni\RemotingInterfaceMotoreTarsu.dll</HintPath>
+    </Reference>
+    <Reference Include="Ribes.OPENgov.WebControls">
+      <HintPath>..\..\..\DLLComuni\Ribes.OPENgov.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="RIBESElaborazioneDocumentiInterface">
+      <HintPath>..\..\..\DLLComuni\RIBESElaborazioneDocumentiInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="RKLib.ExportData">
+      <HintPath>..\..\..\DLLComuni\RKLib.ExportData.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <Reference Include="Utility, Version=1.0.7495.28013, Culture=neutral, PublicKeyToken=ae1027569650564c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLComuni\Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="WebChart">
+      <HintPath>..\..\..\DLLComuni\WebChart.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.HtmlControls" />
+    <Import Include="System.Web.UI.WebControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AgenziaEntrate\DatiMancanti\ComandiRicDatiMancanti.aspx" />
+    <Content Include="AgenziaEntrate\DatiMancanti\ResultDatiMancanti.aspx" />
+    <Content Include="AgenziaEntrate\DatiMancanti\RicercaDatiMancanti.aspx" />
+    <Content Include="AgenziaEntrate\GestTracciati\ComandiTracciati.aspx" />
+    <Content Include="AgenziaEntrate\GestTracciati\Tracciati.aspx" />
+    <Content Include="Analisi\FatturatoIncassato\ChartAnalisiEconomiche.aspx" />
+    <Content Include="Analisi\FatturatoIncassato\ComandiAnalisiEconomiche.aspx" />
+    <Content Include="Analisi\FatturatoIncassato\ResultAnalisiEconomiche.aspx" />
+    <Content Include="Analisi\FatturatoIncassato\RicercaAnalisiEconomiche.aspx" />
+    <Content Include="ComandiRicerca\ComandiRicerca.aspx" />
+    <Content Include="ComandiRicerca\ComandiRicercaLettere.aspx" />
+    <Content Include="DataEntryContatori\ComandiContratti.aspx" />
+    <Content Include="DataEntryContatori\ComandiDataEntryContatori.aspx" />
+    <Content Include="DataEntryContatori\ComandiRicercaContatori.aspx" />
+    <Content Include="DataEntryContatori\Contratti.aspx" />
+    <Content Include="DataEntryContatori\DatiGenerali.aspx" />
+    <Content Include="DataEntryContatori\FrameAttivaContatore.aspx" />
+    <Content Include="DataEntryContatori\FrameContratti.aspx" />
+    <Content Include="DataEntryContatori\FrameInserisciDatoCatasto.aspx" />
+    <Content Include="DataEntryContatori\FrameModificaDatoCatasto.aspx" />
+    <Content Include="DataEntryContatori\FrameSostituzione.aspx" />
+    <Content Include="DataEntryContatori\FrameSubContatore.aspx" />
+    <Content Include="DataEntryContatori\RicercaContatori.aspx" />
+    <Content Include="DataEntryContatori\SearchResultsCatasto.aspx" />
+    <Content Include="DataEntryContatori\SearchResultsContatori.aspx" />
+    <Content Include="DataEntryContatori\SearchResultsSubContatori.aspx" />
+    <Content Include="DataEntryContratti\ComandiDataEntryContratti.aspx" />
+    <Content Include="DataEntryContratti\DatiGeneraliContr.aspx" />
+    <Content Include="DataEntryContratti\FrameAttivazione.aspx" />
+    <Content Include="DataEntryContratti\FrameCessazione.aspx" />
+    <Content Include="DataEntryContratti\RicercaContratti.aspx" />
+    <Content Include="DataEntryContratti\SearchResultsContratti.aspx" />
+    <Content Include="DataEntryContratti\SearchResultsDocumenti.aspx" />
+    <Content Include="DataEntryLetture\ComandiDataEntry.aspx" />
+    <Content Include="DataEntryLetture\ComandiLetture.aspx" />
+    <Content Include="DataEntryLetture\RicercaLetture.aspx" />
+    <Content Include="DataEntryLetture\SearchResultsContatoriLetture.aspx" />
+    <Content Include="Documenti\ComandiDocumenti.aspx" />
+    <Content Include="Documenti\ComandiDocumentiElaborati.aspx" />
+    <Content Include="Documenti\RicercaDocumenti.aspx" />
+    <Content Include="Documenti\RisultatiDocumenti.aspx" />
+    <Content Include="Documenti\StampaInCorso.aspx" />
+    <Content Include="Documenti\ViewDocumentiElaborati.aspx" />
+    <Content Include="Fatturazione\AnalisiScaglioni\comandiScaglioni.aspx" />
+    <Content Include="Fatturazione\AnalisiScaglioni\Scaglioni.aspx" />
+    <Content Include="Fatturazione\ComandiFatturazione.aspx" />
+    <Content Include="Fatturazione\DettaglioFatturazione\ComandiDettFatturazione.aspx" />
+    <Content Include="Fatturazione\DettaglioFatturazione\ComandiRicFatturazione.aspx" />
+    <Content Include="Fatturazione\DettaglioFatturazione\DettaglioFatturazione.aspx" />
+    <Content Include="Fatturazione\DettaglioFatturazione\DettFatturaAddizionali.aspx" />
+    <Content Include="Fatturazione\DettaglioFatturazione\DettFatturaCanoni.aspx" />
+    <Content Include="Fatturazione\DettaglioFatturazione\DettFatturaDettaglioIva.aspx" />
+    <Content Include="Fatturazione\DettaglioFatturazione\DettFatturaNolo.aspx" />
+    <Content Include="Fatturazione\DettaglioFatturazione\DettFatturaQuotaFissa.aspx" />
+    <Content Include="Fatturazione\DettaglioFatturazione\DettFatturaScaglioni.aspx" />
+    <Content Include="Fatturazione\DettaglioFatturazione\ResultRicFatturazione.aspx" />
+    <Content Include="Fatturazione\DettaglioFatturazione\RicercaFatturazione.aspx" />
+    <Content Include="Fatturazione\Fatturazione.aspx" />
+    <Content Include="Fatturazione\RibaltaVariazioni\ComandiRibaltaVar.aspx" />
+    <Content Include="Fatturazione\RibaltaVariazioni\GestRibaltaVar.aspx" />
+    <Content Include="GestionePagamenti\CRicercaPagamenti.aspx" />
+    <Content Include="GestionePagamenti\Inserimento\CInserimentoPagamenti.aspx" />
+    <Content Include="GestionePagamenti\Inserimento\InserimentoPagamenti.aspx" />
+    <Content Include="GestionePagamenti\Inserimento\ResultRicercaFatture.aspx" />
+    <Content Include="GestionePagamenti\Inserimento\RicercaFatture.aspx" />
+    <Content Include="GestionePagamenti\ResultRicercaPagamenti.aspx" />
+    <Content Include="GestionePagamenti\RicercaPagamenti.aspx" />
+    <Content Include="GestioneTabelleCalcolo\Addizionali\CConfiguraAddizionali.aspx" />
+    <Content Include="GestioneTabelleCalcolo\Addizionali\ConfiguraAddizionali.aspx" />
+    <Content Include="GestioneTabelleCalcolo\Addizionali\CRicercaAddizionali.aspx" />
+    <Content Include="GestioneTabelleCalcolo\Addizionali\ResultRicercaAddizionali.aspx" />
+    <Content Include="GestioneTabelleCalcolo\Addizionali\RicercaAddizionali.aspx" />
+    <Content Include="GestioneTabelleCalcolo\Canoni\CConfiguraCanoni.aspx" />
+    <Content Include="GestioneTabelleCalcolo\Canoni\ConfiguraCanoni.aspx" />
+    <Content Include="GestioneTabelleCalcolo\Canoni\CRicercaCanoni.aspx" />
+    <Content Include="GestioneTabelleCalcolo\Canoni\ResultRicercaCanoni.aspx" />
+    <Content Include="GestioneTabelleCalcolo\Canoni\RicercaCanoni.aspx" />
+    <Content Include="GestioneTabelleCalcolo\ComandiConfiguraDescrizioni.aspx" />
+    <Content Include="GestioneTabelleCalcolo\ComandiRicercaDescrizioni.aspx" />
+    <Content Include="GestioneTabelleCalcolo\ConfiguraDescrizioni.aspx" />
+    <Content Include="GestioneTabelleCalcolo\NoloContatori\CConfiguraNoloC.aspx" />
+    <Content Include="GestioneTabelleCalcolo\NoloContatori\ConfiguraNoloC.aspx" />
+    <Content Include="GestioneTabelleCalcolo\NoloContatori\CRicercaNoloC.aspx" />
+    <Content Include="GestioneTabelleCalcolo\NoloContatori\ResultRicercaNoloC.aspx" />
+    <Content Include="GestioneTabelleCalcolo\NoloContatori\RicercaNoloC.aspx" />
+    <Content Include="GestioneTabelleCalcolo\QuotaFissa\CConfiguraQuotaFissa.aspx" />
+    <Content Include="GestioneTabelleCalcolo\QuotaFissa\ConfiguraQuotaFissa.aspx" />
+    <Content Include="GestioneTabelleCalcolo\QuotaFissa\CRicercaQuotaFissa.aspx" />
+    <Content Include="GestioneTabelleCalcolo\QuotaFissa\ResultRicercaQuotaFissa.aspx" />
+    <Content Include="GestioneTabelleCalcolo\QuotaFissa\RicercaQuotaFissa.aspx" />
+    <Content Include="GestioneTabelleCalcolo\ResultRicercaDescrizioni.aspx" />
+    <Content Include="GestioneTabelleCalcolo\RicercaDescrizioni.aspx" />
+    <Content Include="GestioneTabelleCalcolo\Scaglioni\CConfiguraScaglioni.aspx" />
+    <Content Include="GestioneTabelleCalcolo\Scaglioni\ConfiguraScaglioni.aspx" />
+    <Content Include="GestioneTabelleCalcolo\Scaglioni\CRicercaScaglioni.aspx" />
+    <Content Include="GestioneTabelleCalcolo\Scaglioni\ResultRicercaScaglioni.aspx" />
+    <Content Include="GestioneTabelleCalcolo\Scaglioni\RicercaScaglioni.aspx" />
+    <Content Include="GestioneTabelleDecodifica\Anomalie.aspx" />
+    <Content Include="GestioneTabelleDecodifica\Attivita.aspx" />
+    <Content Include="GestioneTabelleDecodifica\ComandiGestioneTabelle.aspx" />
+    <Content Include="GestioneTabelleDecodifica\ComandiGestioneTabelleSistema.aspx" />
+    <Content Include="GestioneTabelleDecodifica\ComandiOperazioniSuTabelle.aspx" />
+    <Content Include="GestioneTabelleDecodifica\ComandiOperazioniSuTabelleSistema.aspx" />
+    <Content Include="GestioneTabelleDecodifica\Depurazione.aspx" />
+    <Content Include="GestioneTabelleDecodifica\DiametroContatori.aspx" />
+    <Content Include="GestioneTabelleDecodifica\DiametroPresa.aspx" />
+    <Content Include="GestioneTabelleDecodifica\Fognatura.aspx" />
+    <Content Include="GestioneTabelleDecodifica\Giri.aspx" />
+    <Content Include="GestioneTabelleDecodifica\IVA.aspx" />
+    <Content Include="GestioneTabelleDecodifica\Minimi.aspx" />
+    <Content Include="GestioneTabelleDecodifica\Periodo.aspx" />
+    <Content Include="GestioneTabelleDecodifica\PosizioneContatore.aspx" />
+    <Content Include="GestioneTabelleDecodifica\SearchAnomalia.aspx" />
+    <Content Include="GestioneTabelleDecodifica\SearchAttivita.aspx" />
+    <Content Include="GestioneTabelleDecodifica\SearchDepurazione.aspx" />
+    <Content Include="GestioneTabelleDecodifica\SearchDiametroContatori.aspx" />
+    <Content Include="GestioneTabelleDecodifica\SearchDiametroPresa.aspx" />
+    <Content Include="GestioneTabelleDecodifica\SearchFognatura.aspx" />
+    <Content Include="GestioneTabelleDecodifica\SearchGiri.aspx" />
+    <Content Include="GestioneTabelleDecodifica\SearchIVA.aspx" />
+    <Content Include="GestioneTabelleDecodifica\SearchMinimo.aspx" />
+    <Content Include="GestioneTabelleDecodifica\SearchPeriodo.aspx" />
+    <Content Include="GestioneTabelleDecodifica\SearchPosizioneContatore.aspx" />
+    <Content Include="GestioneTabelleDecodifica\SearchTipiContatore.aspx" />
+    <Content Include="GestioneTabelleDecodifica\SearchTipiImpianto.aspx" />
+    <Content Include="GestioneTabelleDecodifica\SearchTipiUtenze.aspx" />
+    <Content Include="GestioneTabelleDecodifica\TipiImpianto.aspx" />
+    <Content Include="GestioneTabelleDecodifica\TipiUtenze.aspx" />
+    <Content Include="GestioneTabelleDecodifica\TipoContatore.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Importazione\CmdImportCMGC.aspx" />
+    <Content Include="Importazione\ImportCMGC.aspx" />
+    <Content Include="Letture\ComandiLetture.aspx" />
+    <Content Include="Letture\ComandiModLetture.aspx" />
+    <Content Include="Letture\DettLetture.aspx" />
+    <Content Include="Letture\ExecContatori.aspx" />
+    <Content Include="Letture\ExecDataLettura.aspx" />
+    <Content Include="Letture\ExecLettura.aspx" />
+    <Content Include="Letture\FrameInserimentoModifica.aspx" />
+    <Content Include="Letture\FrameLetture.aspx" />
+    <Content Include="Letture\ImportazioneLetture\AcquisizioneLetture.aspx" />
+    <Content Include="Letture\ImportazioneLetture\CmdImporatzioneLetture.aspx" />
+    <Content Include="Letture\Letture.aspx" />
+    <Content Include="Letture\ModLettureHome.aspx" />
+    <Content Include="RicercaAnater\ComandiRicImmobile.aspx" />
+    <Content Include="RicercaAnater\FrmRicercaImmobile.aspx" />
+    <Content Include="RicercaAnater\ResultRicImmobile.aspx" />
+    <Content Include="RicercaAnater\RicercaImmobile.aspx" />
+    <Compile Include="AgenziaEntrate\DatiMancanti\ComandiRicDatiMancanti.aspx.designer.vb">
+      <DependentUpon>ComandiRicDatiMancanti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgenziaEntrate\DatiMancanti\ComandiRicDatiMancanti.aspx.vb">
+      <DependentUpon>ComandiRicDatiMancanti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgenziaEntrate\DatiMancanti\ResultDatiMancanti.aspx.designer.vb">
+      <DependentUpon>ResultDatiMancanti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgenziaEntrate\DatiMancanti\ResultDatiMancanti.aspx.vb">
+      <DependentUpon>ResultDatiMancanti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgenziaEntrate\DatiMancanti\RicercaDatiMancanti.aspx.designer.vb">
+      <DependentUpon>RicercaDatiMancanti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgenziaEntrate\DatiMancanti\RicercaDatiMancanti.aspx.vb">
+      <DependentUpon>RicercaDatiMancanti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgenziaEntrate\GestTracciati\ComandiTracciati.aspx.designer.vb">
+      <DependentUpon>ComandiTracciati.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgenziaEntrate\GestTracciati\ComandiTracciati.aspx.vb">
+      <DependentUpon>ComandiTracciati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgenziaEntrate\GestTracciati\Tracciati.aspx.designer.vb">
+      <DependentUpon>Tracciati.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgenziaEntrate\GestTracciati\Tracciati.aspx.vb">
+      <DependentUpon>Tracciati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analisi\FatturatoIncassato\ChartAnalisiEconomiche.aspx.designer.vb">
+      <DependentUpon>ChartAnalisiEconomiche.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analisi\FatturatoIncassato\ChartAnalisiEconomiche.aspx.vb">
+      <DependentUpon>ChartAnalisiEconomiche.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analisi\FatturatoIncassato\ComandiAnalisiEconomiche.aspx.designer.vb">
+      <DependentUpon>ComandiAnalisiEconomiche.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analisi\FatturatoIncassato\ComandiAnalisiEconomiche.aspx.vb">
+      <DependentUpon>ComandiAnalisiEconomiche.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analisi\FatturatoIncassato\ResultAnalisiEconomiche.aspx.designer.vb">
+      <DependentUpon>ResultAnalisiEconomiche.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analisi\FatturatoIncassato\ResultAnalisiEconomiche.aspx.vb">
+      <DependentUpon>ResultAnalisiEconomiche.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analisi\FatturatoIncassato\RicercaAnalisiEconomiche.aspx.designer.vb">
+      <DependentUpon>RicercaAnalisiEconomiche.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analisi\FatturatoIncassato\RicercaAnalisiEconomiche.aspx.vb">
+      <DependentUpon>RicercaAnalisiEconomiche.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComandiRicerca\ComandiRicerca.aspx.designer.vb">
+      <DependentUpon>ComandiRicerca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ComandiRicerca\ComandiRicerca.aspx.vb">
+      <DependentUpon>ComandiRicerca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComandiRicerca\ComandiRicercaLettere.aspx.designer.vb">
+      <DependentUpon>ComandiRicercaLettere.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ComandiRicerca\ComandiRicercaLettere.aspx.vb">
+      <DependentUpon>ComandiRicercaLettere.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\Contratti.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\CreateFileSLK.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\DEContatori.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\DEContratti.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\Enti.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\Generali.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\Letture.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Costanti\Costanti.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataEntryContatori\ComandiContratti.aspx.designer.vb">
+      <DependentUpon>ComandiContratti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryContatori\ComandiContratti.aspx.vb">
+      <DependentUpon>ComandiContratti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryContatori\ComandiDataEntryContatori.aspx.designer.vb">
+      <DependentUpon>ComandiDataEntryContatori.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryContatori\ComandiDataEntryContatori.aspx.vb">
+      <DependentUpon>ComandiDataEntryContatori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryContatori\ComandiRicercaContatori.aspx.designer.vb">
+      <DependentUpon>ComandiRicercaContatori.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryContatori\ComandiRicercaContatori.aspx.vb">
+      <DependentUpon>ComandiRicercaContatori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryContatori\Contratti.aspx.designer.vb">
+      <DependentUpon>Contratti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryContatori\Contratti.aspx.vb">
+      <DependentUpon>Contratti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryContatori\DatiGenerali.aspx.designer.vb">
+      <DependentUpon>DatiGenerali.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryContatori\DatiGenerali.aspx.vb">
+      <DependentUpon>DatiGenerali.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryContatori\FrameAttivaContatore.aspx.designer.vb">
+      <DependentUpon>FrameAttivaContatore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryContatori\FrameAttivaContatore.aspx.vb">
+      <DependentUpon>FrameAttivaContatore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryContatori\FrameContratti.aspx.designer.vb">
+      <DependentUpon>FrameContratti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryContatori\FrameContratti.aspx.vb">
+      <DependentUpon>FrameContratti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryContatori\FrameInserisciDatoCatasto.aspx.designer.vb">
+      <DependentUpon>FrameInserisciDatoCatasto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryContatori\FrameInserisciDatoCatasto.aspx.vb">
+      <DependentUpon>FrameInserisciDatoCatasto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryContatori\FrameModificaDatoCatasto.aspx.designer.vb">
+      <DependentUpon>FrameModificaDatoCatasto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryContatori\FrameModificaDatoCatasto.aspx.vb">
+      <DependentUpon>FrameModificaDatoCatasto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryContatori\FrameSostituzione.aspx.designer.vb">
+      <DependentUpon>FrameSostituzione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryContatori\FrameSostituzione.aspx.vb">
+      <DependentUpon>FrameSostituzione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryContatori\FrameSubContatore.aspx.designer.vb">
+      <DependentUpon>FrameSubContatore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryContatori\FrameSubContatore.aspx.vb">
+      <DependentUpon>FrameSubContatore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryContatori\RicercaContatori.aspx.designer.vb">
+      <DependentUpon>RicercaContatori.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryContatori\RicercaContatori.aspx.vb">
+      <DependentUpon>RicercaContatori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryContatori\SearchResultsCatasto.aspx.designer.vb">
+      <DependentUpon>SearchResultsCatasto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryContatori\SearchResultsCatasto.aspx.vb">
+      <DependentUpon>SearchResultsCatasto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryContatori\SearchResultsContatori.aspx.designer.vb">
+      <DependentUpon>SearchResultsContatori.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryContatori\SearchResultsContatori.aspx.vb">
+      <DependentUpon>SearchResultsContatori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryContatori\SearchResultsSubContatori.aspx.designer.vb">
+      <DependentUpon>SearchResultsSubContatori.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryContatori\SearchResultsSubContatori.aspx.vb">
+      <DependentUpon>SearchResultsSubContatori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryContratti\ComandiDataEntryContratti.aspx.designer.vb">
+      <DependentUpon>ComandiDataEntryContratti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryContratti\ComandiDataEntryContratti.aspx.vb">
+      <DependentUpon>ComandiDataEntryContratti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryContratti\DatiGeneraliContr.aspx.designer.vb">
+      <DependentUpon>DatiGeneraliContr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryContratti\DatiGeneraliContr.aspx.vb">
+      <DependentUpon>DatiGeneraliContr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryContratti\FrameAttivazione.aspx.designer.vb">
+      <DependentUpon>FrameAttivazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryContratti\FrameAttivazione.aspx.vb">
+      <DependentUpon>FrameAttivazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryContratti\FrameCessazione.aspx.designer.vb">
+      <DependentUpon>FrameCessazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryContratti\FrameCessazione.aspx.vb">
+      <DependentUpon>FrameCessazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryContratti\RicercaContratti.aspx.designer.vb">
+      <DependentUpon>RicercaContratti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryContratti\RicercaContratti.aspx.vb">
+      <DependentUpon>RicercaContratti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryContratti\SearchResultsContratti.aspx.designer.vb">
+      <DependentUpon>SearchResultsContratti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryContratti\SearchResultsContratti.aspx.vb">
+      <DependentUpon>SearchResultsContratti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryContratti\SearchResultsDocumenti.aspx.designer.vb">
+      <DependentUpon>SearchResultsDocumenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryContratti\SearchResultsDocumenti.aspx.vb">
+      <DependentUpon>SearchResultsDocumenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryLetture\ComandiDataEntry.aspx.designer.vb">
+      <DependentUpon>ComandiDataEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryLetture\ComandiDataEntry.aspx.vb">
+      <DependentUpon>ComandiDataEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryLetture\ComandiLetture.aspx.designer.vb">
+      <DependentUpon>ComandiLetture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryLetture\ComandiLetture.aspx.vb">
+      <DependentUpon>ComandiLetture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryLetture\RicercaLetture.aspx.designer.vb">
+      <DependentUpon>RicercaLetture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryLetture\RicercaLetture.aspx.vb">
+      <DependentUpon>RicercaLetture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataEntryLetture\SearchResultsContatoriLetture.aspx.designer.vb">
+      <DependentUpon>SearchResultsContatoriLetture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryLetture\SearchResultsContatoriLetture.aspx.vb">
+      <DependentUpon>SearchResultsContatoriLetture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\clsLetture.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\DBAccess.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\SostiuzioneContatore.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\VariazioniContrattuali.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Documenti\ComandiDocumenti.aspx.designer.vb">
+      <DependentUpon>ComandiDocumenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documenti\ComandiDocumenti.aspx.vb">
+      <DependentUpon>ComandiDocumenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documenti\ComandiDocumentiElaborati.aspx.designer.vb">
+      <DependentUpon>ComandiDocumentiElaborati.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documenti\ComandiDocumentiElaborati.aspx.vb">
+      <DependentUpon>ComandiDocumentiElaborati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documenti\RicercaDocumenti.aspx.designer.vb">
+      <DependentUpon>RicercaDocumenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documenti\RicercaDocumenti.aspx.vb">
+      <DependentUpon>RicercaDocumenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documenti\RisultatiDocumenti.aspx.designer.vb">
+      <DependentUpon>RisultatiDocumenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documenti\RisultatiDocumenti.aspx.vb">
+      <DependentUpon>RisultatiDocumenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documenti\StampaInCorso.aspx.designer.vb">
+      <DependentUpon>StampaInCorso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documenti\StampaInCorso.aspx.vb">
+      <DependentUpon>StampaInCorso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documenti\ViewDocumentiElaborati.aspx.designer.vb">
+      <DependentUpon>ViewDocumentiElaborati.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documenti\ViewDocumentiElaborati.aspx.vb">
+      <DependentUpon>ViewDocumentiElaborati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fatturazione\AnalisiScaglioni\comandiScaglioni.aspx.designer.vb">
+      <DependentUpon>comandiScaglioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fatturazione\AnalisiScaglioni\comandiScaglioni.aspx.vb">
+      <DependentUpon>comandiScaglioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fatturazione\AnalisiScaglioni\Scaglioni.aspx.designer.vb">
+      <DependentUpon>Scaglioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fatturazione\AnalisiScaglioni\Scaglioni.aspx.vb">
+      <DependentUpon>Scaglioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fatturazione\ComandiFatturazione.aspx.designer.vb">
+      <DependentUpon>ComandiFatturazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fatturazione\ComandiFatturazione.aspx.vb">
+      <DependentUpon>ComandiFatturazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fatturazione\DettaglioFatturazione\ComandiDettFatturazione.aspx.designer.vb">
+      <DependentUpon>ComandiDettFatturazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fatturazione\DettaglioFatturazione\ComandiDettFatturazione.aspx.vb">
+      <DependentUpon>ComandiDettFatturazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fatturazione\DettaglioFatturazione\ComandiRicFatturazione.aspx.designer.vb">
+      <DependentUpon>ComandiRicFatturazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fatturazione\DettaglioFatturazione\ComandiRicFatturazione.aspx.vb">
+      <DependentUpon>ComandiRicFatturazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fatturazione\DettaglioFatturazione\DettaglioFatturazione.aspx.designer.vb">
+      <DependentUpon>DettaglioFatturazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fatturazione\DettaglioFatturazione\DettaglioFatturazione.aspx.vb">
+      <DependentUpon>DettaglioFatturazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fatturazione\DettaglioFatturazione\DettFatturaAddizionali.aspx.designer.vb">
+      <DependentUpon>DettFatturaAddizionali.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fatturazione\DettaglioFatturazione\DettFatturaAddizionali.aspx.vb">
+      <DependentUpon>DettFatturaAddizionali.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fatturazione\DettaglioFatturazione\DettFatturaCanoni.aspx.designer.vb">
+      <DependentUpon>DettFatturaCanoni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fatturazione\DettaglioFatturazione\DettFatturaCanoni.aspx.vb">
+      <DependentUpon>DettFatturaCanoni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fatturazione\DettaglioFatturazione\DettFatturaDettaglioIva.aspx.designer.vb">
+      <DependentUpon>DettFatturaDettaglioIva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fatturazione\DettaglioFatturazione\DettFatturaDettaglioIva.aspx.vb">
+      <DependentUpon>DettFatturaDettaglioIva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fatturazione\DettaglioFatturazione\DettFatturaNolo.aspx.designer.vb">
+      <DependentUpon>DettFatturaNolo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fatturazione\DettaglioFatturazione\DettFatturaNolo.aspx.vb">
+      <DependentUpon>DettFatturaNolo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fatturazione\DettaglioFatturazione\DettFatturaQuotaFissa.aspx.designer.vb">
+      <DependentUpon>DettFatturaQuotaFissa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fatturazione\DettaglioFatturazione\DettFatturaQuotaFissa.aspx.vb">
+      <DependentUpon>DettFatturaQuotaFissa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fatturazione\DettaglioFatturazione\DettFatturaScaglioni.aspx.designer.vb">
+      <DependentUpon>DettFatturaScaglioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fatturazione\DettaglioFatturazione\DettFatturaScaglioni.aspx.vb">
+      <DependentUpon>DettFatturaScaglioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fatturazione\DettaglioFatturazione\ResultRicFatturazione.aspx.designer.vb">
+      <DependentUpon>ResultRicFatturazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fatturazione\DettaglioFatturazione\ResultRicFatturazione.aspx.vb">
+      <DependentUpon>ResultRicFatturazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fatturazione\DettaglioFatturazione\RicercaFatturazione.aspx.designer.vb">
+      <DependentUpon>RicercaFatturazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fatturazione\DettaglioFatturazione\RicercaFatturazione.aspx.vb">
+      <DependentUpon>RicercaFatturazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fatturazione\Fatturazione.aspx.designer.vb">
+      <DependentUpon>Fatturazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fatturazione\Fatturazione.aspx.vb">
+      <DependentUpon>Fatturazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fatturazione\RibaltaVariazioni\ComandiRibaltaVar.aspx.designer.vb">
+      <DependentUpon>ComandiRibaltaVar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fatturazione\RibaltaVariazioni\ComandiRibaltaVar.aspx.vb">
+      <DependentUpon>ComandiRibaltaVar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fatturazione\RibaltaVariazioni\GestRibaltaVar.aspx.designer.vb">
+      <DependentUpon>GestRibaltaVar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fatturazione\RibaltaVariazioni\GestRibaltaVar.aspx.vb">
+      <DependentUpon>GestRibaltaVar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\ClsAddizionali.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\ClsAESpesometro.vb" />
+    <Compile Include="Generali\classi\ClsAgenziaEntrate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\ClsAnalisi.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\ClsCanoni.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\ClsElaborazioneDocumenti.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\clsFatEleSchema.vb" />
+    <Compile Include="Generali\classi\ClsFatturazione.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\ClsGenerale.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\ClsImport.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\ClsNoliContatore.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\ClsPagamenti.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\ClsQuotaFissa.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\ClsRibaltaVar.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\ClsScaglioni.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\ClsStampaXLS.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\ClsTraduciRibaltamento.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\DataSetForGrid.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\DBManager.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\GestioneFile.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\ModificaDate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\Utility.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionePagamenti\CRicercaPagamenti.aspx.designer.vb">
+      <DependentUpon>CRicercaPagamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestionePagamenti\CRicercaPagamenti.aspx.vb">
+      <DependentUpon>CRicercaPagamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionePagamenti\Inserimento\CInserimentoPagamenti.aspx.designer.vb">
+      <DependentUpon>CInserimentoPagamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestionePagamenti\Inserimento\CInserimentoPagamenti.aspx.vb">
+      <DependentUpon>CInserimentoPagamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionePagamenti\Inserimento\InserimentoPagamenti.aspx.designer.vb">
+      <DependentUpon>InserimentoPagamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestionePagamenti\Inserimento\InserimentoPagamenti.aspx.vb">
+      <DependentUpon>InserimentoPagamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionePagamenti\Inserimento\ResultRicercaFatture.aspx.designer.vb">
+      <DependentUpon>ResultRicercaFatture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestionePagamenti\Inserimento\ResultRicercaFatture.aspx.vb">
+      <DependentUpon>ResultRicercaFatture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionePagamenti\Inserimento\RicercaFatture.aspx.designer.vb">
+      <DependentUpon>RicercaFatture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestionePagamenti\Inserimento\RicercaFatture.aspx.vb">
+      <DependentUpon>RicercaFatture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionePagamenti\ResultRicercaPagamenti.aspx.designer.vb">
+      <DependentUpon>ResultRicercaPagamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestionePagamenti\ResultRicercaPagamenti.aspx.vb">
+      <DependentUpon>ResultRicercaPagamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionePagamenti\RicercaPagamenti.aspx.designer.vb">
+      <DependentUpon>RicercaPagamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestionePagamenti\RicercaPagamenti.aspx.vb">
+      <DependentUpon>RicercaPagamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Addizionali\CConfiguraAddizionali.aspx.designer.vb">
+      <DependentUpon>CConfiguraAddizionali.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Addizionali\CConfiguraAddizionali.aspx.vb">
+      <DependentUpon>CConfiguraAddizionali.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Addizionali\ConfiguraAddizionali.aspx.designer.vb">
+      <DependentUpon>ConfiguraAddizionali.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Addizionali\ConfiguraAddizionali.aspx.vb">
+      <DependentUpon>ConfiguraAddizionali.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Addizionali\CRicercaAddizionali.aspx.designer.vb">
+      <DependentUpon>CRicercaAddizionali.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Addizionali\CRicercaAddizionali.aspx.vb">
+      <DependentUpon>CRicercaAddizionali.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Addizionali\ResultRicercaAddizionali.aspx.designer.vb">
+      <DependentUpon>ResultRicercaAddizionali.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Addizionali\ResultRicercaAddizionali.aspx.vb">
+      <DependentUpon>ResultRicercaAddizionali.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Addizionali\RicercaAddizionali.aspx.designer.vb">
+      <DependentUpon>RicercaAddizionali.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Addizionali\RicercaAddizionali.aspx.vb">
+      <DependentUpon>RicercaAddizionali.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Canoni\CConfiguraCanoni.aspx.designer.vb">
+      <DependentUpon>CConfiguraCanoni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Canoni\CConfiguraCanoni.aspx.vb">
+      <DependentUpon>CConfiguraCanoni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Canoni\ConfiguraCanoni.aspx.designer.vb">
+      <DependentUpon>ConfiguraCanoni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Canoni\ConfiguraCanoni.aspx.vb">
+      <DependentUpon>ConfiguraCanoni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Canoni\CRicercaCanoni.aspx.designer.vb">
+      <DependentUpon>CRicercaCanoni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Canoni\CRicercaCanoni.aspx.vb">
+      <DependentUpon>CRicercaCanoni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Canoni\ResultRicercaCanoni.aspx.designer.vb">
+      <DependentUpon>ResultRicercaCanoni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Canoni\ResultRicercaCanoni.aspx.vb">
+      <DependentUpon>ResultRicercaCanoni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Canoni\RicercaCanoni.aspx.designer.vb">
+      <DependentUpon>RicercaCanoni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Canoni\RicercaCanoni.aspx.vb">
+      <DependentUpon>RicercaCanoni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\ComandiConfiguraDescrizioni.aspx.designer.vb">
+      <DependentUpon>ComandiConfiguraDescrizioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\ComandiConfiguraDescrizioni.aspx.vb">
+      <DependentUpon>ComandiConfiguraDescrizioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\ComandiRicercaDescrizioni.aspx.designer.vb">
+      <DependentUpon>ComandiRicercaDescrizioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\ComandiRicercaDescrizioni.aspx.vb">
+      <DependentUpon>ComandiRicercaDescrizioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\ConfiguraDescrizioni.aspx.designer.vb">
+      <DependentUpon>ConfiguraDescrizioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\ConfiguraDescrizioni.aspx.vb">
+      <DependentUpon>ConfiguraDescrizioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\NoloContatori\CConfiguraNoloC.aspx.designer.vb">
+      <DependentUpon>CConfiguraNoloC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\NoloContatori\CConfiguraNoloC.aspx.vb">
+      <DependentUpon>CConfiguraNoloC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\NoloContatori\ConfiguraNoloC.aspx.designer.vb">
+      <DependentUpon>ConfiguraNoloC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\NoloContatori\ConfiguraNoloC.aspx.vb">
+      <DependentUpon>ConfiguraNoloC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\NoloContatori\CRicercaNoloC.aspx.designer.vb">
+      <DependentUpon>CRicercaNoloC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\NoloContatori\CRicercaNoloC.aspx.vb">
+      <DependentUpon>CRicercaNoloC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\NoloContatori\ResultRicercaNoloC.aspx.designer.vb">
+      <DependentUpon>ResultRicercaNoloC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\NoloContatori\ResultRicercaNoloC.aspx.vb">
+      <DependentUpon>ResultRicercaNoloC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\NoloContatori\RicercaNoloC.aspx.designer.vb">
+      <DependentUpon>RicercaNoloC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\NoloContatori\RicercaNoloC.aspx.vb">
+      <DependentUpon>RicercaNoloC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\QuotaFissa\CConfiguraQuotaFissa.aspx.designer.vb">
+      <DependentUpon>CConfiguraQuotaFissa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\QuotaFissa\CConfiguraQuotaFissa.aspx.vb">
+      <DependentUpon>CConfiguraQuotaFissa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\QuotaFissa\ConfiguraQuotaFissa.aspx.designer.vb">
+      <DependentUpon>ConfiguraQuotaFissa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\QuotaFissa\ConfiguraQuotaFissa.aspx.vb">
+      <DependentUpon>ConfiguraQuotaFissa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\QuotaFissa\CRicercaQuotaFissa.aspx.designer.vb">
+      <DependentUpon>CRicercaQuotaFissa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\QuotaFissa\CRicercaQuotaFissa.aspx.vb">
+      <DependentUpon>CRicercaQuotaFissa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\QuotaFissa\ResultRicercaQuotaFissa.aspx.designer.vb">
+      <DependentUpon>ResultRicercaQuotaFissa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\QuotaFissa\ResultRicercaQuotaFissa.aspx.vb">
+      <DependentUpon>ResultRicercaQuotaFissa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\QuotaFissa\RicercaQuotaFissa.aspx.designer.vb">
+      <DependentUpon>RicercaQuotaFissa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\QuotaFissa\RicercaQuotaFissa.aspx.vb">
+      <DependentUpon>RicercaQuotaFissa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\ResultRicercaDescrizioni.aspx.designer.vb">
+      <DependentUpon>ResultRicercaDescrizioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\ResultRicercaDescrizioni.aspx.vb">
+      <DependentUpon>ResultRicercaDescrizioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\RicercaDescrizioni.aspx.designer.vb">
+      <DependentUpon>RicercaDescrizioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\RicercaDescrizioni.aspx.vb">
+      <DependentUpon>RicercaDescrizioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Scaglioni\CConfiguraScaglioni.aspx.designer.vb">
+      <DependentUpon>CConfiguraScaglioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Scaglioni\CConfiguraScaglioni.aspx.vb">
+      <DependentUpon>CConfiguraScaglioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Scaglioni\ConfiguraScaglioni.aspx.designer.vb">
+      <DependentUpon>ConfiguraScaglioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Scaglioni\ConfiguraScaglioni.aspx.vb">
+      <DependentUpon>ConfiguraScaglioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Scaglioni\CRicercaScaglioni.aspx.designer.vb">
+      <DependentUpon>CRicercaScaglioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Scaglioni\CRicercaScaglioni.aspx.vb">
+      <DependentUpon>CRicercaScaglioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Scaglioni\ResultRicercaScaglioni.aspx.designer.vb">
+      <DependentUpon>ResultRicercaScaglioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Scaglioni\ResultRicercaScaglioni.aspx.vb">
+      <DependentUpon>ResultRicercaScaglioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Scaglioni\RicercaScaglioni.aspx.designer.vb">
+      <DependentUpon>RicercaScaglioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleCalcolo\Scaglioni\RicercaScaglioni.aspx.vb">
+      <DependentUpon>RicercaScaglioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\Anomalie.aspx.designer.vb">
+      <DependentUpon>Anomalie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\Anomalie.aspx.vb">
+      <DependentUpon>Anomalie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\Attivita.aspx.designer.vb">
+      <DependentUpon>Attivita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\Attivita.aspx.vb">
+      <DependentUpon>Attivita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\ComandiGestioneTabelle.aspx.designer.vb">
+      <DependentUpon>ComandiGestioneTabelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\ComandiGestioneTabelle.aspx.vb">
+      <DependentUpon>ComandiGestioneTabelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\ComandiGestioneTabelleSistema.aspx.designer.vb">
+      <DependentUpon>ComandiGestioneTabelleSistema.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\ComandiGestioneTabelleSistema.aspx.vb">
+      <DependentUpon>ComandiGestioneTabelleSistema.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\ComandiOperazioniSuTabelle.aspx.designer.vb">
+      <DependentUpon>ComandiOperazioniSuTabelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\ComandiOperazioniSuTabelle.aspx.vb">
+      <DependentUpon>ComandiOperazioniSuTabelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\ComandiOperazioniSuTabelleSistema.aspx.designer.vb">
+      <DependentUpon>ComandiOperazioniSuTabelleSistema.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\ComandiOperazioniSuTabelleSistema.aspx.vb">
+      <DependentUpon>ComandiOperazioniSuTabelleSistema.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\ComponentTabelleDecodifica\Anomalie.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\ComponentTabelleDecodifica\Attivita.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\ComponentTabelleDecodifica\Depurazione.vb" />
+    <Compile Include="GestioneTabelleDecodifica\ComponentTabelleDecodifica\DetailTabelle.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\ComponentTabelleDecodifica\DiametroContatore.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\ComponentTabelleDecodifica\DiametroPresa.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\ComponentTabelleDecodifica\Fognatura.vb" />
+    <Compile Include="GestioneTabelleDecodifica\ComponentTabelleDecodifica\Giri.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\ComponentTabelleDecodifica\Impianti.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\ComponentTabelleDecodifica\IVA.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\ComponentTabelleDecodifica\MinimiFatturabili.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\ComponentTabelleDecodifica\Periodo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\ComponentTabelleDecodifica\PosizioneContatore.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\ComponentTabelleDecodifica\TipiUtenza.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\ComponentTabelleDecodifica\TipoContatore.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\Depurazione.aspx.designer.vb">
+      <DependentUpon>Depurazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\Depurazione.aspx.vb">
+      <DependentUpon>Depurazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\DiametroContatori.aspx.designer.vb">
+      <DependentUpon>DiametroContatori.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\DiametroContatori.aspx.vb">
+      <DependentUpon>DiametroContatori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\DiametroPresa.aspx.designer.vb">
+      <DependentUpon>DiametroPresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\DiametroPresa.aspx.vb">
+      <DependentUpon>DiametroPresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\Fognatura.aspx.designer.vb">
+      <DependentUpon>Fognatura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\Fognatura.aspx.vb">
+      <DependentUpon>Fognatura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\Giri.aspx.designer.vb">
+      <DependentUpon>Giri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\Giri.aspx.vb">
+      <DependentUpon>Giri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\IVA.aspx.designer.vb">
+      <DependentUpon>IVA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\IVA.aspx.vb">
+      <DependentUpon>IVA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\Minimi.aspx.designer.vb">
+      <DependentUpon>Minimi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\Minimi.aspx.vb">
+      <DependentUpon>Minimi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\Periodo.aspx.designer.vb">
+      <DependentUpon>Periodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\Periodo.aspx.vb">
+      <DependentUpon>Periodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\PosizioneContatore.aspx.designer.vb">
+      <DependentUpon>PosizioneContatore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\PosizioneContatore.aspx.vb">
+      <DependentUpon>PosizioneContatore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchAnomalia.aspx.designer.vb">
+      <DependentUpon>SearchAnomalia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchAnomalia.aspx.vb">
+      <DependentUpon>SearchAnomalia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchAttivita.aspx.designer.vb">
+      <DependentUpon>SearchAttivita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchAttivita.aspx.vb">
+      <DependentUpon>SearchAttivita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchDepurazione.aspx.designer.vb">
+      <DependentUpon>SearchDepurazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchDepurazione.aspx.vb">
+      <DependentUpon>SearchDepurazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchDiametroContatori.aspx.designer.vb">
+      <DependentUpon>SearchDiametroContatori.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchDiametroContatori.aspx.vb">
+      <DependentUpon>SearchDiametroContatori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchDiametroPresa.aspx.designer.vb">
+      <DependentUpon>SearchDiametroPresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchDiametroPresa.aspx.vb">
+      <DependentUpon>SearchDiametroPresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchFognatura.aspx.designer.vb">
+      <DependentUpon>SearchFognatura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchFognatura.aspx.vb">
+      <DependentUpon>SearchFognatura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchGiri.aspx.designer.vb">
+      <DependentUpon>SearchGiri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchGiri.aspx.vb">
+      <DependentUpon>SearchGiri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchIVA.aspx.designer.vb">
+      <DependentUpon>SearchIVA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchIVA.aspx.vb">
+      <DependentUpon>SearchIVA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchMinimo.aspx.designer.vb">
+      <DependentUpon>SearchMinimo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchMinimo.aspx.vb">
+      <DependentUpon>SearchMinimo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchPeriodo.aspx.designer.vb">
+      <DependentUpon>SearchPeriodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchPeriodo.aspx.vb">
+      <DependentUpon>SearchPeriodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchPosizioneContatore.aspx.designer.vb">
+      <DependentUpon>SearchPosizioneContatore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchPosizioneContatore.aspx.vb">
+      <DependentUpon>SearchPosizioneContatore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchTipiContatore.aspx.designer.vb">
+      <DependentUpon>SearchTipiContatore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchTipiContatore.aspx.vb">
+      <DependentUpon>SearchTipiContatore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchTipiImpianto.aspx.designer.vb">
+      <DependentUpon>SearchTipiImpianto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchTipiImpianto.aspx.vb">
+      <DependentUpon>SearchTipiImpianto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchTipiUtenze.aspx.designer.vb">
+      <DependentUpon>SearchTipiUtenze.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\SearchTipiUtenze.aspx.vb">
+      <DependentUpon>SearchTipiUtenze.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\TipiImpianto.aspx.designer.vb">
+      <DependentUpon>TipiImpianto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\TipiImpianto.aspx.vb">
+      <DependentUpon>TipiImpianto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\TipiUtenze.aspx.designer.vb">
+      <DependentUpon>TipiUtenze.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\TipiUtenze.aspx.vb">
+      <DependentUpon>TipiUtenze.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\TipoContatore.aspx.designer.vb">
+      <DependentUpon>TipoContatore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneTabelleDecodifica\TipoContatore.aspx.vb">
+      <DependentUpon>TipoContatore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Importazione\CmdImportCMGC.aspx.designer.vb">
+      <DependentUpon>CmdImportCMGC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Importazione\CmdImportCMGC.aspx.vb">
+      <DependentUpon>CmdImportCMGC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Importazione\ImportCMGC.aspx.designer.vb">
+      <DependentUpon>ImportCMGC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Importazione\ImportCMGC.aspx.vb">
+      <DependentUpon>ImportCMGC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Letture\ComandiLetture.aspx.designer.vb">
+      <DependentUpon>ComandiLetture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Letture\ComandiLetture.aspx.vb">
+      <DependentUpon>ComandiLetture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Letture\ComandiModLetture.aspx.designer.vb">
+      <DependentUpon>ComandiModLetture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Letture\ComandiModLetture.aspx.vb">
+      <DependentUpon>ComandiModLetture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Letture\DettLetture.aspx.designer.vb">
+      <DependentUpon>DettLetture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Letture\DettLetture.aspx.vb">
+      <DependentUpon>DettLetture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Letture\ExecContatori.aspx.designer.vb">
+      <DependentUpon>ExecContatori.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Letture\ExecContatori.aspx.vb">
+      <DependentUpon>ExecContatori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Letture\ExecDataLettura.aspx.designer.vb">
+      <DependentUpon>ExecDataLettura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Letture\ExecDataLettura.aspx.vb">
+      <DependentUpon>ExecDataLettura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Letture\ExecLettura.aspx.designer.vb">
+      <DependentUpon>ExecLettura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Letture\ExecLettura.aspx.vb">
+      <DependentUpon>ExecLettura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Letture\FrameInserimentoModifica.aspx.designer.vb">
+      <DependentUpon>FrameInserimentoModifica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Letture\FrameInserimentoModifica.aspx.vb">
+      <DependentUpon>FrameInserimentoModifica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Letture\FrameLetture.aspx.designer.vb">
+      <DependentUpon>FrameLetture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Letture\FrameLetture.aspx.vb">
+      <DependentUpon>FrameLetture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Letture\ImportazioneLetture\AcquisizioneLetture.aspx.designer.vb">
+      <DependentUpon>AcquisizioneLetture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Letture\ImportazioneLetture\AcquisizioneLetture.aspx.vb">
+      <DependentUpon>AcquisizioneLetture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Letture\ImportazioneLetture\CmdImporatzioneLetture.aspx.designer.vb">
+      <DependentUpon>CmdImporatzioneLetture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Letture\ImportazioneLetture\CmdImporatzioneLetture.aspx.vb">
+      <DependentUpon>CmdImporatzioneLetture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Letture\Letture.aspx.designer.vb">
+      <DependentUpon>Letture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Letture\Letture.aspx.vb">
+      <DependentUpon>Letture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Letture\ModLettureHome.aspx.designer.vb">
+      <DependentUpon>ModLettureHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Letture\ModLettureHome.aspx.vb">
+      <DependentUpon>ModLettureHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReferenceWS.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RicercaAnater\ComandiRicImmobile.aspx.designer.vb">
+      <DependentUpon>ComandiRicImmobile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RicercaAnater\ComandiRicImmobile.aspx.vb">
+      <DependentUpon>ComandiRicImmobile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RicercaAnater\FrmRicercaImmobile.aspx.designer.vb">
+      <DependentUpon>FrmRicercaImmobile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RicercaAnater\FrmRicercaImmobile.aspx.vb">
+      <DependentUpon>FrmRicercaImmobile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RicercaAnater\ResultRicImmobile.aspx.designer.vb">
+      <DependentUpon>ResultRicImmobile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RicercaAnater\ResultRicImmobile.aspx.vb">
+      <DependentUpon>ResultRicImmobile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RicercaAnater\RicercaImmobile.aspx.designer.vb">
+      <DependentUpon>RicercaImmobile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RicercaAnater\RicercaImmobile.aspx.vb">
+      <DependentUpon>RicercaImmobile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web References\WSOPENae\Reference.vb">
+      <DependentUpon>Reference.map</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <EmbeddedResource Include="AgenziaEntrate\DatiMancanti\ComandiRicDatiMancanti.aspx.resx">
+      <DependentUpon>ComandiRicDatiMancanti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgenziaEntrate\DatiMancanti\ResultDatiMancanti.aspx.resx">
+      <DependentUpon>ResultDatiMancanti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgenziaEntrate\DatiMancanti\RicercaDatiMancanti.aspx.resx">
+      <DependentUpon>RicercaDatiMancanti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgenziaEntrate\GestTracciati\ComandiTracciati.aspx.resx">
+      <DependentUpon>ComandiTracciati.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgenziaEntrate\GestTracciati\Tracciati.aspx.resx">
+      <DependentUpon>Tracciati.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analisi\FatturatoIncassato\ChartAnalisiEconomiche.aspx.resx">
+      <DependentUpon>ChartAnalisiEconomiche.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analisi\FatturatoIncassato\ComandiAnalisiEconomiche.aspx.resx">
+      <DependentUpon>ComandiAnalisiEconomiche.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analisi\FatturatoIncassato\ResultAnalisiEconomiche.aspx.resx">
+      <DependentUpon>ResultAnalisiEconomiche.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analisi\FatturatoIncassato\RicercaAnalisiEconomiche.aspx.resx">
+      <DependentUpon>RicercaAnalisiEconomiche.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComandiRicerca\ComandiRicerca.aspx.resx">
+      <DependentUpon>ComandiRicerca.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComandiRicerca\ComandiRicercaLettere.aspx.resx">
+      <DependentUpon>ComandiRicercaLettere.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryContatori\ComandiContratti.aspx.resx">
+      <DependentUpon>ComandiContratti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryContatori\ComandiDataEntryContatori.aspx.resx">
+      <DependentUpon>ComandiDataEntryContatori.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryContatori\ComandiRicercaContatori.aspx.resx">
+      <DependentUpon>ComandiRicercaContatori.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryContatori\Contratti.aspx.resx">
+      <DependentUpon>Contratti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryContatori\DatiGenerali.aspx.resx">
+      <DependentUpon>DatiGenerali.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryContatori\FrameAttivaContatore.aspx.resx">
+      <DependentUpon>FrameAttivaContatore.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryContatori\FrameContratti.aspx.resx">
+      <DependentUpon>FrameContratti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryContatori\FrameInserisciDatoCatasto.aspx.resx">
+      <DependentUpon>FrameInserisciDatoCatasto.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryContatori\FrameModificaDatoCatasto.aspx.resx">
+      <DependentUpon>FrameModificaDatoCatasto.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryContatori\FrameSostituzione.aspx.resx">
+      <DependentUpon>FrameSostituzione.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryContatori\FrameSubContatore.aspx.resx">
+      <DependentUpon>FrameSubContatore.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryContatori\RicercaContatori.aspx.resx">
+      <DependentUpon>RicercaContatori.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryContatori\SearchResultsCatasto.aspx.resx">
+      <DependentUpon>SearchResultsCatasto.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryContatori\SearchResultsContatori.aspx.resx">
+      <DependentUpon>SearchResultsContatori.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryContatori\SearchResultsSubContatori.aspx.resx">
+      <DependentUpon>SearchResultsSubContatori.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryContratti\ComandiDataEntryContratti.aspx.resx">
+      <DependentUpon>ComandiDataEntryContratti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryContratti\DatiGeneraliContr.aspx.resx">
+      <DependentUpon>DatiGeneraliContr.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryContratti\FrameAttivazione.aspx.resx">
+      <DependentUpon>FrameAttivazione.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryContratti\FrameCessazione.aspx.resx">
+      <DependentUpon>FrameCessazione.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryContratti\RicercaContratti.aspx.resx">
+      <DependentUpon>RicercaContratti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryContratti\SearchResultsContratti.aspx.resx">
+      <DependentUpon>SearchResultsContratti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryContratti\SearchResultsDocumenti.aspx.resx">
+      <DependentUpon>SearchResultsDocumenti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryLetture\ComandiDataEntry.aspx.resx">
+      <DependentUpon>ComandiDataEntry.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryLetture\ComandiLetture.aspx.resx">
+      <DependentUpon>ComandiLetture.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryLetture\RicercaLetture.aspx.resx">
+      <DependentUpon>RicercaLetture.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryLetture\SearchResultsContatoriLetture.aspx.resx">
+      <DependentUpon>SearchResultsContatoriLetture.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documenti\ComandiDocumenti.aspx.resx">
+      <DependentUpon>ComandiDocumenti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documenti\ComandiDocumentiElaborati.aspx.resx">
+      <DependentUpon>ComandiDocumentiElaborati.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documenti\RicercaDocumenti.aspx.resx">
+      <DependentUpon>RicercaDocumenti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documenti\RisultatiDocumenti.aspx.resx">
+      <DependentUpon>RisultatiDocumenti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documenti\StampaInCorso.aspx.resx">
+      <DependentUpon>StampaInCorso.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documenti\ViewDocumentiElaborati.aspx.resx">
+      <DependentUpon>ViewDocumentiElaborati.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatturazione\AnalisiScaglioni\comandiScaglioni.aspx.resx">
+      <DependentUpon>comandiScaglioni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatturazione\AnalisiScaglioni\Scaglioni.aspx.resx">
+      <DependentUpon>Scaglioni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatturazione\ComandiFatturazione.aspx.resx">
+      <DependentUpon>ComandiFatturazione.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatturazione\DettaglioFatturazione\ComandiDettFatturazione.aspx.resx">
+      <DependentUpon>ComandiDettFatturazione.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatturazione\DettaglioFatturazione\ComandiRicFatturazione.aspx.resx">
+      <DependentUpon>ComandiRicFatturazione.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatturazione\DettaglioFatturazione\DettaglioFatturazione.aspx.resx">
+      <DependentUpon>DettaglioFatturazione.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatturazione\DettaglioFatturazione\DettFatturaAddizionali.aspx.resx">
+      <DependentUpon>DettFatturaAddizionali.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatturazione\DettaglioFatturazione\DettFatturaCanoni.aspx.resx">
+      <DependentUpon>DettFatturaCanoni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatturazione\DettaglioFatturazione\DettFatturaDettaglioIva.aspx.resx">
+      <DependentUpon>DettFatturaDettaglioIva.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatturazione\DettaglioFatturazione\DettFatturaNolo.aspx.resx">
+      <DependentUpon>DettFatturaNolo.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatturazione\DettaglioFatturazione\DettFatturaQuotaFissa.aspx.resx">
+      <DependentUpon>DettFatturaQuotaFissa.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatturazione\DettaglioFatturazione\DettFatturaScaglioni.aspx.resx">
+      <DependentUpon>DettFatturaScaglioni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatturazione\DettaglioFatturazione\ResultRicFatturazione.aspx.resx">
+      <DependentUpon>ResultRicFatturazione.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatturazione\DettaglioFatturazione\RicercaFatturazione.aspx.resx">
+      <DependentUpon>RicercaFatturazione.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatturazione\Fatturazione.aspx.resx">
+      <DependentUpon>Fatturazione.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatturazione\RibaltaVariazioni\ComandiRibaltaVar.aspx.resx">
+      <DependentUpon>ComandiRibaltaVar.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatturazione\RibaltaVariazioni\GestRibaltaVar.aspx.resx">
+      <DependentUpon>GestRibaltaVar.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionePagamenti\CRicercaPagamenti.aspx.resx">
+      <DependentUpon>CRicercaPagamenti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionePagamenti\Inserimento\CInserimentoPagamenti.aspx.resx">
+      <DependentUpon>CInserimentoPagamenti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionePagamenti\Inserimento\InserimentoPagamenti.aspx.resx">
+      <DependentUpon>InserimentoPagamenti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionePagamenti\Inserimento\ResultRicercaFatture.aspx.resx">
+      <DependentUpon>ResultRicercaFatture.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionePagamenti\Inserimento\RicercaFatture.aspx.resx">
+      <DependentUpon>RicercaFatture.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionePagamenti\ResultRicercaPagamenti.aspx.resx">
+      <DependentUpon>ResultRicercaPagamenti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionePagamenti\RicercaPagamenti.aspx.resx">
+      <DependentUpon>RicercaPagamenti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\Addizionali\CConfiguraAddizionali.aspx.resx">
+      <DependentUpon>CConfiguraAddizionali.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\Addizionali\ConfiguraAddizionali.aspx.resx">
+      <DependentUpon>ConfiguraAddizionali.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\Addizionali\CRicercaAddizionali.aspx.resx">
+      <DependentUpon>CRicercaAddizionali.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\Addizionali\ResultRicercaAddizionali.aspx.resx">
+      <DependentUpon>ResultRicercaAddizionali.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\Addizionali\RicercaAddizionali.aspx.resx">
+      <DependentUpon>RicercaAddizionali.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\Canoni\CConfiguraCanoni.aspx.resx">
+      <DependentUpon>CConfiguraCanoni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\Canoni\ConfiguraCanoni.aspx.resx">
+      <DependentUpon>ConfiguraCanoni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\Canoni\CRicercaCanoni.aspx.resx">
+      <DependentUpon>CRicercaCanoni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\Canoni\ResultRicercaCanoni.aspx.resx">
+      <DependentUpon>ResultRicercaCanoni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\Canoni\RicercaCanoni.aspx.resx">
+      <DependentUpon>RicercaCanoni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\ComandiConfiguraDescrizioni.aspx.resx">
+      <DependentUpon>ComandiConfiguraDescrizioni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\ComandiRicercaDescrizioni.aspx.resx">
+      <DependentUpon>ComandiRicercaDescrizioni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\ConfiguraDescrizioni.aspx.resx">
+      <DependentUpon>ConfiguraDescrizioni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\NoloContatori\CConfiguraNoloC.aspx.resx">
+      <DependentUpon>CConfiguraNoloC.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\NoloContatori\ConfiguraNoloC.aspx.resx">
+      <DependentUpon>ConfiguraNoloC.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\NoloContatori\CRicercaNoloC.aspx.resx">
+      <DependentUpon>CRicercaNoloC.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\NoloContatori\ResultRicercaNoloC.aspx.resx">
+      <DependentUpon>ResultRicercaNoloC.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\NoloContatori\RicercaNoloC.aspx.resx">
+      <DependentUpon>RicercaNoloC.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\QuotaFissa\CConfiguraQuotaFissa.aspx.resx">
+      <DependentUpon>CConfiguraQuotaFissa.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\QuotaFissa\ConfiguraQuotaFissa.aspx.resx">
+      <DependentUpon>ConfiguraQuotaFissa.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\QuotaFissa\CRicercaQuotaFissa.aspx.resx">
+      <DependentUpon>CRicercaQuotaFissa.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\QuotaFissa\ResultRicercaQuotaFissa.aspx.resx">
+      <DependentUpon>ResultRicercaQuotaFissa.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\QuotaFissa\RicercaQuotaFissa.aspx.resx">
+      <DependentUpon>RicercaQuotaFissa.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\ResultRicercaDescrizioni.aspx.resx">
+      <DependentUpon>ResultRicercaDescrizioni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\RicercaDescrizioni.aspx.resx">
+      <DependentUpon>RicercaDescrizioni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\Scaglioni\CConfiguraScaglioni.aspx.resx">
+      <DependentUpon>CConfiguraScaglioni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\Scaglioni\ConfiguraScaglioni.aspx.resx">
+      <DependentUpon>ConfiguraScaglioni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\Scaglioni\CRicercaScaglioni.aspx.resx">
+      <DependentUpon>CRicercaScaglioni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\Scaglioni\ResultRicercaScaglioni.aspx.resx">
+      <DependentUpon>ResultRicercaScaglioni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleCalcolo\Scaglioni\RicercaScaglioni.aspx.resx">
+      <DependentUpon>RicercaScaglioni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\Anomalie.aspx.resx">
+      <DependentUpon>Anomalie.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\Attivita.aspx.resx">
+      <DependentUpon>Attivita.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\ComandiGestioneTabelle.aspx.resx">
+      <DependentUpon>ComandiGestioneTabelle.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\ComandiGestioneTabelleSistema.aspx.resx">
+      <DependentUpon>ComandiGestioneTabelleSistema.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\ComandiOperazioniSuTabelle.aspx.resx">
+      <DependentUpon>ComandiOperazioniSuTabelle.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\ComandiOperazioniSuTabelleSistema.aspx.resx">
+      <DependentUpon>ComandiOperazioniSuTabelleSistema.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\Depurazione.aspx.resx">
+      <DependentUpon>Depurazione.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\DiametroContatori.aspx.resx">
+      <DependentUpon>DiametroContatori.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\DiametroPresa.aspx.resx">
+      <DependentUpon>DiametroPresa.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\Fognatura.aspx.resx">
+      <DependentUpon>Fognatura.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\Giri.aspx.resx">
+      <DependentUpon>Giri.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\IVA.aspx.resx">
+      <DependentUpon>IVA.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\Minimi.aspx.resx">
+      <DependentUpon>Minimi.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\Periodo.aspx.resx">
+      <DependentUpon>Periodo.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\PosizioneContatore.aspx.resx">
+      <DependentUpon>PosizioneContatore.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\SearchAnomalia.aspx.resx">
+      <DependentUpon>SearchAnomalia.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\SearchAttivita.aspx.resx">
+      <DependentUpon>SearchAttivita.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\SearchDepurazione.aspx.resx">
+      <DependentUpon>SearchDepurazione.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\SearchDiametroContatori.aspx.resx">
+      <DependentUpon>SearchDiametroContatori.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\SearchDiametroPresa.aspx.resx">
+      <DependentUpon>SearchDiametroPresa.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\SearchFognatura.aspx.resx">
+      <DependentUpon>SearchFognatura.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\SearchGiri.aspx.resx">
+      <DependentUpon>SearchGiri.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\SearchIVA.aspx.resx">
+      <DependentUpon>SearchIVA.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\SearchMinimo.aspx.resx">
+      <DependentUpon>SearchMinimo.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\SearchPeriodo.aspx.resx">
+      <DependentUpon>SearchPeriodo.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\SearchPosizioneContatore.aspx.resx">
+      <DependentUpon>SearchPosizioneContatore.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\SearchTipiContatore.aspx.resx">
+      <DependentUpon>SearchTipiContatore.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\SearchTipiImpianto.aspx.resx">
+      <DependentUpon>SearchTipiImpianto.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\SearchTipiUtenze.aspx.resx">
+      <DependentUpon>SearchTipiUtenze.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\TipiImpianto.aspx.resx">
+      <DependentUpon>TipiImpianto.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\TipiUtenze.aspx.resx">
+      <DependentUpon>TipiUtenze.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneTabelleDecodifica\TipoContatore.aspx.resx">
+      <DependentUpon>TipoContatore.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Importazione\CmdImportCMGC.aspx.resx">
+      <DependentUpon>CmdImportCMGC.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Importazione\ImportCMGC.aspx.resx">
+      <DependentUpon>ImportCMGC.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Letture\ComandiLetture.aspx.resx">
+      <DependentUpon>ComandiLetture.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Letture\ComandiModLetture.aspx.resx">
+      <DependentUpon>ComandiModLetture.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Letture\DettLetture.aspx.resx">
+      <DependentUpon>DettLetture.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Letture\ExecContatori.aspx.resx">
+      <DependentUpon>ExecContatori.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Letture\ExecDataLettura.aspx.resx">
+      <DependentUpon>ExecDataLettura.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Letture\ExecLettura.aspx.resx">
+      <DependentUpon>ExecLettura.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Letture\FrameInserimentoModifica.aspx.resx">
+      <DependentUpon>FrameInserimentoModifica.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Letture\FrameLetture.aspx.resx">
+      <DependentUpon>FrameLetture.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Letture\ImportazioneLetture\AcquisizioneLetture.aspx.resx">
+      <DependentUpon>AcquisizioneLetture.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Letture\ImportazioneLetture\CmdImporatzioneLetture.aspx.resx">
+      <DependentUpon>CmdImporatzioneLetture.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Letture\Letture.aspx.resx">
+      <DependentUpon>Letture.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Letture\ModLettureHome.aspx.resx">
+      <DependentUpon>ModLettureHome.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RicercaAnater\ComandiRicImmobile.aspx.resx">
+      <DependentUpon>ComandiRicImmobile.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RicercaAnater\FrmRicercaImmobile.aspx.resx">
+      <DependentUpon>FrmRicercaImmobile.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RicercaAnater\ResultRicImmobile.aspx.resx">
+      <DependentUpon>ResultRicImmobile.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RicercaAnater\RicercaImmobile.aspx.resx">
+      <DependentUpon>RicercaImmobile.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="index.md" />
+    <Content Include="docfx.json" />
+    <Content Include="articles\toc.md" />
+    <Content Include="articles\intro.md" />
+    <Content Include="api\index.md" />
+    <None Include="OpenUtenze.vsdisco" />
+    <Content Include="packages.config" />
+    <Content Include="toc.yml" />
+    <None Include="Web References\WSOPENae\objFlussoAE.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSOPENae\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WSOPENae\ServiceOPENae.disco" />
+    <None Include="Web References\WSOPENae\ServiceOPENae.wsdl" />
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <WebReferenceUrl Include="https://sec.isimply.it/OPENaews/ServiceOPENae.asmx">
+      <RelPath>Web References\WSOPENae\</RelPath>
+      <UrlBehavior>Static</UrlBehavior>
+    </WebReferenceUrl>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Text.Analyzers.2.6.3\analyzers\dotnet\vb\Text.Analyzers.dll" />
+    <Analyzer Include="..\packages\Text.Analyzers.2.6.3\analyzers\dotnet\vb\Text.VisualBasic.Analyzers.dll" />
+    <Analyzer Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\vb\Humanizer.dll" />
+    <Analyzer Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\vb\Microsoft.CodeQuality.Analyzers.dll" />
+    <Analyzer Include="packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\vb\Microsoft.CodeQuality.VisualBasic.Analyzers.dll" />
+    <Analyzer Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\vb\Microsoft.NetCore.Analyzers.dll" />
+    <Analyzer Include="packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\vb\Microsoft.NetCore.VisualBasic.Analyzers.dll" />
+    <Analyzer Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\vb\Microsoft.NetFramework.Analyzers.dll" />
+    <Analyzer Include="packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\vb\Microsoft.NetFramework.VisualBasic.Analyzers.dll" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50915</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/OPENgov/OPENutenze</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Questo progetto fa riferimento a uno o più pacchetti NuGet che non sono presenti in questo computer. Usare lo strumento di ripristino dei pacchetti NuGet per scaricarli. Per altre informazioni, vedere http://go.microsoft.com/fwlink/?LinkID=322105. Il file mancante è {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\build\Microsoft.CodeQuality.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\build\Microsoft.CodeQuality.Analyzers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.NetCore.Analyzers.2.6.3\build\Microsoft.NetCore.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.NetCore.Analyzers.2.6.3\build\Microsoft.NetCore.Analyzers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.NetFramework.Analyzers.2.6.3\build\Microsoft.NetFramework.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.NetFramework.Analyzers.2.6.3\build\Microsoft.NetFramework.Analyzers.props'))" />
+    <Error Condition="!Exists('..\packages\Text.Analyzers.2.6.3\build\Text.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Text.Analyzers.2.6.3\build\Text.Analyzers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.CodeQuality.Analyzers.2.9.8\build\Microsoft.CodeQuality.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeQuality.Analyzers.2.9.8\build\Microsoft.CodeQuality.Analyzers.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.NetCore.Analyzers.2.9.8\build\Microsoft.NetCore.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.NetCore.Analyzers.2.9.8\build\Microsoft.NetCore.Analyzers.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.NetFramework.Analyzers.2.9.8\build\Microsoft.NetFramework.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.NetFramework.Analyzers.2.9.8\build\Microsoft.NetFramework.Analyzers.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props'))" />
+    <Error Condition="!Exists('..\packages\docfx.console.2.56.6\build\docfx.console.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\docfx.console.2.56.6\build\docfx.console.targets'))" />
+  </Target>
+  <Import Project="..\packages\docfx.console.2.56.6\build\docfx.console.targets" Condition="Exists('..\packages\docfx.console.2.56.6\build\docfx.console.targets')" />
+</Project>

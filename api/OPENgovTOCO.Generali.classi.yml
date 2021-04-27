@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENgovTOCO.Generali.classi
+  commentId: N:OPENgovTOCO.Generali.classi
+  id: OPENgovTOCO.Generali.classi
+  children:
+  - OPENgovTOCO.Generali.classi.Documenti
+  langs:
+  - csharp
+  - vb
+  name: OPENgovTOCO.Generali.classi
+  nameWithType: OPENgovTOCO.Generali.classi
+  fullName: OPENgovTOCO.Generali.classi
+  type: Namespace
+  assemblies:
+  - OPENGovTOCO
+references:
+- uid: OPENgovTOCO.Generali.classi.Documenti
+  commentId: T:OPENgovTOCO.Generali.classi.Documenti
+  name: Documenti
+  nameWithType: Documenti
+  fullName: OPENgovTOCO.Generali.classi.Documenti

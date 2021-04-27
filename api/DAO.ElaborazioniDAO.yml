@@ -1,0 +1,592 @@
+### YamlMime:ManagedReference
+items:
+- uid: DAO.ElaborazioniDAO
+  commentId: T:DAO.ElaborazioniDAO
+  id: ElaborazioniDAO
+  parent: DAO
+  children:
+  - DAO.ElaborazioniDAO.#ctor
+  - DAO.ElaborazioniDAO.connessioneDB
+  - DAO.ElaborazioniDAO.FillCartellaFromDataTable(System.Data.DataTable)
+  - DAO.ElaborazioniDAO.GetElaborazioniStatistics(System.String,System.Int32,System.Int32,System.Int32@,System.Int32@,System.Int32@)
+  - DAO.ElaborazioniDAO.SearchElaborazioni(DTO.ElaborazioniSearch)
+  langs:
+  - csharp
+  - vb
+  name: ElaborazioniDAO
+  nameWithType: ElaborazioniDAO
+  fullName: DAO.ElaborazioniDAO
+  type: Class
+  source:
+    id: ElaborazioniDAO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\ElaborazioniDAO.cs
+    startLine: 15
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  summary: "\nClasse interfacciamento DB per la gestione Elaborazioni.\n"
+  example: []
+  syntax:
+    content: public class ElaborazioniDAO
+    content.vb: Public Class ElaborazioniDAO
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DAO.ElaborazioniDAO.#ctor
+  commentId: M:DAO.ElaborazioniDAO.#ctor
+  id: '#ctor'
+  parent: DAO.ElaborazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: ElaborazioniDAO()
+  nameWithType: ElaborazioniDAO.ElaborazioniDAO()
+  fullName: DAO.ElaborazioniDAO.ElaborazioniDAO()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\ElaborazioniDAO.cs
+    startLine: 22
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public ElaborazioniDAO()
+    content.vb: Public Sub New
+  overload: DAO.ElaborazioniDAO.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.ElaborazioniDAO.SearchElaborazioni(DTO.ElaborazioniSearch)
+  commentId: M:DAO.ElaborazioniDAO.SearchElaborazioni(DTO.ElaborazioniSearch)
+  id: SearchElaborazioni(DTO.ElaborazioniSearch)
+  parent: DAO.ElaborazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: SearchElaborazioni(ElaborazioniSearch)
+  nameWithType: ElaborazioniDAO.SearchElaborazioni(ElaborazioniSearch)
+  fullName: DAO.ElaborazioniDAO.SearchElaborazioni(DTO.ElaborazioniSearch)
+  type: Method
+  source:
+    id: SearchElaborazioni
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\ElaborazioniDAO.cs
+    startLine: 29
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public Cartella[] SearchElaborazioni(ElaborazioniSearch SearchParams)
+    parameters:
+    - id: SearchParams
+      type: DTO.ElaborazioniSearch
+    return:
+      type: IRemInterfaceOSAP.Cartella[]
+    content.vb: Public Function SearchElaborazioni(SearchParams As ElaborazioniSearch) As Cartella()
+  overload: DAO.ElaborazioniDAO.SearchElaborazioni*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.ElaborazioniDAO.GetElaborazioniStatistics(System.String,System.Int32,System.Int32,System.Int32@,System.Int32@,System.Int32@)
+  commentId: M:DAO.ElaborazioniDAO.GetElaborazioniStatistics(System.String,System.Int32,System.Int32,System.Int32@,System.Int32@,System.Int32@)
+  id: GetElaborazioniStatistics(System.String,System.Int32,System.Int32,System.Int32@,System.Int32@,System.Int32@)
+  parent: DAO.ElaborazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: GetElaborazioniStatistics(String, Int32, Int32, out Int32, out Int32, out Int32)
+  nameWithType: ElaborazioniDAO.GetElaborazioniStatistics(String, Int32, Int32, out Int32, out Int32, out Int32)
+  fullName: DAO.ElaborazioniDAO.GetElaborazioniStatistics(System.String, System.Int32, System.Int32, out System.Int32, out System.Int32, out System.Int32)
+  type: Method
+  source:
+    id: GetElaborazioniStatistics
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\ElaborazioniDAO.cs
+    startLine: 122
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public int GetElaborazioniStatistics(string IdEnte, int IdFlussoRuolo, int Anno, out int Total, out int Elaborati, out int DaElaborare)
+    parameters:
+    - id: IdEnte
+      type: System.String
+    - id: IdFlussoRuolo
+      type: System.Int32
+    - id: Anno
+      type: System.Int32
+    - id: Total
+      type: System.Int32
+    - id: Elaborati
+      type: System.Int32
+    - id: DaElaborare
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function GetElaborazioniStatistics(IdEnte As String, IdFlussoRuolo As Integer, Anno As Integer, ByRef Total As Integer, ByRef Elaborati As Integer, ByRef DaElaborare As Integer) As Integer
+  overload: DAO.ElaborazioniDAO.GetElaborazioniStatistics*
+  nameWithType.vb: ElaborazioniDAO.GetElaborazioniStatistics(String, Int32, Int32, ByRef Int32, ByRef Int32, ByRef Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DAO.ElaborazioniDAO.GetElaborazioniStatistics(System.String, System.Int32, System.Int32, ByRef System.Int32, ByRef System.Int32, ByRef System.Int32)
+  name.vb: GetElaborazioniStatistics(String, Int32, Int32, ByRef Int32, ByRef Int32, ByRef Int32)
+- uid: DAO.ElaborazioniDAO.FillCartellaFromDataTable(System.Data.DataTable)
+  commentId: M:DAO.ElaborazioniDAO.FillCartellaFromDataTable(System.Data.DataTable)
+  id: FillCartellaFromDataTable(System.Data.DataTable)
+  parent: DAO.ElaborazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: FillCartellaFromDataTable(DataTable)
+  nameWithType: ElaborazioniDAO.FillCartellaFromDataTable(DataTable)
+  fullName: DAO.ElaborazioniDAO.FillCartellaFromDataTable(System.Data.DataTable)
+  type: Method
+  source:
+    id: FillCartellaFromDataTable
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\ElaborazioniDAO.cs
+    startLine: 202
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public Cartella[] FillCartellaFromDataTable(DataTable dt)
+    parameters:
+    - id: dt
+      type: System.Data.DataTable
+    return:
+      type: IRemInterfaceOSAP.Cartella[]
+    content.vb: Public Function FillCartellaFromDataTable(dt As DataTable) As Cartella()
+  overload: DAO.ElaborazioniDAO.FillCartellaFromDataTable*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.ElaborazioniDAO.connessioneDB
+  commentId: M:DAO.ElaborazioniDAO.connessioneDB
+  id: connessioneDB
+  parent: DAO.ElaborazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: connessioneDB()
+  nameWithType: ElaborazioniDAO.connessioneDB()
+  fullName: DAO.ElaborazioniDAO.connessioneDB()
+  type: Method
+  source:
+    id: connessioneDB
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\ElaborazioniDAO.cs
+    startLine: 259
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public void connessioneDB()
+    content.vb: Public Sub connessioneDB
+  overload: DAO.ElaborazioniDAO.connessioneDB*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: DAO
+  commentId: N:DAO
+  name: DAO
+  nameWithType: DAO
+  fullName: DAO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DAO.ElaborazioniDAO.#ctor*
+  commentId: Overload:DAO.ElaborazioniDAO.#ctor
+  name: ElaborazioniDAO
+  nameWithType: ElaborazioniDAO.ElaborazioniDAO
+  fullName: DAO.ElaborazioniDAO.ElaborazioniDAO
+- uid: DAO.ElaborazioniDAO.SearchElaborazioni*
+  commentId: Overload:DAO.ElaborazioniDAO.SearchElaborazioni
+  name: SearchElaborazioni
+  nameWithType: ElaborazioniDAO.SearchElaborazioni
+  fullName: DAO.ElaborazioniDAO.SearchElaborazioni
+- uid: DTO.ElaborazioniSearch
+  commentId: T:DTO.ElaborazioniSearch
+  parent: DTO
+  name: ElaborazioniSearch
+  nameWithType: ElaborazioniSearch
+  fullName: DTO.ElaborazioniSearch
+- uid: IRemInterfaceOSAP.Cartella[]
+  isExternal: true
+  name: Cartella[]
+  nameWithType: Cartella[]
+  fullName: IRemInterfaceOSAP.Cartella[]
+  nameWithType.vb: Cartella()
+  fullName.vb: IRemInterfaceOSAP.Cartella()
+  name.vb: Cartella()
+  spec.csharp:
+  - uid: IRemInterfaceOSAP.Cartella
+    name: Cartella
+    nameWithType: Cartella
+    fullName: IRemInterfaceOSAP.Cartella
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: IRemInterfaceOSAP.Cartella
+    name: Cartella
+    nameWithType: Cartella
+    fullName: IRemInterfaceOSAP.Cartella
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: DTO
+  commentId: N:DTO
+  name: DTO
+  nameWithType: DTO
+  fullName: DTO
+- uid: DAO.ElaborazioniDAO.GetElaborazioniStatistics*
+  commentId: Overload:DAO.ElaborazioniDAO.GetElaborazioniStatistics
+  name: GetElaborazioniStatistics
+  nameWithType: ElaborazioniDAO.GetElaborazioniStatistics
+  fullName: DAO.ElaborazioniDAO.GetElaborazioniStatistics
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DAO.ElaborazioniDAO.FillCartellaFromDataTable*
+  commentId: Overload:DAO.ElaborazioniDAO.FillCartellaFromDataTable
+  name: FillCartellaFromDataTable
+  nameWithType: ElaborazioniDAO.FillCartellaFromDataTable
+  fullName: DAO.ElaborazioniDAO.FillCartellaFromDataTable
+- uid: System.Data.DataTable
+  commentId: T:System.Data.DataTable
+  parent: System.Data
+  isExternal: true
+  name: DataTable
+  nameWithType: DataTable
+  fullName: System.Data.DataTable
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+- uid: DAO.ElaborazioniDAO.connessioneDB*
+  commentId: Overload:DAO.ElaborazioniDAO.connessioneDB
+  name: connessioneDB
+  nameWithType: ElaborazioniDAO.connessioneDB
+  fullName: DAO.ElaborazioniDAO.connessioneDB

@@ -1,0 +1,85 @@
+
+.SFONDO_TABELLA_TOTALI
+{
+    BORDER-RIGHT: steelblue 1px solid;
+    BORDER-TOP: steelblue 1px solid;
+    BORDER-LEFT: steelblue 1px solid;
+    BORDER-BOTTOM: steelblue 1px solid;
+    BACKGROUND-COLOR: #fafad2
+}
+.dati_anagrafe_tarsu_blu
+{
+    BORDER-RIGHT: steelblue 1px solid;
+    BORDER-TOP: steelblue 1px solid;
+    FONT-SIZE: 12px;
+    BORDER-LEFT: steelblue 1px solid;
+    COLOR: firebrick;
+    BORDER-BOTTOM: steelblue 1px solid;
+    FONT-FAMILY: Verdana;
+    LETTER-SPACING: 1px;
+    BACKGROUND-COLOR: white
+}
+.riga_menu
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    TEXT-TRANSFORM: capitalize;
+    COLOR: darkblue;
+    FONT-FAMILY: Verdana
+}
+.bordo_tabelle
+{
+    BORDER-RIGHT: steelblue 1px solid;
+    BORDER-TOP: steelblue 1px solid;
+    BORDER-LEFT: steelblue 1px solid;
+    BORDER-BOTTOM: steelblue 1px solid
+}
+.intest_riga_tabella
+{
+    BORDER-RIGHT: lightblue 1px solid;
+    BORDER-TOP: lightblue 1px solid;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 13px;
+    TEXT-TRANSFORM: capitalize;
+    BORDER-LEFT: lightblue 1px solid;
+    COLOR: navy;
+    BORDER-BOTTOM: lightblue 1px solid;
+    FONT-FAMILY: Verdana;
+    BACKGROUND-COLOR: lightsteelblue
+}
+.riga_tabella_white
+{
+    BORDER-RIGHT: darkblue thin solid;
+    BORDER-TOP: darkblue thin solid;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    TEXT-TRANSFORM: capitalize;
+    BORDER-LEFT: darkblue thin solid;
+    COLOR: darkblue;
+    BORDER-BOTTOM: darkblue thin solid;
+    FONT-FAMILY: Verdana;
+    BACKGROUND-COLOR: lightsteelblue
+}
+.riga_menu_11
+{
+	font-weight: bolder;
+	font-size: 11px;
+	text-transform: capitalize;
+	font-family: Verdana;
+}
+.riga_menu_verde
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    TEXT-TRANSFORM: capitalize;
+    COLOR: limegreen;
+    FONT-FAMILY: Verdana
+}
+.riga_menu_mouse_over
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    TEXT-TRANSFORM: capitalize;
+    COLOR: red;
+    FONT-FAMILY: Verdana
+}

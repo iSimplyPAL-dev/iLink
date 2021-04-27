@@ -1,0 +1,439 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.Database.CategoriaCatastaleRow
+  commentId: T:DichiarazioniICI.Database.CategoriaCatastaleRow
+  id: CategoriaCatastaleRow
+  parent: DichiarazioniICI.Database
+  children:
+  - DichiarazioniICI.Database.CategoriaCatastaleRow.CategoriaCatastale
+  - DichiarazioniICI.Database.CategoriaCatastaleRow.Descrizione
+  - DichiarazioniICI.Database.CategoriaCatastaleRow.Ente
+  - DichiarazioniICI.Database.CategoriaCatastaleRow.ID
+  langs:
+  - csharp
+  - vb
+  name: CategoriaCatastaleRow
+  nameWithType: CategoriaCatastaleRow
+  fullName: DichiarazioniICI.Database.CategoriaCatastaleRow
+  type: Struct
+  source:
+    id: CategoriaCatastaleRow
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\CategoriaCatastaleTable.cs
+    startLine: 17
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nStruttura che rappresenta il singolo record della tabella TblCategoriaCatastale.\nContiene quattro elementi\n<ul><li></li><li></li><li></li><li></li></ul>\n"
+  example: []
+  syntax:
+    content: public struct CategoriaCatastaleRow
+    content.vb: Public Structure CategoriaCatastaleRow
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: DichiarazioniICI.Database.CategoriaCatastaleRow.ID
+  commentId: F:DichiarazioniICI.Database.CategoriaCatastaleRow.ID
+  id: ID
+  parent: DichiarazioniICI.Database.CategoriaCatastaleRow
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: CategoriaCatastaleRow.ID
+  fullName: DichiarazioniICI.Database.CategoriaCatastaleRow.ID
+  type: Field
+  source:
+    id: ID
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\CategoriaCatastaleTable.cs
+    startLine: 19
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int ID
+    return:
+      type: System.Int32
+    content.vb: Public ID As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.CategoriaCatastaleRow.Ente
+  commentId: F:DichiarazioniICI.Database.CategoriaCatastaleRow.Ente
+  id: Ente
+  parent: DichiarazioniICI.Database.CategoriaCatastaleRow
+  langs:
+  - csharp
+  - vb
+  name: Ente
+  nameWithType: CategoriaCatastaleRow.Ente
+  fullName: DichiarazioniICI.Database.CategoriaCatastaleRow.Ente
+  type: Field
+  source:
+    id: Ente
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\CategoriaCatastaleTable.cs
+    startLine: 20
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string Ente
+    return:
+      type: System.String
+    content.vb: Public Ente As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.CategoriaCatastaleRow.CategoriaCatastale
+  commentId: F:DichiarazioniICI.Database.CategoriaCatastaleRow.CategoriaCatastale
+  id: CategoriaCatastale
+  parent: DichiarazioniICI.Database.CategoriaCatastaleRow
+  langs:
+  - csharp
+  - vb
+  name: CategoriaCatastale
+  nameWithType: CategoriaCatastaleRow.CategoriaCatastale
+  fullName: DichiarazioniICI.Database.CategoriaCatastaleRow.CategoriaCatastale
+  type: Field
+  source:
+    id: CategoriaCatastale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\CategoriaCatastaleTable.cs
+    startLine: 21
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string CategoriaCatastale
+    return:
+      type: System.String
+    content.vb: Public CategoriaCatastale As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.CategoriaCatastaleRow.Descrizione
+  commentId: F:DichiarazioniICI.Database.CategoriaCatastaleRow.Descrizione
+  id: Descrizione
+  parent: DichiarazioniICI.Database.CategoriaCatastaleRow
+  langs:
+  - csharp
+  - vb
+  name: Descrizione
+  nameWithType: CategoriaCatastaleRow.Descrizione
+  fullName: DichiarazioniICI.Database.CategoriaCatastaleRow.Descrizione
+  type: Field
+  source:
+    id: Descrizione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\CategoriaCatastaleTable.cs
+    startLine: 22
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string Descrizione
+    return:
+      type: System.String
+    content.vb: Public Descrizione As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: DichiarazioniICI.Database
+  commentId: N:DichiarazioniICI.Database
+  name: DichiarazioniICI.Database
+  nameWithType: DichiarazioniICI.Database
+  fullName: DichiarazioniICI.Database
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

@@ -1,0 +1,762 @@
+### YamlMime:ManagedReference
+items:
+- uid: Business.HelperAnagrafica
+  commentId: T:Business.HelperAnagrafica
+  id: HelperAnagrafica
+  parent: Business
+  children:
+  - Business.HelperAnagrafica.AggiungiInAnagrafica(AnagInterface.DettaglioAnagrafica)
+  - Business.HelperAnagrafica.GetDatiPersona(System.Int64)
+  - Business.HelperAnagrafica.PopUpAnagrafica(System.Web.UI.Page,System.String)
+  - Business.HelperAnagrafica.PopUpAnagrafica(System.Web.UI.Page,System.String,System.String,System.String)
+  - Business.HelperAnagrafica.PopUpAnagraficaCalcoloIci(System.Web.UI.Page,System.String)
+  - Business.HelperAnagrafica.PopUpAnagraficaCompensazione(System.Web.UI.Page,System.String)
+  - Business.HelperAnagrafica.RicercaPersona(System.String,System.String,System.String,System.String)
+  - Business.HelperAnagrafica.RicercaPersona(System.String,System.String,System.String,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: HelperAnagrafica
+  nameWithType: HelperAnagrafica
+  fullName: Business.HelperAnagrafica
+  type: Class
+  source:
+    id: HelperAnagrafica
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\HelperAnagrafica.cs
+    startLine: 14
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nClasse per l&apos;interfacciamento con le funzioni anagrafiche\n"
+  remarks: In ottemperanza alle linee guida di sviluppo 1.0
+  example: []
+  syntax:
+    content: public class HelperAnagrafica
+    content.vb: Public Class HelperAnagrafica
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Business.HelperAnagrafica.RicercaPersona(System.String,System.String,System.String,System.String)
+  commentId: M:Business.HelperAnagrafica.RicercaPersona(System.String,System.String,System.String,System.String)
+  id: RicercaPersona(System.String,System.String,System.String,System.String)
+  parent: Business.HelperAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: RicercaPersona(String, String, String, String)
+  nameWithType: HelperAnagrafica.RicercaPersona(String, String, String, String)
+  fullName: Business.HelperAnagrafica.RicercaPersona(System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    id: RicercaPersona
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\HelperAnagrafica.cs
+    startLine: 57
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nMetodo helper per l&apos;interfacciamento alla ricerca in Anagrafica\n"
+  example: []
+  syntax:
+    content: public static DataTable RicercaPersona(string cognome, string nome, string codiceFiscale, string partitaIva)
+    parameters:
+    - id: cognome
+      type: System.String
+      description: Cognome
+    - id: nome
+      type: System.String
+      description: Nome
+    - id: codiceFiscale
+      type: System.String
+      description: Codice Fiscale
+    - id: partitaIva
+      type: System.String
+      description: Partita IVA
+    return:
+      type: System.Data.DataTable
+      description: DataTable
+    content.vb: Public Shared Function RicercaPersona(cognome As String, nome As String, codiceFiscale As String, partitaIva As String) As DataTable
+  overload: Business.HelperAnagrafica.RicercaPersona*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Business.HelperAnagrafica.RicercaPersona(System.String,System.String,System.String,System.String,System.String)
+  commentId: M:Business.HelperAnagrafica.RicercaPersona(System.String,System.String,System.String,System.String,System.String)
+  id: RicercaPersona(System.String,System.String,System.String,System.String,System.String)
+  parent: Business.HelperAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: RicercaPersona(String, String, String, String, String)
+  nameWithType: HelperAnagrafica.RicercaPersona(String, String, String, String, String)
+  fullName: Business.HelperAnagrafica.RicercaPersona(System.String, System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    id: RicercaPersona
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\HelperAnagrafica.cs
+    startLine: 88
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nMetodo helper per l&apos;interfacciamento alla ricerca in Anagrafica\n"
+  example: []
+  syntax:
+    content: public static DataTable RicercaPersona(string cognome, string nome, string codiceFiscale, string partitaIva, string codEnte)
+    parameters:
+    - id: cognome
+      type: System.String
+      description: Cognome
+    - id: nome
+      type: System.String
+      description: Nome
+    - id: codiceFiscale
+      type: System.String
+      description: Codice Fiscale
+    - id: partitaIva
+      type: System.String
+      description: Partita IVA
+    - id: codEnte
+      type: System.String
+      description: Codice Ente
+    return:
+      type: System.Data.DataTable
+      description: DataTable
+    content.vb: Public Shared Function RicercaPersona(cognome As String, nome As String, codiceFiscale As String, partitaIva As String, codEnte As String) As DataTable
+  overload: Business.HelperAnagrafica.RicercaPersona*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Business.HelperAnagrafica.GetDatiPersona(System.Int64)
+  commentId: M:Business.HelperAnagrafica.GetDatiPersona(System.Int64)
+  id: GetDatiPersona(System.Int64)
+  parent: Business.HelperAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: GetDatiPersona(Int64)
+  nameWithType: HelperAnagrafica.GetDatiPersona(Int64)
+  fullName: Business.HelperAnagrafica.GetDatiPersona(System.Int64)
+  type: Method
+  source:
+    id: GetDatiPersona
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\HelperAnagrafica.cs
+    startLine: 113
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nMetodo per estrarre i dati di un singolo individuo identificato dal codice contribuente\n"
+  example: []
+  syntax:
+    content: public static DettaglioAnagrafica GetDatiPersona(long codiceContribuente)
+    parameters:
+    - id: codiceContribuente
+      type: System.Int64
+      description: CodiceContribuente
+    return:
+      type: AnagInterface.DettaglioAnagrafica
+      description: DettaglioAnagrafica
+    content.vb: Public Shared Function GetDatiPersona(codiceContribuente As Long) As DettaglioAnagrafica
+  overload: Business.HelperAnagrafica.GetDatiPersona*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Business.HelperAnagrafica.AggiungiInAnagrafica(AnagInterface.DettaglioAnagrafica)
+  commentId: M:Business.HelperAnagrafica.AggiungiInAnagrafica(AnagInterface.DettaglioAnagrafica)
+  id: AggiungiInAnagrafica(AnagInterface.DettaglioAnagrafica)
+  parent: Business.HelperAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: AggiungiInAnagrafica(DettaglioAnagrafica)
+  nameWithType: HelperAnagrafica.AggiungiInAnagrafica(DettaglioAnagrafica)
+  fullName: Business.HelperAnagrafica.AggiungiInAnagrafica(AnagInterface.DettaglioAnagrafica)
+  type: Method
+  source:
+    id: AggiungiInAnagrafica
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\HelperAnagrafica.cs
+    startLine: 154
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nAggiunge un record all&apos;anagrafica\n"
+  example: []
+  syntax:
+    content: public static int AggiungiInAnagrafica(DettaglioAnagrafica datiPersona)
+    parameters:
+    - id: datiPersona
+      type: AnagInterface.DettaglioAnagrafica
+      description: datiPersona
+    return:
+      type: System.Int32
+      description: int
+    content.vb: Public Shared Function AggiungiInAnagrafica(datiPersona As DettaglioAnagrafica) As Integer
+  overload: Business.HelperAnagrafica.AggiungiInAnagrafica*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Business.HelperAnagrafica.PopUpAnagrafica(System.Web.UI.Page,System.String)
+  commentId: M:Business.HelperAnagrafica.PopUpAnagrafica(System.Web.UI.Page,System.String)
+  id: PopUpAnagrafica(System.Web.UI.Page,System.String)
+  parent: Business.HelperAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: PopUpAnagrafica(Page, String)
+  nameWithType: HelperAnagrafica.PopUpAnagrafica(Page, String)
+  fullName: Business.HelperAnagrafica.PopUpAnagrafica(System.Web.UI.Page, System.String)
+  type: Method
+  source:
+    id: PopUpAnagrafica
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\HelperAnagrafica.cs
+    startLine: 168
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nApertura del popup Anagrafica pewr la ricerca\n"
+  example: []
+  syntax:
+    content: public static void PopUpAnagrafica(Page page, string chiaveSessione)
+    parameters:
+    - id: page
+      type: System.Web.UI.Page
+      description: ''
+    - id: chiaveSessione
+      type: System.String
+      description: ''
+    content.vb: Public Shared Sub PopUpAnagrafica(page As Page, chiaveSessione As String)
+  overload: Business.HelperAnagrafica.PopUpAnagrafica*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Business.HelperAnagrafica.PopUpAnagrafica(System.Web.UI.Page,System.String,System.String,System.String)
+  commentId: M:Business.HelperAnagrafica.PopUpAnagrafica(System.Web.UI.Page,System.String,System.String,System.String)
+  id: PopUpAnagrafica(System.Web.UI.Page,System.String,System.String,System.String)
+  parent: Business.HelperAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: PopUpAnagrafica(Page, String, String, String)
+  nameWithType: HelperAnagrafica.PopUpAnagrafica(Page, String, String, String)
+  fullName: Business.HelperAnagrafica.PopUpAnagrafica(System.Web.UI.Page, System.String, System.String, System.String)
+  type: Method
+  source:
+    id: PopUpAnagrafica
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\HelperAnagrafica.cs
+    startLine: 205
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public static void PopUpAnagrafica(Page page, string chiaveSessione, string COD_CONTRIBUENTE, string ID_DATA_ANAGRAFICA)
+    parameters:
+    - id: page
+      type: System.Web.UI.Page
+      description: ''
+    - id: chiaveSessione
+      type: System.String
+      description: ''
+    - id: COD_CONTRIBUENTE
+      type: System.String
+      description: ''
+    - id: ID_DATA_ANAGRAFICA
+      type: System.String
+      description: ''
+    content.vb: Public Shared Sub PopUpAnagrafica(page As Page, chiaveSessione As String, COD_CONTRIBUENTE As String, ID_DATA_ANAGRAFICA As String)
+  overload: Business.HelperAnagrafica.PopUpAnagrafica*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Business.HelperAnagrafica.PopUpAnagraficaCalcoloIci(System.Web.UI.Page,System.String)
+  commentId: M:Business.HelperAnagrafica.PopUpAnagraficaCalcoloIci(System.Web.UI.Page,System.String)
+  id: PopUpAnagraficaCalcoloIci(System.Web.UI.Page,System.String)
+  parent: Business.HelperAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: PopUpAnagraficaCalcoloIci(Page, String)
+  nameWithType: HelperAnagrafica.PopUpAnagraficaCalcoloIci(Page, String)
+  fullName: Business.HelperAnagrafica.PopUpAnagraficaCalcoloIci(System.Web.UI.Page, System.String)
+  type: Method
+  source:
+    id: PopUpAnagraficaCalcoloIci
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\HelperAnagrafica.cs
+    startLine: 264
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public static void PopUpAnagraficaCalcoloIci(Page page, string chiaveSessione)
+    parameters:
+    - id: page
+      type: System.Web.UI.Page
+      description: ''
+    - id: chiaveSessione
+      type: System.String
+      description: ''
+    content.vb: Public Shared Sub PopUpAnagraficaCalcoloIci(page As Page, chiaveSessione As String)
+  overload: Business.HelperAnagrafica.PopUpAnagraficaCalcoloIci*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Business.HelperAnagrafica.PopUpAnagraficaCompensazione(System.Web.UI.Page,System.String)
+  commentId: M:Business.HelperAnagrafica.PopUpAnagraficaCompensazione(System.Web.UI.Page,System.String)
+  id: PopUpAnagraficaCompensazione(System.Web.UI.Page,System.String)
+  parent: Business.HelperAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: PopUpAnagraficaCompensazione(Page, String)
+  nameWithType: HelperAnagrafica.PopUpAnagraficaCompensazione(Page, String)
+  fullName: Business.HelperAnagrafica.PopUpAnagraficaCompensazione(System.Web.UI.Page, System.String)
+  type: Method
+  source:
+    id: PopUpAnagraficaCompensazione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\HelperAnagrafica.cs
+    startLine: 313
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nApertura del popup Anagrafica pewr la ricerca anagrafica nelle compensazioni\n"
+  example: []
+  syntax:
+    content: public static void PopUpAnagraficaCompensazione(Page page, string chiaveSessione)
+    parameters:
+    - id: page
+      type: System.Web.UI.Page
+      description: page
+    - id: chiaveSessione
+      type: System.String
+      description: ''
+    content.vb: Public Shared Sub PopUpAnagraficaCompensazione(page As Page, chiaveSessione As String)
+  overload: Business.HelperAnagrafica.PopUpAnagraficaCompensazione*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Business
+  commentId: N:Business
+  name: Business
+  nameWithType: Business
+  fullName: Business
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Business.HelperAnagrafica.RicercaPersona*
+  commentId: Overload:Business.HelperAnagrafica.RicercaPersona
+  name: RicercaPersona
+  nameWithType: HelperAnagrafica.RicercaPersona
+  fullName: Business.HelperAnagrafica.RicercaPersona
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Data.DataTable
+  commentId: T:System.Data.DataTable
+  parent: System.Data
+  isExternal: true
+  name: DataTable
+  nameWithType: DataTable
+  fullName: System.Data.DataTable
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+- uid: Business.HelperAnagrafica.GetDatiPersona*
+  commentId: Overload:Business.HelperAnagrafica.GetDatiPersona
+  name: GetDatiPersona
+  nameWithType: HelperAnagrafica.GetDatiPersona
+  fullName: Business.HelperAnagrafica.GetDatiPersona
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: AnagInterface.DettaglioAnagrafica
+  commentId: T:AnagInterface.DettaglioAnagrafica
+  parent: AnagInterface
+  isExternal: true
+  name: DettaglioAnagrafica
+  nameWithType: DettaglioAnagrafica
+  fullName: AnagInterface.DettaglioAnagrafica
+- uid: AnagInterface
+  commentId: N:AnagInterface
+  isExternal: true
+  name: AnagInterface
+  nameWithType: AnagInterface
+  fullName: AnagInterface
+- uid: Business.HelperAnagrafica.AggiungiInAnagrafica*
+  commentId: Overload:Business.HelperAnagrafica.AggiungiInAnagrafica
+  name: AggiungiInAnagrafica
+  nameWithType: HelperAnagrafica.AggiungiInAnagrafica
+  fullName: Business.HelperAnagrafica.AggiungiInAnagrafica
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Business.HelperAnagrafica.PopUpAnagrafica*
+  commentId: Overload:Business.HelperAnagrafica.PopUpAnagrafica
+  name: PopUpAnagrafica
+  nameWithType: HelperAnagrafica.PopUpAnagrafica
+  fullName: Business.HelperAnagrafica.PopUpAnagrafica
+- uid: System.Web.UI.Page
+  commentId: T:System.Web.UI.Page
+  parent: System.Web.UI
+  isExternal: true
+  name: Page
+  nameWithType: Page
+  fullName: System.Web.UI.Page
+- uid: System.Web.UI
+  commentId: N:System.Web.UI
+  isExternal: true
+  name: System.Web.UI
+  nameWithType: System.Web.UI
+  fullName: System.Web.UI
+- uid: Business.HelperAnagrafica.PopUpAnagraficaCalcoloIci*
+  commentId: Overload:Business.HelperAnagrafica.PopUpAnagraficaCalcoloIci
+  name: PopUpAnagraficaCalcoloIci
+  nameWithType: HelperAnagrafica.PopUpAnagraficaCalcoloIci
+  fullName: Business.HelperAnagrafica.PopUpAnagraficaCalcoloIci
+- uid: Business.HelperAnagrafica.PopUpAnagraficaCompensazione*
+  commentId: Overload:Business.HelperAnagrafica.PopUpAnagraficaCompensazione
+  name: PopUpAnagraficaCompensazione
+  nameWithType: HelperAnagrafica.PopUpAnagraficaCompensazione
+  fullName: Business.HelperAnagrafica.PopUpAnagraficaCompensazione

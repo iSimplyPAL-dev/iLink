@@ -1,0 +1,767 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  commentId: T:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  id: ObjFlussoScuole.PosizioniAvvisi
+  parent: OPENgovTOCO
+  children:
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.AL
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.ANNO
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.CAP_CO
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.CAP_RES
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.CF
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COGNOME
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COGNOME_ALUNNO
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COMUNE_CO
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COMUNE_RES
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COMUNENASCITA
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COSTO_TOTALE
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COSTO_UNITARIO
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.DAL
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.DATANASCITA
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.FRAZIONE_RES
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.NOME
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.NOME_ALUNNO
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.OCCORRENZE
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.PROV_CO
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.PROV_RES
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.SCUOLA
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.SERVIZIO
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.SEZIONE
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.VIA_CO
+  - OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.VIA_RES
+  langs:
+  - csharp
+  - vb
+  name: ObjFlussoScuole.PosizioniAvvisi
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  type: Enum
+  source:
+    id: PosizioniAvvisi
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 611
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public enum PosizioniAvvisi
+    content.vb: Public Enum PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.ANNO
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.ANNO
+  id: ANNO
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: ANNO
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.ANNO
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.ANNO
+  type: Field
+  source:
+    id: ANNO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 613
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: ANNO = 2
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COGNOME
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COGNOME
+  id: COGNOME
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: COGNOME
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.COGNOME
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COGNOME
+  type: Field
+  source:
+    id: COGNOME
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 615
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: COGNOME = 6
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.NOME
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.NOME
+  id: NOME
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: NOME
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.NOME
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.NOME
+  type: Field
+  source:
+    id: NOME
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 617
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: NOME = 7
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.CF
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.CF
+  id: CF
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: CF
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.CF
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.CF
+  type: Field
+  source:
+    id: CF
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 619
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: CF = 8
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.DATANASCITA
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.DATANASCITA
+  id: DATANASCITA
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: DATANASCITA
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.DATANASCITA
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.DATANASCITA
+  type: Field
+  source:
+    id: DATANASCITA
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 621
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: DATANASCITA = 9
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COMUNENASCITA
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COMUNENASCITA
+  id: COMUNENASCITA
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: COMUNENASCITA
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.COMUNENASCITA
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COMUNENASCITA
+  type: Field
+  source:
+    id: COMUNENASCITA
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 623
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: COMUNENASCITA = 10
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.VIA_RES
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.VIA_RES
+  id: VIA_RES
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: VIA_RES
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.VIA_RES
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.VIA_RES
+  type: Field
+  source:
+    id: VIA_RES
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 625
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: VIA_RES = 12
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.FRAZIONE_RES
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.FRAZIONE_RES
+  id: FRAZIONE_RES
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: FRAZIONE_RES
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.FRAZIONE_RES
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.FRAZIONE_RES
+  type: Field
+  source:
+    id: FRAZIONE_RES
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 627
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: FRAZIONE_RES = 11
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.CAP_RES
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.CAP_RES
+  id: CAP_RES
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: CAP_RES
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.CAP_RES
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.CAP_RES
+  type: Field
+  source:
+    id: CAP_RES
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 629
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: CAP_RES = 13
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COMUNE_RES
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COMUNE_RES
+  id: COMUNE_RES
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: COMUNE_RES
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.COMUNE_RES
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COMUNE_RES
+  type: Field
+  source:
+    id: COMUNE_RES
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 631
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: COMUNE_RES = 14
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.PROV_RES
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.PROV_RES
+  id: PROV_RES
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: PROV_RES
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.PROV_RES
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.PROV_RES
+  type: Field
+  source:
+    id: PROV_RES
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 633
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: PROV_RES = 15
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.VIA_CO
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.VIA_CO
+  id: VIA_CO
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: VIA_CO
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.VIA_CO
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.VIA_CO
+  type: Field
+  source:
+    id: VIA_CO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 635
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: VIA_CO = 16
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.CAP_CO
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.CAP_CO
+  id: CAP_CO
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: CAP_CO
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.CAP_CO
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.CAP_CO
+  type: Field
+  source:
+    id: CAP_CO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 637
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: CAP_CO = 17
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COMUNE_CO
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COMUNE_CO
+  id: COMUNE_CO
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: COMUNE_CO
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.COMUNE_CO
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COMUNE_CO
+  type: Field
+  source:
+    id: COMUNE_CO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 639
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: COMUNE_CO = 18
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.PROV_CO
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.PROV_CO
+  id: PROV_CO
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: PROV_CO
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.PROV_CO
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.PROV_CO
+  type: Field
+  source:
+    id: PROV_CO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 641
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: PROV_CO = 19
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COGNOME_ALUNNO
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COGNOME_ALUNNO
+  id: COGNOME_ALUNNO
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: COGNOME_ALUNNO
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.COGNOME_ALUNNO
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COGNOME_ALUNNO
+  type: Field
+  source:
+    id: COGNOME_ALUNNO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 643
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: COGNOME_ALUNNO = 21
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.NOME_ALUNNO
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.NOME_ALUNNO
+  id: NOME_ALUNNO
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: NOME_ALUNNO
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.NOME_ALUNNO
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.NOME_ALUNNO
+  type: Field
+  source:
+    id: NOME_ALUNNO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 645
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: NOME_ALUNNO = 22
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.DAL
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.DAL
+  id: DAL
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: DAL
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.DAL
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.DAL
+  type: Field
+  source:
+    id: DAL
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 647
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: DAL = 23
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.AL
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.AL
+  id: AL
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: AL
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.AL
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.AL
+  type: Field
+  source:
+    id: AL
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 649
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: AL = 24
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.SERVIZIO
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.SERVIZIO
+  id: SERVIZIO
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: SERVIZIO
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.SERVIZIO
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.SERVIZIO
+  type: Field
+  source:
+    id: SERVIZIO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 651
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: SERVIZIO = 25
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.SCUOLA
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.SCUOLA
+  id: SCUOLA
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: SCUOLA
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.SCUOLA
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.SCUOLA
+  type: Field
+  source:
+    id: SCUOLA
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 653
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: SCUOLA = 27
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.SEZIONE
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.SEZIONE
+  id: SEZIONE
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: SEZIONE
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.SEZIONE
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.SEZIONE
+  type: Field
+  source:
+    id: SEZIONE
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 655
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: SEZIONE = 28
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.OCCORRENZE
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.OCCORRENZE
+  id: OCCORRENZE
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: OCCORRENZE
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.OCCORRENZE
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.OCCORRENZE
+  type: Field
+  source:
+    id: OCCORRENZE
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 657
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: OCCORRENZE = 29
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COSTO_UNITARIO
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COSTO_UNITARIO
+  id: COSTO_UNITARIO
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: COSTO_UNITARIO
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.COSTO_UNITARIO
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COSTO_UNITARIO
+  type: Field
+  source:
+    id: COSTO_UNITARIO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 659
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: COSTO_UNITARIO = 30
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COSTO_TOTALE
+  commentId: F:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COSTO_TOTALE
+  id: COSTO_TOTALE
+  parent: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  langs:
+  - csharp
+  - vb
+  name: COSTO_TOTALE
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi.COSTO_TOTALE
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.COSTO_TOTALE
+  type: Field
+  source:
+    id: COSTO_TOTALE
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 660
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: COSTO_TOTALE = 32
+    return:
+      type: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: OPENgovTOCO
+  commentId: N:OPENgovTOCO
+  name: OPENgovTOCO
+  nameWithType: OPENgovTOCO
+  fullName: OPENgovTOCO
+- uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  commentId: T:OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+  parent: OPENgovTOCO
+  name: ObjFlussoScuole.PosizioniAvvisi
+  nameWithType: ObjFlussoScuole.PosizioniAvvisi
+  fullName: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi

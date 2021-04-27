@@ -1,0 +1,530 @@
+### YamlMime:ManagedReference
+items:
+- uid: Business.ImportHelper
+  commentId: T:Business.ImportHelper
+  id: ImportHelper
+  parent: Business
+  children:
+  - Business.ImportHelper.Import(System.String,System.String)
+  - Business.ImportHelper.Import(System.String,System.String[],System.String)
+  - Business.ImportHelper.ResultLastImport(System.String,System.DateTime@)
+  langs:
+  - csharp
+  - vb
+  name: ImportHelper
+  nameWithType: ImportHelper
+  fullName: Business.ImportHelper
+  type: Class
+  source:
+    id: ImportHelper
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ImportHelper.cs
+    startLine: 12
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nClasse per le importazioni imex\n"
+  remarks: In ottemperanza alle linee guida di sviluppo 1.0
+  example: []
+  syntax:
+    content: public class ImportHelper
+    content.vb: Public Class ImportHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Business.ImportHelper.Import(System.String,System.String)
+  commentId: M:Business.ImportHelper.Import(System.String,System.String)
+  id: Import(System.String,System.String)
+  parent: Business.ImportHelper
+  langs:
+  - csharp
+  - vb
+  name: Import(String, String)
+  nameWithType: ImportHelper.Import(String, String)
+  fullName: Business.ImportHelper.Import(System.String, System.String)
+  type: Method
+  source:
+    id: Import
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ImportHelper.cs
+    startLine: 25
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nMetodo per avviare l&apos;importazione\n"
+  example: []
+  syntax:
+    content: public static bool Import(string tipo, string fileName)
+    parameters:
+    - id: tipo
+      type: System.String
+      description: ''
+    - id: fileName
+      type: System.String
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function Import(tipo As String, fileName As String) As Boolean
+  overload: Business.ImportHelper.Import*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Business.ImportHelper.Import(System.String,System.String[],System.String)
+  commentId: M:Business.ImportHelper.Import(System.String,System.String[],System.String)
+  id: Import(System.String,System.String[],System.String)
+  parent: Business.ImportHelper
+  langs:
+  - csharp
+  - vb
+  name: Import(String, String[], String)
+  nameWithType: ImportHelper.Import(String, String[], String)
+  fullName: Business.ImportHelper.Import(System.String, System.String[], System.String)
+  type: Method
+  source:
+    id: Import
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ImportHelper.cs
+    startLine: 47
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public static bool Import(string tipo, string[] fileSplittato, string fileName)
+    parameters:
+    - id: tipo
+      type: System.String
+      description: ''
+    - id: fileSplittato
+      type: System.String[]
+      description: ''
+    - id: fileName
+      type: System.String
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function Import(tipo As String, fileSplittato As String(), fileName As String) As Boolean
+  overload: Business.ImportHelper.Import*
+  nameWithType.vb: ImportHelper.Import(String, String(), String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Business.ImportHelper.Import(System.String, System.String(), System.String)
+  name.vb: Import(String, String(), String)
+- uid: Business.ImportHelper.ResultLastImport(System.String,System.DateTime@)
+  commentId: M:Business.ImportHelper.ResultLastImport(System.String,System.DateTime@)
+  id: ResultLastImport(System.String,System.DateTime@)
+  parent: Business.ImportHelper
+  langs:
+  - csharp
+  - vb
+  name: ResultLastImport(String, out DateTime)
+  nameWithType: ImportHelper.ResultLastImport(String, out DateTime)
+  fullName: Business.ImportHelper.ResultLastImport(System.String, out System.DateTime)
+  type: Method
+  source:
+    id: ResultLastImport
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ImportHelper.cs
+    startLine: 60
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nTorna l&apos;esito dell&apos;ultima importazione con la data dell&apos;esecuzione.\n"
+  example: []
+  syntax:
+    content: public static bool ResultLastImport(string fileName, out DateTime dataUltimoImport)
+    parameters:
+    - id: fileName
+      type: System.String
+      description: ''
+    - id: dataUltimoImport
+      type: System.DateTime
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function ResultLastImport(fileName As String, ByRef dataUltimoImport As Date) As Boolean
+  overload: Business.ImportHelper.ResultLastImport*
+  nameWithType.vb: ImportHelper.ResultLastImport(String, ByRef DateTime)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Business.ImportHelper.ResultLastImport(System.String, ByRef System.DateTime)
+  name.vb: ResultLastImport(String, ByRef DateTime)
+references:
+- uid: Business
+  commentId: N:Business
+  name: Business
+  nameWithType: Business
+  fullName: Business
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Business.ImportHelper.Import*
+  commentId: Overload:Business.ImportHelper.Import
+  name: Import
+  nameWithType: ImportHelper.Import
+  fullName: Business.ImportHelper.Import
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Business.ImportHelper.ResultLastImport*
+  commentId: Overload:Business.ImportHelper.ResultLastImport
+  name: ResultLastImport
+  nameWithType: ImportHelper.ResultLastImport
+  fullName: Business.ImportHelper.ResultLastImport
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime

@@ -1,0 +1,1450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" />
+  <Import Project="..\packages\Text.Analyzers.2.6.3\build\Text.Analyzers.props" Condition="Exists('..\packages\Text.Analyzers.2.6.3\build\Text.Analyzers.props')" />
+  <Import Project="..\packages\Microsoft.NetFramework.Analyzers.2.6.3\build\Microsoft.NetFramework.Analyzers.props" Condition="Exists('..\packages\Microsoft.NetFramework.Analyzers.2.6.3\build\Microsoft.NetFramework.Analyzers.props')" />
+  <Import Project="..\packages\Microsoft.NetCore.Analyzers.2.6.3\build\Microsoft.NetCore.Analyzers.props" Condition="Exists('..\packages\Microsoft.NetCore.Analyzers.2.6.3\build\Microsoft.NetCore.Analyzers.props')" />
+  <Import Project="..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\build\Microsoft.CodeQuality.Analyzers.props" Condition="Exists('..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\build\Microsoft.CodeQuality.Analyzers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4FA2C554-192A-4F76-B81F-E5363E26CA14}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>OPENgovProvvedimenti</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>Provvedimenti</RootNamespace>
+    <StartupObject>Provvedimenti.%28None%29</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>OPENgovProvvedimenti.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>OPENgovProvvedimenti.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AnagInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=73a397894a5f6da1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLComuni\AnagInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="Anagrafica, Version=1.0.1.2, Culture=neutral, PublicKeyToken=978df93f9e14593b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLComuni\Anagrafica.dll</HintPath>
+    </Reference>
+    <Reference Include="ComPlusInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4a09653e5392bcad, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLComuni\ComPlusInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="DAL, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLComuni\DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="ElaborazioneDatiStampeInterface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLComuni\ElaborazioneDatiStampeInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLComuni\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Importer290">
+      <HintPath>..\..\..\DLLComuni\Importer290.dll</HintPath>
+    </Reference>
+    <Reference Include="IRemInterfaceOSAP, Version=1.0.6317.22177, Culture=neutral, PublicKeyToken=821c65e4384aa8e2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLComuni\IRemInterfaceOSAP.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLComuni\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="RemotingInterfaceAnater, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLComuni\RemotingInterfaceAnater.dll</HintPath>
+    </Reference>
+    <Reference Include="RemotingInterfaceMotoreTarsu, Version=1.0.1.0, Culture=neutral, PublicKeyToken=ab7a724589ef7794, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLComuni\RemotingInterfaceMotoreTarsu.dll</HintPath>
+    </Reference>
+    <Reference Include="Ribes.OPENgov.WebControls, Version=1.2.0.17259, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLComuni\Ribes.OPENgov.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="RIBESElaborazioneDocumentiInterface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLComuni\RIBESElaborazioneDocumentiInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="RKLib.ExportData, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLComuni\RKLib.ExportData.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting">
+      <Name>System.Runtime.Remoting</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="Utility, Version=1.0.7495.28013, Culture=neutral, PublicKeyToken=ae1027569650564c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLComuni\Utility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.HtmlControls" />
+    <Import Include="System.Web.UI.WebControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Configurazione\AnniProvvedimenti\ComandiConfigAnniProvvedimenti.aspx" />
+    <Content Include="Configurazione\AnniProvvedimenti\ConfigAnniProvvedimenti.aspx" />
+    <Content Include="Configurazione\Motivazioni\ComandiConfigMotivazioni.aspx" />
+    <Content Include="Configurazione\Motivazioni\ConfigMotivazioni.aspx" />
+    <Content Include="Configurazione\TabelleICI\Generale\ComandiGenerale.aspx" />
+    <Content Include="Configurazione\TabelleICI\Generale\ConfigGenerale.aspx" />
+    <Content Include="Configurazione\TabelleICI\TipoVoci\ComandiConfigTipoVoci.aspx" />
+    <Content Include="Configurazione\TabelleICI\TipoVoci\ComandiInserimentoTipoVoci.aspx" />
+    <Content Include="Configurazione\TabelleICI\TipoVoci\ComandiInserimentoVoci.aspx" />
+    <Content Include="Configurazione\TabelleICI\TipoVoci\ConfigTipoVoci.aspx" />
+    <Content Include="Configurazione\TabelleICI\TipoVoci\configuraVoci.aspx" />
+    <Content Include="Configurazione\TabelleICI\TipoVoci\NuovoInserimentoTipoVoci.aspx" />
+    <Content Include="Configurazione\TabelleICI\TipoVoci\NuovoInserimentoVoci.aspx" />
+    <Content Include="Configurazione\TabelleICI\TipoVoci\RicercaConfigTipoVoci.aspx" />
+    <Content Include="Configurazione\TabelleICI\TipoVoci\VisualizzaValoriVoci.aspx" />
+    <Content Include="Configurazione\TabelleTARSU\ConfigScadenzaInteressi.aspx" />
+    <Content Include="Configurazione\TabelleTARSU\CScadenzaInteressi.aspx" />
+    <Content Include="Configurazione\TassiInteressi\ComandiConfigTassiInteressi.aspx" />
+    <Content Include="Configurazione\TassiInteressi\ConfigTassiInteressi.aspx" />
+    <Content Include="Configurazione\TipologieSanzioni\ComandiConfigTipologieSanzioni.aspx" />
+    <Content Include="Configurazione\TipologieSanzioni\ConfigTipologieSanzioni.aspx" />
+    <Content Include="GestioneAccertamentiOSAP\CGestioneAccertamentiOSAP.aspx" />
+    <Content Include="GestioneAccertamentiOSAP\ComandiRiepilogoAccertamentoOSAP.aspx" />
+    <Content Include="GestioneAccertamentiOSAP\GestioneAccertamentiOSAP.aspx" />
+    <Content Include="GestioneAccertamentiOSAP\InserimentoManualeImmobileOSAP.aspx" />
+    <Content Include="GestioneAccertamentiOSAP\RiepilogoAccertatoOSAP.aspx" />
+    <Content Include="GestioneAccertamentiOSAP\SearchDatiAccertatoOSAP.aspx" />
+    <Content Include="GestioneAccertamentiOSAP\SearchDatiDichiaratoOSAP.aspx" />
+    <Content Include="GestioneAccertamentiTARSU\CGestioneAccertamentiTARSU.aspx" />
+    <Content Include="GestioneAccertamentiTARSU\CInserimentoImmobileTARSU.aspx" />
+    <Content Include="GestioneAccertamentiTARSU\ComandiRiepilogoAccertamentoTARSU.aspx" />
+    <Content Include="GestioneAccertamentiTARSU\FrameInserisciImmobileManualeTARSU.aspx" />
+    <Content Include="GestioneAccertamentiTARSU\GestioneAccertamentiTARSU.aspx" />
+    <Content Include="GestioneAccertamentiTARSU\InserimentoManualeImmobileTARSU.aspx" />
+    <Content Include="GestioneAccertamentiTARSU\RiepilogoAccertatoTARSU.aspx" />
+    <Content Include="GestioneAccertamentiTARSU\SearchAccertatiTARSU.aspx" />
+    <Content Include="GestioneAccertamentiTARSU\SearchDatiAccertamentiTARSU.aspx" />
+    <Content Include="GestioneAccertamentiTASI\ComandiGestioneAccertamenti.aspx" />
+    <Content Include="GestioneAccertamentiTASI\GestioneAccertamenti.aspx" />
+    <Content Include="GestioneAccertamentiTASI\SearchDatiAccertato.aspx" />
+    <Content Include="GestioneAccertamentiTASI\SearchDatiDichiarato.aspx" />
+    <Content Include="GestioneAccertamenti\ComandiGestioneAccertamenti.aspx" />
+    <Content Include="GestioneAccertamenti\ComandiGestioneAccertato.aspx" />
+    <Content Include="GestioneAccertamenti\ComandiGestioneAnater.aspx" />
+    <Content Include="GestioneAccertamenti\ComandiGestioneTerritorio.aspx" />
+    <Content Include="GestioneAccertamenti\ComandiInserimentoImmobili.aspx" />
+    <Content Include="GestioneAccertamenti\ComandiRiepilogoAccertamento.aspx" />
+    <Content Include="GestioneAccertamenti\ComandiRiepilogoAccertamentoRettifica.aspx" />
+    <Content Include="GestioneAccertamenti\FrameInserisciImmobileManuale.aspx" />
+    <Content Include="GestioneAccertamenti\FrameRicercaAccertato.aspx" />
+    <Content Include="GestioneAccertamenti\FrameRicercaAnater.aspx" />
+    <Content Include="GestioneAccertamenti\FrameRicercaTerritorio.aspx" />
+    <Content Include="GestioneAccertamenti\GestioneAccertamenti.aspx" />
+    <Content Include="GestioneAccertamenti\grdAccertato.aspx" />
+    <Content Include="GestioneAccertamenti\InserimentoManualeImmobile.aspx" />
+    <Content Include="GestioneAccertamenti\Pertinenze\ComandiGestionePertinenze.aspx" />
+    <Content Include="GestioneAccertamenti\Pertinenze\FramePertinenze.aspx" />
+    <Content Include="GestioneAccertamenti\Pertinenze\Pertinenze.aspx" />
+    <Content Include="GestioneAccertamenti\RiepilogoAccertato.aspx" />
+    <Content Include="GestioneAccertamenti\Sanzioni\ComandiGestioneSanzioni.aspx" />
+    <Content Include="GestioneAccertamenti\Sanzioni\FrameSanzioni.aspx" />
+    <Content Include="GestioneAccertamenti\Sanzioni\Sanzioni.aspx" />
+    <Content Include="GestioneAccertamenti\SearchAccertato.aspx" />
+    <Content Include="GestioneAccertamenti\SearchAnater.aspx" />
+    <Content Include="GestioneAccertamenti\SearchDatiAccertamenti.aspx" />
+    <Content Include="GestioneAccertamenti\SearchDatiAnater.aspx" />
+    <Content Include="GestioneAccertamenti\SearchTerritorio.aspx" />
+    <Content Include="GestioneAccertamenti\StampaAccertamenti\clessidraA.aspx" />
+    <Content Include="GestioneAccertamenti\StampaAccertamenti\comandiRistampaA.aspx" />
+    <Content Include="GestioneAccertamenti\StampaAccertamenti\frmRistampaA.aspx" />
+    <Content Include="GestioneAccertamenti\StampaAccertamenti\ristampaOriginaleA.aspx" />
+    <Content Include="GestioneAccertamenti\StampaAccertamenti\ViewAccertamentiStampati.aspx" />
+    <Content Include="GestioneAtti\AttiAggiornamentoMassivo\AggiornamentoMassivoDate.aspx" />
+    <Content Include="GestioneAtti\AttiAggiornamentoMassivo\ComandiAggiornamentoMassivo.aspx" />
+    <Content Include="GestioneAtti\AttiAggiornamentoMassivo\StatoAggiornamentoDate.aspx" />
+    <Content Include="GestioneAtti\Coattivo\GestRuolo.aspx" />
+    <Content Include="GestioneAtti\ComandiGestioneAttiAccertamenti.aspx" />
+    <Content Include="GestioneAtti\ComandiGestioneAttiRuoloCoattivo.aspx" />
+    <Content Include="GestioneAtti\ForzaDati\CmdForzaDati.aspx" />
+    <Content Include="GestioneAtti\ForzaDati\GestForzaDati.aspx" />
+    <Content Include="GestioneAtti\FrameRettifica.aspx" />
+    <Content Include="GestioneAtti\GestioneAtti.aspx" />
+    <Content Include="GestioneAtti\RicercaAvanzata\ComandiRicercaAvanzata.aspx" />
+    <Content Include="GestioneAtti\RicercaAvanzata\RicercaAvanzata.aspx" />
+    <Content Include="GestioneAtti\RicercaAvanzata\SearchAttiRicercaAvanzata.aspx" />
+    <Content Include="GestioneAtti\RicercaSemplice\ComandiRicercaSempice.aspx" />
+    <Content Include="GestioneAtti\RicercaSemplice\LoadAtti.aspx" />
+    <Content Include="GestioneAtti\RicercaSemplice\RicercaSemplice.aspx" />
+    <Content Include="GestioneAtti\RicercaSemplice\SearchAtti.aspx" />
+    <Content Include="GestioneLiquidazioni\StampaLiquidazioni\clessidraL.aspx" />
+    <Content Include="GestioneLiquidazioni\StampaLiquidazioni\comandiRistampaL.aspx" />
+    <Content Include="GestioneLiquidazioni\StampaLiquidazioni\frmRistampaL.aspx" />
+    <Content Include="GestioneLiquidazioni\StampaLiquidazioni\ristampaOriginaleL.aspx" />
+    <Content Include="GestioneMassiva\GenMassiva.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Pagamenti\Accorpamenti.aspx" />
+    <Content Include="Pagamenti\cmdAccorpamenti.aspx" />
+    <Content Include="Pagamenti\cmdDettaglio.aspx" />
+    <Content Include="Pagamenti\cmdPagamenti.aspx" />
+    <Content Include="Pagamenti\cmdRicerca.aspx" />
+    <Content Include="Pagamenti\Dettaglio.aspx" />
+    <Content Include="Pagamenti\Pagamenti.aspx" />
+    <Content Include="Pagamenti\Ricerca.aspx" />
+    <Content Include="Pagamenti\WUCRate.ascx" />
+    <Content Include="WUC\WucArticolo.ascx" />
+    <Content Include="WUC\WucDatiContribuente.ascx" />
+    <Content Include="_vbs\ControlliFormali.vbs" />
+    <Content Include="_vbs\OperazioniSuCampi.vbs" />
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\ProvvedimentiDB.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\Utility.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configurazione\AnniProvvedimenti\ComandiConfigAnniProvvedimenti.aspx.designer.vb">
+      <DependentUpon>ComandiConfigAnniProvvedimenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurazione\AnniProvvedimenti\ComandiConfigAnniProvvedimenti.aspx.vb">
+      <DependentUpon>ComandiConfigAnniProvvedimenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurazione\AnniProvvedimenti\ConfigAnniProvvedimenti.aspx.designer.vb">
+      <DependentUpon>ConfigAnniProvvedimenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurazione\AnniProvvedimenti\ConfigAnniProvvedimenti.aspx.vb">
+      <DependentUpon>ConfigAnniProvvedimenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurazione\Motivazioni\ComandiConfigMotivazioni.aspx.designer.vb">
+      <DependentUpon>ComandiConfigMotivazioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurazione\Motivazioni\ComandiConfigMotivazioni.aspx.vb">
+      <DependentUpon>ComandiConfigMotivazioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurazione\Motivazioni\ConfigMotivazioni.aspx.designer.vb">
+      <DependentUpon>ConfigMotivazioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurazione\Motivazioni\ConfigMotivazioni.aspx.vb">
+      <DependentUpon>ConfigMotivazioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurazione\TabelleICI\Generale\ComandiGenerale.aspx.designer.vb">
+      <DependentUpon>ComandiGenerale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurazione\TabelleICI\Generale\ComandiGenerale.aspx.vb">
+      <DependentUpon>ComandiGenerale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurazione\TabelleICI\Generale\ConfigGenerale.aspx.designer.vb">
+      <DependentUpon>ConfigGenerale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurazione\TabelleICI\Generale\ConfigGenerale.aspx.vb">
+      <DependentUpon>ConfigGenerale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurazione\TabelleICI\TipoVoci\ComandiConfigTipoVoci.aspx.designer.vb">
+      <DependentUpon>ComandiConfigTipoVoci.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurazione\TabelleICI\TipoVoci\ComandiConfigTipoVoci.aspx.vb">
+      <DependentUpon>ComandiConfigTipoVoci.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurazione\TabelleICI\TipoVoci\ComandiInserimentoTipoVoci.aspx.designer.vb">
+      <DependentUpon>ComandiInserimentoTipoVoci.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurazione\TabelleICI\TipoVoci\ComandiInserimentoTipoVoci.aspx.vb">
+      <DependentUpon>ComandiInserimentoTipoVoci.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurazione\TabelleICI\TipoVoci\ComandiInserimentoVoci.aspx.designer.vb">
+      <DependentUpon>ComandiInserimentoVoci.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurazione\TabelleICI\TipoVoci\ComandiInserimentoVoci.aspx.vb">
+      <DependentUpon>ComandiInserimentoVoci.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurazione\TabelleICI\TipoVoci\ConfigTipoVoci.aspx.designer.vb">
+      <DependentUpon>ConfigTipoVoci.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurazione\TabelleICI\TipoVoci\ConfigTipoVoci.aspx.vb">
+      <DependentUpon>ConfigTipoVoci.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurazione\TabelleICI\TipoVoci\configuraVoci.aspx.designer.vb">
+      <DependentUpon>configuraVoci.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurazione\TabelleICI\TipoVoci\configuraVoci.aspx.vb">
+      <DependentUpon>configuraVoci.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurazione\TabelleICI\TipoVoci\NuovoInserimentoTipoVoci.aspx.designer.vb">
+      <DependentUpon>NuovoInserimentoTipoVoci.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurazione\TabelleICI\TipoVoci\NuovoInserimentoTipoVoci.aspx.vb">
+      <DependentUpon>NuovoInserimentoTipoVoci.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurazione\TabelleICI\TipoVoci\NuovoInserimentoVoci.aspx.designer.vb">
+      <DependentUpon>NuovoInserimentoVoci.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurazione\TabelleICI\TipoVoci\NuovoInserimentoVoci.aspx.vb">
+      <DependentUpon>NuovoInserimentoVoci.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurazione\TabelleICI\TipoVoci\RicercaConfigTipoVoci.aspx.designer.vb">
+      <DependentUpon>RicercaConfigTipoVoci.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurazione\TabelleICI\TipoVoci\RicercaConfigTipoVoci.aspx.vb">
+      <DependentUpon>RicercaConfigTipoVoci.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurazione\TabelleICI\TipoVoci\VisualizzaValoriVoci.aspx.designer.vb">
+      <DependentUpon>VisualizzaValoriVoci.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurazione\TabelleICI\TipoVoci\VisualizzaValoriVoci.aspx.vb">
+      <DependentUpon>VisualizzaValoriVoci.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurazione\TabelleTARSU\ConfigScadenzaInteressi.aspx.designer.vb">
+      <DependentUpon>ConfigScadenzaInteressi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurazione\TabelleTARSU\ConfigScadenzaInteressi.aspx.vb">
+      <DependentUpon>ConfigScadenzaInteressi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurazione\TabelleTARSU\CScadenzaInteressi.aspx.designer.vb">
+      <DependentUpon>CScadenzaInteressi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurazione\TabelleTARSU\CScadenzaInteressi.aspx.vb">
+      <DependentUpon>CScadenzaInteressi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurazione\TassiInteressi\ComandiConfigTassiInteressi.aspx.designer.vb">
+      <DependentUpon>ComandiConfigTassiInteressi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurazione\TassiInteressi\ComandiConfigTassiInteressi.aspx.vb">
+      <DependentUpon>ComandiConfigTassiInteressi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurazione\TassiInteressi\ConfigTassiInteressi.aspx.designer.vb">
+      <DependentUpon>ConfigTassiInteressi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurazione\TassiInteressi\ConfigTassiInteressi.aspx.vb">
+      <DependentUpon>ConfigTassiInteressi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurazione\TipologieSanzioni\ComandiConfigTipologieSanzioni.aspx.designer.vb">
+      <DependentUpon>ComandiConfigTipologieSanzioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurazione\TipologieSanzioni\ComandiConfigTipologieSanzioni.aspx.vb">
+      <DependentUpon>ComandiConfigTipologieSanzioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurazione\TipologieSanzioni\ConfigTipologieSanzioni.aspx.designer.vb">
+      <DependentUpon>ConfigTipologieSanzioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurazione\TipologieSanzioni\ConfigTipologieSanzioni.aspx.vb">
+      <DependentUpon>ConfigTipologieSanzioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\ClsGestioneAccertamenti.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\clsPagamenti.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\Costanti.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\DBAccess\Utility.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\Formatta.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\ModificaDate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamentiOSAP\CGestioneAccertamentiOSAP.aspx.designer.vb">
+      <DependentUpon>CGestioneAccertamentiOSAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamentiOSAP\CGestioneAccertamentiOSAP.aspx.vb">
+      <DependentUpon>CGestioneAccertamentiOSAP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamentiOSAP\ComandiRiepilogoAccertamentoOSAP.aspx.designer.vb">
+      <DependentUpon>ComandiRiepilogoAccertamentoOSAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamentiOSAP\ComandiRiepilogoAccertamentoOSAP.aspx.vb">
+      <DependentUpon>ComandiRiepilogoAccertamentoOSAP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamentiOSAP\GestioneAccertamentiOSAP.aspx.designer.vb">
+      <DependentUpon>GestioneAccertamentiOSAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamentiOSAP\GestioneAccertamentiOSAP.aspx.vb">
+      <DependentUpon>GestioneAccertamentiOSAP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamentiOSAP\InserimentoManualeImmobileOSAP.aspx.designer.vb">
+      <DependentUpon>InserimentoManualeImmobileOSAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamentiOSAP\InserimentoManualeImmobileOSAP.aspx.vb">
+      <DependentUpon>InserimentoManualeImmobileOSAP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamentiOSAP\RiepilogoAccertatoOSAP.aspx.designer.vb">
+      <DependentUpon>RiepilogoAccertatoOSAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamentiOSAP\RiepilogoAccertatoOSAP.aspx.vb">
+      <DependentUpon>RiepilogoAccertatoOSAP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamentiOSAP\SearchDatiAccertatoOSAP.aspx.designer.vb">
+      <DependentUpon>SearchDatiAccertatoOSAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamentiOSAP\SearchDatiAccertatoOSAP.aspx.vb">
+      <DependentUpon>SearchDatiAccertatoOSAP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamentiOSAP\SearchDatiDichiaratoOSAP.aspx.designer.vb">
+      <DependentUpon>SearchDatiDichiaratoOSAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamentiOSAP\SearchDatiDichiaratoOSAP.aspx.vb">
+      <DependentUpon>SearchDatiDichiaratoOSAP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTARSU\CGestioneAccertamentiTARSU.aspx.designer.vb">
+      <DependentUpon>CGestioneAccertamentiTARSU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTARSU\CGestioneAccertamentiTARSU.aspx.vb">
+      <DependentUpon>CGestioneAccertamentiTARSU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTARSU\CInserimentoImmobileTARSU.aspx.designer.vb">
+      <DependentUpon>CInserimentoImmobileTARSU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTARSU\CInserimentoImmobileTARSU.aspx.vb">
+      <DependentUpon>CInserimentoImmobileTARSU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTARSU\ComandiRiepilogoAccertamentoTARSU.aspx.designer.vb">
+      <DependentUpon>ComandiRiepilogoAccertamentoTARSU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTARSU\ComandiRiepilogoAccertamentoTARSU.aspx.vb">
+      <DependentUpon>ComandiRiepilogoAccertamentoTARSU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTARSU\FrameInserisciImmobileManualeTARSU.aspx.designer.vb">
+      <DependentUpon>FrameInserisciImmobileManualeTARSU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTARSU\FrameInserisciImmobileManualeTARSU.aspx.vb">
+      <DependentUpon>FrameInserisciImmobileManualeTARSU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTARSU\GestioneAccertamentiTARSU.aspx.designer.vb">
+      <DependentUpon>GestioneAccertamentiTARSU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTARSU\GestioneAccertamentiTARSU.aspx.vb">
+      <DependentUpon>GestioneAccertamentiTARSU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTARSU\InserimentoManualeImmobileTARSU.aspx.designer.vb">
+      <DependentUpon>InserimentoManualeImmobileTARSU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTARSU\InserimentoManualeImmobileTARSU.aspx.vb">
+      <DependentUpon>InserimentoManualeImmobileTARSU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTARSU\RiepilogoAccertatoTARSU.aspx.designer.vb">
+      <DependentUpon>RiepilogoAccertatoTARSU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTARSU\RiepilogoAccertatoTARSU.aspx.vb">
+      <DependentUpon>RiepilogoAccertatoTARSU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTARSU\SearchAccertatiTARSU.aspx.designer.vb">
+      <DependentUpon>SearchAccertatiTARSU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTARSU\SearchAccertatiTARSU.aspx.vb">
+      <DependentUpon>SearchAccertatiTARSU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTARSU\SearchDatiAccertamentiTARSU.aspx.designer.vb">
+      <DependentUpon>SearchDatiAccertamentiTARSU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTARSU\SearchDatiAccertamentiTARSU.aspx.vb">
+      <DependentUpon>SearchDatiAccertamentiTARSU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTASI\ComandiGestioneAccertamenti.aspx.designer.vb">
+      <DependentUpon>ComandiGestioneAccertamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTASI\ComandiGestioneAccertamenti.aspx.vb">
+      <DependentUpon>ComandiGestioneAccertamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTASI\GestioneAccertamenti.aspx.designer.vb">
+      <DependentUpon>GestioneAccertamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTASI\GestioneAccertamenti.aspx.vb">
+      <DependentUpon>GestioneAccertamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTASI\SearchDatiAccertato.aspx.designer.vb">
+      <DependentUpon>SearchDatiAccertato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTASI\SearchDatiAccertato.aspx.vb">
+      <DependentUpon>SearchDatiAccertato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTASI\SearchDatiDichiarato.aspx.designer.vb">
+      <DependentUpon>SearchDatiDichiarato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamentiTASI\SearchDatiDichiarato.aspx.vb">
+      <DependentUpon>SearchDatiDichiarato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\ComandiGestioneAccertamenti.aspx.designer.vb">
+      <DependentUpon>ComandiGestioneAccertamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\ComandiGestioneAccertamenti.aspx.vb">
+      <DependentUpon>ComandiGestioneAccertamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\ComandiGestioneAccertato.aspx.designer.vb">
+      <DependentUpon>ComandiGestioneAccertato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\ComandiGestioneAccertato.aspx.vb">
+      <DependentUpon>ComandiGestioneAccertato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\ComandiGestioneAnater.aspx.designer.vb">
+      <DependentUpon>ComandiGestioneAnater.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\ComandiGestioneAnater.aspx.vb">
+      <DependentUpon>ComandiGestioneAnater.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\ComandiGestioneTerritorio.aspx.designer.vb">
+      <DependentUpon>ComandiGestioneTerritorio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\ComandiGestioneTerritorio.aspx.vb">
+      <DependentUpon>ComandiGestioneTerritorio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\ComandiInserimentoImmobili.aspx.designer.vb">
+      <DependentUpon>ComandiInserimentoImmobili.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\ComandiInserimentoImmobili.aspx.vb">
+      <DependentUpon>ComandiInserimentoImmobili.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\ComandiRiepilogoAccertamento.aspx.designer.vb">
+      <DependentUpon>ComandiRiepilogoAccertamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\ComandiRiepilogoAccertamento.aspx.vb">
+      <DependentUpon>ComandiRiepilogoAccertamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\ComandiRiepilogoAccertamentoRettifica.aspx.designer.vb">
+      <DependentUpon>ComandiRiepilogoAccertamentoRettifica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\ComandiRiepilogoAccertamentoRettifica.aspx.vb">
+      <DependentUpon>ComandiRiepilogoAccertamentoRettifica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\FrameInserisciImmobileManuale.aspx.designer.vb">
+      <DependentUpon>FrameInserisciImmobileManuale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\FrameInserisciImmobileManuale.aspx.vb">
+      <DependentUpon>FrameInserisciImmobileManuale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\FrameRicercaAccertato.aspx.vb">
+      <DependentUpon>FrameRicercaAccertato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\FrameRicercaAnater.aspx.designer.vb">
+      <DependentUpon>FrameRicercaAnater.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\FrameRicercaAnater.aspx.vb">
+      <DependentUpon>FrameRicercaAnater.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\FrameRicercaTerritorio.aspx.designer.vb">
+      <DependentUpon>FrameRicercaTerritorio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\FrameRicercaTerritorio.aspx.vb">
+      <DependentUpon>FrameRicercaTerritorio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\GestioneAccertamenti.aspx.designer.vb">
+      <DependentUpon>GestioneAccertamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\GestioneAccertamenti.aspx.vb">
+      <DependentUpon>GestioneAccertamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\grdAccertato.aspx.designer.vb">
+      <DependentUpon>grdAccertato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\grdAccertato.aspx.vb">
+      <DependentUpon>grdAccertato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\InserimentoManualeImmobile.aspx.designer.vb">
+      <DependentUpon>InserimentoManualeImmobile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\InserimentoManualeImmobile.aspx.vb">
+      <DependentUpon>InserimentoManualeImmobile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\Pertinenze\ComandiGestionePertinenze.aspx.designer.vb">
+      <DependentUpon>ComandiGestionePertinenze.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\Pertinenze\ComandiGestionePertinenze.aspx.vb">
+      <DependentUpon>ComandiGestionePertinenze.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\Pertinenze\FramePertinenze.aspx.designer.vb">
+      <DependentUpon>FramePertinenze.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\Pertinenze\FramePertinenze.aspx.vb">
+      <DependentUpon>FramePertinenze.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\Pertinenze\Pertinenze.aspx.designer.vb">
+      <DependentUpon>Pertinenze.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\Pertinenze\Pertinenze.aspx.vb">
+      <DependentUpon>Pertinenze.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\RiepilogoAccertato.aspx.designer.vb">
+      <DependentUpon>RiepilogoAccertato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\RiepilogoAccertato.aspx.vb">
+      <DependentUpon>RiepilogoAccertato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\Sanzioni\ComandiGestioneSanzioni.aspx.designer.vb">
+      <DependentUpon>ComandiGestioneSanzioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\Sanzioni\ComandiGestioneSanzioni.aspx.vb">
+      <DependentUpon>ComandiGestioneSanzioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\Sanzioni\FrameSanzioni.aspx.vb">
+      <DependentUpon>FrameSanzioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\Sanzioni\Sanzioni.aspx.designer.vb">
+      <DependentUpon>Sanzioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\Sanzioni\Sanzioni.aspx.vb">
+      <DependentUpon>Sanzioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\SearchAccertato.aspx.designer.vb">
+      <DependentUpon>SearchAccertato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\SearchAccertato.aspx.vb">
+      <DependentUpon>SearchAccertato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\SearchAnater.aspx.designer.vb">
+      <DependentUpon>SearchAnater.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\SearchAnater.aspx.vb">
+      <DependentUpon>SearchAnater.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\SearchDatiAccertamenti.aspx.designer.vb">
+      <DependentUpon>SearchDatiAccertamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\SearchDatiAccertamenti.aspx.vb">
+      <DependentUpon>SearchDatiAccertamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\SearchDatiAnater.aspx.designer.vb">
+      <DependentUpon>SearchDatiAnater.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\SearchDatiAnater.aspx.vb">
+      <DependentUpon>SearchDatiAnater.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\SearchTerritorio.aspx.designer.vb">
+      <DependentUpon>SearchTerritorio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\SearchTerritorio.aspx.vb">
+      <DependentUpon>SearchTerritorio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\StampaAccertamenti\clessidraA.aspx.designer.vb">
+      <DependentUpon>clessidraA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\StampaAccertamenti\clessidraA.aspx.vb">
+      <DependentUpon>clessidraA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\StampaAccertamenti\comandiRistampaA.aspx.designer.vb">
+      <DependentUpon>comandiRistampaA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\StampaAccertamenti\comandiRistampaA.aspx.vb">
+      <DependentUpon>comandiRistampaA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\StampaAccertamenti\frmRistampaA.aspx.vb">
+      <DependentUpon>frmRistampaA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\StampaAccertamenti\ristampaOriginaleA.aspx.designer.vb">
+      <DependentUpon>ristampaOriginaleA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\StampaAccertamenti\ristampaOriginaleA.aspx.vb">
+      <DependentUpon>ristampaOriginaleA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\StampaAccertamenti\ViewAccertamentiStampati.aspx.designer.vb">
+      <DependentUpon>ViewAccertamentiStampati.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAccertamenti\StampaAccertamenti\ViewAccertamentiStampati.aspx.vb">
+      <DependentUpon>ViewAccertamentiStampati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAtti\AttiAggiornamentoMassivo\AggiornamentoMassivoDate.aspx.designer.vb">
+      <DependentUpon>AggiornamentoMassivoDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAtti\AttiAggiornamentoMassivo\AggiornamentoMassivoDate.aspx.vb">
+      <DependentUpon>AggiornamentoMassivoDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAtti\AttiAggiornamentoMassivo\ComandiAggiornamentoMassivo.aspx.designer.vb">
+      <DependentUpon>ComandiAggiornamentoMassivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAtti\AttiAggiornamentoMassivo\ComandiAggiornamentoMassivo.aspx.vb">
+      <DependentUpon>ComandiAggiornamentoMassivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAtti\AttiAggiornamentoMassivo\StatoAggiornamentoDate.aspx.designer.vb">
+      <DependentUpon>StatoAggiornamentoDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAtti\AttiAggiornamentoMassivo\StatoAggiornamentoDate.aspx.vb">
+      <DependentUpon>StatoAggiornamentoDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAtti\Coattivo\clsCoattivo.vb" />
+    <Compile Include="GestioneAtti\Coattivo\GestRuolo.aspx.designer.vb">
+      <DependentUpon>GestRuolo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAtti\Coattivo\GestRuolo.aspx.vb">
+      <DependentUpon>GestRuolo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAtti\ComandiGestioneAttiAccertamenti.aspx.designer.vb">
+      <DependentUpon>ComandiGestioneAttiAccertamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAtti\ComandiGestioneAttiAccertamenti.aspx.vb">
+      <DependentUpon>ComandiGestioneAttiAccertamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAtti\ComandiGestioneAttiRuoloCoattivo.aspx.designer.vb">
+      <DependentUpon>ComandiGestioneAttiRuoloCoattivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAtti\ComandiGestioneAttiRuoloCoattivo.aspx.vb">
+      <DependentUpon>ComandiGestioneAttiRuoloCoattivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAtti\ForzaDati\CmdForzaDati.aspx.designer.vb">
+      <DependentUpon>CmdForzaDati.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAtti\ForzaDati\CmdForzaDati.aspx.vb">
+      <DependentUpon>CmdForzaDati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAtti\ForzaDati\GestForzaDati.aspx.designer.vb">
+      <DependentUpon>GestForzaDati.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAtti\ForzaDati\GestForzaDati.aspx.vb">
+      <DependentUpon>GestForzaDati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAtti\FrameRettifica.aspx.vb">
+      <DependentUpon>FrameRettifica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAtti\GestioneAtti.aspx.designer.vb">
+      <DependentUpon>GestioneAtti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAtti\GestioneAtti.aspx.vb">
+      <DependentUpon>GestioneAtti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAtti\RicercaAvanzata\ComandiRicercaAvanzata.aspx.designer.vb">
+      <DependentUpon>ComandiRicercaAvanzata.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAtti\RicercaAvanzata\ComandiRicercaAvanzata.aspx.vb">
+      <DependentUpon>ComandiRicercaAvanzata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAtti\RicercaAvanzata\RicercaAvanzata.aspx.designer.vb">
+      <DependentUpon>RicercaAvanzata.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAtti\RicercaAvanzata\RicercaAvanzata.aspx.vb">
+      <DependentUpon>RicercaAvanzata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAtti\RicercaAvanzata\SearchAttiRicercaAvanzata.aspx.designer.vb">
+      <DependentUpon>SearchAttiRicercaAvanzata.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAtti\RicercaAvanzata\SearchAttiRicercaAvanzata.aspx.vb">
+      <DependentUpon>SearchAttiRicercaAvanzata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAtti\RicercaSemplice\ComandiRicercaSempice.aspx.designer.vb">
+      <DependentUpon>ComandiRicercaSempice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAtti\RicercaSemplice\ComandiRicercaSempice.aspx.vb">
+      <DependentUpon>ComandiRicercaSempice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAtti\RicercaSemplice\LoadAtti.aspx.designer.vb">
+      <DependentUpon>LoadAtti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAtti\RicercaSemplice\LoadAtti.aspx.vb">
+      <DependentUpon>LoadAtti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAtti\RicercaSemplice\RicercaSemplice.aspx.designer.vb">
+      <DependentUpon>RicercaSemplice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAtti\RicercaSemplice\RicercaSemplice.aspx.vb">
+      <DependentUpon>RicercaSemplice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneAtti\RicercaSemplice\SearchAtti.aspx.designer.vb">
+      <DependentUpon>SearchAtti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAtti\RicercaSemplice\SearchAtti.aspx.vb">
+      <DependentUpon>SearchAtti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneLiquidazioni\StampaLiquidazioni\clessidraL.aspx.designer.vb">
+      <DependentUpon>clessidraL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneLiquidazioni\StampaLiquidazioni\clessidraL.aspx.vb">
+      <DependentUpon>clessidraL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneLiquidazioni\StampaLiquidazioni\comandiRistampaL.aspx.designer.vb">
+      <DependentUpon>comandiRistampaL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneLiquidazioni\StampaLiquidazioni\comandiRistampaL.aspx.vb">
+      <DependentUpon>comandiRistampaL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneLiquidazioni\StampaLiquidazioni\frmRistampaL.aspx.vb">
+      <DependentUpon>frmRistampaL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneLiquidazioni\StampaLiquidazioni\ristampaOriginaleL.aspx.designer.vb">
+      <DependentUpon>ristampaOriginaleL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneLiquidazioni\StampaLiquidazioni\ristampaOriginaleL.aspx.vb">
+      <DependentUpon>ristampaOriginaleL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneMassiva\GenMassiva.aspx.designer.vb">
+      <DependentUpon>GenMassiva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneMassiva\GenMassiva.aspx.vb">
+      <DependentUpon>GenMassiva.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pagamenti\Accorpamenti.aspx.designer.vb">
+      <DependentUpon>Accorpamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagamenti\Accorpamenti.aspx.vb">
+      <DependentUpon>Accorpamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagamenti\cmdAccorpamenti.aspx.designer.vb">
+      <DependentUpon>cmdAccorpamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagamenti\cmdAccorpamenti.aspx.vb">
+      <DependentUpon>cmdAccorpamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagamenti\cmdDettaglio.aspx.designer.vb">
+      <DependentUpon>cmdDettaglio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagamenti\cmdDettaglio.aspx.vb">
+      <DependentUpon>cmdDettaglio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagamenti\cmdPagamenti.aspx.designer.vb">
+      <DependentUpon>cmdPagamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagamenti\cmdPagamenti.aspx.vb">
+      <DependentUpon>cmdPagamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagamenti\cmdRicerca.aspx.designer.vb">
+      <DependentUpon>cmdRicerca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagamenti\cmdRicerca.aspx.vb">
+      <DependentUpon>cmdRicerca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagamenti\Dettaglio.aspx.designer.vb">
+      <DependentUpon>Dettaglio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagamenti\Dettaglio.aspx.vb">
+      <DependentUpon>Dettaglio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagamenti\Pagamenti.aspx.designer.vb">
+      <DependentUpon>Pagamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagamenti\Pagamenti.aspx.vb">
+      <DependentUpon>Pagamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagamenti\Ricerca.aspx.designer.vb">
+      <DependentUpon>Ricerca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagamenti\Ricerca.aspx.vb">
+      <DependentUpon>Ricerca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagamenti\WUCRate.ascx.designer.vb">
+      <DependentUpon>WUCRate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagamenti\WUCRate.ascx.vb">
+      <DependentUpon>WUCRate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WUC\WucArticolo.ascx.designer.vb">
+      <DependentUpon>WucArticolo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WUC\WucArticolo.ascx.vb">
+      <DependentUpon>WucArticolo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WUC\WucDatiContribuente.ascx.designer.vb">
+      <DependentUpon>WucDatiContribuente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WUC\WucDatiContribuente.ascx.vb">
+      <DependentUpon>WucDatiContribuente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_vbs\Business\GetComuni.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Configurazione\AnniProvvedimenti\ComandiConfigAnniProvvedimenti.aspx.resx">
+      <DependentUpon>ComandiConfigAnniProvvedimenti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurazione\AnniProvvedimenti\ConfigAnniProvvedimenti.aspx.resx">
+      <DependentUpon>ConfigAnniProvvedimenti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurazione\Motivazioni\ComandiConfigMotivazioni.aspx.resx">
+      <DependentUpon>ComandiConfigMotivazioni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurazione\Motivazioni\ConfigMotivazioni.aspx.resx">
+      <DependentUpon>ConfigMotivazioni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurazione\TabelleICI\Generale\ComandiGenerale.aspx.resx">
+      <DependentUpon>ComandiGenerale.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurazione\TabelleICI\Generale\ConfigGenerale.aspx.resx">
+      <DependentUpon>ConfigGenerale.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurazione\TabelleICI\TipoVoci\ComandiConfigTipoVoci.aspx.resx">
+      <DependentUpon>ComandiConfigTipoVoci.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurazione\TabelleICI\TipoVoci\ComandiInserimentoTipoVoci.aspx.resx">
+      <DependentUpon>ComandiInserimentoTipoVoci.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurazione\TabelleICI\TipoVoci\ComandiInserimentoVoci.aspx.resx">
+      <DependentUpon>ComandiInserimentoVoci.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurazione\TabelleICI\TipoVoci\ConfigTipoVoci.aspx.resx">
+      <DependentUpon>ConfigTipoVoci.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurazione\TabelleICI\TipoVoci\configuraVoci.aspx.resx">
+      <DependentUpon>configuraVoci.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurazione\TabelleICI\TipoVoci\NuovoInserimentoTipoVoci.aspx.resx">
+      <DependentUpon>NuovoInserimentoTipoVoci.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurazione\TabelleICI\TipoVoci\NuovoInserimentoVoci.aspx.resx">
+      <DependentUpon>NuovoInserimentoVoci.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurazione\TabelleICI\TipoVoci\RicercaConfigTipoVoci.aspx.resx">
+      <DependentUpon>RicercaConfigTipoVoci.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurazione\TabelleICI\TipoVoci\VisualizzaValoriVoci.aspx.resx">
+      <DependentUpon>VisualizzaValoriVoci.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurazione\TabelleTARSU\ConfigScadenzaInteressi.aspx.resx">
+      <DependentUpon>ConfigScadenzaInteressi.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurazione\TabelleTARSU\CScadenzaInteressi.aspx.resx">
+      <DependentUpon>CScadenzaInteressi.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurazione\TassiInteressi\ComandiConfigTassiInteressi.aspx.resx">
+      <DependentUpon>ComandiConfigTassiInteressi.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurazione\TassiInteressi\ConfigTassiInteressi.aspx.resx">
+      <DependentUpon>ConfigTassiInteressi.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurazione\TipologieSanzioni\ComandiConfigTipologieSanzioni.aspx.resx">
+      <DependentUpon>ComandiConfigTipologieSanzioni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurazione\TipologieSanzioni\ConfigTipologieSanzioni.aspx.resx">
+      <DependentUpon>ConfigTipologieSanzioni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamentiOSAP\CGestioneAccertamentiOSAP.aspx.resx">
+      <DependentUpon>CGestioneAccertamentiOSAP.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamentiOSAP\ComandiRiepilogoAccertamentoOSAP.aspx.resx">
+      <DependentUpon>ComandiRiepilogoAccertamentoOSAP.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamentiOSAP\GestioneAccertamentiOSAP.aspx.resx">
+      <DependentUpon>GestioneAccertamentiOSAP.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamentiOSAP\InserimentoManualeImmobileOSAP.aspx.resx">
+      <DependentUpon>InserimentoManualeImmobileOSAP.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamentiOSAP\RiepilogoAccertatoOSAP.aspx.resx">
+      <DependentUpon>RiepilogoAccertatoOSAP.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamentiOSAP\SearchDatiAccertatoOSAP.aspx.resx">
+      <DependentUpon>SearchDatiAccertatoOSAP.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamentiOSAP\SearchDatiDichiaratoOSAP.aspx.resx">
+      <DependentUpon>SearchDatiDichiaratoOSAP.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamentiTARSU\CGestioneAccertamentiTARSU.aspx.resx">
+      <DependentUpon>CGestioneAccertamentiTARSU.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamentiTARSU\CInserimentoImmobileTARSU.aspx.resx">
+      <DependentUpon>CInserimentoImmobileTARSU.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamentiTARSU\ComandiRiepilogoAccertamentoTARSU.aspx.resx">
+      <DependentUpon>ComandiRiepilogoAccertamentoTARSU.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamentiTARSU\FrameInserisciImmobileManualeTARSU.aspx.resx">
+      <DependentUpon>FrameInserisciImmobileManualeTARSU.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamentiTARSU\GestioneAccertamentiTARSU.aspx.resx">
+      <DependentUpon>GestioneAccertamentiTARSU.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamentiTARSU\InserimentoManualeImmobileTARSU.aspx.resx">
+      <DependentUpon>InserimentoManualeImmobileTARSU.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamentiTARSU\RiepilogoAccertatoTARSU.aspx.resx">
+      <DependentUpon>RiepilogoAccertatoTARSU.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamentiTARSU\SearchAccertatiTARSU.aspx.resx">
+      <DependentUpon>SearchAccertatiTARSU.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamentiTARSU\SearchDatiAccertamentiTARSU.aspx.resx">
+      <DependentUpon>SearchDatiAccertamentiTARSU.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\ComandiGestioneAccertamenti.aspx.resx">
+      <DependentUpon>ComandiGestioneAccertamenti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\ComandiGestioneAccertato.aspx.resx">
+      <DependentUpon>ComandiGestioneAccertato.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\ComandiGestioneAnater.aspx.resx">
+      <DependentUpon>ComandiGestioneAnater.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\ComandiGestioneTerritorio.aspx.resx">
+      <DependentUpon>ComandiGestioneTerritorio.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\ComandiInserimentoImmobili.aspx.resx">
+      <DependentUpon>ComandiInserimentoImmobili.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\ComandiRiepilogoAccertamento.aspx.resx">
+      <DependentUpon>ComandiRiepilogoAccertamento.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\ComandiRiepilogoAccertamentoRettifica.aspx.resx">
+      <DependentUpon>ComandiRiepilogoAccertamentoRettifica.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\FrameInserisciImmobileManuale.aspx.resx">
+      <DependentUpon>FrameInserisciImmobileManuale.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\FrameRicercaAccertato.aspx.resx">
+      <DependentUpon>FrameRicercaAccertato.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\FrameRicercaAnater.aspx.resx">
+      <DependentUpon>FrameRicercaAnater.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\FrameRicercaTerritorio.aspx.resx">
+      <DependentUpon>FrameRicercaTerritorio.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\GestioneAccertamenti.aspx.resx">
+      <DependentUpon>GestioneAccertamenti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\grdAccertato.aspx.resx">
+      <DependentUpon>grdAccertato.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\InserimentoManualeImmobile.aspx.resx">
+      <DependentUpon>InserimentoManualeImmobile.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\Pertinenze\ComandiGestionePertinenze.aspx.resx">
+      <DependentUpon>ComandiGestionePertinenze.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\Pertinenze\FramePertinenze.aspx.resx">
+      <DependentUpon>FramePertinenze.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\Pertinenze\Pertinenze.aspx.resx">
+      <DependentUpon>Pertinenze.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\RiepilogoAccertato.aspx.resx">
+      <DependentUpon>RiepilogoAccertato.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\Sanzioni\ComandiGestioneSanzioni.aspx.resx">
+      <DependentUpon>ComandiGestioneSanzioni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\Sanzioni\FrameSanzioni.aspx.resx">
+      <DependentUpon>FrameSanzioni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\Sanzioni\Sanzioni.aspx.resx">
+      <DependentUpon>Sanzioni.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\SearchAccertato.aspx.resx">
+      <DependentUpon>SearchAccertato.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\SearchAnater.aspx.resx">
+      <DependentUpon>SearchAnater.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\SearchDatiAccertamenti.aspx.resx">
+      <DependentUpon>SearchDatiAccertamenti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\SearchDatiAnater.aspx.resx">
+      <DependentUpon>SearchDatiAnater.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\SearchTerritorio.aspx.resx">
+      <DependentUpon>SearchTerritorio.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\StampaAccertamenti\clessidraA.aspx.resx">
+      <DependentUpon>clessidraA.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\StampaAccertamenti\comandiRistampaA.aspx.resx">
+      <DependentUpon>comandiRistampaA.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\StampaAccertamenti\frmRistampaA.aspx.resx">
+      <DependentUpon>frmRistampaA.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\StampaAccertamenti\ristampaOriginaleA.aspx.resx">
+      <DependentUpon>ristampaOriginaleA.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAccertamenti\StampaAccertamenti\ViewAccertamentiStampati.aspx.resx">
+      <DependentUpon>ViewAccertamentiStampati.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAtti\AttiAggiornamentoMassivo\AggiornamentoMassivoDate.aspx.resx">
+      <DependentUpon>AggiornamentoMassivoDate.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAtti\AttiAggiornamentoMassivo\ComandiAggiornamentoMassivo.aspx.resx">
+      <DependentUpon>ComandiAggiornamentoMassivo.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAtti\AttiAggiornamentoMassivo\StatoAggiornamentoDate.aspx.resx">
+      <DependentUpon>StatoAggiornamentoDate.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAtti\ComandiGestioneAttiAccertamenti.aspx.resx">
+      <DependentUpon>ComandiGestioneAttiAccertamenti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAtti\ComandiGestioneAttiRuoloCoattivo.aspx.resx">
+      <DependentUpon>ComandiGestioneAttiRuoloCoattivo.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAtti\ForzaDati\CmdForzaDati.aspx.resx">
+      <DependentUpon>CmdForzaDati.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAtti\ForzaDati\GestForzaDati.aspx.resx">
+      <DependentUpon>GestForzaDati.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAtti\FrameRettifica.aspx.resx">
+      <DependentUpon>FrameRettifica.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAtti\GestioneAtti.aspx.resx">
+      <DependentUpon>GestioneAtti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAtti\RicercaAvanzata\ComandiRicercaAvanzata.aspx.resx">
+      <DependentUpon>ComandiRicercaAvanzata.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAtti\RicercaAvanzata\RicercaAvanzata.aspx.resx">
+      <DependentUpon>RicercaAvanzata.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAtti\RicercaAvanzata\SearchAttiRicercaAvanzata.aspx.resx">
+      <DependentUpon>SearchAttiRicercaAvanzata.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAtti\RicercaSemplice\ComandiRicercaSempice.aspx.resx">
+      <DependentUpon>ComandiRicercaSempice.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAtti\RicercaSemplice\LoadAtti.aspx.resx">
+      <DependentUpon>LoadAtti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAtti\RicercaSemplice\RicercaSemplice.aspx.resx">
+      <DependentUpon>RicercaSemplice.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneAtti\RicercaSemplice\SearchAtti.aspx.resx">
+      <DependentUpon>SearchAtti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneLiquidazioni\StampaLiquidazioni\clessidraL.aspx.resx">
+      <DependentUpon>clessidraL.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneLiquidazioni\StampaLiquidazioni\comandiRistampaL.aspx.resx">
+      <DependentUpon>comandiRistampaL.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneLiquidazioni\StampaLiquidazioni\frmRistampaL.aspx.resx">
+      <DependentUpon>frmRistampaL.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneLiquidazioni\StampaLiquidazioni\ristampaOriginaleL.aspx.resx">
+      <DependentUpon>ristampaOriginaleL.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagamenti\Accorpamenti.aspx.resx">
+      <DependentUpon>Accorpamenti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagamenti\cmdAccorpamenti.aspx.resx">
+      <DependentUpon>cmdAccorpamenti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagamenti\cmdDettaglio.aspx.resx">
+      <DependentUpon>cmdDettaglio.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagamenti\cmdPagamenti.aspx.resx">
+      <DependentUpon>cmdPagamenti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagamenti\cmdRicerca.aspx.resx">
+      <DependentUpon>cmdRicerca.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagamenti\Dettaglio.aspx.resx">
+      <DependentUpon>Dettaglio.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagamenti\Pagamenti.aspx.resx">
+      <DependentUpon>Pagamenti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagamenti\Ricerca.aspx.resx">
+      <DependentUpon>Ricerca.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagamenti\WUCRate.ascx.resx">
+      <DependentUpon>WUCRate.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WUC\WucArticolo.ascx.resx">
+      <DependentUpon>WucArticolo.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WUC\WucDatiContribuente.ascx.resx">
+      <DependentUpon>WucDatiContribuente.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OPENgovICI\DichiarazioniICI.csproj">
+      <Project>{14507f38-eb84-4e90-acd5-21fe02a2dee4}</Project>
+      <Name>DichiarazioniICI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OPENgovTIA\OPENgovTIA.vbproj">
+      <Project>{815b6680-88b5-4bef-85b5-1c50c5e09adf}</Project>
+      <Name>OPENgovTIA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OPENgovTOCO\OPENgovTOCO.csproj">
+      <Project>{04f67387-83d7-4ee2-a91b-6aa6464cc827}</Project>
+      <Name>OPENgovTOCO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="toc.yml" />
+    <Content Include="index.md" />
+    <Content Include="docfx.json" />
+    <Content Include="articles\toc.md" />
+    <Content Include="articles\intro.md" />
+    <Content Include="api\index.md" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\analyzers\dotnet\vb\Humanizer.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\analyzers\dotnet\vb\Microsoft.CodeQuality.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\analyzers\dotnet\vb\Microsoft.CodeQuality.VisualBasic.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.NetCore.Analyzers.2.6.3\analyzers\dotnet\vb\Microsoft.NetCore.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.NetCore.Analyzers.2.6.3\analyzers\dotnet\vb\Microsoft.NetCore.VisualBasic.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.NetFramework.Analyzers.2.6.3\analyzers\dotnet\vb\Microsoft.NetFramework.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.NetFramework.Analyzers.2.6.3\analyzers\dotnet\vb\Microsoft.NetFramework.VisualBasic.Analyzers.dll" />
+    <Analyzer Include="..\packages\Text.Analyzers.2.6.3\analyzers\dotnet\vb\Text.Analyzers.dll" />
+    <Analyzer Include="..\packages\Text.Analyzers.2.6.3\analyzers\dotnet\vb\Text.VisualBasic.Analyzers.dll" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51976</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/OPENgov/OPENgovPROVVEDIMENTI</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Questo progetto fa riferimento a uno o più pacchetti NuGet che non sono presenti in questo computer. Usare lo strumento di ripristino dei pacchetti NuGet per scaricarli. Per altre informazioni, vedere http://go.microsoft.com/fwlink/?LinkID=322105. Il file mancante è {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\build\Microsoft.CodeQuality.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\build\Microsoft.CodeQuality.Analyzers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.NetCore.Analyzers.2.6.3\build\Microsoft.NetCore.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.NetCore.Analyzers.2.6.3\build\Microsoft.NetCore.Analyzers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.NetFramework.Analyzers.2.6.3\build\Microsoft.NetFramework.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.NetFramework.Analyzers.2.6.3\build\Microsoft.NetFramework.Analyzers.props'))" />
+    <Error Condition="!Exists('..\packages\Text.Analyzers.2.6.3\build\Text.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Text.Analyzers.2.6.3\build\Text.Analyzers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props'))" />
+    <Error Condition="!Exists('..\packages\docfx.console.2.56.6\build\docfx.console.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\docfx.console.2.56.6\build\docfx.console.targets'))" />
+  </Target>
+  <Import Project="..\packages\docfx.console.2.56.6\build\docfx.console.targets" Condition="Exists('..\packages\docfx.console.2.56.6\build\docfx.console.targets')" />
+</Project>

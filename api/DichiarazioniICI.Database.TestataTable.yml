@@ -1,0 +1,1778 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.Database.TestataTable
+  commentId: T:DichiarazioniICI.Database.TestataTable
+  id: TestataTable
+  parent: DichiarazioniICI.Database
+  children:
+  - DichiarazioniICI.Database.TestataTable.#ctor(System.String)
+  - DichiarazioniICI.Database.TestataTable.AnniCaricati
+  - DichiarazioniICI.Database.TestataTable.Bonifica(System.Int32)
+  - DichiarazioniICI.Database.TestataTable.BonificaFalse(System.Int32)
+  - DichiarazioniICI.Database.TestataTable.CancellazioneDichiarazione(System.Int32)
+  - DichiarazioniICI.Database.TestataTable.CancellazioneLogica(System.Int32)
+  - DichiarazioniICI.Database.TestataTable.GetListTestateAnagNoRibaltate
+  - DichiarazioniICI.Database.TestataTable.GetListTestateNonAnnullate
+  - DichiarazioniICI.Database.TestataTable.GetListTestatePerAnater(System.String)
+  - DichiarazioniICI.Database.TestataTable.GetRow(System.Int32,System.Int32,System.String)
+  - DichiarazioniICI.Database.TestataTable.GetRow(System.String)
+  - DichiarazioniICI.Database.TestataTable.GetTestataContribuente(System.Int32,System.String)
+  - DichiarazioniICI.Database.TestataTable.List(System.Int32,DichiarazioniICI.Database.Bonificato)
+  - DichiarazioniICI.Database.TestataTable.ListCont(System.Int32,DichiarazioniICI.Database.Bonificato)
+  - DichiarazioniICI.Database.TestataTable.PassaggioProp(Utility.DichManagerICI.TestataRow,System.Data.DataView@)
+  - DichiarazioniICI.Database.TestataTable.SetQuestionario(System.Int32,System.Int32)
+  - DichiarazioniICI.Database.TestataTable.Storicizzazione(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: TestataTable
+  nameWithType: TestataTable
+  fullName: DichiarazioniICI.Database.TestataTable
+  type: Class
+  source:
+    id: TestataTable
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TestataTable.cs
+    startLine: 44
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nClasse di gestione della tabella TblaTestata.\n"
+  remarks: In ottemperanza alle linee guida di sviluppo 1.0
+  example: []
+  syntax:
+    content: 'public class TestataTable : Database'
+    content.vb: >-
+      Public Class TestataTable
+
+          Inherits Database
+  inheritance:
+  - System.Object
+  - DichiarazioniICI.Database.Database
+  inheritedMembers:
+  - DichiarazioniICI.Database.Database._DbConnection
+  - DichiarazioniICI.Database.Database.TableName
+  - DichiarazioniICI.Database.Database.ProcedureName
+  - DichiarazioniICI.Database.Database.AlredyOpened
+  - DichiarazioniICI.Database.Database.kill
+  - DichiarazioniICI.Database.Database.List
+  - DichiarazioniICI.Database.Database.List(System.String)
+  - DichiarazioniICI.Database.Database.ListFromSP
+  - DichiarazioniICI.Database.Database.List(System.Int32)
+  - DichiarazioniICI.Database.Database.Query(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  - DichiarazioniICI.Database.Database.QueryScalar(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  - DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  - DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.Int32@)
+  - DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.String,System.Int32@)
+  - DichiarazioniICI.Database.Database.GetIdentity(System.Data.SqlClient.SqlConnection)
+  - DichiarazioniICI.Database.Database.PrepareGetRow(System.Int32)
+  - DichiarazioniICI.Database.Database.PrepareGetRowCaricoFigli(System.Int32,System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DichiarazioniICI.Database.TestataTable.#ctor(System.String)
+  commentId: M:DichiarazioniICI.Database.TestataTable.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: DichiarazioniICI.Database.TestataTable
+  langs:
+  - csharp
+  - vb
+  name: TestataTable(String)
+  nameWithType: TestataTable.TestataTable(String)
+  fullName: DichiarazioniICI.Database.TestataTable.TestataTable(System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TestataTable.cs
+    startLine: 50
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public TestataTable(string UserName)
+    parameters:
+    - id: UserName
+      type: System.String
+    content.vb: Public Sub New(UserName As String)
+  overload: DichiarazioniICI.Database.TestataTable.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TestataTable.PassaggioProp(Utility.DichManagerICI.TestataRow,System.Data.DataView@)
+  commentId: M:DichiarazioniICI.Database.TestataTable.PassaggioProp(Utility.DichManagerICI.TestataRow,System.Data.DataView@)
+  id: PassaggioProp(Utility.DichManagerICI.TestataRow,System.Data.DataView@)
+  parent: DichiarazioniICI.Database.TestataTable
+  langs:
+  - csharp
+  - vb
+  name: PassaggioProp(DichManagerICI.TestataRow, out DataView)
+  nameWithType: TestataTable.PassaggioProp(DichManagerICI.TestataRow, out DataView)
+  fullName: DichiarazioniICI.Database.TestataTable.PassaggioProp(Utility.DichManagerICI.TestataRow, out System.Data.DataView)
+  type: Method
+  source:
+    id: PassaggioProp
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TestataTable.cs
+    startLine: 224
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public bool PassaggioProp(DichManagerICI.TestataRow myItem, out DataView dvListUI)
+    parameters:
+    - id: myItem
+      type: Utility.DichManagerICI.TestataRow
+    - id: dvListUI
+      type: System.Data.DataView
+    return:
+      type: System.Boolean
+    content.vb: Public Function PassaggioProp(myItem As DichManagerICI.TestataRow, ByRef dvListUI As DataView) As Boolean
+  overload: DichiarazioniICI.Database.TestataTable.PassaggioProp*
+  nameWithType.vb: TestataTable.PassaggioProp(DichManagerICI.TestataRow, ByRef DataView)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DichiarazioniICI.Database.TestataTable.PassaggioProp(Utility.DichManagerICI.TestataRow, ByRef System.Data.DataView)
+  name.vb: PassaggioProp(DichManagerICI.TestataRow, ByRef DataView)
+- uid: DichiarazioniICI.Database.TestataTable.GetRow(System.Int32,System.Int32,System.String)
+  commentId: M:DichiarazioniICI.Database.TestataTable.GetRow(System.Int32,System.Int32,System.String)
+  id: GetRow(System.Int32,System.Int32,System.String)
+  parent: DichiarazioniICI.Database.TestataTable
+  langs:
+  - csharp
+  - vb
+  name: GetRow(Int32, Int32, String)
+  nameWithType: TestataTable.GetRow(Int32, Int32, String)
+  fullName: DichiarazioniICI.Database.TestataTable.GetRow(System.Int32, System.Int32, System.String)
+  type: Method
+  source:
+    id: GetRow
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TestataTable.cs
+    startLine: 255
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nRitorna una struttura row che rappresenta un record individuato dall&apos;identity.\n"
+  example: []
+  syntax:
+    content: public DichManagerICI.TestataRow GetRow(int id, int IdOggetto, string myConn)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: ''
+    - id: IdOggetto
+      type: System.Int32
+    - id: myConn
+      type: System.String
+    return:
+      type: Utility.DichManagerICI.TestataRow
+      description: "\nRestituisce un oggetto di tipo TestataRow\n"
+    content.vb: Public Function GetRow(id As Integer, IdOggetto As Integer, myConn As String) As DichManagerICI.TestataRow
+  overload: DichiarazioniICI.Database.TestataTable.GetRow*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TestataTable.GetTestataContribuente(System.Int32,System.String)
+  commentId: M:DichiarazioniICI.Database.TestataTable.GetTestataContribuente(System.Int32,System.String)
+  id: GetTestataContribuente(System.Int32,System.String)
+  parent: DichiarazioniICI.Database.TestataTable
+  langs:
+  - csharp
+  - vb
+  name: GetTestataContribuente(Int32, String)
+  nameWithType: TestataTable.GetTestataContribuente(Int32, String)
+  fullName: DichiarazioniICI.Database.TestataTable.GetTestataContribuente(System.Int32, System.String)
+  type: Method
+  source:
+    id: GetTestataContribuente
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TestataTable.cs
+    startLine: 335
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nRitorna un&apos;array di struttura che rappresenta l&apos;elenco delle testate di un contribuente.\n<param name=\"idContribuente\"> idContribuente del record da cercare </param>\n<param name=\"ente\"> ente del record da cercare </param>\n"
+  example: []
+  syntax:
+    content: public DichManagerICI.TestataRow[] GetTestataContribuente(int idContribuente, string ente)
+    parameters:
+    - id: idContribuente
+      type: System.Int32
+    - id: ente
+      type: System.String
+    return:
+      type: Utility.DichManagerICI.TestataRow[]
+      description: "\nRestituisce un array di oggetti di tipo TestaRow\n"
+    content.vb: Public Function GetTestataContribuente(idContribuente As Integer, ente As String) As DichManagerICI.TestataRow()
+  overload: DichiarazioniICI.Database.TestataTable.GetTestataContribuente*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TestataTable.GetRow(System.String)
+  commentId: M:DichiarazioniICI.Database.TestataTable.GetRow(System.String)
+  id: GetRow(System.String)
+  parent: DichiarazioniICI.Database.TestataTable
+  langs:
+  - csharp
+  - vb
+  name: GetRow(String)
+  nameWithType: TestataTable.GetRow(String)
+  fullName: DichiarazioniICI.Database.TestataTable.GetRow(System.String)
+  type: Method
+  source:
+    id: GetRow
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TestataTable.cs
+    startLine: 399
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nRitorna una struttura row che rappresenta un record individuato dal numero protocollo.\n"
+  example: []
+  syntax:
+    content: public DichManagerICI.TestataRow GetRow(string numeroProtocollo)
+    parameters:
+    - id: numeroProtocollo
+      type: System.String
+      description: ''
+    return:
+      type: Utility.DichManagerICI.TestataRow
+      description: "\nrestituisce un oggetto di tipo TestataRow\n"
+    content.vb: Public Function GetRow(numeroProtocollo As String) As DichManagerICI.TestataRow
+  overload: DichiarazioniICI.Database.TestataTable.GetRow*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TestataTable.GetListTestateNonAnnullate
+  commentId: M:DichiarazioniICI.Database.TestataTable.GetListTestateNonAnnullate
+  id: GetListTestateNonAnnullate
+  parent: DichiarazioniICI.Database.TestataTable
+  langs:
+  - csharp
+  - vb
+  name: GetListTestateNonAnnullate()
+  nameWithType: TestataTable.GetListTestateNonAnnullate()
+  fullName: DichiarazioniICI.Database.TestataTable.GetListTestateNonAnnullate()
+  type: Method
+  source:
+    id: GetListTestateNonAnnullate
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TestataTable.cs
+    startLine: 452
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nPrende le dichiarazioni non cancellate.\n"
+  example: []
+  syntax:
+    content: public DataView GetListTestateNonAnnullate()
+    return:
+      type: System.Data.DataView
+      description: "\nRestituisce un dataView contenente tutte le dichiarazioni non cancellate\n"
+    content.vb: Public Function GetListTestateNonAnnullate As DataView
+  overload: DichiarazioniICI.Database.TestataTable.GetListTestateNonAnnullate*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TestataTable.GetListTestatePerAnater(System.String)
+  commentId: M:DichiarazioniICI.Database.TestataTable.GetListTestatePerAnater(System.String)
+  id: GetListTestatePerAnater(System.String)
+  parent: DichiarazioniICI.Database.TestataTable
+  langs:
+  - csharp
+  - vb
+  name: GetListTestatePerAnater(String)
+  nameWithType: TestataTable.GetListTestatePerAnater(String)
+  fullName: DichiarazioniICI.Database.TestataTable.GetListTestatePerAnater(System.String)
+  type: Method
+  source:
+    id: GetListTestatePerAnater
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TestataTable.cs
+    startLine: 479
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public DataView GetListTestatePerAnater(string Anno)
+    parameters:
+    - id: Anno
+      type: System.String
+      description: ''
+    return:
+      type: System.Data.DataView
+      description: ''
+    content.vb: Public Function GetListTestatePerAnater(Anno As String) As DataView
+  overload: DichiarazioniICI.Database.TestataTable.GetListTestatePerAnater*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TestataTable.Storicizzazione(System.Int32)
+  commentId: M:DichiarazioniICI.Database.TestataTable.Storicizzazione(System.Int32)
+  id: Storicizzazione(System.Int32)
+  parent: DichiarazioniICI.Database.TestataTable
+  langs:
+  - csharp
+  - vb
+  name: Storicizzazione(Int32)
+  nameWithType: TestataTable.Storicizzazione(Int32)
+  fullName: DichiarazioniICI.Database.TestataTable.Storicizzazione(System.Int32)
+  type: Method
+  source:
+    id: Storicizzazione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TestataTable.cs
+    startLine: 519
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nStoricizza i dati: modifica i dati vecchi.\n"
+  example: []
+  syntax:
+    content: public bool Storicizzazione(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Boolean
+      description: "\nRestituisce un valore booleano:\ntrue : se l&apos;operazione è terminata correttamente\nfalse: se si sono verificati errori\n"
+    content.vb: Public Function Storicizzazione(id As Integer) As Boolean
+  overload: DichiarazioniICI.Database.TestataTable.Storicizzazione*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TestataTable.CancellazioneLogica(System.Int32)
+  commentId: M:DichiarazioniICI.Database.TestataTable.CancellazioneLogica(System.Int32)
+  id: CancellazioneLogica(System.Int32)
+  parent: DichiarazioniICI.Database.TestataTable
+  langs:
+  - csharp
+  - vb
+  name: CancellazioneLogica(Int32)
+  nameWithType: TestataTable.CancellazioneLogica(Int32)
+  fullName: DichiarazioniICI.Database.TestataTable.CancellazioneLogica(System.Int32)
+  type: Method
+  source:
+    id: CancellazioneLogica
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TestataTable.cs
+    startLine: 550
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nEsegue la cancellazione logica dei dati.\n"
+  example: []
+  syntax:
+    content: public bool CancellazioneLogica(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Boolean
+      description: "\nRestituisce un valore booleano:\ntrue : se l&apos;operazione è terminata correttamente\nfalse: se si sono verificati errori\n"
+    content.vb: Public Function CancellazioneLogica(id As Integer) As Boolean
+  overload: DichiarazioniICI.Database.TestataTable.CancellazioneLogica*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TestataTable.CancellazioneDichiarazione(System.Int32)
+  commentId: M:DichiarazioniICI.Database.TestataTable.CancellazioneDichiarazione(System.Int32)
+  id: CancellazioneDichiarazione(System.Int32)
+  parent: DichiarazioniICI.Database.TestataTable
+  langs:
+  - csharp
+  - vb
+  name: CancellazioneDichiarazione(Int32)
+  nameWithType: TestataTable.CancellazioneDichiarazione(Int32)
+  fullName: DichiarazioniICI.Database.TestataTable.CancellazioneDichiarazione(System.Int32)
+  type: Method
+  source:
+    id: CancellazioneDichiarazione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TestataTable.cs
+    startLine: 578
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nElimina definitivamente una dichiarazione\n"
+  example: []
+  syntax:
+    content: public bool CancellazioneDichiarazione(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Boolean
+      description: "\nRestituisce un valore booleano:\ntrue : se l&apos;operazione è terminata correttamente\nfalse: se si sono verificati errori\n"
+    content.vb: Public Function CancellazioneDichiarazione(id As Integer) As Boolean
+  overload: DichiarazioniICI.Database.TestataTable.CancellazioneDichiarazione*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TestataTable.Bonifica(System.Int32)
+  commentId: M:DichiarazioniICI.Database.TestataTable.Bonifica(System.Int32)
+  id: Bonifica(System.Int32)
+  parent: DichiarazioniICI.Database.TestataTable
+  langs:
+  - csharp
+  - vb
+  name: Bonifica(Int32)
+  nameWithType: TestataTable.Bonifica(Int32)
+  fullName: DichiarazioniICI.Database.TestataTable.Bonifica(System.Int32)
+  type: Method
+  source:
+    id: Bonifica
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TestataTable.cs
+    startLine: 605
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nImposta il flag bonificato a true.\n"
+  example: []
+  syntax:
+    content: public bool Bonifica(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Boolean
+      description: "\nRestituisce un valore booleano:\ntrue : se l&apos;operazione è terminata correttamente\nfalse: se si sono verificati errori\n"
+    content.vb: Public Function Bonifica(id As Integer) As Boolean
+  overload: DichiarazioniICI.Database.TestataTable.Bonifica*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TestataTable.BonificaFalse(System.Int32)
+  commentId: M:DichiarazioniICI.Database.TestataTable.BonificaFalse(System.Int32)
+  id: BonificaFalse(System.Int32)
+  parent: DichiarazioniICI.Database.TestataTable
+  langs:
+  - csharp
+  - vb
+  name: BonificaFalse(Int32)
+  nameWithType: TestataTable.BonificaFalse(Int32)
+  fullName: DichiarazioniICI.Database.TestataTable.BonificaFalse(System.Int32)
+  type: Method
+  source:
+    id: BonificaFalse
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TestataTable.cs
+    startLine: 633
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nImposta il flag bonificato a false\n"
+  example: []
+  syntax:
+    content: public bool BonificaFalse(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Boolean
+      description: "\nRestituisce un valore booleano:\ntrue : se l&apos;operazione è terminata correttamente\nfalse: se si sono verificati errori\n"
+    content.vb: Public Function BonificaFalse(id As Integer) As Boolean
+  overload: DichiarazioniICI.Database.TestataTable.BonificaFalse*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TestataTable.List(System.Int32,DichiarazioniICI.Database.Bonificato)
+  commentId: M:DichiarazioniICI.Database.TestataTable.List(System.Int32,DichiarazioniICI.Database.Bonificato)
+  id: List(System.Int32,DichiarazioniICI.Database.Bonificato)
+  parent: DichiarazioniICI.Database.TestataTable
+  langs:
+  - csharp
+  - vb
+  name: List(Int32, Bonificato)
+  nameWithType: TestataTable.List(Int32, Bonificato)
+  fullName: DichiarazioniICI.Database.TestataTable.List(System.Int32, DichiarazioniICI.Database.Bonificato)
+  type: Method
+  source:
+    id: List
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TestataTable.cs
+    startLine: 659
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nTorna una DataView con l&apos;elenco delle dichiarazioni filtrate per contribuente.\n"
+  example: []
+  syntax:
+    content: public DataView List(int idContribuente, Bonificato bonificato)
+    parameters:
+    - id: idContribuente
+      type: System.Int32
+      description: ''
+    - id: bonificato
+      type: DichiarazioniICI.Database.Bonificato
+      description: ''
+    return:
+      type: System.Data.DataView
+      description: "\nRestituisce un dataView\n"
+    content.vb: Public Function List(idContribuente As Integer, bonificato As Bonificato) As DataView
+  overload: DichiarazioniICI.Database.TestataTable.List*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TestataTable.ListCont(System.Int32,DichiarazioniICI.Database.Bonificato)
+  commentId: M:DichiarazioniICI.Database.TestataTable.ListCont(System.Int32,DichiarazioniICI.Database.Bonificato)
+  id: ListCont(System.Int32,DichiarazioniICI.Database.Bonificato)
+  parent: DichiarazioniICI.Database.TestataTable
+  langs:
+  - csharp
+  - vb
+  name: ListCont(Int32, Bonificato)
+  nameWithType: TestataTable.ListCont(Int32, Bonificato)
+  fullName: DichiarazioniICI.Database.TestataTable.ListCont(System.Int32, DichiarazioniICI.Database.Bonificato)
+  type: Method
+  source:
+    id: ListCont
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TestataTable.cs
+    startLine: 701
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nTorna una DataView con l&apos;elenco delle dichiarazioni filtrate per contribuente.\nverificando anche il contitolare\n"
+  example: []
+  syntax:
+    content: public DataView ListCont(int idContribuente, Bonificato bonificato)
+    parameters:
+    - id: idContribuente
+      type: System.Int32
+      description: ''
+    - id: bonificato
+      type: DichiarazioniICI.Database.Bonificato
+      description: ''
+    return:
+      type: System.Data.DataView
+      description: "\nRestituisce un dataView\n"
+    content.vb: Public Function ListCont(idContribuente As Integer, bonificato As Bonificato) As DataView
+  overload: DichiarazioniICI.Database.TestataTable.ListCont*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TestataTable.SetQuestionario(System.Int32,System.Int32)
+  commentId: M:DichiarazioniICI.Database.TestataTable.SetQuestionario(System.Int32,System.Int32)
+  id: SetQuestionario(System.Int32,System.Int32)
+  parent: DichiarazioniICI.Database.TestataTable
+  langs:
+  - csharp
+  - vb
+  name: SetQuestionario(Int32, Int32)
+  nameWithType: TestataTable.SetQuestionario(Int32, Int32)
+  fullName: DichiarazioniICI.Database.TestataTable.SetQuestionario(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: SetQuestionario
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TestataTable.cs
+    startLine: 828
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nModifica l&apos;id questionario della dichiarazione passata.\n"
+  example: []
+  syntax:
+    content: public bool SetQuestionario(int idDichiarazione, int idQuestione)
+    parameters:
+    - id: idDichiarazione
+      type: System.Int32
+      description: ''
+    - id: idQuestione
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Boolean
+      description: "\nRestituisce un valore booleano:\ntrue : se l&apos;operazione è terminata correttamente\nfalse: se si sono verificati errori\n"
+    content.vb: Public Function SetQuestionario(idDichiarazione As Integer, idQuestione As Integer) As Boolean
+  overload: DichiarazioniICI.Database.TestataTable.SetQuestionario*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TestataTable.AnniCaricati
+  commentId: M:DichiarazioniICI.Database.TestataTable.AnniCaricati
+  id: AnniCaricati
+  parent: DichiarazioniICI.Database.TestataTable
+  langs:
+  - csharp
+  - vb
+  name: AnniCaricati()
+  nameWithType: TestataTable.AnniCaricati()
+  fullName: DichiarazioniICI.Database.TestataTable.AnniCaricati()
+  type: Method
+  source:
+    id: AnniCaricati
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TestataTable.cs
+    startLine: 855
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nCarica l&apos;elenco degli anni presenti\n"
+  example: []
+  syntax:
+    content: public DataView AnniCaricati()
+    return:
+      type: System.Data.DataView
+      description: "\nRestituisce un datview\n"
+    content.vb: Public Function AnniCaricati As DataView
+  overload: DichiarazioniICI.Database.TestataTable.AnniCaricati*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TestataTable.GetListTestateAnagNoRibaltate
+  commentId: M:DichiarazioniICI.Database.TestataTable.GetListTestateAnagNoRibaltate
+  id: GetListTestateAnagNoRibaltate
+  parent: DichiarazioniICI.Database.TestataTable
+  langs:
+  - csharp
+  - vb
+  name: GetListTestateAnagNoRibaltate()
+  nameWithType: TestataTable.GetListTestateAnagNoRibaltate()
+  fullName: DichiarazioniICI.Database.TestataTable.GetListTestateAnagNoRibaltate()
+  type: Method
+  source:
+    id: GetListTestateAnagNoRibaltate
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TestataTable.cs
+    startLine: 883
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public DataView GetListTestateAnagNoRibaltate()
+    return:
+      type: System.Data.DataView
+      description: ''
+    content.vb: Public Function GetListTestateAnagNoRibaltate As DataView
+  overload: DichiarazioniICI.Database.TestataTable.GetListTestateAnagNoRibaltate*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: DichiarazioniICI.Database
+  commentId: N:DichiarazioniICI.Database
+  name: DichiarazioniICI.Database
+  nameWithType: DichiarazioniICI.Database
+  fullName: DichiarazioniICI.Database
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DichiarazioniICI.Database.Database
+  commentId: T:DichiarazioniICI.Database.Database
+  parent: DichiarazioniICI.Database
+  name: Database
+  nameWithType: Database
+  fullName: DichiarazioniICI.Database.Database
+- uid: DichiarazioniICI.Database.Database._DbConnection
+  commentId: F:DichiarazioniICI.Database.Database._DbConnection
+  parent: DichiarazioniICI.Database.Database
+  name: _DbConnection
+  nameWithType: Database._DbConnection
+  fullName: DichiarazioniICI.Database.Database._DbConnection
+- uid: DichiarazioniICI.Database.Database.TableName
+  commentId: F:DichiarazioniICI.Database.Database.TableName
+  parent: DichiarazioniICI.Database.Database
+  name: TableName
+  nameWithType: Database.TableName
+  fullName: DichiarazioniICI.Database.Database.TableName
+- uid: DichiarazioniICI.Database.Database.ProcedureName
+  commentId: F:DichiarazioniICI.Database.Database.ProcedureName
+  parent: DichiarazioniICI.Database.Database
+  name: ProcedureName
+  nameWithType: Database.ProcedureName
+  fullName: DichiarazioniICI.Database.Database.ProcedureName
+- uid: DichiarazioniICI.Database.Database.AlredyOpened
+  commentId: F:DichiarazioniICI.Database.Database.AlredyOpened
+  parent: DichiarazioniICI.Database.Database
+  name: AlredyOpened
+  nameWithType: Database.AlredyOpened
+  fullName: DichiarazioniICI.Database.Database.AlredyOpened
+- uid: DichiarazioniICI.Database.Database.kill
+  commentId: M:DichiarazioniICI.Database.Database.kill
+  parent: DichiarazioniICI.Database.Database
+  name: kill()
+  nameWithType: Database.kill()
+  fullName: DichiarazioniICI.Database.Database.kill()
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.kill
+    name: kill
+    nameWithType: Database.kill
+    fullName: DichiarazioniICI.Database.Database.kill
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.kill
+    name: kill
+    nameWithType: Database.kill
+    fullName: DichiarazioniICI.Database.Database.kill
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.List
+  commentId: M:DichiarazioniICI.Database.Database.List
+  parent: DichiarazioniICI.Database.Database
+  name: List()
+  nameWithType: Database.List()
+  fullName: DichiarazioniICI.Database.Database.List()
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.List
+    name: List
+    nameWithType: Database.List
+    fullName: DichiarazioniICI.Database.Database.List
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.List
+    name: List
+    nameWithType: Database.List
+    fullName: DichiarazioniICI.Database.Database.List
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.List(System.String)
+  commentId: M:DichiarazioniICI.Database.Database.List(System.String)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: List(String)
+  nameWithType: Database.List(String)
+  fullName: DichiarazioniICI.Database.Database.List(System.String)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.List(System.String)
+    name: List
+    nameWithType: Database.List
+    fullName: DichiarazioniICI.Database.Database.List
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.List(System.String)
+    name: List
+    nameWithType: Database.List
+    fullName: DichiarazioniICI.Database.Database.List
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.ListFromSP
+  commentId: M:DichiarazioniICI.Database.Database.ListFromSP
+  parent: DichiarazioniICI.Database.Database
+  name: ListFromSP()
+  nameWithType: Database.ListFromSP()
+  fullName: DichiarazioniICI.Database.Database.ListFromSP()
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.ListFromSP
+    name: ListFromSP
+    nameWithType: Database.ListFromSP
+    fullName: DichiarazioniICI.Database.Database.ListFromSP
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.ListFromSP
+    name: ListFromSP
+    nameWithType: Database.ListFromSP
+    fullName: DichiarazioniICI.Database.Database.ListFromSP
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.List(System.Int32)
+  commentId: M:DichiarazioniICI.Database.Database.List(System.Int32)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: List(Int32)
+  nameWithType: Database.List(Int32)
+  fullName: DichiarazioniICI.Database.Database.List(System.Int32)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.List(System.Int32)
+    name: List
+    nameWithType: Database.List
+    fullName: DichiarazioniICI.Database.Database.List
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.List(System.Int32)
+    name: List
+    nameWithType: Database.List
+    fullName: DichiarazioniICI.Database.Database.List
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.Query(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  commentId: M:DichiarazioniICI.Database.Database.Query(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: Query(SqlCommand, SqlConnection)
+  nameWithType: Database.Query(SqlCommand, SqlConnection)
+  fullName: DichiarazioniICI.Database.Database.Query(System.Data.SqlClient.SqlCommand, System.Data.SqlClient.SqlConnection)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.Query(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+    name: Query
+    nameWithType: Database.Query
+    fullName: DichiarazioniICI.Database.Database.Query
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.Query(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+    name: Query
+    nameWithType: Database.Query
+    fullName: DichiarazioniICI.Database.Database.Query
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.QueryScalar(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  commentId: M:DichiarazioniICI.Database.Database.QueryScalar(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: QueryScalar(SqlCommand, SqlConnection)
+  nameWithType: Database.QueryScalar(SqlCommand, SqlConnection)
+  fullName: DichiarazioniICI.Database.Database.QueryScalar(System.Data.SqlClient.SqlCommand, System.Data.SqlClient.SqlConnection)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.QueryScalar(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+    name: QueryScalar
+    nameWithType: Database.QueryScalar
+    fullName: DichiarazioniICI.Database.Database.QueryScalar
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.QueryScalar(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+    name: QueryScalar
+    nameWithType: Database.QueryScalar
+    fullName: DichiarazioniICI.Database.Database.QueryScalar
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  commentId: M:DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: Execute(SqlCommand, SqlConnection)
+  nameWithType: Database.Execute(SqlCommand, SqlConnection)
+  fullName: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand, System.Data.SqlClient.SqlConnection)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+    name: Execute
+    nameWithType: Database.Execute
+    fullName: DichiarazioniICI.Database.Database.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+    name: Execute
+    nameWithType: Database.Execute
+    fullName: DichiarazioniICI.Database.Database.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.Int32@)
+  commentId: M:DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.Int32@)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: Execute(SqlCommand, SqlConnection, Int32)
+  nameWithType: Database.Execute(SqlCommand, SqlConnection, Int32)
+  fullName: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand, System.Data.SqlClient.SqlConnection, System.Int32)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.Int32@)
+    name: Execute
+    nameWithType: Database.Execute
+    fullName: DichiarazioniICI.Database.Database.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.Int32@)
+    name: Execute
+    nameWithType: Database.Execute
+    fullName: DichiarazioniICI.Database.Database.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.String,System.Int32@)
+  commentId: M:DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.String,System.Int32@)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: Execute(SqlCommand, SqlConnection, String, Int32)
+  nameWithType: Database.Execute(SqlCommand, SqlConnection, String, Int32)
+  fullName: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand, System.Data.SqlClient.SqlConnection, System.String, System.Int32)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.String,System.Int32@)
+    name: Execute
+    nameWithType: Database.Execute
+    fullName: DichiarazioniICI.Database.Database.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.String,System.Int32@)
+    name: Execute
+    nameWithType: Database.Execute
+    fullName: DichiarazioniICI.Database.Database.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.GetIdentity(System.Data.SqlClient.SqlConnection)
+  commentId: M:DichiarazioniICI.Database.Database.GetIdentity(System.Data.SqlClient.SqlConnection)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: GetIdentity(SqlConnection)
+  nameWithType: Database.GetIdentity(SqlConnection)
+  fullName: DichiarazioniICI.Database.Database.GetIdentity(System.Data.SqlClient.SqlConnection)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.GetIdentity(System.Data.SqlClient.SqlConnection)
+    name: GetIdentity
+    nameWithType: Database.GetIdentity
+    fullName: DichiarazioniICI.Database.Database.GetIdentity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.GetIdentity(System.Data.SqlClient.SqlConnection)
+    name: GetIdentity
+    nameWithType: Database.GetIdentity
+    fullName: DichiarazioniICI.Database.Database.GetIdentity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.PrepareGetRow(System.Int32)
+  commentId: M:DichiarazioniICI.Database.Database.PrepareGetRow(System.Int32)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: PrepareGetRow(Int32)
+  nameWithType: Database.PrepareGetRow(Int32)
+  fullName: DichiarazioniICI.Database.Database.PrepareGetRow(System.Int32)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.PrepareGetRow(System.Int32)
+    name: PrepareGetRow
+    nameWithType: Database.PrepareGetRow
+    fullName: DichiarazioniICI.Database.Database.PrepareGetRow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.PrepareGetRow(System.Int32)
+    name: PrepareGetRow
+    nameWithType: Database.PrepareGetRow
+    fullName: DichiarazioniICI.Database.Database.PrepareGetRow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.PrepareGetRowCaricoFigli(System.Int32,System.String)
+  commentId: M:DichiarazioniICI.Database.Database.PrepareGetRowCaricoFigli(System.Int32,System.String)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: PrepareGetRowCaricoFigli(Int32, String)
+  nameWithType: Database.PrepareGetRowCaricoFigli(Int32, String)
+  fullName: DichiarazioniICI.Database.Database.PrepareGetRowCaricoFigli(System.Int32, System.String)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.PrepareGetRowCaricoFigli(System.Int32,System.String)
+    name: PrepareGetRowCaricoFigli
+    nameWithType: Database.PrepareGetRowCaricoFigli
+    fullName: DichiarazioniICI.Database.Database.PrepareGetRowCaricoFigli
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.PrepareGetRowCaricoFigli(System.Int32,System.String)
+    name: PrepareGetRowCaricoFigli
+    nameWithType: Database.PrepareGetRowCaricoFigli
+    fullName: DichiarazioniICI.Database.Database.PrepareGetRowCaricoFigli
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DichiarazioniICI.Database.TestataTable.#ctor*
+  commentId: Overload:DichiarazioniICI.Database.TestataTable.#ctor
+  name: TestataTable
+  nameWithType: TestataTable.TestataTable
+  fullName: DichiarazioniICI.Database.TestataTable.TestataTable
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DichiarazioniICI.Database.TestataTable.PassaggioProp*
+  commentId: Overload:DichiarazioniICI.Database.TestataTable.PassaggioProp
+  name: PassaggioProp
+  nameWithType: TestataTable.PassaggioProp
+  fullName: DichiarazioniICI.Database.TestataTable.PassaggioProp
+- uid: Utility.DichManagerICI.TestataRow
+  commentId: T:Utility.DichManagerICI.TestataRow
+  parent: Utility
+  isExternal: true
+  name: DichManagerICI.TestataRow
+  nameWithType: DichManagerICI.TestataRow
+  fullName: Utility.DichManagerICI.TestataRow
+- uid: System.Data.DataView
+  commentId: T:System.Data.DataView
+  parent: System.Data
+  isExternal: true
+  name: DataView
+  nameWithType: DataView
+  fullName: System.Data.DataView
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Utility
+  commentId: N:Utility
+  isExternal: true
+  name: Utility
+  nameWithType: Utility
+  fullName: Utility
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+- uid: DichiarazioniICI.Database.TestataTable.GetRow*
+  commentId: Overload:DichiarazioniICI.Database.TestataTable.GetRow
+  name: GetRow
+  nameWithType: TestataTable.GetRow
+  fullName: DichiarazioniICI.Database.TestataTable.GetRow
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DichiarazioniICI.Database.TestataTable.GetTestataContribuente*
+  commentId: Overload:DichiarazioniICI.Database.TestataTable.GetTestataContribuente
+  name: GetTestataContribuente
+  nameWithType: TestataTable.GetTestataContribuente
+  fullName: DichiarazioniICI.Database.TestataTable.GetTestataContribuente
+- uid: Utility.DichManagerICI.TestataRow[]
+  isExternal: true
+  name: DichManagerICI.TestataRow[]
+  nameWithType: DichManagerICI.TestataRow[]
+  fullName: Utility.DichManagerICI.TestataRow[]
+  nameWithType.vb: DichManagerICI.TestataRow()
+  fullName.vb: Utility.DichManagerICI.TestataRow()
+  name.vb: DichManagerICI.TestataRow()
+  spec.csharp:
+  - uid: Utility.DichManagerICI.TestataRow
+    name: DichManagerICI.TestataRow
+    nameWithType: DichManagerICI.TestataRow
+    fullName: Utility.DichManagerICI.TestataRow
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Utility.DichManagerICI.TestataRow
+    name: DichManagerICI.TestataRow
+    nameWithType: DichManagerICI.TestataRow
+    fullName: Utility.DichManagerICI.TestataRow
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: DichiarazioniICI.Database.TestataTable.GetListTestateNonAnnullate*
+  commentId: Overload:DichiarazioniICI.Database.TestataTable.GetListTestateNonAnnullate
+  name: GetListTestateNonAnnullate
+  nameWithType: TestataTable.GetListTestateNonAnnullate
+  fullName: DichiarazioniICI.Database.TestataTable.GetListTestateNonAnnullate
+- uid: DichiarazioniICI.Database.TestataTable.GetListTestatePerAnater*
+  commentId: Overload:DichiarazioniICI.Database.TestataTable.GetListTestatePerAnater
+  name: GetListTestatePerAnater
+  nameWithType: TestataTable.GetListTestatePerAnater
+  fullName: DichiarazioniICI.Database.TestataTable.GetListTestatePerAnater
+- uid: DichiarazioniICI.Database.TestataTable.Storicizzazione*
+  commentId: Overload:DichiarazioniICI.Database.TestataTable.Storicizzazione
+  name: Storicizzazione
+  nameWithType: TestataTable.Storicizzazione
+  fullName: DichiarazioniICI.Database.TestataTable.Storicizzazione
+- uid: DichiarazioniICI.Database.TestataTable.CancellazioneLogica*
+  commentId: Overload:DichiarazioniICI.Database.TestataTable.CancellazioneLogica
+  name: CancellazioneLogica
+  nameWithType: TestataTable.CancellazioneLogica
+  fullName: DichiarazioniICI.Database.TestataTable.CancellazioneLogica
+- uid: DichiarazioniICI.Database.TestataTable.CancellazioneDichiarazione*
+  commentId: Overload:DichiarazioniICI.Database.TestataTable.CancellazioneDichiarazione
+  name: CancellazioneDichiarazione
+  nameWithType: TestataTable.CancellazioneDichiarazione
+  fullName: DichiarazioniICI.Database.TestataTable.CancellazioneDichiarazione
+- uid: DichiarazioniICI.Database.TestataTable.Bonifica*
+  commentId: Overload:DichiarazioniICI.Database.TestataTable.Bonifica
+  name: Bonifica
+  nameWithType: TestataTable.Bonifica
+  fullName: DichiarazioniICI.Database.TestataTable.Bonifica
+- uid: DichiarazioniICI.Database.TestataTable.BonificaFalse*
+  commentId: Overload:DichiarazioniICI.Database.TestataTable.BonificaFalse
+  name: BonificaFalse
+  nameWithType: TestataTable.BonificaFalse
+  fullName: DichiarazioniICI.Database.TestataTable.BonificaFalse
+- uid: DichiarazioniICI.Database.TestataTable.List*
+  commentId: Overload:DichiarazioniICI.Database.TestataTable.List
+  name: List
+  nameWithType: TestataTable.List
+  fullName: DichiarazioniICI.Database.TestataTable.List
+- uid: DichiarazioniICI.Database.Bonificato
+  commentId: T:DichiarazioniICI.Database.Bonificato
+  parent: DichiarazioniICI.Database
+  name: Bonificato
+  nameWithType: Bonificato
+  fullName: DichiarazioniICI.Database.Bonificato
+- uid: DichiarazioniICI.Database.TestataTable.ListCont*
+  commentId: Overload:DichiarazioniICI.Database.TestataTable.ListCont
+  name: ListCont
+  nameWithType: TestataTable.ListCont
+  fullName: DichiarazioniICI.Database.TestataTable.ListCont
+- uid: DichiarazioniICI.Database.TestataTable.SetQuestionario*
+  commentId: Overload:DichiarazioniICI.Database.TestataTable.SetQuestionario
+  name: SetQuestionario
+  nameWithType: TestataTable.SetQuestionario
+  fullName: DichiarazioniICI.Database.TestataTable.SetQuestionario
+- uid: DichiarazioniICI.Database.TestataTable.AnniCaricati*
+  commentId: Overload:DichiarazioniICI.Database.TestataTable.AnniCaricati
+  name: AnniCaricati
+  nameWithType: TestataTable.AnniCaricati
+  fullName: DichiarazioniICI.Database.TestataTable.AnniCaricati
+- uid: DichiarazioniICI.Database.TestataTable.GetListTestateAnagNoRibaltate*
+  commentId: Overload:DichiarazioniICI.Database.TestataTable.GetListTestateAnagNoRibaltate
+  name: GetListTestateAnagNoRibaltate
+  nameWithType: TestataTable.GetListTestateAnagNoRibaltate
+  fullName: DichiarazioniICI.Database.TestataTable.GetListTestateAnagNoRibaltate

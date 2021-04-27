@@ -1,0 +1,517 @@
+### YamlMime:ManagedReference
+items:
+- uid: Business.TrasformatoreAnater
+  commentId: T:Business.TrasformatoreAnater
+  id: TrasformatoreAnater
+  parent: Business
+  children:
+  - Business.TrasformatoreAnater.TrasformaRigaDettaglio(Utility.DichManagerICI.DettaglioTestataRow)
+  - Business.TrasformatoreAnater.TrasformaRigaOggetto(Utility.DichManagerICI.OggettiRow)
+  - Business.TrasformatoreAnater.TrasformaRigaTestata(Utility.DichManagerICI.TestataRow)
+  langs:
+  - csharp
+  - vb
+  name: TrasformatoreAnater
+  nameWithType: TrasformatoreAnater
+  fullName: Business.TrasformatoreAnater
+  type: Class
+  source:
+    id: TrasformatoreAnater
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\TrasformatoreAnater.cs
+    startLine: 13
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nClasse per la trasformazione degli oggetti di Dichiarazioni ICI per passarli ad Anater\n"
+  example: []
+  syntax:
+    content: public class TrasformatoreAnater
+    content.vb: Public Class TrasformatoreAnater
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Business.TrasformatoreAnater.TrasformaRigaTestata(Utility.DichManagerICI.TestataRow)
+  commentId: M:Business.TrasformatoreAnater.TrasformaRigaTestata(Utility.DichManagerICI.TestataRow)
+  id: TrasformaRigaTestata(Utility.DichManagerICI.TestataRow)
+  parent: Business.TrasformatoreAnater
+  langs:
+  - csharp
+  - vb
+  name: TrasformaRigaTestata(DichManagerICI.TestataRow)
+  nameWithType: TrasformatoreAnater.TrasformaRigaTestata(DichManagerICI.TestataRow)
+  fullName: Business.TrasformatoreAnater.TrasformaRigaTestata(Utility.DichManagerICI.TestataRow)
+  type: Method
+  source:
+    id: TrasformaRigaTestata
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\TrasformatoreAnater.cs
+    startLine: 22
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nAnater\n"
+  example: []
+  syntax:
+    content: public TestataRowICI TrasformaRigaTestata(DichManagerICI.TestataRow RigaTestata)
+    parameters:
+    - id: RigaTestata
+      type: Utility.DichManagerICI.TestataRow
+      description: ''
+    return:
+      type: Anater.Oggetti.TestataRowICI
+      description: ''
+    content.vb: Public Function TrasformaRigaTestata(RigaTestata As DichManagerICI.TestataRow) As TestataRowICI
+  overload: Business.TrasformatoreAnater.TrasformaRigaTestata*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.TrasformatoreAnater.TrasformaRigaDettaglio(Utility.DichManagerICI.DettaglioTestataRow)
+  commentId: M:Business.TrasformatoreAnater.TrasformaRigaDettaglio(Utility.DichManagerICI.DettaglioTestataRow)
+  id: TrasformaRigaDettaglio(Utility.DichManagerICI.DettaglioTestataRow)
+  parent: Business.TrasformatoreAnater
+  langs:
+  - csharp
+  - vb
+  name: TrasformaRigaDettaglio(DichManagerICI.DettaglioTestataRow)
+  nameWithType: TrasformatoreAnater.TrasformaRigaDettaglio(DichManagerICI.DettaglioTestataRow)
+  fullName: Business.TrasformatoreAnater.TrasformaRigaDettaglio(Utility.DichManagerICI.DettaglioTestataRow)
+  type: Method
+  source:
+    id: TrasformaRigaDettaglio
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\TrasformatoreAnater.cs
+    startLine: 62
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nTrasformaRigaDettaglio\n"
+  example: []
+  syntax:
+    content: public DettaglioTestataRowICI TrasformaRigaDettaglio(DichManagerICI.DettaglioTestataRow rowDettaglioTestata)
+    parameters:
+    - id: rowDettaglioTestata
+      type: Utility.DichManagerICI.DettaglioTestataRow
+      description: ''
+    return:
+      type: Anater.Oggetti.DettaglioTestataRowICI
+      description: ''
+    content.vb: Public Function TrasformaRigaDettaglio(rowDettaglioTestata As DichManagerICI.DettaglioTestataRow) As DettaglioTestataRowICI
+  overload: Business.TrasformatoreAnater.TrasformaRigaDettaglio*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.TrasformatoreAnater.TrasformaRigaOggetto(Utility.DichManagerICI.OggettiRow)
+  commentId: M:Business.TrasformatoreAnater.TrasformaRigaOggetto(Utility.DichManagerICI.OggettiRow)
+  id: TrasformaRigaOggetto(Utility.DichManagerICI.OggettiRow)
+  parent: Business.TrasformatoreAnater
+  langs:
+  - csharp
+  - vb
+  name: TrasformaRigaOggetto(DichManagerICI.OggettiRow)
+  nameWithType: TrasformatoreAnater.TrasformaRigaOggetto(DichManagerICI.OggettiRow)
+  fullName: Business.TrasformatoreAnater.TrasformaRigaOggetto(Utility.DichManagerICI.OggettiRow)
+  type: Method
+  source:
+    id: TrasformaRigaOggetto
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\TrasformatoreAnater.cs
+    startLine: 116
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nTrasformaRigaOggetto\n"
+  example: []
+  syntax:
+    content: public OggettiRowICI TrasformaRigaOggetto(DichManagerICI.OggettiRow oImmobileRow)
+    parameters:
+    - id: oImmobileRow
+      type: Utility.DichManagerICI.OggettiRow
+      description: ''
+    return:
+      type: Anater.Oggetti.OggettiRowICI
+      description: ''
+    content.vb: Public Function TrasformaRigaOggetto(oImmobileRow As DichManagerICI.OggettiRow) As OggettiRowICI
+  overload: Business.TrasformatoreAnater.TrasformaRigaOggetto*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Business
+  commentId: N:Business
+  name: Business
+  nameWithType: Business
+  fullName: Business
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Business.TrasformatoreAnater.TrasformaRigaTestata*
+  commentId: Overload:Business.TrasformatoreAnater.TrasformaRigaTestata
+  name: TrasformaRigaTestata
+  nameWithType: TrasformatoreAnater.TrasformaRigaTestata
+  fullName: Business.TrasformatoreAnater.TrasformaRigaTestata
+- uid: Utility.DichManagerICI.TestataRow
+  commentId: T:Utility.DichManagerICI.TestataRow
+  parent: Utility
+  isExternal: true
+  name: DichManagerICI.TestataRow
+  nameWithType: DichManagerICI.TestataRow
+  fullName: Utility.DichManagerICI.TestataRow
+- uid: Anater.Oggetti.TestataRowICI
+  commentId: T:Anater.Oggetti.TestataRowICI
+  parent: Anater.Oggetti
+  isExternal: true
+  name: TestataRowICI
+  nameWithType: TestataRowICI
+  fullName: Anater.Oggetti.TestataRowICI
+- uid: Utility
+  commentId: N:Utility
+  isExternal: true
+  name: Utility
+  nameWithType: Utility
+  fullName: Utility
+- uid: Anater.Oggetti
+  commentId: N:Anater.Oggetti
+  isExternal: true
+  name: Anater.Oggetti
+  nameWithType: Anater.Oggetti
+  fullName: Anater.Oggetti
+- uid: Business.TrasformatoreAnater.TrasformaRigaDettaglio*
+  commentId: Overload:Business.TrasformatoreAnater.TrasformaRigaDettaglio
+  name: TrasformaRigaDettaglio
+  nameWithType: TrasformatoreAnater.TrasformaRigaDettaglio
+  fullName: Business.TrasformatoreAnater.TrasformaRigaDettaglio
+- uid: Utility.DichManagerICI.DettaglioTestataRow
+  commentId: T:Utility.DichManagerICI.DettaglioTestataRow
+  parent: Utility
+  isExternal: true
+  name: DichManagerICI.DettaglioTestataRow
+  nameWithType: DichManagerICI.DettaglioTestataRow
+  fullName: Utility.DichManagerICI.DettaglioTestataRow
+- uid: Anater.Oggetti.DettaglioTestataRowICI
+  commentId: T:Anater.Oggetti.DettaglioTestataRowICI
+  parent: Anater.Oggetti
+  isExternal: true
+  name: DettaglioTestataRowICI
+  nameWithType: DettaglioTestataRowICI
+  fullName: Anater.Oggetti.DettaglioTestataRowICI
+- uid: Business.TrasformatoreAnater.TrasformaRigaOggetto*
+  commentId: Overload:Business.TrasformatoreAnater.TrasformaRigaOggetto
+  name: TrasformaRigaOggetto
+  nameWithType: TrasformatoreAnater.TrasformaRigaOggetto
+  fullName: Business.TrasformatoreAnater.TrasformaRigaOggetto
+- uid: Utility.DichManagerICI.OggettiRow
+  commentId: T:Utility.DichManagerICI.OggettiRow
+  parent: Utility
+  isExternal: true
+  name: DichManagerICI.OggettiRow
+  nameWithType: DichManagerICI.OggettiRow
+  fullName: Utility.DichManagerICI.OggettiRow
+- uid: Anater.Oggetti.OggettiRowICI
+  commentId: T:Anater.Oggetti.OggettiRowICI
+  parent: Anater.Oggetti
+  isExternal: true
+  name: OggettiRowICI
+  nameWithType: OggettiRowICI
+  fullName: Anater.Oggetti.OggettiRowICI

@@ -1,0 +1,2370 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Dev/PAL/Codice/OPENgov/OPENgovICI",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "YbaQxjJeS3DXNnvIl6SgwQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "s9qEVcYlRbp+ngRcbzOdSQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "gB8AESyvNru97tzIZofEEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "3BuyWI8J1COVCPa1tamcGQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Business.ApplicationHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Business.ApplicationHelper.html",
+          "hash": "8TZNsYGpcIRQpGXuTgr8Jg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Business.ClsAnalisi.TypeCheckRifCatastali.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Business.ClsAnalisi.TypeCheckRifCatastali.html",
+          "hash": "pYfj8S0NqXYU7Esb0X+Mqw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Business.ClsAnalisi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Business.ClsAnalisi.html",
+          "hash": "FB3A5c6lspgeGuL+rxjPXA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Business.ConstWrapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Business.ConstWrapper.html",
+          "hash": "1TWJLGPWR79N/sLQrbD0fg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Business.CoreUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Business.CoreUtility.html",
+          "hash": "6uPKzKvDpBovSewimo0Ewg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Business.FileUploader.FileUploaded.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Business.FileUploader.FileUploaded.html",
+          "hash": "DgemhSL7KehnCsrz20P3QA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Business.FileUploader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Business.FileUploader.html",
+          "hash": "R8ghalPJsO9xQ7yp+5YdeQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Business.HelperAnagrafica.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Business.HelperAnagrafica.html",
+          "hash": "zZGtt/OqTAVJDI9PW8HPHw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Business.ImportHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Business.ImportHelper.html",
+          "hash": "VoB8y5INzg1fcXZ83EBxZQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Business.ModuloIci.ErroriBonifica.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Business.ModuloIci.ErroriBonifica.html",
+          "hash": "vLBR0Thrmcx5sN+gKTshJw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Business.ModuloIci.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Business.ModuloIci.html",
+          "hash": "7vik70tYCPvUOwipKc+zfQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Business.TrasformatoreAnater.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Business.TrasformatoreAnater.html",
+          "hash": "Ys7iTlaX7icnSm8RFr8/gw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Business.objRavvedimento.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Business.objRavvedimento.html",
+          "hash": "ADNWpswGQjZqAvHMfvbDZA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Business.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Business.html",
+          "hash": "HfUBrjRd9raliKvEH3EUdA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.AcquisizioneAutomaticaVersamenti.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.AcquisizioneAutomaticaVersamenti.html",
+          "hash": "eNBi6OpHLfIyd9/DcwDSjQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Analisi.CStampaContribNonPagato.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Analisi.CStampaContribNonPagato.html",
+          "hash": "5E2vlBqYXNsBkjnEU+6ZFg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Analisi.CStampaContribPagatoDiverso.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Analisi.CStampaContribPagatoDiverso.html",
+          "hash": "6s+WNZqn9e2UH2WX8n8BFg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Analisi.FatturatoIncassato.ChartAnalisiEconomiche.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Analisi.FatturatoIncassato.ChartAnalisiEconomiche.html",
+          "hash": "6UGA9caGjRcDGlhEWhEkkQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Analisi.FatturatoIncassato.ComandiAnalisiEconomiche.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Analisi.FatturatoIncassato.ComandiAnalisiEconomiche.html",
+          "hash": "rCpZfS/+wnqwuCzCG8yolA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Analisi.FatturatoIncassato.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Analisi.FatturatoIncassato.html",
+          "hash": "QE/SkX0fbMaco9KccQY4MQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Analisi.Rimborsi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Analisi.Rimborsi.html",
+          "hash": "eq+3jYpuDjwRT5drqybN/Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Analisi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Analisi.html",
+          "hash": "M0X8ZgUJ/Wsq1iqZf+AtiA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Anater.RicercaImmobile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Anater.RicercaImmobile.html",
+          "hash": "7imNS2rzP2f6PtGGcYuLJA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Anater.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Anater.html",
+          "hash": "qa00f9rEUYwUJ/AkeCGPFg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.BaseEnte.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.BaseEnte.html",
+          "hash": "hovmfvcfteTRxMTL1F9Q0g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.BasePage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.BasePage.html",
+          "hash": "92NHDVUeZwbwrzBilTblwg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CAcqiusizioneAutomaticaVersamenti.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CAcqiusizioneAutomaticaVersamenti.html",
+          "hash": "IcYXcSZvJd6+S30+RmijBg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CDichiarazioneMod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CDichiarazioneMod.html",
+          "hash": "Y+atyg9Kx+soMWjgyIjYfA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CGestione.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CGestione.html",
+          "hash": "06NBsZdYi1IBTQP/H7kSgA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CGestioneDettaglio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CGestioneDettaglio.html",
+          "hash": "71+dlr+R5f7vNDARD8m1JQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CImmobileDettaglio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CImmobileDettaglio.html",
+          "hash": "kRpc3e/D5ehK5YSVaZ/wLQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CRicercaVersamenti.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CRicercaVersamenti.html",
+          "hash": "xapEmzNTYcRZdxAt+gkfMQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CVersamenti.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CVersamenti.html",
+          "hash": "bMJDXO2/aNxycp+FpONbhw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CalcoloICI.CCalcoloICIMassivo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CalcoloICI.CCalcoloICIMassivo.html",
+          "hash": "S6XXCt283P3LGo4aDuK/hA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CalcoloICI.CCalcoloICIPuntuale.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CalcoloICI.CCalcoloICIPuntuale.html",
+          "hash": "l8/82P6bUIZvy/jEFXS2UA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CalcoloICI.CConfigAliquote.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CalcoloICI.CConfigAliquote.html",
+          "hash": "jhOa9kGy3kkquaX2kNj2gQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CalcoloICI.CRicercaAliquote.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CalcoloICI.CRicercaAliquote.html",
+          "hash": "FSr4wBo/NFFVVhf+bY3c2Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CalcoloICI.CalcoloICI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CalcoloICI.CalcoloICI.html",
+          "hash": "1o2yaLziwnDGVuUqzmRtQQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CalcoloICI.CalcoloICIMassivo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CalcoloICI.CalcoloICIMassivo.html",
+          "hash": "ZtSw0aqrRlggYWKyhfAMXQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CalcoloICI.CalcoloICIPuntuale.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CalcoloICI.CalcoloICIPuntuale.html",
+          "hash": "UdaWtcwYOwU2695djZw7mQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CalcoloICI.ConfigAliquote.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CalcoloICI.ConfigAliquote.html",
+          "hash": "dIPcjzwmPLP8LY5uCviruQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CalcoloICI.ElencoAliquote.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CalcoloICI.ElencoAliquote.html",
+          "hash": "SWSU+RE2opeK7ek9FvmDMg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CalcoloICI.GestioneElaborazione.CGestioneElaborazione.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CalcoloICI.GestioneElaborazione.CGestioneElaborazione.html",
+          "hash": "zYUZKaswqUpnEEt4Tb416Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CalcoloICI.GestioneElaborazione.GestioneElaborazione.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CalcoloICI.GestioneElaborazione.GestioneElaborazione.html",
+          "hash": "8o3TBdPNorqgTWNPWGOVqQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CalcoloICI.GestioneElaborazione.Repository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CalcoloICI.GestioneElaborazione.Repository.html",
+          "hash": "VB6N2Htc+C3+7/3rKzg1DA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CalcoloICI.GestioneElaborazione.ViewElaborazioneICImassivo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CalcoloICI.GestioneElaborazione.ViewElaborazioneICImassivo.html",
+          "hash": "QoyTQrW878rRfrfja8TtmQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CalcoloICI.GestioneElaborazione.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CalcoloICI.GestioneElaborazione.html",
+          "hash": "2nPp/0vrl2XxS2KwDPIHpw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CalcoloICI.GetBollettinoICI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CalcoloICI.GetBollettinoICI.html",
+          "hash": "nCm6zBTWFcU+xqEdkJHNvQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CalcoloICI.GetCalcoloICI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CalcoloICI.GetCalcoloICI.html",
+          "hash": "0Mcu+daNDAXARk9iDqWqDg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CalcoloICI.GetCalcoloICICategoriaClasse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CalcoloICI.GetCalcoloICICategoriaClasse.html",
+          "hash": "L21ibvgbTkzyDYO3FOnvzQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CalcoloICI.GetVersamenti.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CalcoloICI.GetVersamenti.html",
+          "hash": "+eR53FBPJnIs8Qxs76oZ6g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CalcoloICI.ResultRicercaAliquote.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CalcoloICI.ResultRicercaAliquote.html",
+          "hash": "tfZhJytIadMqCBcE+5vjSg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CalcoloICI.RicercaAliquote.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CalcoloICI.RicercaAliquote.html",
+          "hash": "m7k5gfc+vDETGDpBo0oMyA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CalcoloICI.StatoElaborazioneICImassivo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CalcoloICI.StatoElaborazioneICImassivo.html",
+          "hash": "IAtocgpecWfRMUF89mnmYw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CalcoloICI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CalcoloICI.html",
+          "hash": "H7XalDwWErUwuLXrr6IFxw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Catasto.Anomalia.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Catasto.Anomalia.html",
+          "hash": "+t8afLBbA9uu21+V+DnLeA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Catasto.Fase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Catasto.Fase.html",
+          "hash": "I5udYPSyg1QcNUUYR9mc1w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Catasto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Catasto.html",
+          "hash": "7Jyib8LPBpGsg59u8nl51w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.CheckRifCatastali.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.CheckRifCatastali.html",
+          "hash": "fWsl2jy/e9KZqNVC063qLQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.ConfrontaConCatasto.CConfrontaConCatasto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.ConfrontaConCatasto.CConfrontaConCatasto.html",
+          "hash": "Td7VAiRFYfbEbPOQGE/Syw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.ConfrontaConCatasto.ConfrontaConCatasto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.ConfrontaConCatasto.ConfrontaConCatasto.html",
+          "hash": "pFZ3ep4Xr3sPmFMCLn8TwA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.ConfrontaConCatasto.ElaborazioniCatasto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.ConfrontaConCatasto.ElaborazioniCatasto.html",
+          "hash": "hXH0ybCUFvYB4BYUAUew4w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.ConfrontaConCatasto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.ConfrontaConCatasto.html",
+          "hash": "uKENT4lUY6VyOO28sQl+xA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.Aliquote.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.Aliquote.html",
+          "hash": "nGBuFY6hqIQsUbpIx+JIvA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.Bonificato.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.Bonificato.html",
+          "hash": "xhfGl4l51hkw5ay2H3zglw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.BonificatoTestata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.BonificatoTestata.html",
+          "hash": "fZfxLikCuVoosryXHfzgMQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.CaratteristicaRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.CaratteristicaRow.html",
+          "hash": "XiO6z29UA9txCK+XHNLlXA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.CaratteristicaTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.CaratteristicaTable.html",
+          "hash": "G46ho/3YM+evGWZJ7mxT8A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.CategoriaCatastaleRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.CategoriaCatastaleRow.html",
+          "hash": "xMxrC34wLxfj62TeT5HsBg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.CategoriaCatastaleTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.CategoriaCatastaleTable.html",
+          "hash": "XP+EfWrFJAQr4Rhn/YP1tA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.CategorieEscluse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.CategorieEscluse.html",
+          "hash": "jsaUgx6LZEBAOhd885NW9g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.ClasseRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.ClasseRow.html",
+          "hash": "nsh5oTezkxdaF4k+BiB57g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.ClasseTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.ClasseTable.html",
+          "hash": "JTcfg9yfiUerScN5bFjy2w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.ClsConfrontoCatastoDB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.ClsConfrontoCatastoDB.html",
+          "hash": "nvzckhhw6/3Nr1Ua4u469w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.ContribPagatoDiverso.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.ContribPagatoDiverso.html",
+          "hash": "ehPT09S3Jkms+/3JEQbvSg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.ContribuentiImmobileView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.ContribuentiImmobileView.html",
+          "hash": "hLl0MvES8RvAikGmb2lq8g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.ContribuentiTuttiView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.ContribuentiTuttiView.html",
+          "hash": "rGxGbzWDn8x1F3CEVHrHeA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.ContribuentiView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.ContribuentiView.html",
+          "hash": "R28h2thE3HD4fSS2MdT57g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.Database.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.Database.html",
+          "hash": "L2SkrUN6Ve24Eub9ifft5w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.DettagliImmobiliRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.DettagliImmobiliRow.html",
+          "hash": "Oxksr8xnxYszCuJGnkgwKg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.DettagliImmobiliView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.DettagliImmobiliView.html",
+          "hash": "R7i2yS7a1EfXEX49OkZ5Dg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.DettaglioTestataTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.DettaglioTestataTable.html",
+          "hash": "MVtpiDFW16HbT2XI21OVVw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.DichiarazioniDaBonificareRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.DichiarazioniDaBonificareRow.html",
+          "hash": "B/bBkcXu2fVmZ88TSlrjVA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.DichiarazioniDaBonificareTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.DichiarazioniDaBonificareTable.html",
+          "hash": "KDz7VZt2yprE5D3InDdmIg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.DichiarazioniView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.DichiarazioniView.html",
+          "hash": "nCYbddoIBHwYUok9KMeRLg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.DichiarazioniViewRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.DichiarazioniViewRow.html",
+          "hash": "xe4RlqAeHZyKHHYgQmBZGw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.DichiarazoniOggettiView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.DichiarazoniOggettiView.html",
+          "hash": "LlpcgmtD6Vw56nJ/HYXyJA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.DichiarazoniOggettiViewRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.DichiarazoniOggettiViewRow.html",
+          "hash": "iHPN4x8N8YMAX5rOim8xlw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.DovutoPerContribuente.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.DovutoPerContribuente.html",
+          "hash": "24w5Z3f90Faf28Bueh3rlQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.Enti.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.Enti.html",
+          "hash": "ZzI0QsNFEVuWgUh0fKz4uQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.ImmobiliConfrontoCatastoIci.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.ImmobiliConfrontoCatastoIci.html",
+          "hash": "GecUwTgG1Wb4uS9vwYTw7Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.ImportazioneF24.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.ImportazioneF24.html",
+          "hash": "m9rUFGls2Xtb2sWpyM8dtg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.ImportazioneRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.ImportazioneRow.html",
+          "hash": "SeoTGAyF69PUNLD9/bSUPA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.ImportazioneTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.ImportazioneTable.html",
+          "hash": "GJ00nQ6iNnhaUwo9kBpVEw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.ImportazioniRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.ImportazioniRow.html",
+          "hash": "iS6toWlv2MJOMt5Htiym1w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.ImportazioniTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.ImportazioniTable.html",
+          "hash": "n2xtsGW3+Go5HzSQzRHSgg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.ObjFlussi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.ObjFlussi.html",
+          "hash": "TwPdZRzg3x4pSuOOt5OlXg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.OggettiTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.OggettiTable.html",
+          "hash": "Mn06Q4rgeHbsjqYhquCd0g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.PossessoRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.PossessoRow.html",
+          "hash": "4JQ4FldqJUPT/Ru3uO4Tkg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.PossessoTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.PossessoTable.html",
+          "hash": "+EaKenjDOR9aqlALX8fePQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.ProvenienzeRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.ProvenienzeRow.html",
+          "hash": "9MrViFTAJ+my3mTOLHoukg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.ProvenienzeTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.ProvenienzeTable.html",
+          "hash": "U4iwMPskkIdeX1v31suWmA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.StampaContribNonPagato.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.StampaContribNonPagato.html",
+          "hash": "iceNINmuPO3NkxjZ/mk8iQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.StampaXLS.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.StampaXLS.html",
+          "hash": "7nuCXnQfE5bXat/axMSdmQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.TariffeEstimoAFTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.TariffeEstimoAFTable.html",
+          "hash": "UpkJCbwRqQfi3Rts79lPpw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.TariffeEstimoFabRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.TariffeEstimoFabRow.html",
+          "hash": "2Fh8SalC+U5MfcGh9UPIXA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.TariffeEstimoRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.TariffeEstimoRow.html",
+          "hash": "b+IVUeiBc8RK7pWCTCJRSQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.TariffeEstimoTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.TariffeEstimoTable.html",
+          "hash": "hE0Ujg0dkcvNaJ3FolPidA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.TblImportazioni.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.TblImportazioni.html",
+          "hash": "ZawyKgAKp4OqqVrxYeKyTA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.TblRavvedimentoOperoso.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.TblRavvedimentoOperoso.html",
+          "hash": "tfCtpmZGHrcxEC3WT6qWFw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.TestataTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.TestataTable.html",
+          "hash": "Afca8DFaaXJMqyVeaWK0Ug=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.TipoImmobileRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.TipoImmobileRow.html",
+          "hash": "j8t6P3zFIWylyaC2QpwBvw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.TipoImmobileTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.TipoImmobileTable.html",
+          "hash": "My/nMjWnkZummp4/lBPalA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.TipoPossessoEscluso.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.TipoPossessoEscluso.html",
+          "hash": "i3SmXlRtljFYOtLUhkBfdA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.Tipo_RenditaRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.Tipo_RenditaRow.html",
+          "hash": "oUfLg0vzfrLu2LQ/0KYBVw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.Tipo_RenditaTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.Tipo_RenditaTable.html",
+          "hash": "9lixgffnci/RngmiI0FnfQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.TipologieProvenienza.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.TipologieProvenienza.html",
+          "hash": "4Svp6yl+52MwM4ryCOmuTg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento.html",
+          "hash": "J7fXHzoKeJyRRUTPSjLsXg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.TpSituazioneFinaleIci.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.TpSituazioneFinaleIci.html",
+          "hash": "ijmomSJrEVPnq+Kh6XuliA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.TributiTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.TributiTable.html",
+          "hash": "08VrtMrdGn/3zYCnhEXBuw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.UITerritorio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.UITerritorio.html",
+          "hash": "1E92t6H/QiVpfgpAPmMB0w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.UtilizzoRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.UtilizzoRow.html",
+          "hash": "rLISfn69WSTxyM1D769Kcw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.UtilizzoTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.UtilizzoTable.html",
+          "hash": "sbUIZ62Xzrp9yZ3TR7TG/Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.ValutaRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.ValutaRow.html",
+          "hash": "Jym704abPR8YZn5AAmQ7ew=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.ValutaTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.ValutaTable.html",
+          "hash": "hTbyXZzpORFIhUEu1dYO5w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.VersamentiImportazione.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.VersamentiImportazione.html",
+          "hash": "579ZqVJ4vHOCEtxA/QNruQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.VersamentiNoAnagView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.VersamentiNoAnagView.html",
+          "hash": "Am4ZN0wt4cHpI333YBX17Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.VersamentiNoDichView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.VersamentiNoDichView.html",
+          "hash": "jaF68NMQEWEXG4QTTN2IeQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.VersamentiTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.VersamentiTable.html",
+          "hash": "CEVGBt9saPqkAjws9NYI1A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.VersamentiView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.VersamentiView.html",
+          "hash": "eJ/w3RLj80dumqyFAxkwHA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Database.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Database.html",
+          "hash": "PXX5njNkCyL3CjULOj6X+g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.DichiarazionePage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.DichiarazionePage.html",
+          "hash": "EsJz8n+eCrPXs9mk/Nil5w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.ElaborazioneDocumenti.AvanzamentoElaborazione.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.ElaborazioneDocumenti.AvanzamentoElaborazione.html",
+          "hash": "8w7p4EdO8+kwmohJZly7zg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.ElaborazioneDocumenti.DownloadDocumenti.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.ElaborazioneDocumenti.DownloadDocumenti.html",
+          "hash": "bwZFdjFLgNlV9bJ6w4+4+A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.ElaborazioneDocumenti.ElaborazioneDocumenti.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.ElaborazioneDocumenti.ElaborazioneDocumenti.html",
+          "hash": "iXHXIJn2oNGJW1Ryg2o7hg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.ElaborazioneDocumenti.Elaborazioneincorso.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.ElaborazioneDocumenti.Elaborazioneincorso.html",
+          "hash": "1l7s+EUSJQKUw/fSdQfRGg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.ElaborazioneDocumenti.cmdElaborazioneDocumenti.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.ElaborazioneDocumenti.cmdElaborazioneDocumenti.html",
+          "hash": "LHdqUGnNPAuwPTQ37TuxAQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.ElaborazioneDocumenti.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.ElaborazioneDocumenti.html",
+          "hash": "ZSFFPV+nQiJrpCi1mGZ3ww=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.ExportCatasto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.ExportCatasto.html",
+          "hash": "hlzNyso4atwtGFXK0s/X1Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.FrmUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.FrmUI.html",
+          "hash": "nnvSsTIsBu21vbeYL9crMA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Gestione.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Gestione.html",
+          "hash": "Tzsq6hfVnUG4EuMcabVBPw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.GestioneDettaglio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.GestioneDettaglio.html",
+          "hash": "4nhJ1rNug1K996m2L1XXqg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.GestioneRavvedimento.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.GestioneRavvedimento.html",
+          "hash": "2swlIz7WGWXh4at03b4EQA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.GetImmobiliICI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.GetImmobiliICI.html",
+          "hash": "gjjAaIbJf21Txtacgpf/Yg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Global.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Global.html",
+          "hash": "lCK/38e+0WS0M0OwNXozHA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Immobile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Immobile.html",
+          "hash": "Yfh2mDjHQ0m71pNrVtZVBg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.ImmobileDettaglio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.ImmobileDettaglio.html",
+          "hash": "5FIfLmWsigKoQF9fhXv5hw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.ImmobilePertinenza.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.ImmobilePertinenza.html",
+          "hash": "rFUzodn4oQVzkPSVDYpwsw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.MappaImmobile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.MappaImmobile.html",
+          "hash": "ZsESBsgptFPvjL9KUA2anQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.RavvedimentoOperoso.CGestioneRavvedimento.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.RavvedimentoOperoso.CGestioneRavvedimento.html",
+          "hash": "68qTfbkDe2tl3deoiabtRw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.RavvedimentoOperoso.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.RavvedimentoOperoso.html",
+          "hash": "BM9LTzTf9XcfD0FE3xFIMA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.ResultAnalisiEconomiche.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.ResultAnalisiEconomiche.html",
+          "hash": "F4PrShIPHzqe96S1hZMUvA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.RicercaAnalisiEconomiche.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.RicercaAnalisiEconomiche.html",
+          "hash": "PV9zuwZXD+75yNjHCiUw4A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.RicercaVersamenti.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.RicercaVersamenti.html",
+          "hash": "dCgaGHfHUmNrx0ZUnFW3mg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.StampaContribNonPagato.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.StampaContribNonPagato.html",
+          "hash": "ihidDxaQJ5r2o/O12LwDuw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.StampaContribPagatoDiverso.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.StampaContribPagatoDiverso.html",
+          "hash": "WkU+gFWA/OlYNBNG6wYPQw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.UserControl.FiltroImmobile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.UserControl.FiltroImmobile.html",
+          "hash": "CEZmbYvOyTWcionVBKMs7Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.UserControl.FiltroPersona.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.UserControl.FiltroPersona.html",
+          "hash": "fj0OrvYjMXOFBKbIHDEA8g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.UserControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.UserControl.html",
+          "hash": "RGZNCnIAeXQqfo7661bKRw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.Versamenti.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.Versamenti.html",
+          "hash": "jXNECiszo/k+TO7by9PRKA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.VersamentiNoAnag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.VersamentiNoAnag.html",
+          "hash": "btXg9FoxfhOf6fOG8Xye/w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.VersamentiNoDich.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.VersamentiNoDich.html",
+          "hash": "uE0YI62ei6RdOhT8/Y0bvQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.html",
+          "hash": "NcKb2Xn1W7PZ+JIRp1qD7Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.WServiceOPENae.DestinazioneUso.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.WServiceOPENae.DestinazioneUso.html",
+          "hash": "N19th3vGPOc7WpiA0DaMBQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.WServiceOPENae.DisposizioneAE.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.WServiceOPENae.DisposizioneAE.html",
+          "hash": "9xhjPbeVbk1vm0LPZeo2Iw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.WServiceOPENae.EstraiTracciatoAE1CompletedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.WServiceOPENae.EstraiTracciatoAE1CompletedEventArgs.html",
+          "hash": "lOjwoiQqWEzzyH/gKqerjA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.WServiceOPENae.EstraiTracciatoAE1CompletedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.WServiceOPENae.EstraiTracciatoAE1CompletedEventHandler.html",
+          "hash": "kVQyP4FXWEYtgNxKjoJOvw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.WServiceOPENae.EstraiTracciatoAECompletedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.WServiceOPENae.EstraiTracciatoAECompletedEventArgs.html",
+          "hash": "hfwCAV3nmbUIVxS28VD9ow=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.WServiceOPENae.EstraiTracciatoAECompletedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.WServiceOPENae.EstraiTracciatoAECompletedEventHandler.html",
+          "hash": "dQlTNoqIuTwJz1IBbBiNMg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.WServiceOPENae.GetFlussiTracciatiAECompletedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.WServiceOPENae.GetFlussiTracciatiAECompletedEventArgs.html",
+          "hash": "jiuuLYJFibPQYdQM3/6yAg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.WServiceOPENae.GetFlussiTracciatiAECompletedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.WServiceOPENae.GetFlussiTracciatiAECompletedEventHandler.html",
+          "hash": "W5GVxHFnguS80ZBooCvYkg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.WServiceOPENae.NaturaOccupazione.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.WServiceOPENae.NaturaOccupazione.html",
+          "hash": "FWtK8chIl/CBERaeuc80jA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE1CompletedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE1CompletedEventArgs.html",
+          "hash": "WF30QrNEFM3g0jGHa/Fsxw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE1CompletedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE1CompletedEventHandler.html",
+          "hash": "o8N8WqlnZz6O/pLb6hAmng=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE2CompletedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE2CompletedEventArgs.html",
+          "hash": "J1Zpx2BMHoGvZM6W6BgwQQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE2CompletedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE2CompletedEventHandler.html",
+          "hash": "P72hTNrL9Ndh6q+rtVlc9g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAECompletedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAECompletedEventArgs.html",
+          "hash": "IeFmV7S756aSgJy2eLYdhw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAECompletedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAECompletedEventHandler.html",
+          "hash": "R125xStlXBhzpMGINa0TTg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.WServiceOPENae.ServiceOPENae.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.WServiceOPENae.ServiceOPENae.html",
+          "hash": "ArDM6sZGRIfdSF1uALeyBA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.WServiceOPENae.TipologiaUtenza.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.WServiceOPENae.TipologiaUtenza.html",
+          "hash": "1EqpvlhJ/Q8OZvSE0Y/2xA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.WServiceOPENae.TitoloOccupazione.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.WServiceOPENae.TitoloOccupazione.html",
+          "hash": "iV1SNM8WcQ5FiI2foLdtHQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.WServiceOPENae.objFlussoAE.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.WServiceOPENae.objFlussoAE.html",
+          "hash": "WxwYUf7aviePOhKyFZ7ebA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.WServiceOPENae.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.WServiceOPENae.html",
+          "hash": "rHewcyxEOOZNw/bFXn//QA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.WsStradario.Stradario.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.WsStradario.Stradario.html",
+          "hash": "FuBBmr8Y9eqSAKJiRPU0Xw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.WsStradario.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.WsStradario.html",
+          "hash": "DY0EjErtjJSbnSELZT6W7A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.cVersamentiNonAbbinati.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.cVersamentiNonAbbinati.html",
+          "hash": "A24gsF/YrpiNIItSTrsT6g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DichiarazioniICI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DichiarazioniICI.html",
+          "hash": "8CQ0ZLQJHWY+YRVHbylkLA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "UTydIUA+tOvYnWC3jlikkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "G2AoE5T/2VarbHvzLEo4TQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 187,
+          "skipped_file_count": 187
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

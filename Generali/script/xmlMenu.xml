@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MenuRoot>
+  <Menu id="GestPwd" text="Account" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+    <SubMenu id="ResetPwd" text="Cambio Password" urlVisualizza="../../Login/ResetPassword.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspVuotaRemoveComandi.aspx">
+    </SubMenu>
+  </Menu>
+  <Menu id="Enti" text="Seleziona Enti">
+    <SubMenu id="ENTE" text="Tutti" NomeEnte="Tutti" />
+  </Menu>
+</MenuRoot>

@@ -1,0 +1,1580 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow
+  commentId: T:DichiarazioniICI.Database.DettagliImmobiliRow
+  id: DettagliImmobiliRow
+  parent: DichiarazioniICI.Database
+  children:
+  - DichiarazioniICI.Database.DettagliImmobiliRow.AbitazionePrincipale
+  - DichiarazioniICI.Database.DettagliImmobiliRow.AnnoDenunciaCatastale
+  - DichiarazioniICI.Database.DettagliImmobiliRow.AnnullatoDettaglio
+  - DichiarazioniICI.Database.DettagliImmobiliRow.AnnullatoImmobile
+  - DichiarazioniICI.Database.DettagliImmobiliRow.Barrato
+  - DichiarazioniICI.Database.DettagliImmobiliRow.Caratteristica
+  - DichiarazioniICI.Database.DettagliImmobiliRow.CodCategoriaCatastale
+  - DichiarazioniICI.Database.DettagliImmobiliRow.CodClasse
+  - DichiarazioniICI.Database.DettagliImmobiliRow.CodComune
+  - DichiarazioniICI.Database.DettagliImmobiliRow.CodRendita
+  - DichiarazioniICI.Database.DettagliImmobiliRow.CodUI
+  - DichiarazioniICI.Database.DettagliImmobiliRow.CodVia
+  - DichiarazioniICI.Database.DettagliImmobiliRow.Contitolare
+  - DichiarazioniICI.Database.DettagliImmobiliRow.DataUltimaModifica
+  - DichiarazioniICI.Database.DettagliImmobiliRow.DescrUffRegistro
+  - DichiarazioniICI.Database.DettagliImmobiliRow.EspCivico
+  - DichiarazioniICI.Database.DettagliImmobiliRow.FlagValoreProvv
+  - DichiarazioniICI.Database.DettagliImmobiliRow.Foglio
+  - DichiarazioniICI.Database.DettagliImmobiliRow.IDDettaglio
+  - DichiarazioniICI.Database.DettagliImmobiliRow.IDOggetto
+  - DichiarazioniICI.Database.DettagliImmobiliRow.IDSoggetto
+  - DichiarazioniICI.Database.DettagliImmobiliRow.IdTestata
+  - DichiarazioniICI.Database.DettagliImmobiliRow.ImpDetrazAbitazPrincipale
+  - DichiarazioniICI.Database.DettagliImmobiliRow.Interno
+  - DichiarazioniICI.Database.DettagliImmobiliRow.MesiEsclusioneEsenzione
+  - DichiarazioniICI.Database.DettagliImmobiliRow.MesiPossesso
+  - DichiarazioniICI.Database.DettagliImmobiliRow.MesiRiduzione
+  - DichiarazioniICI.Database.DettagliImmobiliRow.Numero
+  - DichiarazioniICI.Database.DettagliImmobiliRow.NumeroCivico
+  - DichiarazioniICI.Database.DettagliImmobiliRow.NumeroEcografico
+  - DichiarazioniICI.Database.DettagliImmobiliRow.NumeroModello
+  - DichiarazioniICI.Database.DettagliImmobiliRow.NumeroOrdine
+  - DichiarazioniICI.Database.DettagliImmobiliRow.NumeroProtCatastale
+  - DichiarazioniICI.Database.DettagliImmobiliRow.PartitaCatastale
+  - DichiarazioniICI.Database.DettagliImmobiliRow.PercPossesso
+  - DichiarazioniICI.Database.DettagliImmobiliRow.Piano
+  - DichiarazioniICI.Database.DettagliImmobiliRow.Scala
+  - DichiarazioniICI.Database.DettagliImmobiliRow.Sezione
+  - DichiarazioniICI.Database.DettagliImmobiliRow.Storico
+  - DichiarazioniICI.Database.DettagliImmobiliRow.Subalterno
+  - DichiarazioniICI.Database.DettagliImmobiliRow.TipoImmobile
+  - DichiarazioniICI.Database.DettagliImmobiliRow.TitoloAcquisto
+  - DichiarazioniICI.Database.DettagliImmobiliRow.TitoloCessione
+  - DichiarazioniICI.Database.DettagliImmobiliRow.ValoreImmobile
+  langs:
+  - csharp
+  - vb
+  name: DettagliImmobiliRow
+  nameWithType: DettagliImmobiliRow
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow
+  type: Struct
+  source:
+    id: DettagliImmobiliRow
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 9
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nStruttura Dettaglio Immobili\n"
+  example: []
+  syntax:
+    content: public struct DettagliImmobiliRow
+    content.vb: Public Structure DettagliImmobiliRow
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.IDDettaglio
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.IDDettaglio
+  id: IDDettaglio
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: IDDettaglio
+  nameWithType: DettagliImmobiliRow.IDDettaglio
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.IDDettaglio
+  type: Field
+  source:
+    id: IDDettaglio
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 11
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int IDDettaglio
+    return:
+      type: System.Int32
+    content.vb: Public IDDettaglio As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.IdTestata
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.IdTestata
+  id: IdTestata
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: IdTestata
+  nameWithType: DettagliImmobiliRow.IdTestata
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.IdTestata
+  type: Field
+  source:
+    id: IdTestata
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 12
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int IdTestata
+    return:
+      type: System.Int32
+    content.vb: Public IdTestata As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.IDSoggetto
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.IDSoggetto
+  id: IDSoggetto
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: IDSoggetto
+  nameWithType: DettagliImmobiliRow.IDSoggetto
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.IDSoggetto
+  type: Field
+  source:
+    id: IDSoggetto
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 13
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int IDSoggetto
+    return:
+      type: System.Int32
+    content.vb: Public IDSoggetto As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.PercPossesso
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.PercPossesso
+  id: PercPossesso
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: PercPossesso
+  nameWithType: DettagliImmobiliRow.PercPossesso
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.PercPossesso
+  type: Field
+  source:
+    id: PercPossesso
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 14
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public decimal PercPossesso
+    return:
+      type: System.Decimal
+    content.vb: Public PercPossesso As Decimal
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.MesiPossesso
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.MesiPossesso
+  id: MesiPossesso
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: MesiPossesso
+  nameWithType: DettagliImmobiliRow.MesiPossesso
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.MesiPossesso
+  type: Field
+  source:
+    id: MesiPossesso
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 15
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int MesiPossesso
+    return:
+      type: System.Int32
+    content.vb: Public MesiPossesso As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.MesiEsclusioneEsenzione
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.MesiEsclusioneEsenzione
+  id: MesiEsclusioneEsenzione
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: MesiEsclusioneEsenzione
+  nameWithType: DettagliImmobiliRow.MesiEsclusioneEsenzione
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.MesiEsclusioneEsenzione
+  type: Field
+  source:
+    id: MesiEsclusioneEsenzione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 16
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int MesiEsclusioneEsenzione
+    return:
+      type: System.Int32
+    content.vb: Public MesiEsclusioneEsenzione As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.MesiRiduzione
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.MesiRiduzione
+  id: MesiRiduzione
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: MesiRiduzione
+  nameWithType: DettagliImmobiliRow.MesiRiduzione
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.MesiRiduzione
+  type: Field
+  source:
+    id: MesiRiduzione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 17
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int MesiRiduzione
+    return:
+      type: System.Int32
+    content.vb: Public MesiRiduzione As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.ImpDetrazAbitazPrincipale
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.ImpDetrazAbitazPrincipale
+  id: ImpDetrazAbitazPrincipale
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: ImpDetrazAbitazPrincipale
+  nameWithType: DettagliImmobiliRow.ImpDetrazAbitazPrincipale
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.ImpDetrazAbitazPrincipale
+  type: Field
+  source:
+    id: ImpDetrazAbitazPrincipale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 18
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public decimal ImpDetrazAbitazPrincipale
+    return:
+      type: System.Decimal
+    content.vb: Public ImpDetrazAbitazPrincipale As Decimal
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.Contitolare
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.Contitolare
+  id: Contitolare
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: Contitolare
+  nameWithType: DettagliImmobiliRow.Contitolare
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.Contitolare
+  type: Field
+  source:
+    id: Contitolare
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 19
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public bool Contitolare
+    return:
+      type: System.Boolean
+    content.vb: Public Contitolare As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.AbitazionePrincipale
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.AbitazionePrincipale
+  id: AbitazionePrincipale
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: AbitazionePrincipale
+  nameWithType: DettagliImmobiliRow.AbitazionePrincipale
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.AbitazionePrincipale
+  type: Field
+  source:
+    id: AbitazionePrincipale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 20
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public bool AbitazionePrincipale
+    return:
+      type: System.Boolean
+    content.vb: Public AbitazionePrincipale As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.IDOggetto
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.IDOggetto
+  id: IDOggetto
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: IDOggetto
+  nameWithType: DettagliImmobiliRow.IDOggetto
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.IDOggetto
+  type: Field
+  source:
+    id: IDOggetto
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 21
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int IDOggetto
+    return:
+      type: System.Int32
+    content.vb: Public IDOggetto As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.NumeroOrdine
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.NumeroOrdine
+  id: NumeroOrdine
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: NumeroOrdine
+  nameWithType: DettagliImmobiliRow.NumeroOrdine
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.NumeroOrdine
+  type: Field
+  source:
+    id: NumeroOrdine
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 22
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string NumeroOrdine
+    return:
+      type: System.String
+    content.vb: Public NumeroOrdine As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.NumeroModello
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.NumeroModello
+  id: NumeroModello
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: NumeroModello
+  nameWithType: DettagliImmobiliRow.NumeroModello
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.NumeroModello
+  type: Field
+  source:
+    id: NumeroModello
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 23
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string NumeroModello
+    return:
+      type: System.String
+    content.vb: Public NumeroModello As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.CodUI
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.CodUI
+  id: CodUI
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: CodUI
+  nameWithType: DettagliImmobiliRow.CodUI
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.CodUI
+  type: Field
+  source:
+    id: CodUI
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 24
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int CodUI
+    return:
+      type: System.Int32
+    content.vb: Public CodUI As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.TipoImmobile
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.TipoImmobile
+  id: TipoImmobile
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: TipoImmobile
+  nameWithType: DettagliImmobiliRow.TipoImmobile
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.TipoImmobile
+  type: Field
+  source:
+    id: TipoImmobile
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 25
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int TipoImmobile
+    return:
+      type: System.Int32
+    content.vb: Public TipoImmobile As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.PartitaCatastale
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.PartitaCatastale
+  id: PartitaCatastale
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: PartitaCatastale
+  nameWithType: DettagliImmobiliRow.PartitaCatastale
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.PartitaCatastale
+  type: Field
+  source:
+    id: PartitaCatastale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 26
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int PartitaCatastale
+    return:
+      type: System.Int32
+    content.vb: Public PartitaCatastale As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.Foglio
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.Foglio
+  id: Foglio
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: Foglio
+  nameWithType: DettagliImmobiliRow.Foglio
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.Foglio
+  type: Field
+  source:
+    id: Foglio
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 27
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string Foglio
+    return:
+      type: System.String
+    content.vb: Public Foglio As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.Numero
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.Numero
+  id: Numero
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: Numero
+  nameWithType: DettagliImmobiliRow.Numero
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.Numero
+  type: Field
+  source:
+    id: Numero
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 28
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string Numero
+    return:
+      type: System.String
+    content.vb: Public Numero As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.Subalterno
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.Subalterno
+  id: Subalterno
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: Subalterno
+  nameWithType: DettagliImmobiliRow.Subalterno
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.Subalterno
+  type: Field
+  source:
+    id: Subalterno
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 29
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int Subalterno
+    return:
+      type: System.Int32
+    content.vb: Public Subalterno As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.Caratteristica
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.Caratteristica
+  id: Caratteristica
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: Caratteristica
+  nameWithType: DettagliImmobiliRow.Caratteristica
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.Caratteristica
+  type: Field
+  source:
+    id: Caratteristica
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 30
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int Caratteristica
+    return:
+      type: System.Int32
+    content.vb: Public Caratteristica As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.Sezione
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.Sezione
+  id: Sezione
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: Sezione
+  nameWithType: DettagliImmobiliRow.Sezione
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.Sezione
+  type: Field
+  source:
+    id: Sezione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 31
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string Sezione
+    return:
+      type: System.String
+    content.vb: Public Sezione As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.NumeroProtCatastale
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.NumeroProtCatastale
+  id: NumeroProtCatastale
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: NumeroProtCatastale
+  nameWithType: DettagliImmobiliRow.NumeroProtCatastale
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.NumeroProtCatastale
+  type: Field
+  source:
+    id: NumeroProtCatastale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 32
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string NumeroProtCatastale
+    return:
+      type: System.String
+    content.vb: Public NumeroProtCatastale As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.AnnoDenunciaCatastale
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.AnnoDenunciaCatastale
+  id: AnnoDenunciaCatastale
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: AnnoDenunciaCatastale
+  nameWithType: DettagliImmobiliRow.AnnoDenunciaCatastale
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.AnnoDenunciaCatastale
+  type: Field
+  source:
+    id: AnnoDenunciaCatastale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 33
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string AnnoDenunciaCatastale
+    return:
+      type: System.String
+    content.vb: Public AnnoDenunciaCatastale As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.CodCategoriaCatastale
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.CodCategoriaCatastale
+  id: CodCategoriaCatastale
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: CodCategoriaCatastale
+  nameWithType: DettagliImmobiliRow.CodCategoriaCatastale
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.CodCategoriaCatastale
+  type: Field
+  source:
+    id: CodCategoriaCatastale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 34
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string CodCategoriaCatastale
+    return:
+      type: System.String
+    content.vb: Public CodCategoriaCatastale As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.CodClasse
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.CodClasse
+  id: CodClasse
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: CodClasse
+  nameWithType: DettagliImmobiliRow.CodClasse
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.CodClasse
+  type: Field
+  source:
+    id: CodClasse
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 35
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string CodClasse
+    return:
+      type: System.String
+    content.vb: Public CodClasse As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.CodRendita
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.CodRendita
+  id: CodRendita
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: CodRendita
+  nameWithType: DettagliImmobiliRow.CodRendita
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.CodRendita
+  type: Field
+  source:
+    id: CodRendita
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 36
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string CodRendita
+    return:
+      type: System.String
+    content.vb: Public CodRendita As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.Storico
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.Storico
+  id: Storico
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: Storico
+  nameWithType: DettagliImmobiliRow.Storico
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.Storico
+  type: Field
+  source:
+    id: Storico
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 37
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public bool Storico
+    return:
+      type: System.Boolean
+    content.vb: Public Storico As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.ValoreImmobile
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.ValoreImmobile
+  id: ValoreImmobile
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: ValoreImmobile
+  nameWithType: DettagliImmobiliRow.ValoreImmobile
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.ValoreImmobile
+  type: Field
+  source:
+    id: ValoreImmobile
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 38
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public decimal ValoreImmobile
+    return:
+      type: System.Decimal
+    content.vb: Public ValoreImmobile As Decimal
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.CodComune
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.CodComune
+  id: CodComune
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: CodComune
+  nameWithType: DettagliImmobiliRow.CodComune
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.CodComune
+  type: Field
+  source:
+    id: CodComune
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 39
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int CodComune
+    return:
+      type: System.Int32
+    content.vb: Public CodComune As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.CodVia
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.CodVia
+  id: CodVia
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: CodVia
+  nameWithType: DettagliImmobiliRow.CodVia
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.CodVia
+  type: Field
+  source:
+    id: CodVia
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 40
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int CodVia
+    return:
+      type: System.Int32
+    content.vb: Public CodVia As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.NumeroCivico
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.NumeroCivico
+  id: NumeroCivico
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: NumeroCivico
+  nameWithType: DettagliImmobiliRow.NumeroCivico
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.NumeroCivico
+  type: Field
+  source:
+    id: NumeroCivico
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 41
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int NumeroCivico
+    return:
+      type: System.Int32
+    content.vb: Public NumeroCivico As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.EspCivico
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.EspCivico
+  id: EspCivico
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: EspCivico
+  nameWithType: DettagliImmobiliRow.EspCivico
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.EspCivico
+  type: Field
+  source:
+    id: EspCivico
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 42
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string EspCivico
+    return:
+      type: System.String
+    content.vb: Public EspCivico As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.Scala
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.Scala
+  id: Scala
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: Scala
+  nameWithType: DettagliImmobiliRow.Scala
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.Scala
+  type: Field
+  source:
+    id: Scala
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 43
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string Scala
+    return:
+      type: System.String
+    content.vb: Public Scala As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.Interno
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.Interno
+  id: Interno
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: Interno
+  nameWithType: DettagliImmobiliRow.Interno
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.Interno
+  type: Field
+  source:
+    id: Interno
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 44
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string Interno
+    return:
+      type: System.String
+    content.vb: Public Interno As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.Piano
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.Piano
+  id: Piano
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: Piano
+  nameWithType: DettagliImmobiliRow.Piano
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.Piano
+  type: Field
+  source:
+    id: Piano
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 45
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string Piano
+    return:
+      type: System.String
+    content.vb: Public Piano As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.Barrato
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.Barrato
+  id: Barrato
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: Barrato
+  nameWithType: DettagliImmobiliRow.Barrato
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.Barrato
+  type: Field
+  source:
+    id: Barrato
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 46
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string Barrato
+    return:
+      type: System.String
+    content.vb: Public Barrato As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.NumeroEcografico
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.NumeroEcografico
+  id: NumeroEcografico
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: NumeroEcografico
+  nameWithType: DettagliImmobiliRow.NumeroEcografico
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.NumeroEcografico
+  type: Field
+  source:
+    id: NumeroEcografico
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 47
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int NumeroEcografico
+    return:
+      type: System.Int32
+    content.vb: Public NumeroEcografico As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.TitoloAcquisto
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.TitoloAcquisto
+  id: TitoloAcquisto
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: TitoloAcquisto
+  nameWithType: DettagliImmobiliRow.TitoloAcquisto
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.TitoloAcquisto
+  type: Field
+  source:
+    id: TitoloAcquisto
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 48
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public bool TitoloAcquisto
+    return:
+      type: System.Boolean
+    content.vb: Public TitoloAcquisto As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.TitoloCessione
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.TitoloCessione
+  id: TitoloCessione
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: TitoloCessione
+  nameWithType: DettagliImmobiliRow.TitoloCessione
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.TitoloCessione
+  type: Field
+  source:
+    id: TitoloCessione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 49
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public bool TitoloCessione
+    return:
+      type: System.Boolean
+    content.vb: Public TitoloCessione As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.DescrUffRegistro
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.DescrUffRegistro
+  id: DescrUffRegistro
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: DescrUffRegistro
+  nameWithType: DettagliImmobiliRow.DescrUffRegistro
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.DescrUffRegistro
+  type: Field
+  source:
+    id: DescrUffRegistro
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 50
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string DescrUffRegistro
+    return:
+      type: System.String
+    content.vb: Public DescrUffRegistro As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.DataUltimaModifica
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.DataUltimaModifica
+  id: DataUltimaModifica
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: DataUltimaModifica
+  nameWithType: DettagliImmobiliRow.DataUltimaModifica
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.DataUltimaModifica
+  type: Field
+  source:
+    id: DataUltimaModifica
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 51
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public DateTime DataUltimaModifica
+    return:
+      type: System.DateTime
+    content.vb: Public DataUltimaModifica As Date
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.AnnullatoDettaglio
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.AnnullatoDettaglio
+  id: AnnullatoDettaglio
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: AnnullatoDettaglio
+  nameWithType: DettagliImmobiliRow.AnnullatoDettaglio
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.AnnullatoDettaglio
+  type: Field
+  source:
+    id: AnnullatoDettaglio
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 52
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public bool AnnullatoDettaglio
+    return:
+      type: System.Boolean
+    content.vb: Public AnnullatoDettaglio As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.AnnullatoImmobile
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.AnnullatoImmobile
+  id: AnnullatoImmobile
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: AnnullatoImmobile
+  nameWithType: DettagliImmobiliRow.AnnullatoImmobile
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.AnnullatoImmobile
+  type: Field
+  source:
+    id: AnnullatoImmobile
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 53
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public bool AnnullatoImmobile
+    return:
+      type: System.Boolean
+    content.vb: Public AnnullatoImmobile As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DettagliImmobiliRow.FlagValoreProvv
+  commentId: F:DichiarazioniICI.Database.DettagliImmobiliRow.FlagValoreProvv
+  id: FlagValoreProvv
+  parent: DichiarazioniICI.Database.DettagliImmobiliRow
+  langs:
+  - csharp
+  - vb
+  name: FlagValoreProvv
+  nameWithType: DettagliImmobiliRow.FlagValoreProvv
+  fullName: DichiarazioniICI.Database.DettagliImmobiliRow.FlagValoreProvv
+  type: Field
+  source:
+    id: FlagValoreProvv
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DettagliImmobiliView.cs
+    startLine: 54
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public bool FlagValoreProvv
+    return:
+      type: System.Boolean
+    content.vb: Public FlagValoreProvv As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: DichiarazioniICI.Database
+  commentId: N:DichiarazioniICI.Database
+  name: DichiarazioniICI.Database
+  nameWithType: DichiarazioniICI.Database
+  fullName: DichiarazioniICI.Database
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  nameWithType: Decimal
+  fullName: System.Decimal
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime

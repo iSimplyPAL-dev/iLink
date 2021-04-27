@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENgovTOCO.Elaborazioni.Documenti
+  commentId: N:OPENgovTOCO.Elaborazioni.Documenti
+  id: OPENgovTOCO.Elaborazioni.Documenti
+  children:
+  - OPENgovTOCO.Elaborazioni.Documenti.ComandiDoc
+  - OPENgovTOCO.Elaborazioni.Documenti.ComandiDocElaborati
+  - OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc
+  - OPENgovTOCO.Elaborazioni.Documenti.StampaInCorso
+  - OPENgovTOCO.Elaborazioni.Documenti.ViewDocElaborati
+  langs:
+  - csharp
+  - vb
+  name: OPENgovTOCO.Elaborazioni.Documenti
+  nameWithType: OPENgovTOCO.Elaborazioni.Documenti
+  fullName: OPENgovTOCO.Elaborazioni.Documenti
+  type: Namespace
+  assemblies:
+  - OPENGovTOCO
+references:
+- uid: OPENgovTOCO.Elaborazioni.Documenti.ComandiDoc
+  commentId: T:OPENgovTOCO.Elaborazioni.Documenti.ComandiDoc
+  name: ComandiDoc
+  nameWithType: ComandiDoc
+  fullName: OPENgovTOCO.Elaborazioni.Documenti.ComandiDoc
+- uid: OPENgovTOCO.Elaborazioni.Documenti.ComandiDocElaborati
+  commentId: T:OPENgovTOCO.Elaborazioni.Documenti.ComandiDocElaborati
+  name: ComandiDocElaborati
+  nameWithType: ComandiDocElaborati
+  fullName: OPENgovTOCO.Elaborazioni.Documenti.ComandiDocElaborati
+- uid: OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc
+  commentId: T:OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc
+  name: RicercaDoc
+  nameWithType: RicercaDoc
+  fullName: OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc
+- uid: OPENgovTOCO.Elaborazioni.Documenti.StampaInCorso
+  commentId: T:OPENgovTOCO.Elaborazioni.Documenti.StampaInCorso
+  name: StampaInCorso
+  nameWithType: StampaInCorso
+  fullName: OPENgovTOCO.Elaborazioni.Documenti.StampaInCorso
+- uid: OPENgovTOCO.Elaborazioni.Documenti.ViewDocElaborati
+  commentId: T:OPENgovTOCO.Elaborazioni.Documenti.ViewDocElaborati
+  name: ViewDocElaborati
+  nameWithType: ViewDocElaborati
+  fullName: OPENgovTOCO.Elaborazioni.Documenti.ViewDocElaborati

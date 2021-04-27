@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENGovTOCO.Wuc
+  commentId: N:OPENGovTOCO.Wuc
+  id: OPENGovTOCO.Wuc
+  children:
+  - OPENGovTOCO.Wuc.WucGestionePagamenti
+  langs:
+  - csharp
+  - vb
+  name: OPENGovTOCO.Wuc
+  nameWithType: OPENGovTOCO.Wuc
+  fullName: OPENGovTOCO.Wuc
+  type: Namespace
+  assemblies:
+  - OPENGovTOCO
+references:
+- uid: OPENGovTOCO.Wuc.WucGestionePagamenti
+  commentId: T:OPENGovTOCO.Wuc.WucGestionePagamenti
+  parent: OPENGovTOCO.Wuc
+  name: WucGestionePagamenti
+  nameWithType: WucGestionePagamenti
+  fullName: OPENGovTOCO.Wuc.WucGestionePagamenti
+- uid: OPENGovTOCO.Wuc
+  commentId: N:OPENGovTOCO.Wuc
+  name: OPENGovTOCO.Wuc
+  nameWithType: OPENGovTOCO.Wuc
+  fullName: OPENGovTOCO.Wuc

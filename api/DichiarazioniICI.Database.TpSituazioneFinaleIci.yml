@@ -1,0 +1,2047 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci
+  commentId: T:DichiarazioniICI.Database.TpSituazioneFinaleIci
+  id: TpSituazioneFinaleIci
+  parent: DichiarazioniICI.Database
+  children:
+  - DichiarazioniICI.Database.TpSituazioneFinaleIci.#ctor
+  - DichiarazioniICI.Database.TpSituazioneFinaleIci.CDoubleToDB(System.Object)
+  - DichiarazioniICI.Database.TpSituazioneFinaleIci.CIdToDB(System.Object)
+  - DichiarazioniICI.Database.TpSituazioneFinaleIci.ConfermaCalcoloICI(System.String,System.String)
+  - DichiarazioniICI.Database.TpSituazioneFinaleIci.CStrToDB(System.Object,System.Boolean@,System.Boolean)
+  - DichiarazioniICI.Database.TpSituazioneFinaleIci.CToBit(System.Object)
+  - DichiarazioniICI.Database.TpSituazioneFinaleIci.cToInt(System.Object)
+  - DichiarazioniICI.Database.TpSituazioneFinaleIci.GetBollettinoICI(System.String,System.String,System.String,System.String,System.Boolean)
+  - DichiarazioniICI.Database.TpSituazioneFinaleIci.GetCalcoloICI(System.Int32,System.String)
+  - DichiarazioniICI.Database.TpSituazioneFinaleIci.GetCalcoloICISoggetti(System.String,System.String,System.String,System.String)
+  - DichiarazioniICI.Database.TpSituazioneFinaleIci.GetCalcoloICItotale(System.String,System.String,System.String,System.String,System.Int64,System.Boolean)
+  - DichiarazioniICI.Database.TpSituazioneFinaleIci.GetDocElaboratiEffettivi(System.String,System.String,System.Int32)
+  - DichiarazioniICI.Database.TpSituazioneFinaleIci.getIdRuolo(System.String,System.String,System.String)
+  - DichiarazioniICI.Database.TpSituazioneFinaleIci.GetImmobiliCategoriaClasse(System.String,System.String,System.String,System.String,System.Int64)
+  - DichiarazioniICI.Database.TpSituazioneFinaleIci.GetImmoCalcoloICItotale(System.String,System.String,System.String,System.String,System.Int64)
+  - DichiarazioniICI.Database.TpSituazioneFinaleIci.GetImportoDovuto(System.Int32,System.String,System.String)
+  - DichiarazioniICI.Database.TpSituazioneFinaleIci.getNewID(System.String)
+  - DichiarazioniICI.Database.TpSituazioneFinaleIci.GetRiepilogoMassivo(System.String,System.String,System.String,System.String)
+  - DichiarazioniICI.Database.TpSituazioneFinaleIci.GetStampaMinuta(System.String,System.String,System.String,System.String)
+  - DichiarazioniICI.Database.TpSituazioneFinaleIci.InsertCALCOLOICI(System.Data.DataSet)
+  - DichiarazioniICI.Database.TpSituazioneFinaleIci.ListContribuentiPerElaborazioneICI(System.String,System.String,System.String,System.Int32,System.String,DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: TpSituazioneFinaleIci
+  nameWithType: TpSituazioneFinaleIci
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci
+  type: Class
+  source:
+    id: TpSituazioneFinaleIci
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 15
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nClasse di gestione della tabella TpSituazioneFinaleIci.\n"
+  remarks: In ottemperanza alle linee guida di sviluppo 1.0
+  example: []
+  syntax:
+    content: 'public class TpSituazioneFinaleIci : Database'
+    content.vb: >-
+      Public Class TpSituazioneFinaleIci
+
+          Inherits Database
+  inheritance:
+  - System.Object
+  - DichiarazioniICI.Database.Database
+  inheritedMembers:
+  - DichiarazioniICI.Database.Database._DbConnection
+  - DichiarazioniICI.Database.Database.TableName
+  - DichiarazioniICI.Database.Database.ProcedureName
+  - DichiarazioniICI.Database.Database.AlredyOpened
+  - DichiarazioniICI.Database.Database.kill
+  - DichiarazioniICI.Database.Database.List
+  - DichiarazioniICI.Database.Database.List(System.String)
+  - DichiarazioniICI.Database.Database.ListFromSP
+  - DichiarazioniICI.Database.Database.List(System.Int32)
+  - DichiarazioniICI.Database.Database.Query(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  - DichiarazioniICI.Database.Database.QueryScalar(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  - DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  - DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.Int32@)
+  - DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.String,System.Int32@)
+  - DichiarazioniICI.Database.Database.GetIdentity(System.Data.SqlClient.SqlConnection)
+  - DichiarazioniICI.Database.Database.PrepareGetRow(System.Int32)
+  - DichiarazioniICI.Database.Database.PrepareGetRowCaricoFigli(System.Int32,System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.#ctor
+  commentId: M:DichiarazioniICI.Database.TpSituazioneFinaleIci.#ctor
+  id: '#ctor'
+  parent: DichiarazioniICI.Database.TpSituazioneFinaleIci
+  langs:
+  - csharp
+  - vb
+  name: TpSituazioneFinaleIci()
+  nameWithType: TpSituazioneFinaleIci.TpSituazioneFinaleIci()
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.TpSituazioneFinaleIci()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 25
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nCostruttore della classe\n"
+  example: []
+  syntax:
+    content: public TpSituazioneFinaleIci()
+    content.vb: Public Sub New
+  overload: DichiarazioniICI.Database.TpSituazioneFinaleIci.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.getNewID(System.String)
+  commentId: M:DichiarazioniICI.Database.TpSituazioneFinaleIci.getNewID(System.String)
+  id: getNewID(System.String)
+  parent: DichiarazioniICI.Database.TpSituazioneFinaleIci
+  langs:
+  - csharp
+  - vb
+  name: getNewID(String)
+  nameWithType: TpSituazioneFinaleIci.getNewID(String)
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.getNewID(System.String)
+  type: Method
+  source:
+    id: getNewID
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 39
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public long getNewID(string strNomeTabella)
+    parameters:
+    - id: strNomeTabella
+      type: System.String
+      description: ''
+    return:
+      type: System.Int64
+      description: ''
+    content.vb: Public Function getNewID(strNomeTabella As String) As Long
+  overload: DichiarazioniICI.Database.TpSituazioneFinaleIci.getNewID*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetImmoCalcoloICItotale(System.String,System.String,System.String,System.String,System.Int64)
+  commentId: M:DichiarazioniICI.Database.TpSituazioneFinaleIci.GetImmoCalcoloICItotale(System.String,System.String,System.String,System.String,System.Int64)
+  id: GetImmoCalcoloICItotale(System.String,System.String,System.String,System.String,System.Int64)
+  parent: DichiarazioniICI.Database.TpSituazioneFinaleIci
+  langs:
+  - csharp
+  - vb
+  name: GetImmoCalcoloICItotale(String, String, String, String, Int64)
+  nameWithType: TpSituazioneFinaleIci.GetImmoCalcoloICItotale(String, String, String, String, Int64)
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetImmoCalcoloICItotale(System.String, System.String, System.String, System.String, System.Int64)
+  type: Method
+  source:
+    id: GetImmoCalcoloICItotale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 170
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nInserisce un nuovo record a partire dai singoli campi.\n"
+  example: []
+  syntax:
+    content: public DataTable GetImmoCalcoloICItotale(string CodContribuente, string Anno, string CodEnte, string Tributo, long idProgrElab)
+    parameters:
+    - id: CodContribuente
+      type: System.String
+      description: ''
+    - id: Anno
+      type: System.String
+      description: ''
+    - id: CodEnte
+      type: System.String
+      description: ''
+    - id: Tributo
+      type: System.String
+    - id: idProgrElab
+      type: System.Int64
+      description: ''
+    return:
+      type: System.Data.DataTable
+      description: ''
+    content.vb: Public Function GetImmoCalcoloICItotale(CodContribuente As String, Anno As String, CodEnte As String, Tributo As String, idProgrElab As Long) As DataTable
+  overload: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetImmoCalcoloICItotale*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetCalcoloICItotale(System.String,System.String,System.String,System.String,System.Int64,System.Boolean)
+  commentId: M:DichiarazioniICI.Database.TpSituazioneFinaleIci.GetCalcoloICItotale(System.String,System.String,System.String,System.String,System.Int64,System.Boolean)
+  id: GetCalcoloICItotale(System.String,System.String,System.String,System.String,System.Int64,System.Boolean)
+  parent: DichiarazioniICI.Database.TpSituazioneFinaleIci
+  langs:
+  - csharp
+  - vb
+  name: GetCalcoloICItotale(String, String, String, String, Int64, Boolean)
+  nameWithType: TpSituazioneFinaleIci.GetCalcoloICItotale(String, String, String, String, Int64, Boolean)
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetCalcoloICItotale(System.String, System.String, System.String, System.String, System.Int64, System.Boolean)
+  type: Method
+  source:
+    id: GetCalcoloICItotale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 224
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public DataTable GetCalcoloICItotale(string CodContribuente, string Anno, string CodEnte, string Tributo, long idProgrElab, bool nettoVersato)
+    parameters:
+    - id: CodContribuente
+      type: System.String
+      description: ''
+    - id: Anno
+      type: System.String
+      description: ''
+    - id: CodEnte
+      type: System.String
+      description: ''
+    - id: Tributo
+      type: System.String
+    - id: idProgrElab
+      type: System.Int64
+      description: ''
+    - id: nettoVersato
+      type: System.Boolean
+    return:
+      type: System.Data.DataTable
+      description: ''
+    content.vb: Public Function GetCalcoloICItotale(CodContribuente As String, Anno As String, CodEnte As String, Tributo As String, idProgrElab As Long, nettoVersato As Boolean) As DataTable
+  overload: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetCalcoloICItotale*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetCalcoloICISoggetti(System.String,System.String,System.String,System.String)
+  commentId: M:DichiarazioniICI.Database.TpSituazioneFinaleIci.GetCalcoloICISoggetti(System.String,System.String,System.String,System.String)
+  id: GetCalcoloICISoggetti(System.String,System.String,System.String,System.String)
+  parent: DichiarazioniICI.Database.TpSituazioneFinaleIci
+  langs:
+  - csharp
+  - vb
+  name: GetCalcoloICISoggetti(String, String, String, String)
+  nameWithType: TpSituazioneFinaleIci.GetCalcoloICISoggetti(String, String, String, String)
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetCalcoloICISoggetti(System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    id: GetCalcoloICISoggetti
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 570
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public DataTable GetCalcoloICISoggetti(string CodEnte, string CodContribuente, string Anno, string Tributo)
+    parameters:
+    - id: CodEnte
+      type: System.String
+    - id: CodContribuente
+      type: System.String
+    - id: Anno
+      type: System.String
+    - id: Tributo
+      type: System.String
+    return:
+      type: System.Data.DataTable
+    content.vb: Public Function GetCalcoloICISoggetti(CodEnte As String, CodContribuente As String, Anno As String, Tributo As String) As DataTable
+  overload: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetCalcoloICISoggetti*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetImmobiliCategoriaClasse(System.String,System.String,System.String,System.String,System.Int64)
+  commentId: M:DichiarazioniICI.Database.TpSituazioneFinaleIci.GetImmobiliCategoriaClasse(System.String,System.String,System.String,System.String,System.Int64)
+  id: GetImmobiliCategoriaClasse(System.String,System.String,System.String,System.String,System.Int64)
+  parent: DichiarazioniICI.Database.TpSituazioneFinaleIci
+  langs:
+  - csharp
+  - vb
+  name: GetImmobiliCategoriaClasse(String, String, String, String, Int64)
+  nameWithType: TpSituazioneFinaleIci.GetImmobiliCategoriaClasse(String, String, String, String, Int64)
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetImmobiliCategoriaClasse(System.String, System.String, System.String, System.String, System.Int64)
+  type: Method
+  source:
+    id: GetImmobiliCategoriaClasse
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 707
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public DataTable GetImmobiliCategoriaClasse(string CodContribuente, string Anno, string CodEnte, string Tributo, long idProgrElab)
+    parameters:
+    - id: CodContribuente
+      type: System.String
+      description: ''
+    - id: Anno
+      type: System.String
+      description: ''
+    - id: CodEnte
+      type: System.String
+      description: ''
+    - id: Tributo
+      type: System.String
+    - id: idProgrElab
+      type: System.Int64
+      description: ''
+    return:
+      type: System.Data.DataTable
+      description: ''
+    content.vb: Public Function GetImmobiliCategoriaClasse(CodContribuente As String, Anno As String, CodEnte As String, Tributo As String, idProgrElab As Long) As DataTable
+  overload: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetImmobiliCategoriaClasse*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetRiepilogoMassivo(System.String,System.String,System.String,System.String)
+  commentId: M:DichiarazioniICI.Database.TpSituazioneFinaleIci.GetRiepilogoMassivo(System.String,System.String,System.String,System.String)
+  id: GetRiepilogoMassivo(System.String,System.String,System.String,System.String)
+  parent: DichiarazioniICI.Database.TpSituazioneFinaleIci
+  langs:
+  - csharp
+  - vb
+  name: GetRiepilogoMassivo(String, String, String, String)
+  nameWithType: TpSituazioneFinaleIci.GetRiepilogoMassivo(String, String, String, String)
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetRiepilogoMassivo(System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    id: GetRiepilogoMassivo
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 839
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public DataTable GetRiepilogoMassivo(string CodContribuente, string Anno, string Tributo, string CodEnte)
+    parameters:
+    - id: CodContribuente
+      type: System.String
+      description: ''
+    - id: Anno
+      type: System.String
+      description: ''
+    - id: Tributo
+      type: System.String
+    - id: CodEnte
+      type: System.String
+      description: ''
+    return:
+      type: System.Data.DataTable
+      description: ''
+    content.vb: Public Function GetRiepilogoMassivo(CodContribuente As String, Anno As String, Tributo As String, CodEnte As String) As DataTable
+  overload: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetRiepilogoMassivo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetImportoDovuto(System.Int32,System.String,System.String)
+  commentId: M:DichiarazioniICI.Database.TpSituazioneFinaleIci.GetImportoDovuto(System.Int32,System.String,System.String)
+  id: GetImportoDovuto(System.Int32,System.String,System.String)
+  parent: DichiarazioniICI.Database.TpSituazioneFinaleIci
+  langs:
+  - csharp
+  - vb
+  name: GetImportoDovuto(Int32, String, String)
+  nameWithType: TpSituazioneFinaleIci.GetImportoDovuto(Int32, String, String)
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetImportoDovuto(System.Int32, System.String, System.String)
+  type: Method
+  source:
+    id: GetImportoDovuto
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 943
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public DataTable GetImportoDovuto(int CodContribuente, string Anno, string cod_ente)
+    parameters:
+    - id: CodContribuente
+      type: System.Int32
+      description: ''
+    - id: Anno
+      type: System.String
+      description: ''
+    - id: cod_ente
+      type: System.String
+    return:
+      type: System.Data.DataTable
+      description: ''
+    content.vb: Public Function GetImportoDovuto(CodContribuente As Integer, Anno As String, cod_ente As String) As DataTable
+  overload: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetImportoDovuto*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetCalcoloICI(System.Int32,System.String)
+  commentId: M:DichiarazioniICI.Database.TpSituazioneFinaleIci.GetCalcoloICI(System.Int32,System.String)
+  id: GetCalcoloICI(System.Int32,System.String)
+  parent: DichiarazioniICI.Database.TpSituazioneFinaleIci
+  langs:
+  - csharp
+  - vb
+  name: GetCalcoloICI(Int32, String)
+  nameWithType: TpSituazioneFinaleIci.GetCalcoloICI(Int32, String)
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetCalcoloICI(System.Int32, System.String)
+  type: Method
+  source:
+    id: GetCalcoloICI
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 993
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public DataTable GetCalcoloICI(int CodContribuente, string Anno)
+    parameters:
+    - id: CodContribuente
+      type: System.Int32
+      description: ''
+    - id: Anno
+      type: System.String
+      description: ''
+    return:
+      type: System.Data.DataTable
+      description: ''
+    content.vb: Public Function GetCalcoloICI(CodContribuente As Integer, Anno As String) As DataTable
+  overload: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetCalcoloICI*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetStampaMinuta(System.String,System.String,System.String,System.String)
+  commentId: M:DichiarazioniICI.Database.TpSituazioneFinaleIci.GetStampaMinuta(System.String,System.String,System.String,System.String)
+  id: GetStampaMinuta(System.String,System.String,System.String,System.String)
+  parent: DichiarazioniICI.Database.TpSituazioneFinaleIci
+  langs:
+  - csharp
+  - vb
+  name: GetStampaMinuta(String, String, String, String)
+  nameWithType: TpSituazioneFinaleIci.GetStampaMinuta(String, String, String, String)
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetStampaMinuta(System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    id: GetStampaMinuta
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 1031
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public DataTable GetStampaMinuta(string CodContribuente, string Anno, string Tributo, string CodEnte)
+    parameters:
+    - id: CodContribuente
+      type: System.String
+    - id: Anno
+      type: System.String
+    - id: Tributo
+      type: System.String
+    - id: CodEnte
+      type: System.String
+    return:
+      type: System.Data.DataTable
+    content.vb: Public Function GetStampaMinuta(CodContribuente As String, Anno As String, Tributo As String, CodEnte As String) As DataTable
+  overload: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetStampaMinuta*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.InsertCALCOLOICI(System.Data.DataSet)
+  commentId: M:DichiarazioniICI.Database.TpSituazioneFinaleIci.InsertCALCOLOICI(System.Data.DataSet)
+  id: InsertCALCOLOICI(System.Data.DataSet)
+  parent: DichiarazioniICI.Database.TpSituazioneFinaleIci
+  langs:
+  - csharp
+  - vb
+  name: InsertCALCOLOICI(DataSet)
+  nameWithType: TpSituazioneFinaleIci.InsertCALCOLOICI(DataSet)
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.InsertCALCOLOICI(System.Data.DataSet)
+  type: Method
+  source:
+    id: InsertCALCOLOICI
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 1075
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public bool InsertCALCOLOICI(DataSet objICI)
+    parameters:
+    - id: objICI
+      type: System.Data.DataSet
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function InsertCALCOLOICI(objICI As DataSet) As Boolean
+  overload: DichiarazioniICI.Database.TpSituazioneFinaleIci.InsertCALCOLOICI*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.CIdToDB(System.Object)
+  commentId: M:DichiarazioniICI.Database.TpSituazioneFinaleIci.CIdToDB(System.Object)
+  id: CIdToDB(System.Object)
+  parent: DichiarazioniICI.Database.TpSituazioneFinaleIci
+  langs:
+  - csharp
+  - vb
+  name: CIdToDB(Object)
+  nameWithType: TpSituazioneFinaleIci.CIdToDB(Object)
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.CIdToDB(System.Object)
+  type: Method
+  source:
+    id: CIdToDB
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 1180
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public string CIdToDB(object vInput)
+    parameters:
+    - id: vInput
+      type: System.Object
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Function CIdToDB(vInput As Object) As String
+  overload: DichiarazioniICI.Database.TpSituazioneFinaleIci.CIdToDB*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.CStrToDB(System.Object,System.Boolean@,System.Boolean)
+  commentId: M:DichiarazioniICI.Database.TpSituazioneFinaleIci.CStrToDB(System.Object,System.Boolean@,System.Boolean)
+  id: CStrToDB(System.Object,System.Boolean@,System.Boolean)
+  parent: DichiarazioniICI.Database.TpSituazioneFinaleIci
+  langs:
+  - csharp
+  - vb
+  name: CStrToDB(Object, ref Boolean, Boolean)
+  nameWithType: TpSituazioneFinaleIci.CStrToDB(Object, ref Boolean, Boolean)
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.CStrToDB(System.Object, ref System.Boolean, System.Boolean)
+  type: Method
+  source:
+    id: CStrToDB
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 1214
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public string CStrToDB(object vInput, ref bool blnClearSpace, bool blnUseNull)
+    parameters:
+    - id: vInput
+      type: System.Object
+      description: ''
+    - id: blnClearSpace
+      type: System.Boolean
+      description: ''
+    - id: blnUseNull
+      type: System.Boolean
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Function CStrToDB(vInput As Object, ByRef blnClearSpace As Boolean, blnUseNull As Boolean) As String
+  overload: DichiarazioniICI.Database.TpSituazioneFinaleIci.CStrToDB*
+  nameWithType.vb: TpSituazioneFinaleIci.CStrToDB(Object, ByRef Boolean, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DichiarazioniICI.Database.TpSituazioneFinaleIci.CStrToDB(System.Object, ByRef System.Boolean, System.Boolean)
+  name.vb: CStrToDB(Object, ByRef Boolean, Boolean)
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.CToBit(System.Object)
+  commentId: M:DichiarazioniICI.Database.TpSituazioneFinaleIci.CToBit(System.Object)
+  id: CToBit(System.Object)
+  parent: DichiarazioniICI.Database.TpSituazioneFinaleIci
+  langs:
+  - csharp
+  - vb
+  name: CToBit(Object)
+  nameWithType: TpSituazioneFinaleIci.CToBit(Object)
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.CToBit(System.Object)
+  type: Method
+  source:
+    id: CToBit
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 1254
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public short CToBit(object vInput)
+    parameters:
+    - id: vInput
+      type: System.Object
+      description: ''
+    return:
+      type: System.Int16
+      description: ''
+    content.vb: Public Function CToBit(vInput As Object) As Short
+  overload: DichiarazioniICI.Database.TpSituazioneFinaleIci.CToBit*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.CDoubleToDB(System.Object)
+  commentId: M:DichiarazioniICI.Database.TpSituazioneFinaleIci.CDoubleToDB(System.Object)
+  id: CDoubleToDB(System.Object)
+  parent: DichiarazioniICI.Database.TpSituazioneFinaleIci
+  langs:
+  - csharp
+  - vb
+  name: CDoubleToDB(Object)
+  nameWithType: TpSituazioneFinaleIci.CDoubleToDB(Object)
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.CDoubleToDB(System.Object)
+  type: Method
+  source:
+    id: CDoubleToDB
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 1285
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public string CDoubleToDB(object vInput)
+    parameters:
+    - id: vInput
+      type: System.Object
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Function CDoubleToDB(vInput As Object) As String
+  overload: DichiarazioniICI.Database.TpSituazioneFinaleIci.CDoubleToDB*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.cToInt(System.Object)
+  commentId: M:DichiarazioniICI.Database.TpSituazioneFinaleIci.cToInt(System.Object)
+  id: cToInt(System.Object)
+  parent: DichiarazioniICI.Database.TpSituazioneFinaleIci
+  langs:
+  - csharp
+  - vb
+  name: cToInt(Object)
+  nameWithType: TpSituazioneFinaleIci.cToInt(Object)
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.cToInt(System.Object)
+  type: Method
+  source:
+    id: cToInt
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 1308
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public int cToInt(object objInput)
+    parameters:
+    - id: objInput
+      type: System.Object
+      description: ''
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Function cToInt(objInput As Object) As Integer
+  overload: DichiarazioniICI.Database.TpSituazioneFinaleIci.cToInt*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetBollettinoICI(System.String,System.String,System.String,System.String,System.Boolean)
+  commentId: M:DichiarazioniICI.Database.TpSituazioneFinaleIci.GetBollettinoICI(System.String,System.String,System.String,System.String,System.Boolean)
+  id: GetBollettinoICI(System.String,System.String,System.String,System.String,System.Boolean)
+  parent: DichiarazioniICI.Database.TpSituazioneFinaleIci
+  langs:
+  - csharp
+  - vb
+  name: GetBollettinoICI(String, String, String, String, Boolean)
+  nameWithType: TpSituazioneFinaleIci.GetBollettinoICI(String, String, String, String, Boolean)
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetBollettinoICI(System.String, System.String, System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    id: GetBollettinoICI
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 1477
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public DataTable GetBollettinoICI(string CodContribuente, string Anno, string CodEnte, string Tributo, bool nettoVersato)
+    parameters:
+    - id: CodContribuente
+      type: System.String
+      description: ''
+    - id: Anno
+      type: System.String
+      description: ''
+    - id: CodEnte
+      type: System.String
+      description: ''
+    - id: Tributo
+      type: System.String
+    - id: nettoVersato
+      type: System.Boolean
+    return:
+      type: System.Data.DataTable
+      description: ''
+    content.vb: Public Function GetBollettinoICI(CodContribuente As String, Anno As String, CodEnte As String, Tributo As String, nettoVersato As Boolean) As DataTable
+  overload: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetBollettinoICI*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.ConfermaCalcoloICI(System.String,System.String)
+  commentId: M:DichiarazioniICI.Database.TpSituazioneFinaleIci.ConfermaCalcoloICI(System.String,System.String)
+  id: ConfermaCalcoloICI(System.String,System.String)
+  parent: DichiarazioniICI.Database.TpSituazioneFinaleIci
+  langs:
+  - csharp
+  - vb
+  name: ConfermaCalcoloICI(String, String)
+  nameWithType: TpSituazioneFinaleIci.ConfermaCalcoloICI(String, String)
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.ConfermaCalcoloICI(System.String, System.String)
+  type: Method
+  source:
+    id: ConfermaCalcoloICI
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 1540
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public bool ConfermaCalcoloICI(string CodContribuente, string Anno)
+    parameters:
+    - id: CodContribuente
+      type: System.String
+      description: ''
+    - id: Anno
+      type: System.String
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function ConfermaCalcoloICI(CodContribuente As String, Anno As String) As Boolean
+  overload: DichiarazioniICI.Database.TpSituazioneFinaleIci.ConfermaCalcoloICI*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.ListContribuentiPerElaborazioneICI(System.String,System.String,System.String,System.Int32,System.String,DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento,System.String,System.String)
+  commentId: M:DichiarazioniICI.Database.TpSituazioneFinaleIci.ListContribuentiPerElaborazioneICI(System.String,System.String,System.String,System.Int32,System.String,DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento,System.String,System.String)
+  id: ListContribuentiPerElaborazioneICI(System.String,System.String,System.String,System.Int32,System.String,DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento,System.String,System.String)
+  parent: DichiarazioniICI.Database.TpSituazioneFinaleIci
+  langs:
+  - csharp
+  - vb
+  name: ListContribuentiPerElaborazioneICI(String, String, String, Int32, String, TpSituazioneFinaleIci.TipoOrdinamento, String, String)
+  nameWithType: TpSituazioneFinaleIci.ListContribuentiPerElaborazioneICI(String, String, String, Int32, String, TpSituazioneFinaleIci.TipoOrdinamento, String, String)
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.ListContribuentiPerElaborazioneICI(System.String, System.String, System.String, System.Int32, System.String, DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento, System.String, System.String)
+  type: Method
+  source:
+    id: ListContribuentiPerElaborazioneICI
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 1702
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nListContribuentiPerElaborazioneICI\n"
+  example: []
+  syntax:
+    content: public DataTable ListContribuentiPerElaborazioneICI(string Nominativo, string NominativoDa, string NominativoA, int AnnoRiferimento, string CodiceEnte, TpSituazioneFinaleIci.TipoOrdinamento OrderBy, string Tributo, string sTipoTASI)
+    parameters:
+    - id: Nominativo
+      type: System.String
+      description: ''
+    - id: NominativoDa
+      type: System.String
+      description: ''
+    - id: NominativoA
+      type: System.String
+      description: ''
+    - id: AnnoRiferimento
+      type: System.Int32
+      description: ''
+    - id: CodiceEnte
+      type: System.String
+      description: ''
+    - id: OrderBy
+      type: DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento
+      description: ''
+    - id: Tributo
+      type: System.String
+    - id: sTipoTASI
+      type: System.String
+    return:
+      type: System.Data.DataTable
+      description: ''
+    content.vb: Public Function ListContribuentiPerElaborazioneICI(Nominativo As String, NominativoDa As String, NominativoA As String, AnnoRiferimento As Integer, CodiceEnte As String, OrderBy As TpSituazioneFinaleIci.TipoOrdinamento, Tributo As String, sTipoTASI As String) As DataTable
+  overload: DichiarazioniICI.Database.TpSituazioneFinaleIci.ListContribuentiPerElaborazioneICI*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetDocElaboratiEffettivi(System.String,System.String,System.Int32)
+  commentId: M:DichiarazioniICI.Database.TpSituazioneFinaleIci.GetDocElaboratiEffettivi(System.String,System.String,System.Int32)
+  id: GetDocElaboratiEffettivi(System.String,System.String,System.Int32)
+  parent: DichiarazioniICI.Database.TpSituazioneFinaleIci
+  langs:
+  - csharp
+  - vb
+  name: GetDocElaboratiEffettivi(String, String, Int32)
+  nameWithType: TpSituazioneFinaleIci.GetDocElaboratiEffettivi(String, String, Int32)
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetDocElaboratiEffettivi(System.String, System.String, System.Int32)
+  type: Method
+  source:
+    id: GetDocElaboratiEffettivi
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 1731
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public GruppoURL[] GetDocElaboratiEffettivi(string CodEnte, string Tributo, int idFlussoRuolo)
+    parameters:
+    - id: CodEnte
+      type: System.String
+    - id: Tributo
+      type: System.String
+    - id: idFlussoRuolo
+      type: System.Int32
+    return:
+      type: RIBESElaborazioneDocumentiInterface.Stampa.oggetti.GruppoURL[]
+    content.vb: Public Function GetDocElaboratiEffettivi(CodEnte As String, Tributo As String, idFlussoRuolo As Integer) As GruppoURL()
+  overload: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetDocElaboratiEffettivi*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.getIdRuolo(System.String,System.String,System.String)
+  commentId: M:DichiarazioniICI.Database.TpSituazioneFinaleIci.getIdRuolo(System.String,System.String,System.String)
+  id: getIdRuolo(System.String,System.String,System.String)
+  parent: DichiarazioniICI.Database.TpSituazioneFinaleIci
+  langs:
+  - csharp
+  - vb
+  name: getIdRuolo(String, String, String)
+  nameWithType: TpSituazioneFinaleIci.getIdRuolo(String, String, String)
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.getIdRuolo(System.String, System.String, System.String)
+  type: Method
+  source:
+    id: getIdRuolo
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\TpSituazioneFinaleIci.cs
+    startLine: 1783
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int getIdRuolo(string IdEnte, string sAnno, string sIdTributo)
+    parameters:
+    - id: IdEnte
+      type: System.String
+    - id: sAnno
+      type: System.String
+    - id: sIdTributo
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Function getIdRuolo(IdEnte As String, sAnno As String, sIdTributo As String) As Integer
+  overload: DichiarazioniICI.Database.TpSituazioneFinaleIci.getIdRuolo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: DichiarazioniICI.Database
+  commentId: N:DichiarazioniICI.Database
+  name: DichiarazioniICI.Database
+  nameWithType: DichiarazioniICI.Database
+  fullName: DichiarazioniICI.Database
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DichiarazioniICI.Database.Database
+  commentId: T:DichiarazioniICI.Database.Database
+  parent: DichiarazioniICI.Database
+  name: Database
+  nameWithType: Database
+  fullName: DichiarazioniICI.Database.Database
+- uid: DichiarazioniICI.Database.Database._DbConnection
+  commentId: F:DichiarazioniICI.Database.Database._DbConnection
+  parent: DichiarazioniICI.Database.Database
+  name: _DbConnection
+  nameWithType: Database._DbConnection
+  fullName: DichiarazioniICI.Database.Database._DbConnection
+- uid: DichiarazioniICI.Database.Database.TableName
+  commentId: F:DichiarazioniICI.Database.Database.TableName
+  parent: DichiarazioniICI.Database.Database
+  name: TableName
+  nameWithType: Database.TableName
+  fullName: DichiarazioniICI.Database.Database.TableName
+- uid: DichiarazioniICI.Database.Database.ProcedureName
+  commentId: F:DichiarazioniICI.Database.Database.ProcedureName
+  parent: DichiarazioniICI.Database.Database
+  name: ProcedureName
+  nameWithType: Database.ProcedureName
+  fullName: DichiarazioniICI.Database.Database.ProcedureName
+- uid: DichiarazioniICI.Database.Database.AlredyOpened
+  commentId: F:DichiarazioniICI.Database.Database.AlredyOpened
+  parent: DichiarazioniICI.Database.Database
+  name: AlredyOpened
+  nameWithType: Database.AlredyOpened
+  fullName: DichiarazioniICI.Database.Database.AlredyOpened
+- uid: DichiarazioniICI.Database.Database.kill
+  commentId: M:DichiarazioniICI.Database.Database.kill
+  parent: DichiarazioniICI.Database.Database
+  name: kill()
+  nameWithType: Database.kill()
+  fullName: DichiarazioniICI.Database.Database.kill()
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.kill
+    name: kill
+    nameWithType: Database.kill
+    fullName: DichiarazioniICI.Database.Database.kill
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.kill
+    name: kill
+    nameWithType: Database.kill
+    fullName: DichiarazioniICI.Database.Database.kill
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.List
+  commentId: M:DichiarazioniICI.Database.Database.List
+  parent: DichiarazioniICI.Database.Database
+  name: List()
+  nameWithType: Database.List()
+  fullName: DichiarazioniICI.Database.Database.List()
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.List
+    name: List
+    nameWithType: Database.List
+    fullName: DichiarazioniICI.Database.Database.List
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.List
+    name: List
+    nameWithType: Database.List
+    fullName: DichiarazioniICI.Database.Database.List
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.List(System.String)
+  commentId: M:DichiarazioniICI.Database.Database.List(System.String)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: List(String)
+  nameWithType: Database.List(String)
+  fullName: DichiarazioniICI.Database.Database.List(System.String)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.List(System.String)
+    name: List
+    nameWithType: Database.List
+    fullName: DichiarazioniICI.Database.Database.List
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.List(System.String)
+    name: List
+    nameWithType: Database.List
+    fullName: DichiarazioniICI.Database.Database.List
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.ListFromSP
+  commentId: M:DichiarazioniICI.Database.Database.ListFromSP
+  parent: DichiarazioniICI.Database.Database
+  name: ListFromSP()
+  nameWithType: Database.ListFromSP()
+  fullName: DichiarazioniICI.Database.Database.ListFromSP()
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.ListFromSP
+    name: ListFromSP
+    nameWithType: Database.ListFromSP
+    fullName: DichiarazioniICI.Database.Database.ListFromSP
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.ListFromSP
+    name: ListFromSP
+    nameWithType: Database.ListFromSP
+    fullName: DichiarazioniICI.Database.Database.ListFromSP
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.List(System.Int32)
+  commentId: M:DichiarazioniICI.Database.Database.List(System.Int32)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: List(Int32)
+  nameWithType: Database.List(Int32)
+  fullName: DichiarazioniICI.Database.Database.List(System.Int32)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.List(System.Int32)
+    name: List
+    nameWithType: Database.List
+    fullName: DichiarazioniICI.Database.Database.List
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.List(System.Int32)
+    name: List
+    nameWithType: Database.List
+    fullName: DichiarazioniICI.Database.Database.List
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.Query(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  commentId: M:DichiarazioniICI.Database.Database.Query(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: Query(SqlCommand, SqlConnection)
+  nameWithType: Database.Query(SqlCommand, SqlConnection)
+  fullName: DichiarazioniICI.Database.Database.Query(System.Data.SqlClient.SqlCommand, System.Data.SqlClient.SqlConnection)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.Query(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+    name: Query
+    nameWithType: Database.Query
+    fullName: DichiarazioniICI.Database.Database.Query
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.Query(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+    name: Query
+    nameWithType: Database.Query
+    fullName: DichiarazioniICI.Database.Database.Query
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.QueryScalar(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  commentId: M:DichiarazioniICI.Database.Database.QueryScalar(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: QueryScalar(SqlCommand, SqlConnection)
+  nameWithType: Database.QueryScalar(SqlCommand, SqlConnection)
+  fullName: DichiarazioniICI.Database.Database.QueryScalar(System.Data.SqlClient.SqlCommand, System.Data.SqlClient.SqlConnection)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.QueryScalar(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+    name: QueryScalar
+    nameWithType: Database.QueryScalar
+    fullName: DichiarazioniICI.Database.Database.QueryScalar
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.QueryScalar(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+    name: QueryScalar
+    nameWithType: Database.QueryScalar
+    fullName: DichiarazioniICI.Database.Database.QueryScalar
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  commentId: M:DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: Execute(SqlCommand, SqlConnection)
+  nameWithType: Database.Execute(SqlCommand, SqlConnection)
+  fullName: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand, System.Data.SqlClient.SqlConnection)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+    name: Execute
+    nameWithType: Database.Execute
+    fullName: DichiarazioniICI.Database.Database.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection)
+    name: Execute
+    nameWithType: Database.Execute
+    fullName: DichiarazioniICI.Database.Database.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.Int32@)
+  commentId: M:DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.Int32@)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: Execute(SqlCommand, SqlConnection, Int32)
+  nameWithType: Database.Execute(SqlCommand, SqlConnection, Int32)
+  fullName: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand, System.Data.SqlClient.SqlConnection, System.Int32)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.Int32@)
+    name: Execute
+    nameWithType: Database.Execute
+    fullName: DichiarazioniICI.Database.Database.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.Int32@)
+    name: Execute
+    nameWithType: Database.Execute
+    fullName: DichiarazioniICI.Database.Database.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.String,System.Int32@)
+  commentId: M:DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.String,System.Int32@)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: Execute(SqlCommand, SqlConnection, String, Int32)
+  nameWithType: Database.Execute(SqlCommand, SqlConnection, String, Int32)
+  fullName: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand, System.Data.SqlClient.SqlConnection, System.String, System.Int32)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.String,System.Int32@)
+    name: Execute
+    nameWithType: Database.Execute
+    fullName: DichiarazioniICI.Database.Database.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.Execute(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.String,System.Int32@)
+    name: Execute
+    nameWithType: Database.Execute
+    fullName: DichiarazioniICI.Database.Database.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlCommand
+    name: SqlCommand
+    nameWithType: SqlCommand
+    fullName: System.Data.SqlClient.SqlCommand
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.GetIdentity(System.Data.SqlClient.SqlConnection)
+  commentId: M:DichiarazioniICI.Database.Database.GetIdentity(System.Data.SqlClient.SqlConnection)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: GetIdentity(SqlConnection)
+  nameWithType: Database.GetIdentity(SqlConnection)
+  fullName: DichiarazioniICI.Database.Database.GetIdentity(System.Data.SqlClient.SqlConnection)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.GetIdentity(System.Data.SqlClient.SqlConnection)
+    name: GetIdentity
+    nameWithType: Database.GetIdentity
+    fullName: DichiarazioniICI.Database.Database.GetIdentity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.GetIdentity(System.Data.SqlClient.SqlConnection)
+    name: GetIdentity
+    nameWithType: Database.GetIdentity
+    fullName: DichiarazioniICI.Database.Database.GetIdentity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Data.SqlClient.SqlConnection
+    name: SqlConnection
+    nameWithType: SqlConnection
+    fullName: System.Data.SqlClient.SqlConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.PrepareGetRow(System.Int32)
+  commentId: M:DichiarazioniICI.Database.Database.PrepareGetRow(System.Int32)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: PrepareGetRow(Int32)
+  nameWithType: Database.PrepareGetRow(Int32)
+  fullName: DichiarazioniICI.Database.Database.PrepareGetRow(System.Int32)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.PrepareGetRow(System.Int32)
+    name: PrepareGetRow
+    nameWithType: Database.PrepareGetRow
+    fullName: DichiarazioniICI.Database.Database.PrepareGetRow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.PrepareGetRow(System.Int32)
+    name: PrepareGetRow
+    nameWithType: Database.PrepareGetRow
+    fullName: DichiarazioniICI.Database.Database.PrepareGetRow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DichiarazioniICI.Database.Database.PrepareGetRowCaricoFigli(System.Int32,System.String)
+  commentId: M:DichiarazioniICI.Database.Database.PrepareGetRowCaricoFigli(System.Int32,System.String)
+  parent: DichiarazioniICI.Database.Database
+  isExternal: true
+  name: PrepareGetRowCaricoFigli(Int32, String)
+  nameWithType: Database.PrepareGetRowCaricoFigli(Int32, String)
+  fullName: DichiarazioniICI.Database.Database.PrepareGetRowCaricoFigli(System.Int32, System.String)
+  spec.csharp:
+  - uid: DichiarazioniICI.Database.Database.PrepareGetRowCaricoFigli(System.Int32,System.String)
+    name: PrepareGetRowCaricoFigli
+    nameWithType: Database.PrepareGetRowCaricoFigli
+    fullName: DichiarazioniICI.Database.Database.PrepareGetRowCaricoFigli
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DichiarazioniICI.Database.Database.PrepareGetRowCaricoFigli(System.Int32,System.String)
+    name: PrepareGetRowCaricoFigli
+    nameWithType: Database.PrepareGetRowCaricoFigli
+    fullName: DichiarazioniICI.Database.Database.PrepareGetRowCaricoFigli
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.#ctor*
+  commentId: Overload:DichiarazioniICI.Database.TpSituazioneFinaleIci.#ctor
+  name: TpSituazioneFinaleIci
+  nameWithType: TpSituazioneFinaleIci.TpSituazioneFinaleIci
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.TpSituazioneFinaleIci
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.getNewID*
+  commentId: Overload:DichiarazioniICI.Database.TpSituazioneFinaleIci.getNewID
+  name: getNewID
+  nameWithType: TpSituazioneFinaleIci.getNewID
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.getNewID
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetImmoCalcoloICItotale*
+  commentId: Overload:DichiarazioniICI.Database.TpSituazioneFinaleIci.GetImmoCalcoloICItotale
+  name: GetImmoCalcoloICItotale
+  nameWithType: TpSituazioneFinaleIci.GetImmoCalcoloICItotale
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetImmoCalcoloICItotale
+- uid: System.Data.DataTable
+  commentId: T:System.Data.DataTable
+  parent: System.Data
+  isExternal: true
+  name: DataTable
+  nameWithType: DataTable
+  fullName: System.Data.DataTable
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetCalcoloICItotale*
+  commentId: Overload:DichiarazioniICI.Database.TpSituazioneFinaleIci.GetCalcoloICItotale
+  name: GetCalcoloICItotale
+  nameWithType: TpSituazioneFinaleIci.GetCalcoloICItotale
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetCalcoloICItotale
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetCalcoloICISoggetti*
+  commentId: Overload:DichiarazioniICI.Database.TpSituazioneFinaleIci.GetCalcoloICISoggetti
+  name: GetCalcoloICISoggetti
+  nameWithType: TpSituazioneFinaleIci.GetCalcoloICISoggetti
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetCalcoloICISoggetti
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetImmobiliCategoriaClasse*
+  commentId: Overload:DichiarazioniICI.Database.TpSituazioneFinaleIci.GetImmobiliCategoriaClasse
+  name: GetImmobiliCategoriaClasse
+  nameWithType: TpSituazioneFinaleIci.GetImmobiliCategoriaClasse
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetImmobiliCategoriaClasse
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetRiepilogoMassivo*
+  commentId: Overload:DichiarazioniICI.Database.TpSituazioneFinaleIci.GetRiepilogoMassivo
+  name: GetRiepilogoMassivo
+  nameWithType: TpSituazioneFinaleIci.GetRiepilogoMassivo
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetRiepilogoMassivo
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetImportoDovuto*
+  commentId: Overload:DichiarazioniICI.Database.TpSituazioneFinaleIci.GetImportoDovuto
+  name: GetImportoDovuto
+  nameWithType: TpSituazioneFinaleIci.GetImportoDovuto
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetImportoDovuto
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetCalcoloICI*
+  commentId: Overload:DichiarazioniICI.Database.TpSituazioneFinaleIci.GetCalcoloICI
+  name: GetCalcoloICI
+  nameWithType: TpSituazioneFinaleIci.GetCalcoloICI
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetCalcoloICI
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetStampaMinuta*
+  commentId: Overload:DichiarazioniICI.Database.TpSituazioneFinaleIci.GetStampaMinuta
+  name: GetStampaMinuta
+  nameWithType: TpSituazioneFinaleIci.GetStampaMinuta
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetStampaMinuta
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.InsertCALCOLOICI*
+  commentId: Overload:DichiarazioniICI.Database.TpSituazioneFinaleIci.InsertCALCOLOICI
+  name: InsertCALCOLOICI
+  nameWithType: TpSituazioneFinaleIci.InsertCALCOLOICI
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.InsertCALCOLOICI
+- uid: System.Data.DataSet
+  commentId: T:System.Data.DataSet
+  parent: System.Data
+  isExternal: true
+  name: DataSet
+  nameWithType: DataSet
+  fullName: System.Data.DataSet
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.CIdToDB*
+  commentId: Overload:DichiarazioniICI.Database.TpSituazioneFinaleIci.CIdToDB
+  name: CIdToDB
+  nameWithType: TpSituazioneFinaleIci.CIdToDB
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.CIdToDB
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.CStrToDB*
+  commentId: Overload:DichiarazioniICI.Database.TpSituazioneFinaleIci.CStrToDB
+  name: CStrToDB
+  nameWithType: TpSituazioneFinaleIci.CStrToDB
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.CStrToDB
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.CToBit*
+  commentId: Overload:DichiarazioniICI.Database.TpSituazioneFinaleIci.CToBit
+  name: CToBit
+  nameWithType: TpSituazioneFinaleIci.CToBit
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.CToBit
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  nameWithType: Int16
+  fullName: System.Int16
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.CDoubleToDB*
+  commentId: Overload:DichiarazioniICI.Database.TpSituazioneFinaleIci.CDoubleToDB
+  name: CDoubleToDB
+  nameWithType: TpSituazioneFinaleIci.CDoubleToDB
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.CDoubleToDB
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.cToInt*
+  commentId: Overload:DichiarazioniICI.Database.TpSituazioneFinaleIci.cToInt
+  name: cToInt
+  nameWithType: TpSituazioneFinaleIci.cToInt
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.cToInt
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetBollettinoICI*
+  commentId: Overload:DichiarazioniICI.Database.TpSituazioneFinaleIci.GetBollettinoICI
+  name: GetBollettinoICI
+  nameWithType: TpSituazioneFinaleIci.GetBollettinoICI
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetBollettinoICI
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.ConfermaCalcoloICI*
+  commentId: Overload:DichiarazioniICI.Database.TpSituazioneFinaleIci.ConfermaCalcoloICI
+  name: ConfermaCalcoloICI
+  nameWithType: TpSituazioneFinaleIci.ConfermaCalcoloICI
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.ConfermaCalcoloICI
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.ListContribuentiPerElaborazioneICI*
+  commentId: Overload:DichiarazioniICI.Database.TpSituazioneFinaleIci.ListContribuentiPerElaborazioneICI
+  name: ListContribuentiPerElaborazioneICI
+  nameWithType: TpSituazioneFinaleIci.ListContribuentiPerElaborazioneICI
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.ListContribuentiPerElaborazioneICI
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento
+  commentId: T:DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento
+  parent: DichiarazioniICI.Database
+  name: TpSituazioneFinaleIci.TipoOrdinamento
+  nameWithType: TpSituazioneFinaleIci.TipoOrdinamento
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetDocElaboratiEffettivi*
+  commentId: Overload:DichiarazioniICI.Database.TpSituazioneFinaleIci.GetDocElaboratiEffettivi
+  name: GetDocElaboratiEffettivi
+  nameWithType: TpSituazioneFinaleIci.GetDocElaboratiEffettivi
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.GetDocElaboratiEffettivi
+- uid: RIBESElaborazioneDocumentiInterface.Stampa.oggetti.GruppoURL[]
+  isExternal: true
+  name: GruppoURL[]
+  nameWithType: GruppoURL[]
+  fullName: RIBESElaborazioneDocumentiInterface.Stampa.oggetti.GruppoURL[]
+  nameWithType.vb: GruppoURL()
+  fullName.vb: RIBESElaborazioneDocumentiInterface.Stampa.oggetti.GruppoURL()
+  name.vb: GruppoURL()
+  spec.csharp:
+  - uid: RIBESElaborazioneDocumentiInterface.Stampa.oggetti.GruppoURL
+    name: GruppoURL
+    nameWithType: GruppoURL
+    fullName: RIBESElaborazioneDocumentiInterface.Stampa.oggetti.GruppoURL
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: RIBESElaborazioneDocumentiInterface.Stampa.oggetti.GruppoURL
+    name: GruppoURL
+    nameWithType: GruppoURL
+    fullName: RIBESElaborazioneDocumentiInterface.Stampa.oggetti.GruppoURL
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.getIdRuolo*
+  commentId: Overload:DichiarazioniICI.Database.TpSituazioneFinaleIci.getIdRuolo
+  name: getIdRuolo
+  nameWithType: TpSituazioneFinaleIci.getIdRuolo
+  fullName: DichiarazioniICI.Database.TpSituazioneFinaleIci.getIdRuolo

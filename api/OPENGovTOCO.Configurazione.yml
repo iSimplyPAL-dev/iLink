@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENGovTOCO.Configurazione
+  commentId: N:OPENGovTOCO.Configurazione
+  id: OPENGovTOCO.Configurazione
+  children:
+  - OPENGovTOCO.Configurazione.ConfigurazioneCoefficienti
+  - OPENGovTOCO.Configurazione.ConfigurazioneTabelle
+  - OPENGovTOCO.Configurazione.ConfigurazioneTariffe
+  langs:
+  - csharp
+  - vb
+  name: OPENGovTOCO.Configurazione
+  nameWithType: OPENGovTOCO.Configurazione
+  fullName: OPENGovTOCO.Configurazione
+  type: Namespace
+  assemblies:
+  - OPENGovTOCO
+references:
+- uid: OPENGovTOCO.Configurazione.ConfigurazioneCoefficienti
+  commentId: T:OPENGovTOCO.Configurazione.ConfigurazioneCoefficienti
+  name: ConfigurazioneCoefficienti
+  nameWithType: ConfigurazioneCoefficienti
+  fullName: OPENGovTOCO.Configurazione.ConfigurazioneCoefficienti
+- uid: OPENGovTOCO.Configurazione.ConfigurazioneTabelle
+  commentId: T:OPENGovTOCO.Configurazione.ConfigurazioneTabelle
+  name: ConfigurazioneTabelle
+  nameWithType: ConfigurazioneTabelle
+  fullName: OPENGovTOCO.Configurazione.ConfigurazioneTabelle
+- uid: OPENGovTOCO.Configurazione.ConfigurazioneTariffe
+  commentId: T:OPENGovTOCO.Configurazione.ConfigurazioneTariffe
+  name: ConfigurazioneTariffe
+  nameWithType: ConfigurazioneTariffe
+  fullName: OPENGovTOCO.Configurazione.ConfigurazioneTariffe

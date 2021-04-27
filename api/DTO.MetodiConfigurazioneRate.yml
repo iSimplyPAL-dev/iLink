@@ -1,0 +1,452 @@
+### YamlMime:ManagedReference
+items:
+- uid: DTO.MetodiConfigurazioneRate
+  commentId: T:DTO.MetodiConfigurazioneRate
+  id: MetodiConfigurazioneRate
+  parent: DTO
+  children:
+  - DTO.MetodiConfigurazioneRate.GetConfigurazioneRate(System.Int32)
+  - DTO.MetodiConfigurazioneRate.InsertConfigurazioneRate(IRemInterfaceOSAP.Rate[])
+  langs:
+  - csharp
+  - vb
+  name: MetodiConfigurazioneRate
+  nameWithType: MetodiConfigurazioneRate
+  fullName: DTO.MetodiConfigurazioneRate
+  type: Class
+  source:
+    id: MetodiConfigurazioneRate
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\ConfigurazioneRate.cs
+    startLine: 12
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  summary: "\nClasse per la configurazione Rate\n"
+  example: []
+  syntax:
+    content: public class MetodiConfigurazioneRate
+    content.vb: Public Class MetodiConfigurazioneRate
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DTO.MetodiConfigurazioneRate.GetConfigurazioneRate(System.Int32)
+  commentId: M:DTO.MetodiConfigurazioneRate.GetConfigurazioneRate(System.Int32)
+  id: GetConfigurazioneRate(System.Int32)
+  parent: DTO.MetodiConfigurazioneRate
+  langs:
+  - csharp
+  - vb
+  name: GetConfigurazioneRate(Int32)
+  nameWithType: MetodiConfigurazioneRate.GetConfigurazioneRate(Int32)
+  fullName: DTO.MetodiConfigurazioneRate.GetConfigurazioneRate(System.Int32)
+  type: Method
+  source:
+    id: GetConfigurazioneRate
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\ConfigurazioneRate.cs
+    startLine: 19
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static Rate[] GetConfigurazioneRate(int IdFlusso)
+    parameters:
+    - id: IdFlusso
+      type: System.Int32
+    return:
+      type: IRemInterfaceOSAP.Rate[]
+    content.vb: Public Shared Function GetConfigurazioneRate(IdFlusso As Integer) As Rate()
+  overload: DTO.MetodiConfigurazioneRate.GetConfigurazioneRate*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiConfigurazioneRate.InsertConfigurazioneRate(IRemInterfaceOSAP.Rate[])
+  commentId: M:DTO.MetodiConfigurazioneRate.InsertConfigurazioneRate(IRemInterfaceOSAP.Rate[])
+  id: InsertConfigurazioneRate(IRemInterfaceOSAP.Rate[])
+  parent: DTO.MetodiConfigurazioneRate
+  langs:
+  - csharp
+  - vb
+  name: InsertConfigurazioneRate(Rate[])
+  nameWithType: MetodiConfigurazioneRate.InsertConfigurazioneRate(Rate[])
+  fullName: DTO.MetodiConfigurazioneRate.InsertConfigurazioneRate(IRemInterfaceOSAP.Rate[])
+  type: Method
+  source:
+    id: InsertConfigurazioneRate
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\ConfigurazioneRate.cs
+    startLine: 36
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static void InsertConfigurazioneRate(Rate[] c)
+    parameters:
+    - id: c
+      type: IRemInterfaceOSAP.Rate[]
+    content.vb: Public Shared Sub InsertConfigurazioneRate(c As Rate())
+  overload: DTO.MetodiConfigurazioneRate.InsertConfigurazioneRate*
+  nameWithType.vb: MetodiConfigurazioneRate.InsertConfigurazioneRate(Rate())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: DTO.MetodiConfigurazioneRate.InsertConfigurazioneRate(IRemInterfaceOSAP.Rate())
+  name.vb: InsertConfigurazioneRate(Rate())
+references:
+- uid: DTO
+  commentId: N:DTO
+  name: DTO
+  nameWithType: DTO
+  fullName: DTO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DTO.MetodiConfigurazioneRate.GetConfigurazioneRate*
+  commentId: Overload:DTO.MetodiConfigurazioneRate.GetConfigurazioneRate
+  name: GetConfigurazioneRate
+  nameWithType: MetodiConfigurazioneRate.GetConfigurazioneRate
+  fullName: DTO.MetodiConfigurazioneRate.GetConfigurazioneRate
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: IRemInterfaceOSAP.Rate[]
+  isExternal: true
+  name: Rate[]
+  nameWithType: Rate[]
+  fullName: IRemInterfaceOSAP.Rate[]
+  nameWithType.vb: Rate()
+  fullName.vb: IRemInterfaceOSAP.Rate()
+  name.vb: Rate()
+  spec.csharp:
+  - uid: IRemInterfaceOSAP.Rate
+    name: Rate
+    nameWithType: Rate
+    fullName: IRemInterfaceOSAP.Rate
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: IRemInterfaceOSAP.Rate
+    name: Rate
+    nameWithType: Rate
+    fullName: IRemInterfaceOSAP.Rate
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: DTO.MetodiConfigurazioneRate.InsertConfigurazioneRate*
+  commentId: Overload:DTO.MetodiConfigurazioneRate.InsertConfigurazioneRate
+  name: InsertConfigurazioneRate
+  nameWithType: MetodiConfigurazioneRate.InsertConfigurazioneRate
+  fullName: DTO.MetodiConfigurazioneRate.InsertConfigurazioneRate

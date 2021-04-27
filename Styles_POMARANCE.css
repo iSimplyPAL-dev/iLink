@@ -1,0 +1,1459 @@
+/* Default CSS Stylesheet for a new Web Application project */
+/*html body {SCROLLBAR-FACE-COLOR: #FF9966; SCROLLBAR-HIGHLIGHT-COLOR: #FFCBA5; SCROLLBAR-SHADOW-COLOR: #FF9966; SCROLLBAR-3DLIGHT-COLOR: #FF9966; SCROLLBAR-ARROW-COLOR: #ffffff; SCROLLBAR-TRACK-COLOR: #FFCBA5; SCROLLBAR-BASE-COLOR: #FFCBA5}*/
+
+html body {SCROLLBAR-FACE-COLOR: #0079ff; SCROLLBAR-HIGHLIGHT-COLOR: #e8f8ff; SCROLLBAR-SHADOW-COLOR: #0079ff; SCROLLBAR-3DLIGHT-COLOR: #0079ff; SCROLLBAR-ARROW-COLOR: #ffffff; SCROLLBAR-TRACK-COLOR: #E8F8FF; SCROLLBAR-BASE-COLOR: #e8f8ff }
+
+.margin_Zero
+{
+	margin :0
+}
+.Combo
+{
+	border-right: #696969 2px solid;
+	border-top: #696969 2px solid;
+	font-size: 11px;
+	text-transform: capitalize;
+	border-left: #696969 2px solid;
+	color: #00008b;
+	border-bottom: #696969 2px solid;
+	font-family: Verdana;
+}
+.BottoneTerritorio
+{
+	background-image: url(images/Bottoni/globe.png);
+	background-repeat:no-repeat;
+	cursor: hand;
+	border: 0px;
+	WIDTH: 30px; 
+	HEIGHT: 30px;
+	background-color:#0079ff;
+}
+.Bottoneinserimento
+{
+	background-image: url(images/Bottoni/salva.gif);
+	cursor: hand;
+	border: 0px;
+	WIDTH: 30px; 
+	HEIGHT: 30px;
+	background-color:#0079ff;
+	
+}
+.Bottonericerca
+{
+	background-image: url(images/Bottoni/ricerca.gif);
+	cursor: hand;
+	border: 0px;
+	WIDTH: 30px; 
+	HEIGHT: 30px;
+	background-color:#0079ff;
+}
+.Bottonecancella
+{
+	background-image: url(images/Bottoni/cestino.gif);
+	cursor: hand;
+	border:0px;
+	WIDTH: 30px; 
+	HEIGHT: 30px;
+	background-color:#0079ff;
+}
+.Bottoneannulla
+{
+	background-image: url(images/Bottoni/annulla.gif);
+	cursor: hand;
+	border:0px;
+	WIDTH: 30px; 
+	HEIGHT: 30px;
+	background-color:#0079ff;
+}
+.BottoneLettera
+{
+	background-image: url(images/Bottoni/invia_pratica2.gif);
+	cursor: hand;
+}
+.BottoneCalendario
+{
+	background: #d4d0c8 url(images/icon-calendar.gif) no-repeat 0.5 40%;
+	width: 28px;
+	cursor: hand;
+	height: 26px;
+}
+.Bottonemodifica
+{
+	background-image: url(images/Bottoni/modifica.gif);
+	cursor: hand;
+}
+.BottoneUnlock
+{
+	background-image: url(images/Bottoni/apri1.gif);
+	cursor: hand;
+	border:0px;
+	WIDTH: 30px; 
+	HEIGHT: 30px;
+	background-color:#0079ff;
+}
+.BottoneQuestionario
+{
+	background-image: url(images/Bottoni/salva.gif);
+	cursor: hand;
+}
+.BottoneTesto
+{
+	background-image: url(images/Bottoni/Info.gif);
+	cursor: hand;
+}
+.BottoneNewInsert
+{
+	background-image: url(images/Bottoni/nuovoinserisci.gif);
+	cursor: hand;
+	border:0px;
+	width:30px;
+	height:30px;
+	background-color:#0079ff;
+}
+.Bottonepulisci
+{
+	background-image: url(images/Bottoni/chiudi.gif);
+	cursor: hand;	
+	border:0px;
+	WIDTH: 30px; 
+	HEIGHT: 30px;
+	background-color:#0079ff;
+}
+.Bottoneassocia
+{
+	background-image: url(images/Bottoni/papclip1.gif);
+	cursor: hand;
+}
+.BottoneCalcola
+{
+	background-image: url(images/Bottoni/spunta_s.gif);
+	cursor: hand;
+}
+.BottoneTreeView
+{
+	background-image:url(images/Bottoni/casa.gif);
+	cursor:hand;
+}
+.BottoneSoggetti
+{
+	background-image:url(images/Bottoni/Soggetti.gif);
+	cursor:hand;
+}
+.BottoneMisure
+{
+	background-image:url(images/Bottoni/Rulers.gif);
+	cursor:hand;
+}
+.BottoneCalcoloMisure
+{
+	background-image:url(images/Bottoni/CalcoloMisure1.gif);
+	cursor:hand;
+}
+.BottoneGestioneFoto
+{
+	background-image:url(images/Bottoni/foto_s.gif);
+	cursor:hand;
+}
+.BottoneSituazioneUI
+{
+	background-image:url(images/Bottoni/home_UI_small.gif);
+	cursor:hand;
+}
+.BottoneImport
+{
+	background-image:url(images/Bottoni/bottone_acquisizione.gif);
+	cursor:hand;
+}
+.BottoneCreaLettera
+{
+	background-image:url(images/Bottoni/nuovoinserisci2.gif);
+	cursor:hand;
+}
+.BottoneNext
+{
+	background-image:url(gfx/small_blackarrow/nextpg.gif);
+	cursor:hand;
+}
+.BottonePrevious
+{
+	background-image:url(gfx/small_blackarrow/prevpg.gif);
+	cursor:hand;
+}
+.BottoneFirst
+{
+	background-image:url(gfx/small_blackarrow/firstpg.gif);
+	cursor:hand;
+}
+.BottoneLast
+{
+	background-image:url(gfx/small_blackarrow/lastpg.gif);
+	cursor:hand;
+}
+.BottoneStampa
+{
+	background-image:url(images/Bottoni/Stampa.gif);
+	cursor:hand;
+	border:0px;
+	WIDTH: 30px; 
+	HEIGHT: 30px;
+	background-color:#0079ff;
+}
+.BottoneRettificaAvviso
+{
+	background-image:url(images/Bottoni/nuovoinserisci2.gif);
+	cursor:hand;
+}
+.BottoneAnnullaAvviso
+{
+	background-image:url(images/Bottoni/chiudi.gif);
+	cursor:hand;
+	
+}
+.BottoneGrafico
+{
+	background-image: url(images/Bottoni/pie_chart_icon.gif);
+	background-repeat:no-repeat;
+	cursor: hand;
+	border: 0px;
+	WIDTH: 30px; 
+	HEIGHT: 30px;
+	background-color:#0079ff;
+}
+.SfondoVisualizza
+{
+	font-size: x-small;
+	font-family: Verdana;
+	background-color: #E8F8FF;
+}
+.SfondoGenerale
+{
+	font-size: x-small;
+	font-family: Verdana;
+	background-color: #0079ff;
+}
+
+
+.Menu
+{
+	font-weight: normal;
+	font-size: 7pt;
+	cursor: pointer;
+	color: white;
+	font-family: Verdana;
+}
+
+.MenuOver
+{
+	font-weight: normal;
+	font-size: 7pt;
+	/*color: #0096A5;*/
+	color: #ff8700;
+	font-family: Verdana;
+	cursor:pointer; 
+}
+.SottoMenu
+{
+	font-weight: normal;
+	font-size: 7pt;
+	color: white;
+	font-family: Verdana;
+	cursor:pointer;
+}
+.SottoMenuOver
+{
+	font-weight: normal;
+	font-size: 7pt;
+	color: #ff8700;
+	font-family: Verdana;
+	cursor:pointer;
+}
+
+.CartListHead
+{
+	font-weight: bold;
+	font-size: 7pt;
+	border-left: dimgray 1px solid;
+	color: white;
+	border-bottom: dimgray;
+	font-family: Verdana, Arial;
+	background-color: #32a0ff;
+/*	background-color: #FF9966;*/
+	
+	
+}
+
+.CartListItem
+{
+    background-color: #ffffff;
+    border-bottom: dimgray;
+    border-left: dimgray 1px solid;
+    color: black;
+    font-family: Verdana, Arial;
+    font-size: 7pt;
+    padding-left: 5px;
+    text-transform: uppercase;
+    
+}
+
+.CartListItemAlt
+{
+	padding-left: 5px;
+	font-size: 7pt;
+	border-left: dimgray 1px solid;
+	color: black;
+	border-bottom: dimgray;
+	font-family: Verdana, Arial;
+	background-color: "WhiteSmoke";
+	text-transform: uppercase;
+	
+}
+
+.CartListItemSel
+{
+	padding-left: 5px;
+	font-size: 7pt;
+	color:Aqua;
+	
+}
+
+.CartListFooter
+{
+	font-weight: normal;
+	font-size: 10px;
+	color: #000000;
+	line-height: 10pt;
+	font-family: Verdana, Arial;
+	/*background-color: #ffcba5;*/
+    background-color: #32a0ff;
+	/*background-color: #FF9966;
+    line-height: 10pt;
+    font-family: Verdana, Arial;
+    font-size:7pt;
+    font-weight: bold;
+    color: white;*/
+}
+
+.TreeItem
+{
+	font-weight: bold;
+	font-size: 10px;
+	color: black;
+	font-family: Verdana, Arial;
+}
+
+.TreeSelectedItem
+{
+	font-family:Verdana, Arial ;
+	font-size:10px;
+	font-weight:bold;
+	background-color:red;  
+}
+
+.Input_Label
+{
+	color: darkblue;
+	font-family: Verdana;
+	font-size:11px;	
+}
+.Input_Label_login
+{
+	color: white;
+	font-family: Verdana;
+	font-weight :bold;
+	font-size:8pt;	
+}
+.Input_Label_login_Account
+{
+	color: white;
+	font-family: Verdana;
+	font-weight :bold;
+	font-size:11pt;	
+}
+.Input_Label_login_Account14
+{
+	font-weight: bold;
+	font-size: 15pt;
+	color: white;
+	font-style: italic;
+	font-family: Verdana;
+}
+.Input_Label_home
+{
+	color: black;
+	font-weight :bold ;
+	font-family: Verdana;
+	font-size:20pt;	
+}
+.Input_Label_RED
+{
+	color: red;
+	font-family: Verdana;
+	font-size:10;	
+	text-transform:uppercase ;
+}
+.Input_Label_bold
+{
+  font-weight: bold;
+  font-size: 10px;
+  font-family: Verdana;
+  background-color: #9ce3ff;
+}
+.Input_Label_Right
+{
+	color: darkblue;
+	font-family: Verdana;
+	font-size:10;	
+	text-align:right;
+	text-transform:uppercase ;
+}
+
+.Input_Label_UpperCase
+{
+	color: darkblue;
+	font-family: Verdana;
+	font-size:10;	
+	text-transform:uppercase ;
+}
+
+.Input_Label_PopUp
+{
+	color: darkblue;
+	font-family: Verdana;
+	font-size:18;	
+	text-transform:uppercase ;
+}
+
+.Input_Label_disabled
+{
+	font-size: 10px;
+	color: silver;
+	font-family: Verdana;
+}
+
+.Label_Param_Ricerca
+{
+	font-size: 10px;
+	color: darkblue;
+	font-family: Verdana;
+	background-color: #e8f8ff;
+	text-align: center;
+}
+
+.Input_Text
+{
+
+	border-right: #aec0ff 1px inset;
+	border-top: #aec0ff 1px inset;
+	font-size: 11px;
+	text-transform: uppercase;
+	border-left: #aec0ff 1px inset;
+	color: darkblue;
+	border-bottom: #aec0ff 1px inset;
+	font-family: Verdana;
+}
+
+.Input_Text_Center
+{
+
+	border-right: #aec0ff 1px inset;
+	border-top: #aec0ff 1px inset;
+	font-size: 11px;
+	text-transform: uppercase;
+	border-left: #aec0ff 1px inset;
+	color: darkblue;
+	border-bottom: #aec0ff 1px inset;
+	font-family: Verdana;
+	text-align: center;
+}
+
+.Input_Text_No_Upper
+{
+
+	border-right: #aec0ff 1px inset;
+	border-top: #aec0ff 1px inset;
+	font-size: 11px;
+	border-left: #aec0ff 1px inset;
+	color: darkblue;
+	border-bottom: #aec0ff 1px inset;
+	font-family: Verdana;
+}
+.Input_Text_Right
+{
+
+	border-right: #aec0ff 1px inset;
+	border-top: #aec0ff 1px inset;
+	font-size: 11px;
+	text-transform: uppercase;
+	border-left: #aec0ff 1px inset;
+	color: darkblue;
+	border-bottom: #aec0ff 1px inset;
+	font-family: Verdana;
+	text-align:right
+}
+
+
+.Input_Text_bold
+{
+
+	border-right: #aec0ff 1px inset;
+	border-top: #aec0ff 1px inset;
+	font-size: 14px;
+	text-transform: uppercase;
+	border-left: #aec0ff 1px inset;
+	color: darkblue;
+	border-bottom: #aec0ff 1px inset;
+	font-family: Verdana;
+	font-weight: bold;
+	
+}
+
+.Input_Text_Enable_Red_Right
+{
+	border-right: #aec0ff 1px solid;
+	border-top: #aec0ff 1px solid;
+	font-weight: normal;
+	font-size: 11px;
+	vertical-align: baseline;
+	text-transform: uppercase;
+	border-left: #aec0ff 1px solid;
+	color: darkblue;
+	border-bottom: #aec0ff 1px solid;
+	font-family: Verdana;
+	background-color: buttonhighlight;
+	text-align: right;
+}
+.Input_Text_Enable_Red_Left
+{
+	border-right: #aec0ff 1px solid;
+	border-top: #aec0ff 1px solid;
+	font-weight: normal;
+	font-size: 11px;
+	vertical-align: baseline;
+	text-transform: uppercase;
+	border-left: #aec0ff 1px solid;
+	color: darkblue;
+	border-bottom: #aec0ff 1px solid;
+	font-family: Verdana;
+	background-color: buttonhighlight;
+	text-align: left;
+}
+.Input_Text_Red_Left
+{
+	border-right: #aec0ff 0px solid;
+	border-top: #aec0ff 0px solid;
+	font-weight: normal;
+	font-size: 11px;
+	vertical-align: baseline;
+	text-transform: uppercase;
+	border-left: #aec0ff 0px solid;
+	color: RED;
+	border-bottom: #aec0ff 0px solid;
+	font-family: Verdana;
+	background-color: buttonhighlight;
+	text-align: left;
+}
+.Input_Text_LowerCase
+{
+	
+	border-right: #aec0ff 1px inset;
+	border-top: #aec0ff 1px inset;
+	font-size: 11px;
+	text-transform: lowercase;
+	border-left: #aec0ff 1px inset;
+	color: darkblue;
+	border-bottom: #aec0ff 1px inset;
+	font-family: Verdana;
+}
+
+.Input_Text_Numbers
+{
+	font-size: 11px;
+	color: darkblue;
+	font-family: Verdana;
+	text-align:right;
+	border-right: #aec0ff 1px inset;
+	border-top: #aec0ff 1px inset;
+	border-left: #aec0ff 1px inset;
+	border-bottom: #aec0ff 1px inset;
+	text-transform: uppercase;
+		
+}
+
+.Input_Text_Locked
+{
+	border-right: #aec0ff 1px inset;
+	border-top: #aec0ff 1px inset;
+	font-size: 11px;
+	text-transform: uppercase;
+	border-left: #aec0ff 1px inset;
+	color: darkblue;
+	background-color: #e8f8ff;
+	border-bottom: #aec0ff 1px inset;
+	font-family: Verdana;		
+}
+
+
+.Input_CheckBox
+{
+	font-size: 10px;
+	color: darkblue;
+	font-family: Verdana;
+	border-right: #aec0ff 1px inset;
+	border-top: #aec0ff 1px inset;
+	border-left: #aec0ff 1px inset;
+	border-bottom: #aec0ff 1px inset;
+}
+
+.Input_Radio
+{
+	font-size: 10px;
+	color: darkblue;
+	font-family: Verdana;
+}
+
+.TableParamRicerca
+{
+	border:1;
+	border-right: 1px solid;
+	border-top: 1px solid;
+	border-left: 1px solid;
+	border-bottom: 1px solid;
+	border-color :darkblue;
+}
+
+.TableRisultRicerca
+{
+
+	border-top: darkblue thin solid;
+	border-color :darkblue;
+}
+
+.TableFrame
+{
+	background-color: #0079ff;
+	border:1;
+	border-right: 1px solid;
+	border-top: 1px solid;
+	border-left: 1px solid;
+	border-bottom: 1px solid;
+	border-color :#0079ff;
+}
+
+
+.BottoniLink
+{
+	font-weight: bolder;
+	font-size: 10pt;
+	color: darkblue;
+	border-right-style: ridge;
+	background-color: #aed4f8;
+	border-bottom-style: ridge;
+}
+
+/*
+.TableEframe
+{
+	margin: 3px;
+}
+
+
+.DataGridHeader
+{
+	font-size:x-small;
+	color: white;
+	font-family: Verdana;
+	background-color:#6666FF;
+		
+}
+
+
+.DataGridItem
+{
+	font-size:xx-small ;
+	color:Black;
+	font-family: Verdana;
+	background-color:White;
+	
+}
+
+.DataGridPaging
+{
+	font-size:xx-small;
+	color:Black;
+	font-family: Verdana;
+	background-color:#6666FF;
+	
+}
+*/
+
+.riga_tabella_mouse_over_old
+{
+	font-size: 7pt;
+	color: darkblue;
+	font-family: Verdana;
+	background-color: lightsteelblue;
+}
+.riga_tabella_old
+{
+	font-size: 7pt;
+	color: black;
+	font-family: Verdana;
+}
+
+.riga_tabella_mouse_over
+{
+	font-size: 7pt;
+	color: darkblue;
+	font-family: Verdana;
+	background-color: #e1f8ff;
+	text-transform:uppercase 
+	
+}
+.riga_tabella
+{
+  font-size:7pt;
+  color: black;
+  font-family: Verdana;
+  text-transform:uppercase ;
+  
+}
+
+.header
+{
+	font-weight: bold;
+	font-size: 8pt;
+	color: black;
+	font-family: Verdana;
+	background-color: lightblue;
+}
+
+.Footer
+{
+	font-weight: bold;
+	font-size: 10px;
+	color: darkblue;
+	font-family: Verdana;
+	background-color: #E8F8FF;
+}
+.ContentHead
+{
+	font-weight: normal;
+	font-size: 12px;
+	color: navy;
+	font-family: Verdana, Arial;
+	height: 20px;
+	background-color:#E8F8FF;
+}
+
+.Paging
+{
+	font-size: 10px;
+	color: maroon;
+	font-family: Verdana;
+	background-color: #E8F8FF;
+}
+
+.NormalBold_title
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 12px
+}
+.ContentHead_Title
+{
+
+/*	color: #0096A5;*/
+
+
+	font-weight: bold;
+	font-size: 13pt;
+	color: #ff8700;
+	font-family: Verdana, Arial;
+	height: 20px;
+	background-color: #0079ff;
+
+}
+
+.NormalBold
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 10px
+}
+
+.Title_popUp
+{
+  font-weight: normal;
+  font-size: large;
+  color: blue;
+  font-style: italic;
+  font-family: Verdana;
+}
+
+/*classi per libreria anagrafica*/
+
+/*
+.Input_Label
+{
+	color: darkblue;
+	font-family: Verdana;
+	font-size:10;	
+}
+
+.Input_Text
+{
+	border-right: #000099 1px solid;
+	border-top: #000099 1px solid;
+	font-size: 11px;
+	text-transform: uppercase;
+	border-left: #000099 1px solid;
+	color: darkblue;
+	border-bottom: #000099 1px solid;
+	font-family: Verdana;
+}
+
+
+*/
+
+.bottoneSalva
+{
+	background-position: center center;
+	background-attachment: scroll;
+	background-image: url(images/Bottoni/salva.gif);
+	width: 30px;
+	cursor: hand;
+	position: static;
+	height: 30px;
+}
+
+
+.Sfondo
+{
+/*	background-color: #E8F8FF;*/
+	background-color: #E8F8FF;
+}
+
+.lstTabRow
+{
+  font-weight: bold;
+  font-size: x-small;
+  color: darkblue;
+  border-bottom: darkblue 1px solid;
+  font-family: Tahoma, Arial, Verdana;
+  font-variant: small-caps;
+}
+
+.AnagraficaRow
+{
+  font-weight: bold;
+  font-size: 15px;
+  /*color: #ff8700;*/
+  color: darkblue;
+  font-family: Tahoma, Arial, Verdana;
+  font-variant: small-caps;
+}
+
+.lstTab
+{
+  border-right: darkblue 1px solid;
+  border-top: darkblue 1px solid;
+  border-left: darkblue 1px solid;
+  border-bottom: darkblue 1px solid;
+  /*background-color: #FF00FF;*/
+}
+	
+.CODICEFISCALE
+{
+  background-position: center center;
+  background-attachment: fixed;
+  background-image: url(images/lista.gif);
+  width: 16px;
+  cursor: hand;
+  position: static;
+  height: 16px;
+}
+
+.NormalRed
+{
+	font-weight: bold;
+	font-size: 12px;
+	color: red;
+	font-family: Verdana, Helvetica, sans-serif;
+}
+.ErrorMessage
+{
+	font-weight: bold;
+	font-size: 11px;
+	color: black;
+	font-style: italic;
+	font-family: Verdana, Helvetica, sans-serif;
+}
+
+.Input_label_title
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 12px;
+    color:darkblue;
+}
+
+.bordoIFRAME
+{
+  border-right: darkblue 1px;
+  border-top: darkblue 1px solid;
+  background-image: none;
+  border-left: darkblue 1px;
+  border-bottom: darkblue 1px;
+}
+
+.div_scroll_menu
+{
+	width:100%; 
+	height:536px; 
+	overflow:auto;
+}
+
+
+.TITLEBODY
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 12px    
+}
+
+.TITLEBOLD
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 12px    
+}
+
+.BODYPAGE
+{
+  background:#E8F8FF;
+}
+
+.BODYDIV
+{
+  background:#E8F8FF;
+}
+
+.LABELBOLD
+{
+  font-weight: bold;
+  font-size: 8pt;
+  color: black;
+  font-family: Verdana;
+}
+
+.ERRORSTYLE
+{
+    font-weight: bold;
+	font-size: 10px;
+	color: red;
+	font-family: Verdana;
+}
+
+.BOTTONE
+{
+  border-top-width: thin;
+  font-weight: normal;
+  border-left-width: thin;
+  font-size: 8pt;
+  border-left-color: white;
+  border-bottom-width: thin;
+  border-bottom-color: white;
+  cursor: hand;
+  color: black;
+  border-top-color: white;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  background-color: #E8F8FF;
+  border-right-width: thin;
+  border-right-color: white;
+}
+
+.Input_Number_Generali
+{
+  border-right: #edee6e 1px inset;
+  border-top: #edee6e 1px inset;
+  font-size: xx-small;
+  text-transform: uppercase;
+  border-left: #edee6e 1px inset;
+  color: darkblue;
+  border-bottom: #edee6e 1px inset;
+  font-family: Verdana;
+  text-align: right;
+}
+
+.classeLegend
+{
+	font-weight: bold;
+	font-size: 8pt;
+	color: darkblue;
+	font-family: Verdana;
+}
+.classeLegendPrincipale
+{
+	font-weight: bold;
+	font-size: 11px;
+	color:darkblue;
+	font-family: Verdana;
+}
+.classeFiledSet
+{
+	border-right: #d3d3d3 1px solid;
+	border-top: #d3d3d3 1px solid;
+	border-left: #d3d3d3 1px solid;
+	width: 98%;
+	border-bottom: #d3d3d3 1px solid;
+	text-align: center;
+}
+.classeFiledSet_WHITE
+{
+	border-right: #d3d3d3 1px solid;
+	border-top: #d3d3d3 1px solid;
+	border-left: #d3d3d3 1px solid;
+	width: 98%;
+	border-bottom: #d3d3d3 1px solid;
+	background-color: #ffffff;
+	text-align: center;
+}
+.classeFiledSet_TEST
+{
+	border-right: #d3d3d3 1px solid;
+	border-top: #d3d3d3 1px solid;
+	border-left: #d3d3d3 1px solid;
+	width: 75%;
+	border-bottom: #d3d3d3 1px solid;
+	background-color: #6600ff;
+	text-align: center;
+}
+.classeFiledSet100
+{
+    BORDER-RIGHT: #d3d3d3 1px solid;
+    BORDER-TOP: #d3d3d3 1px solid;
+    BORDER-LEFT: #d3d3d3 1px solid;
+    WIDTH: 100%;
+    BORDER-BOTTOM: #d3d3d3 1px solid;
+    text-align:center;
+
+}
+fieldset
+{
+    BORDER-RIGHT: #d3d3d3 1px solid;
+    BORDER-TOP: #d3d3d3 1px solid;
+    BORDER-LEFT: #d3d3d3 1px solid;
+    WIDTH: 100%;
+    BORDER-BOTTOM: #d3d3d3 1px solid;
+}
+
+.classeFiledSetIframe
+{
+    
+  border-right: darkblue 1px;
+  border-top: darkblue 1px solid;
+  WIDTH: 98%;
+  border-left: darkblue 1px;
+  border-bottom: darkblue 1px;
+    
+}
+.classeFiledSetIframe100
+{
+    
+  border-right: darkblue 1px;
+  border-top: darkblue 1px solid;
+  WIDTH: 100%;
+  border-left: darkblue 1px;
+  border-bottom: darkblue 1px;
+    
+}
+#attesa{
+ position:absolute;
+ background-color: white;
+ border: 1px solid  steelblue;
+ font-weight: bold;
+ font-size: 12px;
+ font-family:  Verdana, Arial, helvetica, sans-serif;
+ text-align:center;
+ top:290px;
+ left:250px;
+ width:280px;
+ height:150px;
+    
+}
+#attesaGestioneAtti{
+ position:absolute;
+ background-color: white;
+ border: 1px solid steelblue;
+ font-weight: bold;
+ font-size: 12px;
+ font-family:  Verdana, Arial, helvetica, sans-serif;
+ text-align:center;
+ top:180px;
+ left:250px;
+ width:280px;
+ height:150px;
+  
+}
+#attesaGestioneAtti_popup{
+ position:absolute;
+ background-color: white;
+ border: 1px solid steelblue;
+ font-weight: bold;
+ font-size: 11px;
+ font-family:  Verdana, Arial, helvetica, sans-serif;
+ text-align:center;
+ top:180px;
+ left:150px;
+ width:232px;
+ height:144px;
+  
+}
+#attesaGestioneAtti_ATTI{
+ position:absolute;
+ background-color: white;
+ border: 1px solid steelblue;
+ font-weight: bold;
+ font-size: 11px;
+ font-family:  Verdana, Arial, helvetica, sans-serif;
+ text-align:center;
+ top:180px;
+ left:250px;
+ width:232px;
+ height:144px;
+  
+}
+#NessunaElaborazione_old{
+   border-right: #000 1px solid;
+  border-top: #000 1px solid;
+  font-weight: bold;
+  font-size: 12px;
+  left: 250px;
+  border-left: #000 1px solid;
+  width: 350px;
+  color: crimson;
+  border-bottom: #000 1px solid;
+  font-family: Verdana, Arial, helvetica, sans-serif;
+  position: absolute;
+  top: 150px;
+  height: 100px;
+  background-color: white;
+  text-align: center;
+  
+}
+#ElaborazioneTerminata_old{
+  border-right: #000 1px solid;
+  border-top: #000 1px solid;
+  font-weight: bold;
+  font-size: 12px;
+  left: 250px;
+  border-left: #000 1px solid;
+  width: 350px;
+  color: crimson;
+  border-bottom: #000 1px solid;
+  font-family: Verdana, Arial, helvetica, sans-serif;
+  position: absolute;
+  top: 150px;
+  height: 100px;
+  background-color: white;
+  text-align: center;
+  
+}
+#ElaborazioneErrore_OLD{
+  border-right: #000 1px solid;
+  border-top: #000 1px solid;
+  font-weight: bold;
+  font-size: 12px;
+  left: 250px;
+  border-left: #000 1px solid;
+  width: 350px;
+  color: crimson;
+  border-bottom: #000 1px solid;
+  font-family: Verdana, Arial, helvetica, sans-serif;
+  position: absolute;
+  top: 150px;
+  height: 100px;
+  background-color: white;
+  text-align: center;
+  
+}
+#ElaborazioneIncorso_OLD
+{
+  border-right: #000 1px solid;
+  border-top: #000 1px solid;
+  font-weight: bold;
+  font-size: 12px;
+  left: 250px;
+  border-left: #000 1px solid;
+  width: 350px;
+  color: crimson;
+  border-bottom: #000 1px solid;
+  font-family: Verdana, Arial, helvetica, sans-serif;
+  position: absolute;
+  top: 150px;
+  height: 100px;
+  background-color: white;
+  text-align: center;
+}
+#ElaborazioneIncorso_1
+{
+	
+	font-weight: bold;
+	font-size: 12px;
+	left: 250px;
+	width: 280px;
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	position: absolute;
+	top: 150px;
+	height: 150px;
+	background-color: #E8F8FF ;
+	text-align: center;
+	
+	
+}
+.lstTab
+{
+	border-right: #aec1ff 1px solid;
+	border-top: #aec0ff 1px solid;
+	border-left: #aec0ff 1px solid;
+	border-bottom: #aec0ff 1px solid;
+	/*background-color: #ffffff;*/
+}
+#btnRibaltaTesto{
+ font-weight: bold;
+background-color :#aec0ff;
+/* background-color :#FFDBC6;*/
+ border:0px solid #aaa;
+ width:80px;
+ height:20px;
+ font-size:10pt;
+ color:#000;
+ cursor:pointer;
+}
+
+.btnList{
+ font-weight: bold;
+ background-color :#aec0ff;
+ border:0px solid #aaa;
+ width:80px;
+ height:20px;
+ font-size:10pt;
+ color:#000;
+ cursor:pointer;
+}
+.btnList_botton{
+ font-weight: bold;
+ background-color :#aec0ff;
+ border:0px solid #aaa;
+ width:80px;
+ height:15px;
+ font-size:8pt;
+ color:#000;
+ cursor:pointer;
+}
+.tdt
+{
+	border-top: #aec0ff 1px solid;
+}
+.tdb
+{
+	border-bottom:1px solid #aec0ff
+}
+.tdl
+{
+	border-left:0px solid #000;
+
+}
+.tdr
+{
+	border-right:0px solid #000 
+}
+.Centrato
+{
+	text-align :center 
+}
+.AllineaSinistra
+{
+	text-align :left 
+}
+.BackGround
+{
+	background-color :#FFF 
+}
+
+.BackGround_E8F8FF
+{
+	background-color :#E8F8FF 
+}
+.BottoniAccertamenti
+{
+	font-weight: bold;
+	background-color :#aec0ff;
+	border:0px solid #aaa;
+	width:80px;
+	height:20px;
+	font-size:10pt;
+	color:#000;
+	cursor:pointer;
+}
+.BottoniAccertamentiOver
+{
+  font-weight: bold;
+	background-color :#aec0ff;
+  border:0px solid #aaa;
+  width:80px;
+  height:20px;
+  font-size:10pt;
+  color:#000;
+  cursor:pointer;
+}
+.hrlogin
+{
+	height: 1pt;
+	color:#fff; 
+	}
+	
+.wait
+{
+	font-family:Verdana ;
+	font-size:10pt;
+	font-weight :bold ;
+	background-color: #E8F8FF;
+
+}	
+.labellogOff
+{
+	left: 0px; 
+	position: absolute; 
+	top: 0px; 
+	height: 10px; 
+	color:#fff	;
+	text-align:left; 
+	font-weight: bold;
+	font-size: 7pt;
+	color: white;
+	font-family: Verdana;
+}
+.logOff
+{
+	color:#fff	;
+	font-weight: bold;
+	font-size: 7pt;
+	color: white;
+	font-family: Verdana;
+	cursor:pointer; 
+	text-decoration:none;
+}
+
+.barra
+{
+	font-family:Verdana, Arial ;
+	font-size:10px;
+	font-weight:bold;
+	color:red;  
+}
+
+.classeFiledSetRicerca
+{
+    BORDER-RIGHT: darkblue 1px solid;
+    BORDER-TOP: darkblue 1px solid;
+    BORDER-LEFT: darkblue 1px solid;
+    WIDTH: 98%;
+    BORDER-BOTTOM: darkblue 1px solid;
+}
+
+#attesaCarica
+{
+  position: absolute;
+  top: 250px;
+  left: 300px;
+  background-color: white;
+  border: 1px solid #ff0000;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: Verdana, Arial, helvetica, sans-serif;
+  text-align: center;
+  top: 140px;
+  left: 330px;
+  width: 310px;
+  height: 150px;
+}
+
+
+.tabella_attesa
+{
+    border-right: steelblue 1px solid;
+    border-top: steelblue 1px solid;
+    font-size: 12px;
+    border-left: steelblue 1px solid;
+    color: firebrick;
+    border-bottom: steelblue 1px solid;
+    font-family: Verdana;
+    letter-spacing: 1px;
+    background-color: white
+}
+
+.divContribh
+{
+ display:none; 
+}
+.divContribv
+{
+ position:absolute;
+ background-color: #E8F8FF;
+ border: 1px solid  #000;
+ top:150px;
+ left:150px;
+ width:500px;
+ height:350px;	
+}
+#divchiudi
+{
+	height:34px;	
+	width:100%;
+	text-align :right; 
+	color:#000;
+	background-color: #0079ff;
+	padding: 2px 10px 0 0;
+	border-bottom:1px solid #000;
+}
+#listaUtenti
+{
+	height:320px;
+	overflow:auto; 
+}
+#divchiudi a
+{
+	color:#000;
+	text-decoration:none; 
+}
+
+.Link_Label
+{
+	color: #00008b;
+	font-family: Verdana;
+	font-size: 11px;
+	text-decoration:underline;	
+	cursor: hand;
+}
+
+.downloadh{display:none}
+.downloadv{
+ position:absolute;
+ background-color: white;
+ border: 1px solid  steelblue;
+ font-weight: bold;
+ font-size: 12px;
+ font-family:  Verdana, Arial, helvetica, sans-serif;
+ text-align:center;
+ top:290px;
+ left:250px;
+ width:280px;
+ height:100px;
+    
+}

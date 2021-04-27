@@ -1,0 +1,1199 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENgovTOCO.DichiarazioneSession
+  commentId: T:OPENgovTOCO.DichiarazioneSession
+  id: DichiarazioneSession
+  parent: OPENgovTOCO
+  children:
+  - OPENgovTOCO.DichiarazioneSession.ApplAnagrafica
+  - OPENgovTOCO.DichiarazioneSession.CodTributo(System.String)
+  - OPENgovTOCO.DichiarazioneSession.CountScript
+  - OPENgovTOCO.DichiarazioneSession.DBType
+  - OPENgovTOCO.DichiarazioneSession.DescrizioneEnte
+  - OPENgovTOCO.DichiarazioneSession.HasDummyDich
+  - OPENgovTOCO.DichiarazioneSession.HasPlainAnag
+  - OPENgovTOCO.DichiarazioneSession.IdEnte
+  - OPENgovTOCO.DichiarazioneSession.MyDateMinValue
+  - OPENgovTOCO.DichiarazioneSession.nMaxDocPerFile
+  - OPENgovTOCO.DichiarazioneSession.PathImport
+  - OPENgovTOCO.DichiarazioneSession.PathStampe
+  - OPENgovTOCO.DichiarazioneSession.PathVirtualStampe
+  - OPENgovTOCO.DichiarazioneSession.SessionDichiarazioneTosapCosap
+  - OPENgovTOCO.DichiarazioneSession.sOperatore
+  - OPENgovTOCO.DichiarazioneSession.StileStradario
+  - OPENgovTOCO.DichiarazioneSession.StringConnection
+  - OPENgovTOCO.DichiarazioneSession.StringConnectionAnagrafica
+  - OPENgovTOCO.DichiarazioneSession.StringConnectionOPENgov
+  - OPENgovTOCO.DichiarazioneSession.UrlMotoreOSAP
+  - OPENgovTOCO.DichiarazioneSession.UrlServizioStampeICI
+  langs:
+  - csharp
+  - vb
+  name: DichiarazioneSession
+  nameWithType: DichiarazioneSession
+  fullName: OPENgovTOCO.DichiarazioneSession
+  type: Class
+  source:
+    id: DichiarazioneSession
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\DichiarazioneSession.cs
+    startLine: 20
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  summary: "\nClasse per la gestione delle variabili da sessione e da config\n"
+  example: []
+  syntax:
+    content: public class DichiarazioneSession
+    content.vb: Public Class DichiarazioneSession
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: OPENgovTOCO.DichiarazioneSession.CountScript
+  commentId: F:OPENgovTOCO.DichiarazioneSession.CountScript
+  id: CountScript
+  parent: OPENgovTOCO.DichiarazioneSession
+  langs:
+  - csharp
+  - vb
+  name: CountScript
+  nameWithType: DichiarazioneSession.CountScript
+  fullName: OPENgovTOCO.DichiarazioneSession.CountScript
+  type: Field
+  source:
+    id: CountScript
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\DichiarazioneSession.cs
+    startLine: 23
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static int CountScript
+    return:
+      type: System.Int32
+    content.vb: Public Shared CountScript As Integer
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.DichiarazioneSession.MyDateMinValue
+  commentId: P:OPENgovTOCO.DichiarazioneSession.MyDateMinValue
+  id: MyDateMinValue
+  parent: OPENgovTOCO.DichiarazioneSession
+  langs:
+  - csharp
+  - vb
+  name: MyDateMinValue
+  nameWithType: DichiarazioneSession.MyDateMinValue
+  fullName: OPENgovTOCO.DichiarazioneSession.MyDateMinValue
+  type: Property
+  source:
+    id: MyDateMinValue
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\DichiarazioneSession.cs
+    startLine: 41
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static DateTime MyDateMinValue { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Shared ReadOnly Property MyDateMinValue As Date
+  overload: OPENgovTOCO.DichiarazioneSession.MyDateMinValue*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: OPENgovTOCO.DichiarazioneSession.SessionDichiarazioneTosapCosap
+  commentId: P:OPENgovTOCO.DichiarazioneSession.SessionDichiarazioneTosapCosap
+  id: SessionDichiarazioneTosapCosap
+  parent: OPENgovTOCO.DichiarazioneSession
+  langs:
+  - csharp
+  - vb
+  name: SessionDichiarazioneTosapCosap
+  nameWithType: DichiarazioneSession.SessionDichiarazioneTosapCosap
+  fullName: OPENgovTOCO.DichiarazioneSession.SessionDichiarazioneTosapCosap
+  type: Property
+  source:
+    id: SessionDichiarazioneTosapCosap
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\DichiarazioneSession.cs
+    startLine: 51
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static DichiarazioneTosapCosap SessionDichiarazioneTosapCosap { get; set; }
+    parameters: []
+    return:
+      type: IRemInterfaceOSAP.DichiarazioneTosapCosap
+    content.vb: Public Shared Property SessionDichiarazioneTosapCosap As DichiarazioneTosapCosap
+  overload: OPENgovTOCO.DichiarazioneSession.SessionDichiarazioneTosapCosap*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.DichiarazioneSession.DBType
+  commentId: P:OPENgovTOCO.DichiarazioneSession.DBType
+  id: DBType
+  parent: OPENgovTOCO.DichiarazioneSession
+  langs:
+  - csharp
+  - vb
+  name: DBType
+  nameWithType: DichiarazioneSession.DBType
+  fullName: OPENgovTOCO.DichiarazioneSession.DBType
+  type: Property
+  source:
+    id: DBType
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\DichiarazioneSession.cs
+    startLine: 56
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string DBType { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DBType As String
+  overload: OPENgovTOCO.DichiarazioneSession.DBType*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: OPENgovTOCO.DichiarazioneSession.StringConnection
+  commentId: P:OPENgovTOCO.DichiarazioneSession.StringConnection
+  id: StringConnection
+  parent: OPENgovTOCO.DichiarazioneSession
+  langs:
+  - csharp
+  - vb
+  name: StringConnection
+  nameWithType: DichiarazioneSession.StringConnection
+  fullName: OPENgovTOCO.DichiarazioneSession.StringConnection
+  type: Property
+  source:
+    id: StringConnection
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\DichiarazioneSession.cs
+    startLine: 63
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string StringConnection { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property StringConnection As String
+  overload: OPENgovTOCO.DichiarazioneSession.StringConnection*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: OPENgovTOCO.DichiarazioneSession.StringConnectionAnagrafica
+  commentId: P:OPENgovTOCO.DichiarazioneSession.StringConnectionAnagrafica
+  id: StringConnectionAnagrafica
+  parent: OPENgovTOCO.DichiarazioneSession
+  langs:
+  - csharp
+  - vb
+  name: StringConnectionAnagrafica
+  nameWithType: DichiarazioneSession.StringConnectionAnagrafica
+  fullName: OPENgovTOCO.DichiarazioneSession.StringConnectionAnagrafica
+  type: Property
+  source:
+    id: StringConnectionAnagrafica
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\DichiarazioneSession.cs
+    startLine: 96
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string StringConnectionAnagrafica { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property StringConnectionAnagrafica As String
+  overload: OPENgovTOCO.DichiarazioneSession.StringConnectionAnagrafica*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: OPENgovTOCO.DichiarazioneSession.StringConnectionOPENgov
+  commentId: P:OPENgovTOCO.DichiarazioneSession.StringConnectionOPENgov
+  id: StringConnectionOPENgov
+  parent: OPENgovTOCO.DichiarazioneSession
+  langs:
+  - csharp
+  - vb
+  name: StringConnectionOPENgov
+  nameWithType: DichiarazioneSession.StringConnectionOPENgov
+  fullName: OPENgovTOCO.DichiarazioneSession.StringConnectionOPENgov
+  type: Property
+  source:
+    id: StringConnectionOPENgov
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\DichiarazioneSession.cs
+    startLine: 120
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string StringConnectionOPENgov { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property StringConnectionOPENgov As String
+  overload: OPENgovTOCO.DichiarazioneSession.StringConnectionOPENgov*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: OPENgovTOCO.DichiarazioneSession.IdEnte
+  commentId: P:OPENgovTOCO.DichiarazioneSession.IdEnte
+  id: IdEnte
+  parent: OPENgovTOCO.DichiarazioneSession
+  langs:
+  - csharp
+  - vb
+  name: IdEnte
+  nameWithType: DichiarazioneSession.IdEnte
+  fullName: OPENgovTOCO.DichiarazioneSession.IdEnte
+  type: Property
+  source:
+    id: IdEnte
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\DichiarazioneSession.cs
+    startLine: 144
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string IdEnte { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property IdEnte As String
+  overload: OPENgovTOCO.DichiarazioneSession.IdEnte*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: OPENgovTOCO.DichiarazioneSession.DescrizioneEnte
+  commentId: P:OPENgovTOCO.DichiarazioneSession.DescrizioneEnte
+  id: DescrizioneEnte
+  parent: OPENgovTOCO.DichiarazioneSession
+  langs:
+  - csharp
+  - vb
+  name: DescrizioneEnte
+  nameWithType: DichiarazioneSession.DescrizioneEnte
+  fullName: OPENgovTOCO.DichiarazioneSession.DescrizioneEnte
+  type: Property
+  source:
+    id: DescrizioneEnte
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\DichiarazioneSession.cs
+    startLine: 163
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string DescrizioneEnte { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DescrizioneEnte As String
+  overload: OPENgovTOCO.DichiarazioneSession.DescrizioneEnte*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: OPENgovTOCO.DichiarazioneSession.CodTributo(System.String)
+  commentId: M:OPENgovTOCO.DichiarazioneSession.CodTributo(System.String)
+  id: CodTributo(System.String)
+  parent: OPENgovTOCO.DichiarazioneSession
+  langs:
+  - csharp
+  - vb
+  name: CodTributo(String)
+  nameWithType: DichiarazioneSession.CodTributo(String)
+  fullName: OPENgovTOCO.DichiarazioneSession.CodTributo(System.String)
+  type: Method
+  source:
+    id: CodTributo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\DichiarazioneSession.cs
+    startLine: 183
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string CodTributo(string myTributo)
+    parameters:
+    - id: myTributo
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function CodTributo(myTributo As String) As String
+  overload: OPENgovTOCO.DichiarazioneSession.CodTributo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.DichiarazioneSession.StileStradario
+  commentId: P:OPENgovTOCO.DichiarazioneSession.StileStradario
+  id: StileStradario
+  parent: OPENgovTOCO.DichiarazioneSession
+  langs:
+  - csharp
+  - vb
+  name: StileStradario
+  nameWithType: DichiarazioneSession.StileStradario
+  fullName: OPENgovTOCO.DichiarazioneSession.StileStradario
+  type: Property
+  source:
+    id: StileStradario
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\DichiarazioneSession.cs
+    startLine: 199
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string StileStradario { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property StileStradario As String
+  overload: OPENgovTOCO.DichiarazioneSession.StileStradario*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: OPENgovTOCO.DichiarazioneSession.sOperatore
+  commentId: P:OPENgovTOCO.DichiarazioneSession.sOperatore
+  id: sOperatore
+  parent: OPENgovTOCO.DichiarazioneSession
+  langs:
+  - csharp
+  - vb
+  name: sOperatore
+  nameWithType: DichiarazioneSession.sOperatore
+  fullName: OPENgovTOCO.DichiarazioneSession.sOperatore
+  type: Property
+  source:
+    id: sOperatore
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\DichiarazioneSession.cs
+    startLine: 204
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string sOperatore { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property sOperatore As String
+  overload: OPENgovTOCO.DichiarazioneSession.sOperatore*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: OPENgovTOCO.DichiarazioneSession.ApplAnagrafica
+  commentId: P:OPENgovTOCO.DichiarazioneSession.ApplAnagrafica
+  id: ApplAnagrafica
+  parent: OPENgovTOCO.DichiarazioneSession
+  langs:
+  - csharp
+  - vb
+  name: ApplAnagrafica
+  nameWithType: DichiarazioneSession.ApplAnagrafica
+  fullName: OPENgovTOCO.DichiarazioneSession.ApplAnagrafica
+  type: Property
+  source:
+    id: ApplAnagrafica
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\DichiarazioneSession.cs
+    startLine: 223
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string ApplAnagrafica { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property ApplAnagrafica As String
+  overload: OPENgovTOCO.DichiarazioneSession.ApplAnagrafica*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: OPENgovTOCO.DichiarazioneSession.UrlServizioStampeICI
+  commentId: P:OPENgovTOCO.DichiarazioneSession.UrlServizioStampeICI
+  id: UrlServizioStampeICI
+  parent: OPENgovTOCO.DichiarazioneSession
+  langs:
+  - csharp
+  - vb
+  name: UrlServizioStampeICI
+  nameWithType: DichiarazioneSession.UrlServizioStampeICI
+  fullName: OPENgovTOCO.DichiarazioneSession.UrlServizioStampeICI
+  type: Property
+  source:
+    id: UrlServizioStampeICI
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\DichiarazioneSession.cs
+    startLine: 241
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string UrlServizioStampeICI { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property UrlServizioStampeICI As String
+  overload: OPENgovTOCO.DichiarazioneSession.UrlServizioStampeICI*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: OPENgovTOCO.DichiarazioneSession.UrlMotoreOSAP
+  commentId: P:OPENgovTOCO.DichiarazioneSession.UrlMotoreOSAP
+  id: UrlMotoreOSAP
+  parent: OPENgovTOCO.DichiarazioneSession
+  langs:
+  - csharp
+  - vb
+  name: UrlMotoreOSAP
+  nameWithType: DichiarazioneSession.UrlMotoreOSAP
+  fullName: OPENgovTOCO.DichiarazioneSession.UrlMotoreOSAP
+  type: Property
+  source:
+    id: UrlMotoreOSAP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\DichiarazioneSession.cs
+    startLine: 259
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string UrlMotoreOSAP { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property UrlMotoreOSAP As String
+  overload: OPENgovTOCO.DichiarazioneSession.UrlMotoreOSAP*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: OPENgovTOCO.DichiarazioneSession.PathImport
+  commentId: P:OPENgovTOCO.DichiarazioneSession.PathImport
+  id: PathImport
+  parent: OPENgovTOCO.DichiarazioneSession
+  langs:
+  - csharp
+  - vb
+  name: PathImport
+  nameWithType: DichiarazioneSession.PathImport
+  fullName: OPENgovTOCO.DichiarazioneSession.PathImport
+  type: Property
+  source:
+    id: PathImport
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\DichiarazioneSession.cs
+    startLine: 278
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string PathImport { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property PathImport As String
+  overload: OPENgovTOCO.DichiarazioneSession.PathImport*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: OPENgovTOCO.DichiarazioneSession.PathStampe
+  commentId: P:OPENgovTOCO.DichiarazioneSession.PathStampe
+  id: PathStampe
+  parent: OPENgovTOCO.DichiarazioneSession
+  langs:
+  - csharp
+  - vb
+  name: PathStampe
+  nameWithType: DichiarazioneSession.PathStampe
+  fullName: OPENgovTOCO.DichiarazioneSession.PathStampe
+  type: Property
+  source:
+    id: PathStampe
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\DichiarazioneSession.cs
+    startLine: 296
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string PathStampe { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property PathStampe As String
+  overload: OPENgovTOCO.DichiarazioneSession.PathStampe*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: OPENgovTOCO.DichiarazioneSession.PathVirtualStampe
+  commentId: P:OPENgovTOCO.DichiarazioneSession.PathVirtualStampe
+  id: PathVirtualStampe
+  parent: OPENgovTOCO.DichiarazioneSession
+  langs:
+  - csharp
+  - vb
+  name: PathVirtualStampe
+  nameWithType: DichiarazioneSession.PathVirtualStampe
+  fullName: OPENgovTOCO.DichiarazioneSession.PathVirtualStampe
+  type: Property
+  source:
+    id: PathVirtualStampe
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\DichiarazioneSession.cs
+    startLine: 315
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string PathVirtualStampe { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property PathVirtualStampe As String
+  overload: OPENgovTOCO.DichiarazioneSession.PathVirtualStampe*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: OPENgovTOCO.DichiarazioneSession.nMaxDocPerFile
+  commentId: P:OPENgovTOCO.DichiarazioneSession.nMaxDocPerFile
+  id: nMaxDocPerFile
+  parent: OPENgovTOCO.DichiarazioneSession
+  langs:
+  - csharp
+  - vb
+  name: nMaxDocPerFile
+  nameWithType: DichiarazioneSession.nMaxDocPerFile
+  fullName: OPENgovTOCO.DichiarazioneSession.nMaxDocPerFile
+  type: Property
+  source:
+    id: nMaxDocPerFile
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\DichiarazioneSession.cs
+    startLine: 334
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static int nMaxDocPerFile { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly Property nMaxDocPerFile As Integer
+  overload: OPENgovTOCO.DichiarazioneSession.nMaxDocPerFile*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: OPENgovTOCO.DichiarazioneSession.HasDummyDich
+  commentId: P:OPENgovTOCO.DichiarazioneSession.HasDummyDich
+  id: HasDummyDich
+  parent: OPENgovTOCO.DichiarazioneSession
+  langs:
+  - csharp
+  - vb
+  name: HasDummyDich
+  nameWithType: DichiarazioneSession.HasDummyDich
+  fullName: OPENgovTOCO.DichiarazioneSession.HasDummyDich
+  type: Property
+  source:
+    id: HasDummyDich
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\DichiarazioneSession.cs
+    startLine: 361
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  summary: "\nse sono a true vuol dire che ho:\n- la gestione delle dichiarazioni fittizie\n- i parametri di ricerca dichiarazioni completi\n- il calcolo della parte variabile solo se NCPV>0 anziché FLAG_FORZA_CALCOLO_PV\n"
+  remarks: ''
+  example: []
+  syntax:
+    content: public static bool HasDummyDich { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared ReadOnly Property HasDummyDich As Boolean
+  overload: OPENgovTOCO.DichiarazioneSession.HasDummyDich*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: OPENgovTOCO.DichiarazioneSession.HasPlainAnag
+  commentId: P:OPENgovTOCO.DichiarazioneSession.HasPlainAnag
+  id: HasPlainAnag
+  parent: OPENgovTOCO.DichiarazioneSession
+  langs:
+  - csharp
+  - vb
+  name: HasPlainAnag
+  nameWithType: DichiarazioneSession.HasPlainAnag
+  fullName: OPENgovTOCO.DichiarazioneSession.HasPlainAnag
+  type: Property
+  source:
+    id: HasPlainAnag
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\DichiarazioneSession.cs
+    startLine: 386
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  summary: "\nse sono a true vuol dire che ho un unico pannello di visualizzazione anagrafica incluso nelle varie pagine\n"
+  remarks: ''
+  example: []
+  syntax:
+    content: public static bool HasPlainAnag { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared ReadOnly Property HasPlainAnag As Boolean
+  overload: OPENgovTOCO.DichiarazioneSession.HasPlainAnag*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+references:
+- uid: OPENgovTOCO
+  commentId: N:OPENgovTOCO
+  name: OPENgovTOCO
+  nameWithType: OPENgovTOCO
+  fullName: OPENgovTOCO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: OPENgovTOCO.DichiarazioneSession.MyDateMinValue*
+  commentId: Overload:OPENgovTOCO.DichiarazioneSession.MyDateMinValue
+  name: MyDateMinValue
+  nameWithType: DichiarazioneSession.MyDateMinValue
+  fullName: OPENgovTOCO.DichiarazioneSession.MyDateMinValue
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: OPENgovTOCO.DichiarazioneSession.SessionDichiarazioneTosapCosap*
+  commentId: Overload:OPENgovTOCO.DichiarazioneSession.SessionDichiarazioneTosapCosap
+  name: SessionDichiarazioneTosapCosap
+  nameWithType: DichiarazioneSession.SessionDichiarazioneTosapCosap
+  fullName: OPENgovTOCO.DichiarazioneSession.SessionDichiarazioneTosapCosap
+- uid: IRemInterfaceOSAP.DichiarazioneTosapCosap
+  commentId: T:IRemInterfaceOSAP.DichiarazioneTosapCosap
+  parent: IRemInterfaceOSAP
+  isExternal: true
+  name: DichiarazioneTosapCosap
+  nameWithType: DichiarazioneTosapCosap
+  fullName: IRemInterfaceOSAP.DichiarazioneTosapCosap
+- uid: IRemInterfaceOSAP
+  commentId: N:IRemInterfaceOSAP
+  isExternal: true
+  name: IRemInterfaceOSAP
+  nameWithType: IRemInterfaceOSAP
+  fullName: IRemInterfaceOSAP
+- uid: OPENgovTOCO.DichiarazioneSession.DBType*
+  commentId: Overload:OPENgovTOCO.DichiarazioneSession.DBType
+  name: DBType
+  nameWithType: DichiarazioneSession.DBType
+  fullName: OPENgovTOCO.DichiarazioneSession.DBType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: OPENgovTOCO.DichiarazioneSession.StringConnection*
+  commentId: Overload:OPENgovTOCO.DichiarazioneSession.StringConnection
+  name: StringConnection
+  nameWithType: DichiarazioneSession.StringConnection
+  fullName: OPENgovTOCO.DichiarazioneSession.StringConnection
+- uid: OPENgovTOCO.DichiarazioneSession.StringConnectionAnagrafica*
+  commentId: Overload:OPENgovTOCO.DichiarazioneSession.StringConnectionAnagrafica
+  name: StringConnectionAnagrafica
+  nameWithType: DichiarazioneSession.StringConnectionAnagrafica
+  fullName: OPENgovTOCO.DichiarazioneSession.StringConnectionAnagrafica
+- uid: OPENgovTOCO.DichiarazioneSession.StringConnectionOPENgov*
+  commentId: Overload:OPENgovTOCO.DichiarazioneSession.StringConnectionOPENgov
+  name: StringConnectionOPENgov
+  nameWithType: DichiarazioneSession.StringConnectionOPENgov
+  fullName: OPENgovTOCO.DichiarazioneSession.StringConnectionOPENgov
+- uid: OPENgovTOCO.DichiarazioneSession.IdEnte*
+  commentId: Overload:OPENgovTOCO.DichiarazioneSession.IdEnte
+  name: IdEnte
+  nameWithType: DichiarazioneSession.IdEnte
+  fullName: OPENgovTOCO.DichiarazioneSession.IdEnte
+- uid: OPENgovTOCO.DichiarazioneSession.DescrizioneEnte*
+  commentId: Overload:OPENgovTOCO.DichiarazioneSession.DescrizioneEnte
+  name: DescrizioneEnte
+  nameWithType: DichiarazioneSession.DescrizioneEnte
+  fullName: OPENgovTOCO.DichiarazioneSession.DescrizioneEnte
+- uid: OPENgovTOCO.DichiarazioneSession.CodTributo*
+  commentId: Overload:OPENgovTOCO.DichiarazioneSession.CodTributo
+  name: CodTributo
+  nameWithType: DichiarazioneSession.CodTributo
+  fullName: OPENgovTOCO.DichiarazioneSession.CodTributo
+- uid: OPENgovTOCO.DichiarazioneSession.StileStradario*
+  commentId: Overload:OPENgovTOCO.DichiarazioneSession.StileStradario
+  name: StileStradario
+  nameWithType: DichiarazioneSession.StileStradario
+  fullName: OPENgovTOCO.DichiarazioneSession.StileStradario
+- uid: OPENgovTOCO.DichiarazioneSession.sOperatore*
+  commentId: Overload:OPENgovTOCO.DichiarazioneSession.sOperatore
+  name: sOperatore
+  nameWithType: DichiarazioneSession.sOperatore
+  fullName: OPENgovTOCO.DichiarazioneSession.sOperatore
+- uid: OPENgovTOCO.DichiarazioneSession.ApplAnagrafica*
+  commentId: Overload:OPENgovTOCO.DichiarazioneSession.ApplAnagrafica
+  name: ApplAnagrafica
+  nameWithType: DichiarazioneSession.ApplAnagrafica
+  fullName: OPENgovTOCO.DichiarazioneSession.ApplAnagrafica
+- uid: OPENgovTOCO.DichiarazioneSession.UrlServizioStampeICI*
+  commentId: Overload:OPENgovTOCO.DichiarazioneSession.UrlServizioStampeICI
+  name: UrlServizioStampeICI
+  nameWithType: DichiarazioneSession.UrlServizioStampeICI
+  fullName: OPENgovTOCO.DichiarazioneSession.UrlServizioStampeICI
+- uid: OPENgovTOCO.DichiarazioneSession.UrlMotoreOSAP*
+  commentId: Overload:OPENgovTOCO.DichiarazioneSession.UrlMotoreOSAP
+  name: UrlMotoreOSAP
+  nameWithType: DichiarazioneSession.UrlMotoreOSAP
+  fullName: OPENgovTOCO.DichiarazioneSession.UrlMotoreOSAP
+- uid: OPENgovTOCO.DichiarazioneSession.PathImport*
+  commentId: Overload:OPENgovTOCO.DichiarazioneSession.PathImport
+  name: PathImport
+  nameWithType: DichiarazioneSession.PathImport
+  fullName: OPENgovTOCO.DichiarazioneSession.PathImport
+- uid: OPENgovTOCO.DichiarazioneSession.PathStampe*
+  commentId: Overload:OPENgovTOCO.DichiarazioneSession.PathStampe
+  name: PathStampe
+  nameWithType: DichiarazioneSession.PathStampe
+  fullName: OPENgovTOCO.DichiarazioneSession.PathStampe
+- uid: OPENgovTOCO.DichiarazioneSession.PathVirtualStampe*
+  commentId: Overload:OPENgovTOCO.DichiarazioneSession.PathVirtualStampe
+  name: PathVirtualStampe
+  nameWithType: DichiarazioneSession.PathVirtualStampe
+  fullName: OPENgovTOCO.DichiarazioneSession.PathVirtualStampe
+- uid: OPENgovTOCO.DichiarazioneSession.nMaxDocPerFile*
+  commentId: Overload:OPENgovTOCO.DichiarazioneSession.nMaxDocPerFile
+  name: nMaxDocPerFile
+  nameWithType: DichiarazioneSession.nMaxDocPerFile
+  fullName: OPENgovTOCO.DichiarazioneSession.nMaxDocPerFile
+- uid: OPENgovTOCO.DichiarazioneSession.HasDummyDich*
+  commentId: Overload:OPENgovTOCO.DichiarazioneSession.HasDummyDich
+  name: HasDummyDich
+  nameWithType: DichiarazioneSession.HasDummyDich
+  fullName: OPENgovTOCO.DichiarazioneSession.HasDummyDich
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: OPENgovTOCO.DichiarazioneSession.HasPlainAnag*
+  commentId: Overload:OPENgovTOCO.DichiarazioneSession.HasPlainAnag
+  name: HasPlainAnag
+  nameWithType: DichiarazioneSession.HasPlainAnag
+  fullName: OPENgovTOCO.DichiarazioneSession.HasPlainAnag

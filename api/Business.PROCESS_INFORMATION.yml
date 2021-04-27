@@ -1,0 +1,439 @@
+### YamlMime:ManagedReference
+items:
+- uid: Business.PROCESS_INFORMATION
+  commentId: T:Business.PROCESS_INFORMATION
+  id: PROCESS_INFORMATION
+  parent: Business
+  children:
+  - Business.PROCESS_INFORMATION.dwProcessId
+  - Business.PROCESS_INFORMATION.dwThreadId
+  - Business.PROCESS_INFORMATION.hProcess
+  - Business.PROCESS_INFORMATION.hThread
+  langs:
+  - csharp
+  - vb
+  name: PROCESS_INFORMATION
+  nameWithType: PROCESS_INFORMATION
+  fullName: Business.PROCESS_INFORMATION
+  type: Struct
+  source:
+    id: PROCESS_INFORMATION
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 21
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public struct PROCESS_INFORMATION
+    content.vb: Public Structure PROCESS_INFORMATION
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Business.PROCESS_INFORMATION.hProcess
+  commentId: F:Business.PROCESS_INFORMATION.hProcess
+  id: hProcess
+  parent: Business.PROCESS_INFORMATION
+  langs:
+  - csharp
+  - vb
+  name: hProcess
+  nameWithType: PROCESS_INFORMATION.hProcess
+  fullName: Business.PROCESS_INFORMATION.hProcess
+  type: Field
+  source:
+    id: hProcess
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 24
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public IntPtr hProcess
+    return:
+      type: System.IntPtr
+    content.vb: Public hProcess As IntPtr
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.PROCESS_INFORMATION.hThread
+  commentId: F:Business.PROCESS_INFORMATION.hThread
+  id: hThread
+  parent: Business.PROCESS_INFORMATION
+  langs:
+  - csharp
+  - vb
+  name: hThread
+  nameWithType: PROCESS_INFORMATION.hThread
+  fullName: Business.PROCESS_INFORMATION.hThread
+  type: Field
+  source:
+    id: hThread
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 25
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public IntPtr hThread
+    return:
+      type: System.IntPtr
+    content.vb: Public hThread As IntPtr
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.PROCESS_INFORMATION.dwProcessId
+  commentId: F:Business.PROCESS_INFORMATION.dwProcessId
+  id: dwProcessId
+  parent: Business.PROCESS_INFORMATION
+  langs:
+  - csharp
+  - vb
+  name: dwProcessId
+  nameWithType: PROCESS_INFORMATION.dwProcessId
+  fullName: Business.PROCESS_INFORMATION.dwProcessId
+  type: Field
+  source:
+    id: dwProcessId
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 26
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public uint dwProcessId
+    return:
+      type: System.UInt32
+    content.vb: Public dwProcessId As UInteger
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.PROCESS_INFORMATION.dwThreadId
+  commentId: F:Business.PROCESS_INFORMATION.dwThreadId
+  id: dwThreadId
+  parent: Business.PROCESS_INFORMATION
+  langs:
+  - csharp
+  - vb
+  name: dwThreadId
+  nameWithType: PROCESS_INFORMATION.dwThreadId
+  fullName: Business.PROCESS_INFORMATION.dwThreadId
+  type: Field
+  source:
+    id: dwThreadId
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 27
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public uint dwThreadId
+    return:
+      type: System.UInt32
+    content.vb: Public dwThreadId As UInteger
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Business
+  commentId: N:Business
+  name: Business
+  nameWithType: Business
+  fullName: Business
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  name: IntPtr
+  nameWithType: IntPtr
+  fullName: System.IntPtr
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32

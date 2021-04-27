@@ -1,0 +1,60 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENGovTOCO.MotoreTOCO.dsContatti.CONTATTIRowChangeEventHandler
+  commentId: T:OPENGovTOCO.MotoreTOCO.dsContatti.CONTATTIRowChangeEventHandler
+  id: dsContatti.CONTATTIRowChangeEventHandler
+  parent: OPENGovTOCO.MotoreTOCO
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: dsContatti.CONTATTIRowChangeEventHandler
+  nameWithType: dsContatti.CONTATTIRowChangeEventHandler
+  fullName: OPENGovTOCO.MotoreTOCO.dsContatti.CONTATTIRowChangeEventHandler
+  type: Delegate
+  source:
+    id: CONTATTIRowChangeEventHandler
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2911
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  syntax:
+    content: public delegate void CONTATTIRowChangeEventHandler(object sender, dsContatti.CONTATTIRowChangeEvent e);
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: OPENGovTOCO.MotoreTOCO.dsContatti.CONTATTIRowChangeEvent
+    content.vb: Public Delegate Sub CONTATTIRowChangeEventHandler(sender As Object, e As dsContatti.CONTATTIRowChangeEvent)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: OPENGovTOCO.MotoreTOCO
+  commentId: N:OPENGovTOCO.MotoreTOCO
+  name: OPENGovTOCO.MotoreTOCO
+  nameWithType: OPENGovTOCO.MotoreTOCO
+  fullName: OPENGovTOCO.MotoreTOCO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: OPENGovTOCO.MotoreTOCO.dsContatti.CONTATTIRowChangeEvent
+  commentId: T:OPENGovTOCO.MotoreTOCO.dsContatti.CONTATTIRowChangeEvent
+  parent: OPENGovTOCO.MotoreTOCO
+  name: dsContatti.CONTATTIRowChangeEvent
+  nameWithType: dsContatti.CONTATTIRowChangeEvent
+  fullName: OPENGovTOCO.MotoreTOCO.dsContatti.CONTATTIRowChangeEvent
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

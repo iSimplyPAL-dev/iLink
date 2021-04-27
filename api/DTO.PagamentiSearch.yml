@@ -1,0 +1,865 @@
+### YamlMime:ManagedReference
+items:
+- uid: DTO.PagamentiSearch
+  commentId: T:DTO.PagamentiSearch
+  id: PagamentiSearch
+  parent: DTO
+  children:
+  - DTO.PagamentiSearch.#ctor
+  - DTO.PagamentiSearch._Tributo
+  - DTO.PagamentiSearch.AnnoRif
+  - DTO.PagamentiSearch.CF
+  - DTO.PagamentiSearch.Cognome
+  - DTO.PagamentiSearch.DataAccreditoAl
+  - DTO.PagamentiSearch.DataAccreditoDal
+  - DTO.PagamentiSearch.IdContribuente
+  - DTO.PagamentiSearch.IdEnte
+  - DTO.PagamentiSearch.IdTributo
+  - DTO.PagamentiSearch.NAvviso
+  - DTO.PagamentiSearch.Nome
+  - DTO.PagamentiSearch.PIVA
+  - DTO.PagamentiSearch.TipoStampa
+  langs:
+  - csharp
+  - vb
+  name: PagamentiSearch
+  nameWithType: PagamentiSearch
+  fullName: DTO.PagamentiSearch
+  type: Class
+  source:
+    id: PagamentiSearch
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\PagamentiSearch.cs
+    startLine: 7
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  summary: "\nDefininizione oggetto ricerca Pagamenti.\n"
+  example: []
+  syntax:
+    content: public class PagamentiSearch
+    content.vb: Public Class PagamentiSearch
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DTO.PagamentiSearch._Tributo
+  commentId: F:DTO.PagamentiSearch._Tributo
+  id: _Tributo
+  parent: DTO.PagamentiSearch
+  langs:
+  - csharp
+  - vb
+  name: _Tributo
+  nameWithType: PagamentiSearch._Tributo
+  fullName: DTO.PagamentiSearch._Tributo
+  type: Field
+  source:
+    id: _Tributo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\PagamentiSearch.cs
+    startLine: 21
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string _Tributo
+    return:
+      type: System.String
+    content.vb: Public _Tributo As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DTO.PagamentiSearch.IdTributo
+  commentId: P:DTO.PagamentiSearch.IdTributo
+  id: IdTributo
+  parent: DTO.PagamentiSearch
+  langs:
+  - csharp
+  - vb
+  name: IdTributo
+  nameWithType: PagamentiSearch.IdTributo
+  fullName: DTO.PagamentiSearch.IdTributo
+  type: Property
+  source:
+    id: IdTributo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\PagamentiSearch.cs
+    startLine: 22
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string IdTributo { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property IdTributo As String
+  overload: DTO.PagamentiSearch.IdTributo*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.PagamentiSearch.#ctor
+  commentId: M:DTO.PagamentiSearch.#ctor
+  id: '#ctor'
+  parent: DTO.PagamentiSearch
+  langs:
+  - csharp
+  - vb
+  name: PagamentiSearch()
+  nameWithType: PagamentiSearch.PagamentiSearch()
+  fullName: DTO.PagamentiSearch.PagamentiSearch()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\PagamentiSearch.cs
+    startLine: 27
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public PagamentiSearch()
+    content.vb: Public Sub New
+  overload: DTO.PagamentiSearch.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DTO.PagamentiSearch.IdEnte
+  commentId: P:DTO.PagamentiSearch.IdEnte
+  id: IdEnte
+  parent: DTO.PagamentiSearch
+  langs:
+  - csharp
+  - vb
+  name: IdEnte
+  nameWithType: PagamentiSearch.IdEnte
+  fullName: DTO.PagamentiSearch.IdEnte
+  type: Property
+  source:
+    id: IdEnte
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\PagamentiSearch.cs
+    startLine: 33
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string IdEnte { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property IdEnte As String
+  overload: DTO.PagamentiSearch.IdEnte*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.PagamentiSearch.Cognome
+  commentId: P:DTO.PagamentiSearch.Cognome
+  id: Cognome
+  parent: DTO.PagamentiSearch
+  langs:
+  - csharp
+  - vb
+  name: Cognome
+  nameWithType: PagamentiSearch.Cognome
+  fullName: DTO.PagamentiSearch.Cognome
+  type: Property
+  source:
+    id: Cognome
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\PagamentiSearch.cs
+    startLine: 38
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string Cognome { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Cognome As String
+  overload: DTO.PagamentiSearch.Cognome*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.PagamentiSearch.Nome
+  commentId: P:DTO.PagamentiSearch.Nome
+  id: Nome
+  parent: DTO.PagamentiSearch
+  langs:
+  - csharp
+  - vb
+  name: Nome
+  nameWithType: PagamentiSearch.Nome
+  fullName: DTO.PagamentiSearch.Nome
+  type: Property
+  source:
+    id: Nome
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\PagamentiSearch.cs
+    startLine: 43
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string Nome { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Nome As String
+  overload: DTO.PagamentiSearch.Nome*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.PagamentiSearch.CF
+  commentId: P:DTO.PagamentiSearch.CF
+  id: CF
+  parent: DTO.PagamentiSearch
+  langs:
+  - csharp
+  - vb
+  name: CF
+  nameWithType: PagamentiSearch.CF
+  fullName: DTO.PagamentiSearch.CF
+  type: Property
+  source:
+    id: CF
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\PagamentiSearch.cs
+    startLine: 48
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string CF { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CF As String
+  overload: DTO.PagamentiSearch.CF*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.PagamentiSearch.PIVA
+  commentId: P:DTO.PagamentiSearch.PIVA
+  id: PIVA
+  parent: DTO.PagamentiSearch
+  langs:
+  - csharp
+  - vb
+  name: PIVA
+  nameWithType: PagamentiSearch.PIVA
+  fullName: DTO.PagamentiSearch.PIVA
+  type: Property
+  source:
+    id: PIVA
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\PagamentiSearch.cs
+    startLine: 53
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string PIVA { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PIVA As String
+  overload: DTO.PagamentiSearch.PIVA*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.PagamentiSearch.AnnoRif
+  commentId: P:DTO.PagamentiSearch.AnnoRif
+  id: AnnoRif
+  parent: DTO.PagamentiSearch
+  langs:
+  - csharp
+  - vb
+  name: AnnoRif
+  nameWithType: PagamentiSearch.AnnoRif
+  fullName: DTO.PagamentiSearch.AnnoRif
+  type: Property
+  source:
+    id: AnnoRif
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\PagamentiSearch.cs
+    startLine: 58
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string AnnoRif { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AnnoRif As String
+  overload: DTO.PagamentiSearch.AnnoRif*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.PagamentiSearch.NAvviso
+  commentId: P:DTO.PagamentiSearch.NAvviso
+  id: NAvviso
+  parent: DTO.PagamentiSearch
+  langs:
+  - csharp
+  - vb
+  name: NAvviso
+  nameWithType: PagamentiSearch.NAvviso
+  fullName: DTO.PagamentiSearch.NAvviso
+  type: Property
+  source:
+    id: NAvviso
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\PagamentiSearch.cs
+    startLine: 63
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string NAvviso { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property NAvviso As String
+  overload: DTO.PagamentiSearch.NAvviso*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.PagamentiSearch.IdContribuente
+  commentId: P:DTO.PagamentiSearch.IdContribuente
+  id: IdContribuente
+  parent: DTO.PagamentiSearch
+  langs:
+  - csharp
+  - vb
+  name: IdContribuente
+  nameWithType: PagamentiSearch.IdContribuente
+  fullName: DTO.PagamentiSearch.IdContribuente
+  type: Property
+  source:
+    id: IdContribuente
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\PagamentiSearch.cs
+    startLine: 68
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public int IdContribuente { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IdContribuente As Integer
+  overload: DTO.PagamentiSearch.IdContribuente*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.PagamentiSearch.DataAccreditoDal
+  commentId: P:DTO.PagamentiSearch.DataAccreditoDal
+  id: DataAccreditoDal
+  parent: DTO.PagamentiSearch
+  langs:
+  - csharp
+  - vb
+  name: DataAccreditoDal
+  nameWithType: PagamentiSearch.DataAccreditoDal
+  fullName: DTO.PagamentiSearch.DataAccreditoDal
+  type: Property
+  source:
+    id: DataAccreditoDal
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\PagamentiSearch.cs
+    startLine: 73
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public DateTime DataAccreditoDal { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property DataAccreditoDal As Date
+  overload: DTO.PagamentiSearch.DataAccreditoDal*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.PagamentiSearch.DataAccreditoAl
+  commentId: P:DTO.PagamentiSearch.DataAccreditoAl
+  id: DataAccreditoAl
+  parent: DTO.PagamentiSearch
+  langs:
+  - csharp
+  - vb
+  name: DataAccreditoAl
+  nameWithType: PagamentiSearch.DataAccreditoAl
+  fullName: DTO.PagamentiSearch.DataAccreditoAl
+  type: Property
+  source:
+    id: DataAccreditoAl
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\PagamentiSearch.cs
+    startLine: 78
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public DateTime DataAccreditoAl { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property DataAccreditoAl As Date
+  overload: DTO.PagamentiSearch.DataAccreditoAl*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.PagamentiSearch.TipoStampa
+  commentId: P:DTO.PagamentiSearch.TipoStampa
+  id: TipoStampa
+  parent: DTO.PagamentiSearch
+  langs:
+  - csharp
+  - vb
+  name: TipoStampa
+  nameWithType: PagamentiSearch.TipoStampa
+  fullName: DTO.PagamentiSearch.TipoStampa
+  type: Property
+  source:
+    id: TipoStampa
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\PagamentiSearch.cs
+    startLine: 83
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public int TipoStampa { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TipoStampa As Integer
+  overload: DTO.PagamentiSearch.TipoStampa*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: DTO
+  commentId: N:DTO
+  name: DTO
+  nameWithType: DTO
+  fullName: DTO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DTO.PagamentiSearch.IdTributo*
+  commentId: Overload:DTO.PagamentiSearch.IdTributo
+  name: IdTributo
+  nameWithType: PagamentiSearch.IdTributo
+  fullName: DTO.PagamentiSearch.IdTributo
+- uid: DTO.PagamentiSearch.#ctor*
+  commentId: Overload:DTO.PagamentiSearch.#ctor
+  name: PagamentiSearch
+  nameWithType: PagamentiSearch.PagamentiSearch
+  fullName: DTO.PagamentiSearch.PagamentiSearch
+- uid: DTO.PagamentiSearch.IdEnte*
+  commentId: Overload:DTO.PagamentiSearch.IdEnte
+  name: IdEnte
+  nameWithType: PagamentiSearch.IdEnte
+  fullName: DTO.PagamentiSearch.IdEnte
+- uid: DTO.PagamentiSearch.Cognome*
+  commentId: Overload:DTO.PagamentiSearch.Cognome
+  name: Cognome
+  nameWithType: PagamentiSearch.Cognome
+  fullName: DTO.PagamentiSearch.Cognome
+- uid: DTO.PagamentiSearch.Nome*
+  commentId: Overload:DTO.PagamentiSearch.Nome
+  name: Nome
+  nameWithType: PagamentiSearch.Nome
+  fullName: DTO.PagamentiSearch.Nome
+- uid: DTO.PagamentiSearch.CF*
+  commentId: Overload:DTO.PagamentiSearch.CF
+  name: CF
+  nameWithType: PagamentiSearch.CF
+  fullName: DTO.PagamentiSearch.CF
+- uid: DTO.PagamentiSearch.PIVA*
+  commentId: Overload:DTO.PagamentiSearch.PIVA
+  name: PIVA
+  nameWithType: PagamentiSearch.PIVA
+  fullName: DTO.PagamentiSearch.PIVA
+- uid: DTO.PagamentiSearch.AnnoRif*
+  commentId: Overload:DTO.PagamentiSearch.AnnoRif
+  name: AnnoRif
+  nameWithType: PagamentiSearch.AnnoRif
+  fullName: DTO.PagamentiSearch.AnnoRif
+- uid: DTO.PagamentiSearch.NAvviso*
+  commentId: Overload:DTO.PagamentiSearch.NAvviso
+  name: NAvviso
+  nameWithType: PagamentiSearch.NAvviso
+  fullName: DTO.PagamentiSearch.NAvviso
+- uid: DTO.PagamentiSearch.IdContribuente*
+  commentId: Overload:DTO.PagamentiSearch.IdContribuente
+  name: IdContribuente
+  nameWithType: PagamentiSearch.IdContribuente
+  fullName: DTO.PagamentiSearch.IdContribuente
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DTO.PagamentiSearch.DataAccreditoDal*
+  commentId: Overload:DTO.PagamentiSearch.DataAccreditoDal
+  name: DataAccreditoDal
+  nameWithType: PagamentiSearch.DataAccreditoDal
+  fullName: DTO.PagamentiSearch.DataAccreditoDal
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: DTO.PagamentiSearch.DataAccreditoAl*
+  commentId: Overload:DTO.PagamentiSearch.DataAccreditoAl
+  name: DataAccreditoAl
+  nameWithType: PagamentiSearch.DataAccreditoAl
+  fullName: DTO.PagamentiSearch.DataAccreditoAl
+- uid: DTO.PagamentiSearch.TipoStampa*
+  commentId: Overload:DTO.PagamentiSearch.TipoStampa
+  name: TipoStampa
+  nameWithType: PagamentiSearch.TipoStampa
+  fullName: DTO.PagamentiSearch.TipoStampa

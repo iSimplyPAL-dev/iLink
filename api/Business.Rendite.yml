@@ -1,0 +1,218 @@
+### YamlMime:ManagedReference
+items:
+- uid: Business.Rendite
+  commentId: T:Business.Rendite
+  id: Rendite
+  parent: Business
+  children:
+  - Business.Rendite.AF
+  - Business.Rendite.LC
+  - Business.Rendite.RE
+  - Business.Rendite.RP
+  - Business.Rendite.RPM
+  - Business.Rendite.TA
+  langs:
+  - csharp
+  - vb
+  name: Rendite
+  nameWithType: Rendite
+  fullName: Business.Rendite
+  type: Enum
+  source:
+    id: Rendite
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 63
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nL&apos;enumarotor delle rendite.\n"
+  example: []
+  syntax:
+    content: public enum Rendite
+    content.vb: Public Enum Rendite
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Business.Rendite.RE
+  commentId: F:Business.Rendite.RE
+  id: RE
+  parent: Business.Rendite
+  langs:
+  - csharp
+  - vb
+  name: RE
+  nameWithType: Rendite.RE
+  fullName: Business.Rendite.RE
+  type: Field
+  source:
+    id: RE
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 63
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: RE = 1
+    return:
+      type: Business.Rendite
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.Rendite.RP
+  commentId: F:Business.Rendite.RP
+  id: RP
+  parent: Business.Rendite
+  langs:
+  - csharp
+  - vb
+  name: RP
+  nameWithType: Rendite.RP
+  fullName: Business.Rendite.RP
+  type: Field
+  source:
+    id: RP
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 63
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: RP = 2
+    return:
+      type: Business.Rendite
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.Rendite.RPM
+  commentId: F:Business.Rendite.RPM
+  id: RPM
+  parent: Business.Rendite
+  langs:
+  - csharp
+  - vb
+  name: RPM
+  nameWithType: Rendite.RPM
+  fullName: Business.Rendite.RPM
+  type: Field
+  source:
+    id: RPM
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 63
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: RPM = 3
+    return:
+      type: Business.Rendite
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.Rendite.LC
+  commentId: F:Business.Rendite.LC
+  id: LC
+  parent: Business.Rendite
+  langs:
+  - csharp
+  - vb
+  name: LC
+  nameWithType: Rendite.LC
+  fullName: Business.Rendite.LC
+  type: Field
+  source:
+    id: LC
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 63
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: LC = 4
+    return:
+      type: Business.Rendite
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.Rendite.AF
+  commentId: F:Business.Rendite.AF
+  id: AF
+  parent: Business.Rendite
+  langs:
+  - csharp
+  - vb
+  name: AF
+  nameWithType: Rendite.AF
+  fullName: Business.Rendite.AF
+  type: Field
+  source:
+    id: AF
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 63
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: AF = 5
+    return:
+      type: Business.Rendite
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.Rendite.TA
+  commentId: F:Business.Rendite.TA
+  id: TA
+  parent: Business.Rendite
+  langs:
+  - csharp
+  - vb
+  name: TA
+  nameWithType: Rendite.TA
+  fullName: Business.Rendite.TA
+  type: Field
+  source:
+    id: TA
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 63
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: TA = 6
+    return:
+      type: Business.Rendite
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Business
+  commentId: N:Business
+  name: Business
+  nameWithType: Business
+  fullName: Business
+- uid: Business.Rendite
+  commentId: T:Business.Rendite
+  parent: Business
+  name: Rendite
+  nameWithType: Rendite
+  fullName: Business.Rendite

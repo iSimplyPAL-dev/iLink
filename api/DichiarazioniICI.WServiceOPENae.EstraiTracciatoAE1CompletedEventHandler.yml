@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.WServiceOPENae.EstraiTracciatoAE1CompletedEventHandler
+  commentId: T:DichiarazioniICI.WServiceOPENae.EstraiTracciatoAE1CompletedEventHandler
+  id: EstraiTracciatoAE1CompletedEventHandler
+  parent: DichiarazioniICI.WServiceOPENae
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: EstraiTracciatoAE1CompletedEventHandler
+  nameWithType: EstraiTracciatoAE1CompletedEventHandler
+  fullName: DichiarazioniICI.WServiceOPENae.EstraiTracciatoAE1CompletedEventHandler
+  type: Delegate
+  source:
+    id: EstraiTracciatoAE1CompletedEventHandler
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1521
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public delegate void EstraiTracciatoAE1CompletedEventHandler(object sender, EstraiTracciatoAE1CompletedEventArgs e);
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: DichiarazioniICI.WServiceOPENae.EstraiTracciatoAE1CompletedEventArgs
+    content.vb: Public Delegate Sub EstraiTracciatoAE1CompletedEventHandler(sender As Object, e As EstraiTracciatoAE1CompletedEventArgs)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: DichiarazioniICI.WServiceOPENae
+  commentId: N:DichiarazioniICI.WServiceOPENae
+  name: DichiarazioniICI.WServiceOPENae
+  nameWithType: DichiarazioniICI.WServiceOPENae
+  fullName: DichiarazioniICI.WServiceOPENae
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DichiarazioniICI.WServiceOPENae.EstraiTracciatoAE1CompletedEventArgs
+  commentId: T:DichiarazioniICI.WServiceOPENae.EstraiTracciatoAE1CompletedEventArgs
+  parent: DichiarazioniICI.WServiceOPENae
+  name: EstraiTracciatoAE1CompletedEventArgs
+  nameWithType: EstraiTracciatoAE1CompletedEventArgs
+  fullName: DichiarazioniICI.WServiceOPENae.EstraiTracciatoAE1CompletedEventArgs
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

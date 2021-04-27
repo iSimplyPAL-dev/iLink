@@ -1,0 +1,1279 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENGovTOCO.MotoreTOCO.Articolo
+  commentId: T:OPENGovTOCO.MotoreTOCO.Articolo
+  id: Articolo
+  parent: OPENGovTOCO.MotoreTOCO
+  children:
+  - OPENGovTOCO.MotoreTOCO.Articolo.AgevolazioneTOCO
+  - OPENGovTOCO.MotoreTOCO.Articolo.Attrazione
+  - OPENGovTOCO.MotoreTOCO.Articolo.Categoria
+  - OPENGovTOCO.MotoreTOCO.Articolo.Civico
+  - OPENGovTOCO.MotoreTOCO.Articolo.CodVia
+  - OPENGovTOCO.MotoreTOCO.Articolo.Consistenza
+  - OPENGovTOCO.MotoreTOCO.Articolo.DataFineOccupazione
+  - OPENGovTOCO.MotoreTOCO.Articolo.DataInizioOccupazione
+  - OPENGovTOCO.MotoreTOCO.Articolo.DetrazioneImporto
+  - OPENGovTOCO.MotoreTOCO.Articolo.Dichiarazione
+  - OPENGovTOCO.MotoreTOCO.Articolo.DurataOccupazione
+  - OPENGovTOCO.MotoreTOCO.Articolo.Esponente
+  - OPENGovTOCO.MotoreTOCO.Articolo.IdArticolo
+  - OPENGovTOCO.MotoreTOCO.Articolo.Interno
+  - OPENGovTOCO.MotoreTOCO.Articolo.MaggiorazioneImporto
+  - OPENGovTOCO.MotoreTOCO.Articolo.MaggiorazionePerc
+  - OPENGovTOCO.MotoreTOCO.Articolo.Note
+  - OPENGovTOCO.MotoreTOCO.Articolo.Scala
+  - OPENGovTOCO.MotoreTOCO.Articolo.SVia
+  - OPENGovTOCO.MotoreTOCO.Articolo.TipoConsistenzaTOCO
+  - OPENGovTOCO.MotoreTOCO.Articolo.TipoDurata
+  - OPENGovTOCO.MotoreTOCO.Articolo.TipologiaOccupazione
+  langs:
+  - csharp
+  - vb
+  name: Articolo
+  nameWithType: Articolo
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo
+  type: Class
+  source:
+    id: Articolo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 149
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class Articolo
+    content.vb: >-
+      <Serializable>
+
+      Public Class Articolo
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.IdArticolo
+  commentId: P:OPENGovTOCO.MotoreTOCO.Articolo.IdArticolo
+  id: IdArticolo
+  parent: OPENGovTOCO.MotoreTOCO.Articolo
+  langs:
+  - csharp
+  - vb
+  name: IdArticolo
+  nameWithType: Articolo.IdArticolo
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.IdArticolo
+  type: Property
+  source:
+    id: IdArticolo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 201
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public int IdArticolo { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IdArticolo As Integer
+  overload: OPENGovTOCO.MotoreTOCO.Articolo.IdArticolo*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.Dichiarazione
+  commentId: P:OPENGovTOCO.MotoreTOCO.Articolo.Dichiarazione
+  id: Dichiarazione
+  parent: OPENGovTOCO.MotoreTOCO.Articolo
+  langs:
+  - csharp
+  - vb
+  name: Dichiarazione
+  nameWithType: Articolo.Dichiarazione
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.Dichiarazione
+  type: Property
+  source:
+    id: Dichiarazione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 211
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public DichiarazioneTosapCosap Dichiarazione { get; set; }
+    parameters: []
+    return:
+      type: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap
+    content.vb: Public Property Dichiarazione As DichiarazioneTosapCosap
+  overload: OPENGovTOCO.MotoreTOCO.Articolo.Dichiarazione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.SVia
+  commentId: P:OPENGovTOCO.MotoreTOCO.Articolo.SVia
+  id: SVia
+  parent: OPENGovTOCO.MotoreTOCO.Articolo
+  langs:
+  - csharp
+  - vb
+  name: SVia
+  nameWithType: Articolo.SVia
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.SVia
+  type: Property
+  source:
+    id: SVia
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 221
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string SVia { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SVia As String
+  overload: OPENGovTOCO.MotoreTOCO.Articolo.SVia*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.CodVia
+  commentId: P:OPENGovTOCO.MotoreTOCO.Articolo.CodVia
+  id: CodVia
+  parent: OPENGovTOCO.MotoreTOCO.Articolo
+  langs:
+  - csharp
+  - vb
+  name: CodVia
+  nameWithType: Articolo.CodVia
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.CodVia
+  type: Property
+  source:
+    id: CodVia
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 231
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public int CodVia { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property CodVia As Integer
+  overload: OPENGovTOCO.MotoreTOCO.Articolo.CodVia*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.Civico
+  commentId: P:OPENGovTOCO.MotoreTOCO.Articolo.Civico
+  id: Civico
+  parent: OPENGovTOCO.MotoreTOCO.Articolo
+  langs:
+  - csharp
+  - vb
+  name: Civico
+  nameWithType: Articolo.Civico
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.Civico
+  type: Property
+  source:
+    id: Civico
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 241
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public int Civico { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Civico As Integer
+  overload: OPENGovTOCO.MotoreTOCO.Articolo.Civico*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.Esponente
+  commentId: P:OPENGovTOCO.MotoreTOCO.Articolo.Esponente
+  id: Esponente
+  parent: OPENGovTOCO.MotoreTOCO.Articolo
+  langs:
+  - csharp
+  - vb
+  name: Esponente
+  nameWithType: Articolo.Esponente
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.Esponente
+  type: Property
+  source:
+    id: Esponente
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 251
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string Esponente { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Esponente As String
+  overload: OPENGovTOCO.MotoreTOCO.Articolo.Esponente*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.Interno
+  commentId: P:OPENGovTOCO.MotoreTOCO.Articolo.Interno
+  id: Interno
+  parent: OPENGovTOCO.MotoreTOCO.Articolo
+  langs:
+  - csharp
+  - vb
+  name: Interno
+  nameWithType: Articolo.Interno
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.Interno
+  type: Property
+  source:
+    id: Interno
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 261
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string Interno { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Interno As String
+  overload: OPENGovTOCO.MotoreTOCO.Articolo.Interno*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.Scala
+  commentId: P:OPENGovTOCO.MotoreTOCO.Articolo.Scala
+  id: Scala
+  parent: OPENGovTOCO.MotoreTOCO.Articolo
+  langs:
+  - csharp
+  - vb
+  name: Scala
+  nameWithType: Articolo.Scala
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.Scala
+  type: Property
+  source:
+    id: Scala
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 271
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string Scala { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Scala As String
+  overload: OPENGovTOCO.MotoreTOCO.Articolo.Scala*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.DataInizioOccupazione
+  commentId: P:OPENGovTOCO.MotoreTOCO.Articolo.DataInizioOccupazione
+  id: DataInizioOccupazione
+  parent: OPENGovTOCO.MotoreTOCO.Articolo
+  langs:
+  - csharp
+  - vb
+  name: DataInizioOccupazione
+  nameWithType: Articolo.DataInizioOccupazione
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.DataInizioOccupazione
+  type: Property
+  source:
+    id: DataInizioOccupazione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 281
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public DateTime DataInizioOccupazione { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property DataInizioOccupazione As Date
+  overload: OPENGovTOCO.MotoreTOCO.Articolo.DataInizioOccupazione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.DataFineOccupazione
+  commentId: P:OPENGovTOCO.MotoreTOCO.Articolo.DataFineOccupazione
+  id: DataFineOccupazione
+  parent: OPENGovTOCO.MotoreTOCO.Articolo
+  langs:
+  - csharp
+  - vb
+  name: DataFineOccupazione
+  nameWithType: Articolo.DataFineOccupazione
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.DataFineOccupazione
+  type: Property
+  source:
+    id: DataFineOccupazione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 291
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public DateTime DataFineOccupazione { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property DataFineOccupazione As Date
+  overload: OPENGovTOCO.MotoreTOCO.Articolo.DataFineOccupazione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.TipoDurata
+  commentId: P:OPENGovTOCO.MotoreTOCO.Articolo.TipoDurata
+  id: TipoDurata
+  parent: OPENGovTOCO.MotoreTOCO.Articolo
+  langs:
+  - csharp
+  - vb
+  name: TipoDurata
+  nameWithType: Articolo.TipoDurata
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.TipoDurata
+  type: Property
+  source:
+    id: TipoDurata
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 301
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public Durata TipoDurata { get; set; }
+    parameters: []
+    return:
+      type: OPENGovTOCO.MotoreTOCO.Durata
+    content.vb: Public Property TipoDurata As Durata
+  overload: OPENGovTOCO.MotoreTOCO.Articolo.TipoDurata*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.DurataOccupazione
+  commentId: P:OPENGovTOCO.MotoreTOCO.Articolo.DurataOccupazione
+  id: DurataOccupazione
+  parent: OPENGovTOCO.MotoreTOCO.Articolo
+  langs:
+  - csharp
+  - vb
+  name: DurataOccupazione
+  nameWithType: Articolo.DurataOccupazione
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.DurataOccupazione
+  type: Property
+  source:
+    id: DurataOccupazione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 311
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public int DurataOccupazione { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property DurataOccupazione As Integer
+  overload: OPENGovTOCO.MotoreTOCO.Articolo.DurataOccupazione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.Consistenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.Articolo.Consistenza
+  id: Consistenza
+  parent: OPENGovTOCO.MotoreTOCO.Articolo
+  langs:
+  - csharp
+  - vb
+  name: Consistenza
+  nameWithType: Articolo.Consistenza
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.Consistenza
+  type: Property
+  source:
+    id: Consistenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 321
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public double Consistenza { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Consistenza As Double
+  overload: OPENGovTOCO.MotoreTOCO.Articolo.Consistenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.TipoConsistenzaTOCO
+  commentId: P:OPENGovTOCO.MotoreTOCO.Articolo.TipoConsistenzaTOCO
+  id: TipoConsistenzaTOCO
+  parent: OPENGovTOCO.MotoreTOCO.Articolo
+  langs:
+  - csharp
+  - vb
+  name: TipoConsistenzaTOCO
+  nameWithType: Articolo.TipoConsistenzaTOCO
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.TipoConsistenzaTOCO
+  type: Property
+  source:
+    id: TipoConsistenzaTOCO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 331
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public TipoConsistenza TipoConsistenzaTOCO { get; set; }
+    parameters: []
+    return:
+      type: OPENGovTOCO.MotoreTOCO.TipoConsistenza
+    content.vb: Public Property TipoConsistenzaTOCO As TipoConsistenza
+  overload: OPENGovTOCO.MotoreTOCO.Articolo.TipoConsistenzaTOCO*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.Note
+  commentId: P:OPENGovTOCO.MotoreTOCO.Articolo.Note
+  id: Note
+  parent: OPENGovTOCO.MotoreTOCO.Articolo
+  langs:
+  - csharp
+  - vb
+  name: Note
+  nameWithType: Articolo.Note
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.Note
+  type: Property
+  source:
+    id: Note
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 341
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string Note { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Note As String
+  overload: OPENGovTOCO.MotoreTOCO.Articolo.Note*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.MaggiorazioneImporto
+  commentId: P:OPENGovTOCO.MotoreTOCO.Articolo.MaggiorazioneImporto
+  id: MaggiorazioneImporto
+  parent: OPENGovTOCO.MotoreTOCO.Articolo
+  langs:
+  - csharp
+  - vb
+  name: MaggiorazioneImporto
+  nameWithType: Articolo.MaggiorazioneImporto
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.MaggiorazioneImporto
+  type: Property
+  source:
+    id: MaggiorazioneImporto
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 351
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public double MaggiorazioneImporto { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property MaggiorazioneImporto As Double
+  overload: OPENGovTOCO.MotoreTOCO.Articolo.MaggiorazioneImporto*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.MaggiorazionePerc
+  commentId: P:OPENGovTOCO.MotoreTOCO.Articolo.MaggiorazionePerc
+  id: MaggiorazionePerc
+  parent: OPENGovTOCO.MotoreTOCO.Articolo
+  langs:
+  - csharp
+  - vb
+  name: MaggiorazionePerc
+  nameWithType: Articolo.MaggiorazionePerc
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.MaggiorazionePerc
+  type: Property
+  source:
+    id: MaggiorazionePerc
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 361
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public double MaggiorazionePerc { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property MaggiorazionePerc As Double
+  overload: OPENGovTOCO.MotoreTOCO.Articolo.MaggiorazionePerc*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.TipologiaOccupazione
+  commentId: P:OPENGovTOCO.MotoreTOCO.Articolo.TipologiaOccupazione
+  id: TipologiaOccupazione
+  parent: OPENGovTOCO.MotoreTOCO.Articolo
+  langs:
+  - csharp
+  - vb
+  name: TipologiaOccupazione
+  nameWithType: Articolo.TipologiaOccupazione
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.TipologiaOccupazione
+  type: Property
+  source:
+    id: TipologiaOccupazione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 371
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public TipologieOccupazioni TipologiaOccupazione { get; set; }
+    parameters: []
+    return:
+      type: OPENGovTOCO.MotoreTOCO.TipologieOccupazioni
+    content.vb: Public Property TipologiaOccupazione As TipologieOccupazioni
+  overload: OPENGovTOCO.MotoreTOCO.Articolo.TipologiaOccupazione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.Categoria
+  commentId: P:OPENGovTOCO.MotoreTOCO.Articolo.Categoria
+  id: Categoria
+  parent: OPENGovTOCO.MotoreTOCO.Articolo
+  langs:
+  - csharp
+  - vb
+  name: Categoria
+  nameWithType: Articolo.Categoria
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.Categoria
+  type: Property
+  source:
+    id: Categoria
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 381
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public Categorie Categoria { get; set; }
+    parameters: []
+    return:
+      type: OPENGovTOCO.MotoreTOCO.Categorie
+    content.vb: Public Property Categoria As Categorie
+  overload: OPENGovTOCO.MotoreTOCO.Articolo.Categoria*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.AgevolazioneTOCO
+  commentId: P:OPENGovTOCO.MotoreTOCO.Articolo.AgevolazioneTOCO
+  id: AgevolazioneTOCO
+  parent: OPENGovTOCO.MotoreTOCO.Articolo
+  langs:
+  - csharp
+  - vb
+  name: AgevolazioneTOCO
+  nameWithType: Articolo.AgevolazioneTOCO
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.AgevolazioneTOCO
+  type: Property
+  source:
+    id: AgevolazioneTOCO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 391
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public Agevolazione AgevolazioneTOCO { get; set; }
+    parameters: []
+    return:
+      type: OPENGovTOCO.MotoreTOCO.Agevolazione
+    content.vb: Public Property AgevolazioneTOCO As Agevolazione
+  overload: OPENGovTOCO.MotoreTOCO.Articolo.AgevolazioneTOCO*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.DetrazioneImporto
+  commentId: P:OPENGovTOCO.MotoreTOCO.Articolo.DetrazioneImporto
+  id: DetrazioneImporto
+  parent: OPENGovTOCO.MotoreTOCO.Articolo
+  langs:
+  - csharp
+  - vb
+  name: DetrazioneImporto
+  nameWithType: Articolo.DetrazioneImporto
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.DetrazioneImporto
+  type: Property
+  source:
+    id: DetrazioneImporto
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 401
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public double DetrazioneImporto { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property DetrazioneImporto As Double
+  overload: OPENGovTOCO.MotoreTOCO.Articolo.DetrazioneImporto*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.Attrazione
+  commentId: P:OPENGovTOCO.MotoreTOCO.Articolo.Attrazione
+  id: Attrazione
+  parent: OPENGovTOCO.MotoreTOCO.Articolo
+  langs:
+  - csharp
+  - vb
+  name: Attrazione
+  nameWithType: Articolo.Attrazione
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.Attrazione
+  type: Property
+  source:
+    id: Attrazione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 411
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public bool Attrazione { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Attrazione As Boolean
+  overload: OPENGovTOCO.MotoreTOCO.Articolo.Attrazione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: OPENGovTOCO.MotoreTOCO
+  commentId: N:OPENGovTOCO.MotoreTOCO
+  name: OPENGovTOCO.MotoreTOCO
+  nameWithType: OPENGovTOCO.MotoreTOCO
+  fullName: OPENGovTOCO.MotoreTOCO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.IdArticolo*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.Articolo.IdArticolo
+  name: IdArticolo
+  nameWithType: Articolo.IdArticolo
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.IdArticolo
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.Dichiarazione*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.Articolo.Dichiarazione
+  name: Dichiarazione
+  nameWithType: Articolo.Dichiarazione
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.Dichiarazione
+- uid: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap
+  commentId: T:OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap
+  parent: OPENGovTOCO.MotoreTOCO
+  name: DichiarazioneTosapCosap
+  nameWithType: DichiarazioneTosapCosap
+  fullName: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.SVia*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.Articolo.SVia
+  name: SVia
+  nameWithType: Articolo.SVia
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.SVia
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.CodVia*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.Articolo.CodVia
+  name: CodVia
+  nameWithType: Articolo.CodVia
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.CodVia
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.Civico*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.Articolo.Civico
+  name: Civico
+  nameWithType: Articolo.Civico
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.Civico
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.Esponente*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.Articolo.Esponente
+  name: Esponente
+  nameWithType: Articolo.Esponente
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.Esponente
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.Interno*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.Articolo.Interno
+  name: Interno
+  nameWithType: Articolo.Interno
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.Interno
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.Scala*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.Articolo.Scala
+  name: Scala
+  nameWithType: Articolo.Scala
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.Scala
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.DataInizioOccupazione*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.Articolo.DataInizioOccupazione
+  name: DataInizioOccupazione
+  nameWithType: Articolo.DataInizioOccupazione
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.DataInizioOccupazione
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.DataFineOccupazione*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.Articolo.DataFineOccupazione
+  name: DataFineOccupazione
+  nameWithType: Articolo.DataFineOccupazione
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.DataFineOccupazione
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.TipoDurata*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.Articolo.TipoDurata
+  name: TipoDurata
+  nameWithType: Articolo.TipoDurata
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.TipoDurata
+- uid: OPENGovTOCO.MotoreTOCO.Durata
+  commentId: T:OPENGovTOCO.MotoreTOCO.Durata
+  parent: OPENGovTOCO.MotoreTOCO
+  name: Durata
+  nameWithType: Durata
+  fullName: OPENGovTOCO.MotoreTOCO.Durata
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.DurataOccupazione*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.Articolo.DurataOccupazione
+  name: DurataOccupazione
+  nameWithType: Articolo.DurataOccupazione
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.DurataOccupazione
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.Consistenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.Articolo.Consistenza
+  name: Consistenza
+  nameWithType: Articolo.Consistenza
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.Consistenza
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.TipoConsistenzaTOCO*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.Articolo.TipoConsistenzaTOCO
+  name: TipoConsistenzaTOCO
+  nameWithType: Articolo.TipoConsistenzaTOCO
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.TipoConsistenzaTOCO
+- uid: OPENGovTOCO.MotoreTOCO.TipoConsistenza
+  commentId: T:OPENGovTOCO.MotoreTOCO.TipoConsistenza
+  parent: OPENGovTOCO.MotoreTOCO
+  name: TipoConsistenza
+  nameWithType: TipoConsistenza
+  fullName: OPENGovTOCO.MotoreTOCO.TipoConsistenza
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.Note*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.Articolo.Note
+  name: Note
+  nameWithType: Articolo.Note
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.Note
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.MaggiorazioneImporto*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.Articolo.MaggiorazioneImporto
+  name: MaggiorazioneImporto
+  nameWithType: Articolo.MaggiorazioneImporto
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.MaggiorazioneImporto
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.MaggiorazionePerc*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.Articolo.MaggiorazionePerc
+  name: MaggiorazionePerc
+  nameWithType: Articolo.MaggiorazionePerc
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.MaggiorazionePerc
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.TipologiaOccupazione*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.Articolo.TipologiaOccupazione
+  name: TipologiaOccupazione
+  nameWithType: Articolo.TipologiaOccupazione
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.TipologiaOccupazione
+- uid: OPENGovTOCO.MotoreTOCO.TipologieOccupazioni
+  commentId: T:OPENGovTOCO.MotoreTOCO.TipologieOccupazioni
+  parent: OPENGovTOCO.MotoreTOCO
+  name: TipologieOccupazioni
+  nameWithType: TipologieOccupazioni
+  fullName: OPENGovTOCO.MotoreTOCO.TipologieOccupazioni
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.Categoria*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.Articolo.Categoria
+  name: Categoria
+  nameWithType: Articolo.Categoria
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.Categoria
+- uid: OPENGovTOCO.MotoreTOCO.Categorie
+  commentId: T:OPENGovTOCO.MotoreTOCO.Categorie
+  parent: OPENGovTOCO.MotoreTOCO
+  name: Categorie
+  nameWithType: Categorie
+  fullName: OPENGovTOCO.MotoreTOCO.Categorie
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.AgevolazioneTOCO*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.Articolo.AgevolazioneTOCO
+  name: AgevolazioneTOCO
+  nameWithType: Articolo.AgevolazioneTOCO
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.AgevolazioneTOCO
+- uid: OPENGovTOCO.MotoreTOCO.Agevolazione
+  commentId: T:OPENGovTOCO.MotoreTOCO.Agevolazione
+  parent: OPENGovTOCO.MotoreTOCO
+  name: Agevolazione
+  nameWithType: Agevolazione
+  fullName: OPENGovTOCO.MotoreTOCO.Agevolazione
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.DetrazioneImporto*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.Articolo.DetrazioneImporto
+  name: DetrazioneImporto
+  nameWithType: Articolo.DetrazioneImporto
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.DetrazioneImporto
+- uid: OPENGovTOCO.MotoreTOCO.Articolo.Attrazione*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.Articolo.Attrazione
+  name: Attrazione
+  nameWithType: Articolo.Attrazione
+  fullName: OPENGovTOCO.MotoreTOCO.Articolo.Attrazione
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

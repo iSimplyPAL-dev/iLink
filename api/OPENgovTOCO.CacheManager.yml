@@ -1,0 +1,931 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENgovTOCO.CacheManager
+  commentId: T:OPENgovTOCO.CacheManager
+  id: CacheManager
+  parent: OPENgovTOCO
+  children:
+  - OPENgovTOCO.CacheManager.GetAvanzamentoElaborazione
+  - OPENgovTOCO.CacheManager.GetAvvisiCalcoloMassivo
+  - OPENgovTOCO.CacheManager.GetCalcoloMassivoInCorso
+  - OPENgovTOCO.CacheManager.GetImportInCorso
+  - OPENgovTOCO.CacheManager.GetRiepilogoCalcoloMassivo
+  - OPENgovTOCO.CacheManager.RemoveAvanzamentoElaborazione
+  - OPENgovTOCO.CacheManager.RemoveAvvisiCalcoloMassivo
+  - OPENgovTOCO.CacheManager.RemoveCalcoloMassivoInCorso
+  - OPENgovTOCO.CacheManager.RemoveImportInCorso
+  - OPENgovTOCO.CacheManager.RemoveRiepilogoCalcoloMassivo
+  - OPENgovTOCO.CacheManager.SetAvanzamentoElaborazione(System.String)
+  - OPENgovTOCO.CacheManager.SetAvvisiCalcoloMassivo(IRemInterfaceOSAP.Cartella[])
+  - OPENgovTOCO.CacheManager.SetCalcoloMassivoInCorso(System.Int32)
+  - OPENgovTOCO.CacheManager.SetImportInCorso(System.String)
+  - OPENgovTOCO.CacheManager.SetRiepilogoCalcoloMassivo(IRemInterfaceOSAP.ElaborazioneEffettuata)
+  langs:
+  - csharp
+  - vb
+  name: CacheManager
+  nameWithType: CacheManager
+  fullName: OPENgovTOCO.CacheManager
+  type: Class
+  source:
+    id: CacheManager
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CacheManager.cs
+    startLine: 10
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  summary: "\nClasse per la gestione cache dell&apos;elaborazione asincrona\n"
+  example: []
+  syntax:
+    content: public class CacheManager
+    content.vb: Public Class CacheManager
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: OPENgovTOCO.CacheManager.GetCalcoloMassivoInCorso
+  commentId: M:OPENgovTOCO.CacheManager.GetCalcoloMassivoInCorso
+  id: GetCalcoloMassivoInCorso
+  parent: OPENgovTOCO.CacheManager
+  langs:
+  - csharp
+  - vb
+  name: GetCalcoloMassivoInCorso()
+  nameWithType: CacheManager.GetCalcoloMassivoInCorso()
+  fullName: OPENgovTOCO.CacheManager.GetCalcoloMassivoInCorso()
+  type: Method
+  source:
+    id: GetCalcoloMassivoInCorso
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CacheManager.cs
+    startLine: 21
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static int GetCalcoloMassivoInCorso()
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function GetCalcoloMassivoInCorso As Integer
+  overload: OPENgovTOCO.CacheManager.GetCalcoloMassivoInCorso*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.CacheManager.SetCalcoloMassivoInCorso(System.Int32)
+  commentId: M:OPENgovTOCO.CacheManager.SetCalcoloMassivoInCorso(System.Int32)
+  id: SetCalcoloMassivoInCorso(System.Int32)
+  parent: OPENgovTOCO.CacheManager
+  langs:
+  - csharp
+  - vb
+  name: SetCalcoloMassivoInCorso(Int32)
+  nameWithType: CacheManager.SetCalcoloMassivoInCorso(Int32)
+  fullName: OPENgovTOCO.CacheManager.SetCalcoloMassivoInCorso(System.Int32)
+  type: Method
+  source:
+    id: SetCalcoloMassivoInCorso
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CacheManager.cs
+    startLine: 36
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static void SetCalcoloMassivoInCorso(int Anno)
+    parameters:
+    - id: Anno
+      type: System.Int32
+    content.vb: Public Shared Sub SetCalcoloMassivoInCorso(Anno As Integer)
+  overload: OPENgovTOCO.CacheManager.SetCalcoloMassivoInCorso*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.CacheManager.RemoveCalcoloMassivoInCorso
+  commentId: M:OPENgovTOCO.CacheManager.RemoveCalcoloMassivoInCorso
+  id: RemoveCalcoloMassivoInCorso
+  parent: OPENgovTOCO.CacheManager
+  langs:
+  - csharp
+  - vb
+  name: RemoveCalcoloMassivoInCorso()
+  nameWithType: CacheManager.RemoveCalcoloMassivoInCorso()
+  fullName: OPENgovTOCO.CacheManager.RemoveCalcoloMassivoInCorso()
+  type: Method
+  source:
+    id: RemoveCalcoloMassivoInCorso
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CacheManager.cs
+    startLine: 50
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static void RemoveCalcoloMassivoInCorso()
+    content.vb: Public Shared Sub RemoveCalcoloMassivoInCorso
+  overload: OPENgovTOCO.CacheManager.RemoveCalcoloMassivoInCorso*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.CacheManager.GetRiepilogoCalcoloMassivo
+  commentId: M:OPENgovTOCO.CacheManager.GetRiepilogoCalcoloMassivo
+  id: GetRiepilogoCalcoloMassivo
+  parent: OPENgovTOCO.CacheManager
+  langs:
+  - csharp
+  - vb
+  name: GetRiepilogoCalcoloMassivo()
+  nameWithType: CacheManager.GetRiepilogoCalcoloMassivo()
+  fullName: OPENgovTOCO.CacheManager.GetRiepilogoCalcoloMassivo()
+  type: Method
+  source:
+    id: GetRiepilogoCalcoloMassivo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CacheManager.cs
+    startLine: 56
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static ElaborazioneEffettuata GetRiepilogoCalcoloMassivo()
+    return:
+      type: IRemInterfaceOSAP.ElaborazioneEffettuata
+    content.vb: Public Shared Function GetRiepilogoCalcoloMassivo As ElaborazioneEffettuata
+  overload: OPENgovTOCO.CacheManager.GetRiepilogoCalcoloMassivo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.CacheManager.SetRiepilogoCalcoloMassivo(IRemInterfaceOSAP.ElaborazioneEffettuata)
+  commentId: M:OPENgovTOCO.CacheManager.SetRiepilogoCalcoloMassivo(IRemInterfaceOSAP.ElaborazioneEffettuata)
+  id: SetRiepilogoCalcoloMassivo(IRemInterfaceOSAP.ElaborazioneEffettuata)
+  parent: OPENgovTOCO.CacheManager
+  langs:
+  - csharp
+  - vb
+  name: SetRiepilogoCalcoloMassivo(ElaborazioneEffettuata)
+  nameWithType: CacheManager.SetRiepilogoCalcoloMassivo(ElaborazioneEffettuata)
+  fullName: OPENgovTOCO.CacheManager.SetRiepilogoCalcoloMassivo(IRemInterfaceOSAP.ElaborazioneEffettuata)
+  type: Method
+  source:
+    id: SetRiepilogoCalcoloMassivo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CacheManager.cs
+    startLine: 66
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static void SetRiepilogoCalcoloMassivo(ElaborazioneEffettuata myRuolo)
+    parameters:
+    - id: myRuolo
+      type: IRemInterfaceOSAP.ElaborazioneEffettuata
+    content.vb: Public Shared Sub SetRiepilogoCalcoloMassivo(myRuolo As ElaborazioneEffettuata)
+  overload: OPENgovTOCO.CacheManager.SetRiepilogoCalcoloMassivo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.CacheManager.RemoveRiepilogoCalcoloMassivo
+  commentId: M:OPENgovTOCO.CacheManager.RemoveRiepilogoCalcoloMassivo
+  id: RemoveRiepilogoCalcoloMassivo
+  parent: OPENgovTOCO.CacheManager
+  langs:
+  - csharp
+  - vb
+  name: RemoveRiepilogoCalcoloMassivo()
+  nameWithType: CacheManager.RemoveRiepilogoCalcoloMassivo()
+  fullName: OPENgovTOCO.CacheManager.RemoveRiepilogoCalcoloMassivo()
+  type: Method
+  source:
+    id: RemoveRiepilogoCalcoloMassivo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CacheManager.cs
+    startLine: 70
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static void RemoveRiepilogoCalcoloMassivo()
+    content.vb: Public Shared Sub RemoveRiepilogoCalcoloMassivo
+  overload: OPENgovTOCO.CacheManager.RemoveRiepilogoCalcoloMassivo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.CacheManager.GetAvvisiCalcoloMassivo
+  commentId: M:OPENgovTOCO.CacheManager.GetAvvisiCalcoloMassivo
+  id: GetAvvisiCalcoloMassivo
+  parent: OPENgovTOCO.CacheManager
+  langs:
+  - csharp
+  - vb
+  name: GetAvvisiCalcoloMassivo()
+  nameWithType: CacheManager.GetAvvisiCalcoloMassivo()
+  fullName: OPENgovTOCO.CacheManager.GetAvvisiCalcoloMassivo()
+  type: Method
+  source:
+    id: GetAvvisiCalcoloMassivo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CacheManager.cs
+    startLine: 75
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static Cartella[] GetAvvisiCalcoloMassivo()
+    return:
+      type: IRemInterfaceOSAP.Cartella[]
+    content.vb: Public Shared Function GetAvvisiCalcoloMassivo As Cartella()
+  overload: OPENgovTOCO.CacheManager.GetAvvisiCalcoloMassivo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.CacheManager.SetAvvisiCalcoloMassivo(IRemInterfaceOSAP.Cartella[])
+  commentId: M:OPENgovTOCO.CacheManager.SetAvvisiCalcoloMassivo(IRemInterfaceOSAP.Cartella[])
+  id: SetAvvisiCalcoloMassivo(IRemInterfaceOSAP.Cartella[])
+  parent: OPENgovTOCO.CacheManager
+  langs:
+  - csharp
+  - vb
+  name: SetAvvisiCalcoloMassivo(Cartella[])
+  nameWithType: CacheManager.SetAvvisiCalcoloMassivo(Cartella[])
+  fullName: OPENgovTOCO.CacheManager.SetAvvisiCalcoloMassivo(IRemInterfaceOSAP.Cartella[])
+  type: Method
+  source:
+    id: SetAvvisiCalcoloMassivo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CacheManager.cs
+    startLine: 85
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static void SetAvvisiCalcoloMassivo(Cartella[] myRuolo)
+    parameters:
+    - id: myRuolo
+      type: IRemInterfaceOSAP.Cartella[]
+    content.vb: Public Shared Sub SetAvvisiCalcoloMassivo(myRuolo As Cartella())
+  overload: OPENgovTOCO.CacheManager.SetAvvisiCalcoloMassivo*
+  nameWithType.vb: CacheManager.SetAvvisiCalcoloMassivo(Cartella())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: OPENgovTOCO.CacheManager.SetAvvisiCalcoloMassivo(IRemInterfaceOSAP.Cartella())
+  name.vb: SetAvvisiCalcoloMassivo(Cartella())
+- uid: OPENgovTOCO.CacheManager.RemoveAvvisiCalcoloMassivo
+  commentId: M:OPENgovTOCO.CacheManager.RemoveAvvisiCalcoloMassivo
+  id: RemoveAvvisiCalcoloMassivo
+  parent: OPENgovTOCO.CacheManager
+  langs:
+  - csharp
+  - vb
+  name: RemoveAvvisiCalcoloMassivo()
+  nameWithType: CacheManager.RemoveAvvisiCalcoloMassivo()
+  fullName: OPENgovTOCO.CacheManager.RemoveAvvisiCalcoloMassivo()
+  type: Method
+  source:
+    id: RemoveAvvisiCalcoloMassivo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CacheManager.cs
+    startLine: 89
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static void RemoveAvvisiCalcoloMassivo()
+    content.vb: Public Shared Sub RemoveAvvisiCalcoloMassivo
+  overload: OPENgovTOCO.CacheManager.RemoveAvvisiCalcoloMassivo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.CacheManager.GetAvanzamentoElaborazione
+  commentId: M:OPENgovTOCO.CacheManager.GetAvanzamentoElaborazione
+  id: GetAvanzamentoElaborazione
+  parent: OPENgovTOCO.CacheManager
+  langs:
+  - csharp
+  - vb
+  name: GetAvanzamentoElaborazione()
+  nameWithType: CacheManager.GetAvanzamentoElaborazione()
+  fullName: OPENgovTOCO.CacheManager.GetAvanzamentoElaborazione()
+  type: Method
+  source:
+    id: GetAvanzamentoElaborazione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CacheManager.cs
+    startLine: 97
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string GetAvanzamentoElaborazione()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetAvanzamentoElaborazione As String
+  overload: OPENgovTOCO.CacheManager.GetAvanzamentoElaborazione*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.CacheManager.SetAvanzamentoElaborazione(System.String)
+  commentId: M:OPENgovTOCO.CacheManager.SetAvanzamentoElaborazione(System.String)
+  id: SetAvanzamentoElaborazione(System.String)
+  parent: OPENgovTOCO.CacheManager
+  langs:
+  - csharp
+  - vb
+  name: SetAvanzamentoElaborazione(String)
+  nameWithType: CacheManager.SetAvanzamentoElaborazione(String)
+  fullName: OPENgovTOCO.CacheManager.SetAvanzamentoElaborazione(System.String)
+  type: Method
+  source:
+    id: SetAvanzamentoElaborazione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CacheManager.cs
+    startLine: 112
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static void SetAvanzamentoElaborazione(string sMyDati)
+    parameters:
+    - id: sMyDati
+      type: System.String
+    content.vb: Public Shared Sub SetAvanzamentoElaborazione(sMyDati As String)
+  overload: OPENgovTOCO.CacheManager.SetAvanzamentoElaborazione*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.CacheManager.RemoveAvanzamentoElaborazione
+  commentId: M:OPENgovTOCO.CacheManager.RemoveAvanzamentoElaborazione
+  id: RemoveAvanzamentoElaborazione
+  parent: OPENgovTOCO.CacheManager
+  langs:
+  - csharp
+  - vb
+  name: RemoveAvanzamentoElaborazione()
+  nameWithType: CacheManager.RemoveAvanzamentoElaborazione()
+  fullName: OPENgovTOCO.CacheManager.RemoveAvanzamentoElaborazione()
+  type: Method
+  source:
+    id: RemoveAvanzamentoElaborazione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CacheManager.cs
+    startLine: 124
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static void RemoveAvanzamentoElaborazione()
+    content.vb: Public Shared Sub RemoveAvanzamentoElaborazione
+  overload: OPENgovTOCO.CacheManager.RemoveAvanzamentoElaborazione*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.CacheManager.GetImportInCorso
+  commentId: M:OPENgovTOCO.CacheManager.GetImportInCorso
+  id: GetImportInCorso
+  parent: OPENgovTOCO.CacheManager
+  langs:
+  - csharp
+  - vb
+  name: GetImportInCorso()
+  nameWithType: CacheManager.GetImportInCorso()
+  fullName: OPENgovTOCO.CacheManager.GetImportInCorso()
+  type: Method
+  source:
+    id: GetImportInCorso
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CacheManager.cs
+    startLine: 132
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static string GetImportInCorso()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetImportInCorso As String
+  overload: OPENgovTOCO.CacheManager.GetImportInCorso*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.CacheManager.SetImportInCorso(System.String)
+  commentId: M:OPENgovTOCO.CacheManager.SetImportInCorso(System.String)
+  id: SetImportInCorso(System.String)
+  parent: OPENgovTOCO.CacheManager
+  langs:
+  - csharp
+  - vb
+  name: SetImportInCorso(String)
+  nameWithType: CacheManager.SetImportInCorso(String)
+  fullName: OPENgovTOCO.CacheManager.SetImportInCorso(System.String)
+  type: Method
+  source:
+    id: SetImportInCorso
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CacheManager.cs
+    startLine: 148
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static void SetImportInCorso(string myNomeFile)
+    parameters:
+    - id: myNomeFile
+      type: System.String
+    content.vb: Public Shared Sub SetImportInCorso(myNomeFile As String)
+  overload: OPENgovTOCO.CacheManager.SetImportInCorso*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OPENgovTOCO.CacheManager.RemoveImportInCorso
+  commentId: M:OPENgovTOCO.CacheManager.RemoveImportInCorso
+  id: RemoveImportInCorso
+  parent: OPENgovTOCO.CacheManager
+  langs:
+  - csharp
+  - vb
+  name: RemoveImportInCorso()
+  nameWithType: CacheManager.RemoveImportInCorso()
+  fullName: OPENgovTOCO.CacheManager.RemoveImportInCorso()
+  type: Method
+  source:
+    id: RemoveImportInCorso
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CacheManager.cs
+    startLine: 162
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public static void RemoveImportInCorso()
+    content.vb: Public Shared Sub RemoveImportInCorso
+  overload: OPENgovTOCO.CacheManager.RemoveImportInCorso*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: OPENgovTOCO
+  commentId: N:OPENgovTOCO
+  name: OPENgovTOCO
+  nameWithType: OPENgovTOCO
+  fullName: OPENgovTOCO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OPENgovTOCO.CacheManager.GetCalcoloMassivoInCorso*
+  commentId: Overload:OPENgovTOCO.CacheManager.GetCalcoloMassivoInCorso
+  name: GetCalcoloMassivoInCorso
+  nameWithType: CacheManager.GetCalcoloMassivoInCorso
+  fullName: OPENgovTOCO.CacheManager.GetCalcoloMassivoInCorso
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: OPENgovTOCO.CacheManager.SetCalcoloMassivoInCorso*
+  commentId: Overload:OPENgovTOCO.CacheManager.SetCalcoloMassivoInCorso
+  name: SetCalcoloMassivoInCorso
+  nameWithType: CacheManager.SetCalcoloMassivoInCorso
+  fullName: OPENgovTOCO.CacheManager.SetCalcoloMassivoInCorso
+- uid: OPENgovTOCO.CacheManager.RemoveCalcoloMassivoInCorso*
+  commentId: Overload:OPENgovTOCO.CacheManager.RemoveCalcoloMassivoInCorso
+  name: RemoveCalcoloMassivoInCorso
+  nameWithType: CacheManager.RemoveCalcoloMassivoInCorso
+  fullName: OPENgovTOCO.CacheManager.RemoveCalcoloMassivoInCorso
+- uid: OPENgovTOCO.CacheManager.GetRiepilogoCalcoloMassivo*
+  commentId: Overload:OPENgovTOCO.CacheManager.GetRiepilogoCalcoloMassivo
+  name: GetRiepilogoCalcoloMassivo
+  nameWithType: CacheManager.GetRiepilogoCalcoloMassivo
+  fullName: OPENgovTOCO.CacheManager.GetRiepilogoCalcoloMassivo
+- uid: IRemInterfaceOSAP.ElaborazioneEffettuata
+  commentId: T:IRemInterfaceOSAP.ElaborazioneEffettuata
+  parent: IRemInterfaceOSAP
+  isExternal: true
+  name: ElaborazioneEffettuata
+  nameWithType: ElaborazioneEffettuata
+  fullName: IRemInterfaceOSAP.ElaborazioneEffettuata
+- uid: IRemInterfaceOSAP
+  commentId: N:IRemInterfaceOSAP
+  isExternal: true
+  name: IRemInterfaceOSAP
+  nameWithType: IRemInterfaceOSAP
+  fullName: IRemInterfaceOSAP
+- uid: OPENgovTOCO.CacheManager.SetRiepilogoCalcoloMassivo*
+  commentId: Overload:OPENgovTOCO.CacheManager.SetRiepilogoCalcoloMassivo
+  name: SetRiepilogoCalcoloMassivo
+  nameWithType: CacheManager.SetRiepilogoCalcoloMassivo
+  fullName: OPENgovTOCO.CacheManager.SetRiepilogoCalcoloMassivo
+- uid: OPENgovTOCO.CacheManager.RemoveRiepilogoCalcoloMassivo*
+  commentId: Overload:OPENgovTOCO.CacheManager.RemoveRiepilogoCalcoloMassivo
+  name: RemoveRiepilogoCalcoloMassivo
+  nameWithType: CacheManager.RemoveRiepilogoCalcoloMassivo
+  fullName: OPENgovTOCO.CacheManager.RemoveRiepilogoCalcoloMassivo
+- uid: OPENgovTOCO.CacheManager.GetAvvisiCalcoloMassivo*
+  commentId: Overload:OPENgovTOCO.CacheManager.GetAvvisiCalcoloMassivo
+  name: GetAvvisiCalcoloMassivo
+  nameWithType: CacheManager.GetAvvisiCalcoloMassivo
+  fullName: OPENgovTOCO.CacheManager.GetAvvisiCalcoloMassivo
+- uid: IRemInterfaceOSAP.Cartella[]
+  isExternal: true
+  name: Cartella[]
+  nameWithType: Cartella[]
+  fullName: IRemInterfaceOSAP.Cartella[]
+  nameWithType.vb: Cartella()
+  fullName.vb: IRemInterfaceOSAP.Cartella()
+  name.vb: Cartella()
+  spec.csharp:
+  - uid: IRemInterfaceOSAP.Cartella
+    name: Cartella
+    nameWithType: Cartella
+    fullName: IRemInterfaceOSAP.Cartella
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: IRemInterfaceOSAP.Cartella
+    name: Cartella
+    nameWithType: Cartella
+    fullName: IRemInterfaceOSAP.Cartella
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: OPENgovTOCO.CacheManager.SetAvvisiCalcoloMassivo*
+  commentId: Overload:OPENgovTOCO.CacheManager.SetAvvisiCalcoloMassivo
+  name: SetAvvisiCalcoloMassivo
+  nameWithType: CacheManager.SetAvvisiCalcoloMassivo
+  fullName: OPENgovTOCO.CacheManager.SetAvvisiCalcoloMassivo
+- uid: OPENgovTOCO.CacheManager.RemoveAvvisiCalcoloMassivo*
+  commentId: Overload:OPENgovTOCO.CacheManager.RemoveAvvisiCalcoloMassivo
+  name: RemoveAvvisiCalcoloMassivo
+  nameWithType: CacheManager.RemoveAvvisiCalcoloMassivo
+  fullName: OPENgovTOCO.CacheManager.RemoveAvvisiCalcoloMassivo
+- uid: OPENgovTOCO.CacheManager.GetAvanzamentoElaborazione*
+  commentId: Overload:OPENgovTOCO.CacheManager.GetAvanzamentoElaborazione
+  name: GetAvanzamentoElaborazione
+  nameWithType: CacheManager.GetAvanzamentoElaborazione
+  fullName: OPENgovTOCO.CacheManager.GetAvanzamentoElaborazione
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: OPENgovTOCO.CacheManager.SetAvanzamentoElaborazione*
+  commentId: Overload:OPENgovTOCO.CacheManager.SetAvanzamentoElaborazione
+  name: SetAvanzamentoElaborazione
+  nameWithType: CacheManager.SetAvanzamentoElaborazione
+  fullName: OPENgovTOCO.CacheManager.SetAvanzamentoElaborazione
+- uid: OPENgovTOCO.CacheManager.RemoveAvanzamentoElaborazione*
+  commentId: Overload:OPENgovTOCO.CacheManager.RemoveAvanzamentoElaborazione
+  name: RemoveAvanzamentoElaborazione
+  nameWithType: CacheManager.RemoveAvanzamentoElaborazione
+  fullName: OPENgovTOCO.CacheManager.RemoveAvanzamentoElaborazione
+- uid: OPENgovTOCO.CacheManager.GetImportInCorso*
+  commentId: Overload:OPENgovTOCO.CacheManager.GetImportInCorso
+  name: GetImportInCorso
+  nameWithType: CacheManager.GetImportInCorso
+  fullName: OPENgovTOCO.CacheManager.GetImportInCorso
+- uid: OPENgovTOCO.CacheManager.SetImportInCorso*
+  commentId: Overload:OPENgovTOCO.CacheManager.SetImportInCorso
+  name: SetImportInCorso
+  nameWithType: CacheManager.SetImportInCorso
+  fullName: OPENgovTOCO.CacheManager.SetImportInCorso
+- uid: OPENgovTOCO.CacheManager.RemoveImportInCorso*
+  commentId: Overload:OPENgovTOCO.CacheManager.RemoveImportInCorso
+  name: RemoveImportInCorso
+  nameWithType: CacheManager.RemoveImportInCorso
+  fullName: OPENgovTOCO.CacheManager.RemoveImportInCorso

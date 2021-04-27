@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.ElaborazioneDocumenti
+  commentId: N:DichiarazioniICI.ElaborazioneDocumenti
+  id: DichiarazioniICI.ElaborazioneDocumenti
+  children:
+  - DichiarazioniICI.ElaborazioneDocumenti.AvanzamentoElaborazione
+  - DichiarazioniICI.ElaborazioneDocumenti.cmdElaborazioneDocumenti
+  - DichiarazioniICI.ElaborazioneDocumenti.DownloadDocumenti
+  - DichiarazioniICI.ElaborazioneDocumenti.ElaborazioneDocumenti
+  - DichiarazioniICI.ElaborazioneDocumenti.Elaborazioneincorso
+  langs:
+  - csharp
+  - vb
+  name: DichiarazioniICI.ElaborazioneDocumenti
+  nameWithType: DichiarazioniICI.ElaborazioneDocumenti
+  fullName: DichiarazioniICI.ElaborazioneDocumenti
+  type: Namespace
+  assemblies:
+  - DichiarazioniICI
+references:
+- uid: DichiarazioniICI.ElaborazioneDocumenti.AvanzamentoElaborazione
+  commentId: T:DichiarazioniICI.ElaborazioneDocumenti.AvanzamentoElaborazione
+  name: AvanzamentoElaborazione
+  nameWithType: AvanzamentoElaborazione
+  fullName: DichiarazioniICI.ElaborazioneDocumenti.AvanzamentoElaborazione
+- uid: DichiarazioniICI.ElaborazioneDocumenti.cmdElaborazioneDocumenti
+  commentId: T:DichiarazioniICI.ElaborazioneDocumenti.cmdElaborazioneDocumenti
+  name: cmdElaborazioneDocumenti
+  nameWithType: cmdElaborazioneDocumenti
+  fullName: DichiarazioniICI.ElaborazioneDocumenti.cmdElaborazioneDocumenti
+- uid: DichiarazioniICI.ElaborazioneDocumenti.DownloadDocumenti
+  commentId: T:DichiarazioniICI.ElaborazioneDocumenti.DownloadDocumenti
+  name: DownloadDocumenti
+  nameWithType: DownloadDocumenti
+  fullName: DichiarazioniICI.ElaborazioneDocumenti.DownloadDocumenti
+- uid: DichiarazioniICI.ElaborazioneDocumenti.ElaborazioneDocumenti
+  commentId: T:DichiarazioniICI.ElaborazioneDocumenti.ElaborazioneDocumenti
+  name: ElaborazioneDocumenti
+  nameWithType: ElaborazioneDocumenti
+  fullName: DichiarazioniICI.ElaborazioneDocumenti.ElaborazioneDocumenti
+- uid: DichiarazioniICI.ElaborazioneDocumenti.Elaborazioneincorso
+  commentId: T:DichiarazioniICI.ElaborazioneDocumenti.Elaborazioneincorso
+  name: Elaborazioneincorso
+  nameWithType: Elaborazioneincorso
+  fullName: DichiarazioniICI.ElaborazioneDocumenti.Elaborazioneincorso

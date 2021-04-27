@@ -1,0 +1,532 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENgovTOCO.Generali.classi.Documenti
+  commentId: T:OPENgovTOCO.Generali.classi.Documenti
+  id: Documenti
+  parent: OPENgovTOCO.Generali.classi
+  children:
+  - OPENgovTOCO.Generali.classi.Documenti.ElaboraDocumenti(System.String,System.String,IRemInterfaceOSAP.Cartella[],System.Int32,System.String,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String)
+  - OPENgovTOCO.Generali.classi.Documenti.GetDocumentiElaborati(System.String,System.String,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: Documenti
+  nameWithType: Documenti
+  fullName: OPENgovTOCO.Generali.classi.Documenti
+  type: Class
+  source:
+    id: Documenti
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\Documenti.cs
+    startLine: 13
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO.Generali.classi
+  summary: "\nClasse per l&apos;elaborazione dei documenti\n"
+  example: []
+  syntax:
+    content: public class Documenti
+    content.vb: Public Class Documenti
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: OPENgovTOCO.Generali.classi.Documenti.ElaboraDocumenti(System.String,System.String,IRemInterfaceOSAP.Cartella[],System.Int32,System.String,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String)
+  commentId: M:OPENgovTOCO.Generali.classi.Documenti.ElaboraDocumenti(System.String,System.String,IRemInterfaceOSAP.Cartella[],System.Int32,System.String,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String)
+  id: ElaboraDocumenti(System.String,System.String,IRemInterfaceOSAP.Cartella[],System.Int32,System.String,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String)
+  parent: OPENgovTOCO.Generali.classi.Documenti
+  langs:
+  - csharp
+  - vb
+  name: ElaboraDocumenti(String, String, Cartella[], Int32, String, Int32, String, String, String, String, String, Int32, String, String, String, Boolean, Boolean, Boolean, Boolean, String)
+  nameWithType: Documenti.ElaboraDocumenti(String, String, Cartella[], Int32, String, Int32, String, String, String, String, String, Int32, String, String, String, Boolean, Boolean, Boolean, Boolean, String)
+  fullName: OPENgovTOCO.Generali.classi.Documenti.ElaboraDocumenti(System.String, System.String, IRemInterfaceOSAP.Cartella[], System.Int32, System.String, System.Int32, System.String, System.String, System.String, System.String, System.String, System.Int32, System.String, System.String, System.String, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.String)
+  type: Method
+  source:
+    id: ElaboraDocumenti
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\Documenti.cs
+    startLine: 136
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO.Generali.classi
+  syntax:
+    content: public int ElaboraDocumenti(string DBType, string CodTributo, Cartella[] arrayCodiciCartella, int Anno, string sIdEnte, int IdRuolo, string StringConnection, string StringConnectionOPENgov, string StringConnectionAnagrafica, string PathTemplate, string PathVirtualTemplate, int nMaxDocPerFile, string sTipoElab, string ImpostazioneBollettini, string TipoBollettino, bool bElabBollettini, bool bCreaPDF, bool bSendByMail, bool IsSoloBollettino, string TemplateFile)
+    parameters:
+    - id: DBType
+      type: System.String
+    - id: CodTributo
+      type: System.String
+    - id: arrayCodiciCartella
+      type: IRemInterfaceOSAP.Cartella[]
+    - id: Anno
+      type: System.Int32
+    - id: sIdEnte
+      type: System.String
+    - id: IdRuolo
+      type: System.Int32
+    - id: StringConnection
+      type: System.String
+    - id: StringConnectionOPENgov
+      type: System.String
+    - id: StringConnectionAnagrafica
+      type: System.String
+    - id: PathTemplate
+      type: System.String
+    - id: PathVirtualTemplate
+      type: System.String
+    - id: nMaxDocPerFile
+      type: System.Int32
+    - id: sTipoElab
+      type: System.String
+    - id: ImpostazioneBollettini
+      type: System.String
+    - id: TipoBollettino
+      type: System.String
+    - id: bElabBollettini
+      type: System.Boolean
+    - id: bCreaPDF
+      type: System.Boolean
+    - id: bSendByMail
+      type: System.Boolean
+    - id: IsSoloBollettino
+      type: System.Boolean
+    - id: TemplateFile
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Function ElaboraDocumenti(DBType As String, CodTributo As String, arrayCodiciCartella As Cartella(), Anno As Integer, sIdEnte As String, IdRuolo As Integer, StringConnection As String, StringConnectionOPENgov As String, StringConnectionAnagrafica As String, PathTemplate As String, PathVirtualTemplate As String, nMaxDocPerFile As Integer, sTipoElab As String, ImpostazioneBollettini As String, TipoBollettino As String, bElabBollettini As Boolean, bCreaPDF As Boolean, bSendByMail As Boolean, IsSoloBollettino As Boolean, TemplateFile As String) As Integer
+  overload: OPENgovTOCO.Generali.classi.Documenti.ElaboraDocumenti*
+  nameWithType.vb: Documenti.ElaboraDocumenti(String, String, Cartella(), Int32, String, Int32, String, String, String, String, String, Int32, String, String, String, Boolean, Boolean, Boolean, Boolean, String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: OPENgovTOCO.Generali.classi.Documenti.ElaboraDocumenti(System.String, System.String, IRemInterfaceOSAP.Cartella(), System.Int32, System.String, System.Int32, System.String, System.String, System.String, System.String, System.String, System.Int32, System.String, System.String, System.String, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.String)
+  name.vb: ElaboraDocumenti(String, String, Cartella(), Int32, String, Int32, String, String, String, String, String, Int32, String, String, String, Boolean, Boolean, Boolean, Boolean, String)
+- uid: OPENgovTOCO.Generali.classi.Documenti.GetDocumentiElaborati(System.String,System.String,System.Int32)
+  commentId: M:OPENgovTOCO.Generali.classi.Documenti.GetDocumentiElaborati(System.String,System.String,System.Int32)
+  id: GetDocumentiElaborati(System.String,System.String,System.Int32)
+  parent: OPENgovTOCO.Generali.classi.Documenti
+  langs:
+  - csharp
+  - vb
+  name: GetDocumentiElaborati(String, String, Int32)
+  nameWithType: Documenti.GetDocumentiElaborati(String, String, Int32)
+  fullName: OPENgovTOCO.Generali.classi.Documenti.GetDocumentiElaborati(System.String, System.String, System.Int32)
+  type: Method
+  source:
+    id: GetDocumentiElaborati
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\Documenti.cs
+    startLine: 213
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO.Generali.classi
+  syntax:
+    content: public GruppoURL[] GetDocumentiElaborati(string IDEnte, string IDTributo, int IDRuolo)
+    parameters:
+    - id: IDEnte
+      type: System.String
+    - id: IDTributo
+      type: System.String
+    - id: IDRuolo
+      type: System.Int32
+    return:
+      type: RIBESElaborazioneDocumentiInterface.Stampa.oggetti.GruppoURL[]
+    content.vb: Public Function GetDocumentiElaborati(IDEnte As String, IDTributo As String, IDRuolo As Integer) As GruppoURL()
+  overload: OPENgovTOCO.Generali.classi.Documenti.GetDocumentiElaborati*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: OPENgovTOCO.Generali.classi
+  commentId: N:OPENgovTOCO.Generali.classi
+  name: OPENgovTOCO.Generali.classi
+  nameWithType: OPENgovTOCO.Generali.classi
+  fullName: OPENgovTOCO.Generali.classi
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OPENgovTOCO.Generali.classi.Documenti.ElaboraDocumenti*
+  commentId: Overload:OPENgovTOCO.Generali.classi.Documenti.ElaboraDocumenti
+  name: ElaboraDocumenti
+  nameWithType: Documenti.ElaboraDocumenti
+  fullName: OPENgovTOCO.Generali.classi.Documenti.ElaboraDocumenti
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: IRemInterfaceOSAP.Cartella[]
+  isExternal: true
+  name: Cartella[]
+  nameWithType: Cartella[]
+  fullName: IRemInterfaceOSAP.Cartella[]
+  nameWithType.vb: Cartella()
+  fullName.vb: IRemInterfaceOSAP.Cartella()
+  name.vb: Cartella()
+  spec.csharp:
+  - uid: IRemInterfaceOSAP.Cartella
+    name: Cartella
+    nameWithType: Cartella
+    fullName: IRemInterfaceOSAP.Cartella
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: IRemInterfaceOSAP.Cartella
+    name: Cartella
+    nameWithType: Cartella
+    fullName: IRemInterfaceOSAP.Cartella
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: OPENgovTOCO.Generali.classi.Documenti.GetDocumentiElaborati*
+  commentId: Overload:OPENgovTOCO.Generali.classi.Documenti.GetDocumentiElaborati
+  name: GetDocumentiElaborati
+  nameWithType: Documenti.GetDocumentiElaborati
+  fullName: OPENgovTOCO.Generali.classi.Documenti.GetDocumentiElaborati
+- uid: RIBESElaborazioneDocumentiInterface.Stampa.oggetti.GruppoURL[]
+  isExternal: true
+  name: GruppoURL[]
+  nameWithType: GruppoURL[]
+  fullName: RIBESElaborazioneDocumentiInterface.Stampa.oggetti.GruppoURL[]
+  nameWithType.vb: GruppoURL()
+  fullName.vb: RIBESElaborazioneDocumentiInterface.Stampa.oggetti.GruppoURL()
+  name.vb: GruppoURL()
+  spec.csharp:
+  - uid: RIBESElaborazioneDocumentiInterface.Stampa.oggetti.GruppoURL
+    name: GruppoURL
+    nameWithType: GruppoURL
+    fullName: RIBESElaborazioneDocumentiInterface.Stampa.oggetti.GruppoURL
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: RIBESElaborazioneDocumentiInterface.Stampa.oggetti.GruppoURL
+    name: GruppoURL
+    nameWithType: GruppoURL
+    fullName: RIBESElaborazioneDocumentiInterface.Stampa.oggetti.GruppoURL
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

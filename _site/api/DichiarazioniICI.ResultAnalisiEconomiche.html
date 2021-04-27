@@ -1,0 +1,4927 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ResultAnalisiEconomiche
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ResultAnalisiEconomiche
+   ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DichiarazioniICI.ResultAnalisiEconomiche">
+  
+  
+  <h1 id="DichiarazioniICI_ResultAnalisiEconomiche" data-uid="DichiarazioniICI.ResultAnalisiEconomiche" class="text-break">Class ResultAnalisiEconomiche
+  </h1>
+  <div class="markdown level0 summary"><p>Pagina del risultato in base ai parametri impostati per la consultazione del raffronto fra fatturato ed incassato.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.Web.UI.Control</span></div>
+    <div class="level2"><span class="xref">System.Web.UI.TemplateControl</span></div>
+    <div class="level3"><span class="xref">System.Web.UI.Page</span></div>
+    <div class="level4"><a class="xref" href="DichiarazioniICI.BasePage.html">BasePage</a></div>
+    <div class="level5"><span class="xref">ResultAnalisiEconomiche</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.IComponent</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">System.Web.UI.IParserAccessor</span></div>
+    <div><span class="xref">System.Web.UI.IUrlResolutionService</span></div>
+    <div><span class="xref">System.Web.UI.IDataBindingsAccessor</span></div>
+    <div><span class="xref">System.Web.UI.IControlBuilderAccessor</span></div>
+    <div><span class="xref">System.Web.UI.IControlDesignerAccessor</span></div>
+    <div><span class="xref">System.Web.UI.IExpressionsAccessor</span></div>
+    <div><span class="xref">System.Web.UI.INamingContainer</span></div>
+    <div><span class="xref">System.Web.UI.IFilterResolutionService</span></div>
+    <div><span class="xref">System.Web.IHttpHandler</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DichiarazioniICI.BasePage.html#DichiarazioniICI_BasePage_authCookie">BasePage.authCookie</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.BasePage.html#DichiarazioniICI_BasePage_RegisterScript_System_String_System_Type_">BasePage.RegisterScript(String, Type)</a>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.CreateHtmlTextWriter(System.IO.TextWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.CreateHtmlTextWriterFromType(System.IO.TextWriter, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.FindControl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.DeterminePostBackMode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.LoadPageStateFromPersistenceMedium()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SetFocus(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SetFocus(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetPostBackEventReference(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetPostBackEventReference(System.Web.UI.Control, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetPostBackClientEvent(System.Web.UI.Control, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetPostBackClientHyperlink(System.Web.UI.Control, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsClientScriptBlockRegistered(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsStartupScriptRegistered(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterArrayDeclaration(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterHiddenField(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterClientScriptBlock(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterStartupScript(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterOnSubmitStatement(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterRequiresControlState(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RequiresControlState(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.UnregisterRequiresControlState(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterRequiresPostBack(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RaisePostBackEvent(System.Web.UI.IPostBackEventHandler, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterRequiresRaiseEvent(System.Web.UI.IPostBackEventHandler)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.MapPath(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnLoadComplete(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnPreRenderComplete(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.FrameworkInitialize()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.InitializeCulture()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnPreInit(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnInitComplete(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnPreLoad(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterRequiresViewStateEncryption()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnSaveStateComplete(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Render(System.Web.UI.HtmlTextWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterViewStateHandler()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SavePageStateToPersistenceMedium(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ExecuteRegisteredAsyncTasks()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterAsyncTask(System.Web.UI.PageAsyncTask)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.AddOnPreRenderCompleteAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.AddOnPreRenderCompleteAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Validate()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Validate(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetValidators(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.VerifyRenderingInServerForm(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetDataItem()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Application</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Context</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ClientScript</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ClientTarget</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ClientQueryString</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ErrorPage</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsCallback</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.UniqueFilePathSuffix</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.AutoPostBackControl</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Header</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.MaintainScrollPositionOnPostBack</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Master</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.MasterPageFile</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PageStatePersister</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Trace</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Request</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Response</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Server</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Cache</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Session</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Title</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Theme</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.StyleSheetTheme</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.User</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsCrossPagePostBack</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsPostBack</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.EnableViewState</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ViewStateUserKey</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Visible</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsPostBackEventControlRegistered</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsValid</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Validators</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PreviousPage</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Culture</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.UICulture</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.AsyncTimeout</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SmartNavigation</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsAsync</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Form</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PageAdapter</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Items</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.LoadComplete</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PreInit</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PreLoad</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PreRenderComplete</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.InitComplete</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SaveStateComplete</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.Construct()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.OnCommitTransaction(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.OnAbortTransaction(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.OnError(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.CreateResourceBasedLiteralControl(System.Int32, System.Int32, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.TestDeviceFilter(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.LoadControl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.LoadControl(System.Type, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.LoadTemplate(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.ParseControl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.ParseControl(System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.Eval(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.Eval(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPath(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPath(System.String, System.Xml.IXmlNamespaceResolver)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPath(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPath(System.String, System.String, System.Xml.IXmlNamespaceResolver)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPathSelect(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPathSelect(System.String, System.Xml.IXmlNamespaceResolver)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.GetLocalResourceObject(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.GetLocalResourceObject(System.String, System.Type, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.GetGlobalResourceObject(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.GetGlobalResourceObject(System.String, System.String, System.Type, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.System.Web.UI.IFilterResolutionService.EvaluateFilter(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.System.Web.UI.IFilterResolutionService.CompareFilters(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.EnableTheming</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.AppRelativeVirtualPath</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.CommitTransaction</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.AbortTransaction</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.Error</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ResolveAdapter()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.HasEvents()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ApplyStyleSheetSkin(System.Web.UI.Page)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnDataBinding(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DataBind()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DataBind(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DataBindChildren()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.AddParsedSubObject(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.EnsureID()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClearChildState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClearChildControlState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClearChildViewState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Focus()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.LoadControlState(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.LoadViewState(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.MapPathSecure(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OpenFile(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnLoad(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnPreRender(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.BuildProfileTree(System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SaveControlState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SaveViewState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RenderChildren(System.Web.UI.HtmlTextWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter, System.Web.UI.Adapters.ControlAdapter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnUnload(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RaiseBubbleEvent(System.Object, System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnBubbleEvent(System.Object, System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.AddedControl(System.Web.UI.Control, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.CreateControlCollection()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.CreateChildControls()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ResolveUrl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ResolveClientUrl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.FindControl(System.String, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.GetDesignModeState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.HasControls()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IsLiteralContent()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.TrackViewState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.EnsureChildControls()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RemovedControl(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SetDesignModeState(System.Collections.IDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SetRenderMethodDelegate(System.Web.UI.RenderMethod)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlDesignerAccessor.GetDesignModeState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlDesignerAccessor.SetDesignModeState(System.Collections.IDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlDesignerAccessor.SetOwnerControl(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClientID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClientIDSeparator</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Adapter</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DesignMode</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Events</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IsChildControlStateCleared</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SkinID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IsViewStateEnabled</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.NamingContainer</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IdSeparator</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.LoadViewStateByID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Page</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.TemplateControl</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Parent</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.TemplateSourceDirectory</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.AppRelativeTemplateSourceDirectory</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Site</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.UniqueID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.HasChildViewState</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Controls</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ViewState</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ViewStateIgnoresCase</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ChildControlsCreated</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IsTrackingViewState</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IDataBindingsAccessor.HasDataBindings</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IDataBindingsAccessor.DataBindings</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlDesignerAccessor.UserData</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlBuilderAccessor.ControlBuilder</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IExpressionsAccessor.HasExpressions</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IExpressionsAccessor.Expressions</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Disposed</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DataBinding</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Init</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Load</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.PreRender</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Unload</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DichiarazioniICI.html">DichiarazioniICI</a></h6>
+  <h6><strong>Assembly</strong>: DichiarazioniICI.dll</h6>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ResultAnalisiEconomiche : BasePage, IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, INamingContainer, IFilterResolutionService, IHttpHandler</code></pre>
+  </div>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>In ottemperanza alle linee guida di sviluppo 1.0</p>
+</div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label1" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label1">Label1</h4>
+  <div class="markdown level1 summary"><p>Controllo Label1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label1_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label10" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label10">Label10</h4>
+  <div class="markdown level1 summary"><p>Controllo Label10.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label10</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label10_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label11" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label11">Label11</h4>
+  <div class="markdown level1 summary"><p>Controllo Label11.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label11</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label11_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label12" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label12">Label12</h4>
+  <div class="markdown level1 summary"><p>Controllo Label12.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label12</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label12_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label13" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label13">Label13</h4>
+  <div class="markdown level1 summary"><p>Controllo Label13.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label13</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label13_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label14" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label14">Label14</h4>
+  <div class="markdown level1 summary"><p>Controllo Label14.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label14</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label14_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label15" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label15">Label15</h4>
+  <div class="markdown level1 summary"><p>Controllo Label15.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label15</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label15_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label16" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label16">Label16</h4>
+  <div class="markdown level1 summary"><p>Controllo Label16.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label16</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label16_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label17" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label17">Label17</h4>
+  <div class="markdown level1 summary"><p>Controllo Label17.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label17</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label17_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label18" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label18">Label18</h4>
+  <div class="markdown level1 summary"><p>Controllo Label18.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label18</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label18_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label19" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label19">Label19</h4>
+  <div class="markdown level1 summary"><p>Controllo Label19.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label19</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label19_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label2" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label2">Label2</h4>
+  <div class="markdown level1 summary"><p>Controllo Label2.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label2_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label20" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label20">Label20</h4>
+  <div class="markdown level1 summary"><p>Controllo Label20.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label20</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label20_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label21" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label21">Label21</h4>
+  <div class="markdown level1 summary"><p>Controllo Label21.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label21</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label21_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label22" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label22">Label22</h4>
+  <div class="markdown level1 summary"><p>Controllo Label22.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label22</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label22_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label23" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label23">Label23</h4>
+  <div class="markdown level1 summary"><p>Controllo Label23.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label23</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label23_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label24" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label24">Label24</h4>
+  <div class="markdown level1 summary"><p>Controllo Label24.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label24</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label24_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label25" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label25">Label25</h4>
+  <div class="markdown level1 summary"><p>Controllo Label25.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label25</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label25_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label26" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label26">Label26</h4>
+  <div class="markdown level1 summary"><p>Controllo Label26.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label26</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label26_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label27" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label27">Label27</h4>
+  <div class="markdown level1 summary"><p>Controllo Label27.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label27</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label27_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label28" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label28">Label28</h4>
+  <div class="markdown level1 summary"><p>Controllo Label28.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label28</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label28_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label29" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label29">Label29</h4>
+  <div class="markdown level1 summary"><p>Controllo Label29.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label29</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label29_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label3" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label3">Label3</h4>
+  <div class="markdown level1 summary"><p>Controllo Label3.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label3_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label30" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label30">Label30</h4>
+  <div class="markdown level1 summary"><p>Controllo Label30.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label30</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label30_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label31" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label31">Label31</h4>
+  <div class="markdown level1 summary"><p>Controllo Label31.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label31</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label31_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label32" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label32">Label32</h4>
+  <div class="markdown level1 summary"><p>Controllo Label32.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label32</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label32_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label33" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label33">Label33</h4>
+  <div class="markdown level1 summary"><p>Controllo Label33.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label33</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label33_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label34" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label34">Label34</h4>
+  <div class="markdown level1 summary"><p>Controllo Label34.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label34</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label34_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label35" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label35">Label35</h4>
+  <div class="markdown level1 summary"><p>Controllo Label35.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label35</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label35_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label36" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label36">Label36</h4>
+  <div class="markdown level1 summary"><p>Controllo Label36.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label36</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label36_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label37" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label37">Label37</h4>
+  <div class="markdown level1 summary"><p>Controllo Label37.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label37</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label37_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label38" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label38">Label38</h4>
+  <div class="markdown level1 summary"><p>Controllo Label38.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label38</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label38_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label39" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label39">Label39</h4>
+  <div class="markdown level1 summary"><p>Controllo Label39.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label39</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label39_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label4" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label4">Label4</h4>
+  <div class="markdown level1 summary"><p>Controllo Label4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label4_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label40" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label40">Label40</h4>
+  <div class="markdown level1 summary"><p>Controllo Label40.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label40</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label40_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label41" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label41">Label41</h4>
+  <div class="markdown level1 summary"><p>Controllo Label41.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label41</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label41_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label42" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label42">Label42</h4>
+  <div class="markdown level1 summary"><p>Controllo Label42.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label42</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label42_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label43" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label43">Label43</h4>
+  <div class="markdown level1 summary"><p>Controllo Label43.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label43</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label43_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label44" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label44">Label44</h4>
+  <div class="markdown level1 summary"><p>Controllo Label44.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label44</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label44_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label45" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label45">Label45</h4>
+  <div class="markdown level1 summary"><p>Controllo Label45.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label45</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label45_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label46" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label46">Label46</h4>
+  <div class="markdown level1 summary"><p>Controllo Label46.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label46</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label46_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label47" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label47">Label47</h4>
+  <div class="markdown level1 summary"><p>Controllo Label47.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label47</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label47_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label48" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label48">Label48</h4>
+  <div class="markdown level1 summary"><p>Controllo Label48.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label48</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label48_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label49" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label49">Label49</h4>
+  <div class="markdown level1 summary"><p>Controllo Label49.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label49</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label49_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label5" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label5">Label5</h4>
+  <div class="markdown level1 summary"><p>Controllo Label5.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label5</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label5_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label50" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label50">Label50</h4>
+  <div class="markdown level1 summary"><p>Controllo Label50.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label50</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label50_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label51" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label51">Label51</h4>
+  <div class="markdown level1 summary"><p>Controllo Label51.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label51</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label51_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label52" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label52">Label52</h4>
+  <div class="markdown level1 summary"><p>Controllo Label52.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label52</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label52_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label53" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label53">Label53</h4>
+  <div class="markdown level1 summary"><p>Controllo Label53.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label53</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label53_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label54" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label54">Label54</h4>
+  <div class="markdown level1 summary"><p>Controllo Label54.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label54</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label54_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label55" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label55">Label55</h4>
+  <div class="markdown level1 summary"><p>Controllo Label55.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label55</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label55_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label56" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label56">Label56</h4>
+  <div class="markdown level1 summary"><p>Controllo Label56.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label56</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label56_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label57" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label57">Label57</h4>
+  <div class="markdown level1 summary"><p>Controllo Label57.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label57</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label57_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label58" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label58">Label58</h4>
+  <div class="markdown level1 summary"><p>Controllo Label58.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label58</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label58_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label59" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label59">Label59</h4>
+  <div class="markdown level1 summary"><p>Controllo Label59.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label59</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label59_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label6" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label6">Label6</h4>
+  <div class="markdown level1 summary"><p>Controllo Label6.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label6</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label6_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label60" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label60">Label60</h4>
+  <div class="markdown level1 summary"><p>Controllo Label60.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label60</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label60_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label61" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label61">Label61</h4>
+  <div class="markdown level1 summary"><p>Controllo Label61.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label61</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label61_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label62" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label62">Label62</h4>
+  <div class="markdown level1 summary"><p>Controllo Label62.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label62</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label62_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label63" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label63">Label63</h4>
+  <div class="markdown level1 summary"><p>Controllo Label63.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label63</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label63_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label64" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label64">Label64</h4>
+  <div class="markdown level1 summary"><p>Controllo Label64.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label64</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label64_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label65" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label65">Label65</h4>
+  <div class="markdown level1 summary"><p>Controllo Label65.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label65</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label65_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label66" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label66">Label66</h4>
+  <div class="markdown level1 summary"><p>Controllo Label66.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label66</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label66_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label67" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label67">Label67</h4>
+  <div class="markdown level1 summary"><p>Controllo Label67.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label67</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label67_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label68" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label68">Label68</h4>
+  <div class="markdown level1 summary"><p>Controllo Label68.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label68</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label68_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label69" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label69">Label69</h4>
+  <div class="markdown level1 summary"><p>Controllo Label69.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label69</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label69_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label7" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label7">Label7</h4>
+  <div class="markdown level1 summary"><p>Controllo Label7.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label7</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label7_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label70" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label70">Label70</h4>
+  <div class="markdown level1 summary"><p>Controllo Label70.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label70</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label70_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label8" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label8">Label8</h4>
+  <div class="markdown level1 summary"><p>Controllo Label8.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label8</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label8_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Label9" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Label9">Label9</h4>
+  <div class="markdown level1 summary"><p>Controllo Label9.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label9</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_Label9_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovuto" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblDovuto">LblDovuto</h4>
+  <div class="markdown level1 summary"><p>Controllo LblDovuto.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblDovuto</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovuto_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoAbiPrin" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblDovutoAbiPrin">LblDovutoAbiPrin</h4>
+  <div class="markdown level1 summary"><p>Controllo LblDovutoAbiPrin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblDovutoAbiPrin</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoAbiPrin_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoAltriFab" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblDovutoAltriFab">LblDovutoAltriFab</h4>
+  <div class="markdown level1 summary"><p>Controllo LblDovutoAltriFab.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblDovutoAltriFab</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoAltriFab_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoDetrazione" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblDovutoDetrazione">LblDovutoDetrazione</h4>
+  <div class="markdown level1 summary"><p>Controllo LblDovutoDetrazione.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblDovutoDetrazione</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoDetrazione_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoFabRurUsoStrum" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblDovutoFabRurUsoStrum">LblDovutoFabRurUsoStrum</h4>
+  <div class="markdown level1 summary"><p>Controllo LblDovutoFabRurUsoStrum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblDovutoFabRurUsoStrum</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoFabRurUsoStrum_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoStatoAltriFab" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblDovutoStatoAltriFab">LblDovutoStatoAltriFab</h4>
+  <div class="markdown level1 summary"><p>Controllo LblDovutoStatoAltriFab.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblDovutoStatoAltriFab</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoStatoAltriFab_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoStatoFabRurUsoStrum" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblDovutoStatoFabRurUsoStrum">LblDovutoStatoFabRurUsoStrum</h4>
+  <div class="markdown level1 summary"><p>Controllo LblDovutoStatoFabRurUsoStrum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblDovutoStatoFabRurUsoStrum</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoStatoFabRurUsoStrum_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoStatoTerAgr" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblDovutoStatoTerAgr">LblDovutoStatoTerAgr</h4>
+  <div class="markdown level1 summary"><p>Controllo LblDovutoStatoTerAgr.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblDovutoStatoTerAgr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoStatoTerAgr_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoStatoTerFab" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblDovutoStatoTerFab">LblDovutoStatoTerFab</h4>
+  <div class="markdown level1 summary"><p>Controllo LblDovutoStatoTerFab.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblDovutoStatoTerFab</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoStatoTerFab_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoStatoUsoProdCatD" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblDovutoStatoUsoProdCatD">LblDovutoStatoUsoProdCatD</h4>
+  <div class="markdown level1 summary"><p>Controllo LblDovutoStatoUsoProdCatD.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblDovutoStatoUsoProdCatD</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoStatoUsoProdCatD_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoTerAgr" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblDovutoTerAgr">LblDovutoTerAgr</h4>
+  <div class="markdown level1 summary"><p>Controllo LblDovutoTerAgr.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblDovutoTerAgr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoTerAgr_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoTerFab" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblDovutoTerFab">LblDovutoTerFab</h4>
+  <div class="markdown level1 summary"><p>Controllo LblDovutoTerFab.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblDovutoTerFab</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoTerFab_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoTot" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblDovutoTot">LblDovutoTot</h4>
+  <div class="markdown level1 summary"><p>Controllo LblDovutoTot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblDovutoTot</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoTot_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoUsoProdCatD" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblDovutoUsoProdCatD">LblDovutoUsoProdCatD</h4>
+  <div class="markdown level1 summary"><p>Controllo LblDovutoUsoProdCatD.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblDovutoUsoProdCatD</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoUsoProdCatD_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoUtenti" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblDovutoUtenti">LblDovutoUtenti</h4>
+  <div class="markdown level1 summary"><p>Controllo LblDovutoUtenti.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblDovutoUtenti</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblDovutoUtenti_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblImpPagRate" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblImpPagRate">LblImpPagRate</h4>
+  <div class="markdown level1 summary"><p>Controllo LblImpPagRate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblImpPagRate</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblImpPagRate_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblImpPagUS" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblImpPagUS">LblImpPagUS</h4>
+  <div class="markdown level1 summary"><p>Controllo LblImpPagUS.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblImpPagUS</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblImpPagUS_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblInsoluto" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblInsoluto">LblInsoluto</h4>
+  <div class="markdown level1 summary"><p>Controllo LblInsoluto.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblInsoluto</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblInsoluto_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblNPagRate" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblNPagRate">LblNPagRate</h4>
+  <div class="markdown level1 summary"><p>Controllo LblNPagRate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblNPagRate</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblNPagRate_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblNPagUS" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblNPagUS">LblNPagUS</h4>
+  <div class="markdown level1 summary"><p>Controllo LblNPagUS.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblNPagUS</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblNPagUS_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblNUtenti" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblNUtenti">LblNUtenti</h4>
+  <div class="markdown level1 summary"><p>Controllo LblNUtenti.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblNUtenti</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblNUtenti_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblNUtentiDovuto" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblNUtentiDovuto">LblNUtentiDovuto</h4>
+  <div class="markdown level1 summary"><p>Controllo LblNUtentiDovuto.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblNUtentiDovuto</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblNUtentiDovuto_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblNUtentiVersato" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblNUtentiVersato">LblNUtentiVersato</h4>
+  <div class="markdown level1 summary"><p>Controllo LblNUtentiVersato.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblNUtentiVersato</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblNUtentiVersato_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblPercentualeInsoluto" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblPercentualeInsoluto">LblPercentualeInsoluto</h4>
+  <div class="markdown level1 summary"><p>Controllo LblPercentualeInsoluto.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblPercentualeInsoluto</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblPercentualeInsoluto_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblTotImpDovuto" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblTotImpDovuto">LblTotImpDovuto</h4>
+  <div class="markdown level1 summary"><p>Controllo LblTotImpDovuto.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblTotImpDovuto</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblTotImpDovuto_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblTotImpVersato" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblTotImpVersato">LblTotImpVersato</h4>
+  <div class="markdown level1 summary"><p>Controllo LblTotImpVersato.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblTotImpVersato</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblTotImpVersato_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblTotVersato" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblTotVersato">LblTotVersato</h4>
+  <div class="markdown level1 summary"><p>Controllo LblTotVersato.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblTotVersato</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblTotVersato_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersato" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblVersato">LblVersato</h4>
+  <div class="markdown level1 summary"><p>Controllo LblVersato.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblVersato</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersato_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoAbiPrin" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblVersatoAbiPrin">LblVersatoAbiPrin</h4>
+  <div class="markdown level1 summary"><p>Controllo LblVersatoAbiPrin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblVersatoAbiPrin</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoAbiPrin_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoAltriFab" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblVersatoAltriFab">LblVersatoAltriFab</h4>
+  <div class="markdown level1 summary"><p>Controllo LblVersatoAltriFab.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblVersatoAltriFab</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoAltriFab_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoDetrazione" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblVersatoDetrazione">LblVersatoDetrazione</h4>
+  <div class="markdown level1 summary"><p>Controllo LblVersatoDetrazione.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblVersatoDetrazione</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoDetrazione_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoFabRurUsoStrum" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblVersatoFabRurUsoStrum">LblVersatoFabRurUsoStrum</h4>
+  <div class="markdown level1 summary"><p>Controllo LblVersatoFabRurUsoStrum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblVersatoFabRurUsoStrum</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoFabRurUsoStrum_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoStatoAltriFab" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblVersatoStatoAltriFab">LblVersatoStatoAltriFab</h4>
+  <div class="markdown level1 summary"><p>Controllo LblVersatoStatoAltriFab.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblVersatoStatoAltriFab</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoStatoAltriFab_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoStatoFabRurUsoStrum" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblVersatoStatoFabRurUsoStrum">LblVersatoStatoFabRurUsoStrum</h4>
+  <div class="markdown level1 summary"><p>Controllo LblVersatoStatoFabRurUsoStrum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblVersatoStatoFabRurUsoStrum</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoStatoFabRurUsoStrum_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoStatoTerAgr" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblVersatoStatoTerAgr">LblVersatoStatoTerAgr</h4>
+  <div class="markdown level1 summary"><p>Controllo LblVersatoStatoTerAgr.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblVersatoStatoTerAgr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoStatoTerAgr_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoStatoTerFab" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblVersatoStatoTerFab">LblVersatoStatoTerFab</h4>
+  <div class="markdown level1 summary"><p>Controllo LblVersatoStatoTerFab.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblVersatoStatoTerFab</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoStatoTerFab_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoStatoUsoProdCatD" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblVersatoStatoUsoProdCatD">LblVersatoStatoUsoProdCatD</h4>
+  <div class="markdown level1 summary"><p>Controllo LblVersatoStatoUsoProdCatD.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblVersatoStatoUsoProdCatD</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoStatoUsoProdCatD_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoTerAgr" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblVersatoTerAgr">LblVersatoTerAgr</h4>
+  <div class="markdown level1 summary"><p>Controllo LblVersatoTerAgr.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblVersatoTerAgr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoTerAgr_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoTerFab" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblVersatoTerFab">LblVersatoTerFab</h4>
+  <div class="markdown level1 summary"><p>Controllo LblVersatoTerFab.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblVersatoTerFab</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoTerFab_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoTot" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblVersatoTot">LblVersatoTot</h4>
+  <div class="markdown level1 summary"><p>Controllo LblVersatoTot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblVersatoTot</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoTot_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoUsoProdCatD" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblVersatoUsoProdCatD">LblVersatoUsoProdCatD</h4>
+  <div class="markdown level1 summary"><p>Controllo LblVersatoUsoProdCatD.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblVersatoUsoProdCatD</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoUsoProdCatD_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoUtenti" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.LblVersatoUtenti">LblVersatoUtenti</h4>
+  <div class="markdown level1 summary"><p>Controllo LblVersatoUtenti.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblVersatoUtenti</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_LblVersatoUtenti_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_SituazioneAnalisiEconomiche" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.SituazioneAnalisiEconomiche">SituazioneAnalisiEconomiche</h4>
+  <div class="markdown level1 summary"><p>Controllo SituazioneAnalisiEconomiche.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HtmlForm SituazioneAnalisiEconomiche</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.HtmlControls.HtmlForm</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_SituazioneAnalisiEconomiche_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtAbiPrinDovuto" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtAbiPrinDovuto">TxtAbiPrinDovuto</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtAbiPrinDovuto.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtAbiPrinDovuto</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtAbiPrinDovuto_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtAbiPrinVersato" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtAbiPrinVersato">TxtAbiPrinVersato</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtAbiPrinVersato.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtAbiPrinVersato</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtAbiPrinVersato_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtAltriFabDovuto" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtAltriFabDovuto">TxtAltriFabDovuto</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtAltriFabDovuto.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtAltriFabDovuto</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtAltriFabDovuto_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtAltriFabDovutoStato" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtAltriFabDovutoStato">TxtAltriFabDovutoStato</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtAltriFabDovutoStato.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtAltriFabDovutoStato</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtAltriFabDovutoStato_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtAltriFabVersato" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtAltriFabVersato">TxtAltriFabVersato</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtAltriFabVersato.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtAltriFabVersato</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtAltriFabVersato_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtAltriFabVersatoStato" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtAltriFabVersatoStato">TxtAltriFabVersatoStato</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtAltriFabVersatoStato.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtAltriFabVersatoStato</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtAltriFabVersatoStato_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtDetrazDovuto" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtDetrazDovuto">TxtDetrazDovuto</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtDetrazDovuto.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtDetrazDovuto</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtDetrazDovuto_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtDetrazVersato" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtDetrazVersato">TxtDetrazVersato</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtDetrazVersato.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtDetrazVersato</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtDetrazVersato_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtFabRurUsoStrumDovuto" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtFabRurUsoStrumDovuto">TxtFabRurUsoStrumDovuto</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtFabRurUsoStrumDovuto.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtFabRurUsoStrumDovuto</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtFabRurUsoStrumDovuto_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtFabRurUsoStrumDovutoStato" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtFabRurUsoStrumDovutoStato">TxtFabRurUsoStrumDovutoStato</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtFabRurUsoStrumDovutoStato.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtFabRurUsoStrumDovutoStato</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtFabRurUsoStrumDovutoStato_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtFabRurUsoStrumVersato" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtFabRurUsoStrumVersato">TxtFabRurUsoStrumVersato</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtFabRurUsoStrumVersato.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtFabRurUsoStrumVersato</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtFabRurUsoStrumVersato_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtFabRurUsoStrumVersatoStato" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtFabRurUsoStrumVersatoStato">TxtFabRurUsoStrumVersatoStato</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtFabRurUsoStrumVersatoStato.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtFabRurUsoStrumVersatoStato</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtFabRurUsoStrumVersatoStato_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtTerAgrDovuto" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtTerAgrDovuto">TxtTerAgrDovuto</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtTerAgrDovuto.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtTerAgrDovuto</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtTerAgrDovuto_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtTerAgrDovutoStato" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtTerAgrDovutoStato">TxtTerAgrDovutoStato</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtTerAgrDovutoStato.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtTerAgrDovutoStato</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtTerAgrDovutoStato_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtTerAgrVersato" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtTerAgrVersato">TxtTerAgrVersato</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtTerAgrVersato.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtTerAgrVersato</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtTerAgrVersato_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtTerAgrVersatoStato" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtTerAgrVersatoStato">TxtTerAgrVersatoStato</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtTerAgrVersatoStato.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtTerAgrVersatoStato</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtTerAgrVersatoStato_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtTerFabDovuto" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtTerFabDovuto">TxtTerFabDovuto</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtTerFabDovuto.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtTerFabDovuto</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtTerFabDovuto_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtTerFabDovutoStato" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtTerFabDovutoStato">TxtTerFabDovutoStato</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtTerFabDovutoStato.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtTerFabDovutoStato</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtTerFabDovutoStato_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtTerFabVersato" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtTerFabVersato">TxtTerFabVersato</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtTerFabVersato.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtTerFabVersato</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtTerFabVersato_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtTerFabVersatoStato" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtTerFabVersatoStato">TxtTerFabVersatoStato</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtTerFabVersatoStato.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtTerFabVersatoStato</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtTerFabVersatoStato_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtTotaleDovuto" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtTotaleDovuto">TxtTotaleDovuto</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtTotaleDovuto.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtTotaleDovuto</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtTotaleDovuto_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtTotaleVersato" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtTotaleVersato">TxtTotaleVersato</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtTotaleVersato.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtTotaleVersato</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtTotaleVersato_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtUsoProdCatDDovuto" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtUsoProdCatDDovuto">TxtUsoProdCatDDovuto</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtUsoProdCatDDovuto.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtUsoProdCatDDovuto</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtUsoProdCatDDovuto_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtUsoProdCatDDovutoStato" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtUsoProdCatDDovutoStato">TxtUsoProdCatDDovutoStato</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtUsoProdCatDDovutoStato.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtUsoProdCatDDovutoStato</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtUsoProdCatDDovutoStato_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtUsoProdCatDVersato" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtUsoProdCatDVersato">TxtUsoProdCatDVersato</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtUsoProdCatDVersato.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtUsoProdCatDVersato</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtUsoProdCatDVersato_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtUsoProdCatDVersatoStato" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.TxtUsoProdCatDVersatoStato">TxtUsoProdCatDVersatoStato</h4>
+  <div class="markdown level1 summary"><p>Controllo TxtUsoProdCatDVersatoStato.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TxtUsoProdCatDVersatoStato</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DichiarazioniICI_ResultAnalisiEconomiche_TxtUsoProdCatDVersatoStato_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="DichiarazioniICI_ResultAnalisiEconomiche_OnInit_" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.OnInit*"></a>
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_OnInit_System_EventArgs_" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.OnInit(System.EventArgs)">OnInit(EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnInit(EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DichiarazioniICI.BasePage.html#DichiarazioniICI_BasePage_OnInit_System_EventArgs_">BasePage.OnInit(EventArgs)</a></div>
+  
+  
+  <a id="DichiarazioniICI_ResultAnalisiEconomiche_Page_Load_" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Page_Load*"></a>
+  <h4 id="DichiarazioniICI_ResultAnalisiEconomiche_Page_Load_System_Object_System_EventArgs_" data-uid="DichiarazioniICI.ResultAnalisiEconomiche.Page_Load(System.Object,System.EventArgs)">Page_Load(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Page_Load(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.IComponent</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IParserAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IUrlResolutionService</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IDataBindingsAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IControlBuilderAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IControlDesignerAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IExpressionsAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.INamingContainer</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IFilterResolutionService</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.IHttpHandler</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

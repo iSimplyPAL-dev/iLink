@@ -1,0 +1,209 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT
+  commentId: T:OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT
+  id: E_CALCOLORESULT
+  parent: OPENGovTOCO.MotoreTOCO
+  children:
+  - OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT.ERRORECALCOLO
+  - OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT.NOCATEGORIA
+  - OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT.NOTARIFFA
+  - OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT.NOTIPOLOGIAOCCUPAZIONE
+  - OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT.OK
+  langs:
+  - csharp
+  - vb
+  name: E_CALCOLORESULT
+  nameWithType: E_CALCOLORESULT
+  fullName: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT
+  type: Enum
+  source:
+    id: E_CALCOLORESULT
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 674
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public enum E_CALCOLORESULT
+    content.vb: >-
+      <Serializable>
+
+      Public Enum E_CALCOLORESULT
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT.OK
+  commentId: F:OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT.OK
+  id: OK
+  parent: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT
+  langs:
+  - csharp
+  - vb
+  name: OK
+  nameWithType: E_CALCOLORESULT.OK
+  fullName: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT.OK
+  type: Field
+  source:
+    id: OK
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 680
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: OK = 0
+    return:
+      type: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT.NOTARIFFA
+  commentId: F:OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT.NOTARIFFA
+  id: NOTARIFFA
+  parent: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT
+  langs:
+  - csharp
+  - vb
+  name: NOTARIFFA
+  nameWithType: E_CALCOLORESULT.NOTARIFFA
+  fullName: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT.NOTARIFFA
+  type: Field
+  source:
+    id: NOTARIFFA
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 683
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: NOTARIFFA = 1
+    return:
+      type: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT.NOCATEGORIA
+  commentId: F:OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT.NOCATEGORIA
+  id: NOCATEGORIA
+  parent: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT
+  langs:
+  - csharp
+  - vb
+  name: NOCATEGORIA
+  nameWithType: E_CALCOLORESULT.NOCATEGORIA
+  fullName: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT.NOCATEGORIA
+  type: Field
+  source:
+    id: NOCATEGORIA
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 686
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: NOCATEGORIA = 2
+    return:
+      type: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT.NOTIPOLOGIAOCCUPAZIONE
+  commentId: F:OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT.NOTIPOLOGIAOCCUPAZIONE
+  id: NOTIPOLOGIAOCCUPAZIONE
+  parent: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT
+  langs:
+  - csharp
+  - vb
+  name: NOTIPOLOGIAOCCUPAZIONE
+  nameWithType: E_CALCOLORESULT.NOTIPOLOGIAOCCUPAZIONE
+  fullName: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT.NOTIPOLOGIAOCCUPAZIONE
+  type: Field
+  source:
+    id: NOTIPOLOGIAOCCUPAZIONE
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 689
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: NOTIPOLOGIAOCCUPAZIONE = 3
+    return:
+      type: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT.ERRORECALCOLO
+  commentId: F:OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT.ERRORECALCOLO
+  id: ERRORECALCOLO
+  parent: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT
+  langs:
+  - csharp
+  - vb
+  name: ERRORECALCOLO
+  nameWithType: E_CALCOLORESULT.ERRORECALCOLO
+  fullName: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT.ERRORECALCOLO
+  type: Field
+  source:
+    id: ERRORECALCOLO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 692
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: ERRORECALCOLO = 4
+    return:
+      type: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: OPENGovTOCO.MotoreTOCO
+  commentId: N:OPENGovTOCO.MotoreTOCO
+  name: OPENGovTOCO.MotoreTOCO
+  nameWithType: OPENGovTOCO.MotoreTOCO
+  fullName: OPENGovTOCO.MotoreTOCO
+- uid: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT
+  commentId: T:OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT
+  parent: OPENGovTOCO.MotoreTOCO
+  name: E_CALCOLORESULT
+  nameWithType: E_CALCOLORESULT
+  fullName: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT

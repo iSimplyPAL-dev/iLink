@@ -1,0 +1,651 @@
+### YamlMime:TableOfContent
+- uid: Business
+  name: Business
+  items:
+  - uid: Business.ApplicationHelper
+    name: ApplicationHelper
+  - uid: Business.ClsAnalisi
+    name: ClsAnalisi
+  - uid: Business.ClsAnalisi.TypeCheckRifCatastali
+    name: ClsAnalisi.TypeCheckRifCatastali
+  - uid: Business.ConstWrapper
+    name: ConstWrapper
+  - uid: Business.CoreUtility
+    name: CoreUtility
+  - uid: Business.FileUploader
+    name: FileUploader
+  - uid: Business.FileUploader.FileUploaded
+    name: FileUploader.FileUploaded
+  - uid: Business.HelperAnagrafica
+    name: HelperAnagrafica
+  - uid: Business.ImportHelper
+    name: ImportHelper
+  - uid: Business.ModuloIci
+    name: ModuloIci
+  - uid: Business.ModuloIci.ErroriBonifica
+    name: ModuloIci.ErroriBonifica
+  - uid: Business.ModuloIci.ErroriVersamenti
+    name: ModuloIci.ErroriVersamenti
+  - uid: Business.PROCESS_INFORMATION
+    name: PROCESS_INFORMATION
+  - uid: Business.Rendite
+    name: Rendite
+  - uid: Business.STARTUPINFO
+    name: STARTUPINFO
+  - uid: Business.TipologieProvenienze
+    name: TipologieProvenienze
+  - uid: Business.TrasformatoreAnater
+    name: TrasformatoreAnater
+- uid: DAO
+  name: DAO
+  items:
+  - uid: DAO.AgevolazioniDAO
+    name: AgevolazioniDAO
+  - uid: DAO.AnagraficheDAO
+    name: AnagraficheDAO
+  - uid: DAO.ArticoliDAO
+    name: ArticoliDAO
+  - uid: DAO.CartelleDAO
+    name: CartelleDAO
+  - uid: DAO.CategorieDAO
+    name: CategorieDAO
+  - uid: DAO.CoefficientiDAO
+    name: CoefficientiDAO
+  - uid: DAO.DBEngineFactory
+    name: DBEngineFactory
+  - uid: DAO.DichiarazioniDAO
+    name: DichiarazioniDAO
+  - uid: DAO.ElaborazioniDAO
+    name: ElaborazioniDAO
+  - uid: DAO.PagamentiDAO
+    name: PagamentiDAO
+  - uid: DAO.TariffeDAO
+    name: TariffeDAO
+  - uid: DAO.TipoOccupazDAO
+    name: TipoOccupazDAO
+- uid: DichiarazioniICI
+  name: DichiarazioniICI
+  items:
+  - uid: DichiarazioniICI.AcquisizioneAutomaticaVersamenti
+    name: AcquisizioneAutomaticaVersamenti
+  - uid: DichiarazioniICI.BaseEnte
+    name: BaseEnte
+  - uid: DichiarazioniICI.BasePage
+    name: BasePage
+  - uid: DichiarazioniICI.CAcqiusizioneAutomaticaVersamenti
+    name: CAcqiusizioneAutomaticaVersamenti
+  - uid: DichiarazioniICI.Catasto
+    name: Catasto
+  - uid: DichiarazioniICI.Catasto.Anomalia
+    name: Catasto.Anomalia
+  - uid: DichiarazioniICI.Catasto.Fase
+    name: Catasto.Fase
+  - uid: DichiarazioniICI.CDichiarazioneMod
+    name: CDichiarazioneMod
+  - uid: DichiarazioniICI.CGestione
+    name: CGestione
+  - uid: DichiarazioniICI.CGestioneDettaglio
+    name: CGestioneDettaglio
+  - uid: DichiarazioniICI.CheckRifCatastali
+    name: CheckRifCatastali
+  - uid: DichiarazioniICI.CImmobileDettaglio
+    name: CImmobileDettaglio
+  - uid: DichiarazioniICI.CRicercaVersamenti
+    name: CRicercaVersamenti
+  - uid: DichiarazioniICI.CVersamenti
+    name: CVersamenti
+  - uid: DichiarazioniICI.cVersamentiNonAbbinati
+    name: cVersamentiNonAbbinati
+  - uid: DichiarazioniICI.DichiarazionePage
+    name: DichiarazionePage
+  - uid: DichiarazioniICI.ExportCatasto
+    name: ExportCatasto
+  - uid: DichiarazioniICI.FrmUI
+    name: FrmUI
+  - uid: DichiarazioniICI.Gestione
+    name: Gestione
+  - uid: DichiarazioniICI.GestioneDettaglio
+    name: GestioneDettaglio
+  - uid: DichiarazioniICI.GestioneRavvedimento
+    name: GestioneRavvedimento
+  - uid: DichiarazioniICI.GetImmobiliICI
+    name: GetImmobiliICI
+  - uid: DichiarazioniICI.Global
+    name: Global
+  - uid: DichiarazioniICI.Immobile
+    name: Immobile
+  - uid: DichiarazioniICI.ImmobileDettaglio
+    name: ImmobileDettaglio
+  - uid: DichiarazioniICI.ImmobilePertinenza
+    name: ImmobilePertinenza
+  - uid: DichiarazioniICI.MappaImmobile
+    name: MappaImmobile
+  - uid: DichiarazioniICI.ResultAnalisiEconomiche
+    name: ResultAnalisiEconomiche
+  - uid: DichiarazioniICI.RicercaAnalisiEconomiche
+    name: RicercaAnalisiEconomiche
+  - uid: DichiarazioniICI.RicercaVersamenti
+    name: RicercaVersamenti
+  - uid: DichiarazioniICI.StampaContribNonPagato
+    name: StampaContribNonPagato
+  - uid: DichiarazioniICI.StampaContribPagatoDiverso
+    name: StampaContribPagatoDiverso
+  - uid: DichiarazioniICI.Versamenti
+    name: Versamenti
+  - uid: DichiarazioniICI.VersamentiNoAnag
+    name: VersamentiNoAnag
+  - uid: DichiarazioniICI.VersamentiNoDich
+    name: VersamentiNoDich
+- uid: DichiarazioniICI.Analisi
+  name: DichiarazioniICI.Analisi
+  items:
+  - uid: DichiarazioniICI.Analisi.CStampaContribNonPagato
+    name: CStampaContribNonPagato
+  - uid: DichiarazioniICI.Analisi.CStampaContribPagatoDiverso
+    name: CStampaContribPagatoDiverso
+  - uid: DichiarazioniICI.Analisi.Rimborsi
+    name: Rimborsi
+- uid: DichiarazioniICI.Analisi.FatturatoIncassato
+  name: DichiarazioniICI.Analisi.FatturatoIncassato
+  items:
+  - uid: DichiarazioniICI.Analisi.FatturatoIncassato.ChartAnalisiEconomiche
+    name: ChartAnalisiEconomiche
+  - uid: DichiarazioniICI.Analisi.FatturatoIncassato.ComandiAnalisiEconomiche
+    name: ComandiAnalisiEconomiche
+- uid: DichiarazioniICI.Anater
+  name: DichiarazioniICI.Anater
+  items:
+  - uid: DichiarazioniICI.Anater.RicercaImmobile
+    name: RicercaImmobile
+- uid: DichiarazioniICI.CalcoloICI
+  name: DichiarazioniICI.CalcoloICI
+  items:
+  - uid: DichiarazioniICI.CalcoloICI.CalcoloICI
+    name: CalcoloICI
+  - uid: DichiarazioniICI.CalcoloICI.CalcoloICIMassivo
+    name: CalcoloICIMassivo
+  - uid: DichiarazioniICI.CalcoloICI.CalcoloICIPuntuale
+    name: CalcoloICIPuntuale
+  - uid: DichiarazioniICI.CalcoloICI.CCalcoloICIMassivo
+    name: CCalcoloICIMassivo
+  - uid: DichiarazioniICI.CalcoloICI.CCalcoloICIPuntuale
+    name: CCalcoloICIPuntuale
+  - uid: DichiarazioniICI.CalcoloICI.CConfigAliquote
+    name: CConfigAliquote
+  - uid: DichiarazioniICI.CalcoloICI.ConfigAliquote
+    name: ConfigAliquote
+  - uid: DichiarazioniICI.CalcoloICI.CRicercaAliquote
+    name: CRicercaAliquote
+  - uid: DichiarazioniICI.CalcoloICI.ElencoAliquote
+    name: ElencoAliquote
+  - uid: DichiarazioniICI.CalcoloICI.GetBollettinoICI
+    name: GetBollettinoICI
+  - uid: DichiarazioniICI.CalcoloICI.GetCalcoloICI
+    name: GetCalcoloICI
+  - uid: DichiarazioniICI.CalcoloICI.GetCalcoloICICategoriaClasse
+    name: GetCalcoloICICategoriaClasse
+  - uid: DichiarazioniICI.CalcoloICI.GetVersamenti
+    name: GetVersamenti
+  - uid: DichiarazioniICI.CalcoloICI.ResultRicercaAliquote
+    name: ResultRicercaAliquote
+  - uid: DichiarazioniICI.CalcoloICI.RicercaAliquote
+    name: RicercaAliquote
+  - uid: DichiarazioniICI.CalcoloICI.StatoElaborazioneICImassivo
+    name: StatoElaborazioneICImassivo
+- uid: DichiarazioniICI.CalcoloICI.GestioneElaborazione
+  name: DichiarazioniICI.CalcoloICI.GestioneElaborazione
+  items:
+  - uid: DichiarazioniICI.CalcoloICI.GestioneElaborazione.CGestioneElaborazione
+    name: CGestioneElaborazione
+  - uid: DichiarazioniICI.CalcoloICI.GestioneElaborazione.GestioneElaborazione
+    name: GestioneElaborazione
+  - uid: DichiarazioniICI.CalcoloICI.GestioneElaborazione.Repository
+    name: Repository
+  - uid: DichiarazioniICI.CalcoloICI.GestioneElaborazione.ViewElaborazioneICImassivo
+    name: ViewElaborazioneICImassivo
+- uid: DichiarazioniICI.ConfrontaConCatasto
+  name: DichiarazioniICI.ConfrontaConCatasto
+  items:
+  - uid: DichiarazioniICI.ConfrontaConCatasto.CConfrontaConCatasto
+    name: CConfrontaConCatasto
+  - uid: DichiarazioniICI.ConfrontaConCatasto.ConfrontaConCatasto
+    name: ConfrontaConCatasto
+  - uid: DichiarazioniICI.ConfrontaConCatasto.ElaborazioniCatasto
+    name: ElaborazioniCatasto
+- uid: DichiarazioniICI.Database
+  name: DichiarazioniICI.Database
+  items:
+  - uid: DichiarazioniICI.Database.Aliquote
+    name: Aliquote
+  - uid: DichiarazioniICI.Database.Bonificato
+    name: Bonificato
+  - uid: DichiarazioniICI.Database.BonificatoTestata
+    name: BonificatoTestata
+  - uid: DichiarazioniICI.Database.CaratteristicaRow
+    name: CaratteristicaRow
+  - uid: DichiarazioniICI.Database.CaratteristicaTable
+    name: CaratteristicaTable
+  - uid: DichiarazioniICI.Database.CategoriaCatastaleRow
+    name: CategoriaCatastaleRow
+  - uid: DichiarazioniICI.Database.CategoriaCatastaleTable
+    name: CategoriaCatastaleTable
+  - uid: DichiarazioniICI.Database.CategorieEscluse
+    name: CategorieEscluse
+  - uid: DichiarazioniICI.Database.ClasseRow
+    name: ClasseRow
+  - uid: DichiarazioniICI.Database.ClasseTable
+    name: ClasseTable
+  - uid: DichiarazioniICI.Database.ClsConfrontoCatastoDB
+    name: ClsConfrontoCatastoDB
+  - uid: DichiarazioniICI.Database.ContribPagatoDiverso
+    name: ContribPagatoDiverso
+  - uid: DichiarazioniICI.Database.ContribuentiImmobileView
+    name: ContribuentiImmobileView
+  - uid: DichiarazioniICI.Database.ContribuentiTuttiView
+    name: ContribuentiTuttiView
+  - uid: DichiarazioniICI.Database.ContribuentiView
+    name: ContribuentiView
+  - uid: DichiarazioniICI.Database.Database
+    name: Database
+  - uid: DichiarazioniICI.Database.DettagliImmobiliRow
+    name: DettagliImmobiliRow
+  - uid: DichiarazioniICI.Database.DettagliImmobiliView
+    name: DettagliImmobiliView
+  - uid: DichiarazioniICI.Database.DettaglioTestataTable
+    name: DettaglioTestataTable
+  - uid: DichiarazioniICI.Database.DichiarazioniDaBonificareRow
+    name: DichiarazioniDaBonificareRow
+  - uid: DichiarazioniICI.Database.DichiarazioniDaBonificareTable
+    name: DichiarazioniDaBonificareTable
+  - uid: DichiarazioniICI.Database.DichiarazioniView
+    name: DichiarazioniView
+  - uid: DichiarazioniICI.Database.DichiarazioniViewRow
+    name: DichiarazioniViewRow
+  - uid: DichiarazioniICI.Database.DichiarazoniOggettiView
+    name: DichiarazoniOggettiView
+  - uid: DichiarazioniICI.Database.DichiarazoniOggettiViewRow
+    name: DichiarazoniOggettiViewRow
+  - uid: DichiarazioniICI.Database.DovutoPerContribuente
+    name: DovutoPerContribuente
+  - uid: DichiarazioniICI.Database.Enti
+    name: Enti
+  - uid: DichiarazioniICI.Database.ImmobiliConfrontoCatastoIci
+    name: ImmobiliConfrontoCatastoIci
+  - uid: DichiarazioniICI.Database.ImportazioneF24
+    name: ImportazioneF24
+  - uid: DichiarazioniICI.Database.ImportazioneRow
+    name: ImportazioneRow
+  - uid: DichiarazioniICI.Database.ImportazioneTable
+    name: ImportazioneTable
+  - uid: DichiarazioniICI.Database.ImportazioniRow
+    name: ImportazioniRow
+  - uid: DichiarazioniICI.Database.ImportazioniTable
+    name: ImportazioniTable
+  - uid: DichiarazioniICI.Database.ObjFlussi
+    name: ObjFlussi
+  - uid: DichiarazioniICI.Database.OggettiTable
+    name: OggettiTable
+  - uid: DichiarazioniICI.Database.PossessoRow
+    name: PossessoRow
+  - uid: DichiarazioniICI.Database.PossessoTable
+    name: PossessoTable
+  - uid: DichiarazioniICI.Database.ProvenienzeRow
+    name: ProvenienzeRow
+  - uid: DichiarazioniICI.Database.ProvenienzeTable
+    name: ProvenienzeTable
+  - uid: DichiarazioniICI.Database.StampaContribNonPagato
+    name: StampaContribNonPagato
+  - uid: DichiarazioniICI.Database.StampaXLS
+    name: StampaXLS
+  - uid: DichiarazioniICI.Database.TariffeEstimoAFTable
+    name: TariffeEstimoAFTable
+  - uid: DichiarazioniICI.Database.TariffeEstimoFabRow
+    name: TariffeEstimoFabRow
+  - uid: DichiarazioniICI.Database.TariffeEstimoRow
+    name: TariffeEstimoRow
+  - uid: DichiarazioniICI.Database.TariffeEstimoTable
+    name: TariffeEstimoTable
+  - uid: DichiarazioniICI.Database.TblImportazioni
+    name: TblImportazioni
+  - uid: DichiarazioniICI.Database.TblRavvedimentoOperoso
+    name: TblRavvedimentoOperoso
+  - uid: DichiarazioniICI.Database.TestataTable
+    name: TestataTable
+  - uid: DichiarazioniICI.Database.Tipo_RenditaRow
+    name: Tipo_RenditaRow
+  - uid: DichiarazioniICI.Database.Tipo_RenditaTable
+    name: Tipo_RenditaTable
+  - uid: DichiarazioniICI.Database.TipoImmobileRow
+    name: TipoImmobileRow
+  - uid: DichiarazioniICI.Database.TipoImmobileTable
+    name: TipoImmobileTable
+  - uid: DichiarazioniICI.Database.TipologieProvenienza
+    name: TipologieProvenienza
+  - uid: DichiarazioniICI.Database.TipoPossessoEscluso
+    name: TipoPossessoEscluso
+  - uid: DichiarazioniICI.Database.TpSituazioneFinaleIci
+    name: TpSituazioneFinaleIci
+  - uid: DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento
+    name: TpSituazioneFinaleIci.TipoOrdinamento
+  - uid: DichiarazioniICI.Database.TributiTable
+    name: TributiTable
+  - uid: DichiarazioniICI.Database.UITerritorio
+    name: UITerritorio
+  - uid: DichiarazioniICI.Database.UtilizzoRow
+    name: UtilizzoRow
+  - uid: DichiarazioniICI.Database.UtilizzoTable
+    name: UtilizzoTable
+  - uid: DichiarazioniICI.Database.ValutaRow
+    name: ValutaRow
+  - uid: DichiarazioniICI.Database.ValutaTable
+    name: ValutaTable
+  - uid: DichiarazioniICI.Database.VersamentiImportazione
+    name: VersamentiImportazione
+  - uid: DichiarazioniICI.Database.VersamentiNoAnagView
+    name: VersamentiNoAnagView
+  - uid: DichiarazioniICI.Database.VersamentiNoDichView
+    name: VersamentiNoDichView
+  - uid: DichiarazioniICI.Database.VersamentiTable
+    name: VersamentiTable
+  - uid: DichiarazioniICI.Database.VersamentiView
+    name: VersamentiView
+- uid: DichiarazioniICI.ElaborazioneDocumenti
+  name: DichiarazioniICI.ElaborazioneDocumenti
+  items:
+  - uid: DichiarazioniICI.ElaborazioneDocumenti.AvanzamentoElaborazione
+    name: AvanzamentoElaborazione
+  - uid: DichiarazioniICI.ElaborazioneDocumenti.cmdElaborazioneDocumenti
+    name: cmdElaborazioneDocumenti
+  - uid: DichiarazioniICI.ElaborazioneDocumenti.DownloadDocumenti
+    name: DownloadDocumenti
+  - uid: DichiarazioniICI.ElaborazioneDocumenti.ElaborazioneDocumenti
+    name: ElaborazioneDocumenti
+  - uid: DichiarazioniICI.ElaborazioneDocumenti.Elaborazioneincorso
+    name: Elaborazioneincorso
+- uid: DichiarazioniICI.RavvedimentoOperoso
+  name: DichiarazioniICI.RavvedimentoOperoso
+  items:
+  - uid: DichiarazioniICI.RavvedimentoOperoso.CGestioneRavvedimento
+    name: CGestioneRavvedimento
+- uid: DichiarazioniICI.UserControl
+  name: DichiarazioniICI.UserControl
+  items:
+  - uid: DichiarazioniICI.UserControl.FiltroImmobile
+    name: FiltroImmobile
+  - uid: DichiarazioniICI.UserControl.FiltroPersona
+    name: FiltroPersona
+- uid: DichiarazioniICI.WServiceOPENae
+  name: DichiarazioniICI.WServiceOPENae
+  items:
+  - uid: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali
+    name: AssenzaDatiCatastali
+  - uid: DichiarazioniICI.WServiceOPENae.DestinazioneUso
+    name: DestinazioneUso
+  - uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+    name: DisposizioneAE
+  - uid: DichiarazioniICI.WServiceOPENae.EstraiTracciatoAE1CompletedEventArgs
+    name: EstraiTracciatoAE1CompletedEventArgs
+  - uid: DichiarazioniICI.WServiceOPENae.EstraiTracciatoAE1CompletedEventHandler
+    name: EstraiTracciatoAE1CompletedEventHandler
+  - uid: DichiarazioniICI.WServiceOPENae.EstraiTracciatoAECompletedEventArgs
+    name: EstraiTracciatoAECompletedEventArgs
+  - uid: DichiarazioniICI.WServiceOPENae.EstraiTracciatoAECompletedEventHandler
+    name: EstraiTracciatoAECompletedEventHandler
+  - uid: DichiarazioniICI.WServiceOPENae.GetFlussiTracciatiAECompletedEventArgs
+    name: GetFlussiTracciatiAECompletedEventArgs
+  - uid: DichiarazioniICI.WServiceOPENae.GetFlussiTracciatiAECompletedEventHandler
+    name: GetFlussiTracciatiAECompletedEventHandler
+  - uid: DichiarazioniICI.WServiceOPENae.NaturaOccupazione
+    name: NaturaOccupazione
+  - uid: DichiarazioniICI.WServiceOPENae.objFlussoAE
+    name: objFlussoAE
+  - uid: DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE1CompletedEventArgs
+    name: PopolaTabAppoggioAE1CompletedEventArgs
+  - uid: DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE1CompletedEventHandler
+    name: PopolaTabAppoggioAE1CompletedEventHandler
+  - uid: DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE2CompletedEventArgs
+    name: PopolaTabAppoggioAE2CompletedEventArgs
+  - uid: DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE2CompletedEventHandler
+    name: PopolaTabAppoggioAE2CompletedEventHandler
+  - uid: DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAECompletedEventArgs
+    name: PopolaTabAppoggioAECompletedEventArgs
+  - uid: DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAECompletedEventHandler
+    name: PopolaTabAppoggioAECompletedEventHandler
+  - uid: DichiarazioniICI.WServiceOPENae.ServiceOPENae
+    name: ServiceOPENae
+  - uid: DichiarazioniICI.WServiceOPENae.TipologiaUtenza
+    name: TipologiaUtenza
+  - uid: DichiarazioniICI.WServiceOPENae.TitoloOccupazione
+    name: TitoloOccupazione
+- uid: DichiarazioniICI.WsStradario
+  name: DichiarazioniICI.WsStradario
+  items:
+  - uid: DichiarazioniICI.WsStradario.Stradario
+    name: Stradario
+- uid: DTO
+  name: DTO
+  items:
+  - uid: DTO.CartellaSearch
+    name: CartellaSearch
+  - uid: DTO.DichiarazioneSearch
+    name: DichiarazioneSearch
+  - uid: DTO.DichiarazioneTosapCosapTestataOLD
+    name: DichiarazioneTosapCosapTestataOLD
+  - uid: DTO.ElaborazioniSearch
+    name: ElaborazioniSearch
+  - uid: DTO.MetodiAgevolazione
+    name: MetodiAgevolazione
+  - uid: DTO.MetodiArticolo
+    name: MetodiArticolo
+  - uid: DTO.MetodiCartella
+    name: MetodiCartella
+  - uid: DTO.MetodiCategorie
+    name: MetodiCategorie
+  - uid: DTO.MetodiConfigurazioneRate
+    name: MetodiConfigurazioneRate
+  - uid: DTO.MetodiDichiarazioneTosapCosap
+    name: MetodiDichiarazioneTosapCosap
+  - uid: DTO.MetodiDurata
+    name: MetodiDurata
+  - uid: DTO.MetodiElaborazioneEffettuata
+    name: MetodiElaborazioneEffettuata
+  - uid: DTO.MetodiElaborazioniTosapCosap
+    name: MetodiElaborazioniTosapCosap
+  - uid: DTO.MetodiLotto
+    name: MetodiLotto
+  - uid: DTO.MetodiMinuta
+    name: MetodiMinuta
+  - uid: DTO.MetodiPagamento
+    name: MetodiPagamento
+  - uid: DTO.MetodiPagamento.E_COLUMNS_NoPag
+    name: MetodiPagamento.E_COLUMNS_NoPag
+  - uid: DTO.MetodiPagamento.E_COLUMNS_SinglePag
+    name: MetodiPagamento.E_COLUMNS_SinglePag
+  - uid: DTO.MetodiPagamento.E_COLUMNS_TotPag
+    name: MetodiPagamento.E_COLUMNS_TotPag
+  - uid: DTO.MetodiRata
+    name: MetodiRata
+  - uid: DTO.MetodiRuolo
+    name: MetodiRuolo
+  - uid: DTO.MetodiTariffe
+    name: MetodiTariffe
+  - uid: DTO.MetodiTipoConsistenza
+    name: MetodiTipoConsistenza
+  - uid: DTO.MetodiTipologieOccupazioni
+    name: MetodiTipologieOccupazioni
+  - uid: DTO.MetodiTitoloRichiedente
+    name: MetodiTitoloRichiedente
+  - uid: DTO.MetodiUffici
+    name: MetodiUffici
+  - uid: DTO.PagamentiSearch
+    name: PagamentiSearch
+  - uid: DTO.RataSearch
+    name: RataSearch
+- uid: OPENgovTOCO
+  name: OPENgovTOCO
+  items:
+  - uid: OPENgovTOCO.BaseEnte
+    name: BaseEnte
+  - uid: OPENgovTOCO.BasePage
+    name: BasePage
+  - uid: OPENgovTOCO.CacheManager
+    name: CacheManager
+  - uid: OPENgovTOCO.CalcoloOSAP
+    name: CalcoloOSAP
+  - uid: OPENgovTOCO.CalcoloRateOSAP
+    name: CalcoloRateOSAP
+  - uid: OPENgovTOCO.clsImportFlussi
+    name: clsImportFlussi
+  - uid: OPENgovTOCO.ConfigurazioneRate
+    name: ConfigurazioneRate
+  - uid: OPENgovTOCO.Default
+    name: Default
+  - uid: OPENgovTOCO.DichiarazioneSession
+    name: DichiarazioneSession
+  - uid: OPENgovTOCO.Global
+    name: Global
+  - uid: OPENgovTOCO.ObjFlussoScuole
+    name: ObjFlussoScuole
+  - uid: OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi
+    name: ObjFlussoScuole.PosizioniAvvisi
+  - uid: OPENgovTOCO.OSAPConst
+    name: OSAPConst
+  - uid: OPENgovTOCO.OSAPConst.OperationType
+    name: OSAPConst.OperationType
+  - uid: OPENgovTOCO.OSAPPages
+    name: OSAPPages
+  - uid: OPENgovTOCO.SharedFunction
+    name: SharedFunction
+- uid: OPENGovTOCO
+  name: OPENGovTOCO
+  items:
+  - uid: OPENGovTOCO.Default
+    name: Default
+- uid: OPENGovTOCO.Configurazione
+  name: OPENGovTOCO.Configurazione
+  items:
+  - uid: OPENGovTOCO.Configurazione.ConfigurazioneCoefficienti
+    name: ConfigurazioneCoefficienti
+  - uid: OPENGovTOCO.Configurazione.ConfigurazioneTabelle
+    name: ConfigurazioneTabelle
+  - uid: OPENGovTOCO.Configurazione.ConfigurazioneTariffe
+    name: ConfigurazioneTariffe
+- uid: OPENgovTOCO.Dichiarazioni
+  name: OPENgovTOCO.Dichiarazioni
+  items:
+  - uid: OPENgovTOCO.Dichiarazioni.ArticoliAdd
+    name: ArticoliAdd
+  - uid: OPENgovTOCO.Dichiarazioni.ArticoliEdit
+    name: ArticoliEdit
+  - uid: OPENgovTOCO.Dichiarazioni.ArticoliView
+    name: ArticoliView
+  - uid: OPENgovTOCO.Dichiarazioni.DichiarazioniAdd
+    name: DichiarazioniAdd
+  - uid: OPENgovTOCO.Dichiarazioni.DichiarazioniEdit
+    name: DichiarazioniEdit
+  - uid: OPENgovTOCO.Dichiarazioni.DichiarazioniSearch
+    name: DichiarazioniSearch
+  - uid: OPENgovTOCO.Dichiarazioni.DichiarazioniView
+    name: DichiarazioniView
+- uid: OPENgovTOCO.Elaborazioni
+  name: OPENgovTOCO.Elaborazioni
+  items:
+  - uid: OPENgovTOCO.Elaborazioni.ElaborazioneAvvisi
+    name: ElaborazioneAvvisi
+- uid: OPENgovTOCO.Elaborazioni.Documenti
+  name: OPENgovTOCO.Elaborazioni.Documenti
+  items:
+  - uid: OPENgovTOCO.Elaborazioni.Documenti.ComandiDoc
+    name: ComandiDoc
+  - uid: OPENgovTOCO.Elaborazioni.Documenti.ComandiDocElaborati
+    name: ComandiDocElaborati
+  - uid: OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc
+    name: RicercaDoc
+  - uid: OPENgovTOCO.Elaborazioni.Documenti.StampaInCorso
+    name: StampaInCorso
+  - uid: OPENgovTOCO.Elaborazioni.Documenti.ViewDocElaborati
+    name: ViewDocElaborati
+- uid: OPENgovTOCO.Generali.classi
+  name: OPENgovTOCO.Generali.classi
+  items:
+  - uid: OPENgovTOCO.Generali.classi.Documenti
+    name: Documenti
+- uid: OPENGovTOCO.GestionePagamenti
+  name: OPENGovTOCO.GestionePagamenti
+  items:
+  - uid: OPENGovTOCO.GestionePagamenti.GestionePagamentiAdd
+    name: GestionePagamentiAdd
+  - uid: OPENGovTOCO.GestionePagamenti.GestionePagamentiEdit
+    name: GestionePagamentiEdit
+  - uid: OPENGovTOCO.GestionePagamenti.GestionePagamentiSearch
+    name: GestionePagamentiSearch
+- uid: OPENGovTOCO.MotoreTOCO
+  name: OPENGovTOCO.MotoreTOCO
+  items:
+  - uid: OPENGovTOCO.MotoreTOCO.Agevolazione
+    name: Agevolazione
+  - uid: OPENGovTOCO.MotoreTOCO.Articolo
+    name: Articolo
+  - uid: OPENGovTOCO.MotoreTOCO.CalcolaImportoTOCOCompletedEventArgs
+    name: CalcolaImportoTOCOCompletedEventArgs
+  - uid: OPENGovTOCO.MotoreTOCO.CalcolaImportoTOCOCompletedEventHandler
+    name: CalcolaImportoTOCOCompletedEventHandler
+  - uid: OPENGovTOCO.MotoreTOCO.CalcoloResult
+    name: CalcoloResult
+  - uid: OPENGovTOCO.MotoreTOCO.Categorie
+    name: Categorie
+  - uid: OPENGovTOCO.MotoreTOCO.CRUD
+    name: CRUD
+  - uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+    name: DettaglioAnagrafica
+  - uid: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap
+    name: DichiarazioneTosapCosap
+  - uid: OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosapTestata
+    name: DichiarazioneTosapCosapTestata
+  - uid: OPENGovTOCO.MotoreTOCO.dsContatti
+    name: dsContatti
+  - uid: OPENGovTOCO.MotoreTOCO.dsContatti.CONTATTIDataTable
+    name: dsContatti.CONTATTIDataTable
+  - uid: OPENGovTOCO.MotoreTOCO.dsContatti.CONTATTIRow
+    name: dsContatti.CONTATTIRow
+  - uid: OPENGovTOCO.MotoreTOCO.dsContatti.CONTATTIRowChangeEvent
+    name: dsContatti.CONTATTIRowChangeEvent
+  - uid: OPENGovTOCO.MotoreTOCO.dsContatti.CONTATTIRowChangeEventHandler
+    name: dsContatti.CONTATTIRowChangeEventHandler
+  - uid: OPENGovTOCO.MotoreTOCO.Durata
+    name: Durata
+  - uid: OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT
+    name: E_CALCOLORESULT
+  - uid: OPENGovTOCO.MotoreTOCO.MotoreTOCO
+    name: MotoreTOCO
+  - uid: OPENGovTOCO.MotoreTOCO.Tariffe
+    name: Tariffe
+  - uid: OPENGovTOCO.MotoreTOCO.TipoConsistenza
+    name: TipoConsistenza
+  - uid: OPENGovTOCO.MotoreTOCO.TipologieOccupazioni
+    name: TipologieOccupazioni
+  - uid: OPENGovTOCO.MotoreTOCO.TitoloRichiedente
+    name: TitoloRichiedente
+  - uid: OPENGovTOCO.MotoreTOCO.Uffici
+    name: Uffici
+- uid: OPENgovTOCO.SituazioneContribuente
+  name: OPENgovTOCO.SituazioneContribuente
+  items:
+  - uid: OPENgovTOCO.SituazioneContribuente.SituazioneAvvisi
+    name: SituazioneAvvisi
+  - uid: OPENgovTOCO.SituazioneContribuente.SituazioneAvvisiSearch
+    name: SituazioneAvvisiSearch
+- uid: OPENgovTOCO.Wuc
+  name: OPENgovTOCO.Wuc
+  items:
+  - uid: OPENgovTOCO.Wuc.WucArticolo
+    name: WucArticolo
+  - uid: OPENgovTOCO.Wuc.WucDatiContribuente
+    name: WucDatiContribuente
+  - uid: OPENgovTOCO.Wuc.WucDichiarazione
+    name: WucDichiarazione
+- uid: OPENGovTOCO.Wuc
+  name: OPENGovTOCO.Wuc
+  items:
+  - uid: OPENGovTOCO.Wuc.WucGestionePagamenti
+    name: WucGestionePagamenti

@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.Anater
+  commentId: N:DichiarazioniICI.Anater
+  id: DichiarazioniICI.Anater
+  children:
+  - DichiarazioniICI.Anater.RicercaImmobile
+  langs:
+  - csharp
+  - vb
+  name: DichiarazioniICI.Anater
+  nameWithType: DichiarazioniICI.Anater
+  fullName: DichiarazioniICI.Anater
+  type: Namespace
+  assemblies:
+  - DichiarazioniICI
+references:
+- uid: DichiarazioniICI.Anater.RicercaImmobile
+  commentId: T:DichiarazioniICI.Anater.RicercaImmobile
+  name: RicercaImmobile
+  nameWithType: RicercaImmobile
+  fullName: DichiarazioniICI.Anater.RicercaImmobile

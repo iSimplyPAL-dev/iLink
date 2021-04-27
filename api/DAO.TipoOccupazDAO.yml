@@ -1,0 +1,623 @@
+### YamlMime:ManagedReference
+items:
+- uid: DAO.TipoOccupazDAO
+  commentId: T:DAO.TipoOccupazDAO
+  id: TipoOccupazDAO
+  parent: DAO
+  children:
+  - DAO.TipoOccupazDAO.#ctor
+  - DAO.TipoOccupazDAO.connessioneDB
+  - DAO.TipoOccupazDAO.connessioneDB(System.String)
+  - DAO.TipoOccupazDAO.DeleteTipologiaOccupazione(System.Int32)
+  - DAO.TipoOccupazDAO.GetAllTipoOccupazioni(System.String,System.String)
+  - DAO.TipoOccupazDAO.InsertOrUpdateDescrizione(System.String,System.String,System.String,System.Int32,System.String)
+  - DAO.TipoOccupazDAO.InsertRibalta(System.Int32,System.Int32,System.String)
+  langs:
+  - csharp
+  - vb
+  name: TipoOccupazDAO
+  nameWithType: TipoOccupazDAO
+  fullName: DAO.TipoOccupazDAO
+  type: Class
+  source:
+    id: TipoOccupazDAO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\TipoOccupazDAO.cs
+    startLine: 20
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  summary: "\nClasse interfacciamento DB per la gestione TipoOccupaz.\n"
+  example: []
+  syntax:
+    content: public class TipoOccupazDAO
+    content.vb: Public Class TipoOccupazDAO
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DAO.TipoOccupazDAO.#ctor
+  commentId: M:DAO.TipoOccupazDAO.#ctor
+  id: '#ctor'
+  parent: DAO.TipoOccupazDAO
+  langs:
+  - csharp
+  - vb
+  name: TipoOccupazDAO()
+  nameWithType: TipoOccupazDAO.TipoOccupazDAO()
+  fullName: DAO.TipoOccupazDAO.TipoOccupazDAO()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\TipoOccupazDAO.cs
+    startLine: 28
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public TipoOccupazDAO()
+    content.vb: Public Sub New
+  overload: DAO.TipoOccupazDAO.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.TipoOccupazDAO.DeleteTipologiaOccupazione(System.Int32)
+  commentId: M:DAO.TipoOccupazDAO.DeleteTipologiaOccupazione(System.Int32)
+  id: DeleteTipologiaOccupazione(System.Int32)
+  parent: DAO.TipoOccupazDAO
+  langs:
+  - csharp
+  - vb
+  name: DeleteTipologiaOccupazione(Int32)
+  nameWithType: TipoOccupazDAO.DeleteTipologiaOccupazione(Int32)
+  fullName: DAO.TipoOccupazDAO.DeleteTipologiaOccupazione(System.Int32)
+  type: Method
+  source:
+    id: DeleteTipologiaOccupazione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\TipoOccupazDAO.cs
+    startLine: 35
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public int DeleteTipologiaOccupazione(int IdTipologiaOccupazione)
+    parameters:
+    - id: IdTipologiaOccupazione
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function DeleteTipologiaOccupazione(IdTipologiaOccupazione As Integer) As Integer
+  overload: DAO.TipoOccupazDAO.DeleteTipologiaOccupazione*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.TipoOccupazDAO.InsertOrUpdateDescrizione(System.String,System.String,System.String,System.Int32,System.String)
+  commentId: M:DAO.TipoOccupazDAO.InsertOrUpdateDescrizione(System.String,System.String,System.String,System.Int32,System.String)
+  id: InsertOrUpdateDescrizione(System.String,System.String,System.String,System.Int32,System.String)
+  parent: DAO.TipoOccupazDAO
+  langs:
+  - csharp
+  - vb
+  name: InsertOrUpdateDescrizione(String, String, String, Int32, String)
+  nameWithType: TipoOccupazDAO.InsertOrUpdateDescrizione(String, String, String, Int32, String)
+  fullName: DAO.TipoOccupazDAO.InsertOrUpdateDescrizione(System.String, System.String, System.String, System.Int32, System.String)
+  type: Method
+  source:
+    id: InsertOrUpdateDescrizione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\TipoOccupazDAO.cs
+    startLine: 102
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public int InsertOrUpdateDescrizione(string ConnectionString, string IdEnte, string IdTributo, int IdTipologiaOccupazione, string Descrizione)
+    parameters:
+    - id: ConnectionString
+      type: System.String
+    - id: IdEnte
+      type: System.String
+    - id: IdTributo
+      type: System.String
+    - id: IdTipologiaOccupazione
+      type: System.Int32
+    - id: Descrizione
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Function InsertOrUpdateDescrizione(ConnectionString As String, IdEnte As String, IdTributo As String, IdTipologiaOccupazione As Integer, Descrizione As String) As Integer
+  overload: DAO.TipoOccupazDAO.InsertOrUpdateDescrizione*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.TipoOccupazDAO.GetAllTipoOccupazioni(System.String,System.String)
+  commentId: M:DAO.TipoOccupazDAO.GetAllTipoOccupazioni(System.String,System.String)
+  id: GetAllTipoOccupazioni(System.String,System.String)
+  parent: DAO.TipoOccupazDAO
+  langs:
+  - csharp
+  - vb
+  name: GetAllTipoOccupazioni(String, String)
+  nameWithType: TipoOccupazDAO.GetAllTipoOccupazioni(String, String)
+  fullName: DAO.TipoOccupazDAO.GetAllTipoOccupazioni(System.String, System.String)
+  type: Method
+  source:
+    id: GetAllTipoOccupazioni
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\TipoOccupazDAO.cs
+    startLine: 189
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public DataTable GetAllTipoOccupazioni(string IdEnte, string IdTributo)
+    parameters:
+    - id: IdEnte
+      type: System.String
+    - id: IdTributo
+      type: System.String
+    return:
+      type: System.Data.DataTable
+    content.vb: Public Function GetAllTipoOccupazioni(IdEnte As String, IdTributo As String) As DataTable
+  overload: DAO.TipoOccupazDAO.GetAllTipoOccupazioni*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.TipoOccupazDAO.connessioneDB
+  commentId: M:DAO.TipoOccupazDAO.connessioneDB
+  id: connessioneDB
+  parent: DAO.TipoOccupazDAO
+  langs:
+  - csharp
+  - vb
+  name: connessioneDB()
+  nameWithType: TipoOccupazDAO.connessioneDB()
+  fullName: DAO.TipoOccupazDAO.connessioneDB()
+  type: Method
+  source:
+    id: connessioneDB
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\TipoOccupazDAO.cs
+    startLine: 250
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public void connessioneDB()
+    content.vb: Public Sub connessioneDB
+  overload: DAO.TipoOccupazDAO.connessioneDB*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.TipoOccupazDAO.InsertRibalta(System.Int32,System.Int32,System.String)
+  commentId: M:DAO.TipoOccupazDAO.InsertRibalta(System.Int32,System.Int32,System.String)
+  id: InsertRibalta(System.Int32,System.Int32,System.String)
+  parent: DAO.TipoOccupazDAO
+  langs:
+  - csharp
+  - vb
+  name: InsertRibalta(Int32, Int32, String)
+  nameWithType: TipoOccupazDAO.InsertRibalta(Int32, Int32, String)
+  fullName: DAO.TipoOccupazDAO.InsertRibalta(System.Int32, System.Int32, System.String)
+  type: Method
+  source:
+    id: InsertRibalta
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\TipoOccupazDAO.cs
+    startLine: 277
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public int InsertRibalta(int ribaltaDa, int ribaltaA, string IdEnte)
+    parameters:
+    - id: ribaltaDa
+      type: System.Int32
+    - id: ribaltaA
+      type: System.Int32
+    - id: IdEnte
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Function InsertRibalta(ribaltaDa As Integer, ribaltaA As Integer, IdEnte As String) As Integer
+  overload: DAO.TipoOccupazDAO.InsertRibalta*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.TipoOccupazDAO.connessioneDB(System.String)
+  commentId: M:DAO.TipoOccupazDAO.connessioneDB(System.String)
+  id: connessioneDB(System.String)
+  parent: DAO.TipoOccupazDAO
+  langs:
+  - csharp
+  - vb
+  name: connessioneDB(String)
+  nameWithType: TipoOccupazDAO.connessioneDB(String)
+  fullName: DAO.TipoOccupazDAO.connessioneDB(System.String)
+  type: Method
+  source:
+    id: connessioneDB
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\TipoOccupazDAO.cs
+    startLine: 321
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public void connessioneDB(string ConnectionString)
+    parameters:
+    - id: ConnectionString
+      type: System.String
+    content.vb: Public Sub connessioneDB(ConnectionString As String)
+  overload: DAO.TipoOccupazDAO.connessioneDB*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: DAO
+  commentId: N:DAO
+  name: DAO
+  nameWithType: DAO
+  fullName: DAO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DAO.TipoOccupazDAO.#ctor*
+  commentId: Overload:DAO.TipoOccupazDAO.#ctor
+  name: TipoOccupazDAO
+  nameWithType: TipoOccupazDAO.TipoOccupazDAO
+  fullName: DAO.TipoOccupazDAO.TipoOccupazDAO
+- uid: DAO.TipoOccupazDAO.DeleteTipologiaOccupazione*
+  commentId: Overload:DAO.TipoOccupazDAO.DeleteTipologiaOccupazione
+  name: DeleteTipologiaOccupazione
+  nameWithType: TipoOccupazDAO.DeleteTipologiaOccupazione
+  fullName: DAO.TipoOccupazDAO.DeleteTipologiaOccupazione
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DAO.TipoOccupazDAO.InsertOrUpdateDescrizione*
+  commentId: Overload:DAO.TipoOccupazDAO.InsertOrUpdateDescrizione
+  name: InsertOrUpdateDescrizione
+  nameWithType: TipoOccupazDAO.InsertOrUpdateDescrizione
+  fullName: DAO.TipoOccupazDAO.InsertOrUpdateDescrizione
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DAO.TipoOccupazDAO.GetAllTipoOccupazioni*
+  commentId: Overload:DAO.TipoOccupazDAO.GetAllTipoOccupazioni
+  name: GetAllTipoOccupazioni
+  nameWithType: TipoOccupazDAO.GetAllTipoOccupazioni
+  fullName: DAO.TipoOccupazDAO.GetAllTipoOccupazioni
+- uid: System.Data.DataTable
+  commentId: T:System.Data.DataTable
+  parent: System.Data
+  isExternal: true
+  name: DataTable
+  nameWithType: DataTable
+  fullName: System.Data.DataTable
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+- uid: DAO.TipoOccupazDAO.connessioneDB*
+  commentId: Overload:DAO.TipoOccupazDAO.connessioneDB
+  name: connessioneDB
+  nameWithType: TipoOccupazDAO.connessioneDB
+  fullName: DAO.TipoOccupazDAO.connessioneDB
+- uid: DAO.TipoOccupazDAO.InsertRibalta*
+  commentId: Overload:DAO.TipoOccupazDAO.InsertRibalta
+  name: InsertRibalta
+  nameWithType: TipoOccupazDAO.InsertRibalta
+  fullName: DAO.TipoOccupazDAO.InsertRibalta

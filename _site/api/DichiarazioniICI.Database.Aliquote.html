@@ -1,0 +1,915 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Aliquote
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Aliquote
+   ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DichiarazioniICI.Database.Aliquote">
+  
+  
+  <h1 id="DichiarazioniICI_Database_Aliquote" data-uid="DichiarazioniICI.Database.Aliquote" class="text-break">Class Aliquote
+  </h1>
+  <div class="markdown level0 summary"><p>Classe per la gestione delle Aliquote.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="DichiarazioniICI.Database.Database.html">Database</a></div>
+    <div class="level2"><span class="xref">Aliquote</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database__DbConnection">Database._DbConnection</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_TableName">Database.TableName</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_ProcedureName">Database.ProcedureName</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_AlredyOpened">Database.AlredyOpened</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_kill">Database.kill()</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_List">Database.List()</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_List_System_String_">Database.List(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_ListFromSP">Database.ListFromSP()</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_List_System_Int32_">Database.List(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_Query_System_Data_SqlClient_SqlCommand_System_Data_SqlClient_SqlConnection_">Database.Query(SqlCommand, SqlConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_QueryScalar_System_Data_SqlClient_SqlCommand_System_Data_SqlClient_SqlConnection_">Database.QueryScalar(SqlCommand, SqlConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_Execute_System_Data_SqlClient_SqlCommand_System_Data_SqlClient_SqlConnection_">Database.Execute(SqlCommand, SqlConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_Execute_System_Data_SqlClient_SqlCommand_System_Data_SqlClient_SqlConnection_System_Int32__">Database.Execute(SqlCommand, SqlConnection, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_Execute_System_Data_SqlClient_SqlCommand_System_Data_SqlClient_SqlConnection_System_String_System_Int32__">Database.Execute(SqlCommand, SqlConnection, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_GetIdentity_System_Data_SqlClient_SqlConnection_">Database.GetIdentity(SqlConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_PrepareGetRow_System_Int32_">Database.PrepareGetRow(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DichiarazioniICI.Database.Database.html#DichiarazioniICI_Database_Database_PrepareGetRowCaricoFigli_System_Int32_System_String_">Database.PrepareGetRowCaricoFigli(Int32, String)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DichiarazioniICI.Database.html">DichiarazioniICI.Database</a></h6>
+  <h6><strong>Assembly</strong>: DichiarazioniICI.dll</h6>
+  <h5 id="DichiarazioniICI_Database_Aliquote_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Aliquote : Database</code></pre>
+  </div>
+  <h5 id="DichiarazioniICI_Database_Aliquote_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>In ottemperanza alle linee guida di sviluppo 1.0</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="DichiarazioniICI_Database_Aliquote__ctor_" data-uid="DichiarazioniICI.Database.Aliquote.#ctor*"></a>
+  <h4 id="DichiarazioniICI_Database_Aliquote__ctor" data-uid="DichiarazioniICI.Database.Aliquote.#ctor">Aliquote()</h4>
+  <div class="markdown level1 summary"><p>Costruttore della classe</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Aliquote()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="DichiarazioniICI_Database_Aliquote_AnniCaricati_" data-uid="DichiarazioniICI.Database.Aliquote.AnniCaricati*"></a>
+  <h4 id="DichiarazioniICI_Database_Aliquote_AnniCaricati" data-uid="DichiarazioniICI.Database.Aliquote.AnniCaricati">AnniCaricati()</h4>
+  <div class="markdown level1 summary"><p>Carica l'elenco degli anni presenti nella tabella TP_ALIQUOTE_ICI</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataView AnniCaricati()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.DataView</span></td>
+        <td><p>Viene restituito un DataView con l'elenco degli anni presenti nella tabella TP_ALIQUOTE_ICI</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DichiarazioniICI_Database_Aliquote_CDoubleToDB_" data-uid="DichiarazioniICI.Database.Aliquote.CDoubleToDB*"></a>
+  <h4 id="DichiarazioniICI_Database_Aliquote_CDoubleToDB_System_Object_" data-uid="DichiarazioniICI.Database.Aliquote.CDoubleToDB(System.Object)">CDoubleToDB(Object)</h4>
+  <div class="markdown level1 summary"><p>Modifica il valore in input per essere salvato in un campo di tipo double</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CDoubleToDB(object vInput)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">vInput</span></td>
+        <td><p>Oggetto in input</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Valore di tipo stringa</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DichiarazioniICI_Database_Aliquote_CStrToDB_" data-uid="DichiarazioniICI.Database.Aliquote.CStrToDB*"></a>
+  <h4 id="DichiarazioniICI_Database_Aliquote_CStrToDB_System_Object_System_Boolean__System_Boolean_" data-uid="DichiarazioniICI.Database.Aliquote.CStrToDB(System.Object,System.Boolean@,System.Boolean)">CStrToDB(Object, ref Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Modifica il valore in input per essere salvato in un campo di tipo stringa</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CStrToDB(object vInput, ref bool blnClearSpace, bool blnUseNull)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">vInput</span></td>
+        <td><p>Oggetto in input</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">blnClearSpace</span></td>
+        <td><p>Valore booleano, se settato a true effettua un Trim del valore in input</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">blnUseNull</span></td>
+        <td><p>Valore booleano, se settato a true restituisce il valore Null se valore in input è Null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Valore di tipo stringa</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DichiarazioniICI_Database_Aliquote_DeleteAliquota_" data-uid="DichiarazioniICI.Database.Aliquote.DeleteAliquota*"></a>
+  <h4 id="DichiarazioniICI_Database_Aliquote_DeleteAliquota_System_Int32_" data-uid="DichiarazioniICI.Database.Aliquote.DeleteAliquota(System.Int32)">DeleteAliquota(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DeleteAliquota(int IdAliquota)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">IdAliquota</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DichiarazioniICI_Database_Aliquote_getNewID_" data-uid="DichiarazioniICI.Database.Aliquote.getNewID*"></a>
+  <h4 id="DichiarazioniICI_Database_Aliquote_getNewID_System_String_" data-uid="DichiarazioniICI.Database.Aliquote.getNewID(System.String)">getNewID(String)</h4>
+  <div class="markdown level1 summary"><p>Restituisce un nuovo contatore univoco per la tabella in passata input</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long getNewID(string strNomeTabella)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">strNomeTabella</span></td>
+        <td><p>Paramtro di tipo <code>String</code> che indica la tabella della quale si vuole avere un contatore</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><p>Restituisce un valore di tipo <code>long</code> con il nuovo contatore</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DichiarazioniICI_Database_Aliquote_InsertAliquota_" data-uid="DichiarazioniICI.Database.Aliquote.InsertAliquota*"></a>
+  <h4 id="DichiarazioniICI_Database_Aliquote_InsertAliquota_System_String_System_Int32_System_String_System_String_System_Double_System_Double_System_Double_System_Double_System_String_System_String_System_String_" data-uid="DichiarazioniICI.Database.Aliquote.InsertAliquota(System.String,System.Int32,System.String,System.String,System.Double,System.Double,System.Double,System.Double,System.String,System.String,System.String)">InsertAliquota(String, Int32, String, String, Double, Double, Double, Double, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Permette di inserire una nuova aliquota, di modificarne e cancellane una esistente in base al valore del parametro dbOperation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InsertAliquota(string Tributo, int IdAliquota, string Anno, string Tipo, double Valore, double AliquotaStatale, double PercInquilino, double SogliaRendita, string sTipoSoglia, string CodiceEnte, string TettoMax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Tributo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">IdAliquota</span></td>
+        <td><p>Parametro di tipo <code>Integer</code> che identifica l'aliquota</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Anno</span></td>
+        <td><p>Parametro di tipo <code>String</code> che determina l'anno dell'aliquota</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Tipo</span></td>
+        <td><p>Parametro di tipo <code>String</code> che determina il tipo di aliquota</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">Valore</span></td>
+        <td><p>Parametro di tipo <code>Double</code> che determina il valore dell'aliquota</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">AliquotaStatale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">PercInquilino</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">SogliaRendita</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sTipoSoglia</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">CodiceEnte</span></td>
+        <td><p>Parametro di tipo <code>String</code> che determina l'ente al quale appartiene l'aliquota</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">TettoMax</span></td>
+        <td><ul><li></li><li></li><li></li></ul>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>La funzione restituisce un valore <code>booleano</code></p>
+<ul><li></li><li></li></ul>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DichiarazioniICI_Database_Aliquote_ListaAliquote_" data-uid="DichiarazioniICI.Database.Aliquote.ListaAliquote*"></a>
+  <h4 id="DichiarazioniICI_Database_Aliquote_ListaAliquote_System_String_System_Int32_System_String_System_String_System_Double_System_String_System_Int32_System_Int32_" data-uid="DichiarazioniICI.Database.Aliquote.ListaAliquote(System.String,System.Int32,System.String,System.String,System.Double,System.String,System.Int32,System.Int32)">ListaAliquote(String, Int32, String, String, Double, String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Carica l'elenco delle aliquote e dei corrispondenti valori</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataTable ListaAliquote(string Tributo, int IdAliquota, string Anno, string Tipo, double Valore, string CodiceEnte, int ID_ALIQUOTA_OLD, int CodContrib)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Tributo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">IdAliquota</span></td>
+        <td><p>Parametro di tipo <code>Integer</code> che identifica l'aliquota</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Anno</span></td>
+        <td><p>Parametro di tipo <code>String</code> che determina l'anno dell'aliquota</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Tipo</span></td>
+        <td><p>Parametro di tipo <code>String</code> che determina il tipo di aliquota</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">Valore</span></td>
+        <td><p>Parametro di tipo <code>Double</code> che determina il valore dell'aliquota</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">CodiceEnte</span></td>
+        <td><p>Parametro di tipo <code>String</code> che determina l'ente al quale appartiene l'aliquota</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ID_ALIQUOTA_OLD</span></td>
+        <td><p>Parametro di tipo <code>Integer</code>  che identifica l'aliquota da non selezionare</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">CodContrib</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.DataTable</span></td>
+        <td><p>Viene restituito una DataTable con l'elenco delle aliquote e dei corrispondenti valori filtrate in base ai parametri di input</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DichiarazioniICI_Database_Aliquote_ListaAnni_" data-uid="DichiarazioniICI.Database.Aliquote.ListaAnni*"></a>
+  <h4 id="DichiarazioniICI_Database_Aliquote_ListaAnni_System_String_" data-uid="DichiarazioniICI.Database.Aliquote.ListaAnni(System.String)">ListaAnni(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataView ListaAnni(string IdEnte)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">IdEnte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.DataView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DichiarazioniICI_Database_Aliquote_ListaTipoAliquote_" data-uid="DichiarazioniICI.Database.Aliquote.ListaTipoAliquote*"></a>
+  <h4 id="DichiarazioniICI_Database_Aliquote_ListaTipoAliquote_System_String_" data-uid="DichiarazioniICI.Database.Aliquote.ListaTipoAliquote(System.String)">ListaTipoAliquote(String)</h4>
+  <div class="markdown level1 summary"><p>Carica l'elenco delle aliquote presenti nella tabella TBLALIQUOTE</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataView ListaTipoAliquote(string Tipo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Tipo</span></td>
+        <td><p>Parametro di tipo <code>String</code> che determina il tipo di aliquota.
+Per visualizzare tutti i record della tabella valorizzare il parametro a &quot;-1&quot;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.DataView</span></td>
+        <td><p>Viene restituito un DataView con l'elenco delle aliquote presenti nella tabella TBLALIQUOTE</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DichiarazioniICI_Database_Aliquote_ListaTributo_" data-uid="DichiarazioniICI.Database.Aliquote.ListaTributo*"></a>
+  <h4 id="DichiarazioniICI_Database_Aliquote_ListaTributo" data-uid="DichiarazioniICI.Database.Aliquote.ListaTributo">ListaTributo()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataView ListaTributo()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.DataView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DichiarazioniICI_Database_Aliquote_PrepareListaAliquote_" data-uid="DichiarazioniICI.Database.Aliquote.PrepareListaAliquote*"></a>
+  <h4 id="DichiarazioniICI_Database_Aliquote_PrepareListaAliquote_System_String_System_Int32_System_String_System_String_System_Double_System_String_System_Int32_System_Int32_" data-uid="DichiarazioniICI.Database.Aliquote.PrepareListaAliquote(System.String,System.Int32,System.String,System.String,System.Double,System.String,System.Int32,System.Int32)">PrepareListaAliquote(String, Int32, String, String, Double, String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Prepara una SqlCommand per effttuare il caricamento dell'elenco delle aliquote e dei corrispondenti valori</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SqlCommand PrepareListaAliquote(string Tributo, int IdAliquota, string Anno, string Tipo, double Valore, string CodiceEnte, int ID_ALIQUOTA_OLD, int CodContrib)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Tributo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">IdAliquota</span></td>
+        <td><p>Parametro di tipo <code>Integer</code> che identifica l'aliquota</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Anno</span></td>
+        <td><p>Parametro di tipo <code>String</code> che determina l'anno dell'aliquota</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Tipo</span></td>
+        <td><p>Parametro di tipo <code>String</code> che determina il tipo di aliquota</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">Valore</span></td>
+        <td><p>Parametro di tipo <code>Double</code> che determina il valore dell'aliquota</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">CodiceEnte</span></td>
+        <td><p>Parametro di tipo <code>String</code> che determina l'ente al quale appartiene l'aliquota</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ID_ALIQUOTA_OLD</span></td>
+        <td><p>Parametro di tipo <code>Integer</code>  che identifica l'aliquota da non selezionare</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">CodContrib</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlCommand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DichiarazioniICI_Database_Aliquote_PrepareListaTipoAliquote_" data-uid="DichiarazioniICI.Database.Aliquote.PrepareListaTipoAliquote*"></a>
+  <h4 id="DichiarazioniICI_Database_Aliquote_PrepareListaTipoAliquote_System_String_" data-uid="DichiarazioniICI.Database.Aliquote.PrepareListaTipoAliquote(System.String)">PrepareListaTipoAliquote(String)</h4>
+  <div class="markdown level1 summary"><p>Prepara una SqlCommand per effttuare il caricamento dell'elenco delle aliquote presenti nella tabella TBLALIQUOTE</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SqlCommand PrepareListaTipoAliquote(string Tipo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Tipo</span></td>
+        <td><p>Parametro di tipo <code>String</code> che determina il tipo di aliquota.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlCommand</span></td>
+        <td><p>Viene restituito un oggetto SqlCommand</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DichiarazioniICI_Database_Aliquote_RibaltaAliquota_" data-uid="DichiarazioniICI.Database.Aliquote.RibaltaAliquota*"></a>
+  <h4 id="DichiarazioniICI_Database_Aliquote_RibaltaAliquota_System_String_System_String_System_String_" data-uid="DichiarazioniICI.Database.Aliquote.RibaltaAliquota(System.String,System.String,System.String)">RibaltaAliquota(String, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RibaltaAliquota(string IdEnte, string AnnoFrom, string AnnoTo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">IdEnte</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">AnnoFrom</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">AnnoTo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

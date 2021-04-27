@@ -1,0 +1,1279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" />
+  <Import Project="..\packages\Text.Analyzers.2.6.3\build\Text.Analyzers.props" Condition="Exists('..\packages\Text.Analyzers.2.6.3\build\Text.Analyzers.props')" />
+  <Import Project="..\packages\Microsoft.NetFramework.Analyzers.2.6.3\build\Microsoft.NetFramework.Analyzers.props" Condition="Exists('..\packages\Microsoft.NetFramework.Analyzers.2.6.3\build\Microsoft.NetFramework.Analyzers.props')" />
+  <Import Project="..\packages\Microsoft.NetCore.Analyzers.2.6.3\build\Microsoft.NetCore.Analyzers.props" Condition="Exists('..\packages\Microsoft.NetCore.Analyzers.2.6.3\build\Microsoft.NetCore.Analyzers.props')" />
+  <Import Project="..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\build\Microsoft.CodeQuality.Analyzers.props" Condition="Exists('..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\build\Microsoft.CodeQuality.Analyzers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{14507F38-EB84-4E90-ACD5-21FE02A2DEE4}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>DichiarazioniICI</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DichiarazioniICI</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <WebReference_EnableProperties>true</WebReference_EnableProperties>
+    <WebReference_EnableSQLTypes>false</WebReference_EnableSQLTypes>
+    <WebReference_EnableLegacyEventingModel>true</WebReference_EnableLegacyEventingModel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\DichiarazioniICI.XML</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\DichiarazioniICI.XML</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AgenziaEntrateDLL">
+      <HintPath>..\..\..\DLLComuni\AgenziaEntrateDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="AnagInterface">
+      <HintPath>..\..\..\DLLComuni\AnagInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="Anagrafica">
+      <HintPath>..\..\..\DLLComuni\Anagrafica.dll</HintPath>
+    </Reference>
+    <Reference Include="BonificaInterface">
+      <HintPath>..\..\..\DLLComuni\BonificaInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="CatastoInterface">
+      <HintPath>..\..\..\DLLComuni\CatastoInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ComPlusInterface">
+      <HintPath>..\..\..\DLLComuni\ComPlusInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="CreaTracciatoPOSTEL">
+      <HintPath>..\..\..\DLLComuni\CreaTracciatoPOSTEL.dll</HintPath>
+    </Reference>
+    <Reference Include="ElaborazioneDatiStampeInterface">
+      <HintPath>..\..\..\DLLComuni\ElaborazioneDatiStampeInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="FileImporterInterface">
+      <HintPath>..\..\..\DLLComuni\FileImporterInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\DLLComuni\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ImexInterface">
+      <HintPath>..\..\..\DLLComuni\ImexInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ImportazioneF24, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLComuni\ImportazioneF24.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLComuni\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="OggettiComuniStrade">
+      <HintPath>..\..\..\DLLComuni\OggettiComuniStrade.dll</HintPath>
+    </Reference>
+    <Reference Include="OPENUtility">
+      <HintPath>..\..\..\DLLComuni\OPENUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="RemotingInterfaceAnater">
+      <HintPath>..\..\..\DLLComuni\RemotingInterfaceAnater.dll</HintPath>
+    </Reference>
+    <Reference Include="RemotingInterfaceEstrattore">
+      <HintPath>..\..\..\DLLComuni\RemotingInterfaceEstrattore.dll</HintPath>
+    </Reference>
+    <Reference Include="RemotingInterfaceMotoreTarsu">
+      <HintPath>..\..\..\DLLComuni\RemotingInterfaceMotoreTarsu.dll</HintPath>
+    </Reference>
+    <Reference Include="RemotingInterfaceOpenGovStradario">
+      <HintPath>..\..\..\DLLComuni\RemotingInterfaceOpenGovStradario.dll</HintPath>
+    </Reference>
+    <Reference Include="Ribes.OPENgov.WebControls, Version=1.2.0.17259, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLComuni\Ribes.OPENgov.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="RIBESElaborazioneDocumentiInterface">
+      <HintPath>..\..\..\DLLComuni\RIBESElaborazioneDocumentiInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="RKLib.ExportData, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLComuni\RKLib.ExportData.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Mobile">
+      <Name>System.Web.Mobile</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="Utility, Version=1.0.7495.28013, Culture=neutral, PublicKeyToken=ae1027569650564c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLComuni\Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="WebChart">
+      <HintPath>..\..\..\DLLComuni\WebChart.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AcquisizioneAutomaticaVersamenti.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Anagrafica.js" />
+    <Content Include="Analisi.txt" />
+    <Content Include="Analisi\CStampaContribNonPagato.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Analisi\CStampaContribPagatoDiverso.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Analisi\FatturatoIncassato\ChartAnalisiEconomiche.aspx" />
+    <Content Include="Analisi\FatturatoIncassato\ComandiAnalisiEconomiche.aspx" />
+    <Content Include="Analisi\FatturatoIncassato\ResultAnalisiEconomiche.aspx" />
+    <Content Include="Analisi\FatturatoIncassato\RicercaAnalisiEconomiche.aspx" />
+    <Content Include="Analisi\Rimborsi.aspx" />
+    <Content Include="Analisi\StampaContribNonPagato.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Analisi\StampaContribPagatoDiverso.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Anater\RicercaImmobile.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="bin\ASPnetMenu.dll" />
+    <Content Include="CAcquisizioneAutomaticaVersamenti.aspx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="CalcoloICI\CalcoloICIMassivo.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="CalcoloICI\CalcoloICIPuntuale.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="CalcoloICI\CCalcoloICIMassivo.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="CalcoloICI\CCalcoloICIPuntuale.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="CalcoloICI\CConfigAliquote.aspx" />
+    <Content Include="CalcoloICI\ConfigAliquote.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="CalcoloICI\CRicercaAliquote.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="CalcoloICI\ElencoAliquote.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="CalcoloICI\GestioneElaborazione\CGestioneElaborazione.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="CalcoloICI\GestioneElaborazione\GestioneElaborazione.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="CalcoloICI\GestioneElaborazione\Repository.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="CalcoloICI\GestioneElaborazione\StatoElaborazioneICImassivo.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="CalcoloICI\GestioneElaborazione\ViewElaborazioneICImassivo.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="CalcoloICI\GetBollettinoICI.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="CalcoloICI\GetCalcoloICI.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="CalcoloICI\GetCalcoloICICategoriaClasse.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="CalcoloICI\GetImmobiliICI.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="CalcoloICI\GetVersamenti.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="CalcoloICI\ResultRicercaAliquote.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="CalcoloICI\RicercaAliquote.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Catasto\ExportCatasto.aspx" />
+    <Content Include="CDichiarazioneMod.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="CGestione.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="CGestioneDettaglio.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="CImmobileDettaglio.aspx" />
+    <Content Include="ConfrontaConCatasto\CConfrontaConCatasto.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="ConfrontaConCatasto\CheckRifCatastali.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="ConfrontaConCatasto\ConfrontaConCatasto.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="ConfrontaConCatasto\ElaborazioniCatasto.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="ControllaData.vbs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="CRicercaVersamenti.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="CVersamenti.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="cVersamentiNonAbbinati.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Dichiarazione.aspx" />
+    <Content Include="ElaborazioneDocumenti\AvanzamentoElaborazione.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="ElaborazioneDocumenti\cmdElaborazioneDocumenti.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="ElaborazioneDocumenti\DownloadDocumenti.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="ElaborazioneDocumenti\ElaborazioneDocumenti.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="ElaborazioneDocumenti\Elaborazioneincorso.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="FrmUI.aspx" />
+    <Content Include="Gestione.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="GestioneDettaglio.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Global.asax" />
+    <Content Include="Immobile.aspx" />
+    <Content Include="ImmobileDettaglio.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="ImmobilePertinenza.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="MappaImmobile.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="RavvedimentoOperoso\CGestioneRavvedimento.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="RavvedimentoOperoso\GestioneRavvedimento.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="RicercaVersamenti.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="UserControl\FiltroImmobile.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="UserControl\FiltroPersona.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Versamenti.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="VersamentiNoAnag.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="VersamentiNoDich.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Compile Include="AcquisizioneAutomaticaVersamenti.aspx.cs">
+      <DependentUpon>AcquisizioneAutomaticaVersamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AcquisizioneAutomaticaVersamenti.aspx.designer.cs">
+      <DependentUpon>AcquisizioneAutomaticaVersamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analisi\CStampaContribNonPagato.aspx.cs">
+      <DependentUpon>CStampaContribNonPagato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analisi\CStampaContribNonPagato.aspx.designer.cs">
+      <DependentUpon>CStampaContribNonPagato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analisi\CStampaContribPagatoDiverso.aspx.cs">
+      <DependentUpon>CStampaContribPagatoDiverso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analisi\CStampaContribPagatoDiverso.aspx.designer.cs">
+      <DependentUpon>CStampaContribPagatoDiverso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analisi\FatturatoIncassato\ChartAnalisiEconomiche.aspx.cs">
+      <DependentUpon>ChartAnalisiEconomiche.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analisi\FatturatoIncassato\ChartAnalisiEconomiche.aspx.designer.cs">
+      <DependentUpon>ChartAnalisiEconomiche.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analisi\FatturatoIncassato\ComandiAnalisiEconomiche.aspx.cs">
+      <DependentUpon>ComandiAnalisiEconomiche.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analisi\FatturatoIncassato\ComandiAnalisiEconomiche.aspx.designer.cs">
+      <DependentUpon>ComandiAnalisiEconomiche.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analisi\FatturatoIncassato\ResultAnalisiEconomiche.aspx.cs">
+      <DependentUpon>ResultAnalisiEconomiche.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analisi\FatturatoIncassato\ResultAnalisiEconomiche.aspx.designer.cs">
+      <DependentUpon>ResultAnalisiEconomiche.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analisi\FatturatoIncassato\RicercaAnalisiEconomiche.aspx.cs">
+      <DependentUpon>RicercaAnalisiEconomiche.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analisi\FatturatoIncassato\RicercaAnalisiEconomiche.aspx.designer.cs">
+      <DependentUpon>RicercaAnalisiEconomiche.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analisi\Rimborsi.aspx.cs">
+      <DependentUpon>Rimborsi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analisi\Rimborsi.aspx.designer.cs">
+      <DependentUpon>Rimborsi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analisi\StampaContribNonPagato.aspx.cs">
+      <DependentUpon>StampaContribNonPagato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analisi\StampaContribNonPagato.aspx.designer.cs">
+      <DependentUpon>StampaContribNonPagato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analisi\StampaContribPagatoDiverso.aspx.cs">
+      <DependentUpon>StampaContribPagatoDiverso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analisi\StampaContribPagatoDiverso.aspx.designer.cs">
+      <DependentUpon>StampaContribPagatoDiverso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Anater\RicercaImmobile.aspx.cs">
+      <DependentUpon>RicercaImmobile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Anater\RicercaImmobile.aspx.designer.cs">
+      <DependentUpon>RicercaImmobile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Business\ApplicationHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Business\Basepage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Business\ClsAnalisi.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Business\ConstWrapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Business\FileUploader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Business\HelperAnagrafica.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Business\ImportHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Business\ModuloIci.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Business\TrasformatoreAnater.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Business\Utility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CAcquisizioneAutomaticaVersamenti.aspx.cs">
+      <DependentUpon>CAcquisizioneAutomaticaVersamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CAcquisizioneAutomaticaVersamenti.aspx.designer.cs">
+      <DependentUpon>CAcquisizioneAutomaticaVersamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalcoloICI\CalcoloICI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CalcoloICI\CalcoloICIMassivo.aspx.cs">
+      <DependentUpon>CalcoloICIMassivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalcoloICI\CalcoloICIMassivo.aspx.designer.cs">
+      <DependentUpon>CalcoloICIMassivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalcoloICI\CalcoloICIPuntuale.aspx.cs">
+      <DependentUpon>CalcoloICIPuntuale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalcoloICI\CalcoloICIPuntuale.aspx.designer.cs">
+      <DependentUpon>CalcoloICIPuntuale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalcoloICI\CCalcoloICIMassivo.aspx.cs">
+      <DependentUpon>CCalcoloICIMassivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalcoloICI\CCalcoloICIMassivo.aspx.designer.cs">
+      <DependentUpon>CCalcoloICIMassivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalcoloICI\CCalcoloICIPuntuale.aspx.cs">
+      <DependentUpon>CCalcoloICIPuntuale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalcoloICI\CCalcoloICIPuntuale.aspx.designer.cs">
+      <DependentUpon>CCalcoloICIPuntuale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalcoloICI\CConfigAliquote.aspx.cs">
+      <DependentUpon>CConfigAliquote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalcoloICI\CConfigAliquote.aspx.designer.cs">
+      <DependentUpon>CConfigAliquote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalcoloICI\ConfigAliquote.aspx.cs">
+      <DependentUpon>ConfigAliquote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalcoloICI\ConfigAliquote.aspx.designer.cs">
+      <DependentUpon>ConfigAliquote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalcoloICI\CRicercaAliquote.aspx.cs">
+      <DependentUpon>CRicercaAliquote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalcoloICI\CRicercaAliquote.aspx.designer.cs">
+      <DependentUpon>CRicercaAliquote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalcoloICI\ElencoAliquote.aspx.cs">
+      <DependentUpon>ElencoAliquote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalcoloICI\ElencoAliquote.aspx.designer.cs">
+      <DependentUpon>ElencoAliquote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalcoloICI\GestioneElaborazione\CGestioneElaborazione.aspx.cs">
+      <DependentUpon>CGestioneElaborazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalcoloICI\GestioneElaborazione\CGestioneElaborazione.aspx.designer.cs">
+      <DependentUpon>CGestioneElaborazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalcoloICI\GestioneElaborazione\GestioneElaborazione.aspx.cs">
+      <DependentUpon>GestioneElaborazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalcoloICI\GestioneElaborazione\GestioneElaborazione.aspx.designer.cs">
+      <DependentUpon>GestioneElaborazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalcoloICI\GestioneElaborazione\Repository.aspx.cs">
+      <DependentUpon>Repository.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalcoloICI\GestioneElaborazione\Repository.aspx.designer.cs">
+      <DependentUpon>Repository.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalcoloICI\GestioneElaborazione\StatoElaborazioneICImassivo.aspx.cs">
+      <DependentUpon>StatoElaborazioneICImassivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalcoloICI\GestioneElaborazione\StatoElaborazioneICImassivo.aspx.designer.cs">
+      <DependentUpon>StatoElaborazioneICImassivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalcoloICI\GestioneElaborazione\ViewElaborazioneICImassivo.aspx.cs">
+      <DependentUpon>ViewElaborazioneICImassivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalcoloICI\GestioneElaborazione\ViewElaborazioneICImassivo.aspx.designer.cs">
+      <DependentUpon>ViewElaborazioneICImassivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalcoloICI\GetBollettinoICI.aspx.cs">
+      <DependentUpon>GetBollettinoICI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalcoloICI\GetBollettinoICI.aspx.designer.cs">
+      <DependentUpon>GetBollettinoICI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalcoloICI\GetCalcoloICI.aspx.cs">
+      <DependentUpon>GetCalcoloICI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalcoloICI\GetCalcoloICI.aspx.designer.cs">
+      <DependentUpon>GetCalcoloICI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalcoloICI\GetCalcoloICICategoriaClasse.aspx.cs">
+      <DependentUpon>GetCalcoloICICategoriaClasse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalcoloICI\GetCalcoloICICategoriaClasse.aspx.designer.cs">
+      <DependentUpon>GetCalcoloICICategoriaClasse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalcoloICI\GetImmobiliICI.aspx.cs">
+      <DependentUpon>GetImmobiliICI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalcoloICI\GetImmobiliICI.aspx.designer.cs">
+      <DependentUpon>GetImmobiliICI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalcoloICI\GetVersamenti.aspx.cs">
+      <DependentUpon>GetVersamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalcoloICI\GetVersamenti.aspx.designer.cs">
+      <DependentUpon>GetVersamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalcoloICI\ResultRicercaAliquote.aspx.cs">
+      <DependentUpon>ResultRicercaAliquote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalcoloICI\ResultRicercaAliquote.aspx.designer.cs">
+      <DependentUpon>ResultRicercaAliquote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalcoloICI\RicercaAliquote.aspx.cs">
+      <DependentUpon>RicercaAliquote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalcoloICI\RicercaAliquote.aspx.designer.cs">
+      <DependentUpon>RicercaAliquote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catasto\ClsCatasto.cs" />
+    <Compile Include="Catasto\ExportCatasto.aspx.cs">
+      <DependentUpon>ExportCatasto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catasto\ExportCatasto.aspx.designer.cs">
+      <DependentUpon>ExportCatasto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CDichiarazioneMod.aspx.cs">
+      <DependentUpon>CDichiarazioneMod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CDichiarazioneMod.aspx.designer.cs">
+      <DependentUpon>CDichiarazioneMod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGestione.aspx.cs">
+      <DependentUpon>CGestione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CGestione.aspx.designer.cs">
+      <DependentUpon>CGestione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGestioneDettaglio.aspx.cs">
+      <DependentUpon>CGestioneDettaglio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CGestioneDettaglio.aspx.designer.cs">
+      <DependentUpon>CGestioneDettaglio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CImmobileDettaglio.aspx.cs">
+      <DependentUpon>CImmobileDettaglio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CImmobileDettaglio.aspx.designer.cs">
+      <DependentUpon>CImmobileDettaglio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfrontaConCatasto\CConfrontaConCatasto.aspx.cs">
+      <DependentUpon>CConfrontaConCatasto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfrontaConCatasto\CConfrontaConCatasto.aspx.designer.cs">
+      <DependentUpon>CConfrontaConCatasto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfrontaConCatasto\CheckRifCatastali.aspx.cs">
+      <DependentUpon>CheckRifCatastali.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfrontaConCatasto\CheckRifCatastali.aspx.designer.cs">
+      <DependentUpon>CheckRifCatastali.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfrontaConCatasto\ConfrontaConCatasto.aspx.cs">
+      <DependentUpon>ConfrontaConCatasto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfrontaConCatasto\ConfrontaConCatasto.aspx.designer.cs">
+      <DependentUpon>ConfrontaConCatasto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfrontaConCatasto\ElaborazioniCatasto.aspx.cs">
+      <DependentUpon>ElaborazioniCatasto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfrontaConCatasto\ElaborazioniCatasto.aspx.designer.cs">
+      <DependentUpon>ElaborazioniCatasto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRicercaVersamenti.aspx.cs">
+      <DependentUpon>CRicercaVersamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRicercaVersamenti.aspx.designer.cs">
+      <DependentUpon>CRicercaVersamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CVersamenti.aspx.cs">
+      <DependentUpon>CVersamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CVersamenti.aspx.designer.cs">
+      <DependentUpon>CVersamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cVersamentiNonAbbinati.aspx.cs">
+      <DependentUpon>cVersamentiNonAbbinati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cVersamentiNonAbbinati.aspx.designer.cs">
+      <DependentUpon>cVersamentiNonAbbinati.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseUtil\ImportazioniTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\Aliquote.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\CaratteristicaTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\CategoriaCatastaleTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\CategorieEscluse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ClasseTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ContribPagatoDiverso.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ContribuentiImmobileView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ContribuentiTuttiView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ContribuentiView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\Database.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\DettagliImmobiliView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\DettaglioTestataTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\DichiarazioniDaBonificareTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\DichiarazioniOggettiView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\DichiarazioniView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\DovutoPerContribuente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ImmobiliConfrontoCatastIci.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ImportazioneF24.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ImportazioneTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\OggettiTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\PossessoTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ProvenienzeTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\StampaContribNonPagato.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\StampaXLS.cs" />
+    <Compile Include="Database\TblRavvedimentoOperoso.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\TestataTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\TipoImmobileTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\TipoPossessoEscluso.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\Tipo_RenditaTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\TpSituazioneFinaleIci.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ValutaTable.cs" />
+    <Compile Include="Database\VersamentiNoAnagView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\VersamentiNoDichView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\VersamentiTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\VersamentiView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dichiarazione.aspx.cs">
+      <DependentUpon>Dichiarazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dichiarazione.aspx.designer.cs">
+      <DependentUpon>Dichiarazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ElaborazioneDocumenti\AvanzamentoElaborazione.aspx.cs">
+      <DependentUpon>AvanzamentoElaborazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ElaborazioneDocumenti\AvanzamentoElaborazione.aspx.designer.cs">
+      <DependentUpon>AvanzamentoElaborazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ElaborazioneDocumenti\cmdElaborazioneDocumenti.aspx.cs">
+      <DependentUpon>cmdElaborazioneDocumenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ElaborazioneDocumenti\cmdElaborazioneDocumenti.aspx.designer.cs">
+      <DependentUpon>cmdElaborazioneDocumenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ElaborazioneDocumenti\DownloadDocumenti.aspx.cs">
+      <DependentUpon>DownloadDocumenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ElaborazioneDocumenti\DownloadDocumenti.aspx.designer.cs">
+      <DependentUpon>DownloadDocumenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ElaborazioneDocumenti\ElaborazioneDocumenti.aspx.cs">
+      <DependentUpon>ElaborazioneDocumenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ElaborazioneDocumenti\ElaborazioneDocumenti.aspx.designer.cs">
+      <DependentUpon>ElaborazioneDocumenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ElaborazioneDocumenti\Elaborazioneincorso.aspx.cs">
+      <DependentUpon>Elaborazioneincorso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ElaborazioneDocumenti\Elaborazioneincorso.aspx.designer.cs">
+      <DependentUpon>Elaborazioneincorso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUI.aspx.cs">
+      <DependentUpon>FrmUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmUI.aspx.designer.cs">
+      <DependentUpon>FrmUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestione.aspx.cs">
+      <DependentUpon>Gestione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneDettaglio.aspx.cs">
+      <DependentUpon>GestioneDettaglio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneDettaglio.aspx.designer.cs">
+      <DependentUpon>GestioneDettaglio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Immobile.aspx.cs">
+      <DependentUpon>Immobile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Immobile.aspx.designer.cs">
+      <DependentUpon>Immobile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImmobileDettaglio.aspx.cs">
+      <DependentUpon>ImmobileDettaglio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImmobileDettaglio.aspx.designer.cs">
+      <DependentUpon>ImmobileDettaglio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImmobilePertinenza.aspx.cs">
+      <DependentUpon>ImmobilePertinenza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImmobilePertinenza.aspx.designer.cs">
+      <DependentUpon>ImmobilePertinenza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MappaImmobile.aspx.cs">
+      <DependentUpon>MappaImmobile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MappaImmobile.aspx.designer.cs">
+      <DependentUpon>MappaImmobile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RavvedimentoOperoso\CGestioneRavvedimento.aspx.cs">
+      <DependentUpon>CGestioneRavvedimento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RavvedimentoOperoso\CGestioneRavvedimento.aspx.designer.cs">
+      <DependentUpon>CGestioneRavvedimento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RavvedimentoOperoso\GestioneRavvedimento.aspx.cs">
+      <DependentUpon>GestioneRavvedimento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RavvedimentoOperoso\GestioneRavvedimento.aspx.designer.cs">
+      <DependentUpon>GestioneRavvedimento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RicercaVersamenti.aspx.cs">
+      <DependentUpon>RicercaVersamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RicercaVersamenti.aspx.designer.cs">
+      <DependentUpon>RicercaVersamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StradarioWS\ReferenceWs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControl\FiltroImmobile.ascx.cs">
+      <DependentUpon>FiltroImmobile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\FiltroPersona.ascx.cs">
+      <DependentUpon>FiltroPersona.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Versamenti.aspx.cs">
+      <DependentUpon>Versamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Versamenti.aspx.designer.cs">
+      <DependentUpon>Versamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VersamentiNoAnag.aspx.cs">
+      <DependentUpon>VersamentiNoAnag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VersamentiNoAnag.aspx.designer.cs">
+      <DependentUpon>VersamentiNoAnag.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VersamentiNoDich.aspx.cs">
+      <DependentUpon>VersamentiNoDich.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VersamentiNoDich.aspx.designer.cs">
+      <DependentUpon>VersamentiNoDich.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WServiceOPENae\Reference.cs">
+      <DependentUpon>Reference.map</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <EmbeddedResource Include="AcquisizioneAutomaticaVersamenti.aspx.resx">
+      <DependentUpon>AcquisizioneAutomaticaVersamenti.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analisi\CStampaContribNonPagato.aspx.resx">
+      <DependentUpon>CStampaContribNonPagato.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analisi\CStampaContribPagatoDiverso.aspx.resx">
+      <DependentUpon>CStampaContribPagatoDiverso.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analisi\FatturatoIncassato\ChartAnalisiEconomiche.aspx.resx">
+      <DependentUpon>ChartAnalisiEconomiche.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analisi\FatturatoIncassato\ComandiAnalisiEconomiche.aspx.resx">
+      <DependentUpon>ComandiAnalisiEconomiche.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analisi\FatturatoIncassato\ResultAnalisiEconomiche.aspx.resx">
+      <DependentUpon>ResultAnalisiEconomiche.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analisi\FatturatoIncassato\RicercaAnalisiEconomiche.aspx.resx">
+      <DependentUpon>RicercaAnalisiEconomiche.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analisi\StampaContribNonPagato.aspx.resx">
+      <DependentUpon>StampaContribNonPagato.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analisi\StampaContribPagatoDiverso.aspx.resx">
+      <DependentUpon>StampaContribPagatoDiverso.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anater\RicercaImmobile.aspx.resx">
+      <DependentUpon>RicercaImmobile.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAcquisizioneAutomaticaVersamenti.aspx.resx">
+      <DependentUpon>CAcquisizioneAutomaticaVersamenti.aspx.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcoloICI\CalcoloICIMassivo.aspx.resx">
+      <DependentUpon>CalcoloICIMassivo.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcoloICI\CalcoloICIPuntuale.aspx.resx">
+      <DependentUpon>CalcoloICIPuntuale.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcoloICI\CCalcoloICIMassivo.aspx.resx">
+      <DependentUpon>CCalcoloICIMassivo.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcoloICI\CCalcoloICIPuntuale.aspx.resx">
+      <DependentUpon>CCalcoloICIPuntuale.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcoloICI\CConfigAliquote.aspx.resx">
+      <DependentUpon>CConfigAliquote.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcoloICI\ConfigAliquote.aspx.resx">
+      <DependentUpon>ConfigAliquote.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcoloICI\CRicercaAliquote.aspx.resx">
+      <DependentUpon>CRicercaAliquote.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcoloICI\ElencoAliquote.aspx.resx">
+      <DependentUpon>ElencoAliquote.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcoloICI\GestioneElaborazione\CGestioneElaborazione.aspx.resx">
+      <DependentUpon>CGestioneElaborazione.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcoloICI\GestioneElaborazione\GestioneElaborazione.aspx.resx">
+      <DependentUpon>GestioneElaborazione.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcoloICI\GestioneElaborazione\Repository.aspx.resx">
+      <DependentUpon>Repository.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcoloICI\GestioneElaborazione\StatoElaborazioneICImassivo.aspx.resx">
+      <DependentUpon>StatoElaborazioneICImassivo.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcoloICI\GestioneElaborazione\ViewElaborazioneICImassivo.aspx.resx">
+      <DependentUpon>ViewElaborazioneICImassivo.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcoloICI\GetBollettinoICI.aspx.resx">
+      <DependentUpon>GetBollettinoICI.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcoloICI\GetCalcoloICI.aspx.resx">
+      <DependentUpon>GetCalcoloICI.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcoloICI\GetCalcoloICICategoriaClasse.aspx.resx">
+      <DependentUpon>GetCalcoloICICategoriaClasse.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcoloICI\GetImmobiliICI.aspx.resx">
+      <DependentUpon>GetImmobiliICI.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcoloICI\GetVersamenti.aspx.resx">
+      <DependentUpon>GetVersamenti.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcoloICI\ResultRicercaAliquote.aspx.resx">
+      <DependentUpon>ResultRicercaAliquote.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcoloICI\RicercaAliquote.aspx.resx">
+      <DependentUpon>RicercaAliquote.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CDichiarazioneMod.aspx.resx">
+      <DependentUpon>CDichiarazioneMod.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGestione.aspx.resx">
+      <DependentUpon>CGestione.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGestioneDettaglio.aspx.resx">
+      <DependentUpon>CGestioneDettaglio.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfrontaConCatasto\CConfrontaConCatasto.aspx.resx">
+      <DependentUpon>CConfrontaConCatasto.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfrontaConCatasto\CheckRifCatastali.aspx.resx">
+      <DependentUpon>CheckRifCatastali.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfrontaConCatasto\ConfrontaConCatasto.aspx.resx">
+      <DependentUpon>ConfrontaConCatasto.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfrontaConCatasto\ElaborazioniCatasto.aspx.resx">
+      <DependentUpon>ElaborazioniCatasto.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRicercaVersamenti.aspx.resx">
+      <DependentUpon>CRicercaVersamenti.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CVersamenti.aspx.resx">
+      <DependentUpon>CVersamenti.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cVersamentiNonAbbinati.aspx.resx">
+      <DependentUpon>cVersamentiNonAbbinati.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dichiarazione.aspx.resx">
+      <DependentUpon>Dichiarazione.aspx.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElaborazioneDocumenti\AvanzamentoElaborazione.aspx.resx">
+      <DependentUpon>AvanzamentoElaborazione.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElaborazioneDocumenti\cmdElaborazioneDocumenti.aspx.resx">
+      <DependentUpon>cmdElaborazioneDocumenti.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElaborazioneDocumenti\DownloadDocumenti.aspx.resx">
+      <DependentUpon>DownloadDocumenti.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElaborazioneDocumenti\ElaborazioneDocumenti.aspx.resx">
+      <DependentUpon>ElaborazioneDocumenti.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElaborazioneDocumenti\Elaborazioneincorso.aspx.resx">
+      <DependentUpon>Elaborazioneincorso.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestione.aspx.resx">
+      <DependentUpon>Gestione.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneDettaglio.aspx.resx">
+      <DependentUpon>GestioneDettaglio.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Immobile.aspx.resx">
+      <DependentUpon>Immobile.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImmobileDettaglio.aspx.resx">
+      <DependentUpon>ImmobileDettaglio.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImmobilePertinenza.aspx.resx">
+      <DependentUpon>ImmobilePertinenza.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MappaImmobile.aspx.resx">
+      <DependentUpon>MappaImmobile.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RavvedimentoOperoso\CGestioneRavvedimento.aspx.resx">
+      <DependentUpon>CGestioneRavvedimento.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RavvedimentoOperoso\GestioneRavvedimento.aspx.resx">
+      <DependentUpon>GestioneRavvedimento.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RicercaVersamenti.aspx.resx">
+      <DependentUpon>RicercaVersamenti.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\FiltroImmobile.ascx.resx">
+      <DependentUpon>FiltroImmobile.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\FiltroPersona.ascx.resx">
+      <DependentUpon>FiltroPersona.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Versamenti.aspx.resx">
+      <DependentUpon>Versamenti.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VersamentiNoAnag.aspx.resx">
+      <DependentUpon>VersamentiNoAnag.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VersamentiNoDich.aspx.resx">
+      <DependentUpon>VersamentiNoDich.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="packages.config" />
+    <Content Include="toc.yml" />
+    <Content Include="index.md" />
+    <Content Include="docfx.json" />
+    <Content Include="articles\toc.md" />
+    <Content Include="articles\intro.md" />
+    <Content Include="api\index.md" />
+    <None Include="Web References\WServiceOPENae\objFlussoAE.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WServiceOPENae\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WServiceOPENae\serviceopenae.disco" />
+    <None Include="Web References\WServiceOPENae\serviceopenae.wsdl" />
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <WebReferenceUrl Include="https://sec.isimply.it/OPENaews/ServiceOPENae.asmx">
+      <RelPath>Web References\WServiceOPENae\</RelPath>
+      <UrlBehavior>Static</UrlBehavior>
+      <UpdateFromURL>https://sec.isimply.it/OPENaews/ServiceOPENae.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\analyzers\dotnet\cs\Humanizer.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\analyzers\dotnet\cs\Microsoft.CodeQuality.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\analyzers\dotnet\cs\Microsoft.CodeQuality.CSharp.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.NetCore.Analyzers.2.6.3\analyzers\dotnet\cs\Microsoft.NetCore.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.NetCore.Analyzers.2.6.3\analyzers\dotnet\cs\Microsoft.NetCore.CSharp.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.NetFramework.Analyzers.2.6.3\analyzers\dotnet\cs\Microsoft.NetFramework.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.NetFramework.Analyzers.2.6.3\analyzers\dotnet\cs\Microsoft.NetFramework.CSharp.Analyzers.dll" />
+    <Analyzer Include="..\packages\Text.Analyzers.2.6.3\analyzers\dotnet\cs\Text.Analyzers.dll" />
+    <Analyzer Include="..\packages\Text.Analyzers.2.6.3\analyzers\dotnet\cs\Text.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63773</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/OPENgov/DichiarazioniICI</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Questo progetto fa riferimento a uno o più pacchetti NuGet che non sono presenti in questo computer. Usare lo strumento di ripristino dei pacchetti NuGet per scaricarli. Per altre informazioni, vedere http://go.microsoft.com/fwlink/?LinkID=322105. Il file mancante è {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\build\Microsoft.CodeQuality.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\build\Microsoft.CodeQuality.Analyzers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.NetCore.Analyzers.2.6.3\build\Microsoft.NetCore.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.NetCore.Analyzers.2.6.3\build\Microsoft.NetCore.Analyzers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.NetFramework.Analyzers.2.6.3\build\Microsoft.NetFramework.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.NetFramework.Analyzers.2.6.3\build\Microsoft.NetFramework.Analyzers.props'))" />
+    <Error Condition="!Exists('..\packages\Text.Analyzers.2.6.3\build\Text.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Text.Analyzers.2.6.3\build\Text.Analyzers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props'))" />
+    <Error Condition="!Exists('..\packages\docfx.console.2.56.6\build\docfx.console.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\docfx.console.2.56.6\build\docfx.console.targets'))" />
+  </Target>
+  <Import Project="..\packages\docfx.console.2.56.6\build\docfx.console.targets" Condition="Exists('..\packages\docfx.console.2.56.6\build\docfx.console.targets')" />
+</Project>

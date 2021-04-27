@@ -1,0 +1,57 @@
+PROGETTO ICI
+-------------
+
+
+Punti in sospeso :
+
+1) Implementazione dei metodi di bonifica e modifica delle pagine Dichiarazione, Contitolare e Immobile
+   per la gestione della bonifica automatica.
+
+2) Implementazione di un programma di importazione e bonifica dal Db utilità a quello Definitivo
+
+3) Modifica di "Imex" per l'importazione "sporca" nel database ICI (utilità ICI)
+
+   
+Descrizione flussi
+------------------
+
+Bonifica Immobile
+
+
+PROBLEMI DA RISOLVERE
+---------------------
+
+1) Gli immobili non hanno l'indirizzo ma CodVia, CodComune....Questo obbliga l'uso di 
+   territorio o bisonga prevedere i campi completi?
+   
+2) Nella codifica degli errori di bonifica c'è foglio e numero ma è da includere anche subalterno?
+
+3) Nella bonifica del soggetto si richiede una varifica formale del codice fiscale
+   ma non sono presenti i dati necessari per farla.
+   
+4) Nella bonifica esiste un errore "Codice Fiscale Mancante" ma data la struttura
+   dell'applicativo un record affetto da tale problema non potrà proprio essere importato
+   in ICI definitivo e quindi marcato con il corrispondente codice d'errore.
+
+5) Man mano che importo i record da utilità a definitivo cosa succede a quelli importati nel 
+   database sorgente (utilità)? E' il flag chiamato "Effettivo" a fare la differenza?
+      
+6) In riferimento al punto 5 i record aventi Effettivo=true devono diventare readonly?
+
+7) Chiarire il processo di passaggio dei dati anagrafici da utilità ad effettivo.
+
+8) Nei controlli anagrafici si cita:
+	Evidenziazione delle posizioni anagrafiche con l’indirizzo del presso diverso da quello di residenza.
+   Cosa si intende per "presso"? Nel database non ci sembra di identificare il campo che identifica
+   questo attributo.
+
+9) Per il denunciante non si effettua nessuna verifica?
+
+10) La struttura attuale del database associa gli errori di bonifica alle dichiarazioni.
+    Questa condizione implica alcune casistiche:
+    - Se una dichiarazione ha piu' immobili affetti dallo stesso errore (es. manca foglio/num/sub) 
+	  dopo la correzione su uno solo di essi l'errore continuerà ad apparire
+	- Il processo di bonifica identificherà sempre tutti gli errori relativi alla dichiarazione
+	  e non solo quelli associati alla pagina in analisi (es. immobili) 
+	- Data la potenziale quantità di errori da visualizzare e il poco spazio disponibile nelle pagine
+	  l'unica modalità che ci viene in mente per visualzzare queste informazioni è un popup

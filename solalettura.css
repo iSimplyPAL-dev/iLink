@@ -1,0 +1,44 @@
+.nascosto,
+.bottoneAggDate,
+.bottoneAnnullaAvviso,
+.bottoneApriElaborazioniDocumenti,
+.bottoneApriElaborazioni,
+.bottoneCalcola,
+.bottoneCalcoloIci,
+.bottoneCalcoloMisure,
+.bottoneCancella,
+.bottoneCreaFile,
+.bottoneCreaLettera,
+.bottoneCreaRichInfo,
+.bottoneDuplica,
+.bottoneForzaDati,
+.bottoneImport,
+.bottoneInserimento,
+.bottoneLettera,
+.bottoneModifica,
+.bottoneNewInsert,
+.bottoneOk,
+.bottonePopolaAppoggio,
+.bottonePulisci,
+.bottoneQuestionario,
+.bottoneRendiAttoDefinitivo,
+.bottoneRettificaAvviso,
+.bottoneSalva,
+.bottoneStampa,
+.bottoneUnlock,
+.bottoneWord
+{
+    pointer-events: none;
+    cursor: default;
+    opacity:0.50;
+}
+
+
+
+
+
+
+
+
+
+

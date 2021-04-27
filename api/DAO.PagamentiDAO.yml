@@ -1,0 +1,753 @@
+### YamlMime:ManagedReference
+items:
+- uid: DAO.PagamentiDAO
+  commentId: T:DAO.PagamentiDAO
+  id: PagamentiDAO
+  parent: DAO
+  children:
+  - DAO.PagamentiDAO.#ctor
+  - DAO.PagamentiDAO.connessioneDB
+  - DAO.PagamentiDAO.DeletePagamento(System.Int32)
+  - DAO.PagamentiDAO.GetPagamentoById(System.Int32)
+  - DAO.PagamentiDAO.GetTotalePagatoPerCatella(System.String,System.Int32,System.String)
+  - DAO.PagamentiDAO.InsertUpdatePagamento(IRemInterfaceOSAP.PagamentoExt,System.String)
+  - DAO.PagamentiDAO.RicercaPagamenti(DTO.PagamentiSearch)
+  - DAO.PagamentiDAO.RicercaPagamenti(DTO.PagamentiSearch,System.String)
+  - DAO.PagamentiDAO.RicercaRate(DTO.RataSearch)
+  langs:
+  - csharp
+  - vb
+  name: PagamentiDAO
+  nameWithType: PagamentiDAO
+  fullName: DAO.PagamentiDAO
+  type: Class
+  source:
+    id: PagamentiDAO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\PagamentiDAO.cs
+    startLine: 13
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  summary: "\nClasse interfacciamento DB per la gestione Pagamenti.\n"
+  example: []
+  syntax:
+    content: public class PagamentiDAO
+    content.vb: Public Class PagamentiDAO
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DAO.PagamentiDAO.#ctor
+  commentId: M:DAO.PagamentiDAO.#ctor
+  id: '#ctor'
+  parent: DAO.PagamentiDAO
+  langs:
+  - csharp
+  - vb
+  name: PagamentiDAO()
+  nameWithType: PagamentiDAO.PagamentiDAO()
+  fullName: DAO.PagamentiDAO.PagamentiDAO()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\PagamentiDAO.cs
+    startLine: 24
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public PagamentiDAO()
+    content.vb: Public Sub New
+  overload: DAO.PagamentiDAO.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.PagamentiDAO.GetTotalePagatoPerCatella(System.String,System.Int32,System.String)
+  commentId: M:DAO.PagamentiDAO.GetTotalePagatoPerCatella(System.String,System.Int32,System.String)
+  id: GetTotalePagatoPerCatella(System.String,System.Int32,System.String)
+  parent: DAO.PagamentiDAO
+  langs:
+  - csharp
+  - vb
+  name: GetTotalePagatoPerCatella(String, Int32, String)
+  nameWithType: PagamentiDAO.GetTotalePagatoPerCatella(String, Int32, String)
+  fullName: DAO.PagamentiDAO.GetTotalePagatoPerCatella(System.String, System.Int32, System.String)
+  type: Method
+  source:
+    id: GetTotalePagatoPerCatella
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\PagamentiDAO.cs
+    startLine: 34
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public double GetTotalePagatoPerCatella(string idEnte, int idContribuente, string codiceCartella)
+    parameters:
+    - id: idEnte
+      type: System.String
+    - id: idContribuente
+      type: System.Int32
+    - id: codiceCartella
+      type: System.String
+    return:
+      type: System.Double
+    content.vb: Public Function GetTotalePagatoPerCatella(idEnte As String, idContribuente As Integer, codiceCartella As String) As Double
+  overload: DAO.PagamentiDAO.GetTotalePagatoPerCatella*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.PagamentiDAO.GetPagamentoById(System.Int32)
+  commentId: M:DAO.PagamentiDAO.GetPagamentoById(System.Int32)
+  id: GetPagamentoById(System.Int32)
+  parent: DAO.PagamentiDAO
+  langs:
+  - csharp
+  - vb
+  name: GetPagamentoById(Int32)
+  nameWithType: PagamentiDAO.GetPagamentoById(Int32)
+  fullName: DAO.PagamentiDAO.GetPagamentoById(System.Int32)
+  type: Method
+  source:
+    id: GetPagamentoById
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\PagamentiDAO.cs
+    startLine: 120
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public DataTable GetPagamentoById(int idPagamento)
+    parameters:
+    - id: idPagamento
+      type: System.Int32
+    return:
+      type: System.Data.DataTable
+    content.vb: Public Function GetPagamentoById(idPagamento As Integer) As DataTable
+  overload: DAO.PagamentiDAO.GetPagamentoById*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.PagamentiDAO.RicercaPagamenti(DTO.PagamentiSearch)
+  commentId: M:DAO.PagamentiDAO.RicercaPagamenti(DTO.PagamentiSearch)
+  id: RicercaPagamenti(DTO.PagamentiSearch)
+  parent: DAO.PagamentiDAO
+  langs:
+  - csharp
+  - vb
+  name: RicercaPagamenti(PagamentiSearch)
+  nameWithType: PagamentiDAO.RicercaPagamenti(PagamentiSearch)
+  fullName: DAO.PagamentiDAO.RicercaPagamenti(DTO.PagamentiSearch)
+  type: Method
+  source:
+    id: RicercaPagamenti
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\PagamentiDAO.cs
+    startLine: 181
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public DataTable RicercaPagamenti(PagamentiSearch searchParameter)
+    parameters:
+    - id: searchParameter
+      type: DTO.PagamentiSearch
+      description: ''
+    return:
+      type: System.Data.DataTable
+    content.vb: Public Function RicercaPagamenti(searchParameter As PagamentiSearch) As DataTable
+  overload: DAO.PagamentiDAO.RicercaPagamenti*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.PagamentiDAO.RicercaPagamenti(DTO.PagamentiSearch,System.String)
+  commentId: M:DAO.PagamentiDAO.RicercaPagamenti(DTO.PagamentiSearch,System.String)
+  id: RicercaPagamenti(DTO.PagamentiSearch,System.String)
+  parent: DAO.PagamentiDAO
+  langs:
+  - csharp
+  - vb
+  name: RicercaPagamenti(PagamentiSearch, String)
+  nameWithType: PagamentiDAO.RicercaPagamenti(PagamentiSearch, String)
+  fullName: DAO.PagamentiDAO.RicercaPagamenti(DTO.PagamentiSearch, System.String)
+  type: Method
+  source:
+    id: RicercaPagamenti
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\PagamentiDAO.cs
+    startLine: 190
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public DataTable RicercaPagamenti(PagamentiSearch searchParameter, string sufxxExp)
+    parameters:
+    - id: searchParameter
+      type: DTO.PagamentiSearch
+      description: ''
+    - id: sufxxExp
+      type: System.String
+    return:
+      type: System.Data.DataTable
+    content.vb: Public Function RicercaPagamenti(searchParameter As PagamentiSearch, sufxxExp As String) As DataTable
+  overload: DAO.PagamentiDAO.RicercaPagamenti*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.PagamentiDAO.RicercaRate(DTO.RataSearch)
+  commentId: M:DAO.PagamentiDAO.RicercaRate(DTO.RataSearch)
+  id: RicercaRate(DTO.RataSearch)
+  parent: DAO.PagamentiDAO
+  langs:
+  - csharp
+  - vb
+  name: RicercaRate(RataSearch)
+  nameWithType: PagamentiDAO.RicercaRate(RataSearch)
+  fullName: DAO.PagamentiDAO.RicercaRate(DTO.RataSearch)
+  type: Method
+  source:
+    id: RicercaRate
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\PagamentiDAO.cs
+    startLine: 291
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public DataTable RicercaRate(RataSearch searchParameter)
+    parameters:
+    - id: searchParameter
+      type: DTO.RataSearch
+    return:
+      type: System.Data.DataTable
+      description: ''
+    content.vb: Public Function RicercaRate(searchParameter As RataSearch) As DataTable
+  overload: DAO.PagamentiDAO.RicercaRate*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.PagamentiDAO.InsertUpdatePagamento(IRemInterfaceOSAP.PagamentoExt,System.String)
+  commentId: M:DAO.PagamentiDAO.InsertUpdatePagamento(IRemInterfaceOSAP.PagamentoExt,System.String)
+  id: InsertUpdatePagamento(IRemInterfaceOSAP.PagamentoExt,System.String)
+  parent: DAO.PagamentiDAO
+  langs:
+  - csharp
+  - vb
+  name: InsertUpdatePagamento(PagamentoExt, String)
+  nameWithType: PagamentiDAO.InsertUpdatePagamento(PagamentoExt, String)
+  fullName: DAO.PagamentiDAO.InsertUpdatePagamento(IRemInterfaceOSAP.PagamentoExt, System.String)
+  type: Method
+  source:
+    id: InsertUpdatePagamento
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\PagamentiDAO.cs
+    startLine: 370
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  summary: "\nInserisce o modifica un pagamento\n"
+  example: []
+  syntax:
+    content: public int InsertUpdatePagamento(PagamentoExt objToInsertOrUpdate, string operatore)
+    parameters:
+    - id: objToInsertOrUpdate
+      type: IRemInterfaceOSAP.PagamentoExt
+      description: ''
+    - id: operatore
+      type: System.String
+      description: ''
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Function InsertUpdatePagamento(objToInsertOrUpdate As PagamentoExt, operatore As String) As Integer
+  overload: DAO.PagamentiDAO.InsertUpdatePagamento*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.PagamentiDAO.DeletePagamento(System.Int32)
+  commentId: M:DAO.PagamentiDAO.DeletePagamento(System.Int32)
+  id: DeletePagamento(System.Int32)
+  parent: DAO.PagamentiDAO
+  langs:
+  - csharp
+  - vb
+  name: DeletePagamento(Int32)
+  nameWithType: PagamentiDAO.DeletePagamento(Int32)
+  fullName: DAO.PagamentiDAO.DeletePagamento(System.Int32)
+  type: Method
+  source:
+    id: DeletePagamento
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\PagamentiDAO.cs
+    startLine: 481
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  summary: "\nCancella un pagamento\n"
+  example: []
+  syntax:
+    content: public int DeletePagamento(int idPagamento)
+    parameters:
+    - id: idPagamento
+      type: System.Int32
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Function DeletePagamento(idPagamento As Integer) As Integer
+  overload: DAO.PagamentiDAO.DeletePagamento*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.PagamentiDAO.connessioneDB
+  commentId: M:DAO.PagamentiDAO.connessioneDB
+  id: connessioneDB
+  parent: DAO.PagamentiDAO
+  langs:
+  - csharp
+  - vb
+  name: connessioneDB()
+  nameWithType: PagamentiDAO.connessioneDB()
+  fullName: DAO.PagamentiDAO.connessioneDB()
+  type: Method
+  source:
+    id: connessioneDB
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\PagamentiDAO.cs
+    startLine: 541
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public void connessioneDB()
+    content.vb: Public Sub connessioneDB
+  overload: DAO.PagamentiDAO.connessioneDB*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: DAO
+  commentId: N:DAO
+  name: DAO
+  nameWithType: DAO
+  fullName: DAO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DAO.PagamentiDAO.#ctor*
+  commentId: Overload:DAO.PagamentiDAO.#ctor
+  name: PagamentiDAO
+  nameWithType: PagamentiDAO.PagamentiDAO
+  fullName: DAO.PagamentiDAO.PagamentiDAO
+- uid: DAO.PagamentiDAO.GetTotalePagatoPerCatella*
+  commentId: Overload:DAO.PagamentiDAO.GetTotalePagatoPerCatella
+  name: GetTotalePagatoPerCatella
+  nameWithType: PagamentiDAO.GetTotalePagatoPerCatella
+  fullName: DAO.PagamentiDAO.GetTotalePagatoPerCatella
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: DAO.PagamentiDAO.GetPagamentoById*
+  commentId: Overload:DAO.PagamentiDAO.GetPagamentoById
+  name: GetPagamentoById
+  nameWithType: PagamentiDAO.GetPagamentoById
+  fullName: DAO.PagamentiDAO.GetPagamentoById
+- uid: System.Data.DataTable
+  commentId: T:System.Data.DataTable
+  parent: System.Data
+  isExternal: true
+  name: DataTable
+  nameWithType: DataTable
+  fullName: System.Data.DataTable
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+- uid: DAO.PagamentiDAO.RicercaPagamenti*
+  commentId: Overload:DAO.PagamentiDAO.RicercaPagamenti
+  name: RicercaPagamenti
+  nameWithType: PagamentiDAO.RicercaPagamenti
+  fullName: DAO.PagamentiDAO.RicercaPagamenti
+- uid: DTO.PagamentiSearch
+  commentId: T:DTO.PagamentiSearch
+  parent: DTO
+  name: PagamentiSearch
+  nameWithType: PagamentiSearch
+  fullName: DTO.PagamentiSearch
+- uid: DTO
+  commentId: N:DTO
+  name: DTO
+  nameWithType: DTO
+  fullName: DTO
+- uid: DAO.PagamentiDAO.RicercaRate*
+  commentId: Overload:DAO.PagamentiDAO.RicercaRate
+  name: RicercaRate
+  nameWithType: PagamentiDAO.RicercaRate
+  fullName: DAO.PagamentiDAO.RicercaRate
+- uid: DTO.RataSearch
+  commentId: T:DTO.RataSearch
+  parent: DTO
+  name: RataSearch
+  nameWithType: RataSearch
+  fullName: DTO.RataSearch
+- uid: DAO.PagamentiDAO.InsertUpdatePagamento*
+  commentId: Overload:DAO.PagamentiDAO.InsertUpdatePagamento
+  name: InsertUpdatePagamento
+  nameWithType: PagamentiDAO.InsertUpdatePagamento
+  fullName: DAO.PagamentiDAO.InsertUpdatePagamento
+- uid: IRemInterfaceOSAP.PagamentoExt
+  commentId: T:IRemInterfaceOSAP.PagamentoExt
+  parent: IRemInterfaceOSAP
+  isExternal: true
+  name: PagamentoExt
+  nameWithType: PagamentoExt
+  fullName: IRemInterfaceOSAP.PagamentoExt
+- uid: IRemInterfaceOSAP
+  commentId: N:IRemInterfaceOSAP
+  isExternal: true
+  name: IRemInterfaceOSAP
+  nameWithType: IRemInterfaceOSAP
+  fullName: IRemInterfaceOSAP
+- uid: DAO.PagamentiDAO.DeletePagamento*
+  commentId: Overload:DAO.PagamentiDAO.DeletePagamento
+  name: DeletePagamento
+  nameWithType: PagamentiDAO.DeletePagamento
+  fullName: DAO.PagamentiDAO.DeletePagamento
+- uid: DAO.PagamentiDAO.connessioneDB*
+  commentId: Overload:DAO.PagamentiDAO.connessioneDB
+  name: connessioneDB
+  nameWithType: PagamentiDAO.connessioneDB
+  fullName: DAO.PagamentiDAO.connessioneDB

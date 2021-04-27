@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:mstns="http://www.tempuri.org/dsContatti.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns="http://www.tempuri.org/dsContatti.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.tempuri.org/dsContatti.xsd" id="dsContatti" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:Locale="it-IT" name="dsContatti">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CONTATTI">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" name="IDRIFERIMENTO" type="xs:int" />
+              <xs:element minOccurs="0" name="TipoRiferimento" type="xs:int" />
+              <xs:element minOccurs="0" name="DatiRiferimento" type="xs:string" />
+				<xs:element minOccurs="0" name="DataInizioInvio" type="xs:string" />
+              <xs:element minOccurs="0" name="COD_CONTRIBUENTE" type="xs:int" />
+              <xs:element minOccurs="0" name="IDDATAANAGRAFICA" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique msdata:PrimaryKey="true" name="Constraint1">
+      <xs:selector xpath=".//mstns:CONTATTI" />
+      <xs:field xpath="mstns:IDRIFERIMENTO" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

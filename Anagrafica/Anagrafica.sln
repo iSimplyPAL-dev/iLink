@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AnagraficaWEB", "AnagraficaWEB.vbproj", "{C37EE8D6-9EC3-42BF-B6F7-5CF13D5A792E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnagInterface", "..\..\DLL_Anagrafica\AnagInterface\AnagInterface.csproj", "{C50A1ED4-1108-41EF-A1D0-E8AF5A12BF89}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AnagraficaDLL", "..\..\DLL_Anagrafica\AnagraficaDLL.vbproj", "{C8C697F1-B9A4-4349-AA3C-32E81C6B08B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C37EE8D6-9EC3-42BF-B6F7-5CF13D5A792E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C37EE8D6-9EC3-42BF-B6F7-5CF13D5A792E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C37EE8D6-9EC3-42BF-B6F7-5CF13D5A792E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C37EE8D6-9EC3-42BF-B6F7-5CF13D5A792E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C50A1ED4-1108-41EF-A1D0-E8AF5A12BF89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C50A1ED4-1108-41EF-A1D0-E8AF5A12BF89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C50A1ED4-1108-41EF-A1D0-E8AF5A12BF89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C50A1ED4-1108-41EF-A1D0-E8AF5A12BF89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8C697F1-B9A4-4349-AA3C-32E81C6B08B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8C697F1-B9A4-4349-AA3C-32E81C6B08B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8C697F1-B9A4-4349-AA3C-32E81C6B08B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8C697F1-B9A4-4349-AA3C-32E81C6B08B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccProjectUniqueName0 = AnagraficaWEB.vbproj
+		SccProjectName0 = \u0022$/Anagrafica_ULTIMA_VERSIONE\u0022,\u0020ISCAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName1 = ..\\..\\DLL_Anagrafica\\AnagraficaDLL.vbproj
+		SccProjectName1 = \u0022$/AnagraficaDLL\u0022,\u0020JUFAAAAA
+		SccLocalPath1 = ..\\..\\DLL_Anagrafica
+		SccProvider1 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,954 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" Condition="Exists('packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" />
+  <Import Project="packages\Text.Analyzers.2.6.3\build\Text.Analyzers.props" Condition="Exists('packages\Text.Analyzers.2.6.3\build\Text.Analyzers.props')" />
+  <Import Project="packages\Microsoft.NetFramework.Analyzers.2.6.3\build\Microsoft.NetFramework.Analyzers.props" Condition="Exists('packages\Microsoft.NetFramework.Analyzers.2.6.3\build\Microsoft.NetFramework.Analyzers.props')" />
+  <Import Project="packages\Microsoft.NetCore.Analyzers.2.6.3\build\Microsoft.NetCore.Analyzers.props" Condition="Exists('packages\Microsoft.NetCore.Analyzers.2.6.3\build\Microsoft.NetCore.Analyzers.props')" />
+  <Import Project="packages\Microsoft.CodeQuality.Analyzers.2.6.3\build\Microsoft.CodeQuality.Analyzers.props" Condition="Exists('packages\Microsoft.CodeQuality.Analyzers.2.6.3\build\Microsoft.CodeQuality.Analyzers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D0DCFAC9-1354-466A-8ECD-BF420F1B1895}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>OPENgov</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>OPENgov</RootNamespace>
+    <StartupObject>OPENgov.%28None%29</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>OPENgov.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>OPENgov.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AnagInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=73a397894a5f6da1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLComuni\AnagInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="Anagrafica, Version=1.0.1.2, Culture=neutral, PublicKeyToken=978df93f9e14593b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLComuni\Anagrafica.dll</HintPath>
+    </Reference>
+    <Reference Include="GestioneStradarioVaniDLL">
+      <HintPath>..\..\DLLComuni\GestioneStradarioVaniDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="IRemInterfaceOSAP, Version=1.0.6732.20093, Culture=neutral, PublicKeyToken=821c65e4384aa8e2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLComuni\IRemInterfaceOSAP.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLComuni\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="OggettiComuniStrade, Version=1.0.4.0, Culture=neutral, PublicKeyToken=8e92109ba6c0d037, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLComuni\OggettiComuniStrade.dll</HintPath>
+    </Reference>
+    <Reference Include="OPENUtility, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLComuni\OPENUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="RemotingInterfaceAnater, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLComuni\RemotingInterfaceAnater.dll</HintPath>
+    </Reference>
+    <Reference Include="RemotingInterfaceMotoreH2O, Version=1.0.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLComuni\RemotingInterfaceMotoreH2O.dll</HintPath>
+    </Reference>
+    <Reference Include="RemotingInterfaceMotoreTarsu, Version=1.0.1.0, Culture=neutral, PublicKeyToken=ab7a724589ef7794, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLComuni\RemotingInterfaceMotoreTarsu.dll</HintPath>
+    </Reference>
+    <Reference Include="RemotingInterfaceOpenGovStradario, Version=1.0.6241.32443, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLComuni\RemotingInterfaceOpenGovStradario.dll</HintPath>
+    </Reference>
+    <Reference Include="Ribes.OPENgov.Utilities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLComuni\Ribes.OPENgov.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Ribes.OPENgov.WebControls, Version=1.2.0.17259, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLComuni\Ribes.OPENgov.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="RKLib.ExportData, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLComuni\RKLib.ExportData.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Messaging">
+      <Name>System.Messaging</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting">
+      <Name>System.Runtime.Remoting</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <Name>System.Runtime.Serialization.Formatters.Soap</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="Utility, Version=1.0.7495.28013, Culture=neutral, PublicKeyToken=ae1027569650564c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLComuni\Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="WebChart, Version=1.1.1.4, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLComuni\WebChart.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.HtmlControls" />
+    <Import Include="System.Web.UI.WebControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AnagrafeResidenti\ComandiGestioneAnagrafeResidenti.aspx" />
+    <Content Include="AnagrafeResidenti\DatiAnagrafeResidenti.aspx" />
+    <Content Include="AnagrafeResidenti\GestioneAnagrafeResidenti.aspx" />
+    <Content Include="AnagraficaAnater\BasePage.aspx" />
+    <Content Include="AnagraficaAnater\ComandiInsertSaveAnagraficaAnater.aspx" />
+    <Content Include="AnagraficaAnater\cRicAnagrafeAnater.aspx" />
+    <Content Include="AnagraficaAnater\FormAnagrafica.aspx" />
+    <Content Include="AnagraficaAnater\popAnagAnater.aspx" />
+    <Content Include="AnagraficaAnater\RicAnagrafeAnater.aspx" />
+    <Content Include="AnagraficaAnater\SearchResultsAnagrafica.aspx" />
+    <Content Include="aspSvuota.aspx" />
+    <Content Include="aspVuota.aspx" />
+    <Content Include="aspVuotaComandi.aspx" />
+    <Content Include="aspVuotaMenu.aspx" />
+    <Content Include="aspVuotaRemoveComandi.aspx" />
+    <Content Include="bin\AgenziaEntrateDLL.dll" />
+    <Content Include="bin\Anagrafica.dll" />
+    <Content Include="bin\AnagraficaWeb.dll" />
+    <Content Include="bin\BonificaInterface.dll" />
+    <Content Include="bin\ComPlusInterface.dll" />
+    <Content Include="bin\CreaTracciatoPOSTEL.dll" />
+    <Content Include="bin\DAL.dll" />
+    <Content Include="bin\DichiarazioniICI.dll" />
+    <Content Include="bin\DichiarazioniICI.pdb" />
+    <Content Include="bin\ElaborazioneDatiStampeInterface.dll" />
+    <Content Include="bin\FileImporterInterface.dll" />
+    <Content Include="bin\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="bin\ImexInterface.dll" />
+    <Content Include="bin\ImportazioneF24.dll" />
+    <Content Include="bin\IRemInterfaceOSAP.dll" />
+    <Content Include="bin\log4net.dll" />
+    <Content Include="bin\OggettiComuniStrade.dll" />
+    <Content Include="bin\OPENgovTARSU.dll" />
+    <Content Include="bin\OPENgovTARSU.pdb" />
+    <Content Include="bin\OPENgovTARSU.xml" />
+    <Content Include="bin\OPENgovTia.dll" />
+    <Content Include="bin\OPENgovTia.pdb" />
+    <Content Include="bin\OPENgovTia.xml" />
+    <Content Include="bin\OPENgov_AgenziaEntrate.dll" />
+    <Content Include="bin\OPENUtility.dll" />
+    <Content Include="bin\RemotingInterfaceAnater.dll" />
+    <Content Include="bin\RemotingInterfaceEstrattore.dll" />
+    <Content Include="bin\RemotingInterfaceMotoreH2O.dll" />
+    <Content Include="bin\RemotingInterfaceMotoreTarsu.dll" />
+    <Content Include="bin\RemotingInterfaceOpenGovStradario.dll" />
+    <Content Include="bin\RIBESElaborazioneDocumentiInterface.dll" />
+    <Content Include="bin\RIBESFrameWork.dll" />
+    <Content Include="bin\RIDataGrid.dll" />
+    <Content Include="bin\RKLib.ExportData.dll" />
+    <Content Include="bin\Utility.dll" />
+    <Content Include="bin\WebChart.dll" />
+    <Content Include="Configuratore\Ente\ConfiguraEnte.aspx" />
+    <Content Include="Configuratore\TariffeEstimo\ComandiConfigTariffe.aspx" />
+    <Content Include="Configuratore\TariffeEstimo\ConfigTariffe.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="ente.css" />
+    <Content Include="ErrorPage.aspx" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Generali\asp\aspComandiVuota.aspx" />
+    <Content Include="Generali\asp\aspDialogBoxe.aspx" />
+    <Content Include="Generali\asp\aspFrameIniziale.aspx" />
+    <Content Include="Generali\asp\aspLoadWindow.aspx" />
+    <Content Include="Generali\asp\aspLogo.aspx" />
+    <Content Include="Generali\asp\aspmenu.aspx" />
+    <Content Include="Generali\asp\aspVuotaHome.aspx" />
+    <Content Include="Generali\asp\VisualAnag.aspx" />
+    <Content Include="Interrogazioni\AnalisiEventi.aspx" />
+    <Content Include="Interrogazioni\Export.aspx" />
+    <Content Include="_js\ControlloData.js" />
+    <Content Include="_js\Custom.js" />
+    <Content Include="Generali\script\jquery-ui-1.10.4.custom.js" />
+    <Content Include="Generali\script\Menu.js" />
+    <Content Include="Generali\script\xmlMenu.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Generali\script\xmlMenuEnte.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Generali\script\xmlMenuSovracomunale.xml" />
+    <Content Include="GestioneAtti.css" />
+    <Content Include="Global.asax" />
+    <Content Include="images\accedi.gif" />
+    <Content Include="images\background_old.jpg" />
+    <Content Include="images\background_senza_scritte_old.gif" />
+    <Content Include="images\bgrepeat.gif" />
+    <Content Include="images\Bottoni\Agibilita.gif" />
+    <Content Include="images\Bottoni\anagrafica\Lista.gif" />
+    <Content Include="images\Bottoni\anagrafica\Lista_Back.gif" />
+    <Content Include="images\Bottoni\annulla.gif" />
+    <Content Include="images\Bottoni\apri1.gif" />
+    <Content Include="images\Bottoni\apri2.gif" />
+    <Content Include="images\Bottoni\Associa.gif" />
+    <Content Include="images\Bottoni\bottone_acquisizione.gif" />
+    <Content Include="images\Bottoni\Calc.ico" />
+    <Content Include="images\Bottoni\calcolo.gif" />
+    <Content Include="images\Bottoni\CalcoloMisure.gif" />
+    <Content Include="images\Bottoni\CalcoloMisure1.gif" />
+    <Content Include="images\Bottoni\calendario.GIF" />
+    <Content Include="images\Bottoni\cancel.gif" />
+    <Content Include="images\Bottoni\cancel_disabled.gif" />
+    <Content Include="images\Bottoni\casa.gif" />
+    <Content Include="images\Bottoni\cestino.gif" />
+    <Content Include="images\Bottoni\cestino_old.gif" />
+    <Content Include="images\Bottoni\chiudi.gif" />
+    <Content Include="images\Bottoni\clessidra.gif" />
+    <Content Include="images\Bottoni\Copy of Copy of semaforoGiallo.gif" />
+    <Content Include="images\Bottoni\Copy of Copy of semaforoRosso.gif" />
+    <Content Include="images\Bottoni\Copy of semaforo.gif" />
+    <Content Include="images\Bottoni\Copy of semaforoGiallo.gif" />
+    <Content Include="images\Bottoni\Copy of semaforoVerde.gif" />
+    <Content Include="images\Bottoni\ERASE01.ICO" />
+    <Content Include="images\Bottoni\ERASE02.ICO" />
+    <Content Include="images\Bottoni\Eraser.ico" />
+    <Content Include="images\Bottoni\first.gif" />
+    <Content Include="images\Bottoni\foto.gif" />
+    <Content Include="images\Bottoni\foto_s.gif" />
+    <Content Include="images\Bottoni\freccia_dx_tr.gif" />
+    <Content Include="images\Bottoni\freccia_sx_tr.gif" />
+    <Content Include="images\Bottoni\home.gif" />
+    <Content Include="images\Bottoni\home01.gif" />
+    <Content Include="images\Bottoni\home01_small.gif" />
+    <Content Include="images\Bottoni\home1.gif" />
+    <Content Include="images\Bottoni\home_UI.gif" />
+    <Content Include="images\Bottoni\home_UI_small.gif" />
+    <Content Include="images\Bottoni\info.gif" />
+    <Content Include="images\Bottoni\invia pratica1.gif" />
+    <Content Include="images\Bottoni\invia pratica2.gif" />
+    <Content Include="images\Bottoni\invia_pratica2.gif" />
+    <Content Include="images\Bottoni\judge_hammer_exclamation.png" />
+    <Content Include="images\Bottoni\last.gif" />
+    <Content Include="images\Bottoni\Lista.gif" />
+    <Content Include="images\Bottoni\Lista_Back.gif" />
+    <Content Include="images\Bottoni\Metallic SETTINGS.ico" />
+    <Content Include="images\Bottoni\modifica.gif" />
+    <Content Include="images\Bottoni\next.gif" />
+    <Content Include="images\Bottoni\nuovoinserisci.gif" />
+    <Content Include="images\Bottoni\nuovoinserisci2.gif" />
+    <Content Include="images\Bottoni\old_semaforoGiallo.gif" />
+    <Content Include="images\Bottoni\old_semaforoRosso.gif" />
+    <Content Include="images\Bottoni\old_semaforoVerde.gif" />
+    <Content Include="images\Bottoni\papclip1.gif" />
+    <Content Include="images\Bottoni\papclip2.gif" />
+    <Content Include="images\Bottoni\papclip_originale.gif" />
+    <Content Include="images\Bottoni\prec.gif" />
+    <Content Include="images\Bottoni\PREVIEW.gif" />
+    <Content Include="images\Bottoni\PREVIEW1.gif" />
+    <Content Include="images\Bottoni\PREVIEW2.gif" />
+    <Content Include="images\Bottoni\question_mark.gif" />
+    <Content Include="images\Bottoni\ricerca.gif" />
+    <Content Include="images\Bottoni\ricerca_piccolo.gif" />
+    <Content Include="images\Bottoni\rubber.gif" />
+    <Content Include="images\Bottoni\rubber.jpg" />
+    <Content Include="images\Bottoni\Rulers.gif" />
+    <Content Include="images\Bottoni\salva.gif" />
+    <Content Include="images\Bottoni\semaforo.gif" />
+    <Content Include="images\Bottoni\semaforoGiallo.gif" />
+    <Content Include="images\Bottoni\semaforoRosso.gif" />
+    <Content Include="images\Bottoni\semaforoVerde.gif" />
+    <Content Include="images\Bottoni\Soggetti.gif" />
+    <Content Include="images\Bottoni\Soggetti1.gif" />
+    <Content Include="images\Bottoni\spunta_s.gif" />
+    <Content Include="images\Bottoni\stampa.gif" />
+    <Content Include="images\Bottoni\testata1014.gif" />
+    <Content Include="images\Bottoni\tipologia-utenza.gif" />
+    <Content Include="images\Bottoni\W.gif" />
+    <Content Include="images\Bottoni\Word.gif" />
+    <Content Include="images\cancel.gif" />
+    <Content Include="images\cartella_aperta.GIF" />
+    <Content Include="images\cartella_chiusa.GIF" />
+    <Content Include="images\Clessidra.gif" />
+    <Content Include="images\exclame.gif" />
+    <Content Include="images\frecce124.gif" />
+    <Content Include="images\gestione.gif" />
+    <Content Include="images\home_OPENgov.gif" />
+    <Content Include="images\home_territorio.gif" />
+    <Content Include="images\home_territorio_old.gif" />
+    <Content Include="images\icon-calendar.gif" />
+    <Content Include="images\lettere106.gif" />
+    <Content Include="images\lista_Menu.gif" />
+    <Content Include="images\lista_Menu_sel.gif" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\logoribes.gif" />
+    <Content Include="images\logo_gc.gif" />
+    <Content Include="images\Logo_GC.jpg" />
+    <Content Include="images\logo_new.gif" />
+    <Content Include="images\pallini091.gif" />
+    <Content Include="images\progressbar.gif" />
+    <Content Include="images\Questionario.gif" />
+    <Content Include="images\testata.gif" />
+    <Content Include="images\testata1004 ver B.gif" />
+    <Content Include="images\testata1004 ver B_03.gif" />
+    <Content Include="images\testata_old.gif" />
+    <Content Include="images\testata_old1.gif" />
+    <Content Include="images\testata_OPENgov.gif" />
+    <Content Include="IncrocioBancaDati\CIncrocio.aspx" />
+    <Content Include="IncrocioBancaDati\ErrRichiamo.aspx" />
+    <Content Include="IncrocioBancaDati\IncrocioBancaDati.aspx" />
+    <Content Include="IncrocioBancaDati\ModuloTributi.aspx" />
+    <Content Include="Interrogazioni\Aliquote.aspx" />
+    <Content Include="Interrogazioni\Cruscotto.aspx" />
+    <Content Include="Interrogazioni\DichEmesso.aspx" />
+    <Content Include="Interrogazioni\FattVSIncas.aspx" />
+    <Content Include="LeggiParametriEnte.aspx" />
+    <Content Include="Login\Login.aspx" />
+    <Content Include="Login\ResetPassword.aspx" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="index.md" />
+    <Content Include="docfx.json" />
+    <Content Include="articles\toc.md" />
+    <Content Include="articles\intro.md" />
+    <Content Include="api\index.md" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="PaginaErrore.aspx" />
+    <Content Include="solalettura.css" />
+    <Content Include="StyleDemoGaraSportelloContribuente.css" />
+    <Content Include="Styles.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="_js\CODICEFISCALE.JS" />
+    <Content Include="_js\funzioniEnti.js" />
+    <Content Include="_js\funzioniStradario.js" />
+    <Content Include="_js\geocoding.js" />
+    <Content Include="_js\jquery-1.10.2.min.js" />
+    <Content Include="_js\jquery-ui-1.10.4.custom.min.js" />
+    <Content Include="_js\jquery-ui.min.js" />
+    <Content Include="_js\jquery.min.js" />
+    <Content Include="_js\jsComuniStrade.js" />
+    <Content Include="_js\OperazioniSuCampi.vbs" />
+    <Content Include="_js\skype_killer.js" />
+    <Content Include="_js\Toco.js" />
+    <Content Include="_js\Utility.js" />
+    <Content Include="_js\VerificaCampi.js" />
+    <Content Include="_vbs\ControlliFormali.vbs" />
+    <Content Include="_vbs\OperazioniSuCampi.vbs" />
+    <Compile Include="AnagrafeResidenti\ComandiGestioneAnagrafeResidenti.aspx.designer.vb">
+      <DependentUpon>ComandiGestioneAnagrafeResidenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AnagrafeResidenti\ComandiGestioneAnagrafeResidenti.aspx.vb">
+      <DependentUpon>ComandiGestioneAnagrafeResidenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnagrafeResidenti\DatiAnagrafeResidenti.aspx.designer.vb">
+      <DependentUpon>DatiAnagrafeResidenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AnagrafeResidenti\DatiAnagrafeResidenti.aspx.vb">
+      <DependentUpon>DatiAnagrafeResidenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnagrafeResidenti\GestioneAnagrafeResidenti.aspx.designer.vb">
+      <DependentUpon>GestioneAnagrafeResidenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AnagrafeResidenti\GestioneAnagrafeResidenti.aspx.vb">
+      <DependentUpon>GestioneAnagrafeResidenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnagraficaAnater\BasePage.aspx.designer.vb">
+      <DependentUpon>BasePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AnagraficaAnater\BasePage.aspx.vb">
+      <DependentUpon>BasePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnagraficaAnater\clsAnagrafeAnater.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AnagraficaAnater\ComandiInsertSaveAnagraficaAnater.aspx.designer.vb">
+      <DependentUpon>ComandiInsertSaveAnagraficaAnater.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AnagraficaAnater\ComandiInsertSaveAnagraficaAnater.aspx.vb">
+      <DependentUpon>ComandiInsertSaveAnagraficaAnater.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnagraficaAnater\cRicAnagrafeAnater.aspx.designer.vb">
+      <DependentUpon>cRicAnagrafeAnater.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AnagraficaAnater\cRicAnagrafeAnater.aspx.vb">
+      <DependentUpon>cRicAnagrafeAnater.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnagraficaAnater\FormAnagrafica.aspx.designer.vb">
+      <DependentUpon>FormAnagrafica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AnagraficaAnater\FormAnagrafica.aspx.vb">
+      <DependentUpon>FormAnagrafica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnagraficaAnater\popAnagAnater.aspx.designer.vb">
+      <DependentUpon>popAnagAnater.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AnagraficaAnater\popAnagAnater.aspx.vb">
+      <DependentUpon>popAnagAnater.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnagraficaAnater\RicAnagrafeAnater.aspx.designer.vb">
+      <DependentUpon>RicAnagrafeAnater.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AnagraficaAnater\RicAnagrafeAnater.aspx.vb">
+      <DependentUpon>RicAnagrafeAnater.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnagraficaAnater\SearchResultsAnagrafica.aspx.designer.vb">
+      <DependentUpon>SearchResultsAnagrafica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AnagraficaAnater\SearchResultsAnagrafica.aspx.vb">
+      <DependentUpon>SearchResultsAnagrafica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspSvuota.aspx.designer.vb">
+      <DependentUpon>aspSvuota.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspSvuota.aspx.vb">
+      <DependentUpon>aspSvuota.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="aspVuota.aspx.vb">
+      <DependentUpon>aspVuota.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspVuotaComandi.aspx.designer.vb">
+      <DependentUpon>aspVuotaComandi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspVuotaComandi.aspx.vb">
+      <DependentUpon>aspVuotaComandi.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="aspVuotaMenu.aspx.designer.vb">
+      <DependentUpon>aspVuotaMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspVuotaMenu.aspx.vb">
+      <DependentUpon>aspVuotaMenu.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="aspVuotaRemoveComandi.aspx.designer.vb">
+      <DependentUpon>aspVuotaRemoveComandi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspVuotaRemoveComandi.aspx.vb">
+      <DependentUpon>aspVuotaRemoveComandi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuratore\Ente\ConfiguraEnte.aspx.designer.vb">
+      <DependentUpon>ConfiguraEnte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuratore\Ente\ConfiguraEnte.aspx.vb">
+      <DependentUpon>ConfiguraEnte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuratore\TariffeEstimo\ComandiConfigTariffe.aspx.designer.vb">
+      <DependentUpon>ComandiConfigTariffe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuratore\TariffeEstimo\ComandiConfigTariffe.aspx.vb">
+      <DependentUpon>ComandiConfigTariffe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuratore\TariffeEstimo\ConfigTariffe.aspx.designer.vb">
+      <DependentUpon>ConfigTariffe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuratore\TariffeEstimo\ConfigTariffe.aspx.vb">
+      <DependentUpon>ConfigTariffe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.vb">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.vb">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Generali\asp\aspComandiVuota.aspx.designer.vb">
+      <DependentUpon>aspComandiVuota.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Generali\asp\aspComandiVuota.aspx.vb">
+      <DependentUpon>aspComandiVuota.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Generali\asp\aspDialogBoxe.aspx.designer.vb">
+      <DependentUpon>aspDialogBoxe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Generali\asp\aspDialogBoxe.aspx.vb">
+      <DependentUpon>aspDialogBoxe.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Generali\asp\aspFrameIniziale.aspx.vb">
+      <DependentUpon>aspFrameIniziale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Generali\asp\aspLoadWindow.aspx.designer.vb">
+      <DependentUpon>aspLoadWindow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Generali\asp\aspLoadWindow.aspx.vb">
+      <DependentUpon>aspLoadWindow.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Generali\asp\aspLogo.aspx.vb">
+      <DependentUpon>aspLogo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Generali\asp\aspmenu.aspx.designer.vb">
+      <DependentUpon>aspmenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Generali\asp\aspmenu.aspx.vb">
+      <DependentUpon>aspmenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Generali\asp\aspVuotaHome.aspx.designer.vb">
+      <DependentUpon>aspVuotaHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Generali\asp\aspVuotaHome.aspx.vb">
+      <DependentUpon>aspVuotaHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Generali\asp\VisualAnag.aspx.designer.vb">
+      <DependentUpon>VisualAnag.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Generali\asp\VisualAnag.aspx.vb">
+      <DependentUpon>VisualAnag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\ClsAnagrafeResidenti.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\clsExport.vb" />
+    <Compile Include="Generali\classi\clsInterrogazioni.vb" />
+    <Compile Include="Generali\classi\ClsStampe.vb" />
+    <Compile Include="Generali\classi\Costanti.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\SelectEnti.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\Utility.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IncrocioBancaDati\CIncrocio.aspx.designer.vb">
+      <DependentUpon>CIncrocio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IncrocioBancaDati\CIncrocio.aspx.vb">
+      <DependentUpon>CIncrocio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IncrocioBancaDati\ErrRichiamo.aspx.designer.vb">
+      <DependentUpon>ErrRichiamo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IncrocioBancaDati\ErrRichiamo.aspx.vb">
+      <DependentUpon>ErrRichiamo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IncrocioBancaDati\IncrocioBancaDati.aspx.designer.vb">
+      <DependentUpon>IncrocioBancaDati.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IncrocioBancaDati\IncrocioBancaDati.aspx.vb">
+      <DependentUpon>IncrocioBancaDati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IncrocioBancaDati\ModuloTributi.aspx.designer.vb">
+      <DependentUpon>ModuloTributi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IncrocioBancaDati\ModuloTributi.aspx.vb">
+      <DependentUpon>ModuloTributi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interrogazioni\Aliquote.aspx.designer.vb">
+      <DependentUpon>Aliquote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interrogazioni\Aliquote.aspx.vb">
+      <DependentUpon>Aliquote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interrogazioni\AnalisiEventi.aspx.designer.vb">
+      <DependentUpon>AnalisiEventi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interrogazioni\AnalisiEventi.aspx.vb">
+      <DependentUpon>AnalisiEventi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interrogazioni\Cruscotto.aspx.designer.vb">
+      <DependentUpon>Cruscotto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interrogazioni\Cruscotto.aspx.vb">
+      <DependentUpon>Cruscotto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interrogazioni\DichEmesso.aspx.designer.vb">
+      <DependentUpon>DichEmesso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interrogazioni\DichEmesso.aspx.vb">
+      <DependentUpon>DichEmesso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interrogazioni\Export.aspx.designer.vb">
+      <DependentUpon>Export.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interrogazioni\Export.aspx.vb">
+      <DependentUpon>Export.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interrogazioni\FattVSIncas.aspx.designer.vb">
+      <DependentUpon>FattVSIncas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interrogazioni\FattVSIncas.aspx.vb">
+      <DependentUpon>FattVSIncas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeggiParametriEnte.aspx.designer.vb">
+      <DependentUpon>LeggiParametriEnte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeggiParametriEnte.aspx.vb">
+      <DependentUpon>LeggiParametriEnte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\ResetPassword.aspx.designer.vb">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\ResetPassword.aspx.vb">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaErrore.aspx.designer.vb">
+      <DependentUpon>PaginaErrore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaErrore.aspx.vb">
+      <DependentUpon>PaginaErrore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReferenceWS.vb">
+      <SubType>code</SubType>
+    </Compile>
+    <EmbeddedResource Include="AnagrafeResidenti\ComandiGestioneAnagrafeResidenti.aspx.resx">
+      <DependentUpon>ComandiGestioneAnagrafeResidenti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnagrafeResidenti\DatiAnagrafeResidenti.aspx.resx">
+      <DependentUpon>DatiAnagrafeResidenti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnagrafeResidenti\GestioneAnagrafeResidenti.aspx.resx">
+      <DependentUpon>GestioneAnagrafeResidenti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnagraficaAnater\BasePage.aspx.resx">
+      <DependentUpon>BasePage.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnagraficaAnater\ComandiInsertSaveAnagraficaAnater.aspx.resx">
+      <DependentUpon>ComandiInsertSaveAnagraficaAnater.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnagraficaAnater\cRicAnagrafeAnater.aspx.resx">
+      <DependentUpon>cRicAnagrafeAnater.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnagraficaAnater\FormAnagrafica.aspx.resx">
+      <DependentUpon>FormAnagrafica.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnagraficaAnater\popAnagAnater.aspx.resx">
+      <DependentUpon>popAnagAnater.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnagraficaAnater\RicAnagrafeAnater.aspx.resx">
+      <DependentUpon>RicAnagrafeAnater.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnagraficaAnater\SearchResultsAnagrafica.aspx.resx">
+      <DependentUpon>SearchResultsAnagrafica.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aspVuota.aspx.resx">
+      <DependentUpon>aspVuota.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aspVuotaRemoveComandi.aspx.resx">
+      <DependentUpon>aspVuotaRemoveComandi.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuratore\Ente\ConfiguraEnte.aspx.resx">
+      <DependentUpon>ConfiguraEnte.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuratore\TariffeEstimo\ComandiConfigTariffe.aspx.resx">
+      <DependentUpon>ComandiConfigTariffe.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuratore\TariffeEstimo\ConfigTariffe.aspx.resx">
+      <DependentUpon>ConfigTariffe.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Default.aspx.resx">
+      <DependentUpon>Default.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorPage.aspx.resx">
+      <DependentUpon>ErrorPage.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generali\asp\aspComandiVuota.aspx.resx">
+      <DependentUpon>aspComandiVuota.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generali\asp\aspFrameIniziale.aspx.resx">
+      <DependentUpon>aspFrameIniziale.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generali\asp\aspLogo.aspx.resx">
+      <DependentUpon>aspLogo.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generali\asp\aspmenu.aspx.resx">
+      <DependentUpon>aspmenu.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generali\asp\aspVuotaHome.aspx.resx">
+      <DependentUpon>aspVuotaHome.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncrocioBancaDati\CIncrocio.aspx.resx">
+      <DependentUpon>CIncrocio.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncrocioBancaDati\IncrocioBancaDati.aspx.resx">
+      <DependentUpon>IncrocioBancaDati.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeggiParametriEnte.aspx.resx">
+      <DependentUpon>LeggiParametriEnte.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Login.aspx.resx">
+      <DependentUpon>Login.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaginaErrore.aspx.resx">
+      <DependentUpon>PaginaErrore.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="images\images.zip" />
+    <None Include="null" />
+    <Content Include="packages.config" />
+    <Content Include="toc.yml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\Bottoni\New\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="packages\Microsoft.CodeQuality.Analyzers.2.6.3\analyzers\dotnet\vb\Humanizer.dll" />
+    <Analyzer Include="packages\Microsoft.CodeQuality.Analyzers.2.6.3\analyzers\dotnet\vb\Microsoft.CodeQuality.Analyzers.dll" />
+    <Analyzer Include="packages\Microsoft.CodeQuality.Analyzers.2.6.3\analyzers\dotnet\vb\Microsoft.CodeQuality.VisualBasic.Analyzers.dll" />
+    <Analyzer Include="packages\Microsoft.NetCore.Analyzers.2.6.3\analyzers\dotnet\vb\Microsoft.NetCore.Analyzers.dll" />
+    <Analyzer Include="packages\Microsoft.NetCore.Analyzers.2.6.3\analyzers\dotnet\vb\Microsoft.NetCore.VisualBasic.Analyzers.dll" />
+    <Analyzer Include="packages\Microsoft.NetFramework.Analyzers.2.6.3\analyzers\dotnet\vb\Microsoft.NetFramework.Analyzers.dll" />
+    <Analyzer Include="packages\Microsoft.NetFramework.Analyzers.2.6.3\analyzers\dotnet\vb\Microsoft.NetFramework.VisualBasic.Analyzers.dll" />
+    <Analyzer Include="packages\Text.Analyzers.2.6.3\analyzers\dotnet\vb\Text.Analyzers.dll" />
+    <Analyzer Include="packages\Text.Analyzers.2.6.3\analyzers\dotnet\vb\Text.VisualBasic.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Anagrafica\AnagraficaWEB.vbproj">
+      <Project>{c37ee8d6-9ec3-42bf-b6f7-5cf13d5a792e}</Project>
+      <Name>AnagraficaWEB</Name>
+    </ProjectReference>
+    <ProjectReference Include="OPENgovH2O\OPENutenze.vbproj">
+      <Project>{71f6ae02-83ec-4945-8c11-31b34ea6b5cd}</Project>
+      <Name>OPENutenze</Name>
+    </ProjectReference>
+    <ProjectReference Include="OPENgovICI\DichiarazioniICI.csproj">
+      <Project>{14507f38-eb84-4e90-acd5-21fe02a2dee4}</Project>
+      <Name>DichiarazioniICI</Name>
+    </ProjectReference>
+    <ProjectReference Include="OPENgovPROVVEDIMENTI\OPENgovPROVVEDIMENTI.vbproj">
+      <Project>{4fa2c554-192a-4f76-b81f-e5363e26ca14}</Project>
+      <Name>OPENgovPROVVEDIMENTI</Name>
+    </ProjectReference>
+    <ProjectReference Include="OPENgovTERRITORIO\OpenGovTerritorio.vbproj">
+      <Project>{492c0a09-6c58-4271-a326-1be92ffc588b}</Project>
+      <Name>OpenGovTerritorio</Name>
+    </ProjectReference>
+    <ProjectReference Include="OPENgovTIA\OPENgovTIA.vbproj">
+      <Project>{815b6680-88b5-4bef-85b5-1c50c5e09adf}</Project>
+      <Name>OPENgovTIA</Name>
+    </ProjectReference>
+    <ProjectReference Include="OPENgovTOCO\OPENgovTOCO.csproj">
+      <Project>{04f67387-83d7-4ee2-a91b-6aa6464cc827}</Project>
+      <Name>OPENgovTOCO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52782</DevelopmentServerPort>
+          <DevelopmentServerVPath>/opengov</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Questo progetto fa riferimento a uno o più pacchetti NuGet che non sono presenti in questo computer. Usare lo strumento di ripristino dei pacchetti NuGet per scaricarli. Per altre informazioni, vedere http://go.microsoft.com/fwlink/?LinkID=322105. Il file mancante è {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeQuality.Analyzers.2.6.3\build\Microsoft.CodeQuality.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeQuality.Analyzers.2.6.3\build\Microsoft.CodeQuality.Analyzers.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.NetCore.Analyzers.2.6.3\build\Microsoft.NetCore.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.NetCore.Analyzers.2.6.3\build\Microsoft.NetCore.Analyzers.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.NetFramework.Analyzers.2.6.3\build\Microsoft.NetFramework.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.NetFramework.Analyzers.2.6.3\build\Microsoft.NetFramework.Analyzers.props'))" />
+    <Error Condition="!Exists('packages\Text.Analyzers.2.6.3\build\Text.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Text.Analyzers.2.6.3\build\Text.Analyzers.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props'))" />
+    <Error Condition="!Exists('packages\docfx.console.2.56.6\build\docfx.console.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\docfx.console.2.56.6\build\docfx.console.targets'))" />
+  </Target>
+  <Import Project="packages\docfx.console.2.56.6\build\docfx.console.targets" Condition="Exists('packages\docfx.console.2.56.6\build\docfx.console.targets')" />
+</Project>

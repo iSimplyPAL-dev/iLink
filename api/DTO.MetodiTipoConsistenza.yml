@@ -1,0 +1,482 @@
+### YamlMime:ManagedReference
+items:
+- uid: DTO.MetodiTipoConsistenza
+  commentId: T:DTO.MetodiTipoConsistenza
+  id: MetodiTipoConsistenza
+  parent: DTO
+  children:
+  - DTO.MetodiTipoConsistenza.GetTipiConsistenza(System.String,System.Boolean)
+  - DTO.MetodiTipoConsistenza.GetTipoConsistenza(System.String,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: MetodiTipoConsistenza
+  nameWithType: MetodiTipoConsistenza
+  fullName: DTO.MetodiTipoConsistenza
+  type: Class
+  source:
+    id: MetodiTipoConsistenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\TipoConsistenza.cs
+    startLine: 13
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  summary: "\nClasse per la gestione tipo consistenza\n"
+  example: []
+  syntax:
+    content: public class MetodiTipoConsistenza
+    content.vb: Public Class MetodiTipoConsistenza
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DTO.MetodiTipoConsistenza.GetTipiConsistenza(System.String,System.Boolean)
+  commentId: M:DTO.MetodiTipoConsistenza.GetTipiConsistenza(System.String,System.Boolean)
+  id: GetTipiConsistenza(System.String,System.Boolean)
+  parent: DTO.MetodiTipoConsistenza
+  langs:
+  - csharp
+  - vb
+  name: GetTipiConsistenza(String, Boolean)
+  nameWithType: MetodiTipoConsistenza.GetTipiConsistenza(String, Boolean)
+  fullName: DTO.MetodiTipoConsistenza.GetTipiConsistenza(System.String, System.Boolean)
+  type: Method
+  source:
+    id: GetTipiConsistenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\TipoConsistenza.cs
+    startLine: 18
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static TipoConsistenza[] GetTipiConsistenza(string ConnectionString, bool DefaultValue)
+    parameters:
+    - id: ConnectionString
+      type: System.String
+    - id: DefaultValue
+      type: System.Boolean
+    return:
+      type: IRemInterfaceOSAP.TipoConsistenza[]
+    content.vb: Public Shared Function GetTipiConsistenza(ConnectionString As String, DefaultValue As Boolean) As TipoConsistenza()
+  overload: DTO.MetodiTipoConsistenza.GetTipiConsistenza*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiTipoConsistenza.GetTipoConsistenza(System.String,System.Int32)
+  commentId: M:DTO.MetodiTipoConsistenza.GetTipoConsistenza(System.String,System.Int32)
+  id: GetTipoConsistenza(System.String,System.Int32)
+  parent: DTO.MetodiTipoConsistenza
+  langs:
+  - csharp
+  - vb
+  name: GetTipoConsistenza(String, Int32)
+  nameWithType: MetodiTipoConsistenza.GetTipoConsistenza(String, Int32)
+  fullName: DTO.MetodiTipoConsistenza.GetTipoConsistenza(System.String, System.Int32)
+  type: Method
+  source:
+    id: GetTipoConsistenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\TipoConsistenza.cs
+    startLine: 36
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static TipoConsistenza GetTipoConsistenza(string ConnectionString, int IdTipoConsistenza)
+    parameters:
+    - id: ConnectionString
+      type: System.String
+    - id: IdTipoConsistenza
+      type: System.Int32
+    return:
+      type: IRemInterfaceOSAP.TipoConsistenza
+    content.vb: Public Shared Function GetTipoConsistenza(ConnectionString As String, IdTipoConsistenza As Integer) As TipoConsistenza
+  overload: DTO.MetodiTipoConsistenza.GetTipoConsistenza*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: DTO
+  commentId: N:DTO
+  name: DTO
+  nameWithType: DTO
+  fullName: DTO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DTO.MetodiTipoConsistenza.GetTipiConsistenza*
+  commentId: Overload:DTO.MetodiTipoConsistenza.GetTipiConsistenza
+  name: GetTipiConsistenza
+  nameWithType: MetodiTipoConsistenza.GetTipiConsistenza
+  fullName: DTO.MetodiTipoConsistenza.GetTipiConsistenza
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: IRemInterfaceOSAP.TipoConsistenza[]
+  isExternal: true
+  name: TipoConsistenza[]
+  nameWithType: TipoConsistenza[]
+  fullName: IRemInterfaceOSAP.TipoConsistenza[]
+  nameWithType.vb: TipoConsistenza()
+  fullName.vb: IRemInterfaceOSAP.TipoConsistenza()
+  name.vb: TipoConsistenza()
+  spec.csharp:
+  - uid: IRemInterfaceOSAP.TipoConsistenza
+    name: TipoConsistenza
+    nameWithType: TipoConsistenza
+    fullName: IRemInterfaceOSAP.TipoConsistenza
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: IRemInterfaceOSAP.TipoConsistenza
+    name: TipoConsistenza
+    nameWithType: TipoConsistenza
+    fullName: IRemInterfaceOSAP.TipoConsistenza
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: DTO.MetodiTipoConsistenza.GetTipoConsistenza*
+  commentId: Overload:DTO.MetodiTipoConsistenza.GetTipoConsistenza
+  name: GetTipoConsistenza
+  nameWithType: MetodiTipoConsistenza.GetTipoConsistenza
+  fullName: DTO.MetodiTipoConsistenza.GetTipoConsistenza
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: IRemInterfaceOSAP.TipoConsistenza
+  commentId: T:IRemInterfaceOSAP.TipoConsistenza
+  parent: IRemInterfaceOSAP
+  isExternal: true
+  name: TipoConsistenza
+  nameWithType: TipoConsistenza
+  fullName: IRemInterfaceOSAP.TipoConsistenza
+- uid: IRemInterfaceOSAP
+  commentId: N:IRemInterfaceOSAP
+  isExternal: true
+  name: IRemInterfaceOSAP
+  nameWithType: IRemInterfaceOSAP
+  fullName: IRemInterfaceOSAP

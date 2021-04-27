@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENgovTOCO.OSAPConst.OperationType
+  commentId: T:OPENgovTOCO.OSAPConst.OperationType
+  id: OSAPConst.OperationType
+  parent: OPENgovTOCO
+  children:
+  - OPENgovTOCO.OSAPConst.OperationType.ADD
+  - OPENgovTOCO.OSAPConst.OperationType.ADDFROMEDIT
+  - OPENgovTOCO.OSAPConst.OperationType.DELETE
+  - OPENgovTOCO.OSAPConst.OperationType.EDIT
+  - OPENgovTOCO.OSAPConst.OperationType.NONE
+  - OPENgovTOCO.OSAPConst.OperationType.VIEW
+  langs:
+  - csharp
+  - vb
+  name: OSAPConst.OperationType
+  nameWithType: OSAPConst.OperationType
+  fullName: OPENgovTOCO.OSAPConst.OperationType
+  type: Enum
+  source:
+    id: OperationType
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\TocoConst.cs
+    startLine: 18
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public enum OperationType
+    content.vb: Public Enum OperationType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: OPENgovTOCO.OSAPConst.OperationType.VIEW
+  commentId: F:OPENgovTOCO.OSAPConst.OperationType.VIEW
+  id: VIEW
+  parent: OPENgovTOCO.OSAPConst.OperationType
+  langs:
+  - csharp
+  - vb
+  name: VIEW
+  nameWithType: OSAPConst.OperationType.VIEW
+  fullName: OPENgovTOCO.OSAPConst.OperationType.VIEW
+  type: Field
+  source:
+    id: VIEW
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\TocoConst.cs
+    startLine: 20
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: VIEW = 1
+    return:
+      type: OPENgovTOCO.OSAPConst.OperationType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.OSAPConst.OperationType.EDIT
+  commentId: F:OPENgovTOCO.OSAPConst.OperationType.EDIT
+  id: EDIT
+  parent: OPENgovTOCO.OSAPConst.OperationType
+  langs:
+  - csharp
+  - vb
+  name: EDIT
+  nameWithType: OSAPConst.OperationType.EDIT
+  fullName: OPENgovTOCO.OSAPConst.OperationType.EDIT
+  type: Field
+  source:
+    id: EDIT
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\TocoConst.cs
+    startLine: 21
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: EDIT = 2
+    return:
+      type: OPENgovTOCO.OSAPConst.OperationType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.OSAPConst.OperationType.ADD
+  commentId: F:OPENgovTOCO.OSAPConst.OperationType.ADD
+  id: ADD
+  parent: OPENgovTOCO.OSAPConst.OperationType
+  langs:
+  - csharp
+  - vb
+  name: ADD
+  nameWithType: OSAPConst.OperationType.ADD
+  fullName: OPENgovTOCO.OSAPConst.OperationType.ADD
+  type: Field
+  source:
+    id: ADD
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\TocoConst.cs
+    startLine: 22
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: ADD = 3
+    return:
+      type: OPENgovTOCO.OSAPConst.OperationType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.OSAPConst.OperationType.DELETE
+  commentId: F:OPENgovTOCO.OSAPConst.OperationType.DELETE
+  id: DELETE
+  parent: OPENgovTOCO.OSAPConst.OperationType
+  langs:
+  - csharp
+  - vb
+  name: DELETE
+  nameWithType: OSAPConst.OperationType.DELETE
+  fullName: OPENgovTOCO.OSAPConst.OperationType.DELETE
+  type: Field
+  source:
+    id: DELETE
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\TocoConst.cs
+    startLine: 23
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: DELETE = 4
+    return:
+      type: OPENgovTOCO.OSAPConst.OperationType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.OSAPConst.OperationType.NONE
+  commentId: F:OPENgovTOCO.OSAPConst.OperationType.NONE
+  id: NONE
+  parent: OPENgovTOCO.OSAPConst.OperationType
+  langs:
+  - csharp
+  - vb
+  name: NONE
+  nameWithType: OSAPConst.OperationType.NONE
+  fullName: OPENgovTOCO.OSAPConst.OperationType.NONE
+  type: Field
+  source:
+    id: NONE
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\TocoConst.cs
+    startLine: 24
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: NONE = 5
+    return:
+      type: OPENgovTOCO.OSAPConst.OperationType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: OPENgovTOCO.OSAPConst.OperationType.ADDFROMEDIT
+  commentId: F:OPENgovTOCO.OSAPConst.OperationType.ADDFROMEDIT
+  id: ADDFROMEDIT
+  parent: OPENgovTOCO.OSAPConst.OperationType
+  langs:
+  - csharp
+  - vb
+  name: ADDFROMEDIT
+  nameWithType: OSAPConst.OperationType.ADDFROMEDIT
+  fullName: OPENgovTOCO.OSAPConst.OperationType.ADDFROMEDIT
+  type: Field
+  source:
+    id: ADDFROMEDIT
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\TocoConst.cs
+    startLine: 25
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: ADDFROMEDIT = 6
+    return:
+      type: OPENgovTOCO.OSAPConst.OperationType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: OPENgovTOCO
+  commentId: N:OPENgovTOCO
+  name: OPENgovTOCO
+  nameWithType: OPENgovTOCO
+  fullName: OPENgovTOCO
+- uid: OPENgovTOCO.OSAPConst.OperationType
+  commentId: T:OPENgovTOCO.OSAPConst.OperationType
+  parent: OPENgovTOCO
+  name: OSAPConst.OperationType
+  nameWithType: OSAPConst.OperationType
+  fullName: OPENgovTOCO.OSAPConst.OperationType

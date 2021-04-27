@@ -1,0 +1,2442 @@
+### YamlMime:ManagedReference
+items:
+- uid: Business.ConstWrapper
+  commentId: T:Business.ConstWrapper
+  id: ConstWrapper
+  parent: Business
+  children:
+  - Business.ConstWrapper.Ambiente
+  - Business.ConstWrapper.BonificaPath
+  - Business.ConstWrapper.BonificaServiceAddress
+  - Business.ConstWrapper.CancellazioneFisicaVersamenti
+  - Business.ConstWrapper.CodBelfiore
+  - Business.ConstWrapper.CodiceEnte
+  - Business.ConstWrapper.CodiceTributo
+  - Business.ConstWrapper.CodiceTributoAnag
+  - Business.ConstWrapper.ComuneUbicazioneImmobile
+  - Business.ConstWrapper.ConfigurazioneDichiarazione
+  - Business.ConstWrapper.ContoCorrente
+  - Business.ConstWrapper.CountScript
+  - Business.ConstWrapper.DBType
+  - Business.ConstWrapper.DescrizioneEnte
+  - Business.ConstWrapper.HasDummyDich
+  - Business.ConstWrapper.HasPlainAnag
+  - Business.ConstWrapper.ImexPath
+  - Business.ConstWrapper.ImexServiceAddress
+  - Business.ConstWrapper.IntestatarioBollettino
+  - Business.ConstWrapper.IsFromVariabile
+  - Business.ConstWrapper.nMaxDocPerFile
+  - Business.ConstWrapper.Parametri
+  - Business.ConstWrapper.ParametroAnagrafica
+  - Business.ConstWrapper.ParametroAPPLICATION
+  - Business.ConstWrapper.ParametroENV
+  - Business.ConstWrapper.ParametroUTILITA
+  - Business.ConstWrapper.Path
+  - Business.ConstWrapper.Path_TARSU
+  - Business.ConstWrapper.PathImportMotoreCatasto
+  - Business.ConstWrapper.PathPDF_DOCFA
+  - Business.ConstWrapper.PathProspetti
+  - Business.ConstWrapper.PathRibaltaMotoreCatasto
+  - Business.ConstWrapper.PathStampe
+  - Business.ConstWrapper.PathVirtualStampe
+  - Business.ConstWrapper.ProvenienzaVersamentoRibaltato
+  - Business.ConstWrapper.StringConnection
+  - Business.ConstWrapper.StringConnectionAnagrafica
+  - Business.ConstWrapper.StringConnectionCATASTO
+  - Business.ConstWrapper.StringConnectionOPENgov
+  - Business.ConstWrapper.StringConnectionProvvedimenti
+  - Business.ConstWrapper.StringConnectionTARSU
+  - Business.ConstWrapper.StringConnectionTERRITORIO
+  - Business.ConstWrapper.sUsername
+  - Business.ConstWrapper.UrlServizioCalcoloICI
+  - Business.ConstWrapper.UrlServizioElaborazioneDocumentiICI
+  - Business.ConstWrapper.URLServizioStampe
+  - Business.ConstWrapper.UrlWebGIS
+  - Business.ConstWrapper.UrlWSGIS
+  - Business.ConstWrapper.UserNameFramework
+  - Business.ConstWrapper.UsoAnater
+  - Business.ConstWrapper.VisualDOCFA
+  - Business.ConstWrapper.VisualGIS
+  langs:
+  - csharp
+  - vb
+  name: ConstWrapper
+  nameWithType: ConstWrapper
+  fullName: Business.ConstWrapper
+  type: Class
+  source:
+    id: ConstWrapper
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 11
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nClasse per la gestione delle variabili da sessione e da config\n"
+  remarks: In ottemperanza alle linee guida di sviluppo 1.0
+  example: []
+  syntax:
+    content: public class ConstWrapper
+    content.vb: Public Class ConstWrapper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Business.ConstWrapper.CountScript
+  commentId: F:Business.ConstWrapper.CountScript
+  id: CountScript
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: CountScript
+  nameWithType: ConstWrapper.CountScript
+  fullName: Business.ConstWrapper.CountScript
+  type: Field
+  source:
+    id: CountScript
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 14
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static int CountScript
+    return:
+      type: System.Int32
+    content.vb: Public Shared CountScript As Integer
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Business.ConstWrapper.CodiceTributoAnag
+  commentId: P:Business.ConstWrapper.CodiceTributoAnag
+  id: CodiceTributoAnag
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: CodiceTributoAnag
+  nameWithType: ConstWrapper.CodiceTributoAnag
+  fullName: Business.ConstWrapper.CodiceTributoAnag
+  type: Property
+  source:
+    id: CodiceTributoAnag
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 18
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nCodice tributo per il modulo Anagrafica\n"
+  example: []
+  syntax:
+    content: public static int CodiceTributoAnag { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly Property CodiceTributoAnag As Integer
+  overload: Business.ConstWrapper.CodiceTributoAnag*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.CodiceTributo
+  commentId: P:Business.ConstWrapper.CodiceTributo
+  id: CodiceTributo
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: CodiceTributo
+  nameWithType: ConstWrapper.CodiceTributo
+  fullName: Business.ConstWrapper.CodiceTributo
+  type: Property
+  source:
+    id: CodiceTributo
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 29
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nCodice tributo per il modulo\n"
+  example: []
+  syntax:
+    content: public static string CodiceTributo { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property CodiceTributo As String
+  overload: Business.ConstWrapper.CodiceTributo*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.Ambiente
+  commentId: P:Business.ConstWrapper.Ambiente
+  id: Ambiente
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: Ambiente
+  nameWithType: ConstWrapper.Ambiente
+  fullName: Business.ConstWrapper.Ambiente
+  type: Property
+  source:
+    id: Ambiente
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 51
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static string Ambiente { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Ambiente As String
+  overload: Business.ConstWrapper.Ambiente*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.CodiceEnte
+  commentId: P:Business.ConstWrapper.CodiceEnte
+  id: CodiceEnte
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: CodiceEnte
+  nameWithType: ConstWrapper.CodiceEnte
+  fullName: Business.ConstWrapper.CodiceEnte
+  type: Property
+  source:
+    id: CodiceEnte
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 72
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nCodice Ente per il modulo Anagrafica\n"
+  example: []
+  syntax:
+    content: public static string CodiceEnte { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property CodiceEnte As String
+  overload: Business.ConstWrapper.CodiceEnte*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.DescrizioneEnte
+  commentId: P:Business.ConstWrapper.DescrizioneEnte
+  id: DescrizioneEnte
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: DescrizioneEnte
+  nameWithType: ConstWrapper.DescrizioneEnte
+  fullName: Business.ConstWrapper.DescrizioneEnte
+  type: Property
+  source:
+    id: DescrizioneEnte
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 95
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nDescrizione Ente per il modulo Anagrafica\n"
+  example: []
+  syntax:
+    content: public static string DescrizioneEnte { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DescrizioneEnte As String
+  overload: Business.ConstWrapper.DescrizioneEnte*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.sUsername
+  commentId: P:Business.ConstWrapper.sUsername
+  id: sUsername
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: sUsername
+  nameWithType: ConstWrapper.sUsername
+  fullName: Business.ConstWrapper.sUsername
+  type: Property
+  source:
+    id: sUsername
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 119
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nRitorna il nome utente che ha effettuato il login. \n"
+  example: []
+  syntax:
+    content: public static string sUsername { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property sUsername As String
+  overload: Business.ConstWrapper.sUsername*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.UsoAnater
+  commentId: P:Business.ConstWrapper.UsoAnater
+  id: UsoAnater
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: UsoAnater
+  nameWithType: ConstWrapper.UsoAnater
+  fullName: Business.ConstWrapper.UsoAnater
+  type: Property
+  source:
+    id: UsoAnater
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 141
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nRitorna true o false a seconda che l&apos;applicativo deve usare anater o meno. \n"
+  example: []
+  syntax:
+    content: public static string UsoAnater { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property UsoAnater As String
+  overload: Business.ConstWrapper.UsoAnater*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.CodBelfiore
+  commentId: P:Business.ConstWrapper.CodBelfiore
+  id: CodBelfiore
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: CodBelfiore
+  nameWithType: ConstWrapper.CodBelfiore
+  fullName: Business.ConstWrapper.CodBelfiore
+  type: Property
+  source:
+    id: CodBelfiore
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 151
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nRitorna il codice belfiore dell&apos;ente in questione. \n"
+  example: []
+  syntax:
+    content: public static string CodBelfiore { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property CodBelfiore As String
+  overload: Business.ConstWrapper.CodBelfiore*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.ProvenienzaVersamentoRibaltato
+  commentId: P:Business.ConstWrapper.ProvenienzaVersamentoRibaltato
+  id: ProvenienzaVersamentoRibaltato
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: ProvenienzaVersamentoRibaltato
+  nameWithType: ConstWrapper.ProvenienzaVersamentoRibaltato
+  fullName: Business.ConstWrapper.ProvenienzaVersamentoRibaltato
+  type: Property
+  source:
+    id: ProvenienzaVersamentoRibaltato
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 158
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static int ProvenienzaVersamentoRibaltato { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly Property ProvenienzaVersamentoRibaltato As Integer
+  overload: Business.ConstWrapper.ProvenienzaVersamentoRibaltato*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.CancellazioneFisicaVersamenti
+  commentId: P:Business.ConstWrapper.CancellazioneFisicaVersamenti
+  id: CancellazioneFisicaVersamenti
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: CancellazioneFisicaVersamenti
+  nameWithType: ConstWrapper.CancellazioneFisicaVersamenti
+  fullName: Business.ConstWrapper.CancellazioneFisicaVersamenti
+  type: Property
+  source:
+    id: CancellazioneFisicaVersamenti
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 165
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static bool CancellazioneFisicaVersamenti { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared ReadOnly Property CancellazioneFisicaVersamenti As Boolean
+  overload: Business.ConstWrapper.CancellazioneFisicaVersamenti*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.VisualDOCFA
+  commentId: P:Business.ConstWrapper.VisualDOCFA
+  id: VisualDOCFA
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: VisualDOCFA
+  nameWithType: ConstWrapper.VisualDOCFA
+  fullName: Business.ConstWrapper.VisualDOCFA
+  type: Property
+  source:
+    id: VisualDOCFA
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 187
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static bool VisualDOCFA { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared ReadOnly Property VisualDOCFA As Boolean
+  overload: Business.ConstWrapper.VisualDOCFA*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.HasDummyDich
+  commentId: P:Business.ConstWrapper.HasDummyDich
+  id: HasDummyDich
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: HasDummyDich
+  nameWithType: ConstWrapper.HasDummyDich
+  fullName: Business.ConstWrapper.HasDummyDich
+  type: Property
+  source:
+    id: HasDummyDich
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 215
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nse sono a true vuol dire che ho:\n- la gestione delle dichiarazioni fittizie\n- i parametri di ricerca dichiarazioni completi\n- il calcolo della parte variabile solo se NCPV>0 anziché FLAG_FORZA_CALCOLO_PV\n"
+  remarks: ''
+  example: []
+  syntax:
+    content: public static bool HasDummyDich { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared ReadOnly Property HasDummyDich As Boolean
+  overload: Business.ConstWrapper.HasDummyDich*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.HasPlainAnag
+  commentId: P:Business.ConstWrapper.HasPlainAnag
+  id: HasPlainAnag
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: HasPlainAnag
+  nameWithType: ConstWrapper.HasPlainAnag
+  fullName: Business.ConstWrapper.HasPlainAnag
+  type: Property
+  source:
+    id: HasPlainAnag
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 240
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nse sono a true vuol dire che ho un unico pannello di visualizzazione anagrafica incluso nelle varie pagine\n"
+  remarks: ''
+  example: []
+  syntax:
+    content: public static bool HasPlainAnag { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared ReadOnly Property HasPlainAnag As Boolean
+  overload: Business.ConstWrapper.HasPlainAnag*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.IsFromVariabile
+  commentId: P:Business.ConstWrapper.IsFromVariabile
+  id: IsFromVariabile
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: IsFromVariabile
+  nameWithType: ConstWrapper.IsFromVariabile
+  fullName: Business.ConstWrapper.IsFromVariabile
+  type: Property
+  source:
+    id: IsFromVariabile
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 259
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static string IsFromVariabile { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property IsFromVariabile As String
+  overload: Business.ConstWrapper.IsFromVariabile*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.nMaxDocPerFile
+  commentId: P:Business.ConstWrapper.nMaxDocPerFile
+  id: nMaxDocPerFile
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: nMaxDocPerFile
+  nameWithType: ConstWrapper.nMaxDocPerFile
+  fullName: Business.ConstWrapper.nMaxDocPerFile
+  type: Property
+  source:
+    id: nMaxDocPerFile
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 291
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static int nMaxDocPerFile { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly Property nMaxDocPerFile As Integer
+  overload: Business.ConstWrapper.nMaxDocPerFile*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.ParametroENV
+  commentId: P:Business.ConstWrapper.ParametroENV
+  id: ParametroENV
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: ParametroENV
+  nameWithType: ConstWrapper.ParametroENV
+  fullName: Business.ConstWrapper.ParametroENV
+  type: Property
+  source:
+    id: ParametroENV
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 313
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nProperty per ricavare il parametro env per il framework ribes\n"
+  example: []
+  syntax:
+    content: public static string ParametroENV { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property ParametroENV As String
+  overload: Business.ConstWrapper.ParametroENV*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.UserNameFramework
+  commentId: P:Business.ConstWrapper.UserNameFramework
+  id: UserNameFramework
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: UserNameFramework
+  nameWithType: ConstWrapper.UserNameFramework
+  fullName: Business.ConstWrapper.UserNameFramework
+  type: Property
+  source:
+    id: UserNameFramework
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 334
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nCodice tributo per il modulo Anagrafica\n"
+  example: []
+  syntax:
+    content: public static string UserNameFramework { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property UserNameFramework As String
+  overload: Business.ConstWrapper.UserNameFramework*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.ParametroAPPLICATION
+  commentId: P:Business.ConstWrapper.ParametroAPPLICATION
+  id: ParametroAPPLICATION
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: ParametroAPPLICATION
+  nameWithType: ConstWrapper.ParametroAPPLICATION
+  fullName: Business.ConstWrapper.ParametroAPPLICATION
+  type: Property
+  source:
+    id: ParametroAPPLICATION
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 355
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nProperty per ricavare l&apos;identificativo dell&apos;applicazione\n"
+  example: []
+  syntax:
+    content: public static string ParametroAPPLICATION { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property ParametroAPPLICATION As String
+  overload: Business.ConstWrapper.ParametroAPPLICATION*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.ParametroUTILITA
+  commentId: P:Business.ConstWrapper.ParametroUTILITA
+  id: ParametroUTILITA
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: ParametroUTILITA
+  nameWithType: ConstWrapper.ParametroUTILITA
+  fullName: Business.ConstWrapper.ParametroUTILITA
+  type: Property
+  source:
+    id: ParametroUTILITA
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 376
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nProperty per ricavare l&apos;identificativo dell&apos;applicazione UTILITA\n"
+  example: []
+  syntax:
+    content: public static string ParametroUTILITA { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property ParametroUTILITA As String
+  overload: Business.ConstWrapper.ParametroUTILITA*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.ParametroAnagrafica
+  commentId: P:Business.ConstWrapper.ParametroAnagrafica
+  id: ParametroAnagrafica
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: ParametroAnagrafica
+  nameWithType: ConstWrapper.ParametroAnagrafica
+  fullName: Business.ConstWrapper.ParametroAnagrafica
+  type: Property
+  source:
+    id: ParametroAnagrafica
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 383
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nCodice della sottoaplicazione Anagrafica\n"
+  example: []
+  syntax:
+    content: public static string ParametroAnagrafica { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property ParametroAnagrafica As String
+  overload: Business.ConstWrapper.ParametroAnagrafica*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.UrlServizioCalcoloICI
+  commentId: P:Business.ConstWrapper.UrlServizioCalcoloICI
+  id: UrlServizioCalcoloICI
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: UrlServizioCalcoloICI
+  nameWithType: ConstWrapper.UrlServizioCalcoloICI
+  fullName: Business.ConstWrapper.UrlServizioCalcoloICI
+  type: Property
+  source:
+    id: UrlServizioCalcoloICI
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 392
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static string UrlServizioCalcoloICI { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property UrlServizioCalcoloICI As String
+  overload: Business.ConstWrapper.UrlServizioCalcoloICI*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.UrlServizioElaborazioneDocumentiICI
+  commentId: P:Business.ConstWrapper.UrlServizioElaborazioneDocumentiICI
+  id: UrlServizioElaborazioneDocumentiICI
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: UrlServizioElaborazioneDocumentiICI
+  nameWithType: ConstWrapper.UrlServizioElaborazioneDocumentiICI
+  fullName: Business.ConstWrapper.UrlServizioElaborazioneDocumentiICI
+  type: Property
+  source:
+    id: UrlServizioElaborazioneDocumentiICI
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 399
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static string UrlServizioElaborazioneDocumentiICI { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property UrlServizioElaborazioneDocumentiICI As String
+  overload: Business.ConstWrapper.UrlServizioElaborazioneDocumentiICI*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.URLServizioStampe
+  commentId: P:Business.ConstWrapper.URLServizioStampe
+  id: URLServizioStampe
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: URLServizioStampe
+  nameWithType: ConstWrapper.URLServizioStampe
+  fullName: Business.ConstWrapper.URLServizioStampe
+  type: Property
+  source:
+    id: URLServizioStampe
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 406
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static string URLServizioStampe { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property URLServizioStampe As String
+  overload: Business.ConstWrapper.URLServizioStampe*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.ImexServiceAddress
+  commentId: P:Business.ConstWrapper.ImexServiceAddress
+  id: ImexServiceAddress
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: ImexServiceAddress
+  nameWithType: ConstWrapper.ImexServiceAddress
+  fullName: Business.ConstWrapper.ImexServiceAddress
+  type: Property
+  source:
+    id: ImexServiceAddress
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 416
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nParametro con l&apos;url di accesso al servizio ImexService\n"
+  example: []
+  syntax:
+    content: public static string ImexServiceAddress { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property ImexServiceAddress As String
+  overload: Business.ConstWrapper.ImexServiceAddress*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.BonificaServiceAddress
+  commentId: P:Business.ConstWrapper.BonificaServiceAddress
+  id: BonificaServiceAddress
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: BonificaServiceAddress
+  nameWithType: ConstWrapper.BonificaServiceAddress
+  fullName: Business.ConstWrapper.BonificaServiceAddress
+  type: Property
+  source:
+    id: BonificaServiceAddress
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 426
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nParametro con l&apos;url di accesso al servizio ImexService per la Bonifica\n"
+  example: []
+  syntax:
+    content: public static string BonificaServiceAddress { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property BonificaServiceAddress As String
+  overload: Business.ConstWrapper.BonificaServiceAddress*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.ImexPath
+  commentId: P:Business.ConstWrapper.ImexPath
+  id: ImexPath
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: ImexPath
+  nameWithType: ConstWrapper.ImexPath
+  fullName: Business.ConstWrapper.ImexPath
+  type: Property
+  source:
+    id: ImexPath
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 438
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nRitorna il nome del file compreso di path dell&apos;eseguibile Imex per le importazioni\n"
+  example: []
+  syntax:
+    content: public static string ImexPath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property ImexPath As String
+  overload: Business.ConstWrapper.ImexPath*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.BonificaPath
+  commentId: P:Business.ConstWrapper.BonificaPath
+  id: BonificaPath
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: BonificaPath
+  nameWithType: ConstWrapper.BonificaPath
+  fullName: Business.ConstWrapper.BonificaPath
+  type: Property
+  source:
+    id: BonificaPath
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 448
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nRitorna il nome del file compreso di path dell&apos;eseguibile bonifica per la bonifica automatica\n"
+  example: []
+  syntax:
+    content: public static string BonificaPath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property BonificaPath As String
+  overload: Business.ConstWrapper.BonificaPath*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.Path
+  commentId: P:Business.ConstWrapper.Path
+  id: Path
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: Path
+  nameWithType: ConstWrapper.Path
+  fullName: Business.ConstWrapper.Path
+  type: Property
+  source:
+    id: Path
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 455
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static string Path { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Path As String
+  overload: Business.ConstWrapper.Path*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.PathPDF_DOCFA
+  commentId: P:Business.ConstWrapper.PathPDF_DOCFA
+  id: PathPDF_DOCFA
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: PathPDF_DOCFA
+  nameWithType: ConstWrapper.PathPDF_DOCFA
+  fullName: Business.ConstWrapper.PathPDF_DOCFA
+  type: Property
+  source:
+    id: PathPDF_DOCFA
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 477
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static string PathPDF_DOCFA { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property PathPDF_DOCFA As String
+  overload: Business.ConstWrapper.PathPDF_DOCFA*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.PathImportMotoreCatasto
+  commentId: P:Business.ConstWrapper.PathImportMotoreCatasto
+  id: PathImportMotoreCatasto
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: PathImportMotoreCatasto
+  nameWithType: ConstWrapper.PathImportMotoreCatasto
+  fullName: Business.ConstWrapper.PathImportMotoreCatasto
+  type: Property
+  source:
+    id: PathImportMotoreCatasto
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 499
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static string PathImportMotoreCatasto { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property PathImportMotoreCatasto As String
+  overload: Business.ConstWrapper.PathImportMotoreCatasto*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.PathRibaltaMotoreCatasto
+  commentId: P:Business.ConstWrapper.PathRibaltaMotoreCatasto
+  id: PathRibaltaMotoreCatasto
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: PathRibaltaMotoreCatasto
+  nameWithType: ConstWrapper.PathRibaltaMotoreCatasto
+  fullName: Business.ConstWrapper.PathRibaltaMotoreCatasto
+  type: Property
+  source:
+    id: PathRibaltaMotoreCatasto
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 521
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static string PathRibaltaMotoreCatasto { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property PathRibaltaMotoreCatasto As String
+  overload: Business.ConstWrapper.PathRibaltaMotoreCatasto*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.DBType
+  commentId: P:Business.ConstWrapper.DBType
+  id: DBType
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: DBType
+  nameWithType: ConstWrapper.DBType
+  fullName: Business.ConstWrapper.DBType
+  type: Property
+  source:
+    id: DBType
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 545
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static string DBType { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DBType As String
+  overload: Business.ConstWrapper.DBType*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.StringConnection
+  commentId: P:Business.ConstWrapper.StringConnection
+  id: StringConnection
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: StringConnection
+  nameWithType: ConstWrapper.StringConnection
+  fullName: Business.ConstWrapper.StringConnection
+  type: Property
+  source:
+    id: StringConnection
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 552
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static string StringConnection { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property StringConnection As String
+  overload: Business.ConstWrapper.StringConnection*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.StringConnectionOPENgov
+  commentId: P:Business.ConstWrapper.StringConnectionOPENgov
+  id: StringConnectionOPENgov
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: StringConnectionOPENgov
+  nameWithType: ConstWrapper.StringConnectionOPENgov
+  fullName: Business.ConstWrapper.StringConnectionOPENgov
+  type: Property
+  source:
+    id: StringConnectionOPENgov
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 575
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static string StringConnectionOPENgov { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property StringConnectionOPENgov As String
+  overload: Business.ConstWrapper.StringConnectionOPENgov*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.StringConnectionAnagrafica
+  commentId: P:Business.ConstWrapper.StringConnectionAnagrafica
+  id: StringConnectionAnagrafica
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: StringConnectionAnagrafica
+  nameWithType: ConstWrapper.StringConnectionAnagrafica
+  fullName: Business.ConstWrapper.StringConnectionAnagrafica
+  type: Property
+  source:
+    id: StringConnectionAnagrafica
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 597
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static string StringConnectionAnagrafica { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property StringConnectionAnagrafica As String
+  overload: Business.ConstWrapper.StringConnectionAnagrafica*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.StringConnectionProvvedimenti
+  commentId: P:Business.ConstWrapper.StringConnectionProvvedimenti
+  id: StringConnectionProvvedimenti
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: StringConnectionProvvedimenti
+  nameWithType: ConstWrapper.StringConnectionProvvedimenti
+  fullName: Business.ConstWrapper.StringConnectionProvvedimenti
+  type: Property
+  source:
+    id: StringConnectionProvvedimenti
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 619
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static string StringConnectionProvvedimenti { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property StringConnectionProvvedimenti As String
+  overload: Business.ConstWrapper.StringConnectionProvvedimenti*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.StringConnectionTERRITORIO
+  commentId: P:Business.ConstWrapper.StringConnectionTERRITORIO
+  id: StringConnectionTERRITORIO
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: StringConnectionTERRITORIO
+  nameWithType: ConstWrapper.StringConnectionTERRITORIO
+  fullName: Business.ConstWrapper.StringConnectionTERRITORIO
+  type: Property
+  source:
+    id: StringConnectionTERRITORIO
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 642
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static string StringConnectionTERRITORIO { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property StringConnectionTERRITORIO As String
+  overload: Business.ConstWrapper.StringConnectionTERRITORIO*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.StringConnectionTARSU
+  commentId: P:Business.ConstWrapper.StringConnectionTARSU
+  id: StringConnectionTARSU
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: StringConnectionTARSU
+  nameWithType: ConstWrapper.StringConnectionTARSU
+  fullName: Business.ConstWrapper.StringConnectionTARSU
+  type: Property
+  source:
+    id: StringConnectionTARSU
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 664
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static string StringConnectionTARSU { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property StringConnectionTARSU As String
+  overload: Business.ConstWrapper.StringConnectionTARSU*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.StringConnectionCATASTO
+  commentId: P:Business.ConstWrapper.StringConnectionCATASTO
+  id: StringConnectionCATASTO
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: StringConnectionCATASTO
+  nameWithType: ConstWrapper.StringConnectionCATASTO
+  fullName: Business.ConstWrapper.StringConnectionCATASTO
+  type: Property
+  source:
+    id: StringConnectionCATASTO
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 682
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static string StringConnectionCATASTO { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property StringConnectionCATASTO As String
+  overload: Business.ConstWrapper.StringConnectionCATASTO*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.VisualGIS
+  commentId: P:Business.ConstWrapper.VisualGIS
+  id: VisualGIS
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: VisualGIS
+  nameWithType: ConstWrapper.VisualGIS
+  fullName: Business.ConstWrapper.VisualGIS
+  type: Property
+  source:
+    id: VisualGIS
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 706
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static bool VisualGIS { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared ReadOnly Property VisualGIS As Boolean
+  overload: Business.ConstWrapper.VisualGIS*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.UrlWSGIS
+  commentId: P:Business.ConstWrapper.UrlWSGIS
+  id: UrlWSGIS
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: UrlWSGIS
+  nameWithType: ConstWrapper.UrlWSGIS
+  fullName: Business.ConstWrapper.UrlWSGIS
+  type: Property
+  source:
+    id: UrlWSGIS
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 728
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static string UrlWSGIS { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property UrlWSGIS As String
+  overload: Business.ConstWrapper.UrlWSGIS*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.UrlWebGIS
+  commentId: P:Business.ConstWrapper.UrlWebGIS
+  id: UrlWebGIS
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: UrlWebGIS
+  nameWithType: ConstWrapper.UrlWebGIS
+  fullName: Business.ConstWrapper.UrlWebGIS
+  type: Property
+  source:
+    id: UrlWebGIS
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 752
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static string UrlWebGIS { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property UrlWebGIS As String
+  overload: Business.ConstWrapper.UrlWebGIS*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.Path_TARSU
+  commentId: P:Business.ConstWrapper.Path_TARSU
+  id: Path_TARSU
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: Path_TARSU
+  nameWithType: ConstWrapper.Path_TARSU
+  fullName: Business.ConstWrapper.Path_TARSU
+  type: Property
+  source:
+    id: Path_TARSU
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 779
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static string Path_TARSU { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Path_TARSU As String
+  overload: Business.ConstWrapper.Path_TARSU*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.PathProspetti
+  commentId: P:Business.ConstWrapper.PathProspetti
+  id: PathProspetti
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: PathProspetti
+  nameWithType: ConstWrapper.PathProspetti
+  fullName: Business.ConstWrapper.PathProspetti
+  type: Property
+  source:
+    id: PathProspetti
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 801
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static string PathProspetti { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property PathProspetti As String
+  overload: Business.ConstWrapper.PathProspetti*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.PathStampe
+  commentId: P:Business.ConstWrapper.PathStampe
+  id: PathStampe
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: PathStampe
+  nameWithType: ConstWrapper.PathStampe
+  fullName: Business.ConstWrapper.PathStampe
+  type: Property
+  source:
+    id: PathStampe
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 823
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static string PathStampe { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property PathStampe As String
+  overload: Business.ConstWrapper.PathStampe*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.PathVirtualStampe
+  commentId: P:Business.ConstWrapper.PathVirtualStampe
+  id: PathVirtualStampe
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: PathVirtualStampe
+  nameWithType: ConstWrapper.PathVirtualStampe
+  fullName: Business.ConstWrapper.PathVirtualStampe
+  type: Property
+  source:
+    id: PathVirtualStampe
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 845
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static string PathVirtualStampe { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property PathVirtualStampe As String
+  overload: Business.ConstWrapper.PathVirtualStampe*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.ConfigurazioneDichiarazione
+  commentId: P:Business.ConstWrapper.ConfigurazioneDichiarazione
+  id: ConfigurazioneDichiarazione
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: ConfigurazioneDichiarazione
+  nameWithType: ConstWrapper.ConfigurazioneDichiarazione
+  fullName: Business.ConstWrapper.ConfigurazioneDichiarazione
+  type: Property
+  source:
+    id: ConfigurazioneDichiarazione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 868
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public static bool ConfigurazioneDichiarazione { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared ReadOnly Property ConfigurazioneDichiarazione As Boolean
+  overload: Business.ConstWrapper.ConfigurazioneDichiarazione*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.ContoCorrente
+  commentId: P:Business.ConstWrapper.ContoCorrente
+  id: ContoCorrente
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: ContoCorrente
+  nameWithType: ConstWrapper.ContoCorrente
+  fullName: Business.ConstWrapper.ContoCorrente
+  type: Property
+  source:
+    id: ContoCorrente
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 885
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nInterfaccia verso il parametro di configuraziome omonimo\n"
+  example: []
+  syntax:
+    content: public static string ContoCorrente { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property ContoCorrente As String
+  overload: Business.ConstWrapper.ContoCorrente*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.IntestatarioBollettino
+  commentId: P:Business.ConstWrapper.IntestatarioBollettino
+  id: IntestatarioBollettino
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: IntestatarioBollettino
+  nameWithType: ConstWrapper.IntestatarioBollettino
+  fullName: Business.ConstWrapper.IntestatarioBollettino
+  type: Property
+  source:
+    id: IntestatarioBollettino
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 908
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nInterfaccia verso il parametro di configuraziome omonimo\n"
+  example: []
+  syntax:
+    content: public static string IntestatarioBollettino { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property IntestatarioBollettino As String
+  overload: Business.ConstWrapper.IntestatarioBollettino*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.ComuneUbicazioneImmobile
+  commentId: P:Business.ConstWrapper.ComuneUbicazioneImmobile
+  id: ComuneUbicazioneImmobile
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: ComuneUbicazioneImmobile
+  nameWithType: ConstWrapper.ComuneUbicazioneImmobile
+  fullName: Business.ConstWrapper.ComuneUbicazioneImmobile
+  type: Property
+  source:
+    id: ComuneUbicazioneImmobile
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 931
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nInterfaccia verso il parametro di configuraziome omonimo\n"
+  example: []
+  syntax:
+    content: public static string ComuneUbicazioneImmobile { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property ComuneUbicazioneImmobile As String
+  overload: Business.ConstWrapper.ComuneUbicazioneImmobile*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Business.ConstWrapper.Parametri
+  commentId: P:Business.ConstWrapper.Parametri
+  id: Parametri
+  parent: Business.ConstWrapper
+  langs:
+  - csharp
+  - vb
+  name: Parametri
+  nameWithType: ConstWrapper.Parametri
+  fullName: Business.ConstWrapper.Parametri
+  type: Property
+  source:
+    id: Parametri
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ConstWrapper.cs
+    startLine: 953
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nWrapping della session per la gestione dei tipi e della validità.\n"
+  example: []
+  syntax:
+    content: public static Hashtable Parametri { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Hashtable
+    content.vb: Public Shared Property Parametri As Hashtable
+  overload: Business.ConstWrapper.Parametri*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Business
+  commentId: N:Business
+  name: Business
+  nameWithType: Business
+  fullName: Business
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Business.ConstWrapper.CodiceTributoAnag*
+  commentId: Overload:Business.ConstWrapper.CodiceTributoAnag
+  name: CodiceTributoAnag
+  nameWithType: ConstWrapper.CodiceTributoAnag
+  fullName: Business.ConstWrapper.CodiceTributoAnag
+- uid: Business.ConstWrapper.CodiceTributo*
+  commentId: Overload:Business.ConstWrapper.CodiceTributo
+  name: CodiceTributo
+  nameWithType: ConstWrapper.CodiceTributo
+  fullName: Business.ConstWrapper.CodiceTributo
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Business.ConstWrapper.Ambiente*
+  commentId: Overload:Business.ConstWrapper.Ambiente
+  name: Ambiente
+  nameWithType: ConstWrapper.Ambiente
+  fullName: Business.ConstWrapper.Ambiente
+- uid: Business.ConstWrapper.CodiceEnte*
+  commentId: Overload:Business.ConstWrapper.CodiceEnte
+  name: CodiceEnte
+  nameWithType: ConstWrapper.CodiceEnte
+  fullName: Business.ConstWrapper.CodiceEnte
+- uid: Business.ConstWrapper.DescrizioneEnte*
+  commentId: Overload:Business.ConstWrapper.DescrizioneEnte
+  name: DescrizioneEnte
+  nameWithType: ConstWrapper.DescrizioneEnte
+  fullName: Business.ConstWrapper.DescrizioneEnte
+- uid: Business.ConstWrapper.sUsername*
+  commentId: Overload:Business.ConstWrapper.sUsername
+  name: sUsername
+  nameWithType: ConstWrapper.sUsername
+  fullName: Business.ConstWrapper.sUsername
+- uid: Business.ConstWrapper.UsoAnater*
+  commentId: Overload:Business.ConstWrapper.UsoAnater
+  name: UsoAnater
+  nameWithType: ConstWrapper.UsoAnater
+  fullName: Business.ConstWrapper.UsoAnater
+- uid: Business.ConstWrapper.CodBelfiore*
+  commentId: Overload:Business.ConstWrapper.CodBelfiore
+  name: CodBelfiore
+  nameWithType: ConstWrapper.CodBelfiore
+  fullName: Business.ConstWrapper.CodBelfiore
+- uid: Business.ConstWrapper.ProvenienzaVersamentoRibaltato*
+  commentId: Overload:Business.ConstWrapper.ProvenienzaVersamentoRibaltato
+  name: ProvenienzaVersamentoRibaltato
+  nameWithType: ConstWrapper.ProvenienzaVersamentoRibaltato
+  fullName: Business.ConstWrapper.ProvenienzaVersamentoRibaltato
+- uid: Business.ConstWrapper.CancellazioneFisicaVersamenti*
+  commentId: Overload:Business.ConstWrapper.CancellazioneFisicaVersamenti
+  name: CancellazioneFisicaVersamenti
+  nameWithType: ConstWrapper.CancellazioneFisicaVersamenti
+  fullName: Business.ConstWrapper.CancellazioneFisicaVersamenti
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Business.ConstWrapper.VisualDOCFA*
+  commentId: Overload:Business.ConstWrapper.VisualDOCFA
+  name: VisualDOCFA
+  nameWithType: ConstWrapper.VisualDOCFA
+  fullName: Business.ConstWrapper.VisualDOCFA
+- uid: Business.ConstWrapper.HasDummyDich*
+  commentId: Overload:Business.ConstWrapper.HasDummyDich
+  name: HasDummyDich
+  nameWithType: ConstWrapper.HasDummyDich
+  fullName: Business.ConstWrapper.HasDummyDich
+- uid: Business.ConstWrapper.HasPlainAnag*
+  commentId: Overload:Business.ConstWrapper.HasPlainAnag
+  name: HasPlainAnag
+  nameWithType: ConstWrapper.HasPlainAnag
+  fullName: Business.ConstWrapper.HasPlainAnag
+- uid: Business.ConstWrapper.IsFromVariabile*
+  commentId: Overload:Business.ConstWrapper.IsFromVariabile
+  name: IsFromVariabile
+  nameWithType: ConstWrapper.IsFromVariabile
+  fullName: Business.ConstWrapper.IsFromVariabile
+- uid: Business.ConstWrapper.nMaxDocPerFile*
+  commentId: Overload:Business.ConstWrapper.nMaxDocPerFile
+  name: nMaxDocPerFile
+  nameWithType: ConstWrapper.nMaxDocPerFile
+  fullName: Business.ConstWrapper.nMaxDocPerFile
+- uid: Business.ConstWrapper.ParametroENV*
+  commentId: Overload:Business.ConstWrapper.ParametroENV
+  name: ParametroENV
+  nameWithType: ConstWrapper.ParametroENV
+  fullName: Business.ConstWrapper.ParametroENV
+- uid: Business.ConstWrapper.UserNameFramework*
+  commentId: Overload:Business.ConstWrapper.UserNameFramework
+  name: UserNameFramework
+  nameWithType: ConstWrapper.UserNameFramework
+  fullName: Business.ConstWrapper.UserNameFramework
+- uid: Business.ConstWrapper.ParametroAPPLICATION*
+  commentId: Overload:Business.ConstWrapper.ParametroAPPLICATION
+  name: ParametroAPPLICATION
+  nameWithType: ConstWrapper.ParametroAPPLICATION
+  fullName: Business.ConstWrapper.ParametroAPPLICATION
+- uid: Business.ConstWrapper.ParametroUTILITA*
+  commentId: Overload:Business.ConstWrapper.ParametroUTILITA
+  name: ParametroUTILITA
+  nameWithType: ConstWrapper.ParametroUTILITA
+  fullName: Business.ConstWrapper.ParametroUTILITA
+- uid: Business.ConstWrapper.ParametroAnagrafica*
+  commentId: Overload:Business.ConstWrapper.ParametroAnagrafica
+  name: ParametroAnagrafica
+  nameWithType: ConstWrapper.ParametroAnagrafica
+  fullName: Business.ConstWrapper.ParametroAnagrafica
+- uid: Business.ConstWrapper.UrlServizioCalcoloICI*
+  commentId: Overload:Business.ConstWrapper.UrlServizioCalcoloICI
+  name: UrlServizioCalcoloICI
+  nameWithType: ConstWrapper.UrlServizioCalcoloICI
+  fullName: Business.ConstWrapper.UrlServizioCalcoloICI
+- uid: Business.ConstWrapper.UrlServizioElaborazioneDocumentiICI*
+  commentId: Overload:Business.ConstWrapper.UrlServizioElaborazioneDocumentiICI
+  name: UrlServizioElaborazioneDocumentiICI
+  nameWithType: ConstWrapper.UrlServizioElaborazioneDocumentiICI
+  fullName: Business.ConstWrapper.UrlServizioElaborazioneDocumentiICI
+- uid: Business.ConstWrapper.URLServizioStampe*
+  commentId: Overload:Business.ConstWrapper.URLServizioStampe
+  name: URLServizioStampe
+  nameWithType: ConstWrapper.URLServizioStampe
+  fullName: Business.ConstWrapper.URLServizioStampe
+- uid: Business.ConstWrapper.ImexServiceAddress*
+  commentId: Overload:Business.ConstWrapper.ImexServiceAddress
+  name: ImexServiceAddress
+  nameWithType: ConstWrapper.ImexServiceAddress
+  fullName: Business.ConstWrapper.ImexServiceAddress
+- uid: Business.ConstWrapper.BonificaServiceAddress*
+  commentId: Overload:Business.ConstWrapper.BonificaServiceAddress
+  name: BonificaServiceAddress
+  nameWithType: ConstWrapper.BonificaServiceAddress
+  fullName: Business.ConstWrapper.BonificaServiceAddress
+- uid: Business.ConstWrapper.ImexPath*
+  commentId: Overload:Business.ConstWrapper.ImexPath
+  name: ImexPath
+  nameWithType: ConstWrapper.ImexPath
+  fullName: Business.ConstWrapper.ImexPath
+- uid: Business.ConstWrapper.BonificaPath*
+  commentId: Overload:Business.ConstWrapper.BonificaPath
+  name: BonificaPath
+  nameWithType: ConstWrapper.BonificaPath
+  fullName: Business.ConstWrapper.BonificaPath
+- uid: Business.ConstWrapper.Path*
+  commentId: Overload:Business.ConstWrapper.Path
+  name: Path
+  nameWithType: ConstWrapper.Path
+  fullName: Business.ConstWrapper.Path
+- uid: Business.ConstWrapper.PathPDF_DOCFA*
+  commentId: Overload:Business.ConstWrapper.PathPDF_DOCFA
+  name: PathPDF_DOCFA
+  nameWithType: ConstWrapper.PathPDF_DOCFA
+  fullName: Business.ConstWrapper.PathPDF_DOCFA
+- uid: Business.ConstWrapper.PathImportMotoreCatasto*
+  commentId: Overload:Business.ConstWrapper.PathImportMotoreCatasto
+  name: PathImportMotoreCatasto
+  nameWithType: ConstWrapper.PathImportMotoreCatasto
+  fullName: Business.ConstWrapper.PathImportMotoreCatasto
+- uid: Business.ConstWrapper.PathRibaltaMotoreCatasto*
+  commentId: Overload:Business.ConstWrapper.PathRibaltaMotoreCatasto
+  name: PathRibaltaMotoreCatasto
+  nameWithType: ConstWrapper.PathRibaltaMotoreCatasto
+  fullName: Business.ConstWrapper.PathRibaltaMotoreCatasto
+- uid: Business.ConstWrapper.DBType*
+  commentId: Overload:Business.ConstWrapper.DBType
+  name: DBType
+  nameWithType: ConstWrapper.DBType
+  fullName: Business.ConstWrapper.DBType
+- uid: Business.ConstWrapper.StringConnection*
+  commentId: Overload:Business.ConstWrapper.StringConnection
+  name: StringConnection
+  nameWithType: ConstWrapper.StringConnection
+  fullName: Business.ConstWrapper.StringConnection
+- uid: Business.ConstWrapper.StringConnectionOPENgov*
+  commentId: Overload:Business.ConstWrapper.StringConnectionOPENgov
+  name: StringConnectionOPENgov
+  nameWithType: ConstWrapper.StringConnectionOPENgov
+  fullName: Business.ConstWrapper.StringConnectionOPENgov
+- uid: Business.ConstWrapper.StringConnectionAnagrafica*
+  commentId: Overload:Business.ConstWrapper.StringConnectionAnagrafica
+  name: StringConnectionAnagrafica
+  nameWithType: ConstWrapper.StringConnectionAnagrafica
+  fullName: Business.ConstWrapper.StringConnectionAnagrafica
+- uid: Business.ConstWrapper.StringConnectionProvvedimenti*
+  commentId: Overload:Business.ConstWrapper.StringConnectionProvvedimenti
+  name: StringConnectionProvvedimenti
+  nameWithType: ConstWrapper.StringConnectionProvvedimenti
+  fullName: Business.ConstWrapper.StringConnectionProvvedimenti
+- uid: Business.ConstWrapper.StringConnectionTERRITORIO*
+  commentId: Overload:Business.ConstWrapper.StringConnectionTERRITORIO
+  name: StringConnectionTERRITORIO
+  nameWithType: ConstWrapper.StringConnectionTERRITORIO
+  fullName: Business.ConstWrapper.StringConnectionTERRITORIO
+- uid: Business.ConstWrapper.StringConnectionTARSU*
+  commentId: Overload:Business.ConstWrapper.StringConnectionTARSU
+  name: StringConnectionTARSU
+  nameWithType: ConstWrapper.StringConnectionTARSU
+  fullName: Business.ConstWrapper.StringConnectionTARSU
+- uid: Business.ConstWrapper.StringConnectionCATASTO*
+  commentId: Overload:Business.ConstWrapper.StringConnectionCATASTO
+  name: StringConnectionCATASTO
+  nameWithType: ConstWrapper.StringConnectionCATASTO
+  fullName: Business.ConstWrapper.StringConnectionCATASTO
+- uid: Business.ConstWrapper.VisualGIS*
+  commentId: Overload:Business.ConstWrapper.VisualGIS
+  name: VisualGIS
+  nameWithType: ConstWrapper.VisualGIS
+  fullName: Business.ConstWrapper.VisualGIS
+- uid: Business.ConstWrapper.UrlWSGIS*
+  commentId: Overload:Business.ConstWrapper.UrlWSGIS
+  name: UrlWSGIS
+  nameWithType: ConstWrapper.UrlWSGIS
+  fullName: Business.ConstWrapper.UrlWSGIS
+- uid: Business.ConstWrapper.UrlWebGIS*
+  commentId: Overload:Business.ConstWrapper.UrlWebGIS
+  name: UrlWebGIS
+  nameWithType: ConstWrapper.UrlWebGIS
+  fullName: Business.ConstWrapper.UrlWebGIS
+- uid: Business.ConstWrapper.Path_TARSU*
+  commentId: Overload:Business.ConstWrapper.Path_TARSU
+  name: Path_TARSU
+  nameWithType: ConstWrapper.Path_TARSU
+  fullName: Business.ConstWrapper.Path_TARSU
+- uid: Business.ConstWrapper.PathProspetti*
+  commentId: Overload:Business.ConstWrapper.PathProspetti
+  name: PathProspetti
+  nameWithType: ConstWrapper.PathProspetti
+  fullName: Business.ConstWrapper.PathProspetti
+- uid: Business.ConstWrapper.PathStampe*
+  commentId: Overload:Business.ConstWrapper.PathStampe
+  name: PathStampe
+  nameWithType: ConstWrapper.PathStampe
+  fullName: Business.ConstWrapper.PathStampe
+- uid: Business.ConstWrapper.PathVirtualStampe*
+  commentId: Overload:Business.ConstWrapper.PathVirtualStampe
+  name: PathVirtualStampe
+  nameWithType: ConstWrapper.PathVirtualStampe
+  fullName: Business.ConstWrapper.PathVirtualStampe
+- uid: Business.ConstWrapper.ConfigurazioneDichiarazione*
+  commentId: Overload:Business.ConstWrapper.ConfigurazioneDichiarazione
+  name: ConfigurazioneDichiarazione
+  nameWithType: ConstWrapper.ConfigurazioneDichiarazione
+  fullName: Business.ConstWrapper.ConfigurazioneDichiarazione
+- uid: Business.ConstWrapper.ContoCorrente*
+  commentId: Overload:Business.ConstWrapper.ContoCorrente
+  name: ContoCorrente
+  nameWithType: ConstWrapper.ContoCorrente
+  fullName: Business.ConstWrapper.ContoCorrente
+- uid: Business.ConstWrapper.IntestatarioBollettino*
+  commentId: Overload:Business.ConstWrapper.IntestatarioBollettino
+  name: IntestatarioBollettino
+  nameWithType: ConstWrapper.IntestatarioBollettino
+  fullName: Business.ConstWrapper.IntestatarioBollettino
+- uid: Business.ConstWrapper.ComuneUbicazioneImmobile*
+  commentId: Overload:Business.ConstWrapper.ComuneUbicazioneImmobile
+  name: ComuneUbicazioneImmobile
+  nameWithType: ConstWrapper.ComuneUbicazioneImmobile
+  fullName: Business.ConstWrapper.ComuneUbicazioneImmobile
+- uid: Business.ConstWrapper.Parametri*
+  commentId: Overload:Business.ConstWrapper.Parametri
+  name: Parametri
+  nameWithType: ConstWrapper.Parametri
+  fullName: Business.ConstWrapper.Parametri
+- uid: System.Collections.Hashtable
+  commentId: T:System.Collections.Hashtable
+  parent: System.Collections
+  isExternal: true
+  name: Hashtable
+  nameWithType: Hashtable
+  fullName: System.Collections.Hashtable
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections

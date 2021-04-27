@@ -1,0 +1,2390 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  commentId: T:DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  id: DisposizioneAE
+  parent: DichiarazioniICI.WServiceOPENae
+  children:
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.nConsumo
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDAssenzaDatiCatastali
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDCollegamento
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDContribuente
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDDestinazioneUso
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDDisposizione
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDFlusso
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDTipoOccupante
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDTipoUtenza
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDTitoloOccupazione
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.nImportoFatturato
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.nMesiFatturazione
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sAnno
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCivico
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodComuneUbicazioneCatast
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodFiscale
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodFiscaleEnte
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodISTAT
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCognome
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCognomeEnte
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneAmmUbicazione
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneCatastUbicazione
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneDomFisc
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneNascitaSede
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneNascitaSedeEnte
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataFine
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataInizio
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataNascita
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataNascitaEnte
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sEstensioneParticella
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sEstremiContratto
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sFoglio
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sIDTipoParticella
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sIDTipoUnita
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sIndirizzo
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sInterno
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sNome
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sNomeEnte
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sParticella
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVAmmUbicazione
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVDomFisc
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVNascitaSede
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVNascitaSedeEnte
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sScala
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSegno
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSesso
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSessoEnte
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSezione
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSubalterno
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sTipoContratto
+  - DichiarazioniICI.WServiceOPENae.DisposizioneAE.sTributo
+  langs:
+  - csharp
+  - vb
+  name: DisposizioneAE
+  nameWithType: DisposizioneAE
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  type: Class
+  source:
+    id: DisposizioneAE
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 530
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class DisposizioneAE
+    content.vb: >-
+      <Serializable>
+
+      Public Class DisposizioneAE
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDDisposizione
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDDisposizione
+  id: nIDDisposizione
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: nIDDisposizione
+  nameWithType: DisposizioneAE.nIDDisposizione
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDDisposizione
+  type: Property
+  source:
+    id: nIDDisposizione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 640
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public int nIDDisposizione { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property nIDDisposizione As Integer
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDDisposizione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDCollegamento
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDCollegamento
+  id: nIDCollegamento
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: nIDCollegamento
+  nameWithType: DisposizioneAE.nIDCollegamento
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDCollegamento
+  type: Property
+  source:
+    id: nIDCollegamento
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 650
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public int nIDCollegamento { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property nIDCollegamento As Integer
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDCollegamento*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDFlusso
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDFlusso
+  id: nIDFlusso
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: nIDFlusso
+  nameWithType: DisposizioneAE.nIDFlusso
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDFlusso
+  type: Property
+  source:
+    id: nIDFlusso
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 660
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public int nIDFlusso { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property nIDFlusso As Integer
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDFlusso*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDContribuente
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDContribuente
+  id: nIDContribuente
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: nIDContribuente
+  nameWithType: DisposizioneAE.nIDContribuente
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDContribuente
+  type: Property
+  source:
+    id: nIDContribuente
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 670
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public int nIDContribuente { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property nIDContribuente As Integer
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDContribuente*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nMesiFatturazione
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.nMesiFatturazione
+  id: nMesiFatturazione
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: nMesiFatturazione
+  nameWithType: DisposizioneAE.nMesiFatturazione
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nMesiFatturazione
+  type: Property
+  source:
+    id: nMesiFatturazione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 680
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public int nMesiFatturazione { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property nMesiFatturazione As Integer
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nMesiFatturazione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nConsumo
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.nConsumo
+  id: nConsumo
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: nConsumo
+  nameWithType: DisposizioneAE.nConsumo
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nConsumo
+  type: Property
+  source:
+    id: nConsumo
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 690
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public int nConsumo { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property nConsumo As Integer
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nConsumo*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nImportoFatturato
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.nImportoFatturato
+  id: nImportoFatturato
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: nImportoFatturato
+  nameWithType: DisposizioneAE.nImportoFatturato
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nImportoFatturato
+  type: Property
+  source:
+    id: nImportoFatturato
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 700
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public double nImportoFatturato { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property nImportoFatturato As Double
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nImportoFatturato*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDTitoloOccupazione
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDTitoloOccupazione
+  id: nIDTitoloOccupazione
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: nIDTitoloOccupazione
+  nameWithType: DisposizioneAE.nIDTitoloOccupazione
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDTitoloOccupazione
+  type: Property
+  source:
+    id: nIDTitoloOccupazione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 710
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public TitoloOccupazione nIDTitoloOccupazione { get; set; }
+    parameters: []
+    return:
+      type: DichiarazioniICI.WServiceOPENae.TitoloOccupazione
+    content.vb: Public Property nIDTitoloOccupazione As TitoloOccupazione
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDTitoloOccupazione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDTipoOccupante
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDTipoOccupante
+  id: nIDTipoOccupante
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: nIDTipoOccupante
+  nameWithType: DisposizioneAE.nIDTipoOccupante
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDTipoOccupante
+  type: Property
+  source:
+    id: nIDTipoOccupante
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 720
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public NaturaOccupazione nIDTipoOccupante { get; set; }
+    parameters: []
+    return:
+      type: DichiarazioniICI.WServiceOPENae.NaturaOccupazione
+    content.vb: Public Property nIDTipoOccupante As NaturaOccupazione
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDTipoOccupante*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDDestinazioneUso
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDDestinazioneUso
+  id: nIDDestinazioneUso
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: nIDDestinazioneUso
+  nameWithType: DisposizioneAE.nIDDestinazioneUso
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDDestinazioneUso
+  type: Property
+  source:
+    id: nIDDestinazioneUso
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 730
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public DestinazioneUso nIDDestinazioneUso { get; set; }
+    parameters: []
+    return:
+      type: DichiarazioniICI.WServiceOPENae.DestinazioneUso
+    content.vb: Public Property nIDDestinazioneUso As DestinazioneUso
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDDestinazioneUso*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDAssenzaDatiCatastali
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDAssenzaDatiCatastali
+  id: nIDAssenzaDatiCatastali
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: nIDAssenzaDatiCatastali
+  nameWithType: DisposizioneAE.nIDAssenzaDatiCatastali
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDAssenzaDatiCatastali
+  type: Property
+  source:
+    id: nIDAssenzaDatiCatastali
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 740
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public AssenzaDatiCatastali nIDAssenzaDatiCatastali { get; set; }
+    parameters: []
+    return:
+      type: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali
+    content.vb: Public Property nIDAssenzaDatiCatastali As AssenzaDatiCatastali
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDAssenzaDatiCatastali*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDTipoUtenza
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDTipoUtenza
+  id: nIDTipoUtenza
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: nIDTipoUtenza
+  nameWithType: DisposizioneAE.nIDTipoUtenza
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDTipoUtenza
+  type: Property
+  source:
+    id: nIDTipoUtenza
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 750
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public TipologiaUtenza nIDTipoUtenza { get; set; }
+    parameters: []
+    return:
+      type: DichiarazioniICI.WServiceOPENae.TipologiaUtenza
+    content.vb: Public Property nIDTipoUtenza As TipologiaUtenza
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDTipoUtenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodISTAT
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodISTAT
+  id: sCodISTAT
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sCodISTAT
+  nameWithType: DisposizioneAE.sCodISTAT
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodISTAT
+  type: Property
+  source:
+    id: sCodISTAT
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 760
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sCodISTAT { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sCodISTAT As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodISTAT*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sTributo
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sTributo
+  id: sTributo
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sTributo
+  nameWithType: DisposizioneAE.sTributo
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sTributo
+  type: Property
+  source:
+    id: sTributo
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 770
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sTributo { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sTributo As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sTributo*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sAnno
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sAnno
+  id: sAnno
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sAnno
+  nameWithType: DisposizioneAE.sAnno
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sAnno
+  type: Property
+  source:
+    id: sAnno
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 780
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sAnno { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sAnno As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sAnno*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodFiscaleEnte
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodFiscaleEnte
+  id: sCodFiscaleEnte
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sCodFiscaleEnte
+  nameWithType: DisposizioneAE.sCodFiscaleEnte
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodFiscaleEnte
+  type: Property
+  source:
+    id: sCodFiscaleEnte
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 790
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sCodFiscaleEnte { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sCodFiscaleEnte As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodFiscaleEnte*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCognomeEnte
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCognomeEnte
+  id: sCognomeEnte
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sCognomeEnte
+  nameWithType: DisposizioneAE.sCognomeEnte
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCognomeEnte
+  type: Property
+  source:
+    id: sCognomeEnte
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 800
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sCognomeEnte { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sCognomeEnte As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCognomeEnte*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sNomeEnte
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sNomeEnte
+  id: sNomeEnte
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sNomeEnte
+  nameWithType: DisposizioneAE.sNomeEnte
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sNomeEnte
+  type: Property
+  source:
+    id: sNomeEnte
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 810
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sNomeEnte { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sNomeEnte As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sNomeEnte*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSessoEnte
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSessoEnte
+  id: sSessoEnte
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sSessoEnte
+  nameWithType: DisposizioneAE.sSessoEnte
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSessoEnte
+  type: Property
+  source:
+    id: sSessoEnte
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 820
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sSessoEnte { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sSessoEnte As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSessoEnte*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataNascitaEnte
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataNascitaEnte
+  id: sDataNascitaEnte
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sDataNascitaEnte
+  nameWithType: DisposizioneAE.sDataNascitaEnte
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataNascitaEnte
+  type: Property
+  source:
+    id: sDataNascitaEnte
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 830
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sDataNascitaEnte { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sDataNascitaEnte As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataNascitaEnte*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneNascitaSedeEnte
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneNascitaSedeEnte
+  id: sComuneNascitaSedeEnte
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sComuneNascitaSedeEnte
+  nameWithType: DisposizioneAE.sComuneNascitaSedeEnte
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneNascitaSedeEnte
+  type: Property
+  source:
+    id: sComuneNascitaSedeEnte
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 840
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sComuneNascitaSedeEnte { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sComuneNascitaSedeEnte As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneNascitaSedeEnte*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVNascitaSedeEnte
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVNascitaSedeEnte
+  id: sPVNascitaSedeEnte
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sPVNascitaSedeEnte
+  nameWithType: DisposizioneAE.sPVNascitaSedeEnte
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVNascitaSedeEnte
+  type: Property
+  source:
+    id: sPVNascitaSedeEnte
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 850
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sPVNascitaSedeEnte { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sPVNascitaSedeEnte As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVNascitaSedeEnte*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodFiscale
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodFiscale
+  id: sCodFiscale
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sCodFiscale
+  nameWithType: DisposizioneAE.sCodFiscale
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodFiscale
+  type: Property
+  source:
+    id: sCodFiscale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 860
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sCodFiscale { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sCodFiscale As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodFiscale*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCognome
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCognome
+  id: sCognome
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sCognome
+  nameWithType: DisposizioneAE.sCognome
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCognome
+  type: Property
+  source:
+    id: sCognome
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 870
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sCognome { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sCognome As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCognome*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sNome
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sNome
+  id: sNome
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sNome
+  nameWithType: DisposizioneAE.sNome
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sNome
+  type: Property
+  source:
+    id: sNome
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 880
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sNome { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sNome As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sNome*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSesso
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSesso
+  id: sSesso
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sSesso
+  nameWithType: DisposizioneAE.sSesso
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSesso
+  type: Property
+  source:
+    id: sSesso
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 890
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sSesso { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sSesso As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSesso*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataNascita
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataNascita
+  id: sDataNascita
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sDataNascita
+  nameWithType: DisposizioneAE.sDataNascita
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataNascita
+  type: Property
+  source:
+    id: sDataNascita
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 900
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sDataNascita { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sDataNascita As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataNascita*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneNascitaSede
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneNascitaSede
+  id: sComuneNascitaSede
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sComuneNascitaSede
+  nameWithType: DisposizioneAE.sComuneNascitaSede
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneNascitaSede
+  type: Property
+  source:
+    id: sComuneNascitaSede
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 910
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sComuneNascitaSede { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sComuneNascitaSede As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneNascitaSede*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVNascitaSede
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVNascitaSede
+  id: sPVNascitaSede
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sPVNascitaSede
+  nameWithType: DisposizioneAE.sPVNascitaSede
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVNascitaSede
+  type: Property
+  source:
+    id: sPVNascitaSede
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 920
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sPVNascitaSede { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sPVNascitaSede As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVNascitaSede*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneDomFisc
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneDomFisc
+  id: sComuneDomFisc
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sComuneDomFisc
+  nameWithType: DisposizioneAE.sComuneDomFisc
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneDomFisc
+  type: Property
+  source:
+    id: sComuneDomFisc
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 930
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sComuneDomFisc { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sComuneDomFisc As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneDomFisc*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVDomFisc
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVDomFisc
+  id: sPVDomFisc
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sPVDomFisc
+  nameWithType: DisposizioneAE.sPVDomFisc
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVDomFisc
+  type: Property
+  source:
+    id: sPVDomFisc
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 940
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sPVDomFisc { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sPVDomFisc As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVDomFisc*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sEstremiContratto
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sEstremiContratto
+  id: sEstremiContratto
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sEstremiContratto
+  nameWithType: DisposizioneAE.sEstremiContratto
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sEstremiContratto
+  type: Property
+  source:
+    id: sEstremiContratto
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 950
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sEstremiContratto { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sEstremiContratto As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sEstremiContratto*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sTipoContratto
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sTipoContratto
+  id: sTipoContratto
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sTipoContratto
+  nameWithType: DisposizioneAE.sTipoContratto
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sTipoContratto
+  type: Property
+  source:
+    id: sTipoContratto
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 960
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sTipoContratto { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sTipoContratto As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sTipoContratto*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataInizio
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataInizio
+  id: sDataInizio
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sDataInizio
+  nameWithType: DisposizioneAE.sDataInizio
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataInizio
+  type: Property
+  source:
+    id: sDataInizio
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 970
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sDataInizio { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sDataInizio As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataInizio*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataFine
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataFine
+  id: sDataFine
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sDataFine
+  nameWithType: DisposizioneAE.sDataFine
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataFine
+  type: Property
+  source:
+    id: sDataFine
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 980
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sDataFine { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sDataFine As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataFine*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneAmmUbicazione
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneAmmUbicazione
+  id: sComuneAmmUbicazione
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sComuneAmmUbicazione
+  nameWithType: DisposizioneAE.sComuneAmmUbicazione
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneAmmUbicazione
+  type: Property
+  source:
+    id: sComuneAmmUbicazione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 990
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sComuneAmmUbicazione { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sComuneAmmUbicazione As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneAmmUbicazione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVAmmUbicazione
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVAmmUbicazione
+  id: sPVAmmUbicazione
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sPVAmmUbicazione
+  nameWithType: DisposizioneAE.sPVAmmUbicazione
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVAmmUbicazione
+  type: Property
+  source:
+    id: sPVAmmUbicazione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1000
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sPVAmmUbicazione { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sPVAmmUbicazione As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVAmmUbicazione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneCatastUbicazione
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneCatastUbicazione
+  id: sComuneCatastUbicazione
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sComuneCatastUbicazione
+  nameWithType: DisposizioneAE.sComuneCatastUbicazione
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneCatastUbicazione
+  type: Property
+  source:
+    id: sComuneCatastUbicazione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1010
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sComuneCatastUbicazione { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sComuneCatastUbicazione As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneCatastUbicazione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodComuneUbicazioneCatast
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodComuneUbicazioneCatast
+  id: sCodComuneUbicazioneCatast
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sCodComuneUbicazioneCatast
+  nameWithType: DisposizioneAE.sCodComuneUbicazioneCatast
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodComuneUbicazioneCatast
+  type: Property
+  source:
+    id: sCodComuneUbicazioneCatast
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1020
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sCodComuneUbicazioneCatast { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sCodComuneUbicazioneCatast As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodComuneUbicazioneCatast*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sIDTipoUnita
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sIDTipoUnita
+  id: sIDTipoUnita
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sIDTipoUnita
+  nameWithType: DisposizioneAE.sIDTipoUnita
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sIDTipoUnita
+  type: Property
+  source:
+    id: sIDTipoUnita
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1030
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sIDTipoUnita { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sIDTipoUnita As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sIDTipoUnita*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSezione
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSezione
+  id: sSezione
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sSezione
+  nameWithType: DisposizioneAE.sSezione
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSezione
+  type: Property
+  source:
+    id: sSezione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1040
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sSezione { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sSezione As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSezione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sFoglio
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sFoglio
+  id: sFoglio
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sFoglio
+  nameWithType: DisposizioneAE.sFoglio
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sFoglio
+  type: Property
+  source:
+    id: sFoglio
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1050
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sFoglio { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sFoglio As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sFoglio*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sParticella
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sParticella
+  id: sParticella
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sParticella
+  nameWithType: DisposizioneAE.sParticella
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sParticella
+  type: Property
+  source:
+    id: sParticella
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1060
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sParticella { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sParticella As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sParticella*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sEstensioneParticella
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sEstensioneParticella
+  id: sEstensioneParticella
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sEstensioneParticella
+  nameWithType: DisposizioneAE.sEstensioneParticella
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sEstensioneParticella
+  type: Property
+  source:
+    id: sEstensioneParticella
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1070
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sEstensioneParticella { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sEstensioneParticella As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sEstensioneParticella*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sIDTipoParticella
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sIDTipoParticella
+  id: sIDTipoParticella
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sIDTipoParticella
+  nameWithType: DisposizioneAE.sIDTipoParticella
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sIDTipoParticella
+  type: Property
+  source:
+    id: sIDTipoParticella
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1080
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sIDTipoParticella { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sIDTipoParticella As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sIDTipoParticella*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSubalterno
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSubalterno
+  id: sSubalterno
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sSubalterno
+  nameWithType: DisposizioneAE.sSubalterno
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSubalterno
+  type: Property
+  source:
+    id: sSubalterno
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1090
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sSubalterno { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sSubalterno As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSubalterno*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sIndirizzo
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sIndirizzo
+  id: sIndirizzo
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sIndirizzo
+  nameWithType: DisposizioneAE.sIndirizzo
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sIndirizzo
+  type: Property
+  source:
+    id: sIndirizzo
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1100
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sIndirizzo { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sIndirizzo As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sIndirizzo*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCivico
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCivico
+  id: sCivico
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sCivico
+  nameWithType: DisposizioneAE.sCivico
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCivico
+  type: Property
+  source:
+    id: sCivico
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1110
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sCivico { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sCivico As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCivico*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sInterno
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sInterno
+  id: sInterno
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sInterno
+  nameWithType: DisposizioneAE.sInterno
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sInterno
+  type: Property
+  source:
+    id: sInterno
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1120
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sInterno { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sInterno As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sInterno*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sScala
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sScala
+  id: sScala
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sScala
+  nameWithType: DisposizioneAE.sScala
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sScala
+  type: Property
+  source:
+    id: sScala
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1130
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sScala { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sScala As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sScala*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSegno
+  commentId: P:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSegno
+  id: sSegno
+  parent: DichiarazioniICI.WServiceOPENae.DisposizioneAE
+  langs:
+  - csharp
+  - vb
+  name: sSegno
+  nameWithType: DisposizioneAE.sSegno
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSegno
+  type: Property
+  source:
+    id: sSegno
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1140
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string sSegno { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sSegno As String
+  overload: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSegno*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: DichiarazioniICI.WServiceOPENae
+  commentId: N:DichiarazioniICI.WServiceOPENae
+  name: DichiarazioniICI.WServiceOPENae
+  nameWithType: DichiarazioniICI.WServiceOPENae
+  fullName: DichiarazioniICI.WServiceOPENae
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDDisposizione*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDDisposizione
+  name: nIDDisposizione
+  nameWithType: DisposizioneAE.nIDDisposizione
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDDisposizione
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDCollegamento*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDCollegamento
+  name: nIDCollegamento
+  nameWithType: DisposizioneAE.nIDCollegamento
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDCollegamento
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDFlusso*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDFlusso
+  name: nIDFlusso
+  nameWithType: DisposizioneAE.nIDFlusso
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDFlusso
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDContribuente*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDContribuente
+  name: nIDContribuente
+  nameWithType: DisposizioneAE.nIDContribuente
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDContribuente
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nMesiFatturazione*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.nMesiFatturazione
+  name: nMesiFatturazione
+  nameWithType: DisposizioneAE.nMesiFatturazione
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nMesiFatturazione
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nConsumo*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.nConsumo
+  name: nConsumo
+  nameWithType: DisposizioneAE.nConsumo
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nConsumo
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nImportoFatturato*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.nImportoFatturato
+  name: nImportoFatturato
+  nameWithType: DisposizioneAE.nImportoFatturato
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nImportoFatturato
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDTitoloOccupazione*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDTitoloOccupazione
+  name: nIDTitoloOccupazione
+  nameWithType: DisposizioneAE.nIDTitoloOccupazione
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDTitoloOccupazione
+- uid: DichiarazioniICI.WServiceOPENae.TitoloOccupazione
+  commentId: T:DichiarazioniICI.WServiceOPENae.TitoloOccupazione
+  parent: DichiarazioniICI.WServiceOPENae
+  name: TitoloOccupazione
+  nameWithType: TitoloOccupazione
+  fullName: DichiarazioniICI.WServiceOPENae.TitoloOccupazione
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDTipoOccupante*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDTipoOccupante
+  name: nIDTipoOccupante
+  nameWithType: DisposizioneAE.nIDTipoOccupante
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDTipoOccupante
+- uid: DichiarazioniICI.WServiceOPENae.NaturaOccupazione
+  commentId: T:DichiarazioniICI.WServiceOPENae.NaturaOccupazione
+  parent: DichiarazioniICI.WServiceOPENae
+  name: NaturaOccupazione
+  nameWithType: NaturaOccupazione
+  fullName: DichiarazioniICI.WServiceOPENae.NaturaOccupazione
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDDestinazioneUso*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDDestinazioneUso
+  name: nIDDestinazioneUso
+  nameWithType: DisposizioneAE.nIDDestinazioneUso
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDDestinazioneUso
+- uid: DichiarazioniICI.WServiceOPENae.DestinazioneUso
+  commentId: T:DichiarazioniICI.WServiceOPENae.DestinazioneUso
+  parent: DichiarazioniICI.WServiceOPENae
+  name: DestinazioneUso
+  nameWithType: DestinazioneUso
+  fullName: DichiarazioniICI.WServiceOPENae.DestinazioneUso
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDAssenzaDatiCatastali*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDAssenzaDatiCatastali
+  name: nIDAssenzaDatiCatastali
+  nameWithType: DisposizioneAE.nIDAssenzaDatiCatastali
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDAssenzaDatiCatastali
+- uid: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali
+  commentId: T:DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali
+  parent: DichiarazioniICI.WServiceOPENae
+  name: AssenzaDatiCatastali
+  nameWithType: AssenzaDatiCatastali
+  fullName: DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDTipoUtenza*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDTipoUtenza
+  name: nIDTipoUtenza
+  nameWithType: DisposizioneAE.nIDTipoUtenza
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.nIDTipoUtenza
+- uid: DichiarazioniICI.WServiceOPENae.TipologiaUtenza
+  commentId: T:DichiarazioniICI.WServiceOPENae.TipologiaUtenza
+  parent: DichiarazioniICI.WServiceOPENae
+  name: TipologiaUtenza
+  nameWithType: TipologiaUtenza
+  fullName: DichiarazioniICI.WServiceOPENae.TipologiaUtenza
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodISTAT*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodISTAT
+  name: sCodISTAT
+  nameWithType: DisposizioneAE.sCodISTAT
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodISTAT
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sTributo*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sTributo
+  name: sTributo
+  nameWithType: DisposizioneAE.sTributo
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sTributo
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sAnno*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sAnno
+  name: sAnno
+  nameWithType: DisposizioneAE.sAnno
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sAnno
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodFiscaleEnte*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodFiscaleEnte
+  name: sCodFiscaleEnte
+  nameWithType: DisposizioneAE.sCodFiscaleEnte
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodFiscaleEnte
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCognomeEnte*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCognomeEnte
+  name: sCognomeEnte
+  nameWithType: DisposizioneAE.sCognomeEnte
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCognomeEnte
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sNomeEnte*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sNomeEnte
+  name: sNomeEnte
+  nameWithType: DisposizioneAE.sNomeEnte
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sNomeEnte
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSessoEnte*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSessoEnte
+  name: sSessoEnte
+  nameWithType: DisposizioneAE.sSessoEnte
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSessoEnte
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataNascitaEnte*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataNascitaEnte
+  name: sDataNascitaEnte
+  nameWithType: DisposizioneAE.sDataNascitaEnte
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataNascitaEnte
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneNascitaSedeEnte*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneNascitaSedeEnte
+  name: sComuneNascitaSedeEnte
+  nameWithType: DisposizioneAE.sComuneNascitaSedeEnte
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneNascitaSedeEnte
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVNascitaSedeEnte*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVNascitaSedeEnte
+  name: sPVNascitaSedeEnte
+  nameWithType: DisposizioneAE.sPVNascitaSedeEnte
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVNascitaSedeEnte
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodFiscale*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodFiscale
+  name: sCodFiscale
+  nameWithType: DisposizioneAE.sCodFiscale
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodFiscale
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCognome*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCognome
+  name: sCognome
+  nameWithType: DisposizioneAE.sCognome
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCognome
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sNome*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sNome
+  name: sNome
+  nameWithType: DisposizioneAE.sNome
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sNome
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSesso*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSesso
+  name: sSesso
+  nameWithType: DisposizioneAE.sSesso
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSesso
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataNascita*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataNascita
+  name: sDataNascita
+  nameWithType: DisposizioneAE.sDataNascita
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataNascita
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneNascitaSede*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneNascitaSede
+  name: sComuneNascitaSede
+  nameWithType: DisposizioneAE.sComuneNascitaSede
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneNascitaSede
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVNascitaSede*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVNascitaSede
+  name: sPVNascitaSede
+  nameWithType: DisposizioneAE.sPVNascitaSede
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVNascitaSede
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneDomFisc*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneDomFisc
+  name: sComuneDomFisc
+  nameWithType: DisposizioneAE.sComuneDomFisc
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneDomFisc
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVDomFisc*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVDomFisc
+  name: sPVDomFisc
+  nameWithType: DisposizioneAE.sPVDomFisc
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVDomFisc
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sEstremiContratto*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sEstremiContratto
+  name: sEstremiContratto
+  nameWithType: DisposizioneAE.sEstremiContratto
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sEstremiContratto
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sTipoContratto*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sTipoContratto
+  name: sTipoContratto
+  nameWithType: DisposizioneAE.sTipoContratto
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sTipoContratto
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataInizio*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataInizio
+  name: sDataInizio
+  nameWithType: DisposizioneAE.sDataInizio
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataInizio
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataFine*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataFine
+  name: sDataFine
+  nameWithType: DisposizioneAE.sDataFine
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sDataFine
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneAmmUbicazione*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneAmmUbicazione
+  name: sComuneAmmUbicazione
+  nameWithType: DisposizioneAE.sComuneAmmUbicazione
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneAmmUbicazione
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVAmmUbicazione*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVAmmUbicazione
+  name: sPVAmmUbicazione
+  nameWithType: DisposizioneAE.sPVAmmUbicazione
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sPVAmmUbicazione
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneCatastUbicazione*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneCatastUbicazione
+  name: sComuneCatastUbicazione
+  nameWithType: DisposizioneAE.sComuneCatastUbicazione
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sComuneCatastUbicazione
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodComuneUbicazioneCatast*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodComuneUbicazioneCatast
+  name: sCodComuneUbicazioneCatast
+  nameWithType: DisposizioneAE.sCodComuneUbicazioneCatast
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCodComuneUbicazioneCatast
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sIDTipoUnita*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sIDTipoUnita
+  name: sIDTipoUnita
+  nameWithType: DisposizioneAE.sIDTipoUnita
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sIDTipoUnita
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSezione*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSezione
+  name: sSezione
+  nameWithType: DisposizioneAE.sSezione
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSezione
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sFoglio*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sFoglio
+  name: sFoglio
+  nameWithType: DisposizioneAE.sFoglio
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sFoglio
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sParticella*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sParticella
+  name: sParticella
+  nameWithType: DisposizioneAE.sParticella
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sParticella
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sEstensioneParticella*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sEstensioneParticella
+  name: sEstensioneParticella
+  nameWithType: DisposizioneAE.sEstensioneParticella
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sEstensioneParticella
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sIDTipoParticella*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sIDTipoParticella
+  name: sIDTipoParticella
+  nameWithType: DisposizioneAE.sIDTipoParticella
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sIDTipoParticella
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSubalterno*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSubalterno
+  name: sSubalterno
+  nameWithType: DisposizioneAE.sSubalterno
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSubalterno
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sIndirizzo*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sIndirizzo
+  name: sIndirizzo
+  nameWithType: DisposizioneAE.sIndirizzo
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sIndirizzo
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCivico*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCivico
+  name: sCivico
+  nameWithType: DisposizioneAE.sCivico
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sCivico
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sInterno*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sInterno
+  name: sInterno
+  nameWithType: DisposizioneAE.sInterno
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sInterno
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sScala*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sScala
+  name: sScala
+  nameWithType: DisposizioneAE.sScala
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sScala
+- uid: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSegno*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSegno
+  name: sSegno
+  nameWithType: DisposizioneAE.sSegno
+  fullName: DichiarazioniICI.WServiceOPENae.DisposizioneAE.sSegno

@@ -1,0 +1,676 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.WServiceOPENae.objFlussoAE
+  commentId: T:DichiarazioniICI.WServiceOPENae.objFlussoAE
+  id: objFlussoAE
+  parent: DichiarazioniICI.WServiceOPENae
+  children:
+  - DichiarazioniICI.WServiceOPENae.objFlussoAE.Anno
+  - DichiarazioniICI.WServiceOPENae.objFlussoAE.CodiceISTAT
+  - DichiarazioniICI.WServiceOPENae.objFlussoAE.DataEstrazione
+  - DichiarazioniICI.WServiceOPENae.objFlussoAE.IdFlusso
+  - DichiarazioniICI.WServiceOPENae.objFlussoAE.NomeFile
+  - DichiarazioniICI.WServiceOPENae.objFlussoAE.NumeroArticoli
+  - DichiarazioniICI.WServiceOPENae.objFlussoAE.NumeroRecords
+  - DichiarazioniICI.WServiceOPENae.objFlussoAE.NumeroUtenti
+  langs:
+  - csharp
+  - vb
+  name: objFlussoAE
+  nameWithType: objFlussoAE
+  fullName: DichiarazioniICI.WServiceOPENae.objFlussoAE
+  type: Class
+  source:
+    id: objFlussoAE
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1270
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class objFlussoAE
+    content.vb: >-
+      <Serializable>
+
+      Public Class objFlussoAE
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DichiarazioniICI.WServiceOPENae.objFlussoAE.IdFlusso
+  commentId: P:DichiarazioniICI.WServiceOPENae.objFlussoAE.IdFlusso
+  id: IdFlusso
+  parent: DichiarazioniICI.WServiceOPENae.objFlussoAE
+  langs:
+  - csharp
+  - vb
+  name: IdFlusso
+  nameWithType: objFlussoAE.IdFlusso
+  fullName: DichiarazioniICI.WServiceOPENae.objFlussoAE.IdFlusso
+  type: Property
+  source:
+    id: IdFlusso
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1294
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public int IdFlusso { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IdFlusso As Integer
+  overload: DichiarazioniICI.WServiceOPENae.objFlussoAE.IdFlusso*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.objFlussoAE.CodiceISTAT
+  commentId: P:DichiarazioniICI.WServiceOPENae.objFlussoAE.CodiceISTAT
+  id: CodiceISTAT
+  parent: DichiarazioniICI.WServiceOPENae.objFlussoAE
+  langs:
+  - csharp
+  - vb
+  name: CodiceISTAT
+  nameWithType: objFlussoAE.CodiceISTAT
+  fullName: DichiarazioniICI.WServiceOPENae.objFlussoAE.CodiceISTAT
+  type: Property
+  source:
+    id: CodiceISTAT
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1304
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string CodiceISTAT { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CodiceISTAT As String
+  overload: DichiarazioniICI.WServiceOPENae.objFlussoAE.CodiceISTAT*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.objFlussoAE.Anno
+  commentId: P:DichiarazioniICI.WServiceOPENae.objFlussoAE.Anno
+  id: Anno
+  parent: DichiarazioniICI.WServiceOPENae.objFlussoAE
+  langs:
+  - csharp
+  - vb
+  name: Anno
+  nameWithType: objFlussoAE.Anno
+  fullName: DichiarazioniICI.WServiceOPENae.objFlussoAE.Anno
+  type: Property
+  source:
+    id: Anno
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1314
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string Anno { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Anno As String
+  overload: DichiarazioniICI.WServiceOPENae.objFlussoAE.Anno*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.objFlussoAE.NomeFile
+  commentId: P:DichiarazioniICI.WServiceOPENae.objFlussoAE.NomeFile
+  id: NomeFile
+  parent: DichiarazioniICI.WServiceOPENae.objFlussoAE
+  langs:
+  - csharp
+  - vb
+  name: NomeFile
+  nameWithType: objFlussoAE.NomeFile
+  fullName: DichiarazioniICI.WServiceOPENae.objFlussoAE.NomeFile
+  type: Property
+  source:
+    id: NomeFile
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1324
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string NomeFile { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property NomeFile As String
+  overload: DichiarazioniICI.WServiceOPENae.objFlussoAE.NomeFile*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.objFlussoAE.DataEstrazione
+  commentId: P:DichiarazioniICI.WServiceOPENae.objFlussoAE.DataEstrazione
+  id: DataEstrazione
+  parent: DichiarazioniICI.WServiceOPENae.objFlussoAE
+  langs:
+  - csharp
+  - vb
+  name: DataEstrazione
+  nameWithType: objFlussoAE.DataEstrazione
+  fullName: DichiarazioniICI.WServiceOPENae.objFlussoAE.DataEstrazione
+  type: Property
+  source:
+    id: DataEstrazione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1334
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public string DataEstrazione { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DataEstrazione As String
+  overload: DichiarazioniICI.WServiceOPENae.objFlussoAE.DataEstrazione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.objFlussoAE.NumeroUtenti
+  commentId: P:DichiarazioniICI.WServiceOPENae.objFlussoAE.NumeroUtenti
+  id: NumeroUtenti
+  parent: DichiarazioniICI.WServiceOPENae.objFlussoAE
+  langs:
+  - csharp
+  - vb
+  name: NumeroUtenti
+  nameWithType: objFlussoAE.NumeroUtenti
+  fullName: DichiarazioniICI.WServiceOPENae.objFlussoAE.NumeroUtenti
+  type: Property
+  source:
+    id: NumeroUtenti
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1344
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public int NumeroUtenti { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property NumeroUtenti As Integer
+  overload: DichiarazioniICI.WServiceOPENae.objFlussoAE.NumeroUtenti*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.objFlussoAE.NumeroRecords
+  commentId: P:DichiarazioniICI.WServiceOPENae.objFlussoAE.NumeroRecords
+  id: NumeroRecords
+  parent: DichiarazioniICI.WServiceOPENae.objFlussoAE
+  langs:
+  - csharp
+  - vb
+  name: NumeroRecords
+  nameWithType: objFlussoAE.NumeroRecords
+  fullName: DichiarazioniICI.WServiceOPENae.objFlussoAE.NumeroRecords
+  type: Property
+  source:
+    id: NumeroRecords
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1354
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public int NumeroRecords { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property NumeroRecords As Integer
+  overload: DichiarazioniICI.WServiceOPENae.objFlussoAE.NumeroRecords*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.WServiceOPENae.objFlussoAE.NumeroArticoli
+  commentId: P:DichiarazioniICI.WServiceOPENae.objFlussoAE.NumeroArticoli
+  id: NumeroArticoli
+  parent: DichiarazioniICI.WServiceOPENae.objFlussoAE
+  langs:
+  - csharp
+  - vb
+  name: NumeroArticoli
+  nameWithType: objFlussoAE.NumeroArticoli
+  fullName: DichiarazioniICI.WServiceOPENae.objFlussoAE.NumeroArticoli
+  type: Property
+  source:
+    id: NumeroArticoli
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1364
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: public int NumeroArticoli { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property NumeroArticoli As Integer
+  overload: DichiarazioniICI.WServiceOPENae.objFlussoAE.NumeroArticoli*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: DichiarazioniICI.WServiceOPENae
+  commentId: N:DichiarazioniICI.WServiceOPENae
+  name: DichiarazioniICI.WServiceOPENae
+  nameWithType: DichiarazioniICI.WServiceOPENae
+  fullName: DichiarazioniICI.WServiceOPENae
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DichiarazioniICI.WServiceOPENae.objFlussoAE.IdFlusso*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.objFlussoAE.IdFlusso
+  name: IdFlusso
+  nameWithType: objFlussoAE.IdFlusso
+  fullName: DichiarazioniICI.WServiceOPENae.objFlussoAE.IdFlusso
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DichiarazioniICI.WServiceOPENae.objFlussoAE.CodiceISTAT*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.objFlussoAE.CodiceISTAT
+  name: CodiceISTAT
+  nameWithType: objFlussoAE.CodiceISTAT
+  fullName: DichiarazioniICI.WServiceOPENae.objFlussoAE.CodiceISTAT
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DichiarazioniICI.WServiceOPENae.objFlussoAE.Anno*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.objFlussoAE.Anno
+  name: Anno
+  nameWithType: objFlussoAE.Anno
+  fullName: DichiarazioniICI.WServiceOPENae.objFlussoAE.Anno
+- uid: DichiarazioniICI.WServiceOPENae.objFlussoAE.NomeFile*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.objFlussoAE.NomeFile
+  name: NomeFile
+  nameWithType: objFlussoAE.NomeFile
+  fullName: DichiarazioniICI.WServiceOPENae.objFlussoAE.NomeFile
+- uid: DichiarazioniICI.WServiceOPENae.objFlussoAE.DataEstrazione*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.objFlussoAE.DataEstrazione
+  name: DataEstrazione
+  nameWithType: objFlussoAE.DataEstrazione
+  fullName: DichiarazioniICI.WServiceOPENae.objFlussoAE.DataEstrazione
+- uid: DichiarazioniICI.WServiceOPENae.objFlussoAE.NumeroUtenti*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.objFlussoAE.NumeroUtenti
+  name: NumeroUtenti
+  nameWithType: objFlussoAE.NumeroUtenti
+  fullName: DichiarazioniICI.WServiceOPENae.objFlussoAE.NumeroUtenti
+- uid: DichiarazioniICI.WServiceOPENae.objFlussoAE.NumeroRecords*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.objFlussoAE.NumeroRecords
+  name: NumeroRecords
+  nameWithType: objFlussoAE.NumeroRecords
+  fullName: DichiarazioniICI.WServiceOPENae.objFlussoAE.NumeroRecords
+- uid: DichiarazioniICI.WServiceOPENae.objFlussoAE.NumeroArticoli*
+  commentId: Overload:DichiarazioniICI.WServiceOPENae.objFlussoAE.NumeroArticoli
+  name: NumeroArticoli
+  nameWithType: objFlussoAE.NumeroArticoli
+  fullName: DichiarazioniICI.WServiceOPENae.objFlussoAE.NumeroArticoli

@@ -1,0 +1,332 @@
+### YamlMime:ManagedReference
+items:
+- uid: Business.ModuloIci.ErroriVersamenti
+  commentId: T:Business.ModuloIci.ErroriVersamenti
+  id: ModuloIci.ErroriVersamenti
+  parent: Business
+  children:
+  - Business.ModuloIci.ErroriVersamenti.Anno_Riferimento
+  - Business.ModuloIci.ErroriVersamenti.Codice_Fiscale_Partita_IVA
+  - Business.ModuloIci.ErroriVersamenti.Conto_Corrente
+  - Business.ModuloIci.ErroriVersamenti.Dati_Contribuente
+  - Business.ModuloIci.ErroriVersamenti.Detrazione
+  - Business.ModuloIci.ErroriVersamenti.Importi_Determinazione
+  - Business.ModuloIci.ErroriVersamenti.Importo_Pagamento
+  - Business.ModuloIci.ErroriVersamenti.Importo_Statale
+  - Business.ModuloIci.ErroriVersamenti.Intestatario_Bollettino
+  - Business.ModuloIci.ErroriVersamenti.Somma_Importi
+  langs:
+  - csharp
+  - vb
+  name: ModuloIci.ErroriVersamenti
+  nameWithType: ModuloIci.ErroriVersamenti
+  fullName: Business.ModuloIci.ErroriVersamenti
+  type: Enum
+  source:
+    id: ErroriVersamenti
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 43
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public enum ErroriVersamenti
+    content.vb: Public Enum ErroriVersamenti
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Business.ModuloIci.ErroriVersamenti.Codice_Fiscale_Partita_IVA
+  commentId: F:Business.ModuloIci.ErroriVersamenti.Codice_Fiscale_Partita_IVA
+  id: Codice_Fiscale_Partita_IVA
+  parent: Business.ModuloIci.ErroriVersamenti
+  langs:
+  - csharp
+  - vb
+  name: Codice_Fiscale_Partita_IVA
+  nameWithType: ModuloIci.ErroriVersamenti.Codice_Fiscale_Partita_IVA
+  fullName: Business.ModuloIci.ErroriVersamenti.Codice_Fiscale_Partita_IVA
+  type: Field
+  source:
+    id: Codice_Fiscale_Partita_IVA
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 43
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Codice_Fiscale_Partita_IVA = 1
+    return:
+      type: Business.ModuloIci.ErroriVersamenti
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ModuloIci.ErroriVersamenti.Importo_Pagamento
+  commentId: F:Business.ModuloIci.ErroriVersamenti.Importo_Pagamento
+  id: Importo_Pagamento
+  parent: Business.ModuloIci.ErroriVersamenti
+  langs:
+  - csharp
+  - vb
+  name: Importo_Pagamento
+  nameWithType: ModuloIci.ErroriVersamenti.Importo_Pagamento
+  fullName: Business.ModuloIci.ErroriVersamenti.Importo_Pagamento
+  type: Field
+  source:
+    id: Importo_Pagamento
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 43
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Importo_Pagamento = 2
+    return:
+      type: Business.ModuloIci.ErroriVersamenti
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ModuloIci.ErroriVersamenti.Anno_Riferimento
+  commentId: F:Business.ModuloIci.ErroriVersamenti.Anno_Riferimento
+  id: Anno_Riferimento
+  parent: Business.ModuloIci.ErroriVersamenti
+  langs:
+  - csharp
+  - vb
+  name: Anno_Riferimento
+  nameWithType: ModuloIci.ErroriVersamenti.Anno_Riferimento
+  fullName: Business.ModuloIci.ErroriVersamenti.Anno_Riferimento
+  type: Field
+  source:
+    id: Anno_Riferimento
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 43
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Anno_Riferimento = 3
+    return:
+      type: Business.ModuloIci.ErroriVersamenti
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ModuloIci.ErroriVersamenti.Dati_Contribuente
+  commentId: F:Business.ModuloIci.ErroriVersamenti.Dati_Contribuente
+  id: Dati_Contribuente
+  parent: Business.ModuloIci.ErroriVersamenti
+  langs:
+  - csharp
+  - vb
+  name: Dati_Contribuente
+  nameWithType: ModuloIci.ErroriVersamenti.Dati_Contribuente
+  fullName: Business.ModuloIci.ErroriVersamenti.Dati_Contribuente
+  type: Field
+  source:
+    id: Dati_Contribuente
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 43
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Dati_Contribuente = 4
+    return:
+      type: Business.ModuloIci.ErroriVersamenti
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ModuloIci.ErroriVersamenti.Importi_Determinazione
+  commentId: F:Business.ModuloIci.ErroriVersamenti.Importi_Determinazione
+  id: Importi_Determinazione
+  parent: Business.ModuloIci.ErroriVersamenti
+  langs:
+  - csharp
+  - vb
+  name: Importi_Determinazione
+  nameWithType: ModuloIci.ErroriVersamenti.Importi_Determinazione
+  fullName: Business.ModuloIci.ErroriVersamenti.Importi_Determinazione
+  type: Field
+  source:
+    id: Importi_Determinazione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 43
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Importi_Determinazione = 5
+    return:
+      type: Business.ModuloIci.ErroriVersamenti
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ModuloIci.ErroriVersamenti.Conto_Corrente
+  commentId: F:Business.ModuloIci.ErroriVersamenti.Conto_Corrente
+  id: Conto_Corrente
+  parent: Business.ModuloIci.ErroriVersamenti
+  langs:
+  - csharp
+  - vb
+  name: Conto_Corrente
+  nameWithType: ModuloIci.ErroriVersamenti.Conto_Corrente
+  fullName: Business.ModuloIci.ErroriVersamenti.Conto_Corrente
+  type: Field
+  source:
+    id: Conto_Corrente
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 44
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Conto_Corrente = 6
+    return:
+      type: Business.ModuloIci.ErroriVersamenti
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ModuloIci.ErroriVersamenti.Intestatario_Bollettino
+  commentId: F:Business.ModuloIci.ErroriVersamenti.Intestatario_Bollettino
+  id: Intestatario_Bollettino
+  parent: Business.ModuloIci.ErroriVersamenti
+  langs:
+  - csharp
+  - vb
+  name: Intestatario_Bollettino
+  nameWithType: ModuloIci.ErroriVersamenti.Intestatario_Bollettino
+  fullName: Business.ModuloIci.ErroriVersamenti.Intestatario_Bollettino
+  type: Field
+  source:
+    id: Intestatario_Bollettino
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 44
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Intestatario_Bollettino = 7
+    return:
+      type: Business.ModuloIci.ErroriVersamenti
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ModuloIci.ErroriVersamenti.Somma_Importi
+  commentId: F:Business.ModuloIci.ErroriVersamenti.Somma_Importi
+  id: Somma_Importi
+  parent: Business.ModuloIci.ErroriVersamenti
+  langs:
+  - csharp
+  - vb
+  name: Somma_Importi
+  nameWithType: ModuloIci.ErroriVersamenti.Somma_Importi
+  fullName: Business.ModuloIci.ErroriVersamenti.Somma_Importi
+  type: Field
+  source:
+    id: Somma_Importi
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 44
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Somma_Importi = 8
+    return:
+      type: Business.ModuloIci.ErroriVersamenti
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ModuloIci.ErroriVersamenti.Detrazione
+  commentId: F:Business.ModuloIci.ErroriVersamenti.Detrazione
+  id: Detrazione
+  parent: Business.ModuloIci.ErroriVersamenti
+  langs:
+  - csharp
+  - vb
+  name: Detrazione
+  nameWithType: ModuloIci.ErroriVersamenti.Detrazione
+  fullName: Business.ModuloIci.ErroriVersamenti.Detrazione
+  type: Field
+  source:
+    id: Detrazione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 44
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Detrazione = 9
+    return:
+      type: Business.ModuloIci.ErroriVersamenti
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ModuloIci.ErroriVersamenti.Importo_Statale
+  commentId: F:Business.ModuloIci.ErroriVersamenti.Importo_Statale
+  id: Importo_Statale
+  parent: Business.ModuloIci.ErroriVersamenti
+  langs:
+  - csharp
+  - vb
+  name: Importo_Statale
+  nameWithType: ModuloIci.ErroriVersamenti.Importo_Statale
+  fullName: Business.ModuloIci.ErroriVersamenti.Importo_Statale
+  type: Field
+  source:
+    id: Importo_Statale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 44
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Importo_Statale = 11
+    return:
+      type: Business.ModuloIci.ErroriVersamenti
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Business
+  commentId: N:Business
+  name: Business
+  nameWithType: Business
+  fullName: Business
+- uid: Business.ModuloIci.ErroriVersamenti
+  commentId: T:Business.ModuloIci.ErroriVersamenti
+  parent: Business
+  name: ModuloIci.ErroriVersamenti
+  nameWithType: ModuloIci.ErroriVersamenti
+  fullName: Business.ModuloIci.ErroriVersamenti

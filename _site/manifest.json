@@ -1,0 +1,5043 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Dev/PAL/Codice/OPENgov",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "maF2ODZnUmz49x+wqMneAA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "s9qEVcYlRbp+ngRcbzOdSQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "gB8AESyvNru97tzIZofEEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/404.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/404.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/0047-ID-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/0047-ID-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Accept.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Accept.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Actions-view-list-tree-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Actions-view-list-tree-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Add.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Add.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/AddIn.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/AddIn.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/AggiornamentoDate.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/AggiornamentoDate.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/AttivaSgravi.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/AttivaSgravi.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Bar-chart-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Bar-chart-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Bottoni.zip",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Bottoni.zip"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Calcolatrice.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Calcolatrice.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Chain.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Chain.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Chain_Bookmark.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Chain_Bookmark.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Chain_Word_FacSimile.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Chain_Word_FacSimile.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Clipboard_excel.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Clipboard_excel.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Credit-Card-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Credit-Card-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Documents-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Documents-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Drop0b.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Drop0b.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Drop0b_excel.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Drop0b_excel.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Eraser-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Eraser-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Excel-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Excel-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/F24.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/F24.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/File-Delete-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/File-Delete-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Folder-document-open.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Folder-document-open.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/GIF.rar",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/GIF.rar"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/History-Folder-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/History-Folder-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Home.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Home.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Invoice.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Invoice.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/LessMoney.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/LessMoney.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Lista.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Lista.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Lista_Back.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Lista_Back.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Listasel.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Listasel.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Lock-Closed-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Lock-Closed-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Maps.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Maps.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Modifica2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Modifica2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Money.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Money.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/MoreMoney.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/MoreMoney.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Add.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Add.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/AddIn.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/AddIn.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/AggiornamentoDate.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/AggiornamentoDate.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Agibilita.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Agibilita.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Associa.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Associa.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/AttivaSgravi.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/AttivaSgravi.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Calc.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Calc.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/CalcoloMisure.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/CalcoloMisure.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/CalcoloMisure1.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/CalcoloMisure1.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/CalcoloMisure1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/CalcoloMisure1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Close.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Close.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Copy of Copy of semaforoGiallo.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Copy of Copy of semaforoGiallo.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Copy of Copy of semaforoRosso.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Copy of Copy of semaforoRosso.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Copy of semaforo.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Copy of semaforo.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Copy of semaforoGiallo.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Copy of semaforoGiallo.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Copy of semaforoVerde.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Copy of semaforoVerde.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Documents-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Documents-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/ERASE01.ICO",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/ERASE01.ICO"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/ERASE02.ICO",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/ERASE02.ICO"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Eraser-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Eraser-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Eraser.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Eraser.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Folder-document-open.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Folder-document-open.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Invoice.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Invoice.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/LessMoney.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/LessMoney.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Lista.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Lista.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Lista_Back.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Lista_Back.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Listasel.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Listasel.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Lock-Closed-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Lock-Closed-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Lucchetto.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Lucchetto.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Maps.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Maps.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Metallic SETTINGS.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Metallic SETTINGS.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Modifica2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Modifica2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Money.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Money.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/MoreMoney.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/MoreMoney.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/NoMoney.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/NoMoney.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/NuovoInserisci2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/NuovoInserisci2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/PREVIEW.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/PREVIEW.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/PREVIEW1.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/PREVIEW1.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/PREVIEW2.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/PREVIEW2.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Preview-icon.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Preview-icon.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/PrintHS.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/PrintHS.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Rettifiche.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Rettifiche.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Ribalta.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Ribalta.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Rulers.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Rulers.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/SalvaRipulisci.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/SalvaRipulisci.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Soggetti.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Soggetti.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Soggetti.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Soggetti.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Soggetti1.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Soggetti1.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Thumbs.db",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Thumbs.db"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Transparent 2.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Transparent 2.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Utilities.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Utilities.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/W.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/W.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Word.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Word.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/Word.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/Word.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/anagrafica/Lista.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/anagrafica/Lista.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/anagrafica/Lista_Back.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/anagrafica/Lista_Back.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/anagrafica/Thumbs.db",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/anagrafica/Thumbs.db"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/anagrafica/vssver2.scc",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/anagrafica/vssver2.scc"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/annulla.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/annulla.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/annulla.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/annulla.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/apri1.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/apri1.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/apri1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/apri1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/apri2.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/apri2.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/bottone_acquisizione.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/bottone_acquisizione.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/calc.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/calc.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/calcolo.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/calcolo.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/calcolo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/calcolo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/calendario.GIF",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/calendario.GIF"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/cancel.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/cancel.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/cancel_disabled.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/cancel_disabled.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/casa.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/casa.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/casa.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/casa.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/cestino.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/cestino.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/cestino.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/cestino.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/cestino_old.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/cestino_old.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/chiudi.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/chiudi.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/clessidra.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/clessidra.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/copy.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/copy.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/counter.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/counter.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/currency_dollar.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/currency_dollar.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/currency_dollarOLD.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/currency_dollarOLD.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/currency_dollar_red.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/currency_dollar_red.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/document-copies.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/document-copies.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/document_delete_24.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/document_delete_24.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/documents-email.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/documents-email.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/download.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/download.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/excel.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/excel.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/excel.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/excel.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/first.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/first.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/firstpg.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/firstpg.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/foglio.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/foglio.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/foto.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/foto.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/foto_s.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/foto_s.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/freccia_dx_tr.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/freccia_dx_tr.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/freccia_sx_tr.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/freccia_sx_tr.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/globe.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/globe.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/globe_old.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/globe_old.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/hand_up.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/hand_up.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/home.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/home.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/home01.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/home01.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/home01_small.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/home01_small.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/home1.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/home1.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/home_UI.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/home_UI.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/home_UI_small.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/home_UI_small.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/home_blu.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/home_blu.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/icon_export.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/icon_export.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/imgAvaBadge.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/imgAvaBadge.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/inbox-document.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/inbox-document.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/info.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/info.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/installments_icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/installments_icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/invia pratica1.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/invia pratica1.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/invia pratica2.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/invia pratica2.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/invia_pratica2.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/invia_pratica2.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/judge_hammer_exclamation.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/judge_hammer_exclamation.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/key-go.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/key-go.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/last.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/last.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/lastpg.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/lastpg.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/logoWord.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/logoWord.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/modifica.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/modifica.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/modifica.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/modifica.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/mortgage-rate.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/mortgage-rate.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/mortgage-rate_.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/mortgage-rate_.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/next.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/next.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/nextpg.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/nextpg.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/nuovoinserisci.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/nuovoinserisci.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/nuovoinserisci.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/nuovoinserisci.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/nuovoinserisci2.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/nuovoinserisci2.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/old_semaforoGiallo.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/old_semaforoGiallo.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/old_semaforoRosso.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/old_semaforoRosso.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/old_semaforoVerde.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/old_semaforoVerde.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/open-file.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/open-file.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/papclip1.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/papclip1.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/papclip2.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/papclip2.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/papclip_originale.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/papclip_originale.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/papclip_originale.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/papclip_originale.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/payment-card.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/payment-card.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/pdf.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/pdf.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/pie_chart_icon.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/pie_chart_icon.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/planimetria.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/planimetria.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/prec.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/prec.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/prevpg.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/prevpg.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/printer-print.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/printer-print.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/question_mark.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/question_mark.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/ricerca.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/ricerca.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/ricerca.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/ricerca.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/ricerca_piccolo.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/ricerca_piccolo.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/rubber.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/rubber.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/rubber.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/rubber.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/salva.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/salva.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/salva.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/salva.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/save-clean.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/save-clean.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/semaforo.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/semaforo.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/semaforoGiallo.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/semaforoGiallo.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/semaforoRosso.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/semaforoRosso.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/semaforoVerde.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/semaforoVerde.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/sort.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/sort.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/spunta_s.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/spunta_s.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/stampa.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/stampa.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/testata1014.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/testata1014.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/tipologia-utenza.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/tipologia-utenza.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/to-do-list-cheked-all-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/to-do-list-cheked-all-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/transparent28x28.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/transparent28x28.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/trasparente.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/trasparente.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/update.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/update.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/visto.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/visto.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/New/vssver2.scc",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/New/vssver2.scc"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/NoDrop0b_excel.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/NoDrop0b_excel.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/NoMoney.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/NoMoney.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Pie-chart-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Pie-chart-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Places-user-home-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Places-user-home-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/PrintHS.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/PrintHS.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Printergrd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Printergrd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Ribalta.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Ribalta.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/RibaltaGrd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/RibaltaGrd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Ricerca_grd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Ricerca_grd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Soggetti.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Soggetti.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Soggetti1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Soggetti1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Start-Menu-Undock-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Start-Menu-Undock-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Stop.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Stop.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Thumbs.db",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Thumbs.db"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Tools.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Tools.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Tools_excel.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Tools_excel.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Url.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Url.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Utilities.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Utilities.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Word.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Word.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/Xml-tool-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/Xml-tool-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/anagrafica/Lista.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/anagrafica/Lista.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/anagrafica/Lista_Back.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/anagrafica/Lista_Back.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/anagrafica/vssver2.scc",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/anagrafica/vssver2.scc"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/annulla.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/annulla.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/apri1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/apri1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/apri1grd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/apri1grd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/arrow_down.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/arrow_down.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/bottone_acquisizione.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/bottone_acquisizione.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/calc.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/calc.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/calculator-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/calculator-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/calendario.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/calendario.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/cancel.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/cancel.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/casa.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/casa.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/cash-stack.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/cash-stack.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/cestino.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/cestino.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/cestinogrd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/cestinogrd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/copy.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/copy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/counter.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/counter.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/currency_dollar.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/currency_dollar.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/currency_dollargrd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/currency_dollargrd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/datiaggiuntivi.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/datiaggiuntivi.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/datiaggiuntivi_NO.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/datiaggiuntivi_NO.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/dialog-error-icon_grd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/dialog-error-icon_grd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/dialog-warning-icon_grd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/dialog-warning-icon_grd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/document-copies.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/document-copies.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/documents-email.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/documents-email.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/download.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/download.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/downloadgrd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/downloadgrd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/edit-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/edit-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/edit-icon_grd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/edit-icon_grd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/excel.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/excel.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/first.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/first.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/firstpg.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/firstpg.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/folder-full-accept-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/folder-full-accept-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/freccia_dx_tr.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/freccia_dx_tr.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/freccia_sx_tr.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/freccia_sx_tr.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/gara_Actions-arrow-right-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/gara_Actions-arrow-right-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/gara_Date-and-Time-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/gara_Date-and-Time-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/gara_Flag-red-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/gara_Flag-red-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/gara_Flag-yellow-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/gara_Flag-yellow-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/gara_Status-dialog-warning-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/gara_Status-dialog-warning-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/gara_chart_stati_istanze.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/gara_chart_stati_istanze.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/gara_folder-full-delete-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/gara_folder-full-delete-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/gara_help-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/gara_help-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/gara_helpmini-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/gara_helpmini-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/globe.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/globe.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/globe_old.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/globe_old.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/hand_up.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/hand_up.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/hand_upgrd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/hand_upgrd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/homegrd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/homegrd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/icon_error_small_critical.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/icon_error_small_critical.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/icon_error_small_warning.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/icon_error_small_warning.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/icon_export.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/icon_export.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/imgAvaBadge.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/imgAvaBadge.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/inbox-document.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/inbox-document.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/installments_icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/installments_icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/judge_hammer_exclamation.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/judge_hammer_exclamation.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/k-calc-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/k-calc-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/key-go.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/key-go.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/key-gogrd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/key-gogrd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/ko-icon_grd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/ko-icon_grd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/last.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/last.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/lastpg.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/lastpg.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/load-download-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/load-download-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/load-download-icon_grd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/load-download-icon_grd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/load-upload-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/load-upload-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/mail-sent-icon_grd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/mail-sent-icon_grd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/modifica.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/modifica.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/modificagrd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/modificagrd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/mortgage-rate.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/mortgage-rate.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/mortgage-rategrd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/mortgage-rategrd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/next.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/next.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/nextpg.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/nextpg.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/nuovoinserisci.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/nuovoinserisci.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/nuovoinseriscigrd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/nuovoinseriscigrd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/ok-icon_grd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/ok-icon_grd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/open-file.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/open-file.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/page-white-error-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/page-white-error-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/papclip_originale.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/papclip_originale.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/papclip_originalegrd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/papclip_originalegrd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/payment-card.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/payment-card.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/payment-cardgrd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/payment-cardgrd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/payment.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/payment.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/pdf.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/pdf.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/pdfgrd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/pdfgrd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/pie_chart_icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/pie_chart_icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/planimetria.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/planimetria.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/planimetriagrd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/planimetriagrd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/printer-print.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/printer-print.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/reload.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/reload.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/ricerca.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/ricerca.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/ricerca_piccolo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/ricerca_piccolo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/salva.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/salva.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/salvagrd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/salvagrd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/save-clean.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/save-clean.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/semaforo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/semaforo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/semaforoGiallo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/semaforoGiallo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/semaforoRosso.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/semaforoRosso.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/semaforoVerde.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/semaforoVerde.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/sort.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/sort.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/stampa.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/stampa.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/text-padding-right-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/text-padding-right-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/tipologia-utenza.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/tipologia-utenza.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/to-do-list-cheked-all-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/to-do-list-cheked-all-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/transparent28x28.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/transparent28x28.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/trasparente.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/trasparente.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/update.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/update.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/upload.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/upload.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/visto.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/visto.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/voltura.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/voltura.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/vssver2.scc",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/vssver2.scc"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Bottoni/zoom.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Bottoni/zoom.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Clessidra.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Clessidra.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Logo_GC.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/Logo_GC.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/MOKIbgrepeat.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/MOKIbgrepeat.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/MOKItestata.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/MOKItestata.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/929.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/929.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/932.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/932.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/932_tondino.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/932_tondino.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/CARTELLA.GIF",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/CARTELLA.GIF"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/CARTELLA1.GIF",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/CARTELLA1.GIF"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/CARTELLAAPERTA.GIF",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/CARTELLAAPERTA.GIF"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/CARTELLAAPERTA1.GIF",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/CARTELLAAPERTA1.GIF"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/CARTELLA_EXIT.GIF",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/CARTELLA_EXIT.GIF"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/CARTELLA_EXIT1.GIF",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/CARTELLA_EXIT1.GIF"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/Copy of CARTELLAAPERTA.GIF",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/Copy of CARTELLAAPERTA.GIF"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/FOGLIO_old.GIF",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/FOGLIO_old.GIF"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/Foglio.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/Foglio.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/Foglio_elemento.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/Foglio_elemento.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/TRASPARENTE.GIF",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/TRASPARENTE.GIF"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/Thumbs.db",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/Thumbs.db"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/bottone_azzurro.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/bottone_azzurro.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/bottone_blu.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/bottone_blu.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/bottone_orange.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/bottone_orange.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/bottone_white.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/bottone_white.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/bottonedarkblu.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/bottonedarkblu.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/bottonelightblu.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/bottonelightblu.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/level0_regular.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/level0_regular.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/minus.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/minus.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/ot7.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/ot7.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/plus.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/plus.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/quadratino_orange.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/quadratino_orange.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/vssver2.scc",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/vssver2.scc"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu_Def/Thumbs.db",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu_Def/Thumbs.db"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu_Def/aperto.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu_Def/aperto.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu_Def/chiuso.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu_Def/chiuso.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu_Def/chiusosel.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu_Def/chiusosel.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu_Def/chiusotrasp.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu_Def/chiusotrasp.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu_Def/vssver2.scc",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu_Def/vssver2.scc"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu_new/CARTELLA.GIF",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu_new/CARTELLA.GIF"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu_new/CARTELLA1.GIF",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu_new/CARTELLA1.GIF"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu_new/CARTELLAAPERTA.GIF",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu_new/CARTELLAAPERTA.GIF"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu_new/CARTELLAAPERTA1.GIF",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu_new/CARTELLAAPERTA1.GIF"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu_new/CARTELLA_EXIT.GIF",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu_new/CARTELLA_EXIT.GIF"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu_new/CARTELLA_EXIT1.GIF",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu_new/CARTELLA_EXIT1.GIF"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu_new/Copy (2) of CARTELLAAPERTA.GIF",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu_new/Copy (2) of CARTELLAAPERTA.GIF"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu_new/Copy of CARTELLAAPERTA.GIF",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu_new/Copy of CARTELLAAPERTA.GIF"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu_new/FOGLIO_old.GIF",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu_new/FOGLIO_old.GIF"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu_new/Foglio.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu_new/Foglio.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu_new/TRASPARENTE.GIF",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu_new/TRASPARENTE.GIF"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu_new/Thumbs.db",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu_new/Thumbs.db"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu_new/fold.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu_new/fold.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu_new/open.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu_new/open.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu_new/vssver2.scc",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu_new/vssver2.scc"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Questionario.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Questionario.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Thumbs.db",
+      "output": {
+        "resource": {
+          "relative_path": "images/Thumbs.db"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/accedi.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/accedi.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/background_old.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/background_old.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/background_senza_scritte_old.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/background_senza_scritte_old.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/bgrepeat.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/bgrepeat.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/bgrepeat.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/bgrepeat.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/bgrepeat_.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/bgrepeat_.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/bgrepeat_GC.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/bgrepeat_GC.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/cancel.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/cancel.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/cartella_aperta.GIF",
+      "output": {
+        "resource": {
+          "relative_path": "images/cartella_aperta.GIF"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/cartella_chiusa.GIF",
+      "output": {
+        "resource": {
+          "relative_path": "images/cartella_chiusa.GIF"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/chiuso.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/chiuso.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/chiusotrasp.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/chiusotrasp.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/exclame.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/exclame.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/frecce124.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/frecce124.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/gestione.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/gestione.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/home_OPENgov.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/home_OPENgov.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/home_territorio.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/home_territorio.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/home_territorio_old.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/home_territorio_old.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icon-calendar.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/icon-calendar.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/images.zip",
+      "output": {
+        "resource": {
+          "relative_path": "images/images.zip"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/lettere106.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/lettere106.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/lista_Menu.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/lista_Menu.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/lista_Menu_sel.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/lista_Menu_sel.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/loading.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/loading.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/loading.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/loading.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logoMIO.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/logoMIO.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo_gc.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo_gc.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo_new.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo_new.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo_new_GC.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo_new_GC.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo_opengov.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo_opengov.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logoribes.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/logoribes.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pallini091.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/pallini091.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/progressbar.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/progressbar.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/tag-assistant-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/tag-assistant-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/testata.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/testata.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/testata.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/testata.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/testata1004 ver B.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/testata1004 ver B.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/testata1004 ver B_03.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/testata1004 ver B_03.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/testataMIO.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/testataMIO.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/testata_OPENgov.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/testata_OPENgov.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/testata_asm.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/testata_asm.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/testata_old.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/testata_old.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/testata_old1.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/testata_old1.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/trasparente.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/trasparente.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/vssver2.scc",
+      "output": {
+        "resource": {
+          "relative_path": "images/vssver2.scc"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/xp/Thumbs.db",
+      "output": {
+        "resource": {
+          "relative_path": "images/xp/Thumbs.db"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/xp/excel.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/xp/excel.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/xp/firstpg.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/xp/firstpg.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/xp/firstpgd.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/xp/firstpgd.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/xp/lastpg.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/xp/lastpg.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/xp/lastpgd.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/xp/lastpgd.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/xp/nextpg.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/xp/nextpg.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/xp/nextpgd.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/xp/nextpgd.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/xp/orderasc.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/xp/orderasc.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/xp/orderdesc.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/xp/orderdesc.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/xp/prevpg.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/xp/prevpg.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/xp/prevpgd.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/xp/prevpgd.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/xp/vssver2.scc",
+      "output": {
+        "resource": {
+          "relative_path": "images/xp/vssver2.scc"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "3BuyWI8J1COVCPa1tamcGQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "tCsxsN5ikw+EgWubxpUhHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

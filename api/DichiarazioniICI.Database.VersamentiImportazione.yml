@@ -1,0 +1,1580 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.Database.VersamentiImportazione
+  commentId: T:DichiarazioniICI.Database.VersamentiImportazione
+  id: VersamentiImportazione
+  parent: DichiarazioniICI.Database
+  children:
+  - DichiarazioniICI.Database.VersamentiImportazione.Acconto
+  - DichiarazioniICI.Database.VersamentiImportazione.AnnoRiferimento
+  - DichiarazioniICI.Database.VersamentiImportazione.Annullato
+  - DichiarazioniICI.Database.VersamentiImportazione.Bonificato
+  - DichiarazioniICI.Database.VersamentiImportazione.CodiceFiscale
+  - DichiarazioniICI.Database.VersamentiImportazione.ComuneIntestatario
+  - DichiarazioniICI.Database.VersamentiImportazione.ComuneUbicazioneImmobile
+  - DichiarazioniICI.Database.VersamentiImportazione.ContoCorrente
+  - DichiarazioniICI.Database.VersamentiImportazione.DataFineValidità
+  - DichiarazioniICI.Database.VersamentiImportazione.DataInizioValidità
+  - DichiarazioniICI.Database.VersamentiImportazione.DataPagamento
+  - DichiarazioniICI.Database.VersamentiImportazione.DataProvvedimentoViolazione
+  - DichiarazioniICI.Database.VersamentiImportazione.DataRiversamento
+  - DichiarazioniICI.Database.VersamentiImportazione.DetrazioneAbitazPrincipale
+  - DichiarazioniICI.Database.VersamentiImportazione.DetrazioneStatale
+  - DichiarazioniICI.Database.VersamentiImportazione.Ente
+  - DichiarazioniICI.Database.VersamentiImportazione.ID
+  - DichiarazioniICI.Database.VersamentiImportazione.IdAnagrafico
+  - DichiarazioniICI.Database.VersamentiImportazione.IDProvenienza
+  - DichiarazioniICI.Database.VersamentiImportazione.ImportoAbitazPrincipale
+  - DichiarazioniICI.Database.VersamentiImportazione.ImportoAltriFabbric
+  - DichiarazioniICI.Database.VersamentiImportazione.ImportoAltriFabbricStatale
+  - DichiarazioniICI.Database.VersamentiImportazione.ImportoAreeFabbric
+  - DichiarazioniICI.Database.VersamentiImportazione.ImportoAreeFabbricStatale
+  - DichiarazioniICI.Database.VersamentiImportazione.ImportoFabRurUsoStrum
+  - DichiarazioniICI.Database.VersamentiImportazione.ImportoFabRurUsoStrumStatale
+  - DichiarazioniICI.Database.VersamentiImportazione.ImportoPagato
+  - DichiarazioniICI.Database.VersamentiImportazione.ImportoPagatoArrotondamento
+  - DichiarazioniICI.Database.VersamentiImportazione.ImportoPagatoDouble
+  - DichiarazioniICI.Database.VersamentiImportazione.ImportoPenaPecuniaria
+  - DichiarazioniICI.Database.VersamentiImportazione.ImportoSoprattassa
+  - DichiarazioniICI.Database.VersamentiImportazione.ImportoUsoProdCatD
+  - DichiarazioniICI.Database.VersamentiImportazione.ImportoUsoProdCatDStatale
+  - DichiarazioniICI.Database.VersamentiImportazione.ImpoTerreni
+  - DichiarazioniICI.Database.VersamentiImportazione.ImpoTerreniStatale
+  - DichiarazioniICI.Database.VersamentiImportazione.Interessi
+  - DichiarazioniICI.Database.VersamentiImportazione.NumeroAttoAccertamento
+  - DichiarazioniICI.Database.VersamentiImportazione.NumeroBollettino
+  - DichiarazioniICI.Database.VersamentiImportazione.NumeroFabbricatiPosseduti
+  - DichiarazioniICI.Database.VersamentiImportazione.Operatore
+  - DichiarazioniICI.Database.VersamentiImportazione.PartitaIva
+  - DichiarazioniICI.Database.VersamentiImportazione.RavvedimentoOperoso
+  - DichiarazioniICI.Database.VersamentiImportazione.Saldo
+  - DichiarazioniICI.Database.VersamentiImportazione.Violazione
+  langs:
+  - csharp
+  - vb
+  name: VersamentiImportazione
+  nameWithType: VersamentiImportazione
+  fullName: DichiarazioniICI.Database.VersamentiImportazione
+  type: Struct
+  source:
+    id: VersamentiImportazione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 511
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public struct VersamentiImportazione
+    content.vb: Public Structure VersamentiImportazione
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: DichiarazioniICI.Database.VersamentiImportazione.ID
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.ID
+  id: ID
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: VersamentiImportazione.ID
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.ID
+  type: Field
+  source:
+    id: ID
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 513
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int ID
+    return:
+      type: System.Int32
+    content.vb: Public ID As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.Ente
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.Ente
+  id: Ente
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: Ente
+  nameWithType: VersamentiImportazione.Ente
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.Ente
+  type: Field
+  source:
+    id: Ente
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 514
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string Ente
+    return:
+      type: System.String
+    content.vb: Public Ente As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.IdAnagrafico
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.IdAnagrafico
+  id: IdAnagrafico
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: IdAnagrafico
+  nameWithType: VersamentiImportazione.IdAnagrafico
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.IdAnagrafico
+  type: Field
+  source:
+    id: IdAnagrafico
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 515
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int IdAnagrafico
+    return:
+      type: System.Int32
+    content.vb: Public IdAnagrafico As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.AnnoRiferimento
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.AnnoRiferimento
+  id: AnnoRiferimento
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: AnnoRiferimento
+  nameWithType: VersamentiImportazione.AnnoRiferimento
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.AnnoRiferimento
+  type: Field
+  source:
+    id: AnnoRiferimento
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 516
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string AnnoRiferimento
+    return:
+      type: System.String
+    content.vb: Public AnnoRiferimento As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.CodiceFiscale
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.CodiceFiscale
+  id: CodiceFiscale
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: CodiceFiscale
+  nameWithType: VersamentiImportazione.CodiceFiscale
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.CodiceFiscale
+  type: Field
+  source:
+    id: CodiceFiscale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 517
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string CodiceFiscale
+    return:
+      type: System.String
+    content.vb: Public CodiceFiscale As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.PartitaIva
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.PartitaIva
+  id: PartitaIva
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: PartitaIva
+  nameWithType: VersamentiImportazione.PartitaIva
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.PartitaIva
+  type: Field
+  source:
+    id: PartitaIva
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 518
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string PartitaIva
+    return:
+      type: System.String
+    content.vb: Public PartitaIva As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.ImportoPagato
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.ImportoPagato
+  id: ImportoPagato
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: ImportoPagato
+  nameWithType: VersamentiImportazione.ImportoPagato
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.ImportoPagato
+  type: Field
+  source:
+    id: ImportoPagato
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 519
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string ImportoPagato
+    return:
+      type: System.String
+    content.vb: Public ImportoPagato As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.DataPagamento
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.DataPagamento
+  id: DataPagamento
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: DataPagamento
+  nameWithType: VersamentiImportazione.DataPagamento
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.DataPagamento
+  type: Field
+  source:
+    id: DataPagamento
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 520
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string DataPagamento
+    return:
+      type: System.String
+    content.vb: Public DataPagamento As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.NumeroBollettino
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.NumeroBollettino
+  id: NumeroBollettino
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: NumeroBollettino
+  nameWithType: VersamentiImportazione.NumeroBollettino
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.NumeroBollettino
+  type: Field
+  source:
+    id: NumeroBollettino
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 521
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string NumeroBollettino
+    return:
+      type: System.String
+    content.vb: Public NumeroBollettino As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.NumeroFabbricatiPosseduti
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.NumeroFabbricatiPosseduti
+  id: NumeroFabbricatiPosseduti
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: NumeroFabbricatiPosseduti
+  nameWithType: VersamentiImportazione.NumeroFabbricatiPosseduti
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.NumeroFabbricatiPosseduti
+  type: Field
+  source:
+    id: NumeroFabbricatiPosseduti
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 522
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int NumeroFabbricatiPosseduti
+    return:
+      type: System.Int32
+    content.vb: Public NumeroFabbricatiPosseduti As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.Acconto
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.Acconto
+  id: Acconto
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: Acconto
+  nameWithType: VersamentiImportazione.Acconto
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.Acconto
+  type: Field
+  source:
+    id: Acconto
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 523
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public bool Acconto
+    return:
+      type: System.Boolean
+    content.vb: Public Acconto As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.Saldo
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.Saldo
+  id: Saldo
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: Saldo
+  nameWithType: VersamentiImportazione.Saldo
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.Saldo
+  type: Field
+  source:
+    id: Saldo
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 524
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public bool Saldo
+    return:
+      type: System.Boolean
+    content.vb: Public Saldo As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.RavvedimentoOperoso
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.RavvedimentoOperoso
+  id: RavvedimentoOperoso
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: RavvedimentoOperoso
+  nameWithType: VersamentiImportazione.RavvedimentoOperoso
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.RavvedimentoOperoso
+  type: Field
+  source:
+    id: RavvedimentoOperoso
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 525
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public bool RavvedimentoOperoso
+    return:
+      type: System.Boolean
+    content.vb: Public RavvedimentoOperoso As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.ImpoTerreni
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.ImpoTerreni
+  id: ImpoTerreni
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: ImpoTerreni
+  nameWithType: VersamentiImportazione.ImpoTerreni
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.ImpoTerreni
+  type: Field
+  source:
+    id: ImpoTerreni
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 526
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string ImpoTerreni
+    return:
+      type: System.String
+    content.vb: Public ImpoTerreni As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.ImportoAreeFabbric
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.ImportoAreeFabbric
+  id: ImportoAreeFabbric
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: ImportoAreeFabbric
+  nameWithType: VersamentiImportazione.ImportoAreeFabbric
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.ImportoAreeFabbric
+  type: Field
+  source:
+    id: ImportoAreeFabbric
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 527
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string ImportoAreeFabbric
+    return:
+      type: System.String
+    content.vb: Public ImportoAreeFabbric As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.ImportoAbitazPrincipale
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.ImportoAbitazPrincipale
+  id: ImportoAbitazPrincipale
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: ImportoAbitazPrincipale
+  nameWithType: VersamentiImportazione.ImportoAbitazPrincipale
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.ImportoAbitazPrincipale
+  type: Field
+  source:
+    id: ImportoAbitazPrincipale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 528
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string ImportoAbitazPrincipale
+    return:
+      type: System.String
+    content.vb: Public ImportoAbitazPrincipale As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.ImportoAltriFabbric
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.ImportoAltriFabbric
+  id: ImportoAltriFabbric
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: ImportoAltriFabbric
+  nameWithType: VersamentiImportazione.ImportoAltriFabbric
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.ImportoAltriFabbric
+  type: Field
+  source:
+    id: ImportoAltriFabbric
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 529
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string ImportoAltriFabbric
+    return:
+      type: System.String
+    content.vb: Public ImportoAltriFabbric As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.DetrazioneAbitazPrincipale
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.DetrazioneAbitazPrincipale
+  id: DetrazioneAbitazPrincipale
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: DetrazioneAbitazPrincipale
+  nameWithType: VersamentiImportazione.DetrazioneAbitazPrincipale
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.DetrazioneAbitazPrincipale
+  type: Field
+  source:
+    id: DetrazioneAbitazPrincipale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 530
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string DetrazioneAbitazPrincipale
+    return:
+      type: System.String
+    content.vb: Public DetrazioneAbitazPrincipale As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.ImportoFabRurUsoStrum
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.ImportoFabRurUsoStrum
+  id: ImportoFabRurUsoStrum
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: ImportoFabRurUsoStrum
+  nameWithType: VersamentiImportazione.ImportoFabRurUsoStrum
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.ImportoFabRurUsoStrum
+  type: Field
+  source:
+    id: ImportoFabRurUsoStrum
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 532
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string ImportoFabRurUsoStrum
+    return:
+      type: System.String
+    content.vb: Public ImportoFabRurUsoStrum As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.ImpoTerreniStatale
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.ImpoTerreniStatale
+  id: ImpoTerreniStatale
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: ImpoTerreniStatale
+  nameWithType: VersamentiImportazione.ImpoTerreniStatale
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.ImpoTerreniStatale
+  type: Field
+  source:
+    id: ImpoTerreniStatale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 533
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string ImpoTerreniStatale
+    return:
+      type: System.String
+    content.vb: Public ImpoTerreniStatale As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.ImportoAreeFabbricStatale
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.ImportoAreeFabbricStatale
+  id: ImportoAreeFabbricStatale
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: ImportoAreeFabbricStatale
+  nameWithType: VersamentiImportazione.ImportoAreeFabbricStatale
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.ImportoAreeFabbricStatale
+  type: Field
+  source:
+    id: ImportoAreeFabbricStatale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 534
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string ImportoAreeFabbricStatale
+    return:
+      type: System.String
+    content.vb: Public ImportoAreeFabbricStatale As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.ImportoAltriFabbricStatale
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.ImportoAltriFabbricStatale
+  id: ImportoAltriFabbricStatale
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: ImportoAltriFabbricStatale
+  nameWithType: VersamentiImportazione.ImportoAltriFabbricStatale
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.ImportoAltriFabbricStatale
+  type: Field
+  source:
+    id: ImportoAltriFabbricStatale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 535
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string ImportoAltriFabbricStatale
+    return:
+      type: System.String
+    content.vb: Public ImportoAltriFabbricStatale As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.ImportoFabRurUsoStrumStatale
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.ImportoFabRurUsoStrumStatale
+  id: ImportoFabRurUsoStrumStatale
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: ImportoFabRurUsoStrumStatale
+  nameWithType: VersamentiImportazione.ImportoFabRurUsoStrumStatale
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.ImportoFabRurUsoStrumStatale
+  type: Field
+  source:
+    id: ImportoFabRurUsoStrumStatale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 537
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string ImportoFabRurUsoStrumStatale
+    return:
+      type: System.String
+    content.vb: Public ImportoFabRurUsoStrumStatale As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.ImportoUsoProdCatD
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.ImportoUsoProdCatD
+  id: ImportoUsoProdCatD
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: ImportoUsoProdCatD
+  nameWithType: VersamentiImportazione.ImportoUsoProdCatD
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.ImportoUsoProdCatD
+  type: Field
+  source:
+    id: ImportoUsoProdCatD
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 538
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string ImportoUsoProdCatD
+    return:
+      type: System.String
+    content.vb: Public ImportoUsoProdCatD As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.ImportoUsoProdCatDStatale
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.ImportoUsoProdCatDStatale
+  id: ImportoUsoProdCatDStatale
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: ImportoUsoProdCatDStatale
+  nameWithType: VersamentiImportazione.ImportoUsoProdCatDStatale
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.ImportoUsoProdCatDStatale
+  type: Field
+  source:
+    id: ImportoUsoProdCatDStatale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 539
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string ImportoUsoProdCatDStatale
+    return:
+      type: System.String
+    content.vb: Public ImportoUsoProdCatDStatale As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.DetrazioneStatale
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.DetrazioneStatale
+  id: DetrazioneStatale
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: DetrazioneStatale
+  nameWithType: VersamentiImportazione.DetrazioneStatale
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.DetrazioneStatale
+  type: Field
+  source:
+    id: DetrazioneStatale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 541
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string DetrazioneStatale
+    return:
+      type: System.String
+    content.vb: Public DetrazioneStatale As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.ContoCorrente
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.ContoCorrente
+  id: ContoCorrente
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: ContoCorrente
+  nameWithType: VersamentiImportazione.ContoCorrente
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.ContoCorrente
+  type: Field
+  source:
+    id: ContoCorrente
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 542
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string ContoCorrente
+    return:
+      type: System.String
+    content.vb: Public ContoCorrente As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.ComuneUbicazioneImmobile
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.ComuneUbicazioneImmobile
+  id: ComuneUbicazioneImmobile
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: ComuneUbicazioneImmobile
+  nameWithType: VersamentiImportazione.ComuneUbicazioneImmobile
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.ComuneUbicazioneImmobile
+  type: Field
+  source:
+    id: ComuneUbicazioneImmobile
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 543
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string ComuneUbicazioneImmobile
+    return:
+      type: System.String
+    content.vb: Public ComuneUbicazioneImmobile As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.ComuneIntestatario
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.ComuneIntestatario
+  id: ComuneIntestatario
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: ComuneIntestatario
+  nameWithType: VersamentiImportazione.ComuneIntestatario
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.ComuneIntestatario
+  type: Field
+  source:
+    id: ComuneIntestatario
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 544
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string ComuneIntestatario
+    return:
+      type: System.String
+    content.vb: Public ComuneIntestatario As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.Bonificato
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.Bonificato
+  id: Bonificato
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: Bonificato
+  nameWithType: VersamentiImportazione.Bonificato
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.Bonificato
+  type: Field
+  source:
+    id: Bonificato
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 545
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public bool Bonificato
+    return:
+      type: System.Boolean
+    content.vb: Public Bonificato As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.DataInizioValidità
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.DataInizioValidità
+  id: DataInizioValidità
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: DataInizioValidità
+  nameWithType: VersamentiImportazione.DataInizioValidità
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.DataInizioValidità
+  type: Field
+  source:
+    id: DataInizioValidità
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 546
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string DataInizioValidità
+    return:
+      type: System.String
+    content.vb: Public DataInizioValidità As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.DataFineValidità
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.DataFineValidità
+  id: DataFineValidità
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: DataFineValidità
+  nameWithType: VersamentiImportazione.DataFineValidità
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.DataFineValidità
+  type: Field
+  source:
+    id: DataFineValidità
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 547
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string DataFineValidità
+    return:
+      type: System.String
+    content.vb: Public DataFineValidità As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.DataRiversamento
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.DataRiversamento
+  id: DataRiversamento
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: DataRiversamento
+  nameWithType: VersamentiImportazione.DataRiversamento
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.DataRiversamento
+  type: Field
+  source:
+    id: DataRiversamento
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 548
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string DataRiversamento
+    return:
+      type: System.String
+    content.vb: Public DataRiversamento As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.Operatore
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.Operatore
+  id: Operatore
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: Operatore
+  nameWithType: VersamentiImportazione.Operatore
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.Operatore
+  type: Field
+  source:
+    id: Operatore
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 549
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string Operatore
+    return:
+      type: System.String
+    content.vb: Public Operatore As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.Annullato
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.Annullato
+  id: Annullato
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: Annullato
+  nameWithType: VersamentiImportazione.Annullato
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.Annullato
+  type: Field
+  source:
+    id: Annullato
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 550
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public bool Annullato
+    return:
+      type: System.Boolean
+    content.vb: Public Annullato As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.ImportoSoprattassa
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.ImportoSoprattassa
+  id: ImportoSoprattassa
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: ImportoSoprattassa
+  nameWithType: VersamentiImportazione.ImportoSoprattassa
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.ImportoSoprattassa
+  type: Field
+  source:
+    id: ImportoSoprattassa
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 551
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public decimal ImportoSoprattassa
+    return:
+      type: System.Decimal
+    content.vb: Public ImportoSoprattassa As Decimal
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.ImportoPenaPecuniaria
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.ImportoPenaPecuniaria
+  id: ImportoPenaPecuniaria
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: ImportoPenaPecuniaria
+  nameWithType: VersamentiImportazione.ImportoPenaPecuniaria
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.ImportoPenaPecuniaria
+  type: Field
+  source:
+    id: ImportoPenaPecuniaria
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 552
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public decimal ImportoPenaPecuniaria
+    return:
+      type: System.Decimal
+    content.vb: Public ImportoPenaPecuniaria As Decimal
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.Interessi
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.Interessi
+  id: Interessi
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: Interessi
+  nameWithType: VersamentiImportazione.Interessi
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.Interessi
+  type: Field
+  source:
+    id: Interessi
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 553
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string Interessi
+    return:
+      type: System.String
+    content.vb: Public Interessi As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.Violazione
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.Violazione
+  id: Violazione
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: Violazione
+  nameWithType: VersamentiImportazione.Violazione
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.Violazione
+  type: Field
+  source:
+    id: Violazione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 554
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public bool Violazione
+    return:
+      type: System.Boolean
+    content.vb: Public Violazione As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.IDProvenienza
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.IDProvenienza
+  id: IDProvenienza
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: IDProvenienza
+  nameWithType: VersamentiImportazione.IDProvenienza
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.IDProvenienza
+  type: Field
+  source:
+    id: IDProvenienza
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 555
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int IDProvenienza
+    return:
+      type: System.Int32
+    content.vb: Public IDProvenienza As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.NumeroAttoAccertamento
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.NumeroAttoAccertamento
+  id: NumeroAttoAccertamento
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: NumeroAttoAccertamento
+  nameWithType: VersamentiImportazione.NumeroAttoAccertamento
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.NumeroAttoAccertamento
+  type: Field
+  source:
+    id: NumeroAttoAccertamento
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 556
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string NumeroAttoAccertamento
+    return:
+      type: System.String
+    content.vb: Public NumeroAttoAccertamento As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.DataProvvedimentoViolazione
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.DataProvvedimentoViolazione
+  id: DataProvvedimentoViolazione
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: DataProvvedimentoViolazione
+  nameWithType: VersamentiImportazione.DataProvvedimentoViolazione
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.DataProvvedimentoViolazione
+  type: Field
+  source:
+    id: DataProvvedimentoViolazione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 557
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string DataProvvedimentoViolazione
+    return:
+      type: System.String
+    content.vb: Public DataProvvedimentoViolazione As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.ImportoPagatoArrotondamento
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.ImportoPagatoArrotondamento
+  id: ImportoPagatoArrotondamento
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: ImportoPagatoArrotondamento
+  nameWithType: VersamentiImportazione.ImportoPagatoArrotondamento
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.ImportoPagatoArrotondamento
+  type: Field
+  source:
+    id: ImportoPagatoArrotondamento
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 558
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string ImportoPagatoArrotondamento
+    return:
+      type: System.String
+    content.vb: Public ImportoPagatoArrotondamento As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.VersamentiImportazione.ImportoPagatoDouble
+  commentId: F:DichiarazioniICI.Database.VersamentiImportazione.ImportoPagatoDouble
+  id: ImportoPagatoDouble
+  parent: DichiarazioniICI.Database.VersamentiImportazione
+  langs:
+  - csharp
+  - vb
+  name: ImportoPagatoDouble
+  nameWithType: VersamentiImportazione.ImportoPagatoDouble
+  fullName: DichiarazioniICI.Database.VersamentiImportazione.ImportoPagatoDouble
+  type: Field
+  source:
+    id: ImportoPagatoDouble
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ImportazioneF24.cs
+    startLine: 559
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public double ImportoPagatoDouble
+    return:
+      type: System.Double
+    content.vb: Public ImportoPagatoDouble As Double
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: DichiarazioniICI.Database
+  commentId: N:DichiarazioniICI.Database
+  name: DichiarazioniICI.Database
+  nameWithType: DichiarazioniICI.Database
+  fullName: DichiarazioniICI.Database
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  nameWithType: Decimal
+  fullName: System.Decimal
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double

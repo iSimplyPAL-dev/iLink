@@ -1,0 +1,100 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.Database.TipologieProvenienza
+  commentId: T:DichiarazioniICI.Database.TipologieProvenienza
+  id: TipologieProvenienza
+  parent: DichiarazioniICI.Database
+  children:
+  - DichiarazioniICI.Database.TipologieProvenienza.dichiarazioni
+  - DichiarazioniICI.Database.TipologieProvenienza.versamenti
+  langs:
+  - csharp
+  - vb
+  name: TipologieProvenienza
+  nameWithType: TipologieProvenienza
+  fullName: DichiarazioniICI.Database.TipologieProvenienza
+  type: Enum
+  source:
+    id: TipologieProvenienza
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ProvenienzeTable.cs
+    startLine: 19
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public enum TipologieProvenienza
+    content.vb: Public Enum TipologieProvenienza
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: DichiarazioniICI.Database.TipologieProvenienza.dichiarazioni
+  commentId: F:DichiarazioniICI.Database.TipologieProvenienza.dichiarazioni
+  id: dichiarazioni
+  parent: DichiarazioniICI.Database.TipologieProvenienza
+  langs:
+  - csharp
+  - vb
+  name: dichiarazioni
+  nameWithType: TipologieProvenienza.dichiarazioni
+  fullName: DichiarazioniICI.Database.TipologieProvenienza.dichiarazioni
+  type: Field
+  source:
+    id: dichiarazioni
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ProvenienzeTable.cs
+    startLine: 19
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: dichiarazioni = 0
+    return:
+      type: DichiarazioniICI.Database.TipologieProvenienza
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.Database.TipologieProvenienza.versamenti
+  commentId: F:DichiarazioniICI.Database.TipologieProvenienza.versamenti
+  id: versamenti
+  parent: DichiarazioniICI.Database.TipologieProvenienza
+  langs:
+  - csharp
+  - vb
+  name: versamenti
+  nameWithType: TipologieProvenienza.versamenti
+  fullName: DichiarazioniICI.Database.TipologieProvenienza.versamenti
+  type: Field
+  source:
+    id: versamenti
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\ProvenienzeTable.cs
+    startLine: 19
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: versamenti = 1
+    return:
+      type: DichiarazioniICI.Database.TipologieProvenienza
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: DichiarazioniICI.Database
+  commentId: N:DichiarazioniICI.Database
+  name: DichiarazioniICI.Database
+  nameWithType: DichiarazioniICI.Database
+  fullName: DichiarazioniICI.Database
+- uid: DichiarazioniICI.Database.TipologieProvenienza
+  commentId: T:DichiarazioniICI.Database.TipologieProvenienza
+  parent: DichiarazioniICI.Database
+  name: TipologieProvenienza
+  nameWithType: TipologieProvenienza
+  fullName: DichiarazioniICI.Database.TipologieProvenienza

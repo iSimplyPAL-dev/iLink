@@ -1,0 +1,245 @@
+### YamlMime:ManagedReference
+items:
+- uid: DTO.MetodiPagamento.E_COLUMNS_TotPag
+  commentId: T:DTO.MetodiPagamento.E_COLUMNS_TotPag
+  id: MetodiPagamento.E_COLUMNS_TotPag
+  parent: DTO
+  children:
+  - DTO.MetodiPagamento.E_COLUMNS_TotPag.ANNO
+  - DTO.MetodiPagamento.E_COLUMNS_TotPag.CFPIVA
+  - DTO.MetodiPagamento.E_COLUMNS_TotPag.CODICE_CARTELLA
+  - DTO.MetodiPagamento.E_COLUMNS_TotPag.DATA_EMISSIONE
+  - DTO.MetodiPagamento.E_COLUMNS_TotPag.IMPORTO_CARICO
+  - DTO.MetodiPagamento.E_COLUMNS_TotPag.IMPORTO_PAGATO
+  - DTO.MetodiPagamento.E_COLUMNS_TotPag.NOMINATIVO
+  langs:
+  - csharp
+  - vb
+  name: MetodiPagamento.E_COLUMNS_TotPag
+  nameWithType: MetodiPagamento.E_COLUMNS_TotPag
+  fullName: DTO.MetodiPagamento.E_COLUMNS_TotPag
+  type: Enum
+  source:
+    id: E_COLUMNS_TotPag
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 63
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public enum E_COLUMNS_TotPag
+    content.vb: Public Enum E_COLUMNS_TotPag
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: DTO.MetodiPagamento.E_COLUMNS_TotPag.NOMINATIVO
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_TotPag.NOMINATIVO
+  id: NOMINATIVO
+  parent: DTO.MetodiPagamento.E_COLUMNS_TotPag
+  langs:
+  - csharp
+  - vb
+  name: NOMINATIVO
+  nameWithType: MetodiPagamento.E_COLUMNS_TotPag.NOMINATIVO
+  fullName: DTO.MetodiPagamento.E_COLUMNS_TotPag.NOMINATIVO
+  type: Field
+  source:
+    id: NOMINATIVO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 65
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: NOMINATIVO = 0
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_TotPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DTO.MetodiPagamento.E_COLUMNS_TotPag.CFPIVA
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_TotPag.CFPIVA
+  id: CFPIVA
+  parent: DTO.MetodiPagamento.E_COLUMNS_TotPag
+  langs:
+  - csharp
+  - vb
+  name: CFPIVA
+  nameWithType: MetodiPagamento.E_COLUMNS_TotPag.CFPIVA
+  fullName: DTO.MetodiPagamento.E_COLUMNS_TotPag.CFPIVA
+  type: Field
+  source:
+    id: CFPIVA
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 66
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: CFPIVA = 1
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_TotPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DTO.MetodiPagamento.E_COLUMNS_TotPag.ANNO
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_TotPag.ANNO
+  id: ANNO
+  parent: DTO.MetodiPagamento.E_COLUMNS_TotPag
+  langs:
+  - csharp
+  - vb
+  name: ANNO
+  nameWithType: MetodiPagamento.E_COLUMNS_TotPag.ANNO
+  fullName: DTO.MetodiPagamento.E_COLUMNS_TotPag.ANNO
+  type: Field
+  source:
+    id: ANNO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 67
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: ANNO = 2
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_TotPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DTO.MetodiPagamento.E_COLUMNS_TotPag.CODICE_CARTELLA
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_TotPag.CODICE_CARTELLA
+  id: CODICE_CARTELLA
+  parent: DTO.MetodiPagamento.E_COLUMNS_TotPag
+  langs:
+  - csharp
+  - vb
+  name: CODICE_CARTELLA
+  nameWithType: MetodiPagamento.E_COLUMNS_TotPag.CODICE_CARTELLA
+  fullName: DTO.MetodiPagamento.E_COLUMNS_TotPag.CODICE_CARTELLA
+  type: Field
+  source:
+    id: CODICE_CARTELLA
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 68
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: CODICE_CARTELLA = 3
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_TotPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DTO.MetodiPagamento.E_COLUMNS_TotPag.DATA_EMISSIONE
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_TotPag.DATA_EMISSIONE
+  id: DATA_EMISSIONE
+  parent: DTO.MetodiPagamento.E_COLUMNS_TotPag
+  langs:
+  - csharp
+  - vb
+  name: DATA_EMISSIONE
+  nameWithType: MetodiPagamento.E_COLUMNS_TotPag.DATA_EMISSIONE
+  fullName: DTO.MetodiPagamento.E_COLUMNS_TotPag.DATA_EMISSIONE
+  type: Field
+  source:
+    id: DATA_EMISSIONE
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 69
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: DATA_EMISSIONE = 4
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_TotPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DTO.MetodiPagamento.E_COLUMNS_TotPag.IMPORTO_CARICO
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_TotPag.IMPORTO_CARICO
+  id: IMPORTO_CARICO
+  parent: DTO.MetodiPagamento.E_COLUMNS_TotPag
+  langs:
+  - csharp
+  - vb
+  name: IMPORTO_CARICO
+  nameWithType: MetodiPagamento.E_COLUMNS_TotPag.IMPORTO_CARICO
+  fullName: DTO.MetodiPagamento.E_COLUMNS_TotPag.IMPORTO_CARICO
+  type: Field
+  source:
+    id: IMPORTO_CARICO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 70
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: IMPORTO_CARICO = 5
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_TotPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DTO.MetodiPagamento.E_COLUMNS_TotPag.IMPORTO_PAGATO
+  commentId: F:DTO.MetodiPagamento.E_COLUMNS_TotPag.IMPORTO_PAGATO
+  id: IMPORTO_PAGATO
+  parent: DTO.MetodiPagamento.E_COLUMNS_TotPag
+  langs:
+  - csharp
+  - vb
+  name: IMPORTO_PAGATO
+  nameWithType: MetodiPagamento.E_COLUMNS_TotPag.IMPORTO_PAGATO
+  fullName: DTO.MetodiPagamento.E_COLUMNS_TotPag.IMPORTO_PAGATO
+  type: Field
+  source:
+    id: IMPORTO_PAGATO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 71
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: IMPORTO_PAGATO = 6
+    return:
+      type: DTO.MetodiPagamento.E_COLUMNS_TotPag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: DTO
+  commentId: N:DTO
+  name: DTO
+  nameWithType: DTO
+  fullName: DTO
+- uid: DTO.MetodiPagamento.E_COLUMNS_TotPag
+  commentId: T:DTO.MetodiPagamento.E_COLUMNS_TotPag
+  parent: DTO
+  name: MetodiPagamento.E_COLUMNS_TotPag
+  nameWithType: MetodiPagamento.E_COLUMNS_TotPag
+  fullName: DTO.MetodiPagamento.E_COLUMNS_TotPag

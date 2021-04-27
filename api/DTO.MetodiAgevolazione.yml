@@ -1,0 +1,971 @@
+### YamlMime:ManagedReference
+items:
+- uid: DTO.MetodiAgevolazione
+  commentId: T:DTO.MetodiAgevolazione
+  id: MetodiAgevolazione
+  parent: DTO
+  children:
+  - DTO.MetodiAgevolazione.DeleteAgevolazione(System.Int32)
+  - DTO.MetodiAgevolazione.DeleteCoefficiente(System.Int32,System.Int32)
+  - DTO.MetodiAgevolazione.GetAgevolazioni(System.String,System.Int32,System.String)
+  - DTO.MetodiAgevolazione.GetAgevolazioniForMotore(System.String,System.String,System.String,System.String)
+  - DTO.MetodiAgevolazione.GetAgevolazioniVSArticolo(System.String,System.Int32,System.Int32,System.String,System.String)
+  - DTO.MetodiAgevolazione.GetAgevolazioniVSArticolo(System.String,System.String,System.Int32,System.Int32)
+  - DTO.MetodiAgevolazione.GetAllAgevolazioni(System.String)
+  - DTO.MetodiAgevolazione.GetAllCoefficienti(System.String)
+  - DTO.MetodiAgevolazione.GetCoefficiente(System.Int32,System.Int32)
+  - DTO.MetodiAgevolazione.GetElencoPercAgevolazioni(IRemInterfaceOSAP.Agevolazione[])
+  - DTO.MetodiAgevolazione.InsertOrUpdateCoefficiente(System.Int32,System.Int32,System.Decimal)
+  - DTO.MetodiAgevolazione.InsertOrUpdateDescrizione(System.String,System.Int32,System.String)
+  - DTO.MetodiAgevolazione.SetRibalta(System.Int32,System.Int32,System.String)
+  langs:
+  - csharp
+  - vb
+  name: MetodiAgevolazione
+  nameWithType: MetodiAgevolazione
+  fullName: DTO.MetodiAgevolazione
+  type: Class
+  source:
+    id: MetodiAgevolazione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Agevolazione.cs
+    startLine: 13
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  summary: "\nClasse per la gestione Agevolazione\n"
+  example: []
+  syntax:
+    content: public class MetodiAgevolazione
+    content.vb: Public Class MetodiAgevolazione
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DTO.MetodiAgevolazione.DeleteAgevolazione(System.Int32)
+  commentId: M:DTO.MetodiAgevolazione.DeleteAgevolazione(System.Int32)
+  id: DeleteAgevolazione(System.Int32)
+  parent: DTO.MetodiAgevolazione
+  langs:
+  - csharp
+  - vb
+  name: DeleteAgevolazione(Int32)
+  nameWithType: MetodiAgevolazione.DeleteAgevolazione(Int32)
+  fullName: DTO.MetodiAgevolazione.DeleteAgevolazione(System.Int32)
+  type: Method
+  source:
+    id: DeleteAgevolazione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Agevolazione.cs
+    startLine: 19
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static int DeleteAgevolazione(int IdAgevolazione)
+    parameters:
+    - id: IdAgevolazione
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function DeleteAgevolazione(IdAgevolazione As Integer) As Integer
+  overload: DTO.MetodiAgevolazione.DeleteAgevolazione*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiAgevolazione.DeleteCoefficiente(System.Int32,System.Int32)
+  commentId: M:DTO.MetodiAgevolazione.DeleteCoefficiente(System.Int32,System.Int32)
+  id: DeleteCoefficiente(System.Int32,System.Int32)
+  parent: DTO.MetodiAgevolazione
+  langs:
+  - csharp
+  - vb
+  name: DeleteCoefficiente(Int32, Int32)
+  nameWithType: MetodiAgevolazione.DeleteCoefficiente(Int32, Int32)
+  fullName: DTO.MetodiAgevolazione.DeleteCoefficiente(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: DeleteCoefficiente
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Agevolazione.cs
+    startLine: 34
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static int DeleteCoefficiente(int IdAgevolazione, int Anno)
+    parameters:
+    - id: IdAgevolazione
+      type: System.Int32
+    - id: Anno
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function DeleteCoefficiente(IdAgevolazione As Integer, Anno As Integer) As Integer
+  overload: DTO.MetodiAgevolazione.DeleteCoefficiente*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiAgevolazione.InsertOrUpdateDescrizione(System.String,System.Int32,System.String)
+  commentId: M:DTO.MetodiAgevolazione.InsertOrUpdateDescrizione(System.String,System.Int32,System.String)
+  id: InsertOrUpdateDescrizione(System.String,System.Int32,System.String)
+  parent: DTO.MetodiAgevolazione
+  langs:
+  - csharp
+  - vb
+  name: InsertOrUpdateDescrizione(String, Int32, String)
+  nameWithType: MetodiAgevolazione.InsertOrUpdateDescrizione(String, Int32, String)
+  fullName: DTO.MetodiAgevolazione.InsertOrUpdateDescrizione(System.String, System.Int32, System.String)
+  type: Method
+  source:
+    id: InsertOrUpdateDescrizione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Agevolazione.cs
+    startLine: 50
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static int InsertOrUpdateDescrizione(string IdEnte, int IdAgevolazione, string Descrizione)
+    parameters:
+    - id: IdEnte
+      type: System.String
+    - id: IdAgevolazione
+      type: System.Int32
+    - id: Descrizione
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function InsertOrUpdateDescrizione(IdEnte As String, IdAgevolazione As Integer, Descrizione As String) As Integer
+  overload: DTO.MetodiAgevolazione.InsertOrUpdateDescrizione*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiAgevolazione.InsertOrUpdateCoefficiente(System.Int32,System.Int32,System.Decimal)
+  commentId: M:DTO.MetodiAgevolazione.InsertOrUpdateCoefficiente(System.Int32,System.Int32,System.Decimal)
+  id: InsertOrUpdateCoefficiente(System.Int32,System.Int32,System.Decimal)
+  parent: DTO.MetodiAgevolazione
+  langs:
+  - csharp
+  - vb
+  name: InsertOrUpdateCoefficiente(Int32, Int32, Decimal)
+  nameWithType: MetodiAgevolazione.InsertOrUpdateCoefficiente(Int32, Int32, Decimal)
+  fullName: DTO.MetodiAgevolazione.InsertOrUpdateCoefficiente(System.Int32, System.Int32, System.Decimal)
+  type: Method
+  source:
+    id: InsertOrUpdateCoefficiente
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Agevolazione.cs
+    startLine: 67
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static int InsertOrUpdateCoefficiente(int IdAgevolazioni, int Anno, decimal Coefficiente)
+    parameters:
+    - id: IdAgevolazioni
+      type: System.Int32
+    - id: Anno
+      type: System.Int32
+    - id: Coefficiente
+      type: System.Decimal
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function InsertOrUpdateCoefficiente(IdAgevolazioni As Integer, Anno As Integer, Coefficiente As Decimal) As Integer
+  overload: DTO.MetodiAgevolazione.InsertOrUpdateCoefficiente*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiAgevolazione.GetAllAgevolazioni(System.String)
+  commentId: M:DTO.MetodiAgevolazione.GetAllAgevolazioni(System.String)
+  id: GetAllAgevolazioni(System.String)
+  parent: DTO.MetodiAgevolazione
+  langs:
+  - csharp
+  - vb
+  name: GetAllAgevolazioni(String)
+  nameWithType: MetodiAgevolazione.GetAllAgevolazioni(String)
+  fullName: DTO.MetodiAgevolazione.GetAllAgevolazioni(System.String)
+  type: Method
+  source:
+    id: GetAllAgevolazioni
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Agevolazione.cs
+    startLine: 84
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static Agevolazione[] GetAllAgevolazioni(string IdEnte)
+    parameters:
+    - id: IdEnte
+      type: System.String
+    return:
+      type: IRemInterfaceOSAP.Agevolazione[]
+    content.vb: Public Shared Function GetAllAgevolazioni(IdEnte As String) As Agevolazione()
+  overload: DTO.MetodiAgevolazione.GetAllAgevolazioni*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiAgevolazione.GetAllCoefficienti(System.String)
+  commentId: M:DTO.MetodiAgevolazione.GetAllCoefficienti(System.String)
+  id: GetAllCoefficienti(System.String)
+  parent: DTO.MetodiAgevolazione
+  langs:
+  - csharp
+  - vb
+  name: GetAllCoefficienti(String)
+  nameWithType: MetodiAgevolazione.GetAllCoefficienti(String)
+  fullName: DTO.MetodiAgevolazione.GetAllCoefficienti(System.String)
+  type: Method
+  source:
+    id: GetAllCoefficienti
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Agevolazione.cs
+    startLine: 100
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static Coefficienti[] GetAllCoefficienti(string IdEnte)
+    parameters:
+    - id: IdEnte
+      type: System.String
+    return:
+      type: IRemInterfaceOSAP.Coefficienti[]
+    content.vb: Public Shared Function GetAllCoefficienti(IdEnte As String) As Coefficienti()
+  overload: DTO.MetodiAgevolazione.GetAllCoefficienti*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiAgevolazione.GetAgevolazioni(System.String,System.Int32,System.String)
+  commentId: M:DTO.MetodiAgevolazione.GetAgevolazioni(System.String,System.Int32,System.String)
+  id: GetAgevolazioni(System.String,System.Int32,System.String)
+  parent: DTO.MetodiAgevolazione
+  langs:
+  - csharp
+  - vb
+  name: GetAgevolazioni(String, Int32, String)
+  nameWithType: MetodiAgevolazione.GetAgevolazioni(String, Int32, String)
+  fullName: DTO.MetodiAgevolazione.GetAgevolazioni(System.String, System.Int32, System.String)
+  type: Method
+  source:
+    id: GetAgevolazioni
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Agevolazione.cs
+    startLine: 116
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static Agevolazione[] GetAgevolazioni(string Anno, int nIdArticolo, string idEnte)
+    parameters:
+    - id: Anno
+      type: System.String
+    - id: nIdArticolo
+      type: System.Int32
+    - id: idEnte
+      type: System.String
+    return:
+      type: IRemInterfaceOSAP.Agevolazione[]
+    content.vb: Public Shared Function GetAgevolazioni(Anno As String, nIdArticolo As Integer, idEnte As String) As Agevolazione()
+  overload: DTO.MetodiAgevolazione.GetAgevolazioni*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiAgevolazione.GetCoefficiente(System.Int32,System.Int32)
+  commentId: M:DTO.MetodiAgevolazione.GetCoefficiente(System.Int32,System.Int32)
+  id: GetCoefficiente(System.Int32,System.Int32)
+  parent: DTO.MetodiAgevolazione
+  langs:
+  - csharp
+  - vb
+  name: GetCoefficiente(Int32, Int32)
+  nameWithType: MetodiAgevolazione.GetCoefficiente(Int32, Int32)
+  fullName: DTO.MetodiAgevolazione.GetCoefficiente(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: GetCoefficiente
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Agevolazione.cs
+    startLine: 132
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static Coefficienti GetCoefficiente(int IdAgevolazioni, int Anno)
+    parameters:
+    - id: IdAgevolazioni
+      type: System.Int32
+    - id: Anno
+      type: System.Int32
+    return:
+      type: IRemInterfaceOSAP.Coefficienti
+    content.vb: Public Shared Function GetCoefficiente(IdAgevolazioni As Integer, Anno As Integer) As Coefficienti
+  overload: DTO.MetodiAgevolazione.GetCoefficiente*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiAgevolazione.GetAgevolazioniForMotore(System.String,System.String,System.String,System.String)
+  commentId: M:DTO.MetodiAgevolazione.GetAgevolazioniForMotore(System.String,System.String,System.String,System.String)
+  id: GetAgevolazioniForMotore(System.String,System.String,System.String,System.String)
+  parent: DTO.MetodiAgevolazione
+  langs:
+  - csharp
+  - vb
+  name: GetAgevolazioniForMotore(String, String, String, String)
+  nameWithType: MetodiAgevolazione.GetAgevolazioniForMotore(String, String, String, String)
+  fullName: DTO.MetodiAgevolazione.GetAgevolazioniForMotore(System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    id: GetAgevolazioniForMotore
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Agevolazione.cs
+    startLine: 151
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static Agevolazione[] GetAgevolazioniForMotore(string ConnectionString, string Anno, string idEnte, string IdTributo)
+    parameters:
+    - id: ConnectionString
+      type: System.String
+    - id: Anno
+      type: System.String
+    - id: idEnte
+      type: System.String
+    - id: IdTributo
+      type: System.String
+    return:
+      type: IRemInterfaceOSAP.Agevolazione[]
+    content.vb: Public Shared Function GetAgevolazioniForMotore(ConnectionString As String, Anno As String, idEnte As String, IdTributo As String) As Agevolazione()
+  overload: DTO.MetodiAgevolazione.GetAgevolazioniForMotore*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiAgevolazione.GetAgevolazioniVSArticolo(System.String,System.Int32,System.Int32,System.String,System.String)
+  commentId: M:DTO.MetodiAgevolazione.GetAgevolazioniVSArticolo(System.String,System.Int32,System.Int32,System.String,System.String)
+  id: GetAgevolazioniVSArticolo(System.String,System.Int32,System.Int32,System.String,System.String)
+  parent: DTO.MetodiAgevolazione
+  langs:
+  - csharp
+  - vb
+  name: GetAgevolazioniVSArticolo(String, Int32, Int32, String, String)
+  nameWithType: MetodiAgevolazione.GetAgevolazioniVSArticolo(String, Int32, Int32, String, String)
+  fullName: DTO.MetodiAgevolazione.GetAgevolazioniVSArticolo(System.String, System.Int32, System.Int32, System.String, System.String)
+  type: Method
+  source:
+    id: GetAgevolazioniVSArticolo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Agevolazione.cs
+    startLine: 167
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static Agevolazione[] GetAgevolazioniVSArticolo(string ConnectionString, int IdArticolo, int IdRuolo, string idEnte, string CodTributo)
+    parameters:
+    - id: ConnectionString
+      type: System.String
+    - id: IdArticolo
+      type: System.Int32
+    - id: IdRuolo
+      type: System.Int32
+    - id: idEnte
+      type: System.String
+    - id: CodTributo
+      type: System.String
+    return:
+      type: IRemInterfaceOSAP.Agevolazione[]
+    content.vb: Public Shared Function GetAgevolazioniVSArticolo(ConnectionString As String, IdArticolo As Integer, IdRuolo As Integer, idEnte As String, CodTributo As String) As Agevolazione()
+  overload: DTO.MetodiAgevolazione.GetAgevolazioniVSArticolo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiAgevolazione.GetElencoPercAgevolazioni(IRemInterfaceOSAP.Agevolazione[])
+  commentId: M:DTO.MetodiAgevolazione.GetElencoPercAgevolazioni(IRemInterfaceOSAP.Agevolazione[])
+  id: GetElencoPercAgevolazioni(IRemInterfaceOSAP.Agevolazione[])
+  parent: DTO.MetodiAgevolazione
+  langs:
+  - csharp
+  - vb
+  name: GetElencoPercAgevolazioni(Agevolazione[])
+  nameWithType: MetodiAgevolazione.GetElencoPercAgevolazioni(Agevolazione[])
+  fullName: DTO.MetodiAgevolazione.GetElencoPercAgevolazioni(IRemInterfaceOSAP.Agevolazione[])
+  type: Method
+  source:
+    id: GetElencoPercAgevolazioni
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Agevolazione.cs
+    startLine: 187
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static string GetElencoPercAgevolazioni(Agevolazione[] myList)
+    parameters:
+    - id: myList
+      type: IRemInterfaceOSAP.Agevolazione[]
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetElencoPercAgevolazioni(myList As Agevolazione()) As String
+  overload: DTO.MetodiAgevolazione.GetElencoPercAgevolazioni*
+  nameWithType.vb: MetodiAgevolazione.GetElencoPercAgevolazioni(Agevolazione())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: DTO.MetodiAgevolazione.GetElencoPercAgevolazioni(IRemInterfaceOSAP.Agevolazione())
+  name.vb: GetElencoPercAgevolazioni(Agevolazione())
+- uid: DTO.MetodiAgevolazione.GetAgevolazioniVSArticolo(System.String,System.String,System.Int32,System.Int32)
+  commentId: M:DTO.MetodiAgevolazione.GetAgevolazioniVSArticolo(System.String,System.String,System.Int32,System.Int32)
+  id: GetAgevolazioniVSArticolo(System.String,System.String,System.Int32,System.Int32)
+  parent: DTO.MetodiAgevolazione
+  langs:
+  - csharp
+  - vb
+  name: GetAgevolazioniVSArticolo(String, String, Int32, Int32)
+  nameWithType: MetodiAgevolazione.GetAgevolazioniVSArticolo(String, String, Int32, Int32)
+  fullName: DTO.MetodiAgevolazione.GetAgevolazioniVSArticolo(System.String, System.String, System.Int32, System.Int32)
+  type: Method
+  source:
+    id: GetAgevolazioniVSArticolo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Agevolazione.cs
+    startLine: 231
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static Agevolazione[] GetAgevolazioniVSArticolo(string ConnectionString, string sIdEnte, int IdArticolo, int IdRuolo)
+    parameters:
+    - id: ConnectionString
+      type: System.String
+    - id: sIdEnte
+      type: System.String
+    - id: IdArticolo
+      type: System.Int32
+    - id: IdRuolo
+      type: System.Int32
+    return:
+      type: IRemInterfaceOSAP.Agevolazione[]
+    content.vb: Public Shared Function GetAgevolazioniVSArticolo(ConnectionString As String, sIdEnte As String, IdArticolo As Integer, IdRuolo As Integer) As Agevolazione()
+  overload: DTO.MetodiAgevolazione.GetAgevolazioniVSArticolo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiAgevolazione.SetRibalta(System.Int32,System.Int32,System.String)
+  commentId: M:DTO.MetodiAgevolazione.SetRibalta(System.Int32,System.Int32,System.String)
+  id: SetRibalta(System.Int32,System.Int32,System.String)
+  parent: DTO.MetodiAgevolazione
+  langs:
+  - csharp
+  - vb
+  name: SetRibalta(Int32, Int32, String)
+  nameWithType: MetodiAgevolazione.SetRibalta(Int32, Int32, String)
+  fullName: DTO.MetodiAgevolazione.SetRibalta(System.Int32, System.Int32, System.String)
+  type: Method
+  source:
+    id: SetRibalta
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Agevolazione.cs
+    startLine: 251
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static int SetRibalta(int RibaltaDa, int RibaltaA, string IdEnte)
+    parameters:
+    - id: RibaltaDa
+      type: System.Int32
+    - id: RibaltaA
+      type: System.Int32
+    - id: IdEnte
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function SetRibalta(RibaltaDa As Integer, RibaltaA As Integer, IdEnte As String) As Integer
+  overload: DTO.MetodiAgevolazione.SetRibalta*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: DTO
+  commentId: N:DTO
+  name: DTO
+  nameWithType: DTO
+  fullName: DTO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DTO.MetodiAgevolazione.DeleteAgevolazione*
+  commentId: Overload:DTO.MetodiAgevolazione.DeleteAgevolazione
+  name: DeleteAgevolazione
+  nameWithType: MetodiAgevolazione.DeleteAgevolazione
+  fullName: DTO.MetodiAgevolazione.DeleteAgevolazione
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DTO.MetodiAgevolazione.DeleteCoefficiente*
+  commentId: Overload:DTO.MetodiAgevolazione.DeleteCoefficiente
+  name: DeleteCoefficiente
+  nameWithType: MetodiAgevolazione.DeleteCoefficiente
+  fullName: DTO.MetodiAgevolazione.DeleteCoefficiente
+- uid: DTO.MetodiAgevolazione.InsertOrUpdateDescrizione*
+  commentId: Overload:DTO.MetodiAgevolazione.InsertOrUpdateDescrizione
+  name: InsertOrUpdateDescrizione
+  nameWithType: MetodiAgevolazione.InsertOrUpdateDescrizione
+  fullName: DTO.MetodiAgevolazione.InsertOrUpdateDescrizione
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DTO.MetodiAgevolazione.InsertOrUpdateCoefficiente*
+  commentId: Overload:DTO.MetodiAgevolazione.InsertOrUpdateCoefficiente
+  name: InsertOrUpdateCoefficiente
+  nameWithType: MetodiAgevolazione.InsertOrUpdateCoefficiente
+  fullName: DTO.MetodiAgevolazione.InsertOrUpdateCoefficiente
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  nameWithType: Decimal
+  fullName: System.Decimal
+- uid: DTO.MetodiAgevolazione.GetAllAgevolazioni*
+  commentId: Overload:DTO.MetodiAgevolazione.GetAllAgevolazioni
+  name: GetAllAgevolazioni
+  nameWithType: MetodiAgevolazione.GetAllAgevolazioni
+  fullName: DTO.MetodiAgevolazione.GetAllAgevolazioni
+- uid: IRemInterfaceOSAP.Agevolazione[]
+  isExternal: true
+  name: Agevolazione[]
+  nameWithType: Agevolazione[]
+  fullName: IRemInterfaceOSAP.Agevolazione[]
+  nameWithType.vb: Agevolazione()
+  fullName.vb: IRemInterfaceOSAP.Agevolazione()
+  name.vb: Agevolazione()
+  spec.csharp:
+  - uid: IRemInterfaceOSAP.Agevolazione
+    name: Agevolazione
+    nameWithType: Agevolazione
+    fullName: IRemInterfaceOSAP.Agevolazione
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: IRemInterfaceOSAP.Agevolazione
+    name: Agevolazione
+    nameWithType: Agevolazione
+    fullName: IRemInterfaceOSAP.Agevolazione
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: DTO.MetodiAgevolazione.GetAllCoefficienti*
+  commentId: Overload:DTO.MetodiAgevolazione.GetAllCoefficienti
+  name: GetAllCoefficienti
+  nameWithType: MetodiAgevolazione.GetAllCoefficienti
+  fullName: DTO.MetodiAgevolazione.GetAllCoefficienti
+- uid: IRemInterfaceOSAP.Coefficienti[]
+  isExternal: true
+  name: Coefficienti[]
+  nameWithType: Coefficienti[]
+  fullName: IRemInterfaceOSAP.Coefficienti[]
+  nameWithType.vb: Coefficienti()
+  fullName.vb: IRemInterfaceOSAP.Coefficienti()
+  name.vb: Coefficienti()
+  spec.csharp:
+  - uid: IRemInterfaceOSAP.Coefficienti
+    name: Coefficienti
+    nameWithType: Coefficienti
+    fullName: IRemInterfaceOSAP.Coefficienti
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: IRemInterfaceOSAP.Coefficienti
+    name: Coefficienti
+    nameWithType: Coefficienti
+    fullName: IRemInterfaceOSAP.Coefficienti
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: DTO.MetodiAgevolazione.GetAgevolazioni*
+  commentId: Overload:DTO.MetodiAgevolazione.GetAgevolazioni
+  name: GetAgevolazioni
+  nameWithType: MetodiAgevolazione.GetAgevolazioni
+  fullName: DTO.MetodiAgevolazione.GetAgevolazioni
+- uid: DTO.MetodiAgevolazione.GetCoefficiente*
+  commentId: Overload:DTO.MetodiAgevolazione.GetCoefficiente
+  name: GetCoefficiente
+  nameWithType: MetodiAgevolazione.GetCoefficiente
+  fullName: DTO.MetodiAgevolazione.GetCoefficiente
+- uid: IRemInterfaceOSAP.Coefficienti
+  commentId: T:IRemInterfaceOSAP.Coefficienti
+  parent: IRemInterfaceOSAP
+  isExternal: true
+  name: Coefficienti
+  nameWithType: Coefficienti
+  fullName: IRemInterfaceOSAP.Coefficienti
+- uid: IRemInterfaceOSAP
+  commentId: N:IRemInterfaceOSAP
+  isExternal: true
+  name: IRemInterfaceOSAP
+  nameWithType: IRemInterfaceOSAP
+  fullName: IRemInterfaceOSAP
+- uid: DTO.MetodiAgevolazione.GetAgevolazioniForMotore*
+  commentId: Overload:DTO.MetodiAgevolazione.GetAgevolazioniForMotore
+  name: GetAgevolazioniForMotore
+  nameWithType: MetodiAgevolazione.GetAgevolazioniForMotore
+  fullName: DTO.MetodiAgevolazione.GetAgevolazioniForMotore
+- uid: DTO.MetodiAgevolazione.GetAgevolazioniVSArticolo*
+  commentId: Overload:DTO.MetodiAgevolazione.GetAgevolazioniVSArticolo
+  name: GetAgevolazioniVSArticolo
+  nameWithType: MetodiAgevolazione.GetAgevolazioniVSArticolo
+  fullName: DTO.MetodiAgevolazione.GetAgevolazioniVSArticolo
+- uid: DTO.MetodiAgevolazione.GetElencoPercAgevolazioni*
+  commentId: Overload:DTO.MetodiAgevolazione.GetElencoPercAgevolazioni
+  name: GetElencoPercAgevolazioni
+  nameWithType: MetodiAgevolazione.GetElencoPercAgevolazioni
+  fullName: DTO.MetodiAgevolazione.GetElencoPercAgevolazioni
+- uid: DTO.MetodiAgevolazione.SetRibalta*
+  commentId: Overload:DTO.MetodiAgevolazione.SetRibalta
+  name: SetRibalta
+  nameWithType: MetodiAgevolazione.SetRibalta
+  fullName: DTO.MetodiAgevolazione.SetRibalta

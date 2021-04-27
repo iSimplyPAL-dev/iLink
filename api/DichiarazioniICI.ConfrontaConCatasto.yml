@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.ConfrontaConCatasto
+  commentId: N:DichiarazioniICI.ConfrontaConCatasto
+  id: DichiarazioniICI.ConfrontaConCatasto
+  children:
+  - DichiarazioniICI.ConfrontaConCatasto.CConfrontaConCatasto
+  - DichiarazioniICI.ConfrontaConCatasto.ConfrontaConCatasto
+  - DichiarazioniICI.ConfrontaConCatasto.ElaborazioniCatasto
+  langs:
+  - csharp
+  - vb
+  name: DichiarazioniICI.ConfrontaConCatasto
+  nameWithType: DichiarazioniICI.ConfrontaConCatasto
+  fullName: DichiarazioniICI.ConfrontaConCatasto
+  type: Namespace
+  assemblies:
+  - DichiarazioniICI
+references:
+- uid: DichiarazioniICI.ConfrontaConCatasto.CConfrontaConCatasto
+  commentId: T:DichiarazioniICI.ConfrontaConCatasto.CConfrontaConCatasto
+  name: CConfrontaConCatasto
+  nameWithType: CConfrontaConCatasto
+  fullName: DichiarazioniICI.ConfrontaConCatasto.CConfrontaConCatasto
+- uid: DichiarazioniICI.ConfrontaConCatasto.ConfrontaConCatasto
+  commentId: T:DichiarazioniICI.ConfrontaConCatasto.ConfrontaConCatasto
+  name: ConfrontaConCatasto
+  nameWithType: ConfrontaConCatasto
+  fullName: DichiarazioniICI.ConfrontaConCatasto.ConfrontaConCatasto
+- uid: DichiarazioniICI.ConfrontaConCatasto.ElaborazioniCatasto
+  commentId: T:DichiarazioniICI.ConfrontaConCatasto.ElaborazioniCatasto
+  name: ElaborazioniCatasto
+  nameWithType: ElaborazioniCatasto
+  fullName: DichiarazioniICI.ConfrontaConCatasto.ElaborazioniCatasto

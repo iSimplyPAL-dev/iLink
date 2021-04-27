@@ -1,0 +1,356 @@
+﻿*{font-family:Verdana, Arial, helvetica, sans-serif;}
+html body 
+{
+scrollbar-face-color: #999999; 
+scrollbar-highlight-color: #f7fff7; 
+scrollbar-shadow-color: #999999; 
+scrollbar-3dlight-color: #999999; 
+scrollbar-arrow-color: #fff; 
+scrollbar-track-color: #f7fff7; 
+scrollbar-base-color: #f7fff7
+}
+
+.SfondoVisualizza,.Sfondo,.CartListFooter,.bodypage,.bodydiv,.lstTab{background-color:#FFFFFF;}
+.SfondoGenerale, .CartListHead, .ContentHead_Title{background-color:#0066CC;}
+#btnRibaltaTesto{background-color:#ffffff;}
+
+#lblTitolo, #infoEnte, .ContentHead_Title{color: #ffffff;}
+
+.classeLegend{color:#000000;}
+.classeLegendPrincipale{color:#000000;}
+
+.BottoneAccept,.BottoneAnnulla, .BottoneApri, .BottoneApriElaborazioni,.BottoneAttention
+, .BottoneCancella,.BottoneClose
+, .BottoneExcel,.BottoneFlag
+, .BottoneGrafico,.BottoneGoTo
+,.BottoneHelp,.BottoneHelpMini, .BottoneHome
+, .BottoneModifica
+, .BottoneNewInsert
+, .BottoneOk
+, .BottonePay
+, .BottoneCreaFile, .BottoneRicerca
+, .BottoneSalva, .BottoneSoggetti,.BottoneSort, .BottoneStampa,.BottoneStop
+/*.BottoneAggDate, .BottoneAnnullaAvviso, .BottoneApri, .BottoneWord, .BottoneAssocia, .BottoneBollettino, .BottoneBonifica, .BottoneAttivaSgravi
+, .BottoneFolderAccept, .BottoneCalcolo, .BottoneCalcolo, .BottoneCalendario, .BottoneCalendario, .BottoneClose, .BottoneCreaFile, .BottoneCreaFile, .BottoneCreaFile, .BottoneDatiAggiuntivi, .BottoneDuplica
+, .BottoneElabora, .BottoneFirst, .BottoneForzaDati, .BottoneGestioneFoto, .BottoneGIS, .BottoneGoToCalcoloICI, .BottoneUserHome, .BottoneImport, .BottoneSalva, .BottoneJudgeHammer
+, .BottoneLast, .BottoneLessMoney, .BottoneLettera, .BottoneMisure, .BottoneMoney, .BottoneMoreMoney, .BottoneNext, .BottoneNoMoney, .BottoneNumerazione, .BottonePopolaAppoggio, .BottonePulisci, .BottonePreview
+, .BottonePrevious, .BottoneSalva, .BottoneRateizzazioni, .BottoneElabora, .BottoneRibalta, .BottoneSalva, .BottoneSalvaRipulisci, .BottoneDownload, .BottoneSituazioneUI
+, .BottoneStampaAlt, .BottoneTerritorio, .BottoneTesto, .BottoneUserHome, .BottoneApri, .BottoneVisto, .BottoneVoltura, .BottoneWord*/
+{
+    cursor: pointer;
+    border: 0px;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-color: Transparent;
+    color: #FFFFFF;
+}
+
+/************* BOTTONI *************************************/
+.BottoneAccept{background-image:url(images/Bottoni/Accept.png);}
+.BottoneApriElaborazioni			{background-image:url(images/Bottoni/gara_Date-and-Time-icon.png);}
+.BottoneCancella					{background-image:url(images/Bottoni/cestino.png);}
+.BottoneClose{background-image:url(images/Bottoni/gara_folder-full-delete-icon.png);}
+.BottoneFlag{background-image:url(images/Bottoni/gara_Flag-red-icon.png);}
+.BottoneExcel						{background-image:url(images/Bottoni/excel.png);}
+.BottoneAttention{background-image:url(images/Bottoni/gara_Status-dialog-warning-icon.png);}
+.BottoneGoTo{background-image:url(images/Bottoni/gara_Actions-arrow-right-icon.png);}
+.BottoneHome{background-image:url(images/Bottoni/home.png);}
+.BottoneHelp{background-image:url(images/Bottoni/gara_help-icon.png);}
+.BottoneHelpMini{background-image:url(images/Bottoni/gara_helpmini-icon.png);}
+.BottoneOk{background-image:url(images/Bottoni/spunta_s.png);}
+.BottoneRicerca{background-image:url(images/Bottoni/ricerca.png);}
+.BottoneSort{background-image:url(images/Bottoni/sort.png);}
+.BottoneAnnulla{background-image:url(images/Bottoni/annulla.png);}
+.BottoneGrafico						{background-image:url(images/Bottoni/Pie-chart-icon.png);}
+.BottoneSalva{background-image:url(images/Bottoni/salva.png);}
+.BottoneStampa{background-image:url(images/Bottoni/printer-print.png);}
+.BottoneSoggetti					{background-image:url(images/Bottoni/Soggetti.png);}
+.BottoneModifica					{background-image:url(images/Bottoni/modifica.png);}
+.BottoneNewInsert					{background-image:url(images/Bottoni/nuovoinserisci.png);}
+.BottoneApri{background-image:url(images/Bottoni/apri1.png);}
+.BottoneCreaFile{background-image:url(images/Bottoni/nuovoinserisci2.png);}
+.BottoneStop{background-image:url(images/Bottoni/Stop.png);}
+.BottonePay{background-image:url(images/Bottoni/Credit-Card-icon.png);}
+/*.BottoneAggDate						{background-image:url(images/Bottoni/AggiornamentoDate.png);}
+.BottoneAnnullaAvviso				{background-image:url(images/Bottoni/chiudi.png);}
+,.BottoneApri,.BottoneApri   {background-image:url(images/Bottoni/apri1.png);}
+.BottoneWord,.BottoneWord	{background-image:url(images/Bottoni/Word.png);}
+.BottoneAssocia						{background-image:url(images/Bottoni/papclip_originale.png);}
+.BottoneBonifica					{background-image:url(images/Bottoni/Associa.png);}
+.BottoneAttivaSgravi				{background-image:url(images/Bottoni/AttivaSgravi.png);}
+.BottoneBollettino					{background-image:url(images/Bottoni/mortgage-rate.png);}
+.BottoneFolderAccept						{background-image:url(images/Bottoni/spunta_s.png);}
+.BottoneCalcolo,.BottoneCalcolo    {background-image:url(images/Bottoni/CalcoloMisure1.png);}
+.BottoneCalendario					{background-image:url(images/Bottoni/calendario.png);}
+.BottoneCalendario					{background-image:url(images/Bottoni/icon-calendar.png);}
+.BottoneClose						{background-image:url(images/Bottoni/close.png);}
+.BottoneCreaFile					{background-image:url(images/Bottoni/imgAvaBadge.png);}
+.BottoneCreaFile,.BottoneCreaFile,.BottoneCreaFile	{background-image:url(images/Bottoni/nuovoinserisci2.png);}
+.BottoneDatiAggiuntivi				{background-image:url(images/Bottoni/DatiAggiuntivi.png);}
+.BottoneDuplica						{background-image:url(images/Bottoni/copy.png);}
+.BottoneElabora,.BottoneElabora {background-image:url(images/Bottoni/calcolo.png);}
+.BottoneFirst						{background-image:url(images/Bottoni/firstpg.png);}
+.BottoneForzaDati					{background-image:url(images/Bottoni/Tools.png);}
+.BottoneGestioneFoto				{background-image:url(images/Bottoni/foto_s.png);}
+.BottoneGIS         				{background-image:url(images/Bottoni/Maps.png);}
+.BottoneGoToCalcoloICI             {background-image:url(images/Bottoni/calc.png);}
+.BottoneUserHome,.BottoneUserHome	{background-image:url(images/Bottoni/casa.png);}
+.BottoneImport						{background-image:url(images/Bottoni/Bottone_acquisizione.png);}
+.BottoneSalva,.BottoneSalva,.BottoneSalva,.BottoneSalva    {background-image:url(images/Bottoni/salva.png);}
+.BottoneJudgeHammer		            {background-image:url(images/Bottoni/judge_hammer_exclamation.png);}
+.BottoneLast						{background-image:url(images/Bottoni/lastpg.png);}
+.BottoneLettera						{background-image:url(images/Bottoni/invia_pratica2.png);}
+.BottoneMisure						{background-image:url(images/Bottoni/Rulers.png);}
+.BottoneMoney						{background-image:url(images/Bottoni/Money.png);}
+.BottoneLessMoney					{background-image:url(images/Bottoni/LessMoney.png);}
+.BottoneMoreMoney					{background-image:url(images/Bottoni/MoreMoney.png);}
+.BottoneNoMoney						{background-image:url(images/Bottoni/NoMoney.png);}
+.BottoneNext						{background-image:url(images/Bottoni/nextpg.png);}
+.BottoneNumerazione				    {background-image: url(images/Bottoni/Invoice.png);}
+.BottonePDF							{background-image:url(images/Bottoni/pdf.png);}
+.BottonePopolaAppoggio				{background-image:url(images/Bottoni/icon_export.png);}
+.BottonePulisci						{background-image:url(images/Bottoni/chiudi.png);}
+.BottonePreview						{background-image:url(images/Bottoni/Preview-icon.jpg);}
+.BottonePrevious					{background-image:url(images/Bottoni/prevpg.png);}
+.BottoneRateizzazioni				{background-image:url(images/Bottoni/AddIn.png);}
+.BottoneRibalta						{background-image:url(images/Bottoni/Ribalta.png);}
+.BottoneSalvaRipulisci				{background-image:url(images/Bottoni/SalvaRipulisci.png);}
+.BottoneDownload						{background-image:url(images/Bottoni/download.png);}
+.BottoneSituazioneUI				{background-image:url(images/Bottoni/home_UI_small.png);}
+.BottoneStampaAlt					{background-image:url(images/Bottoni/PrintHS.png);}
+.BottoneTerritorio					{background-image:url(images/Bottoni/globe.png);}
+.BottoneTesto						{background-image:url(images/Bottoni/Info.png);}
+.BottoneVisto						{background-image:url(images/Bottoni/visto.png);}
+.BottoneVoltura						{background-image:url(images/Bottoni/key-go.png);}*/
+
+#btnRibaltaTesto,.btnList{font-weight:700;width:80px;height:20px;font-size:10pt;color:#000;cursor:pointer;border:0}
+.BottoniAccertamenti,.BottoniAccertamentiOver{font-weight:700;width:104px;height:20px;font-size:10pt;color:#000;cursor:pointer;border:0}
+.btnList,.BottoniAccertamenti{background-color:#ffffff;}
+.BottoniAccertamentiOver{background-color:#D2DCFF;}
+.btnAccedi{font-weight:700;background-color:#FFDBC6;width:80px;height:20px;font-size:10pt;color:#000;cursor:pointer;}
+.btnList_botton{font-weight:700;background-color:#ffffff;width:200px;height:15px;font-size:8pt;color:#000;cursor:pointer;border:0}
+.Bottone{font-weight:400;font-size:8pt;cursor:hand;color:#000;background-color:#E8F8FF;border-color:#FFF;border-width:thin;}
+.BottoniLink{font-weight:bolder;font-size:10pt;color:#000000;border-right-style:ridge;background-color:#aed4f8;border-bottom-style:ridge}
+.BottoneMappa{background-image:url(images/mappa.png);width:16px;height:16px;display:none}
+/************* BOTTONI *************************************/
+.SfondoVisualizza{font-size: x-small;}
+.SfondoGenerale{margin:6 2 2 0;}
+#lblTitolo,#infoEnte{font-weight: 700;font-size: 13pt;height: 20px;width:400px;}
+#info{font-size:12px;font-weight:700;line-height:12px;color:#fff; width:520px;height:20px;}
+.CartListHead{font-weight: bold;font-size: 10px;border-left: #696969 1px solid;color: #fff;border-bottom: #696969;height: 20px;}
+.ContentHead_Title{font-weight: bold;font-size: 13pt;height: 20px;}
+/******************************************************************************************************/
+.RigaSelezionata{font-weight:700;background-color:#ccff66;color:#000;font-size:10px }
+.margin_Zero{margin:0;}
+.Combo{border:#696969 2px solid;font-size:11px;text-transform:capitalize;color:#000000;}
+.Menu{font-weight:400;font-size:7pt;cursor:pointer;color:#FFF;}
+.SottoMenu{font-weight:400;font-size:7pt;color:#FFF;cursor:pointer;}
+.CartListItem, .CartListItem_Normal{background-color:#fff;border-bottom:#696969;border-left:#696969 1px solid;color:#000;font-size:10px;padding-left:5px;}
+.CartListItemAlt, .CartListItemAlt_Normal{background-color:#f5f5f5;border-bottom:#696969;border-left:#696969 1px solid;color:#000;font-size:10px;padding-left:5px;}
+.CartListItemSel{color:#0ff;padding-left:5px;font-size:10px;}
+.CartListFooter{font-weight: normal;font-size: 10px;color: #000000;line-height: 10pt;}
+/**** INPUT ****/
+.Input_Label_14{color:#000000;font-size:14px;}
+.Input_Label{color:#000000;font-size:11px;}
+.Input_Label_login{color:#FFF;font-weight:700;font-size:8pt;}
+.Input_Label_login_Account{color:#FFF;font-weight:700;font-size:11pt;}
+.Input_Label_login_Account14{font-weight:700;font-size:15pt;color:#FFF;font-style:italic;}
+.Input_Label_bold{font-weight:700;font-size:10px;}
+.Input_Label_UpperCase{color:#000000;font-size:10px}/*;text-transform:uppercase;*/
+.Input_Label_PopUp{color:#000000;font-size:18px}/*;text-transform:uppercase;*/
+.Input_Label_disabled{font-size:11px;color:#C0C0C0;}
+.Input_Label_title{font-size:11px;font-weight:700;line-height:12px;color:#0066CC;}
+.Input_Number_Generali,.Input_Text, .Input_Text_Center,.Input_Text_Right{border-right:#ADC3FF 1px solid;border-top:#009 1px solid;border-left:#009 1px solid;border-bottom:#ADC3FF 1px solid;font-size:11px;color:#000000;}/*;text-transform:uppercase;*/
+.Input_Text_Center{text-align:center;}
+.Input_Number_Generali,.Input_Text_Right{text-align:right;}
+.Input_Text_Normal{border: #edee6e 1px inset;color: #000000;font-size: 11px;text-transform:lowercase ;}
+.Input_Text_No_Upper{border:#ffffff 1px inset;color:#000000;font-size:11px;}
+.Input_Text_bold{border:#ffffff 1px inset;color:#000000;font-size:14px;font-weight:700;}/*;text-transform:uppercase;*/
+.Input_Text_Enable_Red_Right,.Input_Text_Enable_Red_Left{border:#ffffff 1px solid;font-weight:400;font-size:11px;vertical-align:baseline;color:#000000;background-color:buttonhighlight;}/*;text-transform:uppercase;*/
+.Input_Text_Enable_Red_Right{text-align:right;}
+.Input_Text_Enable_Red_Left{text-align:left;}
+.Input_Text_LowerCase,.Input_Text_Numbers {border:#ffffff 1px inset;color:#000000;font-size:11px;}
+.Input_Text_LowerCase{text-transform:lowercase;}
+.Input_Text_Numbers{text-align:right}/*;text-transform:uppercase;*/
+.Input_CheckBox{font-size:10px;color:#000000;border:#ffffff 1px inset;}
+.Input_CheckBox_NoBorder{font-size:10px;color:#000000;}
+.Input_Radio{font-size:10px;color:#000000;}
+/***********/
+.TableParamRicerca{border:1px solid #000000;}
+.TableRisultRicerca{border-top:#000000 thin solid;border-color:#000000;}
+.TableFrame{background-color:#0079ff;border:1px solid #0079ff;}
+.BottoniLink{font-weight:bolder;font-size:10pt;color:#000000;border-right-style:ridge;background-color:#aed4f8;border-bottom-style:ridge;}
+.riga_tabella_mouse_over,.riga_tabella_mouse_over_Normal{background-color:#e1f8ff;color:#000000;}
+.riga_tabella_mouse_over{font-size:10px}/*;text-transform:uppercase;*/
+.riga_tabella_mouse_over_Normal{font-size: 10px;}
+.riga_tabella_Normal{color: #000;font-size: 10px;}
+.riga_tabella{font-size:10px;color:#000}/*;text-transform:uppercase;*/
+.header{font-weight:700;font-size:8pt;color:#000;background-color:#993366;}
+.Footer{font-weight:700;font-size:10px;color:#000000;background-color:#E8F8FF;}
+.ContentHead{font-weight:400;font-size:12px;color:#000000;height:20px;background-color:#E8F8FF;}
+.Paging{font-size:10px;color:#800000;background-color:#e8f8ff;}
+.NormalBold_title{font-size:12px;font-weight:700;line-height:12px;}
+.NormalBold{font-size:10px;font-weight:700;line-height:10px;}
+.Title_popUp{font-weight:400;font-size:large;color:blue;font-style:italic;}
+.lstTabRow{font-weight:700;font-size:12px;color:#000000;border-bottom:#000000 1px solid;font-variant:small-caps;}
+.AnagraficaRow{font-weight:700;font-size:15px;color:#000000;font-variant:small-caps;}
+.lstTab{border:#ffffff 1px solid;}
+.CODICEFISCALE{background-position:center center;background-attachment:fixed;background-image:url(images/Lista.png);width:16px;cursor:hand;position:static;height:16px;}
+.NormalRed{font-weight:700;font-size:12px;color:red;}
+.ErrorMessage{font-weight:700;font-size:11px;color:#000;font-style:italic;}
+.bordoIFRAME{border:#000000 0px solid;background-image:none;}
+.div_scroll_menu{width:100%;height:536px;overflow:auto;}
+.DIV_SCROLL{width:100%; height:60px; overflow:auto; }
+.LABELBOLD{font-weight:700;font-size:8pt;color:#000;}
+.ERRORSTYLE{font-weight:700;font-size:10px;color:red;}
+/**** FIELDSET ****/
+.classeLegend{font-weight:400;font-size:8pt;}
+.classeLegendPrincipale{font-weight:700;font-size:11px;}
+.classeFiledSet{border:0;border-top:#d3d3d3 1px solid;width:98%;text-align:center;}
+.classeFiledSet_WHITE{border:0;border-top:#d3d3d3 1px solid;width:98%;background-color:#fff;text-align:center;}
+.classeFiledSet_TEST{border:0;border-top:#d3d3d3 1px solid;width:75%;background-color:#60f;text-align:center;}
+.classeFiledSet100{border:0;border-top:#d3d3d3 1px solid;width:100%;text-align:center;}
+fieldset{border:0;border-top:#d3d3d3 1px solid;width:100%;}
+.classeFiledSetIframe{border:0;border-top:#000000 1px solid;width:98%;}
+.classeFiledSetIframe100{border:0;border-top:#000000 1px solid;width:100%;}
+/******************/
+/**** ATTESA ****/
+#attesa,#attesaGestioneAtti,#attesaGestioneAtti_popup,#attesaGestioneAtti_ATTI,#attesaCarica,#attesaElabAccertamento{position:absolute;background-color:#FFF;border:1px solid #4682B4;font-weight:700;font-size:12px;text-align:center;}
+#attesa{top:290px;left:250px;width:280px;height:150px;}
+#attesaGestioneAtti{top:180px;left:250px;width:280px;height:150px;}
+#attesaGestioneAtti_popup{top:180px;left:150px;width:232px;height:144px;}
+#attesaGestioneAtti_ATTI{top:180px;left:250px;width:232px;height:144px;}
+#attesaCarica,#attesaElabAccertamento{top:140px;left:330px;width:310px;height:150px;}
+#ElaborazioneIncorso_1{font-weight:700;font-size:12px;left:250px;width:280px;position:absolute;top:150px;height:150px;background-color:#E8F8FF;text-align:center;}
+.wait{font-size:10pt;font-weight:700;background-color:#E8F8FF;}
+/****************/
+/*** float ******/
+.fl{float:left}
+.fr{float:right}
+.cb{clear:both}
+/****************/
+.displaynone{display:none}
+.Centrato{text-align:center;}
+.AllineaSinistra{text-align:left;}
+.tdt,.tdb{border-top:#ffffff 1px solid;}
+.tdl{border-left:0 solid #000;}
+.tdr{border-right:0 solid #000;}
+.BackGround{background-color:#FFF;}
+.BackGround_E8F8FF{background-color:#E8F8FF;}
+.hrlogin{height:1pt;color:#fff;}
+.hr{height:1px;margin:0 0 0 -18px;padding:0}
+.labellogOff{left:0;position:absolute;top:0;height:10px;text-align:left;font-weight:700;font-size:7pt;color:#FFF;}
+.logOff{font-weight:700;font-size:7pt;color:#FFF;cursor:pointer;text-decoration:none;}
+.barra{font-size:10px;font-weight:700;color:red;}
+.classeFiledSetRicerca{border:#000000 1px solid;width:98%;}
+#listaUtenti{height:320px;overflow:auto;}
+#divchiudi a{color:#000;text-decoration:none;}
+.Link_Label{color:#000000;font-size:11px;text-decoration:underline;cursor:hand;}
+.downloadv{position:absolute;background-color:#FFF;border:1px solid #4682B4;font-weight:700;font-size:12px;text-align:center;top:290px;left:250px;width:280px;height:100px;}
+.DettagliContribuente
+{
+	/*text-transform: uppercase;*/
+	color: #2d8e9f;
+	font-size: 8pt;
+	font-weight: 400;
+}
+.classeFiledSetNoBorder{border:0;width:98%;}
+.CartListHead a,CartListHead a:hover{font-weight:700;font-size:10px;color:#FFF;border-bottom:#696969;}
+.riga_menu{font-weight:bolder;font-size:10px;text-transform:capitalize;color:#000000;}
+.divOver{overflow:auto;width:100%;height:380px;}
+.aliquote{list-style-type:decimal;}
+.aliquote li{padding:0 0 2px;}
+.aliquote span{font-weight:700;}
+.aliquote ul{list-style-type:lower-roman;}
+.div_scroll_dati_attuali{width:100%;height:500px;overflow:auto;}
+.a_nascodi{text-decoration:none;color:#000;font-weight:700;}
+.a_nascodi:visited{color:#000;}
+.a_nascodi img{border:none;}
+.divricerca{width:100%;text-align:left;}
+.divricerca a,.divricerca a:visited{font-weight:700;color:#000000;font-size:x-small;cursor:hand;font-variant:small-caps;}
+.divricerca img{cursor:hand;}
+#RibesgridLettPreAcc td{font-size:xx-small;}
+.dettaglioGB label{width:200px;color:#000000;}
+.Legend{font-weight:700;font-size:8pt;color:#0066CC;}
+.trasparente{background-image:url(images/menu/trasparente.png);background-repeat:no-repeat;cursor:default;border:0;width:30px;height:30px;}
+.cancella{background-image:url(images/Bottoni/modifica.png);background-repeat:no-repeat;cursor:hand;border:0;width:30px;height:30px;}
+#modVerifica{background-color:#ff9a63;border:#000 1px solid;width:161px;float:left;height:76px;padding:5px;}
+.Input_Text_Default{border-right:#ADC3FF 1px solid;border-bottom:#ADC3FF 1px solid;border-left:#009 1px solid;border-top:#009 1px solid;color:#000000;font-size:11px;}
+.Header_Label{font-weight:700;font-size:x-small;color:#000000;font-variant:small-caps;border-bottom:#000000 1px solid;}
+.MenuOver,.SottoMenuOver{font-weight:400;font-size:7pt;color:#fff;cursor:pointer;}
+.titlebody,.titlebold{font-size:11px;font-weight:700;line-height:12px;}
+.dati_anagrafe_tarsu_blu{border:#4682B4 1px solid;color:#B22222;font-size:12px;letter-spacing:1px;background-color:#FFF;}
+.divContribh,.downloadh{display:none;}
+.LegendRed{font-weight:700;font-size:8pt;color:#b22222;}
+.AllineaDestra{text-align:right;}
+.classeFieldSetRicerca,.FiledSetRicerca{border:#000000 1px solid;width:98%;}
+
+/* GESTIONE ATTI */
+.SFONDO_TABELLA_TOTALI{border: #4682B4 1px solid;background-color: #fafad2}
+.dati_anagrafe_tarsu_blu{border: #4682b4 1px solid;font-size: 12px;color: #B22222;letter-spacing: 1px;background-color: #fff}
+.riga_menu{font-weight: bolder;font-size: 10px;text-transform: capitalize;color: #000000;}
+.bordo_tabelle{border: #993366 1px solid}
+.intest_riga_tabella{border: #993366 1px solid;font-weight: bolder;font-size: 13px;text-transform: capitalize;color: #fff;background-color: #774970;}
+.riga_tabella_white{border: #993366 thin solid;font-weight: bolder;font-size: 10px;text-transform: capitalize;color: #fff;background-color: #774970;}
+.riga_menu_11{font-weight: bolder;font-size: 11px;text-transform: capitalize;}
+.riga_menu_verde{font-weight: bolder;font-size: 10px;text-transform: capitalize;color: #32CD32;}
+.riga_menu_mouse_over{font-weight: bolder;font-size: 10px;text-transform: capitalize;color: red;}
+#griglia {padding:0;margin: 10px; }
+.divDettaglioAtto{height:500px;width:98%; border:0px solid #0079ff; overflow:auto;}
+.divDettaglioAttoh{display:none}
+/* GESTIONE ATTI */
+
+/*motivazioni*/
+.chiudi{margin:0;height:30px;padding:0 0 0 360px;text-align:left;width:100%; }
+.chiudi a{color:#fff;font-weight:700;text-decoration:none }
+.divMotivazioneh{display:none}
+.divMotivazionev{background-color:#F8F8F8; font-size:12px;display:inline;position:absolute;top:20px;left:200px;width:400px;height:250px;border:solid 2px  #4682B4;}
+.cmotivazione{padding-left:2px;}
+.descMotivazione{overflow-x:none;overflow-y:auto;height:117px;}
+
+/*Riduzioni*/
+#tblRiduzioni{border:1px solid #000;border-collapse:collapse;font-size:12px;}
+#tblRiduzioni td{margin:0;border:1px solid #000;padding:2px;}
+#tblRiduzioni thead{color:#000;font-weight:bold;text-align:center}
+#tblRiduzioni tbody{font-size:11px;}
+
+/********************/
+
+.padding_left_10{padding:0 0 0 10px}
+.padding_top_5{padding:6px 0 0 0}
+.bold{font-weight:700 }
+.pointer{cursor:pointer}
+/*.centrato{margin:0 auto}*/
+.overflow_x_hidden{overflow-x: hidden}
+
+/* width */
+.w40{width:40%}
+.w58{width:58%}
+
+
+/* height */
+.h230{height:230px}
+.h250{height:250px}
+
+.TableWithBorder
+{
+	BORDER-RIGHT: darkblue 1px solid;
+	BORDER-TOP: darkblue 1px solid;
+	BORDER-LEFT: darkblue 1px solid;
+	BORDER-BOTTOM: darkblue 1px solid
+}
+
+.SfondoTitolo
+{
+	background-color: #d80001;
+}
+
+
+.comboblack
+{
+    BORDER-RIGHT: black 1px solid;
+    BORDER-TOP: black 1px solid;
+    BORDER-LEFT: black 1px solid;
+    BORDER-BOTTOM: black 1px solid;
+}

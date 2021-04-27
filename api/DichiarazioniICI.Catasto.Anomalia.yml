@@ -1,0 +1,705 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.Catasto.Anomalia
+  commentId: T:DichiarazioniICI.Catasto.Anomalia
+  id: Catasto.Anomalia
+  parent: DichiarazioniICI
+  children:
+  - DichiarazioniICI.Catasto.Anomalia.Catasto
+  - DichiarazioniICI.Catasto.Anomalia.FabNoTit
+  - DichiarazioniICI.Catasto.Anomalia.NoDiritto
+  - DichiarazioniICI.Catasto.Anomalia.NoPoss
+  - DichiarazioniICI.Catasto.Anomalia.NoSogRif
+  - DichiarazioniICI.Catasto.Anomalia.PerSoggetto
+  - DichiarazioniICI.Catasto.Anomalia.Rurale
+  - DichiarazioniICI.Catasto.Anomalia.SogNoTit
+  - DichiarazioniICI.Catasto.Anomalia.TerNoTit
+  - DichiarazioniICI.Catasto.Anomalia.TitNoFab
+  - DichiarazioniICI.Catasto.Anomalia.TitNoSog
+  - DichiarazioniICI.Catasto.Anomalia.TitNoTer
+  langs:
+  - csharp
+  - vb
+  name: Catasto.Anomalia
+  nameWithType: Catasto.Anomalia
+  fullName: DichiarazioniICI.Catasto.Anomalia
+  type: Class
+  source:
+    id: Anomalia
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Catasto\ClsCatasto.cs
+    startLine: 28
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI
+  syntax:
+    content: public class Anomalia
+    content.vb: Public Class Anomalia
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DichiarazioniICI.Catasto.Anomalia.TitNoSog
+  commentId: F:DichiarazioniICI.Catasto.Anomalia.TitNoSog
+  id: TitNoSog
+  parent: DichiarazioniICI.Catasto.Anomalia
+  langs:
+  - csharp
+  - vb
+  name: TitNoSog
+  nameWithType: Catasto.Anomalia.TitNoSog
+  fullName: DichiarazioniICI.Catasto.Anomalia.TitNoSog
+  type: Field
+  source:
+    id: TitNoSog
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Catasto\ClsCatasto.cs
+    startLine: 30
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI
+  syntax:
+    content: public const int TitNoSog = 1
+    return:
+      type: System.Int32
+    content.vb: Public Const TitNoSog As Integer = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.Catasto.Anomalia.SogNoTit
+  commentId: F:DichiarazioniICI.Catasto.Anomalia.SogNoTit
+  id: SogNoTit
+  parent: DichiarazioniICI.Catasto.Anomalia
+  langs:
+  - csharp
+  - vb
+  name: SogNoTit
+  nameWithType: Catasto.Anomalia.SogNoTit
+  fullName: DichiarazioniICI.Catasto.Anomalia.SogNoTit
+  type: Field
+  source:
+    id: SogNoTit
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Catasto\ClsCatasto.cs
+    startLine: 31
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI
+  syntax:
+    content: public const int SogNoTit = 2
+    return:
+      type: System.Int32
+    content.vb: Public Const SogNoTit As Integer = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.Catasto.Anomalia.TitNoFab
+  commentId: F:DichiarazioniICI.Catasto.Anomalia.TitNoFab
+  id: TitNoFab
+  parent: DichiarazioniICI.Catasto.Anomalia
+  langs:
+  - csharp
+  - vb
+  name: TitNoFab
+  nameWithType: Catasto.Anomalia.TitNoFab
+  fullName: DichiarazioniICI.Catasto.Anomalia.TitNoFab
+  type: Field
+  source:
+    id: TitNoFab
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Catasto\ClsCatasto.cs
+    startLine: 32
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI
+  syntax:
+    content: public const int TitNoFab = 3
+    return:
+      type: System.Int32
+    content.vb: Public Const TitNoFab As Integer = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.Catasto.Anomalia.FabNoTit
+  commentId: F:DichiarazioniICI.Catasto.Anomalia.FabNoTit
+  id: FabNoTit
+  parent: DichiarazioniICI.Catasto.Anomalia
+  langs:
+  - csharp
+  - vb
+  name: FabNoTit
+  nameWithType: Catasto.Anomalia.FabNoTit
+  fullName: DichiarazioniICI.Catasto.Anomalia.FabNoTit
+  type: Field
+  source:
+    id: FabNoTit
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Catasto\ClsCatasto.cs
+    startLine: 33
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI
+  syntax:
+    content: public const int FabNoTit = 4
+    return:
+      type: System.Int32
+    content.vb: Public Const FabNoTit As Integer = 4
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.Catasto.Anomalia.NoPoss
+  commentId: F:DichiarazioniICI.Catasto.Anomalia.NoPoss
+  id: NoPoss
+  parent: DichiarazioniICI.Catasto.Anomalia
+  langs:
+  - csharp
+  - vb
+  name: NoPoss
+  nameWithType: Catasto.Anomalia.NoPoss
+  fullName: DichiarazioniICI.Catasto.Anomalia.NoPoss
+  type: Field
+  source:
+    id: NoPoss
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Catasto\ClsCatasto.cs
+    startLine: 34
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI
+  syntax:
+    content: public const int NoPoss = 5
+    return:
+      type: System.Int32
+    content.vb: Public Const NoPoss As Integer = 5
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.Catasto.Anomalia.NoSogRif
+  commentId: F:DichiarazioniICI.Catasto.Anomalia.NoSogRif
+  id: NoSogRif
+  parent: DichiarazioniICI.Catasto.Anomalia
+  langs:
+  - csharp
+  - vb
+  name: NoSogRif
+  nameWithType: Catasto.Anomalia.NoSogRif
+  fullName: DichiarazioniICI.Catasto.Anomalia.NoSogRif
+  type: Field
+  source:
+    id: NoSogRif
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Catasto\ClsCatasto.cs
+    startLine: 35
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI
+  syntax:
+    content: public const int NoSogRif = 6
+    return:
+      type: System.Int32
+    content.vb: Public Const NoSogRif As Integer = 6
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.Catasto.Anomalia.NoDiritto
+  commentId: F:DichiarazioniICI.Catasto.Anomalia.NoDiritto
+  id: NoDiritto
+  parent: DichiarazioniICI.Catasto.Anomalia
+  langs:
+  - csharp
+  - vb
+  name: NoDiritto
+  nameWithType: Catasto.Anomalia.NoDiritto
+  fullName: DichiarazioniICI.Catasto.Anomalia.NoDiritto
+  type: Field
+  source:
+    id: NoDiritto
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Catasto\ClsCatasto.cs
+    startLine: 36
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI
+  syntax:
+    content: public const int NoDiritto = 7
+    return:
+      type: System.Int32
+    content.vb: Public Const NoDiritto As Integer = 7
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.Catasto.Anomalia.Rurale
+  commentId: F:DichiarazioniICI.Catasto.Anomalia.Rurale
+  id: Rurale
+  parent: DichiarazioniICI.Catasto.Anomalia
+  langs:
+  - csharp
+  - vb
+  name: Rurale
+  nameWithType: Catasto.Anomalia.Rurale
+  fullName: DichiarazioniICI.Catasto.Anomalia.Rurale
+  type: Field
+  source:
+    id: Rurale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Catasto\ClsCatasto.cs
+    startLine: 37
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI
+  syntax:
+    content: public const int Rurale = 8
+    return:
+      type: System.Int32
+    content.vb: Public Const Rurale As Integer = 8
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.Catasto.Anomalia.Catasto
+  commentId: F:DichiarazioniICI.Catasto.Anomalia.Catasto
+  id: Catasto
+  parent: DichiarazioniICI.Catasto.Anomalia
+  langs:
+  - csharp
+  - vb
+  name: Catasto
+  nameWithType: Catasto.Anomalia.Catasto
+  fullName: DichiarazioniICI.Catasto.Anomalia.Catasto
+  type: Field
+  source:
+    id: Catasto
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Catasto\ClsCatasto.cs
+    startLine: 38
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI
+  syntax:
+    content: public const int Catasto = 9
+    return:
+      type: System.Int32
+    content.vb: Public Const Catasto As Integer = 9
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.Catasto.Anomalia.PerSoggetto
+  commentId: F:DichiarazioniICI.Catasto.Anomalia.PerSoggetto
+  id: PerSoggetto
+  parent: DichiarazioniICI.Catasto.Anomalia
+  langs:
+  - csharp
+  - vb
+  name: PerSoggetto
+  nameWithType: Catasto.Anomalia.PerSoggetto
+  fullName: DichiarazioniICI.Catasto.Anomalia.PerSoggetto
+  type: Field
+  source:
+    id: PerSoggetto
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Catasto\ClsCatasto.cs
+    startLine: 39
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI
+  syntax:
+    content: public const int PerSoggetto = 10
+    return:
+      type: System.Int32
+    content.vb: Public Const PerSoggetto As Integer = 10
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.Catasto.Anomalia.TitNoTer
+  commentId: F:DichiarazioniICI.Catasto.Anomalia.TitNoTer
+  id: TitNoTer
+  parent: DichiarazioniICI.Catasto.Anomalia
+  langs:
+  - csharp
+  - vb
+  name: TitNoTer
+  nameWithType: Catasto.Anomalia.TitNoTer
+  fullName: DichiarazioniICI.Catasto.Anomalia.TitNoTer
+  type: Field
+  source:
+    id: TitNoTer
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Catasto\ClsCatasto.cs
+    startLine: 40
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI
+  syntax:
+    content: public const int TitNoTer = 11
+    return:
+      type: System.Int32
+    content.vb: Public Const TitNoTer As Integer = 11
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.Catasto.Anomalia.TerNoTit
+  commentId: F:DichiarazioniICI.Catasto.Anomalia.TerNoTit
+  id: TerNoTit
+  parent: DichiarazioniICI.Catasto.Anomalia
+  langs:
+  - csharp
+  - vb
+  name: TerNoTit
+  nameWithType: Catasto.Anomalia.TerNoTit
+  fullName: DichiarazioniICI.Catasto.Anomalia.TerNoTit
+  type: Field
+  source:
+    id: TerNoTit
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Catasto\ClsCatasto.cs
+    startLine: 41
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI
+  syntax:
+    content: public const int TerNoTit = 12
+    return:
+      type: System.Int32
+    content.vb: Public Const TerNoTit As Integer = 12
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: DichiarazioniICI
+  commentId: N:DichiarazioniICI
+  name: DichiarazioniICI
+  nameWithType: DichiarazioniICI
+  fullName: DichiarazioniICI
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

@@ -1,0 +1,2906 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ConfigurazioneTariffe
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ConfigurazioneTariffe
+   ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe">
+  
+  
+  <h1 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe" class="text-break">Class ConfigurazioneTariffe
+  </h1>
+  <div class="markdown level0 summary"><p>Pagina per la consultazione/gestione delle tariffe.
+Le possibili opzioni sono:</p>
+<ul>
+<li>Ribalta</li>
+<li>Nuovo inserimento</li>
+<li>Salva</li>
+<li>Elimina</li>
+<li>Ricerca</li>
+</ul>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.Web.UI.Control</span></div>
+    <div class="level2"><span class="xref">System.Web.UI.TemplateControl</span></div>
+    <div class="level3"><span class="xref">System.Web.UI.Page</span></div>
+    <div class="level4"><a class="xref" href="OPENgovTOCO.BasePage.html">BasePage</a></div>
+    <div class="level5"><span class="xref">ConfigurazioneTariffe</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.IComponent</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">System.Web.UI.IParserAccessor</span></div>
+    <div><span class="xref">System.Web.UI.IUrlResolutionService</span></div>
+    <div><span class="xref">System.Web.UI.IDataBindingsAccessor</span></div>
+    <div><span class="xref">System.Web.UI.IControlBuilderAccessor</span></div>
+    <div><span class="xref">System.Web.UI.IControlDesignerAccessor</span></div>
+    <div><span class="xref">System.Web.UI.IExpressionsAccessor</span></div>
+    <div><span class="xref">System.Web.UI.INamingContainer</span></div>
+    <div><span class="xref">System.Web.UI.IFilterResolutionService</span></div>
+    <div><span class="xref">System.Web.IHttpHandler</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="OPENgovTOCO.BasePage.html#OPENgovTOCO_BasePage_authCookie">BasePage.authCookie</a>
+    </div>
+    <div>
+      <a class="xref" href="OPENgovTOCO.BasePage.html#OPENgovTOCO_BasePage_RegisterScript_System_String_System_Type_">BasePage.RegisterScript(String, Type)</a>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.CreateHtmlTextWriter(System.IO.TextWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.CreateHtmlTextWriterFromType(System.IO.TextWriter, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.FindControl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.DeterminePostBackMode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.LoadPageStateFromPersistenceMedium()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SetFocus(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SetFocus(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetPostBackEventReference(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetPostBackEventReference(System.Web.UI.Control, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetPostBackClientEvent(System.Web.UI.Control, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetPostBackClientHyperlink(System.Web.UI.Control, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsClientScriptBlockRegistered(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsStartupScriptRegistered(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterArrayDeclaration(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterHiddenField(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterClientScriptBlock(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterStartupScript(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterOnSubmitStatement(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterRequiresControlState(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RequiresControlState(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.UnregisterRequiresControlState(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterRequiresPostBack(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RaisePostBackEvent(System.Web.UI.IPostBackEventHandler, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterRequiresRaiseEvent(System.Web.UI.IPostBackEventHandler)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.MapPath(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnLoadComplete(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnPreRenderComplete(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.FrameworkInitialize()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.InitializeCulture()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnPreInit(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnInitComplete(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnPreLoad(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterRequiresViewStateEncryption()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnSaveStateComplete(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Render(System.Web.UI.HtmlTextWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterViewStateHandler()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SavePageStateToPersistenceMedium(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ExecuteRegisteredAsyncTasks()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterAsyncTask(System.Web.UI.PageAsyncTask)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.AddOnPreRenderCompleteAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.AddOnPreRenderCompleteAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Validate()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Validate(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetValidators(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.VerifyRenderingInServerForm(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetDataItem()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Application</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Context</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ClientScript</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ClientTarget</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ClientQueryString</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ErrorPage</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsCallback</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.UniqueFilePathSuffix</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.AutoPostBackControl</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Header</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.MaintainScrollPositionOnPostBack</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Master</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.MasterPageFile</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PageStatePersister</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Trace</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Request</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Response</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Server</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Cache</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Session</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Title</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Theme</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.StyleSheetTheme</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.User</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsCrossPagePostBack</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsPostBack</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.EnableViewState</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ViewStateUserKey</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Visible</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsPostBackEventControlRegistered</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsValid</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Validators</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PreviousPage</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Culture</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.UICulture</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.AsyncTimeout</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SmartNavigation</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsAsync</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Form</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PageAdapter</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Items</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.LoadComplete</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PreInit</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PreLoad</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PreRenderComplete</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.InitComplete</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SaveStateComplete</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.Construct()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.OnCommitTransaction(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.OnAbortTransaction(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.OnError(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.CreateResourceBasedLiteralControl(System.Int32, System.Int32, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.TestDeviceFilter(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.LoadControl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.LoadControl(System.Type, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.LoadTemplate(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.ParseControl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.ParseControl(System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.Eval(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.Eval(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPath(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPath(System.String, System.Xml.IXmlNamespaceResolver)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPath(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPath(System.String, System.String, System.Xml.IXmlNamespaceResolver)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPathSelect(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPathSelect(System.String, System.Xml.IXmlNamespaceResolver)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.GetLocalResourceObject(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.GetLocalResourceObject(System.String, System.Type, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.GetGlobalResourceObject(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.GetGlobalResourceObject(System.String, System.String, System.Type, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.System.Web.UI.IFilterResolutionService.EvaluateFilter(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.System.Web.UI.IFilterResolutionService.CompareFilters(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.EnableTheming</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.AppRelativeVirtualPath</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.CommitTransaction</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.AbortTransaction</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.Error</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ResolveAdapter()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.HasEvents()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ApplyStyleSheetSkin(System.Web.UI.Page)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnDataBinding(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DataBind()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DataBind(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DataBindChildren()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.AddParsedSubObject(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.EnsureID()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClearChildState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClearChildControlState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClearChildViewState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Focus()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.LoadControlState(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.LoadViewState(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.MapPathSecure(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OpenFile(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnLoad(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnPreRender(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.BuildProfileTree(System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SaveControlState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SaveViewState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RenderChildren(System.Web.UI.HtmlTextWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter, System.Web.UI.Adapters.ControlAdapter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnUnload(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RaiseBubbleEvent(System.Object, System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnBubbleEvent(System.Object, System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.AddedControl(System.Web.UI.Control, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.CreateControlCollection()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.CreateChildControls()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ResolveUrl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ResolveClientUrl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.FindControl(System.String, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.GetDesignModeState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.HasControls()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IsLiteralContent()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.TrackViewState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.EnsureChildControls()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RemovedControl(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SetDesignModeState(System.Collections.IDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SetRenderMethodDelegate(System.Web.UI.RenderMethod)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlDesignerAccessor.GetDesignModeState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlDesignerAccessor.SetDesignModeState(System.Collections.IDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlDesignerAccessor.SetOwnerControl(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClientID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClientIDSeparator</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Adapter</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DesignMode</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Events</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IsChildControlStateCleared</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SkinID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IsViewStateEnabled</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.NamingContainer</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IdSeparator</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.LoadViewStateByID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Page</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.TemplateControl</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Parent</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.TemplateSourceDirectory</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.AppRelativeTemplateSourceDirectory</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Site</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.UniqueID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.HasChildViewState</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Controls</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ViewState</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ViewStateIgnoresCase</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ChildControlsCreated</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IsTrackingViewState</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IDataBindingsAccessor.HasDataBindings</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IDataBindingsAccessor.DataBindings</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlDesignerAccessor.UserData</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlBuilderAccessor.ControlBuilder</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IExpressionsAccessor.HasExpressions</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IExpressionsAccessor.Expressions</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Disposed</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DataBinding</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Init</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Load</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.PreRender</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Unload</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OPENGovTOCO.Configurazione.html">OPENGovTOCO.Configurazione</a></h6>
+  <h6><strong>Assembly</strong>: OPENGovTOCO.dll</h6>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ConfigurazioneTariffe : BasePage, IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, INamingContainer, IFilterResolutionService, IHttpHandler</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_A" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.A">A</h4>
+  <div class="markdown level1 summary"><p>Controllo A.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label A</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_A_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_btDel" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.btDel">btDel</h4>
+  <div class="markdown level1 summary"><p>Controllo btDel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Button btDel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_btDel_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_btNew" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.btNew">btNew</h4>
+  <div class="markdown level1 summary"><p>Controllo btNew.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Button btNew</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_btNew_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_btRibalta" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.btRibalta">btRibalta</h4>
+  <div class="markdown level1 summary"><p>Controllo btRibalta.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Button btRibalta</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_btRibalta_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_btSalva" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.btSalva">btSalva</h4>
+  <div class="markdown level1 summary"><p>Controllo btSalva.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Button btSalva</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_btSalva_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_btSearch" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.btSearch">btSearch</h4>
+  <div class="markdown level1 summary"><p>Controllo btSearch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ImageButton btSearch</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.ImageButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_btSearch_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_Da" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.Da">Da</h4>
+  <div class="markdown level1 summary"><p>Controllo Da.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Da</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_Da_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_ddlCategoriaIns" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.ddlCategoriaIns">ddlCategoriaIns</h4>
+  <div class="markdown level1 summary"><p>Controllo ddlCategoriaIns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DropDownList ddlCategoriaIns</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.DropDownList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_ddlCategoriaIns_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_ddlCategorie" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.ddlCategorie">ddlCategorie</h4>
+  <div class="markdown level1 summary"><p>Controllo ddlCategorie.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DropDownList ddlCategorie</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.DropDownList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_ddlCategorie_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_ddlDurata" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.ddlDurata">ddlDurata</h4>
+  <div class="markdown level1 summary"><p>Controllo ddlDurata.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DropDownList ddlDurata</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.DropDownList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_ddlDurata_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_ddlDurataIns" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.ddlDurataIns">ddlDurataIns</h4>
+  <div class="markdown level1 summary"><p>Controllo ddlDurataIns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DropDownList ddlDurataIns</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.DropDownList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_ddlDurataIns_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_ddlTipologiaOccupazioneIns" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.ddlTipologiaOccupazioneIns">ddlTipologiaOccupazioneIns</h4>
+  <div class="markdown level1 summary"><p>Controllo ddlTipologiaOccupazioneIns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DropDownList ddlTipologiaOccupazioneIns</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.DropDownList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_ddlTipologiaOccupazioneIns_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_ddlTipologieOccupazione" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.ddlTipologieOccupazione">ddlTipologieOccupazione</h4>
+  <div class="markdown level1 summary"><p>Controllo ddlTipologieOccupazione.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DropDownList ddlTipologieOccupazione</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.DropDownList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_ddlTipologieOccupazione_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_ddlTributo" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.ddlTributo">ddlTributo</h4>
+  <div class="markdown level1 summary"><p>Controllo ddlTributo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DropDownList ddlTributo</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.DropDownList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_ddlTributo_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_ddlTributoIns" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.ddlTributoIns">ddlTributoIns</h4>
+  <div class="markdown level1 summary"><p>Controllo ddlTributoIns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DropDownList ddlTributoIns</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.DropDownList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_ddlTributoIns_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_Form1" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.Form1">Form1</h4>
+  <div class="markdown level1 summary"><p>Controllo Form1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HtmlForm Form1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.HtmlControls.HtmlForm</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_Form1_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_GrdTariffe" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.GrdTariffe">GrdTariffe</h4>
+  <div class="markdown level1 summary"><p>Controllo GrdTariffe.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RibesGridView GrdTariffe</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Ribes.OPENgov.WebControls.RibesGridView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_GrdTariffe_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_Label2" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.Label2">Label2</h4>
+  <div class="markdown level1 summary"><p>Controllo Label2.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_Label2_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_Label3" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.Label3">Label3</h4>
+  <div class="markdown level1 summary"><p>Controllo Label3.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_Label3_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_Label4" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.Label4">Label4</h4>
+  <div class="markdown level1 summary"><p>Controllo Label4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_Label4_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_Label5" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.Label5">Label5</h4>
+  <div class="markdown level1 summary"><p>Controllo Label5.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label5</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_Label5_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_Label6" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.Label6">Label6</h4>
+  <div class="markdown level1 summary"><p>Controllo Label6.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label6</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_Label6_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblAnno" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.lblAnno">lblAnno</h4>
+  <div class="markdown level1 summary"><p>Controllo lblAnno.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblAnno</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblAnno_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblAnnoEdit" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.lblAnnoEdit">lblAnnoEdit</h4>
+  <div class="markdown level1 summary"><p>Controllo lblAnnoEdit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblAnnoEdit</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblAnnoEdit_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblAnnoIns" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.lblAnnoIns">lblAnnoIns</h4>
+  <div class="markdown level1 summary"><p>Controllo lblAnnoIns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblAnnoIns</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblAnnoIns_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblCategoriaEdit" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.lblCategoriaEdit">lblCategoriaEdit</h4>
+  <div class="markdown level1 summary"><p>Controllo lblCategoriaEdit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblCategoriaEdit</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblCategoriaEdit_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblCategoriaIns" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.lblCategoriaIns">lblCategoriaIns</h4>
+  <div class="markdown level1 summary"><p>Controllo lblCategoriaIns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblCategoriaIns</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblCategoriaIns_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblCategorie" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.lblCategorie">lblCategorie</h4>
+  <div class="markdown level1 summary"><p>Controllo lblCategorie.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblCategorie</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblCategorie_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblDurata" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.lblDurata">lblDurata</h4>
+  <div class="markdown level1 summary"><p>Controllo lblDurata.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblDurata</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblDurata_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblDurataEdit" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.lblDurataEdit">lblDurataEdit</h4>
+  <div class="markdown level1 summary"><p>Controllo lblDurataEdit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblDurataEdit</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblDurataEdit_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblDurataIns" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.lblDurataIns">lblDurataIns</h4>
+  <div class="markdown level1 summary"><p>Controllo lblDurataIns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblDurataIns</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblDurataIns_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblMinimoApplicabileEdit" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.lblMinimoApplicabileEdit">lblMinimoApplicabileEdit</h4>
+  <div class="markdown level1 summary"><p>Controllo lblMinimoApplicabileEdit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblMinimoApplicabileEdit</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblMinimoApplicabileEdit_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblMinimoApplicabileIns" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.lblMinimoApplicabileIns">lblMinimoApplicabileIns</h4>
+  <div class="markdown level1 summary"><p>Controllo lblMinimoApplicabileIns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblMinimoApplicabileIns</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblMinimoApplicabileIns_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblResultList" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.lblResultList">lblResultList</h4>
+  <div class="markdown level1 summary"><p>Controllo lblResultList.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblResultList</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblResultList_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblTipologiaOccupazioneEdit" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.lblTipologiaOccupazioneEdit">lblTipologiaOccupazioneEdit</h4>
+  <div class="markdown level1 summary"><p>Controllo lblTipologiaOccupazioneEdit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblTipologiaOccupazioneEdit</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblTipologiaOccupazioneEdit_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblTipologiaOccupazioneIns" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.lblTipologiaOccupazioneIns">lblTipologiaOccupazioneIns</h4>
+  <div class="markdown level1 summary"><p>Controllo lblTipologiaOccupazioneIns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblTipologiaOccupazioneIns</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblTipologiaOccupazioneIns_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblTipologieOccupazione" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.lblTipologieOccupazione">lblTipologieOccupazione</h4>
+  <div class="markdown level1 summary"><p>Controllo lblTipologieOccupazione.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblTipologieOccupazione</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblTipologieOccupazione_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblTitolo" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.lblTitolo">lblTitolo</h4>
+  <div class="markdown level1 summary"><p>Controllo lblTitolo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblTitolo</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblTitolo_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblTributo" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.lblTributo">lblTributo</h4>
+  <div class="markdown level1 summary"><p>Controllo lblTributo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblTributo</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblTributo_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblTributoEdit" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.lblTributoEdit">lblTributoEdit</h4>
+  <div class="markdown level1 summary"><p>Controllo lblTributoEdit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblTributoEdit</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblTributoEdit_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblTributoIns" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.lblTributoIns">lblTributoIns</h4>
+  <div class="markdown level1 summary"><p>Controllo lblTributoIns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblTributoIns</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblTributoIns_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblValoreEdit" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.lblValoreEdit">lblValoreEdit</h4>
+  <div class="markdown level1 summary"><p>Controllo lblValoreEdit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblValoreEdit</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblValoreEdit_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblValoreIns" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.lblValoreIns">lblValoreIns</h4>
+  <div class="markdown level1 summary"><p>Controllo lblValoreIns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblValoreIns</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_lblValoreIns_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_pnlCoefficienti" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.pnlCoefficienti">pnlCoefficienti</h4>
+  <div class="markdown level1 summary"><p>Controllo pnlCoefficienti.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Panel pnlCoefficienti</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Panel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_pnlCoefficienti_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_pnlInserisci" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.pnlInserisci">pnlInserisci</h4>
+  <div class="markdown level1 summary"><p>Controllo pnlInserisci.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Panel pnlInserisci</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Panel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_pnlInserisci_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_pnlModifica" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.pnlModifica">pnlModifica</h4>
+  <div class="markdown level1 summary"><p>Controllo pnlModifica.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Panel pnlModifica</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Panel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_pnlModifica_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_txbAnno" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.txbAnno">txbAnno</h4>
+  <div class="markdown level1 summary"><p>Controllo txbAnno.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox txbAnno</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_txbAnno_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_txbAnnoIns" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.txbAnnoIns">txbAnnoIns</h4>
+  <div class="markdown level1 summary"><p>Controllo txbAnnoIns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox txbAnnoIns</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_txbAnnoIns_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_txbIdRecordToMod" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.txbIdRecordToMod">txbIdRecordToMod</h4>
+  <div class="markdown level1 summary"><p>Controllo txbIdRecordToMod.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox txbIdRecordToMod</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_txbIdRecordToMod_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_txbMinimoApplicabileEdit" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.txbMinimoApplicabileEdit">txbMinimoApplicabileEdit</h4>
+  <div class="markdown level1 summary"><p>Controllo txbMinimoApplicabileEdit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox txbMinimoApplicabileEdit</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_txbMinimoApplicabileEdit_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_txbMinimoApplicabileIns" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.txbMinimoApplicabileIns">txbMinimoApplicabileIns</h4>
+  <div class="markdown level1 summary"><p>Controllo txbMinimoApplicabileIns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox txbMinimoApplicabileIns</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_txbMinimoApplicabileIns_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_txbValoreEdit" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.txbValoreEdit">txbValoreEdit</h4>
+  <div class="markdown level1 summary"><p>Controllo txbValoreEdit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox txbValoreEdit</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_txbValoreEdit_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_txbValoreIns" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.txbValoreIns">txbValoreIns</h4>
+  <div class="markdown level1 summary"><p>Controllo txbValoreIns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox txbValoreIns</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_txbValoreIns_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_txtRibaltaA" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.txtRibaltaA">txtRibaltaA</h4>
+  <div class="markdown level1 summary"><p>Controllo txtRibaltaA.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox txtRibaltaA</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_txtRibaltaA_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_txtRibaltaDa" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.txtRibaltaDa">txtRibaltaDa</h4>
+  <div class="markdown level1 summary"><p>Controllo txtRibaltaDa.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox txtRibaltaDa</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_txtRibaltaDa_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_btDel_Click_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.btDel_Click*"></a>
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_btDel_Click_System_Object_System_EventArgs_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.btDel_Click(System.Object,System.EventArgs)">btDel_Click(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void btDel_Click(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_btNew_Click_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.btNew_Click*"></a>
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_btNew_Click_System_Object_System_EventArgs_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.btNew_Click(System.Object,System.EventArgs)">btNew_Click(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void btNew_Click(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_btRibalta_Click_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.btRibalta_Click*"></a>
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_btRibalta_Click_System_Object_System_EventArgs_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.btRibalta_Click(System.Object,System.EventArgs)">btRibalta_Click(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void btRibalta_Click(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_btSalva_Click_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.btSalva_Click*"></a>
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_btSalva_Click_System_Object_System_EventArgs_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.btSalva_Click(System.Object,System.EventArgs)">btSalva_Click(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void btSalva_Click(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_btSearch_Click_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.btSearch_Click*"></a>
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_btSearch_Click_System_Object_System_Web_UI_ImageClickEventArgs_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.btSearch_Click(System.Object,System.Web.UI.ImageClickEventArgs)">btSearch_Click(Object, ImageClickEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void btSearch_Click(object sender, ImageClickEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Web.UI.ImageClickEventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_GrdPageIndexChanging_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.GrdPageIndexChanging*"></a>
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_GrdPageIndexChanging_System_Object_System_Web_UI_WebControls_GridViewPageEventArgs_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.GrdPageIndexChanging(System.Object,System.Web.UI.WebControls.GridViewPageEventArgs)">GrdPageIndexChanging(Object, GridViewPageEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Gestione del cambio pagina della griglia.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GrdPageIndexChanging(object sender, GridViewPageEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.GridViewPageEventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_GrdRowCommand_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.GrdRowCommand*"></a>
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_GrdRowCommand_System_Object_System_Web_UI_WebControls_GridViewCommandEventArgs_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.GrdRowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)">GrdRowCommand(Object, GridViewCommandEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GrdRowCommand(object sender, GridViewCommandEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.GridViewCommandEventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_GrdRowDataBound_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.GrdRowDataBound*"></a>
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_GrdRowDataBound_System_Object_System_Web_UI_WebControls_GridViewRowEventArgs_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.GrdRowDataBound(System.Object,System.Web.UI.WebControls.GridViewRowEventArgs)">GrdRowDataBound(Object, GridViewRowEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GrdRowDataBound(object sender, GridViewRowEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.GridViewRowEventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_LoadCategorie_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.LoadCategorie*"></a>
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_LoadCategorie_System_Web_UI_WebControls_DropDownList_System_Boolean_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.LoadCategorie(System.Web.UI.WebControls.DropDownList,System.Boolean)">LoadCategorie(DropDownList, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LoadCategorie(DropDownList ddl, bool WithDefault)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.DropDownList</span></td>
+        <td><span class="parametername">ddl</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">WithDefault</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_LoadDurata_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.LoadDurata*"></a>
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_LoadDurata_System_Web_UI_WebControls_DropDownList_System_Boolean_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.LoadDurata(System.Web.UI.WebControls.DropDownList,System.Boolean)">LoadDurata(DropDownList, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LoadDurata(DropDownList ddl, bool WithDefault)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.DropDownList</span></td>
+        <td><span class="parametername">ddl</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">WithDefault</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_LoadTariffe_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.LoadTariffe*"></a>
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_LoadTariffe" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.LoadTariffe">LoadTariffe()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Tariffe[] LoadTariffe()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IRemInterfaceOSAP.Tariffe</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_LoadTipologieOccupazioni_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.LoadTipologieOccupazioni*"></a>
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_LoadTipologieOccupazioni_System_Web_UI_WebControls_DropDownList_System_Boolean_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.LoadTipologieOccupazioni(System.Web.UI.WebControls.DropDownList,System.Boolean)">LoadTipologieOccupazioni(DropDownList, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LoadTipologieOccupazioni(DropDownList ddl, bool WithDefault)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.DropDownList</span></td>
+        <td><span class="parametername">ddl</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">WithDefault</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_LoadTributi_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.LoadTributi*"></a>
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_LoadTributi_System_Web_UI_WebControls_DropDownList_System_Boolean_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.LoadTributi(System.Web.UI.WebControls.DropDownList,System.Boolean)">LoadTributi(DropDownList, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LoadTributi(DropDownList ddl, bool WithDefault)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.DropDownList</span></td>
+        <td><span class="parametername">ddl</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">WithDefault</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_OnInit_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.OnInit*"></a>
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_OnInit_System_EventArgs_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.OnInit(System.EventArgs)">OnInit(EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnInit(EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OPENgovTOCO.BasePage.html#OPENgovTOCO_BasePage_OnInit_System_EventArgs_">BasePage.OnInit(EventArgs)</a></div>
+  
+  
+  <a id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_Page_Load_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.Page_Load*"></a>
+  <h4 id="OPENGovTOCO_Configurazione_ConfigurazioneTariffe_Page_Load_System_Object_System_EventArgs_" data-uid="OPENGovTOCO.Configurazione.ConfigurazioneTariffe.Page_Load(System.Object,System.EventArgs)">Page_Load(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Page_Load(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.IComponent</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IParserAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IUrlResolutionService</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IDataBindingsAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IControlBuilderAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IControlDesignerAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IExpressionsAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.INamingContainer</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IFilterResolutionService</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.IHttpHandler</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

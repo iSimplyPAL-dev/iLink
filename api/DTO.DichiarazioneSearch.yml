@@ -1,0 +1,606 @@
+### YamlMime:ManagedReference
+items:
+- uid: DTO.DichiarazioneSearch
+  commentId: T:DTO.DichiarazioneSearch
+  id: DichiarazioneSearch
+  parent: DTO
+  children:
+  - DTO.DichiarazioneSearch.CodFiscaleContribuente
+  - DTO.DichiarazioneSearch.CodTributo
+  - DTO.DichiarazioneSearch.CognomeContribuente
+  - DTO.DichiarazioneSearch.IdEnte
+  - DTO.DichiarazioneSearch.NDichiarazione
+  - DTO.DichiarazioneSearch.NomeContribuente
+  - DTO.DichiarazioneSearch.PIVAContribuente
+  langs:
+  - csharp
+  - vb
+  name: DichiarazioneSearch
+  nameWithType: DichiarazioneSearch
+  fullName: DTO.DichiarazioneSearch
+  type: Class
+  source:
+    id: DichiarazioneSearch
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\DichiarazioneSearch.cs
+    startLine: 8
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  summary: "\nDefinizione oggetto ricerca Dichiarazione.\n"
+  example: []
+  syntax:
+    content: public class DichiarazioneSearch
+    content.vb: Public Class DichiarazioneSearch
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DTO.DichiarazioneSearch.IdEnte
+  commentId: P:DTO.DichiarazioneSearch.IdEnte
+  id: IdEnte
+  parent: DTO.DichiarazioneSearch
+  langs:
+  - csharp
+  - vb
+  name: IdEnte
+  nameWithType: DichiarazioneSearch.IdEnte
+  fullName: DTO.DichiarazioneSearch.IdEnte
+  type: Property
+  source:
+    id: IdEnte
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\DichiarazioneSearch.cs
+    startLine: 16
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string IdEnte { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property IdEnte As String
+  overload: DTO.DichiarazioneSearch.IdEnte*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.DichiarazioneSearch.CodTributo
+  commentId: P:DTO.DichiarazioneSearch.CodTributo
+  id: CodTributo
+  parent: DTO.DichiarazioneSearch
+  langs:
+  - csharp
+  - vb
+  name: CodTributo
+  nameWithType: DichiarazioneSearch.CodTributo
+  fullName: DTO.DichiarazioneSearch.CodTributo
+  type: Property
+  source:
+    id: CodTributo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\DichiarazioneSearch.cs
+    startLine: 21
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string CodTributo { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property CodTributo As String
+  overload: DTO.DichiarazioneSearch.CodTributo*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DTO.DichiarazioneSearch.CognomeContribuente
+  commentId: P:DTO.DichiarazioneSearch.CognomeContribuente
+  id: CognomeContribuente
+  parent: DTO.DichiarazioneSearch
+  langs:
+  - csharp
+  - vb
+  name: CognomeContribuente
+  nameWithType: DichiarazioneSearch.CognomeContribuente
+  fullName: DTO.DichiarazioneSearch.CognomeContribuente
+  type: Property
+  source:
+    id: CognomeContribuente
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\DichiarazioneSearch.cs
+    startLine: 25
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string CognomeContribuente { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CognomeContribuente As String
+  overload: DTO.DichiarazioneSearch.CognomeContribuente*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.DichiarazioneSearch.NomeContribuente
+  commentId: P:DTO.DichiarazioneSearch.NomeContribuente
+  id: NomeContribuente
+  parent: DTO.DichiarazioneSearch
+  langs:
+  - csharp
+  - vb
+  name: NomeContribuente
+  nameWithType: DichiarazioneSearch.NomeContribuente
+  fullName: DTO.DichiarazioneSearch.NomeContribuente
+  type: Property
+  source:
+    id: NomeContribuente
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\DichiarazioneSearch.cs
+    startLine: 31
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string NomeContribuente { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property NomeContribuente As String
+  overload: DTO.DichiarazioneSearch.NomeContribuente*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.DichiarazioneSearch.CodFiscaleContribuente
+  commentId: P:DTO.DichiarazioneSearch.CodFiscaleContribuente
+  id: CodFiscaleContribuente
+  parent: DTO.DichiarazioneSearch
+  langs:
+  - csharp
+  - vb
+  name: CodFiscaleContribuente
+  nameWithType: DichiarazioneSearch.CodFiscaleContribuente
+  fullName: DTO.DichiarazioneSearch.CodFiscaleContribuente
+  type: Property
+  source:
+    id: CodFiscaleContribuente
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\DichiarazioneSearch.cs
+    startLine: 37
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string CodFiscaleContribuente { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CodFiscaleContribuente As String
+  overload: DTO.DichiarazioneSearch.CodFiscaleContribuente*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.DichiarazioneSearch.PIVAContribuente
+  commentId: P:DTO.DichiarazioneSearch.PIVAContribuente
+  id: PIVAContribuente
+  parent: DTO.DichiarazioneSearch
+  langs:
+  - csharp
+  - vb
+  name: PIVAContribuente
+  nameWithType: DichiarazioneSearch.PIVAContribuente
+  fullName: DTO.DichiarazioneSearch.PIVAContribuente
+  type: Property
+  source:
+    id: PIVAContribuente
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\DichiarazioneSearch.cs
+    startLine: 43
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string PIVAContribuente { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PIVAContribuente As String
+  overload: DTO.DichiarazioneSearch.PIVAContribuente*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.DichiarazioneSearch.NDichiarazione
+  commentId: P:DTO.DichiarazioneSearch.NDichiarazione
+  id: NDichiarazione
+  parent: DTO.DichiarazioneSearch
+  langs:
+  - csharp
+  - vb
+  name: NDichiarazione
+  nameWithType: DichiarazioneSearch.NDichiarazione
+  fullName: DTO.DichiarazioneSearch.NDichiarazione
+  type: Property
+  source:
+    id: NDichiarazione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\DichiarazioneSearch.cs
+    startLine: 49
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string NDichiarazione { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property NDichiarazione As String
+  overload: DTO.DichiarazioneSearch.NDichiarazione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: DTO
+  commentId: N:DTO
+  name: DTO
+  nameWithType: DTO
+  fullName: DTO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DTO.DichiarazioneSearch.IdEnte*
+  commentId: Overload:DTO.DichiarazioneSearch.IdEnte
+  name: IdEnte
+  nameWithType: DichiarazioneSearch.IdEnte
+  fullName: DTO.DichiarazioneSearch.IdEnte
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DTO.DichiarazioneSearch.CodTributo*
+  commentId: Overload:DTO.DichiarazioneSearch.CodTributo
+  name: CodTributo
+  nameWithType: DichiarazioneSearch.CodTributo
+  fullName: DTO.DichiarazioneSearch.CodTributo
+- uid: DTO.DichiarazioneSearch.CognomeContribuente*
+  commentId: Overload:DTO.DichiarazioneSearch.CognomeContribuente
+  name: CognomeContribuente
+  nameWithType: DichiarazioneSearch.CognomeContribuente
+  fullName: DTO.DichiarazioneSearch.CognomeContribuente
+- uid: DTO.DichiarazioneSearch.NomeContribuente*
+  commentId: Overload:DTO.DichiarazioneSearch.NomeContribuente
+  name: NomeContribuente
+  nameWithType: DichiarazioneSearch.NomeContribuente
+  fullName: DTO.DichiarazioneSearch.NomeContribuente
+- uid: DTO.DichiarazioneSearch.CodFiscaleContribuente*
+  commentId: Overload:DTO.DichiarazioneSearch.CodFiscaleContribuente
+  name: CodFiscaleContribuente
+  nameWithType: DichiarazioneSearch.CodFiscaleContribuente
+  fullName: DTO.DichiarazioneSearch.CodFiscaleContribuente
+- uid: DTO.DichiarazioneSearch.PIVAContribuente*
+  commentId: Overload:DTO.DichiarazioneSearch.PIVAContribuente
+  name: PIVAContribuente
+  nameWithType: DichiarazioneSearch.PIVAContribuente
+  fullName: DTO.DichiarazioneSearch.PIVAContribuente
+- uid: DTO.DichiarazioneSearch.NDichiarazione*
+  commentId: Overload:DTO.DichiarazioneSearch.NDichiarazione
+  name: NDichiarazione
+  nameWithType: DichiarazioneSearch.NDichiarazione
+  fullName: DTO.DichiarazioneSearch.NDichiarazione

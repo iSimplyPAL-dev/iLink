@@ -1,0 +1,741 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" />
+  <Import Project="..\packages\Text.Analyzers.2.6.3\build\Text.Analyzers.props" Condition="Exists('..\packages\Text.Analyzers.2.6.3\build\Text.Analyzers.props')" />
+  <Import Project="..\packages\Microsoft.NetFramework.Analyzers.2.6.3\build\Microsoft.NetFramework.Analyzers.props" Condition="Exists('..\packages\Microsoft.NetFramework.Analyzers.2.6.3\build\Microsoft.NetFramework.Analyzers.props')" />
+  <Import Project="..\packages\Microsoft.NetCore.Analyzers.2.6.3\build\Microsoft.NetCore.Analyzers.props" Condition="Exists('..\packages\Microsoft.NetCore.Analyzers.2.6.3\build\Microsoft.NetCore.Analyzers.props')" />
+  <Import Project="..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\build\Microsoft.CodeQuality.Analyzers.props" Condition="Exists('..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\build\Microsoft.CodeQuality.Analyzers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{04F67387-83D7-4EE2-A91B-6AA6464CC827}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>OPENGovTOCO</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OPENGovTOCO</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <WebReference_EnableProperties>true</WebReference_EnableProperties>
+    <WebReference_EnableSQLTypes>false</WebReference_EnableSQLTypes>
+    <WebReference_EnableLegacyEventingModel>true</WebReference_EnableLegacyEventingModel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\OPENGovTOCO.XML</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\OPENGovTOCO.XML</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AnagInterface">
+      <HintPath>..\..\..\DLLComuni\AnagInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="Anagrafica">
+      <HintPath>..\..\..\DLLComuni\Anagrafica.dll</HintPath>
+    </Reference>
+    <Reference Include="DAL">
+      <HintPath>..\..\..\DLLComuni\DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="ElaborazioneDatiStampeInterface">
+      <HintPath>..\..\..\DLLComuni\ElaborazioneDatiStampeInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\DLLComuni\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="IRemInterfaceOSAP">
+      <HintPath>..\..\..\DLLComuni\IRemInterfaceOSAP.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\DLLComuni\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="OggettiComuniStrade">
+      <HintPath>..\..\..\DLLComuni\OggettiComuniStrade.dll</HintPath>
+    </Reference>
+    <Reference Include="OPENUtility">
+      <HintPath>..\..\..\DLLComuni\OPENUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="RemotingInterfaceOpenGovStradario">
+      <HintPath>..\..\..\DLLComuni\RemotingInterfaceOpenGovStradario.dll</HintPath>
+    </Reference>
+    <Reference Include="Ribes.OPENgov.WebControls">
+      <HintPath>..\..\..\DLLComuni\Ribes.OPENgov.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="RIBESElaborazioneDocumentiInterface">
+      <HintPath>..\..\..\DLLComuni\RIBESElaborazioneDocumentiInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="RKLib.ExportData">
+      <HintPath>..\..\..\DLLComuni\RKLib.ExportData.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <Name>System.DirectoryServices</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="Utility, Version=1.0.7495.28013, Culture=neutral, PublicKeyToken=ae1027569650564c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLComuni\Utility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Configurazione\ConfigurazioneCoefficienti.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Configurazione\ConfigurazioneTabelle.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Configurazione\ConfigurazioneTariffe.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Dichiarazioni\ArticoliAdd.aspx" />
+    <Content Include="Dichiarazioni\ArticoliEdit.aspx" />
+    <Content Include="Dichiarazioni\ArticoliView.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Dichiarazioni\DichiarazioniAdd.aspx" />
+    <Content Include="Dichiarazioni\DichiarazioniEdit.aspx" />
+    <Content Include="Dichiarazioni\DichiarazioniSearch.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Dichiarazioni\DichiarazioniView.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Elaborazioni\ConfigurazioneRate.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Elaborazioni\Documenti\ComandiDoc.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Elaborazioni\Documenti\ComandiDocElaborati.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Elaborazioni\Documenti\RicercaDoc.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Elaborazioni\Documenti\StampaInCorso.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Elaborazioni\Documenti\ViewDocElaborati.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Elaborazioni\ElaborazioneAvvisi.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="GestionePagamenti\GestionePagamentiAdd.aspx" />
+    <Content Include="GestionePagamenti\GestionePagamentiEdit.aspx" />
+    <Content Include="GestionePagamenti\GestionePagamentiSearch.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="SituazioneContribuente\SituazioneAvvisi.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SituazioneContribuente\SituazioneAvvisiSearch.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Wuc\WucArticolo.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Wuc\WucDatiContribuente.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Wuc\WucDichiarazione.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Wuc\WucGestionePagamenti.ascx" />
+    <Compile Include="Configurazione\ConfigurazioneCoefficienti.aspx.cs">
+      <DependentUpon>ConfigurazioneCoefficienti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurazione\ConfigurazioneCoefficienti.aspx.designer.cs">
+      <DependentUpon>ConfigurazioneCoefficienti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurazione\ConfigurazioneTabelle.aspx.cs">
+      <DependentUpon>ConfigurazioneTabelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurazione\ConfigurazioneTabelle.aspx.designer.cs">
+      <DependentUpon>ConfigurazioneTabelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurazione\ConfigurazioneTariffe.aspx.cs">
+      <DependentUpon>ConfigurazioneTariffe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurazione\ConfigurazioneTariffe.aspx.designer.cs">
+      <DependentUpon>ConfigurazioneTariffe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dichiarazioni\ArticoliAdd.aspx.cs">
+      <DependentUpon>ArticoliAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dichiarazioni\ArticoliAdd.aspx.designer.cs">
+      <DependentUpon>ArticoliAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dichiarazioni\ArticoliEdit.aspx.cs">
+      <DependentUpon>ArticoliEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dichiarazioni\ArticoliEdit.aspx.designer.cs">
+      <DependentUpon>ArticoliEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dichiarazioni\ArticoliView.aspx.cs">
+      <DependentUpon>ArticoliView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dichiarazioni\ArticoliView.aspx.designer.cs">
+      <DependentUpon>ArticoliView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dichiarazioni\DichiarazioniAdd.aspx.cs">
+      <DependentUpon>DichiarazioniAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dichiarazioni\DichiarazioniAdd.aspx.designer.cs">
+      <DependentUpon>DichiarazioniAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dichiarazioni\DichiarazioniEdit.aspx.cs">
+      <DependentUpon>DichiarazioniEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dichiarazioni\DichiarazioniEdit.aspx.designer.cs">
+      <DependentUpon>DichiarazioniEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dichiarazioni\DichiarazioniSearch.aspx.cs">
+      <DependentUpon>DichiarazioniSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dichiarazioni\DichiarazioniSearch.aspx.designer.cs">
+      <DependentUpon>DichiarazioniSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dichiarazioni\DichiarazioniView.aspx.cs">
+      <DependentUpon>DichiarazioniView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dichiarazioni\DichiarazioniView.aspx.designer.cs">
+      <DependentUpon>DichiarazioniView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Elaborazioni\ConfigurazioneRate.aspx.cs">
+      <DependentUpon>ConfigurazioneRate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Elaborazioni\ConfigurazioneRate.aspx.designer.cs">
+      <DependentUpon>ConfigurazioneRate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Elaborazioni\Documenti\ComandiDoc.aspx.cs">
+      <DependentUpon>ComandiDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Elaborazioni\Documenti\ComandiDoc.aspx.designer.cs">
+      <DependentUpon>ComandiDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Elaborazioni\Documenti\ComandiDocElaborati.aspx.cs">
+      <DependentUpon>ComandiDocElaborati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Elaborazioni\Documenti\ComandiDocElaborati.aspx.designer.cs">
+      <DependentUpon>ComandiDocElaborati.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Elaborazioni\Documenti\RicercaDoc.aspx.cs">
+      <DependentUpon>RicercaDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Elaborazioni\Documenti\RicercaDoc.aspx.designer.cs">
+      <DependentUpon>RicercaDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Elaborazioni\Documenti\StampaInCorso.aspx.cs">
+      <DependentUpon>StampaInCorso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Elaborazioni\Documenti\StampaInCorso.aspx.designer.cs">
+      <DependentUpon>StampaInCorso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Elaborazioni\Documenti\ViewDocElaborati.aspx.cs">
+      <DependentUpon>ViewDocElaborati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Elaborazioni\Documenti\ViewDocElaborati.aspx.designer.cs">
+      <DependentUpon>ViewDocElaborati.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Elaborazioni\ElaborazioneAvvisi.aspx.cs">
+      <DependentUpon>ElaborazioneAvvisi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Elaborazioni\ElaborazioneAvvisi.aspx.designer.cs">
+      <DependentUpon>ElaborazioneAvvisi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Generali\classi\CacheManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\CalcoloRateTOCO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\CalcoloTOCO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\DichiarazioneSession.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\Documenti.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\SharedFunction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\TocoConst.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\classi\TocoPages.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Generali\DAO\AgevolazioniDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DAO\AnagraficheDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DAO\CartelleDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DAO\CategorieDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DAO\CoefficientiDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DAO\DBEngineFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DAO\DichiarazioniDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DAO\ElaborazioniDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DAO\PagamentiDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DAO\TariffeDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DAO\TipoOccupazDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\Agevolazione.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\Articolo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\Cartella.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\CartellaSearch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\Categorie.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\ConfigurazioneRate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\DichiarazioneSearch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\DichiarazioneTosapCosap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\DichiarazioneTosapCosapTestata.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\Durata.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\ElaborazioneEffettuata.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\ElaborazioniSearch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\ElaborazioniTosapCosap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\Lotto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\Minuta.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\PagamentiSearch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\Pagamento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\Rata.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\RataSearch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\Ruolo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\Tariffe.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\TipoConsistenza.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\TipologieOccupazioni.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\TitoloRichiedente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\DTO\Uffici.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GestionePagamenti\GestionePagamentiAdd.aspx.cs">
+      <DependentUpon>GestionePagamentiAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionePagamenti\GestionePagamentiAdd.aspx.designer.cs">
+      <DependentUpon>GestionePagamentiAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestionePagamenti\GestionePagamentiEdit.aspx.cs">
+      <DependentUpon>GestionePagamentiEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionePagamenti\GestionePagamentiEdit.aspx.designer.cs">
+      <DependentUpon>GestionePagamentiEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestionePagamenti\GestionePagamentiSearch.aspx.cs">
+      <DependentUpon>GestionePagamentiSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionePagamenti\GestionePagamentiSearch.aspx.designer.cs">
+      <DependentUpon>GestionePagamentiSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SituazioneContribuente\SituazioneAvvisi.aspx.cs">
+      <DependentUpon>SituazioneAvvisi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SituazioneContribuente\SituazioneAvvisi.aspx.designer.cs">
+      <DependentUpon>SituazioneAvvisi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SituazioneContribuente\SituazioneAvvisiSearch.aspx.cs">
+      <DependentUpon>SituazioneAvvisiSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SituazioneContribuente\SituazioneAvvisiSearch.aspx.designer.cs">
+      <DependentUpon>SituazioneAvvisiSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MotoreTOCO\Reference.cs">
+      <DependentUpon>Reference.map</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Wuc\WucArticolo.ascx.cs">
+      <DependentUpon>WucArticolo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wuc\WucArticolo.ascx.designer.cs">
+      <DependentUpon>WucArticolo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Wuc\WucDatiContribuente.ascx.cs">
+      <DependentUpon>WucDatiContribuente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wuc\WucDatiContribuente.ascx.designer.cs">
+      <DependentUpon>WucDatiContribuente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Wuc\WucDichiarazione.ascx.cs">
+      <DependentUpon>WucDichiarazione.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wuc\WucDichiarazione.ascx.designer.cs">
+      <DependentUpon>WucDichiarazione.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Wuc\WucGestionePagamenti.ascx.cs">
+      <DependentUpon>WucGestionePagamenti.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wuc\WucGestionePagamenti.ascx.designer.cs">
+      <DependentUpon>WucGestionePagamenti.ascx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Configurazione\ConfigurazioneCoefficienti.aspx.resx">
+      <DependentUpon>ConfigurazioneCoefficienti.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurazione\ConfigurazioneTabelle.aspx.resx">
+      <DependentUpon>ConfigurazioneTabelle.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurazione\ConfigurazioneTariffe.aspx.resx">
+      <DependentUpon>ConfigurazioneTariffe.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dichiarazioni\ArticoliAdd.aspx.resx">
+      <DependentUpon>ArticoliAdd.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dichiarazioni\ArticoliEdit.aspx.resx">
+      <DependentUpon>ArticoliEdit.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dichiarazioni\ArticoliView.aspx.resx">
+      <DependentUpon>ArticoliView.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dichiarazioni\DichiarazioniAdd.aspx.resx">
+      <DependentUpon>DichiarazioniAdd.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dichiarazioni\DichiarazioniEdit.aspx.resx">
+      <DependentUpon>DichiarazioniEdit.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dichiarazioni\DichiarazioniSearch.aspx.resx">
+      <DependentUpon>DichiarazioniSearch.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dichiarazioni\DichiarazioniView.aspx.resx">
+      <DependentUpon>DichiarazioniView.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Elaborazioni\ConfigurazioneRate.aspx.resx">
+      <DependentUpon>ConfigurazioneRate.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Elaborazioni\Documenti\ComandiDoc.aspx.resx">
+      <DependentUpon>ComandiDoc.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Elaborazioni\Documenti\ComandiDocElaborati.aspx.resx">
+      <DependentUpon>ComandiDocElaborati.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Elaborazioni\Documenti\RicercaDoc.aspx.resx">
+      <DependentUpon>RicercaDoc.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Elaborazioni\Documenti\StampaInCorso.aspx.resx">
+      <DependentUpon>StampaInCorso.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Elaborazioni\Documenti\ViewDocElaborati.aspx.resx">
+      <DependentUpon>ViewDocElaborati.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Elaborazioni\ElaborazioneAvvisi.aspx.resx">
+      <DependentUpon>ElaborazioneAvvisi.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionePagamenti\GestionePagamentiAdd.aspx.resx">
+      <DependentUpon>GestionePagamentiAdd.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionePagamenti\GestionePagamentiEdit.aspx.resx">
+      <DependentUpon>GestionePagamentiEdit.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionePagamenti\GestionePagamentiSearch.aspx.resx">
+      <DependentUpon>GestionePagamentiSearch.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SituazioneContribuente\SituazioneAvvisi.aspx.resx">
+      <DependentUpon>SituazioneAvvisi.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SituazioneContribuente\SituazioneAvvisiSearch.aspx.resx">
+      <DependentUpon>SituazioneAvvisiSearch.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wuc\WucArticolo.ascx.resx">
+      <DependentUpon>WucArticolo.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wuc\WucDatiContribuente.ascx.resx">
+      <DependentUpon>WucDatiContribuente.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wuc\WucDichiarazione.ascx.resx">
+      <DependentUpon>WucDichiarazione.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wuc\WucGestionePagamenti.ascx.resx">
+      <DependentUpon>WucGestionePagamenti.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="packages.config" />
+    <Content Include="toc.yml" />
+    <Content Include="index.md" />
+    <Content Include="docfx.json" />
+    <Content Include="articles\toc.md" />
+    <Content Include="articles\intro.md" />
+    <Content Include="api\index.md" />
+    <None Include="Web References\MotoreTOCO\CalcoloResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MotoreTOCO\dsContatti.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MotoreTOCO\dsContatti.xsd" />
+    <None Include="Web References\MotoreTOCO\MotoreTOCO.disco" />
+    <None Include="Web References\MotoreTOCO\MotoreTOCO.wsdl" />
+    <None Include="Web References\MotoreTOCO\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <WebReferenceUrl Include="http://192.168.80.31/OPENgov_MotoreTOCO/MotoreTOCO.asmx">
+      <RelPath>Web References\MotoreTOCO\</RelPath>
+      <UrlBehavior>Static</UrlBehavior>
+    </WebReferenceUrl>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\analyzers\dotnet\cs\Humanizer.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\analyzers\dotnet\cs\Microsoft.CodeQuality.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\analyzers\dotnet\cs\Microsoft.CodeQuality.CSharp.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.NetCore.Analyzers.2.6.3\analyzers\dotnet\cs\Microsoft.NetCore.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.NetCore.Analyzers.2.6.3\analyzers\dotnet\cs\Microsoft.NetCore.CSharp.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.NetFramework.Analyzers.2.6.3\analyzers\dotnet\cs\Microsoft.NetFramework.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.NetFramework.Analyzers.2.6.3\analyzers\dotnet\cs\Microsoft.NetFramework.CSharp.Analyzers.dll" />
+    <Analyzer Include="..\packages\Text.Analyzers.2.6.3\analyzers\dotnet\cs\Text.Analyzers.dll" />
+    <Analyzer Include="..\packages\Text.Analyzers.2.6.3\analyzers\dotnet\cs\Text.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OPENgovTIA\OPENgovTIA.vbproj">
+      <Project>{815b6680-88b5-4bef-85b5-1c50c5e09adf}</Project>
+      <Name>OPENgovTIA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53076</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/OPENgov/OPENgovTOCO</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Questo progetto fa riferimento a uno o più pacchetti NuGet che non sono presenti in questo computer. Usare lo strumento di ripristino dei pacchetti NuGet per scaricarli. Per altre informazioni, vedere http://go.microsoft.com/fwlink/?LinkID=322105. Il file mancante è {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\build\Microsoft.CodeQuality.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\build\Microsoft.CodeQuality.Analyzers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.NetCore.Analyzers.2.6.3\build\Microsoft.NetCore.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.NetCore.Analyzers.2.6.3\build\Microsoft.NetCore.Analyzers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.NetFramework.Analyzers.2.6.3\build\Microsoft.NetFramework.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.NetFramework.Analyzers.2.6.3\build\Microsoft.NetFramework.Analyzers.props'))" />
+    <Error Condition="!Exists('..\packages\Text.Analyzers.2.6.3\build\Text.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Text.Analyzers.2.6.3\build\Text.Analyzers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props'))" />
+    <Error Condition="!Exists('..\packages\docfx.console.2.56.6\build\docfx.console.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\docfx.console.2.56.6\build\docfx.console.targets'))" />
+  </Target>
+  <Import Project="..\packages\docfx.console.2.56.6\build\docfx.console.targets" Condition="Exists('..\packages\docfx.console.2.56.6\build\docfx.console.targets')" />
+</Project>

@@ -1,0 +1,2967 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RicercaDoc
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RicercaDoc
+   ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc">
+  
+  
+  <h1 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc" class="text-break">Class RicercaDoc
+  </h1>
+  <div class="markdown level0 summary"><p>Pagina per la selezione dei parametri di ricerca dei documenti da stampare e per la gestione dell'iter di stampa.
+Contiene i parametri di ricerca, le funzioni della comandiera e griglia per la visualizzazione del risultato.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.Web.UI.Control</span></div>
+    <div class="level2"><span class="xref">System.Web.UI.TemplateControl</span></div>
+    <div class="level3"><span class="xref">System.Web.UI.Page</span></div>
+    <div class="level4"><a class="xref" href="OPENgovTOCO.BasePage.html">BasePage</a></div>
+    <div class="level5"><a class="xref" href="OPENgovTOCO.BaseEnte.html">BaseEnte</a></div>
+    <div class="level6"><span class="xref">RicercaDoc</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.IComponent</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">System.Web.UI.IParserAccessor</span></div>
+    <div><span class="xref">System.Web.UI.IUrlResolutionService</span></div>
+    <div><span class="xref">System.Web.UI.IDataBindingsAccessor</span></div>
+    <div><span class="xref">System.Web.UI.IControlBuilderAccessor</span></div>
+    <div><span class="xref">System.Web.UI.IControlDesignerAccessor</span></div>
+    <div><span class="xref">System.Web.UI.IExpressionsAccessor</span></div>
+    <div><span class="xref">System.Web.UI.INamingContainer</span></div>
+    <div><span class="xref">System.Web.UI.IFilterResolutionService</span></div>
+    <div><span class="xref">System.Web.IHttpHandler</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="OPENgovTOCO.BasePage.html#OPENgovTOCO_BasePage_authCookie">BasePage.authCookie</a>
+    </div>
+    <div>
+      <a class="xref" href="OPENgovTOCO.BasePage.html#OPENgovTOCO_BasePage_RegisterScript_System_String_System_Type_">BasePage.RegisterScript(String, Type)</a>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.CreateHtmlTextWriter(System.IO.TextWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.CreateHtmlTextWriterFromType(System.IO.TextWriter, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.FindControl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.DeterminePostBackMode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.LoadPageStateFromPersistenceMedium()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SetFocus(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SetFocus(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetPostBackEventReference(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetPostBackEventReference(System.Web.UI.Control, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetPostBackClientEvent(System.Web.UI.Control, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetPostBackClientHyperlink(System.Web.UI.Control, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsClientScriptBlockRegistered(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsStartupScriptRegistered(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterArrayDeclaration(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterHiddenField(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterClientScriptBlock(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterStartupScript(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterOnSubmitStatement(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterRequiresControlState(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RequiresControlState(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.UnregisterRequiresControlState(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterRequiresPostBack(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RaisePostBackEvent(System.Web.UI.IPostBackEventHandler, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterRequiresRaiseEvent(System.Web.UI.IPostBackEventHandler)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.MapPath(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnLoadComplete(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnPreRenderComplete(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.FrameworkInitialize()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.InitializeCulture()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnPreInit(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnInitComplete(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnPreLoad(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterRequiresViewStateEncryption()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnSaveStateComplete(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Render(System.Web.UI.HtmlTextWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterViewStateHandler()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SavePageStateToPersistenceMedium(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ExecuteRegisteredAsyncTasks()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterAsyncTask(System.Web.UI.PageAsyncTask)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.AddOnPreRenderCompleteAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.AddOnPreRenderCompleteAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Validate()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Validate(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetValidators(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.VerifyRenderingInServerForm(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetDataItem()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Application</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Context</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ClientScript</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ClientTarget</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ClientQueryString</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ErrorPage</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsCallback</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.UniqueFilePathSuffix</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.AutoPostBackControl</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Header</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.MaintainScrollPositionOnPostBack</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Master</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.MasterPageFile</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PageStatePersister</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Trace</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Request</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Response</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Server</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Cache</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Session</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Title</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Theme</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.StyleSheetTheme</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.User</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsCrossPagePostBack</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsPostBack</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.EnableViewState</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ViewStateUserKey</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Visible</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsPostBackEventControlRegistered</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsValid</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Validators</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PreviousPage</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Culture</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.UICulture</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.AsyncTimeout</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SmartNavigation</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsAsync</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Form</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PageAdapter</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Items</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.LoadComplete</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PreInit</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PreLoad</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PreRenderComplete</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.InitComplete</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SaveStateComplete</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.Construct()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.OnCommitTransaction(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.OnAbortTransaction(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.OnError(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.CreateResourceBasedLiteralControl(System.Int32, System.Int32, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.TestDeviceFilter(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.LoadControl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.LoadControl(System.Type, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.LoadTemplate(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.ParseControl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.ParseControl(System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.Eval(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.Eval(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPath(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPath(System.String, System.Xml.IXmlNamespaceResolver)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPath(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPath(System.String, System.String, System.Xml.IXmlNamespaceResolver)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPathSelect(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPathSelect(System.String, System.Xml.IXmlNamespaceResolver)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.GetLocalResourceObject(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.GetLocalResourceObject(System.String, System.Type, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.GetGlobalResourceObject(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.GetGlobalResourceObject(System.String, System.String, System.Type, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.System.Web.UI.IFilterResolutionService.EvaluateFilter(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.System.Web.UI.IFilterResolutionService.CompareFilters(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.EnableTheming</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.AppRelativeVirtualPath</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.CommitTransaction</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.AbortTransaction</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.Error</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ResolveAdapter()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.HasEvents()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ApplyStyleSheetSkin(System.Web.UI.Page)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnDataBinding(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DataBind()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DataBind(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DataBindChildren()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.AddParsedSubObject(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.EnsureID()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClearChildState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClearChildControlState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClearChildViewState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Focus()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.LoadControlState(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.LoadViewState(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.MapPathSecure(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OpenFile(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnLoad(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnPreRender(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.BuildProfileTree(System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SaveControlState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SaveViewState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RenderChildren(System.Web.UI.HtmlTextWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter, System.Web.UI.Adapters.ControlAdapter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnUnload(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RaiseBubbleEvent(System.Object, System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnBubbleEvent(System.Object, System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.AddedControl(System.Web.UI.Control, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.CreateControlCollection()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.CreateChildControls()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ResolveUrl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ResolveClientUrl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.FindControl(System.String, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.GetDesignModeState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.HasControls()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IsLiteralContent()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.TrackViewState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.EnsureChildControls()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RemovedControl(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SetDesignModeState(System.Collections.IDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SetRenderMethodDelegate(System.Web.UI.RenderMethod)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlDesignerAccessor.GetDesignModeState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlDesignerAccessor.SetDesignModeState(System.Collections.IDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlDesignerAccessor.SetOwnerControl(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClientID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClientIDSeparator</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Adapter</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DesignMode</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Events</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IsChildControlStateCleared</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SkinID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IsViewStateEnabled</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.NamingContainer</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IdSeparator</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.LoadViewStateByID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Page</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.TemplateControl</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Parent</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.TemplateSourceDirectory</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.AppRelativeTemplateSourceDirectory</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Site</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.UniqueID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.HasChildViewState</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Controls</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ViewState</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ViewStateIgnoresCase</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ChildControlsCreated</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IsTrackingViewState</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IDataBindingsAccessor.HasDataBindings</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IDataBindingsAccessor.DataBindings</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlDesignerAccessor.UserData</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlBuilderAccessor.ControlBuilder</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IExpressionsAccessor.HasExpressions</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IExpressionsAccessor.Expressions</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Disposed</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DataBinding</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Init</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Load</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.PreRender</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Unload</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OPENgovTOCO.Elaborazioni.Documenti.html">OPENgovTOCO.Elaborazioni.Documenti</a></h6>
+  <h6><strong>Assembly</strong>: OPENGovTOCO.dll</h6>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RicercaDoc : BaseEnte, IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, INamingContainer, IFilterResolutionService, IHttpHandler</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnApprovaDocumenti" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.btnApprovaDocumenti">btnApprovaDocumenti</h4>
+  <div class="markdown level1 summary"><p>Controllo btnApprovaDocumenti.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ImageButton btnApprovaDocumenti</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.ImageButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnApprovaDocumenti_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnCancel" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.btnCancel">btnCancel</h4>
+  <div class="markdown level1 summary"><p>Controllo btnCancel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ImageButton btnCancel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.ImageButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnCancel_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnDownloadAll" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.btnDownloadAll">btnDownloadAll</h4>
+  <div class="markdown level1 summary"><p>Controllo btnDownloadAll.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Button btnDownloadAll</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnDownloadAll_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnElaborazioneDocumenti" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.btnElaborazioneDocumenti">btnElaborazioneDocumenti</h4>
+  <div class="markdown level1 summary"><p>Controllo btnElaborazioneDocumenti.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ImageButton btnElaborazioneDocumenti</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.ImageButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnElaborazioneDocumenti_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnEliminaElabora" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.btnEliminaElabora">btnEliminaElabora</h4>
+  <div class="markdown level1 summary"><p>Controllo btnEliminaElabora.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ImageButton btnEliminaElabora</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.ImageButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnEliminaElabora_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnSearch" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.btnSearch">btnSearch</h4>
+  <div class="markdown level1 summary"><p>Controllo btnSearch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ImageButton btnSearch</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.ImageButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnSearch_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnStampaRate" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.btnStampaRate">btnStampaRate</h4>
+  <div class="markdown level1 summary"><p>Controllo btnStampaRate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ImageButton btnStampaRate</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.ImageButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnStampaRate_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_chkElaboraBollettini" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.chkElaboraBollettini">chkElaboraBollettini</h4>
+  <div class="markdown level1 summary"><p>Controllo chkElaboraBollettini.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CheckBox chkElaboraBollettini</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.CheckBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_chkElaboraBollettini_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_chkElaboraTutti" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.chkElaboraTutti">chkElaboraTutti</h4>
+  <div class="markdown level1 summary"><p>Controllo chkElaboraTutti.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CheckBox chkElaboraTutti</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.CheckBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_chkElaboraTutti_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_chkSendMail" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.chkSendMail">chkSendMail</h4>
+  <div class="markdown level1 summary"><p>Controllo chkSendMail.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CheckBox chkSendMail</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.CheckBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_chkSendMail_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_chkSoloBollettino" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.chkSoloBollettino">chkSoloBollettino</h4>
+  <div class="markdown level1 summary"><p>Controllo chkSoloBollettino.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CheckBox chkSoloBollettino</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.CheckBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_chkSoloBollettino_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_CmdApprovaDoc" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.CmdApprovaDoc">CmdApprovaDoc</h4>
+  <div class="markdown level1 summary"><p>Controllo CmdApprovaDoc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Button CmdApprovaDoc</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_CmdApprovaDoc_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_CmdElaborazione" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.CmdElaborazione">CmdElaborazione</h4>
+  <div class="markdown level1 summary"><p>Controllo CmdElaborazione.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ImageButton CmdElaborazione</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.ImageButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_CmdElaborazione_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_CmdEliminaDoc" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.CmdEliminaDoc">CmdEliminaDoc</h4>
+  <div class="markdown level1 summary"><p>Controllo CmdEliminaDoc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Button CmdEliminaDoc</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_CmdEliminaDoc_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_CmdUscita" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.CmdUscita">CmdUscita</h4>
+  <div class="markdown level1 summary"><p>Controllo CmdUscita.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Button CmdUscita</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_CmdUscita_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_DivAttesa" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.DivAttesa">DivAttesa</h4>
+  <div class="markdown level1 summary"><p>Controllo DivAttesa.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HtmlGenericControl DivAttesa</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.HtmlControls.HtmlGenericControl</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_DivAttesa_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_divVisual" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.divVisual">divVisual</h4>
+  <div class="markdown level1 summary"><p>Controllo divVisual.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HtmlGenericControl divVisual</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.HtmlControls.HtmlGenericControl</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_divVisual_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_dvElenco" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.dvElenco">dvElenco</h4>
+  <div class="markdown level1 summary"><p>Controllo dvElenco.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HtmlGenericControl dvElenco</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.HtmlControls.HtmlGenericControl</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_dvElenco_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_GrdDocumenti" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.GrdDocumenti">GrdDocumenti</h4>
+  <div class="markdown level1 summary"><p>Controllo GrdDocumenti.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RibesGridView GrdDocumenti</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Ribes.OPENgov.WebControls.RibesGridView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_GrdDocumenti_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_GrdElenco" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.GrdElenco">GrdElenco</h4>
+  <div class="markdown level1 summary"><p>Controllo GrdElenco.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RibesGridView GrdElenco</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Ribes.OPENgov.WebControls.RibesGridView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_GrdElenco_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_hfAnno" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.hfAnno">hfAnno</h4>
+  <div class="markdown level1 summary"><p>Controllo hfAnno.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HiddenField hfAnno</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.HiddenField</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_hfAnno_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_hfDocElab" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.hfDocElab">hfDocElab</h4>
+  <div class="markdown level1 summary"><p>Controllo hfDocElab.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HiddenField hfDocElab</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.HiddenField</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_hfDocElab_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_hfDocTot" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.hfDocTot">hfDocTot</h4>
+  <div class="markdown level1 summary"><p>Controllo hfDocTot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HiddenField hfDocTot</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.HiddenField</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_hfDocTot_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_hfIdFlusso" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.hfIdFlusso">hfIdFlusso</h4>
+  <div class="markdown level1 summary"><p>Controllo hfIdFlusso.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HiddenField hfIdFlusso</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.HiddenField</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_hfIdFlusso_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_hfTipoRuolo" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.hfTipoRuolo">hfTipoRuolo</h4>
+  <div class="markdown level1 summary"><p>Controllo hfTipoRuolo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HiddenField hfTipoRuolo</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.HiddenField</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_hfTipoRuolo_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_info" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.info">info</h4>
+  <div class="markdown level1 summary"><p>Controllo info.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HtmlGenericControl info</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.HtmlControls.HtmlGenericControl</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_info_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_Label1" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.Label1">Label1</h4>
+  <div class="markdown level1 summary"><p>Controllo Label1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_Label1_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_Label2" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.Label2">Label2</h4>
+  <div class="markdown level1 summary"><p>Controllo Label2.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_Label2_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_Label4" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.Label4">Label4</h4>
+  <div class="markdown level1 summary"><p>Controllo Label4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_Label4_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_Label5" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.Label5">Label5</h4>
+  <div class="markdown level1 summary"><p>Controllo Label5.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label5</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_Label5_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_Label6" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.Label6">Label6</h4>
+  <div class="markdown level1 summary"><p>Controllo Label6.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label6</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_Label6_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_Label7" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.Label7">Label7</h4>
+  <div class="markdown level1 summary"><p>Controllo Label7.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label7</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_Label7_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_Label9" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.Label9">Label9</h4>
+  <div class="markdown level1 summary"><p>Controllo Label9.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label Label9</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_Label9_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_lblAnnoRuolo" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.lblAnnoRuolo">lblAnnoRuolo</h4>
+  <div class="markdown level1 summary"><p>Controllo lblAnnoRuolo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblAnnoRuolo</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_lblAnnoRuolo_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_lblDataCartellazione" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.lblDataCartellazione">lblDataCartellazione</h4>
+  <div class="markdown level1 summary"><p>Controllo lblDataCartellazione.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblDataCartellazione</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_lblDataCartellazione_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_lblDocDaElaborare" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.lblDocDaElaborare">lblDocDaElaborare</h4>
+  <div class="markdown level1 summary"><p>Controllo lblDocDaElaborare.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblDocDaElaborare</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_lblDocDaElaborare_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_lblDocElaborati" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.lblDocElaborati">lblDocElaborati</h4>
+  <div class="markdown level1 summary"><p>Controllo lblDocElaborati.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblDocElaborati</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_lblDocElaborati_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_lblDownloadAll" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.lblDownloadAll">lblDownloadAll</h4>
+  <div class="markdown level1 summary"><p>Controllo lblDownloadAll.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblDownloadAll</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_lblDownloadAll_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_lblElaborazioniEffettuate" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.lblElaborazioniEffettuate">lblElaborazioniEffettuate</h4>
+  <div class="markdown level1 summary"><p>Controllo lblElaborazioniEffettuate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblElaborazioniEffettuate</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_lblElaborazioniEffettuate_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_lblMessage" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.lblMessage">lblMessage</h4>
+  <div class="markdown level1 summary"><p>Controllo lblMessage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblMessage</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_lblMessage_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_lblNumDocPerFile" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.lblNumDocPerFile">lblNumDocPerFile</h4>
+  <div class="markdown level1 summary"><p>Controllo lblNumDocPerFile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblNumDocPerFile</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_lblNumDocPerFile_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_lblNumeroDocDaElaborare" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.lblNumeroDocDaElaborare">lblNumeroDocDaElaborare</h4>
+  <div class="markdown level1 summary"><p>Controllo lblNumeroDocDaElaborare.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblNumeroDocDaElaborare</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_lblNumeroDocDaElaborare_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_lblNumeroDocElaborati" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.lblNumeroDocElaborati">lblNumeroDocElaborati</h4>
+  <div class="markdown level1 summary"><p>Controllo lblNumeroDocElaborati.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblNumeroDocElaborati</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_lblNumeroDocElaborati_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_lblTipoRuolo" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.lblTipoRuolo">lblTipoRuolo</h4>
+  <div class="markdown level1 summary"><p>Controllo lblTipoRuolo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblTipoRuolo</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_lblTipoRuolo_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_lblTitolo" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.lblTitolo">lblTitolo</h4>
+  <div class="markdown level1 summary"><p>Controllo lblTitolo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblTitolo</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_lblTitolo_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_loadStampa" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.loadStampa">loadStampa</h4>
+  <div class="markdown level1 summary"><p>Controllo loadStampa.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HtmlGenericControl loadStampa</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.HtmlControls.HtmlGenericControl</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_loadStampa_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_optEffettivo" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.optEffettivo">optEffettivo</h4>
+  <div class="markdown level1 summary"><p>Controllo optEffettivo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RadioButton optEffettivo</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.RadioButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_optEffettivo_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_optIndirizzo" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.optIndirizzo">optIndirizzo</h4>
+  <div class="markdown level1 summary"><p>Controllo optIndirizzo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RadioButton optIndirizzo</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.RadioButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_optIndirizzo_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_optNominativo" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.optNominativo">optNominativo</h4>
+  <div class="markdown level1 summary"><p>Controllo optNominativo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RadioButton optNominativo</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.RadioButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_optNominativo_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_optProve" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.optProve">optProve</h4>
+  <div class="markdown level1 summary"><p>Controllo optProve.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RadioButton optProve</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.RadioButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_optProve_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_optTipoBollettino451" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.optTipoBollettino451">optTipoBollettino451</h4>
+  <div class="markdown level1 summary"><p>Controllo optTipoBollettino451.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RadioButton optTipoBollettino451</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.RadioButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_optTipoBollettino451_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_optTipoBollettino896" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.optTipoBollettino896">optTipoBollettino896</h4>
+  <div class="markdown level1 summary"><p>Controllo optTipoBollettino896.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RadioButton optTipoBollettino896</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.RadioButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_optTipoBollettino896_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_RicercaDocumenti" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.RicercaDocumenti">RicercaDocumenti</h4>
+  <div class="markdown level1 summary"><p>Controllo RicercaDocumenti.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HtmlForm RicercaDocumenti</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.HtmlControls.HtmlForm</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_RicercaDocumenti_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_TextBox1" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.TextBox1">TextBox1</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox TextBox1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_txtCodiceCartella" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.txtCodiceCartella">txtCodiceCartella</h4>
+  <div class="markdown level1 summary"><p>Controllo txtCodiceCartella.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox txtCodiceCartella</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_txtCodiceCartella_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_txtIdRuolo" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.txtIdRuolo">txtIdRuolo</h4>
+  <div class="markdown level1 summary"><p>Controllo txtIdRuolo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox txtIdRuolo</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_txtIdRuolo_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_txtNominativoA" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.txtNominativoA">txtNominativoA</h4>
+  <div class="markdown level1 summary"><p>Controllo txtNominativoA.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox txtNominativoA</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_txtNominativoA_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_txtNominativoDa" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.txtNominativoDa">txtNominativoDa</h4>
+  <div class="markdown level1 summary"><p>Controllo txtNominativoDa.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox txtNominativoDa</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_txtNominativoDa_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_txtNumDoc" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.txtNumDoc">txtNumDoc</h4>
+  <div class="markdown level1 summary"><p>Controllo txtNumDoc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox txtNumDoc</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_txtNumDoc_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  
+  
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_txtPath" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.txtPath">txtPath</h4>
+  <div class="markdown level1 summary"><p>Controllo txtPath.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox txtPath</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_txtPath_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnApprovaDocumenti_Click_" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.btnApprovaDocumenti_Click*"></a>
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnApprovaDocumenti_Click_System_Object_System_Web_UI_ImageClickEventArgs_" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.btnApprovaDocumenti_Click(System.Object,System.Web.UI.ImageClickEventArgs)">btnApprovaDocumenti_Click(Object, ImageClickEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Pulsante per l'approvazione del ruolo</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void btnApprovaDocumenti_Click(object sender, ImageClickEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Web.UI.ImageClickEventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnCancel_Click_" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.btnCancel_Click*"></a>
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnCancel_Click_System_Object_System_Web_UI_ImageClickEventArgs_" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.btnCancel_Click(System.Object,System.Web.UI.ImageClickEventArgs)">btnCancel_Click(Object, ImageClickEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void btnCancel_Click(object sender, ImageClickEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Web.UI.ImageClickEventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnDownloadAll_Click_" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.btnDownloadAll_Click*"></a>
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnDownloadAll_Click_System_Object_System_EventArgs_" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.btnDownloadAll_Click(System.Object,System.EventArgs)">btnDownloadAll_Click(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void btnDownloadAll_Click(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnElaborazioneDocumenti_Click_" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.btnElaborazioneDocumenti_Click*"></a>
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnElaborazioneDocumenti_Click_System_Object_System_Web_UI_ImageClickEventArgs_" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.btnElaborazioneDocumenti_Click(System.Object,System.Web.UI.ImageClickEventArgs)">btnElaborazioneDocumenti_Click(Object, ImageClickEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void btnElaborazioneDocumenti_Click(object sender, ImageClickEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Web.UI.ImageClickEventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnSearch_Click_" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.btnSearch_Click*"></a>
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnSearch_Click_System_Object_System_Web_UI_ImageClickEventArgs_" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.btnSearch_Click(System.Object,System.Web.UI.ImageClickEventArgs)">btnSearch_Click(Object, ImageClickEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void btnSearch_Click(object sender, ImageClickEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Web.UI.ImageClickEventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnStampaRate_Click_" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.btnStampaRate_Click*"></a>
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_btnStampaRate_Click_System_Object_System_Web_UI_ImageClickEventArgs_" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.btnStampaRate_Click(System.Object,System.Web.UI.ImageClickEventArgs)">btnStampaRate_Click(Object, ImageClickEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void btnStampaRate_Click(object sender, ImageClickEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Web.UI.ImageClickEventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_chkElaboraTutti_CheckedChanged_" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.chkElaboraTutti_CheckedChanged*"></a>
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_chkElaboraTutti_CheckedChanged_System_Object_System_EventArgs_" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.chkElaboraTutti_CheckedChanged(System.Object,System.EventArgs)">chkElaboraTutti_CheckedChanged(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void chkElaboraTutti_CheckedChanged(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_ChkSelezionato_CheckedChanged_" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.ChkSelezionato_CheckedChanged*"></a>
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_ChkSelezionato_CheckedChanged_System_Object_System_EventArgs_" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.ChkSelezionato_CheckedChanged(System.Object,System.EventArgs)">ChkSelezionato_CheckedChanged(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ChkSelezionato_CheckedChanged(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_GetContribuente_" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.GetContribuente*"></a>
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_GetContribuente_System_Object_System_String_" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.GetContribuente(System.Object,System.String)">GetContribuente(Object, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string GetContribuente(object anagrafica, string field)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">anagrafica</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">field</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_GrdPageIndexChanging_" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.GrdPageIndexChanging*"></a>
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_GrdPageIndexChanging_System_Object_System_Web_UI_WebControls_GridViewPageEventArgs_" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.GrdPageIndexChanging(System.Object,System.Web.UI.WebControls.GridViewPageEventArgs)">GrdPageIndexChanging(Object, GridViewPageEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Gestione del cambio pagina della griglia.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GrdPageIndexChanging(object sender, GridViewPageEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.GridViewPageEventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_OnInit_" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.OnInit*"></a>
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_OnInit_System_EventArgs_" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.OnInit(System.EventArgs)">OnInit(EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnInit(EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OPENgovTOCO.BaseEnte.html#OPENgovTOCO_BaseEnte_OnInit_System_EventArgs_">BaseEnte.OnInit(EventArgs)</a></div>
+  
+  
+  <a id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_Page_Load_" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.Page_Load*"></a>
+  <h4 id="OPENgovTOCO_Elaborazioni_Documenti_RicercaDoc_Page_Load_System_Object_System_EventArgs_" data-uid="OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.Page_Load(System.Object,System.EventArgs)">Page_Load(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Page_Load(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.IComponent</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IParserAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IUrlResolutionService</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IDataBindingsAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IControlBuilderAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IControlDesignerAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IExpressionsAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.INamingContainer</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IFilterResolutionService</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.IHttpHandler</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

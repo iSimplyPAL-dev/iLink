@@ -1,0 +1,5710 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  commentId: T:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  id: DettaglioAnagrafica
+  parent: OPENGovTOCO.MotoreTOCO
+  children:
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CapRCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CapResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CivicoRCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CivicoResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.COD_CONTRIBUENTE
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodComuneRCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodContribuenteRappLegale
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodEnte
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodFamiglia
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodiceComuneNascita
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodiceComuneResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodiceFiscale
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodIndividuale
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodTributo
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodViaRCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodViaResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Cognome
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CognomeInvio
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ComuneNascita
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ComuneRCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ComuneResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DaRicontrollare
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataFineValidita
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataFineValiditaSpedizione
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataInizioValidita
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataInizioValiditaSpedizione
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataMorte
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataNascita
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimaModifica
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimaModificaSpedizione
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimoAggAnagrafe
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimoAggTributi
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DatiRiferimento
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.dsContatti
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.dsTipiContatti
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.EsponenteCivicoRCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.EsponenteCivicoResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.FrazioneRCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.FrazioneResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ID_DATA_ANAGRAFICA
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ID_DATA_SPEDIZIONE
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.InternoCivicoRCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.InternoCivicoResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.LocRCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CAP_RCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CapResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CIVICO_RCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CivicoResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_COMUNE_RCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_CONTRIBUENTE
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Cod_Contribuente_Rapp_Legale
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_TRIBUTO
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_VIA_RCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodEnte
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodFamiglia
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodiceComuneNascita
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodiceComuneResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodiceFiscale
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodIndividuale
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodViaResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Cognome
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COGNOME_INVIO
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COMUNE_RCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ComuneNascita
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ComuneResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DaRicontrollare
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Fine_Validita
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DATA_FINE_VALIDITA_SPED
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Inizio_Validita
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DATA_INIZIO_VALIDITA_SPED
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Ultima_Modifica
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DATA_ULTIMA_MODIFICA_SPED
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Ultimo_Agg_Anagrafe
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Ultimo_Agg_Tributi
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DataMorte
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DataNascita
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DatiRiferimento
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_dsContatti
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_dsTipiContatti
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ESPONENTE_CIVICO_RCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_EsponenteCivicoResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_FRAZIONE_RCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_FrazioneResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ID_DATA_ANAGRAFICA
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ID_DATA_SPEDIZIONE
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_INTERNO_CIVICO_RCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_InternoCivicoResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_LOC_RCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NazionalitaNascita
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NazionalitaResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NC_Anagrafica_Res
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NC_Tributari
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Nome
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NOME_INVIO
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Note
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NucleoFamiliare
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Operatore
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_OPERATORE_SPEDIZIONE
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_PartitaIva
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_POSIZIONE_CIV_RCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_PosizioneCivicoResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Professione
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_PROVINCIA_RCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ProvinciaNascita
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ProvinciaResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_RappresentanteLegale
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_SCALA_CIVICO_RCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ScalaCivicoResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Sesso
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_TipoRiferimento
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_VIA_RCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ViaResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NazionalitaNascita
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NazionalitaResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NCAnagraficaRes
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NCTributari
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Nome
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NomeInvio
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Note
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NucleoFamiliare
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Operatore
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.OperatoreSpedizione
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.PartitaIva
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.PosizioneCivicoRCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.PosizioneCivicoResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Professione
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ProvinciaNascita
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ProvinciaRCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ProvinciaResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.RappresentanteLegale
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ScalaCivicoRCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ScalaCivicoResidenza
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Sesso
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.TipoRiferimento
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ViaRCP
+  - OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ViaResidenza
+  langs:
+  - csharp
+  - vb
+  name: DettaglioAnagrafica
+  nameWithType: DettaglioAnagrafica
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  type: Class
+  source:
+    id: DettaglioAnagrafica
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1012
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class DettaglioAnagrafica : CRUD
+    content.vb: >-
+      <Serializable>
+
+      Public Class DettaglioAnagrafica
+
+          Inherits CRUD
+  inheritance:
+  - System.Object
+  - OPENGovTOCO.MotoreTOCO.CRUD
+  inheritedMembers:
+  - OPENGovTOCO.MotoreTOCO.CRUD.ID
+  - OPENGovTOCO.MotoreTOCO.CRUD.Concurrency
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_CONTRIBUENTE
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_CONTRIBUENTE
+  id: m_COD_CONTRIBUENTE
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_COD_CONTRIBUENTE
+  nameWithType: DettaglioAnagrafica.m_COD_CONTRIBUENTE
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_CONTRIBUENTE
+  type: Property
+  source:
+    id: m_COD_CONTRIBUENTE
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1292
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_COD_CONTRIBUENTE { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_COD_CONTRIBUENTE As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_CONTRIBUENTE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ID_DATA_ANAGRAFICA
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ID_DATA_ANAGRAFICA
+  id: m_ID_DATA_ANAGRAFICA
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_ID_DATA_ANAGRAFICA
+  nameWithType: DettaglioAnagrafica.m_ID_DATA_ANAGRAFICA
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ID_DATA_ANAGRAFICA
+  type: Property
+  source:
+    id: m_ID_DATA_ANAGRAFICA
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1302
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_ID_DATA_ANAGRAFICA { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_ID_DATA_ANAGRAFICA As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ID_DATA_ANAGRAFICA*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ID_DATA_SPEDIZIONE
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ID_DATA_SPEDIZIONE
+  id: m_ID_DATA_SPEDIZIONE
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_ID_DATA_SPEDIZIONE
+  nameWithType: DettaglioAnagrafica.m_ID_DATA_SPEDIZIONE
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ID_DATA_SPEDIZIONE
+  type: Property
+  source:
+    id: m_ID_DATA_SPEDIZIONE
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1312
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_ID_DATA_SPEDIZIONE { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_ID_DATA_SPEDIZIONE As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ID_DATA_SPEDIZIONE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Cognome
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Cognome
+  id: m_Cognome
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_Cognome
+  nameWithType: DettaglioAnagrafica.m_Cognome
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Cognome
+  type: Property
+  source:
+    id: m_Cognome
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1322
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_Cognome { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_Cognome As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Cognome*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Nome
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Nome
+  id: m_Nome
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_Nome
+  nameWithType: DettaglioAnagrafica.m_Nome
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Nome
+  type: Property
+  source:
+    id: m_Nome
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1332
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_Nome { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_Nome As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Nome*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodiceFiscale
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodiceFiscale
+  id: m_CodiceFiscale
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_CodiceFiscale
+  nameWithType: DettaglioAnagrafica.m_CodiceFiscale
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodiceFiscale
+  type: Property
+  source:
+    id: m_CodiceFiscale
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1342
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_CodiceFiscale { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_CodiceFiscale As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodiceFiscale*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_PartitaIva
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_PartitaIva
+  id: m_PartitaIva
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_PartitaIva
+  nameWithType: DettaglioAnagrafica.m_PartitaIva
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_PartitaIva
+  type: Property
+  source:
+    id: m_PartitaIva
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1352
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_PartitaIva { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_PartitaIva As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_PartitaIva*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodiceComuneNascita
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodiceComuneNascita
+  id: m_CodiceComuneNascita
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_CodiceComuneNascita
+  nameWithType: DettaglioAnagrafica.m_CodiceComuneNascita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodiceComuneNascita
+  type: Property
+  source:
+    id: m_CodiceComuneNascita
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1362
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_CodiceComuneNascita { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_CodiceComuneNascita As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodiceComuneNascita*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ComuneNascita
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ComuneNascita
+  id: m_ComuneNascita
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_ComuneNascita
+  nameWithType: DettaglioAnagrafica.m_ComuneNascita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ComuneNascita
+  type: Property
+  source:
+    id: m_ComuneNascita
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1372
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_ComuneNascita { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_ComuneNascita As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ComuneNascita*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ProvinciaNascita
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ProvinciaNascita
+  id: m_ProvinciaNascita
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_ProvinciaNascita
+  nameWithType: DettaglioAnagrafica.m_ProvinciaNascita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ProvinciaNascita
+  type: Property
+  source:
+    id: m_ProvinciaNascita
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1382
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_ProvinciaNascita { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_ProvinciaNascita As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ProvinciaNascita*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DataNascita
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DataNascita
+  id: m_DataNascita
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_DataNascita
+  nameWithType: DettaglioAnagrafica.m_DataNascita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DataNascita
+  type: Property
+  source:
+    id: m_DataNascita
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1392
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_DataNascita { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_DataNascita As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DataNascita*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NazionalitaNascita
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NazionalitaNascita
+  id: m_NazionalitaNascita
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_NazionalitaNascita
+  nameWithType: DettaglioAnagrafica.m_NazionalitaNascita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NazionalitaNascita
+  type: Property
+  source:
+    id: m_NazionalitaNascita
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1402
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_NazionalitaNascita { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_NazionalitaNascita As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NazionalitaNascita*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Sesso
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Sesso
+  id: m_Sesso
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_Sesso
+  nameWithType: DettaglioAnagrafica.m_Sesso
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Sesso
+  type: Property
+  source:
+    id: m_Sesso
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1412
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_Sesso { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_Sesso As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Sesso*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodiceComuneResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodiceComuneResidenza
+  id: m_CodiceComuneResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_CodiceComuneResidenza
+  nameWithType: DettaglioAnagrafica.m_CodiceComuneResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodiceComuneResidenza
+  type: Property
+  source:
+    id: m_CodiceComuneResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1422
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_CodiceComuneResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_CodiceComuneResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodiceComuneResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ComuneResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ComuneResidenza
+  id: m_ComuneResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_ComuneResidenza
+  nameWithType: DettaglioAnagrafica.m_ComuneResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ComuneResidenza
+  type: Property
+  source:
+    id: m_ComuneResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1432
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_ComuneResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_ComuneResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ComuneResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ProvinciaResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ProvinciaResidenza
+  id: m_ProvinciaResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_ProvinciaResidenza
+  nameWithType: DettaglioAnagrafica.m_ProvinciaResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ProvinciaResidenza
+  type: Property
+  source:
+    id: m_ProvinciaResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1442
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_ProvinciaResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_ProvinciaResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ProvinciaResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CapResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CapResidenza
+  id: m_CapResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_CapResidenza
+  nameWithType: DettaglioAnagrafica.m_CapResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CapResidenza
+  type: Property
+  source:
+    id: m_CapResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1452
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_CapResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_CapResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CapResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodViaResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodViaResidenza
+  id: m_CodViaResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_CodViaResidenza
+  nameWithType: DettaglioAnagrafica.m_CodViaResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodViaResidenza
+  type: Property
+  source:
+    id: m_CodViaResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1462
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_CodViaResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_CodViaResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodViaResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ViaResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ViaResidenza
+  id: m_ViaResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_ViaResidenza
+  nameWithType: DettaglioAnagrafica.m_ViaResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ViaResidenza
+  type: Property
+  source:
+    id: m_ViaResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1472
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_ViaResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_ViaResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ViaResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_PosizioneCivicoResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_PosizioneCivicoResidenza
+  id: m_PosizioneCivicoResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_PosizioneCivicoResidenza
+  nameWithType: DettaglioAnagrafica.m_PosizioneCivicoResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_PosizioneCivicoResidenza
+  type: Property
+  source:
+    id: m_PosizioneCivicoResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1482
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_PosizioneCivicoResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_PosizioneCivicoResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_PosizioneCivicoResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CivicoResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CivicoResidenza
+  id: m_CivicoResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_CivicoResidenza
+  nameWithType: DettaglioAnagrafica.m_CivicoResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CivicoResidenza
+  type: Property
+  source:
+    id: m_CivicoResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1492
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_CivicoResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_CivicoResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CivicoResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_EsponenteCivicoResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_EsponenteCivicoResidenza
+  id: m_EsponenteCivicoResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_EsponenteCivicoResidenza
+  nameWithType: DettaglioAnagrafica.m_EsponenteCivicoResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_EsponenteCivicoResidenza
+  type: Property
+  source:
+    id: m_EsponenteCivicoResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1502
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_EsponenteCivicoResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_EsponenteCivicoResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_EsponenteCivicoResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ScalaCivicoResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ScalaCivicoResidenza
+  id: m_ScalaCivicoResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_ScalaCivicoResidenza
+  nameWithType: DettaglioAnagrafica.m_ScalaCivicoResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ScalaCivicoResidenza
+  type: Property
+  source:
+    id: m_ScalaCivicoResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1512
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_ScalaCivicoResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_ScalaCivicoResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ScalaCivicoResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_InternoCivicoResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_InternoCivicoResidenza
+  id: m_InternoCivicoResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_InternoCivicoResidenza
+  nameWithType: DettaglioAnagrafica.m_InternoCivicoResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_InternoCivicoResidenza
+  type: Property
+  source:
+    id: m_InternoCivicoResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1522
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_InternoCivicoResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_InternoCivicoResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_InternoCivicoResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_FrazioneResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_FrazioneResidenza
+  id: m_FrazioneResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_FrazioneResidenza
+  nameWithType: DettaglioAnagrafica.m_FrazioneResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_FrazioneResidenza
+  type: Property
+  source:
+    id: m_FrazioneResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1532
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_FrazioneResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_FrazioneResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_FrazioneResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NazionalitaResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NazionalitaResidenza
+  id: m_NazionalitaResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_NazionalitaResidenza
+  nameWithType: DettaglioAnagrafica.m_NazionalitaResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NazionalitaResidenza
+  type: Property
+  source:
+    id: m_NazionalitaResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1542
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_NazionalitaResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_NazionalitaResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NazionalitaResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NucleoFamiliare
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NucleoFamiliare
+  id: m_NucleoFamiliare
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_NucleoFamiliare
+  nameWithType: DettaglioAnagrafica.m_NucleoFamiliare
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NucleoFamiliare
+  type: Property
+  source:
+    id: m_NucleoFamiliare
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1552
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_NucleoFamiliare { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_NucleoFamiliare As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NucleoFamiliare*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_RappresentanteLegale
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_RappresentanteLegale
+  id: m_RappresentanteLegale
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_RappresentanteLegale
+  nameWithType: DettaglioAnagrafica.m_RappresentanteLegale
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_RappresentanteLegale
+  type: Property
+  source:
+    id: m_RappresentanteLegale
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1562
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_RappresentanteLegale { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_RappresentanteLegale As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_RappresentanteLegale*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DataMorte
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DataMorte
+  id: m_DataMorte
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_DataMorte
+  nameWithType: DettaglioAnagrafica.m_DataMorte
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DataMorte
+  type: Property
+  source:
+    id: m_DataMorte
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1572
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_DataMorte { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_DataMorte As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DataMorte*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Professione
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Professione
+  id: m_Professione
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_Professione
+  nameWithType: DettaglioAnagrafica.m_Professione
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Professione
+  type: Property
+  source:
+    id: m_Professione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1582
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_Professione { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_Professione As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Professione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Note
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Note
+  id: m_Note
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_Note
+  nameWithType: DettaglioAnagrafica.m_Note
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Note
+  type: Property
+  source:
+    id: m_Note
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1592
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_Note { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_Note As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Note*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DaRicontrollare
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DaRicontrollare
+  id: m_DaRicontrollare
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_DaRicontrollare
+  nameWithType: DettaglioAnagrafica.m_DaRicontrollare
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DaRicontrollare
+  type: Property
+  source:
+    id: m_DaRicontrollare
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1602
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public bool m_DaRicontrollare { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property m_DaRicontrollare As Boolean
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DaRicontrollare*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Inizio_Validita
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Inizio_Validita
+  id: m_Data_Inizio_Validita
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_Data_Inizio_Validita
+  nameWithType: DettaglioAnagrafica.m_Data_Inizio_Validita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Inizio_Validita
+  type: Property
+  source:
+    id: m_Data_Inizio_Validita
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1612
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_Data_Inizio_Validita { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_Data_Inizio_Validita As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Inizio_Validita*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Fine_Validita
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Fine_Validita
+  id: m_Data_Fine_Validita
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_Data_Fine_Validita
+  nameWithType: DettaglioAnagrafica.m_Data_Fine_Validita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Fine_Validita
+  type: Property
+  source:
+    id: m_Data_Fine_Validita
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1622
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_Data_Fine_Validita { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_Data_Fine_Validita As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Fine_Validita*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Ultima_Modifica
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Ultima_Modifica
+  id: m_Data_Ultima_Modifica
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_Data_Ultima_Modifica
+  nameWithType: DettaglioAnagrafica.m_Data_Ultima_Modifica
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Ultima_Modifica
+  type: Property
+  source:
+    id: m_Data_Ultima_Modifica
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1632
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_Data_Ultima_Modifica { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_Data_Ultima_Modifica As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Ultima_Modifica*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Operatore
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Operatore
+  id: m_Operatore
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_Operatore
+  nameWithType: DettaglioAnagrafica.m_Operatore
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Operatore
+  type: Property
+  source:
+    id: m_Operatore
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1642
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_Operatore { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_Operatore As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Operatore*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Cod_Contribuente_Rapp_Legale
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Cod_Contribuente_Rapp_Legale
+  id: m_Cod_Contribuente_Rapp_Legale
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_Cod_Contribuente_Rapp_Legale
+  nameWithType: DettaglioAnagrafica.m_Cod_Contribuente_Rapp_Legale
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Cod_Contribuente_Rapp_Legale
+  type: Property
+  source:
+    id: m_Cod_Contribuente_Rapp_Legale
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1652
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_Cod_Contribuente_Rapp_Legale { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_Cod_Contribuente_Rapp_Legale As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Cod_Contribuente_Rapp_Legale*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodEnte
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodEnte
+  id: m_CodEnte
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_CodEnte
+  nameWithType: DettaglioAnagrafica.m_CodEnte
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodEnte
+  type: Property
+  source:
+    id: m_CodEnte
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1662
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_CodEnte { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_CodEnte As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodEnte*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodIndividuale
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodIndividuale
+  id: m_CodIndividuale
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_CodIndividuale
+  nameWithType: DettaglioAnagrafica.m_CodIndividuale
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodIndividuale
+  type: Property
+  source:
+    id: m_CodIndividuale
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1672
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_CodIndividuale { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_CodIndividuale As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodIndividuale*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodFamiglia
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodFamiglia
+  id: m_CodFamiglia
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_CodFamiglia
+  nameWithType: DettaglioAnagrafica.m_CodFamiglia
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodFamiglia
+  type: Property
+  source:
+    id: m_CodFamiglia
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1682
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_CodFamiglia { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_CodFamiglia As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodFamiglia*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NC_Tributari
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NC_Tributari
+  id: m_NC_Tributari
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_NC_Tributari
+  nameWithType: DettaglioAnagrafica.m_NC_Tributari
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NC_Tributari
+  type: Property
+  source:
+    id: m_NC_Tributari
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1692
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_NC_Tributari { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_NC_Tributari As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NC_Tributari*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Ultimo_Agg_Tributi
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Ultimo_Agg_Tributi
+  id: m_Data_Ultimo_Agg_Tributi
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_Data_Ultimo_Agg_Tributi
+  nameWithType: DettaglioAnagrafica.m_Data_Ultimo_Agg_Tributi
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Ultimo_Agg_Tributi
+  type: Property
+  source:
+    id: m_Data_Ultimo_Agg_Tributi
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1702
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_Data_Ultimo_Agg_Tributi { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_Data_Ultimo_Agg_Tributi As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Ultimo_Agg_Tributi*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NC_Anagrafica_Res
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NC_Anagrafica_Res
+  id: m_NC_Anagrafica_Res
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_NC_Anagrafica_Res
+  nameWithType: DettaglioAnagrafica.m_NC_Anagrafica_Res
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NC_Anagrafica_Res
+  type: Property
+  source:
+    id: m_NC_Anagrafica_Res
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1712
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_NC_Anagrafica_Res { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_NC_Anagrafica_Res As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NC_Anagrafica_Res*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Ultimo_Agg_Anagrafe
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Ultimo_Agg_Anagrafe
+  id: m_Data_Ultimo_Agg_Anagrafe
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_Data_Ultimo_Agg_Anagrafe
+  nameWithType: DettaglioAnagrafica.m_Data_Ultimo_Agg_Anagrafe
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Ultimo_Agg_Anagrafe
+  type: Property
+  source:
+    id: m_Data_Ultimo_Agg_Anagrafe
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1722
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_Data_Ultimo_Agg_Anagrafe { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_Data_Ultimo_Agg_Anagrafe As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Ultimo_Agg_Anagrafe*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_TRIBUTO
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_TRIBUTO
+  id: m_COD_TRIBUTO
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_COD_TRIBUTO
+  nameWithType: DettaglioAnagrafica.m_COD_TRIBUTO
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_TRIBUTO
+  type: Property
+  source:
+    id: m_COD_TRIBUTO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1732
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_COD_TRIBUTO { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_COD_TRIBUTO As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_TRIBUTO*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COGNOME_INVIO
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COGNOME_INVIO
+  id: m_COGNOME_INVIO
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_COGNOME_INVIO
+  nameWithType: DettaglioAnagrafica.m_COGNOME_INVIO
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COGNOME_INVIO
+  type: Property
+  source:
+    id: m_COGNOME_INVIO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1742
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_COGNOME_INVIO { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_COGNOME_INVIO As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COGNOME_INVIO*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NOME_INVIO
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NOME_INVIO
+  id: m_NOME_INVIO
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_NOME_INVIO
+  nameWithType: DettaglioAnagrafica.m_NOME_INVIO
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NOME_INVIO
+  type: Property
+  source:
+    id: m_NOME_INVIO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1752
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_NOME_INVIO { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_NOME_INVIO As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NOME_INVIO*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_COMUNE_RCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_COMUNE_RCP
+  id: m_COD_COMUNE_RCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_COD_COMUNE_RCP
+  nameWithType: DettaglioAnagrafica.m_COD_COMUNE_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_COMUNE_RCP
+  type: Property
+  source:
+    id: m_COD_COMUNE_RCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1762
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_COD_COMUNE_RCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_COD_COMUNE_RCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_COMUNE_RCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COMUNE_RCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COMUNE_RCP
+  id: m_COMUNE_RCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_COMUNE_RCP
+  nameWithType: DettaglioAnagrafica.m_COMUNE_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COMUNE_RCP
+  type: Property
+  source:
+    id: m_COMUNE_RCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1772
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_COMUNE_RCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_COMUNE_RCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COMUNE_RCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_LOC_RCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_LOC_RCP
+  id: m_LOC_RCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_LOC_RCP
+  nameWithType: DettaglioAnagrafica.m_LOC_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_LOC_RCP
+  type: Property
+  source:
+    id: m_LOC_RCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1782
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_LOC_RCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_LOC_RCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_LOC_RCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_PROVINCIA_RCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_PROVINCIA_RCP
+  id: m_PROVINCIA_RCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_PROVINCIA_RCP
+  nameWithType: DettaglioAnagrafica.m_PROVINCIA_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_PROVINCIA_RCP
+  type: Property
+  source:
+    id: m_PROVINCIA_RCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1792
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_PROVINCIA_RCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_PROVINCIA_RCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_PROVINCIA_RCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CAP_RCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CAP_RCP
+  id: m_CAP_RCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_CAP_RCP
+  nameWithType: DettaglioAnagrafica.m_CAP_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CAP_RCP
+  type: Property
+  source:
+    id: m_CAP_RCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1802
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_CAP_RCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_CAP_RCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CAP_RCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_VIA_RCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_VIA_RCP
+  id: m_COD_VIA_RCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_COD_VIA_RCP
+  nameWithType: DettaglioAnagrafica.m_COD_VIA_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_VIA_RCP
+  type: Property
+  source:
+    id: m_COD_VIA_RCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1812
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_COD_VIA_RCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_COD_VIA_RCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_VIA_RCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_VIA_RCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_VIA_RCP
+  id: m_VIA_RCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_VIA_RCP
+  nameWithType: DettaglioAnagrafica.m_VIA_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_VIA_RCP
+  type: Property
+  source:
+    id: m_VIA_RCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1822
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_VIA_RCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_VIA_RCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_VIA_RCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_POSIZIONE_CIV_RCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_POSIZIONE_CIV_RCP
+  id: m_POSIZIONE_CIV_RCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_POSIZIONE_CIV_RCP
+  nameWithType: DettaglioAnagrafica.m_POSIZIONE_CIV_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_POSIZIONE_CIV_RCP
+  type: Property
+  source:
+    id: m_POSIZIONE_CIV_RCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1832
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_POSIZIONE_CIV_RCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_POSIZIONE_CIV_RCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_POSIZIONE_CIV_RCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CIVICO_RCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CIVICO_RCP
+  id: m_CIVICO_RCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_CIVICO_RCP
+  nameWithType: DettaglioAnagrafica.m_CIVICO_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CIVICO_RCP
+  type: Property
+  source:
+    id: m_CIVICO_RCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1842
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_CIVICO_RCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_CIVICO_RCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CIVICO_RCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ESPONENTE_CIVICO_RCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ESPONENTE_CIVICO_RCP
+  id: m_ESPONENTE_CIVICO_RCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_ESPONENTE_CIVICO_RCP
+  nameWithType: DettaglioAnagrafica.m_ESPONENTE_CIVICO_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ESPONENTE_CIVICO_RCP
+  type: Property
+  source:
+    id: m_ESPONENTE_CIVICO_RCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1852
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_ESPONENTE_CIVICO_RCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_ESPONENTE_CIVICO_RCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ESPONENTE_CIVICO_RCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_SCALA_CIVICO_RCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_SCALA_CIVICO_RCP
+  id: m_SCALA_CIVICO_RCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_SCALA_CIVICO_RCP
+  nameWithType: DettaglioAnagrafica.m_SCALA_CIVICO_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_SCALA_CIVICO_RCP
+  type: Property
+  source:
+    id: m_SCALA_CIVICO_RCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1862
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_SCALA_CIVICO_RCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_SCALA_CIVICO_RCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_SCALA_CIVICO_RCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_INTERNO_CIVICO_RCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_INTERNO_CIVICO_RCP
+  id: m_INTERNO_CIVICO_RCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_INTERNO_CIVICO_RCP
+  nameWithType: DettaglioAnagrafica.m_INTERNO_CIVICO_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_INTERNO_CIVICO_RCP
+  type: Property
+  source:
+    id: m_INTERNO_CIVICO_RCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1872
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_INTERNO_CIVICO_RCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_INTERNO_CIVICO_RCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_INTERNO_CIVICO_RCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_FRAZIONE_RCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_FRAZIONE_RCP
+  id: m_FRAZIONE_RCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_FRAZIONE_RCP
+  nameWithType: DettaglioAnagrafica.m_FRAZIONE_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_FRAZIONE_RCP
+  type: Property
+  source:
+    id: m_FRAZIONE_RCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1882
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_FRAZIONE_RCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_FRAZIONE_RCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_FRAZIONE_RCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DATA_INIZIO_VALIDITA_SPED
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DATA_INIZIO_VALIDITA_SPED
+  id: m_DATA_INIZIO_VALIDITA_SPED
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_DATA_INIZIO_VALIDITA_SPED
+  nameWithType: DettaglioAnagrafica.m_DATA_INIZIO_VALIDITA_SPED
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DATA_INIZIO_VALIDITA_SPED
+  type: Property
+  source:
+    id: m_DATA_INIZIO_VALIDITA_SPED
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1892
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_DATA_INIZIO_VALIDITA_SPED { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_DATA_INIZIO_VALIDITA_SPED As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DATA_INIZIO_VALIDITA_SPED*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DATA_FINE_VALIDITA_SPED
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DATA_FINE_VALIDITA_SPED
+  id: m_DATA_FINE_VALIDITA_SPED
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_DATA_FINE_VALIDITA_SPED
+  nameWithType: DettaglioAnagrafica.m_DATA_FINE_VALIDITA_SPED
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DATA_FINE_VALIDITA_SPED
+  type: Property
+  source:
+    id: m_DATA_FINE_VALIDITA_SPED
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1902
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_DATA_FINE_VALIDITA_SPED { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_DATA_FINE_VALIDITA_SPED As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DATA_FINE_VALIDITA_SPED*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DATA_ULTIMA_MODIFICA_SPED
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DATA_ULTIMA_MODIFICA_SPED
+  id: m_DATA_ULTIMA_MODIFICA_SPED
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_DATA_ULTIMA_MODIFICA_SPED
+  nameWithType: DettaglioAnagrafica.m_DATA_ULTIMA_MODIFICA_SPED
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DATA_ULTIMA_MODIFICA_SPED
+  type: Property
+  source:
+    id: m_DATA_ULTIMA_MODIFICA_SPED
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1912
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_DATA_ULTIMA_MODIFICA_SPED { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_DATA_ULTIMA_MODIFICA_SPED As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DATA_ULTIMA_MODIFICA_SPED*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_OPERATORE_SPEDIZIONE
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_OPERATORE_SPEDIZIONE
+  id: m_OPERATORE_SPEDIZIONE
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_OPERATORE_SPEDIZIONE
+  nameWithType: DettaglioAnagrafica.m_OPERATORE_SPEDIZIONE
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_OPERATORE_SPEDIZIONE
+  type: Property
+  source:
+    id: m_OPERATORE_SPEDIZIONE
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1922
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_OPERATORE_SPEDIZIONE { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_OPERATORE_SPEDIZIONE As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_OPERATORE_SPEDIZIONE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_TipoRiferimento
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_TipoRiferimento
+  id: m_TipoRiferimento
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_TipoRiferimento
+  nameWithType: DettaglioAnagrafica.m_TipoRiferimento
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_TipoRiferimento
+  type: Property
+  source:
+    id: m_TipoRiferimento
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1932
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_TipoRiferimento { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_TipoRiferimento As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_TipoRiferimento*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DatiRiferimento
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DatiRiferimento
+  id: m_DatiRiferimento
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_DatiRiferimento
+  nameWithType: DettaglioAnagrafica.m_DatiRiferimento
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DatiRiferimento
+  type: Property
+  source:
+    id: m_DatiRiferimento
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1942
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string m_DatiRiferimento { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property m_DatiRiferimento As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DatiRiferimento*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_dsContatti
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_dsContatti
+  id: m_dsContatti
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_dsContatti
+  nameWithType: DettaglioAnagrafica.m_dsContatti
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_dsContatti
+  type: Property
+  source:
+    id: m_dsContatti
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1952
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public dsContatti m_dsContatti { get; set; }
+    parameters: []
+    return:
+      type: OPENGovTOCO.MotoreTOCO.dsContatti
+    content.vb: Public Property m_dsContatti As dsContatti
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_dsContatti*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_dsTipiContatti
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_dsTipiContatti
+  id: m_dsTipiContatti
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: m_dsTipiContatti
+  nameWithType: DettaglioAnagrafica.m_dsTipiContatti
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_dsTipiContatti
+  type: Property
+  source:
+    id: m_dsTipiContatti
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1962
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public DataSet m_dsTipiContatti { get; set; }
+    parameters: []
+    return:
+      type: System.Data.DataSet
+    content.vb: Public Property m_dsTipiContatti As DataSet
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_dsTipiContatti*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.COD_CONTRIBUENTE
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.COD_CONTRIBUENTE
+  id: COD_CONTRIBUENTE
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: COD_CONTRIBUENTE
+  nameWithType: DettaglioAnagrafica.COD_CONTRIBUENTE
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.COD_CONTRIBUENTE
+  type: Property
+  source:
+    id: COD_CONTRIBUENTE
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1972
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string COD_CONTRIBUENTE { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property COD_CONTRIBUENTE As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.COD_CONTRIBUENTE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ID_DATA_SPEDIZIONE
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ID_DATA_SPEDIZIONE
+  id: ID_DATA_SPEDIZIONE
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: ID_DATA_SPEDIZIONE
+  nameWithType: DettaglioAnagrafica.ID_DATA_SPEDIZIONE
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ID_DATA_SPEDIZIONE
+  type: Property
+  source:
+    id: ID_DATA_SPEDIZIONE
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1982
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string ID_DATA_SPEDIZIONE { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ID_DATA_SPEDIZIONE As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ID_DATA_SPEDIZIONE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ID_DATA_ANAGRAFICA
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ID_DATA_ANAGRAFICA
+  id: ID_DATA_ANAGRAFICA
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: ID_DATA_ANAGRAFICA
+  nameWithType: DettaglioAnagrafica.ID_DATA_ANAGRAFICA
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ID_DATA_ANAGRAFICA
+  type: Property
+  source:
+    id: ID_DATA_ANAGRAFICA
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 1992
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string ID_DATA_ANAGRAFICA { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ID_DATA_ANAGRAFICA As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ID_DATA_ANAGRAFICA*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Cognome
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Cognome
+  id: Cognome
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: Cognome
+  nameWithType: DettaglioAnagrafica.Cognome
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Cognome
+  type: Property
+  source:
+    id: Cognome
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2002
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string Cognome { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Cognome As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Cognome*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.RappresentanteLegale
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.RappresentanteLegale
+  id: RappresentanteLegale
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: RappresentanteLegale
+  nameWithType: DettaglioAnagrafica.RappresentanteLegale
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.RappresentanteLegale
+  type: Property
+  source:
+    id: RappresentanteLegale
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2012
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string RappresentanteLegale { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RappresentanteLegale As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.RappresentanteLegale*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Nome
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Nome
+  id: Nome
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: Nome
+  nameWithType: DettaglioAnagrafica.Nome
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Nome
+  type: Property
+  source:
+    id: Nome
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2022
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string Nome { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Nome As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Nome*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodiceFiscale
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodiceFiscale
+  id: CodiceFiscale
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: CodiceFiscale
+  nameWithType: DettaglioAnagrafica.CodiceFiscale
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodiceFiscale
+  type: Property
+  source:
+    id: CodiceFiscale
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2032
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string CodiceFiscale { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CodiceFiscale As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodiceFiscale*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.PartitaIva
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.PartitaIva
+  id: PartitaIva
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: PartitaIva
+  nameWithType: DettaglioAnagrafica.PartitaIva
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.PartitaIva
+  type: Property
+  source:
+    id: PartitaIva
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2042
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string PartitaIva { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PartitaIva As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.PartitaIva*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodiceComuneNascita
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodiceComuneNascita
+  id: CodiceComuneNascita
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: CodiceComuneNascita
+  nameWithType: DettaglioAnagrafica.CodiceComuneNascita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodiceComuneNascita
+  type: Property
+  source:
+    id: CodiceComuneNascita
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2052
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string CodiceComuneNascita { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CodiceComuneNascita As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodiceComuneNascita*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ComuneNascita
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ComuneNascita
+  id: ComuneNascita
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: ComuneNascita
+  nameWithType: DettaglioAnagrafica.ComuneNascita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ComuneNascita
+  type: Property
+  source:
+    id: ComuneNascita
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2062
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string ComuneNascita { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ComuneNascita As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ComuneNascita*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ProvinciaNascita
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ProvinciaNascita
+  id: ProvinciaNascita
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: ProvinciaNascita
+  nameWithType: DettaglioAnagrafica.ProvinciaNascita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ProvinciaNascita
+  type: Property
+  source:
+    id: ProvinciaNascita
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2072
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string ProvinciaNascita { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ProvinciaNascita As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ProvinciaNascita*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataNascita
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataNascita
+  id: DataNascita
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: DataNascita
+  nameWithType: DettaglioAnagrafica.DataNascita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataNascita
+  type: Property
+  source:
+    id: DataNascita
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2082
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string DataNascita { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DataNascita As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataNascita*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NazionalitaNascita
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NazionalitaNascita
+  id: NazionalitaNascita
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: NazionalitaNascita
+  nameWithType: DettaglioAnagrafica.NazionalitaNascita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NazionalitaNascita
+  type: Property
+  source:
+    id: NazionalitaNascita
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2092
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string NazionalitaNascita { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property NazionalitaNascita As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NazionalitaNascita*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Sesso
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Sesso
+  id: Sesso
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: Sesso
+  nameWithType: DettaglioAnagrafica.Sesso
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Sesso
+  type: Property
+  source:
+    id: Sesso
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2102
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string Sesso { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Sesso As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Sesso*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodiceComuneResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodiceComuneResidenza
+  id: CodiceComuneResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: CodiceComuneResidenza
+  nameWithType: DettaglioAnagrafica.CodiceComuneResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodiceComuneResidenza
+  type: Property
+  source:
+    id: CodiceComuneResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2112
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string CodiceComuneResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CodiceComuneResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodiceComuneResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ComuneResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ComuneResidenza
+  id: ComuneResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: ComuneResidenza
+  nameWithType: DettaglioAnagrafica.ComuneResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ComuneResidenza
+  type: Property
+  source:
+    id: ComuneResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2122
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string ComuneResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ComuneResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ComuneResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ProvinciaResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ProvinciaResidenza
+  id: ProvinciaResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: ProvinciaResidenza
+  nameWithType: DettaglioAnagrafica.ProvinciaResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ProvinciaResidenza
+  type: Property
+  source:
+    id: ProvinciaResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2132
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string ProvinciaResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ProvinciaResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ProvinciaResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CapResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CapResidenza
+  id: CapResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: CapResidenza
+  nameWithType: DettaglioAnagrafica.CapResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CapResidenza
+  type: Property
+  source:
+    id: CapResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2142
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string CapResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CapResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CapResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodViaResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodViaResidenza
+  id: CodViaResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: CodViaResidenza
+  nameWithType: DettaglioAnagrafica.CodViaResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodViaResidenza
+  type: Property
+  source:
+    id: CodViaResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2152
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string CodViaResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CodViaResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodViaResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ViaResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ViaResidenza
+  id: ViaResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: ViaResidenza
+  nameWithType: DettaglioAnagrafica.ViaResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ViaResidenza
+  type: Property
+  source:
+    id: ViaResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2162
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string ViaResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ViaResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ViaResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.PosizioneCivicoResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.PosizioneCivicoResidenza
+  id: PosizioneCivicoResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: PosizioneCivicoResidenza
+  nameWithType: DettaglioAnagrafica.PosizioneCivicoResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.PosizioneCivicoResidenza
+  type: Property
+  source:
+    id: PosizioneCivicoResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2172
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string PosizioneCivicoResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PosizioneCivicoResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.PosizioneCivicoResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CivicoResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CivicoResidenza
+  id: CivicoResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: CivicoResidenza
+  nameWithType: DettaglioAnagrafica.CivicoResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CivicoResidenza
+  type: Property
+  source:
+    id: CivicoResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2182
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string CivicoResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CivicoResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CivicoResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.EsponenteCivicoResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.EsponenteCivicoResidenza
+  id: EsponenteCivicoResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: EsponenteCivicoResidenza
+  nameWithType: DettaglioAnagrafica.EsponenteCivicoResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.EsponenteCivicoResidenza
+  type: Property
+  source:
+    id: EsponenteCivicoResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2192
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string EsponenteCivicoResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property EsponenteCivicoResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.EsponenteCivicoResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ScalaCivicoResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ScalaCivicoResidenza
+  id: ScalaCivicoResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: ScalaCivicoResidenza
+  nameWithType: DettaglioAnagrafica.ScalaCivicoResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ScalaCivicoResidenza
+  type: Property
+  source:
+    id: ScalaCivicoResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2202
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string ScalaCivicoResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ScalaCivicoResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ScalaCivicoResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.InternoCivicoResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.InternoCivicoResidenza
+  id: InternoCivicoResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: InternoCivicoResidenza
+  nameWithType: DettaglioAnagrafica.InternoCivicoResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.InternoCivicoResidenza
+  type: Property
+  source:
+    id: InternoCivicoResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2212
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string InternoCivicoResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property InternoCivicoResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.InternoCivicoResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.FrazioneResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.FrazioneResidenza
+  id: FrazioneResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: FrazioneResidenza
+  nameWithType: DettaglioAnagrafica.FrazioneResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.FrazioneResidenza
+  type: Property
+  source:
+    id: FrazioneResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2222
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string FrazioneResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FrazioneResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.FrazioneResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NazionalitaResidenza
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NazionalitaResidenza
+  id: NazionalitaResidenza
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: NazionalitaResidenza
+  nameWithType: DettaglioAnagrafica.NazionalitaResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NazionalitaResidenza
+  type: Property
+  source:
+    id: NazionalitaResidenza
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2232
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string NazionalitaResidenza { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property NazionalitaResidenza As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NazionalitaResidenza*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NucleoFamiliare
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NucleoFamiliare
+  id: NucleoFamiliare
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: NucleoFamiliare
+  nameWithType: DettaglioAnagrafica.NucleoFamiliare
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NucleoFamiliare
+  type: Property
+  source:
+    id: NucleoFamiliare
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2242
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string NucleoFamiliare { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property NucleoFamiliare As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NucleoFamiliare*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataMorte
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataMorte
+  id: DataMorte
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: DataMorte
+  nameWithType: DettaglioAnagrafica.DataMorte
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataMorte
+  type: Property
+  source:
+    id: DataMorte
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2252
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string DataMorte { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DataMorte As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataMorte*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Professione
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Professione
+  id: Professione
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: Professione
+  nameWithType: DettaglioAnagrafica.Professione
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Professione
+  type: Property
+  source:
+    id: Professione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2262
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string Professione { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Professione As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Professione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Note
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Note
+  id: Note
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: Note
+  nameWithType: DettaglioAnagrafica.Note
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Note
+  type: Property
+  source:
+    id: Note
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2272
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string Note { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Note As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Note*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DaRicontrollare
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DaRicontrollare
+  id: DaRicontrollare
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: DaRicontrollare
+  nameWithType: DettaglioAnagrafica.DaRicontrollare
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DaRicontrollare
+  type: Property
+  source:
+    id: DaRicontrollare
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2282
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public bool DaRicontrollare { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property DaRicontrollare As Boolean
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DaRicontrollare*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataInizioValidita
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataInizioValidita
+  id: DataInizioValidita
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: DataInizioValidita
+  nameWithType: DettaglioAnagrafica.DataInizioValidita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataInizioValidita
+  type: Property
+  source:
+    id: DataInizioValidita
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2292
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string DataInizioValidita { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DataInizioValidita As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataInizioValidita*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataFineValidita
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataFineValidita
+  id: DataFineValidita
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: DataFineValidita
+  nameWithType: DettaglioAnagrafica.DataFineValidita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataFineValidita
+  type: Property
+  source:
+    id: DataFineValidita
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2302
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string DataFineValidita { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DataFineValidita As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataFineValidita*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimaModifica
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimaModifica
+  id: DataUltimaModifica
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: DataUltimaModifica
+  nameWithType: DettaglioAnagrafica.DataUltimaModifica
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimaModifica
+  type: Property
+  source:
+    id: DataUltimaModifica
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2312
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string DataUltimaModifica { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DataUltimaModifica As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimaModifica*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Operatore
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Operatore
+  id: Operatore
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: Operatore
+  nameWithType: DettaglioAnagrafica.Operatore
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Operatore
+  type: Property
+  source:
+    id: Operatore
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2322
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string Operatore { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Operatore As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Operatore*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodContribuenteRappLegale
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodContribuenteRappLegale
+  id: CodContribuenteRappLegale
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: CodContribuenteRappLegale
+  nameWithType: DettaglioAnagrafica.CodContribuenteRappLegale
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodContribuenteRappLegale
+  type: Property
+  source:
+    id: CodContribuenteRappLegale
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2332
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string CodContribuenteRappLegale { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CodContribuenteRappLegale As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodContribuenteRappLegale*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodEnte
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodEnte
+  id: CodEnte
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: CodEnte
+  nameWithType: DettaglioAnagrafica.CodEnte
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodEnte
+  type: Property
+  source:
+    id: CodEnte
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2342
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string CodEnte { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CodEnte As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodEnte*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodIndividuale
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodIndividuale
+  id: CodIndividuale
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: CodIndividuale
+  nameWithType: DettaglioAnagrafica.CodIndividuale
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodIndividuale
+  type: Property
+  source:
+    id: CodIndividuale
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2352
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string CodIndividuale { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CodIndividuale As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodIndividuale*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodFamiglia
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodFamiglia
+  id: CodFamiglia
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: CodFamiglia
+  nameWithType: DettaglioAnagrafica.CodFamiglia
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodFamiglia
+  type: Property
+  source:
+    id: CodFamiglia
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2362
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string CodFamiglia { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CodFamiglia As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodFamiglia*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NCTributari
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NCTributari
+  id: NCTributari
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: NCTributari
+  nameWithType: DettaglioAnagrafica.NCTributari
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NCTributari
+  type: Property
+  source:
+    id: NCTributari
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2372
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string NCTributari { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property NCTributari As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NCTributari*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimoAggTributi
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimoAggTributi
+  id: DataUltimoAggTributi
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: DataUltimoAggTributi
+  nameWithType: DettaglioAnagrafica.DataUltimoAggTributi
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimoAggTributi
+  type: Property
+  source:
+    id: DataUltimoAggTributi
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2382
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string DataUltimoAggTributi { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DataUltimoAggTributi As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimoAggTributi*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NCAnagraficaRes
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NCAnagraficaRes
+  id: NCAnagraficaRes
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: NCAnagraficaRes
+  nameWithType: DettaglioAnagrafica.NCAnagraficaRes
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NCAnagraficaRes
+  type: Property
+  source:
+    id: NCAnagraficaRes
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2392
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string NCAnagraficaRes { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property NCAnagraficaRes As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NCAnagraficaRes*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimoAggAnagrafe
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimoAggAnagrafe
+  id: DataUltimoAggAnagrafe
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: DataUltimoAggAnagrafe
+  nameWithType: DettaglioAnagrafica.DataUltimoAggAnagrafe
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimoAggAnagrafe
+  type: Property
+  source:
+    id: DataUltimoAggAnagrafe
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2402
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string DataUltimoAggAnagrafe { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DataUltimoAggAnagrafe As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimoAggAnagrafe*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodTributo
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodTributo
+  id: CodTributo
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: CodTributo
+  nameWithType: DettaglioAnagrafica.CodTributo
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodTributo
+  type: Property
+  source:
+    id: CodTributo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2412
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string CodTributo { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CodTributo As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodTributo*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CognomeInvio
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CognomeInvio
+  id: CognomeInvio
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: CognomeInvio
+  nameWithType: DettaglioAnagrafica.CognomeInvio
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CognomeInvio
+  type: Property
+  source:
+    id: CognomeInvio
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2422
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string CognomeInvio { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CognomeInvio As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CognomeInvio*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NomeInvio
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NomeInvio
+  id: NomeInvio
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: NomeInvio
+  nameWithType: DettaglioAnagrafica.NomeInvio
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NomeInvio
+  type: Property
+  source:
+    id: NomeInvio
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2432
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string NomeInvio { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property NomeInvio As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NomeInvio*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodComuneRCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodComuneRCP
+  id: CodComuneRCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: CodComuneRCP
+  nameWithType: DettaglioAnagrafica.CodComuneRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodComuneRCP
+  type: Property
+  source:
+    id: CodComuneRCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2442
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string CodComuneRCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CodComuneRCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodComuneRCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ComuneRCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ComuneRCP
+  id: ComuneRCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: ComuneRCP
+  nameWithType: DettaglioAnagrafica.ComuneRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ComuneRCP
+  type: Property
+  source:
+    id: ComuneRCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2452
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string ComuneRCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ComuneRCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ComuneRCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.LocRCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.LocRCP
+  id: LocRCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: LocRCP
+  nameWithType: DettaglioAnagrafica.LocRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.LocRCP
+  type: Property
+  source:
+    id: LocRCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2462
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string LocRCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LocRCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.LocRCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ProvinciaRCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ProvinciaRCP
+  id: ProvinciaRCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: ProvinciaRCP
+  nameWithType: DettaglioAnagrafica.ProvinciaRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ProvinciaRCP
+  type: Property
+  source:
+    id: ProvinciaRCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2472
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string ProvinciaRCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ProvinciaRCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ProvinciaRCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CapRCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CapRCP
+  id: CapRCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: CapRCP
+  nameWithType: DettaglioAnagrafica.CapRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CapRCP
+  type: Property
+  source:
+    id: CapRCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2482
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string CapRCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CapRCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CapRCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodViaRCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodViaRCP
+  id: CodViaRCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: CodViaRCP
+  nameWithType: DettaglioAnagrafica.CodViaRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodViaRCP
+  type: Property
+  source:
+    id: CodViaRCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2492
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string CodViaRCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CodViaRCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodViaRCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ViaRCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ViaRCP
+  id: ViaRCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: ViaRCP
+  nameWithType: DettaglioAnagrafica.ViaRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ViaRCP
+  type: Property
+  source:
+    id: ViaRCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2502
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string ViaRCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ViaRCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ViaRCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.PosizioneCivicoRCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.PosizioneCivicoRCP
+  id: PosizioneCivicoRCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: PosizioneCivicoRCP
+  nameWithType: DettaglioAnagrafica.PosizioneCivicoRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.PosizioneCivicoRCP
+  type: Property
+  source:
+    id: PosizioneCivicoRCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2512
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string PosizioneCivicoRCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PosizioneCivicoRCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.PosizioneCivicoRCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CivicoRCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CivicoRCP
+  id: CivicoRCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: CivicoRCP
+  nameWithType: DettaglioAnagrafica.CivicoRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CivicoRCP
+  type: Property
+  source:
+    id: CivicoRCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2522
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string CivicoRCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CivicoRCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CivicoRCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.EsponenteCivicoRCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.EsponenteCivicoRCP
+  id: EsponenteCivicoRCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: EsponenteCivicoRCP
+  nameWithType: DettaglioAnagrafica.EsponenteCivicoRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.EsponenteCivicoRCP
+  type: Property
+  source:
+    id: EsponenteCivicoRCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2532
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string EsponenteCivicoRCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property EsponenteCivicoRCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.EsponenteCivicoRCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ScalaCivicoRCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ScalaCivicoRCP
+  id: ScalaCivicoRCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: ScalaCivicoRCP
+  nameWithType: DettaglioAnagrafica.ScalaCivicoRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ScalaCivicoRCP
+  type: Property
+  source:
+    id: ScalaCivicoRCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2542
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string ScalaCivicoRCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ScalaCivicoRCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ScalaCivicoRCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.InternoCivicoRCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.InternoCivicoRCP
+  id: InternoCivicoRCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: InternoCivicoRCP
+  nameWithType: DettaglioAnagrafica.InternoCivicoRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.InternoCivicoRCP
+  type: Property
+  source:
+    id: InternoCivicoRCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2552
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string InternoCivicoRCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property InternoCivicoRCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.InternoCivicoRCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.FrazioneRCP
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.FrazioneRCP
+  id: FrazioneRCP
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: FrazioneRCP
+  nameWithType: DettaglioAnagrafica.FrazioneRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.FrazioneRCP
+  type: Property
+  source:
+    id: FrazioneRCP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2562
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string FrazioneRCP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FrazioneRCP As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.FrazioneRCP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataInizioValiditaSpedizione
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataInizioValiditaSpedizione
+  id: DataInizioValiditaSpedizione
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: DataInizioValiditaSpedizione
+  nameWithType: DettaglioAnagrafica.DataInizioValiditaSpedizione
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataInizioValiditaSpedizione
+  type: Property
+  source:
+    id: DataInizioValiditaSpedizione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2572
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string DataInizioValiditaSpedizione { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DataInizioValiditaSpedizione As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataInizioValiditaSpedizione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataFineValiditaSpedizione
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataFineValiditaSpedizione
+  id: DataFineValiditaSpedizione
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: DataFineValiditaSpedizione
+  nameWithType: DettaglioAnagrafica.DataFineValiditaSpedizione
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataFineValiditaSpedizione
+  type: Property
+  source:
+    id: DataFineValiditaSpedizione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2582
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string DataFineValiditaSpedizione { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DataFineValiditaSpedizione As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataFineValiditaSpedizione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimaModificaSpedizione
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimaModificaSpedizione
+  id: DataUltimaModificaSpedizione
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: DataUltimaModificaSpedizione
+  nameWithType: DettaglioAnagrafica.DataUltimaModificaSpedizione
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimaModificaSpedizione
+  type: Property
+  source:
+    id: DataUltimaModificaSpedizione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2592
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string DataUltimaModificaSpedizione { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DataUltimaModificaSpedizione As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimaModificaSpedizione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.OperatoreSpedizione
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.OperatoreSpedizione
+  id: OperatoreSpedizione
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: OperatoreSpedizione
+  nameWithType: DettaglioAnagrafica.OperatoreSpedizione
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.OperatoreSpedizione
+  type: Property
+  source:
+    id: OperatoreSpedizione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2602
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string OperatoreSpedizione { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property OperatoreSpedizione As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.OperatoreSpedizione*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.TipoRiferimento
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.TipoRiferimento
+  id: TipoRiferimento
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: TipoRiferimento
+  nameWithType: DettaglioAnagrafica.TipoRiferimento
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.TipoRiferimento
+  type: Property
+  source:
+    id: TipoRiferimento
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2612
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string TipoRiferimento { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TipoRiferimento As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.TipoRiferimento*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DatiRiferimento
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DatiRiferimento
+  id: DatiRiferimento
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: DatiRiferimento
+  nameWithType: DettaglioAnagrafica.DatiRiferimento
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DatiRiferimento
+  type: Property
+  source:
+    id: DatiRiferimento
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2622
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public string DatiRiferimento { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DatiRiferimento As String
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DatiRiferimento*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.dsContatti
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.dsContatti
+  id: dsContatti
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: dsContatti
+  nameWithType: DettaglioAnagrafica.dsContatti
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.dsContatti
+  type: Property
+  source:
+    id: dsContatti
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2632
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public dsContatti dsContatti { get; set; }
+    parameters: []
+    return:
+      type: OPENGovTOCO.MotoreTOCO.dsContatti
+    content.vb: Public Property dsContatti As dsContatti
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.dsContatti*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.dsTipiContatti
+  commentId: P:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.dsTipiContatti
+  id: dsTipiContatti
+  parent: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica
+  langs:
+  - csharp
+  - vb
+  name: dsTipiContatti
+  nameWithType: DettaglioAnagrafica.dsTipiContatti
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.dsTipiContatti
+  type: Property
+  source:
+    id: dsTipiContatti
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 2642
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public DataSet dsTipiContatti { get; set; }
+    parameters: []
+    return:
+      type: System.Data.DataSet
+    content.vb: Public Property dsTipiContatti As DataSet
+  overload: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.dsTipiContatti*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: OPENGovTOCO.MotoreTOCO
+  commentId: N:OPENGovTOCO.MotoreTOCO
+  name: OPENGovTOCO.MotoreTOCO
+  nameWithType: OPENGovTOCO.MotoreTOCO
+  fullName: OPENGovTOCO.MotoreTOCO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: OPENGovTOCO.MotoreTOCO.CRUD
+  commentId: T:OPENGovTOCO.MotoreTOCO.CRUD
+  parent: OPENGovTOCO.MotoreTOCO
+  name: CRUD
+  nameWithType: CRUD
+  fullName: OPENGovTOCO.MotoreTOCO.CRUD
+- uid: OPENGovTOCO.MotoreTOCO.CRUD.ID
+  commentId: P:OPENGovTOCO.MotoreTOCO.CRUD.ID
+  parent: OPENGovTOCO.MotoreTOCO.CRUD
+  name: ID
+  nameWithType: CRUD.ID
+  fullName: OPENGovTOCO.MotoreTOCO.CRUD.ID
+- uid: OPENGovTOCO.MotoreTOCO.CRUD.Concurrency
+  commentId: P:OPENGovTOCO.MotoreTOCO.CRUD.Concurrency
+  parent: OPENGovTOCO.MotoreTOCO.CRUD
+  name: Concurrency
+  nameWithType: CRUD.Concurrency
+  fullName: OPENGovTOCO.MotoreTOCO.CRUD.Concurrency
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_CONTRIBUENTE*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_CONTRIBUENTE
+  name: m_COD_CONTRIBUENTE
+  nameWithType: DettaglioAnagrafica.m_COD_CONTRIBUENTE
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_CONTRIBUENTE
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ID_DATA_ANAGRAFICA*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ID_DATA_ANAGRAFICA
+  name: m_ID_DATA_ANAGRAFICA
+  nameWithType: DettaglioAnagrafica.m_ID_DATA_ANAGRAFICA
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ID_DATA_ANAGRAFICA
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ID_DATA_SPEDIZIONE*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ID_DATA_SPEDIZIONE
+  name: m_ID_DATA_SPEDIZIONE
+  nameWithType: DettaglioAnagrafica.m_ID_DATA_SPEDIZIONE
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ID_DATA_SPEDIZIONE
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Cognome*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Cognome
+  name: m_Cognome
+  nameWithType: DettaglioAnagrafica.m_Cognome
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Cognome
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Nome*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Nome
+  name: m_Nome
+  nameWithType: DettaglioAnagrafica.m_Nome
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Nome
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodiceFiscale*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodiceFiscale
+  name: m_CodiceFiscale
+  nameWithType: DettaglioAnagrafica.m_CodiceFiscale
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodiceFiscale
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_PartitaIva*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_PartitaIva
+  name: m_PartitaIva
+  nameWithType: DettaglioAnagrafica.m_PartitaIva
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_PartitaIva
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodiceComuneNascita*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodiceComuneNascita
+  name: m_CodiceComuneNascita
+  nameWithType: DettaglioAnagrafica.m_CodiceComuneNascita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodiceComuneNascita
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ComuneNascita*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ComuneNascita
+  name: m_ComuneNascita
+  nameWithType: DettaglioAnagrafica.m_ComuneNascita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ComuneNascita
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ProvinciaNascita*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ProvinciaNascita
+  name: m_ProvinciaNascita
+  nameWithType: DettaglioAnagrafica.m_ProvinciaNascita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ProvinciaNascita
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DataNascita*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DataNascita
+  name: m_DataNascita
+  nameWithType: DettaglioAnagrafica.m_DataNascita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DataNascita
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NazionalitaNascita*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NazionalitaNascita
+  name: m_NazionalitaNascita
+  nameWithType: DettaglioAnagrafica.m_NazionalitaNascita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NazionalitaNascita
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Sesso*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Sesso
+  name: m_Sesso
+  nameWithType: DettaglioAnagrafica.m_Sesso
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Sesso
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodiceComuneResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodiceComuneResidenza
+  name: m_CodiceComuneResidenza
+  nameWithType: DettaglioAnagrafica.m_CodiceComuneResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodiceComuneResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ComuneResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ComuneResidenza
+  name: m_ComuneResidenza
+  nameWithType: DettaglioAnagrafica.m_ComuneResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ComuneResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ProvinciaResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ProvinciaResidenza
+  name: m_ProvinciaResidenza
+  nameWithType: DettaglioAnagrafica.m_ProvinciaResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ProvinciaResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CapResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CapResidenza
+  name: m_CapResidenza
+  nameWithType: DettaglioAnagrafica.m_CapResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CapResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodViaResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodViaResidenza
+  name: m_CodViaResidenza
+  nameWithType: DettaglioAnagrafica.m_CodViaResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodViaResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ViaResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ViaResidenza
+  name: m_ViaResidenza
+  nameWithType: DettaglioAnagrafica.m_ViaResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ViaResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_PosizioneCivicoResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_PosizioneCivicoResidenza
+  name: m_PosizioneCivicoResidenza
+  nameWithType: DettaglioAnagrafica.m_PosizioneCivicoResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_PosizioneCivicoResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CivicoResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CivicoResidenza
+  name: m_CivicoResidenza
+  nameWithType: DettaglioAnagrafica.m_CivicoResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CivicoResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_EsponenteCivicoResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_EsponenteCivicoResidenza
+  name: m_EsponenteCivicoResidenza
+  nameWithType: DettaglioAnagrafica.m_EsponenteCivicoResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_EsponenteCivicoResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ScalaCivicoResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ScalaCivicoResidenza
+  name: m_ScalaCivicoResidenza
+  nameWithType: DettaglioAnagrafica.m_ScalaCivicoResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ScalaCivicoResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_InternoCivicoResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_InternoCivicoResidenza
+  name: m_InternoCivicoResidenza
+  nameWithType: DettaglioAnagrafica.m_InternoCivicoResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_InternoCivicoResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_FrazioneResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_FrazioneResidenza
+  name: m_FrazioneResidenza
+  nameWithType: DettaglioAnagrafica.m_FrazioneResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_FrazioneResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NazionalitaResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NazionalitaResidenza
+  name: m_NazionalitaResidenza
+  nameWithType: DettaglioAnagrafica.m_NazionalitaResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NazionalitaResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NucleoFamiliare*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NucleoFamiliare
+  name: m_NucleoFamiliare
+  nameWithType: DettaglioAnagrafica.m_NucleoFamiliare
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NucleoFamiliare
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_RappresentanteLegale*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_RappresentanteLegale
+  name: m_RappresentanteLegale
+  nameWithType: DettaglioAnagrafica.m_RappresentanteLegale
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_RappresentanteLegale
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DataMorte*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DataMorte
+  name: m_DataMorte
+  nameWithType: DettaglioAnagrafica.m_DataMorte
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DataMorte
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Professione*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Professione
+  name: m_Professione
+  nameWithType: DettaglioAnagrafica.m_Professione
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Professione
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Note*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Note
+  name: m_Note
+  nameWithType: DettaglioAnagrafica.m_Note
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Note
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DaRicontrollare*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DaRicontrollare
+  name: m_DaRicontrollare
+  nameWithType: DettaglioAnagrafica.m_DaRicontrollare
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DaRicontrollare
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Inizio_Validita*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Inizio_Validita
+  name: m_Data_Inizio_Validita
+  nameWithType: DettaglioAnagrafica.m_Data_Inizio_Validita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Inizio_Validita
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Fine_Validita*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Fine_Validita
+  name: m_Data_Fine_Validita
+  nameWithType: DettaglioAnagrafica.m_Data_Fine_Validita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Fine_Validita
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Ultima_Modifica*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Ultima_Modifica
+  name: m_Data_Ultima_Modifica
+  nameWithType: DettaglioAnagrafica.m_Data_Ultima_Modifica
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Ultima_Modifica
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Operatore*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Operatore
+  name: m_Operatore
+  nameWithType: DettaglioAnagrafica.m_Operatore
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Operatore
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Cod_Contribuente_Rapp_Legale*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Cod_Contribuente_Rapp_Legale
+  name: m_Cod_Contribuente_Rapp_Legale
+  nameWithType: DettaglioAnagrafica.m_Cod_Contribuente_Rapp_Legale
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Cod_Contribuente_Rapp_Legale
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodEnte*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodEnte
+  name: m_CodEnte
+  nameWithType: DettaglioAnagrafica.m_CodEnte
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodEnte
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodIndividuale*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodIndividuale
+  name: m_CodIndividuale
+  nameWithType: DettaglioAnagrafica.m_CodIndividuale
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodIndividuale
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodFamiglia*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodFamiglia
+  name: m_CodFamiglia
+  nameWithType: DettaglioAnagrafica.m_CodFamiglia
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CodFamiglia
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NC_Tributari*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NC_Tributari
+  name: m_NC_Tributari
+  nameWithType: DettaglioAnagrafica.m_NC_Tributari
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NC_Tributari
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Ultimo_Agg_Tributi*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Ultimo_Agg_Tributi
+  name: m_Data_Ultimo_Agg_Tributi
+  nameWithType: DettaglioAnagrafica.m_Data_Ultimo_Agg_Tributi
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Ultimo_Agg_Tributi
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NC_Anagrafica_Res*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NC_Anagrafica_Res
+  name: m_NC_Anagrafica_Res
+  nameWithType: DettaglioAnagrafica.m_NC_Anagrafica_Res
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NC_Anagrafica_Res
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Ultimo_Agg_Anagrafe*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Ultimo_Agg_Anagrafe
+  name: m_Data_Ultimo_Agg_Anagrafe
+  nameWithType: DettaglioAnagrafica.m_Data_Ultimo_Agg_Anagrafe
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_Data_Ultimo_Agg_Anagrafe
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_TRIBUTO*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_TRIBUTO
+  name: m_COD_TRIBUTO
+  nameWithType: DettaglioAnagrafica.m_COD_TRIBUTO
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_TRIBUTO
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COGNOME_INVIO*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COGNOME_INVIO
+  name: m_COGNOME_INVIO
+  nameWithType: DettaglioAnagrafica.m_COGNOME_INVIO
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COGNOME_INVIO
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NOME_INVIO*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NOME_INVIO
+  name: m_NOME_INVIO
+  nameWithType: DettaglioAnagrafica.m_NOME_INVIO
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_NOME_INVIO
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_COMUNE_RCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_COMUNE_RCP
+  name: m_COD_COMUNE_RCP
+  nameWithType: DettaglioAnagrafica.m_COD_COMUNE_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_COMUNE_RCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COMUNE_RCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COMUNE_RCP
+  name: m_COMUNE_RCP
+  nameWithType: DettaglioAnagrafica.m_COMUNE_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COMUNE_RCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_LOC_RCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_LOC_RCP
+  name: m_LOC_RCP
+  nameWithType: DettaglioAnagrafica.m_LOC_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_LOC_RCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_PROVINCIA_RCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_PROVINCIA_RCP
+  name: m_PROVINCIA_RCP
+  nameWithType: DettaglioAnagrafica.m_PROVINCIA_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_PROVINCIA_RCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CAP_RCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CAP_RCP
+  name: m_CAP_RCP
+  nameWithType: DettaglioAnagrafica.m_CAP_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CAP_RCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_VIA_RCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_VIA_RCP
+  name: m_COD_VIA_RCP
+  nameWithType: DettaglioAnagrafica.m_COD_VIA_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_COD_VIA_RCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_VIA_RCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_VIA_RCP
+  name: m_VIA_RCP
+  nameWithType: DettaglioAnagrafica.m_VIA_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_VIA_RCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_POSIZIONE_CIV_RCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_POSIZIONE_CIV_RCP
+  name: m_POSIZIONE_CIV_RCP
+  nameWithType: DettaglioAnagrafica.m_POSIZIONE_CIV_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_POSIZIONE_CIV_RCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CIVICO_RCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CIVICO_RCP
+  name: m_CIVICO_RCP
+  nameWithType: DettaglioAnagrafica.m_CIVICO_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_CIVICO_RCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ESPONENTE_CIVICO_RCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ESPONENTE_CIVICO_RCP
+  name: m_ESPONENTE_CIVICO_RCP
+  nameWithType: DettaglioAnagrafica.m_ESPONENTE_CIVICO_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_ESPONENTE_CIVICO_RCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_SCALA_CIVICO_RCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_SCALA_CIVICO_RCP
+  name: m_SCALA_CIVICO_RCP
+  nameWithType: DettaglioAnagrafica.m_SCALA_CIVICO_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_SCALA_CIVICO_RCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_INTERNO_CIVICO_RCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_INTERNO_CIVICO_RCP
+  name: m_INTERNO_CIVICO_RCP
+  nameWithType: DettaglioAnagrafica.m_INTERNO_CIVICO_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_INTERNO_CIVICO_RCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_FRAZIONE_RCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_FRAZIONE_RCP
+  name: m_FRAZIONE_RCP
+  nameWithType: DettaglioAnagrafica.m_FRAZIONE_RCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_FRAZIONE_RCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DATA_INIZIO_VALIDITA_SPED*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DATA_INIZIO_VALIDITA_SPED
+  name: m_DATA_INIZIO_VALIDITA_SPED
+  nameWithType: DettaglioAnagrafica.m_DATA_INIZIO_VALIDITA_SPED
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DATA_INIZIO_VALIDITA_SPED
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DATA_FINE_VALIDITA_SPED*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DATA_FINE_VALIDITA_SPED
+  name: m_DATA_FINE_VALIDITA_SPED
+  nameWithType: DettaglioAnagrafica.m_DATA_FINE_VALIDITA_SPED
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DATA_FINE_VALIDITA_SPED
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DATA_ULTIMA_MODIFICA_SPED*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DATA_ULTIMA_MODIFICA_SPED
+  name: m_DATA_ULTIMA_MODIFICA_SPED
+  nameWithType: DettaglioAnagrafica.m_DATA_ULTIMA_MODIFICA_SPED
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DATA_ULTIMA_MODIFICA_SPED
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_OPERATORE_SPEDIZIONE*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_OPERATORE_SPEDIZIONE
+  name: m_OPERATORE_SPEDIZIONE
+  nameWithType: DettaglioAnagrafica.m_OPERATORE_SPEDIZIONE
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_OPERATORE_SPEDIZIONE
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_TipoRiferimento*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_TipoRiferimento
+  name: m_TipoRiferimento
+  nameWithType: DettaglioAnagrafica.m_TipoRiferimento
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_TipoRiferimento
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DatiRiferimento*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DatiRiferimento
+  name: m_DatiRiferimento
+  nameWithType: DettaglioAnagrafica.m_DatiRiferimento
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_DatiRiferimento
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_dsContatti*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_dsContatti
+  name: m_dsContatti
+  nameWithType: DettaglioAnagrafica.m_dsContatti
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_dsContatti
+- uid: OPENGovTOCO.MotoreTOCO.dsContatti
+  commentId: T:OPENGovTOCO.MotoreTOCO.dsContatti
+  parent: OPENGovTOCO.MotoreTOCO
+  name: dsContatti
+  nameWithType: dsContatti
+  fullName: OPENGovTOCO.MotoreTOCO.dsContatti
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_dsTipiContatti*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_dsTipiContatti
+  name: m_dsTipiContatti
+  nameWithType: DettaglioAnagrafica.m_dsTipiContatti
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.m_dsTipiContatti
+- uid: System.Data.DataSet
+  commentId: T:System.Data.DataSet
+  parent: System.Data
+  isExternal: true
+  name: DataSet
+  nameWithType: DataSet
+  fullName: System.Data.DataSet
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.COD_CONTRIBUENTE*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.COD_CONTRIBUENTE
+  name: COD_CONTRIBUENTE
+  nameWithType: DettaglioAnagrafica.COD_CONTRIBUENTE
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.COD_CONTRIBUENTE
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ID_DATA_SPEDIZIONE*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ID_DATA_SPEDIZIONE
+  name: ID_DATA_SPEDIZIONE
+  nameWithType: DettaglioAnagrafica.ID_DATA_SPEDIZIONE
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ID_DATA_SPEDIZIONE
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ID_DATA_ANAGRAFICA*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ID_DATA_ANAGRAFICA
+  name: ID_DATA_ANAGRAFICA
+  nameWithType: DettaglioAnagrafica.ID_DATA_ANAGRAFICA
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ID_DATA_ANAGRAFICA
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Cognome*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Cognome
+  name: Cognome
+  nameWithType: DettaglioAnagrafica.Cognome
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Cognome
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.RappresentanteLegale*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.RappresentanteLegale
+  name: RappresentanteLegale
+  nameWithType: DettaglioAnagrafica.RappresentanteLegale
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.RappresentanteLegale
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Nome*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Nome
+  name: Nome
+  nameWithType: DettaglioAnagrafica.Nome
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Nome
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodiceFiscale*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodiceFiscale
+  name: CodiceFiscale
+  nameWithType: DettaglioAnagrafica.CodiceFiscale
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodiceFiscale
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.PartitaIva*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.PartitaIva
+  name: PartitaIva
+  nameWithType: DettaglioAnagrafica.PartitaIva
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.PartitaIva
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodiceComuneNascita*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodiceComuneNascita
+  name: CodiceComuneNascita
+  nameWithType: DettaglioAnagrafica.CodiceComuneNascita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodiceComuneNascita
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ComuneNascita*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ComuneNascita
+  name: ComuneNascita
+  nameWithType: DettaglioAnagrafica.ComuneNascita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ComuneNascita
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ProvinciaNascita*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ProvinciaNascita
+  name: ProvinciaNascita
+  nameWithType: DettaglioAnagrafica.ProvinciaNascita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ProvinciaNascita
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataNascita*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataNascita
+  name: DataNascita
+  nameWithType: DettaglioAnagrafica.DataNascita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataNascita
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NazionalitaNascita*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NazionalitaNascita
+  name: NazionalitaNascita
+  nameWithType: DettaglioAnagrafica.NazionalitaNascita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NazionalitaNascita
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Sesso*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Sesso
+  name: Sesso
+  nameWithType: DettaglioAnagrafica.Sesso
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Sesso
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodiceComuneResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodiceComuneResidenza
+  name: CodiceComuneResidenza
+  nameWithType: DettaglioAnagrafica.CodiceComuneResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodiceComuneResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ComuneResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ComuneResidenza
+  name: ComuneResidenza
+  nameWithType: DettaglioAnagrafica.ComuneResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ComuneResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ProvinciaResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ProvinciaResidenza
+  name: ProvinciaResidenza
+  nameWithType: DettaglioAnagrafica.ProvinciaResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ProvinciaResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CapResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CapResidenza
+  name: CapResidenza
+  nameWithType: DettaglioAnagrafica.CapResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CapResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodViaResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodViaResidenza
+  name: CodViaResidenza
+  nameWithType: DettaglioAnagrafica.CodViaResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodViaResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ViaResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ViaResidenza
+  name: ViaResidenza
+  nameWithType: DettaglioAnagrafica.ViaResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ViaResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.PosizioneCivicoResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.PosizioneCivicoResidenza
+  name: PosizioneCivicoResidenza
+  nameWithType: DettaglioAnagrafica.PosizioneCivicoResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.PosizioneCivicoResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CivicoResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CivicoResidenza
+  name: CivicoResidenza
+  nameWithType: DettaglioAnagrafica.CivicoResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CivicoResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.EsponenteCivicoResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.EsponenteCivicoResidenza
+  name: EsponenteCivicoResidenza
+  nameWithType: DettaglioAnagrafica.EsponenteCivicoResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.EsponenteCivicoResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ScalaCivicoResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ScalaCivicoResidenza
+  name: ScalaCivicoResidenza
+  nameWithType: DettaglioAnagrafica.ScalaCivicoResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ScalaCivicoResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.InternoCivicoResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.InternoCivicoResidenza
+  name: InternoCivicoResidenza
+  nameWithType: DettaglioAnagrafica.InternoCivicoResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.InternoCivicoResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.FrazioneResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.FrazioneResidenza
+  name: FrazioneResidenza
+  nameWithType: DettaglioAnagrafica.FrazioneResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.FrazioneResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NazionalitaResidenza*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NazionalitaResidenza
+  name: NazionalitaResidenza
+  nameWithType: DettaglioAnagrafica.NazionalitaResidenza
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NazionalitaResidenza
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NucleoFamiliare*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NucleoFamiliare
+  name: NucleoFamiliare
+  nameWithType: DettaglioAnagrafica.NucleoFamiliare
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NucleoFamiliare
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataMorte*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataMorte
+  name: DataMorte
+  nameWithType: DettaglioAnagrafica.DataMorte
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataMorte
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Professione*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Professione
+  name: Professione
+  nameWithType: DettaglioAnagrafica.Professione
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Professione
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Note*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Note
+  name: Note
+  nameWithType: DettaglioAnagrafica.Note
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Note
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DaRicontrollare*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DaRicontrollare
+  name: DaRicontrollare
+  nameWithType: DettaglioAnagrafica.DaRicontrollare
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DaRicontrollare
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataInizioValidita*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataInizioValidita
+  name: DataInizioValidita
+  nameWithType: DettaglioAnagrafica.DataInizioValidita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataInizioValidita
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataFineValidita*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataFineValidita
+  name: DataFineValidita
+  nameWithType: DettaglioAnagrafica.DataFineValidita
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataFineValidita
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimaModifica*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimaModifica
+  name: DataUltimaModifica
+  nameWithType: DettaglioAnagrafica.DataUltimaModifica
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimaModifica
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Operatore*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Operatore
+  name: Operatore
+  nameWithType: DettaglioAnagrafica.Operatore
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.Operatore
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodContribuenteRappLegale*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodContribuenteRappLegale
+  name: CodContribuenteRappLegale
+  nameWithType: DettaglioAnagrafica.CodContribuenteRappLegale
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodContribuenteRappLegale
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodEnte*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodEnte
+  name: CodEnte
+  nameWithType: DettaglioAnagrafica.CodEnte
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodEnte
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodIndividuale*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodIndividuale
+  name: CodIndividuale
+  nameWithType: DettaglioAnagrafica.CodIndividuale
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodIndividuale
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodFamiglia*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodFamiglia
+  name: CodFamiglia
+  nameWithType: DettaglioAnagrafica.CodFamiglia
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodFamiglia
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NCTributari*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NCTributari
+  name: NCTributari
+  nameWithType: DettaglioAnagrafica.NCTributari
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NCTributari
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimoAggTributi*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimoAggTributi
+  name: DataUltimoAggTributi
+  nameWithType: DettaglioAnagrafica.DataUltimoAggTributi
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimoAggTributi
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NCAnagraficaRes*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NCAnagraficaRes
+  name: NCAnagraficaRes
+  nameWithType: DettaglioAnagrafica.NCAnagraficaRes
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NCAnagraficaRes
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimoAggAnagrafe*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimoAggAnagrafe
+  name: DataUltimoAggAnagrafe
+  nameWithType: DettaglioAnagrafica.DataUltimoAggAnagrafe
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimoAggAnagrafe
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodTributo*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodTributo
+  name: CodTributo
+  nameWithType: DettaglioAnagrafica.CodTributo
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodTributo
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CognomeInvio*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CognomeInvio
+  name: CognomeInvio
+  nameWithType: DettaglioAnagrafica.CognomeInvio
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CognomeInvio
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NomeInvio*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NomeInvio
+  name: NomeInvio
+  nameWithType: DettaglioAnagrafica.NomeInvio
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.NomeInvio
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodComuneRCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodComuneRCP
+  name: CodComuneRCP
+  nameWithType: DettaglioAnagrafica.CodComuneRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodComuneRCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ComuneRCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ComuneRCP
+  name: ComuneRCP
+  nameWithType: DettaglioAnagrafica.ComuneRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ComuneRCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.LocRCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.LocRCP
+  name: LocRCP
+  nameWithType: DettaglioAnagrafica.LocRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.LocRCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ProvinciaRCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ProvinciaRCP
+  name: ProvinciaRCP
+  nameWithType: DettaglioAnagrafica.ProvinciaRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ProvinciaRCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CapRCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CapRCP
+  name: CapRCP
+  nameWithType: DettaglioAnagrafica.CapRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CapRCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodViaRCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodViaRCP
+  name: CodViaRCP
+  nameWithType: DettaglioAnagrafica.CodViaRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CodViaRCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ViaRCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ViaRCP
+  name: ViaRCP
+  nameWithType: DettaglioAnagrafica.ViaRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ViaRCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.PosizioneCivicoRCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.PosizioneCivicoRCP
+  name: PosizioneCivicoRCP
+  nameWithType: DettaglioAnagrafica.PosizioneCivicoRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.PosizioneCivicoRCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CivicoRCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CivicoRCP
+  name: CivicoRCP
+  nameWithType: DettaglioAnagrafica.CivicoRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.CivicoRCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.EsponenteCivicoRCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.EsponenteCivicoRCP
+  name: EsponenteCivicoRCP
+  nameWithType: DettaglioAnagrafica.EsponenteCivicoRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.EsponenteCivicoRCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ScalaCivicoRCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ScalaCivicoRCP
+  name: ScalaCivicoRCP
+  nameWithType: DettaglioAnagrafica.ScalaCivicoRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.ScalaCivicoRCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.InternoCivicoRCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.InternoCivicoRCP
+  name: InternoCivicoRCP
+  nameWithType: DettaglioAnagrafica.InternoCivicoRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.InternoCivicoRCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.FrazioneRCP*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.FrazioneRCP
+  name: FrazioneRCP
+  nameWithType: DettaglioAnagrafica.FrazioneRCP
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.FrazioneRCP
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataInizioValiditaSpedizione*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataInizioValiditaSpedizione
+  name: DataInizioValiditaSpedizione
+  nameWithType: DettaglioAnagrafica.DataInizioValiditaSpedizione
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataInizioValiditaSpedizione
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataFineValiditaSpedizione*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataFineValiditaSpedizione
+  name: DataFineValiditaSpedizione
+  nameWithType: DettaglioAnagrafica.DataFineValiditaSpedizione
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataFineValiditaSpedizione
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimaModificaSpedizione*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimaModificaSpedizione
+  name: DataUltimaModificaSpedizione
+  nameWithType: DettaglioAnagrafica.DataUltimaModificaSpedizione
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DataUltimaModificaSpedizione
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.OperatoreSpedizione*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.OperatoreSpedizione
+  name: OperatoreSpedizione
+  nameWithType: DettaglioAnagrafica.OperatoreSpedizione
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.OperatoreSpedizione
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.TipoRiferimento*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.TipoRiferimento
+  name: TipoRiferimento
+  nameWithType: DettaglioAnagrafica.TipoRiferimento
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.TipoRiferimento
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DatiRiferimento*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DatiRiferimento
+  name: DatiRiferimento
+  nameWithType: DettaglioAnagrafica.DatiRiferimento
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.DatiRiferimento
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.dsContatti*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.dsContatti
+  name: dsContatti
+  nameWithType: DettaglioAnagrafica.dsContatti
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.dsContatti
+- uid: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.dsTipiContatti*
+  commentId: Overload:OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.dsTipiContatti
+  name: dsTipiContatti
+  nameWithType: DettaglioAnagrafica.dsTipiContatti
+  fullName: OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.dsTipiContatti

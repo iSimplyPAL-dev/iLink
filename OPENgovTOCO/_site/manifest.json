@@ -1,0 +1,1530 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Dev/PAL/Codice/OPENgov/OPENgovTOCO",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "YbaQxjJeS3DXNnvIl6SgwQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "s9qEVcYlRbp+ngRcbzOdSQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "gB8AESyvNru97tzIZofEEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "3BuyWI8J1COVCPa1tamcGQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DAO.AgevolazioniDAO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DAO.AgevolazioniDAO.html",
+          "hash": "o7wrSqFNqSrUCYg3hMYO1A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DAO.AnagraficheDAO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DAO.AnagraficheDAO.html",
+          "hash": "FIPC5gu8VDY0u08Nma5x/A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DAO.ArticoliDAO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DAO.ArticoliDAO.html",
+          "hash": "eBXZcgDwwz0zFU3GCVVuDQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DAO.CartelleDAO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DAO.CartelleDAO.html",
+          "hash": "LtEH5EupUBQxwvy/7Jpnmg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DAO.CategorieDAO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DAO.CategorieDAO.html",
+          "hash": "XnfxzOUeUaAgbL0M4ekFLw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DAO.CoefficientiDAO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DAO.CoefficientiDAO.html",
+          "hash": "dwvJ09j+PE69oUjP4ZfCLg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DAO.DBEngineFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DAO.DBEngineFactory.html",
+          "hash": "Zv604KUEzNFJdjtkqQaogQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DAO.DichiarazioniDAO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DAO.DichiarazioniDAO.html",
+          "hash": "lhSPbr1wLgNpShC1tVBJig=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DAO.ElaborazioniDAO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DAO.ElaborazioniDAO.html",
+          "hash": "X4aaRNE3O4zCkxCfQwvDtA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DAO.PagamentiDAO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DAO.PagamentiDAO.html",
+          "hash": "wwabeZlDs3G5lKBFZLvysg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DAO.TariffeDAO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DAO.TariffeDAO.html",
+          "hash": "J2mMecpbMLQpTkHcHWdhXg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DAO.TipoOccupazDAO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DAO.TipoOccupazDAO.html",
+          "hash": "fhwD/PKxgE5iY05noJsNEA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DAO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DAO.html",
+          "hash": "0Iu5QayZ5b9xYACaTMQ8eA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.CartellaSearch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.CartellaSearch.html",
+          "hash": "NkLLZFHg7bGU5g+TIr7Szw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.DichiarazioneSearch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.DichiarazioneSearch.html",
+          "hash": "sjlykXuZ8wU3kxEb0cu4ug=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.DichiarazioneTosapCosapTestataOLD.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.DichiarazioneTosapCosapTestataOLD.html",
+          "hash": "L9sQsPzvzqzbE11fCuYH2Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.ElaborazioniSearch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.ElaborazioniSearch.html",
+          "hash": "Rzv+IOYY7vqgOTXfJC5T4w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.MetodiAgevolazione.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.MetodiAgevolazione.html",
+          "hash": "xxBRaCelUPE01Tr2CfjaaQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.MetodiArticolo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.MetodiArticolo.html",
+          "hash": "telkw6a2jtH70ZLu3iFrLA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.MetodiCartella.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.MetodiCartella.html",
+          "hash": "8mFZHeYB0wHEwQsiZq1tsA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.MetodiCategorie.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.MetodiCategorie.html",
+          "hash": "uFOyFp4Qa5ZbotyKT76/cA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.MetodiConfigurazioneRate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.MetodiConfigurazioneRate.html",
+          "hash": "o78GKGOgQvV8KL0d112w0w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.MetodiDichiarazioneTosapCosap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.MetodiDichiarazioneTosapCosap.html",
+          "hash": "iuD1WOu1ZskBoY1LDotOwQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.MetodiDurata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.MetodiDurata.html",
+          "hash": "fWxDKTjYMAhpGFwiT01pNQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.MetodiElaborazioneEffettuata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.MetodiElaborazioneEffettuata.html",
+          "hash": "02Ljv0Ti8FCfK05AmowKPw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.MetodiElaborazioniTosapCosap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.MetodiElaborazioniTosapCosap.html",
+          "hash": "lJJfFx+jp01Di5cvM0CGGw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.MetodiLotto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.MetodiLotto.html",
+          "hash": "01NhPOd+kd4xC6Cqbbs2gg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.MetodiMinuta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.MetodiMinuta.html",
+          "hash": "cTi3cDv0xOWXeDjcyVYZ2A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.MetodiPagamento.E_COLUMNS_NoPag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.MetodiPagamento.E_COLUMNS_NoPag.html",
+          "hash": "CVfjTfb22dUhmQ7PixbQ/w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.MetodiPagamento.E_COLUMNS_SinglePag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.MetodiPagamento.E_COLUMNS_SinglePag.html",
+          "hash": "p0mqxGWZIKm3EmUH1uSFDQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.MetodiPagamento.E_COLUMNS_TotPag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.MetodiPagamento.E_COLUMNS_TotPag.html",
+          "hash": "Yqk3ZjzWUOz9E2Ze2f9iyA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.MetodiPagamento.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.MetodiPagamento.html",
+          "hash": "9D7UYY5TIXTLntDT3Dc10w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.MetodiRata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.MetodiRata.html",
+          "hash": "xZL19Uaw8E0okx2pcAa77g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.MetodiRuolo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.MetodiRuolo.html",
+          "hash": "qFYjQR0HsBRjhNSxJwQc2g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.MetodiTariffe.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.MetodiTariffe.html",
+          "hash": "bbMZ3FwQMRefmFS7mYdTUQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.MetodiTipoConsistenza.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.MetodiTipoConsistenza.html",
+          "hash": "iZWALAoOvTiuov5hhg+uUg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.MetodiTipologieOccupazioni.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.MetodiTipologieOccupazioni.html",
+          "hash": "0nOj6I7FgRpq5cVgzpTmpg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.MetodiTitoloRichiedente.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.MetodiTitoloRichiedente.html",
+          "hash": "iavc1QrR/FllolKtYY9wig=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.MetodiUffici.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.MetodiUffici.html",
+          "hash": "IhvdNy8es9AuN1rT2M32hw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.PagamentiSearch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.PagamentiSearch.html",
+          "hash": "tv2hKtcQ0hmeXpeVLfpp0w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.RataSearch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.RataSearch.html",
+          "hash": "PYG1xLGY0jRUV7HvIkGjQQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/DTO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DTO.html",
+          "hash": "eYII0BjdpK0zkIiAMT5Mbg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.Configurazione.ConfigurazioneCoefficienti.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.Configurazione.ConfigurazioneCoefficienti.html",
+          "hash": "Nu923Rvd/t7Aeph3jZubXg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.Configurazione.ConfigurazioneTabelle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.Configurazione.ConfigurazioneTabelle.html",
+          "hash": "kWloqp4B/AfyiO5uLq1qRQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.Configurazione.ConfigurazioneTariffe.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.Configurazione.ConfigurazioneTariffe.html",
+          "hash": "VpBgFPQyaNhx5E4vHX4GIQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.Configurazione.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.Configurazione.html",
+          "hash": "nSNc/zzlVSv0zpCwDovMxA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.GestionePagamenti.GestionePagamentiAdd.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.GestionePagamenti.GestionePagamentiAdd.html",
+          "hash": "vkt/TcbnXgY3swtSsMC/hg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.GestionePagamenti.GestionePagamentiEdit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.GestionePagamenti.GestionePagamentiEdit.html",
+          "hash": "31JH8b2ZSEpvS83mU6TN0Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.GestionePagamenti.GestionePagamentiSearch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.GestionePagamenti.GestionePagamentiSearch.html",
+          "hash": "Jr2qAalWjiILk6iE24mOXQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.GestionePagamenti.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.GestionePagamenti.html",
+          "hash": "m90RbHIUE6F16Czq8j6ajQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.MotoreTOCO.Agevolazione.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.MotoreTOCO.Agevolazione.html",
+          "hash": "NYYPXsW1ofcXkwoaCilQcw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.MotoreTOCO.Articolo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.MotoreTOCO.Articolo.html",
+          "hash": "MxKIy/7XKyD61hqaboeEMQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.MotoreTOCO.CRUD.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.MotoreTOCO.CRUD.html",
+          "hash": "XjuQaSsNFHm5loeZW0X4ag=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.MotoreTOCO.CalcolaImportoTOCOCompletedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.MotoreTOCO.CalcolaImportoTOCOCompletedEventArgs.html",
+          "hash": "Cwu18dmU8tbiwddPCUr0Tg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.MotoreTOCO.CalcolaImportoTOCOCompletedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.MotoreTOCO.CalcolaImportoTOCOCompletedEventHandler.html",
+          "hash": "MXgN80IqLE8LzpFkjEcOVA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.MotoreTOCO.CalcoloResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.MotoreTOCO.CalcoloResult.html",
+          "hash": "tzm3MToM+u9/ODDPnyIg1g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.MotoreTOCO.Categorie.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.MotoreTOCO.Categorie.html",
+          "hash": "eCDpZUH8T6tYr3dqlEWFpA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.html",
+          "hash": "EaELv2wwPQlHvtnahpqDtw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.html",
+          "hash": "5i/qEaEj7aBOMDbRZv2/LQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosapTestata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosapTestata.html",
+          "hash": "z+qSSvcApIV5FBGWpv+pEg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.MotoreTOCO.Durata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.MotoreTOCO.Durata.html",
+          "hash": "DLH9WXM22LluktneSR3deQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT.html",
+          "hash": "WQQTmjTe+4tmnN4QGf25TA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.MotoreTOCO.MotoreTOCO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.MotoreTOCO.MotoreTOCO.html",
+          "hash": "Kl9Odx3n1LhbFfVySl/28w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.MotoreTOCO.Tariffe.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.MotoreTOCO.Tariffe.html",
+          "hash": "VNNHhc+kSimNWlDrjqwu2A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.MotoreTOCO.TipoConsistenza.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.MotoreTOCO.TipoConsistenza.html",
+          "hash": "pXrJbb/E/Xs3CBnCx/hlQA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.MotoreTOCO.TipologieOccupazioni.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.MotoreTOCO.TipologieOccupazioni.html",
+          "hash": "gPU1Z+mJykNjYgU+y5OU7g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.MotoreTOCO.TitoloRichiedente.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.MotoreTOCO.TitoloRichiedente.html",
+          "hash": "URpkH62/MUOaAuNoZ+qUag=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.MotoreTOCO.Uffici.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.MotoreTOCO.Uffici.html",
+          "hash": "sjHwPzpDYXks2MGToyCp8w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.MotoreTOCO.dsContatti.CONTATTIDataTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.MotoreTOCO.dsContatti.CONTATTIDataTable.html",
+          "hash": "xNwor38jdLeJ9mTQuWtQJg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.MotoreTOCO.dsContatti.CONTATTIRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.MotoreTOCO.dsContatti.CONTATTIRow.html",
+          "hash": "dvrDhAFP8pWmIVpGKRbrtQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.MotoreTOCO.dsContatti.CONTATTIRowChangeEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.MotoreTOCO.dsContatti.CONTATTIRowChangeEvent.html",
+          "hash": "q7ucXqNErUqqBr/WeFDA+Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.MotoreTOCO.dsContatti.CONTATTIRowChangeEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.MotoreTOCO.dsContatti.CONTATTIRowChangeEventHandler.html",
+          "hash": "n00kW2h6wFQvLOEsxZzvHQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.MotoreTOCO.dsContatti.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.MotoreTOCO.dsContatti.html",
+          "hash": "8jFxRVnGhFMkzjosKyQGmg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.MotoreTOCO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.MotoreTOCO.html",
+          "hash": "Sjt5bykKAnR/Cg23sSQQDQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.Wuc.WucGestionePagamenti.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.Wuc.WucGestionePagamenti.html",
+          "hash": "RiisEbWkb7UJ9kol5opl2Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENGovTOCO.Wuc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENGovTOCO.Wuc.html",
+          "hash": "6AwqbIdWMGnXK6rk09VXcQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.BaseEnte.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.BaseEnte.html",
+          "hash": "oYg/ut8icCMVT3ZhbNi7Hw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.BasePage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.BasePage.html",
+          "hash": "90qvtVeBSTV9bvKJh8xVSA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.CacheManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.CacheManager.html",
+          "hash": "V9ZB2vTtYzAw+3oUSZYy/w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.CalcoloOSAP.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.CalcoloOSAP.html",
+          "hash": "AVfmRYTlBCozeJ0mdLq7Bg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.CalcoloRateOSAP.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.CalcoloRateOSAP.html",
+          "hash": "uHlYFFXF0zWRrx4VRDqUDg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.ConfigurazioneRate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.ConfigurazioneRate.html",
+          "hash": "pUDw/nF3Ibfp4NtNDWepQw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.DichiarazioneSession.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.DichiarazioneSession.html",
+          "hash": "P+0TNkG3JMNoKUgGEcqeYA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.Dichiarazioni.ArticoliAdd.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.Dichiarazioni.ArticoliAdd.html",
+          "hash": "EG6Ra240l0fT64DAvMOAzg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.Dichiarazioni.ArticoliEdit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.Dichiarazioni.ArticoliEdit.html",
+          "hash": "oQXH45uKgAvNp/yXBejsbw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.Dichiarazioni.ArticoliView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.Dichiarazioni.ArticoliView.html",
+          "hash": "QBs93N6M4am1sTPqcLFsAw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.Dichiarazioni.DichiarazioniAdd.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.Dichiarazioni.DichiarazioniAdd.html",
+          "hash": "76aVYriYDBLFlhfQM7LzaQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.Dichiarazioni.DichiarazioniEdit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.Dichiarazioni.DichiarazioniEdit.html",
+          "hash": "idcBofWCQ3lcTtJfqSsJMA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.Dichiarazioni.DichiarazioniSearch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.Dichiarazioni.DichiarazioniSearch.html",
+          "hash": "MZQVCmWRhun0a1nH44FybQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.Dichiarazioni.DichiarazioniView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.Dichiarazioni.DichiarazioniView.html",
+          "hash": "QRbjmnlp17UYQa1PRJoNjA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.Dichiarazioni.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.Dichiarazioni.html",
+          "hash": "L3P/G0YrqCQMqQKRsAOL0w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.Elaborazioni.Documenti.ComandiDoc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.Elaborazioni.Documenti.ComandiDoc.html",
+          "hash": "ODAaYmU4Fm/EqR+kfJ+SuQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.Elaborazioni.Documenti.ComandiDocElaborati.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.Elaborazioni.Documenti.ComandiDocElaborati.html",
+          "hash": "wh4JZnn6DMLPqy5kMWo/RQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.html",
+          "hash": "kQweMP3WzDd9aH6jbez3BQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.Elaborazioni.Documenti.StampaInCorso.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.Elaborazioni.Documenti.StampaInCorso.html",
+          "hash": "CmJ6U1beboYmjcF7jzsQXg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.Elaborazioni.Documenti.ViewDocElaborati.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.Elaborazioni.Documenti.ViewDocElaborati.html",
+          "hash": "Be8ViSQedv0ZFbpUcjg/zg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.Elaborazioni.Documenti.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.Elaborazioni.Documenti.html",
+          "hash": "nogeOwrZWMbX9j7XeieoMg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.Elaborazioni.ElaborazioneAvvisi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.Elaborazioni.ElaborazioneAvvisi.html",
+          "hash": "r0NXRWOKAX2P5d8ekFkpRA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.Elaborazioni.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.Elaborazioni.html",
+          "hash": "iTmR4NEYR2gQGBavb3hIUg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.Generali.classi.Documenti.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.Generali.classi.Documenti.html",
+          "hash": "Vk6XAdHMSL9SYNBKQKuW7g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.Generali.classi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.Generali.classi.html",
+          "hash": "sHXlQk/wy5+K6uROfz5T/w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.Global.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.Global.html",
+          "hash": "NWsp9EsB8rlxkh7cM9nylw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.OSAPConst.OperationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.OSAPConst.OperationType.html",
+          "hash": "tq8KeM9NmMs8pv0gvTCsvA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.OSAPConst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.OSAPConst.html",
+          "hash": "hjXkNzTRnzbErpfa9wzWyg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.OSAPPages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.OSAPPages.html",
+          "hash": "NcP/NoVxI4anns/sbs8syA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.html",
+          "hash": "WIElFK+l5KVNFFvp0SKOWQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.ObjFlussoScuole.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.ObjFlussoScuole.html",
+          "hash": "Brq7Xn6c6fTjeW7aXKsHdg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.SharedFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.SharedFunction.html",
+          "hash": "u330zCRFrpi0g8mnlhzIzw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.SituazioneContribuente.SituazioneAvvisi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.SituazioneContribuente.SituazioneAvvisi.html",
+          "hash": "sBfrY9gy1m8hl59dwp2cGA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.SituazioneContribuente.SituazioneAvvisiSearch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.SituazioneContribuente.SituazioneAvvisiSearch.html",
+          "hash": "cncMCBmUIoXdpB1U8ZZu0A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.SituazioneContribuente.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.SituazioneContribuente.html",
+          "hash": "21ltnZ89zTES4YXEu2r3/Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.Wuc.WucArticolo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.Wuc.WucArticolo.html",
+          "hash": "OiMNhiWPCEMguLHY28aMmg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.Wuc.WucDatiContribuente.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.Wuc.WucDatiContribuente.html",
+          "hash": "2GTDC1RmcsxU+xbCDiAy6Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.Wuc.WucDichiarazione.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.Wuc.WucDichiarazione.html",
+          "hash": "zLwIAAWJT+wj50ML8XYnOg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.Wuc_1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.Wuc_1.html",
+          "hash": "Z+Rz5O5p4jHSwk1nb9Nmpg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.clsImportFlussi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.clsImportFlussi.html",
+          "hash": "GqDgc14WbjBkMRyEYn0+Fg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovTOCO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovTOCO.html",
+          "hash": "6f7xGVVenmZRbaHCCUX1ew=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "rD38Kco4ke6LuckMzTvSAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "G2AoE5T/2VarbHvzLEo4TQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 117,
+          "skipped_file_count": 117
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

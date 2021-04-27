@@ -1,0 +1,664 @@
+### YamlMime:ManagedReference
+items:
+- uid: DTO.RataSearch
+  commentId: T:DTO.RataSearch
+  id: RataSearch
+  parent: DTO
+  children:
+  - DTO.RataSearch.#ctor
+  - DTO.RataSearch._IdCartella
+  - DTO.RataSearch._Tributo
+  - DTO.RataSearch.Anno
+  - DTO.RataSearch.CodiceCartella
+  - DTO.RataSearch.IdCartella
+  - DTO.RataSearch.IdContribuente
+  - DTO.RataSearch.IdEnte
+  - DTO.RataSearch.IdTributo
+  langs:
+  - csharp
+  - vb
+  name: RataSearch
+  nameWithType: RataSearch
+  fullName: DTO.RataSearch
+  type: Class
+  source:
+    id: RataSearch
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\RataSearch.cs
+    startLine: 7
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  summary: "\nDefinizione oggetto ricerca rate\n"
+  example: []
+  syntax:
+    content: public class RataSearch
+    content.vb: Public Class RataSearch
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DTO.RataSearch._Tributo
+  commentId: F:DTO.RataSearch._Tributo
+  id: _Tributo
+  parent: DTO.RataSearch
+  langs:
+  - csharp
+  - vb
+  name: _Tributo
+  nameWithType: RataSearch._Tributo
+  fullName: DTO.RataSearch._Tributo
+  type: Field
+  source:
+    id: _Tributo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\RataSearch.cs
+    startLine: 13
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string _Tributo
+    return:
+      type: System.String
+    content.vb: Public _Tributo As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DTO.RataSearch._IdCartella
+  commentId: F:DTO.RataSearch._IdCartella
+  id: _IdCartella
+  parent: DTO.RataSearch
+  langs:
+  - csharp
+  - vb
+  name: _IdCartella
+  nameWithType: RataSearch._IdCartella
+  fullName: DTO.RataSearch._IdCartella
+  type: Field
+  source:
+    id: _IdCartella
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\RataSearch.cs
+    startLine: 14
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public int _IdCartella
+    return:
+      type: System.Int32
+    content.vb: Public _IdCartella As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DTO.RataSearch.IdTributo
+  commentId: P:DTO.RataSearch.IdTributo
+  id: IdTributo
+  parent: DTO.RataSearch
+  langs:
+  - csharp
+  - vb
+  name: IdTributo
+  nameWithType: RataSearch.IdTributo
+  fullName: DTO.RataSearch.IdTributo
+  type: Property
+  source:
+    id: IdTributo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\RataSearch.cs
+    startLine: 15
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string IdTributo { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property IdTributo As String
+  overload: DTO.RataSearch.IdTributo*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.RataSearch.IdEnte
+  commentId: P:DTO.RataSearch.IdEnte
+  id: IdEnte
+  parent: DTO.RataSearch
+  langs:
+  - csharp
+  - vb
+  name: IdEnte
+  nameWithType: RataSearch.IdEnte
+  fullName: DTO.RataSearch.IdEnte
+  type: Property
+  source:
+    id: IdEnte
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\RataSearch.cs
+    startLine: 20
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string IdEnte { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property IdEnte As String
+  overload: DTO.RataSearch.IdEnte*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.RataSearch.Anno
+  commentId: P:DTO.RataSearch.Anno
+  id: Anno
+  parent: DTO.RataSearch
+  langs:
+  - csharp
+  - vb
+  name: Anno
+  nameWithType: RataSearch.Anno
+  fullName: DTO.RataSearch.Anno
+  type: Property
+  source:
+    id: Anno
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\RataSearch.cs
+    startLine: 26
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public int Anno { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Anno As Integer
+  overload: DTO.RataSearch.Anno*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.RataSearch.CodiceCartella
+  commentId: P:DTO.RataSearch.CodiceCartella
+  id: CodiceCartella
+  parent: DTO.RataSearch
+  langs:
+  - csharp
+  - vb
+  name: CodiceCartella
+  nameWithType: RataSearch.CodiceCartella
+  fullName: DTO.RataSearch.CodiceCartella
+  type: Property
+  source:
+    id: CodiceCartella
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\RataSearch.cs
+    startLine: 32
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string CodiceCartella { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CodiceCartella As String
+  overload: DTO.RataSearch.CodiceCartella*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.RataSearch.IdContribuente
+  commentId: P:DTO.RataSearch.IdContribuente
+  id: IdContribuente
+  parent: DTO.RataSearch
+  langs:
+  - csharp
+  - vb
+  name: IdContribuente
+  nameWithType: RataSearch.IdContribuente
+  fullName: DTO.RataSearch.IdContribuente
+  type: Property
+  source:
+    id: IdContribuente
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\RataSearch.cs
+    startLine: 38
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public int IdContribuente { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IdContribuente As Integer
+  overload: DTO.RataSearch.IdContribuente*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.RataSearch.IdCartella
+  commentId: P:DTO.RataSearch.IdCartella
+  id: IdCartella
+  parent: DTO.RataSearch
+  langs:
+  - csharp
+  - vb
+  name: IdCartella
+  nameWithType: RataSearch.IdCartella
+  fullName: DTO.RataSearch.IdCartella
+  type: Property
+  source:
+    id: IdCartella
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\RataSearch.cs
+    startLine: 43
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public int IdCartella { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IdCartella As Integer
+  overload: DTO.RataSearch.IdCartella*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.RataSearch.#ctor
+  commentId: M:DTO.RataSearch.#ctor
+  id: '#ctor'
+  parent: DTO.RataSearch
+  langs:
+  - csharp
+  - vb
+  name: RataSearch()
+  nameWithType: RataSearch.RataSearch()
+  fullName: DTO.RataSearch.RataSearch()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\RataSearch.cs
+    startLine: 48
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public RataSearch()
+    content.vb: Public Sub New
+  overload: DTO.RataSearch.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: DTO
+  commentId: N:DTO
+  name: DTO
+  nameWithType: DTO
+  fullName: DTO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DTO.RataSearch.IdTributo*
+  commentId: Overload:DTO.RataSearch.IdTributo
+  name: IdTributo
+  nameWithType: RataSearch.IdTributo
+  fullName: DTO.RataSearch.IdTributo
+- uid: DTO.RataSearch.IdEnte*
+  commentId: Overload:DTO.RataSearch.IdEnte
+  name: IdEnte
+  nameWithType: RataSearch.IdEnte
+  fullName: DTO.RataSearch.IdEnte
+- uid: DTO.RataSearch.Anno*
+  commentId: Overload:DTO.RataSearch.Anno
+  name: Anno
+  nameWithType: RataSearch.Anno
+  fullName: DTO.RataSearch.Anno
+- uid: DTO.RataSearch.CodiceCartella*
+  commentId: Overload:DTO.RataSearch.CodiceCartella
+  name: CodiceCartella
+  nameWithType: RataSearch.CodiceCartella
+  fullName: DTO.RataSearch.CodiceCartella
+- uid: DTO.RataSearch.IdContribuente*
+  commentId: Overload:DTO.RataSearch.IdContribuente
+  name: IdContribuente
+  nameWithType: RataSearch.IdContribuente
+  fullName: DTO.RataSearch.IdContribuente
+- uid: DTO.RataSearch.IdCartella*
+  commentId: Overload:DTO.RataSearch.IdCartella
+  name: IdCartella
+  nameWithType: RataSearch.IdCartella
+  fullName: DTO.RataSearch.IdCartella
+- uid: DTO.RataSearch.#ctor*
+  commentId: Overload:DTO.RataSearch.#ctor
+  name: RataSearch
+  nameWithType: RataSearch.RataSearch
+  fullName: DTO.RataSearch.RataSearch

@@ -1,0 +1,1367 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CartelleDAO
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CartelleDAO
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DAO.CartelleDAO">
+  
+  
+  <h1 id="DAO_CartelleDAO" data-uid="DAO.CartelleDAO" class="text-break">Class CartelleDAO
+  </h1>
+  <div class="markdown level0 summary"><p>Classe interfacciamento DB per la gestione Cartelle</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CartelleDAO</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DAO.html">DAO</a></h6>
+  <h6><strong>Assembly</strong>: OPENGovTOCO.dll</h6>
+  <h5 id="DAO_CartelleDAO_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CartelleDAO</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="DAO_CartelleDAO__ctor_" data-uid="DAO.CartelleDAO.#ctor*"></a>
+  <h4 id="DAO_CartelleDAO__ctor" data-uid="DAO.CartelleDAO.#ctor">CartelleDAO()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CartelleDAO()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="DAO_CartelleDAO_CalcolaRate_" data-uid="DAO.CartelleDAO.CalcolaRate*"></a>
+  <h4 id="DAO_CartelleDAO_CalcolaRate_System_Int32_System_Int32_System_Int32_System_Double_System_Double_System_Data_SqlClient_SqlCommand__" data-uid="DAO.CartelleDAO.CalcolaRate(System.Int32,System.Int32,System.Int32,System.Double,System.Double,System.Data.SqlClient.SqlCommand@)">CalcolaRate(Int32, Int32, Int32, Double, Double, ref SqlCommand)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CalcolaRate(int DBOperation, int IdFlusso, int IdAvviso, double SogliaRata, double SogliaBollettino, ref SqlCommand cmdMyCommand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">DBOperation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">IdFlusso</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">IdAvviso</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">SogliaRata</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">SogliaBollettino</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlCommand</span></td>
+        <td><span class="parametername">cmdMyCommand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_CartelleSearch_" data-uid="DAO.CartelleDAO.CartelleSearch*"></a>
+  <h4 id="DAO_CartelleDAO_CartelleSearch_DTO_CartellaSearch_System_Data_SqlClient_SqlCommand_" data-uid="DAO.CartelleDAO.CartelleSearch(DTO.CartellaSearch,System.Data.SqlClient.SqlCommand)">CartelleSearch(CartellaSearch, SqlCommand)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataTable CartelleSearch(CartellaSearch objSearch, SqlCommand cmdMyCommandOut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DTO.CartellaSearch.html">CartellaSearch</a></td>
+        <td><span class="parametername">objSearch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlCommand</span></td>
+        <td><span class="parametername">cmdMyCommandOut</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.DataTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_CheckTariffa_" data-uid="DAO.CartelleDAO.CheckTariffa*"></a>
+  <h4 id="DAO_CartelleDAO_CheckTariffa_System_Int32_System_String_" data-uid="DAO.CartelleDAO.CheckTariffa(System.Int32,System.String)">CheckTariffa(Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataTable CheckTariffa(int Anno, string IdTributo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Anno</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">IdTributo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.DataTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_CommitCalcoloMassivoTransaction_" data-uid="DAO.CartelleDAO.CommitCalcoloMassivoTransaction*"></a>
+  <h4 id="DAO_CartelleDAO_CommitCalcoloMassivoTransaction_System_Data_SqlClient_SqlCommand__" data-uid="DAO.CartelleDAO.CommitCalcoloMassivoTransaction(System.Data.SqlClient.SqlCommand@)">CommitCalcoloMassivoTransaction(ref SqlCommand)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CommitCalcoloMassivoTransaction(ref SqlCommand cmdMyCommand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlCommand</span></td>
+        <td><span class="parametername">cmdMyCommand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_CommitImportTransaction_" data-uid="DAO.CartelleDAO.CommitImportTransaction*"></a>
+  <h4 id="DAO_CartelleDAO_CommitImportTransaction_System_Data_SqlClient_SqlCommand__" data-uid="DAO.CartelleDAO.CommitImportTransaction(System.Data.SqlClient.SqlCommand@)">CommitImportTransaction(ref SqlCommand)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CommitImportTransaction(ref SqlCommand cmdMyCommand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlCommand</span></td>
+        <td><span class="parametername">cmdMyCommand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_connessioneDB_" data-uid="DAO.CartelleDAO.connessioneDB*"></a>
+  <h4 id="DAO_CartelleDAO_connessioneDB" data-uid="DAO.CartelleDAO.connessioneDB">connessioneDB()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void connessioneDB()</code></pre>
+  </div>
+  
+  
+  <a id="DAO_CartelleDAO_connessioneDB_" data-uid="DAO.CartelleDAO.connessioneDB*"></a>
+  <h4 id="DAO_CartelleDAO_connessioneDB_System_String_" data-uid="DAO.CartelleDAO.connessioneDB(System.String)">connessioneDB(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void connessioneDB(string ConnectionString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ConnectionString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_DeleteCalcoloMassivo_" data-uid="DAO.CartelleDAO.DeleteCalcoloMassivo*"></a>
+  <h4 id="DAO_CartelleDAO_DeleteCalcoloMassivo_System_Int32_" data-uid="DAO.CartelleDAO.DeleteCalcoloMassivo(System.Int32)">DeleteCalcoloMassivo(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteCalcoloMassivo(int IdFlusso)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">IdFlusso</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_GetCartella_" data-uid="DAO.CartelleDAO.GetCartella*"></a>
+  <h4 id="DAO_CartelleDAO_GetCartella_System_Int32_System_String_" data-uid="DAO.CartelleDAO.GetCartella(System.Int32,System.String)">GetCartella(Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataTable GetCartella(int IdCartella, string IdEnte)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">IdCartella</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">IdEnte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.DataTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_GetCartellaByCodiceCartella_" data-uid="DAO.CartelleDAO.GetCartellaByCodiceCartella*"></a>
+  <h4 id="DAO_CartelleDAO_GetCartellaByCodiceCartella_System_String_System_Int32_System_String_" data-uid="DAO.CartelleDAO.GetCartellaByCodiceCartella(System.String,System.Int32,System.String)">GetCartellaByCodiceCartella(String, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Recupera la cartella dal suo codice</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataTable GetCartellaByCodiceCartella(string codiceCartella, int codContribuente, string idEnte)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">codiceCartella</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">codContribuente</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idEnte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.DataTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_GetConfigurazioneRate_" data-uid="DAO.CartelleDAO.GetConfigurazioneRate*"></a>
+  <h4 id="DAO_CartelleDAO_GetConfigurazioneRate_System_Int32_" data-uid="DAO.CartelleDAO.GetConfigurazioneRate(System.Int32)">GetConfigurazioneRate(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataTable GetConfigurazioneRate(int IdFlusso)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">IdFlusso</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.DataTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_GetElaborazioneEffettuata_" data-uid="DAO.CartelleDAO.GetElaborazioneEffettuata*"></a>
+  <h4 id="DAO_CartelleDAO_GetElaborazioneEffettuata_System_Int32_IRemInterfaceOSAP_Ruolo_E_TIPO_System_String_" data-uid="DAO.CartelleDAO.GetElaborazioneEffettuata(System.Int32,IRemInterfaceOSAP.Ruolo.E_TIPO,System.String)">GetElaborazioneEffettuata(Int32, Ruolo.E_TIPO, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataTable GetElaborazioneEffettuata(int Anno, Ruolo.E_TIPO TipoRuolo, string IdTributo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Anno</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IRemInterfaceOSAP.Ruolo.E_TIPO</span></td>
+        <td><span class="parametername">TipoRuolo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">IdTributo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.DataTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_GetLotto_" data-uid="DAO.CartelleDAO.GetLotto*"></a>
+  <h4 id="DAO_CartelleDAO_GetLotto_System_String_System_Int32_System_Int32_System_Data_SqlClient_SqlCommand__" data-uid="DAO.CartelleDAO.GetLotto(System.String,System.Int32,System.Int32,System.Data.SqlClient.SqlCommand@)">GetLotto(String, Int32, Int32, ref SqlCommand)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataTable GetLotto(string IdEnte, int Anno, int NLotto, ref SqlCommand cmdMyCommand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">IdEnte</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Anno</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">NLotto</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlCommand</span></td>
+        <td><span class="parametername">cmdMyCommand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.DataTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_GetMinuta_" data-uid="DAO.CartelleDAO.GetMinuta*"></a>
+  <h4 id="DAO_CartelleDAO_GetMinuta_System_String_System_String_System_String_System_Int32_System_Boolean_" data-uid="DAO.CartelleDAO.GetMinuta(System.String,System.String,System.String,System.Int32,System.Boolean)">GetMinuta(String, String, String, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataTable GetMinuta(string myStringConnection, string IdEnte, string IdTributo, int IdFlusso, bool IsRate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">myStringConnection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">IdEnte</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">IdTributo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">IdFlusso</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">IsRate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.DataTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_GetNAvvisoAutomatico_" data-uid="DAO.CartelleDAO.GetNAvvisoAutomatico*"></a>
+  <h4 id="DAO_CartelleDAO_GetNAvvisoAutomatico_System_String_System_String_System_String_System_String_" data-uid="DAO.CartelleDAO.GetNAvvisoAutomatico(System.String,System.String,System.String,System.String)">GetNAvvisoAutomatico(String, String, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetNAvvisoAutomatico(string ConnectionString, string IdEnte, string CodTributo, string Anno)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ConnectionString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">IdEnte</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">CodTributo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Anno</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_GetPagamentiCartella_" data-uid="DAO.CartelleDAO.GetPagamentiCartella*"></a>
+  <h4 id="DAO_CartelleDAO_GetPagamentiCartella_System_Int32_System_String_" data-uid="DAO.CartelleDAO.GetPagamentiCartella(System.Int32,System.String)">GetPagamentiCartella(Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataTable GetPagamentiCartella(int IdCartella, string IdEnte)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">IdCartella</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">IdEnte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.DataTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_GetRuoliCartella_" data-uid="DAO.CartelleDAO.GetRuoliCartella*"></a>
+  <h4 id="DAO_CartelleDAO_GetRuoliCartella_System_Int32_System_String_" data-uid="DAO.CartelleDAO.GetRuoliCartella(System.Int32,System.String)">GetRuoliCartella(Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataTable GetRuoliCartella(int IdCartella, string IdEnte)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">IdCartella</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">IdEnte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.DataTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_GetStatistichePreElaborazione_" data-uid="DAO.CartelleDAO.GetStatistichePreElaborazione*"></a>
+  <h4 id="DAO_CartelleDAO_GetStatistichePreElaborazione_System_Int32_IRemInterfaceOSAP_Ruolo_E_TIPO_System_String_" data-uid="DAO.CartelleDAO.GetStatistichePreElaborazione(System.Int32,IRemInterfaceOSAP.Ruolo.E_TIPO,System.String)">GetStatistichePreElaborazione(Int32, Ruolo.E_TIPO, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataTable GetStatistichePreElaborazione(int Anno, Ruolo.E_TIPO TipoRuolo, string IdTributo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Anno</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IRemInterfaceOSAP.Ruolo.E_TIPO</span></td>
+        <td><span class="parametername">TipoRuolo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">IdTributo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.DataTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_InsertCartella_" data-uid="DAO.CartelleDAO.InsertCartella*"></a>
+  <h4 id="DAO_CartelleDAO_InsertCartella_IRemInterfaceOSAP_Cartella__System_Data_SqlClient_SqlCommand__System_Boolean_System_Int32_System_String_" data-uid="DAO.CartelleDAO.InsertCartella(IRemInterfaceOSAP.Cartella@,System.Data.SqlClient.SqlCommand@,System.Boolean,System.Int32,System.String)">InsertCartella(ref Cartella, ref SqlCommand, Boolean, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Funzione per l&apos;inserimento dell&apos;avviso</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InsertCartella(ref Cartella myItem, ref SqlCommand cmdMyCommand, bool HasArrotondamento, int IsSgravio, string sOperatore)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IRemInterfaceOSAP.Cartella</span></td>
+        <td><span class="parametername">myItem</span></td>
+        <td><p>ref Cartella oggetto da gestire</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlCommand</span></td>
+        <td><span class="parametername">cmdMyCommand</span></td>
+        <td><p>ref SqlCommand</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">HasArrotondamento</span></td>
+        <td><p>bool</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">IsSgravio</span></td>
+        <td><p>int</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sOperatore</span></td>
+        <td><p>string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_InsertConfigurazioneRate_" data-uid="DAO.CartelleDAO.InsertConfigurazioneRate*"></a>
+  <h4 id="DAO_CartelleDAO_InsertConfigurazioneRate_IRemInterfaceOSAP_Rate___" data-uid="DAO.CartelleDAO.InsertConfigurazioneRate(IRemInterfaceOSAP.Rate[])">InsertConfigurazioneRate(Rate[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InsertConfigurazioneRate(Rate[] c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IRemInterfaceOSAP.Rate</span>[]</td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_InsertLotto_" data-uid="DAO.CartelleDAO.InsertLotto*"></a>
+  <h4 id="DAO_CartelleDAO_InsertLotto_IRemInterfaceOSAP_Lotto_System_Data_SqlClient_SqlCommand__" data-uid="DAO.CartelleDAO.InsertLotto(IRemInterfaceOSAP.Lotto,System.Data.SqlClient.SqlCommand@)">InsertLotto(Lotto, ref SqlCommand)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InsertLotto(Lotto l, ref SqlCommand cmdMyCommand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IRemInterfaceOSAP.Lotto</span></td>
+        <td><span class="parametername">l</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlCommand</span></td>
+        <td><span class="parametername">cmdMyCommand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_InsertRata_" data-uid="DAO.CartelleDAO.InsertRata*"></a>
+  <h4 id="DAO_CartelleDAO_InsertRata_IRemInterfaceOSAP_Rata__System_Data_SqlClient_SqlCommand__" data-uid="DAO.CartelleDAO.InsertRata(IRemInterfaceOSAP.Rata@,System.Data.SqlClient.SqlCommand@)">InsertRata(ref Rata, ref SqlCommand)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InsertRata(ref Rata r, ref SqlCommand cmdMyCommand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IRemInterfaceOSAP.Rata</span></td>
+        <td><span class="parametername">r</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlCommand</span></td>
+        <td><span class="parametername">cmdMyCommand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_OpenCalcoloMassivoConnection_" data-uid="DAO.CartelleDAO.OpenCalcoloMassivoConnection*"></a>
+  <h4 id="DAO_CartelleDAO_OpenCalcoloMassivoConnection" data-uid="DAO.CartelleDAO.OpenCalcoloMassivoConnection">OpenCalcoloMassivoConnection()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SqlCommand OpenCalcoloMassivoConnection()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlCommand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_OpenImportConnection_" data-uid="DAO.CartelleDAO.OpenImportConnection*"></a>
+  <h4 id="DAO_CartelleDAO_OpenImportConnection" data-uid="DAO.CartelleDAO.OpenImportConnection">OpenImportConnection()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SqlCommand OpenImportConnection()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlCommand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_RollbackCalcoloMassivoTransaction_" data-uid="DAO.CartelleDAO.RollbackCalcoloMassivoTransaction*"></a>
+  <h4 id="DAO_CartelleDAO_RollbackCalcoloMassivoTransaction_System_Data_SqlClient_SqlCommand__" data-uid="DAO.CartelleDAO.RollbackCalcoloMassivoTransaction(System.Data.SqlClient.SqlCommand@)">RollbackCalcoloMassivoTransaction(ref SqlCommand)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RollbackCalcoloMassivoTransaction(ref SqlCommand cmdMyCommand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlCommand</span></td>
+        <td><span class="parametername">cmdMyCommand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_RollbackImportTransaction_" data-uid="DAO.CartelleDAO.RollbackImportTransaction*"></a>
+  <h4 id="DAO_CartelleDAO_RollbackImportTransaction_System_Data_SqlClient_SqlCommand__" data-uid="DAO.CartelleDAO.RollbackImportTransaction(System.Data.SqlClient.SqlCommand@)">RollbackImportTransaction(ref SqlCommand)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RollbackImportTransaction(ref SqlCommand cmdMyCommand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlCommand</span></td>
+        <td><span class="parametername">cmdMyCommand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_SetCodiceCartella_" data-uid="DAO.CartelleDAO.SetCodiceCartella*"></a>
+  <h4 id="DAO_CartelleDAO_SetCodiceCartella_IRemInterfaceOSAP_Cartella_System_Data_SqlClient_SqlCommand__" data-uid="DAO.CartelleDAO.SetCodiceCartella(IRemInterfaceOSAP.Cartella,System.Data.SqlClient.SqlCommand@)">SetCodiceCartella(Cartella, ref SqlCommand)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCodiceCartella(Cartella cart, ref SqlCommand cmdMyCommand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IRemInterfaceOSAP.Cartella</span></td>
+        <td><span class="parametername">cart</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlCommand</span></td>
+        <td><span class="parametername">cmdMyCommand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_SetElaborazioneEffettuata_" data-uid="DAO.CartelleDAO.SetElaborazioneEffettuata*"></a>
+  <h4 id="DAO_CartelleDAO_SetElaborazioneEffettuata_IRemInterfaceOSAP_ElaborazioneEffettuata__System_Data_SqlClient_SqlCommand__System_String_" data-uid="DAO.CartelleDAO.SetElaborazioneEffettuata(IRemInterfaceOSAP.ElaborazioneEffettuata@,System.Data.SqlClient.SqlCommand@,System.String)">SetElaborazioneEffettuata(ref ElaborazioneEffettuata, ref SqlCommand, String)</h4>
+  <div class="markdown level1 summary"><p>Questa funzione può essere richiamata sia in transazione (calcolo massivo) sia indipendentemente (es: stampo minuta e devo solo aggiornare lo stato), per cui gestisco il doppio caso per la connessione al DB</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetElaborazioneEffettuata(ref ElaborazioneEffettuata myItem, ref SqlCommand cmdMyCommandOut, string Operatore)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IRemInterfaceOSAP.ElaborazioneEffettuata</span></td>
+        <td><span class="parametername">myItem</span></td>
+        <td><p>ref ElaborazioneEffettuata oggetto da gestire</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlCommand</span></td>
+        <td><span class="parametername">cmdMyCommandOut</span></td>
+        <td><p>ref SqlCommand</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Operatore</span></td>
+        <td><p>string utente</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_StartCalcoloMassivoTransaction_" data-uid="DAO.CartelleDAO.StartCalcoloMassivoTransaction*"></a>
+  <h4 id="DAO_CartelleDAO_StartCalcoloMassivoTransaction" data-uid="DAO.CartelleDAO.StartCalcoloMassivoTransaction">StartCalcoloMassivoTransaction()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SqlCommand StartCalcoloMassivoTransaction()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlCommand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_StartImportTransaction_" data-uid="DAO.CartelleDAO.StartImportTransaction*"></a>
+  <h4 id="DAO_CartelleDAO_StartImportTransaction" data-uid="DAO.CartelleDAO.StartImportTransaction">StartImportTransaction()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SqlCommand StartImportTransaction()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlCommand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DAO_CartelleDAO_UndoSgravio_" data-uid="DAO.CartelleDAO.UndoSgravio*"></a>
+  <h4 id="DAO_CartelleDAO_UndoSgravio_IRemInterfaceOSAP_Cartella__System_Data_SqlClient_SqlCommand__System_String_" data-uid="DAO.CartelleDAO.UndoSgravio(IRemInterfaceOSAP.Cartella@,System.Data.SqlClient.SqlCommand@,System.String)">UndoSgravio(ref Cartella, ref SqlCommand, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UndoSgravio(ref Cartella myItem, ref SqlCommand cmdMyCommand, string sOperatore)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IRemInterfaceOSAP.Cartella</span></td>
+        <td><span class="parametername">myItem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlCommand</span></td>
+        <td><span class="parametername">cmdMyCommand</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sOperatore</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

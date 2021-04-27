@@ -1,0 +1,1139 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow
+  commentId: T:DichiarazioniICI.Database.DichiarazioniViewRow
+  id: DichiarazioniViewRow
+  parent: DichiarazioniICI.Database
+  children:
+  - DichiarazioniICI.Database.DichiarazioniViewRow.AbitazionePrincipale
+  - DichiarazioniICI.Database.DichiarazioniViewRow.AnnoDichiarazione
+  - DichiarazioniICI.Database.DichiarazioniViewRow.Annullato
+  - DichiarazioniICI.Database.DichiarazioniViewRow.Contitolare
+  - DichiarazioniICI.Database.DichiarazioniViewRow.DataFine
+  - DichiarazioniICI.Database.DichiarazioniViewRow.DataFineValidità
+  - DichiarazioniICI.Database.DichiarazioniViewRow.DataInizio
+  - DichiarazioniICI.Database.DichiarazioniViewRow.DataInizioValidità
+  - DichiarazioniICI.Database.DichiarazioniViewRow.DataProtocollo
+  - DichiarazioniICI.Database.DichiarazioniViewRow.Effettivo
+  - DichiarazioniICI.Database.DichiarazioniViewRow.Ente
+  - DichiarazioniICI.Database.DichiarazioniViewRow.ID
+  - DichiarazioniICI.Database.DichiarazioniViewRow.IDContribuente
+  - DichiarazioniICI.Database.DichiarazioniViewRow.IDDenunciante
+  - DichiarazioniICI.Database.DichiarazioniViewRow.IdSoggetto
+  - DichiarazioniICI.Database.DichiarazioniViewRow.ImpDetrazAbitazPrincipale
+  - DichiarazioniICI.Database.DichiarazioniViewRow.MesiEsclusioneEsenzione
+  - DichiarazioniICI.Database.DichiarazioniViewRow.MesiPossesso
+  - DichiarazioniICI.Database.DichiarazioniViewRow.MesiRiduzione
+  - DichiarazioniICI.Database.DichiarazioniViewRow.NumeroDichiarazione
+  - DichiarazioniICI.Database.DichiarazioniViewRow.NumeroModello
+  - DichiarazioniICI.Database.DichiarazioniViewRow.NumeroOrdine
+  - DichiarazioniICI.Database.DichiarazioniViewRow.NumeroProtocollo
+  - DichiarazioniICI.Database.DichiarazioniViewRow.Operatore
+  - DichiarazioniICI.Database.DichiarazioniViewRow.PercPossesso
+  - DichiarazioniICI.Database.DichiarazioniViewRow.TipoPossesso
+  - DichiarazioniICI.Database.DichiarazioniViewRow.TipoUtilizzo
+  - DichiarazioniICI.Database.DichiarazioniViewRow.TotaleModelli
+  langs:
+  - csharp
+  - vb
+  name: DichiarazioniViewRow
+  nameWithType: DichiarazioniViewRow
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow
+  type: Struct
+  source:
+    id: DichiarazioniViewRow
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 12
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  summary: "\nRappresenta una riga della tabella viewDichiarazioni.\n"
+  example: []
+  syntax:
+    content: public struct DichiarazioniViewRow
+    content.vb: Public Structure DichiarazioniViewRow
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.ID
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.ID
+  id: ID
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: DichiarazioniViewRow.ID
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.ID
+  type: Field
+  source:
+    id: ID
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 14
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int ID
+    return:
+      type: System.Int32
+    content.vb: Public ID As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.Ente
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.Ente
+  id: Ente
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: Ente
+  nameWithType: DichiarazioniViewRow.Ente
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.Ente
+  type: Field
+  source:
+    id: Ente
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 15
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string Ente
+    return:
+      type: System.String
+    content.vb: Public Ente As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.NumeroDichiarazione
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.NumeroDichiarazione
+  id: NumeroDichiarazione
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: NumeroDichiarazione
+  nameWithType: DichiarazioniViewRow.NumeroDichiarazione
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.NumeroDichiarazione
+  type: Field
+  source:
+    id: NumeroDichiarazione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 16
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int NumeroDichiarazione
+    return:
+      type: System.Int32
+    content.vb: Public NumeroDichiarazione As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.AnnoDichiarazione
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.AnnoDichiarazione
+  id: AnnoDichiarazione
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: AnnoDichiarazione
+  nameWithType: DichiarazioniViewRow.AnnoDichiarazione
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.AnnoDichiarazione
+  type: Field
+  source:
+    id: AnnoDichiarazione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 17
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string AnnoDichiarazione
+    return:
+      type: System.String
+    content.vb: Public AnnoDichiarazione As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.NumeroProtocollo
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.NumeroProtocollo
+  id: NumeroProtocollo
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: NumeroProtocollo
+  nameWithType: DichiarazioniViewRow.NumeroProtocollo
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.NumeroProtocollo
+  type: Field
+  source:
+    id: NumeroProtocollo
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 18
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string NumeroProtocollo
+    return:
+      type: System.String
+    content.vb: Public NumeroProtocollo As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.DataProtocollo
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.DataProtocollo
+  id: DataProtocollo
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: DataProtocollo
+  nameWithType: DichiarazioniViewRow.DataProtocollo
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.DataProtocollo
+  type: Field
+  source:
+    id: DataProtocollo
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 19
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string DataProtocollo
+    return:
+      type: System.String
+    content.vb: Public DataProtocollo As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.TotaleModelli
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.TotaleModelli
+  id: TotaleModelli
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: TotaleModelli
+  nameWithType: DichiarazioniViewRow.TotaleModelli
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.TotaleModelli
+  type: Field
+  source:
+    id: TotaleModelli
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 20
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string TotaleModelli
+    return:
+      type: System.String
+    content.vb: Public TotaleModelli As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.DataInizio
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.DataInizio
+  id: DataInizio
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: DataInizio
+  nameWithType: DichiarazioniViewRow.DataInizio
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.DataInizio
+  type: Field
+  source:
+    id: DataInizio
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 21
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string DataInizio
+    return:
+      type: System.String
+    content.vb: Public DataInizio As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.DataFine
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.DataFine
+  id: DataFine
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: DataFine
+  nameWithType: DichiarazioniViewRow.DataFine
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.DataFine
+  type: Field
+  source:
+    id: DataFine
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 22
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string DataFine
+    return:
+      type: System.String
+    content.vb: Public DataFine As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.IDContribuente
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.IDContribuente
+  id: IDContribuente
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: IDContribuente
+  nameWithType: DichiarazioniViewRow.IDContribuente
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.IDContribuente
+  type: Field
+  source:
+    id: IDContribuente
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 23
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int IDContribuente
+    return:
+      type: System.Int32
+    content.vb: Public IDContribuente As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.IDDenunciante
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.IDDenunciante
+  id: IDDenunciante
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: IDDenunciante
+  nameWithType: DichiarazioniViewRow.IDDenunciante
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.IDDenunciante
+  type: Field
+  source:
+    id: IDDenunciante
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 24
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int IDDenunciante
+    return:
+      type: System.Int32
+    content.vb: Public IDDenunciante As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.Effettivo
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.Effettivo
+  id: Effettivo
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: Effettivo
+  nameWithType: DichiarazioniViewRow.Effettivo
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.Effettivo
+  type: Field
+  source:
+    id: Effettivo
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 25
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public bool Effettivo
+    return:
+      type: System.Boolean
+    content.vb: Public Effettivo As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.Annullato
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.Annullato
+  id: Annullato
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: Annullato
+  nameWithType: DichiarazioniViewRow.Annullato
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.Annullato
+  type: Field
+  source:
+    id: Annullato
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 26
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public bool Annullato
+    return:
+      type: System.Boolean
+    content.vb: Public Annullato As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.DataInizioValidità
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.DataInizioValidità
+  id: DataInizioValidità
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: DataInizioValidità
+  nameWithType: DichiarazioniViewRow.DataInizioValidità
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.DataInizioValidità
+  type: Field
+  source:
+    id: DataInizioValidità
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 27
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string DataInizioValidità
+    return:
+      type: System.String
+    content.vb: Public DataInizioValidità As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.DataFineValidità
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.DataFineValidità
+  id: DataFineValidità
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: DataFineValidità
+  nameWithType: DichiarazioniViewRow.DataFineValidità
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.DataFineValidità
+  type: Field
+  source:
+    id: DataFineValidità
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 28
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string DataFineValidità
+    return:
+      type: System.String
+    content.vb: Public DataFineValidità As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.Operatore
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.Operatore
+  id: Operatore
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: Operatore
+  nameWithType: DichiarazioniViewRow.Operatore
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.Operatore
+  type: Field
+  source:
+    id: Operatore
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 29
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string Operatore
+    return:
+      type: System.String
+    content.vb: Public Operatore As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.NumeroOrdine
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.NumeroOrdine
+  id: NumeroOrdine
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: NumeroOrdine
+  nameWithType: DichiarazioniViewRow.NumeroOrdine
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.NumeroOrdine
+  type: Field
+  source:
+    id: NumeroOrdine
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 30
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string NumeroOrdine
+    return:
+      type: System.String
+    content.vb: Public NumeroOrdine As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.NumeroModello
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.NumeroModello
+  id: NumeroModello
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: NumeroModello
+  nameWithType: DichiarazioniViewRow.NumeroModello
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.NumeroModello
+  type: Field
+  source:
+    id: NumeroModello
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 31
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public string NumeroModello
+    return:
+      type: System.String
+    content.vb: Public NumeroModello As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.IdSoggetto
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.IdSoggetto
+  id: IdSoggetto
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: IdSoggetto
+  nameWithType: DichiarazioniViewRow.IdSoggetto
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.IdSoggetto
+  type: Field
+  source:
+    id: IdSoggetto
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 32
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int IdSoggetto
+    return:
+      type: System.Int32
+    content.vb: Public IdSoggetto As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.TipoUtilizzo
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.TipoUtilizzo
+  id: TipoUtilizzo
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: TipoUtilizzo
+  nameWithType: DichiarazioniViewRow.TipoUtilizzo
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.TipoUtilizzo
+  type: Field
+  source:
+    id: TipoUtilizzo
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 34
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int TipoUtilizzo
+    return:
+      type: System.Int32
+    content.vb: Public TipoUtilizzo As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.TipoPossesso
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.TipoPossesso
+  id: TipoPossesso
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: TipoPossesso
+  nameWithType: DichiarazioniViewRow.TipoPossesso
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.TipoPossesso
+  type: Field
+  source:
+    id: TipoPossesso
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 35
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int TipoPossesso
+    return:
+      type: System.Int32
+    content.vb: Public TipoPossesso As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.PercPossesso
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.PercPossesso
+  id: PercPossesso
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: PercPossesso
+  nameWithType: DichiarazioniViewRow.PercPossesso
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.PercPossesso
+  type: Field
+  source:
+    id: PercPossesso
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 37
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public double PercPossesso
+    return:
+      type: System.Double
+    content.vb: Public PercPossesso As Double
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.MesiEsclusioneEsenzione
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.MesiEsclusioneEsenzione
+  id: MesiEsclusioneEsenzione
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: MesiEsclusioneEsenzione
+  nameWithType: DichiarazioniViewRow.MesiEsclusioneEsenzione
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.MesiEsclusioneEsenzione
+  type: Field
+  source:
+    id: MesiEsclusioneEsenzione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 38
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public short MesiEsclusioneEsenzione
+    return:
+      type: System.Int16
+    content.vb: Public MesiEsclusioneEsenzione As Short
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.MesiPossesso
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.MesiPossesso
+  id: MesiPossesso
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: MesiPossesso
+  nameWithType: DichiarazioniViewRow.MesiPossesso
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.MesiPossesso
+  type: Field
+  source:
+    id: MesiPossesso
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 39
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public short MesiPossesso
+    return:
+      type: System.Int16
+    content.vb: Public MesiPossesso As Short
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.MesiRiduzione
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.MesiRiduzione
+  id: MesiRiduzione
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: MesiRiduzione
+  nameWithType: DichiarazioniViewRow.MesiRiduzione
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.MesiRiduzione
+  type: Field
+  source:
+    id: MesiRiduzione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 40
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public short MesiRiduzione
+    return:
+      type: System.Int16
+    content.vb: Public MesiRiduzione As Short
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.ImpDetrazAbitazPrincipale
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.ImpDetrazAbitazPrincipale
+  id: ImpDetrazAbitazPrincipale
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: ImpDetrazAbitazPrincipale
+  nameWithType: DichiarazioniViewRow.ImpDetrazAbitazPrincipale
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.ImpDetrazAbitazPrincipale
+  type: Field
+  source:
+    id: ImpDetrazAbitazPrincipale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 41
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public decimal ImpDetrazAbitazPrincipale
+    return:
+      type: System.Decimal
+    content.vb: Public ImpDetrazAbitazPrincipale As Decimal
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.Contitolare
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.Contitolare
+  id: Contitolare
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: Contitolare
+  nameWithType: DichiarazioniViewRow.Contitolare
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.Contitolare
+  type: Field
+  source:
+    id: Contitolare
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 42
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public bool Contitolare
+    return:
+      type: System.Boolean
+    content.vb: Public Contitolare As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DichiarazioniICI.Database.DichiarazioniViewRow.AbitazionePrincipale
+  commentId: F:DichiarazioniICI.Database.DichiarazioniViewRow.AbitazionePrincipale
+  id: AbitazionePrincipale
+  parent: DichiarazioniICI.Database.DichiarazioniViewRow
+  langs:
+  - csharp
+  - vb
+  name: AbitazionePrincipale
+  nameWithType: DichiarazioniViewRow.AbitazionePrincipale
+  fullName: DichiarazioniICI.Database.DichiarazioniViewRow.AbitazionePrincipale
+  type: Field
+  source:
+    id: AbitazionePrincipale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Database\DichiarazioniView.cs
+    startLine: 43
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.Database
+  syntax:
+    content: public int AbitazionePrincipale
+    return:
+      type: System.Int32
+    content.vb: Public AbitazionePrincipale As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: DichiarazioniICI.Database
+  commentId: N:DichiarazioniICI.Database
+  name: DichiarazioniICI.Database
+  nameWithType: DichiarazioniICI.Database
+  fullName: DichiarazioniICI.Database
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  nameWithType: Int16
+  fullName: System.Int16
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  nameWithType: Decimal
+  fullName: System.Decimal

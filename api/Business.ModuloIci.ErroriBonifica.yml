@@ -1,0 +1,506 @@
+### YamlMime:ManagedReference
+items:
+- uid: Business.ModuloIci.ErroriBonifica
+  commentId: T:Business.ModuloIci.ErroriBonifica
+  id: ModuloIci.ErroriBonifica
+  parent: Business
+  children:
+  - Business.ModuloIci.ErroriBonifica.AnnoDichMancante
+  - Business.ModuloIci.ErroriBonifica.Caratteristica
+  - Business.ModuloIci.ErroriBonifica.Categoria
+  - Business.ModuloIci.ErroriBonifica.Codice_Fiscale
+  - Business.ModuloIci.ErroriBonifica.Cognome
+  - Business.ModuloIci.ErroriBonifica.Detrazione
+  - Business.ModuloIci.ErroriBonifica.Detrazione_Contit
+  - Business.ModuloIci.ErroriBonifica.Domicilio_Fiscale
+  - Business.ModuloIci.ErroriBonifica.Foglio_Numero
+  - Business.ModuloIci.ErroriBonifica.Indirizzo_Immobile
+  - Business.ModuloIci.ErroriBonifica.Mesi_Possesso
+  - Business.ModuloIci.ErroriBonifica.Mesi_Possesso_Contit
+  - Business.ModuloIci.ErroriBonifica.Percentuale_Possesso
+  - Business.ModuloIci.ErroriBonifica.Percentuale_Possesso_Contit
+  - Business.ModuloIci.ErroriBonifica.SenzaImmobili
+  - Business.ModuloIci.ErroriBonifica.Valore_Immobile
+  langs:
+  - csharp
+  - vb
+  name: ModuloIci.ErroriBonifica
+  nameWithType: ModuloIci.ErroriBonifica
+  fullName: Business.ModuloIci.ErroriBonifica
+  type: Enum
+  source:
+    id: ErroriBonifica
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 40
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public enum ErroriBonifica
+    content.vb: Public Enum ErroriBonifica
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Business.ModuloIci.ErroriBonifica.Caratteristica
+  commentId: F:Business.ModuloIci.ErroriBonifica.Caratteristica
+  id: Caratteristica
+  parent: Business.ModuloIci.ErroriBonifica
+  langs:
+  - csharp
+  - vb
+  name: Caratteristica
+  nameWithType: ModuloIci.ErroriBonifica.Caratteristica
+  fullName: Business.ModuloIci.ErroriBonifica.Caratteristica
+  type: Field
+  source:
+    id: Caratteristica
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 40
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Caratteristica = 1
+    return:
+      type: Business.ModuloIci.ErroriBonifica
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ModuloIci.ErroriBonifica.Indirizzo_Immobile
+  commentId: F:Business.ModuloIci.ErroriBonifica.Indirizzo_Immobile
+  id: Indirizzo_Immobile
+  parent: Business.ModuloIci.ErroriBonifica
+  langs:
+  - csharp
+  - vb
+  name: Indirizzo_Immobile
+  nameWithType: ModuloIci.ErroriBonifica.Indirizzo_Immobile
+  fullName: Business.ModuloIci.ErroriBonifica.Indirizzo_Immobile
+  type: Field
+  source:
+    id: Indirizzo_Immobile
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 40
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Indirizzo_Immobile = 2
+    return:
+      type: Business.ModuloIci.ErroriBonifica
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ModuloIci.ErroriBonifica.Foglio_Numero
+  commentId: F:Business.ModuloIci.ErroriBonifica.Foglio_Numero
+  id: Foglio_Numero
+  parent: Business.ModuloIci.ErroriBonifica
+  langs:
+  - csharp
+  - vb
+  name: Foglio_Numero
+  nameWithType: ModuloIci.ErroriBonifica.Foglio_Numero
+  fullName: Business.ModuloIci.ErroriBonifica.Foglio_Numero
+  type: Field
+  source:
+    id: Foglio_Numero
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 40
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Foglio_Numero = 3
+    return:
+      type: Business.ModuloIci.ErroriBonifica
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ModuloIci.ErroriBonifica.Categoria
+  commentId: F:Business.ModuloIci.ErroriBonifica.Categoria
+  id: Categoria
+  parent: Business.ModuloIci.ErroriBonifica
+  langs:
+  - csharp
+  - vb
+  name: Categoria
+  nameWithType: ModuloIci.ErroriBonifica.Categoria
+  fullName: Business.ModuloIci.ErroriBonifica.Categoria
+  type: Field
+  source:
+    id: Categoria
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 40
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Categoria = 4
+    return:
+      type: Business.ModuloIci.ErroriBonifica
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ModuloIci.ErroriBonifica.Valore_Immobile
+  commentId: F:Business.ModuloIci.ErroriBonifica.Valore_Immobile
+  id: Valore_Immobile
+  parent: Business.ModuloIci.ErroriBonifica
+  langs:
+  - csharp
+  - vb
+  name: Valore_Immobile
+  nameWithType: ModuloIci.ErroriBonifica.Valore_Immobile
+  fullName: Business.ModuloIci.ErroriBonifica.Valore_Immobile
+  type: Field
+  source:
+    id: Valore_Immobile
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 40
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Valore_Immobile = 5
+    return:
+      type: Business.ModuloIci.ErroriBonifica
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ModuloIci.ErroriBonifica.Percentuale_Possesso
+  commentId: F:Business.ModuloIci.ErroriBonifica.Percentuale_Possesso
+  id: Percentuale_Possesso
+  parent: Business.ModuloIci.ErroriBonifica
+  langs:
+  - csharp
+  - vb
+  name: Percentuale_Possesso
+  nameWithType: ModuloIci.ErroriBonifica.Percentuale_Possesso
+  fullName: Business.ModuloIci.ErroriBonifica.Percentuale_Possesso
+  type: Field
+  source:
+    id: Percentuale_Possesso
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 41
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Percentuale_Possesso = 6
+    return:
+      type: Business.ModuloIci.ErroriBonifica
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ModuloIci.ErroriBonifica.Mesi_Possesso
+  commentId: F:Business.ModuloIci.ErroriBonifica.Mesi_Possesso
+  id: Mesi_Possesso
+  parent: Business.ModuloIci.ErroriBonifica
+  langs:
+  - csharp
+  - vb
+  name: Mesi_Possesso
+  nameWithType: ModuloIci.ErroriBonifica.Mesi_Possesso
+  fullName: Business.ModuloIci.ErroriBonifica.Mesi_Possesso
+  type: Field
+  source:
+    id: Mesi_Possesso
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 41
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Mesi_Possesso = 7
+    return:
+      type: Business.ModuloIci.ErroriBonifica
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ModuloIci.ErroriBonifica.Codice_Fiscale
+  commentId: F:Business.ModuloIci.ErroriBonifica.Codice_Fiscale
+  id: Codice_Fiscale
+  parent: Business.ModuloIci.ErroriBonifica
+  langs:
+  - csharp
+  - vb
+  name: Codice_Fiscale
+  nameWithType: ModuloIci.ErroriBonifica.Codice_Fiscale
+  fullName: Business.ModuloIci.ErroriBonifica.Codice_Fiscale
+  type: Field
+  source:
+    id: Codice_Fiscale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 41
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Codice_Fiscale = 8
+    return:
+      type: Business.ModuloIci.ErroriBonifica
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ModuloIci.ErroriBonifica.Cognome
+  commentId: F:Business.ModuloIci.ErroriBonifica.Cognome
+  id: Cognome
+  parent: Business.ModuloIci.ErroriBonifica
+  langs:
+  - csharp
+  - vb
+  name: Cognome
+  nameWithType: ModuloIci.ErroriBonifica.Cognome
+  fullName: Business.ModuloIci.ErroriBonifica.Cognome
+  type: Field
+  source:
+    id: Cognome
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 41
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Cognome = 9
+    return:
+      type: Business.ModuloIci.ErroriBonifica
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ModuloIci.ErroriBonifica.Domicilio_Fiscale
+  commentId: F:Business.ModuloIci.ErroriBonifica.Domicilio_Fiscale
+  id: Domicilio_Fiscale
+  parent: Business.ModuloIci.ErroriBonifica
+  langs:
+  - csharp
+  - vb
+  name: Domicilio_Fiscale
+  nameWithType: ModuloIci.ErroriBonifica.Domicilio_Fiscale
+  fullName: Business.ModuloIci.ErroriBonifica.Domicilio_Fiscale
+  type: Field
+  source:
+    id: Domicilio_Fiscale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 41
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Domicilio_Fiscale = 10
+    return:
+      type: Business.ModuloIci.ErroriBonifica
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ModuloIci.ErroriBonifica.Detrazione
+  commentId: F:Business.ModuloIci.ErroriBonifica.Detrazione
+  id: Detrazione
+  parent: Business.ModuloIci.ErroriBonifica
+  langs:
+  - csharp
+  - vb
+  name: Detrazione
+  nameWithType: ModuloIci.ErroriBonifica.Detrazione
+  fullName: Business.ModuloIci.ErroriBonifica.Detrazione
+  type: Field
+  source:
+    id: Detrazione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 41
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Detrazione = 11
+    return:
+      type: Business.ModuloIci.ErroriBonifica
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ModuloIci.ErroriBonifica.SenzaImmobili
+  commentId: F:Business.ModuloIci.ErroriBonifica.SenzaImmobili
+  id: SenzaImmobili
+  parent: Business.ModuloIci.ErroriBonifica
+  langs:
+  - csharp
+  - vb
+  name: SenzaImmobili
+  nameWithType: ModuloIci.ErroriBonifica.SenzaImmobili
+  fullName: Business.ModuloIci.ErroriBonifica.SenzaImmobili
+  type: Field
+  source:
+    id: SenzaImmobili
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 41
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: SenzaImmobili = 12
+    return:
+      type: Business.ModuloIci.ErroriBonifica
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ModuloIci.ErroriBonifica.AnnoDichMancante
+  commentId: F:Business.ModuloIci.ErroriBonifica.AnnoDichMancante
+  id: AnnoDichMancante
+  parent: Business.ModuloIci.ErroriBonifica
+  langs:
+  - csharp
+  - vb
+  name: AnnoDichMancante
+  nameWithType: ModuloIci.ErroriBonifica.AnnoDichMancante
+  fullName: Business.ModuloIci.ErroriBonifica.AnnoDichMancante
+  type: Field
+  source:
+    id: AnnoDichMancante
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 41
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: AnnoDichMancante = 13
+    return:
+      type: Business.ModuloIci.ErroriBonifica
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ModuloIci.ErroriBonifica.Percentuale_Possesso_Contit
+  commentId: F:Business.ModuloIci.ErroriBonifica.Percentuale_Possesso_Contit
+  id: Percentuale_Possesso_Contit
+  parent: Business.ModuloIci.ErroriBonifica
+  langs:
+  - csharp
+  - vb
+  name: Percentuale_Possesso_Contit
+  nameWithType: ModuloIci.ErroriBonifica.Percentuale_Possesso_Contit
+  fullName: Business.ModuloIci.ErroriBonifica.Percentuale_Possesso_Contit
+  type: Field
+  source:
+    id: Percentuale_Possesso_Contit
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 41
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Percentuale_Possesso_Contit = 777
+    return:
+      type: Business.ModuloIci.ErroriBonifica
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ModuloIci.ErroriBonifica.Mesi_Possesso_Contit
+  commentId: F:Business.ModuloIci.ErroriBonifica.Mesi_Possesso_Contit
+  id: Mesi_Possesso_Contit
+  parent: Business.ModuloIci.ErroriBonifica
+  langs:
+  - csharp
+  - vb
+  name: Mesi_Possesso_Contit
+  nameWithType: ModuloIci.ErroriBonifica.Mesi_Possesso_Contit
+  fullName: Business.ModuloIci.ErroriBonifica.Mesi_Possesso_Contit
+  type: Field
+  source:
+    id: Mesi_Possesso_Contit
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 41
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Mesi_Possesso_Contit = 888
+    return:
+      type: Business.ModuloIci.ErroriBonifica
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.ModuloIci.ErroriBonifica.Detrazione_Contit
+  commentId: F:Business.ModuloIci.ErroriBonifica.Detrazione_Contit
+  id: Detrazione_Contit
+  parent: Business.ModuloIci.ErroriBonifica
+  langs:
+  - csharp
+  - vb
+  name: Detrazione_Contit
+  nameWithType: ModuloIci.ErroriBonifica.Detrazione_Contit
+  fullName: Business.ModuloIci.ErroriBonifica.Detrazione_Contit
+  type: Field
+  source:
+    id: Detrazione_Contit
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ModuloIci.cs
+    startLine: 41
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Detrazione_Contit = 999
+    return:
+      type: Business.ModuloIci.ErroriBonifica
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Business
+  commentId: N:Business
+  name: Business
+  nameWithType: Business
+  fullName: Business
+- uid: Business.ModuloIci.ErroriBonifica
+  commentId: T:Business.ModuloIci.ErroriBonifica
+  parent: Business
+  name: ModuloIci.ErroriBonifica
+  nameWithType: ModuloIci.ErroriBonifica
+  fullName: Business.ModuloIci.ErroriBonifica

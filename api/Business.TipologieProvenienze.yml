@@ -1,0 +1,305 @@
+### YamlMime:ManagedReference
+items:
+- uid: Business.TipologieProvenienze
+  commentId: T:Business.TipologieProvenienze
+  id: TipologieProvenienze
+  parent: Business
+  children:
+  - Business.TipologieProvenienze.Accertamento
+  - Business.TipologieProvenienze.AnagrafeUfficiale
+  - Business.TipologieProvenienze.DichiarazioneCNC
+  - Business.TipologieProvenienze.Liquidazione
+  - Business.TipologieProvenienze.ProvenienzaSconosciuta
+  - Business.TipologieProvenienze.VersamentiANCICNC
+  - Business.TipologieProvenienze.VersamentiPOSTEL
+  - Business.TipologieProvenienze.VersamentiRISCONET
+  - Business.TipologieProvenienze.VersamentiUVI
+  langs:
+  - csharp
+  - vb
+  name: TipologieProvenienze
+  nameWithType: TipologieProvenienze
+  fullName: Business.TipologieProvenienze
+  type: Enum
+  source:
+    id: TipologieProvenienze
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 58
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nL&apos;enumerator delle tipologie delle provenienze.\n"
+  example: []
+  syntax:
+    content: public enum TipologieProvenienze
+    content.vb: Public Enum TipologieProvenienze
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Business.TipologieProvenienze.VersamentiUVI
+  commentId: F:Business.TipologieProvenienze.VersamentiUVI
+  id: VersamentiUVI
+  parent: Business.TipologieProvenienze
+  langs:
+  - csharp
+  - vb
+  name: VersamentiUVI
+  nameWithType: TipologieProvenienze.VersamentiUVI
+  fullName: Business.TipologieProvenienze.VersamentiUVI
+  type: Field
+  source:
+    id: VersamentiUVI
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 58
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: VersamentiUVI = 3
+    return:
+      type: Business.TipologieProvenienze
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.TipologieProvenienze.VersamentiPOSTEL
+  commentId: F:Business.TipologieProvenienze.VersamentiPOSTEL
+  id: VersamentiPOSTEL
+  parent: Business.TipologieProvenienze
+  langs:
+  - csharp
+  - vb
+  name: VersamentiPOSTEL
+  nameWithType: TipologieProvenienze.VersamentiPOSTEL
+  fullName: Business.TipologieProvenienze.VersamentiPOSTEL
+  type: Field
+  source:
+    id: VersamentiPOSTEL
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 58
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: VersamentiPOSTEL = 10
+    return:
+      type: Business.TipologieProvenienze
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.TipologieProvenienze.VersamentiANCICNC
+  commentId: F:Business.TipologieProvenienze.VersamentiANCICNC
+  id: VersamentiANCICNC
+  parent: Business.TipologieProvenienze
+  langs:
+  - csharp
+  - vb
+  name: VersamentiANCICNC
+  nameWithType: TipologieProvenienze.VersamentiANCICNC
+  fullName: Business.TipologieProvenienze.VersamentiANCICNC
+  type: Field
+  source:
+    id: VersamentiANCICNC
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 58
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: VersamentiANCICNC = 11
+    return:
+      type: Business.TipologieProvenienze
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.TipologieProvenienze.VersamentiRISCONET
+  commentId: F:Business.TipologieProvenienze.VersamentiRISCONET
+  id: VersamentiRISCONET
+  parent: Business.TipologieProvenienze
+  langs:
+  - csharp
+  - vb
+  name: VersamentiRISCONET
+  nameWithType: TipologieProvenienze.VersamentiRISCONET
+  fullName: Business.TipologieProvenienze.VersamentiRISCONET
+  type: Field
+  source:
+    id: VersamentiRISCONET
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 58
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: VersamentiRISCONET = 12
+    return:
+      type: Business.TipologieProvenienze
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.TipologieProvenienze.DichiarazioneCNC
+  commentId: F:Business.TipologieProvenienze.DichiarazioneCNC
+  id: DichiarazioneCNC
+  parent: Business.TipologieProvenienze
+  langs:
+  - csharp
+  - vb
+  name: DichiarazioneCNC
+  nameWithType: TipologieProvenienze.DichiarazioneCNC
+  fullName: Business.TipologieProvenienze.DichiarazioneCNC
+  type: Field
+  source:
+    id: DichiarazioneCNC
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 58
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: DichiarazioneCNC = 14
+    return:
+      type: Business.TipologieProvenienze
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.TipologieProvenienze.AnagrafeUfficiale
+  commentId: F:Business.TipologieProvenienze.AnagrafeUfficiale
+  id: AnagrafeUfficiale
+  parent: Business.TipologieProvenienze
+  langs:
+  - csharp
+  - vb
+  name: AnagrafeUfficiale
+  nameWithType: TipologieProvenienze.AnagrafeUfficiale
+  fullName: Business.TipologieProvenienze.AnagrafeUfficiale
+  type: Field
+  source:
+    id: AnagrafeUfficiale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 58
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: AnagrafeUfficiale = 6
+    return:
+      type: Business.TipologieProvenienze
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.TipologieProvenienze.ProvenienzaSconosciuta
+  commentId: F:Business.TipologieProvenienze.ProvenienzaSconosciuta
+  id: ProvenienzaSconosciuta
+  parent: Business.TipologieProvenienze
+  langs:
+  - csharp
+  - vb
+  name: ProvenienzaSconosciuta
+  nameWithType: TipologieProvenienze.ProvenienzaSconosciuta
+  fullName: Business.TipologieProvenienze.ProvenienzaSconosciuta
+  type: Field
+  source:
+    id: ProvenienzaSconosciuta
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 58
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: ProvenienzaSconosciuta = 18
+    return:
+      type: Business.TipologieProvenienze
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.TipologieProvenienze.Liquidazione
+  commentId: F:Business.TipologieProvenienze.Liquidazione
+  id: Liquidazione
+  parent: Business.TipologieProvenienze
+  langs:
+  - csharp
+  - vb
+  name: Liquidazione
+  nameWithType: TipologieProvenienze.Liquidazione
+  fullName: Business.TipologieProvenienze.Liquidazione
+  type: Field
+  source:
+    id: Liquidazione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 58
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Liquidazione = 19
+    return:
+      type: Business.TipologieProvenienze
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Business.TipologieProvenienze.Accertamento
+  commentId: F:Business.TipologieProvenienze.Accertamento
+  id: Accertamento
+  parent: Business.TipologieProvenienze
+  langs:
+  - csharp
+  - vb
+  name: Accertamento
+  nameWithType: TipologieProvenienze.Accertamento
+  fullName: Business.TipologieProvenienze.Accertamento
+  type: Field
+  source:
+    id: Accertamento
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ApplicationHelper.cs
+    startLine: 58
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: Accertamento = 20
+    return:
+      type: Business.TipologieProvenienze
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Business
+  commentId: N:Business
+  name: Business
+  nameWithType: Business
+  fullName: Business
+- uid: Business.TipologieProvenienze
+  commentId: T:Business.TipologieProvenienze
+  parent: Business
+  name: TipologieProvenienze
+  nameWithType: TipologieProvenienze
+  fullName: Business.TipologieProvenienze

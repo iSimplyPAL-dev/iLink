@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MenuRoot>
+  <Menu id="AnagEnte" text="Anagrafica" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+    <SubMenu id="GestAnag" text="Gestione Anagrafica" urlVisualizza="../../Anagrafica/RicercaAnagrafica.aspx?popup=0" urlComandi="../../Anagrafica/Comandi/ComandiRicercaAnagrafica.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    <SubMenu id="AnagDoppie" text="Anagrafiche Doppie" urlVisualizza="../../Anagrafica/RicercaAnagraficaDoppia.aspx" urlComandi="" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+  </Menu>
+  <Menu id="ExternalData" text="Dati Esterni" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+    <SubMenu id="ED_Import" text="Acquisizione" urlVisualizza="../../20/AnagrafeResidenti.aspx?ENTE=myidente" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    <SubMenu id="ED_Res" text="Residenti" urlVisualizza="../../AnagrafeResidenti/GestioneAnagrafeResidenti.aspx" urlComandi="../../AnagrafeResidenti/ComandiGestioneAnagrafeResidenti.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    <SubMenu id="ED_Compravendita" text="Atti CompraVendita" urlVisualizza="../../20/AttiCompraVendita/CompraVenditaRicerca.aspx?ENTE=myidente" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    <SubMenu id="ED_Docfa" text="DOCFA" urlVisualizza="../../20/DOCFA/DOCFA.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx?ENTE=myidente" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    <SubMenu id="ED_Catasto" text="Catasto" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+      <SubMenu id="Cat_ExpImpBD" text="Esporta/Importa" urlVisualizza="../../DichiarazioniICI/Catasto/ExportCatasto.aspx?Type=1" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="Cat_Upload" text="Carico flussi" urlVisualizza="../../DichiarazioniICI/Catasto/ExportCatasto.aspx?Type=2" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="Cat_ExpAnomalie" text="Anomalie/Estrazioni" urlVisualizza="../../DichiarazioniICI/Catasto/ExportCatasto.aspx?Type=4" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="Cat_Monitoring" text="Monitoraggio Elaborazioni" urlVisualizza="../../DichiarazioniICI/Catasto/ExportCatasto.aspx?Type=5" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    </SubMenu>
+  </Menu>
+  <Menu id="8852" text="Tributi - ICI/IMU/TASI" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+    <SubMenu id="Dich" text="Dichiarazioni" urlVisualizza="../../DichiarazioniICI/Gestione.aspx" urlComandi="../../DichiarazioniICI/CGestione.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    <SubMenu id="Calcolo" text="Calcolo ICI/IMU/TASI" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+      <SubMenu id="ConfigAliquote" text="Configurazione Aliquote" urlVisualizza="../../DichiarazioniICI/CalcoloICI/RicercaAliquote.aspx" urlComandi="../../DichiarazioniICI/CalcoloICI/CRicercaAliquote.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="Puntuale" text="Calcolo Puntuale" urlVisualizza="../../DichiarazioniICI/CalcoloICI/CalcoloICIPuntuale.aspx" urlComandi="../../DichiarazioniICI/CalcoloICI/CCalcoloICIPuntuale.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="Massivo" text="Calcolo Massivo" urlVisualizza="../../DichiarazioniICI/CalcoloICI/CalcoloICIMassivo.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="StatoElab" text="Stato Elaboraz.Massivo" urlVisualizza="../../DichiarazioniICI/CalcoloICI/GestioneElaborazione/GestioneElaborazione.aspx" urlComandi="../..//DichiarazioniICI/CalcoloICI/GestioneElaborazione/CGestioneElaborazione.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    </SubMenu>
+    <SubMenu id="VersGest" text="Versamenti" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+      <SubMenu id="Gest" text="Gestione" urlVisualizza="../../DichiarazioniICI/RicercaVersamenti.aspx" urlComandi="../../DichiarazioniICI/CRicercaVersamenti.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="Bonifica" text="Bonifica Versamenti" urlVisualizza="../../DichiarazioniICI/RicercaVersamentiDaBonificare.aspx" urlComandi="../../DichiarazioniICI/CRicercaVersamentiDaBonificare.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="Import" text="Acquisizione Automatica" urlVisualizza="../../DichiarazioniICI/AcquisizioneAutomaticaVersamenti.aspx" urlComandi="../../DichiarazioniICI/CAcquisizioneAutomaticaVersamenti.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    </SubMenu>
+    <SubMenu id="Analisi" text="Analisi" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+      <SubMenu id="NonAbb" text="Versamenti Non Abbinati" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+        <SubMenu id="VSDich" text="Dichiarazioni" urlVisualizza="../../DichiarazioniICI/versamentiNoDich.aspx" urlComandi="../../DichiarazioniICI/cVersamentiNonAbbinati.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+        <SubMenu id="VSAnag" text="Anagrafe" urlVisualizza="../../DichiarazioniICI/VersamentiNoAnag.aspx" urlComandi="../../DichiarazioniICI/cVersamentiNonAbbinati.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      </SubMenu>
+      <SubMenu id="ControlliRifCat" text="Controlli Rif.Catastali" urlVisualizza="../../DichiarazioniICI/ConfrontaConCatasto/CheckRifCatastali.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="NoPagato" text="Utenti Non Pagato" urlVisualizza="../../DichiarazioniICI/analisi/stampacontribnonpagato.aspx" urlComandi="../../DichiarazioniICI/analisi/cstampacontribnonpagato.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="PagatoDif" text="Utenti Pagato Diverso" urlVisualizza="../../DichiarazioniICI/Analisi/StampaContribPagatoDiverso.aspx" urlComandi="../../DichiarazioniICI/Analisi/cStampaContribPagatoDiverso.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="Economiche" text="Economiche" urlVisualizza="../../DichiarazioniICI/Analisi/FatturatoIncassato/RicercaAnalisiEconomiche.aspx" urlComandi="../../DichiarazioniICI/Analisi/FatturatoIncassato/ComandiAnalisiEconomiche.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="RimborsiStato" text="Rimborsi Stato" urlVisualizza="../../DichiarazioniICI/Analisi/Rimborsi.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    </SubMenu>
+    <SubMenu id="RavOperoso" text="Ravvedimento Operoso" urlVisualizza="../../DichiarazioniICI/RavvedimentoOperoso/GestioneRavvedimento.aspx" urlComandi="../../DichiarazioniICI/RavvedimentoOperoso/CGestioneRavvedimento.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+  </Menu>
+  <Menu id="0434" text="Tributi - TARES/TARI" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+    <SubMenu id="Config0434" text="Configurazioni" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+      <SubMenu id="ParamCalcolo" text="Parametri Calcolo" urlVisualizza="../../20/TARES/Configurazione/ParamCalcolo.aspx?ENTE=myidente" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="CodDescr" text="Codici/Descrizioni" urlVisualizza="../../20/TARES/Configurazione/CodiciDescrizioni.aspx?ENTE=myidente" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="TarMagRid" text="Tariffe/Magg./Rid." urlVisualizza="../../20/TARES/Configurazione/Tariffe.aspx?ENTE=myidente" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="Addiz" text="Addizionali" urlVisualizza="../../OPENgovTIA/Configurazione/Addizionali/ConfAddizionali.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+	  <SubMenu id="Vani" text="Tipologie Vani" urlVisualizza="../../OPENgovTIA/Configurazione/ConfVani.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    </SubMenu>
+    <SubMenu id="Simula" text="Simulazione Tariffaria" urlVisualizza="../../20/TARES/Simulazione/Simulazione.aspx?ENTE=myidente" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    <SubMenu id="Dich0434" text="Dichiarazioni" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+      <SubMenu id="Gest" text="Gestione" urlVisualizza="../../OPENgovTIA/Dichiarazioni/RicercaDichiarazione.aspx" urlComandi="../../OPENgovTIA/Dichiarazioni/ComandiRicDichiarazione.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="AggMassivo" text="Aggiornamento Massivo" urlVisualizza="../../20/TARES/AggMassivo/AggMassivo.aspx?ENTE=myidente" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    </SubMenu>
+    <SubMenu id="Avvisi" text="Avvisi" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+      <SubMenu id="Calcolo" text="Elaborazione" urlVisualizza="../../OPENgovTIA/Avvisi/Calcolo/Calcolo.aspx?IsFromVariabile=0" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="Gest" text="Gestione" urlVisualizza="../../OPENgovTIA/Avvisi/Gestione/RicAvvisi.aspx" urlComandi="../../OPENgovTIA/Avvisi/Gestione/ComandiRicAvvisi.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    </SubMenu>
+    <SubMenu id="Pag0434" text="Pagamenti" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+      <SubMenu id="Import0434" text="Acquisizione" urlVisualizza="../../OPENgovTIA/Pagamenti/Acquisizione/ImportPagamenti.aspx" urlComandi="../../OPENgovTIA/Pagamenti/Acquisizione/ComandiImportPagamenti.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="Gest0434" text="Gestione" urlVisualizza="../../OPENgovTIA/Pagamenti/Gestione/RicPag.aspx" urlComandi="../../OPENgovTIA/Pagamenti/Gestione/ComandiRicGestPag.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    </SubMenu>
+    <SubMenu id="AnalEstraz0434" text="Analisi" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+      <SubMenu id="FatVSPag" text="Fatturato/Incassato" urlVisualizza="../../OPENgovTIA/Analisi/AnalisiEconomiche.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="ControlliRifCat" text="Controlli Rif.Catastali" urlVisualizza="../../OPENgovTIA/Analisi/CheckRifCatastali.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    </SubMenu>
+    <SubMenu id="AE" text="Agenzia Entrate" urlVisualizza="../../OPENgovTIA/Analisi/AgenziaEntrateTracciati.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+  </Menu>
+  <Menu id="0453" text="Tributi - TOSAP/COSAP" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+    <SubMenu id="Config0453" text="Configurazione" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+      <SubMenu id="Tab0453" text="Tabelle" urlVisualizza="../../OPENgovTOCO/Configurazione/ConfigurazioneTabelle.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="Coef0453" text="Coefficienti" urlVisualizza="../../OPENgovTOCO/Configurazione/ConfigurazioneCoefficienti.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="Tariffe0453" text="Tariffe" urlVisualizza="../../OPENgovTOCO/Configurazione/ConfigurazioneTariffe.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="Rate0453" text="Rate" urlVisualizza="../../OPENgovTOCO/Elaborazioni/ConfigurazioneRate.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    </SubMenu>
+    <SubMenu id="Dich0453" text="Autorizzazioni/Concessioni" urlVisualizza="../../OPENgovTOCO/Dichiarazioni/DichiarazioniSearch.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    <SubMenu id="Avvisi0453" text="Avvisi" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+      <SubMenu id="Elab0453" text="Elaborazione" urlVisualizza="../../OPENgovTOCO/Elaborazioni/ElaborazioneAvvisi.aspx?CodTributo=0453" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="Gest0453" text="Consultazione" urlVisualizza="../../OPENgovTOCO/SituazioneContribuente/SituazioneAvvisiSearch.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    </SubMenu>
+    <SubMenu id="Pag0453" text="Pagamenti" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+      <SubMenu id="Import0453" text="Acquisizione" urlVisualizza="../../OPENgovTIA/Pagamenti/Acquisizione/ImportPagamenti.aspx?TRIBUTO=0453" urlComandi="../../OPENgovTIA/Pagamenti/Acquisizione/ComandiImportPagamenti.aspx?TRIBUTO=0453" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="Gest0453" text="Gestione" urlVisualizza="../../OPENgovTIA/Pagamenti/Gestione/RicPag.aspx?Tributo=0453" urlComandi="../../OPENgovTIA/Pagamenti/Gestione/ComandiRicGestPag.aspx?Tributo=0453" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    </SubMenu>
+  </Menu>
+  <Menu id="9253" text="Tributi - SCUOLA" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+    <SubMenu id="Rate9253" text="Configurazione Rate" urlVisualizza="../../OPENgovTOCO/Elaborazioni/ConfigurazioneRate.aspx?CodTributo=9253" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    <SubMenu id="Avvisi9253" text="Avvisi" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+      <SubMenu id="Elab9253" text="Elaborazione" urlVisualizza="../../OPENgovTOCO/Elaborazioni/ElaborazioneAvvisi.aspx?CodTributo=9253" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="Gest9253" text="Consultazione" urlVisualizza="../../OPENgovTOCO/SituazioneContribuente/SituazioneAvvisiSearch.aspx?CodTributo=9253" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    </SubMenu>
+    <SubMenu id="Pag9253" text="Pagamenti" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+      <SubMenu id="Import9253" text="Acquisizione" urlVisualizza="../../OPENgovTIA/Pagamenti/Acquisizione/ImportPagamenti.aspx?TRIBUTO=9253" urlComandi="../../OPENgovTIA/Pagamenti/Acquisizione/ComandiImportPagamenti.aspx?TRIBUTO=9253" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="Gest9253" text="Gestione" urlVisualizza="../../OPENgovTIA/Pagamenti/Gestione/RicPag.aspx?Tributo=9253" urlComandi="../../OPENgovTIA/Pagamenti/Gestione/ComandiRicGestPag.aspx?Tributo=9253" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    </SubMenu>
+  </Menu>
+  <Menu id="9999" text="Provvedimenti" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+    <SubMenu id="Config9999" text="Configurazione Tabelle" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+      <SubMenu id="Impost9999" text="Impostazioni" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+        <SubMenu id="Anni9999" text="Anni Provvedimenti" urlVisualizza="../../OPENgovProvvedimenti/Configurazione/AnniProvvedimenti/ConfigAnniProvvedimenti.aspx" urlComandi="../../OPENgovProvvedimenti/Configurazione/AnniProvvedimenti/ComandiConfigAnniProvvedimenti.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+        <SubMenu id="Lettere9999" text="Dati Lettere" urlVisualizza="../../OPENgovProvvedimenti/Configurazione/DatiLettere/ConfigDatiLettere.aspx" urlComandi="../../OPENgovProvvedimenti/Configurazione/DatiLettere/ComandiConfigDatiLettere.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+        <SubMenu id="Tassi9999" text="Tassi di Interesse" urlVisualizza="../../OPENgovProvvedimenti/Configurazione/TassiInteressi/ConfigTassiInteressi.aspx" urlComandi="../../OPENgovProvvedimenti/Configurazione/TassiInteressi/ComandiConfigTassiInteressi.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      </SubMenu>
+      <SubMenu id="Voci9999" text="Impianto Voci" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+        <SubMenu id="Tipo9999" text="Tipologia Voci" urlVisualizza="../../OPENgovProvvedimenti/Configurazione/TipologieSanzioni/ConfigTipologieSanzioni.aspx" urlComandi="../../OPENgovProvvedimenti/Configurazione/TipologieSanzioni/ComandiConfigTipologieSanzioni.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+        <SubMenu id="Valori9999" text="Valori Voci" urlVisualizza="../../OPENgovProvvedimenti/Configurazione/TabelleICI/TipoVoci/ConfigTipoVoci.aspx" urlComandi="../../OPENgovProvvedimenti/Configurazione/TabelleICI/TipoVoci/ComandiConfigTipoVoci.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+        <SubMenu id="Motivazioni9999" text="Motivazioni" urlVisualizza="../../OPENgovProvvedimenti/Configurazione/Motivazioni/ConfigMotivazioni.aspx" urlComandi="../../OPENgovProvvedimenti/Configurazione/Motivazioni/ComandiConfigMotivazioni.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      </SubMenu>
+      <SubMenu id="9999_8852" text="ICI/IMU" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+        <SubMenu id="Gen" text="Generale" urlVisualizza="../../OPENgovProvvedimenti/Configurazione/TabelleICI/Generale/ConfigGenerale.aspx" urlComandi="../../OPENgovProvvedimenti/Configurazione/TabelleICI/Generale/ComandiGenerale.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+        <SubMenu id="Note" text="Note Questionari" urlVisualizza="../../OPENgovProvvedimenti/Configurazione/NoteQuestionari/ConfigNoteQuestionari.aspx" urlComandi="../../OPENgovProvvedimenti/Configurazione/NoteQuestionari/ComandiConfigNoteQuestionari.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      </SubMenu>
+      <SubMenu id="9999_0434" text="Tarsu" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+        <SubMenu id="Scadenze" text="Decorrenza Scadenze Interessi" urlVisualizza="../../OPENgovProvvedimenti/Configurazione/TabelleTARSU/ConfigScadenzaInteressi.aspx" urlComandi="../../OPENgovProvvedimenti/Configurazione/TabelleTARSU/CScadenzaInteressi.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      </SubMenu>
+    </SubMenu>
+    <SubMenu id="Lettere" text="Elaborazione Lettere" urlVisualizza="../../OPENgovProvvedimenti/GestioneLettere/GestioneLettere.aspx" urlComandi="../../OPENgovProvvedimenti/GestioneLettere/ComandiElabLettere.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    <SubMenu id="Acc8852" text="ICI/IMU - Accertamenti" urlVisualizza="../../OPENgovPROVVEDIMENTI/GestioneAccertamenti/GestioneAccertamenti.aspx" urlComandi="../../OPENgovPROVVEDIMENTI/GestioneAccertamenti/ComandiGestioneAccertamenti.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    <SubMenu id="Acc0434" text="TARSU - Accertamenti" urlVisualizza="../../OPENgovPROVVEDIMENTI/GestioneAccertamentiTARSU/GestioneAccertamentiTARSU.aspx" urlComandi="../../OPENgovPROVVEDIMENTI/GestioneAccertamentiTARSU/CGestioneAccertamentiTARSU.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    <SubMenu id="Acc0453" text="TOSAP/COSAP - Accertamenti" urlVisualizza="../../OPENgovPROVVEDIMENTI/GestioneAccertamentiOSAP/GestioneAccertamentiOSAP.aspx" urlComandi="../../OPENgovPROVVEDIMENTI/GestioneAccertamentiOSAP/CGestioneAccertamentiOSAP.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    <SubMenu id="AccTASI" text="TASI - Accertamenti" urlVisualizza="../../OPENgovPROVVEDIMENTI/GestioneAccertamentiTASI/GestioneAccertamenti.aspx" urlComandi="../../OPENgovPROVVEDIMENTI/GestioneAccertamentiTASI/ComandiGestioneAccertamenti.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx" />
+    <SubMenu id="Gest0000" text="Gestione Atti" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+      <SubMenu id="RicSemp" text="Ricerca Semplice" urlVisualizza="../../OPENgovPROVVEDIMENTI/GestioneAtti/RicercaSemplice/RicercaSemplice.aspx" urlComandi="../../aspVuota.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      <SubMenu id="RicAvanz" text="Ricerca avanzata" urlVisualizza="../../OPENgovPROVVEDIMENTI/GestioneAtti/RicercaAvanzata/RicercaAvanzata.aspx" urlComandi="../../aspVuota.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    </SubMenu>
+    <SubMenu id="Pag" text="Pagamenti" urlVisualizza="../../OPENgovProvvedimenti/pagamenti/Ricerca.aspx" urlComandi="../../OPENgovProvvedimenti/pagamenti/cmdRicerca.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+  </Menu>
+  <Menu id="Mail" text="Invio Mail" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+    <SubMenu id="Gest" text="Dati Invio" urlVisualizza="../../20/GestMail/GestInvioMail.aspx?ENTE=myidente" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    <SubMenu id="Esito" text="Esito Invio" urlVisualizza="../../20/GestMail/GestEsitoInvio.aspx?ENTE=myidente" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+  </Menu>
+  <Menu id="Dictionary" text="Dizionario" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+    <SubMenu id="Gest" text="Gestione Ente" urlVisualizza="../../Configuratore/Ente/ConfiguraEnte.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    <SubMenu id="Estimo" text="Gestione Tariffe Estimo" urlVisualizza="../../Configuratore/TariffeEstimo/ConfigTariffe.aspx" urlComandi="../../Configuratore/TariffeEstimo/ComandiConfigTariffe.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+  </Menu>
+  <Menu id="Ter" text="Territorio" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+    <SubMenu id="Gest" text="Gestione" urlVisualizza="../../" urlComandi="../../" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+    <SubMenu id="ModTrib" text="Modifiche Tributarie" urlVisualizza="../../OPENgovTERRITORIO/VariazioniBancaDatiTributi/VariazioniTributiSearch.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuota.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+  </Menu>
+</MenuRoot>

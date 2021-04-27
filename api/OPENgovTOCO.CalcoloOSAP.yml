@@ -1,0 +1,641 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENgovTOCO.CalcoloOSAP
+  commentId: T:OPENgovTOCO.CalcoloOSAP
+  id: CalcoloOSAP
+  parent: OPENgovTOCO
+  children:
+  - OPENgovTOCO.CalcoloOSAP.#ctor
+  - OPENgovTOCO.CalcoloOSAP.CalcoloSync(System.Boolean,IRemInterfaceOSAP.Ruolo.E_TIPO,System.Int32,IRemInterfaceOSAP.Categorie[],IRemInterfaceOSAP.TipologieOccupazioni[],IRemInterfaceOSAP.Agevolazione[],IRemInterfaceOSAP.Tariffe[],System.String,System.String,System.String,System.Double,System.Int32,System.String,System.Int32)
+  - OPENgovTOCO.CalcoloOSAP.StartCalcolo(IRemInterfaceOSAP.Ruolo.E_TIPO,System.Int32,IRemInterfaceOSAP.Categorie[],IRemInterfaceOSAP.TipologieOccupazioni[],IRemInterfaceOSAP.Agevolazione[],IRemInterfaceOSAP.Tariffe[],System.String,System.String,System.String,System.Double,System.Int32,System.String)
+  langs:
+  - csharp
+  - vb
+  name: CalcoloOSAP
+  nameWithType: CalcoloOSAP
+  fullName: OPENgovTOCO.CalcoloOSAP
+  type: Class
+  source:
+    id: CalcoloOSAP
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 22
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  summary: "\nclasse per la gestione del calcolo del ruolo.\n"
+  example: []
+  syntax:
+    content: public class CalcoloOSAP
+    content.vb: Public Class CalcoloOSAP
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: OPENgovTOCO.CalcoloOSAP.#ctor
+  commentId: M:OPENgovTOCO.CalcoloOSAP.#ctor
+  id: '#ctor'
+  parent: OPENgovTOCO.CalcoloOSAP
+  langs:
+  - csharp
+  - vb
+  name: CalcoloOSAP()
+  nameWithType: CalcoloOSAP.CalcoloOSAP()
+  fullName: OPENgovTOCO.CalcoloOSAP.CalcoloOSAP()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 51
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public CalcoloOSAP()
+    content.vb: Public Sub New
+  overload: OPENgovTOCO.CalcoloOSAP.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: OPENgovTOCO.CalcoloOSAP.StartCalcolo(IRemInterfaceOSAP.Ruolo.E_TIPO,System.Int32,IRemInterfaceOSAP.Categorie[],IRemInterfaceOSAP.TipologieOccupazioni[],IRemInterfaceOSAP.Agevolazione[],IRemInterfaceOSAP.Tariffe[],System.String,System.String,System.String,System.Double,System.Int32,System.String)
+  commentId: M:OPENgovTOCO.CalcoloOSAP.StartCalcolo(IRemInterfaceOSAP.Ruolo.E_TIPO,System.Int32,IRemInterfaceOSAP.Categorie[],IRemInterfaceOSAP.TipologieOccupazioni[],IRemInterfaceOSAP.Agevolazione[],IRemInterfaceOSAP.Tariffe[],System.String,System.String,System.String,System.Double,System.Int32,System.String)
+  id: StartCalcolo(IRemInterfaceOSAP.Ruolo.E_TIPO,System.Int32,IRemInterfaceOSAP.Categorie[],IRemInterfaceOSAP.TipologieOccupazioni[],IRemInterfaceOSAP.Agevolazione[],IRemInterfaceOSAP.Tariffe[],System.String,System.String,System.String,System.Double,System.Int32,System.String)
+  parent: OPENgovTOCO.CalcoloOSAP
+  langs:
+  - csharp
+  - vb
+  name: StartCalcolo(Ruolo.E_TIPO, Int32, Categorie[], TipologieOccupazioni[], Agevolazione[], Tariffe[], String, String, String, Double, Int32, String)
+  nameWithType: CalcoloOSAP.StartCalcolo(Ruolo.E_TIPO, Int32, Categorie[], TipologieOccupazioni[], Agevolazione[], Tariffe[], String, String, String, Double, Int32, String)
+  fullName: OPENgovTOCO.CalcoloOSAP.StartCalcolo(IRemInterfaceOSAP.Ruolo.E_TIPO, System.Int32, IRemInterfaceOSAP.Categorie[], IRemInterfaceOSAP.TipologieOccupazioni[], IRemInterfaceOSAP.Agevolazione[], IRemInterfaceOSAP.Tariffe[], System.String, System.String, System.String, System.Double, System.Int32, System.String)
+  type: Method
+  source:
+    id: StartCalcolo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 56
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public void StartCalcolo(Ruolo.E_TIPO TipoRuolo, int Anno, Categorie[] categ, TipologieOccupazioni[] tipiOcc, Agevolazione[] agev, Tariffe[] tarif, string IdEnte, string Operatore, string CodTributo, double ImportoRate, int IdFlussoPrec, string ListOccupazioni)
+    parameters:
+    - id: TipoRuolo
+      type: IRemInterfaceOSAP.Ruolo.E_TIPO
+    - id: Anno
+      type: System.Int32
+    - id: categ
+      type: IRemInterfaceOSAP.Categorie[]
+    - id: tipiOcc
+      type: IRemInterfaceOSAP.TipologieOccupazioni[]
+    - id: agev
+      type: IRemInterfaceOSAP.Agevolazione[]
+    - id: tarif
+      type: IRemInterfaceOSAP.Tariffe[]
+    - id: IdEnte
+      type: System.String
+    - id: Operatore
+      type: System.String
+    - id: CodTributo
+      type: System.String
+    - id: ImportoRate
+      type: System.Double
+    - id: IdFlussoPrec
+      type: System.Int32
+    - id: ListOccupazioni
+      type: System.String
+    content.vb: Public Sub StartCalcolo(TipoRuolo As Ruolo.E_TIPO, Anno As Integer, categ As Categorie(), tipiOcc As TipologieOccupazioni(), agev As Agevolazione(), tarif As Tariffe(), IdEnte As String, Operatore As String, CodTributo As String, ImportoRate As Double, IdFlussoPrec As Integer, ListOccupazioni As String)
+  overload: OPENgovTOCO.CalcoloOSAP.StartCalcolo*
+  nameWithType.vb: CalcoloOSAP.StartCalcolo(Ruolo.E_TIPO, Int32, Categorie(), TipologieOccupazioni(), Agevolazione(), Tariffe(), String, String, String, Double, Int32, String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: OPENgovTOCO.CalcoloOSAP.StartCalcolo(IRemInterfaceOSAP.Ruolo.E_TIPO, System.Int32, IRemInterfaceOSAP.Categorie(), IRemInterfaceOSAP.TipologieOccupazioni(), IRemInterfaceOSAP.Agevolazione(), IRemInterfaceOSAP.Tariffe(), System.String, System.String, System.String, System.Double, System.Int32, System.String)
+  name.vb: StartCalcolo(Ruolo.E_TIPO, Int32, Categorie(), TipologieOccupazioni(), Agevolazione(), Tariffe(), String, String, String, Double, Int32, String)
+- uid: OPENgovTOCO.CalcoloOSAP.CalcoloSync(System.Boolean,IRemInterfaceOSAP.Ruolo.E_TIPO,System.Int32,IRemInterfaceOSAP.Categorie[],IRemInterfaceOSAP.TipologieOccupazioni[],IRemInterfaceOSAP.Agevolazione[],IRemInterfaceOSAP.Tariffe[],System.String,System.String,System.String,System.Double,System.Int32,System.String,System.Int32)
+  commentId: M:OPENgovTOCO.CalcoloOSAP.CalcoloSync(System.Boolean,IRemInterfaceOSAP.Ruolo.E_TIPO,System.Int32,IRemInterfaceOSAP.Categorie[],IRemInterfaceOSAP.TipologieOccupazioni[],IRemInterfaceOSAP.Agevolazione[],IRemInterfaceOSAP.Tariffe[],System.String,System.String,System.String,System.Double,System.Int32,System.String,System.Int32)
+  id: CalcoloSync(System.Boolean,IRemInterfaceOSAP.Ruolo.E_TIPO,System.Int32,IRemInterfaceOSAP.Categorie[],IRemInterfaceOSAP.TipologieOccupazioni[],IRemInterfaceOSAP.Agevolazione[],IRemInterfaceOSAP.Tariffe[],System.String,System.String,System.String,System.Double,System.Int32,System.String,System.Int32)
+  parent: OPENgovTOCO.CalcoloOSAP
+  langs:
+  - csharp
+  - vb
+  name: CalcoloSync(Boolean, Ruolo.E_TIPO, Int32, Categorie[], TipologieOccupazioni[], Agevolazione[], Tariffe[], String, String, String, Double, Int32, String, Int32)
+  nameWithType: CalcoloOSAP.CalcoloSync(Boolean, Ruolo.E_TIPO, Int32, Categorie[], TipologieOccupazioni[], Agevolazione[], Tariffe[], String, String, String, Double, Int32, String, Int32)
+  fullName: OPENgovTOCO.CalcoloOSAP.CalcoloSync(System.Boolean, IRemInterfaceOSAP.Ruolo.E_TIPO, System.Int32, IRemInterfaceOSAP.Categorie[], IRemInterfaceOSAP.TipologieOccupazioni[], IRemInterfaceOSAP.Agevolazione[], IRemInterfaceOSAP.Tariffe[], System.String, System.String, System.String, System.Double, System.Int32, System.String, System.Int32)
+  type: Method
+  source:
+    id: CalcoloSync
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\classi\CalcoloTOCO.cs
+    startLine: 103
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENgovTOCO
+  syntax:
+    content: public void CalcoloSync(bool Simula, Ruolo.E_TIPO TipoRuolo, int Anno, Categorie[] categ, TipologieOccupazioni[] tipiOcc, Agevolazione[] agev, Tariffe[] tarif, string IdEnte, string Operatore, string CodTributo, double ImportoRate, int IdFlussoPrec, string ListOccupazioni, int IDDichiarazione)
+    parameters:
+    - id: Simula
+      type: System.Boolean
+    - id: TipoRuolo
+      type: IRemInterfaceOSAP.Ruolo.E_TIPO
+    - id: Anno
+      type: System.Int32
+    - id: categ
+      type: IRemInterfaceOSAP.Categorie[]
+    - id: tipiOcc
+      type: IRemInterfaceOSAP.TipologieOccupazioni[]
+    - id: agev
+      type: IRemInterfaceOSAP.Agevolazione[]
+    - id: tarif
+      type: IRemInterfaceOSAP.Tariffe[]
+    - id: IdEnte
+      type: System.String
+    - id: Operatore
+      type: System.String
+    - id: CodTributo
+      type: System.String
+    - id: ImportoRate
+      type: System.Double
+    - id: IdFlussoPrec
+      type: System.Int32
+    - id: ListOccupazioni
+      type: System.String
+    - id: IDDichiarazione
+      type: System.Int32
+    content.vb: Public Sub CalcoloSync(Simula As Boolean, TipoRuolo As Ruolo.E_TIPO, Anno As Integer, categ As Categorie(), tipiOcc As TipologieOccupazioni(), agev As Agevolazione(), tarif As Tariffe(), IdEnte As String, Operatore As String, CodTributo As String, ImportoRate As Double, IdFlussoPrec As Integer, ListOccupazioni As String, IDDichiarazione As Integer)
+  overload: OPENgovTOCO.CalcoloOSAP.CalcoloSync*
+  nameWithType.vb: CalcoloOSAP.CalcoloSync(Boolean, Ruolo.E_TIPO, Int32, Categorie(), TipologieOccupazioni(), Agevolazione(), Tariffe(), String, String, String, Double, Int32, String, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: OPENgovTOCO.CalcoloOSAP.CalcoloSync(System.Boolean, IRemInterfaceOSAP.Ruolo.E_TIPO, System.Int32, IRemInterfaceOSAP.Categorie(), IRemInterfaceOSAP.TipologieOccupazioni(), IRemInterfaceOSAP.Agevolazione(), IRemInterfaceOSAP.Tariffe(), System.String, System.String, System.String, System.Double, System.Int32, System.String, System.Int32)
+  name.vb: CalcoloSync(Boolean, Ruolo.E_TIPO, Int32, Categorie(), TipologieOccupazioni(), Agevolazione(), Tariffe(), String, String, String, Double, Int32, String, Int32)
+references:
+- uid: OPENgovTOCO
+  commentId: N:OPENgovTOCO
+  name: OPENgovTOCO
+  nameWithType: OPENgovTOCO
+  fullName: OPENgovTOCO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OPENgovTOCO.CalcoloOSAP.#ctor*
+  commentId: Overload:OPENgovTOCO.CalcoloOSAP.#ctor
+  name: CalcoloOSAP
+  nameWithType: CalcoloOSAP.CalcoloOSAP
+  fullName: OPENgovTOCO.CalcoloOSAP.CalcoloOSAP
+- uid: OPENgovTOCO.CalcoloOSAP.StartCalcolo*
+  commentId: Overload:OPENgovTOCO.CalcoloOSAP.StartCalcolo
+  name: StartCalcolo
+  nameWithType: CalcoloOSAP.StartCalcolo
+  fullName: OPENgovTOCO.CalcoloOSAP.StartCalcolo
+- uid: IRemInterfaceOSAP.Ruolo.E_TIPO
+  commentId: T:IRemInterfaceOSAP.Ruolo.E_TIPO
+  parent: IRemInterfaceOSAP
+  isExternal: true
+  name: Ruolo.E_TIPO
+  nameWithType: Ruolo.E_TIPO
+  fullName: IRemInterfaceOSAP.Ruolo.E_TIPO
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: IRemInterfaceOSAP.Categorie[]
+  isExternal: true
+  name: Categorie[]
+  nameWithType: Categorie[]
+  fullName: IRemInterfaceOSAP.Categorie[]
+  nameWithType.vb: Categorie()
+  fullName.vb: IRemInterfaceOSAP.Categorie()
+  name.vb: Categorie()
+  spec.csharp:
+  - uid: IRemInterfaceOSAP.Categorie
+    name: Categorie
+    nameWithType: Categorie
+    fullName: IRemInterfaceOSAP.Categorie
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: IRemInterfaceOSAP.Categorie
+    name: Categorie
+    nameWithType: Categorie
+    fullName: IRemInterfaceOSAP.Categorie
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: IRemInterfaceOSAP.TipologieOccupazioni[]
+  isExternal: true
+  name: TipologieOccupazioni[]
+  nameWithType: TipologieOccupazioni[]
+  fullName: IRemInterfaceOSAP.TipologieOccupazioni[]
+  nameWithType.vb: TipologieOccupazioni()
+  fullName.vb: IRemInterfaceOSAP.TipologieOccupazioni()
+  name.vb: TipologieOccupazioni()
+  spec.csharp:
+  - uid: IRemInterfaceOSAP.TipologieOccupazioni
+    name: TipologieOccupazioni
+    nameWithType: TipologieOccupazioni
+    fullName: IRemInterfaceOSAP.TipologieOccupazioni
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: IRemInterfaceOSAP.TipologieOccupazioni
+    name: TipologieOccupazioni
+    nameWithType: TipologieOccupazioni
+    fullName: IRemInterfaceOSAP.TipologieOccupazioni
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: IRemInterfaceOSAP.Agevolazione[]
+  isExternal: true
+  name: Agevolazione[]
+  nameWithType: Agevolazione[]
+  fullName: IRemInterfaceOSAP.Agevolazione[]
+  nameWithType.vb: Agevolazione()
+  fullName.vb: IRemInterfaceOSAP.Agevolazione()
+  name.vb: Agevolazione()
+  spec.csharp:
+  - uid: IRemInterfaceOSAP.Agevolazione
+    name: Agevolazione
+    nameWithType: Agevolazione
+    fullName: IRemInterfaceOSAP.Agevolazione
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: IRemInterfaceOSAP.Agevolazione
+    name: Agevolazione
+    nameWithType: Agevolazione
+    fullName: IRemInterfaceOSAP.Agevolazione
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: IRemInterfaceOSAP.Tariffe[]
+  isExternal: true
+  name: Tariffe[]
+  nameWithType: Tariffe[]
+  fullName: IRemInterfaceOSAP.Tariffe[]
+  nameWithType.vb: Tariffe()
+  fullName.vb: IRemInterfaceOSAP.Tariffe()
+  name.vb: Tariffe()
+  spec.csharp:
+  - uid: IRemInterfaceOSAP.Tariffe
+    name: Tariffe
+    nameWithType: Tariffe
+    fullName: IRemInterfaceOSAP.Tariffe
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: IRemInterfaceOSAP.Tariffe
+    name: Tariffe
+    nameWithType: Tariffe
+    fullName: IRemInterfaceOSAP.Tariffe
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: IRemInterfaceOSAP
+  commentId: N:IRemInterfaceOSAP
+  isExternal: true
+  name: IRemInterfaceOSAP
+  nameWithType: IRemInterfaceOSAP
+  fullName: IRemInterfaceOSAP
+- uid: OPENgovTOCO.CalcoloOSAP.CalcoloSync*
+  commentId: Overload:OPENgovTOCO.CalcoloOSAP.CalcoloSync
+  name: CalcoloSync
+  nameWithType: CalcoloOSAP.CalcoloSync
+  fullName: OPENgovTOCO.CalcoloOSAP.CalcoloSync
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

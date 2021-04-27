@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.Analisi
+  commentId: N:DichiarazioniICI.Analisi
+  id: DichiarazioniICI.Analisi
+  children:
+  - DichiarazioniICI.Analisi.CStampaContribNonPagato
+  - DichiarazioniICI.Analisi.CStampaContribPagatoDiverso
+  - DichiarazioniICI.Analisi.Rimborsi
+  langs:
+  - csharp
+  - vb
+  name: DichiarazioniICI.Analisi
+  nameWithType: DichiarazioniICI.Analisi
+  fullName: DichiarazioniICI.Analisi
+  type: Namespace
+  assemblies:
+  - DichiarazioniICI
+references:
+- uid: DichiarazioniICI.Analisi.CStampaContribNonPagato
+  commentId: T:DichiarazioniICI.Analisi.CStampaContribNonPagato
+  name: CStampaContribNonPagato
+  nameWithType: CStampaContribNonPagato
+  fullName: DichiarazioniICI.Analisi.CStampaContribNonPagato
+- uid: DichiarazioniICI.Analisi.CStampaContribPagatoDiverso
+  commentId: T:DichiarazioniICI.Analisi.CStampaContribPagatoDiverso
+  name: CStampaContribPagatoDiverso
+  nameWithType: CStampaContribPagatoDiverso
+  fullName: DichiarazioniICI.Analisi.CStampaContribPagatoDiverso
+- uid: DichiarazioniICI.Analisi.Rimborsi
+  commentId: T:DichiarazioniICI.Analisi.Rimborsi
+  name: Rimborsi
+  nameWithType: Rimborsi
+  fullName: DichiarazioniICI.Analisi.Rimborsi

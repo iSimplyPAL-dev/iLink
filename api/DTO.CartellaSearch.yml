@@ -1,0 +1,768 @@
+### YamlMime:ManagedReference
+items:
+- uid: DTO.CartellaSearch
+  commentId: T:DTO.CartellaSearch
+  id: CartellaSearch
+  parent: DTO
+  children:
+  - DTO.CartellaSearch.Anno
+  - DTO.CartellaSearch.CodFiscaleContribuente
+  - DTO.CartellaSearch.CognomeContribuente
+  - DTO.CartellaSearch.IdEnte
+  - DTO.CartellaSearch.IdEnteNoSession
+  - DTO.CartellaSearch.IdFlusso
+  - DTO.CartellaSearch.IdTributo
+  - DTO.CartellaSearch.IsSgravate
+  - DTO.CartellaSearch.NomeContribuente
+  - DTO.CartellaSearch.NumeroAvviso
+  - DTO.CartellaSearch.PIVAContribuente
+  langs:
+  - csharp
+  - vb
+  name: CartellaSearch
+  nameWithType: CartellaSearch
+  fullName: DTO.CartellaSearch
+  type: Class
+  source:
+    id: CartellaSearch
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\CartellaSearch.cs
+    startLine: 8
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  summary: "\nDefinizione oggetto ricerca Avviso\n"
+  example: []
+  syntax:
+    content: public class CartellaSearch
+    content.vb: Public Class CartellaSearch
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DTO.CartellaSearch.IdTributo
+  commentId: P:DTO.CartellaSearch.IdTributo
+  id: IdTributo
+  parent: DTO.CartellaSearch
+  langs:
+  - csharp
+  - vb
+  name: IdTributo
+  nameWithType: CartellaSearch.IdTributo
+  fullName: DTO.CartellaSearch.IdTributo
+  type: Property
+  source:
+    id: IdTributo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\CartellaSearch.cs
+    startLine: 27
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string IdTributo { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property IdTributo As String
+  overload: DTO.CartellaSearch.IdTributo*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.CartellaSearch.CognomeContribuente
+  commentId: P:DTO.CartellaSearch.CognomeContribuente
+  id: CognomeContribuente
+  parent: DTO.CartellaSearch
+  langs:
+  - csharp
+  - vb
+  name: CognomeContribuente
+  nameWithType: CartellaSearch.CognomeContribuente
+  fullName: DTO.CartellaSearch.CognomeContribuente
+  type: Property
+  source:
+    id: CognomeContribuente
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\CartellaSearch.cs
+    startLine: 32
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string CognomeContribuente { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CognomeContribuente As String
+  overload: DTO.CartellaSearch.CognomeContribuente*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.CartellaSearch.NomeContribuente
+  commentId: P:DTO.CartellaSearch.NomeContribuente
+  id: NomeContribuente
+  parent: DTO.CartellaSearch
+  langs:
+  - csharp
+  - vb
+  name: NomeContribuente
+  nameWithType: CartellaSearch.NomeContribuente
+  fullName: DTO.CartellaSearch.NomeContribuente
+  type: Property
+  source:
+    id: NomeContribuente
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\CartellaSearch.cs
+    startLine: 38
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string NomeContribuente { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property NomeContribuente As String
+  overload: DTO.CartellaSearch.NomeContribuente*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.CartellaSearch.CodFiscaleContribuente
+  commentId: P:DTO.CartellaSearch.CodFiscaleContribuente
+  id: CodFiscaleContribuente
+  parent: DTO.CartellaSearch
+  langs:
+  - csharp
+  - vb
+  name: CodFiscaleContribuente
+  nameWithType: CartellaSearch.CodFiscaleContribuente
+  fullName: DTO.CartellaSearch.CodFiscaleContribuente
+  type: Property
+  source:
+    id: CodFiscaleContribuente
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\CartellaSearch.cs
+    startLine: 44
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string CodFiscaleContribuente { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CodFiscaleContribuente As String
+  overload: DTO.CartellaSearch.CodFiscaleContribuente*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.CartellaSearch.PIVAContribuente
+  commentId: P:DTO.CartellaSearch.PIVAContribuente
+  id: PIVAContribuente
+  parent: DTO.CartellaSearch
+  langs:
+  - csharp
+  - vb
+  name: PIVAContribuente
+  nameWithType: CartellaSearch.PIVAContribuente
+  fullName: DTO.CartellaSearch.PIVAContribuente
+  type: Property
+  source:
+    id: PIVAContribuente
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\CartellaSearch.cs
+    startLine: 50
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string PIVAContribuente { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PIVAContribuente As String
+  overload: DTO.CartellaSearch.PIVAContribuente*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.CartellaSearch.IdEnte
+  commentId: P:DTO.CartellaSearch.IdEnte
+  id: IdEnte
+  parent: DTO.CartellaSearch
+  langs:
+  - csharp
+  - vb
+  name: IdEnte
+  nameWithType: CartellaSearch.IdEnte
+  fullName: DTO.CartellaSearch.IdEnte
+  type: Property
+  source:
+    id: IdEnte
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\CartellaSearch.cs
+    startLine: 62
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string IdEnte { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property IdEnte As String
+  overload: DTO.CartellaSearch.IdEnte*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DTO.CartellaSearch.IdEnteNoSession
+  commentId: P:DTO.CartellaSearch.IdEnteNoSession
+  id: IdEnteNoSession
+  parent: DTO.CartellaSearch
+  langs:
+  - csharp
+  - vb
+  name: IdEnteNoSession
+  nameWithType: CartellaSearch.IdEnteNoSession
+  fullName: DTO.CartellaSearch.IdEnteNoSession
+  type: Property
+  source:
+    id: IdEnteNoSession
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\CartellaSearch.cs
+    startLine: 73
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string IdEnteNoSession { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property IdEnteNoSession As String
+  overload: DTO.CartellaSearch.IdEnteNoSession*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.CartellaSearch.NumeroAvviso
+  commentId: P:DTO.CartellaSearch.NumeroAvviso
+  id: NumeroAvviso
+  parent: DTO.CartellaSearch
+  langs:
+  - csharp
+  - vb
+  name: NumeroAvviso
+  nameWithType: CartellaSearch.NumeroAvviso
+  fullName: DTO.CartellaSearch.NumeroAvviso
+  type: Property
+  source:
+    id: NumeroAvviso
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\CartellaSearch.cs
+    startLine: 79
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public string NumeroAvviso { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property NumeroAvviso As String
+  overload: DTO.CartellaSearch.NumeroAvviso*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.CartellaSearch.Anno
+  commentId: P:DTO.CartellaSearch.Anno
+  id: Anno
+  parent: DTO.CartellaSearch
+  langs:
+  - csharp
+  - vb
+  name: Anno
+  nameWithType: CartellaSearch.Anno
+  fullName: DTO.CartellaSearch.Anno
+  type: Property
+  source:
+    id: Anno
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\CartellaSearch.cs
+    startLine: 85
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public int Anno { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Anno As Integer
+  overload: DTO.CartellaSearch.Anno*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.CartellaSearch.IdFlusso
+  commentId: P:DTO.CartellaSearch.IdFlusso
+  id: IdFlusso
+  parent: DTO.CartellaSearch
+  langs:
+  - csharp
+  - vb
+  name: IdFlusso
+  nameWithType: CartellaSearch.IdFlusso
+  fullName: DTO.CartellaSearch.IdFlusso
+  type: Property
+  source:
+    id: IdFlusso
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\CartellaSearch.cs
+    startLine: 91
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public int IdFlusso { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IdFlusso As Integer
+  overload: DTO.CartellaSearch.IdFlusso*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DTO.CartellaSearch.IsSgravate
+  commentId: P:DTO.CartellaSearch.IsSgravate
+  id: IsSgravate
+  parent: DTO.CartellaSearch
+  langs:
+  - csharp
+  - vb
+  name: IsSgravate
+  nameWithType: CartellaSearch.IsSgravate
+  fullName: DTO.CartellaSearch.IsSgravate
+  type: Property
+  source:
+    id: IsSgravate
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\CartellaSearch.cs
+    startLine: 97
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public bool IsSgravate { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsSgravate As Boolean
+  overload: DTO.CartellaSearch.IsSgravate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: DTO
+  commentId: N:DTO
+  name: DTO
+  nameWithType: DTO
+  fullName: DTO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DTO.CartellaSearch.IdTributo*
+  commentId: Overload:DTO.CartellaSearch.IdTributo
+  name: IdTributo
+  nameWithType: CartellaSearch.IdTributo
+  fullName: DTO.CartellaSearch.IdTributo
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DTO.CartellaSearch.CognomeContribuente*
+  commentId: Overload:DTO.CartellaSearch.CognomeContribuente
+  name: CognomeContribuente
+  nameWithType: CartellaSearch.CognomeContribuente
+  fullName: DTO.CartellaSearch.CognomeContribuente
+- uid: DTO.CartellaSearch.NomeContribuente*
+  commentId: Overload:DTO.CartellaSearch.NomeContribuente
+  name: NomeContribuente
+  nameWithType: CartellaSearch.NomeContribuente
+  fullName: DTO.CartellaSearch.NomeContribuente
+- uid: DTO.CartellaSearch.CodFiscaleContribuente*
+  commentId: Overload:DTO.CartellaSearch.CodFiscaleContribuente
+  name: CodFiscaleContribuente
+  nameWithType: CartellaSearch.CodFiscaleContribuente
+  fullName: DTO.CartellaSearch.CodFiscaleContribuente
+- uid: DTO.CartellaSearch.PIVAContribuente*
+  commentId: Overload:DTO.CartellaSearch.PIVAContribuente
+  name: PIVAContribuente
+  nameWithType: CartellaSearch.PIVAContribuente
+  fullName: DTO.CartellaSearch.PIVAContribuente
+- uid: DTO.CartellaSearch.IdEnte*
+  commentId: Overload:DTO.CartellaSearch.IdEnte
+  name: IdEnte
+  nameWithType: CartellaSearch.IdEnte
+  fullName: DTO.CartellaSearch.IdEnte
+- uid: DTO.CartellaSearch.IdEnteNoSession*
+  commentId: Overload:DTO.CartellaSearch.IdEnteNoSession
+  name: IdEnteNoSession
+  nameWithType: CartellaSearch.IdEnteNoSession
+  fullName: DTO.CartellaSearch.IdEnteNoSession
+- uid: DTO.CartellaSearch.NumeroAvviso*
+  commentId: Overload:DTO.CartellaSearch.NumeroAvviso
+  name: NumeroAvviso
+  nameWithType: CartellaSearch.NumeroAvviso
+  fullName: DTO.CartellaSearch.NumeroAvviso
+- uid: DTO.CartellaSearch.Anno*
+  commentId: Overload:DTO.CartellaSearch.Anno
+  name: Anno
+  nameWithType: CartellaSearch.Anno
+  fullName: DTO.CartellaSearch.Anno
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DTO.CartellaSearch.IdFlusso*
+  commentId: Overload:DTO.CartellaSearch.IdFlusso
+  name: IdFlusso
+  nameWithType: CartellaSearch.IdFlusso
+  fullName: DTO.CartellaSearch.IdFlusso
+- uid: DTO.CartellaSearch.IsSgravate*
+  commentId: Overload:DTO.CartellaSearch.IsSgravate
+  name: IsSgravate
+  nameWithType: CartellaSearch.IsSgravate
+  fullName: DTO.CartellaSearch.IsSgravate
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

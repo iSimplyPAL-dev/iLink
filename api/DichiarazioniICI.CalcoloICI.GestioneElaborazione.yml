@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.CalcoloICI.GestioneElaborazione
+  commentId: N:DichiarazioniICI.CalcoloICI.GestioneElaborazione
+  id: DichiarazioniICI.CalcoloICI.GestioneElaborazione
+  children:
+  - DichiarazioniICI.CalcoloICI.GestioneElaborazione.CGestioneElaborazione
+  - DichiarazioniICI.CalcoloICI.GestioneElaborazione.GestioneElaborazione
+  - DichiarazioniICI.CalcoloICI.GestioneElaborazione.Repository
+  - DichiarazioniICI.CalcoloICI.GestioneElaborazione.ViewElaborazioneICImassivo
+  langs:
+  - csharp
+  - vb
+  name: DichiarazioniICI.CalcoloICI.GestioneElaborazione
+  nameWithType: DichiarazioniICI.CalcoloICI.GestioneElaborazione
+  fullName: DichiarazioniICI.CalcoloICI.GestioneElaborazione
+  type: Namespace
+  assemblies:
+  - DichiarazioniICI
+references:
+- uid: DichiarazioniICI.CalcoloICI.GestioneElaborazione.CGestioneElaborazione
+  commentId: T:DichiarazioniICI.CalcoloICI.GestioneElaborazione.CGestioneElaborazione
+  name: CGestioneElaborazione
+  nameWithType: CGestioneElaborazione
+  fullName: DichiarazioniICI.CalcoloICI.GestioneElaborazione.CGestioneElaborazione
+- uid: DichiarazioniICI.CalcoloICI.GestioneElaborazione.GestioneElaborazione
+  commentId: T:DichiarazioniICI.CalcoloICI.GestioneElaborazione.GestioneElaborazione
+  name: GestioneElaborazione
+  nameWithType: GestioneElaborazione
+  fullName: DichiarazioniICI.CalcoloICI.GestioneElaborazione.GestioneElaborazione
+- uid: DichiarazioniICI.CalcoloICI.GestioneElaborazione.Repository
+  commentId: T:DichiarazioniICI.CalcoloICI.GestioneElaborazione.Repository
+  name: Repository
+  nameWithType: Repository
+  fullName: DichiarazioniICI.CalcoloICI.GestioneElaborazione.Repository
+- uid: DichiarazioniICI.CalcoloICI.GestioneElaborazione.ViewElaborazioneICImassivo
+  commentId: T:DichiarazioniICI.CalcoloICI.GestioneElaborazione.ViewElaborazioneICImassivo
+  name: ViewElaborazioneICImassivo
+  nameWithType: ViewElaborazioneICImassivo
+  fullName: DichiarazioniICI.CalcoloICI.GestioneElaborazione.ViewElaborazioneICImassivo

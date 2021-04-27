@@ -1,0 +1,240 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.WServiceOPENae.DestinazioneUso
+  commentId: T:DichiarazioniICI.WServiceOPENae.DestinazioneUso
+  id: DestinazioneUso
+  parent: DichiarazioniICI.WServiceOPENae
+  children:
+  - DichiarazioniICI.WServiceOPENae.DestinazioneUso.Abitativo
+  - DichiarazioniICI.WServiceOPENae.DestinazioneUso.AltriUsi
+  - DichiarazioniICI.WServiceOPENae.DestinazioneUso.Box
+  - DichiarazioniICI.WServiceOPENae.DestinazioneUso.Commerciale
+  - DichiarazioniICI.WServiceOPENae.DestinazioneUso.NonSpecificato
+  - DichiarazioniICI.WServiceOPENae.DestinazioneUso.TenutoADisposizione
+  langs:
+  - csharp
+  - vb
+  name: DestinazioneUso
+  nameWithType: DestinazioneUso
+  fullName: DichiarazioniICI.WServiceOPENae.DestinazioneUso
+  type: Enum
+  source:
+    id: DestinazioneUso
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1195
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public enum DestinazioneUso
+    content.vb: >-
+      <Serializable>
+
+      Public Enum DestinazioneUso
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: DichiarazioniICI.WServiceOPENae.DestinazioneUso.NonSpecificato
+  commentId: F:DichiarazioniICI.WServiceOPENae.DestinazioneUso.NonSpecificato
+  id: NonSpecificato
+  parent: DichiarazioniICI.WServiceOPENae.DestinazioneUso
+  langs:
+  - csharp
+  - vb
+  name: NonSpecificato
+  nameWithType: DestinazioneUso.NonSpecificato
+  fullName: DichiarazioniICI.WServiceOPENae.DestinazioneUso.NonSpecificato
+  type: Field
+  source:
+    id: NonSpecificato
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1201
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: NonSpecificato = 0
+    return:
+      type: DichiarazioniICI.WServiceOPENae.DestinazioneUso
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.WServiceOPENae.DestinazioneUso.Abitativo
+  commentId: F:DichiarazioniICI.WServiceOPENae.DestinazioneUso.Abitativo
+  id: Abitativo
+  parent: DichiarazioniICI.WServiceOPENae.DestinazioneUso
+  langs:
+  - csharp
+  - vb
+  name: Abitativo
+  nameWithType: DestinazioneUso.Abitativo
+  fullName: DichiarazioniICI.WServiceOPENae.DestinazioneUso.Abitativo
+  type: Field
+  source:
+    id: Abitativo
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1204
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: Abitativo = 1
+    return:
+      type: DichiarazioniICI.WServiceOPENae.DestinazioneUso
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.WServiceOPENae.DestinazioneUso.TenutoADisposizione
+  commentId: F:DichiarazioniICI.WServiceOPENae.DestinazioneUso.TenutoADisposizione
+  id: TenutoADisposizione
+  parent: DichiarazioniICI.WServiceOPENae.DestinazioneUso
+  langs:
+  - csharp
+  - vb
+  name: TenutoADisposizione
+  nameWithType: DestinazioneUso.TenutoADisposizione
+  fullName: DichiarazioniICI.WServiceOPENae.DestinazioneUso.TenutoADisposizione
+  type: Field
+  source:
+    id: TenutoADisposizione
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1207
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: TenutoADisposizione = 2
+    return:
+      type: DichiarazioniICI.WServiceOPENae.DestinazioneUso
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.WServiceOPENae.DestinazioneUso.Commerciale
+  commentId: F:DichiarazioniICI.WServiceOPENae.DestinazioneUso.Commerciale
+  id: Commerciale
+  parent: DichiarazioniICI.WServiceOPENae.DestinazioneUso
+  langs:
+  - csharp
+  - vb
+  name: Commerciale
+  nameWithType: DestinazioneUso.Commerciale
+  fullName: DichiarazioniICI.WServiceOPENae.DestinazioneUso.Commerciale
+  type: Field
+  source:
+    id: Commerciale
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1210
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: Commerciale = 3
+    return:
+      type: DichiarazioniICI.WServiceOPENae.DestinazioneUso
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.WServiceOPENae.DestinazioneUso.Box
+  commentId: F:DichiarazioniICI.WServiceOPENae.DestinazioneUso.Box
+  id: Box
+  parent: DichiarazioniICI.WServiceOPENae.DestinazioneUso
+  langs:
+  - csharp
+  - vb
+  name: Box
+  nameWithType: DestinazioneUso.Box
+  fullName: DichiarazioniICI.WServiceOPENae.DestinazioneUso.Box
+  type: Field
+  source:
+    id: Box
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1213
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: Box = 4
+    return:
+      type: DichiarazioniICI.WServiceOPENae.DestinazioneUso
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DichiarazioniICI.WServiceOPENae.DestinazioneUso.AltriUsi
+  commentId: F:DichiarazioniICI.WServiceOPENae.DestinazioneUso.AltriUsi
+  id: AltriUsi
+  parent: DichiarazioniICI.WServiceOPENae.DestinazioneUso
+  langs:
+  - csharp
+  - vb
+  name: AltriUsi
+  nameWithType: DestinazioneUso.AltriUsi
+  fullName: DichiarazioniICI.WServiceOPENae.DestinazioneUso.AltriUsi
+  type: Field
+  source:
+    id: AltriUsi
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Web References\WServiceOPENae\Reference.cs
+    startLine: 1216
+  assemblies:
+  - DichiarazioniICI
+  namespace: DichiarazioniICI.WServiceOPENae
+  remarks: ''
+  example: []
+  syntax:
+    content: AltriUsi = 5
+    return:
+      type: DichiarazioniICI.WServiceOPENae.DestinazioneUso
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: DichiarazioniICI.WServiceOPENae
+  commentId: N:DichiarazioniICI.WServiceOPENae
+  name: DichiarazioniICI.WServiceOPENae
+  nameWithType: DichiarazioniICI.WServiceOPENae
+  fullName: DichiarazioniICI.WServiceOPENae
+- uid: DichiarazioniICI.WServiceOPENae.DestinazioneUso
+  commentId: T:DichiarazioniICI.WServiceOPENae.DestinazioneUso
+  parent: DichiarazioniICI.WServiceOPENae
+  name: DestinazioneUso
+  nameWithType: DestinazioneUso
+  fullName: DichiarazioniICI.WServiceOPENae.DestinazioneUso

@@ -1,0 +1,983 @@
+### YamlMime:ManagedReference
+items:
+- uid: DAO.DichiarazioniDAO
+  commentId: T:DAO.DichiarazioniDAO
+  id: DichiarazioniDAO
+  parent: DAO
+  children:
+  - DAO.DichiarazioniDAO.#ctor
+  - DAO.DichiarazioniDAO.connessioneDB
+  - DAO.DichiarazioniDAO.connessioneDB(System.String)
+  - DAO.DichiarazioniDAO.GetArticolo(System.Int32)
+  - DAO.DichiarazioniDAO.GetArticoloPrecedente(System.String,System.Int32,System.Int32,System.Int32,System.Data.SqlClient.SqlCommand@)
+  - DAO.DichiarazioniDAO.GetDichiarazione(System.String,System.Int32,System.String,System.Int32,System.String)
+  - DAO.DichiarazioniDAO.GetDichiarazioneForMotore(System.Int32,System.String,System.String,System.Int32,System.String,System.Data.SqlClient.SqlCommand@)
+  - DAO.DichiarazioniDAO.GetIdDichiarazioniAnno(System.Int32,System.String,System.String,System.Int32,System.Int32,System.String,System.Data.SqlClient.SqlCommand@)
+  - DAO.DichiarazioniDAO.GetNDichAutomatico(System.String,System.String,System.String)
+  - DAO.DichiarazioniDAO.IsCartellaCreata(System.Int32)
+  - DAO.DichiarazioniDAO.PrintDichiarazioni(System.String,DTO.DichiarazioneSearch)
+  - DAO.DichiarazioniDAO.SearchDichiarazioni(DTO.DichiarazioneSearch)
+  - DAO.DichiarazioniDAO.SetDichiarazione(System.String,IRemInterfaceOSAP.DichiarazioneTosapCosap@)
+  - DAO.DichiarazioniDAO.UpdateDichiarazione(System.Data.SqlClient.SqlCommand@,IRemInterfaceOSAP.DichiarazioneTosapCosap)
+  langs:
+  - csharp
+  - vb
+  name: DichiarazioniDAO
+  nameWithType: DichiarazioniDAO
+  fullName: DAO.DichiarazioniDAO
+  type: Class
+  source:
+    id: DichiarazioniDAO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\DichiarazioniDAO.cs
+    startLine: 13
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  summary: "\nClasse interfacciamento DB per la gestione dichiarazioni\n"
+  example: []
+  syntax:
+    content: public class DichiarazioniDAO
+    content.vb: Public Class DichiarazioniDAO
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DAO.DichiarazioniDAO.#ctor
+  commentId: M:DAO.DichiarazioniDAO.#ctor
+  id: '#ctor'
+  parent: DAO.DichiarazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: DichiarazioniDAO()
+  nameWithType: DichiarazioniDAO.DichiarazioniDAO()
+  fullName: DAO.DichiarazioniDAO.DichiarazioniDAO()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\DichiarazioniDAO.cs
+    startLine: 21
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public DichiarazioniDAO()
+    content.vb: Public Sub New
+  overload: DAO.DichiarazioniDAO.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.DichiarazioniDAO.GetArticolo(System.Int32)
+  commentId: M:DAO.DichiarazioniDAO.GetArticolo(System.Int32)
+  id: GetArticolo(System.Int32)
+  parent: DAO.DichiarazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: GetArticolo(Int32)
+  nameWithType: DichiarazioniDAO.GetArticolo(Int32)
+  fullName: DAO.DichiarazioniDAO.GetArticolo(System.Int32)
+  type: Method
+  source:
+    id: GetArticolo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\DichiarazioniDAO.cs
+    startLine: 25
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public DataTable GetArticolo(int IdRuolo)
+    parameters:
+    - id: IdRuolo
+      type: System.Int32
+    return:
+      type: System.Data.DataTable
+    content.vb: Public Function GetArticolo(IdRuolo As Integer) As DataTable
+  overload: DAO.DichiarazioniDAO.GetArticolo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.DichiarazioniDAO.GetArticoloPrecedente(System.String,System.Int32,System.Int32,System.Int32,System.Data.SqlClient.SqlCommand@)
+  commentId: M:DAO.DichiarazioniDAO.GetArticoloPrecedente(System.String,System.Int32,System.Int32,System.Int32,System.Data.SqlClient.SqlCommand@)
+  id: GetArticoloPrecedente(System.String,System.Int32,System.Int32,System.Int32,System.Data.SqlClient.SqlCommand@)
+  parent: DAO.DichiarazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: GetArticoloPrecedente(String, Int32, Int32, Int32, ref SqlCommand)
+  nameWithType: DichiarazioniDAO.GetArticoloPrecedente(String, Int32, Int32, Int32, ref SqlCommand)
+  fullName: DAO.DichiarazioniDAO.GetArticoloPrecedente(System.String, System.Int32, System.Int32, System.Int32, ref System.Data.SqlClient.SqlCommand)
+  type: Method
+  source:
+    id: GetArticoloPrecedente
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\DichiarazioniDAO.cs
+    startLine: 92
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public DataTable GetArticoloPrecedente(string IdEnte, int IdContribuente, int Anno, int IdDichiarazione, ref SqlCommand cmdMyCommand)
+    parameters:
+    - id: IdEnte
+      type: System.String
+    - id: IdContribuente
+      type: System.Int32
+    - id: Anno
+      type: System.Int32
+    - id: IdDichiarazione
+      type: System.Int32
+    - id: cmdMyCommand
+      type: System.Data.SqlClient.SqlCommand
+    return:
+      type: System.Data.DataTable
+    content.vb: Public Function GetArticoloPrecedente(IdEnte As String, IdContribuente As Integer, Anno As Integer, IdDichiarazione As Integer, ByRef cmdMyCommand As SqlCommand) As DataTable
+  overload: DAO.DichiarazioniDAO.GetArticoloPrecedente*
+  nameWithType.vb: DichiarazioniDAO.GetArticoloPrecedente(String, Int32, Int32, Int32, ByRef SqlCommand)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DAO.DichiarazioniDAO.GetArticoloPrecedente(System.String, System.Int32, System.Int32, System.Int32, ByRef System.Data.SqlClient.SqlCommand)
+  name.vb: GetArticoloPrecedente(String, Int32, Int32, Int32, ByRef SqlCommand)
+- uid: DAO.DichiarazioniDAO.SetDichiarazione(System.String,IRemInterfaceOSAP.DichiarazioneTosapCosap@)
+  commentId: M:DAO.DichiarazioniDAO.SetDichiarazione(System.String,IRemInterfaceOSAP.DichiarazioneTosapCosap@)
+  id: SetDichiarazione(System.String,IRemInterfaceOSAP.DichiarazioneTosapCosap@)
+  parent: DAO.DichiarazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: SetDichiarazione(String, ref DichiarazioneTosapCosap)
+  nameWithType: DichiarazioniDAO.SetDichiarazione(String, ref DichiarazioneTosapCosap)
+  fullName: DAO.DichiarazioniDAO.SetDichiarazione(System.String, ref IRemInterfaceOSAP.DichiarazioneTosapCosap)
+  type: Method
+  source:
+    id: SetDichiarazione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\DichiarazioniDAO.cs
+    startLine: 125
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public void SetDichiarazione(string ConnectionString, ref DichiarazioneTosapCosap dichiarazione)
+    parameters:
+    - id: ConnectionString
+      type: System.String
+    - id: dichiarazione
+      type: IRemInterfaceOSAP.DichiarazioneTosapCosap
+    content.vb: Public Sub SetDichiarazione(ConnectionString As String, ByRef dichiarazione As DichiarazioneTosapCosap)
+  overload: DAO.DichiarazioniDAO.SetDichiarazione*
+  nameWithType.vb: DichiarazioniDAO.SetDichiarazione(String, ByRef DichiarazioneTosapCosap)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DAO.DichiarazioniDAO.SetDichiarazione(System.String, ByRef IRemInterfaceOSAP.DichiarazioneTosapCosap)
+  name.vb: SetDichiarazione(String, ByRef DichiarazioneTosapCosap)
+- uid: DAO.DichiarazioniDAO.UpdateDichiarazione(System.Data.SqlClient.SqlCommand@,IRemInterfaceOSAP.DichiarazioneTosapCosap)
+  commentId: M:DAO.DichiarazioniDAO.UpdateDichiarazione(System.Data.SqlClient.SqlCommand@,IRemInterfaceOSAP.DichiarazioneTosapCosap)
+  id: UpdateDichiarazione(System.Data.SqlClient.SqlCommand@,IRemInterfaceOSAP.DichiarazioneTosapCosap)
+  parent: DAO.DichiarazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: UpdateDichiarazione(ref SqlCommand, DichiarazioneTosapCosap)
+  nameWithType: DichiarazioniDAO.UpdateDichiarazione(ref SqlCommand, DichiarazioneTosapCosap)
+  fullName: DAO.DichiarazioniDAO.UpdateDichiarazione(ref System.Data.SqlClient.SqlCommand, IRemInterfaceOSAP.DichiarazioneTosapCosap)
+  type: Method
+  source:
+    id: UpdateDichiarazione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\DichiarazioniDAO.cs
+    startLine: 247
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public void UpdateDichiarazione(ref SqlCommand cmdMyCommand, DichiarazioneTosapCosap dichiarazione)
+    parameters:
+    - id: cmdMyCommand
+      type: System.Data.SqlClient.SqlCommand
+    - id: dichiarazione
+      type: IRemInterfaceOSAP.DichiarazioneTosapCosap
+    content.vb: Public Sub UpdateDichiarazione(ByRef cmdMyCommand As SqlCommand, dichiarazione As DichiarazioneTosapCosap)
+  overload: DAO.DichiarazioniDAO.UpdateDichiarazione*
+  nameWithType.vb: DichiarazioniDAO.UpdateDichiarazione(ByRef SqlCommand, DichiarazioneTosapCosap)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DAO.DichiarazioniDAO.UpdateDichiarazione(ByRef System.Data.SqlClient.SqlCommand, IRemInterfaceOSAP.DichiarazioneTosapCosap)
+  name.vb: UpdateDichiarazione(ByRef SqlCommand, DichiarazioneTosapCosap)
+- uid: DAO.DichiarazioniDAO.GetDichiarazione(System.String,System.Int32,System.String,System.Int32,System.String)
+  commentId: M:DAO.DichiarazioniDAO.GetDichiarazione(System.String,System.Int32,System.String,System.Int32,System.String)
+  id: GetDichiarazione(System.String,System.Int32,System.String,System.Int32,System.String)
+  parent: DAO.DichiarazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: GetDichiarazione(String, Int32, String, Int32, String)
+  nameWithType: DichiarazioniDAO.GetDichiarazione(String, Int32, String, Int32, String)
+  fullName: DAO.DichiarazioniDAO.GetDichiarazione(System.String, System.Int32, System.String, System.Int32, System.String)
+  type: Method
+  source:
+    id: GetDichiarazione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\DichiarazioniDAO.cs
+    startLine: 435
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public DichiarazioneTosapCosap GetDichiarazione(string ConnectionString, int IdDichiarazione, string IdEnte, int Anno, string CodTributo)
+    parameters:
+    - id: ConnectionString
+      type: System.String
+    - id: IdDichiarazione
+      type: System.Int32
+    - id: IdEnte
+      type: System.String
+    - id: Anno
+      type: System.Int32
+    - id: CodTributo
+      type: System.String
+    return:
+      type: IRemInterfaceOSAP.DichiarazioneTosapCosap
+    content.vb: Public Function GetDichiarazione(ConnectionString As String, IdDichiarazione As Integer, IdEnte As String, Anno As Integer, CodTributo As String) As DichiarazioneTosapCosap
+  overload: DAO.DichiarazioniDAO.GetDichiarazione*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.DichiarazioniDAO.GetNDichAutomatico(System.String,System.String,System.String)
+  commentId: M:DAO.DichiarazioniDAO.GetNDichAutomatico(System.String,System.String,System.String)
+  id: GetNDichAutomatico(System.String,System.String,System.String)
+  parent: DAO.DichiarazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: GetNDichAutomatico(String, String, String)
+  nameWithType: DichiarazioniDAO.GetNDichAutomatico(String, String, String)
+  fullName: DAO.DichiarazioniDAO.GetNDichAutomatico(System.String, System.String, System.String)
+  type: Method
+  source:
+    id: GetNDichAutomatico
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\DichiarazioniDAO.cs
+    startLine: 532
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public string GetNDichAutomatico(string ConnectionString, string IdEnte, string CodTributo)
+    parameters:
+    - id: ConnectionString
+      type: System.String
+    - id: IdEnte
+      type: System.String
+    - id: CodTributo
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function GetNDichAutomatico(ConnectionString As String, IdEnte As String, CodTributo As String) As String
+  overload: DAO.DichiarazioniDAO.GetNDichAutomatico*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.DichiarazioniDAO.GetDichiarazioneForMotore(System.Int32,System.String,System.String,System.Int32,System.String,System.Data.SqlClient.SqlCommand@)
+  commentId: M:DAO.DichiarazioniDAO.GetDichiarazioneForMotore(System.Int32,System.String,System.String,System.Int32,System.String,System.Data.SqlClient.SqlCommand@)
+  id: GetDichiarazioneForMotore(System.Int32,System.String,System.String,System.Int32,System.String,System.Data.SqlClient.SqlCommand@)
+  parent: DAO.DichiarazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: GetDichiarazioneForMotore(Int32, String, String, Int32, String, ref SqlCommand)
+  nameWithType: DichiarazioniDAO.GetDichiarazioneForMotore(Int32, String, String, Int32, String, ref SqlCommand)
+  fullName: DAO.DichiarazioniDAO.GetDichiarazioneForMotore(System.Int32, System.String, System.String, System.Int32, System.String, ref System.Data.SqlClient.SqlCommand)
+  type: Method
+  source:
+    id: GetDichiarazioneForMotore
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\DichiarazioniDAO.cs
+    startLine: 598
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public DichiarazioneTosapCosap GetDichiarazioneForMotore(int IdDichiarazione, string IdEnte, string CodTributo, int Anno, string ListOccupazioni, ref SqlCommand cmdMyCommand)
+    parameters:
+    - id: IdDichiarazione
+      type: System.Int32
+    - id: IdEnte
+      type: System.String
+    - id: CodTributo
+      type: System.String
+    - id: Anno
+      type: System.Int32
+    - id: ListOccupazioni
+      type: System.String
+    - id: cmdMyCommand
+      type: System.Data.SqlClient.SqlCommand
+    return:
+      type: IRemInterfaceOSAP.DichiarazioneTosapCosap
+    content.vb: Public Function GetDichiarazioneForMotore(IdDichiarazione As Integer, IdEnte As String, CodTributo As String, Anno As Integer, ListOccupazioni As String, ByRef cmdMyCommand As SqlCommand) As DichiarazioneTosapCosap
+  overload: DAO.DichiarazioniDAO.GetDichiarazioneForMotore*
+  nameWithType.vb: DichiarazioniDAO.GetDichiarazioneForMotore(Int32, String, String, Int32, String, ByRef SqlCommand)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DAO.DichiarazioniDAO.GetDichiarazioneForMotore(System.Int32, System.String, System.String, System.Int32, System.String, ByRef System.Data.SqlClient.SqlCommand)
+  name.vb: GetDichiarazioneForMotore(Int32, String, String, Int32, String, ByRef SqlCommand)
+- uid: DAO.DichiarazioniDAO.SearchDichiarazioni(DTO.DichiarazioneSearch)
+  commentId: M:DAO.DichiarazioniDAO.SearchDichiarazioni(DTO.DichiarazioneSearch)
+  id: SearchDichiarazioni(DTO.DichiarazioneSearch)
+  parent: DAO.DichiarazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: SearchDichiarazioni(DichiarazioneSearch)
+  nameWithType: DichiarazioniDAO.SearchDichiarazioni(DichiarazioneSearch)
+  fullName: DAO.DichiarazioniDAO.SearchDichiarazioni(DTO.DichiarazioneSearch)
+  type: Method
+  source:
+    id: SearchDichiarazioni
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\DichiarazioniDAO.cs
+    startLine: 646
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public DataTable SearchDichiarazioni(DichiarazioneSearch SearchParams)
+    parameters:
+    - id: SearchParams
+      type: DTO.DichiarazioneSearch
+    return:
+      type: System.Data.DataTable
+    content.vb: Public Function SearchDichiarazioni(SearchParams As DichiarazioneSearch) As DataTable
+  overload: DAO.DichiarazioniDAO.SearchDichiarazioni*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.DichiarazioniDAO.PrintDichiarazioni(System.String,DTO.DichiarazioneSearch)
+  commentId: M:DAO.DichiarazioniDAO.PrintDichiarazioni(System.String,DTO.DichiarazioneSearch)
+  id: PrintDichiarazioni(System.String,DTO.DichiarazioneSearch)
+  parent: DAO.DichiarazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: PrintDichiarazioni(String, DichiarazioneSearch)
+  nameWithType: DichiarazioniDAO.PrintDichiarazioni(String, DichiarazioneSearch)
+  fullName: DAO.DichiarazioniDAO.PrintDichiarazioni(System.String, DTO.DichiarazioneSearch)
+  type: Method
+  source:
+    id: PrintDichiarazioni
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\DichiarazioniDAO.cs
+    startLine: 731
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public DataView PrintDichiarazioni(string myStringConnection, DichiarazioneSearch SearchParams)
+    parameters:
+    - id: myStringConnection
+      type: System.String
+      description: ''
+    - id: SearchParams
+      type: DTO.DichiarazioneSearch
+      description: ''
+    return:
+      type: System.Data.DataView
+      description: ''
+    content.vb: Public Function PrintDichiarazioni(myStringConnection As String, SearchParams As DichiarazioneSearch) As DataView
+  overload: DAO.DichiarazioniDAO.PrintDichiarazioni*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.DichiarazioniDAO.GetIdDichiarazioniAnno(System.Int32,System.String,System.String,System.Int32,System.Int32,System.String,System.Data.SqlClient.SqlCommand@)
+  commentId: M:DAO.DichiarazioniDAO.GetIdDichiarazioniAnno(System.Int32,System.String,System.String,System.Int32,System.Int32,System.String,System.Data.SqlClient.SqlCommand@)
+  id: GetIdDichiarazioniAnno(System.Int32,System.String,System.String,System.Int32,System.Int32,System.String,System.Data.SqlClient.SqlCommand@)
+  parent: DAO.DichiarazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: GetIdDichiarazioniAnno(Int32, String, String, Int32, Int32, String, ref SqlCommand)
+  nameWithType: DichiarazioniDAO.GetIdDichiarazioniAnno(Int32, String, String, Int32, Int32, String, ref SqlCommand)
+  fullName: DAO.DichiarazioniDAO.GetIdDichiarazioniAnno(System.Int32, System.String, System.String, System.Int32, System.Int32, System.String, ref System.Data.SqlClient.SqlCommand)
+  type: Method
+  source:
+    id: GetIdDichiarazioniAnno
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\DichiarazioniDAO.cs
+    startLine: 823
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public DataTable GetIdDichiarazioniAnno(int Anno, string IdEnte, string IdTributo, int IdContribuente, int IdDichiarazione, string ListOccupazioni, ref SqlCommand cmdMyCommand)
+    parameters:
+    - id: Anno
+      type: System.Int32
+    - id: IdEnte
+      type: System.String
+    - id: IdTributo
+      type: System.String
+    - id: IdContribuente
+      type: System.Int32
+    - id: IdDichiarazione
+      type: System.Int32
+    - id: ListOccupazioni
+      type: System.String
+    - id: cmdMyCommand
+      type: System.Data.SqlClient.SqlCommand
+    return:
+      type: System.Data.DataTable
+    content.vb: Public Function GetIdDichiarazioniAnno(Anno As Integer, IdEnte As String, IdTributo As String, IdContribuente As Integer, IdDichiarazione As Integer, ListOccupazioni As String, ByRef cmdMyCommand As SqlCommand) As DataTable
+  overload: DAO.DichiarazioniDAO.GetIdDichiarazioniAnno*
+  nameWithType.vb: DichiarazioniDAO.GetIdDichiarazioniAnno(Int32, String, String, Int32, Int32, String, ByRef SqlCommand)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DAO.DichiarazioniDAO.GetIdDichiarazioniAnno(System.Int32, System.String, System.String, System.Int32, System.Int32, System.String, ByRef System.Data.SqlClient.SqlCommand)
+  name.vb: GetIdDichiarazioniAnno(Int32, String, String, Int32, Int32, String, ByRef SqlCommand)
+- uid: DAO.DichiarazioniDAO.IsCartellaCreata(System.Int32)
+  commentId: M:DAO.DichiarazioniDAO.IsCartellaCreata(System.Int32)
+  id: IsCartellaCreata(System.Int32)
+  parent: DAO.DichiarazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: IsCartellaCreata(Int32)
+  nameWithType: DichiarazioniDAO.IsCartellaCreata(Int32)
+  fullName: DAO.DichiarazioniDAO.IsCartellaCreata(System.Int32)
+  type: Method
+  source:
+    id: IsCartellaCreata
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\DichiarazioniDAO.cs
+    startLine: 857
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public bool IsCartellaCreata(int IdDichiarazione)
+    parameters:
+    - id: IdDichiarazione
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsCartellaCreata(IdDichiarazione As Integer) As Boolean
+  overload: DAO.DichiarazioniDAO.IsCartellaCreata*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.DichiarazioniDAO.connessioneDB
+  commentId: M:DAO.DichiarazioniDAO.connessioneDB
+  id: connessioneDB
+  parent: DAO.DichiarazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: connessioneDB()
+  nameWithType: DichiarazioniDAO.connessioneDB()
+  fullName: DAO.DichiarazioniDAO.connessioneDB()
+  type: Method
+  source:
+    id: connessioneDB
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\DichiarazioniDAO.cs
+    startLine: 926
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public void connessioneDB()
+    content.vb: Public Sub connessioneDB
+  overload: DAO.DichiarazioniDAO.connessioneDB*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.DichiarazioniDAO.connessioneDB(System.String)
+  commentId: M:DAO.DichiarazioniDAO.connessioneDB(System.String)
+  id: connessioneDB(System.String)
+  parent: DAO.DichiarazioniDAO
+  langs:
+  - csharp
+  - vb
+  name: connessioneDB(String)
+  nameWithType: DichiarazioniDAO.connessioneDB(String)
+  fullName: DAO.DichiarazioniDAO.connessioneDB(System.String)
+  type: Method
+  source:
+    id: connessioneDB
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\DichiarazioniDAO.cs
+    startLine: 952
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public void connessioneDB(string ConnectionString)
+    parameters:
+    - id: ConnectionString
+      type: System.String
+    content.vb: Public Sub connessioneDB(ConnectionString As String)
+  overload: DAO.DichiarazioniDAO.connessioneDB*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: DAO
+  commentId: N:DAO
+  name: DAO
+  nameWithType: DAO
+  fullName: DAO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DAO.DichiarazioniDAO.#ctor*
+  commentId: Overload:DAO.DichiarazioniDAO.#ctor
+  name: DichiarazioniDAO
+  nameWithType: DichiarazioniDAO.DichiarazioniDAO
+  fullName: DAO.DichiarazioniDAO.DichiarazioniDAO
+- uid: DAO.DichiarazioniDAO.GetArticolo*
+  commentId: Overload:DAO.DichiarazioniDAO.GetArticolo
+  name: GetArticolo
+  nameWithType: DichiarazioniDAO.GetArticolo
+  fullName: DAO.DichiarazioniDAO.GetArticolo
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Data.DataTable
+  commentId: T:System.Data.DataTable
+  parent: System.Data
+  isExternal: true
+  name: DataTable
+  nameWithType: DataTable
+  fullName: System.Data.DataTable
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+- uid: DAO.DichiarazioniDAO.GetArticoloPrecedente*
+  commentId: Overload:DAO.DichiarazioniDAO.GetArticoloPrecedente
+  name: GetArticoloPrecedente
+  nameWithType: DichiarazioniDAO.GetArticoloPrecedente
+  fullName: DAO.DichiarazioniDAO.GetArticoloPrecedente
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Data.SqlClient.SqlCommand
+  commentId: T:System.Data.SqlClient.SqlCommand
+  parent: System.Data.SqlClient
+  isExternal: true
+  name: SqlCommand
+  nameWithType: SqlCommand
+  fullName: System.Data.SqlClient.SqlCommand
+- uid: System.Data.SqlClient
+  commentId: N:System.Data.SqlClient
+  isExternal: true
+  name: System.Data.SqlClient
+  nameWithType: System.Data.SqlClient
+  fullName: System.Data.SqlClient
+- uid: DAO.DichiarazioniDAO.SetDichiarazione*
+  commentId: Overload:DAO.DichiarazioniDAO.SetDichiarazione
+  name: SetDichiarazione
+  nameWithType: DichiarazioniDAO.SetDichiarazione
+  fullName: DAO.DichiarazioniDAO.SetDichiarazione
+- uid: IRemInterfaceOSAP.DichiarazioneTosapCosap
+  commentId: T:IRemInterfaceOSAP.DichiarazioneTosapCosap
+  parent: IRemInterfaceOSAP
+  isExternal: true
+  name: DichiarazioneTosapCosap
+  nameWithType: DichiarazioneTosapCosap
+  fullName: IRemInterfaceOSAP.DichiarazioneTosapCosap
+- uid: IRemInterfaceOSAP
+  commentId: N:IRemInterfaceOSAP
+  isExternal: true
+  name: IRemInterfaceOSAP
+  nameWithType: IRemInterfaceOSAP
+  fullName: IRemInterfaceOSAP
+- uid: DAO.DichiarazioniDAO.UpdateDichiarazione*
+  commentId: Overload:DAO.DichiarazioniDAO.UpdateDichiarazione
+  name: UpdateDichiarazione
+  nameWithType: DichiarazioniDAO.UpdateDichiarazione
+  fullName: DAO.DichiarazioniDAO.UpdateDichiarazione
+- uid: DAO.DichiarazioniDAO.GetDichiarazione*
+  commentId: Overload:DAO.DichiarazioniDAO.GetDichiarazione
+  name: GetDichiarazione
+  nameWithType: DichiarazioniDAO.GetDichiarazione
+  fullName: DAO.DichiarazioniDAO.GetDichiarazione
+- uid: DAO.DichiarazioniDAO.GetNDichAutomatico*
+  commentId: Overload:DAO.DichiarazioniDAO.GetNDichAutomatico
+  name: GetNDichAutomatico
+  nameWithType: DichiarazioniDAO.GetNDichAutomatico
+  fullName: DAO.DichiarazioniDAO.GetNDichAutomatico
+- uid: DAO.DichiarazioniDAO.GetDichiarazioneForMotore*
+  commentId: Overload:DAO.DichiarazioniDAO.GetDichiarazioneForMotore
+  name: GetDichiarazioneForMotore
+  nameWithType: DichiarazioniDAO.GetDichiarazioneForMotore
+  fullName: DAO.DichiarazioniDAO.GetDichiarazioneForMotore
+- uid: DAO.DichiarazioniDAO.SearchDichiarazioni*
+  commentId: Overload:DAO.DichiarazioniDAO.SearchDichiarazioni
+  name: SearchDichiarazioni
+  nameWithType: DichiarazioniDAO.SearchDichiarazioni
+  fullName: DAO.DichiarazioniDAO.SearchDichiarazioni
+- uid: DTO.DichiarazioneSearch
+  commentId: T:DTO.DichiarazioneSearch
+  parent: DTO
+  name: DichiarazioneSearch
+  nameWithType: DichiarazioneSearch
+  fullName: DTO.DichiarazioneSearch
+- uid: DTO
+  commentId: N:DTO
+  name: DTO
+  nameWithType: DTO
+  fullName: DTO
+- uid: DAO.DichiarazioniDAO.PrintDichiarazioni*
+  commentId: Overload:DAO.DichiarazioniDAO.PrintDichiarazioni
+  name: PrintDichiarazioni
+  nameWithType: DichiarazioniDAO.PrintDichiarazioni
+  fullName: DAO.DichiarazioniDAO.PrintDichiarazioni
+- uid: System.Data.DataView
+  commentId: T:System.Data.DataView
+  parent: System.Data
+  isExternal: true
+  name: DataView
+  nameWithType: DataView
+  fullName: System.Data.DataView
+- uid: DAO.DichiarazioniDAO.GetIdDichiarazioniAnno*
+  commentId: Overload:DAO.DichiarazioniDAO.GetIdDichiarazioniAnno
+  name: GetIdDichiarazioniAnno
+  nameWithType: DichiarazioniDAO.GetIdDichiarazioniAnno
+  fullName: DAO.DichiarazioniDAO.GetIdDichiarazioniAnno
+- uid: DAO.DichiarazioniDAO.IsCartellaCreata*
+  commentId: Overload:DAO.DichiarazioniDAO.IsCartellaCreata
+  name: IsCartellaCreata
+  nameWithType: DichiarazioniDAO.IsCartellaCreata
+  fullName: DAO.DichiarazioniDAO.IsCartellaCreata
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: DAO.DichiarazioniDAO.connessioneDB*
+  commentId: Overload:DAO.DichiarazioniDAO.connessioneDB
+  name: connessioneDB
+  nameWithType: DichiarazioniDAO.connessioneDB
+  fullName: DAO.DichiarazioniDAO.connessioneDB

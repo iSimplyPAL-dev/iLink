@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" />
+  <Import Project="..\packages\Text.Analyzers.2.6.3\build\Text.Analyzers.props" Condition="Exists('..\packages\Text.Analyzers.2.6.3\build\Text.Analyzers.props')" />
+  <Import Project="..\packages\Microsoft.NetFramework.Analyzers.2.6.3\build\Microsoft.NetFramework.Analyzers.props" Condition="Exists('..\packages\Microsoft.NetFramework.Analyzers.2.6.3\build\Microsoft.NetFramework.Analyzers.props')" />
+  <Import Project="..\packages\Microsoft.NetCore.Analyzers.2.6.3\build\Microsoft.NetCore.Analyzers.props" Condition="Exists('..\packages\Microsoft.NetCore.Analyzers.2.6.3\build\Microsoft.NetCore.Analyzers.props')" />
+  <Import Project="..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\build\Microsoft.CodeQuality.Analyzers.props" Condition="Exists('..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\build\Microsoft.CodeQuality.Analyzers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C37EE8D6-9EC3-42BF-B6F7-5CF13D5A792E}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>AnagraficaWeb</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>
+    </RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>AnagraficaWeb.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>AnagraficaWeb.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AnagInterface">
+      <HintPath>..\..\..\DLLComuni\AnagInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="Anagrafica">
+      <HintPath>..\..\..\DLLComuni\Anagrafica.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\DLLComuni\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="OggettiComuniStrade">
+      <HintPath>..\..\..\DLLComuni\OggettiComuniStrade.dll</HintPath>
+    </Reference>
+    <Reference Include="Ribes.OPENgov.WebControls">
+      <HintPath>..\..\..\DLLComuni\Ribes.OPENgov.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="RKLib.ExportData">
+      <HintPath>..\..\..\DLLComuni\RKLib.ExportData.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="Utility, Version=1.0.7495.28013, Culture=neutral, PublicKeyToken=ae1027569650564c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLComuni\Utility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.HtmlControls" />
+    <Import Include="System.Web.UI.WebControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anagrafica.vsdisco" />
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Comandi\ComandiAnagDoppieMancanti.aspx.designer.vb">
+      <DependentUpon>ComandiAnagDoppieMancanti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comandi\ComandiAnagDoppieMancanti.aspx.vb">
+      <DependentUpon>ComandiAnagDoppieMancanti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comandi\ComandiDettaglio.aspx.designer.vb">
+      <DependentUpon>ComandiDettaglio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comandi\ComandiDettaglio.aspx.vb">
+      <DependentUpon>ComandiDettaglio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comandi\ComandiInsertSaveAnagrafica.aspx.designer.vb">
+      <DependentUpon>ComandiInsertSaveAnagrafica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comandi\ComandiInsertSaveAnagrafica.aspx.vb">
+      <DependentUpon>ComandiInsertSaveAnagrafica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comandi\ComandiRicercaAnagrafica.aspx.designer.vb">
+      <DependentUpon>ComandiRicercaAnagrafica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comandi\ComandiRicercaAnagrafica.aspx.vb">
+      <DependentUpon>ComandiRicercaAnagrafica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comandi\ComandiRicercaAnagraficaDop.aspx.designer.vb">
+      <DependentUpon>ComandiRicercaAnagraficaDop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comandi\ComandiRicercaAnagraficaDop.aspx.vb">
+      <DependentUpon>ComandiRicercaAnagraficaDop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comandi\ComandiRicercaAnagraficaGenerale.aspx.designer.vb">
+      <DependentUpon>ComandiRicercaAnagraficaGenerale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comandi\ComandiRicercaAnagraficaGenerale.aspx.vb">
+      <DependentUpon>ComandiRicercaAnagraficaGenerale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\Anagrafica.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\ReferenceWS.vb">
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="ControlloCinCFPI.aspx.designer.vb">
+      <DependentUpon>ControlloCinCFPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlloCinCFPI.aspx.vb">
+      <DependentUpon>ControlloCinCFPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormAnagrafica.aspx.designer.vb">
+      <DependentUpon>FormAnagrafica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormAnagrafica.aspx.vb">
+      <DependentUpon>FormAnagrafica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrameRicercaAnagraficaGenerale.aspx.vb">
+      <DependentUpon>FrameRicercaAnagraficaGenerale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Generali\Classi\Costanti.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generali\Classi\GestioneFile.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RicercaAnagrafica.aspx.designer.vb">
+      <DependentUpon>RicercaAnagrafica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RicercaAnagrafica.aspx.vb">
+      <DependentUpon>RicercaAnagrafica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RicercaAnagraficaDoppia.aspx.designer.vb">
+      <DependentUpon>RicercaAnagraficaDoppia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RicercaAnagraficaDoppia.aspx.vb">
+      <DependentUpon>RicercaAnagraficaDoppia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchResultsAnagrafica.aspx.designer.vb">
+      <DependentUpon>SearchResultsAnagrafica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchResultsAnagrafica.aspx.vb">
+      <DependentUpon>SearchResultsAnagrafica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchResultsAnagraficaDoppia.aspx.designer.vb">
+      <DependentUpon>SearchResultsAnagraficaDoppia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchResultsAnagraficaDoppia.aspx.vb">
+      <DependentUpon>SearchResultsAnagraficaDoppia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchResultsAnagraficaGenerale.aspx.designer.vb">
+      <DependentUpon>SearchResultsAnagraficaGenerale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchResultsAnagraficaGenerale.aspx.vb">
+      <DependentUpon>SearchResultsAnagraficaGenerale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Content Include="Comandi\ComandiAnagDoppieMancanti.aspx" />
+    <Content Include="Comandi\ComandiDettaglio.aspx" />
+    <Content Include="Comandi\ComandiInsertSaveAnagrafica.aspx" />
+    <Content Include="Comandi\ComandiRicercaAnagrafica.aspx" />
+    <Content Include="Comandi\ComandiRicercaAnagraficaDop.aspx" />
+    <Content Include="Comandi\ComandiRicercaAnagraficaGenerale.aspx" />
+    <Content Include="ControlloCinCFPI.aspx" />
+    <Content Include="FormAnagrafica.aspx" />
+    <Content Include="FrameRicercaAnagraficaGenerale.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="RicercaAnagrafica.aspx" />
+    <Content Include="RicercaAnagraficaDoppia.aspx" />
+    <Content Include="SearchResultsAnagrafica.aspx" />
+    <Content Include="SearchResultsAnagraficaDoppia.aspx" />
+    <Content Include="SearchResultsAnagraficaGenerale.aspx" />
+    <Content Include="_vbs\ControlliFormali.vbs" />
+    <Content Include="_vbs\OperazioniSuCampi.vbs" />
+    <EmbeddedResource Include="Comandi\ComandiAnagDoppieMancanti.aspx.resx">
+      <DependentUpon>ComandiAnagDoppieMancanti.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comandi\ComandiDettaglio.aspx.resx">
+      <DependentUpon>ComandiDettaglio.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comandi\ComandiInsertSaveAnagrafica.aspx.resx">
+      <DependentUpon>ComandiInsertSaveAnagrafica.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comandi\ComandiRicercaAnagrafica.aspx.resx">
+      <DependentUpon>ComandiRicercaAnagrafica.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comandi\ComandiRicercaAnagraficaDop.aspx.resx">
+      <DependentUpon>ComandiRicercaAnagraficaDop.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comandi\ComandiRicercaAnagraficaGenerale.aspx.resx">
+      <DependentUpon>ComandiRicercaAnagraficaGenerale.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlloCinCFPI.aspx.resx">
+      <DependentUpon>ControlloCinCFPI.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAnagrafica.aspx.resx">
+      <DependentUpon>FormAnagrafica.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameRicercaAnagraficaGenerale.aspx.resx">
+      <DependentUpon>FrameRicercaAnagraficaGenerale.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RicercaAnagrafica.aspx.resx">
+      <DependentUpon>RicercaAnagrafica.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RicercaAnagraficaDoppia.aspx.resx">
+      <DependentUpon>RicercaAnagraficaDoppia.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchResultsAnagrafica.aspx.resx">
+      <DependentUpon>SearchResultsAnagrafica.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchResultsAnagraficaDoppia.aspx.resx">
+      <DependentUpon>SearchResultsAnagraficaDoppia.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchResultsAnagraficaGenerale.aspx.resx">
+      <DependentUpon>SearchResultsAnagraficaGenerale.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="packages.config" />
+    <Content Include="web.config" />
+    <Content Include="toc.yml" />
+    <Content Include="index.md" />
+    <Content Include="docfx.json" />
+    <Content Include="articles\toc.md" />
+    <Content Include="articles\intro.md" />
+    <Content Include="api\index.md" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\analyzers\dotnet\vb\Humanizer.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\analyzers\dotnet\vb\Microsoft.CodeQuality.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\analyzers\dotnet\vb\Microsoft.CodeQuality.VisualBasic.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.NetCore.Analyzers.2.6.3\analyzers\dotnet\vb\Microsoft.NetCore.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.NetCore.Analyzers.2.6.3\analyzers\dotnet\vb\Microsoft.NetCore.VisualBasic.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.NetFramework.Analyzers.2.6.3\analyzers\dotnet\vb\Microsoft.NetFramework.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.NetFramework.Analyzers.2.6.3\analyzers\dotnet\vb\Microsoft.NetFramework.VisualBasic.Analyzers.dll" />
+    <Analyzer Include="..\packages\Text.Analyzers.2.6.3\analyzers\dotnet\vb\Text.Analyzers.dll" />
+    <Analyzer Include="..\packages\Text.Analyzers.2.6.3\analyzers\dotnet\vb\Text.VisualBasic.Analyzers.dll" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51611</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Questo progetto fa riferimento a uno o più pacchetti NuGet che non sono presenti in questo computer. Usare lo strumento di ripristino dei pacchetti NuGet per scaricarli. Per altre informazioni, vedere http://go.microsoft.com/fwlink/?LinkID=322105. Il file mancante è {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\build\Microsoft.CodeQuality.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeQuality.Analyzers.2.6.3\build\Microsoft.CodeQuality.Analyzers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.NetCore.Analyzers.2.6.3\build\Microsoft.NetCore.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.NetCore.Analyzers.2.6.3\build\Microsoft.NetCore.Analyzers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.NetFramework.Analyzers.2.6.3\build\Microsoft.NetFramework.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.NetFramework.Analyzers.2.6.3\build\Microsoft.NetFramework.Analyzers.props'))" />
+    <Error Condition="!Exists('..\packages\Text.Analyzers.2.6.3\build\Text.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Text.Analyzers.2.6.3\build\Text.Analyzers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props'))" />
+    <Error Condition="!Exists('..\packages\docfx.console.2.56.6\build\docfx.console.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\docfx.console.2.56.6\build\docfx.console.targets'))" />
+  </Target>
+  <Import Project="..\packages\docfx.console.2.56.6\build\docfx.console.targets" Condition="Exists('..\packages\docfx.console.2.56.6\build\docfx.console.targets')" />
+</Project>

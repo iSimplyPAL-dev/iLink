@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENGovTOCO.MotoreTOCO.CalcolaImportoTOCOCompletedEventHandler
+  commentId: T:OPENGovTOCO.MotoreTOCO.CalcolaImportoTOCOCompletedEventHandler
+  id: CalcolaImportoTOCOCompletedEventHandler
+  parent: OPENGovTOCO.MotoreTOCO
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: CalcolaImportoTOCOCompletedEventHandler
+  nameWithType: CalcolaImportoTOCOCompletedEventHandler
+  fullName: OPENGovTOCO.MotoreTOCO.CalcolaImportoTOCOCompletedEventHandler
+  type: Delegate
+  source:
+    id: CalcolaImportoTOCOCompletedEventHandler
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Web References\MotoreTOCO\Reference.cs
+    startLine: 3485
+  assemblies:
+  - OPENGovTOCO
+  namespace: OPENGovTOCO.MotoreTOCO
+  remarks: ''
+  example: []
+  syntax:
+    content: public delegate void CalcolaImportoTOCOCompletedEventHandler(object sender, CalcolaImportoTOCOCompletedEventArgs e);
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: OPENGovTOCO.MotoreTOCO.CalcolaImportoTOCOCompletedEventArgs
+    content.vb: Public Delegate Sub CalcolaImportoTOCOCompletedEventHandler(sender As Object, e As CalcolaImportoTOCOCompletedEventArgs)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: OPENGovTOCO.MotoreTOCO
+  commentId: N:OPENGovTOCO.MotoreTOCO
+  name: OPENGovTOCO.MotoreTOCO
+  nameWithType: OPENGovTOCO.MotoreTOCO
+  fullName: OPENGovTOCO.MotoreTOCO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: OPENGovTOCO.MotoreTOCO.CalcolaImportoTOCOCompletedEventArgs
+  commentId: T:OPENGovTOCO.MotoreTOCO.CalcolaImportoTOCOCompletedEventArgs
+  parent: OPENGovTOCO.MotoreTOCO
+  name: CalcolaImportoTOCOCompletedEventArgs
+  nameWithType: CalcolaImportoTOCOCompletedEventArgs
+  fullName: OPENGovTOCO.MotoreTOCO.CalcolaImportoTOCOCompletedEventArgs
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

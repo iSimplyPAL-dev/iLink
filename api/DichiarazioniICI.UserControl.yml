@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.UserControl
+  commentId: N:DichiarazioniICI.UserControl
+  id: DichiarazioniICI.UserControl
+  children:
+  - DichiarazioniICI.UserControl.FiltroImmobile
+  - DichiarazioniICI.UserControl.FiltroPersona
+  langs:
+  - csharp
+  - vb
+  name: DichiarazioniICI.UserControl
+  nameWithType: DichiarazioniICI.UserControl
+  fullName: DichiarazioniICI.UserControl
+  type: Namespace
+  assemblies:
+  - DichiarazioniICI
+references:
+- uid: DichiarazioniICI.UserControl.FiltroImmobile
+  commentId: T:DichiarazioniICI.UserControl.FiltroImmobile
+  parent: DichiarazioniICI.UserControl
+  name: FiltroImmobile
+  nameWithType: FiltroImmobile
+  fullName: DichiarazioniICI.UserControl.FiltroImmobile
+- uid: DichiarazioniICI.UserControl.FiltroPersona
+  commentId: T:DichiarazioniICI.UserControl.FiltroPersona
+  parent: DichiarazioniICI.UserControl
+  name: FiltroPersona
+  nameWithType: FiltroPersona
+  fullName: DichiarazioniICI.UserControl.FiltroPersona
+- uid: DichiarazioniICI.UserControl
+  commentId: N:DichiarazioniICI.UserControl
+  name: DichiarazioniICI.UserControl
+  nameWithType: DichiarazioniICI.UserControl
+  fullName: DichiarazioniICI.UserControl

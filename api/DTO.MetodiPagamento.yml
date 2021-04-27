@@ -1,0 +1,949 @@
+### YamlMime:ManagedReference
+items:
+- uid: DTO.MetodiPagamento
+  commentId: T:DTO.MetodiPagamento
+  id: MetodiPagamento
+  parent: DTO
+  children:
+  - DTO.MetodiPagamento.COL_HEADERS_MagPag
+  - DTO.MetodiPagamento.COL_HEADERS_MinPag
+  - DTO.MetodiPagamento.COL_HEADERS_SinglePag
+  - DTO.MetodiPagamento.DeletePagamento(System.Int32)
+  - DTO.MetodiPagamento.GetColumnsToExport(System.String)
+  - DTO.MetodiPagamento.GetPagamenti(DTO.PagamentiSearch)
+  - DTO.MetodiPagamento.GetPagamenti(DTO.PagamentiSearch,System.String)
+  - DTO.MetodiPagamento.GetPagamenti(DTO.PagamentiSearch,System.String,System.Data.DataTable@)
+  - DTO.MetodiPagamento.GetPagamentiCartella(System.Int32,System.String)
+  - DTO.MetodiPagamento.GetPagamentoById(System.Int32)
+  - DTO.MetodiPagamento.GetTotalePagatoPerCatella(System.String,System.Int32,System.String)
+  - DTO.MetodiPagamento.InsertUpdatePagamento(IRemInterfaceOSAP.PagamentoExt,System.String)
+  langs:
+  - csharp
+  - vb
+  name: MetodiPagamento
+  nameWithType: MetodiPagamento
+  fullName: DTO.MetodiPagamento
+  type: Class
+  source:
+    id: MetodiPagamento
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 13
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  summary: "\nClasse per la gestione pagamenti\n"
+  example: []
+  syntax:
+    content: public class MetodiPagamento
+    content.vb: Public Class MetodiPagamento
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DTO.MetodiPagamento.COL_HEADERS_SinglePag
+  commentId: F:DTO.MetodiPagamento.COL_HEADERS_SinglePag
+  id: COL_HEADERS_SinglePag
+  parent: DTO.MetodiPagamento
+  langs:
+  - csharp
+  - vb
+  name: COL_HEADERS_SinglePag
+  nameWithType: MetodiPagamento.COL_HEADERS_SinglePag
+  fullName: DTO.MetodiPagamento.COL_HEADERS_SinglePag
+  type: Field
+  source:
+    id: COL_HEADERS_SinglePag
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 38
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static string[] COL_HEADERS_SinglePag
+    return:
+      type: System.String[]
+    content.vb: Public Shared COL_HEADERS_SinglePag As String()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiPagamento.COL_HEADERS_MagPag
+  commentId: F:DTO.MetodiPagamento.COL_HEADERS_MagPag
+  id: COL_HEADERS_MagPag
+  parent: DTO.MetodiPagamento
+  langs:
+  - csharp
+  - vb
+  name: COL_HEADERS_MagPag
+  nameWithType: MetodiPagamento.COL_HEADERS_MagPag
+  fullName: DTO.MetodiPagamento.COL_HEADERS_MagPag
+  type: Field
+  source:
+    id: COL_HEADERS_MagPag
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 41
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static string[] COL_HEADERS_MagPag
+    return:
+      type: System.String[]
+    content.vb: Public Shared COL_HEADERS_MagPag As String()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiPagamento.COL_HEADERS_MinPag
+  commentId: F:DTO.MetodiPagamento.COL_HEADERS_MinPag
+  id: COL_HEADERS_MinPag
+  parent: DTO.MetodiPagamento
+  langs:
+  - csharp
+  - vb
+  name: COL_HEADERS_MinPag
+  nameWithType: MetodiPagamento.COL_HEADERS_MinPag
+  fullName: DTO.MetodiPagamento.COL_HEADERS_MinPag
+  type: Field
+  source:
+    id: COL_HEADERS_MinPag
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 44
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static string[] COL_HEADERS_MinPag
+    return:
+      type: System.String[]
+    content.vb: Public Shared COL_HEADERS_MinPag As String()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiPagamento.GetColumnsToExport(System.String)
+  commentId: M:DTO.MetodiPagamento.GetColumnsToExport(System.String)
+  id: GetColumnsToExport(System.String)
+  parent: DTO.MetodiPagamento
+  langs:
+  - csharp
+  - vb
+  name: GetColumnsToExport(String)
+  nameWithType: MetodiPagamento.GetColumnsToExport(String)
+  fullName: DTO.MetodiPagamento.GetColumnsToExport(System.String)
+  type: Method
+  source:
+    id: GetColumnsToExport
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 88
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static int[] GetColumnsToExport(string TypeToExport)
+    parameters:
+    - id: TypeToExport
+      type: System.String
+    return:
+      type: System.Int32[]
+    content.vb: Public Shared Function GetColumnsToExport(TypeToExport As String) As Integer()
+  overload: DTO.MetodiPagamento.GetColumnsToExport*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiPagamento.GetTotalePagatoPerCatella(System.String,System.Int32,System.String)
+  commentId: M:DTO.MetodiPagamento.GetTotalePagatoPerCatella(System.String,System.Int32,System.String)
+  id: GetTotalePagatoPerCatella(System.String,System.Int32,System.String)
+  parent: DTO.MetodiPagamento
+  langs:
+  - csharp
+  - vb
+  name: GetTotalePagatoPerCatella(String, Int32, String)
+  nameWithType: MetodiPagamento.GetTotalePagatoPerCatella(String, Int32, String)
+  fullName: DTO.MetodiPagamento.GetTotalePagatoPerCatella(System.String, System.Int32, System.String)
+  type: Method
+  source:
+    id: GetTotalePagatoPerCatella
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 127
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public static double GetTotalePagatoPerCatella(string idEnte, int idContribuente, string codiceCartella)
+    parameters:
+    - id: idEnte
+      type: System.String
+      description: ''
+    - id: idContribuente
+      type: System.Int32
+      description: ''
+    - id: codiceCartella
+      type: System.String
+      description: ''
+    return:
+      type: System.Double
+      description: ''
+    content.vb: Public Shared Function GetTotalePagatoPerCatella(idEnte As String, idContribuente As Integer, codiceCartella As String) As Double
+  overload: DTO.MetodiPagamento.GetTotalePagatoPerCatella*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiPagamento.GetPagamentiCartella(System.Int32,System.String)
+  commentId: M:DTO.MetodiPagamento.GetPagamentiCartella(System.Int32,System.String)
+  id: GetPagamentiCartella(System.Int32,System.String)
+  parent: DTO.MetodiPagamento
+  langs:
+  - csharp
+  - vb
+  name: GetPagamentiCartella(Int32, String)
+  nameWithType: MetodiPagamento.GetPagamentiCartella(Int32, String)
+  fullName: DTO.MetodiPagamento.GetPagamentiCartella(System.Int32, System.String)
+  type: Method
+  source:
+    id: GetPagamentiCartella
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 150
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public static PagamentoExt[] GetPagamentiCartella(int IdCartella, string IdEnte)
+    parameters:
+    - id: IdCartella
+      type: System.Int32
+      description: ''
+    - id: IdEnte
+      type: System.String
+      description: ''
+    return:
+      type: IRemInterfaceOSAP.PagamentoExt[]
+      description: ''
+    content.vb: Public Shared Function GetPagamentiCartella(IdCartella As Integer, IdEnte As String) As PagamentoExt()
+  overload: DTO.MetodiPagamento.GetPagamentiCartella*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiPagamento.GetPagamentoById(System.Int32)
+  commentId: M:DTO.MetodiPagamento.GetPagamentoById(System.Int32)
+  id: GetPagamentoById(System.Int32)
+  parent: DTO.MetodiPagamento
+  langs:
+  - csharp
+  - vb
+  name: GetPagamentoById(Int32)
+  nameWithType: MetodiPagamento.GetPagamentoById(Int32)
+  fullName: DTO.MetodiPagamento.GetPagamentoById(System.Int32)
+  type: Method
+  source:
+    id: GetPagamentoById
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 173
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  summary: "\nMetodo per recuperare i pagamenti \n"
+  example: []
+  syntax:
+    content: public static PagamentoExt GetPagamentoById(int idPagamento)
+    parameters:
+    - id: idPagamento
+      type: System.Int32
+    return:
+      type: IRemInterfaceOSAP.PagamentoExt
+      description: ''
+    content.vb: Public Shared Function GetPagamentoById(idPagamento As Integer) As PagamentoExt
+  overload: DTO.MetodiPagamento.GetPagamentoById*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiPagamento.GetPagamenti(DTO.PagamentiSearch)
+  commentId: M:DTO.MetodiPagamento.GetPagamenti(DTO.PagamentiSearch)
+  id: GetPagamenti(DTO.PagamentiSearch)
+  parent: DTO.MetodiPagamento
+  langs:
+  - csharp
+  - vb
+  name: GetPagamenti(PagamentiSearch)
+  nameWithType: MetodiPagamento.GetPagamenti(PagamentiSearch)
+  fullName: DTO.MetodiPagamento.GetPagamenti(DTO.PagamentiSearch)
+  type: Method
+  source:
+    id: GetPagamenti
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 208
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  summary: "\nMetodo per recuperare i pagamenti \n"
+  example: []
+  syntax:
+    content: public static PagamentoExt[] GetPagamenti(PagamentiSearch searchParameter)
+    parameters:
+    - id: searchParameter
+      type: DTO.PagamentiSearch
+      description: ''
+    return:
+      type: IRemInterfaceOSAP.PagamentoExt[]
+      description: ''
+    content.vb: Public Shared Function GetPagamenti(searchParameter As PagamentiSearch) As PagamentoExt()
+  overload: DTO.MetodiPagamento.GetPagamenti*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiPagamento.GetPagamenti(DTO.PagamentiSearch,System.String)
+  commentId: M:DTO.MetodiPagamento.GetPagamenti(DTO.PagamentiSearch,System.String)
+  id: GetPagamenti(DTO.PagamentiSearch,System.String)
+  parent: DTO.MetodiPagamento
+  langs:
+  - csharp
+  - vb
+  name: GetPagamenti(PagamentiSearch, String)
+  nameWithType: MetodiPagamento.GetPagamenti(PagamentiSearch, String)
+  fullName: DTO.MetodiPagamento.GetPagamenti(DTO.PagamentiSearch, System.String)
+  type: Method
+  source:
+    id: GetPagamenti
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 222
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static PagamentoExt[] GetPagamenti(PagamentiSearch searchParameter, string sufxxExp)
+    parameters:
+    - id: searchParameter
+      type: DTO.PagamentiSearch
+    - id: sufxxExp
+      type: System.String
+    return:
+      type: IRemInterfaceOSAP.PagamentoExt[]
+    content.vb: Public Shared Function GetPagamenti(searchParameter As PagamentiSearch, sufxxExp As String) As PagamentoExt()
+  overload: DTO.MetodiPagamento.GetPagamenti*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiPagamento.GetPagamenti(DTO.PagamentiSearch,System.String,System.Data.DataTable@)
+  commentId: M:DTO.MetodiPagamento.GetPagamenti(DTO.PagamentiSearch,System.String,System.Data.DataTable@)
+  id: GetPagamenti(DTO.PagamentiSearch,System.String,System.Data.DataTable@)
+  parent: DTO.MetodiPagamento
+  langs:
+  - csharp
+  - vb
+  name: GetPagamenti(PagamentiSearch, String, out DataTable)
+  nameWithType: MetodiPagamento.GetPagamenti(PagamentiSearch, String, out DataTable)
+  fullName: DTO.MetodiPagamento.GetPagamenti(DTO.PagamentiSearch, System.String, out System.Data.DataTable)
+  type: Method
+  source:
+    id: GetPagamenti
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 240
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  summary: "\nMetodo per recuperare i pagamenti \n"
+  example: []
+  syntax:
+    content: public static PagamentoExt[] GetPagamenti(PagamentiSearch searchParameter, string sufxxExp, out DataTable dtRes)
+    parameters:
+    - id: searchParameter
+      type: DTO.PagamentiSearch
+      description: ''
+    - id: sufxxExp
+      type: System.String
+    - id: dtRes
+      type: System.Data.DataTable
+    return:
+      type: IRemInterfaceOSAP.PagamentoExt[]
+      description: ''
+    content.vb: Public Shared Function GetPagamenti(searchParameter As PagamentiSearch, sufxxExp As String, ByRef dtRes As DataTable) As PagamentoExt()
+  overload: DTO.MetodiPagamento.GetPagamenti*
+  nameWithType.vb: MetodiPagamento.GetPagamenti(PagamentiSearch, String, ByRef DataTable)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: DTO.MetodiPagamento.GetPagamenti(DTO.PagamentiSearch, System.String, ByRef System.Data.DataTable)
+  name.vb: GetPagamenti(PagamentiSearch, String, ByRef DataTable)
+- uid: DTO.MetodiPagamento.InsertUpdatePagamento(IRemInterfaceOSAP.PagamentoExt,System.String)
+  commentId: M:DTO.MetodiPagamento.InsertUpdatePagamento(IRemInterfaceOSAP.PagamentoExt,System.String)
+  id: InsertUpdatePagamento(IRemInterfaceOSAP.PagamentoExt,System.String)
+  parent: DTO.MetodiPagamento
+  langs:
+  - csharp
+  - vb
+  name: InsertUpdatePagamento(PagamentoExt, String)
+  nameWithType: MetodiPagamento.InsertUpdatePagamento(PagamentoExt, String)
+  fullName: DTO.MetodiPagamento.InsertUpdatePagamento(IRemInterfaceOSAP.PagamentoExt, System.String)
+  type: Method
+  source:
+    id: InsertUpdatePagamento
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 276
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  summary: "\nInserisce o modifica un pagamento\n"
+  example: []
+  syntax:
+    content: public static int InsertUpdatePagamento(PagamentoExt objToInsertOrUpdate, string operatore)
+    parameters:
+    - id: objToInsertOrUpdate
+      type: IRemInterfaceOSAP.PagamentoExt
+      description: ''
+    - id: operatore
+      type: System.String
+      description: ''
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Shared Function InsertUpdatePagamento(objToInsertOrUpdate As PagamentoExt, operatore As String) As Integer
+  overload: DTO.MetodiPagamento.InsertUpdatePagamento*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiPagamento.DeletePagamento(System.Int32)
+  commentId: M:DTO.MetodiPagamento.DeletePagamento(System.Int32)
+  id: DeletePagamento(System.Int32)
+  parent: DTO.MetodiPagamento
+  langs:
+  - csharp
+  - vb
+  name: DeletePagamento(Int32)
+  nameWithType: MetodiPagamento.DeletePagamento(Int32)
+  fullName: DTO.MetodiPagamento.DeletePagamento(System.Int32)
+  type: Method
+  source:
+    id: DeletePagamento
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Pagamento.cs
+    startLine: 303
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  summary: "\nInserisce o modifica un pagamento\n"
+  example: []
+  syntax:
+    content: public static int DeletePagamento(int idPagamento)
+    parameters:
+    - id: idPagamento
+      type: System.Int32
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Shared Function DeletePagamento(idPagamento As Integer) As Integer
+  overload: DTO.MetodiPagamento.DeletePagamento*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: DTO
+  commentId: N:DTO
+  name: DTO
+  nameWithType: DTO
+  fullName: DTO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: DTO.MetodiPagamento.GetColumnsToExport*
+  commentId: Overload:DTO.MetodiPagamento.GetColumnsToExport
+  name: GetColumnsToExport
+  nameWithType: MetodiPagamento.GetColumnsToExport
+  fullName: DTO.MetodiPagamento.GetColumnsToExport
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  nameWithType: Int32[]
+  fullName: System.Int32[]
+  nameWithType.vb: Int32()
+  fullName.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: DTO.MetodiPagamento.GetTotalePagatoPerCatella*
+  commentId: Overload:DTO.MetodiPagamento.GetTotalePagatoPerCatella
+  name: GetTotalePagatoPerCatella
+  nameWithType: MetodiPagamento.GetTotalePagatoPerCatella
+  fullName: DTO.MetodiPagamento.GetTotalePagatoPerCatella
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: DTO.MetodiPagamento.GetPagamentiCartella*
+  commentId: Overload:DTO.MetodiPagamento.GetPagamentiCartella
+  name: GetPagamentiCartella
+  nameWithType: MetodiPagamento.GetPagamentiCartella
+  fullName: DTO.MetodiPagamento.GetPagamentiCartella
+- uid: IRemInterfaceOSAP.PagamentoExt[]
+  isExternal: true
+  name: PagamentoExt[]
+  nameWithType: PagamentoExt[]
+  fullName: IRemInterfaceOSAP.PagamentoExt[]
+  nameWithType.vb: PagamentoExt()
+  fullName.vb: IRemInterfaceOSAP.PagamentoExt()
+  name.vb: PagamentoExt()
+  spec.csharp:
+  - uid: IRemInterfaceOSAP.PagamentoExt
+    name: PagamentoExt
+    nameWithType: PagamentoExt
+    fullName: IRemInterfaceOSAP.PagamentoExt
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: IRemInterfaceOSAP.PagamentoExt
+    name: PagamentoExt
+    nameWithType: PagamentoExt
+    fullName: IRemInterfaceOSAP.PagamentoExt
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: DTO.MetodiPagamento.GetPagamentoById*
+  commentId: Overload:DTO.MetodiPagamento.GetPagamentoById
+  name: GetPagamentoById
+  nameWithType: MetodiPagamento.GetPagamentoById
+  fullName: DTO.MetodiPagamento.GetPagamentoById
+- uid: IRemInterfaceOSAP.PagamentoExt
+  commentId: T:IRemInterfaceOSAP.PagamentoExt
+  parent: IRemInterfaceOSAP
+  isExternal: true
+  name: PagamentoExt
+  nameWithType: PagamentoExt
+  fullName: IRemInterfaceOSAP.PagamentoExt
+- uid: IRemInterfaceOSAP
+  commentId: N:IRemInterfaceOSAP
+  isExternal: true
+  name: IRemInterfaceOSAP
+  nameWithType: IRemInterfaceOSAP
+  fullName: IRemInterfaceOSAP
+- uid: DTO.MetodiPagamento.GetPagamenti*
+  commentId: Overload:DTO.MetodiPagamento.GetPagamenti
+  name: GetPagamenti
+  nameWithType: MetodiPagamento.GetPagamenti
+  fullName: DTO.MetodiPagamento.GetPagamenti
+- uid: DTO.PagamentiSearch
+  commentId: T:DTO.PagamentiSearch
+  parent: DTO
+  name: PagamentiSearch
+  nameWithType: PagamentiSearch
+  fullName: DTO.PagamentiSearch
+- uid: System.Data.DataTable
+  commentId: T:System.Data.DataTable
+  parent: System.Data
+  isExternal: true
+  name: DataTable
+  nameWithType: DataTable
+  fullName: System.Data.DataTable
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+- uid: DTO.MetodiPagamento.InsertUpdatePagamento*
+  commentId: Overload:DTO.MetodiPagamento.InsertUpdatePagamento
+  name: InsertUpdatePagamento
+  nameWithType: MetodiPagamento.InsertUpdatePagamento
+  fullName: DTO.MetodiPagamento.InsertUpdatePagamento
+- uid: DTO.MetodiPagamento.DeletePagamento*
+  commentId: Overload:DTO.MetodiPagamento.DeletePagamento
+  name: DeletePagamento
+  nameWithType: MetodiPagamento.DeletePagamento
+  fullName: DTO.MetodiPagamento.DeletePagamento

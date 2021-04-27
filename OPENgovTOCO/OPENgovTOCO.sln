@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OPENgovTOCO", "OPENgovTOCO.csproj", "{04F67387-83D7-4EE2-A91B-6AA6464CC827}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccWebProject0 = true
+		SccProjectUniqueName0 = .
+		SccProjectName0 = \u0022$/OPENgovTOCO\u0022,\u0020VOCAAAAA
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectFilePathRelativizedFromConnection0 = 
+		SccProjectEnlistmentChoice0 = 2
+		SccProjectUniqueName1 = OPENgovTOCO.csproj
+		SccProjectName1 = \u0022$/OPENgovTOCO\u0022,\u0020VOCAAAAA
+		SccLocalPath1 = .
+		SccProvider1 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectEnlistmentChoice1 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04F67387-83D7-4EE2-A91B-6AA6464CC827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04F67387-83D7-4EE2-A91B-6AA6464CC827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04F67387-83D7-4EE2-A91B-6AA6464CC827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04F67387-83D7-4EE2-A91B-6AA6464CC827}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

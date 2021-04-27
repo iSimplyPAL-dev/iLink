@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENgovTOCO.Wuc
+  commentId: N:OPENgovTOCO.Wuc
+  id: OPENgovTOCO.Wuc
+  children:
+  - OPENgovTOCO.Wuc.WucArticolo
+  - OPENgovTOCO.Wuc.WucDatiContribuente
+  - OPENgovTOCO.Wuc.WucDichiarazione
+  langs:
+  - csharp
+  - vb
+  name: OPENgovTOCO.Wuc
+  nameWithType: OPENgovTOCO.Wuc
+  fullName: OPENgovTOCO.Wuc
+  type: Namespace
+  assemblies:
+  - OPENGovTOCO
+references:
+- uid: OPENgovTOCO.Wuc.WucArticolo
+  commentId: T:OPENgovTOCO.Wuc.WucArticolo
+  parent: OPENgovTOCO.Wuc
+  name: WucArticolo
+  nameWithType: WucArticolo
+  fullName: OPENgovTOCO.Wuc.WucArticolo
+- uid: OPENgovTOCO.Wuc.WucDatiContribuente
+  commentId: T:OPENgovTOCO.Wuc.WucDatiContribuente
+  parent: OPENgovTOCO.Wuc
+  name: WucDatiContribuente
+  nameWithType: WucDatiContribuente
+  fullName: OPENgovTOCO.Wuc.WucDatiContribuente
+- uid: OPENgovTOCO.Wuc.WucDichiarazione
+  commentId: T:OPENgovTOCO.Wuc.WucDichiarazione
+  parent: OPENgovTOCO.Wuc
+  name: WucDichiarazione
+  nameWithType: WucDichiarazione
+  fullName: OPENgovTOCO.Wuc.WucDichiarazione
+- uid: OPENgovTOCO.Wuc
+  commentId: N:OPENgovTOCO.Wuc
+  name: OPENgovTOCO.Wuc
+  nameWithType: OPENgovTOCO.Wuc
+  fullName: OPENgovTOCO.Wuc

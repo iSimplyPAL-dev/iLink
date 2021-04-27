@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENGovTOCO.GestionePagamenti
+  commentId: N:OPENGovTOCO.GestionePagamenti
+  id: OPENGovTOCO.GestionePagamenti
+  children:
+  - OPENGovTOCO.GestionePagamenti.GestionePagamentiAdd
+  - OPENGovTOCO.GestionePagamenti.GestionePagamentiEdit
+  - OPENGovTOCO.GestionePagamenti.GestionePagamentiSearch
+  langs:
+  - csharp
+  - vb
+  name: OPENGovTOCO.GestionePagamenti
+  nameWithType: OPENGovTOCO.GestionePagamenti
+  fullName: OPENGovTOCO.GestionePagamenti
+  type: Namespace
+  assemblies:
+  - OPENGovTOCO
+references:
+- uid: OPENGovTOCO.GestionePagamenti.GestionePagamentiAdd
+  commentId: T:OPENGovTOCO.GestionePagamenti.GestionePagamentiAdd
+  name: GestionePagamentiAdd
+  nameWithType: GestionePagamentiAdd
+  fullName: OPENGovTOCO.GestionePagamenti.GestionePagamentiAdd
+- uid: OPENGovTOCO.GestionePagamenti.GestionePagamentiEdit
+  commentId: T:OPENGovTOCO.GestionePagamenti.GestionePagamentiEdit
+  name: GestionePagamentiEdit
+  nameWithType: GestionePagamentiEdit
+  fullName: OPENGovTOCO.GestionePagamenti.GestionePagamentiEdit
+- uid: OPENGovTOCO.GestionePagamenti.GestionePagamentiSearch
+  commentId: T:OPENGovTOCO.GestionePagamenti.GestionePagamentiSearch
+  name: GestionePagamentiSearch
+  nameWithType: GestionePagamentiSearch
+  fullName: OPENGovTOCO.GestionePagamenti.GestionePagamentiSearch

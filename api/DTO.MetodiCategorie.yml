@@ -1,0 +1,955 @@
+### YamlMime:ManagedReference
+items:
+- uid: DTO.MetodiCategorie
+  commentId: T:DTO.MetodiCategorie
+  id: MetodiCategorie
+  parent: DTO
+  children:
+  - DTO.MetodiCategorie.DeleteCategoria(System.Int32)
+  - DTO.MetodiCategorie.DeleteCoefficiente(System.Int32,System.Int32)
+  - DTO.MetodiCategorie.GetAllCategorie(System.String,System.String)
+  - DTO.MetodiCategorie.GetAllCoefficienti(System.String)
+  - DTO.MetodiCategorie.GetCategoria(System.String,System.Int32,System.String,System.String,System.String)
+  - DTO.MetodiCategorie.GetCategorie(System.String,System.Int32,System.Boolean,System.String,System.String)
+  - DTO.MetodiCategorie.GetCategorieForMotore(System.String,System.Int32,System.String,System.String)
+  - DTO.MetodiCategorie.GetCoefficiente(System.Int32,System.Int32)
+  - DTO.MetodiCategorie.GetMotoreObjects(IRemInterfaceOSAP.Categorie[])
+  - DTO.MetodiCategorie.InsertOrUpdateCoefficiente(System.Int32,System.Int32,System.Decimal)
+  - DTO.MetodiCategorie.InsertOrUpdateDescrizione(System.String,System.String,System.String,System.Int32,System.String)
+  - DTO.MetodiCategorie.SetRibalta(System.Int32,System.Int32,System.String)
+  langs:
+  - csharp
+  - vb
+  name: MetodiCategorie
+  nameWithType: MetodiCategorie
+  fullName: DTO.MetodiCategorie
+  type: Class
+  source:
+    id: MetodiCategorie
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Categorie.cs
+    startLine: 13
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  summary: "\nClasse per la gestione Categorie\n"
+  example: []
+  syntax:
+    content: public class MetodiCategorie
+    content.vb: Public Class MetodiCategorie
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DTO.MetodiCategorie.DeleteCategoria(System.Int32)
+  commentId: M:DTO.MetodiCategorie.DeleteCategoria(System.Int32)
+  id: DeleteCategoria(System.Int32)
+  parent: DTO.MetodiCategorie
+  langs:
+  - csharp
+  - vb
+  name: DeleteCategoria(Int32)
+  nameWithType: MetodiCategorie.DeleteCategoria(Int32)
+  fullName: DTO.MetodiCategorie.DeleteCategoria(System.Int32)
+  type: Method
+  source:
+    id: DeleteCategoria
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Categorie.cs
+    startLine: 18
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static int DeleteCategoria(int IdCategoria)
+    parameters:
+    - id: IdCategoria
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function DeleteCategoria(IdCategoria As Integer) As Integer
+  overload: DTO.MetodiCategorie.DeleteCategoria*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiCategorie.DeleteCoefficiente(System.Int32,System.Int32)
+  commentId: M:DTO.MetodiCategorie.DeleteCoefficiente(System.Int32,System.Int32)
+  id: DeleteCoefficiente(System.Int32,System.Int32)
+  parent: DTO.MetodiCategorie
+  langs:
+  - csharp
+  - vb
+  name: DeleteCoefficiente(Int32, Int32)
+  nameWithType: MetodiCategorie.DeleteCoefficiente(Int32, Int32)
+  fullName: DTO.MetodiCategorie.DeleteCoefficiente(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: DeleteCoefficiente
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Categorie.cs
+    startLine: 32
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static int DeleteCoefficiente(int IdCategoria, int Anno)
+    parameters:
+    - id: IdCategoria
+      type: System.Int32
+    - id: Anno
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function DeleteCoefficiente(IdCategoria As Integer, Anno As Integer) As Integer
+  overload: DTO.MetodiCategorie.DeleteCoefficiente*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiCategorie.InsertOrUpdateDescrizione(System.String,System.String,System.String,System.Int32,System.String)
+  commentId: M:DTO.MetodiCategorie.InsertOrUpdateDescrizione(System.String,System.String,System.String,System.Int32,System.String)
+  id: InsertOrUpdateDescrizione(System.String,System.String,System.String,System.Int32,System.String)
+  parent: DTO.MetodiCategorie
+  langs:
+  - csharp
+  - vb
+  name: InsertOrUpdateDescrizione(String, String, String, Int32, String)
+  nameWithType: MetodiCategorie.InsertOrUpdateDescrizione(String, String, String, Int32, String)
+  fullName: DTO.MetodiCategorie.InsertOrUpdateDescrizione(System.String, System.String, System.String, System.Int32, System.String)
+  type: Method
+  source:
+    id: InsertOrUpdateDescrizione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Categorie.cs
+    startLine: 46
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static int InsertOrUpdateDescrizione(string ConnectionString, string IdEnte, string IdTributo, int IdCategoria, string Descrizione)
+    parameters:
+    - id: ConnectionString
+      type: System.String
+    - id: IdEnte
+      type: System.String
+    - id: IdTributo
+      type: System.String
+    - id: IdCategoria
+      type: System.Int32
+    - id: Descrizione
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function InsertOrUpdateDescrizione(ConnectionString As String, IdEnte As String, IdTributo As String, IdCategoria As Integer, Descrizione As String) As Integer
+  overload: DTO.MetodiCategorie.InsertOrUpdateDescrizione*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiCategorie.InsertOrUpdateCoefficiente(System.Int32,System.Int32,System.Decimal)
+  commentId: M:DTO.MetodiCategorie.InsertOrUpdateCoefficiente(System.Int32,System.Int32,System.Decimal)
+  id: InsertOrUpdateCoefficiente(System.Int32,System.Int32,System.Decimal)
+  parent: DTO.MetodiCategorie
+  langs:
+  - csharp
+  - vb
+  name: InsertOrUpdateCoefficiente(Int32, Int32, Decimal)
+  nameWithType: MetodiCategorie.InsertOrUpdateCoefficiente(Int32, Int32, Decimal)
+  fullName: DTO.MetodiCategorie.InsertOrUpdateCoefficiente(System.Int32, System.Int32, System.Decimal)
+  type: Method
+  source:
+    id: InsertOrUpdateCoefficiente
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Categorie.cs
+    startLine: 59
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static int InsertOrUpdateCoefficiente(int IdCategoria, int Anno, decimal Coefficiente)
+    parameters:
+    - id: IdCategoria
+      type: System.Int32
+    - id: Anno
+      type: System.Int32
+    - id: Coefficiente
+      type: System.Decimal
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function InsertOrUpdateCoefficiente(IdCategoria As Integer, Anno As Integer, Coefficiente As Decimal) As Integer
+  overload: DTO.MetodiCategorie.InsertOrUpdateCoefficiente*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiCategorie.GetCategorie(System.String,System.Int32,System.Boolean,System.String,System.String)
+  commentId: M:DTO.MetodiCategorie.GetCategorie(System.String,System.Int32,System.Boolean,System.String,System.String)
+  id: GetCategorie(System.String,System.Int32,System.Boolean,System.String,System.String)
+  parent: DTO.MetodiCategorie
+  langs:
+  - csharp
+  - vb
+  name: GetCategorie(String, Int32, Boolean, String, String)
+  nameWithType: MetodiCategorie.GetCategorie(String, Int32, Boolean, String, String)
+  fullName: DTO.MetodiCategorie.GetCategorie(System.String, System.Int32, System.Boolean, System.String, System.String)
+  type: Method
+  source:
+    id: GetCategorie
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Categorie.cs
+    startLine: 72
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static Categorie[] GetCategorie(string ConnectionString, int Anno, bool DefaultValue, string idEnte, string IdTributo)
+    parameters:
+    - id: ConnectionString
+      type: System.String
+    - id: Anno
+      type: System.Int32
+    - id: DefaultValue
+      type: System.Boolean
+    - id: idEnte
+      type: System.String
+    - id: IdTributo
+      type: System.String
+    return:
+      type: IRemInterfaceOSAP.Categorie[]
+    content.vb: Public Shared Function GetCategorie(ConnectionString As String, Anno As Integer, DefaultValue As Boolean, idEnte As String, IdTributo As String) As Categorie()
+  overload: DTO.MetodiCategorie.GetCategorie*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiCategorie.GetAllCategorie(System.String,System.String)
+  commentId: M:DTO.MetodiCategorie.GetAllCategorie(System.String,System.String)
+  id: GetAllCategorie(System.String,System.String)
+  parent: DTO.MetodiCategorie
+  langs:
+  - csharp
+  - vb
+  name: GetAllCategorie(String, String)
+  nameWithType: MetodiCategorie.GetAllCategorie(String, String)
+  fullName: DTO.MetodiCategorie.GetAllCategorie(System.String, System.String)
+  type: Method
+  source:
+    id: GetAllCategorie
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Categorie.cs
+    startLine: 86
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static Categorie[] GetAllCategorie(string IdEnte, string IdTributo)
+    parameters:
+    - id: IdEnte
+      type: System.String
+    - id: IdTributo
+      type: System.String
+    return:
+      type: IRemInterfaceOSAP.Categorie[]
+    content.vb: Public Shared Function GetAllCategorie(IdEnte As String, IdTributo As String) As Categorie()
+  overload: DTO.MetodiCategorie.GetAllCategorie*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiCategorie.GetAllCoefficienti(System.String)
+  commentId: M:DTO.MetodiCategorie.GetAllCoefficienti(System.String)
+  id: GetAllCoefficienti(System.String)
+  parent: DTO.MetodiCategorie
+  langs:
+  - csharp
+  - vb
+  name: GetAllCoefficienti(String)
+  nameWithType: MetodiCategorie.GetAllCoefficienti(String)
+  fullName: DTO.MetodiCategorie.GetAllCoefficienti(System.String)
+  type: Method
+  source:
+    id: GetAllCoefficienti
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Categorie.cs
+    startLine: 100
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static Coefficienti[] GetAllCoefficienti(string IdEnte)
+    parameters:
+    - id: IdEnte
+      type: System.String
+    return:
+      type: IRemInterfaceOSAP.Coefficienti[]
+    content.vb: Public Shared Function GetAllCoefficienti(IdEnte As String) As Coefficienti()
+  overload: DTO.MetodiCategorie.GetAllCoefficienti*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiCategorie.GetCoefficiente(System.Int32,System.Int32)
+  commentId: M:DTO.MetodiCategorie.GetCoefficiente(System.Int32,System.Int32)
+  id: GetCoefficiente(System.Int32,System.Int32)
+  parent: DTO.MetodiCategorie
+  langs:
+  - csharp
+  - vb
+  name: GetCoefficiente(Int32, Int32)
+  nameWithType: MetodiCategorie.GetCoefficiente(Int32, Int32)
+  fullName: DTO.MetodiCategorie.GetCoefficiente(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: GetCoefficiente
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Categorie.cs
+    startLine: 114
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static Coefficienti GetCoefficiente(int IdCategoria, int Anno)
+    parameters:
+    - id: IdCategoria
+      type: System.Int32
+    - id: Anno
+      type: System.Int32
+    return:
+      type: IRemInterfaceOSAP.Coefficienti
+    content.vb: Public Shared Function GetCoefficiente(IdCategoria As Integer, Anno As Integer) As Coefficienti
+  overload: DTO.MetodiCategorie.GetCoefficiente*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiCategorie.GetCategorieForMotore(System.String,System.Int32,System.String,System.String)
+  commentId: M:DTO.MetodiCategorie.GetCategorieForMotore(System.String,System.Int32,System.String,System.String)
+  id: GetCategorieForMotore(System.String,System.Int32,System.String,System.String)
+  parent: DTO.MetodiCategorie
+  langs:
+  - csharp
+  - vb
+  name: GetCategorieForMotore(String, Int32, String, String)
+  nameWithType: MetodiCategorie.GetCategorieForMotore(String, Int32, String, String)
+  fullName: DTO.MetodiCategorie.GetCategorieForMotore(System.String, System.Int32, System.String, System.String)
+  type: Method
+  source:
+    id: GetCategorieForMotore
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Categorie.cs
+    startLine: 131
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static Categorie[] GetCategorieForMotore(string ConnectionString, int Anno, string idEnte, string IdTributo)
+    parameters:
+    - id: ConnectionString
+      type: System.String
+    - id: Anno
+      type: System.Int32
+    - id: idEnte
+      type: System.String
+    - id: IdTributo
+      type: System.String
+    return:
+      type: IRemInterfaceOSAP.Categorie[]
+    content.vb: Public Shared Function GetCategorieForMotore(ConnectionString As String, Anno As Integer, idEnte As String, IdTributo As String) As Categorie()
+  overload: DTO.MetodiCategorie.GetCategorieForMotore*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiCategorie.GetCategoria(System.String,System.Int32,System.String,System.String,System.String)
+  commentId: M:DTO.MetodiCategorie.GetCategoria(System.String,System.Int32,System.String,System.String,System.String)
+  id: GetCategoria(System.String,System.Int32,System.String,System.String,System.String)
+  parent: DTO.MetodiCategorie
+  langs:
+  - csharp
+  - vb
+  name: GetCategoria(String, Int32, String, String, String)
+  nameWithType: MetodiCategorie.GetCategoria(String, Int32, String, String, String)
+  fullName: DTO.MetodiCategorie.GetCategoria(System.String, System.Int32, System.String, System.String, System.String)
+  type: Method
+  source:
+    id: GetCategoria
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Categorie.cs
+    startLine: 146
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static Categorie GetCategoria(string ConnectionString, int IdCategoria, string Descrizione, string idEnte, string IdTributo)
+    parameters:
+    - id: ConnectionString
+      type: System.String
+    - id: IdCategoria
+      type: System.Int32
+    - id: Descrizione
+      type: System.String
+    - id: idEnte
+      type: System.String
+    - id: IdTributo
+      type: System.String
+    return:
+      type: IRemInterfaceOSAP.Categorie
+    content.vb: Public Shared Function GetCategoria(ConnectionString As String, IdCategoria As Integer, Descrizione As String, idEnte As String, IdTributo As String) As Categorie
+  overload: DTO.MetodiCategorie.GetCategoria*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiCategorie.GetMotoreObjects(IRemInterfaceOSAP.Categorie[])
+  commentId: M:DTO.MetodiCategorie.GetMotoreObjects(IRemInterfaceOSAP.Categorie[])
+  id: GetMotoreObjects(IRemInterfaceOSAP.Categorie[])
+  parent: DTO.MetodiCategorie
+  langs:
+  - csharp
+  - vb
+  name: GetMotoreObjects(Categorie[])
+  nameWithType: MetodiCategorie.GetMotoreObjects(Categorie[])
+  fullName: DTO.MetodiCategorie.GetMotoreObjects(IRemInterfaceOSAP.Categorie[])
+  type: Method
+  source:
+    id: GetMotoreObjects
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Categorie.cs
+    startLine: 165
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static Categorie[] GetMotoreObjects(Categorie[] categ)
+    parameters:
+    - id: categ
+      type: IRemInterfaceOSAP.Categorie[]
+    return:
+      type: IRemInterfaceOSAP.Categorie[]
+    content.vb: Public Shared Function GetMotoreObjects(categ As Categorie()) As Categorie()
+  overload: DTO.MetodiCategorie.GetMotoreObjects*
+  nameWithType.vb: MetodiCategorie.GetMotoreObjects(Categorie())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: DTO.MetodiCategorie.GetMotoreObjects(IRemInterfaceOSAP.Categorie())
+  name.vb: GetMotoreObjects(Categorie())
+- uid: DTO.MetodiCategorie.SetRibalta(System.Int32,System.Int32,System.String)
+  commentId: M:DTO.MetodiCategorie.SetRibalta(System.Int32,System.Int32,System.String)
+  id: SetRibalta(System.Int32,System.Int32,System.String)
+  parent: DTO.MetodiCategorie
+  langs:
+  - csharp
+  - vb
+  name: SetRibalta(Int32, Int32, String)
+  nameWithType: MetodiCategorie.SetRibalta(Int32, Int32, String)
+  fullName: DTO.MetodiCategorie.SetRibalta(System.Int32, System.Int32, System.String)
+  type: Method
+  source:
+    id: SetRibalta
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Categorie.cs
+    startLine: 188
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static int SetRibalta(int RibaltaDa, int RibaltaA, string IdEnte)
+    parameters:
+    - id: RibaltaDa
+      type: System.Int32
+    - id: RibaltaA
+      type: System.Int32
+    - id: IdEnte
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function SetRibalta(RibaltaDa As Integer, RibaltaA As Integer, IdEnte As String) As Integer
+  overload: DTO.MetodiCategorie.SetRibalta*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: DTO
+  commentId: N:DTO
+  name: DTO
+  nameWithType: DTO
+  fullName: DTO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DTO.MetodiCategorie.DeleteCategoria*
+  commentId: Overload:DTO.MetodiCategorie.DeleteCategoria
+  name: DeleteCategoria
+  nameWithType: MetodiCategorie.DeleteCategoria
+  fullName: DTO.MetodiCategorie.DeleteCategoria
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DTO.MetodiCategorie.DeleteCoefficiente*
+  commentId: Overload:DTO.MetodiCategorie.DeleteCoefficiente
+  name: DeleteCoefficiente
+  nameWithType: MetodiCategorie.DeleteCoefficiente
+  fullName: DTO.MetodiCategorie.DeleteCoefficiente
+- uid: DTO.MetodiCategorie.InsertOrUpdateDescrizione*
+  commentId: Overload:DTO.MetodiCategorie.InsertOrUpdateDescrizione
+  name: InsertOrUpdateDescrizione
+  nameWithType: MetodiCategorie.InsertOrUpdateDescrizione
+  fullName: DTO.MetodiCategorie.InsertOrUpdateDescrizione
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DTO.MetodiCategorie.InsertOrUpdateCoefficiente*
+  commentId: Overload:DTO.MetodiCategorie.InsertOrUpdateCoefficiente
+  name: InsertOrUpdateCoefficiente
+  nameWithType: MetodiCategorie.InsertOrUpdateCoefficiente
+  fullName: DTO.MetodiCategorie.InsertOrUpdateCoefficiente
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  nameWithType: Decimal
+  fullName: System.Decimal
+- uid: DTO.MetodiCategorie.GetCategorie*
+  commentId: Overload:DTO.MetodiCategorie.GetCategorie
+  name: GetCategorie
+  nameWithType: MetodiCategorie.GetCategorie
+  fullName: DTO.MetodiCategorie.GetCategorie
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: IRemInterfaceOSAP.Categorie[]
+  isExternal: true
+  name: Categorie[]
+  nameWithType: Categorie[]
+  fullName: IRemInterfaceOSAP.Categorie[]
+  nameWithType.vb: Categorie()
+  fullName.vb: IRemInterfaceOSAP.Categorie()
+  name.vb: Categorie()
+  spec.csharp:
+  - uid: IRemInterfaceOSAP.Categorie
+    name: Categorie
+    nameWithType: Categorie
+    fullName: IRemInterfaceOSAP.Categorie
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: IRemInterfaceOSAP.Categorie
+    name: Categorie
+    nameWithType: Categorie
+    fullName: IRemInterfaceOSAP.Categorie
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: DTO.MetodiCategorie.GetAllCategorie*
+  commentId: Overload:DTO.MetodiCategorie.GetAllCategorie
+  name: GetAllCategorie
+  nameWithType: MetodiCategorie.GetAllCategorie
+  fullName: DTO.MetodiCategorie.GetAllCategorie
+- uid: DTO.MetodiCategorie.GetAllCoefficienti*
+  commentId: Overload:DTO.MetodiCategorie.GetAllCoefficienti
+  name: GetAllCoefficienti
+  nameWithType: MetodiCategorie.GetAllCoefficienti
+  fullName: DTO.MetodiCategorie.GetAllCoefficienti
+- uid: IRemInterfaceOSAP.Coefficienti[]
+  isExternal: true
+  name: Coefficienti[]
+  nameWithType: Coefficienti[]
+  fullName: IRemInterfaceOSAP.Coefficienti[]
+  nameWithType.vb: Coefficienti()
+  fullName.vb: IRemInterfaceOSAP.Coefficienti()
+  name.vb: Coefficienti()
+  spec.csharp:
+  - uid: IRemInterfaceOSAP.Coefficienti
+    name: Coefficienti
+    nameWithType: Coefficienti
+    fullName: IRemInterfaceOSAP.Coefficienti
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: IRemInterfaceOSAP.Coefficienti
+    name: Coefficienti
+    nameWithType: Coefficienti
+    fullName: IRemInterfaceOSAP.Coefficienti
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: DTO.MetodiCategorie.GetCoefficiente*
+  commentId: Overload:DTO.MetodiCategorie.GetCoefficiente
+  name: GetCoefficiente
+  nameWithType: MetodiCategorie.GetCoefficiente
+  fullName: DTO.MetodiCategorie.GetCoefficiente
+- uid: IRemInterfaceOSAP.Coefficienti
+  commentId: T:IRemInterfaceOSAP.Coefficienti
+  parent: IRemInterfaceOSAP
+  isExternal: true
+  name: Coefficienti
+  nameWithType: Coefficienti
+  fullName: IRemInterfaceOSAP.Coefficienti
+- uid: IRemInterfaceOSAP
+  commentId: N:IRemInterfaceOSAP
+  isExternal: true
+  name: IRemInterfaceOSAP
+  nameWithType: IRemInterfaceOSAP
+  fullName: IRemInterfaceOSAP
+- uid: DTO.MetodiCategorie.GetCategorieForMotore*
+  commentId: Overload:DTO.MetodiCategorie.GetCategorieForMotore
+  name: GetCategorieForMotore
+  nameWithType: MetodiCategorie.GetCategorieForMotore
+  fullName: DTO.MetodiCategorie.GetCategorieForMotore
+- uid: DTO.MetodiCategorie.GetCategoria*
+  commentId: Overload:DTO.MetodiCategorie.GetCategoria
+  name: GetCategoria
+  nameWithType: MetodiCategorie.GetCategoria
+  fullName: DTO.MetodiCategorie.GetCategoria
+- uid: IRemInterfaceOSAP.Categorie
+  commentId: T:IRemInterfaceOSAP.Categorie
+  parent: IRemInterfaceOSAP
+  isExternal: true
+  name: Categorie
+  nameWithType: Categorie
+  fullName: IRemInterfaceOSAP.Categorie
+- uid: DTO.MetodiCategorie.GetMotoreObjects*
+  commentId: Overload:DTO.MetodiCategorie.GetMotoreObjects
+  name: GetMotoreObjects
+  nameWithType: MetodiCategorie.GetMotoreObjects
+  fullName: DTO.MetodiCategorie.GetMotoreObjects
+- uid: DTO.MetodiCategorie.SetRibalta*
+  commentId: Overload:DTO.MetodiCategorie.SetRibalta
+  name: SetRibalta
+  nameWithType: MetodiCategorie.SetRibalta
+  fullName: DTO.MetodiCategorie.SetRibalta

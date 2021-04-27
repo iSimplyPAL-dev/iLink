@@ -1,0 +1,550 @@
+### YamlMime:ManagedReference
+items:
+- uid: DTO.MetodiRata
+  commentId: T:DTO.MetodiRata
+  id: MetodiRata
+  parent: DTO
+  children:
+  - DTO.MetodiRata.CalcolaRate(System.Int32,System.Int32,System.Int32,System.Double,System.Double,System.Data.SqlClient.SqlCommand@)
+  - DTO.MetodiRata.GetRate(DTO.RataSearch)
+  - DTO.MetodiRata.InsertRata(IRemInterfaceOSAP.Rata,System.Data.SqlClient.SqlCommand@)
+  langs:
+  - csharp
+  - vb
+  name: MetodiRata
+  nameWithType: MetodiRata
+  fullName: DTO.MetodiRata
+  type: Class
+  source:
+    id: MetodiRata
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Rata.cs
+    startLine: 13
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  summary: "\nClasse per la gestione rate\n"
+  example: []
+  syntax:
+    content: public class MetodiRata
+    content.vb: Public Class MetodiRata
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DTO.MetodiRata.InsertRata(IRemInterfaceOSAP.Rata,System.Data.SqlClient.SqlCommand@)
+  commentId: M:DTO.MetodiRata.InsertRata(IRemInterfaceOSAP.Rata,System.Data.SqlClient.SqlCommand@)
+  id: InsertRata(IRemInterfaceOSAP.Rata,System.Data.SqlClient.SqlCommand@)
+  parent: DTO.MetodiRata
+  langs:
+  - csharp
+  - vb
+  name: InsertRata(Rata, ref SqlCommand)
+  nameWithType: MetodiRata.InsertRata(Rata, ref SqlCommand)
+  fullName: DTO.MetodiRata.InsertRata(IRemInterfaceOSAP.Rata, ref System.Data.SqlClient.SqlCommand)
+  type: Method
+  source:
+    id: InsertRata
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Rata.cs
+    startLine: 37
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public static void InsertRata(Rata r, ref SqlCommand cmdMyCommand)
+    parameters:
+    - id: r
+      type: IRemInterfaceOSAP.Rata
+      description: ''
+    - id: cmdMyCommand
+      type: System.Data.SqlClient.SqlCommand
+    content.vb: Public Shared Sub InsertRata(r As Rata, ByRef cmdMyCommand As SqlCommand)
+  overload: DTO.MetodiRata.InsertRata*
+  nameWithType.vb: MetodiRata.InsertRata(Rata, ByRef SqlCommand)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: DTO.MetodiRata.InsertRata(IRemInterfaceOSAP.Rata, ByRef System.Data.SqlClient.SqlCommand)
+  name.vb: InsertRata(Rata, ByRef SqlCommand)
+- uid: DTO.MetodiRata.CalcolaRate(System.Int32,System.Int32,System.Int32,System.Double,System.Double,System.Data.SqlClient.SqlCommand@)
+  commentId: M:DTO.MetodiRata.CalcolaRate(System.Int32,System.Int32,System.Int32,System.Double,System.Double,System.Data.SqlClient.SqlCommand@)
+  id: CalcolaRate(System.Int32,System.Int32,System.Int32,System.Double,System.Double,System.Data.SqlClient.SqlCommand@)
+  parent: DTO.MetodiRata
+  langs:
+  - csharp
+  - vb
+  name: CalcolaRate(Int32, Int32, Int32, Double, Double, ref SqlCommand)
+  nameWithType: MetodiRata.CalcolaRate(Int32, Int32, Int32, Double, Double, ref SqlCommand)
+  fullName: DTO.MetodiRata.CalcolaRate(System.Int32, System.Int32, System.Int32, System.Double, System.Double, ref System.Data.SqlClient.SqlCommand)
+  type: Method
+  source:
+    id: CalcolaRate
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Rata.cs
+    startLine: 52
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static void CalcolaRate(int DBOperation, int IdFlusso, int IdAvviso, double SogliaRata, double SogliaBollettino, ref SqlCommand cmdMyCommand)
+    parameters:
+    - id: DBOperation
+      type: System.Int32
+    - id: IdFlusso
+      type: System.Int32
+    - id: IdAvviso
+      type: System.Int32
+    - id: SogliaRata
+      type: System.Double
+    - id: SogliaBollettino
+      type: System.Double
+    - id: cmdMyCommand
+      type: System.Data.SqlClient.SqlCommand
+    content.vb: Public Shared Sub CalcolaRate(DBOperation As Integer, IdFlusso As Integer, IdAvviso As Integer, SogliaRata As Double, SogliaBollettino As Double, ByRef cmdMyCommand As SqlCommand)
+  overload: DTO.MetodiRata.CalcolaRate*
+  nameWithType.vb: MetodiRata.CalcolaRate(Int32, Int32, Int32, Double, Double, ByRef SqlCommand)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: DTO.MetodiRata.CalcolaRate(System.Int32, System.Int32, System.Int32, System.Double, System.Double, ByRef System.Data.SqlClient.SqlCommand)
+  name.vb: CalcolaRate(Int32, Int32, Int32, Double, Double, ByRef SqlCommand)
+- uid: DTO.MetodiRata.GetRate(DTO.RataSearch)
+  commentId: M:DTO.MetodiRata.GetRate(DTO.RataSearch)
+  id: GetRate(DTO.RataSearch)
+  parent: DTO.MetodiRata
+  langs:
+  - csharp
+  - vb
+  name: GetRate(RataSearch)
+  nameWithType: MetodiRata.GetRate(RataSearch)
+  fullName: DTO.MetodiRata.GetRate(DTO.RataSearch)
+  type: Method
+  source:
+    id: GetRate
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\Rata.cs
+    startLine: 72
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  summary: "\nMetodo per recuperare le rate \n"
+  example: []
+  syntax:
+    content: public static RataExt[] GetRate(RataSearch searchParameter)
+    parameters:
+    - id: searchParameter
+      type: DTO.RataSearch
+      description: ''
+    return:
+      type: IRemInterfaceOSAP.RataExt[]
+      description: ''
+    content.vb: Public Shared Function GetRate(searchParameter As RataSearch) As RataExt()
+  overload: DTO.MetodiRata.GetRate*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: DTO
+  commentId: N:DTO
+  name: DTO
+  nameWithType: DTO
+  fullName: DTO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DTO.MetodiRata.InsertRata*
+  commentId: Overload:DTO.MetodiRata.InsertRata
+  name: InsertRata
+  nameWithType: MetodiRata.InsertRata
+  fullName: DTO.MetodiRata.InsertRata
+- uid: IRemInterfaceOSAP.Rata
+  commentId: T:IRemInterfaceOSAP.Rata
+  parent: IRemInterfaceOSAP
+  isExternal: true
+  name: Rata
+  nameWithType: Rata
+  fullName: IRemInterfaceOSAP.Rata
+- uid: System.Data.SqlClient.SqlCommand
+  commentId: T:System.Data.SqlClient.SqlCommand
+  parent: System.Data.SqlClient
+  isExternal: true
+  name: SqlCommand
+  nameWithType: SqlCommand
+  fullName: System.Data.SqlClient.SqlCommand
+- uid: IRemInterfaceOSAP
+  commentId: N:IRemInterfaceOSAP
+  isExternal: true
+  name: IRemInterfaceOSAP
+  nameWithType: IRemInterfaceOSAP
+  fullName: IRemInterfaceOSAP
+- uid: System.Data.SqlClient
+  commentId: N:System.Data.SqlClient
+  isExternal: true
+  name: System.Data.SqlClient
+  nameWithType: System.Data.SqlClient
+  fullName: System.Data.SqlClient
+- uid: DTO.MetodiRata.CalcolaRate*
+  commentId: Overload:DTO.MetodiRata.CalcolaRate
+  name: CalcolaRate
+  nameWithType: MetodiRata.CalcolaRate
+  fullName: DTO.MetodiRata.CalcolaRate
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: DTO.MetodiRata.GetRate*
+  commentId: Overload:DTO.MetodiRata.GetRate
+  name: GetRate
+  nameWithType: MetodiRata.GetRate
+  fullName: DTO.MetodiRata.GetRate
+- uid: DTO.RataSearch
+  commentId: T:DTO.RataSearch
+  parent: DTO
+  name: RataSearch
+  nameWithType: RataSearch
+  fullName: DTO.RataSearch
+- uid: IRemInterfaceOSAP.RataExt[]
+  isExternal: true
+  name: RataExt[]
+  nameWithType: RataExt[]
+  fullName: IRemInterfaceOSAP.RataExt[]
+  nameWithType.vb: RataExt()
+  fullName.vb: IRemInterfaceOSAP.RataExt()
+  name.vb: RataExt()
+  spec.csharp:
+  - uid: IRemInterfaceOSAP.RataExt
+    name: RataExt
+    nameWithType: RataExt
+    fullName: IRemInterfaceOSAP.RataExt
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: IRemInterfaceOSAP.RataExt
+    name: RataExt
+    nameWithType: RataExt
+    fullName: IRemInterfaceOSAP.RataExt
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

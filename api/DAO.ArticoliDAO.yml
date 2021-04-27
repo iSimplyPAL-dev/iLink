@@ -1,0 +1,487 @@
+### YamlMime:ManagedReference
+items:
+- uid: DAO.ArticoliDAO
+  commentId: T:DAO.ArticoliDAO
+  id: ArticoliDAO
+  parent: DAO
+  children:
+  - DAO.ArticoliDAO.#ctor
+  - DAO.ArticoliDAO.SetArticolo(System.Data.SqlClient.SqlCommand@,IRemInterfaceOSAP.Articolo)
+  - DAO.ArticoliDAO.UpdateArticolo(System.Data.SqlClient.SqlCommand@,IRemInterfaceOSAP.Articolo)
+  langs:
+  - csharp
+  - vb
+  name: ArticoliDAO
+  nameWithType: ArticoliDAO
+  fullName: DAO.ArticoliDAO
+  type: Class
+  source:
+    id: ArticoliDAO
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\DichiarazioniDAO.cs
+    startLine: 1076
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public class ArticoliDAO
+    content.vb: Public Class ArticoliDAO
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DAO.ArticoliDAO.#ctor
+  commentId: M:DAO.ArticoliDAO.#ctor
+  id: '#ctor'
+  parent: DAO.ArticoliDAO
+  langs:
+  - csharp
+  - vb
+  name: ArticoliDAO()
+  nameWithType: ArticoliDAO.ArticoliDAO()
+  fullName: DAO.ArticoliDAO.ArticoliDAO()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\DichiarazioniDAO.cs
+    startLine: 1079
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public ArticoliDAO()
+    content.vb: Public Sub New
+  overload: DAO.ArticoliDAO.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAO.ArticoliDAO.SetArticolo(System.Data.SqlClient.SqlCommand@,IRemInterfaceOSAP.Articolo)
+  commentId: M:DAO.ArticoliDAO.SetArticolo(System.Data.SqlClient.SqlCommand@,IRemInterfaceOSAP.Articolo)
+  id: SetArticolo(System.Data.SqlClient.SqlCommand@,IRemInterfaceOSAP.Articolo)
+  parent: DAO.ArticoliDAO
+  langs:
+  - csharp
+  - vb
+  name: SetArticolo(ref SqlCommand, Articolo)
+  nameWithType: ArticoliDAO.SetArticolo(ref SqlCommand, Articolo)
+  fullName: DAO.ArticoliDAO.SetArticolo(ref System.Data.SqlClient.SqlCommand, IRemInterfaceOSAP.Articolo)
+  type: Method
+  source:
+    id: SetArticolo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\DichiarazioniDAO.cs
+    startLine: 1113
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public int SetArticolo(ref SqlCommand cmdMyCommand, Articolo oMyArticolo)
+    parameters:
+    - id: cmdMyCommand
+      type: System.Data.SqlClient.SqlCommand
+    - id: oMyArticolo
+      type: IRemInterfaceOSAP.Articolo
+    return:
+      type: System.Int32
+    content.vb: Public Function SetArticolo(ByRef cmdMyCommand As SqlCommand, oMyArticolo As Articolo) As Integer
+  overload: DAO.ArticoliDAO.SetArticolo*
+  nameWithType.vb: ArticoliDAO.SetArticolo(ByRef SqlCommand, Articolo)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DAO.ArticoliDAO.SetArticolo(ByRef System.Data.SqlClient.SqlCommand, IRemInterfaceOSAP.Articolo)
+  name.vb: SetArticolo(ByRef SqlCommand, Articolo)
+- uid: DAO.ArticoliDAO.UpdateArticolo(System.Data.SqlClient.SqlCommand@,IRemInterfaceOSAP.Articolo)
+  commentId: M:DAO.ArticoliDAO.UpdateArticolo(System.Data.SqlClient.SqlCommand@,IRemInterfaceOSAP.Articolo)
+  id: UpdateArticolo(System.Data.SqlClient.SqlCommand@,IRemInterfaceOSAP.Articolo)
+  parent: DAO.ArticoliDAO
+  langs:
+  - csharp
+  - vb
+  name: UpdateArticolo(ref SqlCommand, Articolo)
+  nameWithType: ArticoliDAO.UpdateArticolo(ref SqlCommand, Articolo)
+  fullName: DAO.ArticoliDAO.UpdateArticolo(ref System.Data.SqlClient.SqlCommand, IRemInterfaceOSAP.Articolo)
+  type: Method
+  source:
+    id: UpdateArticolo
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DAO\DichiarazioniDAO.cs
+    startLine: 1169
+  assemblies:
+  - OPENGovTOCO
+  namespace: DAO
+  syntax:
+    content: public int UpdateArticolo(ref SqlCommand cmdMyCommand, Articolo oMyArticolo)
+    parameters:
+    - id: cmdMyCommand
+      type: System.Data.SqlClient.SqlCommand
+    - id: oMyArticolo
+      type: IRemInterfaceOSAP.Articolo
+    return:
+      type: System.Int32
+    content.vb: Public Function UpdateArticolo(ByRef cmdMyCommand As SqlCommand, oMyArticolo As Articolo) As Integer
+  overload: DAO.ArticoliDAO.UpdateArticolo*
+  nameWithType.vb: ArticoliDAO.UpdateArticolo(ByRef SqlCommand, Articolo)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DAO.ArticoliDAO.UpdateArticolo(ByRef System.Data.SqlClient.SqlCommand, IRemInterfaceOSAP.Articolo)
+  name.vb: UpdateArticolo(ByRef SqlCommand, Articolo)
+references:
+- uid: DAO
+  commentId: N:DAO
+  name: DAO
+  nameWithType: DAO
+  fullName: DAO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DAO.ArticoliDAO.#ctor*
+  commentId: Overload:DAO.ArticoliDAO.#ctor
+  name: ArticoliDAO
+  nameWithType: ArticoliDAO.ArticoliDAO
+  fullName: DAO.ArticoliDAO.ArticoliDAO
+- uid: DAO.ArticoliDAO.SetArticolo*
+  commentId: Overload:DAO.ArticoliDAO.SetArticolo
+  name: SetArticolo
+  nameWithType: ArticoliDAO.SetArticolo
+  fullName: DAO.ArticoliDAO.SetArticolo
+- uid: System.Data.SqlClient.SqlCommand
+  commentId: T:System.Data.SqlClient.SqlCommand
+  parent: System.Data.SqlClient
+  isExternal: true
+  name: SqlCommand
+  nameWithType: SqlCommand
+  fullName: System.Data.SqlClient.SqlCommand
+- uid: IRemInterfaceOSAP.Articolo
+  commentId: T:IRemInterfaceOSAP.Articolo
+  parent: IRemInterfaceOSAP
+  isExternal: true
+  name: Articolo
+  nameWithType: Articolo
+  fullName: IRemInterfaceOSAP.Articolo
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Data.SqlClient
+  commentId: N:System.Data.SqlClient
+  isExternal: true
+  name: System.Data.SqlClient
+  nameWithType: System.Data.SqlClient
+  fullName: System.Data.SqlClient
+- uid: IRemInterfaceOSAP
+  commentId: N:IRemInterfaceOSAP
+  isExternal: true
+  name: IRemInterfaceOSAP
+  nameWithType: IRemInterfaceOSAP
+  fullName: IRemInterfaceOSAP
+- uid: DAO.ArticoliDAO.UpdateArticolo*
+  commentId: Overload:DAO.ArticoliDAO.UpdateArticolo
+  name: UpdateArticolo
+  nameWithType: ArticoliDAO.UpdateArticolo
+  fullName: DAO.ArticoliDAO.UpdateArticolo

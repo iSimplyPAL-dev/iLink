@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.WsStradario
+  commentId: N:DichiarazioniICI.WsStradario
+  id: DichiarazioniICI.WsStradario
+  children:
+  - DichiarazioniICI.WsStradario.Stradario
+  langs:
+  - csharp
+  - vb
+  name: DichiarazioniICI.WsStradario
+  nameWithType: DichiarazioniICI.WsStradario
+  fullName: DichiarazioniICI.WsStradario
+  type: Namespace
+  assemblies:
+  - DichiarazioniICI
+references:
+- uid: DichiarazioniICI.WsStradario.Stradario
+  commentId: T:DichiarazioniICI.WsStradario.Stradario
+  name: Stradario
+  nameWithType: Stradario
+  fullName: DichiarazioniICI.WsStradario.Stradario

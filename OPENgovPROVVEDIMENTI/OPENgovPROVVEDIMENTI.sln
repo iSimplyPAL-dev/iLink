@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "OPENgovPROVVEDIMENTI", "OPENgovPROVVEDIMENTI.vbproj", "{4FA2C554-192A-4F76-B81F-E5363E26CA14}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccWebProject0 = true
+		SccProjectUniqueName0 = .
+		SccProjectName0 = \u0022$/OPENgovPROVVEDIMENTI\u0022,\u0020JDAAAAAA
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectFilePathRelativizedFromConnection0 = 
+		SccProjectEnlistmentChoice0 = 2
+		SccProjectUniqueName1 = OPENgovPROVVEDIMENTI.vbproj
+		SccProjectName1 = \u0022$/OPENgovPROVVEDIMENTI\u0022,\u0020JDAAAAAA
+		SccLocalPath1 = .
+		SccProvider1 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectEnlistmentChoice1 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FA2C554-192A-4F76-B81F-E5363E26CA14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FA2C554-192A-4F76-B81F-E5363E26CA14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FA2C554-192A-4F76-B81F-E5363E26CA14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FA2C554-192A-4F76-B81F-E5363E26CA14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

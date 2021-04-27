@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>OpenUtenze</name>
+    <version>1.0.1817.20698</version>
+    <fullname>OpenUtenze, Version=1.0.1817.20698, Culture=neutral, PublicKeyToken=null</fullname>
+  </assembly>
+  <members>
+    <member name="M:OpenUtenze.AcquisizioneRIUTBOLLSMAT.AcquisisciDatiLettureRiutboll(System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction,System.Data.SqlClient.SqlCommand,System.String,System.String)">
+      <summary>
+ 
+ </summary>
+ <param name="sqlConn" />
+ <param name="sqlTrans" />
+ <param name="sqlComm" />
+ <param name="strLine" />
+ <remarks>
+ </remarks>
+ <history>
+ 	[antonello]	14/12/2004	Created 
+ </history></member>
+  </members>
+</doc>

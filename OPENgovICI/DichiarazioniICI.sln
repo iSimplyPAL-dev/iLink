@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DichiarazioniICI", "DichiarazioniICI.csproj", "{14507F38-EB84-4E90-ACD5-21FE02A2DEE4}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccWebProject0 = true
+		SccProjectUniqueName0 = .
+		SccProjectName0 = \u0022$/DichiarazioniICI\u0022,\u0020IUCAAAAA
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectFilePathRelativizedFromConnection0 = 
+		SccProjectEnlistmentChoice0 = 2
+		SccProjectUniqueName1 = DichiarazioniICI.csproj
+		SccProjectName1 = \u0022$/DichiarazioniICI\u0022,\u0020IUCAAAAA
+		SccLocalPath1 = .
+		SccProvider1 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectEnlistmentChoice1 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14507F38-EB84-4E90-ACD5-21FE02A2DEE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14507F38-EB84-4E90-ACD5-21FE02A2DEE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14507F38-EB84-4E90-ACD5-21FE02A2DEE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14507F38-EB84-4E90-ACD5-21FE02A2DEE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

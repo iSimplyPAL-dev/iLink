@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: DichiarazioniICI.Analisi.FatturatoIncassato
+  commentId: N:DichiarazioniICI.Analisi.FatturatoIncassato
+  id: DichiarazioniICI.Analisi.FatturatoIncassato
+  children:
+  - DichiarazioniICI.Analisi.FatturatoIncassato.ChartAnalisiEconomiche
+  - DichiarazioniICI.Analisi.FatturatoIncassato.ComandiAnalisiEconomiche
+  langs:
+  - csharp
+  - vb
+  name: DichiarazioniICI.Analisi.FatturatoIncassato
+  nameWithType: DichiarazioniICI.Analisi.FatturatoIncassato
+  fullName: DichiarazioniICI.Analisi.FatturatoIncassato
+  type: Namespace
+  assemblies:
+  - DichiarazioniICI
+references:
+- uid: DichiarazioniICI.Analisi.FatturatoIncassato.ChartAnalisiEconomiche
+  commentId: T:DichiarazioniICI.Analisi.FatturatoIncassato.ChartAnalisiEconomiche
+  name: ChartAnalisiEconomiche
+  nameWithType: ChartAnalisiEconomiche
+  fullName: DichiarazioniICI.Analisi.FatturatoIncassato.ChartAnalisiEconomiche
+- uid: DichiarazioniICI.Analisi.FatturatoIncassato.ComandiAnalisiEconomiche
+  commentId: T:DichiarazioniICI.Analisi.FatturatoIncassato.ComandiAnalisiEconomiche
+  name: ComandiAnalisiEconomiche
+  nameWithType: ComandiAnalisiEconomiche
+  fullName: DichiarazioniICI.Analisi.FatturatoIncassato.ComandiAnalisiEconomiche

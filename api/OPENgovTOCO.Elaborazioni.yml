@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENgovTOCO.Elaborazioni
+  commentId: N:OPENgovTOCO.Elaborazioni
+  id: OPENgovTOCO.Elaborazioni
+  children:
+  - OPENgovTOCO.Elaborazioni.ElaborazioneAvvisi
+  langs:
+  - csharp
+  - vb
+  name: OPENgovTOCO.Elaborazioni
+  nameWithType: OPENgovTOCO.Elaborazioni
+  fullName: OPENgovTOCO.Elaborazioni
+  type: Namespace
+  assemblies:
+  - OPENGovTOCO
+references:
+- uid: OPENgovTOCO.Elaborazioni.ElaborazioneAvvisi
+  commentId: T:OPENgovTOCO.Elaborazioni.ElaborazioneAvvisi
+  name: ElaborazioneAvvisi
+  nameWithType: ElaborazioneAvvisi
+  fullName: OPENgovTOCO.Elaborazioni.ElaborazioneAvvisi

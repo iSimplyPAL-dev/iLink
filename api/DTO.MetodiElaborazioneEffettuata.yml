@@ -1,0 +1,563 @@
+### YamlMime:ManagedReference
+items:
+- uid: DTO.MetodiElaborazioneEffettuata
+  commentId: T:DTO.MetodiElaborazioneEffettuata
+  id: MetodiElaborazioneEffettuata
+  parent: DTO
+  children:
+  - DTO.MetodiElaborazioneEffettuata.CheckTariffe(System.Int32,System.String)
+  - DTO.MetodiElaborazioneEffettuata.GetElaborazioneEffettuata(System.Int32,IRemInterfaceOSAP.Ruolo.E_TIPO,System.String)
+  - DTO.MetodiElaborazioneEffettuata.GetStatistichePreElaborazione(System.Int32,IRemInterfaceOSAP.Ruolo.E_TIPO,System.String)
+  - DTO.MetodiElaborazioneEffettuata.SetElaborazioneEffettuata(IRemInterfaceOSAP.ElaborazioneEffettuata@,System.Data.SqlClient.SqlCommand@,System.String)
+  langs:
+  - csharp
+  - vb
+  name: MetodiElaborazioneEffettuata
+  nameWithType: MetodiElaborazioneEffettuata
+  fullName: DTO.MetodiElaborazioneEffettuata
+  type: Class
+  source:
+    id: MetodiElaborazioneEffettuata
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\ElaborazioneEffettuata.cs
+    startLine: 13
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  summary: "\nClasse per la gestione elaborazione \n"
+  example: []
+  syntax:
+    content: public class MetodiElaborazioneEffettuata
+    content.vb: Public Class MetodiElaborazioneEffettuata
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DTO.MetodiElaborazioneEffettuata.GetElaborazioneEffettuata(System.Int32,IRemInterfaceOSAP.Ruolo.E_TIPO,System.String)
+  commentId: M:DTO.MetodiElaborazioneEffettuata.GetElaborazioneEffettuata(System.Int32,IRemInterfaceOSAP.Ruolo.E_TIPO,System.String)
+  id: GetElaborazioneEffettuata(System.Int32,IRemInterfaceOSAP.Ruolo.E_TIPO,System.String)
+  parent: DTO.MetodiElaborazioneEffettuata
+  langs:
+  - csharp
+  - vb
+  name: GetElaborazioneEffettuata(Int32, Ruolo.E_TIPO, String)
+  nameWithType: MetodiElaborazioneEffettuata.GetElaborazioneEffettuata(Int32, Ruolo.E_TIPO, String)
+  fullName: DTO.MetodiElaborazioneEffettuata.GetElaborazioneEffettuata(System.Int32, IRemInterfaceOSAP.Ruolo.E_TIPO, System.String)
+  type: Method
+  source:
+    id: GetElaborazioneEffettuata
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\ElaborazioneEffettuata.cs
+    startLine: 18
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static ElaborazioneEffettuata GetElaborazioneEffettuata(int Anno, Ruolo.E_TIPO TipoRuolo, string IdTributo)
+    parameters:
+    - id: Anno
+      type: System.Int32
+    - id: TipoRuolo
+      type: IRemInterfaceOSAP.Ruolo.E_TIPO
+    - id: IdTributo
+      type: System.String
+    return:
+      type: IRemInterfaceOSAP.ElaborazioneEffettuata
+    content.vb: Public Shared Function GetElaborazioneEffettuata(Anno As Integer, TipoRuolo As Ruolo.E_TIPO, IdTributo As String) As ElaborazioneEffettuata
+  overload: DTO.MetodiElaborazioneEffettuata.GetElaborazioneEffettuata*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiElaborazioneEffettuata.SetElaborazioneEffettuata(IRemInterfaceOSAP.ElaborazioneEffettuata@,System.Data.SqlClient.SqlCommand@,System.String)
+  commentId: M:DTO.MetodiElaborazioneEffettuata.SetElaborazioneEffettuata(IRemInterfaceOSAP.ElaborazioneEffettuata@,System.Data.SqlClient.SqlCommand@,System.String)
+  id: SetElaborazioneEffettuata(IRemInterfaceOSAP.ElaborazioneEffettuata@,System.Data.SqlClient.SqlCommand@,System.String)
+  parent: DTO.MetodiElaborazioneEffettuata
+  langs:
+  - csharp
+  - vb
+  name: SetElaborazioneEffettuata(ref ElaborazioneEffettuata, ref SqlCommand, String)
+  nameWithType: MetodiElaborazioneEffettuata.SetElaborazioneEffettuata(ref ElaborazioneEffettuata, ref SqlCommand, String)
+  fullName: DTO.MetodiElaborazioneEffettuata.SetElaborazioneEffettuata(ref IRemInterfaceOSAP.ElaborazioneEffettuata, ref System.Data.SqlClient.SqlCommand, System.String)
+  type: Method
+  source:
+    id: SetElaborazioneEffettuata
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\ElaborazioneEffettuata.cs
+    startLine: 54
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public static void SetElaborazioneEffettuata(ref ElaborazioneEffettuata myItem, ref SqlCommand cmdMyCommand, string Operatore)
+    parameters:
+    - id: myItem
+      type: IRemInterfaceOSAP.ElaborazioneEffettuata
+      description: ref ElaborazioneEffettuata
+    - id: cmdMyCommand
+      type: System.Data.SqlClient.SqlCommand
+      description: ref SqlCommand
+    - id: Operatore
+      type: System.String
+      description: string utente
+    content.vb: Public Shared Sub SetElaborazioneEffettuata(ByRef myItem As ElaborazioneEffettuata, ByRef cmdMyCommand As SqlCommand, Operatore As String)
+  overload: DTO.MetodiElaborazioneEffettuata.SetElaborazioneEffettuata*
+  nameWithType.vb: MetodiElaborazioneEffettuata.SetElaborazioneEffettuata(ByRef ElaborazioneEffettuata, ByRef SqlCommand, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: DTO.MetodiElaborazioneEffettuata.SetElaborazioneEffettuata(ByRef IRemInterfaceOSAP.ElaborazioneEffettuata, ByRef System.Data.SqlClient.SqlCommand, System.String)
+  name.vb: SetElaborazioneEffettuata(ByRef ElaborazioneEffettuata, ByRef SqlCommand, String)
+- uid: DTO.MetodiElaborazioneEffettuata.GetStatistichePreElaborazione(System.Int32,IRemInterfaceOSAP.Ruolo.E_TIPO,System.String)
+  commentId: M:DTO.MetodiElaborazioneEffettuata.GetStatistichePreElaborazione(System.Int32,IRemInterfaceOSAP.Ruolo.E_TIPO,System.String)
+  id: GetStatistichePreElaborazione(System.Int32,IRemInterfaceOSAP.Ruolo.E_TIPO,System.String)
+  parent: DTO.MetodiElaborazioneEffettuata
+  langs:
+  - csharp
+  - vb
+  name: GetStatistichePreElaborazione(Int32, Ruolo.E_TIPO, String)
+  nameWithType: MetodiElaborazioneEffettuata.GetStatistichePreElaborazione(Int32, Ruolo.E_TIPO, String)
+  fullName: DTO.MetodiElaborazioneEffettuata.GetStatistichePreElaborazione(System.Int32, IRemInterfaceOSAP.Ruolo.E_TIPO, System.String)
+  type: Method
+  source:
+    id: GetStatistichePreElaborazione
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\ElaborazioneEffettuata.cs
+    startLine: 82
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static ElaborazioneEffettuata GetStatistichePreElaborazione(int Anno, Ruolo.E_TIPO TipoRuolo, string IdTributo)
+    parameters:
+    - id: Anno
+      type: System.Int32
+    - id: TipoRuolo
+      type: IRemInterfaceOSAP.Ruolo.E_TIPO
+    - id: IdTributo
+      type: System.String
+    return:
+      type: IRemInterfaceOSAP.ElaborazioneEffettuata
+    content.vb: Public Shared Function GetStatistichePreElaborazione(Anno As Integer, TipoRuolo As Ruolo.E_TIPO, IdTributo As String) As ElaborazioneEffettuata
+  overload: DTO.MetodiElaborazioneEffettuata.GetStatistichePreElaborazione*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DTO.MetodiElaborazioneEffettuata.CheckTariffe(System.Int32,System.String)
+  commentId: M:DTO.MetodiElaborazioneEffettuata.CheckTariffe(System.Int32,System.String)
+  id: CheckTariffe(System.Int32,System.String)
+  parent: DTO.MetodiElaborazioneEffettuata
+  langs:
+  - csharp
+  - vb
+  name: CheckTariffe(Int32, String)
+  nameWithType: MetodiElaborazioneEffettuata.CheckTariffe(Int32, String)
+  fullName: DTO.MetodiElaborazioneEffettuata.CheckTariffe(System.Int32, System.String)
+  type: Method
+  source:
+    id: CheckTariffe
+    path: C:\Dev\PAL\Codice\OPENgov\OPENgovTOCO\Generali\DTO\ElaborazioneEffettuata.cs
+    startLine: 101
+  assemblies:
+  - OPENGovTOCO
+  namespace: DTO
+  syntax:
+    content: public static string CheckTariffe(int Anno, string IdTributo)
+    parameters:
+    - id: Anno
+      type: System.Int32
+    - id: IdTributo
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function CheckTariffe(Anno As Integer, IdTributo As String) As String
+  overload: DTO.MetodiElaborazioneEffettuata.CheckTariffe*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: DTO
+  commentId: N:DTO
+  name: DTO
+  nameWithType: DTO
+  fullName: DTO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DTO.MetodiElaborazioneEffettuata.GetElaborazioneEffettuata*
+  commentId: Overload:DTO.MetodiElaborazioneEffettuata.GetElaborazioneEffettuata
+  name: GetElaborazioneEffettuata
+  nameWithType: MetodiElaborazioneEffettuata.GetElaborazioneEffettuata
+  fullName: DTO.MetodiElaborazioneEffettuata.GetElaborazioneEffettuata
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: IRemInterfaceOSAP.Ruolo.E_TIPO
+  commentId: T:IRemInterfaceOSAP.Ruolo.E_TIPO
+  parent: IRemInterfaceOSAP
+  isExternal: true
+  name: Ruolo.E_TIPO
+  nameWithType: Ruolo.E_TIPO
+  fullName: IRemInterfaceOSAP.Ruolo.E_TIPO
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: IRemInterfaceOSAP.ElaborazioneEffettuata
+  commentId: T:IRemInterfaceOSAP.ElaborazioneEffettuata
+  parent: IRemInterfaceOSAP
+  isExternal: true
+  name: ElaborazioneEffettuata
+  nameWithType: ElaborazioneEffettuata
+  fullName: IRemInterfaceOSAP.ElaborazioneEffettuata
+- uid: IRemInterfaceOSAP
+  commentId: N:IRemInterfaceOSAP
+  isExternal: true
+  name: IRemInterfaceOSAP
+  nameWithType: IRemInterfaceOSAP
+  fullName: IRemInterfaceOSAP
+- uid: DTO.MetodiElaborazioneEffettuata.SetElaborazioneEffettuata*
+  commentId: Overload:DTO.MetodiElaborazioneEffettuata.SetElaborazioneEffettuata
+  name: SetElaborazioneEffettuata
+  nameWithType: MetodiElaborazioneEffettuata.SetElaborazioneEffettuata
+  fullName: DTO.MetodiElaborazioneEffettuata.SetElaborazioneEffettuata
+- uid: System.Data.SqlClient.SqlCommand
+  commentId: T:System.Data.SqlClient.SqlCommand
+  parent: System.Data.SqlClient
+  isExternal: true
+  name: SqlCommand
+  nameWithType: SqlCommand
+  fullName: System.Data.SqlClient.SqlCommand
+- uid: System.Data.SqlClient
+  commentId: N:System.Data.SqlClient
+  isExternal: true
+  name: System.Data.SqlClient
+  nameWithType: System.Data.SqlClient
+  fullName: System.Data.SqlClient
+- uid: DTO.MetodiElaborazioneEffettuata.GetStatistichePreElaborazione*
+  commentId: Overload:DTO.MetodiElaborazioneEffettuata.GetStatistichePreElaborazione
+  name: GetStatistichePreElaborazione
+  nameWithType: MetodiElaborazioneEffettuata.GetStatistichePreElaborazione
+  fullName: DTO.MetodiElaborazioneEffettuata.GetStatistichePreElaborazione
+- uid: DTO.MetodiElaborazioneEffettuata.CheckTariffe*
+  commentId: Overload:DTO.MetodiElaborazioneEffettuata.CheckTariffe
+  name: CheckTariffe
+  nameWithType: MetodiElaborazioneEffettuata.CheckTariffe
+  fullName: DTO.MetodiElaborazioneEffettuata.CheckTariffe

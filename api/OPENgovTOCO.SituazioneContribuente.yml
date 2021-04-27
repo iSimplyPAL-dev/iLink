@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: OPENgovTOCO.SituazioneContribuente
+  commentId: N:OPENgovTOCO.SituazioneContribuente
+  id: OPENgovTOCO.SituazioneContribuente
+  children:
+  - OPENgovTOCO.SituazioneContribuente.SituazioneAvvisi
+  - OPENgovTOCO.SituazioneContribuente.SituazioneAvvisiSearch
+  langs:
+  - csharp
+  - vb
+  name: OPENgovTOCO.SituazioneContribuente
+  nameWithType: OPENgovTOCO.SituazioneContribuente
+  fullName: OPENgovTOCO.SituazioneContribuente
+  type: Namespace
+  assemblies:
+  - OPENGovTOCO
+references:
+- uid: OPENgovTOCO.SituazioneContribuente.SituazioneAvvisi
+  commentId: T:OPENgovTOCO.SituazioneContribuente.SituazioneAvvisi
+  name: SituazioneAvvisi
+  nameWithType: SituazioneAvvisi
+  fullName: OPENgovTOCO.SituazioneContribuente.SituazioneAvvisi
+- uid: OPENgovTOCO.SituazioneContribuente.SituazioneAvvisiSearch
+  commentId: T:OPENgovTOCO.SituazioneContribuente.SituazioneAvvisiSearch
+  name: SituazioneAvvisiSearch
+  nameWithType: SituazioneAvvisiSearch
+  fullName: OPENgovTOCO.SituazioneContribuente.SituazioneAvvisiSearch

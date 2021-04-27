@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://localhost/OPENaeWS/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://localhost/OPENaeWS/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://localhost/OPENaeWS/">
+      <s:element name="PopolaDaQuery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sTributo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sAnnoRif" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCodiceISTAT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PopolaDaQueryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PopolaDaQueryResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PopolaDaOggetti">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="oDati" type="tns:ArrayOfDisposizioneAE" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDisposizioneAE">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DisposizioneAE" nillable="true" type="tns:DisposizioneAE" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DisposizioneAE">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="nIDDisposizione" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="nIDCollegamento" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="nIDFlusso" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="nIDContribuente" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="nMesiFatturazione" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="nConsumo" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="nImportoFatturato" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="nIDTitoloOccupazione" type="tns:TitoloOccupazione" />
+          <s:element minOccurs="1" maxOccurs="1" name="nIDTipoOccupante" type="tns:NaturaOccupazione" />
+          <s:element minOccurs="1" maxOccurs="1" name="nIDDestinazioneUso" type="tns:DestinazioneUso" />
+          <s:element minOccurs="1" maxOccurs="1" name="nIDAssenzaDatiCatastali" type="tns:AssenzaDatiCatastali" />
+          <s:element minOccurs="1" maxOccurs="1" name="nIDTipoUtenza" type="tns:TipologiaUtenza" />
+          <s:element minOccurs="0" maxOccurs="1" name="sCodISTAT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sTributo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sAnno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sCodFiscaleEnte" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sCognomeEnte" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sNomeEnte" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sSessoEnte" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sDataNascitaEnte" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sComuneNascitaSedeEnte" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sPVNascitaSedeEnte" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sCodFiscale" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sCognome" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sNome" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sSesso" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sDataNascita" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sComuneNascitaSede" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sPVNascitaSede" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sComuneDomFisc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sPVDomFisc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sEstremiContratto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sTipoContratto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sDataInizio" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sDataFine" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sComuneAmmUbicazione" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sPVAmmUbicazione" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sComuneCatastUbicazione" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sCodComuneUbicazioneCatast" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sIDTipoUnita" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sSezione" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sFoglio" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sParticella" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sEstensioneParticella" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sIDTipoParticella" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sSubalterno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sIndirizzo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sCivico" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sInterno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sScala" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sSegno" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="TitoloOccupazione">
+        <s:restriction base="s:string">
+          <s:enumeration value="NonSpecificato" />
+          <s:enumeration value="Proprieta" />
+          <s:enumeration value="Usufrutto" />
+          <s:enumeration value="Locazione_AltroDiritto" />
+          <s:enumeration value="AltroDiritto_Rappresentante" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="NaturaOccupazione">
+        <s:restriction base="s:string">
+          <s:enumeration value="NonSpecificato" />
+          <s:enumeration value="Singolo" />
+          <s:enumeration value="NucleoFamiliare" />
+          <s:enumeration value="AttivitaCommerciale" />
+          <s:enumeration value="AltraTipologia" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="DestinazioneUso">
+        <s:restriction base="s:string">
+          <s:enumeration value="NonSpecificato" />
+          <s:enumeration value="Abitativo" />
+          <s:enumeration value="TenutoADisposizione" />
+          <s:enumeration value="Commerciale" />
+          <s:enumeration value="Box" />
+          <s:enumeration value="AltriUsi" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="AssenzaDatiCatastali">
+        <s:restriction base="s:string">
+          <s:enumeration value="NonSpecificato" />
+          <s:enumeration value="NonAccatastato" />
+          <s:enumeration value="NonAccatastabile" />
+          <s:enumeration value="DatiNonDisponibili_Preesistente" />
+          <s:enumeration value="OmessaDichiarazione" />
+          <s:enumeration value="FornitureTemporanee" />
+          <s:enumeration value="Condominii" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="TipologiaUtenza">
+        <s:restriction base="s:string">
+          <s:enumeration value="NonSpecificato" />
+          <s:enumeration value="DomesticaRes" />
+          <s:enumeration value="DomesticaNonRes" />
+          <s:enumeration value="NonDomestica" />
+          <s:enumeration value="GrandeUtenza" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="PopolaDaOggettiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PopolaDaOggettiResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EstraiTracciatoAE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sTributo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sAnnoRif" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCodiceISTAT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sNomeFileTracciati" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EstraiTracciatoAEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EstraiTracciatoAEResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sNomeFileTracciati" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFlussiTracciati">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sTributo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCodiceISTAT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sMyErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFlussiTracciatiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFlussiTracciatiResult" type="tns:ArrayOfObjFlussoAE" />
+            <s:element minOccurs="0" maxOccurs="1" name="sMyErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfObjFlussoAE">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="objFlussoAE" nillable="true" type="tns:objFlussoAE" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="objFlussoAE">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdFlusso" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodiceISTAT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Anno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NomeFile" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DataEstrazione" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NumeroUtenti" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NumeroRecords" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NumeroArticoli" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PopolaDaFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sTributo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sAnnoRif" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCodiceISTAT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sFileImport" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sProvenienza" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PopolaDaFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PopolaDaFileResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EstraiICI">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sTributo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sAnnoRif" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCodiceISTAT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCodBelfiore" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sDescrEnte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCAPEnte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sDataScadenza" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nProgInvio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sNomeFileTracciati" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EstraiICIResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EstraiICIResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sNomeFileTracciati" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PopolaDaQuerySoapIn">
+    <wsdl:part name="parameters" element="tns:PopolaDaQuery" />
+  </wsdl:message>
+  <wsdl:message name="PopolaDaQuerySoapOut">
+    <wsdl:part name="parameters" element="tns:PopolaDaQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="PopolaDaOggettiSoapIn">
+    <wsdl:part name="parameters" element="tns:PopolaDaOggetti" />
+  </wsdl:message>
+  <wsdl:message name="PopolaDaOggettiSoapOut">
+    <wsdl:part name="parameters" element="tns:PopolaDaOggettiResponse" />
+  </wsdl:message>
+  <wsdl:message name="EstraiTracciatoAESoapIn">
+    <wsdl:part name="parameters" element="tns:EstraiTracciatoAE" />
+  </wsdl:message>
+  <wsdl:message name="EstraiTracciatoAESoapOut">
+    <wsdl:part name="parameters" element="tns:EstraiTracciatoAEResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFlussiTracciatiSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFlussiTracciati" />
+  </wsdl:message>
+  <wsdl:message name="GetFlussiTracciatiSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFlussiTracciatiResponse" />
+  </wsdl:message>
+  <wsdl:message name="PopolaDaFileSoapIn">
+    <wsdl:part name="parameters" element="tns:PopolaDaFile" />
+  </wsdl:message>
+  <wsdl:message name="PopolaDaFileSoapOut">
+    <wsdl:part name="parameters" element="tns:PopolaDaFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="EstraiICISoapIn">
+    <wsdl:part name="parameters" element="tns:EstraiICI" />
+  </wsdl:message>
+  <wsdl:message name="EstraiICISoapOut">
+    <wsdl:part name="parameters" element="tns:EstraiICIResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceOPENaeSoap">
+    <wsdl:operation name="PopolaTabAppoggioAE">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Popola la tabella d'appoggio usando una query diretta</wsdl:documentation>
+      <wsdl:input name="PopolaDaQuery" message="tns:PopolaDaQuerySoapIn" />
+      <wsdl:output name="PopolaDaQuery" message="tns:PopolaDaQuerySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PopolaTabAppoggioAE">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Popola la tabella d'appoggio ciclando sull'array di oggetti in input</wsdl:documentation>
+      <wsdl:input name="PopolaDaOggetti" message="tns:PopolaDaOggettiSoapIn" />
+      <wsdl:output name="PopolaDaOggetti" message="tns:PopolaDaOggettiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EstraiTracciatoAE">
+      <wsdl:input message="tns:EstraiTracciatoAESoapIn" />
+      <wsdl:output message="tns:EstraiTracciatoAESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFlussiTracciatiAE">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Preleva l'elenco dei flussi elaborati restituendoli in array di oggetti</wsdl:documentation>
+      <wsdl:input name="GetFlussiTracciati" message="tns:GetFlussiTracciatiSoapIn" />
+      <wsdl:output name="GetFlussiTracciati" message="tns:GetFlussiTracciatiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PopolaTabAppoggioAE">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Popola la tabella d'appoggio usando un file ICI</wsdl:documentation>
+      <wsdl:input name="PopolaDaFile" message="tns:PopolaDaFileSoapIn" />
+      <wsdl:output name="PopolaDaFile" message="tns:PopolaDaFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EstraiTracciatoAE">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Estrai Tracciato ICI restituendo path e nome del file creato</wsdl:documentation>
+      <wsdl:input name="EstraiICI" message="tns:EstraiICISoapIn" />
+      <wsdl:output name="EstraiICI" message="tns:EstraiICISoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceOPENaeSoap" type="tns:ServiceOPENaeSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PopolaTabAppoggioAE">
+      <soap:operation soapAction="http://localhost/OPENaeWS/PopolaDaQuery" style="document" />
+      <wsdl:input name="PopolaDaQuery">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="PopolaDaQuery">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PopolaTabAppoggioAE">
+      <soap:operation soapAction="http://localhost/OPENaeWS/PopolaDaOggetti" style="document" />
+      <wsdl:input name="PopolaDaOggetti">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="PopolaDaOggetti">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EstraiTracciatoAE">
+      <soap:operation soapAction="http://localhost/OPENaeWS/EstraiTracciatoAE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlussiTracciatiAE">
+      <soap:operation soapAction="http://localhost/OPENaeWS/GetFlussiTracciati" style="document" />
+      <wsdl:input name="GetFlussiTracciati">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetFlussiTracciati">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PopolaTabAppoggioAE">
+      <soap:operation soapAction="http://localhost/OPENaeWS/PopolaDaFile" style="document" />
+      <wsdl:input name="PopolaDaFile">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="PopolaDaFile">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EstraiTracciatoAE">
+      <soap:operation soapAction="http://localhost/OPENaeWS/EstraiICI" style="document" />
+      <wsdl:input name="EstraiICI">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="EstraiICI">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceOPENaeSoap12" type="tns:ServiceOPENaeSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PopolaTabAppoggioAE">
+      <soap12:operation soapAction="http://localhost/OPENaeWS/PopolaDaQuery" style="document" />
+      <wsdl:input name="PopolaDaQuery">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="PopolaDaQuery">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PopolaTabAppoggioAE">
+      <soap12:operation soapAction="http://localhost/OPENaeWS/PopolaDaOggetti" style="document" />
+      <wsdl:input name="PopolaDaOggetti">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="PopolaDaOggetti">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EstraiTracciatoAE">
+      <soap12:operation soapAction="http://localhost/OPENaeWS/EstraiTracciatoAE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlussiTracciatiAE">
+      <soap12:operation soapAction="http://localhost/OPENaeWS/GetFlussiTracciati" style="document" />
+      <wsdl:input name="GetFlussiTracciati">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetFlussiTracciati">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PopolaTabAppoggioAE">
+      <soap12:operation soapAction="http://localhost/OPENaeWS/PopolaDaFile" style="document" />
+      <wsdl:input name="PopolaDaFile">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="PopolaDaFile">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EstraiTracciatoAE">
+      <soap12:operation soapAction="http://localhost/OPENaeWS/EstraiICI" style="document" />
+      <wsdl:input name="EstraiICI">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="EstraiICI">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceOPENae">
+    <wsdl:port name="ServiceOPENaeSoap" binding="tns:ServiceOPENaeSoap">
+      <soap:address location="http://localhost:51367/ServiceOPENae.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceOPENaeSoap12" binding="tns:ServiceOPENaeSoap12">
+      <soap12:address location="http://localhost:51367/ServiceOPENae.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

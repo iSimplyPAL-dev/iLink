@@ -1,0 +1,642 @@
+### YamlMime:ManagedReference
+items:
+- uid: Business.ClsAnalisi
+  commentId: T:Business.ClsAnalisi
+  id: ClsAnalisi
+  parent: Business
+  children:
+  - Business.ClsAnalisi.GetCheckRifCatastali(System.String,System.String,System.Int32,System.Int32,System.Boolean)
+  - Business.ClsAnalisi.GetDettaglioEmesso(System.String,System.String,System.String,System.String,System.String)
+  - Business.ClsAnalisi.GetDettaglioVersato(System.String,System.String,System.String,System.String,System.String)
+  - Business.ClsAnalisi.GetRiepilogoEmesso(System.String,System.String,System.String,System.String,System.String)
+  - Business.ClsAnalisi.GetRiepilogoEmessoEvaso(System.String,System.String,System.String,System.String,System.String,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: ClsAnalisi
+  nameWithType: ClsAnalisi
+  fullName: Business.ClsAnalisi
+  type: Class
+  source:
+    id: ClsAnalisi
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ClsAnalisi.cs
+    startLine: 13
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nClasse con le funzioni per le interrogazioni di confronto con il catasto\n"
+  remarks: In ottemperanza alle linee guida di sviluppo 1.0
+  example: []
+  syntax:
+    content: public class ClsAnalisi
+    content.vb: Public Class ClsAnalisi
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Business.ClsAnalisi.GetRiepilogoEmesso(System.String,System.String,System.String,System.String,System.String)
+  commentId: M:Business.ClsAnalisi.GetRiepilogoEmesso(System.String,System.String,System.String,System.String,System.String)
+  id: GetRiepilogoEmesso(System.String,System.String,System.String,System.String,System.String)
+  parent: Business.ClsAnalisi
+  langs:
+  - csharp
+  - vb
+  name: GetRiepilogoEmesso(String, String, String, String, String)
+  nameWithType: ClsAnalisi.GetRiepilogoEmesso(String, String, String, String, String)
+  fullName: Business.ClsAnalisi.GetRiepilogoEmesso(System.String, System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    id: GetRiepilogoEmesso
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ClsAnalisi.cs
+    startLine: 46
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nfunzione che preleva il numero di utenti e la somma degli importi per il dovuto e il versato in base ai parametri in ingresso\n"
+  example: []
+  syntax:
+    content: public DataView GetRiepilogoEmesso(string sMyIdEnte, string sMyTributo, string sAnno, string sAccreditoDal, string sAccreditoAl)
+    parameters:
+    - id: sMyIdEnte
+      type: System.String
+      description: ''
+    - id: sMyTributo
+      type: System.String
+      description: ''
+    - id: sAnno
+      type: System.String
+      description: ''
+    - id: sAccreditoDal
+      type: System.String
+      description: ''
+    - id: sAccreditoAl
+      type: System.String
+      description: ''
+    return:
+      type: System.Data.DataView
+      description: ''
+    content.vb: Public Function GetRiepilogoEmesso(sMyIdEnte As String, sMyTributo As String, sAnno As String, sAccreditoDal As String, sAccreditoAl As String) As DataView
+  overload: Business.ClsAnalisi.GetRiepilogoEmesso*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.ClsAnalisi.GetRiepilogoEmessoEvaso(System.String,System.String,System.String,System.String,System.String,System.Int32)
+  commentId: M:Business.ClsAnalisi.GetRiepilogoEmessoEvaso(System.String,System.String,System.String,System.String,System.String,System.Int32)
+  id: GetRiepilogoEmessoEvaso(System.String,System.String,System.String,System.String,System.String,System.Int32)
+  parent: Business.ClsAnalisi
+  langs:
+  - csharp
+  - vb
+  name: GetRiepilogoEmessoEvaso(String, String, String, String, String, Int32)
+  nameWithType: ClsAnalisi.GetRiepilogoEmessoEvaso(String, String, String, String, String, Int32)
+  fullName: Business.ClsAnalisi.GetRiepilogoEmessoEvaso(System.String, System.String, System.String, System.String, System.String, System.Int32)
+  type: Method
+  source:
+    id: GetRiepilogoEmessoEvaso
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ClsAnalisi.cs
+    startLine: 179
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nfunzione che preleva il numero e l&apos;importo dei versamenti in unica soluzione piuttosto che a rate\n"
+  example: []
+  syntax:
+    content: public DataView GetRiepilogoEmessoEvaso(string sMyIdEnte, string sMyTributo, string sAnno, string sAccreditoDal, string sAccreditoAl, int IsEvaseTotalmente)
+    parameters:
+    - id: sMyIdEnte
+      type: System.String
+      description: ''
+    - id: sMyTributo
+      type: System.String
+      description: ''
+    - id: sAnno
+      type: System.String
+      description: ''
+    - id: sAccreditoDal
+      type: System.String
+      description: ''
+    - id: sAccreditoAl
+      type: System.String
+      description: ''
+    - id: IsEvaseTotalmente
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Data.DataView
+      description: ''
+    content.vb: Public Function GetRiepilogoEmessoEvaso(sMyIdEnte As String, sMyTributo As String, sAnno As String, sAccreditoDal As String, sAccreditoAl As String, IsEvaseTotalmente As Integer) As DataView
+  overload: Business.ClsAnalisi.GetRiepilogoEmessoEvaso*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.ClsAnalisi.GetDettaglioEmesso(System.String,System.String,System.String,System.String,System.String)
+  commentId: M:Business.ClsAnalisi.GetDettaglioEmesso(System.String,System.String,System.String,System.String,System.String)
+  id: GetDettaglioEmesso(System.String,System.String,System.String,System.String,System.String)
+  parent: Business.ClsAnalisi
+  langs:
+  - csharp
+  - vb
+  name: GetDettaglioEmesso(String, String, String, String, String)
+  nameWithType: ClsAnalisi.GetDettaglioEmesso(String, String, String, String, String)
+  fullName: Business.ClsAnalisi.GetDettaglioEmesso(System.String, System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    id: GetDettaglioEmesso
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ClsAnalisi.cs
+    startLine: 367
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nfunzione che preleva il dettaglio degli importi del dovuto\n"
+  example: []
+  syntax:
+    content: public DataView GetDettaglioEmesso(string sMyIdEnte, string sMyTributo, string sAnno, string sAccreditoDal, string sAccreditoAl)
+    parameters:
+    - id: sMyIdEnte
+      type: System.String
+      description: ''
+    - id: sMyTributo
+      type: System.String
+      description: ''
+    - id: sAnno
+      type: System.String
+      description: ''
+    - id: sAccreditoDal
+      type: System.String
+      description: ''
+    - id: sAccreditoAl
+      type: System.String
+      description: ''
+    return:
+      type: System.Data.DataView
+      description: ''
+    content.vb: Public Function GetDettaglioEmesso(sMyIdEnte As String, sMyTributo As String, sAnno As String, sAccreditoDal As String, sAccreditoAl As String) As DataView
+  overload: Business.ClsAnalisi.GetDettaglioEmesso*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.ClsAnalisi.GetDettaglioVersato(System.String,System.String,System.String,System.String,System.String)
+  commentId: M:Business.ClsAnalisi.GetDettaglioVersato(System.String,System.String,System.String,System.String,System.String)
+  id: GetDettaglioVersato(System.String,System.String,System.String,System.String,System.String)
+  parent: Business.ClsAnalisi
+  langs:
+  - csharp
+  - vb
+  name: GetDettaglioVersato(String, String, String, String, String)
+  nameWithType: ClsAnalisi.GetDettaglioVersato(String, String, String, String, String)
+  fullName: Business.ClsAnalisi.GetDettaglioVersato(System.String, System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    id: GetDettaglioVersato
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ClsAnalisi.cs
+    startLine: 412
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  summary: "\nfunzione che preleva il dettaglio degli importi del versato\n"
+  example: []
+  syntax:
+    content: public DataView GetDettaglioVersato(string sMyIdEnte, string sMyTributo, string sAnno, string sAccreditoDal, string sAccreditoAl)
+    parameters:
+    - id: sMyIdEnte
+      type: System.String
+      description: ''
+    - id: sMyTributo
+      type: System.String
+      description: ''
+    - id: sAnno
+      type: System.String
+      description: ''
+    - id: sAccreditoDal
+      type: System.String
+      description: ''
+    - id: sAccreditoAl
+      type: System.String
+      description: ''
+    return:
+      type: System.Data.DataView
+      description: ''
+    content.vb: Public Function GetDettaglioVersato(sMyIdEnte As String, sMyTributo As String, sAnno As String, sAccreditoDal As String, sAccreditoAl As String) As DataView
+  overload: Business.ClsAnalisi.GetDettaglioVersato*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Business.ClsAnalisi.GetCheckRifCatastali(System.String,System.String,System.Int32,System.Int32,System.Boolean)
+  commentId: M:Business.ClsAnalisi.GetCheckRifCatastali(System.String,System.String,System.Int32,System.Int32,System.Boolean)
+  id: GetCheckRifCatastali(System.String,System.String,System.Int32,System.Int32,System.Boolean)
+  parent: Business.ClsAnalisi
+  langs:
+  - csharp
+  - vb
+  name: GetCheckRifCatastali(String, String, Int32, Int32, Boolean)
+  nameWithType: ClsAnalisi.GetCheckRifCatastali(String, String, Int32, Int32, Boolean)
+  fullName: Business.ClsAnalisi.GetCheckRifCatastali(System.String, System.String, System.Int32, System.Int32, System.Boolean)
+  type: Method
+  source:
+    id: GetCheckRifCatastali
+    path: C:\Dev\PAL\Codice\OPENgov\DichiarazioniICI\Business\ClsAnalisi.cs
+    startLine: 593
+  assemblies:
+  - DichiarazioniICI
+  namespace: Business
+  syntax:
+    content: public DataSet GetCheckRifCatastali(string myConn, string sMyIdEnte, int Anno, int nTypeCheck, bool IsStampa)
+    parameters:
+    - id: myConn
+      type: System.String
+    - id: sMyIdEnte
+      type: System.String
+    - id: Anno
+      type: System.Int32
+    - id: nTypeCheck
+      type: System.Int32
+    - id: IsStampa
+      type: System.Boolean
+    return:
+      type: System.Data.DataSet
+    content.vb: Public Function GetCheckRifCatastali(myConn As String, sMyIdEnte As String, Anno As Integer, nTypeCheck As Integer, IsStampa As Boolean) As DataSet
+  overload: Business.ClsAnalisi.GetCheckRifCatastali*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Business
+  commentId: N:Business
+  name: Business
+  nameWithType: Business
+  fullName: Business
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Business.ClsAnalisi.GetRiepilogoEmesso*
+  commentId: Overload:Business.ClsAnalisi.GetRiepilogoEmesso
+  name: GetRiepilogoEmesso
+  nameWithType: ClsAnalisi.GetRiepilogoEmesso
+  fullName: Business.ClsAnalisi.GetRiepilogoEmesso
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Data.DataView
+  commentId: T:System.Data.DataView
+  parent: System.Data
+  isExternal: true
+  name: DataView
+  nameWithType: DataView
+  fullName: System.Data.DataView
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+- uid: Business.ClsAnalisi.GetRiepilogoEmessoEvaso*
+  commentId: Overload:Business.ClsAnalisi.GetRiepilogoEmessoEvaso
+  name: GetRiepilogoEmessoEvaso
+  nameWithType: ClsAnalisi.GetRiepilogoEmessoEvaso
+  fullName: Business.ClsAnalisi.GetRiepilogoEmessoEvaso
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Business.ClsAnalisi.GetDettaglioEmesso*
+  commentId: Overload:Business.ClsAnalisi.GetDettaglioEmesso
+  name: GetDettaglioEmesso
+  nameWithType: ClsAnalisi.GetDettaglioEmesso
+  fullName: Business.ClsAnalisi.GetDettaglioEmesso
+- uid: Business.ClsAnalisi.GetDettaglioVersato*
+  commentId: Overload:Business.ClsAnalisi.GetDettaglioVersato
+  name: GetDettaglioVersato
+  nameWithType: ClsAnalisi.GetDettaglioVersato
+  fullName: Business.ClsAnalisi.GetDettaglioVersato
+- uid: Business.ClsAnalisi.GetCheckRifCatastali*
+  commentId: Overload:Business.ClsAnalisi.GetCheckRifCatastali
+  name: GetCheckRifCatastali
+  nameWithType: ClsAnalisi.GetCheckRifCatastali
+  fullName: Business.ClsAnalisi.GetCheckRifCatastali
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Data.DataSet
+  commentId: T:System.Data.DataSet
+  parent: System.Data
+  isExternal: true
+  name: DataSet
+  nameWithType: DataSet
+  fullName: System.Data.DataSet
