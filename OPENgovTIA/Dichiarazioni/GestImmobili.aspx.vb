@@ -2972,6 +2972,10 @@ Partial Class GestImmobili
             Response.Redirect("../../PaginaErrore.aspx")
         End Try
     End Sub
+
+    Protected Sub TxtRidImp_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
     'Private Sub GestComandi()
     '    Try
     '        Dim sScript As String

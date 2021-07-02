@@ -570,7 +570,7 @@ Public Class ClsDichiarazione
     ''' <param name="nIDDettaglioTestata"></param>
     ''' <param name="bIsRicerca"></param>
     ''' <param name="sAnno"></param>
-    ''' <returns></returns>
+    ''' <returns></returns>2
     Public Function GetDichiarazione(ByVal myConnectionString As String, ByVal nIDDichiarazione As Integer, ByRef nIDContribuente As Integer, nIDDettaglioTestata As Integer, ByVal bIsRicerca As Boolean, ByVal sAnno As String) As ObjTestata()
         Dim ListTestata() As ObjTestata
 
@@ -5142,6 +5142,8 @@ Public Class GestDettaglioTestata
                             'prelevo la categoria catastale da ICI
                             oDettaglioTestata.sCatCatastale = GetCatCatastale(myConnectionString, sIdEnte, oDettaglioTestata.sFoglio, oDettaglioTestata.sNumero, oDettaglioTestata.sSubalterno)
                         End If
+
+                        ''oDettaglioTestata.ImportoFissoRid =
 
                         'dimensiono l'array
                         ReDim Preserve oListDettTestata(nDettaglioTestata)
