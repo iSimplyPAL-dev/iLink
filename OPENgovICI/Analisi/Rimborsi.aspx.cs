@@ -102,13 +102,13 @@ namespace DichiarazioniICI.Analisi
         /// <param name="e"></param>
         protected void CmdPrint_Click(object sender, EventArgs e)
         {
-            string NameXLS, sPathProspetti,  sScript;
+            string NameXLS,   sScript;
             int x, nCol;
             DataTable DtDatiStampa = new DataTable();
             ArrayList aListColonne;
             string[] aMyHeaders;
 
-            NameXLS = ""; sPathProspetti = "";  sScript = "";
+            NameXLS = "";   sScript = "";
             x = 0; nCol = 0;
             if (Session["TABELLA_RIMBORSI"] == null)
             {
@@ -144,7 +144,7 @@ namespace DichiarazioniICI.Analisi
                     }
                     aMyHeaders = ((string[])(aListColonne.ToArray(typeof(string))));
                     int[] MyCol = { 0, 1, 2, 3, 4, 5, 6, 7, 8 };
-                    new RKLib.ExportData.Export("Web").ExportDetails(DtDatiStampa, MyCol, aMyHeaders, RKLib.ExportData.Export.ExportFormat.Excel, sPathProspetti + NameXLS);
+                    new RKLib.ExportData.Export("Web").ExportDetails(DtDatiStampa, MyCol, aMyHeaders, RKLib.ExportData.Export.ExportFormat.Excel,  NameXLS);
                 }
             }
         }

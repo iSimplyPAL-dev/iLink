@@ -178,22 +178,20 @@ Partial Class RicercaDocumenti
                         Session.Add("ELENCO_DOCUMENTI_STAMPATI", oListDocStampati)
                     End If
 
-                    If nReturn = 0 Then
-                        '********************************************************
+                    If nReturn < 0 Then
                         'si è verificato uin errore
-                        '********************************************************
+                        sScript = "GestAlert('a', 'warning', '', '', 'Errore in stampa documenti!');"
+                        RegisterScript(sScript, Me.GetType())
+                        Exit Sub
+                    ElseIf nReturn = 0 Then
+                        'si è verificato uin errore
                         sScript = "GestAlert('a', 'warning', '', '', 'Errore in estrazione fatture elettroniche!');"
                         RegisterScript(sScript, Me.GetType())
                         Exit Sub
                     ElseIf nReturn = 2 Then
-                        '********************************************************
-                        ' ho chiamato l'elaborazione asincrona, sostituisco le pagine
-                        ' dei comandi e quella principale
-                        '********************************************************
-                        sScript = ""
-                        sScript += "parent.Comandi.location.href='ComandiDocumentiElaborati.aspx';"
+                        ' ho chiamato l'elaborazione asincrona, sostituisco le pagine dei comandi e quella principale
+                        sScript = "parent.Comandi.location.href='ComandiDocumentiElaborati.aspx';"
                         sScript += "document.location.href='StampaInCorso.aspx';"
-                        sScript += ""
                         RegisterScript(sScript, Me.GetType())
                         Exit Sub
                     End If
@@ -403,7 +401,7 @@ Partial Class RicercaDocumenti
             'prelevo il ruolo
             oMyRuolo = Session("oRuoloH2O")
             If Not oMyRuolo Is Nothing Then
-                If New clsFatturaElettronica(oMyRuolo.IdFlusso, ConstSession.IdEnte, ConstSession.UserName).CreaXMLFatture() Then
+                If New clsFatturaElettronica(oMyRuolo.IdFlusso, ConstSession.IdEnte, ConstSession.UserName).CreaXMLFatture("") Then
                     sScript = "GestAlert('a', 'warning', '', '', 'Estrazione fatture elettroniche effettuata con successo!');"
                     lblElaborazioniEffettuate.Text = "Estrazione fatture elettroniche effettuata con successo!"
                 Else

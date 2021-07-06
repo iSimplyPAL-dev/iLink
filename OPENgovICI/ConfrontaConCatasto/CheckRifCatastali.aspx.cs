@@ -396,16 +396,16 @@ namespace DichiarazioniICI//.ConfrontaConCatasto
                         }
                         else if (nTypeCheck == (int)ClsAnalisi.TypeCheckRifCatastali.RifErrataCopertura)
                         {
+                            oListNomiColonne.Add("Cognome");
+                            oListNomiColonne.Add("Nome");
+                            oListNomiColonne.Add("Cod.Fiscale/P.IVA");
                             oListNomiColonne.Add("Foglio");
                             oListNomiColonne.Add("Numero");
                             oListNomiColonne.Add("Subalterno");
                             oListNomiColonne.Add("Data Inizio");
                             oListNomiColonne.Add("Data Fine");
+                            oListNomiColonne.Add("Categoria");
                             oListNomiColonne.Add("Perc.Possesso");
-                            oListNomiColonne.Add("");
-                            oListNomiColonne.Add("");
-                            oListNomiColonne.Add("");
-                            oListNomiColonne.Add("");
                             oListNomiColonne.Add("");
                             oListNomiColonne.Add("");
                             oListNomiColonne.Add("");

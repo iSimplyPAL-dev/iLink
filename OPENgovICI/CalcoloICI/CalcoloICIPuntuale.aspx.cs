@@ -659,7 +659,6 @@ namespace DichiarazioniICI.CalcoloICI
             DataRow dr;
             DataSet ds = new DataSet();
             DataTable dtRiepilogoICI = null;
-            string sPathProspetti = string.Empty;
             string NameXLS = string.Empty;
             int x;
             string[] arraystr = null;
@@ -675,7 +674,6 @@ namespace DichiarazioniICI.CalcoloICI
                 else if (chkICI.Checked == false && chkTASI.Checked == true)
                     Tributo = Utility.Costanti.TRIBUTO_TASI;
 
-                sPathProspetti = ConstWrapper.PathProspetti;
                 NameXLS = ConstWrapper.CodiceEnte + "_CALCOLO_ICI_" + DateTime.Now.ToString("yyyyMMdd_hhmmss") + ".xls";
 
                 //DATI CONTRIBUENTE
@@ -922,7 +920,7 @@ namespace DichiarazioniICI.CalcoloICI
                 int[] iColumns = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 };
                 //esporto i dati in excel
                 RKLib.ExportData.Export objExport = new RKLib.ExportData.Export("Web");
-                objExport.ExportDetails(dtRiepilogoICI, iColumns, arraystr, RKLib.ExportData.Export.ExportFormat.Excel, sPathProspetti + NameXLS);
+                objExport.ExportDetails(dtRiepilogoICI, iColumns, arraystr, RKLib.ExportData.Export.ExportFormat.Excel,  NameXLS);
             }
         }
 
