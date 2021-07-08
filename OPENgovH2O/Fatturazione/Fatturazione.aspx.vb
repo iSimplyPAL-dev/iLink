@@ -879,7 +879,11 @@ Partial Class Fatturazione
             For Each myRow As GridViewRow In GrdFatturazioniPrec.Rows
                 If IDRow = CType(myRow.FindControl("hfid"), HiddenField).Value Then
                     Log.Debug("Entro in Fatturazione::GrdFatturazioniPrec_UpdateCommand::" & Now.ToString)
-                    nCol = 46
+
+                    '' BD 25/06/2021 erano 46
+                    nCol = 51
+                    '' BD 25/06/2021
+
                     'prelevo i ruoli per i parametri inseriti
                     oListFatture = FunctionFatture.GetFattura(ConstSession.StringConnection, ConstSession.IdEnte, CInt(CType(myRow.FindControl("hfid"), HiddenField).Value), -1, False)
                     Log.Debug("Sono in Fatturazione::GrdFatturazioniPrec_UpdateCommand:: devo valorizzare il datatable::" & Now.ToString)

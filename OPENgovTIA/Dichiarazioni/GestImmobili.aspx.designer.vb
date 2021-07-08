@@ -806,6 +806,24 @@ Partial Public Class GestImmobili
     Protected WithEvents GrdRiduzioni As Global.Ribes.OPENgov.WebControls.RibesGridView
 
     '''<summary>
+    '''LabelFissoRiduzione control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LabelFissoRiduzione As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''TxtRidImp control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TxtRidImp As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''Label33 control.
     '''</summary>
     '''<remarks>
