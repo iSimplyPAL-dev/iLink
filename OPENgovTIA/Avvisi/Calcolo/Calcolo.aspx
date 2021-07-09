@@ -43,8 +43,9 @@
                 document.getElementById('CmdDeleteElab').click()
         }            
         function Minuta() {
+            //*** 20210708 - togliere le domande ****
             //*** 20141107 ***
-            document.getElementById('hdMinutaAnagAllRow').value = "0";
+            /*document.getElementById('hdMinutaAnagAllRow').value = "0";
             if (confirm('Si desidera stampare l\'anagrafica su tutte le righe?'))
                 document.getElementById('hdMinutaAnagAllRow').value = "1";
             if (document.getElementById('hdMinutaStampatoreAllowed').value=="1")
@@ -58,7 +59,10 @@
             {
                 if (confirm('Si desidera stampare la Minuta su di un\'unica riga?'))
                     document.getElementById('hdPFPVUniqueRow').value = "1";
-            }
+            }*/
+            document.getElementById('hdMinutaAnagAllRow').value = "1";
+            document.getElementById('hdIsMinutaXStampatore').value = "1";
+            document.getElementById('hdPFPVUniqueRow').value = "0";
             DivAttesa.style.display = ''; 
             document.getElementById('CmdStampaMinuta').click();
         }
