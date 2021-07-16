@@ -1,0 +1,988 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CoefficienteKC
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CoefficienteKC
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OPENgovDL.CoefficienteKC">
+  
+  
+  <h1 id="OPENgovDL_CoefficienteKC" data-uid="OPENgovDL.CoefficienteKC" class="text-break">Class CoefficienteKC
+  </h1>
+  <div class="markdown level0 summary"><p>Classe per la gestione dei KC della simulazione</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Ribes.OPENgov.Utilities.Database</span></div>
+    <div class="level2"><span class="xref">Ribes.OPENgov.Utilities.DbObject</span>&lt;<a class="xref" href="OPENgovDL.CoefficienteKC.html">CoefficienteKC</a>&gt;</div>
+    <div class="level3"><span class="xref">CoefficienteKC</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.CoefficienteKC&gt;.GenerateHashCode(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.CoefficienteKC&gt;.stringParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.CoefficienteKC&gt;.intParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.CoefficienteKC&gt;.doubleParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.CoefficienteKC&gt;.dateTimeParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.CoefficienteKC&gt;.boolParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Connect()</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Connect(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Connect(System.String, System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Disconnect()</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Disconnect(System.IDisposable[])</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.CreateCommand()</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.ApplyDatabaseTo(Ribes.OPENgov.Utilities.Database)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.KeepConnection</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.SqlConnection</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.OwnConnection</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.OwnTransaction</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.ConnectionCallback</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.ParamsCacheSpan</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.MinDate</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OPENgovDL.html">OPENgovDL</a></h6>
+  <h6><strong>Assembly</strong>: OPENgovDL.dll</h6>
+  <h5 id="OPENgovDL_CoefficienteKC_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CoefficienteKC : DbObject&lt;CoefficienteKC&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC__ctor.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2090">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC__ctor_" data-uid="OPENgovDL.CoefficienteKC.#ctor*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC__ctor" data-uid="OPENgovDL.CoefficienteKC.#ctor">CoefficienteKC()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoefficienteKC()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC_CentroMax.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.CentroMax%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2110">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC_CentroMax_" data-uid="OPENgovDL.CoefficienteKC.CentroMax*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC_CentroMax" data-uid="OPENgovDL.CoefficienteKC.CentroMax">CentroMax</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double CentroMax { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC_CentroMin.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.CentroMin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2107">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC_CentroMin_" data-uid="OPENgovDL.CoefficienteKC.CentroMin*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC_CentroMin" data-uid="OPENgovDL.CoefficienteKC.CentroMin">CentroMin</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double CentroMin { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC_CoefficienteUsato.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.CoefficienteUsato%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2112">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC_CoefficienteUsato_" data-uid="OPENgovDL.CoefficienteKC.CoefficienteUsato*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC_CoefficienteUsato" data-uid="OPENgovDL.CoefficienteKC.CoefficienteUsato">CoefficienteUsato</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double CoefficienteUsato { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC_DescrCategoria.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.DescrCategoria%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2103">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC_DescrCategoria_" data-uid="OPENgovDL.CoefficienteKC.DescrCategoria*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC_DescrCategoria" data-uid="OPENgovDL.CoefficienteKC.DescrCategoria">DescrCategoria</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DescrCategoria { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC_Ente.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.Ente%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2100">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC_Ente_" data-uid="OPENgovDL.CoefficienteKC.Ente*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC_Ente" data-uid="OPENgovDL.CoefficienteKC.Ente">Ente</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Ente { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC_FromVariabile.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.FromVariabile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2099">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC_FromVariabile_" data-uid="OPENgovDL.CoefficienteKC.FromVariabile*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC_FromVariabile" data-uid="OPENgovDL.CoefficienteKC.FromVariabile">FromVariabile</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FromVariabile { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC_Id.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2097">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC_Id_" data-uid="OPENgovDL.CoefficienteKC.Id*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC_Id" data-uid="OPENgovDL.CoefficienteKC.Id">Id</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Id { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC_IdCategoria.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.IdCategoria%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2102">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC_IdCategoria_" data-uid="OPENgovDL.CoefficienteKC.IdCategoria*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC_IdCategoria" data-uid="OPENgovDL.CoefficienteKC.IdCategoria">IdCategoria</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IdCategoria { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC_IdSimulazione.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.IdSimulazione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2098">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC_IdSimulazione_" data-uid="OPENgovDL.CoefficienteKC.IdSimulazione*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC_IdSimulazione" data-uid="OPENgovDL.CoefficienteKC.IdSimulazione">IdSimulazione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IdSimulazione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC_IdUsato.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.IdUsato%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2111">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC_IdUsato_" data-uid="OPENgovDL.CoefficienteKC.IdUsato*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC_IdUsato" data-uid="OPENgovDL.CoefficienteKC.IdUsato">IdUsato</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IdUsato { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC_IsKCMax.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.IsKCMax%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2101">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC_IsKCMax_" data-uid="OPENgovDL.CoefficienteKC.IsKCMax*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC_IsKCMax" data-uid="OPENgovDL.CoefficienteKC.IsKCMax">IsKCMax</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsKCMax { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC_NordMax.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.NordMax%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2108">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC_NordMax_" data-uid="OPENgovDL.CoefficienteKC.NordMax*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC_NordMax" data-uid="OPENgovDL.CoefficienteKC.NordMax">NordMax</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double NordMax { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC_NordMin.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.NordMin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2105">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC_NordMin_" data-uid="OPENgovDL.CoefficienteKC.NordMin*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC_NordMin" data-uid="OPENgovDL.CoefficienteKC.NordMin">NordMin</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double NordMin { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC_SudMax.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.SudMax%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2109">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC_SudMax_" data-uid="OPENgovDL.CoefficienteKC.SudMax*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC_SudMax" data-uid="OPENgovDL.CoefficienteKC.SudMax">SudMax</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double SudMax { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC_SudMin.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.SudMin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2106">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC_SudMin_" data-uid="OPENgovDL.CoefficienteKC.SudMin*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC_SudMin" data-uid="OPENgovDL.CoefficienteKC.SudMin">SudMin</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double SudMin { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC_TipoComune.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.TipoComune%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2104">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC_TipoComune_" data-uid="OPENgovDL.CoefficienteKC.TipoComune*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC_TipoComune" data-uid="OPENgovDL.CoefficienteKC.TipoComune">TipoComune</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TipoComune { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC_Delete.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.Delete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2243">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC_Delete_" data-uid="OPENgovDL.CoefficienteKC.Delete*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC_Delete" data-uid="OPENgovDL.CoefficienteKC.Delete">Delete()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Delete()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.CoefficienteKC&gt;.Delete()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC_Equals_System_Object_.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2116">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC_Equals_" data-uid="OPENgovDL.CoefficienteKC.Equals*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC_Equals_System_Object_" data-uid="OPENgovDL.CoefficienteKC.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.CoefficienteKC&gt;.Equals(System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC_GetHashCode.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2123">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC_GetHashCode_" data-uid="OPENgovDL.CoefficienteKC.GetHashCode*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC_GetHashCode" data-uid="OPENgovDL.CoefficienteKC.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.CoefficienteKC&gt;.GetHashCode()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC_Load.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.Load%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2148">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC_Load_" data-uid="OPENgovDL.CoefficienteKC.Load*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC_Load" data-uid="OPENgovDL.CoefficienteKC.Load">Load()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Load()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.CoefficienteKC&gt;.Load()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC_LoadAll.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.LoadAll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2153">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC_LoadAll_" data-uid="OPENgovDL.CoefficienteKC.LoadAll*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC_LoadAll" data-uid="OPENgovDL.CoefficienteKC.LoadAll">LoadAll()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override CoefficienteKC[] LoadAll()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OPENgovDL.CoefficienteKC.html">CoefficienteKC</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.CoefficienteKC&gt;.LoadAll()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC_Reset.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2128">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC_Reset_" data-uid="OPENgovDL.CoefficienteKC.Reset*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC_Reset" data-uid="OPENgovDL.CoefficienteKC.Reset">Reset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed void Reset()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.CoefficienteKC&gt;.Reset()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC_Save.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.Save%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2206">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC_Save_" data-uid="OPENgovDL.CoefficienteKC.Save*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC_Save" data-uid="OPENgovDL.CoefficienteKC.Save">Save()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Save()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.CoefficienteKC&gt;.Save()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC_Save_System_String__.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC.Save(System.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2238">View Source</a>
+  </span>
+  <a id="OPENgovDL_CoefficienteKC_Save_" data-uid="OPENgovDL.CoefficienteKC.Save*"></a>
+  <h4 id="OPENgovDL_CoefficienteKC_Save_System_String__" data-uid="OPENgovDL.CoefficienteKC.Save(System.String@)">Save(ref String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Save(ref string error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.CoefficienteKC&gt;.Save(System.String)</span></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_CoefficienteKC.md&amp;value=---%0Auid%3A%20OPENgovDL.CoefficienteKC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L2087" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,731 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SoggettiNota
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SoggettiNota
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OPENgovDL.SoggettiNota">
+  
+  
+  <h1 id="OPENgovDL_SoggettiNota" data-uid="OPENgovDL.SoggettiNota" class="text-break">Class SoggettiNota
+  </h1>
+  <div class="markdown level0 summary"><p>Classe per la gestione dei dati esterni da Compravendita dei soggetti</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Ribes.OPENgov.Utilities.Database</span></div>
+    <div class="level2"><span class="xref">Ribes.OPENgov.Utilities.DbObject</span>&lt;<a class="xref" href="OPENgovDL.SoggettiNota.html">SoggettiNota</a>&gt;</div>
+    <div class="level3"><span class="xref">SoggettiNota</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.SoggettiNota&gt;.GenerateHashCode(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.SoggettiNota&gt;.stringParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.SoggettiNota&gt;.intParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.SoggettiNota&gt;.doubleParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.SoggettiNota&gt;.dateTimeParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.SoggettiNota&gt;.boolParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Connect()</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Connect(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Connect(System.String, System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Disconnect()</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Disconnect(System.IDisposable[])</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.CreateCommand()</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.ApplyDatabaseTo(Ribes.OPENgov.Utilities.Database)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.KeepConnection</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.SqlConnection</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.OwnConnection</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.OwnTransaction</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.ConnectionCallback</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.ParamsCacheSpan</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.MinDate</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OPENgovDL.html">OPENgovDL</a></h6>
+  <h6><strong>Assembly</strong>: OPENgovDL.dll</h6>
+  <h5 id="OPENgovDL_SoggettiNota_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SoggettiNota : DbObject&lt;SoggettiNota&gt;</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_SoggettiNota_CfPIva.md&amp;value=---%0Auid%3A%20OPENgovDL.SoggettiNota.CfPIva%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AttiCompravendita.cs/#L398">View Source</a>
+  </span>
+  <a id="OPENgovDL_SoggettiNota_CfPIva_" data-uid="OPENgovDL.SoggettiNota.CfPIva*"></a>
+  <h4 id="OPENgovDL_SoggettiNota_CfPIva" data-uid="OPENgovDL.SoggettiNota.CfPIva">CfPIva</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CfPIva { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_SoggettiNota_Diritto.md&amp;value=---%0Auid%3A%20OPENgovDL.SoggettiNota.Diritto%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AttiCompravendita.cs/#L399">View Source</a>
+  </span>
+  <a id="OPENgovDL_SoggettiNota_Diritto_" data-uid="OPENgovDL.SoggettiNota.Diritto*"></a>
+  <h4 id="OPENgovDL_SoggettiNota_Diritto" data-uid="OPENgovDL.SoggettiNota.Diritto">Diritto</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Diritto { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_SoggettiNota_IdImmobile.md&amp;value=---%0Auid%3A%20OPENgovDL.SoggettiNota.IdImmobile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AttiCompravendita.cs/#L396">View Source</a>
+  </span>
+  <a id="OPENgovDL_SoggettiNota_IdImmobile_" data-uid="OPENgovDL.SoggettiNota.IdImmobile*"></a>
+  <h4 id="OPENgovDL_SoggettiNota_IdImmobile" data-uid="OPENgovDL.SoggettiNota.IdImmobile">IdImmobile</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IdImmobile { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_SoggettiNota_IdSoggetto.md&amp;value=---%0Auid%3A%20OPENgovDL.SoggettiNota.IdSoggetto%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AttiCompravendita.cs/#L395">View Source</a>
+  </span>
+  <a id="OPENgovDL_SoggettiNota_IdSoggetto_" data-uid="OPENgovDL.SoggettiNota.IdSoggetto*"></a>
+  <h4 id="OPENgovDL_SoggettiNota_IdSoggetto" data-uid="OPENgovDL.SoggettiNota.IdSoggetto">IdSoggetto</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IdSoggetto { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_SoggettiNota_idStato.md&amp;value=---%0Auid%3A%20OPENgovDL.SoggettiNota.idStato%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AttiCompravendita.cs/#L401">View Source</a>
+  </span>
+  <a id="OPENgovDL_SoggettiNota_idStato_" data-uid="OPENgovDL.SoggettiNota.idStato*"></a>
+  <h4 id="OPENgovDL_SoggettiNota_idStato" data-uid="OPENgovDL.SoggettiNota.idStato">idStato</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int idStato { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_SoggettiNota_Nominativo.md&amp;value=---%0Auid%3A%20OPENgovDL.SoggettiNota.Nominativo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AttiCompravendita.cs/#L397">View Source</a>
+  </span>
+  <a id="OPENgovDL_SoggettiNota_Nominativo_" data-uid="OPENgovDL.SoggettiNota.Nominativo*"></a>
+  <h4 id="OPENgovDL_SoggettiNota_Nominativo" data-uid="OPENgovDL.SoggettiNota.Nominativo">Nominativo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Nominativo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_SoggettiNota_Stato.md&amp;value=---%0Auid%3A%20OPENgovDL.SoggettiNota.Stato%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AttiCompravendita.cs/#L400">View Source</a>
+  </span>
+  <a id="OPENgovDL_SoggettiNota_Stato_" data-uid="OPENgovDL.SoggettiNota.Stato*"></a>
+  <h4 id="OPENgovDL_SoggettiNota_Stato" data-uid="OPENgovDL.SoggettiNota.Stato">Stato</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Stato { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_SoggettiNota_Tipo.md&amp;value=---%0Auid%3A%20OPENgovDL.SoggettiNota.Tipo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AttiCompravendita.cs/#L394">View Source</a>
+  </span>
+  <a id="OPENgovDL_SoggettiNota_Tipo_" data-uid="OPENgovDL.SoggettiNota.Tipo*"></a>
+  <h4 id="OPENgovDL_SoggettiNota_Tipo" data-uid="OPENgovDL.SoggettiNota.Tipo">Tipo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Tipo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_SoggettiNota_Delete.md&amp;value=---%0Auid%3A%20OPENgovDL.SoggettiNota.Delete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AttiCompravendita.cs/#L437">View Source</a>
+  </span>
+  <a id="OPENgovDL_SoggettiNota_Delete_" data-uid="OPENgovDL.SoggettiNota.Delete*"></a>
+  <h4 id="OPENgovDL_SoggettiNota_Delete" data-uid="OPENgovDL.SoggettiNota.Delete">Delete()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Delete()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.SoggettiNota&gt;.Delete()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_SoggettiNota_Equals_System_Object_.md&amp;value=---%0Auid%3A%20OPENgovDL.SoggettiNota.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AttiCompravendita.cs/#L405">View Source</a>
+  </span>
+  <a id="OPENgovDL_SoggettiNota_Equals_" data-uid="OPENgovDL.SoggettiNota.Equals*"></a>
+  <h4 id="OPENgovDL_SoggettiNota_Equals_System_Object_" data-uid="OPENgovDL.SoggettiNota.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.SoggettiNota&gt;.Equals(System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_SoggettiNota_GetHashCode.md&amp;value=---%0Auid%3A%20OPENgovDL.SoggettiNota.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AttiCompravendita.cs/#L410">View Source</a>
+  </span>
+  <a id="OPENgovDL_SoggettiNota_GetHashCode_" data-uid="OPENgovDL.SoggettiNota.GetHashCode*"></a>
+  <h4 id="OPENgovDL_SoggettiNota_GetHashCode" data-uid="OPENgovDL.SoggettiNota.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.SoggettiNota&gt;.GetHashCode()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_SoggettiNota_Load.md&amp;value=---%0Auid%3A%20OPENgovDL.SoggettiNota.Load%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AttiCompravendita.cs/#L442">View Source</a>
+  </span>
+  <a id="OPENgovDL_SoggettiNota_Load_" data-uid="OPENgovDL.SoggettiNota.Load*"></a>
+  <h4 id="OPENgovDL_SoggettiNota_Load" data-uid="OPENgovDL.SoggettiNota.Load">Load()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Load()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.SoggettiNota&gt;.Load()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_SoggettiNota_LoadAll.md&amp;value=---%0Auid%3A%20OPENgovDL.SoggettiNota.LoadAll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AttiCompravendita.cs/#L483">View Source</a>
+  </span>
+  <a id="OPENgovDL_SoggettiNota_LoadAll_" data-uid="OPENgovDL.SoggettiNota.LoadAll*"></a>
+  <h4 id="OPENgovDL_SoggettiNota_LoadAll" data-uid="OPENgovDL.SoggettiNota.LoadAll">LoadAll()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override SoggettiNota[] LoadAll()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OPENgovDL.SoggettiNota.html">SoggettiNota</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.SoggettiNota&gt;.LoadAll()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_SoggettiNota_Reset.md&amp;value=---%0Auid%3A%20OPENgovDL.SoggettiNota.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AttiCompravendita.cs/#L415">View Source</a>
+  </span>
+  <a id="OPENgovDL_SoggettiNota_Reset_" data-uid="OPENgovDL.SoggettiNota.Reset*"></a>
+  <h4 id="OPENgovDL_SoggettiNota_Reset" data-uid="OPENgovDL.SoggettiNota.Reset">Reset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed void Reset()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.SoggettiNota&gt;.Reset()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_SoggettiNota_Save.md&amp;value=---%0Auid%3A%20OPENgovDL.SoggettiNota.Save%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AttiCompravendita.cs/#L427">View Source</a>
+  </span>
+  <a id="OPENgovDL_SoggettiNota_Save_" data-uid="OPENgovDL.SoggettiNota.Save*"></a>
+  <h4 id="OPENgovDL_SoggettiNota_Save" data-uid="OPENgovDL.SoggettiNota.Save">Save()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Save()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.SoggettiNota&gt;.Save()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_SoggettiNota_Save_System_String__.md&amp;value=---%0Auid%3A%20OPENgovDL.SoggettiNota.Save(System.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AttiCompravendita.cs/#L432">View Source</a>
+  </span>
+  <a id="OPENgovDL_SoggettiNota_Save_" data-uid="OPENgovDL.SoggettiNota.Save*"></a>
+  <h4 id="OPENgovDL_SoggettiNota_Save_System_String__" data-uid="OPENgovDL.SoggettiNota.Save(System.String@)">Save(ref String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Save(ref string error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.SoggettiNota&gt;.Save(System.String)</span></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_SoggettiNota.md&amp;value=---%0Auid%3A%20OPENgovDL.SoggettiNota%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AttiCompravendita.cs/#L391" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

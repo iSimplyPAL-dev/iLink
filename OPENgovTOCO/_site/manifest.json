@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Dev/PAL/Codice/OPENgov/OPENgovTOCO",
+  "source_base_path": "C:/ISimply_GitHub/UfficioTributi/OPENgovTOCO",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "YbaQxjJeS3DXNnvIl6SgwQ=="
+          "hash": "+9jXA+naZD3qnMH1uNSw4HRl2CLSzMxrmS4N3TdzrQY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -21,10 +21,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "s9qEVcYlRbp+ngRcbzOdSQ=="
+          "hash": "YZgH+mWpxo5Dck829m1pJzdum0be4dveiSrcKTGMxPo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "gB8AESyvNru97tzIZofEEg=="
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
         }
       },
       "is_incremental": false,
@@ -45,10 +45,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "3BuyWI8J1COVCPa1tamcGQ=="
+          "hash": "zPESJM8Ro0mE4X17jGct1JO+DX7IRrE37OFgSTcmhAE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -57,10 +57,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DAO.AgevolazioniDAO.html",
-          "hash": "o7wrSqFNqSrUCYg3hMYO1A=="
+          "hash": "07MH4EvL+6Uw5SEGVPiA2BCTqneXZe+j3SW3PyyLXkY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -69,10 +69,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DAO.AnagraficheDAO.html",
-          "hash": "FIPC5gu8VDY0u08Nma5x/A=="
+          "hash": "skntAK3PIYwmLZOI9Khom/z0g/rlOBAdjKtkzifbKCo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -81,10 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DAO.ArticoliDAO.html",
-          "hash": "eBXZcgDwwz0zFU3GCVVuDQ=="
+          "hash": "HienojgSezb/BlFYVj7UVXAcQ7ahwG4WRXYokzCTyDY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -93,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DAO.CartelleDAO.html",
-          "hash": "LtEH5EupUBQxwvy/7Jpnmg=="
+          "hash": "yLsrJBaoGk3zWMtF0taJaaoY0jmm6qb15A4IfnvOR+c="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -105,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DAO.CategorieDAO.html",
-          "hash": "XnfxzOUeUaAgbL0M4ekFLw=="
+          "hash": "yYRiLoqUxQV9JKaLfZWACkEW5w4wIy+yFZtLkMBSafg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -117,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DAO.CoefficientiDAO.html",
-          "hash": "dwvJ09j+PE69oUjP4ZfCLg=="
+          "hash": "9lWWIbjTpAEcHEKxZ2zERD8qqRFu5pr2rPfA4jYrN1s="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -129,10 +129,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DAO.DBEngineFactory.html",
-          "hash": "Zv604KUEzNFJdjtkqQaogQ=="
+          "hash": "P9sXtNnKZ80AabHMJlUj3CrE21E1btVaEECTEEWyR/I="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -141,10 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DAO.DichiarazioniDAO.html",
-          "hash": "lhSPbr1wLgNpShC1tVBJig=="
+          "hash": "2tprPTLaJiElQuSrnwSB7gcGf+FjwOAGK8eHxyfVNd4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -153,10 +153,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DAO.ElaborazioniDAO.html",
-          "hash": "X4aaRNE3O4zCkxCfQwvDtA=="
+          "hash": "lldYdozKTKDeridB85wj086se3pDqMPB8LAbeCKIIV0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -165,10 +165,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DAO.PagamentiDAO.html",
-          "hash": "wwabeZlDs3G5lKBFZLvysg=="
+          "hash": "rrpxTGACS5KZJEiASf+mBmdfflSWLxwdSkZDuDf5EfU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -177,10 +177,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DAO.TariffeDAO.html",
-          "hash": "J2mMecpbMLQpTkHcHWdhXg=="
+          "hash": "YeMUY8l74PYoX7K5pAWbxkKvriAqsPaSnnzGKly8lH4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -189,10 +189,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DAO.TipoOccupazDAO.html",
-          "hash": "fhwD/PKxgE5iY05noJsNEA=="
+          "hash": "EPfKHNbquKW1r7nCABpi1KMVMZ6U6oOg340obFqHIOg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -201,10 +201,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DAO.html",
-          "hash": "0Iu5QayZ5b9xYACaTMQ8eA=="
+          "hash": "ANYm+AdLpA3FG1i7m0t55Thjp64E1Am2jYRQo9YpFzw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -213,10 +213,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.CartellaSearch.html",
-          "hash": "NkLLZFHg7bGU5g+TIr7Szw=="
+          "hash": "AlCQfkwAhwBm8G+8nQwkYzzaDwAMFhnExpeVpl209Ng="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -225,10 +225,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.DichiarazioneSearch.html",
-          "hash": "sjlykXuZ8wU3kxEb0cu4ug=="
+          "hash": "zS5jmZwxBzPB1eWai+UiYXXm35tnhwycc8eQEPxYBto="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -237,10 +237,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.DichiarazioneTosapCosapTestataOLD.html",
-          "hash": "L9sQsPzvzqzbE11fCuYH2Q=="
+          "hash": "FI+QT8+pp5Vlu9J4xnIAx1UDJAyFux7lOgNfTKmbfiQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -249,10 +249,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.ElaborazioniSearch.html",
-          "hash": "Rzv+IOYY7vqgOTXfJC5T4w=="
+          "hash": "KFbjdGwy4a34eTTRTZaB3wasbzrl7OHnYpveABK8Yhc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -261,10 +261,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.MetodiAgevolazione.html",
-          "hash": "xxBRaCelUPE01Tr2CfjaaQ=="
+          "hash": "IF6jbwuUA41S4CIyBTIneCH98waNdMNICmcvKeqN1pI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -273,10 +273,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.MetodiArticolo.html",
-          "hash": "telkw6a2jtH70ZLu3iFrLA=="
+          "hash": "1bOWSbDGUZSZaymbufVDx9knPn2mpgFkTPLsNM5zSlc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -285,10 +285,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.MetodiCartella.html",
-          "hash": "8mFZHeYB0wHEwQsiZq1tsA=="
+          "hash": "3Lw2bCRoO9nOshq/ow3byUVWcrovMRzguzkXe7H3qQg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -297,10 +297,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.MetodiCategorie.html",
-          "hash": "uFOyFp4Qa5ZbotyKT76/cA=="
+          "hash": "puf6aJeTcJxiXG1ByOvp84fqZrWMjecU4KznYsOIMsY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -309,10 +309,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.MetodiConfigurazioneRate.html",
-          "hash": "o78GKGOgQvV8KL0d112w0w=="
+          "hash": "W6dVLkCKhWcKbYI182BMo13/IEY6wJiQHPoVqnM3LIM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -321,10 +321,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.MetodiDichiarazioneTosapCosap.html",
-          "hash": "iuD1WOu1ZskBoY1LDotOwQ=="
+          "hash": "HBhwxDNl+LG6N3br6kfNerB4rg2IiTK5uKlIp2h210M="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -333,10 +333,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.MetodiDurata.html",
-          "hash": "fWxDKTjYMAhpGFwiT01pNQ=="
+          "hash": "9hxsmYx6beizKvEKv/F+mnIZJlEYDTqEzXuGuayar6w="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -345,10 +345,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.MetodiElaborazioneEffettuata.html",
-          "hash": "02Ljv0Ti8FCfK05AmowKPw=="
+          "hash": "IKfhs/ItseCg9/Uqakc8ZMZyewsg/UUsBmZ6UqgqriA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -357,10 +357,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.MetodiElaborazioniTosapCosap.html",
-          "hash": "lJJfFx+jp01Di5cvM0CGGw=="
+          "hash": "8BByd4aNYEoSlXvjPzokBNQFpcS9UKyuWOzyM5wBBuo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -369,10 +369,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.MetodiLotto.html",
-          "hash": "01NhPOd+kd4xC6Cqbbs2gg=="
+          "hash": "jJAxKv3aA0Sueco2rHlCBo+Cgb0XF6oE/4Pz803OqtI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -381,10 +381,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.MetodiMinuta.html",
-          "hash": "cTi3cDv0xOWXeDjcyVYZ2A=="
+          "hash": "JrhovF6iM3c25eQhQ0Vw3sEfRZC038fsrfabk+AHQhg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -393,10 +393,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.MetodiPagamento.E_COLUMNS_NoPag.html",
-          "hash": "CVfjTfb22dUhmQ7PixbQ/w=="
+          "hash": "qA8sxJRBCbe/TkswCSy2zlI7Dex21kgpz7rHBcbbaqc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -405,10 +405,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.MetodiPagamento.E_COLUMNS_SinglePag.html",
-          "hash": "p0mqxGWZIKm3EmUH1uSFDQ=="
+          "hash": "wq0ULZqfMPpJMHKBt5fROz+pcvHCSDJH3aBionWBl3w="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -417,10 +417,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.MetodiPagamento.E_COLUMNS_TotPag.html",
-          "hash": "Yqk3ZjzWUOz9E2Ze2f9iyA=="
+          "hash": "A1q6PnPsd3DnX5PjZY/+GMhI1xneUSMB+G5QQQAYS3o="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -429,10 +429,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.MetodiPagamento.html",
-          "hash": "9D7UYY5TIXTLntDT3Dc10w=="
+          "hash": "7fzYwPpO+XdaT/eEnv4CaPflCcNSfcPdzXYXlElPk8s="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -441,10 +441,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.MetodiRata.html",
-          "hash": "xZL19Uaw8E0okx2pcAa77g=="
+          "hash": "K+6HalJ01QQZoO0NkjfE5J1kUYEMQK7GzAa1l4aMRH0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -453,10 +453,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.MetodiRuolo.html",
-          "hash": "qFYjQR0HsBRjhNSxJwQc2g=="
+          "hash": "8liJwzsmOezHCKBiKQ/tgxdKo2LMMwKRd3Nn92hlXzs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -465,10 +465,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.MetodiTariffe.html",
-          "hash": "bbMZ3FwQMRefmFS7mYdTUQ=="
+          "hash": "LRkeel0BXzHoUg31pf92C083nC/MCoZLMdWt/3xeAQw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -477,10 +477,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.MetodiTipoConsistenza.html",
-          "hash": "iZWALAoOvTiuov5hhg+uUg=="
+          "hash": "MBGoGsKHPP4Da/Sr/azSnclkUNQn+p/ZzWSizRjaesE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -489,10 +489,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.MetodiTipologieOccupazioni.html",
-          "hash": "0nOj6I7FgRpq5cVgzpTmpg=="
+          "hash": "+5Q6Iis1nieHLaP9JkVNxTGwfygwKv2h/MPD+Ael1c8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -501,10 +501,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.MetodiTitoloRichiedente.html",
-          "hash": "iavc1QrR/FllolKtYY9wig=="
+          "hash": "0QsOEK6JXIw8kgD1gL/fdEvt/k8GKSCJ6kEpw803UM4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -513,10 +513,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.MetodiUffici.html",
-          "hash": "IhvdNy8es9AuN1rT2M32hw=="
+          "hash": "W9ghF8r28yUWoWPWJt2ix3FIRLEtxiTqs947JnkdWqk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -525,10 +525,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.PagamentiSearch.html",
-          "hash": "tv2hKtcQ0hmeXpeVLfpp0w=="
+          "hash": "823NywKA0AE+sDYma7lMYJFxYB5sbEMPAwBVXM5QYjI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -537,10 +537,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.RataSearch.html",
-          "hash": "PYG1xLGY0jRUV7HvIkGjQQ=="
+          "hash": "qN/3cjBo2HI52cpc5DFmd65AsOTIIB3nwTk2NPa89i4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -549,10 +549,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DTO.html",
-          "hash": "eYII0BjdpK0zkIiAMT5Mbg=="
+          "hash": "OnOySy1EAxaneYzNR2Y6uflcd+sOHJZIzmng3S5VKbU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -561,10 +561,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.Configurazione.ConfigurazioneCoefficienti.html",
-          "hash": "Nu923Rvd/t7Aeph3jZubXg=="
+          "hash": "uCb/fXBHo1QhOh+40XeWDMQkajS5ZyzrUgf+ztRwzZM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -573,10 +573,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.Configurazione.ConfigurazioneTabelle.html",
-          "hash": "kWloqp4B/AfyiO5uLq1qRQ=="
+          "hash": "jEdKCBYFBUqk+UjvybR4FXg5DAprXWVlb7iA1GO1McQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -585,10 +585,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.Configurazione.ConfigurazioneTariffe.html",
-          "hash": "VpBgFPQyaNhx5E4vHX4GIQ=="
+          "hash": "5h0+acCbX3MrY7jMd92xzsZ4ZCiQHagLSCeIUBlSABU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -597,10 +597,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.Configurazione.html",
-          "hash": "nSNc/zzlVSv0zpCwDovMxA=="
+          "hash": "67Xc5LT+Z/Z1mtzbMj3QobpqaVr0/rPvgNS0ETFkNlI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -609,10 +609,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.GestionePagamenti.GestionePagamentiAdd.html",
-          "hash": "vkt/TcbnXgY3swtSsMC/hg=="
+          "hash": "sLUChi6bITgkZncP21Lk5XyujVI1DRZ5FRmwvaMMuMA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -621,10 +621,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.GestionePagamenti.GestionePagamentiEdit.html",
-          "hash": "31JH8b2ZSEpvS83mU6TN0Q=="
+          "hash": "aL3kwlvSqiKvxIFNO/k+sS+Fn8C4iu/YUIE2gtEin7g="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -633,10 +633,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.GestionePagamenti.GestionePagamentiSearch.html",
-          "hash": "Jr2qAalWjiILk6iE24mOXQ=="
+          "hash": "csEORcwxTjhPovRFRNa6x4AD+fi4ANkP2+IIFn5mO2M="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -645,10 +645,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.GestionePagamenti.html",
-          "hash": "m90RbHIUE6F16Czq8j6ajQ=="
+          "hash": "63xEzhZekYXYjTlA5i8MluUAivjjlCQRoQJfBfpYiJY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -657,10 +657,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.MotoreTOCO.Agevolazione.html",
-          "hash": "NYYPXsW1ofcXkwoaCilQcw=="
+          "hash": "91EK7ER1ljgjfRtD3attNvmrKdz5ZpFSpruLPYv009s="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -669,10 +669,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.MotoreTOCO.Articolo.html",
-          "hash": "MxKIy/7XKyD61hqaboeEMQ=="
+          "hash": "US+4pvE3MjQ39iDce69YKgOArmF6/XSsI/wuVajyuBQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -681,10 +681,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.MotoreTOCO.CRUD.html",
-          "hash": "XjuQaSsNFHm5loeZW0X4ag=="
+          "hash": "UKnBliisgjaYtpjMh6TvR8I5y6a6iOvy7HSRNyX5g4A="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -693,10 +693,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.MotoreTOCO.CalcolaImportoTOCOCompletedEventArgs.html",
-          "hash": "Cwu18dmU8tbiwddPCUr0Tg=="
+          "hash": "GpdJQzs53X1iAeDqPLTihunrctz2upUs8hv9nU/4GE8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -705,10 +705,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.MotoreTOCO.CalcolaImportoTOCOCompletedEventHandler.html",
-          "hash": "MXgN80IqLE8LzpFkjEcOVA=="
+          "hash": "JubPUT9j60xrBxv1VgNiHvWw0B3IxJYNAfTaZ9xMjwU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -717,10 +717,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.MotoreTOCO.CalcoloResult.html",
-          "hash": "tzm3MToM+u9/ODDPnyIg1g=="
+          "hash": "Tsu4Kk1C3U+aAqDopbFXmA6PdXVtiQCc5puR5We5ZDg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -729,10 +729,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.MotoreTOCO.Categorie.html",
-          "hash": "eCDpZUH8T6tYr3dqlEWFpA=="
+          "hash": "VVNAeykxIASY2XCcM13FQYtxIdfAAOuOnCs1CWtlA2s="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -741,10 +741,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.MotoreTOCO.DettaglioAnagrafica.html",
-          "hash": "EaELv2wwPQlHvtnahpqDtw=="
+          "hash": "5sQs+tigUYqc3xdHqn+NBCVEBKxKchSQH/3RAEfJGxc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -753,10 +753,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosap.html",
-          "hash": "5i/qEaEj7aBOMDbRZv2/LQ=="
+          "hash": "bPOct3a3F5LSCx5cm5LR0ZftgsFrAjsRmF61Yicmfbs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -765,10 +765,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.MotoreTOCO.DichiarazioneTosapCosapTestata.html",
-          "hash": "z+qSSvcApIV5FBGWpv+pEg=="
+          "hash": "RyEFLNc5lsJ944D4Co7rGwr8AVHHxYmiYXws0R4SM9c="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -777,10 +777,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.MotoreTOCO.Durata.html",
-          "hash": "DLH9WXM22LluktneSR3deQ=="
+          "hash": "Cbn5Px4POmZxgh5tjY3l/oRP7iT6ct0aGuiPuN8pwTs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -789,10 +789,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.MotoreTOCO.E_CALCOLORESULT.html",
-          "hash": "WQQTmjTe+4tmnN4QGf25TA=="
+          "hash": "kUuJYZ8kilIixSe/EL3AizXzwkPYU53YJzIzB411Tok="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -801,10 +801,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.MotoreTOCO.MotoreTOCO.html",
-          "hash": "Kl9Odx3n1LhbFfVySl/28w=="
+          "hash": "JpaOKxPfQr0Z6pSXE96INAIpo+2gy8DXDTkNQtT1wdc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -813,10 +813,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.MotoreTOCO.Tariffe.html",
-          "hash": "VNNHhc+kSimNWlDrjqwu2A=="
+          "hash": "FSPZH0Gza92dvB5DTQPYFxv7v6DWUDCMkbeH+5SSZcU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -825,10 +825,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.MotoreTOCO.TipoConsistenza.html",
-          "hash": "pXrJbb/E/Xs3CBnCx/hlQA=="
+          "hash": "odk0UHJHc4ZtHL9LRnpOLSIC+7dkUmwT0OujeiIE/cY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -837,10 +837,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.MotoreTOCO.TipologieOccupazioni.html",
-          "hash": "gPU1Z+mJykNjYgU+y5OU7g=="
+          "hash": "sF6kaNwvQFm259BVwXaLj/JjOz1tE7pMm/z/SLUpDV8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -849,10 +849,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.MotoreTOCO.TitoloRichiedente.html",
-          "hash": "URpkH62/MUOaAuNoZ+qUag=="
+          "hash": "Y+/yzwQa+JrsVCKC83S94E/UpxX93BoOKJrXbBkLNZM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -861,10 +861,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.MotoreTOCO.Uffici.html",
-          "hash": "sjHwPzpDYXks2MGToyCp8w=="
+          "hash": "SnWRjuTQpLAc0dr3QHf7JaWDDh9ZK5HbO24vtJtXOv0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -873,10 +873,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.MotoreTOCO.dsContatti.CONTATTIDataTable.html",
-          "hash": "xNwor38jdLeJ9mTQuWtQJg=="
+          "hash": "ymEiAcXedEfh0ldAQYvhk5Ey3o0zRqXCBF0JOfF7lmI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -885,10 +885,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.MotoreTOCO.dsContatti.CONTATTIRow.html",
-          "hash": "dvrDhAFP8pWmIVpGKRbrtQ=="
+          "hash": "T/UMguK6vZfnJpqZKzJvAmDegf1JWxOV9MRTGtgB6t0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -897,10 +897,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.MotoreTOCO.dsContatti.CONTATTIRowChangeEvent.html",
-          "hash": "q7ucXqNErUqqBr/WeFDA+Q=="
+          "hash": "77paT07TzT5PbuSgnwQ8HM40OlYK+Ryds+LQwrYwyhw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -909,10 +909,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.MotoreTOCO.dsContatti.CONTATTIRowChangeEventHandler.html",
-          "hash": "n00kW2h6wFQvLOEsxZzvHQ=="
+          "hash": "VuFcO2g5KISGnQlzLqxdPSvPQRlavteNL0Rm71GFu/M="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -921,10 +921,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.MotoreTOCO.dsContatti.html",
-          "hash": "8jFxRVnGhFMkzjosKyQGmg=="
+          "hash": "WRFRPeh4QDskU+GL67NTiZlWNMQCP9A1Nk/82VP+XKQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -933,10 +933,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.MotoreTOCO.html",
-          "hash": "Sjt5bykKAnR/Cg23sSQQDQ=="
+          "hash": "RnP08btaNwievmj9Yp6K5BrQXM2oGedkFCxwBkd/EC4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -945,10 +945,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.Wuc.WucGestionePagamenti.html",
-          "hash": "RiisEbWkb7UJ9kol5opl2Q=="
+          "hash": "RQyU7msUoOZJlWwXoPekSlWc8gy7NdyjjMm1WGv0G34="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -957,10 +957,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENGovTOCO.Wuc.html",
-          "hash": "6AwqbIdWMGnXK6rk09VXcQ=="
+          "hash": "uzbYKUunN1gtrgDtz1AQsKugukfUVgSLZnlMfDenru8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -969,10 +969,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.BaseEnte.html",
-          "hash": "oYg/ut8icCMVT3ZhbNi7Hw=="
+          "hash": "lA6UnIuZ3UgY1B3YjMm6AfbPcgPSGHxqjgNEe9ro/Gw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -981,10 +981,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.BasePage.html",
-          "hash": "90qvtVeBSTV9bvKJh8xVSA=="
+          "hash": "LP59EjBGoC4btD8E+kA9Hmhqv2OzcPRAMhRsD3lpaeI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -993,10 +993,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.CacheManager.html",
-          "hash": "V9ZB2vTtYzAw+3oUSZYy/w=="
+          "hash": "CWDDgWIKn6Uh3PkXhJivI8uCbSMuWcg5hbaqdh3NYWM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1005,10 +1005,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.CalcoloOSAP.html",
-          "hash": "AVfmRYTlBCozeJ0mdLq7Bg=="
+          "hash": "OR9hye5Popfbr/aQbBv05Q6pimR0aRThZUKw/mmfYnk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1017,10 +1017,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.CalcoloRateOSAP.html",
-          "hash": "uHlYFFXF0zWRrx4VRDqUDg=="
+          "hash": "v1CmbkiyhToZG9fTghSoCmcX320GXC7nfYgvSQ5Sul0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1029,10 +1029,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.ConfigurazioneRate.html",
-          "hash": "pUDw/nF3Ibfp4NtNDWepQw=="
+          "hash": "T4hJMQUBmIBG7QxFKYQqLCubgWeHzhcPyCAHaaF5uxo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1041,10 +1041,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.DichiarazioneSession.html",
-          "hash": "P+0TNkG3JMNoKUgGEcqeYA=="
+          "hash": "z6liJJLLaS+xiwuqNPDy3lN1cR4UjHGlHweL2AlI8Ug="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1053,10 +1053,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.Dichiarazioni.ArticoliAdd.html",
-          "hash": "EG6Ra240l0fT64DAvMOAzg=="
+          "hash": "LZioFCzT3B0JsuT2NwXY2rPa6+wkIXFcaj+rDQrSTUM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1065,10 +1065,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.Dichiarazioni.ArticoliEdit.html",
-          "hash": "oQXH45uKgAvNp/yXBejsbw=="
+          "hash": "OZd5x0OcBxs36rJOyp3tTSn3ifr/9Dw9WbW+FitG6ok="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1077,10 +1077,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.Dichiarazioni.ArticoliView.html",
-          "hash": "QBs93N6M4am1sTPqcLFsAw=="
+          "hash": "V5HTLzb4x11VOSNDxOTDSa/KXGpmzL905Vvo9P0mMQk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1089,10 +1089,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.Dichiarazioni.DichiarazioniAdd.html",
-          "hash": "76aVYriYDBLFlhfQM7LzaQ=="
+          "hash": "Lz+U9rfS8rzxzGBudvuJ3O7I7oGkB2hezVYLxPHyXhU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1101,10 +1101,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.Dichiarazioni.DichiarazioniEdit.html",
-          "hash": "idcBofWCQ3lcTtJfqSsJMA=="
+          "hash": "7+/SUgOcVHy3W4H3QXR4ItL9Ps8iYzDuqBgzRQAaOXs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1113,10 +1113,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.Dichiarazioni.DichiarazioniSearch.html",
-          "hash": "MZQVCmWRhun0a1nH44FybQ=="
+          "hash": "/rXPjyWXO9b/SA/6xjfqynsx0cxDqMtav8sRA+Jiaj4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1125,10 +1125,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.Dichiarazioni.DichiarazioniView.html",
-          "hash": "QRbjmnlp17UYQa1PRJoNjA=="
+          "hash": "YUeCE6iibrLQ9o16ncETQoP9ckQ2mxuNOqMaaQsjDtE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1137,10 +1137,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.Dichiarazioni.html",
-          "hash": "L3P/G0YrqCQMqQKRsAOL0w=="
+          "hash": "1QSk78ED0CmI1XqVax4RGIPUAmvUPWwioIkI8pIIpxU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1149,10 +1149,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.Elaborazioni.Documenti.ComandiDoc.html",
-          "hash": "ODAaYmU4Fm/EqR+kfJ+SuQ=="
+          "hash": "4/hke8EGuDpsGBhGR3l+3MbNkWsSdoqyZSWL4C6KU6M="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1161,10 +1161,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.Elaborazioni.Documenti.ComandiDocElaborati.html",
-          "hash": "wh4JZnn6DMLPqy5kMWo/RQ=="
+          "hash": "aphQ1GcRBP4TO/wS+JWp+b3Yp1JrA1AZeH00OAjkLig="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1173,10 +1173,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.Elaborazioni.Documenti.RicercaDoc.html",
-          "hash": "kQweMP3WzDd9aH6jbez3BQ=="
+          "hash": "MA/JcQhI9mMyg2VWnd9hB8XM0P0DApKHTdO6ZukLwdk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1185,10 +1185,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.Elaborazioni.Documenti.StampaInCorso.html",
-          "hash": "CmJ6U1beboYmjcF7jzsQXg=="
+          "hash": "rRBllzyssA49SJiJp7JdJc3fBvT59pJGjKYmU+rrkwY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1197,10 +1197,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.Elaborazioni.Documenti.ViewDocElaborati.html",
-          "hash": "Be8ViSQedv0ZFbpUcjg/zg=="
+          "hash": "s/KdkiMl7qH5TA3IUGpZ8SdiLzwYjVRYmvD+40uP2Gw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1209,10 +1209,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.Elaborazioni.Documenti.html",
-          "hash": "nogeOwrZWMbX9j7XeieoMg=="
+          "hash": "0NHZqvOxT1T7ZgEatoPw9akY52Eq/LRgYYCBJ6C1tvw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1221,10 +1221,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.Elaborazioni.ElaborazioneAvvisi.html",
-          "hash": "r0NXRWOKAX2P5d8ekFkpRA=="
+          "hash": "Sv4QBLfGY3dQ3OI7fmyoKXeE9Am47afR/jEj13nbPuE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1233,10 +1233,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.Elaborazioni.html",
-          "hash": "iTmR4NEYR2gQGBavb3hIUg=="
+          "hash": "ScDlb0+24AHF4vgyhWf5CDgZeAGczH94PHNmZk1X8ds="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1245,10 +1245,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.Generali.classi.Documenti.html",
-          "hash": "Vk6XAdHMSL9SYNBKQKuW7g=="
+          "hash": "JgZId4Tw4bi5a1bObSPaAregZldOjRbD4Kest/RAakU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1257,10 +1257,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.Generali.classi.html",
-          "hash": "sHXlQk/wy5+K6uROfz5T/w=="
+          "hash": "Z/whwAYGbirBPWhG7OKcwQCMssQc8Dw4dqsIYrOdj34="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1269,10 +1269,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.Global.html",
-          "hash": "NWsp9EsB8rlxkh7cM9nylw=="
+          "hash": "sruI+C39zIWSrCfzJKOVy3O8ajnrAaUGu4lHHUON4xM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1281,10 +1281,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.OSAPConst.OperationType.html",
-          "hash": "tq8KeM9NmMs8pv0gvTCsvA=="
+          "hash": "5UMrHlZ0R/QIBcA8X+N9jUaUM0W+Hnah1UKlk8XsmMg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1293,10 +1293,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.OSAPConst.html",
-          "hash": "hjXkNzTRnzbErpfa9wzWyg=="
+          "hash": "xxNMjDTyVCUGQU+RMomcrft1kSjnf0J0IHlrGLB1x0o="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1305,10 +1305,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.OSAPPages.html",
-          "hash": "NcP/NoVxI4anns/sbs8syA=="
+          "hash": "bVhzEh/RaWc1Rg+ffOtmwpViMJqXkYbFRMe8g7GinCg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1317,10 +1317,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.ObjFlussoScuole.PosizioniAvvisi.html",
-          "hash": "WIElFK+l5KVNFFvp0SKOWQ=="
+          "hash": "BAeV3Rwa+a3pjy1h6O+VhvajtGAxLYtM8SY7oXHmKLg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1329,10 +1329,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.ObjFlussoScuole.html",
-          "hash": "Brq7Xn6c6fTjeW7aXKsHdg=="
+          "hash": "6pgjNU5coHdRuvpOCQvqOqYTBussqXsO3qY8rdB7co4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1341,10 +1341,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.SharedFunction.html",
-          "hash": "u330zCRFrpi0g8mnlhzIzw=="
+          "hash": "9Y581+DeMiKkI3NxKRCrYXpoZNVnHpWVAsES98ffKSM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1353,10 +1353,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.SituazioneContribuente.SituazioneAvvisi.html",
-          "hash": "sBfrY9gy1m8hl59dwp2cGA=="
+          "hash": "vIJOlL7VuEW1aHmyLbh4zlLl13QmgRskkCIAOsOdZh8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1365,10 +1365,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.SituazioneContribuente.SituazioneAvvisiSearch.html",
-          "hash": "cncMCBmUIoXdpB1U8ZZu0A=="
+          "hash": "xiYf5dQ2uHimp76O5eZ7ZYDxwPTPxdanhqJCQP0dB2U="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1377,10 +1377,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.SituazioneContribuente.html",
-          "hash": "21ltnZ89zTES4YXEu2r3/Q=="
+          "hash": "+8WKiWKJFa/nuRsM4CYugJ3dkPznp1yelOjVg/zovbk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1389,10 +1389,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.Wuc.WucArticolo.html",
-          "hash": "OiMNhiWPCEMguLHY28aMmg=="
+          "hash": "Ea9ZqFfY4dcBQwHt8YetSzDXqdE1NlyIlfLV3ZbPJi4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1401,10 +1401,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.Wuc.WucDatiContribuente.html",
-          "hash": "2GTDC1RmcsxU+xbCDiAy6Q=="
+          "hash": "KEJu95TFZGZJpWnewIkCZUJTXlW3onKSLACraTxd8TY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1413,10 +1413,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.Wuc.WucDichiarazione.html",
-          "hash": "zLwIAAWJT+wj50ML8XYnOg=="
+          "hash": "7pJDqWJKbzCPp/RC6fCMn81F6vITuiXp+OX5IebU5yA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1425,10 +1425,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.Wuc_1.html",
-          "hash": "Z+Rz5O5p4jHSwk1nb9Nmpg=="
+          "hash": "aTQWKXlaFgRcP5Bsj1ntU57XUkeTTkUSICvh1zG01hY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1437,10 +1437,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.clsImportFlussi.html",
-          "hash": "GqDgc14WbjBkMRyEYn0+Fg=="
+          "hash": "jls/hgu9lsVOmfehoSgAaQncKZjIquwRPz5YitfLaPo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1449,10 +1449,10 @@
       "output": {
         ".html": {
           "relative_path": "api/OPENgovTOCO.html",
-          "hash": "6f7xGVVenmZRbaHCCUX1ew=="
+          "hash": "YhJzNTQ74nViR25D5bln7Gjelp5CXv/VXJ4UJJizfRE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1461,7 +1461,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "rD38Kco4ke6LuckMzTvSAQ=="
+          "hash": "zoW74zHh/l+6YGQHpVOGAIQVK3QKXfMEcJYM+lEFyZo="
         }
       },
       "is_incremental": false,
@@ -1473,7 +1473,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "G2AoE5T/2VarbHvzLEo4TQ=="
+          "hash": "Oa9PuD4E1hvZnCkVjUgzNBX6S00Zo5YilamTERTZo54="
         }
       },
       "is_incremental": false,
@@ -1483,23 +1483,25 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 3
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 117,
-          "skipped_file_count": 117
+          "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
@@ -1512,8 +1514,8 @@
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

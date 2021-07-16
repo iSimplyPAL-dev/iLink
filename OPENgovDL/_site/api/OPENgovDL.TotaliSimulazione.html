@@ -1,0 +1,958 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TotaliSimulazione
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TotaliSimulazione
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OPENgovDL.TotaliSimulazione">
+  
+  
+  <h1 id="OPENgovDL_TotaliSimulazione" data-uid="OPENgovDL.TotaliSimulazione" class="text-break">Class TotaliSimulazione
+  </h1>
+  <div class="markdown level0 summary"><p>Classe per la gestione dei totali della simulazione</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Ribes.OPENgov.Utilities.Database</span></div>
+    <div class="level2"><span class="xref">Ribes.OPENgov.Utilities.DbObject</span>&lt;<a class="xref" href="OPENgovDL.TotaliSimulazione.html">TotaliSimulazione</a>&gt;</div>
+    <div class="level3"><span class="xref">TotaliSimulazione</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.TotaliSimulazione&gt;.GenerateHashCode(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.TotaliSimulazione&gt;.stringParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.TotaliSimulazione&gt;.intParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.TotaliSimulazione&gt;.doubleParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.TotaliSimulazione&gt;.dateTimeParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.TotaliSimulazione&gt;.boolParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Connect()</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Connect(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Connect(System.String, System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Disconnect()</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Disconnect(System.IDisposable[])</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.CreateCommand()</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.ApplyDatabaseTo(Ribes.OPENgov.Utilities.Database)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.KeepConnection</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.SqlConnection</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.OwnConnection</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.OwnTransaction</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.ConnectionCallback</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.ParamsCacheSpan</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.MinDate</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OPENgovDL.html">OPENgovDL</a></h6>
+  <h6><strong>Assembly</strong>: OPENgovDL.dll</h6>
+  <h5 id="OPENgovDL_TotaliSimulazione_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TotaliSimulazione : DbObject&lt;TotaliSimulazione&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione__ctor.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1636">View Source</a>
+  </span>
+  <a id="OPENgovDL_TotaliSimulazione__ctor_" data-uid="OPENgovDL.TotaliSimulazione.#ctor*"></a>
+  <h4 id="OPENgovDL_TotaliSimulazione__ctor" data-uid="OPENgovDL.TotaliSimulazione.#ctor">TotaliSimulazione()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TotaliSimulazione()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione_DescrCategoria.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione.DescrCategoria%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1646">View Source</a>
+  </span>
+  <a id="OPENgovDL_TotaliSimulazione_DescrCategoria_" data-uid="OPENgovDL.TotaliSimulazione.DescrCategoria*"></a>
+  <h4 id="OPENgovDL_TotaliSimulazione_DescrCategoria" data-uid="OPENgovDL.TotaliSimulazione.DescrCategoria">DescrCategoria</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DescrCategoria { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione_DescrDetassazione.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione.DescrDetassazione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1652">View Source</a>
+  </span>
+  <a id="OPENgovDL_TotaliSimulazione_DescrDetassazione_" data-uid="OPENgovDL.TotaliSimulazione.DescrDetassazione*"></a>
+  <h4 id="OPENgovDL_TotaliSimulazione_DescrDetassazione" data-uid="OPENgovDL.TotaliSimulazione.DescrDetassazione">DescrDetassazione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DescrDetassazione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione_DescrRiduzione.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione.DescrRiduzione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1650">View Source</a>
+  </span>
+  <a id="OPENgovDL_TotaliSimulazione_DescrRiduzione_" data-uid="OPENgovDL.TotaliSimulazione.DescrRiduzione*"></a>
+  <h4 id="OPENgovDL_TotaliSimulazione_DescrRiduzione" data-uid="OPENgovDL.TotaliSimulazione.DescrRiduzione">DescrRiduzione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DescrRiduzione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione_FromVariabile.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione.FromVariabile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1644">View Source</a>
+  </span>
+  <a id="OPENgovDL_TotaliSimulazione_FromVariabile_" data-uid="OPENgovDL.TotaliSimulazione.FromVariabile*"></a>
+  <h4 id="OPENgovDL_TotaliSimulazione_FromVariabile" data-uid="OPENgovDL.TotaliSimulazione.FromVariabile">FromVariabile</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FromVariabile { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione_IdCategoria.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione.IdCategoria%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1645">View Source</a>
+  </span>
+  <a id="OPENgovDL_TotaliSimulazione_IdCategoria_" data-uid="OPENgovDL.TotaliSimulazione.IdCategoria*"></a>
+  <h4 id="OPENgovDL_TotaliSimulazione_IdCategoria" data-uid="OPENgovDL.TotaliSimulazione.IdCategoria">IdCategoria</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string IdCategoria { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione_IdDetassazione.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione.IdDetassazione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1651">View Source</a>
+  </span>
+  <a id="OPENgovDL_TotaliSimulazione_IdDetassazione_" data-uid="OPENgovDL.TotaliSimulazione.IdDetassazione*"></a>
+  <h4 id="OPENgovDL_TotaliSimulazione_IdDetassazione" data-uid="OPENgovDL.TotaliSimulazione.IdDetassazione">IdDetassazione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string IdDetassazione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione_IdRiduzione.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione.IdRiduzione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1649">View Source</a>
+  </span>
+  <a id="OPENgovDL_TotaliSimulazione_IdRiduzione_" data-uid="OPENgovDL.TotaliSimulazione.IdRiduzione*"></a>
+  <h4 id="OPENgovDL_TotaliSimulazione_IdRiduzione" data-uid="OPENgovDL.TotaliSimulazione.IdRiduzione">IdRiduzione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string IdRiduzione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione_IdSimulazione.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione.IdSimulazione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1643">View Source</a>
+  </span>
+  <a id="OPENgovDL_TotaliSimulazione_IdSimulazione_" data-uid="OPENgovDL.TotaliSimulazione.IdSimulazione*"></a>
+  <h4 id="OPENgovDL_TotaliSimulazione_IdSimulazione" data-uid="OPENgovDL.TotaliSimulazione.IdSimulazione">IdSimulazione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IdSimulazione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione_MQUtiliPF.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione.MQUtiliPF%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1656">View Source</a>
+  </span>
+  <a id="OPENgovDL_TotaliSimulazione_MQUtiliPF_" data-uid="OPENgovDL.TotaliSimulazione.MQUtiliPF*"></a>
+  <h4 id="OPENgovDL_TotaliSimulazione_MQUtiliPF" data-uid="OPENgovDL.TotaliSimulazione.MQUtiliPF">MQUtiliPF</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double MQUtiliPF { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione_MQUtiliPV.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione.MQUtiliPV%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1657">View Source</a>
+  </span>
+  <a id="OPENgovDL_TotaliSimulazione_MQUtiliPV_" data-uid="OPENgovDL.TotaliSimulazione.MQUtiliPV*"></a>
+  <h4 id="OPENgovDL_TotaliSimulazione_MQUtiliPV" data-uid="OPENgovDL.TotaliSimulazione.MQUtiliPV">MQUtiliPV</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double MQUtiliPV { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione_nComponentiPF.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione.nComponentiPF%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1647">View Source</a>
+  </span>
+  <a id="OPENgovDL_TotaliSimulazione_nComponentiPF_" data-uid="OPENgovDL.TotaliSimulazione.nComponentiPF*"></a>
+  <h4 id="OPENgovDL_TotaliSimulazione_nComponentiPF" data-uid="OPENgovDL.TotaliSimulazione.nComponentiPF">nComponentiPF</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int nComponentiPF { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione_nComponentiPV.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione.nComponentiPV%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1648">View Source</a>
+  </span>
+  <a id="OPENgovDL_TotaliSimulazione_nComponentiPV_" data-uid="OPENgovDL.TotaliSimulazione.nComponentiPV*"></a>
+  <h4 id="OPENgovDL_TotaliSimulazione_nComponentiPV" data-uid="OPENgovDL.TotaliSimulazione.nComponentiPV">nComponentiPV</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int nComponentiPV { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione_nMQ.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione.nMQ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1654">View Source</a>
+  </span>
+  <a id="OPENgovDL_TotaliSimulazione_nMQ_" data-uid="OPENgovDL.TotaliSimulazione.nMQ*"></a>
+  <h4 id="OPENgovDL_TotaliSimulazione_nMQ" data-uid="OPENgovDL.TotaliSimulazione.nMQ">nMQ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double nMQ { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione_nUtenze.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione.nUtenze%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1653">View Source</a>
+  </span>
+  <a id="OPENgovDL_TotaliSimulazione_nUtenze_" data-uid="OPENgovDL.TotaliSimulazione.nUtenze*"></a>
+  <h4 id="OPENgovDL_TotaliSimulazione_nUtenze" data-uid="OPENgovDL.TotaliSimulazione.nUtenze">nUtenze</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int nUtenze { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione_UtenzeUtili.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione.UtenzeUtili%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1655">View Source</a>
+  </span>
+  <a id="OPENgovDL_TotaliSimulazione_UtenzeUtili_" data-uid="OPENgovDL.TotaliSimulazione.UtenzeUtili*"></a>
+  <h4 id="OPENgovDL_TotaliSimulazione_UtenzeUtili" data-uid="OPENgovDL.TotaliSimulazione.UtenzeUtili">UtenzeUtili</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double UtenzeUtili { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione_Delete.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione.Delete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1761">View Source</a>
+  </span>
+  <a id="OPENgovDL_TotaliSimulazione_Delete_" data-uid="OPENgovDL.TotaliSimulazione.Delete*"></a>
+  <h4 id="OPENgovDL_TotaliSimulazione_Delete" data-uid="OPENgovDL.TotaliSimulazione.Delete">Delete()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Delete()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.TotaliSimulazione&gt;.Delete()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione_Equals_System_Object_.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1661">View Source</a>
+  </span>
+  <a id="OPENgovDL_TotaliSimulazione_Equals_" data-uid="OPENgovDL.TotaliSimulazione.Equals*"></a>
+  <h4 id="OPENgovDL_TotaliSimulazione_Equals_System_Object_" data-uid="OPENgovDL.TotaliSimulazione.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.TotaliSimulazione&gt;.Equals(System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione_GetHashCode.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1668">View Source</a>
+  </span>
+  <a id="OPENgovDL_TotaliSimulazione_GetHashCode_" data-uid="OPENgovDL.TotaliSimulazione.GetHashCode*"></a>
+  <h4 id="OPENgovDL_TotaliSimulazione_GetHashCode" data-uid="OPENgovDL.TotaliSimulazione.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.TotaliSimulazione&gt;.GetHashCode()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione_Load.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione.Load%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1692">View Source</a>
+  </span>
+  <a id="OPENgovDL_TotaliSimulazione_Load_" data-uid="OPENgovDL.TotaliSimulazione.Load*"></a>
+  <h4 id="OPENgovDL_TotaliSimulazione_Load" data-uid="OPENgovDL.TotaliSimulazione.Load">Load()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Load()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.TotaliSimulazione&gt;.Load()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione_LoadAll.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione.LoadAll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1697">View Source</a>
+  </span>
+  <a id="OPENgovDL_TotaliSimulazione_LoadAll_" data-uid="OPENgovDL.TotaliSimulazione.LoadAll*"></a>
+  <h4 id="OPENgovDL_TotaliSimulazione_LoadAll" data-uid="OPENgovDL.TotaliSimulazione.LoadAll">LoadAll()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TotaliSimulazione[] LoadAll()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OPENgovDL.TotaliSimulazione.html">TotaliSimulazione</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.TotaliSimulazione&gt;.LoadAll()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione_Reset.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1673">View Source</a>
+  </span>
+  <a id="OPENgovDL_TotaliSimulazione_Reset_" data-uid="OPENgovDL.TotaliSimulazione.Reset*"></a>
+  <h4 id="OPENgovDL_TotaliSimulazione_Reset" data-uid="OPENgovDL.TotaliSimulazione.Reset">Reset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed void Reset()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.TotaliSimulazione&gt;.Reset()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione_Save.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione.Save%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1751">View Source</a>
+  </span>
+  <a id="OPENgovDL_TotaliSimulazione_Save_" data-uid="OPENgovDL.TotaliSimulazione.Save*"></a>
+  <h4 id="OPENgovDL_TotaliSimulazione_Save" data-uid="OPENgovDL.TotaliSimulazione.Save">Save()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Save()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.TotaliSimulazione&gt;.Save()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione_Save_System_String__.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione.Save(System.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1756">View Source</a>
+  </span>
+  <a id="OPENgovDL_TotaliSimulazione_Save_" data-uid="OPENgovDL.TotaliSimulazione.Save*"></a>
+  <h4 id="OPENgovDL_TotaliSimulazione_Save_System_String__" data-uid="OPENgovDL.TotaliSimulazione.Save(System.String@)">Save(ref String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Save(ref string error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.TotaliSimulazione&gt;.Save(System.String)</span></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_TotaliSimulazione.md&amp;value=---%0Auid%3A%20OPENgovDL.TotaliSimulazione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/Simulazione.cs/#L1633" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

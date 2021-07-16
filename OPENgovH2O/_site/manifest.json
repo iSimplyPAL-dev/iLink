@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Dev/PAL/Codice/OPENgov/OPENgovH2O",
+  "source_base_path": "C:/ISimply_GitHub/UfficioTributi/OPENgovH2O",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "maF2ODZnUmz49x+wqMneAA=="
+          "hash": "g0UCIXUQ0XeS+pq5Rg7SxDie7r9DDlCReoW7c5WFMr4="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "s9qEVcYlRbp+ngRcbzOdSQ=="
+          "hash": "LORg/iW1m4e6f/6ezJEgJ9k4WpAseE6ryC7jz71uZDw="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "gB8AESyvNru97tzIZofEEg=="
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "3BuyWI8J1COVCPa1tamcGQ=="
+          "hash": "p7a3H1Ys65paW7aRXNKMwpbCe0anDl9usCKztHbVxdc="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "tCsxsN5ikw+EgWubxpUhHw=="
+          "hash": "54i+GjGkcHU6vLaH03VxwxeqtQ0qatdslc+BlbETck0="
         }
       },
       "is_incremental": false,

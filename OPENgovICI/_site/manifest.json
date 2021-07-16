@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Dev/PAL/Codice/OPENgov/OPENgovICI",
+  "source_base_path": "C:/ISimply_GitHub/UfficioTributi/OPENgovICI",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "YbaQxjJeS3DXNnvIl6SgwQ=="
+          "hash": "vx5YvLI2BJgopcp9WhtRXrGGS/6SzhOYsjER+2Zusi8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -21,10 +21,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "s9qEVcYlRbp+ngRcbzOdSQ=="
+          "hash": "0CBGILlW06QbDSOeFy6/6SaPeVlPUrbqEh7S4r8XmpY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "gB8AESyvNru97tzIZofEEg=="
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
         }
       },
       "is_incremental": false,
@@ -45,10 +45,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "3BuyWI8J1COVCPa1tamcGQ=="
+          "hash": "r/tEUIvVkGhK0as621M/6BVt3C9NE9YziBy7fxUoBDI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -57,10 +57,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Business.ApplicationHelper.html",
-          "hash": "8TZNsYGpcIRQpGXuTgr8Jg=="
+          "hash": "3NaX6brwZZrw1yNua8VfXcSxlN25I2pUQ44oT2sWXiU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -69,10 +69,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Business.ClsAnalisi.TypeCheckRifCatastali.html",
-          "hash": "pYfj8S0NqXYU7Esb0X+Mqw=="
+          "hash": "hY1V7yJxlUdAE1h4T9lOdoATJM0lXlTelfraGz+aXPI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -81,10 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Business.ClsAnalisi.html",
-          "hash": "FB3A5c6lspgeGuL+rxjPXA=="
+          "hash": "NbnIHEXzvISLkziklNIaAWiuJpSUJvqKomYIieiYG1I="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -93,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Business.ConstWrapper.html",
-          "hash": "1TWJLGPWR79N/sLQrbD0fg=="
+          "hash": "5heNvpYFJga9j4Kpvn/5KpCEbzxF5sWwbSH3Ju0gUVc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -105,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Business.CoreUtility.html",
-          "hash": "6uPKzKvDpBovSewimo0Ewg=="
+          "hash": "BKidX7+mspDGosVgeayRs0j/P+e5+OwBMVoaceNbDIc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -117,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Business.FileUploader.FileUploaded.html",
-          "hash": "DgemhSL7KehnCsrz20P3QA=="
+          "hash": "clvgbEOm2uLLaozNMrj+kiEBn6BBMYTW7LdixMJGpm4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -129,10 +129,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Business.FileUploader.html",
-          "hash": "R8ghalPJsO9xQ7yp+5YdeQ=="
+          "hash": "OKYNJUjS1cEn5HopdeICscdUOEoMOTryO+hikL3hUWw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -141,10 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Business.HelperAnagrafica.html",
-          "hash": "zZGtt/OqTAVJDI9PW8HPHw=="
+          "hash": "gqMEkcrGD6pGpCfj4zxYdA3lqkJcQf7eQUBQu++SaTk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -153,10 +153,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Business.ImportHelper.html",
-          "hash": "VoB8y5INzg1fcXZ83EBxZQ=="
+          "hash": "ybP9G7NjrMk0haHJNxtXJfeN1mj5dV5a0+agBiRn7fo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -165,10 +165,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Business.ModuloIci.ErroriBonifica.html",
-          "hash": "vLBR0Thrmcx5sN+gKTshJw=="
+          "hash": "Jwu935JIYnQBzy9K+BP0bNys90Dhi88VMkajqQEd24s="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -177,10 +177,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Business.ModuloIci.html",
-          "hash": "7vik70tYCPvUOwipKc+zfQ=="
+          "hash": "PVcNwED8xgbCovnQP9/nCfc40gJMMybVZFjencmgmUA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -189,10 +189,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Business.TrasformatoreAnater.html",
-          "hash": "Ys7iTlaX7icnSm8RFr8/gw=="
+          "hash": "pph99VTVrOXFjMclGTeUxhSOJAKR963oCDOcO2a9fw0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -201,10 +201,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Business.objRavvedimento.html",
-          "hash": "ADNWpswGQjZqAvHMfvbDZA=="
+          "hash": "40cYGG05l0z5fv3wGSlOxL/0CdnyTXZFQiKfB2Y/gRs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -213,10 +213,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Business.html",
-          "hash": "HfUBrjRd9raliKvEH3EUdA=="
+          "hash": "9IG4nOgeDjt3S/aWc53YrC1NsRA1wDz8wNbQtDM1rRk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -225,10 +225,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.AcquisizioneAutomaticaVersamenti.html",
-          "hash": "eNBi6OpHLfIyd9/DcwDSjQ=="
+          "hash": "oeyG4QwcqPPWvnppkMBqvjbETFSZHA+n6+T0j5C3Hc0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -237,10 +237,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Analisi.CStampaContribNonPagato.html",
-          "hash": "5E2vlBqYXNsBkjnEU+6ZFg=="
+          "hash": "hTw526nKIRYaCw7A2TL53sfS2S2Rs+f5djCtoAoeQnE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -249,10 +249,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Analisi.CStampaContribPagatoDiverso.html",
-          "hash": "6s+WNZqn9e2UH2WX8n8BFg=="
+          "hash": "KlcDRpHwKygLAp8sm5oix3Hs8bUaEFeG81X3XIxRBFU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -261,10 +261,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Analisi.FatturatoIncassato.ChartAnalisiEconomiche.html",
-          "hash": "6UGA9caGjRcDGlhEWhEkkQ=="
+          "hash": "7CSCd8DhdEiZgyXhObWL2Gl2n3vVm7Z4/PyayD9nf18="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -273,10 +273,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Analisi.FatturatoIncassato.ComandiAnalisiEconomiche.html",
-          "hash": "rCpZfS/+wnqwuCzCG8yolA=="
+          "hash": "VhozVks5BdwxP64mdva3tG/KhoGgL8slI5tYnD60GRE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -285,10 +285,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Analisi.FatturatoIncassato.html",
-          "hash": "QE/SkX0fbMaco9KccQY4MQ=="
+          "hash": "TRz7L9fKGvg3LaKj59um5+hYAtfrL8FmjenwbjXBBIo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -297,10 +297,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Analisi.Rimborsi.html",
-          "hash": "eq+3jYpuDjwRT5drqybN/Q=="
+          "hash": "Cn0FvF9oYqNoDWMy8FZekGJZ50GSq82QmGdsVVtrJPE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -309,10 +309,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Analisi.html",
-          "hash": "M0X8ZgUJ/Wsq1iqZf+AtiA=="
+          "hash": "2VrCcdpyXKgq37vSpYAw1TuV8w/QNSAW16xWK5o7jEw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -321,10 +321,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Anater.RicercaImmobile.html",
-          "hash": "7imNS2rzP2f6PtGGcYuLJA=="
+          "hash": "6klQRJleWU/60aoRedKYaevt7kTgg9ekvoECXYvb7oo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -333,10 +333,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Anater.html",
-          "hash": "qa00f9rEUYwUJ/AkeCGPFg=="
+          "hash": "YmTxzQ6GINkjzi3y+9QM9IJmF8wI39QJDQ3PPWKAmV8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -345,10 +345,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.BaseEnte.html",
-          "hash": "hovmfvcfteTRxMTL1F9Q0g=="
+          "hash": "hnzIMqT8QvMpdVKe6DwbSDiy3iMVVZNkOr+7iGFVkSg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -357,10 +357,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.BasePage.html",
-          "hash": "92NHDVUeZwbwrzBilTblwg=="
+          "hash": "1XYSDkU9Y+IbVjUeUwnjvpYGhwErzcNGkh024pODMTs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -369,10 +369,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CAcqiusizioneAutomaticaVersamenti.html",
-          "hash": "IcYXcSZvJd6+S30+RmijBg=="
+          "hash": "qbOwL1/HrjOvRsvRnt3nnF3kEQM6RB8iyAVbvC7MLuE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -381,10 +381,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CDichiarazioneMod.html",
-          "hash": "Y+atyg9Kx+soMWjgyIjYfA=="
+          "hash": "ype+d3mQQFdHj19ZPHA1p1WW06nHasZbw4WfWxIS4Kc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -393,10 +393,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CGestione.html",
-          "hash": "06NBsZdYi1IBTQP/H7kSgA=="
+          "hash": "dG4I3laEJo008H2w2RKqE2KHPD22KD0yLsQh3UwuOGc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -405,10 +405,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CGestioneDettaglio.html",
-          "hash": "71+dlr+R5f7vNDARD8m1JQ=="
+          "hash": "ox1E+EOzlLiB29Gk1O6BqoIfzI5odwy1IHsgoLvBBLk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -417,10 +417,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CImmobileDettaglio.html",
-          "hash": "kRpc3e/D5ehK5YSVaZ/wLQ=="
+          "hash": "pUQqzGijKKkc+JQFhfp1ZxBpdYy8qC0jGJ4806D0MOw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -429,10 +429,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CRicercaVersamenti.html",
-          "hash": "xapEmzNTYcRZdxAt+gkfMQ=="
+          "hash": "XY2XE1zbRl55/aGR1ilGdtxaAB4b1f+hzXEuayuaLdc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -441,10 +441,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CVersamenti.html",
-          "hash": "bMJDXO2/aNxycp+FpONbhw=="
+          "hash": "BDPV5KEW5XUbmEFztg2DiLKObFoz0B5hjR9RaQftjwg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -453,10 +453,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CalcoloICI.CCalcoloICIMassivo.html",
-          "hash": "S6XXCt283P3LGo4aDuK/hA=="
+          "hash": "i5Ot2SNi6EYAvM3YOnQyWSRcEJQ7v/Em5af4nLADwYo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -465,10 +465,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CalcoloICI.CCalcoloICIPuntuale.html",
-          "hash": "l8/82P6bUIZvy/jEFXS2UA=="
+          "hash": "MTzM2PPbYvcbkwnHWs5AqSn3/U8QceC/mFw8i49X6R0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -477,10 +477,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CalcoloICI.CConfigAliquote.html",
-          "hash": "jhOa9kGy3kkquaX2kNj2gQ=="
+          "hash": "ttKya7UD353ba2/N5EL6XE+8/dA2JgGR6kR5H0NiaPQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -489,10 +489,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CalcoloICI.CRicercaAliquote.html",
-          "hash": "FSr4wBo/NFFVVhf+bY3c2Q=="
+          "hash": "eOm1Uz0UEn5KOQwXAaI6cZ2cOFJi75HshTke6SEfgEM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -501,10 +501,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CalcoloICI.CalcoloICI.html",
-          "hash": "1o2yaLziwnDGVuUqzmRtQQ=="
+          "hash": "Lmeswpo9q54mqEZGo+xrVFJLsu9TsfXs6KSA49MTWyg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -513,10 +513,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CalcoloICI.CalcoloICIMassivo.html",
-          "hash": "ZtSw0aqrRlggYWKyhfAMXQ=="
+          "hash": "I9H9rn3pK6oxMYU8PuFqX+YBdmzqIhY6e8jN3rUax/U="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -525,10 +525,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CalcoloICI.CalcoloICIPuntuale.html",
-          "hash": "UdaWtcwYOwU2695djZw7mQ=="
+          "hash": "tDJ1JPIpqcZxDbz0cooVgL1FpTmbEFwpm6b0llGoHWg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -537,10 +537,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CalcoloICI.ConfigAliquote.html",
-          "hash": "dIPcjzwmPLP8LY5uCviruQ=="
+          "hash": "/LMNiBsy/f9EeW4Z48rXqMK45EydAdxuk3TKc3uA2yM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -549,10 +549,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CalcoloICI.ElencoAliquote.html",
-          "hash": "SWSU+RE2opeK7ek9FvmDMg=="
+          "hash": "M+awMiZsa9FPUlPavDzy2u1yVStEUjnx53e/dSep/vk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -561,10 +561,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CalcoloICI.GestioneElaborazione.CGestioneElaborazione.html",
-          "hash": "zYUZKaswqUpnEEt4Tb416Q=="
+          "hash": "LmAOzFNwTIjDn9J8yCjqOaPAy1Py2wAWK90A3zCYypQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -573,10 +573,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CalcoloICI.GestioneElaborazione.GestioneElaborazione.html",
-          "hash": "8o3TBdPNorqgTWNPWGOVqQ=="
+          "hash": "UgDCFiFB8KucfIcL8TDR3DaeCUo2zRV713hU875JHtQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -585,10 +585,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CalcoloICI.GestioneElaborazione.Repository.html",
-          "hash": "VB6N2Htc+C3+7/3rKzg1DA=="
+          "hash": "wki5fBCGASHlpo6nuJNidCQmMPdUBl72/E2Og0/BDwA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -597,10 +597,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CalcoloICI.GestioneElaborazione.ViewElaborazioneICImassivo.html",
-          "hash": "QoyTQrW878rRfrfja8TtmQ=="
+          "hash": "qys+E31J2quiIx6fwNv9VGER1wc9mktKYkbWmDxH0gA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -609,10 +609,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CalcoloICI.GestioneElaborazione.html",
-          "hash": "2nPp/0vrl2XxS2KwDPIHpw=="
+          "hash": "9fZh65qulGt49G8hTCqJ5tr5CZzaeVQn8Hifm+fheyU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -621,10 +621,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CalcoloICI.GetBollettinoICI.html",
-          "hash": "nCm6zBTWFcU+xqEdkJHNvQ=="
+          "hash": "BpY9YbCN2zSg/OBkQ6yv9VC77OzhbAX01SbvzqxjHUo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -633,10 +633,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CalcoloICI.GetCalcoloICI.html",
-          "hash": "0Mcu+daNDAXARk9iDqWqDg=="
+          "hash": "8+h1kgYR/26+i3upbjz8JIDaB7m6XLBKLgcdKsVmSRM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -645,10 +645,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CalcoloICI.GetCalcoloICICategoriaClasse.html",
-          "hash": "L21ibvgbTkzyDYO3FOnvzQ=="
+          "hash": "u1LfqZAXVclOQtk5Ktpess5JjxSLtEjGPSPYDJi+OZs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -657,10 +657,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CalcoloICI.GetVersamenti.html",
-          "hash": "+eR53FBPJnIs8Qxs76oZ6g=="
+          "hash": "xnpG+mJmyf7shkX9GR9xlFLVNSU6eFkHSVnqo+NYjFo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -669,10 +669,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CalcoloICI.ResultRicercaAliquote.html",
-          "hash": "tfZhJytIadMqCBcE+5vjSg=="
+          "hash": "KCWSXmvzRtCcCoOdHqO76M6bkzsFfagXHcS4SzjIzTE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -681,10 +681,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CalcoloICI.RicercaAliquote.html",
-          "hash": "m7k5gfc+vDETGDpBo0oMyA=="
+          "hash": "vpvIieFMShfbjYJ2gshpRy2Ao7D4imzFaazGV/q4ubs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -693,10 +693,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CalcoloICI.StatoElaborazioneICImassivo.html",
-          "hash": "IAtocgpecWfRMUF89mnmYw=="
+          "hash": "WmxbURS/VOqRpHQzN60fAqVE3bfEy0OxPEA6Djt5wCw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -705,10 +705,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CalcoloICI.html",
-          "hash": "H7XalDwWErUwuLXrr6IFxw=="
+          "hash": "g/FThIORU1jsBKXum5ay+i6YyvgwcGEmQuL3mZ4zoR0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -717,10 +717,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Catasto.Anomalia.html",
-          "hash": "+t8afLBbA9uu21+V+DnLeA=="
+          "hash": "1NVVdtJJy7vHLQVrgGPp/k3brLxklhicLAdkf7r7hnY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -729,10 +729,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Catasto.Fase.html",
-          "hash": "I5udYPSyg1QcNUUYR9mc1w=="
+          "hash": "7DYWoSaHNnfqj6D/R34zKj/NJxFEi0CpDWvkVVfhpsk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -741,10 +741,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Catasto.html",
-          "hash": "7Jyib8LPBpGsg59u8nl51w=="
+          "hash": "8ZK/p0RSIJo96xq8tyUiWsswttMmBRtAM9aGU/07pmY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -753,10 +753,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.CheckRifCatastali.html",
-          "hash": "fWsl2jy/e9KZqNVC063qLQ=="
+          "hash": "e0ATwGuMrLCaemyD5iXHoaFiz49gHUcJUg/dslIcJNM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -765,10 +765,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.ConfrontaConCatasto.CConfrontaConCatasto.html",
-          "hash": "Td7VAiRFYfbEbPOQGE/Syw=="
+          "hash": "Q0HOCaf+2aVFGfjcfDG+J21ZFcLrcbiX+4UipO+gNJw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -777,10 +777,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.ConfrontaConCatasto.ConfrontaConCatasto.html",
-          "hash": "pFZ3ep4Xr3sPmFMCLn8TwA=="
+          "hash": "HGDbNRIfLtbAB8+55LpjawqGS4CkJg0EbSfrQr4KP3E="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -789,10 +789,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.ConfrontaConCatasto.ElaborazioniCatasto.html",
-          "hash": "hXH0ybCUFvYB4BYUAUew4w=="
+          "hash": "RgYxmF/hx6c2kxEBSDLn3tAsTxdddWAvv5aeZ/e4P50="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -801,10 +801,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.ConfrontaConCatasto.html",
-          "hash": "uKENT4lUY6VyOO28sQl+xA=="
+          "hash": "rnlwBIpt4+aDL1a2EHsJh+/GokEZFp52DpnXHjZHGFU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -813,10 +813,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.Aliquote.html",
-          "hash": "nGBuFY6hqIQsUbpIx+JIvA=="
+          "hash": "LYEUqwT4OB5IuKRHfTQKXiyp99lDZiaw0eZuhved5Yc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -825,10 +825,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.Bonificato.html",
-          "hash": "xhfGl4l51hkw5ay2H3zglw=="
+          "hash": "1yipJbzlDveDvYYOziGrAI53kLRZvtgvDQ0EucK2Ozs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -837,10 +837,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.BonificatoTestata.html",
-          "hash": "fZfxLikCuVoosryXHfzgMQ=="
+          "hash": "VDcZ2wSENB7RmYtOnz5uPuMOWuSVQIVbVjxFvGxcC3k="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -849,10 +849,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.CaratteristicaRow.html",
-          "hash": "XiO6z29UA9txCK+XHNLlXA=="
+          "hash": "jIgRMpd1UGdE2pGkZ+XT6W08k9pn936+mHZCsKVTxQ4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -861,10 +861,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.CaratteristicaTable.html",
-          "hash": "G46ho/3YM+evGWZJ7mxT8A=="
+          "hash": "yMTJuJVTYHi3G1kJZXvKEbS3TrRWUDtsK3YTluQnmyA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -873,10 +873,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.CategoriaCatastaleRow.html",
-          "hash": "xMxrC34wLxfj62TeT5HsBg=="
+          "hash": "9bSKjYJE883yS+H288hwZXpUR+de+qDwC2lOytgBTfA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -885,10 +885,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.CategoriaCatastaleTable.html",
-          "hash": "XP+EfWrFJAQr4Rhn/YP1tA=="
+          "hash": "mWi5S6KtarHHBMJCPIfY0aBRTm+D4uu9EANablGIQQo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -897,10 +897,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.CategorieEscluse.html",
-          "hash": "jsaUgx6LZEBAOhd885NW9g=="
+          "hash": "gBxW+4pnGo7mRTUdujQTw2GqgLRbtzBgC8+v8MeYEck="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -909,10 +909,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.ClasseRow.html",
-          "hash": "nsh5oTezkxdaF4k+BiB57g=="
+          "hash": "mYWpK/lWEkgerI0DvQ5mLUgCiShRmY8nxNkHYtbwDMk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -921,10 +921,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.ClasseTable.html",
-          "hash": "JTcfg9yfiUerScN5bFjy2w=="
+          "hash": "3tUw7zRRRKnbB2HCuqaMMPhtA4Yxz90yRTBVAuPuXQ8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -933,10 +933,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.ClsConfrontoCatastoDB.html",
-          "hash": "nvzckhhw6/3Nr1Ua4u469w=="
+          "hash": "zacLyzuLNb0jlXKvZ/ox3LPqasjfUhVvwqYtwgWKsQk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -945,10 +945,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.ContribPagatoDiverso.html",
-          "hash": "ehPT09S3Jkms+/3JEQbvSg=="
+          "hash": "AMUN6i19k2zDh+tFEIe9CKwRRFw2tAiAQ1UWOQU+kM0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -957,10 +957,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.ContribuentiImmobileView.html",
-          "hash": "hLl0MvES8RvAikGmb2lq8g=="
+          "hash": "AvxrT73R942SNh4sIe4h5I/tlLAPeU2CS6u+soY1vtw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -969,10 +969,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.ContribuentiTuttiView.html",
-          "hash": "rGxGbzWDn8x1F3CEVHrHeA=="
+          "hash": "0ofTW+CB2D6QYdf3+JDCefjAKRbP6L2Vm+i9ro1SYp8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -981,10 +981,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.ContribuentiView.html",
-          "hash": "R28h2thE3HD4fSS2MdT57g=="
+          "hash": "2w25/NmaDeIhbWFkDZoASVH35rCQ6aEFnJnhOc96WUo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -993,10 +993,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.Database.html",
-          "hash": "L2SkrUN6Ve24Eub9ifft5w=="
+          "hash": "+PmaTUd8K8BN0PuTrVy+MiY03GhaS09bMkM2LelrM/M="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1005,10 +1005,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.DettagliImmobiliRow.html",
-          "hash": "Oxksr8xnxYszCuJGnkgwKg=="
+          "hash": "XAJ9q+orF4CM3CRGVUzeYzh9xfax3b58NSQC+TkUKsA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1017,10 +1017,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.DettagliImmobiliView.html",
-          "hash": "R7i2yS7a1EfXEX49OkZ5Dg=="
+          "hash": "FIvA1ccynqdFx3leUhIo2fUSplnHjj7p1Cm/7GIq4no="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1029,10 +1029,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.DettaglioTestataTable.html",
-          "hash": "MVtpiDFW16HbT2XI21OVVw=="
+          "hash": "rEm/xzmZ3o9OXbHcbZ1oua8bI9zgzrAIFdRxwhd0LoY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1041,10 +1041,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.DichiarazioniDaBonificareRow.html",
-          "hash": "B/bBkcXu2fVmZ88TSlrjVA=="
+          "hash": "BuYcV/cgdlW3cMPdFJY8KaWoZHJYMr4x+uLKy++52HE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1053,10 +1053,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.DichiarazioniDaBonificareTable.html",
-          "hash": "KDz7VZt2yprE5D3InDdmIg=="
+          "hash": "PrsVF57ANX3MWQldu8Va5bCjpbBvzUh/0ExpSiXamGM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1065,10 +1065,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.DichiarazioniView.html",
-          "hash": "nCYbddoIBHwYUok9KMeRLg=="
+          "hash": "FlwKYrXynSL9kY+GkoZgcZ5hkjyCTzPsEc8jzLMZCyg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1077,10 +1077,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.DichiarazioniViewRow.html",
-          "hash": "xe4RlqAeHZyKHHYgQmBZGw=="
+          "hash": "Aikj0Jw6a1QOogm9YjIWs6t3a5IDGm4HEWXrnN6feN8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1089,10 +1089,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.DichiarazoniOggettiView.html",
-          "hash": "LlpcgmtD6Vw56nJ/HYXyJA=="
+          "hash": "2eSIHeuGR5LKN/dvDvE/K2ctMBEvsn6LEwPnTnPgpfw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1101,10 +1101,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.DichiarazoniOggettiViewRow.html",
-          "hash": "iHPN4x8N8YMAX5rOim8xlw=="
+          "hash": "kP4cy8DFGPLcqgDQoBRwYL8wY5WXxT4tzb+Izdoab3E="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1113,10 +1113,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.DovutoPerContribuente.html",
-          "hash": "24w5Z3f90Faf28Bueh3rlQ=="
+          "hash": "JHDRVWTP2/PdVpXosLq2RALf/xdxm6NpctvwIEV9Jms="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1125,10 +1125,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.Enti.html",
-          "hash": "ZzI0QsNFEVuWgUh0fKz4uQ=="
+          "hash": "nLQRiYfzckLjM5F+LUPG+P02rHZPezqEVyIAe6B8uxs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1137,10 +1137,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.ImmobiliConfrontoCatastoIci.html",
-          "hash": "GecUwTgG1Wb4uS9vwYTw7Q=="
+          "hash": "qEiiJ5E/fY+NZ8OziG/6O8uNgFCzr3wJm2RUBgavfpc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1149,10 +1149,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.ImportazioneF24.html",
-          "hash": "m9rUFGls2Xtb2sWpyM8dtg=="
+          "hash": "ocIJKfKTz06qkqv4OEJBROnZvbWzn5Fw3YfCqLAXB+c="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1161,10 +1161,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.ImportazioneRow.html",
-          "hash": "SeoTGAyF69PUNLD9/bSUPA=="
+          "hash": "rXYx5/TxdRKllZRdcly19+4e8JvDOFcU/9LYLx5bhe4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1173,10 +1173,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.ImportazioneTable.html",
-          "hash": "GJ00nQ6iNnhaUwo9kBpVEw=="
+          "hash": "k/u/0CjE7HBKZq0ZPOvJKNnRWPIyTXr7/m2vf8zTO5c="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1185,10 +1185,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.ImportazioniRow.html",
-          "hash": "iS6toWlv2MJOMt5Htiym1w=="
+          "hash": "ZEu2L+x2eKyLQnvudP/3ZpKMOqaDOw8GdlTYMb66e6I="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1197,10 +1197,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.ImportazioniTable.html",
-          "hash": "n2xtsGW3+Go5HzSQzRHSgg=="
+          "hash": "1SAR5bUPFHotUgiSnEMEochTzRL1cyFmSpyyJ+xAHtc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1209,10 +1209,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.ObjFlussi.html",
-          "hash": "TwPdZRzg3x4pSuOOt5OlXg=="
+          "hash": "imAj+j0byZOrlPtcRDSeawLfuxTj1QD5eFf38ENMFDA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1221,10 +1221,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.OggettiTable.html",
-          "hash": "Mn06Q4rgeHbsjqYhquCd0g=="
+          "hash": "c4ooSFkb8LGomlkP0RFlhRbUhorzKhjpsTBYxW/hLNg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1233,10 +1233,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.PossessoRow.html",
-          "hash": "4JQ4FldqJUPT/Ru3uO4Tkg=="
+          "hash": "SMf4fKrqsgARqQdBH41V2MlmAtXX9J1RNi22UEEwYtE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1245,10 +1245,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.PossessoTable.html",
-          "hash": "+EaKenjDOR9aqlALX8fePQ=="
+          "hash": "uMxqCAAna88Q0INz+hxGeZZAVCZUVIsZV0hOzLIsQ4A="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1257,10 +1257,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.ProvenienzeRow.html",
-          "hash": "9MrViFTAJ+my3mTOLHoukg=="
+          "hash": "Rf16//XfJJH2uw5Pa+tTbQrYTOqqJnwsBDecJOgVPMw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1269,10 +1269,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.ProvenienzeTable.html",
-          "hash": "U4iwMPskkIdeX1v31suWmA=="
+          "hash": "z2w9X39/pXKpFZXHlNpXo3bvgeZACgttThRq1byymcw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1281,10 +1281,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.StampaContribNonPagato.html",
-          "hash": "iceNINmuPO3NkxjZ/mk8iQ=="
+          "hash": "iXlCH2jVWuLhWjTDYT/QsT+HaVk3j4vggmMN3ylQuAs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1293,10 +1293,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.StampaXLS.html",
-          "hash": "7nuCXnQfE5bXat/axMSdmQ=="
+          "hash": "qrYKlhbklml3RXw9j8rJpQZ8wBtVZM+wmFHxVURQCeQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1305,10 +1305,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.TariffeEstimoAFTable.html",
-          "hash": "UpkJCbwRqQfi3Rts79lPpw=="
+          "hash": "Z1RtIj9ZBVL20kU1M2qtmVXZpQSz8Qz15QcOkZgxens="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1317,10 +1317,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.TariffeEstimoFabRow.html",
-          "hash": "2Fh8SalC+U5MfcGh9UPIXA=="
+          "hash": "GN1HnlDi3/4/fByzW5vJZigEoWCXr8NG1cGQek75AB8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1329,10 +1329,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.TariffeEstimoRow.html",
-          "hash": "b+IVUeiBc8RK7pWCTCJRSQ=="
+          "hash": "mi3GoAuU17ArNRJ/1xW5JMWdwEeaFzLTyshdIaglTlk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1341,10 +1341,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.TariffeEstimoTable.html",
-          "hash": "hE0Ujg0dkcvNaJ3FolPidA=="
+          "hash": "Y7wOynRzLCltq6eLzDNbC191VtyTeKmTrf8fJ6xKMkw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1353,10 +1353,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.TblImportazioni.html",
-          "hash": "ZawyKgAKp4OqqVrxYeKyTA=="
+          "hash": "Mi3LjAaWyYt7bU1C99iX26ubO/ZyvVIIkxvE5JD1XZ8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1365,10 +1365,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.TblRavvedimentoOperoso.html",
-          "hash": "tfCtpmZGHrcxEC3WT6qWFw=="
+          "hash": "1y/smh5nlSmQL3lYkSmOosIKNq+RnOcF7+fnyK1J5es="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1377,10 +1377,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.TestataTable.html",
-          "hash": "Afca8DFaaXJMqyVeaWK0Ug=="
+          "hash": "slE9nqRI/NQEGKGT3Y2kcfwYISNnrS1hW4P6ru1HNNs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1389,10 +1389,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.TipoImmobileRow.html",
-          "hash": "j8t6P3zFIWylyaC2QpwBvw=="
+          "hash": "YcML0/r2mOWUlPExJvK7eBgkNVIZEfBYhGDF5OXGDT4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1401,10 +1401,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.TipoImmobileTable.html",
-          "hash": "My/nMjWnkZummp4/lBPalA=="
+          "hash": "Myppiq6TA9OxMw4i387GRGDzvoox7DO9WzKKeKp0WlY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1413,10 +1413,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.TipoPossessoEscluso.html",
-          "hash": "i3SmXlRtljFYOtLUhkBfdA=="
+          "hash": "AyCz9p1q21O1ATCC0TyYFr3gylJvpRWxPCF5c8O4cOE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1425,10 +1425,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.Tipo_RenditaRow.html",
-          "hash": "oUfLg0vzfrLu2LQ/0KYBVw=="
+          "hash": "A+fVJlTE04UTCsJrYj+S3DWCjBFPRsuJAD5Kb/ETD9k="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1437,10 +1437,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.Tipo_RenditaTable.html",
-          "hash": "9lixgffnci/RngmiI0FnfQ=="
+          "hash": "F0LT86Y4s3x+LrSt/GnDeE6rjWPiDZcWqxJnYXoe/xg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1449,10 +1449,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.TipologieProvenienza.html",
-          "hash": "4Svp6yl+52MwM4ryCOmuTg=="
+          "hash": "PQR94A79/XABtmM4B05E9NCambW+msJiQDVnI8w9TyU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1461,10 +1461,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.TpSituazioneFinaleIci.TipoOrdinamento.html",
-          "hash": "J7fXHzoKeJyRRUTPSjLsXg=="
+          "hash": "ZrjvML608bU24FvKsCUFzEYD7D2iGwUWqql1v2TLOfw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1473,10 +1473,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.TpSituazioneFinaleIci.html",
-          "hash": "ijmomSJrEVPnq+Kh6XuliA=="
+          "hash": "BEGQtU7LD8mVULRqs75WNnIHPqbsiuPxcd9Wq3/UL9o="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1485,10 +1485,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.TributiTable.html",
-          "hash": "08VrtMrdGn/3zYCnhEXBuw=="
+          "hash": "HpJSK6NrX5XZztwCKp3Zx8kElU8cZZvM/Zb9OnEgzGA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1497,10 +1497,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.UITerritorio.html",
-          "hash": "1E92t6H/QiVpfgpAPmMB0w=="
+          "hash": "+BSSG6OGQVXaKCx35H906gaEQFGcQ2migUobkvIkUlg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1509,10 +1509,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.UtilizzoRow.html",
-          "hash": "rLISfn69WSTxyM1D769Kcw=="
+          "hash": "ImD0/P0vrDm8I8orD/pnzsPh1Gupim5dpsZ2orUihmM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1521,10 +1521,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.UtilizzoTable.html",
-          "hash": "sbUIZ62Xzrp9yZ3TR7TG/Q=="
+          "hash": "6zFeFYYD62OeJZJCbTJSlPg6gKPTwz5Id+WiWVbNmz8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1533,10 +1533,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.ValutaRow.html",
-          "hash": "Jym704abPR8YZn5AAmQ7ew=="
+          "hash": "s63ENjqSy5TggO7yi+G/3MFv1rgtH0T1D7GU85HBbnY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1545,10 +1545,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.ValutaTable.html",
-          "hash": "hTbyXZzpORFIhUEu1dYO5w=="
+          "hash": "rEBASommceF6ZxiUfe8tpG/Hhd3Ku9n2HsM8ZXUECHI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1557,10 +1557,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.VersamentiImportazione.html",
-          "hash": "579ZqVJ4vHOCEtxA/QNruQ=="
+          "hash": "UCtsFHIfN53xlEARnj5PJfuFOmbk/yQfg1vjb+J/VeA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1569,10 +1569,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.VersamentiNoAnagView.html",
-          "hash": "Am4ZN0wt4cHpI333YBX17Q=="
+          "hash": "LLfikTlKo67LFeg4stilL/D8jlhtIzGz/AMUN95+m8c="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1581,10 +1581,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.VersamentiNoDichView.html",
-          "hash": "jaF68NMQEWEXG4QTTN2IeQ=="
+          "hash": "g9cPzldwk2iTa9uDeDjjEnQlb7hi2cC9++Sislk7vck="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1593,10 +1593,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.VersamentiTable.html",
-          "hash": "CEVGBt9saPqkAjws9NYI1A=="
+          "hash": "kcRe+ETnc62vj3J1ly4WdwvyyNrkSRX4nk5F+YPuncg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1605,10 +1605,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.VersamentiView.html",
-          "hash": "eJ/w3RLj80dumqyFAxkwHA=="
+          "hash": "02mr5+4oSsmXukGN3qO/SA/I1wRd5g137qek/HNrrh4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1617,10 +1617,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Database.html",
-          "hash": "PXX5njNkCyL3CjULOj6X+g=="
+          "hash": "48/KGoClAX3fQ5nEMLFFSrVDkcWeVKh3ouvJ+CtHy9U="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1629,10 +1629,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.DichiarazionePage.html",
-          "hash": "EsJz8n+eCrPXs9mk/Nil5w=="
+          "hash": "9+5KSdv22/ncBKStop81hOy7vVV3fzzMVj7bheZl/Zc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1641,10 +1641,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.ElaborazioneDocumenti.AvanzamentoElaborazione.html",
-          "hash": "8w7p4EdO8+kwmohJZly7zg=="
+          "hash": "RjeWuvkmCpUYy9byXtheU89wWou2LQiHIS/Np73+Ors="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1653,10 +1653,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.ElaborazioneDocumenti.DownloadDocumenti.html",
-          "hash": "bwZFdjFLgNlV9bJ6w4+4+A=="
+          "hash": "x1KHiQO6e8y4Djd2PI1FYbnS73l1a9VeutL7iZdVopw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1665,10 +1665,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.ElaborazioneDocumenti.ElaborazioneDocumenti.html",
-          "hash": "iXHXIJn2oNGJW1Ryg2o7hg=="
+          "hash": "IyQbo3D+nDyCbpbYWCpGLTa/V0zHInH9wybAwuKjNkA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1677,10 +1677,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.ElaborazioneDocumenti.Elaborazioneincorso.html",
-          "hash": "1l7s+EUSJQKUw/fSdQfRGg=="
+          "hash": "HRA57qAFcXt8vpawsuTK1d2UFaxH6z0Zud7FzbPWpJE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1689,10 +1689,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.ElaborazioneDocumenti.cmdElaborazioneDocumenti.html",
-          "hash": "LHdqUGnNPAuwPTQ37TuxAQ=="
+          "hash": "gNlXaSu1qR0RKKiSgaUfuEh8MVX7wKs/XIzVLwwJCvo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1701,10 +1701,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.ElaborazioneDocumenti.html",
-          "hash": "ZSFFPV+nQiJrpCi1mGZ3ww=="
+          "hash": "QxktqeYIlVBTManqw02TYR+IIvy85aRx6KsG3OGLDwU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1713,10 +1713,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.ExportCatasto.html",
-          "hash": "hlzNyso4atwtGFXK0s/X1Q=="
+          "hash": "LghZQYS6/prRFzkPSO9AvAxYsL9zVyLuCJD9IvpKV6Y="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1725,10 +1725,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.FrmUI.html",
-          "hash": "nnvSsTIsBu21vbeYL9crMA=="
+          "hash": "AZYUjLMf3jziI9yhVAu8Z7NfKtQvsgrorjWyxTrgCMY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1737,10 +1737,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Gestione.html",
-          "hash": "Tzsq6hfVnUG4EuMcabVBPw=="
+          "hash": "GgecUoUTNIKpMKGpnTj2lvasUx6haQ/6dDGGX/Z7960="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1749,10 +1749,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.GestioneDettaglio.html",
-          "hash": "4nhJ1rNug1K996m2L1XXqg=="
+          "hash": "LeHhKU01R3IOFz3PGBte+EExhmiFBOHrjjDb7Cx9r3U="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1761,10 +1761,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.GestioneRavvedimento.html",
-          "hash": "2swlIz7WGWXh4at03b4EQA=="
+          "hash": "Lm8mlyjzrVtjnjABFXUYA2Xip9LPJVSX9LQIpnuiUn8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1773,10 +1773,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.GetImmobiliICI.html",
-          "hash": "gjjAaIbJf21Txtacgpf/Yg=="
+          "hash": "uS+so34/JKFpxpJXosxEFJOKOSvYopWq7zeW7vp95tY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1785,10 +1785,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Global.html",
-          "hash": "lCK/38e+0WS0M0OwNXozHA=="
+          "hash": "ryswR4c4UruFfYLAROkUydAvXQLfCs3ZhzW1Wwe4Dbc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1797,10 +1797,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Immobile.html",
-          "hash": "Yfh2mDjHQ0m71pNrVtZVBg=="
+          "hash": "1IfMqyEkfVyJTQgHwCY5uyeDFlyeCP0jKzGOml9WS5Q="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1809,10 +1809,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.ImmobileDettaglio.html",
-          "hash": "5FIfLmWsigKoQF9fhXv5hw=="
+          "hash": "Gs2pF2F06TmQxysRVSXwvGWNTTe21JKq2YBY4F+0L1U="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1821,10 +1821,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.ImmobilePertinenza.html",
-          "hash": "rFUzodn4oQVzkPSVDYpwsw=="
+          "hash": "SofakfYmIF8BlO5LYC7YweT6+cYga1wh1L/BdN0DoXw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1833,10 +1833,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.MappaImmobile.html",
-          "hash": "ZsESBsgptFPvjL9KUA2anQ=="
+          "hash": "fd2p2SsubR95xqq+LtLbJepzdIBRIz8GMzCCLsltQG8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1845,10 +1845,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.RavvedimentoOperoso.CGestioneRavvedimento.html",
-          "hash": "68qTfbkDe2tl3deoiabtRw=="
+          "hash": "9AtJ2IPGsgCXh2vmoL3EFVSp1VUOvv6oD+ozJP6NL+Q="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1857,10 +1857,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.RavvedimentoOperoso.html",
-          "hash": "BM9LTzTf9XcfD0FE3xFIMA=="
+          "hash": "jBQW0SrO/CKhq1D8Coe1cqo7WEXimgOeeItI0WzAz+8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1869,10 +1869,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.ResultAnalisiEconomiche.html",
-          "hash": "F4PrShIPHzqe96S1hZMUvA=="
+          "hash": "91HD23zGNO/3tqWBgc+NJMsgwtkYRjUcGx3EGqqQ6X4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1881,10 +1881,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.RicercaAnalisiEconomiche.html",
-          "hash": "PV9zuwZXD+75yNjHCiUw4A=="
+          "hash": "Z/iQ/48uod5QGP0q3nYOGgoyXGU//xX0pd5fzeYyARY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1893,10 +1893,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.RicercaVersamenti.html",
-          "hash": "dCgaGHfHUmNrx0ZUnFW3mg=="
+          "hash": "otMC1As+EciDkDp21q4RDn3XfFBGMc38TxOBpfYlbXw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1905,10 +1905,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.StampaContribNonPagato.html",
-          "hash": "ihidDxaQJ5r2o/O12LwDuw=="
+          "hash": "OdiyZQZ/MGlzxyZN2mUTOXUqeNTBCfTwCatk3C5WnMU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1917,10 +1917,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.StampaContribPagatoDiverso.html",
-          "hash": "WkU+gFWA/OlYNBNG6wYPQw=="
+          "hash": "mISaqQ1pWot09iE01WRrg7z7acefD3ydsaVHtlawmII="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1929,10 +1929,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.UserControl.FiltroImmobile.html",
-          "hash": "CEZmbYvOyTWcionVBKMs7Q=="
+          "hash": "EAeS1/MltO9caZcd5EYuwshbKroWUTTvYS6qV1VeEZs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1941,10 +1941,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.UserControl.FiltroPersona.html",
-          "hash": "fj0OrvYjMXOFBKbIHDEA8g=="
+          "hash": "/McmRJGYW02MC8ojPgYp0GmguUzWUR89WwDuwRGZHD4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1953,10 +1953,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.UserControl.html",
-          "hash": "RGZNCnIAeXQqfo7661bKRw=="
+          "hash": "OV6c5v8wGwkOIzHZ0GVJUI3//Bbk6b3TCjmhxC0L8Dk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1965,10 +1965,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.Versamenti.html",
-          "hash": "jXNECiszo/k+TO7by9PRKA=="
+          "hash": "rKJ8tjqnCdMFScDwUNKoPyTqERovdQ12KDaYqjMDtSE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1977,10 +1977,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.VersamentiNoAnag.html",
-          "hash": "btXg9FoxfhOf6fOG8Xye/w=="
+          "hash": "M6VytbWgEsWi9B17IgaHB3oTXGKUiu9NNMpEDdUkwI8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1989,10 +1989,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.VersamentiNoDich.html",
-          "hash": "uE0YI62ei6RdOhT8/Y0bvQ=="
+          "hash": "J0Aij5jGZsPJZQXeJQAINTKMoazwe1diDVZnG7ktRGo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2001,10 +2001,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.WServiceOPENae.AssenzaDatiCatastali.html",
-          "hash": "NcKb2Xn1W7PZ+JIRp1qD7Q=="
+          "hash": "ZUlDRMNoziiJtRyIG6K9k0CZJSJpaWw9k0uKCclJvTk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2013,10 +2013,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.WServiceOPENae.DestinazioneUso.html",
-          "hash": "N19th3vGPOc7WpiA0DaMBQ=="
+          "hash": "QjdoLQAA6PSKBmQMxKZksa83wrxFE/b7I5TFcBdQEv8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2025,10 +2025,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.WServiceOPENae.DisposizioneAE.html",
-          "hash": "9xhjPbeVbk1vm0LPZeo2Iw=="
+          "hash": "ZB9YjDeAx3luKajb91s9crf/jOosGiqD6MWPcqrihs4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2037,10 +2037,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.WServiceOPENae.EstraiTracciatoAE1CompletedEventArgs.html",
-          "hash": "lOjwoiQqWEzzyH/gKqerjA=="
+          "hash": "vyz5YTPuCmY+jXhV4KjPnvmL2x356dc9Vw6rOWWDdZE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2049,10 +2049,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.WServiceOPENae.EstraiTracciatoAE1CompletedEventHandler.html",
-          "hash": "kVQyP4FXWEYtgNxKjoJOvw=="
+          "hash": "pU11YkTOGgOdkd6FDdz6GDFp+TgJQkNUCM1VAeh+t3U="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2061,10 +2061,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.WServiceOPENae.EstraiTracciatoAECompletedEventArgs.html",
-          "hash": "hfwCAV3nmbUIVxS28VD9ow=="
+          "hash": "RBCeaYdcmtb3Fvn2mw9jEkH8cnAwvObgFuwqx/gL460="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2073,10 +2073,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.WServiceOPENae.EstraiTracciatoAECompletedEventHandler.html",
-          "hash": "dQlTNoqIuTwJz1IBbBiNMg=="
+          "hash": "NtEdBU6gv7sZ3qCuPXKqP9zPgZGv0OWM+0GgPMrif4M="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2085,10 +2085,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.WServiceOPENae.GetFlussiTracciatiAECompletedEventArgs.html",
-          "hash": "jiuuLYJFibPQYdQM3/6yAg=="
+          "hash": "mNV9SN8Ud4hfHnDtEyL1i0fS5+z60qU+p3aTNJh0jFg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2097,10 +2097,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.WServiceOPENae.GetFlussiTracciatiAECompletedEventHandler.html",
-          "hash": "W5GVxHFnguS80ZBooCvYkg=="
+          "hash": "Ra3kUSZImm51zkshza5mYj2b4z4Bz1fBr/xV41hoXEg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2109,10 +2109,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.WServiceOPENae.NaturaOccupazione.html",
-          "hash": "FWtK8chIl/CBERaeuc80jA=="
+          "hash": "0aWBxXCQjYKnlzKHERLfq2iomgKp4Yz42gQ/trmjjx4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2121,10 +2121,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE1CompletedEventArgs.html",
-          "hash": "WF30QrNEFM3g0jGHa/Fsxw=="
+          "hash": "O+5vnHaUuS+OcyGYq7SAW0O9oW9mpyzJsKh95GLygHU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2133,10 +2133,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE1CompletedEventHandler.html",
-          "hash": "o8N8WqlnZz6O/pLb6hAmng=="
+          "hash": "uewwYk8jARAKyK+TbvZateyH7UcsXcir7mDdqZTDwZc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2145,10 +2145,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE2CompletedEventArgs.html",
-          "hash": "J1Zpx2BMHoGvZM6W6BgwQQ=="
+          "hash": "Iqo/tWOBIsg9ihMfY82vTHjY6/TkbM+DWChDmA8INwQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2157,10 +2157,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAE2CompletedEventHandler.html",
-          "hash": "P72hTNrL9Ndh6q+rtVlc9g=="
+          "hash": "dG8OPqB/Nobd2cTUrYxWGSrj+f8dCOK/iDwUZvh5k6c="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2169,10 +2169,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAECompletedEventArgs.html",
-          "hash": "IeFmV7S756aSgJy2eLYdhw=="
+          "hash": "1s/jTcg92PFByUDjAEsm03dMC6RCcZHc1npAW3zUS1Y="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2181,10 +2181,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.WServiceOPENae.PopolaTabAppoggioAECompletedEventHandler.html",
-          "hash": "R125xStlXBhzpMGINa0TTg=="
+          "hash": "kwmSY/IRTDaPS3yK3UDI7qRbbkNFNF2i4Wv5ImnHkDM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2193,10 +2193,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.WServiceOPENae.ServiceOPENae.html",
-          "hash": "ArDM6sZGRIfdSF1uALeyBA=="
+          "hash": "CX+THce2EVbBF+mG+f0Z9j8HyA1lZGTr6wmIUo5/OUI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2205,10 +2205,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.WServiceOPENae.TipologiaUtenza.html",
-          "hash": "1EqpvlhJ/Q8OZvSE0Y/2xA=="
+          "hash": "96r3YGnJmZhqXQBm+Boc4CmawDxSw1tiKkro2o5D0Do="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2217,10 +2217,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.WServiceOPENae.TitoloOccupazione.html",
-          "hash": "iV1SNM8WcQ5FiI2foLdtHQ=="
+          "hash": "2YNIS7oDn4lMpCqsdA8lRE0Dcsg7IqohkmHZJCKN1DM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2229,10 +2229,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.WServiceOPENae.objFlussoAE.html",
-          "hash": "WxwYUf7aviePOhKyFZ7ebA=="
+          "hash": "E5beHsrZiKBQ2OuCluEbNc0849Umi+moK/ooku4DnCs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2241,10 +2241,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.WServiceOPENae.html",
-          "hash": "rHewcyxEOOZNw/bFXn//QA=="
+          "hash": "/Kxnf8mKDDdplfsJMRNQuBhM0Jvxt15Yb/02kj+409s="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2253,10 +2253,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.WsStradario.Stradario.html",
-          "hash": "FuBBmr8Y9eqSAKJiRPU0Xw=="
+          "hash": "UU4+VX4I0qBJYd8VTXdddKouBQv3fant7oxUr1kuM/w="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2265,10 +2265,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.WsStradario.html",
-          "hash": "DY0EjErtjJSbnSELZT6W7A=="
+          "hash": "1RB92KpTBnGow9hSZyObXOzOJtqbh8XLnJKZMoh9n08="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2277,10 +2277,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.cVersamentiNonAbbinati.html",
-          "hash": "A24gsF/YrpiNIItSTrsT6g=="
+          "hash": "gtqXSXsEikyAwF5kO8lRqRUHHJ7yqvvQr5Z1R2tTeDo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2289,10 +2289,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DichiarazioniICI.html",
-          "hash": "8CQ0ZLQJHWY+YRVHbylkLA=="
+          "hash": "TxceeMzf4UWI+4ofw+k9WiiiO0qM86lIYA3Typl2YH0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2301,7 +2301,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "UTydIUA+tOvYnWC3jlikkQ=="
+          "hash": "fk4UKv4dFJfc1TJbucCPa7rkEbA5bFQEvh2jsUP10No="
         }
       },
       "is_incremental": false,
@@ -2313,7 +2313,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "G2AoE5T/2VarbHvzLEo4TQ=="
+          "hash": "Oa9PuD4E1hvZnCkVjUgzNBX6S00Zo5YilamTERTZo54="
         }
       },
       "is_incremental": false,
@@ -2323,23 +2323,25 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 3
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 187,
-          "skipped_file_count": 187
+          "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
@@ -2352,8 +2354,8 @@
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

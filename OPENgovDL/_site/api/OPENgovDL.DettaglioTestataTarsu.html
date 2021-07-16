@@ -1,0 +1,1791 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DettaglioTestataTarsu
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DettaglioTestataTarsu
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OPENgovDL.DettaglioTestataTarsu">
+  
+  
+  <h1 id="OPENgovDL_DettaglioTestataTarsu" data-uid="OPENgovDL.DettaglioTestataTarsu" class="text-break">Class DettaglioTestataTarsu
+  </h1>
+  <div class="markdown level0 summary"><p>Classe per la gestione della transcodifica da TARSU a TARI del dettaglio della testata</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Ribes.OPENgov.Utilities.Database</span></div>
+    <div class="level2"><span class="xref">Ribes.OPENgov.Utilities.DbObject</span>&lt;<a class="xref" href="OPENgovDL.DettaglioTestataTarsu.html">DettaglioTestataTarsu</a>&gt;</div>
+    <div class="level3"><span class="xref">DettaglioTestataTarsu</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.DettaglioTestataTarsu&gt;.GenerateHashCode(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.DettaglioTestataTarsu&gt;.stringParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.DettaglioTestataTarsu&gt;.intParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.DettaglioTestataTarsu&gt;.doubleParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.DettaglioTestataTarsu&gt;.dateTimeParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.DettaglioTestataTarsu&gt;.boolParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Connect()</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Connect(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Connect(System.String, System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Disconnect()</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Disconnect(System.IDisposable[])</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.CreateCommand()</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.ApplyDatabaseTo(Ribes.OPENgov.Utilities.Database)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.KeepConnection</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.SqlConnection</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.OwnConnection</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.OwnTransaction</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.ConnectionCallback</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.ParamsCacheSpan</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.MinDate</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OPENgovDL.html">OPENgovDL</a></h6>
+  <h6><strong>Assembly</strong>: OPENgovDL.dll</h6>
+  <h5 id="OPENgovDL_DettaglioTestataTarsu_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DettaglioTestataTarsu : DbObject&lt;DettaglioTestataTarsu&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu__ctor.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L21">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu__ctor_" data-uid="OPENgovDL.DettaglioTestataTarsu.#ctor*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu__ctor" data-uid="OPENgovDL.DettaglioTestataTarsu.#ctor">DettaglioTestataTarsu()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DettaglioTestataTarsu()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L26">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu__ctor_" data-uid="OPENgovDL.DettaglioTestataTarsu.#ctor*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu__ctor_System_Int32_" data-uid="OPENgovDL.DettaglioTestataTarsu.#ctor(System.Int32)">DettaglioTestataTarsu(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DettaglioTestataTarsu(int iD)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">iD</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_AzioneASeguitoDiRettifica.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.AzioneASeguitoDiRettifica%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L67">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_AzioneASeguitoDiRettifica_" data-uid="OPENgovDL.DettaglioTestataTarsu.AzioneASeguitoDiRettifica*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_AzioneASeguitoDiRettifica" data-uid="OPENgovDL.DettaglioTestataTarsu.AzioneASeguitoDiRettifica">AzioneASeguitoDiRettifica</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AzioneASeguitoDiRettifica { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_Civico.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.Civico%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L40">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_Civico_" data-uid="OPENgovDL.DettaglioTestataTarsu.Civico*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_Civico" data-uid="OPENgovDL.DettaglioTestataTarsu.Civico">Civico</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Civico { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_CodVia.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.CodVia%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L38">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_CodVia_" data-uid="OPENgovDL.DettaglioTestataTarsu.CodVia*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_CodVia" data-uid="OPENgovDL.DettaglioTestataTarsu.CodVia">CodVia</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? CodVia { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_DataCessazione.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.DataCessazione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L57">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_DataCessazione_" data-uid="OPENgovDL.DettaglioTestataTarsu.DataCessazione*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_DataCessazione" data-uid="OPENgovDL.DettaglioTestataTarsu.DataCessazione">DataCessazione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? DataCessazione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_DataFine.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.DataFine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L48">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_DataFine_" data-uid="OPENgovDL.DettaglioTestataTarsu.DataFine*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_DataFine" data-uid="OPENgovDL.DettaglioTestataTarsu.DataFine">DataFine</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? DataFine { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_DataInizio.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.DataInizio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L47">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_DataInizio_" data-uid="OPENgovDL.DettaglioTestataTarsu.DataInizio*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_DataInizio" data-uid="OPENgovDL.DettaglioTestataTarsu.DataInizio">DataInizio</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime DataInizio { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_DataInserimento.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.DataInserimento%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L55">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_DataInserimento_" data-uid="OPENgovDL.DettaglioTestataTarsu.DataInserimento*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_DataInserimento" data-uid="OPENgovDL.DettaglioTestataTarsu.DataInserimento">DataInserimento</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime DataInserimento { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_DataVariazione.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.DataVariazione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L56">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_DataVariazione_" data-uid="OPENgovDL.DettaglioTestataTarsu.DataVariazione*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_DataVariazione" data-uid="OPENgovDL.DettaglioTestataTarsu.DataVariazione">DataVariazione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? DataVariazione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_Esponente.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.Esponente%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L41">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_Esponente_" data-uid="OPENgovDL.DettaglioTestataTarsu.Esponente*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_Esponente" data-uid="OPENgovDL.DettaglioTestataTarsu.Esponente">Esponente</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Esponente { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_EstensioneParticella.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.EstensioneParticella%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L59">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_EstensioneParticella_" data-uid="OPENgovDL.DettaglioTestataTarsu.EstensioneParticella*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_EstensioneParticella" data-uid="OPENgovDL.DettaglioTestataTarsu.EstensioneParticella">EstensioneParticella</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string EstensioneParticella { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_FKIdCategoriaAteco.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.FKIdCategoriaAteco%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L70">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_FKIdCategoriaAteco_" data-uid="OPENgovDL.DettaglioTestataTarsu.FKIdCategoriaAteco*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_FKIdCategoriaAteco" data-uid="OPENgovDL.DettaglioTestataTarsu.FKIdCategoriaAteco">FKIdCategoriaAteco</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FKIdCategoriaAteco { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_Foglio.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.Foglio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L44">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_Foglio_" data-uid="OPENgovDL.DettaglioTestataTarsu.Foglio*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_Foglio" data-uid="OPENgovDL.DettaglioTestataTarsu.Foglio">Foglio</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Foglio { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_GGTarsu.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.GGTarsu%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L49">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_GGTarsu_" data-uid="OPENgovDL.DettaglioTestataTarsu.GGTarsu*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_GGTarsu" data-uid="OPENgovDL.DettaglioTestataTarsu.GGTarsu">GGTarsu</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? GGTarsu { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_ID.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.ID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L34">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_ID_" data-uid="OPENgovDL.DettaglioTestataTarsu.ID*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_ID" data-uid="OPENgovDL.DettaglioTestataTarsu.ID">ID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ID { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_IDAssenzaDatiCatastali.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.IDAssenzaDatiCatastali%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L60">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_IDAssenzaDatiCatastali_" data-uid="OPENgovDL.DettaglioTestataTarsu.IDAssenzaDatiCatastali*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_IDAssenzaDatiCatastali" data-uid="OPENgovDL.DettaglioTestataTarsu.IDAssenzaDatiCatastali">IDAssenzaDatiCatastali</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? IDAssenzaDatiCatastali { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_IDDestinazioneUso.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.IDDestinazioneUso%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L61">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_IDDestinazioneUso_" data-uid="OPENgovDL.DettaglioTestataTarsu.IDDestinazioneUso*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_IDDestinazioneUso" data-uid="OPENgovDL.DettaglioTestataTarsu.IDDestinazioneUso">IDDestinazioneUso</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? IDDestinazioneUso { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_IdDettaglioTestata.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.IdDettaglioTestata%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L35">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_IdDettaglioTestata_" data-uid="OPENgovDL.DettaglioTestataTarsu.IdDettaglioTestata*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_IdDettaglioTestata" data-uid="OPENgovDL.DettaglioTestataTarsu.IdDettaglioTestata">IdDettaglioTestata</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IdDettaglioTestata { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_IDNaturaOccupante.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.IDNaturaOccupante%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L62">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_IDNaturaOccupante_" data-uid="OPENgovDL.DettaglioTestataTarsu.IDNaturaOccupante*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_IDNaturaOccupante" data-uid="OPENgovDL.DettaglioTestataTarsu.IDNaturaOccupante">IDNaturaOccupante</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? IDNaturaOccupante { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_IdPadre.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.IdPadre%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L37">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_IdPadre_" data-uid="OPENgovDL.DettaglioTestataTarsu.IdPadre*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_IdPadre" data-uid="OPENgovDL.DettaglioTestataTarsu.IdPadre">IdPadre</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? IdPadre { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_IdStatoOccupazione.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.IdStatoOccupazione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L50">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_IdStatoOccupazione_" data-uid="OPENgovDL.DettaglioTestataTarsu.IdStatoOccupazione*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_IdStatoOccupazione" data-uid="OPENgovDL.DettaglioTestataTarsu.IdStatoOccupazione">IdStatoOccupazione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string IdStatoOccupazione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_IdTestata.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.IdTestata%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L36">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_IdTestata_" data-uid="OPENgovDL.DettaglioTestataTarsu.IdTestata*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_IdTestata" data-uid="OPENgovDL.DettaglioTestataTarsu.IdTestata">IdTestata</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IdTestata { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_IdTipoConduttore.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.IdTipoConduttore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L51">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_IdTipoConduttore_" data-uid="OPENgovDL.DettaglioTestataTarsu.IdTipoConduttore*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_IdTipoConduttore" data-uid="OPENgovDL.DettaglioTestataTarsu.IdTipoConduttore">IdTipoConduttore</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string IdTipoConduttore { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_IDTipoParticella.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.IDTipoParticella%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L63">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_IDTipoParticella_" data-uid="OPENgovDL.DettaglioTestataTarsu.IDTipoParticella*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_IDTipoParticella" data-uid="OPENgovDL.DettaglioTestataTarsu.IDTipoParticella">IDTipoParticella</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string IDTipoParticella { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_IDTipoUnita.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.IDTipoUnita%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L64">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_IDTipoUnita_" data-uid="OPENgovDL.DettaglioTestataTarsu.IDTipoUnita*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_IDTipoUnita" data-uid="OPENgovDL.DettaglioTestataTarsu.IDTipoUnita">IDTipoUnita</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string IDTipoUnita { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_IDTitoloOccupazione.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.IDTitoloOccupazione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L65">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_IDTitoloOccupazione_" data-uid="OPENgovDL.DettaglioTestataTarsu.IDTitoloOccupazione*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_IDTitoloOccupazione" data-uid="OPENgovDL.DettaglioTestataTarsu.IDTitoloOccupazione">IDTitoloOccupazione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? IDTitoloOccupazione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_Interno.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.Interno%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L42">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_Interno_" data-uid="OPENgovDL.DettaglioTestataTarsu.Interno*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_Interno" data-uid="OPENgovDL.DettaglioTestataTarsu.Interno">Interno</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Interno { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_MQCatasto.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.MQCatasto%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L69">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_MQCatasto_" data-uid="OPENgovDL.DettaglioTestataTarsu.MQCatasto*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_MQCatasto" data-uid="OPENgovDL.DettaglioTestataTarsu.MQCatasto">MQCatasto</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double MQCatasto { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_NComponenti.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.NComponenti%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L68">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_NComponenti_" data-uid="OPENgovDL.DettaglioTestataTarsu.NComponenti*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_NComponenti" data-uid="OPENgovDL.DettaglioTestataTarsu.NComponenti">NComponenti</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NComponenti { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_NominativoOccupantePrec.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.NominativoOccupantePrec%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L53">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_NominativoOccupantePrec_" data-uid="OPENgovDL.DettaglioTestataTarsu.NominativoOccupantePrec*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_NominativoOccupantePrec" data-uid="OPENgovDL.DettaglioTestataTarsu.NominativoOccupantePrec">NominativoOccupantePrec</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string NominativoOccupantePrec { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_NominativoProprietario.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.NominativoProprietario%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L52">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_NominativoProprietario_" data-uid="OPENgovDL.DettaglioTestataTarsu.NominativoProprietario*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_NominativoProprietario" data-uid="OPENgovDL.DettaglioTestataTarsu.NominativoProprietario">NominativoProprietario</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string NominativoProprietario { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_NoteDettaglioTestata.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.NoteDettaglioTestata%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L54">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_NoteDettaglioTestata_" data-uid="OPENgovDL.DettaglioTestataTarsu.NoteDettaglioTestata*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_NoteDettaglioTestata" data-uid="OPENgovDL.DettaglioTestataTarsu.NoteDettaglioTestata">NoteDettaglioTestata</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string NoteDettaglioTestata { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_Numero.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.Numero%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L45">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_Numero_" data-uid="OPENgovDL.DettaglioTestataTarsu.Numero*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_Numero" data-uid="OPENgovDL.DettaglioTestataTarsu.Numero">Numero</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Numero { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_Operatore.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.Operatore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L58">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_Operatore_" data-uid="OPENgovDL.DettaglioTestataTarsu.Operatore*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_Operatore" data-uid="OPENgovDL.DettaglioTestataTarsu.Operatore">Operatore</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Operatore { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_Scala.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.Scala%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L43">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_Scala_" data-uid="OPENgovDL.DettaglioTestataTarsu.Scala*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_Scala" data-uid="OPENgovDL.DettaglioTestataTarsu.Scala">Scala</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Scala { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_Sezione.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.Sezione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L66">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_Sezione_" data-uid="OPENgovDL.DettaglioTestataTarsu.Sezione*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_Sezione" data-uid="OPENgovDL.DettaglioTestataTarsu.Sezione">Sezione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Sezione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_Subalterno.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.Subalterno%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L46">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_Subalterno_" data-uid="OPENgovDL.DettaglioTestataTarsu.Subalterno*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_Subalterno" data-uid="OPENgovDL.DettaglioTestataTarsu.Subalterno">Subalterno</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Subalterno { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_Via.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.Via%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L39">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_Via_" data-uid="OPENgovDL.DettaglioTestataTarsu.Via*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_Via" data-uid="OPENgovDL.DettaglioTestataTarsu.Via">Via</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Via { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_Delete.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.Delete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L340">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_Delete_" data-uid="OPENgovDL.DettaglioTestataTarsu.Delete*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_Delete" data-uid="OPENgovDL.DettaglioTestataTarsu.Delete">Delete()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Delete()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.DettaglioTestataTarsu&gt;.Delete()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_Equals_System_Object_.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L74">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_Equals_" data-uid="OPENgovDL.DettaglioTestataTarsu.Equals*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_Equals_System_Object_" data-uid="OPENgovDL.DettaglioTestataTarsu.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.DettaglioTestataTarsu&gt;.Equals(System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_GetHashCode.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L81">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_GetHashCode_" data-uid="OPENgovDL.DettaglioTestataTarsu.GetHashCode*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_GetHashCode" data-uid="OPENgovDL.DettaglioTestataTarsu.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.DettaglioTestataTarsu&gt;.GetHashCode()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_Load.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.Load%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L127">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_Load_" data-uid="OPENgovDL.DettaglioTestataTarsu.Load*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_Load" data-uid="OPENgovDL.DettaglioTestataTarsu.Load">Load()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Load()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.DettaglioTestataTarsu&gt;.Load()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_LoadAll.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.LoadAll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L198">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_LoadAll_" data-uid="OPENgovDL.DettaglioTestataTarsu.LoadAll*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_LoadAll" data-uid="OPENgovDL.DettaglioTestataTarsu.LoadAll">LoadAll()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DettaglioTestataTarsu[] LoadAll()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OPENgovDL.DettaglioTestataTarsu.html">DettaglioTestataTarsu</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.DettaglioTestataTarsu&gt;.LoadAll()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_LoadDettagli_System_String_System_String___.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.LoadDettagli(System.String%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L457">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_LoadDettagli_" data-uid="OPENgovDL.DettaglioTestataTarsu.LoadDettagli*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_LoadDettagli_System_String_System_String___" data-uid="OPENgovDL.DettaglioTestataTarsu.LoadDettagli(System.String,System.String[])">LoadDettagli(String, String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DettaglioImmobile[] LoadDettagli(string idEnte, string[] categorie)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idEnte</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">categorie</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OPENgovDL.DettaglioImmobile.html">DettaglioImmobile</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_LoadFiltered_System_String_System_DateTime_.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.LoadFiltered(System.String%2CSystem.DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L368">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_LoadFiltered_" data-uid="OPENgovDL.DettaglioTestataTarsu.LoadFiltered*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_LoadFiltered_System_String_System_DateTime_" data-uid="OPENgovDL.DettaglioTestataTarsu.LoadFiltered(System.String,System.DateTime)">LoadFiltered(String, DateTime)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DettaglioTestataTarsu[] LoadFiltered(string idEnte, DateTime dataFine)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idEnte</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="parametername">dataFine</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OPENgovDL.DettaglioTestataTarsu.html">DettaglioTestataTarsu</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_Reset.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L86">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_Reset_" data-uid="OPENgovDL.DettaglioTestataTarsu.Reset*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_Reset" data-uid="OPENgovDL.DettaglioTestataTarsu.Reset">Reset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed void Reset()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.DettaglioTestataTarsu&gt;.Reset()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_Save.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.Save%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L270">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_Save_" data-uid="OPENgovDL.DettaglioTestataTarsu.Save*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_Save" data-uid="OPENgovDL.DettaglioTestataTarsu.Save">Save()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Save()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.DettaglioTestataTarsu&gt;.Save()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_Save_System_String__.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.Save(System.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L335">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_Save_" data-uid="OPENgovDL.DettaglioTestataTarsu.Save*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_Save_System_String__" data-uid="OPENgovDL.DettaglioTestataTarsu.Save(System.String@)">Save(ref String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Save(ref string error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.DettaglioTestataTarsu&gt;.Save(System.String)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu_SetAtecoFromCategoria_System_String_System_String_.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu.SetAtecoFromCategoria(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L442">View Source</a>
+  </span>
+  <a id="OPENgovDL_DettaglioTestataTarsu_SetAtecoFromCategoria_" data-uid="OPENgovDL.DettaglioTestataTarsu.SetAtecoFromCategoria*"></a>
+  <h4 id="OPENgovDL_DettaglioTestataTarsu_SetAtecoFromCategoria_System_String_System_String_" data-uid="OPENgovDL.DettaglioTestataTarsu.SetAtecoFromCategoria(System.String,System.String)">SetAtecoFromCategoria(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAtecoFromCategoria(string categoria, string idEnte)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">categoria</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idEnte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_DettaglioTestataTarsu.md&amp;value=---%0Auid%3A%20OPENgovDL.DettaglioTestataTarsu%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/DettaglioTestataTarsu.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

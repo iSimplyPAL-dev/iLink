@@ -1,18 +1,30 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Dev/PAL/Codice/OPENgov",
+  "source_base_path": "C:/ISimply_GitHub/UfficioTributi",
   "xrefmap": "xrefmap.yml",
   "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "dF/QRREXvJowjlX8EI4s+NqmkGg96ngUCLl3auJTlg8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
     {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "maF2ODZnUmz49x+wqMneAA=="
+          "hash": "5urcPHpmB7cn1s0FoOsLCvzEb2JD5I/Tc8BLJz08GDk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -21,10 +33,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "s9qEVcYlRbp+ngRcbzOdSQ=="
+          "hash": "+OqYiODKPwXZrPiCiWGEpbtKZ98Jkk2E7kPSDMRXyRs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -33,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "gB8AESyvNru97tzIZofEEg=="
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
         }
       },
       "is_incremental": false,
@@ -1068,17 +1080,6 @@
       "output": {
         "resource": {
           "relative_path": "images/Bottoni/New/anagrafica/Thumbs.db"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/Bottoni/New/anagrafica/vssver2.scc",
-      "output": {
-        "resource": {
-          "relative_path": "images/Bottoni/New/anagrafica/vssver2.scc"
         }
       },
       "is_incremental": false,
@@ -2263,17 +2264,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/Bottoni/New/vssver2.scc",
-      "output": {
-        "resource": {
-          "relative_path": "images/Bottoni/New/vssver2.scc"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "images/Bottoni/NoDrop0b_excel.png",
       "output": {
         "resource": {
@@ -2509,17 +2499,6 @@
       "output": {
         "resource": {
           "relative_path": "images/Bottoni/anagrafica/Lista_Back.gif"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/Bottoni/anagrafica/vssver2.scc",
-      "output": {
-        "resource": {
-          "relative_path": "images/Bottoni/anagrafica/vssver2.scc"
         }
       },
       "is_incremental": false,
@@ -3704,17 +3683,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/Bottoni/vssver2.scc",
-      "output": {
-        "resource": {
-          "relative_path": "images/Bottoni/vssver2.scc"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "images/Bottoni/zoom.png",
       "output": {
         "resource": {
@@ -4056,17 +4024,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/Menu/vssver2.scc",
-      "output": {
-        "resource": {
-          "relative_path": "images/Menu/vssver2.scc"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "images/Menu_Def/Thumbs.db",
       "output": {
         "resource": {
@@ -4115,17 +4072,6 @@
       "output": {
         "resource": {
           "relative_path": "images/Menu_Def/chiusotrasp.gif"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/Menu_Def/vssver2.scc",
-      "output": {
-        "resource": {
-          "relative_path": "images/Menu_Def/vssver2.scc"
         }
       },
       "is_incremental": false,
@@ -4280,17 +4226,6 @@
       "output": {
         "resource": {
           "relative_path": "images/Menu_new/open.gif"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/Menu_new/vssver2.scc",
-      "output": {
-        "resource": {
-          "relative_path": "images/Menu_new/vssver2.scc"
         }
       },
       "is_incremental": false,
@@ -4815,17 +4750,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/vssver2.scc",
-      "output": {
-        "resource": {
-          "relative_path": "images/vssver2.scc"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "images/xp/Thumbs.db",
       "output": {
         "resource": {
@@ -4957,26 +4881,15 @@
       "version": ""
     },
     {
-      "type": "Resource",
-      "source_relative_path": "images/xp/vssver2.scc",
-      "output": {
-        "resource": {
-          "relative_path": "images/xp/vssver2.scc"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "3BuyWI8J1COVCPa1tamcGQ=="
+          "hash": "EiRhFxiJxwTxPKLNXj/067k/g4OIFyOBb05wSlgAXf8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -4985,7 +4898,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "tCsxsN5ikw+EgWubxpUhHw=="
+          "hash": "54i+GjGkcHU6vLaH03VxwxeqtQ0qatdslc+BlbETck0="
         }
       },
       "is_incremental": false,
@@ -4995,17 +4908,19 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 3,
-          "skipped_file_count": 3
+          "total_file_count": 4,
+          "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
@@ -5025,8 +4940,8 @@
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

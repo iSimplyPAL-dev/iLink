@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "OPENgov", "OPENgov.vbproj", "{D0DCFAC9-1354-466A-8ECD-BF420F1B1895}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D5AF222C-B5B5-49A0-A070-38E7ABCF6F66} = {D5AF222C-B5B5-49A0-A070-38E7ABCF6F66}
+		{908D533E-571A-4DCB-BFA2-1E04F1A20972} = {908D533E-571A-4DCB-BFA2-1E04F1A20972}
+		{6CDCDD7B-5969-459D-A74F-CED93A54F151} = {6CDCDD7B-5969-459D-A74F-CED93A54F151}
+	EndProjectSection
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AnagraficaWEB", "Anagrafica\AnagraficaWEB.vbproj", "{C37EE8D6-9EC3-42BF-B6F7-5CF13D5A792E}"
 EndProject
@@ -12,15 +17,9 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "OPENgovTIA", "OPENgovTIA\OP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OPENgovTOCO", "OPENgovTOCO\OPENgovTOCO.csproj", "{04F67387-83D7-4EE2-A91B-6AA6464CC827}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Stradario", "..\Servizio Stradario\Stradario\Stradario.vbproj", "{908D533E-571A-4DCB-BFA2-1E04F1A20972}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acquisizioni", "..\Acquisizioni\Acquisizioni.csproj", "{6CDCDD7B-5969-459D-A74F-CED93A54F151}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DichiarazioniICI", "OPENgovICI\DichiarazioniICI.csproj", "{14507F38-EB84-4E90-ACD5-21FE02A2DEE4}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "OPENutenze", "OPENgovH2O\OPENutenze.vbproj", "{71F6AE02-83EC-4945-8C11-31B34EA6B5CD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OPENgovDL", "..\OPENgovDL\OPENgovDL.csproj", "{D5AF222C-B5B5-49A0-A070-38E7ABCF6F66}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "OpenGovTerritorio", "OPENgovTERRITORIO\OpenGovTerritorio.vbproj", "{492C0A09-6C58-4271-A326-1BE92FFC588B}"
 EndProject
@@ -28,6 +27,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Stradario", "Stradario\ServizioStradario\Stradario\Stradario.vbproj", "{908D533E-571A-4DCB-BFA2-1E04F1A20972}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acquisizioni", "Acquisizioni\Acquisizioni.csproj", "{6CDCDD7B-5969-459D-A74F-CED93A54F151}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OPENgovDL", "OPENgovDL\OPENgovDL.csproj", "{D5AF222C-B5B5-49A0-A070-38E7ABCF6F66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,14 +60,6 @@ Global
 		{04F67387-83D7-4EE2-A91B-6AA6464CC827}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04F67387-83D7-4EE2-A91B-6AA6464CC827}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04F67387-83D7-4EE2-A91B-6AA6464CC827}.Release|Any CPU.Build.0 = Release|Any CPU
-		{908D533E-571A-4DCB-BFA2-1E04F1A20972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{908D533E-571A-4DCB-BFA2-1E04F1A20972}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{908D533E-571A-4DCB-BFA2-1E04F1A20972}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{908D533E-571A-4DCB-BFA2-1E04F1A20972}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6CDCDD7B-5969-459D-A74F-CED93A54F151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6CDCDD7B-5969-459D-A74F-CED93A54F151}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6CDCDD7B-5969-459D-A74F-CED93A54F151}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6CDCDD7B-5969-459D-A74F-CED93A54F151}.Release|Any CPU.Build.0 = Release|Any CPU
 		{14507F38-EB84-4E90-ACD5-21FE02A2DEE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{14507F38-EB84-4E90-ACD5-21FE02A2DEE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14507F38-EB84-4E90-ACD5-21FE02A2DEE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -71,14 +68,22 @@ Global
 		{71F6AE02-83EC-4945-8C11-31B34EA6B5CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71F6AE02-83EC-4945-8C11-31B34EA6B5CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71F6AE02-83EC-4945-8C11-31B34EA6B5CD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D5AF222C-B5B5-49A0-A070-38E7ABCF6F66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D5AF222C-B5B5-49A0-A070-38E7ABCF6F66}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D5AF222C-B5B5-49A0-A070-38E7ABCF6F66}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D5AF222C-B5B5-49A0-A070-38E7ABCF6F66}.Release|Any CPU.Build.0 = Release|Any CPU
 		{492C0A09-6C58-4271-A326-1BE92FFC588B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{492C0A09-6C58-4271-A326-1BE92FFC588B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{492C0A09-6C58-4271-A326-1BE92FFC588B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{492C0A09-6C58-4271-A326-1BE92FFC588B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{908D533E-571A-4DCB-BFA2-1E04F1A20972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{908D533E-571A-4DCB-BFA2-1E04F1A20972}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{908D533E-571A-4DCB-BFA2-1E04F1A20972}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{908D533E-571A-4DCB-BFA2-1E04F1A20972}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CDCDD7B-5969-459D-A74F-CED93A54F151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CDCDD7B-5969-459D-A74F-CED93A54F151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CDCDD7B-5969-459D-A74F-CED93A54F151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CDCDD7B-5969-459D-A74F-CED93A54F151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5AF222C-B5B5-49A0-A070-38E7ABCF6F66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5AF222C-B5B5-49A0-A070-38E7ABCF6F66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5AF222C-B5B5-49A0-A070-38E7ABCF6F66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5AF222C-B5B5-49A0-A070-38E7ABCF6F66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

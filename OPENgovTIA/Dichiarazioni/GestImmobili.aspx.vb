@@ -1103,7 +1103,9 @@ Partial Class GestImmobili
         Try
             Abilita(True, "")
             'memorizzo l'immobile originale
-            Session("sOldMyUI") = TxtVia.Text + "|" + TxtCivico.Text + "|" + TxtEsponente.Text + "|" + TxtInterno.Text + "|" + TxtScala.Text + "|" + TxtDataInizio.Text + "|" + TxtDataFine.Text + "|" + TxtGGTarsu.Text + "|" + TxtNComponenti.Text + "|" + TxtMQCatasto.Text + "|" + TxtMQTassabili.Text
+            Session("sOldMyUI") = TxtVia.Text + "|" + TxtCivico.Text + "|" + TxtEsponente.Text + "|" + TxtInterno.Text + "|" + TxtScala.Text + "|" +
+            TxtDataInizio.Text + "|" + TxtDataFine.Text + "|" + TxtGGTarsu.Text + "|" + TxtNComponenti.Text + "|" + TxtMQCatasto.Text + "|" +
+            TxtMQTassabili.Text + "|" + TxtRidImp.Text
             'memorizzo i dati non sostanziali originali
             Session("sOldMyVarieUI") = TxtFoglio.Text + "|" + TxtNumero.Text + "|" + TxtSubalterno.Text + "|" + TxtPropietario.Text + "|" + TxtOccupantePrec.Text + "|" + TxtNoteUI.Text
             '*** 20140805 - Gestione Categorie Vani ***
@@ -1904,6 +1906,10 @@ Partial Class GestImmobili
             ChkForzaPV.Enabled = bTypeAbilita
             TxtNComponentiPV.Enabled = bTypeAbilita
             '*** ***
+            'BD 16/07/2021 abilita disabilita il txtimportofissorid
+            TxtRidImp.Enabled = bTypeAbilita
+            'BD 16/07/2021 abilita disabilita il txtimportofissorid
+
             'se passo da mofica a variazione devo disabilitare il pulsante di modifica/cancellazione e abilitare il pulsante di salvataggio
             Session("AbilitaGestioneImmobili") = bTypeAbilita
             'If bTypeAbilita = True Then
@@ -1948,6 +1954,9 @@ Partial Class GestImmobili
                 DdlDestUso.Enabled = True : DdlAssenzaDatiCat.Enabled = True
             End If
             '*********************
+
+
+
         Catch Err As Exception
             Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovTIA.GestImmobili.Abilita.errore: ", Err)
             Response.Redirect("../../PaginaErrore.aspx")
@@ -2795,6 +2804,11 @@ Partial Class GestImmobili
             ''*** ***
             oMyDettaglioTestata.oRiduzioni = Session("oDatiRid")
             oMyDettaglioTestata.oDetassazioni = Session("oDatiDet")
+
+            'BD 09/07/2021
+            oMyDettaglioTestata.ImportoFissoRid = CDbl(TxtRidImp.Text.Trim)
+            'BD 09/07/2021
+
             Return True
         Catch ex As Exception
             Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovTIA.GestImmobili.LoadDatiFromForm.errore: ", ex)
@@ -2888,6 +2902,11 @@ Partial Class GestImmobili
             TxtNComponentiPV.Text = oMyDettaglioTestata.nComponentiPV
             ChkForzaPV.Checked = oMyDettaglioTestata.bForzaPV
             '*** ***
+
+            'BD 09/07/2021
+            TxtRidImp.Text = oMyDettaglioTestata.ImportoFissoRid
+            'BD 09/07/2021
+
             Return True
         Catch ex As Exception
             Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovTIA.GestImmobili.LoadDatiIntoForm.errore: ", ex)

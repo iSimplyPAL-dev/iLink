@@ -1,0 +1,776 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/ISimply_GitHub/UfficioTributi/OPENgovDL",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "psJV5hsaNfw0EgXXwc5H7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "e0UrM1rl6QX2atbN7hqbkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "gB8AESyvNru97tzIZofEEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "/8OXUm1HlDbuIO3hqh81PA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.AnagFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.AnagFile.html",
+          "hash": "SdiVIfOAFLoumn1p7FoTNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.AnagrafeResidenti.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.AnagrafeResidenti.html",
+          "hash": "vnOxhKwsTHbsfJmiSiL+AA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.AnagrafeUi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.AnagrafeUi.html",
+          "hash": "p6ebb/XSVFOUt56Omksnyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.AnagrafeUiGraffati.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.AnagrafeUiGraffati.html",
+          "hash": "jhucUkgnD2B4aBMs0C7Ofg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.AnagrafeUiIndirizzi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.AnagrafeUiIndirizzi.html",
+          "hash": "C3rgDhncIc1HuRln0JucvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.AnagrafeUiMovimenti.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.AnagrafeUiMovimenti.html",
+          "hash": "PDUuqi9N4eUx8AtkZyM5EQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.AnagrafeUiRiserve.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.AnagrafeUiRiserve.html",
+          "hash": "GaaRRJRUxZxLK5BwyQ9HFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.AnagrafeUiSoggetti.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.AnagrafeUiSoggetti.html",
+          "hash": "fIucGE+bFXC2fS59qW3YhA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.AnagrafeUiTitoli.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.AnagrafeUiTitoli.html",
+          "hash": "7gVqnzWzUiHtLOIGJ1+v4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.AnagrafeUiVani.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.AnagrafeUiVani.html",
+          "hash": "GasfCUvzRw70rHVUnFIrsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.Articolo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.Articolo.html",
+          "hash": "eQFZxSITbe/kdHw9IKF61A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.Categorie.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.Categorie.html",
+          "hash": "FwePCgnnFuh9HEJsCbqh0g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.CategorieAteco.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.CategorieAteco.html",
+          "hash": "4Fp4wpzXCWu5upMsbae9IQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.CategorieAtecoEnte.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.CategorieAtecoEnte.html",
+          "hash": "2wtLINCpUwErouS5i3aqQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.CategorieCatastali.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.CategorieCatastali.html",
+          "hash": "ySHGHbKZ2iz51A2FZQEDJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.CoefficienteKA.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.CoefficienteKA.html",
+          "hash": "b6e9Tyf1uEsXOeBI90jyJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.CoefficienteKB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.CoefficienteKB.html",
+          "hash": "0FsGX7ztafPP8oZSs1a0Dw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.CoefficienteKC.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.CoefficienteKC.html",
+          "hash": "z9aOneksyT3BmoFSjUnxBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.CoefficienteKD.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.CoefficienteKD.html",
+          "hash": "G0ol6qZ9INPwcV8t567Kng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.CompraVendita.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.CompraVendita.html",
+          "hash": "PQn8ytZ8Byl8B/bdvna3SA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.DOCFA.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.DOCFA.html",
+          "hash": "npDfHilsd8fgzBrl3E2Y/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.DOCFADichiarazioni.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.DOCFADichiarazioni.html",
+          "hash": "IC/9kvN9ipcHhM24EHflUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.DOCFADocumento.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.DOCFADocumento.html",
+          "hash": "ndYW4bQ03AirSu9drWOLeQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.DOCFAFiles.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.DOCFAFiles.html",
+          "hash": "KkcqnMplURSI9duTs0UQCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.DatiPEF.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.DatiPEF.html",
+          "hash": "ZAeDrdH3k1YaPs1+IYFvhw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.DettaglioImmobile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.DettaglioImmobile.html",
+          "hash": "8lAVyMeroposuetPrOOmsA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.DettaglioTestataTarsu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.DettaglioTestataTarsu.html",
+          "hash": "JctHv13aBDwvuILx6vkWnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.Enti.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.Enti.html",
+          "hash": "afWbBeO78+m5woCYrnWePA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.Fabbricato.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.Fabbricato.html",
+          "hash": "OSxXf0waRy0MuJPtS4pWeA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.Identificativi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.Identificativi.html",
+          "hash": "sJXk7ZCGVtg6DZUTpXLQzQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.InvioMail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.InvioMail.html",
+          "hash": "223Z8NRUa6/ATCaK8/vkcw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.InvioMailDestinatari.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.InvioMailDestinatari.html",
+          "hash": "sG5xwY8TyFUlTO/wAwHEMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.NCSup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.NCSup.html",
+          "hash": "MWMCQ7kn7EPpBBpOS8YJPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.OggettiTarsu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.OggettiTarsu.html",
+          "hash": "HnYnHYnuDmhxCJrFoFMwtg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.ParametriCalcoloEnte.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.ParametriCalcoloEnte.html",
+          "hash": "ko6GgTkQKfrhRWuzAMeHRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.Planimetrie.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.Planimetrie.html",
+          "hash": "n47tyDPGH7h2DSaivxv+Kw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.RidEseEnte.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.RidEseEnte.html",
+          "hash": "7ep2mwaDg4qtgVJLLf+VOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.RidEseTariffeEnte.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.RidEseTariffeEnte.html",
+          "hash": "ZedGAjDvCnj3bEtWW1kuug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.RowLog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.RowLog.html",
+          "hash": "+XJYFscrKJiQIHfaKPyipg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.Simula.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.Simula.html",
+          "hash": "nYH0wf8NCFXFOqXtwbJ08w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.SoggettiNota.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.SoggettiNota.html",
+          "hash": "cgNcNDkqDPIcJTnLLKcgbw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.Soggetto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.Soggetto.html",
+          "hash": "X1xISNBgFXukbsxpSWSF4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.StatoLavoroAtti.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.StatoLavoroAtti.html",
+          "hash": "vrYd/venysHYxIgx767Nhg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.StatoOccupazione.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.StatoOccupazione.html",
+          "hash": "hPjBUDyhcEr3kpAh4esZBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.TariffeEnte.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.TariffeEnte.html",
+          "hash": "p3OzAeBIMJLZumUK7+QRnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.TestataTarsu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.TestataTarsu.html",
+          "hash": "dShPqRBuniz4o0Qco7lJSA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.Titolarita.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.Titolarita.html",
+          "hash": "vMo+W4hmr7OhNQK5A2nN5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.ToDefineTariffe.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.ToDefineTariffe.html",
+          "hash": "df7PL4yrvKf5vXeVfqWsEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.Toponimi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.Toponimi.html",
+          "hash": "v38dfO6jax0F0hCR7M21Qg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.TotaliSimulazione.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.TotaliSimulazione.html",
+          "hash": "uUm6yL/UNp2xxhstooeGpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.Trascrizione.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.Trascrizione.html",
+          "hash": "DnRuLmWcEuA1B5JKCUQ2nQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.TypesAnagfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.TypesAnagfile.html",
+          "hash": "5A1tyQHV5jvmT9zE2XT9Rg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.TypesDiritto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.TypesDiritto.html",
+          "hash": "fEPIgiM6cbt3QxqAh6hS9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgovDL.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgovDL.html",
+          "hash": "sguS2OWfz15s4dLexFjJvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "fNR3kw76JbWH0iLRZkaaXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "G2AoE5T/2VarbHvzLEo4TQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 54,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

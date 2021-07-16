@@ -1,0 +1,2160 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AnagrafeUiMovimenti
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AnagrafeUiMovimenti
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OPENgovDL.AnagrafeUiMovimenti">
+  
+  
+  <h1 id="OPENgovDL_AnagrafeUiMovimenti" data-uid="OPENgovDL.AnagrafeUiMovimenti" class="text-break">Class AnagrafeUiMovimenti
+  </h1>
+  <div class="markdown level0 summary"><p>Classe per la gestione dei dati esterni da Catasto delle variazioni immobile</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Ribes.OPENgov.Utilities.Database</span></div>
+    <div class="level2"><span class="xref">Ribes.OPENgov.Utilities.DbObject</span>&lt;<a class="xref" href="OPENgovDL.AnagrafeUiMovimenti.html">AnagrafeUiMovimenti</a>&gt;</div>
+    <div class="level3"><span class="xref">AnagrafeUiMovimenti</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.AnagrafeUiMovimenti&gt;.GenerateHashCode(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.AnagrafeUiMovimenti&gt;.stringParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.AnagrafeUiMovimenti&gt;.intParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.AnagrafeUiMovimenti&gt;.doubleParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.AnagrafeUiMovimenti&gt;.dateTimeParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.AnagrafeUiMovimenti&gt;.boolParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Connect()</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Connect(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Connect(System.String, System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Disconnect()</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Disconnect(System.IDisposable[])</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.CreateCommand()</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.ApplyDatabaseTo(Ribes.OPENgov.Utilities.Database)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.KeepConnection</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.SqlConnection</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.OwnConnection</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.OwnTransaction</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.ConnectionCallback</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.ParamsCacheSpan</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.MinDate</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OPENgovDL.html">OPENgovDL</a></h6>
+  <h6><strong>Assembly</strong>: OPENgovDL.dll</h6>
+  <h5 id="OPENgovDL_AnagrafeUiMovimenti_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AnagrafeUiMovimenti : DbObject&lt;AnagrafeUiMovimenti&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti__ctor.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L17">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti__ctor_" data-uid="OPENgovDL.AnagrafeUiMovimenti.#ctor*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti__ctor" data-uid="OPENgovDL.AnagrafeUiMovimenti.#ctor">AnagrafeUiMovimenti()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnagrafeUiMovimenti()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L22">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti__ctor_" data-uid="OPENgovDL.AnagrafeUiMovimenti.#ctor*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti__ctor_System_Int32_" data-uid="OPENgovDL.AnagrafeUiMovimenti.#ctor(System.Int32)">AnagrafeUiMovimenti(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnagrafeUiMovimenti(int idUIMovimenti)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idUIMovimenti</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_AnnoNotaConclusione.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.AnnoNotaConclusione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L66">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_AnnoNotaConclusione_" data-uid="OPENgovDL.AnagrafeUiMovimenti.AnnoNotaConclusione*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_AnnoNotaConclusione" data-uid="OPENgovDL.AnagrafeUiMovimenti.AnnoNotaConclusione">AnnoNotaConclusione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? AnnoNotaConclusione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_AnnoNotaGenerazione.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.AnnoNotaGenerazione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L60">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_AnnoNotaGenerazione_" data-uid="OPENgovDL.AnagrafeUiMovimenti.AnnoNotaGenerazione*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_AnnoNotaGenerazione" data-uid="OPENgovDL.AnagrafeUiMovimenti.AnnoNotaGenerazione">AnnoNotaGenerazione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? AnnoNotaGenerazione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Annotazione.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Annotazione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L68">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Annotazione_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Annotazione*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Annotazione" data-uid="OPENgovDL.AnagrafeUiMovimenti.Annotazione">Annotazione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Annotazione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Categoria.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Categoria%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L40">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Categoria_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Categoria*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Categoria" data-uid="OPENgovDL.AnagrafeUiMovimenti.Categoria">Categoria</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Categoria { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Classe.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Classe%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L41">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Classe_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Classe*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Classe" data-uid="OPENgovDL.AnagrafeUiMovimenti.Classe">Classe</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Classe { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_CodAmministrativo.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.CodAmministrativo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L34">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_CodAmministrativo_" data-uid="OPENgovDL.AnagrafeUiMovimenti.CodAmministrativo*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_CodAmministrativo" data-uid="OPENgovDL.AnagrafeUiMovimenti.CodAmministrativo">CodAmministrativo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CodAmministrativo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_CodiceCausaleAttoConclusivo.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.CodiceCausaleAttoConclusivo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L75">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_CodiceCausaleAttoConclusivo_" data-uid="OPENgovDL.AnagrafeUiMovimenti.CodiceCausaleAttoConclusivo*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_CodiceCausaleAttoConclusivo" data-uid="OPENgovDL.AnagrafeUiMovimenti.CodiceCausaleAttoConclusivo">CodiceCausaleAttoConclusivo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CodiceCausaleAttoConclusivo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_CodiceCausaleAttoGenerante.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.CodiceCausaleAttoGenerante%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L73">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_CodiceCausaleAttoGenerante_" data-uid="OPENgovDL.AnagrafeUiMovimenti.CodiceCausaleAttoGenerante*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_CodiceCausaleAttoGenerante" data-uid="OPENgovDL.AnagrafeUiMovimenti.CodiceCausaleAttoGenerante">CodiceCausaleAttoGenerante</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CodiceCausaleAttoGenerante { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_CodiceRiserva.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.CodiceRiserva%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L78">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_CodiceRiserva_" data-uid="OPENgovDL.AnagrafeUiMovimenti.CodiceRiserva*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_CodiceRiserva" data-uid="OPENgovDL.AnagrafeUiMovimenti.CodiceRiserva">CodiceRiserva</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CodiceRiserva { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Consistenza.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Consistenza%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L42">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Consistenza_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Consistenza*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Consistenza" data-uid="OPENgovDL.AnagrafeUiMovimenti.Consistenza">Consistenza</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? Consistenza { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_DataEfficaciaConclusione.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.DataEfficaciaConclusione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L61">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_DataEfficaciaConclusione_" data-uid="OPENgovDL.AnagrafeUiMovimenti.DataEfficaciaConclusione*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_DataEfficaciaConclusione" data-uid="OPENgovDL.AnagrafeUiMovimenti.DataEfficaciaConclusione">DataEfficaciaConclusione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? DataEfficaciaConclusione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_DataEfficaciaGenerazione.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.DataEfficaciaGenerazione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L55">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_DataEfficaciaGenerazione_" data-uid="OPENgovDL.AnagrafeUiMovimenti.DataEfficaciaGenerazione*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_DataEfficaciaGenerazione" data-uid="OPENgovDL.AnagrafeUiMovimenti.DataEfficaciaGenerazione">DataEfficaciaGenerazione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? DataEfficaciaGenerazione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_DataNotifica.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.DataNotifica%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L72">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_DataNotifica_" data-uid="OPENgovDL.AnagrafeUiMovimenti.DataNotifica*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_DataNotifica" data-uid="OPENgovDL.AnagrafeUiMovimenti.DataNotifica">DataNotifica</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? DataNotifica { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_DataRegistazioneConclusione.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.DataRegistazioneConclusione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L62">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_DataRegistazioneConclusione_" data-uid="OPENgovDL.AnagrafeUiMovimenti.DataRegistazioneConclusione*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_DataRegistazioneConclusione" data-uid="OPENgovDL.AnagrafeUiMovimenti.DataRegistazioneConclusione">DataRegistazioneConclusione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? DataRegistazioneConclusione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_DataRegistazioneGenerazione.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.DataRegistazioneGenerazione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L56">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_DataRegistazioneGenerazione_" data-uid="OPENgovDL.AnagrafeUiMovimenti.DataRegistazioneGenerazione*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_DataRegistazioneGenerazione" data-uid="OPENgovDL.AnagrafeUiMovimenti.DataRegistazioneGenerazione">DataRegistazioneGenerazione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? DataRegistazioneGenerazione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_DescrizioneAttoConclusivo.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.DescrizioneAttoConclusivo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L76">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_DescrizioneAttoConclusivo_" data-uid="OPENgovDL.AnagrafeUiMovimenti.DescrizioneAttoConclusivo*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_DescrizioneAttoConclusivo" data-uid="OPENgovDL.AnagrafeUiMovimenti.DescrizioneAttoConclusivo">DescrizioneAttoConclusivo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DescrizioneAttoConclusivo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_DescrizioneAttoGenerante.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.DescrizioneAttoGenerante%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L74">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_DescrizioneAttoGenerante_" data-uid="OPENgovDL.AnagrafeUiMovimenti.DescrizioneAttoGenerante*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_DescrizioneAttoGenerante" data-uid="OPENgovDL.AnagrafeUiMovimenti.DescrizioneAttoGenerante">DescrizioneAttoGenerante</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DescrizioneAttoGenerante { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Edificio.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Edificio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L47">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Edificio_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Edificio*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Edificio" data-uid="OPENgovDL.AnagrafeUiMovimenti.Edificio">Edificio</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Edificio { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_FKIdAnagrafeUI.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.FKIdAnagrafeUI%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L32">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_FKIdAnagrafeUI_" data-uid="OPENgovDL.AnagrafeUiMovimenti.FKIdAnagrafeUI*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_FKIdAnagrafeUI" data-uid="OPENgovDL.AnagrafeUiMovimenti.FKIdAnagrafeUI">FKIdAnagrafeUI</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FKIdAnagrafeUI { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_FKIdFlusso.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.FKIdFlusso%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L33">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_FKIdFlusso_" data-uid="OPENgovDL.AnagrafeUiMovimenti.FKIdFlusso*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_FKIdFlusso" data-uid="OPENgovDL.AnagrafeUiMovimenti.FKIdFlusso">FKIdFlusso</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FKIdFlusso { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_FlagClassamento.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.FlagClassamento%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L77">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_FlagClassamento_" data-uid="OPENgovDL.AnagrafeUiMovimenti.FlagClassamento*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_FlagClassamento" data-uid="OPENgovDL.AnagrafeUiMovimenti.FlagClassamento">FlagClassamento</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? FlagClassamento { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Graffati.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Graffati%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L81">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Graffati_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Graffati*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Graffati" data-uid="OPENgovDL.AnagrafeUiMovimenti.Graffati">Graffati</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;AnagrafeUiGraffati&gt; Graffati { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OPENgovDL.AnagrafeUiGraffati.html">AnagrafeUiGraffati</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_IdentificativoImmobile.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.IdentificativoImmobile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L36">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_IdentificativoImmobile_" data-uid="OPENgovDL.AnagrafeUiMovimenti.IdentificativoImmobile*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_IdentificativoImmobile" data-uid="OPENgovDL.AnagrafeUiMovimenti.IdentificativoImmobile">IdentificativoImmobile</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IdentificativoImmobile { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_IdentificativoMutazioneFinale.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.IdentificativoMutazioneFinale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L70">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_IdentificativoMutazioneFinale_" data-uid="OPENgovDL.AnagrafeUiMovimenti.IdentificativoMutazioneFinale*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_IdentificativoMutazioneFinale" data-uid="OPENgovDL.AnagrafeUiMovimenti.IdentificativoMutazioneFinale">IdentificativoMutazioneFinale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? IdentificativoMutazioneFinale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_IdentificativoMutazioneIniziale.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.IdentificativoMutazioneIniziale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L69">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_IdentificativoMutazioneIniziale_" data-uid="OPENgovDL.AnagrafeUiMovimenti.IdentificativoMutazioneIniziale*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_IdentificativoMutazioneIniziale" data-uid="OPENgovDL.AnagrafeUiMovimenti.IdentificativoMutazioneIniziale">IdentificativoMutazioneIniziale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? IdentificativoMutazioneIniziale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_IdUIMovimenti.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.IdUIMovimenti%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L31">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_IdUIMovimenti_" data-uid="OPENgovDL.AnagrafeUiMovimenti.IdUIMovimenti*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_IdUIMovimenti" data-uid="OPENgovDL.AnagrafeUiMovimenti.IdUIMovimenti">IdUIMovimenti</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IdUIMovimenti { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Indirizzi.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Indirizzi%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L82">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Indirizzi_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Indirizzi*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Indirizzi" data-uid="OPENgovDL.AnagrafeUiMovimenti.Indirizzi">Indirizzi</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;AnagrafeUiIndirizzi&gt; Indirizzi { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OPENgovDL.AnagrafeUiIndirizzi.html">AnagrafeUiIndirizzi</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Interno1.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Interno1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L49">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Interno1_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Interno1*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Interno1" data-uid="OPENgovDL.AnagrafeUiMovimenti.Interno1">Interno1</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Interno1 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Interno2.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Interno2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L50">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Interno2_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Interno2*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Interno2" data-uid="OPENgovDL.AnagrafeUiMovimenti.Interno2">Interno2</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Interno2 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Lotto.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Lotto%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L46">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Lotto_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Lotto*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Lotto" data-uid="OPENgovDL.AnagrafeUiMovimenti.Lotto">Lotto</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Lotto { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_NumeroNotaConclusione.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.NumeroNotaConclusione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L64">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_NumeroNotaConclusione_" data-uid="OPENgovDL.AnagrafeUiMovimenti.NumeroNotaConclusione*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_NumeroNotaConclusione" data-uid="OPENgovDL.AnagrafeUiMovimenti.NumeroNotaConclusione">NumeroNotaConclusione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string NumeroNotaConclusione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_NumeroNotaGenerazione.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.NumeroNotaGenerazione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L58">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_NumeroNotaGenerazione_" data-uid="OPENgovDL.AnagrafeUiMovimenti.NumeroNotaGenerazione*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_NumeroNotaGenerazione" data-uid="OPENgovDL.AnagrafeUiMovimenti.NumeroNotaGenerazione">NumeroNotaGenerazione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string NumeroNotaGenerazione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Partita.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Partita%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L67">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Partita_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Partita*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Partita" data-uid="OPENgovDL.AnagrafeUiMovimenti.Partita">Partita</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Partita { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_PartitaRiserva.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.PartitaRiserva%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L79">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_PartitaRiserva_" data-uid="OPENgovDL.AnagrafeUiMovimenti.PartitaRiserva*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_PartitaRiserva" data-uid="OPENgovDL.AnagrafeUiMovimenti.PartitaRiserva">PartitaRiserva</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PartitaRiserva { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Piano1.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Piano1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L51">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Piano1_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Piano1*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Piano1" data-uid="OPENgovDL.AnagrafeUiMovimenti.Piano1">Piano1</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Piano1 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Piano2.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Piano2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L52">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Piano2_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Piano2*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Piano2" data-uid="OPENgovDL.AnagrafeUiMovimenti.Piano2">Piano2</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Piano2 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Piano3.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Piano3%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L53">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Piano3_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Piano3*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Piano3" data-uid="OPENgovDL.AnagrafeUiMovimenti.Piano3">Piano3</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Piano3 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Piano4.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Piano4%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L54">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Piano4_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Piano4*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Piano4" data-uid="OPENgovDL.AnagrafeUiMovimenti.Piano4">Piano4</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Piano4 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_ProgNotaConclusione.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.ProgNotaConclusione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L65">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_ProgNotaConclusione_" data-uid="OPENgovDL.AnagrafeUiMovimenti.ProgNotaConclusione*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_ProgNotaConclusione" data-uid="OPENgovDL.AnagrafeUiMovimenti.ProgNotaConclusione">ProgNotaConclusione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ProgNotaConclusione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_ProgNotaGenerazione.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.ProgNotaGenerazione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L59">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_ProgNotaGenerazione_" data-uid="OPENgovDL.AnagrafeUiMovimenti.ProgNotaGenerazione*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_ProgNotaGenerazione" data-uid="OPENgovDL.AnagrafeUiMovimenti.ProgNotaGenerazione">ProgNotaGenerazione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ProgNotaGenerazione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Progressivo.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Progressivo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L38">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Progressivo_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Progressivo*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Progressivo" data-uid="OPENgovDL.AnagrafeUiMovimenti.Progressivo">Progressivo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Progressivo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_ProtocolloNotifica.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.ProtocolloNotifica%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L71">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_ProtocolloNotifica_" data-uid="OPENgovDL.AnagrafeUiMovimenti.ProtocolloNotifica*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_ProtocolloNotifica" data-uid="OPENgovDL.AnagrafeUiMovimenti.ProtocolloNotifica">ProtocolloNotifica</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ProtocolloNotifica { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_RenditaEuro.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.RenditaEuro%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L45">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_RenditaEuro_" data-uid="OPENgovDL.AnagrafeUiMovimenti.RenditaEuro*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_RenditaEuro" data-uid="OPENgovDL.AnagrafeUiMovimenti.RenditaEuro">RenditaEuro</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? RenditaEuro { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_RenditaLire.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.RenditaLire%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L44">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_RenditaLire_" data-uid="OPENgovDL.AnagrafeUiMovimenti.RenditaLire*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_RenditaLire" data-uid="OPENgovDL.AnagrafeUiMovimenti.RenditaLire">RenditaLire</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? RenditaLire { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Riserve.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Riserve%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L83">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Riserve_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Riserve*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Riserve" data-uid="OPENgovDL.AnagrafeUiMovimenti.Riserve">Riserve</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;AnagrafeUiRiserve&gt; Riserve { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OPENgovDL.AnagrafeUiRiserve.html">AnagrafeUiRiserve</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Scala.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Scala%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L48">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Scala_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Scala*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Scala" data-uid="OPENgovDL.AnagrafeUiMovimenti.Scala">Scala</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Scala { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Sezione.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Sezione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L35">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Sezione_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Sezione*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Sezione" data-uid="OPENgovDL.AnagrafeUiMovimenti.Sezione">Sezione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Sezione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Soggetti.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Soggetti%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L85">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Soggetti_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Soggetti*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Soggetti" data-uid="OPENgovDL.AnagrafeUiMovimenti.Soggetti">Soggetti</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;AnagrafeUiSoggetti&gt; Soggetti { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OPENgovDL.AnagrafeUiSoggetti.html">AnagrafeUiSoggetti</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Superficie.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Superficie%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L43">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Superficie_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Superficie*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Superficie" data-uid="OPENgovDL.AnagrafeUiMovimenti.Superficie">Superficie</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? Superficie { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_TipoImmobile.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.TipoImmobile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L37">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_TipoImmobile_" data-uid="OPENgovDL.AnagrafeUiMovimenti.TipoImmobile*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_TipoImmobile" data-uid="OPENgovDL.AnagrafeUiMovimenti.TipoImmobile">TipoImmobile</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TipoImmobile { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_TipoNotaConclusione.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.TipoNotaConclusione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L63">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_TipoNotaConclusione_" data-uid="OPENgovDL.AnagrafeUiMovimenti.TipoNotaConclusione*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_TipoNotaConclusione" data-uid="OPENgovDL.AnagrafeUiMovimenti.TipoNotaConclusione">TipoNotaConclusione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TipoNotaConclusione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_TipoNotaGenerazione.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.TipoNotaGenerazione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L57">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_TipoNotaGenerazione_" data-uid="OPENgovDL.AnagrafeUiMovimenti.TipoNotaGenerazione*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_TipoNotaGenerazione" data-uid="OPENgovDL.AnagrafeUiMovimenti.TipoNotaGenerazione">TipoNotaGenerazione</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TipoNotaGenerazione { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Vani.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Vani%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L84">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Vani_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Vani*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Vani" data-uid="OPENgovDL.AnagrafeUiMovimenti.Vani">Vani</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;AnagrafeUiVani&gt; Vani { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OPENgovDL.AnagrafeUiVani.html">AnagrafeUiVani</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Zona.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Zona%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L39">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Zona_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Zona*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Zona" data-uid="OPENgovDL.AnagrafeUiMovimenti.Zona">Zona</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Zona { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Delete.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Delete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L455">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Delete_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Delete*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Delete" data-uid="OPENgovDL.AnagrafeUiMovimenti.Delete">Delete()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Delete()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.AnagrafeUiMovimenti&gt;.Delete()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Equals_System_Object_.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L90">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Equals_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Equals*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Equals_System_Object_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.AnagrafeUiMovimenti&gt;.Equals(System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_GetHashCode.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L97">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_GetHashCode_" data-uid="OPENgovDL.AnagrafeUiMovimenti.GetHashCode*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_GetHashCode" data-uid="OPENgovDL.AnagrafeUiMovimenti.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.AnagrafeUiMovimenti&gt;.GetHashCode()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Load.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Load%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L160">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Load_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Load*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Load" data-uid="OPENgovDL.AnagrafeUiMovimenti.Load">Load()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Load()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.AnagrafeUiMovimenti&gt;.Load()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_LoadAll.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.LoadAll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L243">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_LoadAll_" data-uid="OPENgovDL.AnagrafeUiMovimenti.LoadAll*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_LoadAll" data-uid="OPENgovDL.AnagrafeUiMovimenti.LoadAll">LoadAll()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override AnagrafeUiMovimenti[] LoadAll()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OPENgovDL.AnagrafeUiMovimenti.html">AnagrafeUiMovimenti</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.AnagrafeUiMovimenti&gt;.LoadAll()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Reset.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L102">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Reset_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Reset*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Reset" data-uid="OPENgovDL.AnagrafeUiMovimenti.Reset">Reset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed void Reset()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.AnagrafeUiMovimenti&gt;.Reset()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Save.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Save%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L450">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Save_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Save*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Save" data-uid="OPENgovDL.AnagrafeUiMovimenti.Save">Save()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Save()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.AnagrafeUiMovimenti&gt;.Save()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti_Save_System_String__.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti.Save(System.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L325">View Source</a>
+  </span>
+  <a id="OPENgovDL_AnagrafeUiMovimenti_Save_" data-uid="OPENgovDL.AnagrafeUiMovimenti.Save*"></a>
+  <h4 id="OPENgovDL_AnagrafeUiMovimenti_Save_System_String__" data-uid="OPENgovDL.AnagrafeUiMovimenti.Save(System.String@)">Save(ref String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Save(ref string errore)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">errore</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.AnagrafeUiMovimenti&gt;.Save(System.String)</span></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgovDL_AnagrafeUiMovimenti.md&amp;value=---%0Auid%3A%20OPENgovDL.AnagrafeUiMovimenti%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/OPENgovDL/AnagrafeUiMovimenti.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

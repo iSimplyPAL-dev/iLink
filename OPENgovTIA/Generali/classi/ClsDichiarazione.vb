@@ -1700,6 +1700,11 @@ Public Class ClsDichiarazione
                                 CurrentItem.ListPFvsPV = LoadLegamiPFPV(myConnectionString, CurrentItem.Id, StringOperation.FormatInt(dtRow("idtestata")), StringOperation.FormatInt(dtRow("anno")), PercentTariffe, TipoMQ)
                             End If
                             '*** ***
+                            ' BD 09/07/2021
+                            'If TipoPartita = ObjArticolo.PARTEVARIABILE Then
+                            CurrentItem.ImportoFissoRid = StringOperation.FormatDouble(myRow("importo_fissorid"))
+                            'End If
+                            ' BD 09/07/2021
                         End If
                         Dim CurrentRid As New ObjRidEseApplicati
                         CurrentRid.sTipoValore = StringOperation.FormatString(myRow("tiporid"))
@@ -5142,9 +5147,9 @@ Public Class GestDettaglioTestata
                             'prelevo la categoria catastale da ICI
                             oDettaglioTestata.sCatCatastale = GetCatCatastale(myConnectionString, sIdEnte, oDettaglioTestata.sFoglio, oDettaglioTestata.sNumero, oDettaglioTestata.sSubalterno)
                         End If
-
-                        ''oDettaglioTestata.ImportoFissoRid =
-
+                        'BD 9/7/2021 Modificata anche la prc_GETDETTAGLIOTESTATA con l'introduzione del campo importofissorid
+                        oDettaglioTestata.ImportoFissoRid = StringOperation.FormatDouble(myDataReader("importo_fissorid"))
+                        'BD 9/7/2021
                         'dimensiono l'array
                         ReDim Preserve oListDettTestata(nDettaglioTestata)
                         'memorizzo i dati nell'array
@@ -7817,6 +7822,9 @@ Public Class GestArticolo
                     oMyArticolo.tDataInserimento = StringOperation.FormatDateTime(myRow("data_inserimento"))
                     oMyArticolo.tDataVariazione = StringOperation.FormatDateTime(myRow("data_variazione"))
                     oMyArticolo.tDataCessazione = StringOperation.FormatDateTime(myRow("data_cessazione"))
+                    'BD 09/07/2021
+                    oMyArticolo.ImportoFissoRid = StringOperation.FormatDouble(myRow("importo_fissorid"))
+                    'BD 09/07/2021
                     'prelevo le riduzioni
                     oRicRidEse.IdEnte = oMyArticolo.IdEnte
                     oRicRidEse.sAnno = oMyArticolo.sAnno
@@ -7837,6 +7845,8 @@ Public Class GestArticolo
                         oMyArticolo.ListPFvsPV = New ClsDichiarazione().LoadLegamiPFPV(myConnectionString, oMyArticolo.Id, -1, oMyArticolo.sAnno, 100, "D")
                     End If
                     '*** ***
+
+
                     oListArticoli.Add(oMyArticolo)
                 Next
             End Using
