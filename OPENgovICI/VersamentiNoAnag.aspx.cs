@@ -241,173 +241,167 @@ namespace DichiarazioniICI
 
 		protected void btnStampaExcel_Click(object sender, System.EventArgs e)
 		{
-		
+
 			DataRow dr;
 			DataSet ds;
-			DataTable dtVersamenti=new DataTable();
-			string sPathProspetti =string.Empty;
-			string NameXLS =string.Empty;
+			DataTable dtVersamenti = new DataTable();
+			string NameXLS = string.Empty;
 
 			ArrayList arratlistNomiColonne;
-			string[] arraystr=null;
+			string[] arraystr = null;
 
-					try
-						{
+			try
+			{
 
-			arratlistNomiColonne = new ArrayList();
+				arratlistNomiColonne = new ArrayList();
 
-			arratlistNomiColonne.Add("");
-			arratlistNomiColonne.Add("");
-			arratlistNomiColonne.Add("");
-			arratlistNomiColonne.Add("");
-			arratlistNomiColonne.Add("");
-			arratlistNomiColonne.Add("");
-			arratlistNomiColonne.Add("");
-			arratlistNomiColonne.Add("");
-			arratlistNomiColonne.Add("");
-			arratlistNomiColonne.Add("");
-			arratlistNomiColonne.Add("");
-			arratlistNomiColonne.Add("");
-			arratlistNomiColonne.Add("");
-			arratlistNomiColonne.Add("");
-			arratlistNomiColonne.Add("");
-			arratlistNomiColonne.Add("");
+				arratlistNomiColonne.Add("");
+				arratlistNomiColonne.Add("");
+				arratlistNomiColonne.Add("");
+				arratlistNomiColonne.Add("");
+				arratlistNomiColonne.Add("");
+				arratlistNomiColonne.Add("");
+				arratlistNomiColonne.Add("");
+				arratlistNomiColonne.Add("");
+				arratlistNomiColonne.Add("");
+				arratlistNomiColonne.Add("");
+				arratlistNomiColonne.Add("");
+				arratlistNomiColonne.Add("");
+				arratlistNomiColonne.Add("");
+				arratlistNomiColonne.Add("");
+				arratlistNomiColonne.Add("");
+				arratlistNomiColonne.Add("");
 
-			arraystr = (string[])arratlistNomiColonne.ToArray(typeof(string));
+				arraystr = (string[])arratlistNomiColonne.ToArray(typeof(string));
 
-            sPathProspetti = ConstWrapper.PathProspetti;
-			NameXLS =ConstWrapper.CodiceEnte+ "_VERSAMENTINOANAGRAFE_" + DateTime.Now.ToString("yyyyMMdd_hhmmss") + ".xls";
+				NameXLS = ConstWrapper.CodiceEnte + "_VERSAMENTINOANAGRAFE_" + DateTime.Now.ToString("yyyyMMdd_hhmmss") + ".xls";
 
-			                
-			ds = CreateDataSetVersamenti();
+				ds = CreateDataSetVersamenti();
 
-			dtVersamenti = ds.Tables["VERSAMENTI"];
+				dtVersamenti = ds.Tables["VERSAMENTI"];
 
-			//inserisco intestazione - titolo prospetto + data stampa
-			dr = dtVersamenti.NewRow();
-			dr[0] = "Prospetto Versamenti non abbinati ad Anagrafe Tributi";
-			dr[2] = "Data Stampa:" + DateTime.Today.Day + "/" + DateTime.Today.Month + "/" + DateTime.Today.Year;
-			dtVersamenti.Rows.Add(dr);
-
-			//inserisco riga vuota
-			dr = dtVersamenti.NewRow();
-			dtVersamenti.Rows.Add(dr);
-			//inserisco riga vuota
-			dr = dtVersamenti.NewRow();
-			dtVersamenti.Rows.Add(dr);
-
-			//inserisco intestazione di colonna
-			dr = dtVersamenti.NewRow();
-			dr[0] = "Anno Riferimento";
-			dr[1] = "Codice Fiscale";
-			dr[2] = "Partita Iva";
-			//dr[3] = "Nominativo";
-			// 05092007 Cognome Nome separati
-			dr[3] = "Cognome";
-			dr[4] = "Nome";
-			dr[5] = "Data Pagamento";
-			dr[6] = "Tipo Pagamento";					
-			//*** 20120828 - IMU adeguamento per importi statali ***
-			dr[7] = "Importo Terreni";
-			dr[8] = "Importo Terreni Stato";
-			dr[9] = "Importo Aree Fabbricabili";
-			dr[10] = "Importo Aree Fabbricabili Stato";
-			dr[11] = "Importo Altri Fabbricati";
-			dr[12] = "Importo Altri Fabbricati Stato";
-			dr[13] = "Importo Fabbricati Rurali Uso Strumentale";
-			//*** ***
-			dr[14] = "Importo Abitaz. Principale";
-			dr[15] = "Importo Pagato";
-
-			dtVersamenti.Rows.Add(dr);
-			DataView  dvVers=new DataView();
-			DataTable dtVers=(DataTable)Session["TabellaRisultati"];
-			dvVers = dtVers.DefaultView;
-
-                foreach (DataRow myRow in dvVers.Table.Rows)
-                {
-                    dr = dtVersamenti.NewRow();
-
-				//string cognome="";
-
-				//* 05092007 se la data di morte è valorizzata ed è diversa da minvalue cognome=EREDE DI cognome **/
-				/*if((myRow["DATA_MORTE"] != DBNull.Value)&&(myRow["DATA_MORTE"].ToString() != null))
-				{
-					string dataMorte, giornoM, meseM, annoM;
-					dataMorte=myRow["DATA_MORTE"].ToString();
-					giornoM = dataMorte.Substring(6,2);
-					meseM = dataMorte.Substring(4,2);
-					annoM = dataMorte.Substring(0,4);
-
-					DateTime dataM;
-					dataM = new DateTime(Convert.ToInt16(annoM),Convert.ToInt16(meseM),Convert.ToInt16(giornoM));
-
-					if (dataM != DateTime.MinValue)
-						cognome = "EREDE DI " + myRow["COGNOME"].ToString();
-					else
-						cognome = myRow["COGNOME"].ToString();
-				}
-				else
-				{
-					cognome = myRow["COGNOME"].ToString();
-				}*/
-
-
-				dr[0] = myRow["ANNORIFERIMENTO"].ToString();
-				dr[1] = myRow["CodiceFiscale"].ToString();
-				dr[2] = myRow["PartitaIVA"].ToString();
-				//dr[3] = myRow["COGNOME"].ToString() + " " + myRow["NOME"].ToString();
-				dr[3] = myRow["COGNOME"].ToString();
-				dr[4] = myRow["NOME"].ToString();
-				dr[5] = ((DateTime)myRow["Datapagamento"]).ToShortDateString();
-                dr[6] = Business.CoreUtility.FormattaGrdAccontoSaldo(myRow["Saldo"].ToString(), myRow["Acconto"].ToString());				
-				//*** 20120828 - IMU adeguamento per importi statali ***
-                dr[7] = Business.CoreUtility.FormattaGrdInt(myRow["ImpoTerreni"].ToString());
-                dr[8] = Business.CoreUtility.FormattaGrdInt(myRow["ImportoTerreniStatale"].ToString());
-                dr[9] = Business.CoreUtility.FormattaGrdInt(myRow["ImportoAreeFabbric"].ToString());
-                dr[10] = Business.CoreUtility.FormattaGrdInt(myRow["ImportoAreeFabbricStatale"].ToString());
-                dr[11] = Business.CoreUtility.FormattaGrdInt(myRow["ImportoAltriFabbric"].ToString());
-                dr[12] = Business.CoreUtility.FormattaGrdInt(myRow["ImportoAltriFabbricStatale"].ToString());
-                dr[13] = Business.CoreUtility.FormattaGrdInt(myRow["ImportoFabRurUsoStrum"].ToString());
-				//*** ***
-                dr[14] = Business.CoreUtility.FormattaGrdInt(myRow["ImportoAbitazPrincipale"].ToString());
-                dr[15] = Business.CoreUtility.FormattaGrdInt(myRow["ImportoPagato"].ToString());
-                    
+				//inserisco intestazione - titolo prospetto + data stampa
+				dr = dtVersamenti.NewRow();
+				dr[0] = "Prospetto Versamenti non abbinati ad Anagrafe Tributi";
+				dr[2] = "Data Stampa:" + DateTime.Today.Day + "/" + DateTime.Today.Month + "/" + DateTime.Today.Year;
 				dtVersamenti.Rows.Add(dr);
+
+				//inserisco riga vuota
+				dr = dtVersamenti.NewRow();
+				dtVersamenti.Rows.Add(dr);
+				//inserisco riga vuota
+				dr = dtVersamenti.NewRow();
+				dtVersamenti.Rows.Add(dr);
+
+				//inserisco intestazione di colonna
+				dr = dtVersamenti.NewRow();
+				dr[0] = "Anno Riferimento";
+				dr[1] = "Codice Fiscale";
+				dr[2] = "Partita Iva";
+				//dr[3] = "Nominativo";
+				// 05092007 Cognome Nome separati
+				dr[3] = "Cognome";
+				dr[4] = "Nome";
+				dr[5] = "Data Pagamento";
+				dr[6] = "Tipo Pagamento";
+				//*** 20120828 - IMU adeguamento per importi statali ***
+				dr[7] = "Importo Terreni";
+				dr[8] = "Importo Terreni Stato";
+				dr[9] = "Importo Aree Fabbricabili";
+				dr[10] = "Importo Aree Fabbricabili Stato";
+				dr[11] = "Importo Altri Fabbricati";
+				dr[12] = "Importo Altri Fabbricati Stato";
+				dr[13] = "Importo Fabbricati Rurali Uso Strumentale";
+				//*** ***
+				dr[14] = "Importo Abitaz. Principale";
+				dr[15] = "Importo Pagato";
+
+				dtVersamenti.Rows.Add(dr);
+				DataView dvVers = new DataView();
+				DataTable dtVers = (DataTable)Session["TabellaRisultati"];
+				dvVers = dtVers.DefaultView;
+
+				foreach (DataRow myRow in dvVers.Table.Rows)
+				{
+					dr = dtVersamenti.NewRow();
+
+					//string cognome="";
+
+					//* 05092007 se la data di morte è valorizzata ed è diversa da minvalue cognome=EREDE DI cognome **/
+					/*if((myRow["DATA_MORTE"] != DBNull.Value)&&(myRow["DATA_MORTE"].ToString() != null))
+					{
+						string dataMorte, giornoM, meseM, annoM;
+						dataMorte=myRow["DATA_MORTE"].ToString();
+						giornoM = dataMorte.Substring(6,2);
+						meseM = dataMorte.Substring(4,2);
+						annoM = dataMorte.Substring(0,4);
+
+						DateTime dataM;
+						dataM = new DateTime(Convert.ToInt16(annoM),Convert.ToInt16(meseM),Convert.ToInt16(giornoM));
+
+						if (dataM != DateTime.MinValue)
+							cognome = "EREDE DI " + myRow["COGNOME"].ToString();
+						else
+							cognome = myRow["COGNOME"].ToString();
+					}
+					else
+					{
+						cognome = myRow["COGNOME"].ToString();
+					}*/
+
+
+					dr[0] = myRow["ANNORIFERIMENTO"].ToString();
+					dr[1] = myRow["CodiceFiscale"].ToString();
+					dr[2] = myRow["PartitaIVA"].ToString();
+					//dr[3] = myRow["COGNOME"].ToString() + " " + myRow["NOME"].ToString();
+					dr[3] = myRow["COGNOME"].ToString();
+					dr[4] = myRow["NOME"].ToString();
+					dr[5] = ((DateTime)myRow["Datapagamento"]).ToShortDateString();
+					dr[6] = Business.CoreUtility.FormattaGrdAccontoSaldo(myRow["Saldo"].ToString(), myRow["Acconto"].ToString());
+					//*** 20120828 - IMU adeguamento per importi statali ***
+					dr[7] = Business.CoreUtility.FormattaGrdInt(myRow["ImpoTerreni"].ToString());
+					dr[8] = Business.CoreUtility.FormattaGrdInt(myRow["ImportoTerreniStatale"].ToString());
+					dr[9] = Business.CoreUtility.FormattaGrdInt(myRow["ImportoAreeFabbric"].ToString());
+					dr[10] = Business.CoreUtility.FormattaGrdInt(myRow["ImportoAreeFabbricStatale"].ToString());
+					dr[11] = Business.CoreUtility.FormattaGrdInt(myRow["ImportoAltriFabbric"].ToString());
+					dr[12] = Business.CoreUtility.FormattaGrdInt(myRow["ImportoAltriFabbricStatale"].ToString());
+					dr[13] = Business.CoreUtility.FormattaGrdInt(myRow["ImportoFabRurUsoStrum"].ToString());
+					//*** ***
+					dr[14] = Business.CoreUtility.FormattaGrdInt(myRow["ImportoAbitazPrincipale"].ToString());
+					dr[15] = Business.CoreUtility.FormattaGrdInt(myRow["ImportoPagato"].ToString());
+
+					dtVersamenti.Rows.Add(dr);
+				}
+				//inserisco riga vuota
+				dr = dtVersamenti.NewRow();
+				dtVersamenti.Rows.Add(dr);
+				//inserisco riga vuota
+				dr = dtVersamenti.NewRow();
+				dtVersamenti.Rows.Add(dr);
+
+				//inserisco numero totali di contribuenti
+				dr = dtVersamenti.NewRow();
+				dr[0] = "Totale Versamenti non abbinati: " + (dvVers.Count);
+				dtVersamenti.Rows.Add(dr);
+
+				//log.Debug("Stampa Dichiarazione da Bonificare");
+
+
 			}
-			//inserisco riga vuota
-			dr = dtVersamenti.NewRow();
-			dtVersamenti.Rows.Add(dr);
-			//inserisco riga vuota
-			dr = dtVersamenti.NewRow();
-			dtVersamenti.Rows.Add(dr);
-
-			//inserisco numero totali di contribuenti
-			dr = dtVersamenti.NewRow();
-			dr[0] = "Totale Versamenti non abbinati: " + (dvVers.Count);
-			dtVersamenti.Rows.Add(dr);
-
-			//log.Debug("Stampa Dichiarazione da Bonificare");
-
-
-						}
-					catch (Exception er)
-						{
-                log.Debug(Business.ConstWrapper.CodiceEnte + "."+ Business.ConstWrapper.sUsername + " - DichiarazioniICI.VersamentiNoAnag.AccontoSaldo.errore: ", er);
-                  Response.Redirect("../PaginaErrore.aspx");
-						RegisterScript("GestAlert('a', 'danger', '', '', '" + er.ToString() +"');",this.GetType());
-						}
+			catch (Exception er)
+			{
+				log.Debug(Business.ConstWrapper.CodiceEnte + "." + Business.ConstWrapper.sUsername + " - DichiarazioniICI.VersamentiNoAnag.AccontoSaldo.errore: ", er);
+				Response.Redirect("../PaginaErrore.aspx");
+				RegisterScript("GestAlert('a', 'danger', '', '', '" + er.ToString() + "');", this.GetType());
+			}
 
 			//definisco l'insieme delle colonne da esportare
-			int[] iColumns ={ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,12,13,14,15};
+			int[] iColumns = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
 			//esporto i dati in excel
 			RKLib.ExportData.Export objExport = new RKLib.ExportData.Export("Web");
-			objExport.ExportDetails(dtVersamenti, iColumns, arraystr, RKLib.ExportData.Export.ExportFormat.Excel, sPathProspetti + NameXLS);
+			objExport.ExportDetails(dtVersamenti, iColumns, arraystr, RKLib.ExportData.Export.ExportFormat.Excel, NameXLS);
 
 		}
-
-
-
 		#endregion
 	}
 }

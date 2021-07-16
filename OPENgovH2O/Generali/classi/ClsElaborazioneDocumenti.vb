@@ -197,17 +197,23 @@ Public Class ClsElaborazioneDocumenti
     ''' <param name="TipoStampaBollettini"></param>
     ''' <param name="TipoBollettino"></param>
     ''' <param name="bSendByMail"></param>
-    ''' <returns></returns>
+    ''' <returns>
+    ''' -1 errore generico
+    ''' 0 errore in estrazione XML fatture elettroniche
+    ''' 1 successo stampa sincrona
+    ''' 2 successo stampa asincrona
+    ''' </returns>
     ''' <revisionHistory>
     ''' <revision date="10/12/2019"><strong>Fatturazione Elettronica</strong>
     ''' Con l’obbligo di far pervenire, per via telematica, tutte le fatture al Sistema di Interscambio (SdI), si rende necessaria l’implementazione dell’estrazione delle fatture sia verso il SdI sia verso il sistema gestionale Grand Combin.
     ''' La fase di creazione documenti viene modificata per generare il tracciato XML da inviare all’SdI e i tracciati XML da inviare al gestionale di Grand Combin. Al termine della creazione di questi flussi partirà la normale procedura di produzione documenti.
     ''' se si sta lanciando l’elaborazione effettiva, prima di richiamare la funzione asincrona per la stampa massiva, viene richiamata, in modalità sincrona, la funzione di generazione XML. La nuova funzione crea prima i flussi ministeriali e successivamente i flussi gestionali di Grand Combin. Se la procedura termina con successo viene richiamata l'elaborazione dei documenti come già in essere
     ''' </revision>
-    ''' </revisionHistory>
-    ''' <revisionHistory>
     ''' <revision date="05/11/2020">
     ''' devo aggiungere tributo F24 per poter gestire correttamente la stampa in caso di Ravvedimento IMU/TASI
+    ''' </revision>
+    ''' <revision date="18/05/2021">
+    ''' prima della ristampa genero l'XML per la fatturazione elettronica
     ''' </revision>
     ''' </revisionHistory>
     Public Function ElaboraDocumenti(CodTributo As String, ByVal sIdEnte As String, ByVal nIdRuolo As Integer, ByVal sAnno As String, StringConnection As String, StringConnectionOPENgov As String, StringConnectionAnagrafica As String, PathTemplate As String, PathTemplateVirtual As String, ByVal nDocDaElaborare As Integer, ByVal nDocElaborati As Integer, ByVal nTipoElab As Integer, ByVal sTypeOrd As String, ByVal sNameModello As String, ByVal nMaxDocPerFile As Integer, ByVal bElabBollettini As Boolean, ByVal oListAvvisi() As ObjAnagDocumenti, ByRef oListDocStampati() As RIBESElaborazioneDocumentiInterface.Stampa.oggetti.GruppoURL, ByVal bCreaPDF As Boolean, ByVal nDecimal As Integer, ByVal TipoStampaBollettini As String, ByVal TipoBollettino As String, ByVal bSendByMail As Boolean) As Integer
@@ -218,9 +224,7 @@ Public Class ClsElaborazioneDocumenti
 
         Try
             IdDocToElab = Nothing : Esclusione = Nothing
-            '**************************************************************
             'devo risalire all'ultimo file usato per l'elaborazione effettiva in corso
-            '**************************************************************
             nFileDaElab = GetNumFileDocDaElaborare(nIdRuolo, sIdEnte)
             If nFileDaElab <> -1 Then
                 nFileDaElab += 1
@@ -252,11 +256,16 @@ Public Class ClsElaborazioneDocumenti
                     Log.Debug("parametri::" & CodTributo & ",IdDocToElab," & sAnno & "," & sIdEnte & "," & nIdRuolo & ",Esclusione," & StringConnection & "," & StringConnectionOPENgov & "," & StringConnectionAnagrafica & "," & nMaxDocPerFile & ",PROVA," & TipoStampaBollettini & ",H2O," & TipoBollettino & "," & bElabBollettini & "," & bCreaPDF & "," & False & "," & nDecimal & "," & bSendByMail)
                     'oListDocStampati = oElaborazioneDati.ElaborazioneMassivaDocumenti(ConstSession.CodTributo, IdDocToElab, sAnno, sIdEnte, nIdRuolo, Esclusione, ConstSession.StringConnection, ConstSession.StringConnectionOPENgov, ConstSession.StringConnectionAnagrafica, nMaxDocPerFile, "PROVA", TipoStampaBollettini, "H2O", TipoBollettino, bElabBollettini, bCreaPDF, False, nDecimal, bSendByMail)
                     '**** 201810 - Calcolo puntuale ****
+                    If New clsFatturaElettronica(nIdRuolo, ConstSession.IdEnte, ConstSession.UserName).CreaXMLFatture(sListCodCartella(0)) = False Then
+                        Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovH2O.ClsElaborazioneDocumenti.ElaboraDocumenti.errore in estrazione XML Fatture Elettroniche")
+                        Return 0
+                    End If
                     oListDocStampati = oElaborazioneDati.ElaborazioneMassivaDocumenti(ConstSession.DBType, CodTributo, IdDocToElab, sAnno, sIdEnte, nIdRuolo, Esclusione, ConstSession.StringConnection, ConstSession.StringConnectionOPENgov, ConstSession.StringConnectionAnagrafica, PathTemplate, PathTemplateVirtual, nMaxDocPerFile, "PROVA", TipoStampaBollettini, "H2O", TipoBollettino, bElabBollettini, bCreaPDF, False, nDecimal, bSendByMail, False, "", CodTributo)
+                    Return 1
                     '*** ***
                 Else
                     'elaborazione effettiva
-                    If New clsFatturaElettronica(nIdRuolo, ConstSession.IdEnte, ConstSession.UserName).CreaXMLFatture() Then
+                    If New clsFatturaElettronica(nIdRuolo, ConstSession.IdEnte, ConstSession.UserName).CreaXMLFatture("") Then
                         Dim del As New StampaMassivaAsync(AddressOf ChiamaElaborazioneAsincrona)
                         '*** 201511 - template documenti per ruolo ***'*** 20140509 - TASI ***
                         'del.BeginInvoke(ConstSession.CodTributo, IdDocToElab, sAnno, sIdEnte, nIdRuolo, Esclusione, ConstSession.StringConnection, ConstSession.StringConnectionOPENgov, ConstSession.StringConnectionAnagrafica, nMaxDocPerFile, "EFFETTIVO", TipoStampaBollettini, "H2O", TipoBollettino, bElabBollettini, bCreaPDF, False, nDecimal, bSendByMail, Nothing, Nothing)
@@ -267,13 +276,12 @@ Public Class ClsElaborazioneDocumenti
                         Return 0
                     End If
                 End If
-                Return 1
             Else
-                Return 0
+                Return -1
             End If
         Catch Err As Exception
             Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovH2O.ClsElaborazioneDocumenti.ElaboraDocumenti.errore: ", Err)
-            Return 0
+            Return -1
         End Try
     End Function
     ''' <summary>
@@ -470,15 +478,18 @@ Public Class clsFatturaElettronica
     ''' Le routine restituiranno il nome dello zip estratto; i nomi degli zip estratti saranno registrati in una nuova tabella apposita in modo che ad ogni ingresso in videata il sistema presenti i flussi da scaricare.
     ''' </summary>
     ''' <returns></returns>
-    ''' <revisionHistory><revision date="20210128">Aggiunto controlli dati mancanti pre estrazione</revision></revisionHistory>
-    Public Function CreaXMLFatture() As Boolean
+    ''' <revisionHistory>
+    ''' <revision date="28/01/2021">Aggiunto controlli dati mancanti pre estrazione</revision>
+    ''' <revision date="18/05/2021">Aggiunto filtro su singolo documento per la ristampa</revision>
+    ''' </revisionHistory>
+    Public Function CreaXMLFatture(sNumDoc As String) As Boolean
         Dim bRet As Boolean = False
         Dim sFileZip As String = ""
         Dim dvMyDati As New DataView
         Dim bDatiMancanti As Boolean = False
         Try
             Utility.Costanti.CreateDir(ConstSession.PathRepository + PathXML + _IdEnte + "\")
-            dvMyDati = GetControlloDati()
+            dvMyDati = GetControlloDati(sNumDoc)
             For Each myrow As DataRowView In dvMyDati
                 If StringOperation.FormatString(myrow("Esito")) <> "" Then
                     Log.Debug(_IdEnte + "." + _UserName + " - OPENgovH2O.clsFatturaElettronica.CreaXMLFatture.ControlloDati.Esito: " + StringOperation.FormatString(myrow("Esito")))
@@ -486,19 +497,23 @@ Public Class clsFatturaElettronica
                 End If
             Next
             If bDatiMancanti = False Then
-                sFileZip = GetXMLSdI()
+                sFileZip = GetXMLSdI(sNumDoc)
                 If sFileZip <> "" Then
-                    If SetFileFattEle(TypeFile.SdI, sFileZip, Now, _UserName) Then
-                        sFileZip = GetXMLGestionale()
-                        If sFileZip <> "" Then
-                            If SetFileFattEle(TypeFile.Gestionale, sFileZip, Now, _UserName) Then
-                                bRet = True
+                    If sNumDoc = "" Then
+                        If SetFileFattEle(TypeFile.SdI, sFileZip, Now, _UserName, sNumDoc) Then
+                            sFileZip = GetXMLGestionale(sNumDoc)
+                            If sFileZip <> "" Then
+                                If SetFileFattEle(TypeFile.Gestionale, sFileZip, Now, _UserName, sNumDoc) Then
+                                    bRet = True
+                                End If
                             End If
                         End If
+                    Else
+                        bRet = True
                     End If
+                Else
+                    bRet = False
                 End If
-            Else
-                bRet = False
             End If
         Catch ex As Exception
             Log.Debug(_IdEnte + "." + _UserName + " - OPENgovH2O.clsFatturaElettronica.CreaXMLFatture.errore: ", ex)
@@ -510,7 +525,10 @@ Public Class clsFatturaElettronica
     ''' funzione per la creazione dei singoli xml delle fatture in formato SdI
     ''' </summary>
     ''' <returns></returns>
-    Private Function GetXMLSdI() As String
+    ''' <revisionHistory>
+    ''' <revision date="18/05/2021">Aggiunto filtro su singolo documento per la ristampa</revision>
+    ''' </revisionHistory>
+    Private Function GetXMLSdI(sNumDoc As String) As String
         Dim myFileName As String = ""
         Dim sXMLName As String = ""
         Dim ListFile As New ArrayList
@@ -520,7 +538,7 @@ Public Class clsFatturaElettronica
 
         Try
             IsPrivato = False : IsPubblico = False
-            dvMyDati = GetFatture()
+            dvMyDati = GetFatture(sNumDoc)
             For Each myrow As DataRowView In dvMyDati
                 Dim myFatEle As New FatturaElettronicaType
                 If StringOperation.FormatString(myrow("CodiceDestinatario")).Length = 7 Then
@@ -567,7 +585,10 @@ Public Class clsFatturaElettronica
     ''' funzione per la creazione degli xml delle fatture per il gestionale
     ''' </summary>
     ''' <returns></returns>
-    Private Function GetXMLGestionale() As String
+    ''' <revisionHistory>
+    ''' <revision date="18/05/2021">Aggiunto filtro su singolo documento per la ristampa; l'estrazione in questo caso non deve essere fatto</revision>
+    ''' </revisionHistory>
+    Private Function GetXMLGestionale(sNumDoc As String) As String
         Dim myFileName As String = ""
         Dim sXMLName As String = ""
         Dim ListFile As New ArrayList
@@ -575,47 +596,51 @@ Public Class clsFatturaElettronica
         Dim sSQL As String = ""
 
         Try
-            myFileName = _IdEnte + "_" + _nId.ToString + ".zip"
-            Using ctx As New DBModel(ConstSession.DBType, ConstSession.StringConnection)
-                'H2ODatiFattura
-                sXMLName = "H2ODatiFattura.xml"
-                sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_GestionaleGetDatiFatture", "IDFLUSSORUOLO")
-                dvMyDati = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("IDFLUSSORUOLO", _nId))
-                ctx.Dispose()
-                If CreateXMLDatiFattura(dvMyDati, sXMLName) = False Then
-                    Return ""
-                End If
-                ListFile.Add(ConstSession.PathRepository + PathXML + _IdEnte + "\" + sXMLName)
-                'H2ODettaglioFattura
-                sXMLName = "H2ODettaglioFattura.xml"
-                sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_GestionaleGetDettaglioFatture", "IDFLUSSORUOLO")
-                dvMyDati = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("IDFLUSSORUOLO", _nId))
-                ctx.Dispose()
-                If CreateXMLDettaglioFattura(dvMyDati, sXMLName) = False Then
-                    Return ""
-                End If
-                ListFile.Add(ConstSession.PathRepository + PathXML + _IdEnte + "\" + sXMLName)
-                'H2ORiepilogoIVA
-                sXMLName = "H2ORiepilogoIVA.xml"
-                sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_GestionaleGetRiepilogoFatture", "IDFLUSSORUOLO")
-                dvMyDati = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("IDFLUSSORUOLO", _nId))
-                ctx.Dispose()
-                If CreateXMLRiepilogoIVA(dvMyDati, sXMLName) = False Then
-                    Return ""
-                End If
-                ListFile.Add(ConstSession.PathRepository + PathXML + _IdEnte + "\" + sXMLName)
-                'H2OScadenzeFattura
-                sXMLName = "H2OScadenzeFattura.xml"
-                sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_GestionaleGetScadenzeFatture", "IDFLUSSORUOLO")
-                dvMyDati = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("IDFLUSSORUOLO", _nId))
-                ctx.Dispose()
-                If CreateXMLScadenzeFattura(dvMyDati, sXMLName) = False Then
-                    Return ""
-                End If
-                ListFile.Add(ConstSession.PathRepository + PathXML + _IdEnte + "\" + sXMLName)
-            End Using
+            If sNumDoc = "" Then
+                myFileName = _IdEnte + "_" + _nId.ToString + ".zip"
+                Using ctx As New DBModel(ConstSession.DBType, ConstSession.StringConnection)
+                    'H2ODatiFattura
+                    sXMLName = "H2ODatiFattura.xml"
+                    sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_GestionaleGetDatiFatture", "IDFLUSSORUOLO")
+                    dvMyDati = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("IDFLUSSORUOLO", _nId))
+                    ctx.Dispose()
+                    If CreateXMLDatiFattura(dvMyDati, sXMLName) = False Then
+                        Return ""
+                    End If
+                    ListFile.Add(ConstSession.PathRepository + PathXML + _IdEnte + "\" + sXMLName)
+                    'H2ODettaglioFattura
+                    sXMLName = "H2ODettaglioFattura.xml"
+                    sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_GestionaleGetDettaglioFatture", "IDFLUSSORUOLO")
+                    dvMyDati = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("IDFLUSSORUOLO", _nId))
+                    ctx.Dispose()
+                    If CreateXMLDettaglioFattura(dvMyDati, sXMLName) = False Then
+                        Return ""
+                    End If
+                    ListFile.Add(ConstSession.PathRepository + PathXML + _IdEnte + "\" + sXMLName)
+                    'H2ORiepilogoIVA
+                    sXMLName = "H2ORiepilogoIVA.xml"
+                    sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_GestionaleGetRiepilogoFatture", "IDFLUSSORUOLO")
+                    dvMyDati = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("IDFLUSSORUOLO", _nId))
+                    ctx.Dispose()
+                    If CreateXMLRiepilogoIVA(dvMyDati, sXMLName) = False Then
+                        Return ""
+                    End If
+                    ListFile.Add(ConstSession.PathRepository + PathXML + _IdEnte + "\" + sXMLName)
+                    'H2OScadenzeFattura
+                    sXMLName = "H2OScadenzeFattura.xml"
+                    sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_GestionaleGetScadenzeFatture", "IDFLUSSORUOLO")
+                    dvMyDati = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("IDFLUSSORUOLO", _nId))
+                    ctx.Dispose()
+                    If CreateXMLScadenzeFattura(dvMyDati, sXMLName) = False Then
+                        Return ""
+                    End If
+                    ListFile.Add(ConstSession.PathRepository + PathXML + _IdEnte + "\" + sXMLName)
+                End Using
 
-            If ZipFile(ConstSession.PathRepository + PathXML + _IdEnte + "\", myFileName, ListFile) = False Then
+                If ZipFile(ConstSession.PathRepository + PathXML + _IdEnte + "\", myFileName, ListFile) = False Then
+                    myFileName = ""
+                End If
+            Else
                 myFileName = ""
             End If
         Catch ex As Exception
@@ -1611,27 +1636,34 @@ Public Class clsFatturaElettronica
     ''' <param name="dInsert"></param>
     ''' <param name="sOperatore"></param>
     ''' <returns></returns>
-    Private Function SetFileFattEle(TypeFile As Integer, sFile As String, dInsert As DateTime, sOperatore As String) As Boolean
+    ''' <revisionHistory>
+    ''' <revision date="18/05/2021">Aggiunto filtro su singolo documento per la ristampa; il salvataggio in questo caso non deve essere fatto</revision>
+    ''' </revisionHistory>
+    Private Function SetFileFattEle(TypeFile As Integer, sFile As String, dInsert As DateTime, sOperatore As String, sNumDoc As String) As Boolean
         Dim bRet As Boolean = False
         Dim dvMyDati As New DataView
         Dim sSQL As String = ""
 
         Try
-            Using ctx As New DBModel(ConstSession.DBType, ConstSession.StringConnection)
-                sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_TBLZIPFATTUREELETTRONICHE_IU", "IDFLUSSORUOLO", "TIPO", "NAMEFILE", "DATA_INSERIMENTO", "OPERATORE")
-                dvMyDati = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("IDFLUSSORUOLO", _nId) _
+            If sNumDoc = "" Then
+                Using ctx As New DBModel(ConstSession.DBType, ConstSession.StringConnection)
+                    sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_TBLZIPFATTUREELETTRONICHE_IU", "IDFLUSSORUOLO", "TIPO", "NAMEFILE", "DATA_INSERIMENTO", "OPERATORE")
+                    dvMyDati = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("IDFLUSSORUOLO", _nId) _
                         , ctx.GetParam("TIPO", TypeFile) _
                         , ctx.GetParam("NAMEFILE", sFile) _
                         , ctx.GetParam("DATA_INSERIMENTO", dInsert) _
                         , ctx.GetParam("OPERATORE", sOperatore)
                     )
-                ctx.Dispose()
-            End Using
-            For Each myRow As DataRowView In dvMyDati
-                If StringOperation.FormatInt(myRow("id")) > 0 Then
-                    bRet = True
-                End If
-            Next
+                    ctx.Dispose()
+                End Using
+                For Each myRow As DataRowView In dvMyDati
+                    If StringOperation.FormatInt(myRow("id")) > 0 Then
+                        bRet = True
+                    End If
+                Next
+            Else
+                bRet = True
+            End If
         Catch ex As Exception
             Log.Debug(_IdEnte + "." + _UserName + " - OPENgovH2O.clsFatturaElettronica.SetFileFattEle.errore: ", ex)
             bRet = False
@@ -1665,14 +1697,17 @@ Public Class clsFatturaElettronica
     ''' Funzione per la selezione delle fatture da estrarre
     ''' </summary>
     ''' <returns></returns>
-    Private Function GetFatture() As DataView
+    ''' <revisionHistory>
+    ''' <revision date="18/05/2021">Aggiunto filtro su singolo documento per la ristampa</revision>
+    ''' </revisionHistory>
+    Private Function GetFatture(sNumDoc As String) As DataView
         Dim dvMyDati As New DataView
         Dim sSQL As String = ""
 
         Try
             Using ctx As New DBModel(ConstSession.DBType, ConstSession.StringConnection)
-                sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_SdIGetFatture", "IDFLUSSORUOLO")
-                dvMyDati = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("IDFLUSSORUOLO", _nId))
+                sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_SdIGetFatture", "IDFLUSSORUOLO", "NDOC")
+                dvMyDati = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("IDFLUSSORUOLO", _nId), ctx.GetParam("NDOC", sNumDoc))
                 ctx.Dispose()
             End Using
         Catch ex As Exception
@@ -1685,14 +1720,17 @@ Public Class clsFatturaElettronica
     ''' Funzione per il controllo della presenza dei dati obbligatori mancanti
     ''' </summary>
     ''' <returns></returns>
-    Private Function GetControlloDati() As DataView
+    ''' <revisionHistory>
+    ''' <revision date="18/05/2021">Aggiunto filtro su singolo documento per la ristampa</revision>
+    ''' </revisionHistory>
+    Private Function GetControlloDati(sNumDoc As String) As DataView
         Dim dvMyDati As New DataView
         Dim sSQL As String = ""
 
         Try
             Using ctx As New DBModel(ConstSession.DBType, ConstSession.StringConnection)
-                sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_SdIControlloDati", "IDFLUSSORUOLO")
-                dvMyDati = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("IDFLUSSORUOLO", _nId))
+                sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_SdIControlloDati", "IDFLUSSORUOLO", "NDOC")
+                dvMyDati = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("IDFLUSSORUOLO", _nId), ctx.GetParam("NDOC", sNumDoc))
                 ctx.Dispose()
             End Using
         Catch ex As Exception

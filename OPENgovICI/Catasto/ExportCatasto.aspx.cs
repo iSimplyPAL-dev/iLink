@@ -53,14 +53,14 @@ namespace DichiarazioniICI
             base.OnInit(e);
         }
         /// <summary>
-        /// 
+        /// in base al tipo di chiamata visualizzo il solo div che interessa
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         protected void Page_Load(object sender, EventArgs e)
         {
             string sScript = string.Empty;
-            //in base al tipo di chiamata visualizzo il solo div che interessa
+            
             try
             {
                 if (Request.QueryString["Type"].ToString() == Catasto.Fase.EstrazioneBancaDatiTrib.ToString() || Request.QueryString["Type"].ToString() == Catasto.Fase.EstrazioneDichWork.ToString() || Request.QueryString["Type"].ToString() == Catasto.Fase.ImportDichCat.ToString())

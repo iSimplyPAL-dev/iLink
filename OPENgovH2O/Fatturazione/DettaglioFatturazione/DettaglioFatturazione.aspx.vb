@@ -658,12 +658,15 @@ Partial Class DettaglioFatturazione
     ''' Pulsante per la ristampa del documento.
     ''' </summary>
     ''' <remarks>In ottemperanza alle linee guida di sviluppo 1.0</remarks>
-    ''' <revisionHistory><revision date="16/03/2021">Aggiunta la possibilità di ristampa fattura</revision></revisionHistory>
+    ''' <revisionHistory>
+    ''' <revision date="16/03/2021">Aggiunta la possibilità di ristampa fattura</revision>
+    ''' <revision date="18/05/2021">Aggiunto filtro su singolo documento per la ristampa</revision>
+    ''' </revisionHistory>
     Private Sub CmdStampaDoc_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles CmdStampaDoc.Click
         Dim sScript, sTypeOrd, sNameModello As String
         Dim nTipoElab As Integer = 1
         Dim nReturn, nMaxDocPerFile As Integer
-        Dim oMyRuolo As New ObjTotRuoloFatture
+        Dim nIdFlusso As Integer = -1
         Dim oListDocStampati() As RIBESElaborazioneDocumentiInterface.Stampa.oggetti.GruppoURL
         Dim bCreaPDF As Boolean = False
         Dim nDecimal As Integer = 2
@@ -680,8 +683,11 @@ Partial Class DettaglioFatturazione
             nMaxDocPerFile = 1
 
             Try
+                If Not CType(Session("oDettFattura"), ObjFattura) Is Nothing Then
+                    nIdFlusso = CType(Session("oDettFattura"), ObjFattura).nIdFlusso
+                End If
                 oListAvvisi = New ClsElaborazioneDocumenti().ConvAvvisi(New ClsFatture().GetFattura(ConstSession.StringConnection, ConstSession.IdEnte, -1, Request.Item("IdDocumento"), False))
-                nReturn = New ClsElaborazioneDocumenti().ElaboraDocumenti(ConstSession.CodTributo, ConstSession.IdEnte, oMyRuolo.IdFlusso, ConstSession.DescrPeriodo.Substring(0, 4), ConstSession.StringConnection, ConstSession.StringConnectionOPENgov, ConstSession.StringConnectionAnagrafica, ConstSession.PathStampe, ConstSession.PathVirtualStampe, -1, -1, nTipoElab, sTypeOrd, sNameModello, nMaxDocPerFile, False, oListAvvisi, oListDocStampati, bCreaPDF, nDecimal, TipoStampaBollettini, "", bSendByMail)
+                nReturn = New ClsElaborazioneDocumenti().ElaboraDocumenti(ConstSession.CodTributo, ConstSession.IdEnte, nIdFlusso, ConstSession.DescrPeriodo.Substring(0, 4), ConstSession.StringConnection, ConstSession.StringConnectionOPENgov, ConstSession.StringConnectionAnagrafica, ConstSession.PathStampe, ConstSession.PathVirtualStampe, -1, -1, nTipoElab, sTypeOrd, sNameModello, nMaxDocPerFile, False, oListAvvisi, oListDocStampati, bCreaPDF, nDecimal, TipoStampaBollettini, "", bSendByMail)
                 '*** ***
             Catch Err As Exception
                 Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovH2O.DettaglioFatturazione.CmdElaborazione_Click.errore: ", Err)
@@ -692,7 +698,12 @@ Partial Class DettaglioFatturazione
                 Session.Add("ELENCO_DOCUMENTI_STAMPATI", oListDocStampati)
             End If
 
-            If nReturn = 0 Then
+            If nReturn < 0 Then
+                'si è verificato uin errore
+                sScript = "GestAlert('a', 'warning', '', '', 'Errore in stampa documenti!');"
+                RegisterScript(sScript, Me.GetType())
+                Exit Sub
+            ElseIf nReturn = 0 Then
                 'si è verificato uin errore
                 sScript = "GestAlert('a', 'warning', '', '', 'Errore in estrazione fatture elettroniche!');"
                 RegisterScript(sScript, Me.GetType())

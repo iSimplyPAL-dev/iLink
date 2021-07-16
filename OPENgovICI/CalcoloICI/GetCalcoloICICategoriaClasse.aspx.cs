@@ -343,7 +343,6 @@ namespace DichiarazioniICI.CalcoloICI
             DataRow dr;
             DataSet ds = new DataSet();
             DataTable dtRiepilogoICI = null;
-            string sPathProspetti = string.Empty;
             string NameXLS = string.Empty;
             ArrayList arratlistNomiColonne;
             string[] arraystr = null;
@@ -362,7 +361,6 @@ namespace DichiarazioniICI.CalcoloICI
                 }
                 arraystr = (string[])arratlistNomiColonne.ToArray(typeof(string));
 
-                sPathProspetti = ConstWrapper.PathProspetti;
                 NameXLS = ConstWrapper.CodiceEnte+"_ELENCO_IMMOBILI_CATEGORIA_CLASSE_" + DateTime.Now.ToString("yyyyMMdd_hhmmss") + ".xls";
 
                 ds.Tables.Add("ELENCO_IMMOBILI_CATEGORIA_CLASSE");
@@ -474,7 +472,7 @@ namespace DichiarazioniICI.CalcoloICI
                 int[] iColumns = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 };
                 //esporto i dati in excel
                 RKLib.ExportData.Export objExport = new RKLib.ExportData.Export("Web");
-                objExport.ExportDetails(dtRiepilogoICI, iColumns, arraystr, RKLib.ExportData.Export.ExportFormat.Excel, sPathProspetti + NameXLS);
+                objExport.ExportDetails(dtRiepilogoICI, iColumns, arraystr, RKLib.ExportData.Export.ExportFormat.Excel, NameXLS);
             }
 
         }
