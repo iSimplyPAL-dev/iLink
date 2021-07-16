@@ -1,0 +1,2578 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CompraVenditaRicerca
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CompraVenditaRicerca
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca">
+  
+  
+  <h1 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca" class="text-break">Class CompraVenditaRicerca
+  </h1>
+  <div class="markdown level0 summary"><p>Pagina per la ricerca e gestione degli atti di compravendita.
+Le possibili opzioni sono:</p>
+<ul>
+<li>Stampa</li>
+<li>Ricerca</li>
+<li>Gestione</li>
+<li>Torna alla videata precedente</li>
+</ul>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.Web.UI.Control</span></div>
+    <div class="level2"><span class="xref">System.Web.UI.TemplateControl</span></div>
+    <div class="level3"><span class="xref">System.Web.UI.Page</span></div>
+    <div class="level4"><span class="xref">Ribes.OPENgov.Utilities.BasePage</span></div>
+    <div class="level5"><span class="xref">CompraVenditaRicerca</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.IComponent</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">System.Web.UI.IParserAccessor</span></div>
+    <div><span class="xref">System.Web.UI.IUrlResolutionService</span></div>
+    <div><span class="xref">System.Web.UI.IDataBindingsAccessor</span></div>
+    <div><span class="xref">System.Web.UI.IControlBuilderAccessor</span></div>
+    <div><span class="xref">System.Web.UI.IControlDesignerAccessor</span></div>
+    <div><span class="xref">System.Web.UI.IExpressionsAccessor</span></div>
+    <div><span class="xref">System.Web.UI.INamingContainer</span></div>
+    <div><span class="xref">System.Web.UI.IFilterResolutionService</span></div>
+    <div><span class="xref">System.Web.IHttpHandler</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.BasePage.HideDiv(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.BasePage.ShowDiv(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.BasePage.Nascondi(System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.BasePage.RegisterScript(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.BasePage.Ente</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.BasePage.BreadCrumb</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.BasePage.SiteICI</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.BasePage.TypeDimensioneComune</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.BasePage.PosizioneGeograficaComune</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.BasePage.FromVariabile</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.BasePage.UrlPopStradario</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.BasePage.StileStradario</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.CreateHtmlTextWriter(System.IO.TextWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.CreateHtmlTextWriterFromType(System.IO.TextWriter, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.FindControl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.DeterminePostBackMode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.LoadPageStateFromPersistenceMedium()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SetFocus(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SetFocus(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetPostBackEventReference(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetPostBackEventReference(System.Web.UI.Control, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetPostBackClientEvent(System.Web.UI.Control, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetPostBackClientHyperlink(System.Web.UI.Control, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsClientScriptBlockRegistered(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsStartupScriptRegistered(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterArrayDeclaration(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterHiddenField(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterClientScriptBlock(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterStartupScript(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterOnSubmitStatement(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterRequiresControlState(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RequiresControlState(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.UnregisterRequiresControlState(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterRequiresPostBack(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RaisePostBackEvent(System.Web.UI.IPostBackEventHandler, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterRequiresRaiseEvent(System.Web.UI.IPostBackEventHandler)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.MapPath(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnLoadComplete(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnPreRenderComplete(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.FrameworkInitialize()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.InitializeCulture()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnPreInit(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnInitComplete(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnPreLoad(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterRequiresViewStateEncryption()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.OnSaveStateComplete(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Render(System.Web.UI.HtmlTextWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterViewStateHandler()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SavePageStateToPersistenceMedium(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ExecuteRegisteredAsyncTasks()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.RegisterAsyncTask(System.Web.UI.PageAsyncTask)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.AddOnPreRenderCompleteAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.AddOnPreRenderCompleteAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Validate()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Validate(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetValidators(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.VerifyRenderingInServerForm(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.GetDataItem()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Application</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Context</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ClientScript</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ClientTarget</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ClientQueryString</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ErrorPage</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsCallback</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.UniqueFilePathSuffix</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.AutoPostBackControl</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Header</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.MaintainScrollPositionOnPostBack</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Master</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.MasterPageFile</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PageStatePersister</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Trace</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Request</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Response</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Server</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Cache</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Session</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Title</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Theme</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.StyleSheetTheme</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.User</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsCrossPagePostBack</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsPostBack</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.EnableViewState</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.ViewStateUserKey</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Visible</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsPostBackEventControlRegistered</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsValid</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Validators</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PreviousPage</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Culture</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.UICulture</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.AsyncTimeout</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SmartNavigation</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.IsAsync</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Form</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PageAdapter</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.Items</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.LoadComplete</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PreInit</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PreLoad</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.PreRenderComplete</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.InitComplete</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Page.SaveStateComplete</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.Construct()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.OnCommitTransaction(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.OnAbortTransaction(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.OnError(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.CreateResourceBasedLiteralControl(System.Int32, System.Int32, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.TestDeviceFilter(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.LoadControl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.LoadControl(System.Type, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.LoadTemplate(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.ParseControl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.ParseControl(System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.Eval(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.Eval(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPath(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPath(System.String, System.Xml.IXmlNamespaceResolver)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPath(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPath(System.String, System.String, System.Xml.IXmlNamespaceResolver)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPathSelect(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.XPathSelect(System.String, System.Xml.IXmlNamespaceResolver)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.GetLocalResourceObject(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.GetLocalResourceObject(System.String, System.Type, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.GetGlobalResourceObject(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.GetGlobalResourceObject(System.String, System.String, System.Type, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.System.Web.UI.IFilterResolutionService.EvaluateFilter(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.System.Web.UI.IFilterResolutionService.CompareFilters(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.EnableTheming</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.AppRelativeVirtualPath</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.CommitTransaction</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.AbortTransaction</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.TemplateControl.Error</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ResolveAdapter()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.HasEvents()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ApplyStyleSheetSkin(System.Web.UI.Page)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnDataBinding(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DataBind()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DataBind(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DataBindChildren()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.AddParsedSubObject(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.EnsureID()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClearChildState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClearChildControlState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClearChildViewState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Focus()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.LoadControlState(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.LoadViewState(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.MapPathSecure(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OpenFile(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnLoad(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnPreRender(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.BuildProfileTree(System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SaveControlState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SaveViewState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RenderChildren(System.Web.UI.HtmlTextWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter, System.Web.UI.Adapters.ControlAdapter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnUnload(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RaiseBubbleEvent(System.Object, System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.OnBubbleEvent(System.Object, System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.AddedControl(System.Web.UI.Control, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.CreateControlCollection()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.CreateChildControls()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ResolveUrl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ResolveClientUrl(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.FindControl(System.String, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.GetDesignModeState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.HasControls()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IsLiteralContent()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.TrackViewState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.EnsureChildControls()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.RemovedControl(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SetDesignModeState(System.Collections.IDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SetRenderMethodDelegate(System.Web.UI.RenderMethod)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlDesignerAccessor.GetDesignModeState()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlDesignerAccessor.SetDesignModeState(System.Collections.IDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlDesignerAccessor.SetOwnerControl(System.Web.UI.Control)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClientID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ClientIDSeparator</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Adapter</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DesignMode</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Events</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IsChildControlStateCleared</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.SkinID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IsViewStateEnabled</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.NamingContainer</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IdSeparator</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.LoadViewStateByID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Page</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.TemplateControl</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Parent</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.TemplateSourceDirectory</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.AppRelativeTemplateSourceDirectory</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Site</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.UniqueID</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.HasChildViewState</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Controls</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ViewState</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ViewStateIgnoresCase</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.ChildControlsCreated</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.IsTrackingViewState</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IDataBindingsAccessor.HasDataBindings</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IDataBindingsAccessor.DataBindings</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlDesignerAccessor.UserData</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IControlBuilderAccessor.ControlBuilder</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IExpressionsAccessor.HasExpressions</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.System.Web.UI.IExpressionsAccessor.Expressions</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Disposed</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.DataBinding</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Init</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Load</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.PreRender</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.UI.Control.Unload</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OPENgov.Acquisizioni.AttiCompraVendita.html">OPENgov.Acquisizioni.AttiCompraVendita</a></h6>
+  <h6><strong>Assembly</strong>: OPENgov.Acquisizioni.dll</h6>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CompraVenditaRicerca : BasePage, IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, INamingContainer, IFilterResolutionService, IHttpHandler</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_cmdBack.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.cmdBack%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L40">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_cmdBack" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.cmdBack">cmdBack</h4>
+  <div class="markdown level1 summary"><p>Controllo cmdBack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Button cmdBack</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_cmdBack_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_cmdSearch.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.cmdSearch%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L31">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_cmdSearch" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.cmdSearch">cmdSearch</h4>
+  <div class="markdown level1 summary"><p>Controllo cmdSearch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Button cmdSearch</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_cmdSearch_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_cmdStampa.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.cmdStampa%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L22">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_cmdStampa" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.cmdStampa">cmdStampa</h4>
+  <div class="markdown level1 summary"><p>Controllo cmdStampa.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Button cmdStampa</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_cmdStampa_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_fsRisultatiRicerca.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.fsRisultatiRicerca%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L220">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_fsRisultatiRicerca" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.fsRisultatiRicerca">fsRisultatiRicerca</h4>
+  <div class="markdown level1 summary"><p>Controllo fsRisultatiRicerca.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HtmlGenericControl fsRisultatiRicerca</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.HtmlControls.HtmlGenericControl</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_fsRisultatiRicerca_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_hfidImmobile.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.hfidImmobile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L337">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_hfidImmobile" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.hfidImmobile">hfidImmobile</h4>
+  <div class="markdown level1 summary"><p>Controllo hfidImmobile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HiddenField hfidImmobile</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.HiddenField</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_hfidImmobile_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblAcquirenti.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblAcquirenti%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L301">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblAcquirenti" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblAcquirenti">lblAcquirenti</h4>
+  <div class="markdown level1 summary"><p>Controllo lblAcquirenti.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblAcquirenti</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblAcquirenti_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblCatNota.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblCatNota%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L274">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblCatNota" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblCatNota">lblCatNota</h4>
+  <div class="markdown level1 summary"><p>Controllo lblCatNota.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblCatNota</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblCatNota_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblCessionari.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblCessionari%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L319">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblCessionari" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblCessionari">lblCessionari</h4>
+  <div class="markdown level1 summary"><p>Controllo lblCessionari.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblCessionari</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblCessionari_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblCfPiva.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblCfPiva%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L193">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblCfPiva" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblCfPiva">lblCfPiva</h4>
+  <div class="markdown level1 summary"><p>Controllo lblCfPiva.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblCfPiva</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblCfPiva_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_LblDownloadFile.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.LblDownloadFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L211">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_LblDownloadFile" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.LblDownloadFile">LblDownloadFile</h4>
+  <div class="markdown level1 summary"><p>Controllo LblDownloadFile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected LinkButton LblDownloadFile</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.LinkButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_LblDownloadFile_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblFoglio.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblFoglio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L103">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblFoglio" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblFoglio">lblFoglio</h4>
+  <div class="markdown level1 summary"><p>Controllo lblFoglio.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblFoglio</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblFoglio_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblNominativo.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblNominativo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L175">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblNominativo" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblNominativo">lblNominativo</h4>
+  <div class="markdown level1 summary"><p>Controllo lblNominativo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblNominativo</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblNominativo_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblNotaTrascrizione.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblNotaTrascrizione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L256">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblNotaTrascrizione" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblNotaTrascrizione">lblNotaTrascrizione</h4>
+  <div class="markdown level1 summary"><p>Controllo lblNotaTrascrizione.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblNotaTrascrizione</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblNotaTrascrizione_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblNumero.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblNumero%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L121">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblNumero" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblNumero">lblNumero</h4>
+  <div class="markdown level1 summary"><p>Controllo lblNumero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblNumero</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblNumero_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblResult.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblResult%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L229">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblResult" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblResult">lblResult</h4>
+  <div class="markdown level1 summary"><p>Controllo lblResult.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblResult</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblResult_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblRifNota.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblRifNota%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L265">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblRifNota" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblRifNota">lblRifNota</h4>
+  <div class="markdown level1 summary"><p>Controllo lblRifNota.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblRifNota</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblRifNota_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_LblStato.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.LblStato%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L67">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_LblStato" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.LblStato">LblStato</h4>
+  <div class="markdown level1 summary"><p>Controllo LblStato.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblStato</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_LblStato_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblSub.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblSub%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L139">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblSub" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblSub">lblSub</h4>
+  <div class="markdown level1 summary"><p>Controllo lblSub.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblSub</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblSub_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_LblTipoImmobile.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.LblTipoImmobile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L85">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_LblTipoImmobile" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.LblTipoImmobile">LblTipoImmobile</h4>
+  <div class="markdown level1 summary"><p>Controllo LblTipoImmobile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label LblTipoImmobile</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_LblTipoImmobile_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblUbicazione.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblUbicazione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L157">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblUbicazione" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblUbicazione">lblUbicazione</h4>
+  <div class="markdown level1 summary"><p>Controllo lblUbicazione.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblUbicazione</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblUbicazione_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblUbicazioneCatasto.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblUbicazioneCatasto%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L292">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblUbicazioneCatasto" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblUbicazioneCatasto">lblUbicazioneCatasto</h4>
+  <div class="markdown level1 summary"><p>Controllo lblUbicazioneCatasto.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblUbicazioneCatasto</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblUbicazioneCatasto_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblUbicazioneNota.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblUbicazioneNota%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L283">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblUbicazioneNota" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.lblUbicazioneNota">lblUbicazioneNota</h4>
+  <div class="markdown level1 summary"><p>Controllo lblUbicazioneNota.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Label lblUbicazioneNota</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_lblUbicazioneNota_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rbImmobile.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rbImmobile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L49">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rbImmobile" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rbImmobile">rbImmobile</h4>
+  <div class="markdown level1 summary"><p>Controllo rbImmobile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RadioButton rbImmobile</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.RadioButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rbImmobile_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rbSoggetto.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rbSoggetto%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L58">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rbSoggetto" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rbSoggetto">rbSoggetto</h4>
+  <div class="markdown level1 summary"><p>Controllo rbSoggetto.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RadioButton rbSoggetto</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.RadioButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rbSoggetto_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rddlStato.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rddlStato%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L76">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rddlStato" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rddlStato">rddlStato</h4>
+  <div class="markdown level1 summary"><p>Controllo rddlStato.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DropDownList rddlStato</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.DropDownList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rddlStato_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rddlTipoImmobile.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rddlTipoImmobile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L94">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rddlTipoImmobile" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rddlTipoImmobile">rddlTipoImmobile</h4>
+  <div class="markdown level1 summary"><p>Controllo rddlTipoImmobile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RibesDropDownList rddlTipoImmobile</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Ribes.OPENgov.WebControls.RibesDropDownList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rddlTipoImmobile_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvAcquirenti.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvAcquirenti%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L310">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvAcquirenti" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvAcquirenti">rgvAcquirenti</h4>
+  <div class="markdown level1 summary"><p>Controllo rgvAcquirenti.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RibesGridView rgvAcquirenti</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Ribes.OPENgov.WebControls.RibesGridView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvAcquirenti_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvAtti.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvAtti%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L238">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvAtti" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvAtti">rgvAtti</h4>
+  <div class="markdown level1 summary"><p>Controllo rgvAtti.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RibesGridView rgvAtti</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Ribes.OPENgov.WebControls.RibesGridView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvAtti_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvAttiSoggetti.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvAttiSoggetti%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L247">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvAttiSoggetti" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvAttiSoggetti">rgvAttiSoggetti</h4>
+  <div class="markdown level1 summary"><p>Controllo rgvAttiSoggetti.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RibesGridView rgvAttiSoggetti</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Ribes.OPENgov.WebControls.RibesGridView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvAttiSoggetti_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvCessionari.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvCessionari%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L328">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvCessionari" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvCessionari">rgvCessionari</h4>
+  <div class="markdown level1 summary"><p>Controllo rgvCessionari.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RibesGridView rgvCessionari</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Ribes.OPENgov.WebControls.RibesGridView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvCessionari_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_txtCfPiva.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.txtCfPiva%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L202">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_txtCfPiva" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.txtCfPiva">txtCfPiva</h4>
+  <div class="markdown level1 summary"><p>Controllo txtCfPiva.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox txtCfPiva</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_txtCfPiva_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_txtFoglio.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.txtFoglio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L112">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_txtFoglio" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.txtFoglio">txtFoglio</h4>
+  <div class="markdown level1 summary"><p>Controllo txtFoglio.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox txtFoglio</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_txtFoglio_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_txtNominativo.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.txtNominativo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L184">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_txtNominativo" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.txtNominativo">txtNominativo</h4>
+  <div class="markdown level1 summary"><p>Controllo txtNominativo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox txtNominativo</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_txtNominativo_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_txtNumero.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.txtNumero%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L130">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_txtNumero" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.txtNumero">txtNumero</h4>
+  <div class="markdown level1 summary"><p>Controllo txtNumero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox txtNumero</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_txtNumero_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_txtSub.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.txtSub%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L148">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_txtSub" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.txtSub">txtSub</h4>
+  <div class="markdown level1 summary"><p>Controllo txtSub.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox txtSub</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_txtSub_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_txtUbicazione.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.txtUbicazione%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L166">View Source</a>
+  </span>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_txtUbicazione" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.txtUbicazione">txtUbicazione</h4>
+  <div class="markdown level1 summary"><p>Controllo txtUbicazione.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox txtUbicazione</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_txtUbicazione_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_ChangeParamSearch_System_Object_System_EventArgs_.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.ChangeParamSearch(System.Object%2CSystem.EventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.cs/#L61">View Source</a>
+  </span>
+  <a id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_ChangeParamSearch_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.ChangeParamSearch*"></a>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_ChangeParamSearch_System_Object_System_EventArgs_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.ChangeParamSearch(System.Object,System.EventArgs)">ChangeParamSearch(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ChangeParamSearch(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_CmdBackClick_System_Object_System_EventArgs_.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.CmdBackClick(System.Object%2CSystem.EventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.cs/#L253">View Source</a>
+  </span>
+  <a id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_CmdBackClick_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.CmdBackClick*"></a>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_CmdBackClick_System_Object_System_EventArgs_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.CmdBackClick(System.Object,System.EventArgs)">CmdBackClick(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void CmdBackClick(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_CmdSearchClick_System_Object_System_EventArgs_.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.CmdSearchClick(System.Object%2CSystem.EventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.cs/#L178">View Source</a>
+  </span>
+  <a id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_CmdSearchClick_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.CmdSearchClick*"></a>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_CmdSearchClick_System_Object_System_EventArgs_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.CmdSearchClick(System.Object,System.EventArgs)">CmdSearchClick(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void CmdSearchClick(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_CmdStampaClick_System_Object_System_EventArgs_.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.CmdStampaClick(System.Object%2CSystem.EventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.cs/#L187">View Source</a>
+  </span>
+  <a id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_CmdStampaClick_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.CmdStampaClick*"></a>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_CmdStampaClick_System_Object_System_EventArgs_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.CmdStampaClick(System.Object,System.EventArgs)">CmdStampaClick(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void CmdStampaClick(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_LblDownloadFile_Click_System_Object_System_EventArgs_.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.LblDownloadFile_Click(System.Object%2CSystem.EventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.cs/#L387">View Source</a>
+  </span>
+  <a id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_LblDownloadFile_Click_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.LblDownloadFile_Click*"></a>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_LblDownloadFile_Click_System_Object_System_EventArgs_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.LblDownloadFile_Click(System.Object,System.EventArgs)">LblDownloadFile_Click(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LblDownloadFile_Click(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_OnInit_System_EventArgs_.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.OnInit(System.EventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.cs/#L26">View Source</a>
+  </span>
+  <a id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_OnInit_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.OnInit*"></a>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_OnInit_System_EventArgs_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.OnInit(System.EventArgs)">OnInit(EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnInit(EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Ribes.OPENgov.Utilities.BasePage.OnInit(System.EventArgs)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_Page_Load_System_Object_System_EventArgs_.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.Page_Load(System.Object%2CSystem.EventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.cs/#L38">View Source</a>
+  </span>
+  <a id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_Page_Load_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.Page_Load*"></a>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_Page_Load_System_Object_System_EventArgs_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.Page_Load(System.Object,System.EventArgs)">Page_Load(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Page_Load(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvAcquirentiPageIndexChanging_System_Object_System_Web_UI_WebControls_GridViewPageEventArgs_.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvAcquirentiPageIndexChanging(System.Object%2CSystem.Web.UI.WebControls.GridViewPageEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.cs/#L114">View Source</a>
+  </span>
+  <a id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvAcquirentiPageIndexChanging_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvAcquirentiPageIndexChanging*"></a>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvAcquirentiPageIndexChanging_System_Object_System_Web_UI_WebControls_GridViewPageEventArgs_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvAcquirentiPageIndexChanging(System.Object,System.Web.UI.WebControls.GridViewPageEventArgs)">rgvAcquirentiPageIndexChanging(Object, GridViewPageEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void rgvAcquirentiPageIndexChanging(object sender, GridViewPageEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.GridViewPageEventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvAcquirentiRowCommand_System_Object_System_Web_UI_WebControls_GridViewCommandEventArgs_.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvAcquirentiRowCommand(System.Object%2CSystem.Web.UI.WebControls.GridViewCommandEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.cs/#L123">View Source</a>
+  </span>
+  <a id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvAcquirentiRowCommand_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvAcquirentiRowCommand*"></a>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvAcquirentiRowCommand_System_Object_System_Web_UI_WebControls_GridViewCommandEventArgs_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvAcquirentiRowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)">rgvAcquirentiRowCommand(Object, GridViewCommandEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void rgvAcquirentiRowCommand(object sender, GridViewCommandEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.GridViewCommandEventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvAttiPageIndexChanging_System_Object_System_Web_UI_WebControls_GridViewPageEventArgs_.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvAttiPageIndexChanging(System.Object%2CSystem.Web.UI.WebControls.GridViewPageEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.cs/#L81">View Source</a>
+  </span>
+  <a id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvAttiPageIndexChanging_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvAttiPageIndexChanging*"></a>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvAttiPageIndexChanging_System_Object_System_Web_UI_WebControls_GridViewPageEventArgs_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvAttiPageIndexChanging(System.Object,System.Web.UI.WebControls.GridViewPageEventArgs)">rgvAttiPageIndexChanging(Object, GridViewPageEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void rgvAttiPageIndexChanging(object sender, GridViewPageEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.GridViewPageEventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvAttiRowCommand_System_Object_System_Web_UI_WebControls_GridViewCommandEventArgs_.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvAttiRowCommand(System.Object%2CSystem.Web.UI.WebControls.GridViewCommandEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.cs/#L90">View Source</a>
+  </span>
+  <a id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvAttiRowCommand_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvAttiRowCommand*"></a>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvAttiRowCommand_System_Object_System_Web_UI_WebControls_GridViewCommandEventArgs_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvAttiRowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)">rgvAttiRowCommand(Object, GridViewCommandEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void rgvAttiRowCommand(object sender, GridViewCommandEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.GridViewCommandEventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvCessionariPageIndexChanging_System_Object_System_Web_UI_WebControls_GridViewPageEventArgs_.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvCessionariPageIndexChanging(System.Object%2CSystem.Web.UI.WebControls.GridViewPageEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.cs/#L146">View Source</a>
+  </span>
+  <a id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvCessionariPageIndexChanging_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvCessionariPageIndexChanging*"></a>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvCessionariPageIndexChanging_System_Object_System_Web_UI_WebControls_GridViewPageEventArgs_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvCessionariPageIndexChanging(System.Object,System.Web.UI.WebControls.GridViewPageEventArgs)">rgvCessionariPageIndexChanging(Object, GridViewPageEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void rgvCessionariPageIndexChanging(object sender, GridViewPageEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.GridViewPageEventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvCessionariRowCommand_System_Object_System_Web_UI_WebControls_GridViewCommandEventArgs_.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvCessionariRowCommand(System.Object%2CSystem.Web.UI.WebControls.GridViewCommandEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.cs/#L155">View Source</a>
+  </span>
+  <a id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvCessionariRowCommand_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvCessionariRowCommand*"></a>
+  <h4 id="OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca_rgvCessionariRowCommand_System_Object_System_Web_UI_WebControls_GridViewCommandEventArgs_" data-uid="OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.rgvCessionariRowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)">rgvCessionariRowCommand(Object, GridViewCommandEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void rgvCessionariRowCommand(object sender, GridViewCommandEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.GridViewCommandEventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.IComponent</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IParserAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IUrlResolutionService</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IDataBindingsAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IControlBuilderAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IControlDesignerAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IExpressionsAccessor</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.INamingContainer</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.UI.IFilterResolutionService</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.IHttpHandler</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_AttiCompraVendita_CompraVenditaRicerca.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/AttiCompraVendita/CompraVenditaRicerca.aspx.designer.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

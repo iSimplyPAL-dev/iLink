@@ -1,0 +1,416 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/ISimply_GitHub/UfficioTributi/Acquisizioni",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "LrUQZr6wZzYfx1t607t2FQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "O1XmKG4lnirgpjWfdn/BCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "gB8AESyvNru97tzIZofEEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "bQX7qyYHkhs+zbASZlab/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgov.Acquisizioni.AnagrafeResidenti.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgov.Acquisizioni.AnagrafeResidenti.html",
+          "hash": "M2Avwkquz3rWlx+FHS4NNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgov.Acquisizioni.AttiCompraVendita.CompraVenditaRicerca.html",
+          "hash": "wcXZN2o/LG4jva6k0vaK6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgov.Acquisizioni.AttiCompraVendita.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgov.Acquisizioni.AttiCompraVendita.html",
+          "hash": "Mfc5kI2CAVKYyo1REndpGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgov.Acquisizioni.DOCFAGestione.DOCFAGest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgov.Acquisizioni.DOCFAGestione.DOCFAGest.html",
+          "hash": "AUz6Y5RjXron7BeLOa0mVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgov.Acquisizioni.DOCFAGestione.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgov.Acquisizioni.DOCFAGestione.html",
+          "hash": "Qv6koyeMHvtLZxBILuEUDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgov.Acquisizioni.ExportToExcel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgov.Acquisizioni.ExportToExcel.html",
+          "hash": "/9fYVYInTgp30vOWgvVvFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgov.Acquisizioni.GestMail.CacheManagerMail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgov.Acquisizioni.GestMail.CacheManagerMail.html",
+          "hash": "0IcwNtV07m3daHD0b/0Pwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgov.Acquisizioni.GestMail.EmailService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgov.Acquisizioni.GestMail.EmailService.html",
+          "hash": "i80rMSWwbXR+nmJzCrHu6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgov.Acquisizioni.GestMail.GestEsitoInvio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgov.Acquisizioni.GestMail.GestEsitoInvio.html",
+          "hash": "9bQ7wrjZR6uXU64QV6lF0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgov.Acquisizioni.GestMail.GestInvioMail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgov.Acquisizioni.GestMail.GestInvioMail.html",
+          "hash": "EBqbYg7z3bxTocpRg9rsxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgov.Acquisizioni.GestMail.MailToSend.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgov.Acquisizioni.GestMail.MailToSend.html",
+          "hash": "mh2tFNcSBQc2BaGypA/2rQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgov.Acquisizioni.GestMail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgov.Acquisizioni.GestMail.html",
+          "hash": "r+Vr4168vjvBzwBuMsvLDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgov.Acquisizioni.Globalx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgov.Acquisizioni.Globalx.html",
+          "hash": "M4bErB0GRrxYgHVd1X7kNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgov.Acquisizioni.OPENgov.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgov.Acquisizioni.OPENgov.html",
+          "hash": "iPrS5qBNjF+2VcIQG99gUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgov.Acquisizioni.TARES.AggMassivo.AggMassivo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgov.Acquisizioni.TARES.AggMassivo.AggMassivo.html",
+          "hash": "VsK3gFFEOcyo8vqnT5YODQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgov.Acquisizioni.TARES.AggMassivo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgov.Acquisizioni.TARES.AggMassivo.html",
+          "hash": "HZlLnYsZkD58dRM3AxWeNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgov.Acquisizioni.TARES.Configurazione.CodiciDescrizioni.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgov.Acquisizioni.TARES.Configurazione.CodiciDescrizioni.html",
+          "hash": "ivnHklb7iLe/DQWtxzG4jQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgov.Acquisizioni.TARES.Configurazione.ParamCalcolo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgov.Acquisizioni.TARES.Configurazione.ParamCalcolo.html",
+          "hash": "2T06m94Rpy+FGB4aM0yGng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgov.Acquisizioni.TARES.Configurazione.Tariffe.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgov.Acquisizioni.TARES.Configurazione.Tariffe.html",
+          "hash": "6cnIEr/5uY6yxOeDz4QiFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgov.Acquisizioni.TARES.Configurazione.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgov.Acquisizioni.TARES.Configurazione.html",
+          "hash": "IltP7rbYV6OQIc7LlPdZaQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgov.Acquisizioni.TARES.Simulazione.Simulazione.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgov.Acquisizioni.TARES.Simulazione.Simulazione.html",
+          "hash": "WKa26yJRvvVsMUr7RjtHnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgov.Acquisizioni.TARES.Simulazione.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgov.Acquisizioni.TARES.Simulazione.html",
+          "hash": "6T6TbHbOnhAc7jWGGt7g/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgov.Acquisizioni.TestGridView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgov.Acquisizioni.TestGridView.html",
+          "hash": "ObEnqdEHPKiZwQPeALn1wA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OPENgov.Acquisizioni.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OPENgov.Acquisizioni.html",
+          "hash": "ZT/RGEB1NEJEeCLvUKt5Tg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "vE2OpoDanJGRZgtBpiF12g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "G2AoE5T/2VarbHvzLEo4TQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 24,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

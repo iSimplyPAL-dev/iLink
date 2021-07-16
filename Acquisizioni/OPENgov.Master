@@ -1,0 +1,374 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="OPENgov.master.cs" Inherits="OPENgov.Acquisizioni.OPENgov" %>
+
+<%--<%@ Register Assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+    Namespace="System.Web.UI" TagPrefix="asp" %>--%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <script src="../_js/jquery-1.10.2.min.js?newversion" type="text/javascript" ></script>
+    <script src="../_js/jquery-ui-1.10.4.custom.min.js?newversion" type="text/javascript" ></script>
+    <script src="../_js/Custom.js?newversion" type="text/javascript" ></script>
+    <script src="../../_js/jquery-1.10.2.min.js?newversion" type="text/javascript" ></script>
+    <script src="../../_js/jquery-ui-1.10.4.custom.min.js?newversion" type="text/javascript" ></script>
+    <script src="../../_js/Custom.js?newversion" type="text/javascript" ></script>
+    <script src="../../../_js/jquery-1.10.2.min.js?newversion" type="text/javascript" ></script>
+    <script src="../../../_js/jquery-ui-1.10.4.custom.min.js?newversion" type="text/javascript" ></script>
+    <script src="../../../_js/Custom.js?newversion" type="text/javascript" ></script>
+    <link href="../Styles.css" rel="stylesheet" />
+	<%if (Session["SOLA_LETTURA"]=="1"){%> 
+		<link href="../solalettura.css" type="text/css" rel="stylesheet">
+	<%}%> 
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+            $('#upProgress').hide();
+            $('.submitBtn').click(function () {
+                if ((typeof Page_IsValid == 'undefined') || (Page_IsValid))
+                    console.log("Mostro il caricamento");
+                    $('#upProgress').show();
+            });
+        }); 
+        function showDiv(id) {
+            $('#' + id).show();
+        }
+
+        function hideDiv(id) {
+            $('#' + id).hide();
+        }
+
+        function nascondi(chiamante, oggetto, label) {
+            if ($('#' + oggetto).is(':hidden')) {
+                $('#' + oggetto).show();
+                chiamante.title = 'Nascondi ' + label;
+                chiamante.innerText = 'Nascondi ' + label;
+            } else {
+                $('#' + oggetto).hide();
+                chiamante.title = 'Visualizza ' + label;
+                chiamante.innerText = 'Visualizza ' + label;
+            }
+        }
+        function ApriStradario(FunzioneRitorno, CodEnte, UrlStradario, StileStradario) {
+            var TipoStrada = '';
+            var Strada = '';
+            var CodStrada = '';
+            var CodTipoStrada = '';
+            var Frazione = '';
+            var CodFrazione = '';
+
+            var Parametri = '';
+
+            Parametri += 'CodEnte=' + CodEnte;
+            Parametri += '&TipoStrada=' + TipoStrada;
+            Parametri += '&Strada=' + Strada;
+            Parametri += '&CodStrada=' + CodStrada;
+            Parametri += '&CodTipoStrada=' + CodTipoStrada;
+            Parametri += '&Frazione=' + Frazione;
+            Parametri += '&CodFrazione=' + CodFrazione;
+            Parametri += '&Stile='+ StileStradario;
+            Parametri += '&FunzioneRitorno=' + FunzioneRitorno;
+            
+            window.open(UrlStradario+'?' + Parametri, 'fStradario', 'top =' + (screen.height - 500) / 2 + ', left=' + (screen.width - 700) / 2 + ' width=700,height=500, status=yes, toolbar=no,scrollbar=no, resizable=no');
+            return false;
+        }
+
+        function RibaltaStrada(objStrada) {
+            var strada
+            if (objStrada.TipoStrada != '&nbsp;') {
+                strada = objStrada.TipoStrada;
+            }
+            if (objStrada.Strada != '&nbsp;') {
+                strada = strada + ' ' + objStrada.Strada;
+            }
+            if (objStrada.Frazione != 'CAPOLUOGO') {
+                strada = strada + ' ' + objStrada.Frazione;
+            }
+            strada = strada.replace(/&#(\d+);/g, function (m, n) { return String.fromCharCode(n); });
+            $('#TxtCodVia').value = objStrada.CodStrada;
+            $('#TxtVia').value = strada;
+            $('#TxtViaRibaltata').value = strada;
+        }
+
+        function ClearDatiVia() {
+            $('#TxtCodVia').value = '';
+            $('#TxtVia').value = '';
+            $('#TxtViaRibaltata').value = ' ';
+            return false;
+        }
+        function Setfocus(objField) {
+            //vengono intercettati gli errori in modo che se il controllo non è visibile non sia visualizzato nessun errore
+            try {
+                objField.focus();
+                objField.select();
+            }
+            catch (objErr)
+	        { }
+        }
+        function txtDateGotfocus(objCtrl) {
+            if (isUndefined(objCtrl)) return false;
+
+            objCtrl.select();
+        }
+        function txtDateLostfocus(objCtrl) {
+            var gg = "";
+            var mm = "";
+            var aaaa = "";
+            var strData;
+            var strTmp;
+            var len;
+
+            if (isUndefined(objCtrl)) return false;
+
+            strData = objCtrl.value;
+            if (strData == "") return false;
+
+            arrayOfStrings = strData.split(".");
+            if (arrayOfStrings.length < 3) {
+                arrayOfStrings = strData.split("/");
+                if (arrayOfStrings.length < 3) {
+                    arrayOfStrings = strData.split("-");
+                    if (arrayOfStrings.length < 3) {
+                        arrayOfStrings = strData.split(",");
+                    }
+                }
+            }
+
+            if ((arrayOfStrings.length == 1) &&
+		 ((arrayOfStrings[0].length == 6) || (arrayOfStrings[0].length == 8))) {
+                len = arrayOfStrings[0].length;
+                strTmp = arrayOfStrings[0];
+                arrayOfStrings[0] = strTmp.substr(0, 2);
+                arrayOfStrings[1] = strTmp.substr(2, 2);
+                arrayOfStrings[2] = strTmp.substr(4, (len == 8) ? 4 : 2);
+            }
+
+            if (arrayOfStrings.length > 0)
+                gg = removeChar(arrayOfStrings[0], "");
+            if (arrayOfStrings.length > 1)
+                mm = removeChar(arrayOfStrings[1], "");
+            if (arrayOfStrings.length > 2)
+                aaaa = removeChar(arrayOfStrings[2], "");
+
+            //porta il formato sempre a GG/MM/AAAA	
+            if (gg.length == 0) gg = "00";
+            if (gg.length == 1) gg = "0" + gg;
+            if (mm.length == 0) mm = "00";
+            if (mm.length == 1) mm = "0" + mm;
+            if ((strTmp = CompletaAnno(aaaa)) != "")
+                aaaa = strTmp;
+            else
+                if (aaaa.length < 4) aaaa = "0000";
+
+            objCtrl.value = gg + "/" + mm + "/" + aaaa
+
+            return true;
+        }
+        function VerificaData(Data) {
+            if (!IsBlank(Data.value)) {
+                if (!isDate(Data.value)) {
+                    alert("Data non valida !");
+                    Data.value = "";
+                    Setfocus(Data);
+                    return false;
+                }
+            }
+        }
+        function isUndefined(strField) {
+            if (typeof (strField) == "undefined")
+                return true;
+            else
+                return false;
+        }
+        function IsBlank(sField) {
+            var bChar = 0;
+            if (sField)
+                for (var i = 0; i < sField.length; i++) {
+                    //altro 160 codice per lo spazio??? 
+                    if (sField.charAt(i) != " " && sField.charCodeAt(i) != 160) {
+                        bChar = 1;
+                        break;
+                    }
+                }
+            if (bChar == 0)
+                return true;
+            else
+                return false;
+        }
+        function removeChar(strValue, strNewChar) {
+            var reTmp = /\D/g;
+            var blnNeg = false;
+
+            if (isUndefined(strValue)) strValue = "";
+            if (isUndefined(strNewChar)) strNewChar = "";
+            if (strValue.charAt(0) == '-') blnNeg = true;
+
+            strValue = strValue.replace(reTmp, strNewChar);
+            if (blnNeg) strValue = '-' + strValue;
+
+            return strValue;
+        }
+        function CompletaAnno(sAnno) {
+            if (isNaN(sAnno)) return "";
+            if (sAnno.length > 4 || sAnno.length < 2) return "";
+
+            if (sAnno.length == 2)
+                if (parseInt(sAnno) <= 99 && parseInt(sAnno) >= 30)
+                    sAnno = "19" + sAnno;
+                else
+                    sAnno = "20" + sAnno;
+
+            if (sAnno > 2100 || sAnno < 1900) return "";
+
+            return sAnno;
+        }
+        //Verifica che il valore passato sia una data valida
+        //strData : Data da Verificare , data in formato "GG/MM/AAAA hh:mm"
+        //sDataDA : Limite inferiore   , data in formato "GG/MM/AAAA hh:mm"
+        //sDataA  : Limite superiore   , data in formato "GG/MM/AAAA hh:mm"
+        function isDate(strData, sDataDA, sDataA) {
+            var gg, mm, aaaa;
+            var hh, mi;
+            var dTestDate;
+            var ArrDate;
+            var dData1;
+            var ArrHour;
+            var sOra, sOraDa, sOraA;
+
+            //separa data e ora
+            ArrDate = strData.split(" ");
+            strData = ArrDate[0];
+            if (ArrDate.length == 2)
+                sOra = ArrDate[1];
+            else
+                sOra = "";
+
+            ArrDate = strData.split("/");
+            if (ArrDate.length != 3) return false;
+            gg = ArrDate[0];
+            mm = ArrDate[1];
+            aaaa = CompletaAnno(ArrDate[2]);
+
+            if (gg == '') return false;
+            if (mm == '') return false;
+            if (aaaa == '') return false;
+
+            if (sOra != "") {
+                ArrHour = sOra.split(":");
+                if (ArrHour.length != 2) return false;
+                hh = ArrHour[0];
+                mi = ArrHour[1];
+            }
+            else {
+                hh = '00';
+                mi = '00';
+            }
+
+            if (hh == '') return false;
+            if (mi == '') return false;
+
+            //verifica che il campo strData contenga una DATA valida
+            dTestDate = new Date(aaaa, mm - 1, gg, hh, mi);
+            if (dTestDate.getDate() != parseInt(gg * 1)) return false;
+            if (dTestDate.getMonth() != parseInt(mm * 1) - 1) return false;
+            if (dTestDate.getFullYear() != parseInt(aaaa * 1)) return false;
+            if (dTestDate.getHours() != parseInt(hh * 1)) return false;
+            if (dTestDate.getMinutes() != parseInt(mi * 1)) return false;
+
+            //verifica range dei valori ammessi
+            if (!isUndefined(sDataDA) || !isUndefined(sDataA)) {
+                //Verifica limite inferiore
+                if (!isUndefined(sDataA) && jTrim(sDataA.toString()) != '') {
+                    //converte sDataA in un oggetto DATA
+                    //separa data e ora
+                    ArrDate = sDataA.split(" ");
+                    sDataA = ArrDate[0];
+                    if (ArrDate.length == 2)
+                        sOraA = ArrDate[1];
+                    else
+                        sOraA = "";
+
+                    ArrDate = sDataA.split("/");
+                    if (sOraA != "") {
+                        ArrHour = sOraA.split(":");
+                        hh = ArrHour[0];
+                        mi = ArrHour[1];
+                    }
+                    else {
+                        hh = '00';
+                        mi = '00';
+                    }
+                    dData1 = new Date(ArrDate[2], ArrDate[1] - 1, ArrDate[0], hh, mi);
+
+                    if (dTestDate > dData1) return false;
+                }
+
+                //Verifica limite superiore
+                if (!isUndefined(sDataDA) && jTrim(sDataDA.toString()) != '') {
+                    //converte sDataDA in un oggetto DATA
+                    //separa data e ora
+                    ArrDate = sDataDA.split(" ");
+                    sDataDA = ArrDate[0];
+                    if (ArrDate.length == 2)
+                        sOraDa = ArrDate[1];
+                    else
+                        sOraDa = "";
+
+                    ArrDate = sDataDA.split("/");
+                    if (sOraDa != "") {
+                        ArrHour = sOraDa.split(":");
+                        hh = ArrHour[0];
+                        mi = ArrHour[1];
+                    }
+                    else {
+                        hh = '00';
+                        mi = '00';
+                    }
+                    dData1 = new Date(ArrDate[2], ArrDate[1] - 1, ArrDate[0], hh, mi);
+
+                    if (dTestDate < dData1) return false;
+                }
+            }
+            return true;
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="Sfondo">
+    
+    <form id="form1" runat="server" leftmargin="0" topmargin="0">
+<%--    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>--%>
+        <div id="upProgress" style="width:350px; margin: 0 auto;">
+            <div class="modalLoadingContainer">
+                <div class="modalLoading">
+                    <asp:Label ID="lblProgressMessage" runat="server" Text="Elaborazione in corso..."></asp:Label>
+                    <p>
+                        <asp:Image ID="imgLoading" runat="server" ImageUrl="~/Images/loader.png" ToolTip="Caricamento in corso..." />
+                    </p>
+                    <asp:Label runat="server" Text="Attendere Prego..."></asp:Label>
+                </div>
+            </div>
+        </div>
+        <div class="SfondoGenerale col-md-12" style="height: 45px; overflow: hidden">
+            <div id="divHeading" style="float:left;">
+                <asp:Label ID="lblEnte" runat="server" CssClass="ContentHead_Title"></asp:Label>
+                <br/>
+                <asp:Label ID="lblInfo" runat="server" CssClass="NormalBold_title"></asp:Label>
+            </div>
+            <div style="float:right;top:10px;position:absolute;right:5px;">
+                <asp:ContentPlaceHolder ID="ContentHeader" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div class="SfondoVisualizza col-md-12">
+            <asp:ContentPlaceHolder ID="ContentBody" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+<script type="text/javascript">
+    $(document).tooltip();
+</script>
+</body>
+</html>

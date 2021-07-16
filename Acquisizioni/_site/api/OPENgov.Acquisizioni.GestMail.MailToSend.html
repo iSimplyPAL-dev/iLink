@@ -1,0 +1,599 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MailToSend
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MailToSend
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OPENgov.Acquisizioni.GestMail.MailToSend">
+  
+  
+  <h1 id="OPENgov_Acquisizioni_GestMail_MailToSend" data-uid="OPENgov.Acquisizioni.GestMail.MailToSend" class="text-break">Class MailToSend
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Ribes.OPENgov.Utilities.Database</span></div>
+    <div class="level2"><span class="xref">Ribes.OPENgov.Utilities.DbObject</span>&lt;<span class="xref">OPENgovDL.InvioMail</span>&gt;</div>
+    <div class="level3"><span class="xref">OPENgovDL.InvioMail</span></div>
+    <div class="level4"><span class="xref">MailToSend</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.IdLotto</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.Ente</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.Anno</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.Tributo</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.DescrTributo</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.EMailFrom</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.EMailSubject</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.EMailBody</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.EMailAdministrative</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.NDestinatari</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.DescrStato</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.Server</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.ServerPort</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.Sender</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.Password</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.SSL</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.SenderName</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.WarningRecipient</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.MailArchive</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.WarningSubject</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.WarningMessage</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.Reset()</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.Load()</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.LoadAll()</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.Save()</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.Save(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.Delete()</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.LoadTributi(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.LoadAnni(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.LoadLottiDaIviare()</span>
+    </div>
+    <div>
+      <span class="xref">OPENgovDL.InvioMail.LoadEsitiInvio()</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.InvioMail&gt;.GenerateHashCode(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.InvioMail&gt;.stringParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.InvioMail&gt;.intParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.InvioMail&gt;.doubleParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.InvioMail&gt;.dateTimeParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.DbObject&lt;OPENgovDL.InvioMail&gt;.boolParser(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Connect()</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Connect(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Connect(System.String, System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Disconnect()</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.Disconnect(System.IDisposable[])</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.CreateCommand()</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.ApplyDatabaseTo(Ribes.OPENgov.Utilities.Database)</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.KeepConnection</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.SqlConnection</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.OwnConnection</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.OwnTransaction</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.ConnectionCallback</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.ParamsCacheSpan</span>
+    </div>
+    <div>
+      <span class="xref">Ribes.OPENgov.Utilities.Database.MinDate</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OPENgov.Acquisizioni.GestMail.html">OPENgov.Acquisizioni.GestMail</a></h6>
+  <h6><strong>Assembly</strong>: OPENgov.Acquisizioni.dll</h6>
+  <h5 id="OPENgov_Acquisizioni_GestMail_MailToSend_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MailToSend : InvioMail</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_GestMail_MailToSend__ctor.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.GestMail.MailToSend.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/GestMail/GestInvioMail.aspx.cs/#L454">View Source</a>
+  </span>
+  <a id="OPENgov_Acquisizioni_GestMail_MailToSend__ctor_" data-uid="OPENgov.Acquisizioni.GestMail.MailToSend.#ctor*"></a>
+  <h4 id="OPENgov_Acquisizioni_GestMail_MailToSend__ctor" data-uid="OPENgov.Acquisizioni.GestMail.MailToSend.#ctor">MailToSend()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MailToSend()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_GestMail_MailToSend_ListAttachments.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.GestMail.MailToSend.ListAttachments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/GestMail/GestInvioMail.aspx.cs/#L463">View Source</a>
+  </span>
+  <a id="OPENgov_Acquisizioni_GestMail_MailToSend_ListAttachments_" data-uid="OPENgov.Acquisizioni.GestMail.MailToSend.ListAttachments*"></a>
+  <h4 id="OPENgov_Acquisizioni_GestMail_MailToSend_ListAttachments" data-uid="OPENgov.Acquisizioni.GestMail.MailToSend.ListAttachments">ListAttachments</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;MailAttachment&gt; ListAttachments { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Web.Mail.MailAttachment</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_GestMail_MailToSend_ListRecipient.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.GestMail.MailToSend.ListRecipient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/GestMail/GestInvioMail.aspx.cs/#L461">View Source</a>
+  </span>
+  <a id="OPENgov_Acquisizioni_GestMail_MailToSend_ListRecipient_" data-uid="OPENgov.Acquisizioni.GestMail.MailToSend.ListRecipient*"></a>
+  <h4 id="OPENgov_Acquisizioni_GestMail_MailToSend_ListRecipient" data-uid="OPENgov.Acquisizioni.GestMail.MailToSend.ListRecipient">ListRecipient</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; ListRecipient { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_GestMail_MailToSend_ListRecipientBCC.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.GestMail.MailToSend.ListRecipientBCC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/GestMail/GestInvioMail.aspx.cs/#L462">View Source</a>
+  </span>
+  <a id="OPENgov_Acquisizioni_GestMail_MailToSend_ListRecipientBCC_" data-uid="OPENgov.Acquisizioni.GestMail.MailToSend.ListRecipientBCC*"></a>
+  <h4 id="OPENgov_Acquisizioni_GestMail_MailToSend_ListRecipientBCC" data-uid="OPENgov.Acquisizioni.GestMail.MailToSend.ListRecipientBCC">ListRecipientBCC</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; ListRecipientBCC { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_GestMail_MailToSend_Clear.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.GestMail.MailToSend.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/GestMail/GestInvioMail.aspx.cs/#L477">View Source</a>
+  </span>
+  <a id="OPENgov_Acquisizioni_GestMail_MailToSend_Clear_" data-uid="OPENgov.Acquisizioni.GestMail.MailToSend.Clear*"></a>
+  <h4 id="OPENgov_Acquisizioni_GestMail_MailToSend_Clear" data-uid="OPENgov.Acquisizioni.GestMail.MailToSend.Clear">Clear()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_GestMail_MailToSend_Equals_System_Object_.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.GestMail.MailToSend.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/GestMail/GestInvioMail.aspx.cs/#L467">View Source</a>
+  </span>
+  <a id="OPENgov_Acquisizioni_GestMail_MailToSend_Equals_" data-uid="OPENgov.Acquisizioni.GestMail.MailToSend.Equals*"></a>
+  <h4 id="OPENgov_Acquisizioni_GestMail_MailToSend_Equals_System_Object_" data-uid="OPENgov.Acquisizioni.GestMail.MailToSend.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">OPENgovDL.InvioMail.Equals(System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_GestMail_MailToSend_GetHashCode.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.GestMail.MailToSend.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/GestMail/GestInvioMail.aspx.cs/#L473">View Source</a>
+  </span>
+  <a id="OPENgov_Acquisizioni_GestMail_MailToSend_GetHashCode_" data-uid="OPENgov.Acquisizioni.GestMail.MailToSend.GetHashCode*"></a>
+  <h4 id="OPENgov_Acquisizioni_GestMail_MailToSend_GetHashCode" data-uid="OPENgov.Acquisizioni.GestMail.MailToSend.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">OPENgovDL.InvioMail.GetHashCode()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_GestMail_MailToSend_LoadMailToSend.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.GestMail.MailToSend.LoadMailToSend%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/GestMail/GestInvioMail.aspx.cs/#L504">View Source</a>
+  </span>
+  <a id="OPENgov_Acquisizioni_GestMail_MailToSend_LoadMailToSend_" data-uid="OPENgov.Acquisizioni.GestMail.MailToSend.LoadMailToSend*"></a>
+  <h4 id="OPENgov_Acquisizioni_GestMail_MailToSend_LoadMailToSend" data-uid="OPENgov.Acquisizioni.GestMail.MailToSend.LoadMailToSend">LoadMailToSend()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MailToSend[] LoadMailToSend()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OPENgov.Acquisizioni.GestMail.MailToSend.html">MailToSend</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_GestMail_MailToSend_SetResultInvio_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.GestMail.MailToSend.SetResultInvio(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/GestMail/GestInvioMail.aspx.cs/#L542">View Source</a>
+  </span>
+  <a id="OPENgov_Acquisizioni_GestMail_MailToSend_SetResultInvio_" data-uid="OPENgov.Acquisizioni.GestMail.MailToSend.SetResultInvio*"></a>
+  <h4 id="OPENgov_Acquisizioni_GestMail_MailToSend_SetResultInvio_System_String_System_String_System_String_" data-uid="OPENgov.Acquisizioni.GestMail.MailToSend.SetResultInvio(System.String,System.String,System.String)">SetResultInvio(String, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetResultInvio(string Recipient, string Result, string DescrResult)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Recipient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Result</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">DescrResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/iSimplyPAL-dev/iLink/new/master/apiSpec/new?filename=OPENgov_Acquisizioni_GestMail_MailToSend.md&amp;value=---%0Auid%3A%20OPENgov.Acquisizioni.GestMail.MailToSend%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/iSimplyPAL-dev/iLink/blob/master/Acquisizioni/GestMail/GestInvioMail.aspx.cs/#L450" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
