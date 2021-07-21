@@ -2806,7 +2806,9 @@ Partial Class GestImmobili
             oMyDettaglioTestata.oDetassazioni = Session("oDatiDet")
 
             'BD 09/07/2021
-            oMyDettaglioTestata.ImportoFissoRid = CDbl(TxtRidImp.Text.Trim)
+            If TxtRidImp.Text.Trim <> "" Then
+                oMyDettaglioTestata.ImportoFissoRid = CDbl(TxtRidImp.Text.Trim)
+            End If
             'BD 09/07/2021
 
             Return True
