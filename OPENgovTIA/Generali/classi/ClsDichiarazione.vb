@@ -7830,15 +7830,37 @@ Public Class GestArticolo
                     oRicRidEse.sAnno = oMyArticolo.sAnno
                     If IsFromAvviso = True Then
                         oMyArticolo.oRiduzioni = FncRidEse.GetRidEseApplicate(myConnectionString, oRicRidEse, ObjRidEse.TIPO_RIDUZIONI, ObjRidEseApplicati.RIF_ARTICOLO, oMyArticolo.Id, "")
+                        'BD 04/10/2021
+                        If Not (oMyArticolo.oRiduzioni Is Nothing) Then
+                            For Each myRid As ObjRidEseApplicati In oMyArticolo.oRiduzioni
+                                If myRid.sCodice.Equals("2021") And oMyArticolo.TipoPartita.Equals("PV") Then '' COVID 2021
+                                    myRid.sValore = StringOperation.FormatString(myRow("importo_fissorid"))
+                                    Exit For
+                                End If
+                            Next
+                        End If
+                        'BD 04/10/2021
+
                         'prelevo le detassazioni
                         oMyArticolo.oDetassazioni = FncRidEse.GetRidEseApplicate(myConnectionString, oRicRidEse, ObjRidEse.TIPO_ESENZIONI, ObjRidEseApplicati.RIF_ARTICOLO, oMyArticolo.Id, "")
-                    Else
-                        oMyArticolo.oRiduzioni = FncRidEse.GetRidEseApplicate(myConnectionString, oRicRidEse, ObjRidEse.TIPO_RIDUZIONI, ObjRidEseApplicati.RIF_ARTICOLO, oMyArticolo.Id, oMyArticolo.TipoPartita)
+                        Else
+                            oMyArticolo.oRiduzioni = FncRidEse.GetRidEseApplicate(myConnectionString, oRicRidEse, ObjRidEse.TIPO_RIDUZIONI, ObjRidEseApplicati.RIF_ARTICOLO, oMyArticolo.Id, oMyArticolo.TipoPartita)
+                        'BD 04/10/2021
+                        If Not (oMyArticolo.oRiduzioni Is Nothing) Then
+                            For Each myRid As ObjRidEseApplicati In oMyArticolo.oRiduzioni
+                                If myRid.sCodice.Equals("2021") And oMyArticolo.TipoPartita.Equals("PV") Then '' COVID 2021
+                                    myRid.sValore = StringOperation.FormatString(myRow("importo_fissorid"))
+                                    Exit For
+                                End If
+                            Next
+                        End If
+                        'BD 04/10/2021
+
                         'prelevo le detassazioni
                         oMyArticolo.oDetassazioni = FncRidEse.GetRidEseApplicate(myConnectionString, oRicRidEse, ObjRidEse.TIPO_ESENZIONI, ObjRidEseApplicati.RIF_ARTICOLO, oMyArticolo.Id, oMyArticolo.TipoPartita)
-                    End If
-                    '*** 20141211 - legami PF-PV ***
-                    If Not IsDBNull(myRow("idoggetto")) Then
+                        End If
+                        '*** 20141211 - legami PF-PV ***
+                        If Not IsDBNull(myRow("idoggetto")) Then
                         oMyArticolo.IdOggetto = StringOperation.FormatInt(myRow("idoggetto"))
                     End If
                     If oMyArticolo.TipoPartita = ObjArticolo.PARTEVARIABILE Then
