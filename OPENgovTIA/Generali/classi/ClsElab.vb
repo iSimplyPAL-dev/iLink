@@ -682,6 +682,8 @@ Public Class ClsElabRuolo
             Using ctx As New DBModel(ConstSession.DBType, myStringConnection)
                 Try
                     sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_SetRateDettaglio", "ID", "IDFLUSSO", "IDAVVISO", "TRIBUTO", "SOGLIARATA", "SOGLIABOLLETTINO")
+
+                    ''sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_SetRateDettaglio_old", "ID", "IDFLUSSO", "IDAVVISO", "TRIBUTO", "SOGLIARATA", "SOGLIABOLLETTINO")
                     myDataView = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("ID", 0) _
                             , ctx.GetParam("IDFLUSSO", oRuolo.IdFlusso) _
                             , ctx.GetParam("IDAVVISO", IdAvviso) _
@@ -689,6 +691,16 @@ Public Class ClsElabRuolo
                             , ctx.GetParam("SOGLIARATA", 0) _
                             , ctx.GetParam("SOGLIABOLLETTINO", 0)
                         )
+
+                    ''myDataView = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("ID", 0) _
+                    ''        , ctx.GetParam("IDFLUSSO", oRuolo.IdFlusso) _
+                    ''        , ctx.GetParam("IDAVVISO", IdAvviso) _
+                    ''        , ctx.GetParam("TRIBUTO", ConstSession.TributoTARESF24) _
+                    ''        , ctx.GetParam("SOGLIARATA", oRuolo.oRate(0).impSoglia) _
+                    ''        , ctx.GetParam("SOGLIABOLLETTINO", 0)
+                    ''    )
+
+
                 Catch ex As Exception
                     Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.ClsElabRuolo.CalcoloRate.SetRateDettaglio.errore: ", ex)
                     nMyReturn = -1
@@ -963,6 +975,9 @@ Public Class ClsElabRuolo
                             myArticoloForPV.tDataInserimento = myArticolo.tDataInserimento
                             myArticoloForPV.tDataVariazione = myArticolo.tDataVariazione
                             myArticoloForPV.TipoPartita = myArticolo.TipoPartita
+                            'BD 04/10/2021
+                            myArticoloForPV.ImportoFissoRid = myArticolo.ImportoFissoRid
+                            'BD 04/10/2021
                             If myPrecForPV.Id > 0 And (myArticolo.sCategoria = myPrecForPV.sCategoria And myArticolo.nComponentiPV = myPrecForPV.nComponentiPV And myArticolo.bForzaPV = False And myArticolo.sDescrCategoria.ToUpper.StartsWith("DOM") And myArticolo.nBimestri = myPrecForPV.nBimestri) Then
                                 'assegno la data maggiore altrimento me la perdo
                                 If myPrecForPV.tDataFine > myArticolo.tDataFine Then
@@ -1553,6 +1568,16 @@ Public Class ClsElabRuolo
 
             CurrentItem.oRiduzioni = PrelevaRidDetPerCalcolo(myConnectionString, myArticolo.oRiduzioni, ObjRidEse.TIPO_RIDUZIONI, myArticolo.sAnno, CurrentItem.TipoPartita)
             CurrentItem.oDetassazioni = PrelevaRidDetPerCalcolo(myConnectionString, myArticolo.oDetassazioni, ObjRidEse.TIPO_ESENZIONI, myArticolo.sAnno, CurrentItem.TipoPartita)
+            CurrentItem.ImportoFissoRid = myArticolo.ImportoFissoRid
+            'BD 04/10/2021
+            For Each myRid As ObjRidEseApplicati In CurrentItem.oRiduzioni
+                If myRid.sCodice.Equals("2021") And myArticolo.TipoPartita.Equals("PV") Then '' COVID 2021
+                    myRid.sValore = myArticolo.ImportoFissoRid
+                    Exit For
+                End If
+            Next
+            'BD 04/10/2021
+
             Return CurrentItem
         Catch ex As Exception
             Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.ClsElabRuolo.GeneraPartita.errore: ", ex)
@@ -1703,10 +1728,22 @@ Public Class ClsElabRuolo
             End If
 
             CurrentItem.oRiduzioni = PrelevaRidDetPerCalcolo(myConnectionString, myArticolo.oRiduzioni, ObjRidEse.TIPO_RIDUZIONI, myArticolo.sAnno, CurrentItem.TipoPartita)
+            'BD 04/01/2021
+            For Each myRid As ObjRidEseApplicati In CurrentItem.oRiduzioni
+                If myRid.sCodice.Equals("2021") Then '' COVID 2021
+                    myRid.sValore = myArticolo.ImportoFissoRid
+                    Exit For
+                End If
+            Next
+            'BD 04/01/2021
+
             CurrentItem.oDetassazioni = PrelevaRidDetPerCalcolo(myConnectionString, myArticolo.oDetassazioni, ObjRidEse.TIPO_ESENZIONI, myArticolo.sAnno, CurrentItem.TipoPartita)
             '*** 20141211 - legami PF-PV ***
             CurrentItem.ListPFvsPV = myArticolo.ListPFvsPV
             '*** ***
+            'qaz
+            CurrentItem.ImportoFissoRid = myArticolo.ImportoFissoRid
+            'qaz
             Return CurrentItem
         Catch ex As Exception
             Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.ClsElabRuolo.GeneraPV.errore: ", ex)
@@ -5032,8 +5069,10 @@ Public Class ClsCalcoloRuolo
                         listRuoli(0) = New ClsElabRuolo().CalcoloRate(_StringConnection, listRuoli(0), -1)
                         myRuolo = listRuoli(0)
                     End If
-                    Dim fncActionEvent As New Utility.DBUtility(_DBType, _StringConnectionOPENgov)
-                    fncActionEvent.LogActionEvent(DateTime.Now, _Operatore, New Utility.Costanti.LogEventArgument().Elaborazioni, "CalcoloPuntuale", Utility.Costanti.AZIONE_NEW, Utility.Costanti.TRIBUTO_TARSU, _IdEnte, CType(CacheManager.GetRiepilogoCalcoloMassivo(), ObjRuolo())(0).IdFlusso)
+                    If Not myRuolo Is Nothing Then
+                        Dim fncActionEvent As New Utility.DBUtility(_DBType, _StringConnectionOPENgov)
+                        fncActionEvent.LogActionEvent(DateTime.Now, _Operatore, New Utility.Costanti.LogEventArgument().Elaborazioni, "CalcoloPuntuale", Utility.Costanti.AZIONE_NEW, Utility.Costanti.TRIBUTO_TARSU, _IdEnte, CType(CacheManager.GetRiepilogoCalcoloMassivo(), ObjRuolo())(0).IdFlusso)
+                    End If
                 End If
             Catch Err As Exception
                 Log.Debug(_IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.CalcolaRuolo.StartCalcoloPuntuale.errore: ", Err)

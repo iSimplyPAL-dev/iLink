@@ -101,6 +101,14 @@ Partial Class GestPF
                     GrdRiduzioni.Style.Add("display", "none")
                     LblResultRid.Style.Add("display", "")
                 End If
+                'BD 4/10/2021
+                Dim oListArticoli() As ObjArticolo
+                Dim MyArticolo As New ObjArticolo
+                oListArticoli = Session("oArticolo")
+                MyArticolo = oListArticoli(0)
+                TxtRidImp.Text = MyArticolo.ImportoFissoRid
+                'BD 4/10/2021
+
                 'controllo se devo caricare la griglia delle Detassazioni
                 If Not Session("oDatiDet") Is Nothing Then
                     GrdDetassazioni.Style.Add("display", "")
@@ -266,6 +274,11 @@ Partial Class GestPF
                 If DdlAssenzaDatiCat.SelectedValue <> "" Then
                     oArticoloSgravi.nIdAssenzaDatiCatastali = DdlAssenzaDatiCat.SelectedValue
                 End If
+
+                ' BD 04/10/2021
+                oArticoloSgravi.ImportoFissoRid = TxtRidImp.Text
+                ' BD 04/10/2021
+
                 '*********************
                 'memorizzo l'oggetto in sessione
                 oArticoloSgravi.oRiduzioni = Session("oDatiRid")
@@ -312,6 +325,7 @@ Partial Class GestPF
                     If oListArticoli(x).Id = oArticoloSgravi.Id Then
                         oArticoloSgravi.TipoPartita = oListArticoli(x).TipoPartita
                         oListArticoli(x) = oArticoloSgravi
+
                         'Exit For
                     Else
                         'forzo le date di inizio e fine se mancano
@@ -1031,6 +1045,7 @@ Partial Class GestPF
                 LnkNewRid.Enabled = bTypeAbilita : LnkDelRid.Enabled = bTypeAbilita
                 LnkNewDet.Enabled = bTypeAbilita : LnkDelDet.Enabled = bTypeAbilita
                 TxtNote.Enabled = bTypeAbilita
+                TxtRidImp.Enabled = bTypeAbilita
 
                 If TxtTipoPartita.Text = ObjArticolo.PARTECONFERIMENTI Then
                     TxtVia.Enabled = False
