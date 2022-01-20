@@ -4,7 +4,7 @@ using System.Collections;
 using System.Data.SqlClient;
 using System.Globalization;
 using Business;
-using CreaTracciatoPOSTEL;
+//using CreaTracciatoPOSTEL;
 using System.Configuration;
 using log4net;
 

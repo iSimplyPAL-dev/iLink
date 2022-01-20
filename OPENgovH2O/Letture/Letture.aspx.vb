@@ -8,7 +8,7 @@ Imports System.Web.UI.WebControls
 Imports System.Reflection
 Imports Anagrafica
 Imports OggettiComuniStrade
-Imports WsStradario
+'Imports WsStradario
 Imports RemotingInterfaceMotoreH2O.MotoreH2o.Oggetti
 Imports log4net
 Imports AnagInterface

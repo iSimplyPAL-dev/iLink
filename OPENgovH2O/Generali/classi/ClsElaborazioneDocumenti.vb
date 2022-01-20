@@ -2009,6 +2009,7 @@ Public Class clsFatturaElettronica
                     ctx.Dispose()
                 End Using
                 For Each myRow As DataRowView In dvMyDati
+                    myItem = New DatiRiepilogoType
                     myItem.AliquotaIVA = StringOperation.FormatDouble(myRow("iva")).ToString("0.00").Replace(",", ".")
                     If StringOperation.FormatString(myRow("natura")) <> "" Then
                         myItem.NaturaSpecified = True

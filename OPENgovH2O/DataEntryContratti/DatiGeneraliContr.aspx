@@ -353,6 +353,9 @@
 					<td colSpan="6"><asp:label id="lblError" runat="server" Cssclass="NormalBold"></asp:label></td>
 				</tr>
 				<tr>
+					<td colSpan="6"><asp:label id="lblInfoVoltura" runat="server" Cssclass="Input_Label_14 text-danger">Si ricorda che i subcontatori collegati devono essere chiusi prima di procedere con la voltura/chiusura del contatore principale.</asp:label></td>
+				</tr>
+				<tr>
 					<td class="lstTabRow" colSpan="6">Dati Generali</td>
 				</tr>
 				<tr>

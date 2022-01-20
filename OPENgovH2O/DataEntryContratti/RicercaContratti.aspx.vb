@@ -2,7 +2,7 @@ Imports System
 Imports System.Configuration
 Imports System.Data
 Imports System.Data.SqlClient
-Imports WsStradario
+'Imports WsStradario
 Imports RemotingInterfaceMotoreH2O.MotoreH2o.Oggetti
 Imports log4net
 Imports Utility

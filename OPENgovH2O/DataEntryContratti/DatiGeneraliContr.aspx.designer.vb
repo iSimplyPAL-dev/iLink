@@ -95,6 +95,15 @@ Partial Public Class DatiGeneraliContr
     Protected WithEvents lblError As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''lblInfoVoltura control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblInfoVoltura As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''txtIdentificativoContratto control.
     '''</summary>
     '''<remarks>

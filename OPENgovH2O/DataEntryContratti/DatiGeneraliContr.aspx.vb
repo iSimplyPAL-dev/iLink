@@ -9,7 +9,7 @@ Imports RIBESElaborazioneDocumentiInterface.Stampa
 Imports RIBESElaborazioneDocumentiInterface.Stampa.oggetti
 Imports log4net
 Imports OggettiComuniStrade
-Imports WsStradario
+'Imports WsStradario
 Imports RemotingInterfaceAnater
 Imports OPENgov_AgenziaEntrate
 Imports Utility

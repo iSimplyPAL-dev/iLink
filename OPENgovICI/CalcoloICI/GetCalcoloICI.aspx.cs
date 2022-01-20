@@ -14,7 +14,7 @@ using Anagrafica.DLL;
 
 using DichiarazioniICI.Database;
 //using Estrattore.Oggetti;
-using RemotingInterfaceEstrattore;
+//using RemotingInterfaceEstrattore;
 
 using ICSharpCode.SharpZipLib.Checksums;
 using ICSharpCode.SharpZipLib.Zip;
