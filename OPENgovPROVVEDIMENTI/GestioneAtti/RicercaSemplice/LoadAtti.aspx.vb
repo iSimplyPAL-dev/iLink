@@ -84,19 +84,26 @@ Partial Class LoadAtti
                 If Not objDS Is Nothing Then
                     ViewState("SortKey") = "ANNO"
                     ViewState("OrderBy") = "DESC"
-                    dt = objDS.Tables(0).DefaultView
-                    dt.Sort = ViewState("SortKey") & " " & ViewState("OrderBy")
-                End If
+                    If objDS.Tables.Count >= 1 Then
+                        dt = objDS.Tables(0).DefaultView
+                        dt.Sort = ViewState("SortKey") & " " & ViewState("OrderBy")
 
-                GrdAtti.DataSource = dt
-                GrdAtti.DataBind()
-                If CInt(GrdAtti.Rows.Count) = 0 Then
-                    GrdAtti.Visible = False
-                    If Utility.StringOperation.FormatInt(Request("COD_CONTRIBUENTE")) > 0 Then
-                        lblMessage.Text = "Non sono stati trovati Atti per la ricerca effettuata"
+                        GrdAtti.DataSource = dt
+                        GrdAtti.DataBind()
+                        If CInt(GrdAtti.Rows.Count) = 0 Then
+                            GrdAtti.Visible = False
+                            If Utility.StringOperation.FormatInt(Request("COD_CONTRIBUENTE")) > 0 Then
+                                lblMessage.Text = "Non sono stati trovati Atti per la ricerca effettuata"
+                            End If
+                        End If
+                    Else
+                        GrdAtti.Visible = False
+                        If Utility.StringOperation.FormatInt(Request("COD_CONTRIBUENTE")) > 0 Then
+                            lblMessage.Text = "Non sono stati trovati Atti per la ricerca effettuata"
+                        End If
                     End If
                 End If
-                End If
+            End If
         Catch ex As Exception
             Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.LoadAtti.Page_Load.errore: ", ex)
             Response.Redirect("../../../PaginaErrore.aspx")

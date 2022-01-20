@@ -669,6 +669,12 @@
 															    </Grd:RibesGridView>
 														    </td>
 													    </tr>
+														<tr>
+														<td style="text-align: right;">
+															<asp:Label ID="LabelFissoRiduzione" runat="server" class="Input_Label">Importo Fisso Riduzione</asp:Label> 
+															<asp:TextBox id="TxtRidImp" runat="server" class="Input_Text_Right"></asp:TextBox></td><
+														</tr>
+
 												    </table>
 											    </td>
 											    <td>

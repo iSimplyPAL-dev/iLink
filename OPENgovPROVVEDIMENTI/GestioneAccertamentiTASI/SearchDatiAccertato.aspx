@@ -290,6 +290,7 @@
 						<itemtemplate>
 							<asp:ImageButton runat="server" Cssclass="BottoneGrd BottoneApriGrd" CommandName="RowOpen" CommandArgument='<%# Eval("Progressivo") %>' alt=""></asp:ImageButton>
                             <asp:HiddenField runat="server" ID="hfIDSANZIONI" Value='<%# Eval("IDSANZIONI") %>' />
+							<asp:HiddenField runat="server" ID="hfIdLegame" Value='<%# Eval("IDLEGAME") %>' />
                             <asp:HiddenField runat="server" ID="hfInteressi" Value='<%# Eval("CalcolaInteressi") %>' />
 						</ItemTemplate>
 					</asp:TemplateField>

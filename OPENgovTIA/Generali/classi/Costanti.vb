@@ -176,7 +176,7 @@ Public Class ConstSession
                     HttpContext.Current.Session("IsFromVariabile") = "0"
                     Return "0"
                 Else
-                    If HttpContext.Current.Session("IsFromVariabile") = "" Then
+                    If HttpContext.Current.Session("IsFromVariabile").ToString.Trim = "" Then
                         HttpContext.Current.Session("IsFromVariabile") = "0"
                     End If
                     Return HttpContext.Current.Session("IsFromVariabile").ToString

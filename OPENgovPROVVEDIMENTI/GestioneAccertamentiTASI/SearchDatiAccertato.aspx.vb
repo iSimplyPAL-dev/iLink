@@ -1158,9 +1158,14 @@ Public Class SearchDatiAccertato
                                 workTable = CType(Session("DataTableImmobiliDaAccertare"), objUIICIAccert())
                                 For Each myItem As objUIICIAccert In workTable
                                     If myItem.IdLegame = idLegame Then
-                                        Dim idInteressi As String
-                                        idInteressi = CType(myRow.FindControl("hfInteressi"), HiddenField).Value
-                                        If idInteressi > 0 Then
+                                        'Dim idInteressi As String
+                                        'idInteressi = CType(myRow.FindControl("hfInteressi"), HiddenField).Value
+                                        'If idInteressi.ToUpper().Equals("TRUE") Then
+                                        '    myItem.CalcolaInteressi = True
+                                        'Else
+                                        '    myItem.CalcolaInteressi = False
+                                        'End If
+                                        If myItem.CalcolaInteressi = True Then
                                             myItem.CalcolaInteressi = False
                                         Else
                                             myItem.CalcolaInteressi = True
