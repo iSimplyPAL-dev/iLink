@@ -117,6 +117,7 @@ Public Class ClsStampaXLS
             sDatiStampa += "|Importo UI1 Acqua Euro|Importo UI1 Depurazione Euro|Importo UI1 Fognatura Euro"
             sDatiStampa += "|Importo UI2 Acqua Euro|Importo UI2 Depurazione Euro|Importo UI2 Fognatura Euro"
             sDatiStampa += "|Importo UI3 Acqua Euro|Importo UI3 Depurazione Euro|Importo UI3 Fognatura Euro"
+            sDatiStampa += "|Importo UI4 Acqua Euro|Importo UI4 Depurazione Euro|Importo UI4 Fognatura Euro"
             sDatiStampa += "|Importo Nolo Euro|Importo Quote Fisse Acqua Euro|Importo Quote Fisse Depurazione Euro|Importo Quote Fisse Fognatura Euro|Importo Addizionali Euro"
             sDatiStampa += "|Importo Imponibile Euro|Importo Iva Euro|Importo Esente Euro|Importo Arrotondamento Euro|Importo Documento Euro|Data Documento|N.Documento"
             If AddRowStampa(DtStampa, sDatiStampa) = 0 Then
@@ -617,7 +618,7 @@ Public Class ClsStampaXLS
     Public Function PrintMinutaRuoloH2ORowDati(myRow As ObjFattura, IdContribPrec As Integer, nIdIntestPrec As Integer, hasAnagAllRow As Integer) As String
         Dim sDatiStampa As String = ""
         Dim impDepurazione, impFognatura As Double
-        Dim impUI1H2O, impUI1Dep, impUI1Fog, impUI2H2O, impUI2Dep, impUI2Fog, impUI3H2O, impUI3Dep, impUI3Fog As Double
+        Dim impUI1H2O, impUI1Dep, impUI1Fog, impUI2H2O, impUI2Dep, impUI2Fog, impUI3H2O, impUI3Dep, impUI3Fog, impUI4H2O, impUI4Dep, impUI4Fog As Double
         Try
             If myRow.nIdIntestatario <> nIdIntestPrec Or hasAnagAllRow = 1 Then
                 sDatiStampa += myRow.oAnagrafeIntestatario.Cognome & " " & myRow.oAnagrafeIntestatario.Nome
@@ -727,6 +728,14 @@ Public Class ClsStampaXLS
                                 Else
                                     impUI3H2O += myCanone.impCanone
                                 End If
+                            Case "UI4"
+                                If myCanone.idServizio = OggettoCanone.Canone_Depurazione Then
+                                    impUI4Dep += myCanone.impCanone
+                                ElseIf myCanone.idServizio = OggettoCanone.Canone_Fognatura Then
+                                    impUI4Fog += myCanone.impCanone
+                                Else
+                                    impUI4H2O += myCanone.impCanone
+                                End If
                         End Select
                     End If
                 Next
@@ -743,6 +752,9 @@ Public Class ClsStampaXLS
                 impUI3Dep = impUI3Dep * -1
                 impUI3Fog = impUI3Fog * -1
                 impUI3H2O = impUI3H2O * -1
+                impUI4Dep = impUI4Dep * -1
+                impUI4Fog = impUI4Fog * -1
+                impUI4H2O = impUI4H2O * -1
             End If
             sDatiStampa += "|" + FormatNumber(impDepurazione.ToString, 2)
             sDatiStampa += "|" + FormatNumber(impFognatura.ToString, 2)
@@ -755,6 +767,9 @@ Public Class ClsStampaXLS
             sDatiStampa += "|" + FormatNumber(impUI3H2O.ToString, 2)
             sDatiStampa += "|" + FormatNumber(impUI3Dep.ToString, 2)
             sDatiStampa += "|" + FormatNumber(impUI3Fog.ToString, 2)
+            sDatiStampa += "|" + FormatNumber(impUI4H2O.ToString, 2)
+            sDatiStampa += "|" + FormatNumber(impUI4Dep.ToString, 2)
+            sDatiStampa += "|" + FormatNumber(impUI4Fog.ToString, 2)
             sDatiStampa += "|" + FormatNumber(myRow.impNolo.ToString, 2)
             sDatiStampa += "|" + FormatNumber(myRow.impQuoteFisse.ToString, 2)
             sDatiStampa += "|" + FormatNumber(myRow.impQuoteFisseDep.ToString, 2)
