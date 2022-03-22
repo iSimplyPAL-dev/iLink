@@ -86,7 +86,6 @@ Partial Class GestAvvisi
         Dim fncRuolo As New ClsGestRuolo
 
         Try
-            DivTessere.Style.Add("display", "none")
             DivScaglioni.Style.Add("display", "none")
             If Not Page.IsPostBack Then
                 Try
@@ -173,6 +172,13 @@ Partial Class GestAvvisi
                 End Try
                 Dim fncActionEvent As New Utility.DBUtility(ConstSession.DBType, ConstSession.StringConnectionOPENgov)
                 fncActionEvent.LogActionEvent(DateTime.Now, ConstSession.UserName, New Utility.Costanti.LogEventArgument().Sgravio, "Gestione", Utility.Costanti.AZIONE_LETTURA.ToString, ConstSession.CodTributo, ConstSession.IdEnte, oMyAvviso.ID)
+                '*** X UNIONE CON BANCADATI CMGC ***
+                If ConstSession.IsFromVariabile = "1" Then
+                    DivTessere.Style.Add("display", "")
+                Else
+                    DivTessere.Style.Add("display", "none")
+                End If
+                '*** ***
             End If
             Label1.Text = "Dati Parte " & LblTipoCalcolo.Text
             '*** ***

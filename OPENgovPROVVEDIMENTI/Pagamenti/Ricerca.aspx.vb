@@ -153,6 +153,92 @@ Partial Class Ricerca
             objPagamenti.kill()
         End Try
     End Sub
+    ''' <summary>
+    ''' Pulsante per l'estrazione in formato XLS della ricerca effettuata
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    Private Sub CmdStampa_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles CmdStampa.Click
+        Dim sNameXLS As String
+        Dim DtDatiStampa As New DataTable
+        Dim aListColonne As ArrayList
+        Dim x, nCol As Integer
+        Dim aMyHeaders As String()
+        Dim cognome, nome, cod_fiscale, NumAtto As String
+        Dim DataAl, DataDal As DateTime
+
+        nCol = 14
+        Try
+            cognome = txtCognome.Text
+            nome = txtNome.Text
+            If txtPiva.Text <> "" Then
+                cod_fiscale = txtPiva.Text
+            Else
+                cod_fiscale = txtCodFisc.Text
+            End If
+            NumAtto = txtNumAtto.Text
+            If txtDataAl.Text <> "" Then
+                DataAl = CDate(txtDataAl.Text)
+            End If
+            If txtDataDal.Text <> "" Then
+                DataDal = CDate(txtDataDal.Text)
+            End If
+            DtDatiStampa = New clsPagamenti(ConstSession.StringConnection).GetStampaPagamenti(ConstSession.IdEnte, cognome, nome, cod_fiscale, NumAtto, DataDal, DataAl)
+        Catch ex As Exception
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Ricerca.CmdStampa_Click.errore: ", ex)
+            Response.Redirect("../../PaginaErrore.aspx")
+        End Try
+
+        If Not DtDatiStampa Is Nothing Then
+            sNameXLS = ConstSession.IdEnte & "_ELENCO_PAGAMENTI_" & Format(Now, "yyyyMMdd_hhmmss") & ".xls"
+
+            'definisco le colonne
+            ReDim Preserve aMyHeaders(nCol)
+            x = 0
+            aMyHeaders(x) = "Cognome"
+            x += 1
+            aMyHeaders(x) = "Nome"
+            x += 1
+            aMyHeaders(x) = "Cod.Fiscale/Partita IVA"
+            x += 1
+            aMyHeaders(x) = "Tipologia Atto"
+            x += 1
+            aMyHeaders(x) = "N. Atto"
+            x += 1
+            aMyHeaders(x) = "Data Pagamento"
+            x += 1
+            aMyHeaders(x) = "Pagato €"
+            x += 1
+            aMyHeaders(x) = "Provenienza Pagamento"
+            x += 1
+            aMyHeaders(x) = "Differenza Imposta €"
+            x += 1
+            aMyHeaders(x) = "Sanzioni Non Riducibili €"
+            x += 1
+            aMyHeaders(x) = "Sanzioni Ridotte €"
+            x += 1
+            aMyHeaders(x) = "Interessi €"
+            x += 1
+            aMyHeaders(x) = "Addizionali €"
+            x += 1
+            aMyHeaders(x) = "Spese €"
+            x += 1
+            aMyHeaders(x) = "Arrotondamento €"
+
+            'definisco l'insieme delle colonne da esportare
+            Dim MyCol() As Integer = New Integer(nCol) {}
+            For x = 0 To nCol
+                MyCol(x) = x
+            Next
+            'esporto i dati in excel
+            Dim MyStampa As New RKLib.ExportData.Export("Web")
+            MyStampa.ExportDetails(DtDatiStampa, MyCol, aMyHeaders, RKLib.ExportData.Export.ExportFormat.Excel, sNameXLS)
+        Else
+            Dim sScript As String = "GestAlert('a', 'danger', '', '', 'Errore in estrazione!');"
+            sScript += "DivAttesa.style.display='none';"
+            RegisterScript(sScript, Me.GetType)
+        End If
+    End Sub
 
 #Region "Griglie"
     ''' <summary>

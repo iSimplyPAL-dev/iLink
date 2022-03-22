@@ -125,6 +125,13 @@ Partial Class aspmenu
                         Dim newNode As XmlNode = docA.ImportNode(childEl, True)
                         newNode.InnerXml = newNode.InnerXml.Replace("myidente", hfIdEnte.Value).Replace("+", "&")
                         docA.DocumentElement.AppendChild(newNode)
+                        If COSTANTValue.ConstSession.Profilo = COSTANTValue.ConstSession.TipoProfilo.SingolaVoceLettura Then
+                            For Each InnerChild As Object In childEl
+                                If InStr(COSTANTValue.ConstSession.ApplicationsEnabled, DirectCast(InnerChild, XmlElement).Attributes(0).Value) <= 0 Then
+                                    ListToDelete.Add(DirectCast(InnerChild, XmlElement).Attributes(0).Value)
+                                End If
+                            Next
+                        End If
                     Else
                         ListToDelete.Add(DirectCast(childEl, XmlElement).Attributes(0).Value)
                     End If

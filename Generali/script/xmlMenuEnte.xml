@@ -53,10 +53,8 @@
 			<SubMenu id="Vani" text="Tipologie Vani" urlVisualizza="../../OPENgovTIA/Configurazione/ConfVani.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
 		</SubMenu>
 		<SubMenu id="Simula" text="Simulazione Tariffaria" urlVisualizza="../../20/TARES/Simulazione/Simulazione.aspx?ENTE=myidente" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
-		<SubMenu id="Dich0434" text="Dichiarazioni" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
-			<SubMenu id="Gest" text="Gestione" urlVisualizza="../../OPENgovTIA/Dichiarazioni/RicercaDichiarazione.aspx?IsFromVariabile=0" urlComandi="../../OPENgovTIA/Dichiarazioni/ComandiRicDichiarazione.aspx?IsFromVariabile=0" urlBasso="../../aspVuotaComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
-			<SubMenu id="AggMassivo" text="Aggiornamento Massivo" urlVisualizza="../../20/TARES/AggMassivo/AggMassivo.aspx?ENTE=myidente" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
-		</SubMenu>
+		<SubMenu id="Dich0434" text="Dichiarazioni" urlVisualizza="../../OPENgovTIA/Dichiarazioni/RicercaDichiarazione.aspx?IsFromVariabile=0" urlComandi="../../OPENgovTIA/Dichiarazioni/ComandiRicDichiarazione.aspx?IsFromVariabile=0" urlBasso="../../aspVuotaComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+		<SubMenu id="AggMassivo" text="Aggiornamento Massivo" urlVisualizza="../../20/TARES/AggMassivo/AggMassivo.aspx?ENTE=myidente" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
 		<SubMenu id="Avvisi" text="Avvisi" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
 			<SubMenu id="Calcolo" text="Elaborazione" urlVisualizza="../../OPENgovTIA/Avvisi/Calcolo/Calcolo.aspx?IsFromVariabile=0" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
 			<SubMenu id="Gest" text="Gestione" urlVisualizza="../../OPENgovTIA/Avvisi/Gestione/RicAvvisi.aspx?IsFromVariabile=0" urlComandi="../../OPENgovTIA/Avvisi/Gestione/ComandiRicAvvisi.aspx?IsFromVariabile=0" urlBasso="../../aspVuotaComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>

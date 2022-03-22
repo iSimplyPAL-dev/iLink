@@ -351,6 +351,10 @@ Public Class UtilityOPENgov
                 End If
                 '*** ***
                 HttpContext.Current.Session("TributiBollettinoF24") = dsEnti.Tables(0).Rows(0).Item("TributiBollettinoF24")
+
+                If Not IsDBNull(dsEnti.Tables(0).Rows(0).Item("PATHFILEISOLAECOLOGICA")) Then
+                    HttpContext.Current.Session("PathFileIsolaEcologica") = dsEnti.Tables(0).Rows(0).Item("PATHFILEISOLAECOLOGICA").ToString
+                End If
                 Log.Debug("CaricoPagina per::Session('Ambiente')::" & HttpContext.Current.Session("Ambiente").ToString & "::Session('COD_ENTE')::" & HttpContext.Current.Session("COD_ENTE").ToString & "::Session('DESCRIZIONE_ENTE')::" & HttpContext.Current.Session("DESCRIZIONE_ENTE").ToString & "::Session('NOME_ENTE')::" & HttpContext.Current.Session("NOME_ENTE").ToString & "::Session('COD_BELFIORE')::" & HttpContext.Current.Session("COD_BELFIORE").ToString & "::Session('VisualGIS')::" & HttpContext.Current.Session("VisualGIS").ToString)
 
                 sHTML += "function apri(){"
@@ -687,7 +691,7 @@ Public Class UtilityOPENgov
                     HttpContext.Current.Session("dirittioperatore") = Trim(dvMyDati(0)("dirittioperatore").ToString)
                     HttpContext.Current.Session("SOLA_LETTURA") = "0"
                     If Not IsDBNull(dvMyDati(0)("profilo")) Then
-                        If (Trim(dvMyDati(0)("profilo").ToString) = COSTANTValue.ConstSession.TipoProfilo.SolaLettura) Then
+                        If (Trim(dvMyDati(0)("profilo").ToString) = COSTANTValue.ConstSession.TipoProfilo.SolaLettura) Or (Trim(dvMyDati(0)("profilo").ToString) = COSTANTValue.ConstSession.TipoProfilo.SingolaVoceLettura) Then
                             HttpContext.Current.Session("SOLA_LETTURA") = "1"
                         End If
                         HttpContext.Current.Session("profilo") = dvMyDati(0)("profilo")

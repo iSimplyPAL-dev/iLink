@@ -243,6 +243,11 @@
 				</Columns>
 			</Grd:RibesGridView>
 		</fieldset>
+        <div id="DivAttesa" runat="server" style="z-index: 103; position: absolute;display:none;">
+            <div class="Legend" style="margin-top:40px;">Elaborazione in Corso...</div>
+            <div class="BottoneClessidra">&nbsp;</div>
+            <div class="Legend">Attendere Prego...<asp:Label ID="LblAvanzamento" runat="server"></asp:Label></div>
+        </div>
         <div id="divDialogBox" class="col-md-12">
             <div class="modal-box">
                 <div id="divAlert" class="modal-alert">
@@ -261,6 +266,7 @@
             <input type="hidden" id="cmdHeight" value="0" />
         </div>
 		<asp:Button id="btnRicerca" runat="server" Text="Ricerca" cssclass="displaynone"></asp:Button>
+		<asp:Button ID="CmdStampa" Runat="server" style="DISPLAY: none"></asp:Button>
     </form>
   </body>
 </html>

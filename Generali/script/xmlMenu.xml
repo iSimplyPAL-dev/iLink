@@ -7,6 +7,15 @@
   <Menu id="Enti" text="Seleziona Enti">
     <SubMenu id="ENTE005048" text="cortiglione - 005048" NomeEnte="cortiglione" />
     <SubMenu id="ENTE096024" text="donato - 096024" NomeEnte="donato" />
+    <SubMenu id="ENTE006085" text="grondona - 006085" NomeEnte="grondona" />
+    <SubMenu id="ENTE012092" text="luino - 012092" NomeEnte="luino" />
+    <SubMenu id="ENTE006100" text="mongiardino ligure - 006100" NomeEnte="mongiardino ligure" />
+    <SubMenu id="ENTE056037" text="monte romano - 056037" NomeEnte="monte romano" />
+    <SubMenu id="ENTE050019" text="montecatini val di cecina - 050019" NomeEnte="montecatini val di cecina" />
+    <SubMenu id="ENTE050021" text="monteverdi marittimo - 050021" NomeEnte="monteverdi marittimo" />
+    <SubMenu id="ENTE096040" text="occhieppo inferiore - 096040" NomeEnte="occhieppo inferiore" />
+    <SubMenu id="ENTE003115" text="pella - 003115" NomeEnte="pella" />
+    <SubMenu id="ENTE001191" text="pinerolo - 001191" NomeEnte="pinerolo" />
     <SubMenu id="ENTE003120" text="pogno - 003120" NomeEnte="pogno" />
     <SubMenu id="ENTE050027" text="pomarance - 050027" NomeEnte="pomarance" />
     <SubMenu id="ENTE069085" text="sant’eusanio del sangro - 069085" NomeEnte="sant’eusanio del sangro" />

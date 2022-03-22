@@ -74,12 +74,18 @@ Partial Class ComandiRicDichiarazione
                 sScript += "$('#GIS').addClass('hidden');"
                 RegisterScript(sScript, Me.GetType)
             End If
+            If ConstSession.PathFileIsolaEcologica = "" Then
+                sScript += "$('#IsolaEco').addClass('DisableBtn');"
+                sScript += "$('#IsolaEco').addClass('hidden');"
+                RegisterScript(sScript, Me.GetType)
+            End If
             If ConstSession.IdEnte = "" Then
                 Dim oListCmd() As Object
-                ReDim Preserve oListCmd(2)
+                ReDim Preserve oListCmd(3)
                 oListCmd(0) = "AggMassivo"
                 oListCmd(1) = "GIS"
                 oListCmd(2) = "NewInsert"
+                oListCmd(3) = "IsolaEco"
                 sScript = ""
                 For x As Integer = 0 To oListCmd.Length - 1
                     sScript += "$('#" + oListCmd(x).ToString() + "').addClass('DisableBtn');"

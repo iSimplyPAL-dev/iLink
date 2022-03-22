@@ -18,13 +18,14 @@
 		topMargin="6" rightMargin="2" marginheight="0" marginwidth="0">
 		<form id="Form1" runat="server" method="post">
 			<table cellSpacing="0" cellPadding="0" width="100%" align="right" border="0" id="Table1">
-				<TR>
-					<TD style="WIDTH: 464px; HEIGHT: 20px" align="left">
-						<SPAN class="ContentHead_Title" id="infoEnte" style="WIDTH: 400px">
+				<tr>
+					<td style="WIDTH: 464px; HEIGHT: 20px" align="left">
+						<span class="ContentHead_Title" id="infoEnte" style="WIDTH: 400px">
 							<asp:Label id="lblTitolo" runat="server"></asp:Label>
-						</SPAN>
-					</TD>
-					<TD align="right" width="800" colSpan="2" rowSpan="2">
+						</span>
+					</td>
+					<td align="right" width="800" colSpan="2" rowSpan="2">
+					    <input class="Bottone BottonePopolaAppoggio" id="IsolaEco" title="Estrazione Dati per Isola Ecologica" onclick="parent.Visualizza.DivAttesa.style.display = '';parent.Visualizza.document.getElementById('CmdIsolaEco').click();" type="button" name="IsolaEco"> 
 					    <input class="Bottone BottoneForzaDati" id="AggMassivo" title="Aggiornamento Massivo" onclick="parent.Visualizza.DivAttesa.style.display = '';parent.Visualizza.document.getElementById('CmdAggMassivo').click();" type="button" name="AggMassivo"> 
 						<input class="Bottone BottoneGIS" id="GIS" title="Visualizza GIS" onclick="parent.Visualizza.DivAttesa.style.display = '';parent.Visualizza.document.getElementById('CmdGIS').click();" type="button" name="GIS"> 
 						<input class="Bottone BottoneStampaAlt" id="StampaSintetica" title="Stampa Dichiarazioni Sintetica" onclick="parent.Visualizza.fStampaSintetica();" type="button" name="StampaDich">
@@ -32,14 +33,13 @@
 						<input class="Bottone BottoneExcel" id="StampaDich" title="Elenco Dichiarazioni" onclick="parent.Visualizza.EstraiExcel();" type="button" name="StampaDich" style="DISPLAY: none"> 
 						<input class="Bottone BottoneNewInsert" id="NewInsert" title="Inserimento nuova denuncia." onclick="parent.Visualizza.NewDichiarazione(-1)" type="button" name="NewInsert"> 
 						<input class="Bottone BottoneRicerca" id="Search" title="Ricerca" onclick="parent.Visualizza.Search()" type="button" name="Search">
-					</TD>
-				</TR>
-				<TR>
-					<TD style="WIDTH: 463px" align="left">
-						<SPAN class="NormalBold_title" id="info" runat="server" style="WIDTH: 400px; HEIGHT: 20px;">
-							 Variabile - Dichiarazioni - Ricerca</SPAN>
-					</TD>
-				</TR>
+					</td>
+				</tr>
+				<tr>
+					<td style="WIDTH: 463px" align="left">
+						<span class="NormalBold_title" id="info" runat="server" style="WIDTH: 400px; HEIGHT: 20px;">Variabile - Dichiarazioni - Ricerca</span>
+					</td>
+				</tr>
 			</table>
 			&nbsp;
 		</form>

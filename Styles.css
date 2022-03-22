@@ -1675,3 +1675,6 @@ body.modal-open,
   color: white;
 }
 /*end */
+#LblFileToDownload, #LblFile290 {
+    cursor: pointer;
+}

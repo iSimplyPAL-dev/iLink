@@ -37,6 +37,7 @@
                     </td>
                     <td align="right" rowspan="2">
 					    <input style="display:none" class="Bottone BottoneRateizzazioni" id="cmdStatistiche" title="Statistiche" onclick="Statistiche()" type="button" name="cmdStatistiche">
+                        <input class="Bottone BottoneExcel" id="Print" title="Stampa" onclick="parent.Visualizza.DivAttesa.style.display = ''; parent.Visualizza.document.getElementById('CmdStampa').click()" type="button" name="Print" title="Stampa">
 						<input class="Bottone BottoneRateizzazioni" id="btnRateizza" title="Rateizza Pagamenti" onclick="NuovaRateizzazione()" type="button" name="btnRateizza">
 						<input class="Bottone BottoneNewInsert" id="btnPagamento" title="Inserisci Nuovo Pagamento" onclick="parent.Visualizza.InserisciNuovoPagamento();" type="button" name="btnPagamento">
 						<input class="Bottone BottoneRicerca" id="btnRicerca" title="Ricerca" onclick="parent.Visualizza.Ricerca();" type="button" name="btnRicerca">

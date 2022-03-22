@@ -2998,6 +2998,60 @@ Public Class ClsDichiarazione
             cmdMyCommand.Connection.Close()
         End Try
     End Sub
+    ''' <summary>
+    ''' Estrae i dati per il flusso anagrafe per l'isola ecologica
+    ''' </summary>
+    ''' <param name="myConnectionString"></param>
+    ''' <param name="sIdEnte"></param>
+    ''' <returns></returns>
+    Public Function GetIsolaEcologicaAnagrafe(ByVal myConnectionString As String, ByVal sIdEnte As String) As DataTable
+        Dim sSQL As String = ""
+        Dim myDataSet As New DataSet
+
+        Try
+            Using ctx As New DBModel(ConstSession.DBType, myConnectionString)
+                Try
+                    sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_GetIsolaEcoAnag", "IDENTE")
+                    myDataSet = ctx.GetDataSet(sSQL, "TBL", ctx.GetParam("IDENTE", sIdEnte))
+                Catch ex As Exception
+                    Log.Debug(sIdEnte + " - OPENgovTIA.ClsDichiarazione.GetIsolaEcologicaAnagrafe.erroreQuery: ", ex)
+                    Return Nothing
+                Finally
+                    ctx.Dispose()
+                End Try
+            End Using
+        Catch Err As Exception
+            Log.Debug(sIdEnte + " - OPENgovTIA.ClsDichiarazione.GetIsolaEcologicaAnagrafe.errore: ", Err)
+        End Try
+        Return myDataSet.Tables(0)
+    End Function
+    ''' <summary>
+    ''' Estrae i dati per il flusso utenze per l'isola ecologica
+    ''' </summary>
+    ''' <param name="myConnectionString"></param>
+    ''' <param name="sIdEnte"></param>
+    ''' <returns></returns>
+    Public Function GetIsolaEcologicaUtenze(ByVal myConnectionString As String, ByVal sIdEnte As String) As DataTable
+        Dim sSQL As String = ""
+        Dim myDataSet As New DataSet
+
+        Try
+            Using ctx As New DBModel(ConstSession.DBType, myConnectionString)
+                Try
+                    sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_GetIsolaEcoUtenze", "IDENTE")
+                    myDataSet = ctx.GetDataSet(sSQL, "TBL", ctx.GetParam("IDENTE", sIdEnte))
+                Catch ex As Exception
+                    Log.Debug(sIdEnte + " - OPENgovTIA.ClsDichiarazione.GetIsolaEcologicaUtenze.erroreQuery: ", ex)
+                    Return Nothing
+                Finally
+                    ctx.Dispose()
+                End Try
+            End Using
+        Catch Err As Exception
+            Log.Debug(sIdEnte + " - OPENgovTIA.ClsDichiarazione.GetIsolaEcologicaUtenze.errore: ", Err)
+        End Try
+        Return myDataSet.Tables(0)
+    End Function
 End Class
 ''' <summary>
 ''' Classe per la gestione degli avvisi

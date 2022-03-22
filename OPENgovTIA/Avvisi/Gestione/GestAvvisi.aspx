@@ -66,7 +66,7 @@
 			<table width="100%">
 			    <tr>
 				    <td colspan="2" class="hidden">
-				        <asp:Label ID="Label13" CssClass="lstTabRow" runat="server">Tipologia Calcolo</asp:Label><br />
+				        <asp:Label ID="Label14" CssClass="lstTabRow" runat="server">Tipologia Calcolo</asp:Label><br />
 				        <fieldset id="Fieldset1" class="classeFieldSetRicerca" runat="server">
 				            <table>
 				                <tr>
@@ -247,13 +247,6 @@
 									                    <ItemTemplate>
 										                    <asp:Label runat="server" text='<%# FncGrd.FormattaConferimenti("P", DataBinder.Eval(Container, "DataItem.oPesature")) %>' id="Label9">
 										                    </asp:Label>
-									                    </ItemTemplate>
-								                    </asp:TemplateField>
-								                    <asp:TemplateField HeaderText="Agev.">
-									                    <ItemStyle HorizontalAlign="Center"></ItemStyle>
-									                    <ItemTemplate>
-										                    <asp:ImageButton id="Imagebutton1" runat="server" Height="15px" Width="15px" CommandName="Edit" ImageUrl='<%# FncGrd.FormattaRidDet(DataBinder.Eval(Container, "DataItem.impRiduzione")) %>'>
-										                    </asp:ImageButton>
 									                    </ItemTemplate>
 								                    </asp:TemplateField>
 								                    <asp:TemplateField HeaderText="">
@@ -440,7 +433,7 @@
 								                <asp:TemplateField HeaderText="Data Scadenza">
 									                <ItemStyle Width="50px"></ItemStyle>
 									                <ItemTemplate>
-										                <asp:Label runat="server" Text='<%# FncGrd.FormattaDataGrd(DataBinder.Eval(Container, "DataItem.tDataScadenza"))%>' ID="Label3">
+										                <asp:Label runat="server" Text='<%# FncGrd.FormattaDataGrd(DataBinder.Eval(Container, "DataItem.tDataScadenza"))%>' ID="Label14">
 										                </asp:Label>
 									                </ItemTemplate>
 								                </asp:TemplateField>

@@ -49,7 +49,7 @@ Public Class Formatta
                     End If
                 End If
             Catch ex As Exception
-                Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.FunctionGrd.annoBarra.errore: ", ex)
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.FunctionGrd.annoBarra.errore: ", ex)
                 strTemp = ""
             End Try
             Return strTemp
@@ -68,7 +68,7 @@ Public Class Formatta
                     End If
                 End If
             Catch ex As Exception
-                Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.FunctionGrd.FormattaDataGrd.errore: ", ex)
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.FunctionGrd.FormattaDataGrd.errore: ", ex)
                 Return ""
             End Try
         End Function
@@ -95,7 +95,7 @@ Public Class Formatta
                 End If
                 Return strTemp
             Catch ex As Exception
-                Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.FunctionGrd.ParseDate.errore: ", ex)
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.FunctionGrd.ParseDate.errore: ", ex)
                 Return ""
             End Try
         End Function
@@ -116,7 +116,7 @@ Public Class Formatta
                     End If
                 End If
             Catch ex As Exception
-                Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.FunctionGrd.FormattaNumeriGrd.errore: ", ex)
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.FunctionGrd.FormattaNumeriGrd.errore: ", ex)
                 Return ""
             End Try
         End Function
@@ -137,7 +137,7 @@ Public Class Formatta
                 End If
                 Return strOutput
             Catch ex As Exception
-                Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.FunctionGrd.FormatStringToEmpty.errore: ", ex)
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.FunctionGrd.FormatStringToEmpty.errore: ", ex)
                 Return ""
             End Try
         End Function
@@ -158,7 +158,7 @@ Public Class Formatta
                 End If
                 Return strOutput
             Catch ex As Exception
-                Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.FunctionGrd.FormatStringToZero.errore: ", ex)
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.FunctionGrd.FormatStringToZero.errore: ", ex)
                 Return ""
             End Try
         End Function
@@ -211,7 +211,7 @@ Public Class Formatta
                 End If
                 Return NumeroDaFormattareParam
             Catch ex As Exception
-                Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.FunctionGrd.FormattaNumero.errore: ", ex)
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.FunctionGrd.FormattaNumero.errore: ", ex)
                 Return ""
             End Try
         End Function
@@ -251,7 +251,7 @@ Public Class Formatta
                     Return "False"
                 End If
             Catch ex As Exception
-                Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.FunctionGrd.checkMesiRiduzione.errore: ", ex)
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.FunctionGrd.checkMesiRiduzione.errore: ", ex)
                 Return "False"
             End Try
         End Function
@@ -271,7 +271,7 @@ Public Class Formatta
 
                 Return ConvertABS
             Catch ex As Exception
-                Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.FunctionGrd.ConvertABS.errore: ", ex)
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.FunctionGrd.ConvertABS.errore: ", ex)
                 Return ""
             End Try
         End Function
@@ -286,7 +286,7 @@ Public Class Formatta
                         Return 30
                 End Select
             Catch ex As Exception
-                Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.FunctionGrd.giorni_mese.errore: ", ex)
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.FunctionGrd.giorni_mese.errore: ", ex)
             End Try
         End Function
         Public Function checkPertinenza(ByVal objtempPERT As Object, ByVal objtempIMM As Object) As String

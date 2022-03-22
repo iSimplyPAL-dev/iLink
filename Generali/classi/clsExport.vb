@@ -381,7 +381,7 @@ Public Class clsExport
     Private Sub ExportAnagrafe()
         Try
             DtDatiStampa = New DataTable
-            nCol = 26
+            nCol = 18
             DtDatiStampa = GetDatiAnagrafe(nCol)
             CacheManager.SetAvanzamentoExport(CType(ListProgress.ToArray(GetType(String)), String()))
             If Not IsNothing(DtDatiStampa) Then
@@ -458,30 +458,7 @@ Public Class clsExport
                 sDatiStampa += "|Città Invio"
                 sDatiStampa += "|Provincia Invio"
                 sDatiStampa += "|Codice Famiglia"
-                sDatiStampa += "|Tipo Contatto"
                 sDatiStampa += "|Contatto"
-                sDatiStampa += "|Data validità invio"
-                If _ApplicationsEnabled.IndexOf(Utility.Costanti.TRIBUTO_ICI) > 0 Then
-                    sDatiStampa += "|IMU"
-                End If
-                If _ApplicationsEnabled.IndexOf(Utility.Costanti.TRIBUTO_TARSU) > 0 Then
-                    sDatiStampa += "|TARI"
-                End If
-                If _ApplicationsEnabled.IndexOf(Utility.Costanti.TRIBUTO_OSAP) > 0 Then
-                    sDatiStampa += "|OSAP"
-                End If
-                If _ApplicationsEnabled.IndexOf(Utility.Costanti.TRIBUTO_SCUOLE) > 0 Then
-                    sDatiStampa += "|SCUOLA"
-                End If
-                If _ApplicationsEnabled.IndexOf(Utility.Costanti.TRIBUTO_H2O) > 0 Then
-                    sDatiStampa += "|H2O"
-                End If
-                If _ApplicationsEnabled.IndexOf(Utility.Costanti.TRIBUTO_OSAP) > 0 Then
-                    sDatiStampa += "|OSAP"
-                End If
-                If _ApplicationsEnabled.IndexOf(Utility.Costanti.TRIBUTO_Accertamento) > 0 Then
-                    sDatiStampa += "|PROV"
-                End If
                 If New ClsStampaXLS().AddRowStampa(DtStampa, sDatiStampa) = 0 Then
                     Return Nothing
                 End If
@@ -509,50 +486,6 @@ Public Class clsExport
                     sDatiStampa += "|" + Utility.StringOperation.FormatString(myRow("pv_invio"))
                     sDatiStampa += "|" + Utility.StringOperation.FormatString(myRow("numerofamiglia"))
                     sDatiStampa += "|" + Utility.StringOperation.FormatString(myRow("descrcontatto"))
-                    sDatiStampa += "|'" + Utility.StringOperation.FormatString(myRow("datiriferimento"))
-                    sDatiStampa += "|" + Utility.StringOperation.FormatString(myRow("datavaliditainviomail")).Replace("Data validità invio", "")
-                    If _ApplicationsEnabled.IndexOf(Utility.Costanti.TRIBUTO_ICI) > 0 Then
-                        If Utility.StringOperation.FormatString(myRow("ICI")) = "1" Then
-                            sDatiStampa += "|X"
-                        Else
-                            sDatiStampa += "|"
-                        End If
-                    End If
-                    If _ApplicationsEnabled.IndexOf(Utility.Costanti.TRIBUTO_TARSU) > 0 Then
-                        If Utility.StringOperation.FormatString(myRow("TARSU")) = "1" Then
-                            sDatiStampa += "|X"
-                        Else
-                            sDatiStampa += "|"
-                        End If
-                    End If
-                    If _ApplicationsEnabled.IndexOf(Utility.Costanti.TRIBUTO_OSAP) > 0 Then
-                        If Utility.StringOperation.FormatString(myRow("OSAP")) = "1" Then
-                            sDatiStampa += "|X"
-                        Else
-                            sDatiStampa += "|"
-                        End If
-                    End If
-                    If _ApplicationsEnabled.IndexOf(Utility.Costanti.TRIBUTO_SCUOLE) > 0 Then
-                        If Utility.StringOperation.FormatString(myRow("SCUOLA")) = "1" Then
-                            sDatiStampa += "|X"
-                        Else
-                            sDatiStampa += "|"
-                        End If
-                    End If
-                    If _ApplicationsEnabled.IndexOf(Utility.Costanti.TRIBUTO_H2O) > 0 Then
-                        If Utility.StringOperation.FormatString(myRow("H2O")) = "1" Then
-                            sDatiStampa += "|X"
-                        Else
-                            sDatiStampa += "|"
-                        End If
-                    End If
-                    If _ApplicationsEnabled.IndexOf(Utility.Costanti.TRIBUTO_Accertamento) > 0 Then
-                        If Utility.StringOperation.FormatString(myRow("PROVVEDIMENTI")) = "1" Then
-                            sDatiStampa += "|X"
-                        Else
-                            sDatiStampa += "|"
-                        End If
-                    End If
                     If New ClsStampaXLS().AddRowStampa(DtStampa, sDatiStampa) = 0 Then
                         Return Nothing
                     End If
@@ -888,7 +821,7 @@ Public Class clsExport
     Private Sub ExportDichTARI()
         Try
             DtDatiStampa = New DataTable
-            nCol = 47
+            nCol = 45
             DtDatiStampa = GetDatiDichTARI(nCol)
             CacheManager.SetAvanzamentoExport(CType(ListProgress.ToArray(GetType(String)), String()))
             If Not IsNothing(DtDatiStampa) Then
@@ -959,10 +892,9 @@ Public Class clsExport
                 sDatiStampa += "|Stato Occupazione"
                 sDatiStampa += "|Categoria Catastale|MQ Totali"
                 sDatiStampa += "|MQ Tassabili|Categoria Tariffaria|N.Componenti|N.Componenti PV"
-                sDatiStampa += "|Forza Calcolo PV"
                 sDatiStampa += "|Tipo Vano|MQ Vano"
                 sDatiStampa += "|Vani Esenti"
-                sDatiStampa += "|Tarsu Giornaliera|Giorni|Riduzioni|Agevolazioni|Occupazione/Detenzione|Singolo Nucleo|Destinazione d'uso|Tipo Unità"
+                sDatiStampa += "|Riduzioni|Agevolazioni|Titolo Occupazione|Natura Occupazione|Tipo Unità|Destinazione d'uso"
                 sDatiStampa += "|Note"
                 If New ClsStampaXLS().AddRowStampa(DtStampa, sDatiStampa) = 0 Then
                     Return Nothing
@@ -985,7 +917,10 @@ Public Class clsExport
                         sDatiStampa += "|" + New FunctionGrd().FormattaDataGrd(Utility.StringOperation.FormatDateTime(myRow("DATA_RILASCIO")))
                         sDatiStampa += "|" + New FunctionGrd().FormattaDataGrd(Utility.StringOperation.FormatDateTime(myRow("DATA_CESSAZIONE")))
                     End If
-                    sDatiStampa += "|" + (Utility.StringOperation.FormatString(myRow("Via")) + " " + Utility.StringOperation.FormatString(myRow("Civico")) + " " + Utility.StringOperation.FormatString(myRow("esponente")) + " " + Utility.StringOperation.FormatString(myRow("interno"))).Trim
+                    sDatiStampa += "|" + Utility.StringOperation.FormatString(myRow("Via"))
+                    sDatiStampa += "|" + Utility.StringOperation.FormatString(myRow("Civico"))
+                    sDatiStampa += "|" + Utility.StringOperation.FormatString(myRow("esponente"))
+                    sDatiStampa += "|" + Utility.StringOperation.FormatString(myRow("interno"))
                     sDatiStampa += "|" + New FunctionGrd().FormattaDataGrd(Utility.StringOperation.FormatDateTime(myRow("DATA_INIZIO")))
                     sDatiStampa += "|" + New FunctionGrd().FormattaDataGrd(Utility.StringOperation.FormatDateTime(myRow("DATA_FINE")))
                     sDatiStampa += "|" + Utility.StringOperation.FormatString(myRow("FOGLIO"))
@@ -998,18 +933,12 @@ Public Class clsExport
                     sDatiStampa += "|" + Utility.StringOperation.FormatString(myRow("cattares"))
                     sDatiStampa += "|" + Utility.StringOperation.FormatString(myRow("ncomponenti"))
                     sDatiStampa += "|" + Utility.StringOperation.FormatString(myRow("ncomponenti_pv"))
-                    sDatiStampa += "|" + Utility.StringOperation.FormatString(myRow("FORZA_CALCOLAPV"))
                     sDatiStampa += "|" + Utility.StringOperation.FormatString(myRow("DescTipoVano"))
                     sDatiStampa += "|" + Utility.StringOperation.FormatString(myRow("mq"))
                     If Utility.StringOperation.FormatBool(myRow("esente")) = True Then
                         sDatiStampa += "|X"
                     Else
                         sDatiStampa += "|"
-                    End If
-                    If Utility.StringOperation.FormatInt(myRow("GGTARSU")) <= 0 Then
-                        sDatiStampa += "|No|"
-                    Else
-                        sDatiStampa += "|Si|" + Utility.StringOperation.FormatString(myRow("GGTARSU"))
                     End If
                     sDatiStampa += "|" + Utility.StringOperation.FormatString(myRow("idriduzione"))
                     sDatiStampa += "|" + Utility.StringOperation.FormatString(myRow("iddetassazione"))
@@ -1131,7 +1060,7 @@ Public Class clsExport
                         sDatiStampa += "|'" + myRow.sCodFiscale.ToUpper()
                         sDatiStampa += "|" + myRow.sIndirizzoRes
                         If myRow.sCivicoRes <> "-1" Then
-                            sDatiStampa += "|'" + myRow.sCivicoRes
+                            sDatiStampa += "|" + myRow.sCivicoRes
                         Else
                             sDatiStampa += "|"
                         End If
@@ -1148,10 +1077,10 @@ Public Class clsExport
                         Dim impSpese As Double = 0
                         Dim impSanzioni As Double = 0
 
-                        sDatiStampa += "|'" + myRow.sNominativoCO
+                        sDatiStampa += "|" + myRow.sNominativoCO
                         sDatiStampa += "|" + myRow.sIndirizzoCO
                         If myRow.sCivicoCO <> "-1" Then
-                            sDatiStampa += "|'" + myRow.sCivicoCO
+                            sDatiStampa += "|" + myRow.sCivicoCO
                         Else
                             sDatiStampa += "|"
                         End If
@@ -1437,8 +1366,7 @@ Public Class clsExport
                 If New ClsStampaXLS().AddRowStampa(DtStampa, sDatiStampa) = 0 Then
                     Return Nothing
                 End If
-                sDatiStampa = "Ente"
-                sDatiStampa = "|Cognome|Nome|Cod.Fiscale/P.Iva"
+                sDatiStampa = "Cognome|Nome|Cod.Fiscale/P.Iva"
                 sDatiStampa += "|Anno|N.Avviso"
                 sDatiStampa += "|Imp.Emesso Comune|Imp.Emesso Maggiorazione"
                 sDatiStampa += "|Imp.Emesso"

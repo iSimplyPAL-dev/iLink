@@ -143,7 +143,7 @@
 		                        return false;
 		                    }
 		                    break;
-		                case "4":
+		                case "4": case "6":
 		                    if (!echeck(document.getElementById('txtDatiRiferimento').value)) {
 		                        strMessage = "Attenzione...\n\n E-mail inserita non valida!\n\n"
 		                        GestAlert('a', 'warning', '', '', strMessage);

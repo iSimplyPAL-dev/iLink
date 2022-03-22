@@ -1,3 +1,6 @@
+Imports System.IO
+Imports System.Net
+Imports ICSharpCode.SharpZipLib.Zip
 Imports log4net
 Imports RemotingInterfaceMotoreTarsu.MotoreTarsuVARIABILE.Oggetti
 Imports Utility
@@ -55,6 +58,7 @@ Partial Class RicercaDichiarazione
         Dim sOrigineRichiamo As String = ""
 
         Try
+            LblFileToDownload.Attributes.Add("onclick", "CmdScarica.click()")
             If TxtViaRibaltata.Text <> "" And TxtViaRibaltata.Text <> " " Then
                 TxtVia.Text = TxtViaRibaltata.Text
             Else
@@ -128,7 +132,7 @@ Partial Class RicercaDichiarazione
                     Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.RicercaDichiarazione.Page_Load.reloaddllenti.errore: ", ex)
                 End Try
                 sScript += "document.getElementById('trEnte').style.display='none';"
-                sScript += "$('span.Input_Emphasized').hide();"
+                sScript += "$('span.Input_Emphasized').hide();$('#FileToDownload').hide();"
                 RegisterScript(sScript, Me.GetType)
             End If
             HideParamSearch()
@@ -449,6 +453,163 @@ Partial Class RicercaDichiarazione
         End Try
     End Sub
     '*** ***
+    ''' <summary>
+    ''' 
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    Private Sub CmdIsolaEco_Click(sender As Object, e As EventArgs) Handles CmdIsolaEco.Click
+        'Stampa Dichiarazioni TARSU Analitico
+        Dim sNameXLS, sNameZIP, sScript As String
+        Dim DtDatiAnagrafe As New DataTable
+        Dim DtDatiUtenze As New DataTable
+        Dim aListColonne As ArrayList
+        Dim x, nCol As Integer
+        Dim aMyHeaders As String()
+        Dim MyCol() As Integer
+        Dim MyStampa As New RKLib.ExportData.Export("Win")
+        Dim ListFile As New ArrayList
+
+        Try
+            nCol = 8
+            DtDatiAnagrafe = New ClsDichiarazione().GetIsolaEcologicaAnagrafe(ConstSession.StringConnection, ConstSession.IdEnte)
+            DtDatiUtenze = New ClsDichiarazione().GetIsolaEcologicaUtenze(ConstSession.StringConnection, ConstSession.IdEnte)
+        Catch ex As Exception
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.RicercaDichiarazione.CmdIsolaEco_Click.errore: ", ex)
+            Response.Redirect("../../PaginaErrore.aspx")
+        End Try
+
+        If Not DtDatiAnagrafe Is Nothing Then
+            sNameXLS = ConstSession.PathFileIsolaEcologica & "ANAGRAFE_" & Format(Now, "yyyyMMdd_hhmmss") & ".csv"
+
+            'definisco le colonne
+            aListColonne = New ArrayList
+            aListColonne.Add("NUMEROFAMIGLIA")
+            aListColonne.Add("CODICEFISCALE")
+            aListColonne.Add("COGNOME")
+            aListColonne.Add("NOME")
+            aListColonne.Add("DATANASCITA")
+            aListColonne.Add("COMUNENASCITA")
+            aListColonne.Add("INDIRIZZO")
+            aListColonne.Add("COMUNERESIDENZA")
+            aListColonne.Add("NUMEROPERSONA")
+            aMyHeaders = CType(aListColonne.ToArray(GetType(String)), String())
+
+            'definisco l'insieme delle colonne da esportare
+            MyCol = New Integer(nCol) {}
+            For x = 0 To nCol
+                MyCol(x) = x
+            Next
+            'esporto i dati in excel
+            MyStampa.ExportDetails(DtDatiAnagrafe, MyCol, aMyHeaders, RKLib.ExportData.Export.ExportFormat.CSV, sNameXLS)
+            ListFile.Add(sNameXLS)
+
+            If Not DtDatiUtenze Is Nothing Then
+                sNameXLS = ConstSession.PathFileIsolaEcologica & "UTENZE_" & Format(Now, "yyyyMMdd_hhmmss") & ".csv"
+                nCol = 14
+
+                'definisco le colonne
+                aListColonne = New ArrayList
+                aListColonne.Add("CODCONTR")
+                aListColonne.Add("UTENZA")
+                aListColonne.Add("COGNOME_DENOM")
+                aListColonne.Add("NOME")
+                aListColonne.Add("COD_FISCALE")
+                aListColonne.Add("PARTITA_IVA")
+                aListColonne.Add("CODICE_VIA_UTE")
+                aListColonne.Add("INDIRIZZO_UTE")
+                aListColonne.Add("NUMERO_CIVICO_UTE")
+                aListColonne.Add("ESPONENTE_CIVICO_UTE")
+                aListColonne.Add("DATA_DECO_TASSAZIONE")
+                aListColonne.Add("CATEGORIA")
+                aListColonne.Add("DESC_CATEGORIA")
+                aListColonne.Add("TIPO_CATEGORIA")
+                aListColonne.Add("ID_UTERIGHE")
+                aMyHeaders = CType(aListColonne.ToArray(GetType(String)), String())
+
+                'definisco l'insieme delle colonne da esportare
+                MyCol = New Integer(nCol) {}
+                For x = 0 To nCol
+                    MyCol(x) = x
+                Next
+                'esporto i dati in excel
+                MyStampa.ExportDetails(DtDatiUtenze, MyCol, aMyHeaders, RKLib.ExportData.Export.ExportFormat.CSV, sNameXLS)
+                ListFile.Add(sNameXLS)
+                Try
+                    sNameZIP = "ISOLAECOLOGICA_" & Format(Now, "yyyyMMdd_hhmmss") & ".zip"
+                    Dim astrFileNames() As String = Directory.GetFiles(ConstSession.PathFileIsolaEcologica)
+                    Dim strmZipOutputStream As New ZipOutputStream(File.Create(ConstSession.PathFileIsolaEcologica + sNameZIP))
+                    For Each myfile As String In astrFileNames
+                        For Each NameFile As String In ListFile
+                            If myfile.ToLower = NameFile.ToLower Then
+                                Dim entry As New ZipEntry(Path.GetFileName(myfile))
+                                entry.DateTime = DateTime.Now
+                                strmZipOutputStream.PutNextEntry(entry)
+                                strmZipOutputStream.Write(File.ReadAllBytes(myfile), 0, File.ReadAllBytes(myfile).Length)
+                                Exit For
+                            End If
+                        Next
+                    Next
+                    strmZipOutputStream.Finish()
+                    strmZipOutputStream.Close()
+                Catch ex As Exception
+                    Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.RicercaDichiarazione.CmdIsolaEco_Click.ZipFile.errore: ", ex)
+                End Try
+                For Each myFile As String In ListFile
+                    File.Delete(myFile)
+                Next
+                sScript = "GestAlert('a', 'success', '', '', 'Estrazione terminata con successo!');"
+                sScript += "$('LblFileToDownload').show();$('#FileToDownload').show();"
+                LblFileToDownload.Text = sNameZIP
+                RegisterScript(sScript, Me.GetType)
+                ''1 - The most trivial way to upload a binary file to an FTP server using .NET framework Is using WebClient.UploadFile
+                'Dim client As WebClient = New WebClient
+                'client.Credentials = New NetworkCredential("username", "password")
+                'client.UploadFile("ftp://ftp.example.com/remote/path/file.zip", "C:\local\path\file.zip")
+                ''2 - If you Then need a greater control, that WebClient does Not offer (Like TLS/SSL encryption, ascii/text transfer mode, active mode, transfer resuming, etc), use FtpWebRequest. Easy way Is To just copy a FileStream To FTP stream Using Stream.CopyTo
+                'Dim request As FtpWebRequest = WebRequest.Create("ftp://ftp.example.com/remote/path/file.zip")
+                'request.Credentials = New NetworkCredential("username", "password")
+                'request.Method = WebRequestMethods.Ftp.UploadFile
+                'Using fileStream As Stream = File.OpenRead("C:\local\path\file.zip"), ftpStream As Stream = request.GetRequestStream()
+                '    fileStream.CopyTo(ftpStream)
+                'End Using
+                '3 - If you Then need To monitor an upload progress, you have To copy the contents by chunks yourself
+                'Dim request As FtpWebRequest = WebRequest.Create("ftp://ftp.example.com/remote/path/file.zip")
+                'request.Credentials = New NetworkCredential("username", "password")
+                'request.Method = WebRequestMethods.Ftp.UploadFile
+                'Using fileStream As Stream = File.OpenRead("C:\local\path\file.zip"), ftpStream As Stream = request.GetRequestStream()
+                '    Dim read As Integer
+                '    Do
+                '        Dim buffer() As Byte = New Byte(10240) {}
+                '        read = fileStream.Read(buffer, 0, buffer.Length)
+                '        If read > 0 Then
+                '            ftpStream.Write(buffer, 0, read)
+                '            Console.WriteLine("Uploaded {0} bytes", fileStream.Position)
+                '        End If
+                '    Loop While read > 0
+                'End Using
+            Else
+                sScript = "GestAlert('a', 'danger', '', '', 'Errore in estrazione!');"
+                sScript += "parent.parent.Visualizza.DivAttesa.style.display='none';"
+                RegisterScript(sScript, Me.GetType)
+            End If
+        Else
+            sScript = "GestAlert('a', 'danger', '', '', 'Errore in estrazione!');"
+            sScript += "parent.parent.Visualizza.DivAttesa.style.display='none';"
+            RegisterScript(sScript, Me.GetType)
+        End If
+    End Sub
+    ''' <summary>
+    ''' 
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    Private Sub CmdScarica_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles CmdScarica.Click
+        Response.ContentType = "*/*"
+        Response.AppendHeader("content-disposition", "attachment; filename=" + LblFileToDownload.Text)
+        Response.WriteFile(ConstSession.PathFileIsolaEcologica + LblFileToDownload.Text)
+        Response.End()
+    End Sub
     ''' <summary>
     ''' 
     ''' </summary>

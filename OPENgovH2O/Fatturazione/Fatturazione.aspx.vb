@@ -315,7 +315,7 @@ Partial Class Fatturazione
         Dim oListTotRuolo() As ObjTotRuoloFatture
 
         Log.Debug("Entro in Fatturazione::CmdStampaMinuta_Click::" & Now.ToString)
-        nCol = 51
+        nCol = 54
         oMyTotRuolo = Session("oRuoloH2O")
         'devono essere stati fatti i calcoli
         If oMyTotRuolo.tDataCalcoli = Date.MaxValue Then 'LblDataCalcolo.Text = "" Then
@@ -881,7 +881,7 @@ Partial Class Fatturazione
                     Log.Debug("Entro in Fatturazione::GrdFatturazioniPrec_UpdateCommand::" & Now.ToString)
 
                     '' BD 25/06/2021 erano 46
-                    nCol = 51
+                    nCol = 54
                     '' BD 25/06/2021
 
                     'prelevo i ruoli per i parametri inseriti

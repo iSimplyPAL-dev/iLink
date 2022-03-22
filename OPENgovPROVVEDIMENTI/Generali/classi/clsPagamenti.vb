@@ -805,6 +805,44 @@ Public Class clsPagamenti
         End Try
         Return myDataSet
     End Function
+    ''' <summary>
+    ''' stampa i pagamenti in base ai parametri
+    ''' </summary>
+    ''' <param name="sIdEnte">string ente</param>
+    ''' <param name="cognome">string cognome</param>
+    ''' <param name="nome">string nome</param>
+    ''' <param name="cod_fiscale">string codice fiscale</param>
+    ''' <param name="partita_iva">string partita iva</param>
+    ''' <param name="NAtto">string numero atto</param>
+    ''' <param name="Dal">DateTime dalla data pagamento</param>
+    ''' <param name="Al">DateTime alla data pagamento </param>
+    ''' <returns>DataSet risultato ricerca</returns>
+    Function GetStampaPagamenti(ByVal sIdEnte As String, ByVal sCognome As String, ByVal sNome As String, ByVal sCFPIVA As String, NAtto As String, Dal As DateTime, Al As DateTime) As DataTable
+        Dim myDataSet As New DataSet
+        Try
+            Using ctx As New DBModel(ConstSession.DBType, ConstSession.StringConnection)
+                Try
+                    sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_GetStampaPagamenti", "IDENTE", "COGNOME", "NOME", "CFPIVA", "NATTO", "DAL", "AL")
+                    myDataSet = ctx.GetDataSet(sSQL, "TBL", ctx.GetParam("IDENTE", sIdEnte) _
+                            , ctx.GetParam("COGNOME", New OPENgovTIA.generalClass.generalFunction().ReplaceCharsForSearch(sCognome) & "%") _
+                            , ctx.GetParam("NOME", New OPENgovTIA.generalClass.generalFunction().ReplaceCharsForSearch(sNome) & "%") _
+                            , ctx.GetParam("CFPIVA", New OPENgovTIA.generalClass.generalFunction().ReplaceCharsForSearch(sCFPIVA) & "%") _
+                            , ctx.GetParam("NATTO", NAtto) _
+                            , ctx.GetParam("DAL", New OPENgovTIA.generalClass.generalFunction().FormattaData(Dal, "A")) _
+                            , ctx.GetParam("AL", New OPENgovTIA.generalClass.generalFunction().FormattaData(Al, "A"))
+                        )
+                Catch ex As Exception
+                    Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsPagamenti.GetStampaPagamenti.erroreQuery: ", ex)
+                    Return Nothing
+                Finally
+                    ctx.Dispose()
+                End Try
+            End Using
+            Return myDataSet.Tables(0)
+        Catch ex As Exception
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsPagamenti.GetStampaPagamenti.errore: ", ex)
+        End Try
+    End Function
 
     '
     ''' <summary>
@@ -2048,59 +2086,37 @@ Public Class clsPagamenti
     '    End Try
     'End Function
     Public Function GetExportRate(IdEnte As String) As DataView
-        Dim myAdapter As New SqlClient.SqlDataAdapter
-        Dim dtMyDati As New DataTable()
-        Dim cmdMyCommand As New SqlClient.SqlCommand
-
+        Dim dvMyDati As New DataView
+        Dim sSQL As String = ""
         Try
-            cmdMyCommand.Connection = New SqlClient.SqlConnection(strConnectionStringOPENgovProvvedimenti)
-            cmdMyCommand.Connection.Open()
-            cmdMyCommand.CommandTimeout = 0
-            cmdMyCommand.CommandType = CommandType.StoredProcedure
-            cmdMyCommand.CommandText = "prc_GetExportRate"
-            cmdMyCommand.Parameters.Clear()
-            cmdMyCommand.Parameters.AddWithValue("@IDENTE", IdEnte)
-            myAdapter.SelectCommand = cmdMyCommand
-            Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
-            myAdapter.Fill(dtMyDati)
-            Return dtMyDati.DefaultView
+            'prelevo i dati
+            Dim oDbManagerRepository As New DBModel(ConstSession.DBType, strConnectionStringOPENgovProvvedimenti)
+            Using ctx As DBModel = oDbManagerRepository
+                sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_GetExportRate", "IDENTE")
+                dvMyDati = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("IDENTE", IdEnte))
+                ctx.Dispose()
+            End Using
+            Return dvMyDati
         Catch Err As Exception
-            Log.Debug(IdEnte + " - OPENgovPROVVEDIMENTI.ClsRicercaAtti.GetExportRate.errore: ", Err)
-            Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
+            Log.Debug(IdEnte + " - OPENgovPROVVEDIMENTI.ClsPagamenti.GetExportRate.errore: ", Err)
             Return Nothing
-        Finally
-            myAdapter.Dispose()
-            dtMyDati.Dispose()
-            cmdMyCommand.Dispose()
-            cmdMyCommand.Connection.Close()
         End Try
     End Function
     Public Function GetExportPagamenti(IdEnte As String) As DataView
-        Dim myAdapter As New SqlClient.SqlDataAdapter
-        Dim dtMyDati As New DataTable()
-        Dim cmdMyCommand As New SqlClient.SqlCommand
-
+        Dim dvMyDati As New DataView
+        Dim sSQL As String = ""
         Try
-            cmdMyCommand.Connection = New SqlClient.SqlConnection(strConnectionStringOPENgovProvvedimenti)
-            cmdMyCommand.Connection.Open()
-            cmdMyCommand.CommandTimeout = 0
-            cmdMyCommand.CommandType = CommandType.StoredProcedure
-            cmdMyCommand.CommandText = "prc_GetExportPagamenti"
-            cmdMyCommand.Parameters.Clear()
-            cmdMyCommand.Parameters.AddWithValue("@IDENTE", IdEnte)
-            myAdapter.SelectCommand = cmdMyCommand
-            Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
-            myAdapter.Fill(dtMyDati)
-            Return dtMyDati.DefaultView
+            'prelevo i dati
+            Dim oDbManagerRepository As New DBModel(ConstSession.DBType, strConnectionStringOPENgovProvvedimenti)
+            Using ctx As DBModel = oDbManagerRepository
+                sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_GetExportPagamenti", "IDENTE")
+                dvMyDati = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("IDENTE", IdEnte))
+                ctx.Dispose()
+            End Using
+            Return dvMyDati
         Catch Err As Exception
-            Log.Debug(IdEnte + " - OPENgovPROVVEDIMENTI.ClsRicercaAtti.GetExportPagamenti.errore: ", Err)
-            Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
+            Log.Debug(IdEnte + " - OPENgovPROVVEDIMENTI.ClsPagamenti.GetExportPagamenti.errore: ", Err)
             Return Nothing
-        Finally
-            myAdapter.Dispose()
-            dtMyDati.Dispose()
-            cmdMyCommand.Dispose()
-            cmdMyCommand.Connection.Close()
         End Try
     End Function
 End Class

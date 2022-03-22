@@ -846,6 +846,20 @@ Public Class ConstSession
             End Try
         End Get
     End Property
+    Public Shared ReadOnly Property PathFileIsolaEcologica() As String
+        Get
+            Try
+                If (HttpContext.Current.Session("PathFileIsolaEcologica") Is Nothing) Then
+                    Return ""
+                Else
+                    Return HttpContext.Current.Session("PathFileIsolaEcologica").ToString
+                End If
+            Catch ex As Exception
+                Log.Debug(" - OPENgovTIA.ConstSession.PathFileIsolaEcologica.errore: ", ex)
+                Return ""
+            End Try
+        End Get
+    End Property
 #End Region
 #Region "GIS"
     Public Shared ReadOnly Property VisualGIS() As Boolean

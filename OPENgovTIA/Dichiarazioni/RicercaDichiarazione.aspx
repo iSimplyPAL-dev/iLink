@@ -323,6 +323,10 @@
             </tr>
             <tr>
                 <td>
+                    <fieldset runat="server" id="FileToDownload" class="classeFieldSetRicerca col-md-12">
+                        <label runat="server" class="Legend">Cliccare sul link a fianco per scaricare il file estratto</label>&nbsp;
+                        <asp:label ID="LblFileToDownload" Runat="server" CssClass="Input_Label" Font-Underline="True"></asp:label><br />
+                    </fieldset>
                     <iframe id="loadGrid" src="../../aspVuota.aspx" frameborder="0" width="100%" height="350"></iframe>
                 </td>
             </tr>
@@ -344,9 +348,11 @@
             </div>
             <input type="hidden" id="cmdHeight" value="0" />
         </div>
-        <asp:Button ID="CmdSearch" Style="display: none" runat="server"></asp:Button>
-        <asp:Button ID="CmdGIS" Style="display: none" runat="server"></asp:Button>
-        <asp:Button ID="CmdAggMassivo" Style="display: none" runat="server"></asp:Button>
+        <asp:Button ID="CmdSearch" runat="server" CssClass="hidden"></asp:Button>
+        <asp:Button ID="CmdGIS" runat="server" CssClass="hidden"></asp:Button>
+        <asp:Button ID="CmdAggMassivo" runat="server" CssClass="hidden"></asp:Button>
+        <asp:Button ID="CmdIsolaEco" runat="server" CssClass="hidden"></asp:Button>
+        <asp:Button id="CmdScarica" runat="server" CssClass="hidden" />
     </form>
 </body>
 </html>

@@ -112,7 +112,7 @@ Public Class Export
                     sScript += "$('#myRecap').append('<h2 class=\'Legend\'>Banche dati da scaricare</h2><ul>"
                     For Each myFile As String In ListExtract
                         sScript += "<li>"
-                        sScript += "<i class=\'fa fa-download\'></i>"
+                        'sScript += "<i class=\'fa fa-download\'></i>"
                         sScript += "<a href=\'../" + COSTANTValue.ConstSession.GetRepositoryExport + "/" + COSTANTValue.ConstSession.IdEnte + "/" + myFile + "\' download=\'" + myFile + "\'>" + myFile + "</a>"
                         sScript += "<button id=\'btnDownload" + myFile.Replace(".zip", "") + "\'><i class=\'fa fa-file-archive-o\'></i> Scarica il file</button>"
                         sScript += "</li>"

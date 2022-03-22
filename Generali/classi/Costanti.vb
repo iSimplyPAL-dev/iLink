@@ -27,6 +27,7 @@ Namespace COSTANTValue
             Shared Operatore As String = "URW"
             Shared SolaLettura As String = "URO"
             Shared ControlloSitoOnLine As String = "CSO"
+            Shared SingolaVoceLettura As String = "SFR"
         End Structure
 
         Public Shared ReadOnly Property GetRepositoryMenu() As String

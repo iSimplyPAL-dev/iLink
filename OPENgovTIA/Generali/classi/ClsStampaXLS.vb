@@ -3889,8 +3889,8 @@ Public Class ClsStampaXLS
             sDatiStampa += "|" + FormatNumber(Utility.StringOperation.FormatString(myRow("dovuto")), 2)
             Select Case nTipoStampa
                 Case ClsGestPag.TipoStampaPagamenti
-                    sDatiStampa += "|'" + New Formatta.FunctionGrd().FormattaDataGrd(Utility.StringOperation.FormatDateTime(myRow("data_accredito")))
-                    sDatiStampa += "|'" + New Formatta.FunctionGrd().FormattaDataGrd(Utility.StringOperation.FormatDateTime(myRow("data_pagamento")))
+                    sDatiStampa += "|" + New Formatta.FunctionGrd().FormattaDataGrd(Utility.StringOperation.FormatDateTime(myRow("data_accredito")))
+                    sDatiStampa += "|" + New Formatta.FunctionGrd().FormattaDataGrd(Utility.StringOperation.FormatDateTime(myRow("data_pagamento")))
                     If IdTributo <> Utility.Costanti.TRIBUTO_OSAP And IdTributo <> Utility.Costanti.TRIBUTO_SCUOLE Then
                         sDatiStampa += "|" + FormatNumber(Utility.StringOperation.FormatString(myRow("importo_pagatocomune")), 2)
                         sDatiStampa += "|" + FormatNumber(Utility.StringOperation.FormatString(myRow("importo_pagatostat")), 2)

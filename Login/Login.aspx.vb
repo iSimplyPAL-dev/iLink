@@ -106,7 +106,7 @@ Partial Class Login
             'If Not Request.Item("PROFILO") Is Nothing Or Request.Item("PROFILO") <> "" Then
             If Request.Item("PROFILO") <> "" Then
                 sProfilo = Request.Item("PROFILO")
-                If sProfilo.ToUpper = COSTANTValue.ConstSession.TipoProfilo.SolaLettura Then
+                If sProfilo.ToUpper = COSTANTValue.ConstSession.TipoProfilo.SolaLettura Or sProfilo.ToUpper = COSTANTValue.ConstSession.TipoProfilo.SingolaVoceLettura Then
                     Session("SOLA_LETTURA") = "1"
                 Else
                     Session("SOLA_LETTURA") = "0"
