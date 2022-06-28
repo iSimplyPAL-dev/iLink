@@ -58,6 +58,7 @@ Public Class GestRuolo
         RegisterScript(sScript, Me.GetType())
         'FileEstratto.Visible = False
         DivRiepilogoDaElab.Visible = False
+        visualizzadatiDelibera()
     End Sub
     ''' <summary>
     ''' 
@@ -226,6 +227,8 @@ Public Class GestRuolo
             If CInt(hfIdRuolo.Value) > 0 Then
                 'controllo che siano stati configurati i codici enti
                 If ConstSession.IdEnteCredBen <> "" And ConstSession.Belfiore <> "" Then
+                    If New clsCoattivo().SetDelibera(ConstSession.IdEnte, ConstSession.StringConnection, TxtNDelibera.Text, txtInizioDelibera.Text, txtFineDelibera.Text) = False Then
+                    End If
                     'valorizzo il perco rso e il nome del file
                     sPathFile290 = ConstSession.PathEstrazione290
                     sNameFile290 = ConstSession.IdEnteCredBen & Format(Now, "yy")
@@ -577,7 +580,22 @@ Public Class GestRuolo
             End If
             RegisterScript(sScript, Me.GetType)
         Catch Err As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Coattivo.GestRuolo.VisualizzaRiepilogo.errore: ", Err)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Coattivo.GestRuolo.VisualizzaRiepilogo.errore: ", Err)
+            Response.Redirect("../../../PaginaErrore.aspx")
+        End Try
+    End Sub
+    Private Sub VisualizzaDatiDelibera()
+        Dim Numero, Dal, Al As String
+        Try
+            If New clsCoattivo().GetDelibera(ConstSession.IdEnte, ConstSession.StringConnection, Numero, Dal, Al) Then
+                TxtNDelibera.Text = Numero
+                txtInizioDelibera.Text = Dal
+                txtFineDelibera.Text = Al
+            Else
+                RegisterScript("GestAlert('a', 'warning', '', '', 'Delibera Mancante! Impossibile proseguire!');", Me.GetType)
+            End If
+        Catch ex As Exception
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Coattivo.GestRuolo.VisualizzaDatiDelibera.errore: ", ex)
             Response.Redirect("../../../PaginaErrore.aspx")
         End Try
     End Sub

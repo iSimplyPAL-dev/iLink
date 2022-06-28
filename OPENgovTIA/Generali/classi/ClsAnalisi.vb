@@ -2070,14 +2070,14 @@ Public Class ClsAETracciati
     Private Function GetDatiEnte(ByVal sMyIdEnte As String) As DataView
         Dim dvMyDati As New DataView
         Try
-            Dim oDbManagerRepository As New DBModel(ConstSession.DBType, ConstSession.StringConnection)
+            Dim oDbManagerRepository As New DBModel(ConstSession.DBType, ConstSession.StringConnectionOPENgov)
             Dim sSQL As String = ""
             Using ctx As DBModel = oDbManagerRepository
-                sSQL = "SELECT *"
-                sSQL += " FROM ENTI"
-                sSQL += " WHERE (COD_ENTE=@CODISTAT)"
-                sSQL = ctx.GetSQL(DBModel.TypeQuery.View, sSQL, "CODISTAT")
-                dvMyDati = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("CODISTAT", sMyIdEnte))
+                sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "ENTI_S", "CODISTAT", "AMBIENTE", "BELFIORE")
+                dvMyDati = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("CODISTAT", sMyIdEnte) _
+                                           , ctx.GetParam("AMBIENTE", "") _
+                                           , ctx.GetParam("BELFIORE", "")
+                                        )
                 ctx.Dispose()
             End Using
             Return dvMyDati

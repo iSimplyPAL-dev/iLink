@@ -846,20 +846,6 @@ Public Class ConstSession
             End Try
         End Get
     End Property
-    Public Shared ReadOnly Property PathFileIsolaEcologica() As String
-        Get
-            Try
-                If (HttpContext.Current.Session("PathFileIsolaEcologica") Is Nothing) Then
-                    Return ""
-                Else
-                    Return HttpContext.Current.Session("PathFileIsolaEcologica").ToString
-                End If
-            Catch ex As Exception
-                Log.Debug(" - OPENgovTIA.ConstSession.PathFileIsolaEcologica.errore: ", ex)
-                Return ""
-            End Try
-        End Get
-    End Property
 #End Region
 #Region "GIS"
     Public Shared ReadOnly Property VisualGIS() As Boolean
@@ -905,6 +891,64 @@ Public Class ConstSession
             Catch ex As Exception
                 Log.Debug(" - OPENgovTIA.ConstSession.UrlWebGIS.errore: ", ex)
                 Return "http://map.portalecomuni.net/mapguide/wgis/ddd.html?&GisGuidMap="
+            End Try
+        End Get
+    End Property
+#End Region
+#Region "Isola Ecologica"
+    Public Shared ReadOnly Property IsolaEcologicaPathFile() As String
+        Get
+            Try
+                If (HttpContext.Current.Session("IsolaEcologicaPathFile") Is Nothing) Then
+                    Return ""
+                Else
+                    Return HttpContext.Current.Session("IsolaEcologicaPathFile").ToString
+                End If
+            Catch ex As Exception
+                Log.Debug(" - OPENgovTIA.ConstSession.IsolaEcologicaPathFile.errore: ", ex)
+                Return ""
+            End Try
+        End Get
+    End Property
+    Public Shared ReadOnly Property IsolaEcologicaFTP() As String
+        Get
+            Try
+                If (HttpContext.Current.Session("IsolaEcologicaFTP") Is Nothing) Then
+                    Return ""
+                Else
+                    Return HttpContext.Current.Session("IsolaEcologicaFTP").ToString
+                End If
+            Catch ex As Exception
+                Log.Debug(" - OPENgovTIA.ConstSession.IsolaEcologicaFTP.errore: ", ex)
+                Return ""
+            End Try
+        End Get
+    End Property
+    Public Shared ReadOnly Property IsolaEcologicaFTPUser() As String
+        Get
+            Try
+                If (HttpContext.Current.Session("IsolaEcologicaFTPUser") Is Nothing) Then
+                    Return ""
+                Else
+                    Return HttpContext.Current.Session("IsolaEcologicaFTPUser").ToString
+                End If
+            Catch ex As Exception
+                Log.Debug(" - OPENgovTIA.ConstSession.IsolaEcologicaFTPUser.errore: ", ex)
+                Return ""
+            End Try
+        End Get
+    End Property
+    Public Shared ReadOnly Property IsolaEcologicaFTPPwd() As String
+        Get
+            Try
+                If (HttpContext.Current.Session("IsolaEcologicaFTPPwd") Is Nothing) Then
+                    Return ""
+                Else
+                    Return HttpContext.Current.Session("IsolaEcologicaFTPPwd").ToString
+                End If
+            Catch ex As Exception
+                Log.Debug(" - OPENgovTIA.ConstSession.IsolaEcologicaFTPPwd.errore: ", ex)
+                Return ""
             End Try
         End Get
     End Property

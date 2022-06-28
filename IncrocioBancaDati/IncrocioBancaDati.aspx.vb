@@ -324,6 +324,7 @@ Partial Class IncrocioBancaDati
         Dim arraystr As String()
 
         Try
+            Log.Debug(COSTANTValue.ConstSession.IdEnte + "." + COSTANTValue.ConstSession.UserName + " - OPENgov.IncrocioBancaDati.btnExcel_Click: inizio")
             arraylistNomiColonne = New ArrayList
 
             arraylistNomiColonne.Add("")
@@ -341,6 +342,7 @@ Partial Class IncrocioBancaDati
 
             ds = CreateDataSetDati()
             dtDatiAttuali = ds.Tables("DATI")
+            Log.Debug(COSTANTValue.ConstSession.IdEnte + "." + COSTANTValue.ConstSession.UserName + " - OPENgov.IncrocioBancaDati.btnExcel_Click: CreateDataSetDati fatto")
 
             '**** INTESTAZIONE ****
             dr = dtDatiAttuali.NewRow
@@ -423,6 +425,7 @@ Partial Class IncrocioBancaDati
                     dr(9) = "" 'Stato Utilizzo GEC 
                     dtDatiAttuali.Rows.Add(dr)
                 End If
+                Log.Debug(COSTANTValue.ConstSession.IdEnte + "." + COSTANTValue.ConstSession.UserName + " - OPENgov.IncrocioBancaDati.btnExcel_Click: intestazioni fatto")
 
                 If dvMyDati.Count > 0 Then
                     For i = 0 To dvMyDati.Count - 1
@@ -469,9 +472,11 @@ Partial Class IncrocioBancaDati
                         dtDatiAttuali.Rows.Add(dr)
                     Next
                 End If
+                Log.Debug(COSTANTValue.ConstSession.IdEnte + "." + COSTANTValue.ConstSession.UserName + " - OPENgov.IncrocioBancaDati.btnExcel_Click: dettagliodati fatto")
 
                 '**** SALVATAGGIO PERCORSO ****
                 sNameXLS = COSTANTValue.ConstSession.IdEnte & "_" & sNameXLS & "_" & Format(Now, "yyyyMMdd_hhmmss") & ".xls"
+                Log.Debug(COSTANTValue.ConstSession.IdEnte + "." + COSTANTValue.ConstSession.UserName + " - OPENgov.IncrocioBancaDati.btnExcel_Click: nomefile fatto")
 
             End If
         Catch ex As Exception
@@ -482,11 +487,12 @@ Partial Class IncrocioBancaDati
             arraylistNomiColonne = Nothing
             ds.Dispose()
             dr = Nothing
-            dtDatiAttuali.Dispose()
+            'dtDatiAttuali.Dispose()
             dvMyDati.Dispose()
-            arraystr = Nothing
+            'arraystr = Nothing
         End Try
         If sNameXLS <> "" Then
+            Log.Debug(COSTANTValue.ConstSession.IdEnte + "." + COSTANTValue.ConstSession.UserName + " - OPENgov.IncrocioBancaDati.btnExcel_Click: devo fare xls")
             Dim iColumns As Integer() = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
             Dim objExport As New RKLib.ExportData.Export("Web")
             objExport.ExportDetails(dtDatiAttuali, iColumns, arraystr, RKLib.ExportData.Export.ExportFormat.Excel, sNameXLS)

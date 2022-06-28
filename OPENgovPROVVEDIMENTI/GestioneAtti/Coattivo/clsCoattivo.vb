@@ -946,6 +946,7 @@ Public Class clsCoattivo
         ''' <param name="ErrAnag"></param>
         ''' <param name="ListFile"></param>
         ''' <returns></returns>
+        ''' <revisionHistory><revision date="20200524">Gli avvisi notificati dal 2020 in poi devono essere estratti secondo il nuovo tracciato</revision></revisionHistory>
         Public Function Crea290(ByVal myStringConnection As String, ByVal IdEnteCNC As String, CoattivoDal As String, CoattivoAl As String, IdRuolo As Integer, ByVal sIdEnteCredBen As String, ByVal nRate As Integer, sPathFile As String, ByVal sNameFile As String, ByRef ErrAnag As String, ByRef ListFile As ArrayList) As Integer
             Dim oListArticoli() As RemotingInterfaceMotoreTarsu.MotoreTarsu.Oggetti.OggettoArticoloRuolo
             Dim x As Integer
@@ -979,61 +980,19 @@ Public Class clsCoattivo
                 'prelevo gli articoli da estrarre
                 oListArticoli = GetPosizioni290(myStringConnection, IdEnteCNC, CoattivoDal, CoattivoAl, IdRuolo)
                 If Not oListArticoli Is Nothing Then
-                    'popolo il record N0
-                    oMyN0 = PopolaN0(sIdEnteCredBen)
-                    If Not oMyN0 Is Nothing Then
-                        'incremento il totale dei record
-                        nTotN0 += 1
-                    Else
-                        Return -1
-                    End If
-                    'ciclo su tutti gli articoli trovati e preparo il 290
-                    For x = 0 To oListArticoli.GetUpperBound(0)
-                        'i flussi devono essere suddivisi per tributo quindi controllo se devo creare un nuovo flusso
-                        If oListArticoli(x).TipoRuolo <> TipoPrec And TipoPrec <> "" Then
+                    If oListArticoli.GetLength(0) > 0 Then
+                        'popolo il record N0
+                        oMyN0 = PopolaN0(sIdEnteCredBen)
+                        If Not oMyN0 Is Nothing Then
                             'incremento il totale dei record
-                            nTotN5 += 1
-                            nListN5 += 1
-                            ReDim Preserve oListN5(nListN5)
-                            oMyN5 = New Importer290.N5
-                            'popolo il record N5
-                            oMyN5 = PopolaN5(IdEnteCNC, nTotN1, nTotN2, 0, nTotN4, nTotN5, impTot290)
-                            If Not oMyN5 Is Nothing Then
-                                oListN5(nListN5) = oMyN5
-                            Else
-                                Return -1
-                            End If
-                            'incremento il totale dei record
-                            nTotN9 += 1
-                            'popolo il record N9
-                            oMyN9 = PopolaN9(sIdEnteCredBen, nTotN0, nTotN1, nTotN2, 0, nTotN4, nTotN5, nTotN9)
-                            If oMyN9 Is Nothing Then
-                                Return -1
-                            End If
-
-                            'scrivo il file
-                            If Create290(sPathFile & sNameFile & TipoPrec & ".001", oMyN0, oListN1, oListN4, oListN5, oMyN9) < 1 Then
-                                Return -1
-                            End If
-                            ListFile.Add(sPathFile & sNameFile & TipoPrec & ".001")
-                            'svuoto le variabili
-                            nTotN0 = 0 : nTotN1 = 0 : nTotN2 = 0 : nTotN4 = 0 : nTotN5 = 0 : nTotN9 = 0
-                            nListN1 = -1 : nListN2 = -1 : nListN4 = -1 : nListN5 = -1
-                            oMyN0 = New Importer290.N0 : oListN1 = Nothing : oListN4 = Nothing : oListN5 = Nothing : oMyN9 = New Importer290.N9
-                            sIdEntePrec = "" : nIdContribPrec = -1 : nProgPartita = 0 : impTot290 = 0
-                            'popolo il record N0
-                            oMyN0 = PopolaN0(sIdEnteCredBen)
-                            If Not oMyN0 Is Nothing Then
-                                'incremento il totale dei record
-                                nTotN0 += 1
-                            Else
-                                Return -1
-                            End If
+                            nTotN0 += 1
+                        Else
+                            Return -1
                         End If
-                        'controllo se devo creare un nuovo N1
-                        If oListArticoli(x).Ente <> sIdEntePrec Then
-                            'controllo se devo chiudere l'N1 precedente
-                            If sIdEntePrec <> "" Then
+                        'ciclo su tutti gli articoli trovati e preparo il 290
+                        For x = 0 To oListArticoli.GetUpperBound(0)
+                            'i flussi devono essere suddivisi per tributo quindi controllo se devo creare un nuovo flusso
+                            If oListArticoli(x).TipoRuolo <> TipoPrec And TipoPrec <> "" Then
                                 'incremento il totale dei record
                                 nTotN5 += 1
                                 nListN5 += 1
@@ -1046,85 +1005,131 @@ Public Class clsCoattivo
                                 Else
                                     Return -1
                                 End If
-                            End If
-                            'popolo il record N1
-                            nListN1 += 1
-                            ReDim Preserve oListN1(nListN1)
-                            oMyN1 = New Importer290.N1
-                            oMyN1 = PopolaN1(IdEnteCNC, "1", nRate)
-                            If Not oMyN1 Is Nothing Then
-                                oListN1(nListN1) = oMyN1
                                 'incremento il totale dei record
-                                nTotN1 += 1
+                                nTotN9 += 1
+                                'popolo il record N9
+                                oMyN9 = PopolaN9(sIdEnteCredBen, nTotN0, nTotN1, nTotN2, 0, nTotN4, nTotN5, nTotN9)
+                                If oMyN9 Is Nothing Then
+                                    Return -1
+                                End If
+
+                                'scrivo il file
+                                If Create290(sPathFile & sNameFile & TipoPrec & ".001", oMyN0, oListN1, oListN4, oListN5, oMyN9) < 1 Then
+                                    Return -1
+                                End If
+                                ListFile.Add(sPathFile & sNameFile & TipoPrec & ".001")
+                                'svuoto le variabili
+                                nTotN0 = 0 : nTotN1 = 0 : nTotN2 = 0 : nTotN4 = 0 : nTotN5 = 0 : nTotN9 = 0
+                                nListN1 = -1 : nListN2 = -1 : nListN4 = -1 : nListN5 = -1
+                                oMyN0 = New Importer290.N0 : oListN1 = Nothing : oListN4 = Nothing : oListN5 = Nothing : oMyN9 = New Importer290.N9
+                                sIdEntePrec = "" : nIdContribPrec = -1 : nProgPartita = 0 : impTot290 = 0
+                                'popolo il record N0
+                                oMyN0 = PopolaN0(sIdEnteCredBen)
+                                If Not oMyN0 Is Nothing Then
+                                    'incremento il totale dei record
+                                    nTotN0 += 1
+                                Else
+                                    Return -1
+                                End If
+                            End If
+                            'controllo se devo creare un nuovo N1
+                            If oListArticoli(x).Ente <> sIdEntePrec Then
+                                'controllo se devo chiudere l'N1 precedente
+                                If sIdEntePrec <> "" Then
+                                    'incremento il totale dei record
+                                    nTotN5 += 1
+                                    nListN5 += 1
+                                    ReDim Preserve oListN5(nListN5)
+                                    oMyN5 = New Importer290.N5
+                                    'popolo il record N5
+                                    oMyN5 = PopolaN5(IdEnteCNC, nTotN1, nTotN2, 0, nTotN4, nTotN5, impTot290)
+                                    If Not oMyN5 Is Nothing Then
+                                        oListN5(nListN5) = oMyN5
+                                    Else
+                                        Return -1
+                                    End If
+                                End If
+                                'popolo il record N1
+                                nListN1 += 1
+                                ReDim Preserve oListN1(nListN1)
+                                oMyN1 = New Importer290.N1
+                                oMyN1 = PopolaN1(IdEnteCNC, "1", nRate)
+                                If Not oMyN1 Is Nothing Then
+                                    oListN1(nListN1) = oMyN1
+                                    'incremento il totale dei record
+                                    nTotN1 += 1
+                                Else
+                                    Return -1
+                                End If
+                            End If
+                            'aggiungo un nuovo N4
+                            nListN4 += 1
+                            ReDim Preserve oListN4(nListN4)
+                            oMyN4 = New Importer290.N4
+                            'controllo se devo creare un nuovo N2
+                            If oListArticoli(x).IdContribuente <> nIdContribPrec Then
+                                nProgPartita += 1
+                                oMyN2 = PopolaN2(oListArticoli(x).IdContribuente, oListArticoli(x).DescrDiffImposta, IdEnteCNC, nProgPartita, ErrAnag)
+                                If Not oMyN2 Is Nothing Then
+                                    'incremento il totale dei record
+                                    nTotN2 += 1
+                                Else
+                                    ErrAnag = oListArticoli(x).COGNOME + " " + oListArticoli(x).NOME
+                                    Return -2
+                                End If
+                            End If
+                            oMyN4 = PopolaN4(oListArticoli(x), IdEnteCNC, nProgPartita, oListArticoli(x).DescrDiffImposta, oListArticoli(x).ImportoNetto, oMyN2)
+                            If Not oMyN4 Is Nothing Then
+                                oListN4(nListN4) = oMyN4
+                                'incremento il totale dei record
+                                nTotN4 += 1
+                                impTot290 += oListArticoli(x).ImportoNetto
                             Else
                                 Return -1
                             End If
-                        End If
-                        'aggiungo un nuovo N4
-                        nListN4 += 1
-                        ReDim Preserve oListN4(nListN4)
-                        oMyN4 = New Importer290.N4
-                        'controllo se devo creare un nuovo N2
-                        If oListArticoli(x).IdContribuente <> nIdContribPrec Then
-                            nProgPartita += 1
-                            oMyN2 = PopolaN2(oListArticoli(x).IdContribuente, oListArticoli(x).DescrDiffImposta, IdEnteCNC, nProgPartita, ErrAnag)
-                            If Not oMyN2 Is Nothing Then
-                                'incremento il totale dei record
-                                nTotN2 += 1
-                            Else
-                                ErrAnag = oListArticoli(x).COGNOME + " " + oListArticoli(x).NOME
-                                Return -2
-                            End If
-                        End If
-                        oMyN4 = PopolaN4(oListArticoli(x), IdEnteCNC, nProgPartita, oListArticoli(x).DescrDiffImposta, oListArticoli(x).ImportoNetto, oMyN2)
-                        If Not oMyN4 Is Nothing Then
-                            oListN4(nListN4) = oMyN4
-                            'incremento il totale dei record
-                            nTotN4 += 1
-                            impTot290 += oListArticoli(x).ImportoNetto
+
+                            nIdContribPrec = oListArticoli(x).IdContribuente
+                            sIdEntePrec = oListArticoli(x).Ente
+                            TipoPrec = oListArticoli(x).TipoRuolo
+                        Next
+                        'incremento il totale dei record
+                        nTotN5 += 1
+                        nListN5 += 1
+                        ReDim Preserve oListN5(nListN5)
+                        oMyN5 = New Importer290.N5
+                        'popolo il record N5
+                        oMyN5 = PopolaN5(IdEnteCNC, nTotN1, nTotN2, 0, nTotN4, nTotN5, impTot290)
+                        If Not oMyN5 Is Nothing Then
+                            oListN5(nListN5) = oMyN5
                         Else
                             Return -1
                         End If
+                        'incremento il totale dei record
+                        nTotN9 += 1
+                        'popolo il record N9
+                        oMyN9 = PopolaN9(sIdEnteCredBen, nTotN0, nTotN1, nTotN2, 0, nTotN4, nTotN5, nTotN9)
+                        If oMyN9 Is Nothing Then
+                            Return -1
+                        End If
 
-                        nIdContribPrec = oListArticoli(x).IdContribuente
-                        sIdEntePrec = oListArticoli(x).Ente
-                        TipoPrec = oListArticoli(x).TipoRuolo
-                    Next
-                    'incremento il totale dei record
-                    nTotN5 += 1
-                    nListN5 += 1
-                    ReDim Preserve oListN5(nListN5)
-                    oMyN5 = New Importer290.N5
-                    'popolo il record N5
-                    oMyN5 = PopolaN5(IdEnteCNC, nTotN1, nTotN2, 0, nTotN4, nTotN5, impTot290)
-                    If Not oMyN5 Is Nothing Then
-                        oListN5(nListN5) = oMyN5
+                        'scrivo il file
+                        If Create290(sPathFile & sNameFile & TipoPrec & ".001", oMyN0, oListN1, oListN4, oListN5, oMyN9) < 1 Then
+                            Return -1
+                        End If
+                        ListFile.Add(sPathFile & sNameFile & TipoPrec & ".001")
+                        If ZipFile(sPathFile, sNameFile & ".zip", ListFile) = False Then
+                            Return 0
+                        End If
                     Else
-                        Return -1
-                    End If
-                    'incremento il totale dei record
-                    nTotN9 += 1
-                    'popolo il record N9
-                    oMyN9 = PopolaN9(sIdEnteCredBen, nTotN0, nTotN1, nTotN2, 0, nTotN4, nTotN5, nTotN9)
-                    If oMyN9 Is Nothing Then
-                        Return -1
-                    End If
-
-                    'scrivo il file
-                    If Create290(sPathFile & sNameFile & TipoPrec & ".001", oMyN0, oListN1, oListN4, oListN5, oMyN9) < 1 Then
-                        Return -1
-                    End If
-                    ListFile.Add(sPathFile & sNameFile & TipoPrec & ".001")
-                    If ZipFile(sPathFile, sNameFile & ".zip", ListFile) = False Then
-                        Return 0
+                        Return New clsAccertamentiEsecutivi().CreaAccertamentiEsecutivi(myStringConnection, IdRuolo, sPathFile, sNameFile, ListFile)
                     End If
                 Else
-                    Return 0
+                    Return New clsAccertamentiEsecutivi().CreaAccertamentiEsecutivi(myStringConnection, IdRuolo, sPathFile, sNameFile, ListFile)
                 End If
 
-                Return 1
+                    Return 1
             Catch Err As Exception
-                Log.Debug(IdEnteCNC + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290.errore::" & Err.Message)
+                Log.Debug(IdEnteCNC + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290.errore::" + Err.Message)
                 Return -1
             End Try
         End Function
@@ -1250,7 +1255,7 @@ Public Class clsCoattivo
 
                 Return oN0
             Catch Err As Exception
-                Log.Debug(sIdEnteCredBen + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290::PopolaN0.errore::" & Err.Message)
+                Log.Debug(sIdEnteCredBen + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290::PopolaN0.errore::" + Err.Message)
                 Return Nothing
             End Try
         End Function
@@ -1281,7 +1286,7 @@ Public Class clsCoattivo
 
                 Return oN1
             Catch Err As Exception
-                Log.Debug(sIdEnteCNC + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290::PopolaN1.errore::" & Err.Message)
+                Log.Debug(sIdEnteCNC + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290::PopolaN1.errore::" + Err.Message)
                 Return Nothing
             End Try
         End Function
@@ -1407,7 +1412,7 @@ Public Class clsCoattivo
 
                 Return oN2
             Catch Err As Exception
-                Log.Debug(sIdEnteCNC + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290.PopolaN2.errore::" & Err.Message & " - COD_CONTRIBUENTE::" & nIdContribuente)
+                Log.Debug(sIdEnteCNC + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290.PopolaN2.errore::" + Err.Message & " - COD_CONTRIBUENTE::" & nIdContribuente)
                 Return Nothing
             End Try
         End Function
@@ -1448,7 +1453,7 @@ Public Class clsCoattivo
 
                 Return oN4
             Catch Err As Exception
-                Log.Debug(sIdEnteCNC + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290::PopolaN4.errore::" & Err.Message)
+                Log.Debug(sIdEnteCNC + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290::PopolaN4.errore::" + Err.Message)
                 Return Nothing
             End Try
         End Function
@@ -1478,7 +1483,7 @@ Public Class clsCoattivo
 
                 Return oN5
             Catch Err As Exception
-                Log.Debug(sIdEnteCNC + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290::PopolaN5.errore::" & Err.Message)
+                Log.Debug(sIdEnteCNC + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290::PopolaN5.errore::" + Err.Message)
                 Return Nothing
             End Try
         End Function
@@ -1509,7 +1514,7 @@ Public Class clsCoattivo
 
                 Return oN9
             Catch Err As Exception
-                Log.Debug(sIdEnteCredBen + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290::PopolaN9.errore::" & Err.Message)
+                Log.Debug(sIdEnteCredBen + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290::PopolaN9.errore::" + Err.Message)
                 Return Nothing
             End Try
         End Function
@@ -1560,7 +1565,7 @@ Public Class clsCoattivo
 
                 Return 1
             Catch Err As Exception
-                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290::Create290.errore::" & Err.Message)
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290::Create290.errore::" + Err.Message)
                 Return -1
             End Try
         End Function
@@ -1591,7 +1596,7 @@ Public Class clsCoattivo
 
                 Return 1
             Catch Err As Exception
-                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290::PrintLineN0.errore::" & Err.Message)
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290::PrintLineN0.errore::" + Err.Message)
                 Return -1
             End Try
         End Function
@@ -1640,7 +1645,7 @@ Public Class clsCoattivo
 
                 Return 1
             Catch Err As Exception
-                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290::PrintLineN1.errore::" & Err.Message)
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290::PrintLineN1.errore::" + Err.Message)
                 Return -1
             End Try
         End Function
@@ -1755,7 +1760,7 @@ Public Class clsCoattivo
 
                 Return 1
             Catch Err As Exception
-                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290::PrintLineN2.errore::" & Err.Message)
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290::PrintLineN2.errore::" + Err.Message)
                 Return -1
             End Try
         End Function
@@ -1847,7 +1852,7 @@ Public Class clsCoattivo
 
                 Return 1
             Catch Err As Exception
-                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290::PrintLineN4.errore::" & Err.Message)
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290::PrintLineN4.errore::" + Err.Message)
                 Return -1
             End Try
         End Function
@@ -1886,7 +1891,7 @@ Public Class clsCoattivo
 
                 Return 1
             Catch Err As Exception
-                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290::PrintLineN5.errore::" & Err.Message)
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290::PrintLineN5.errore::" + Err.Message)
                 Return -1
             End Try
         End Function
@@ -1925,7 +1930,7 @@ Public Class clsCoattivo
 
                 Return 1
             Catch Err As Exception
-                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290.PrintLineN9.errore::" & Err.Message)
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290.PrintLineN9.errore::" + Err.Message)
                 Return -1
             End Try
         End Function
@@ -1958,6 +1963,1840 @@ Public Class clsCoattivo
                 Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.ZipFile.errore: ", ex)
                 Return False
             End Try
+        End Function
+    End Class
+#End Region
+#Region "AccertamentiEsecutivi"
+    Public Function GetDelibera(ByVal IdEnte As String, myStringConnection As String, ByRef Numero As String, ByRef Dal As String, ByRef Al As String) As Boolean
+        Dim sSQL As String
+        Dim myDataView As New DataView
+
+        Try
+            Using ctx As New DBModel(ConstSession.DBType, myStringConnection)
+                Try
+                    sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_GetDelibera", "IDENTE")
+                    myDataView = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("IDENTE", IdEnte))
+                Catch ex As Exception
+                    Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.GetDelibera.erroreQuery: ", ex)
+                    Return Nothing
+                Finally
+                    ctx.Dispose()
+                End Try
+                For Each myRow As DataRowView In myDataView
+                    Numero = StringOperation.FormatString(myRow("ndelibera"))
+                    Dal = StringOperation.FormatDateTime(myRow("datadelibera"))
+                    Al = StringOperation.FormatDateTime(myRow("datafinedelibera"))
+                Next
+            End Using
+            Return True
+        Catch Err As Exception
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.GetDelibera.errore: ", Err)
+            Return False
+        End Try
+    End Function
+    Public Function SetDelibera(ByVal IdEnte As String, myStringConnection As String, Numero As String, Dal As Date, Al As Date) As Boolean
+        Dim sSQL As String
+        Dim myDataView As New DataView
+
+        Try
+            Using ctx As New DBModel(ConstSession.DBType, myStringConnection)
+                Try
+                    sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_SetDelibera", "IDENTE", "NDELIBERA", "DATADELIBERA", "DATAFINEDELIBERA")
+                    myDataView = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("IDENTE", IdEnte) _
+                        , ctx.GetParam("NDELIBERA", Numero) _
+                        , ctx.GetParam("DATADELIBERA", Dal) _
+                        , ctx.GetParam("DATAFINEDELIBERA", Al))
+                Catch ex As Exception
+                    Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.SetDelibera.erroreQuery: ", ex)
+                    Return Nothing
+                Finally
+                    ctx.Dispose()
+                End Try
+            End Using
+            Return True
+        Catch Err As Exception
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.SetDelibera.errore: ", Err)
+            Return False
+        End Try
+    End Function
+    Public Class objAccertamentiEsecutivi
+        Public Class Type
+            Public Const Stringa As String = "AN"
+            Public Const Numero As String = "N"
+            Public Const Data As String = "D"
+        End Class
+        Public Class IdentificativoFlusso
+            Private _CodiceEnteCreditore As Integer
+            Private _TipoUfficio As String
+            Private _CodiceUfficio As String
+            Public Class Length
+                Public Const CodiceEnteCreditore As Integer = 5
+                Public Const TipoUfficio As Integer = 1
+                Public Const CodiceUfficio As Integer = 6
+            End Class
+            Public Property CodiceEnteCreditore() As String
+                Get
+                    Return _CodiceEnteCreditore
+                End Get
+                Set(ByVal Value As String)
+                    _CodiceEnteCreditore = Value
+                End Set
+            End Property
+            Public Property TipoUfficio() As String
+                Get
+                    Return _TipoUfficio
+                End Get
+                Set(ByVal Value As String)
+                    _TipoUfficio = Value
+                End Set
+            End Property
+            Public Property CodiceUfficio() As String
+                Get
+                    Return _CodiceUfficio
+                End Get
+                Set(ByVal Value As String)
+                    _CodiceUfficio = Value
+                End Set
+            End Property
+        End Class
+        Public Class IdentificativoAtto
+            Public Const TipologiaAtto As Integer = 5
+            Public Const ProgressivoPartita As Integer = 1
+            Public Const CodiceTipoAtto As String = "AA"
+            Public Const FillerIdentificativoAtto As String = ""
+            Private _IdentificativoFlusso As IdentificativoFlusso
+            Private _AnnoEmissioneAtto As Integer
+            Private _NumeroPartita As Integer
+            Private _DataEmissioneAtto As DateTime
+            Private _NumeroAtto As String
+            Private _DataNotificaAtto As DateTime
+            Public Class Length
+                Public Const AnnoEmissioneAtto As Integer = 4
+                Public Const TipologiaAtto As Integer = 3
+                Public Const NumeroPartita As Integer = 9
+                Public Const ProgressivoPartita As Integer = 3
+                Public Const CodiceTipoAtto As Integer = 2
+                Public Const DataEmissioneAtto As Integer = 8
+                Public Const NumeroAtto As Integer = 12
+                Public Const DataNotificaAtto As Integer = 8
+                Public Const FillerIdentificativoAtto As Integer = 40
+            End Class
+            Public Property IdentificativoFlusso() As IdentificativoFlusso
+                Get
+                    Return _IdentificativoFlusso
+                End Get
+                Set(ByVal Value As IdentificativoFlusso)
+                    _IdentificativoFlusso = Value
+                End Set
+            End Property
+            Public Property AnnoEmissioneAtto() As String
+                Get
+                    Return _AnnoEmissioneAtto
+                End Get
+                Set(ByVal Value As String)
+                    _AnnoEmissioneAtto = Value
+                End Set
+            End Property
+            Public Property NumeroPartita() As String
+                Get
+                    Return _NumeroPartita
+                End Get
+                Set(ByVal Value As String)
+                    _NumeroPartita = Value
+                End Set
+            End Property
+            Public Property DataEmissioneAtto() As DateTime
+                Get
+                    Return _DataEmissioneAtto
+                End Get
+                Set(ByVal Value As DateTime)
+                    _DataEmissioneAtto = Value
+                End Set
+            End Property
+            Public Property NumeroAtto() As String
+                Get
+                    Return _NumeroAtto
+                End Get
+                Set(ByVal Value As String)
+                    _NumeroAtto = Value
+                End Set
+            End Property
+            Public Property DataNotificaAtto() As DateTime
+                Get
+                    Return _DataNotificaAtto
+                End Get
+                Set(ByVal Value As DateTime)
+                    _DataNotificaAtto = Value
+                End Set
+            End Property
+        End Class
+        Public Class E00
+            Public Const TipoRecord As String = "E00"
+            Public Const Filler As String = ""
+            Private _IdentificativoFlusso As IdentificativoFlusso
+            Private _DataCreazioneFlusso As DateTime = DateTime.MaxValue
+            Private _EstremiFlusso As Integer
+            Public Class Length
+                Public Const DataCreazioneFlusso As Integer = 8
+                Public Const EstremiFlusso As Integer = 10
+                Public Const Filler As Integer = 567
+            End Class
+            Public Property IdentificativoFlusso() As IdentificativoFlusso
+                Get
+                    Return _IdentificativoFlusso
+                End Get
+                Set(ByVal Value As IdentificativoFlusso)
+                    _IdentificativoFlusso = Value
+                End Set
+            End Property
+            Public Property DataCreazioneFlusso() As DateTime
+                Get
+                    Return _DataCreazioneFlusso
+                End Get
+                Set(ByVal Value As DateTime)
+                    _DataCreazioneFlusso = Value
+                End Set
+            End Property
+            Public Property EstremiFlusso() As Integer
+                Get
+                    Return _EstremiFlusso
+                End Get
+                Set(ByVal Value As Integer)
+                    _EstremiFlusso = Value
+                End Set
+            End Property
+        End Class
+        Public Class E20
+            Public Const TipoRecord As String = "E20"
+            Public Const PresenzaUlterioriDestinatariAtto As String = ""
+            Public Const Filler As String = ""
+            Private _ProgressivoRecord As Integer
+            Private _IdentificativoAtto As IdentificativoAtto
+            Private _PresenzaCoobligati As String
+            Private _NaturaSoggetto As String
+            Private _CodiceFiscale As String
+            Private _CognomeDenominazione As String
+            Private _Nome As String
+            Private _Sesso As String
+            Private _DataNascita As DateTime
+            Private _CodiceCatastaleComuneNascita As String
+            Private _ProvinciaNascita As String
+            Private _CodiceCatastaleComuneDomicilioFiscale As String
+            Private _ComuneDomicilioFiscale As String
+            Private _ProvinciaDomicilioFiscale As String
+            Private _CAPDomicilioFiscale As Integer
+            Private _Indirizzo As String
+            Private _NumeroCivico As Integer
+            Private _LetteraNumeroCivico As String
+            Private _Chilometro As Integer
+            Private _Palazzina As String
+            Private _Scala As String
+            Private _Piano As String
+            Private _Interno As String
+            Private _LocalitaFrazione As String
+            Public Class Length
+                Public Const ProgressivoRecord As Integer = 7
+                Public Const PresenzaUlterioriDestinatariAtto As Integer = 1
+                Public Const PresenzaCoobligati As Integer = 1
+                Public Const NaturaSoggetto As Integer = 1
+                Public Const CodiceFiscale As Integer = 16
+                Public Const CognomeDenominazione As Integer = 80
+                Public Const Nome As Integer = 40
+                Public Const Sesso As Integer = 1
+                Public Const DataNascita As Integer = 8
+                Public Const CodiceCatastaleComuneNascita As Integer = 4
+                Public Const ProvinciaNascita As Integer = 2
+                Public Const CodiceCatastaleComuneDomicilioFiscale As Integer = 4
+                Public Const ComuneDomicilioFiscale As Integer = 45
+                Public Const ProvinciaDomicilioFiscale As Integer = 2
+                Public Const CAPDomicilioFiscale As Integer = 5
+                Public Const Indirizzo As Integer = 80
+                Public Const NumeroCivico As Integer = 5
+                Public Const LetteraNumeroCivico As Integer = 2
+                Public Const Chilometro As Integer = 6
+                Public Const Palazzina As Integer = 3
+                Public Const Scala As Integer = 3
+                Public Const Piano As Integer = 3
+                Public Const Interno As Integer = 4
+                Public Const LocalitaFrazione As Integer = 25
+                Public Const Filler As Integer = 148
+            End Class
+            Public Property ProgressivoRecord() As Integer
+                Get
+                    Return _ProgressivoRecord
+                End Get
+                Set(ByVal Value As Integer)
+                    _ProgressivoRecord = Value
+                End Set
+            End Property
+            Public Property IdentificativoAtto() As IdentificativoAtto
+                Get
+                    Return _IdentificativoAtto
+                End Get
+                Set(ByVal Value As IdentificativoAtto)
+                    _IdentificativoAtto = Value
+                End Set
+            End Property
+            Public Property PresenzaCoobligati() As String
+                Get
+                    Return _PresenzaCoobligati
+                End Get
+                Set(ByVal Value As String)
+                    _PresenzaCoobligati = Value
+                End Set
+            End Property
+            Public Property NaturaSoggetto() As String
+                Get
+                    Return _NaturaSoggetto
+                End Get
+                Set(ByVal Value As String)
+                    _NaturaSoggetto = Value
+                End Set
+            End Property
+            Public Property CodiceFiscale() As String
+                Get
+                    Return _CodiceFiscale
+                End Get
+                Set(ByVal Value As String)
+                    _CodiceFiscale = Value
+                End Set
+            End Property
+            Public Property CognomeDenominazione() As String
+                Get
+                    Return _CognomeDenominazione
+                End Get
+                Set(ByVal Value As String)
+                    _CognomeDenominazione = Value
+                End Set
+            End Property
+            Public Property Nome() As String
+                Get
+                    Return _Nome
+                End Get
+                Set(ByVal Value As String)
+                    _Nome = Value
+                End Set
+            End Property
+            Public Property Sesso() As String
+                Get
+                    Return _Sesso
+                End Get
+                Set(ByVal Value As String)
+                    _Sesso = Value
+                End Set
+            End Property
+            Public Property DataNascita() As DateTime
+                Get
+                    Return _DataNascita
+                End Get
+                Set(ByVal Value As DateTime)
+                    _DataNascita = Value
+                End Set
+            End Property
+            Public Property CodiceCatastaleComuneNascita() As String
+                Get
+                    Return _CodiceCatastaleComuneNascita
+                End Get
+                Set(ByVal Value As String)
+                    _CodiceCatastaleComuneNascita = Value
+                End Set
+            End Property
+            Public Property ProvinciaNascita() As String
+                Get
+                    Return _ProvinciaNascita
+                End Get
+                Set(ByVal Value As String)
+                    _ProvinciaNascita = Value
+                End Set
+            End Property
+            Public Property CodiceCatastaleComuneDomicilioFiscale() As String
+                Get
+                    Return _CodiceCatastaleComuneDomicilioFiscale
+                End Get
+                Set(ByVal Value As String)
+                    _CodiceCatastaleComuneDomicilioFiscale = Value
+                End Set
+            End Property
+            Public Property ComuneDomicilioFiscale() As String
+                Get
+                    Return _ComuneDomicilioFiscale
+                End Get
+                Set(ByVal Value As String)
+                    _ComuneDomicilioFiscale = Value
+                End Set
+            End Property
+            Public Property ProvinciaDomicilioFiscale() As String
+                Get
+                    Return _ProvinciaDomicilioFiscale
+                End Get
+                Set(ByVal Value As String)
+                    _ProvinciaDomicilioFiscale = Value
+                End Set
+            End Property
+            Public Property CAPDomicilioFiscale() As Integer
+                Get
+                    Return _CAPDomicilioFiscale
+                End Get
+                Set(value As Integer)
+                    _CAPDomicilioFiscale = value
+                End Set
+            End Property
+            Public Property Indirizzo() As String
+                Get
+                    Return _Indirizzo
+                End Get
+                Set(ByVal Value As String)
+                    _Indirizzo = Value
+                End Set
+            End Property
+            Public Property NumeroCivico() As Integer
+                Get
+                    Return _NumeroCivico
+                End Get
+                Set(ByVal Value As Integer)
+                    _NumeroCivico = Value
+                End Set
+            End Property
+            Public Property LetteraNumeroCivico() As String
+                Get
+                    Return _LetteraNumeroCivico
+                End Get
+                Set(ByVal Value As String)
+                    _LetteraNumeroCivico = Value
+                End Set
+            End Property
+            Public Property Chilometro() As Integer
+                Get
+                    Return _Chilometro
+                End Get
+                Set(ByVal Value As Integer)
+                    _Chilometro = Value
+                End Set
+            End Property
+            Public Property Palazzina() As String
+                Get
+                    Return _Palazzina
+                End Get
+                Set(ByVal Value As String)
+                    _Palazzina = Value
+                End Set
+            End Property
+            Public Property Scala() As String
+                Get
+                    Return _Scala
+                End Get
+                Set(ByVal Value As String)
+                    _Scala = Value
+                End Set
+            End Property
+            Public Property Piano() As String
+                Get
+                    Return _Piano
+                End Get
+                Set(ByVal Value As String)
+                    _Piano = Value
+                End Set
+            End Property
+            Public Property Interno() As String
+                Get
+                    Return _Interno
+                End Get
+                Set(ByVal Value As String)
+                    _Interno = Value
+                End Set
+            End Property
+            Public Property LocalitaFrazione() As String
+                Get
+                    Return _LocalitaFrazione
+                End Get
+                Set(ByVal Value As String)
+                    _LocalitaFrazione = Value
+                End Set
+            End Property
+        End Class
+        Public Class E23
+            Public Const TipoRecord As String = "E23"
+            Public Const Filler As String = ""
+            Private _ProgressivoRecord As Integer
+            Private _IdentificativoAtto As IdentificativoAtto
+            Private _CodiceFiscaleSoggettoIntestatario As String
+            Private _CodiceFiscaleUlterioreSoggettoNotifica As String
+            Private _Cognome As String
+            Private _Nome As String
+            Private _Sesso As String
+            Private _DataNascita As DateTime
+            Private _CodiceCatastaleComuneNascita As String
+            Private _ProvinciaNascita As String
+            Private _CodiceCatastaleComuneDomicilioFiscale As String
+            Private _ComuneDomicilioFiscale As String
+            Private _ProvinciaDomicilioFiscale As String
+            Private _CAPDomicilioFiscale As Integer
+            Private _Indirizzo As String
+            Private _NumeroCivico As Integer
+            Private _LetteraNumeroCivico As String
+            Private _Chilometro As Integer
+            Private _Palazzina As String
+            Private _Scala As String
+            Private _Piano As String
+            Private _Interno As String
+            Private _LocalitaFrazione As String
+            Public Class Length
+                Public Const ProgressivoRecord As Integer = 7
+                Public Const CodiceFiscaleSoggettoIntestatario As Integer = 16
+                Public Const CodiceFiscaleUlterioreSoggettoNotifica As Integer = 16
+                Public Const Cognome As Integer = 50
+                Public Const Nome As Integer = 40
+                Public Const Sesso As Integer = 1
+                Public Const DataNascita As Integer = 8
+                Public Const CodiceCatastaleComuneNascita As Integer = 4
+                Public Const ProvinciaNascita As Integer = 2
+                Public Const CodiceCatastaleComuneDomicilioFiscale As Integer = 4
+                Public Const ComuneDomicilioFiscale As Integer = 45
+                Public Const ProvinciaDomicilioFiscale As Integer = 2
+                Public Const CAPDomicilioFiscale As Integer = 5
+                Public Const Indirizzo As Integer = 80
+                Public Const NumeroCivico As Integer = 5
+                Public Const LetteraNumeroCivico As Integer = 2
+                Public Const Chilometro As Integer = 6
+                Public Const Palazzina As Integer = 3
+                Public Const Scala As Integer = 3
+                Public Const Piano As Integer = 3
+                Public Const Interno As Integer = 4
+                Public Const LocalitaFrazione As Integer = 25
+                Public Const Filler As Integer = 165
+            End Class
+            Public Property ProgressivoRecord() As Integer
+                Get
+                    Return _ProgressivoRecord
+                End Get
+                Set(ByVal Value As Integer)
+                    _ProgressivoRecord = Value
+                End Set
+            End Property
+            Public Property IdentificativoAtto() As IdentificativoAtto
+                Get
+                    Return _IdentificativoAtto
+                End Get
+                Set(ByVal Value As IdentificativoAtto)
+                    _IdentificativoAtto = Value
+                End Set
+            End Property
+            Public Property CodiceFiscaleSoggettoIntestatario() As String
+                Get
+                    Return _CodiceFiscaleSoggettoIntestatario
+                End Get
+                Set(ByVal Value As String)
+                    _CodiceFiscaleSoggettoIntestatario = Value
+                End Set
+            End Property
+            Public Property CodiceFiscaleUlterioreSoggettoNotifica() As String
+                Get
+                    Return _CodiceFiscaleUlterioreSoggettoNotifica
+                End Get
+                Set(ByVal Value As String)
+                    _CodiceFiscaleUlterioreSoggettoNotifica = Value
+                End Set
+            End Property
+            Public Property Cognome() As String
+                Get
+                    Return _Cognome
+                End Get
+                Set(ByVal Value As String)
+                    _Cognome = Value
+                End Set
+            End Property
+            Public Property Nome() As String
+                Get
+                    Return _Nome
+                End Get
+                Set(ByVal Value As String)
+                    _Nome = Value
+                End Set
+            End Property
+            Public Property Sesso() As String
+                Get
+                    Return _Sesso
+                End Get
+                Set(ByVal Value As String)
+                    _Sesso = Value
+                End Set
+            End Property
+            Public Property DataNascita() As DateTime
+                Get
+                    Return _DataNascita
+                End Get
+                Set(ByVal Value As DateTime)
+                    _DataNascita = Value
+                End Set
+            End Property
+            Public Property CodiceCatastaleComuneNascita() As String
+                Get
+                    Return _CodiceCatastaleComuneNascita
+                End Get
+                Set(ByVal Value As String)
+                    _CodiceCatastaleComuneNascita = Value
+                End Set
+            End Property
+            Public Property ProvinciaNascita() As String
+                Get
+                    Return _ProvinciaNascita
+                End Get
+                Set(ByVal Value As String)
+                    _ProvinciaNascita = Value
+                End Set
+            End Property
+            Public Property CodiceCatastaleComuneDomicilioFiscale() As String
+                Get
+                    Return _CodiceCatastaleComuneDomicilioFiscale
+                End Get
+                Set(ByVal Value As String)
+                    _CodiceCatastaleComuneDomicilioFiscale = Value
+                End Set
+            End Property
+            Public Property ComuneDomicilioFiscale() As String
+                Get
+                    Return _ComuneDomicilioFiscale
+                End Get
+                Set(ByVal Value As String)
+                    _ComuneDomicilioFiscale = Value
+                End Set
+            End Property
+            Public Property ProvinciaDomicilioFiscale() As String
+                Get
+                    Return _ProvinciaDomicilioFiscale
+                End Get
+                Set(ByVal Value As String)
+                    _ProvinciaDomicilioFiscale = Value
+                End Set
+            End Property
+            Public Property CAPDomicilioFiscale() As Integer
+                Get
+                    Return _CAPDomicilioFiscale
+                End Get
+                Set(ByVal Value As Integer)
+                    _CAPDomicilioFiscale = Value
+                End Set
+            End Property
+            Public Property Indirizzo() As String
+                Get
+                    Return _Indirizzo
+                End Get
+                Set(ByVal Value As String)
+                    _Indirizzo = Value
+                End Set
+            End Property
+            Public Property NumeroCivico() As Integer
+                Get
+                    Return _NumeroCivico
+                End Get
+                Set(ByVal Value As Integer)
+                    _NumeroCivico = Value
+                End Set
+            End Property
+            Public Property LetteraNumeroCivico() As String
+                Get
+                    Return _LetteraNumeroCivico
+                End Get
+                Set(ByVal Value As String)
+                    _LetteraNumeroCivico = Value
+                End Set
+            End Property
+            Public Property Chilometro() As Integer
+                Get
+                    Return _Chilometro
+                End Get
+                Set(ByVal Value As Integer)
+                    _Chilometro = Value
+                End Set
+            End Property
+            Public Property Palazzina() As String
+                Get
+                    Return _Palazzina
+                End Get
+                Set(ByVal Value As String)
+                    _Palazzina = Value
+                End Set
+            End Property
+            Public Property Scala() As String
+                Get
+                    Return _Scala
+                End Get
+                Set(ByVal Value As String)
+                    _Scala = Value
+                End Set
+            End Property
+            Public Property Piano() As String
+                Get
+                    Return _Piano
+                End Get
+                Set(ByVal Value As String)
+                    _Piano = Value
+                End Set
+            End Property
+            Public Property Interno() As String
+                Get
+                    Return _Interno
+                End Get
+                Set(ByVal Value As String)
+                    _Interno = Value
+                End Set
+            End Property
+            Public Property LocalitaFrazione() As String
+                Get
+                    Return _LocalitaFrazione
+                End Get
+                Set(ByVal Value As String)
+                    _LocalitaFrazione = Value
+                End Set
+            End Property
+        End Class
+        Public Class E50
+            Public Const TipoRecord As String = "E50"
+            Public Const PeriodoRiferimento As Integer = 99
+            Public Const Filler As String = ""
+            Private _ProgressivoRecord As Integer
+            Private _IdentificativoAtto As IdentificativoAtto
+            Private _ProgressivoArticolo As Integer
+            Private _CodiceEntrata As String
+            Private _TipoCodiceEntrata As String
+            Private _ImportoArticolo As Integer
+            Public Class Length
+                Public Const ProgressivoRecord As Integer = 7
+                Public Const ProgressivoArticolo As Integer = 3
+                Public Const PeriodoRiferimento As Integer = 6
+                Public Const CodiceEntrata As Integer = 4
+                Public Const TipoCodiceEntrata As Integer = 1
+                Public Const ImportoArticolo As Integer = 15
+                Public Const Filler As Integer = 460
+            End Class
+            Public Property ProgressivoRecord() As Integer
+                Get
+                    Return _ProgressivoRecord
+                End Get
+                Set(ByVal Value As Integer)
+                    _ProgressivoRecord = Value
+                End Set
+            End Property
+            Public Property IdentificativoAtto() As IdentificativoAtto
+                Get
+                    Return _IdentificativoAtto
+                End Get
+                Set(ByVal Value As IdentificativoAtto)
+                    _IdentificativoAtto = Value
+                End Set
+            End Property
+            Public Property ProgressivoArticolo() As Integer
+                Get
+                    Return _ProgressivoArticolo
+                End Get
+                Set(ByVal Value As Integer)
+                    _ProgressivoArticolo = Value
+                End Set
+            End Property
+            Public Property CodiceEntrata() As String
+                Get
+                    Return _CodiceEntrata
+                End Get
+                Set(ByVal Value As String)
+                    _CodiceEntrata = Value
+                End Set
+            End Property
+            Public Property TipoCodiceEntrata() As String
+                Get
+                    Return _TipoCodiceEntrata
+                End Get
+                Set(ByVal Value As String)
+                    _TipoCodiceEntrata = Value
+                End Set
+            End Property
+            Public Property ImportoArticolo() As Integer
+                Get
+                    Return _ImportoArticolo
+                End Get
+                Set(ByVal Value As Integer)
+                    _ImportoArticolo = Value
+                End Set
+            End Property
+        End Class
+        Public Class E60
+            Public Const TipoRecord As String = "E60"
+            Public Const TipologiaSospensione As Integer = 3
+            Public Const FlagEnteTerzo As String = "N"
+            Public Const DenominazioneEnteTerzo As String = ""
+            Public Const Filler As String = ""
+            Private _ProgressivoRecord As Integer
+            Private _IdentificativoAtto As IdentificativoAtto
+            Private _NumeroDelibera As String
+            Private _DataDelibera As DateTime
+            Private _DataFineValiditaDelibera As DateTime
+            Private _ImportoTotaleAtto As Integer
+            Private _TotaleArticoliAtto As Integer
+            Private _DataTermineUltimoPagamentoAtto As DateTime
+            Public Class Length
+                Public Const ProgressivoRecord As Integer = 7
+                Public Const NumeroDelibera As Integer = 10
+                Public Const DataDelibera As Integer = 8
+                Public Const DataFineValiditaDelibera As Integer = 8
+                Public Const TipologiaSospensione As Integer = 1
+                Public Const ImportoTotaleAtto As Integer = 15
+                Public Const TotaleArticoliAtto As Integer = 7
+                Public Const DataTermineUltimoPagamentoAtto As Integer = 8
+                Public Const FlagEnteTerzo As Integer = 1
+                Public Const DenominazioneEnteTerzo As Integer = 60
+                Public Const Filler As Integer = 371
+            End Class
+            Public Property ProgressivoRecord() As Integer
+                Get
+                    Return _ProgressivoRecord
+                End Get
+                Set(ByVal Value As Integer)
+                    _ProgressivoRecord = Value
+                End Set
+            End Property
+            Public Property IdentificativoAtto() As IdentificativoAtto
+                Get
+                    Return _IdentificativoAtto
+                End Get
+                Set(ByVal Value As IdentificativoAtto)
+                    _IdentificativoAtto = Value
+                End Set
+            End Property
+            Public Property NumeroDelibera() As String
+                Get
+                    Return _NumeroDelibera
+                End Get
+                Set(ByVal Value As String)
+                    _NumeroDelibera = Value
+                End Set
+            End Property
+            Public Property DataDelibera() As DateTime
+                Get
+                    Return _DataDelibera
+                End Get
+                Set(ByVal Value As DateTime)
+                    _DataDelibera = Value
+                End Set
+            End Property
+            Public Property DataFineValiditaDelibera() As DateTime
+                Get
+                    Return _DataFineValiditaDelibera
+                End Get
+                Set(ByVal Value As DateTime)
+                    _DataFineValiditaDelibera = Value
+                End Set
+            End Property
+            Public Property ImportoTotaleAtto() As Integer
+                Get
+                    Return _ImportoTotaleAtto
+                End Get
+                Set(ByVal Value As Integer)
+                    _ImportoTotaleAtto = Value
+                End Set
+            End Property
+            Public Property TotaleArticoliAtto() As Integer
+                Get
+                    Return _TotaleArticoliAtto
+                End Get
+                Set(ByVal Value As Integer)
+                    _TotaleArticoliAtto = Value
+                End Set
+            End Property
+            Public Property DataTermineUltimoPagamentoAtto() As DateTime
+                Get
+                    Return _DataTermineUltimoPagamentoAtto
+                End Get
+                Set(ByVal Value As DateTime)
+                    _DataTermineUltimoPagamentoAtto = Value
+                End Set
+            End Property
+        End Class
+        Public Class E99
+            Public Const TipoRecord As String = "E99"
+            Public Const Filler As String = ""
+            Private _IdentificativoFlusso As IdentificativoFlusso
+            Private _DataCreazioneFlusso As DateTime
+            Private _EstremiFlusso As Integer
+            Private _TotaleRecord As Integer
+            Private _TotaleRecordE20 As Integer
+            Private _TotaleRecordE23 As Integer
+            Private _TotaleRecordE50 As Integer
+            Private _TotaleRecordE60 As Integer
+            Private _TotaleCaricoFlusso As Integer
+            Public Class Length
+                Public Const DataCreazioneFlusso As Integer = 8
+                Public Const EstremiFlusso As Integer = 10
+                Public Const TotaleRecord As Integer = 7
+                Public Const TotaleRecordE20 As Integer = 7
+                Public Const TotaleRecordE23 As Integer = 7
+                Public Const TotaleRecordE50 As Integer = 7
+                Public Const TotaleRecordE60 As Integer = 7
+                Public Const TotaleCaricoFlusso As Integer = 15
+                Public Const Filler As Integer = 517
+            End Class
+            Public Property IdentificativoFlusso() As IdentificativoFlusso
+                Get
+                    Return _IdentificativoFlusso
+                End Get
+                Set(ByVal Value As IdentificativoFlusso)
+                    _IdentificativoFlusso = Value
+                End Set
+            End Property
+            Public Property DataCreazioneFlusso() As DateTime
+                Get
+                    Return _DataCreazioneFlusso
+                End Get
+                Set(ByVal Value As DateTime)
+                    _DataCreazioneFlusso = Value
+                End Set
+            End Property
+            Public Property EstremiFlusso() As Integer
+                Get
+                    Return _EstremiFlusso
+                End Get
+                Set(ByVal Value As Integer)
+                    _EstremiFlusso = Value
+                End Set
+            End Property
+            Public Property TotaleRecord() As Integer
+                Get
+                    Return _TotaleRecord
+                End Get
+                Set(ByVal Value As Integer)
+                    _TotaleRecord = Value
+                End Set
+            End Property
+            Public Property TotaleRecordE20() As Integer
+                Get
+                    Return _TotaleRecordE20
+                End Get
+                Set(ByVal Value As Integer)
+                    _TotaleRecordE20 = Value
+                End Set
+            End Property
+            Public Property TotaleRecordE23() As Integer
+                Get
+                    Return _TotaleRecordE23
+                End Get
+                Set(ByVal Value As Integer)
+                    _TotaleRecordE23 = Value
+                End Set
+            End Property
+            Public Property TotaleRecordE50() As Integer
+                Get
+                    Return _TotaleRecordE50
+                End Get
+                Set(ByVal Value As Integer)
+                    _TotaleRecordE50 = Value
+                End Set
+            End Property
+            Public Property TotaleRecordE60() As Integer
+                Get
+                    Return _TotaleRecordE60
+                End Get
+                Set(ByVal Value As Integer)
+                    _TotaleRecordE60 = Value
+                End Set
+            End Property
+            Public Property TotaleCaricoFlusso() As Integer
+                Get
+                    Return _TotaleCaricoFlusso
+                End Get
+                Set(ByVal Value As Integer)
+                    _TotaleCaricoFlusso = Value
+                End Set
+            End Property
+        End Class
+    End Class
+    Public Class clsAccertamentiEsecutivi
+        ''' <summary>
+        '''1 Caratteristiche
+        '''1.1 Caratteristiche del file
+        '''Il flusso di carico (tracciato lunghezza record 600) da accertamenti esecutivi con cui l’ente può
+        '''affidare l’attività di riscossione forzata al soggetto legittimato alla riscossione deve rispettare le
+        '''seguenti caratteristiche:
+        ''' - Tipo di codifica ASCII
+        ''' - Bloccato L.R. 600
+        ''' - Nome del File: CCCCCSSAA_NNN.txt dove
+        '''CCCCC = Codice ente creditore
+        '''SSAA = Anno emissione su 4 posizioni
+        '''NNN = Numero progressivo del file all’interno dell’anno
+        '''.txt = Estensione file di testo
+        '''1.2 Rappresentazione dati e controlli
+        '''Tutti i dati previsti dalla procedura vengono illustrati nelle specifiche sezioni del presente documento;
+        '''in particolare, vengono descritti i vari tipi record che compongono il flusso dati, fornendo per ciascun
+        '''campo i seguenti elementi:
+        '''• Id. Identificativo del campo progressivo numerico;
+        '''• Da Posizione dell’inizio del campo nell’ambito del record;
+        '''• A Posizione della fine del campo nell’ambito del record;
+        '''• Lungh. Numero dei byte del campo;
+        '''• Descr. Contiene le informazioni del campo, il suo significato e la sua valorizzazione;
+        '''• Tipo Tipo di rappresentazione del campo, assume la seguente codifica:
+        '''i. N per campo numerico,
+        '''ii. A per campo alfabetico,
+        '''iii. AN per campo alfanumerico;
+        '''• Obbl. Indica se il campo è ritenuto obbligatorio o meno, assume la seguente
+        '''codifica:
+        '''i. S per campo obbligatorio;
+        '''ii. N per campo facoltativo;
+        '''• Errore Indica il codice con cui viene segnalato l’errore riscontrato;
+        '''il significato dell’errore viene riportato nella Tabella codici di errore –
+        '''APPENDICE A . Il codice – NC – significa che il campo NON è controllato.
+        '''A livello generale valgono inoltre le seguenti convenzioni:
+        '''• Nei campi di tipo A e AN, le lettere sono rappresentate con caratteri maiuscoli;
+        '''• I filler sono valorizzati con spazio;
+        '''• I campi numerici, se non significativi, sono valorizzati con “0”;
+        '''• I campi numerici, se significativi, sono allineati a destra con i rimanenti caratteri valorizzati
+        '''con “0”;
+        '''• i campi non numerici, se non significativi, sono valorizzati con spazio;
+        '''• i campi non numerici, se significativi, sono allineati a sinistra con i rimanenti caratteri
+        '''valorizzati con spazio;
+        '''• i campi vengono sottoposti a controlli formali secondo il tipo di rappresentazione; tale
+        '''tipo di controllo, per brevità non indicato su ciascun singolo campo, può dare luogo alle
+        '''segnalazioni di errore contenute nell’appendice A;
+        '''• valgono inoltre le seguenti convenzioni per gli errori:
+        '''o SF = Scarto Flusso – prevede lo scarto dell’intero flusso dati;
+        '''o SP= Scarto Atto – prevede lo scarto del singolo atto;
+        '''1.3 Rappresentazione del Flusso
+        '''Il flusso logico è composto dai seguenti tipi di record aventi tutti lunghezza pari a 600 byte.
+        '''Seq. Tipo Record Descrizione Tipo record
+        '''1 E00 Record Inizio Flusso
+        '''2 E20 Record Anagrafica Intestatario Atto
+        '''3 E23 Record Anagrafica Ulteriore Soggetto
+        '''4 E50 Record Dati Contabili Atto
+        '''5 E60 Record Ulteriori Dati Atto
+        '''6 E99 Record Fine Flusso
+        '''2 Sui flussi ricevuti a seguito di accertamento enti, si effettua, oltre ai controlli riportati nei singoli campi
+        '''dei vari tipi record, anche i controlli riportati nei seguenti paragrafi.
+        '''2.1 Controlli di struttura
+        '''La struttura del flusso è logicamente suddivisa in quattro parti: la prima relativa alle informazioni iniziali
+        '''del flusso, la seconda che riguarda la parte anagrafica, la terza la parte contabile e l’ultima riporta
+        '''le informazioni finali.
+        '''La codifica dei tipi records segue questa logica: E00 e E99 sono le informazioni iniziali e finali, E20 ed
+        '''E23 riguardano le informazioni anagrafiche. Nel tipo record E50 sono previste le informazioni
+        '''contabili. Nel tipo record E60 sono le informazioni aggiuntive sull’atto.
+        '''I tipi records ammessi sono:
+        '''• E00 Inizio file;
+        '''• E20 Anagrafica – Intestatario Atto/Coobbligato;
+        '''• E23 Anagrafica – Rappresentante, Erede, Curatore ecc.;
+        '''• E50 Contabile – Dati Contabili Atto (Articolo);
+        '''• E60 Ulteriori dati atto;
+        '''• E99 Fine file;
+        '''2.2 Controlli di sequenza dei tipi records
+        '''I controlli di sequenza dei tipi records all’interno del flusso riguardano:
+        '''• il flusso deve cominciare con un record di Inizio E00;
+        '''• il flusso deve terminare con un record di Fine E99;
+        '''• il flusso deve contenere almeno un’Anagrafica Intestatario Atto E20;
+        '''• il flusso deve contenere almeno un Contabile Atto E50;
+        '''• il flusso deve contenere almeno un ulteriore dato atto E60;
+        '''• Il record di testa E00 deve essere seguito da un record E20;
+        '''• Il record E20 (intestatario) deve essere seguito da:
+        '''o Se flag presenza ulteriori intestatari impostato
+        '''Segue record E23, altrimenti
+        '''o Se flag presenza coobbligati = 2
+        '''Segue record E20 (coobbligato), altrimenti
+        ''' Segue E50
+        '''• Il record E50 deve essere seguito da un record E50-E60;
+        '''• Il record E60 deve essere seguito da un record E20;
+        '''• Ogni flusso logico deve finire con un record di Coda “E99”;
+        '''2.3 Controlli di quadratura
+        '''Sono effettuati anche controlli di quadratura, sia in ordine al numero dei tipi records presenti nel
+        '''flusso che relativi al carico presente nel record Contabile Atto.
+        '''• I totali dei record E20-E23-E50-E60 devono essere congruenti con quelli presenti
+        '''sull’archivio;
+        '''• I totali del carico devono essere congruenti con quelli presenti sull’archivio;
+        '''2.4 Controlli di congruenza
+        '''Dati intero flusso:
+        '''• L’estremo della fornitura deve essere univoco nell’ambito dell’Ente;
+        '''• L’estremo della fornitura deve essere uguale sui record di testa e di coda;
+        '''• La data di creazione del file deve essere uguale sui record di testa e di coda;
+        '''• Il progressivo record deve essere strettamente crescente;
+        '''• Il codice Ente/Tipo Ufficio/Ufficio deve essere uguale per tutta la fornitura;
+        '''• Per ogni soggetto la somma degli importi dei singoli atti deve essere maggiore di 10 €;
+        '''Dati singolo atto:
+        '''• Il numero partita deve essere crescente;
+        '''• Anagrafica:
+        '''o Codice fiscale intestatario/coobbligato non validato da Anagrafe Tributaria;
+        '''o Codice fiscale non corrispondente con anagrafica;
+        '''o Codice fiscale non corrispondente con tipologia debitore (persona fisica/ non fisica);
+        '''o Codice fiscale valido intestato a soggetto minore alla data di affidamento del carico,
+        '''privo dell’anagrafica del tutore;
+        '''o Codice fiscale valido ma privo di indirizzo fiscale in Anagrafe Tributaria, in quanto:
+        '''- in Anagrafe Tributaria è presente esclusivamente un indirizzo estero;
+        '''- in sede di «validazione» in Anagrafe Tributaria nel campo relativo all’indirizzo
+        '''di domicilio fiscale, compare la dizione «irreperibile» o altra dizione che non
+        '''consentono di individuare l’indirizzo fisico;
+        '''• Carico singolo atto: l’Importo totale del carico affidato per singolo atto deve essere superiore
+        '''a zero;
+        '''• DATE singolo atto:
+        '''o La data notifica atto e data termine ultimo pagamento devono essere non
+        '''antecedenti al 01 gennaio 2020;
+        '''o La data del termine ultimo di pagamento e la data di efficacia esecutiva dell’atto
+        '''devono essere successive alla data di notifica atto;
+        '''o La data di notifica atto deve essere inferiore di almeno 60 gg rispetto alla data di
+        '''trasmissione del flusso di carico; 
+        ''' </summary>
+        ''' <param name="myStringConnection"></param>
+        ''' <param name="IdRuolo"></param>
+        ''' <param name="sPathFile"></param>
+        ''' <param name="sNameFile"></param>
+        ''' <param name="ListFile"></param>
+        ''' <returns></returns>
+        Public Function CreaAccertamentiEsecutivi(ByVal myStringConnection As String, IdRuolo As Integer, sPathFile As String, ByVal sNameFile As String, ByRef ListFile As ArrayList) As Integer
+            Dim myDataView As New DataView
+            Dim myIdFlusso As New objAccertamentiEsecutivi.IdentificativoFlusso
+            Dim myIdAtto As New objAccertamentiEsecutivi.IdentificativoAtto
+            Dim myE00 As New objAccertamentiEsecutivi.E00
+            Dim myE20 As New objAccertamentiEsecutivi.E20
+            Dim myE23 As New objAccertamentiEsecutivi.E23
+            Dim myE50 As New objAccertamentiEsecutivi.E50
+            Dim myE60 As New objAccertamentiEsecutivi.E60
+            Dim myE99 As New objAccertamentiEsecutivi.E99
+            Dim ListE20 As New ArrayList
+            Dim ListE23 As New ArrayList
+            Dim ListE50 As New ArrayList
+            Dim ListE60 As New ArrayList
+            Dim nTotRC As Integer = 0
+            Dim nTotE20 As Integer = 0
+            Dim nTotE23 As Integer = 0
+            Dim nTotE50 As Integer = 0
+            Dim nTotE60 As Integer = 0
+            Dim impTotAccertamentiEsecutivi As Double = 0
+            Dim AttoPrec As String = ""
+
+            Try
+                ListFile = New ArrayList
+                'prelevo gli articoli da estrarre
+                myDataView = GetPosizioniAccertamentiEsecutivi(myStringConnection, IdRuolo)
+                If Not myDataView Is Nothing Then
+                    'ciclo su tutti gli articoli trovati e preparo il AccertamentiEsecutivi
+                    For Each myRow As DataRowView In myDataView
+                        If myIdFlusso.CodiceEnteCreditore = "" Or myIdFlusso.CodiceEnteCreditore = "0" Then
+                            'popolo i dati identificativi del flusso
+                            myIdFlusso = PopolaIdFlusso(myRow)
+                            'popolo il record E00
+                            myE00 = PopolaE00(myRow, myIdFlusso, nTotRC)
+                            If myE00 Is Nothing Then
+                                Return -1
+                            End If
+                        End If
+                        If myRow("numeroatto") <> AttoPrec Then
+                            If myE20.ProgressivoRecord > 0 Then
+                                ListE20.Add(myE20)
+                                If Not myE20 Is Nothing Then
+                                    nTotE20 += 1
+                                Else
+                                    Return -1
+                                End If
+                                ListE23.Add(myE23)
+                                If Not myE23 Is Nothing Then
+                                    nTotE23 += 1
+                                Else
+                                    Return -1
+                                End If
+                                nTotRC += 1
+                                myE60.ProgressivoRecord = nTotRC
+                                ListE60.Add(myE60)
+                                nTotE60 += 1
+                                impTotAccertamentiEsecutivi += myRow("ImportoTotaleAtto")
+                            End If
+                            myIdAtto = PopolaIdentificativoAtto(myRow, myIdFlusso)
+                            nTotRC += 1
+                            myE20 = PopolaE20(myRow, myIdAtto, nTotRC)
+                            nTotRC += 1
+                            myE23 = PopolaE23(myRow, myIdAtto, nTotRC)
+                        End If
+                        nTotRC += 1
+                        myE50 = PopolaE50(myRow, myIdAtto, nTotRC)
+                        If Not myE50 Is Nothing Then
+                            nTotE50 += 1
+                        Else
+                            Return -1
+                        End If
+                        ListE50.Add(myE50)
+                        myE60 = PopolaE60(myRow, myIdAtto, nTotRC)
+                        If myE60 Is Nothing Then
+                            Return -1
+                        End If
+                        AttoPrec = myRow("numeroatto")
+                    Next
+                    myE99 = PopolaE99(myIdFlusso, myE00, nTotRC, nTotE20, nTotE23, nTotE50, nTotE60, impTotAccertamentiEsecutivi)
+
+                    'scrivo il file
+                    If CreateAccertamentiEsecutivi(sPathFile & sNameFile & ".001", myE00, ListE20, ListE23, ListE50, ListE60, myE99) < 1 Then
+                        Return -1
+                    End If
+                    ListFile.Add(sPathFile & sNameFile & ".001")
+                    If New cls290().ZipFile(sPathFile, sNameFile & ".zip", ListFile) = False Then
+                        Return 0
+                    End If
+                Else
+                    Return 0
+                End If
+
+                Return 1
+            Catch Err As Exception
+                Log.Debug(IdRuolo.ToString() + " - OPENgovPROVVEDIMENTI.clsCoattivo.CreaobjAccertamentiEsecutivi.errore::" + Err.Message)
+                Return -1
+            End Try
+        End Function
+        Public Function GetPosizioniAccertamentiEsecutivi(ByVal myStringConnection As String, IdRuolo As Integer) As DataView
+            Dim sSQL As String
+            Dim myDataView As New DataView
+
+            Try
+                Using ctx As New DBModel(ConstSession.DBType, myStringConnection)
+                    Try
+                        sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_GetPosizioniAccertamentiEsecutivi", "IdRuolo")
+                        myDataView = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("IdRuolo", IdRuolo)
+                        )
+                    Catch ex As Exception
+                        Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.GetPosizioniobjAccertamentiEsecutivi.erroreQuery: ", ex)
+                        Return Nothing
+                    Finally
+                        ctx.Dispose()
+                    End Try
+                End Using
+                Return myDataView
+            Catch Err As Exception
+                Log.Debug(IdRuolo.ToString() + " - OPENgovPROVVEDIMENTI.clsCoattivo.GetPosizioniobjAccertamentiEsecutivi.errore: ", Err)
+                Return Nothing
+            End Try
+        End Function
+        Public Function PopolaIdFlusso(myRow As DataRowView) As objAccertamentiEsecutivi.IdentificativoFlusso
+            Dim myItem As New objAccertamentiEsecutivi.IdentificativoFlusso
+
+            Try
+                myItem.CodiceEnteCreditore = New MyUtility().ReplaceCharForFile(myRow("CodiceEnteCreditore"))
+                myItem.TipoUfficio = New MyUtility().ReplaceCharForFile(myRow("TipoUfficio"))
+                myItem.CodiceUfficio = New MyUtility().ReplaceCharForFile(myRow("CodiceUfficio"))
+
+                Return myItem
+            Catch Err As Exception
+                Log.Debug(myRow("CodiceEnteCreditore").ToString() + " - OPENgovPROVVEDIMENTI.clsCoattivo.CreaAccertamentiEsecutivi::PopolaIdFlusso.errore::" + Err.Message)
+                Return Nothing
+            End Try
+        End Function
+        Public Function PopolaIdentificativoAtto(myRow As DataRowView, ByVal myIdFlusso As objAccertamentiEsecutivi.IdentificativoFlusso) As objAccertamentiEsecutivi.IdentificativoAtto
+            Dim myItem As New objAccertamentiEsecutivi.IdentificativoAtto
+
+            Try
+                myItem.IdentificativoFlusso = myIdFlusso
+                myItem.AnnoEmissioneAtto = New MyUtility().ReplaceCharForFile(myRow("AnnoEmissioneAtto"))
+                myItem.NumeroPartita = New MyUtility().ReplaceCharForFile(myRow("NumeroPartita"))
+                myItem.DataEmissioneAtto = myRow("DataEmissioneAtto")
+                myItem.NumeroAtto = New MyUtility().ReplaceCharForFile(myRow("NumeroAtto"))
+                myItem.DataNotificaAtto = myRow("DataNotificaAtto")
+
+                Return myItem
+            Catch Err As Exception
+                Log.Debug(myIdFlusso.CodiceEnteCreditore + " - OPENgovPROVVEDIMENTI.clsCoattivo.CreaAccertamentiEsecutivi::PopolaIdentificativoAtto.errore::" + Err.Message)
+                Return Nothing
+            End Try
+        End Function
+        Public Function PopolaE00(myRow As DataRowView, ByVal myIdFlusso As objAccertamentiEsecutivi.IdentificativoFlusso, nRC As Integer) As objAccertamentiEsecutivi.E00
+            Dim myItem As New objAccertamentiEsecutivi.E00
+
+            Try
+                myItem.IdentificativoFlusso = myIdFlusso
+                myItem.DataCreazioneFlusso = Now
+                myItem.EstremiFlusso = New MyUtility().ReplaceCharForFile(myRow("EstremiFlusso"))
+                nRC += 1
+                Return myItem
+            Catch Err As Exception
+                Log.Debug(myIdFlusso.CodiceEnteCreditore + " - OPENgovPROVVEDIMENTI.clsCoattivo.CreaAccertamentiEsecutivi::PopolaE00.errore::" + Err.Message)
+                Return Nothing
+            End Try
+        End Function
+        Public Function PopolaE20(myRow As DataRowView, myIdAtto As objAccertamentiEsecutivi.IdentificativoAtto, nRC As Integer) As objAccertamentiEsecutivi.E20
+            Dim myItem As New objAccertamentiEsecutivi.E20
+
+            Try
+                myItem.IdentificativoAtto = myIdAtto
+                myItem.ProgressivoRecord = nRC
+                myItem.PresenzaCoobligati = New MyUtility().ReplaceCharForFile(myRow("PresCoobligati"))
+                myItem.NaturaSoggetto = New MyUtility().ReplaceCharForFile(myRow("NaturaSoggetto"))
+                myItem.CodiceFiscale = New MyUtility().ReplaceCharForFile(myRow("CodiceFiscale"))
+                myItem.CognomeDenominazione = New MyUtility().ReplaceCharForFile(myRow("CognomeDenominazione"))
+                myItem.Nome = New MyUtility().ReplaceCharForFile(myRow("Nome"))
+                myItem.Sesso = New MyUtility().ReplaceCharForFile(myRow("Sesso"))
+                myItem.DataNascita = New MyUtility().ReplaceCharForFile(myRow("DataNascita"))
+                myItem.CodiceCatastaleComuneNascita = New MyUtility().ReplaceCharForFile(myRow("CodCatastaleNascita"))
+                myItem.ProvinciaNascita = New MyUtility().ReplaceCharForFile(myRow("PVNascita"))
+                myItem.CodiceCatastaleComuneDomicilioFiscale = New MyUtility().ReplaceCharForFile(myRow("CodCatastaleDomicilio"))
+                myItem.ComuneDomicilioFiscale = New MyUtility().ReplaceCharForFile(myRow("ComuneDomicilio"))
+                myItem.ProvinciaDomicilioFiscale = New MyUtility().ReplaceCharForFile(myRow("PVDomicilio"))
+                myItem.CAPDomicilioFiscale = New MyUtility().ReplaceCharForFile(myRow("CAPDomicilio"))
+                myItem.Indirizzo = New MyUtility().ReplaceCharForFile(myRow("Indirizzo"))
+                myItem.NumeroCivico = New MyUtility().ReplaceCharForFile(myRow("Civico"))
+                myItem.LetteraNumeroCivico = New MyUtility().ReplaceCharForFile(myRow("Lettera"))
+                myItem.Chilometro = New MyUtility().ReplaceCharForFile(myRow("Chilometro"))
+                myItem.Palazzina = New MyUtility().ReplaceCharForFile(myRow("Palazzina"))
+                myItem.Scala = New MyUtility().ReplaceCharForFile(myRow("Scala"))
+                myItem.Piano = New MyUtility().ReplaceCharForFile(myRow("Piano"))
+                myItem.Interno = New MyUtility().ReplaceCharForFile(myRow("Interno"))
+                myItem.LocalitaFrazione = New MyUtility().ReplaceCharForFile(myRow("Frazione"))
+                Return myItem
+            Catch Err As Exception
+                Log.Debug(myIdAtto.IdentificativoFlusso.CodiceEnteCreditore + " - OPENgovPROVVEDIMENTI.clsCoattivo.CreaAccertamentiEsecutivi::PopolaE20.errore::" + Err.Message + " - COD_CONTRIBUENTE::" + myItem.ProgressivoRecord.ToString() + "|" + myIdAtto.NumeroAtto.ToString())
+                Return Nothing
+            End Try
+        End Function
+        Public Function PopolaE23(myRow As DataRowView, myIdAtto As objAccertamentiEsecutivi.IdentificativoAtto, nRC As Integer) As objAccertamentiEsecutivi.E23
+            Dim myItem As New objAccertamentiEsecutivi.E23
+
+            Try
+                myItem.IdentificativoAtto = myIdAtto
+                myItem.ProgressivoRecord = nRC
+                myItem.CodiceFiscaleSoggettoIntestatario = New MyUtility().ReplaceCharForFile(myRow("CodFiscaleIntestatario"))
+                myItem.CodiceFiscaleUlterioreSoggettoNotifica = New MyUtility().ReplaceCharForFile(myRow("CodFiscaleUltSog"))
+                myItem.Cognome = New MyUtility().ReplaceCharForFile(myRow("CognomeUltSog"))
+                myItem.Nome = New MyUtility().ReplaceCharForFile(myRow("NomeUltSog"))
+                myItem.Sesso = New MyUtility().ReplaceCharForFile(myRow("SessoUltSog"))
+                myItem.DataNascita = New MyUtility().ReplaceCharForFile(myRow("DataNascitaUltSog"))
+                myItem.CodiceCatastaleComuneNascita = New MyUtility().ReplaceCharForFile(myRow("CodCatastaleNascitaUltSog"))
+                myItem.ProvinciaNascita = New MyUtility().ReplaceCharForFile(myRow("PVNascitaUltSog"))
+                myItem.CodiceCatastaleComuneDomicilioFiscale = New MyUtility().ReplaceCharForFile(myRow("CodCatastaleDomicilioUltSog"))
+                myItem.ComuneDomicilioFiscale = New MyUtility().ReplaceCharForFile(myRow("ComuneDomicilioUltSog"))
+                myItem.ProvinciaDomicilioFiscale = New MyUtility().ReplaceCharForFile(myRow("PVDomicilioUltSog"))
+                myItem.CAPDomicilioFiscale = New MyUtility().ReplaceCharForFile(myRow("CAPDomicilioUltSog"))
+                myItem.Indirizzo = New MyUtility().ReplaceCharForFile(myRow("IndirizzoUltSog"))
+                myItem.NumeroCivico = New MyUtility().ReplaceCharForFile(myRow("CivicoUltSog"))
+                myItem.LetteraNumeroCivico = New MyUtility().ReplaceCharForFile(myRow("LetteraUltSog"))
+                myItem.Chilometro = New MyUtility().ReplaceCharForFile(myRow("ChilometroUltSog"))
+                myItem.Palazzina = New MyUtility().ReplaceCharForFile(myRow("PalazzinaUltSog"))
+                myItem.Scala = New MyUtility().ReplaceCharForFile(myRow("ScalaUltSog"))
+                myItem.Piano = New MyUtility().ReplaceCharForFile(myRow("PianoUltSog"))
+                myItem.Interno = New MyUtility().ReplaceCharForFile(myRow("InternoUltSog"))
+                myItem.LocalitaFrazione = New MyUtility().ReplaceCharForFile(myRow("FrazioneUltSog"))
+                Return myItem
+            Catch Err As Exception
+                Log.Debug(myIdAtto.IdentificativoFlusso.CodiceEnteCreditore + " - OPENgovPROVVEDIMENTI.clsCoattivo.CreaobjAccertamentiEsecutivi.PopolaE23.errore::" + Err.Message + " - COD_CONTRIBUENTE::" + myItem.ProgressivoRecord.ToString() + "|" + myIdAtto.NumeroAtto.ToString())
+                Return Nothing
+            End Try
+        End Function
+        Public Function PopolaE50(myRow As DataRowView, myIdAtto As objAccertamentiEsecutivi.IdentificativoAtto, nRC As Integer) As objAccertamentiEsecutivi.E50
+            Dim myItem As New objAccertamentiEsecutivi.E50
+
+            Try
+                myItem.IdentificativoAtto = myIdAtto
+                myItem.ProgressivoRecord = nRC
+                myItem.ProgressivoArticolo = New MyUtility().ReplaceCharForFile(myRow("ProgressivoArticolo"))
+                myItem.CodiceEntrata = New MyUtility().ReplaceCharForFile(myRow("CodiceEntrata"))
+                myItem.TipoCodiceEntrata = New MyUtility().ReplaceCharForFile(myRow("TipoCodiceEntrata"))
+                myItem.ImportoArticolo = New MyUtility().ReplaceCharForFile(myRow("ImpArticolo"))
+                Return myItem
+            Catch Err As Exception
+                Log.Debug(myIdAtto.IdentificativoFlusso.CodiceEnteCreditore + " - OPENgovPROVVEDIMENTI.clsCoattivo.CreaAccertamentiEsecutivi::PopolaE50.errore::" + Err.Message + " - COD_CONTRIBUENTE::" + myItem.ProgressivoRecord.ToString() + "|" + myIdAtto.NumeroAtto.ToString())
+                Return Nothing
+            End Try
+        End Function
+        Public Function PopolaE60(myRow As DataRowView, myIdAtto As objAccertamentiEsecutivi.IdentificativoAtto, nRC As Integer) As objAccertamentiEsecutivi.E60
+            Dim myItem As New objAccertamentiEsecutivi.E60
+
+            Try
+                myItem.IdentificativoAtto = myIdAtto
+                myItem.ProgressivoRecord = nRC
+                myItem.NumeroDelibera = New MyUtility().ReplaceCharForFile(myRow("NDelibera"))
+                myItem.DataDelibera = New MyUtility().ReplaceCharForFile(myRow("DataDelibera"))
+                myItem.DataFineValiditaDelibera = New MyUtility().ReplaceCharForFile(myRow("DataFineDelibera"))
+                myItem.ImportoTotaleAtto = New MyUtility().ReplaceCharForFile(myRow("ImportoTotaleAtto"))
+                myItem.TotaleArticoliAtto = New MyUtility().ReplaceCharForFile(myRow("ProgressivoArticolo"))
+                myItem.DataTermineUltimoPagamentoAtto = New MyUtility().ReplaceCharForFile(myRow("DataTerminePagamentoAtto"))
+                Return myItem
+            Catch Err As Exception
+                Log.Debug(myIdAtto.IdentificativoFlusso.CodiceEnteCreditore + " - OPENgovPROVVEDIMENTI.clsCoattivo.CreaAccertamentiEsecutivi::PopolaE60.errore::" + Err.Message + " - COD_CONTRIBUENTE::" + myItem.ProgressivoRecord.ToString() + "|" + myIdAtto.NumeroAtto.ToString())
+                Return Nothing
+            End Try
+        End Function
+        Public Function PopolaE99(myIdFlusso As objAccertamentiEsecutivi.IdentificativoFlusso, E00 As objAccertamentiEsecutivi.E00, nRC As Integer, nE20 As Integer, nE23 As Integer, nE50 As Integer, nE60 As Integer, impFlusso As Double) As objAccertamentiEsecutivi.E99
+            Dim myItem As New objAccertamentiEsecutivi.E99
+
+            Try
+                nRC += 2 'Testa+Coda
+                myItem.IdentificativoFlusso = myIdFlusso
+                myItem.DataCreazioneFlusso = E00.DataCreazioneFlusso
+                myItem.EstremiFlusso = E00.EstremiFlusso
+                myItem.TotaleRecord = nRC
+                myItem.TotaleRecordE20 = nE20
+                myItem.TotaleRecordE23 = nE23
+                myItem.TotaleRecordE50 = nE50
+                myItem.TotaleRecordE60 = nE60
+                myItem.TotaleCaricoFlusso = impFlusso
+
+                Return myItem
+            Catch Err As Exception
+                Log.Debug(myIdFlusso.CodiceEnteCreditore + " - OPENgovPROVVEDIMENTI.clsCoattivo.CreaAccertamentiEsecutivi::PopolaE99.errore::" + Err.Message)
+                Return Nothing
+            End Try
+        End Function
+        ''' <summary>
+        ''' 
+        ''' </summary>
+        ''' <param name="sPathNameAccertamentiEsecutivi"></param>
+        ''' <param name="oE00"></param>
+        ''' <param name="oE20"></param>
+        ''' <param name="oE50"></param>
+        ''' <param name="oE60"></param>
+        ''' <param name="oE99"></param>
+        ''' <returns></returns>
+        Public Function CreateAccertamentiEsecutivi(ByVal sPathNameAccertamentiEsecutivi As String, ByVal oE00 As objAccertamentiEsecutivi.E00, ByVal oE20 As ArrayList, oE23 As ArrayList, ByVal oE50 As ArrayList, ByVal oE60 As ArrayList, ByVal oE99 As objAccertamentiEsecutivi.E99) As Integer
+
+            Try
+                'elimino il file se già presente
+                If New MyUtility().DeleteFile(sPathNameAccertamentiEsecutivi) = False Then
+                End If
+                'scrivo il file
+                If PrintLineE00(sPathNameAccertamentiEsecutivi, oE00) <= 0 Then
+                    Return 0
+                End If
+                For Each myE20 As objAccertamentiEsecutivi.E20 In oE20
+                    If PrintLineE20(sPathNameAccertamentiEsecutivi, myE20) <= 0 Then
+                        Return 0
+                    End If
+                    For Each myE23 As objAccertamentiEsecutivi.E23 In oE23
+                        If myE23.IdentificativoAtto.NumeroAtto = myE20.IdentificativoAtto.NumeroAtto Then
+                            If PrintLineE23(sPathNameAccertamentiEsecutivi, myE23) <= 0 Then
+                                Return 0
+                            End If
+                        End If
+                    Next
+                    For Each myE50 As objAccertamentiEsecutivi.E50 In oE50
+                        If myE50.IdentificativoAtto.NumeroAtto = myE20.IdentificativoAtto.NumeroAtto Then
+                            If PrintLineE50(sPathNameAccertamentiEsecutivi, myE50) <= 0 Then
+                                Return 0
+                            End If
+                        End If
+                    Next
+                    For Each myE60 As objAccertamentiEsecutivi.E60 In oE60
+                        If myE60.IdentificativoAtto.NumeroAtto = myE20.IdentificativoAtto.NumeroAtto Then
+                            If PrintLineE60(sPathNameAccertamentiEsecutivi, myE60) <= 0 Then
+                                Return 0
+                            End If
+                        End If
+                    Next
+                Next
+                If PrintLineE99(sPathNameAccertamentiEsecutivi, oE99) <= 0 Then
+                    Return 0
+                End If
+
+                Return 1
+            Catch Err As Exception
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.CreaAccertamentiEsecutivi::CreateobjAccertamentiEsecutivi.errore::" + Err.Message)
+                Return -1
+            End Try
+        End Function
+        ''' <summary>
+        ''' 
+		''' </summary>
+        ''' <param name="sPathNameFile"></param>
+        ''' <param name="oE00"></param>
+        ''' <returns></returns>
+        Public Function PrintLineE00(ByVal sPathNameFile As String, ByVal oE00 As objAccertamentiEsecutivi.E00) As Integer
+            Dim sPrintLine As String = ""
+            Try
+                'Campo Posizione 1-3 Lungh. 3<<TIPO RECORD Vale Sempre "E00">> Tipo:AN Obbl.S Errore:004-SF
+                sPrintLine += oE00.TipoRecord
+                'Campo Posizione 4-8 Lungh. 5<<CODICE ENTE CREDITORE Deve essere presente nella "Tabella Enti Creditori e Beneficiari" APPENDICE B>> Tipo:N Obbl.S Errore:504-SF
+                sPrintLine += PadLine(oE00.IdentificativoFlusso.CodiceEnteCreditore, oE00.IdentificativoFlusso.Length.CodiceEnteCreditore, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 9-9 Lungh. 1<<TIPO UFFICIO Tipologia ufficio ente creditore APPENDICE B>> Tipo:AN Obbl.S Errore:504-SF
+                sPrintLine += PadLine(oE00.IdentificativoFlusso.TipoUfficio, oE00.IdentificativoFlusso.Length.TipoUfficio, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 10-15 Lungh. 6<<CODICE UFFICIO Codice ufficio dell'ente creditore APPENDICE B>> Tipo:AN Obbl.S Errore:504-SF
+                sPrintLine += PadLine(oE00.IdentificativoFlusso.CodiceUfficio, oE00.IdentificativoFlusso.Length.CodiceUfficio, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 16-23 Lungh. 8<<DATA CREAZIONE FLUSSO Data in cui l'ente crea il file di carico espressa nel formato (AAAAMMGG).Deve essere minore o uguale alla data trasmissione e non deve essere antecedente alla data di trasmissione di oltre 15 giorni>> Tipo:N Obbl.S Errore:045-SF 096-SF
+                sPrintLine += PadLine(oE00.DataCreazioneFlusso, oE00.Length.DataCreazioneFlusso, objAccertamentiEsecutivi.Type.Data)
+                'Campo Posizione 24-33 Lungh. 10<<ESTREMI FLUSSO Identificativo del file trasmesso, espresso nella forma AAAA7NNNNN dove AAAA=Anno flusso, 7=fisso per indicare la tipologia accertamento esecutivo NNNNN=Progressivo crescente L’anno AAAA coincide con l’anno di creazione del flusso>> Tipo:N Obbl.S Errore:501-SF
+                sPrintLine += PadLine(oE00.EstremiFlusso, oE00.Length.EstremiFlusso, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 34-600 Lungh. 567<<FILLER>> Tipo:AN Obbl.N
+                sPrintLine += PadLine(oE00.Filler, oE00.Length.Filler, objAccertamentiEsecutivi.Type.Stringa)
+
+                sPrintLine = New MyUtility().ReplaceCharForFile(sPrintLine)
+                If New MyUtility().WriteFile(sPathNameFile, sPrintLine) <= 0 Then
+                    Return 0
+                End If
+
+                Return 1
+            Catch Err As Exception
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.CreaAccertamentiEsecutivi::PrintLineE00.errore::" + Err.Message)
+                Return -1
+            End Try
+        End Function
+        ''' <summary>
+        ''' 
+        ''' </summary>
+        ''' <param name="sPathNameFile"></param>
+        ''' <param name="oE20"></param>
+        ''' <returns></returns>
+        Public Function PrintLineE20(ByVal sPathNameFile As String, ByVal oE20 As objAccertamentiEsecutivi.E20) As Integer
+            Dim sPrintLine As String = ""
+            Try
+                'Campo Posizione 1-3 Lungh. 3<<TIPO RECORD Vale Sempre "E20".>> Tipo:AN Obbl.S Errore:Q20-SP	
+                sPrintLine += oE20.TipoRecord
+                'Campo Posizione 4-10 Lungh. 7<<PROGRESSIVO RECORD Numero progressivo del record. Deve essere maggiore di una unità rispetto al valore contenuto nel medesimo campo del record immediatamente precedente, sul primo rec all’interno del file il campo deve valere 1>> Tipo:N Obbl.S Errore:013-SF	
+                sPrintLine += PadLine(oE20.ProgressivoRecord, oE20.Length.ProgressivoRecord, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 11-15 Lungh. 5<<CODICE ENTE CREDITORE Deve essere presente nella "Tabella Enti Creditori e Beneficiari" APPENDICE B Deve assumere lo stesso valore dell’analogo campo del record “E00”.>> Tipo:N Obbl.S Errore:502-SF	
+                sPrintLine += PadLine(oE20.IdentificativoAtto.IdentificativoFlusso.CodiceEnteCreditore, oE20.IdentificativoAtto.IdentificativoFlusso.Length.CodiceEnteCreditore, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 16-16 Lungh. 1<<TIPO UFFICIO Assume lo stesso valore dell'analogo campo del record E00>> Tipo:AN Obbl.S Errore:E230-SP	
+                sPrintLine += PadLine(oE20.IdentificativoAtto.IdentificativoFlusso.TipoUfficio, oE20.IdentificativoAtto.IdentificativoFlusso.Length.TipoUfficio, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 17-22 Lungh. 6<<CODICE UFFICIO Assume lo stesso valore dell'analogo campo del record E00>> Tipo:AN Obbl.S Errore:E230-SP	
+                sPrintLine += PadLine(oE20.IdentificativoAtto.IdentificativoFlusso.CodiceUfficio, oE20.IdentificativoAtto.IdentificativoFlusso.Length.CodiceUfficio, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 23-26 Lungh. 4<<ANNO DI EMISSIONE ATTO Indica l'anno in cui è stato emesso l’atto di accertamento, non può essere maggiore dell’anno corrente, e coincide con l’anno del campo data emissione atto.>> Tipo:N Obbl.S Errore:E230-SP	
+                sPrintLine += PadLine(oE20.IdentificativoAtto.AnnoEmissioneAtto, oE20.IdentificativoAtto.Length.AnnoEmissioneAtto, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 27-29 Lungh. 3<<TIPOLOGIA ATTO Vale sempre 005>> Tipo:N Obbl.S Errore:E230-SP	
+                sPrintLine += PadLine(oE20.IdentificativoAtto.TipologiaAtto, oE20.IdentificativoAtto.Length.TipologiaAtto, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 30-38 Lungh. 9<<NUMERO PARTITA Deve essere numerico e crescente nell'ambito della fornitura.>> Tipo:N Obbl.S Errore:E230-SP	
+                sPrintLine += PadLine(oE20.IdentificativoAtto.NumeroPartita, oE20.IdentificativoAtto.Length.NumeroPartita, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 39-41 Lungh. 3<<PROGRESSIVO PARTITA Vale sempre 001.>> Tipo:N Obbl.S Errore:E230-SP	
+                sPrintLine += PadLine(oE20.IdentificativoAtto.ProgressivoPartita, oE20.IdentificativoAtto.Length.ProgressivoPartita, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 42-43 Lungh. 2<<CODICE TIPO ATTO Codice che indica la tipologia dell'atto. Vedi NOTA 3 Fare riferimento alla tabella presente in APPENDICE P>> Tipo:AN Obbl.N Errore:E230-SP	
+                sPrintLine += PadLine(oE20.IdentificativoAtto.CodiceTipoAtto, oE20.IdentificativoAtto.Length.CodiceTipoAtto, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 44-51 Lungh. 8<<DATA EMISSIONE ATTO Data in cui l'ente ha emesso l'atto nel formato (AAAAMMGG) Deve essere maggiore del 01/01/2020, minore della data di creazione flusso e minore della data di notifica atto>> Tipo:N Obbl.S Errore:E230-SP	
+                sPrintLine += PadLine(oE20.IdentificativoAtto.DataEmissioneAtto, oE20.IdentificativoAtto.Length.DataEmissioneAtto, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 52-63 Lungh. 12<<NUMERO ATTO Estremi dell'atto notificato Non può essere nullo>> Tipo:AN Obbl.S Errore:E230-SP	
+                sPrintLine += PadLine(oE20.IdentificativoAtto.NumeroAtto, oE20.IdentificativoAtto.Length.NumeroAtto, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 64-71 Lungh. 8<<DATA NOTIFICA ATTO Data di notifica dell'atto al debitore, nella forma AAAAMMGG. Deve essere maggiore del 01/01/2020, maggiore o uguale della data emmissione atto e inferiore alla data creazione file presente sul record E00 di almeno 60 gg L'anno (AAAA) deve essere maggiore o uguale del valore indicato nel campo anno di emessione atto>> Tipo:N Obbl.S Errore:E230-SP T20-SP U20-SP	
+                sPrintLine += PadLine(oE20.IdentificativoAtto.DataNotificaAtto, oE20.IdentificativoAtto.Length.DataNotificaAtto, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 72-111 Lungh. 40<<FILLER >> Tipo:AN Obbl.N	
+                sPrintLine += PadLine(oE20.Filler, oE20.Length.Filler, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 112-112 Lungh. 1<<PRESENZA ULTERIORI SOGGETTI DESTINATARI DELL'ATTO Indica la presenza di ulteriori destinatari per la notifica dell'atto. Deve essere presente nella "Tabella Codici altri soggetti per notifica – APPENDICE O" Deve assumere il valore ‘T’/’R’ in presenza di soggetto minore. Non può assumere il valore ‘T’ in presenza di soggetto giuridico>> Tipo:AN Obbl.S Errore:H20-SP R20-SP	
+                sPrintLine += PadLine(oE20.PresenzaUlterioriDestinatariAtto, oE20.Length.PresenzaUlterioriDestinatariAtto, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 113-113 Lungh. 1<<PRESENZA COOBLIGATI Indica la presenza di soggetti coobbligati. Assume il valore: "1" = assenza di coobbligati "2" = presenza di coobbligati "C" = coobbligati Deve assumere i valori "1", "2" per i record E20 relativi all’intestatario Deve assumere il valore "C" per i record E20 relativi ai coobbligati>> Tipo:AN Obbl.S Errore:I20-SP O20-SP	
+                sPrintLine += PadLine(oE20.PresenzaCoobligati, oE20.Length.PresenzaCoobligati, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 114-114 Lungh. 1<<NATURA SOGGETTO Indica la natura giuridica del soggetto. 1=PERSONA FISICA 2=PERSONA GIURIDICA>> Tipo:AN Obbl.S Errore:055-SP	
+                sPrintLine += PadLine(oE20.NaturaSoggetto, oE20.Length.NaturaSoggetto, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 115-130 Lungh. 16<<CODICE FISCALE Codice Fiscale dell'intestatario, del coobligato. Se Natura Giuridica del soggetto è uguale a 1 (P.F.): •  deve essere formalmente corretto, (cfr. APPENDICE N) •  deve essere congruente con i dati anagrafici del soggetto. Se Natura Giuridica del soggetto è uguale a 2 (P.G.): •  deve essere numerico di 11 caratteri seguito da spazio. Per le causali di scarto verificare APPENDICE A>> Tipo:AN Obbl.S Errore:096-SP A-SP B-SP C-SP D-SP E-SP F-SP G-SP H-SP I-SP L-SP M-SP N-SP O-SP Q-SP R-SP A20-SP B20-SP	
+                sPrintLine += PadLine(oE20.CodiceFiscale, oE20.Length.CodiceFiscale, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 131-210 Lungh. 80<<COGNOME/DENOMINAZIONE Cognome/Denominazione del soggetto. Deve essere sempre valorizzato. Se il campo Natura giuridica è uguale a "1" conterrà il cognome del soggetto Se il campo Natura giuridica è uguale a "2" conterrà la denominazione societaria. Puo’ contenere solo lettere maiuscole, trattino e apice.>> Tipo:AN Obbl.S Errore:J20-SP M20-SP S20-SP	
+                sPrintLine += PadLine(oE20.CognomeDenominazione, oE20.Length.CognomeDenominazione, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 211-250 Lungh. 40<<NOME Nome del soggetto. Deve essere valorizzato se il campo Natura giuridica è uguale a "1". Può contenere solo lettere maiuscole, trattino e apice>> Tipo:AN Obbl.S Errore:L20-SP S20-SP	
+                sPrintLine += PadLine(oE20.Nome, oE20.Length.Nome, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 251-251 Lungh. 1<<SESSO Sesso del soggetto. Deve essere valorizzato se il campo Natura giuridica è uguale a "1". Se valorizzato può assumere i valori "F" o "M". Assume il valore: "F" = femmina "M" = maschio>> Tipo:AN Obbl.S Errore:S20-SP	
+                sPrintLine += PadLine(oE20.Sesso, oE20.Length.Sesso, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 252-259 Lungh. 8<<DATA DI NASCITA Data di nascita. Deve essere sempre valorizzata se il campo Natura giuridica è uguale a "1". Deve essere espressa nella forma AAAAMMGG e deve essere formalmente corretta. Se la data di nascita individua un soggetto minore deve essere sempre presente il rec.E23 relativo all’ulteriore destinatario della notifica con tipologia ‘T’/’R’>> Tipo:N Obbl.S Errore:S20-SP	
+                sPrintLine += PadLine(oE20.DataNascita, oE20.Length.DataNascita, objAccertamentiEsecutivi.Type.Data)
+                'Campo Posizione 260-263 Lungh. 4<<CODICE CATASTALE DEL COMUNE DI NASCITA Codice Catastale del comune di nascita Deve essere sempre valorizzata se il campo Natura giuridica è uguale a "1".>> Tipo:AN Obbl.S Errore:S20-SP	
+                sPrintLine += PadLine(oE20.CodiceCatastaleComuneNascita, oE20.Length.CodiceCatastaleComuneNascita, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 264-265 Lungh. 2<<PROVINCIA DI NASCITA Sigla provincia del comune di nascita. Deve essere sempre valorizzata se il campo Natura giuridica è uguale a "1".>> Tipo:AN Obbl.S Errore:S20-SP	
+                sPrintLine += PadLine(oE20.ProvinciaNascita, oE20.Length.ProvinciaNascita, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 266-269 Lungh. 4<<CODICE CATASTALE DEL COMUNE DI DOMICILIO FISCALE Contiene il codice catastale del domicilio fiscale ultimo alla data di notifica dell'atto da parte dell'ente.>> Tipo:AN Obbl.S Errore:039-SP 504-SP	
+                sPrintLine += PadLine(oE20.CodiceCatastaleComuneDomicilioFiscale, oE20.Length.CodiceCatastaleComuneDomicilioFiscale, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 270-314 Lungh. 45<<COMUNE DEL DOMICILIO FISCALE Contiene la denominazione del comune del domicilio fiscale ultimo alla data di notifica dell'atto da parte dell'ente.>> Tipo:AN Obbl.S Errore:039-SP 504-SP	
+                sPrintLine += PadLine(oE20.ComuneDomicilioFiscale, oE20.Length.ComuneDomicilioFiscale, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 315-316 Lungh. 2<<PROVINCIA DEL DOMICILIO FISCALE Contiene la provincia del domicilio fiscale ultimo alla data di notifica dell'atto da parte dell'ente.>> Tipo:AN Obbl.S Errore:039-SP 504-SP	
+                sPrintLine += PadLine(oE20.ProvinciaDomicilioFiscale, oE20.Length.ProvinciaDomicilioFiscale, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 317-321 Lungh. 5<<C.A.P. DEL DOMICILIO FISCALE Contiene il cap del domicilio fiscale ultimo alla data di notifica dell'atto da parte dell'ente.>> Tipo:N Obbl.S Errore:039-SP 504-SP	
+                sPrintLine += PadLine(oE20.CAPDomicilioFiscale, oE20.Length.CAPDomicilioFiscale, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 322-401 Lungh. 80<<INDIRIZZO Contiene l'indirizzo del domicilio fiscale ultimo alla data di notifica dell'atto da parte dell'ente>> Tipo:AN Obbl.S Errore:039-SP	
+                sPrintLine += PadLine(oE20.Indirizzo, oE20.Length.Indirizzo, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 402-406 Lungh. 5<<NUMERO CIVICO Contiene il numero civico dell'indirizzo del domicilio fiscale ultimo alla data di notifica dell'atto da parte dell'ente>> Tipo:N Obbl.N	
+                sPrintLine += PadLine(oE20.NumeroCivico, oE20.Length.NumeroCivico, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 407-408 Lungh. 2<<LETTERA NUMERO CIVICO Se valorizzato contiene la lettera associato al numero civico del'indirizzo di domicilio fiscale.>> Tipo:AN Obbl.N	
+                sPrintLine += PadLine(oE20.LetteraNumeroCivico, oE20.Length.LetteraNumeroCivico, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 409-414 Lungh. 6<<CHILOMETRO Se valorizzato contiene il chilometro dell'indirizzo del domicilio fiscale e deve essere espresso nella forma KKKMMM, dove: "KKK"= parte intera del chilometro; "MMM"= parte decimale del chilometro.>> Tipo:N Obbl.N	
+                sPrintLine += PadLine(oE20.Chilometro, oE20.Length.Chilometro, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 415-417 Lungh. 3<<PALAZZINA Se valorizzato contiene l’identificativo della palazzina relativa all’indirizzo del domicilio fiscale>> Tipo:AN Obbl.N	
+                sPrintLine += PadLine(oE20.Palazzina, oE20.Length.Palazzina, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 418-420 Lungh. 3<<SCALA Se valorizzato contiene l’identificativo della scala relativo all’indirizzo del domicilio fiscale>> Tipo:AN Obbl.N	
+                sPrintLine += PadLine(oE20.Scala, oE20.Length.Scala, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 421-423 Lungh. 3<<PIANO Se valorizzato contiene l’identificativo del piano relativo all’indirizzo del domicilio fiscale>> Tipo:AN Obbl.N	
+                sPrintLine += PadLine(oE20.Piano, oE20.Length.Piano, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 424-427 Lungh. 4<<INTERNO Se valorizzato contiene l’identificativo dell’interno relativo all’indirizzo del domicilio fiscale>> Tipo:AN Obbl.N	
+                sPrintLine += PadLine(oE20.Interno, oE20.Length.Interno, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 428-452 Lungh. 25<<LOCALITA’ – FRAZIONE Se valorizzato contiene la descrizione della frazione o della località del domicilio fiscale.>> Tipo:AN Obbl.N	
+                sPrintLine += PadLine(oE20.LocalitaFrazione, oE20.Length.LocalitaFrazione, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 453-600 Lungh. 148<<FILLER >> Tipo:AN Obbl.S	
+                sPrintLine += PadLine(oE20.Filler, oE20.Length.Filler, objAccertamentiEsecutivi.Type.Stringa)
+
+                sPrintLine = New MyUtility().ReplaceCharForFile(sPrintLine)
+                If New MyUtility().WriteFile(sPathNameFile, sPrintLine) <= 0 Then
+                    Return 0
+                End If
+
+                Return 1
+            Catch Err As Exception
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.CreaAccertamentiEsecutivi::PrintLineE20.errore::" + Err.Message)
+                Return -1
+            End Try
+        End Function
+        ''' <summary>
+        ''' 
+        ''' </summary>
+        ''' <param name="sPathNameFile"></param>
+        ''' <param name="oE23"></param>
+        ''' <returns></returns>
+        Public Function PrintLineE23(ByVal sPathNameFile As String, ByVal oE23 As objAccertamentiEsecutivi.E23) As Integer
+            Dim sPrintLine As String = ""
+            Try
+                'Campo Posizione 1-3 Lungh. 3<<TIPO RECORD TIPO RECORD Vale Sempre "E23".>> Tipo:AN Obbl.S Errore:Q20-SP Q20-SP	
+                sPrintLine += oE23.TipoRecord
+                'Campo Posizione 4-10 Lungh. 7<<PROGRRESSIVO RECORD PROGRRESSIVO RECORD Numero progressivo del record. Deve essere maggiore di una unità rispetto al valore contenuto nel medesimo campo del record immediatamente precedente>> Tipo:N Obbl.S Errore:004-SF 004-SF	
+                sPrintLine += PadLine(oE23.ProgressivoRecord, oE23.Length.ProgressivoRecord, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 11-15 Lungh. 5<<CODICE ENTE CREDITORE CODICE ENTE CREDITORE Deve essere presente nella "Tabella Enti Creditori e Beneficiari" APPENDICE B Assume lo stesso valore dell'analogo campo del record E00>> Tipo:N Obbl.S Errore:504-SF 504-SF	
+                sPrintLine += PadLine(oE23.IdentificativoAtto.IdentificativoFlusso.CodiceEnteCreditore, oE23.IdentificativoAtto.IdentificativoFlusso.Length.CodiceEnteCreditore, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 16-16 Lungh. 1<<TIPO UFFICIO TIPO UFFICIO Assume lo stesso valore dell'analogo campo del record E00>> Tipo:AN Obbl.S Errore:N20-SP N20-SP	
+                sPrintLine += PadLine(oE23.IdentificativoAtto.IdentificativoFlusso.TipoUfficio, oE23.IdentificativoAtto.IdentificativoFlusso.Length.TipoUfficio, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 17-22 Lungh. 6<<CODICE UFFICIO CODICE UFFICIO Assume lo stesso valore dell'analogo campo del record E00>> Tipo:AN Obbl.S Errore:N20-SP N20-SP	
+                sPrintLine += PadLine(oE23.IdentificativoAtto.IdentificativoFlusso.CodiceUfficio, oE23.IdentificativoAtto.IdentificativoFlusso.Length.CodiceUfficio, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 23-26 Lungh. 4<<ANNO DI EMISSIONE ATTO ANNO DI EMISSIONE ATTO Indica l'anno in cui è stato emesso l’atto di accertamento, non può essere maggiore dell’anno corrente, e coincide con l’anno del campo data emissione atto. TIPOLOGIA ATTO>> Tipo:N Obbl.S Errore:N20-SP N20-SP N20-SP	
+                sPrintLine += PadLine(oE23.IdentificativoAtto.AnnoEmissioneAtto, oE23.IdentificativoAtto.Length.AnnoEmissioneAtto, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 27-29 Lungh. 0<<TIPOLOGIA ATTO Vale sempre 005>> Tipo:0 Obbl.N Errore:0	
+                sPrintLine += PadLine(oE23.IdentificativoAtto.TipologiaAtto, oE23.IdentificativoAtto.Length.TipologiaAtto, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 30-38 Lungh. 9<<NUMERO PARTITA NUMERO PARTITA Deve essere numerico e crescente nell'ambito della fornitura.>> Tipo:N Obbl.S Errore:N20-SP N20-SP	
+                sPrintLine += PadLine(oE23.IdentificativoAtto.NumeroPartita, oE23.IdentificativoAtto.Length.NumeroPartita, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 39-41 Lungh. 3<<PROGRESSIVO PARTITA PROGRESSIVO PARTITA Vale sempre 001.>> Tipo:N Obbl.S Errore:N20-SP N20-SP	
+                sPrintLine += PadLine(oE23.IdentificativoAtto.ProgressivoPartita, oE23.IdentificativoAtto.Length.ProgressivoPartita, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 42-43 Lungh. 2<<CODICE TIPO ATTO CODICE TIPO ATTO Codice che indica la tipologia dell'atto. Vedi NOTA 3. Fare riferimento alla tabella presente in APPENDICE P>> Tipo:AN Obbl.N Errore:N20-SP N20-SP	
+                sPrintLine += PadLine(oE23.IdentificativoAtto.CodiceTipoAtto, oE23.IdentificativoAtto.Length.CodiceTipoAtto, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 44-51 Lungh. 8<<DATA EMISSIONE ATTO DATA EMISSIONE ATTO Data in cui l'ente ha emesso l'atto nel formato (AAAAMMGG) Deve essere maggiore del 01/01/2020, minore della data di creazione flusso e minore della data di notifica atto>> Tipo:N Obbl.S Errore:N20-SP N20-SP	
+                sPrintLine += PadLine(oE23.IdentificativoAtto.DataEmissioneAtto, oE23.IdentificativoAtto.Length.DataEmissioneAtto, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 52-63 Lungh. 12<<NUMERO ATTO NUMERO ATTO Estremi dell'atto notificato Non può essere nullo>> Tipo:AN Obbl.S Errore:N20-SP N20-SP	
+                sPrintLine += PadLine(oE23.IdentificativoAtto.NumeroAtto, oE23.IdentificativoAtto.Length.NumeroAtto, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 64-71 Lungh. 8<<DATA NOTIFICA ATTO DATA NOTIFICA ATTO Data di notifica dell'atto al debitore, nella forma AAAAMMGG. Deve essere maggiore del 01/01/2020, maggiore o uguale della data emmissione atto e inferiore alla data creazione file presente sul record E00 di almeno 60 gg. L'anno (AAAA) deve essere maggiore o uguale del valore indicato nel campo anno di emessione atto>> Tipo:N Obbl.S Errore:N20-SP N20-SP	
+                sPrintLine += PadLine(oE23.IdentificativoAtto.DataNotificaAtto, oE23.IdentificativoAtto.Length.DataNotificaAtto, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 72-111 Lungh. 40<<FILLER  FILLER>> Tipo:AN Obbl.S Errore:SPAZI SPAZI	
+                sPrintLine += PadLine(oE23.Filler, oE23.Length.Filler, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 112-127 Lungh. 16<<CODICE FISCALE DEL SOGGETTO INTESTATARIO CODICE FISCALE DEL SOGGETTO INTESTATARIO Riporta lo stesso codice fiscale del record E20 dell'intestatario o del cooblicato dell’atto a cui l'ulteriore soggetto riferisce.>> Tipo:AN Obbl.S Errore:506-SF 506-SF	
+                sPrintLine += PadLine(oE23.CodiceFiscaleSoggettoIntestatario, oE23.Length.CodiceFiscaleSoggettoIntestatario, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 128-143 Lungh. 16<<CODICE FISCALE ULTERIORE SOGGETTO NOTIFICA CODICE FISCALE ULTERIORE SOGGETTO NOTIFICA Codice fiscale dell’ulteriore soggetto. Deve essere formalmente corretto (cfr. APPENDICE N). Deve essere obbligatoriamente un soggetto fisico. Per le causali di scarto verificare APPENDICE A>> Tipo:AN Obbl.S Errore:096-SP A-SP B-SP C-SP D-SP E-SP F-SP G-SP H-SP I-SP L-SP M-SP N-SP O-SP Q-SP R-SP A23-SP E23-SP 096-SP A-SP B-SP C-SP D-SP E-SP F-SP G-SP H-SP I-SP L-SP M-SP N-SP O-SP Q-SP R-SP A23-SP E23-SP F23-SP	
+                sPrintLine += PadLine(oE23.CodiceFiscaleUlterioreSoggettoNotifica, oE23.Length.CodiceFiscaleUlterioreSoggettoNotifica, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 144-193 Lungh. 50<<COGNOME COGNOME Cognome del soggetto. Puo’ contenere solo lettere maiuscole, trattino e apice>> Tipo:AN Obbl.S Errore:B23-SP B23-SP	
+                sPrintLine += PadLine(oE23.Cognome, oE23.Length.Cognome, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 194-233 Lungh. 40<<NOME NOME Nome del soggetto. Può contenere solo lettere maiuscole, trattino e apice>> Tipo:AN Obbl.S Errore:C23-SP C23-SP	
+                sPrintLine += PadLine(oE23.Nome, oE23.Length.Nome, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 234-234 Lungh. 1<<SESSO SESSO Sesso del soggetto. Assume il valore: "F" = femmina "M" = maschio>> Tipo:AN Obbl.S Errore:039-SP 039-SP 055-SP	
+                sPrintLine += PadLine(oE23.Sesso, oE23.Length.Sesso, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 235-242 Lungh. 8<<DATA DI NASCITA DATA DI NASCITA Data di nascita. Deve essere espressa nella forma AAAAMMGG.>> Tipo:N Obbl.S Errore:045-SP 045-SP 055-SP	
+                sPrintLine += PadLine(oE23.DataNascita, oE23.Length.DataNascita, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 243-246 Lungh. 4<<CODICE CATASTALE DEL COMUNE DI NASCITA CODICE CATASTALE DEL COMUNE DI NASCITA Codice Catastale del comune di nascita>> Tipo:AN Obbl.S Errore:039-SP 039-SP 055-SP	
+                sPrintLine += PadLine(oE23.CodiceCatastaleComuneNascita, oE23.Length.CodiceCatastaleComuneNascita, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 247-248 Lungh. 2<<PROVINCIA DI NASCITA PROVINCIA DI NASCITA Sigla provincia del comune di nascita.>> Tipo:AN Obbl.S Errore:039-SP 039-SP 055-SP	
+                sPrintLine += PadLine(oE23.ProvinciaNascita, oE23.Length.ProvinciaNascita, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 249-252 Lungh. 4<<CODICE CATASTALE DEL COMUNE DI DOMICILIO FISCALE CODICE CATASTALE DEL COMUNE DI DOMICILIO FISCALE Contiene il codice catastale del domicilio fiscale ultimo alla data di notifica dell'atto da parte dell'ente.>> Tipo:AN Obbl.S Errore:039-SP 039-SP 504-SP	
+                sPrintLine += PadLine(oE23.CodiceCatastaleComuneDomicilioFiscale, oE23.Length.CodiceCatastaleComuneDomicilioFiscale, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 253-297 Lungh. 45<<COMUNE DEL DOMICILIO FISCALE COMUNE DEL DOMICILIO FISCALE Contiene la denominazione del comune del domicilio fiscale ultimo alla data di notifica dell'atto da parte dell'ente.>> Tipo:AN Obbl.S Errore:039-SP 039-SP 504-SP	
+                sPrintLine += PadLine(oE23.ComuneDomicilioFiscale, oE23.Length.ComuneDomicilioFiscale, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 298-299 Lungh. 2<<PROVINCIA DEL DOMICILIO FISCALE PROVINCIA DEL DOMICILIO FISCALE Contiene la provincia del domicilio fiscale ultimo alla data di notifica dell'atto da parte dell'ente.>> Tipo:AN Obbl.S Errore:039-SP 039-SP 504-SP	
+                sPrintLine += PadLine(oE23.ProvinciaDomicilioFiscale, oE23.Length.ProvinciaDomicilioFiscale, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 300-304 Lungh. 5<<C.A.P. DEL DOMICILIO FISCALE C.A.P. DEL DOMICILIO FISCALE Contiene il cap del domicilio fiscale ultimo alla data di notifica dell'atto da parte dell'ente.>> Tipo:N Obbl.S Errore:039-SP 039-SP 504-SP	
+                sPrintLine += PadLine(oE23.CAPDomicilioFiscale, oE23.Length.CAPDomicilioFiscale, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 305-384 Lungh. 80<<INDIRIZZO INDIRIZZO Contiene l'indirizzo del domicilio fiscale ultimo alla data di notifica dell'atto da parte dell'ente>> Tipo:AN Obbl.S Errore:039-SP 039-SP	
+                sPrintLine += PadLine(oE23.Indirizzo, oE23.Length.Indirizzo, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 385-389 Lungh. 5<<NUMERO CIVICO NUMERO CIVICO Contiene il numero civico dell'indirizzo del domicilio fiscale ultimo alla data di notifica dell'atto da parte dell'ente>> Tipo:N Obbl.N Errore:0	
+                sPrintLine += PadLine(oE23.NumeroCivico, oE23.Length.NumeroCivico, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 390-391 Lungh. 2<<LETTERA NUMERO CIVICO LETTERA NUMERO CIVICO Se valorizzato contiene la lettera associato al numero civico del'indirizzo di domicilio fiscale.>> Tipo:AN Obbl.N Errore:0	
+                sPrintLine += PadLine(oE23.LetteraNumeroCivico, oE23.Length.LetteraNumeroCivico, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 392-397 Lungh. 6<<CHILOMETRO CHILOMETRO Se valorizzato contiene il chilometro dell'indirizzo del domicilio fiscale e deve essere espresso nella forma KKKMMM, dove: "KKK"= parte intera del chilometro; "MMM"= parte decimale del chilometro.>> Tipo:N Obbl.N Errore:0	
+                sPrintLine += PadLine(oE23.Chilometro, oE23.Length.Chilometro, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 398-400 Lungh. 3<<PALAZZINA PALAZZINA Se valorizzato contiene l’identificativo della palazzina relativa all’indirizzo del domicilio fiscale>> Tipo:AN Obbl.N Errore:0	
+                sPrintLine += PadLine(oE23.Palazzina, oE23.Length.Palazzina, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 401-403 Lungh. 3<<SCALA SCALA Se valorizzato contiene l’identificativo della scala relativo all’indirizzo del domicilio fiscale>> Tipo:AN Obbl.N Errore:0	
+                sPrintLine += PadLine(oE23.Scala, oE23.Length.Scala, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 404-406 Lungh. 3<<PIANO PIANO Se valorizzato contiene l’identificativo del piano relativo all’indirizzo del domicilio fiscale>> Tipo:AN Obbl.N Errore:0	
+                sPrintLine += PadLine(oE23.Piano, oE23.Length.Piano, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 407-410 Lungh. 4<<INTERNO INTERNO Se valorizzato contiene l’identificativo dell’interno relativo all’indirizzo del domicilio fiscale>> Tipo:AN Obbl.N Errore:0	
+                sPrintLine += PadLine(oE23.Interno, oE23.Length.Interno, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 411-435 Lungh. 25<<LOCALITA’ – FRAZIONE LOCALITA’ – FRAZIONE Se valorizzato contiene la descrizione della frazione o della località del domicilio fiscale.>> Tipo:AN Obbl.N Errore:0	
+                sPrintLine += PadLine(oE23.LocalitaFrazione, oE23.Length.LocalitaFrazione, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 436-600 Lungh. 165<<FILLER>> Tipo:AN Obbl.N Errore:SPAZI	
+                sPrintLine += PadLine(oE23.Filler, oE23.Length.Filler, objAccertamentiEsecutivi.Type.Stringa)
+
+                sPrintLine = New MyUtility().ReplaceCharForFile(sPrintLine)
+                If New MyUtility().WriteFile(sPathNameFile, sPrintLine) <= 0 Then
+                    Return 0
+                End If
+
+                Return 1
+            Catch Err As Exception
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.CreaAccertamentiEsecutivi::PrintLineE23.errore::" + Err.Message)
+                Return -1
+            End Try
+        End Function
+        ''' <summary>
+        ''' 
+        ''' </summary>
+        ''' <param name="sPathNameFile"></param>
+        ''' <param name="oE50"></param>
+        ''' <returns></returns>
+        Public Function PrintLineE50(ByVal sPathNameFile As String, ByVal oE50 As objAccertamentiEsecutivi.E50) As Integer
+            Dim sPrintLine As String = ""
+            Try
+                'Campo Posizione 1-3 Lungh. 3<<TIPO RECORD TIPO RECORD Vale Sempre "E50".>> Tipo:AN Obbl.S Errore:004-SF 004-SF	
+                sPrintLine += oE50.TipoRecord
+                'Campo Posizione 4-10 Lungh. 7<<PROGRRESSIVO RECORD PROGRRESSIVO RECORD Numero progressivo del record. Deve essere maggiore di una unità rispetto al valore contenuto nel medesimo campo del record immediatamente precedente>> Tipo:N Obbl.S Errore:004-SF 004-SF	
+                sPrintLine += PadLine(oE50.ProgressivoRecord, oE50.Length.ProgressivoRecord, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 11-15 Lungh. 5<<CODICE ENTE CREDITORE CODICE ENTE CREDITORE Deve essere presente nella "Tabella Enti Creditori e Beneficiari"APPENDICE B Assume lo stesso valore dell'analogo campo del record E00>> Tipo:N Obbl.S Errore:504-SF 504-SF	
+                sPrintLine += PadLine(oE50.IdentificativoAtto.IdentificativoFlusso.CodiceEnteCreditore, oE50.IdentificativoAtto.IdentificativoFlusso.Length.CodiceEnteCreditore, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 16-16 Lungh. 1<<TIPO UFFICIO TIPO UFFICIO Assume lo stesso valore dell'analogo campo del record E00>> Tipo:AN Obbl.S Errore:N20-SP N20-SP	
+                sPrintLine += PadLine(oE50.IdentificativoAtto.IdentificativoFlusso.TipoUfficio, oE50.IdentificativoAtto.IdentificativoFlusso.Length.TipoUfficio, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 17-22 Lungh. 6<<CODICE UFFICIO CODICE UFFICIO Assume lo stesso valore dell'analogo campo del record E00>> Tipo:AN Obbl.S Errore:N20-SP N20-SP	
+                sPrintLine += PadLine(oE50.IdentificativoAtto.IdentificativoFlusso.CodiceUfficio, oE50.IdentificativoAtto.IdentificativoFlusso.Length.CodiceUfficio, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 23-26 Lungh. 4<<ANNO DI EMISSIONE ATTO ANNO DI EMISSIONE ATTO Indica l'anno in cui è stato emesso l’atto di accertamento, non può essere maggiore dell’anno corrente, e coincide con l’anno del campo data emissione atto.>> Tipo:N Obbl.S Errore:N20-SP N20-SP	
+                sPrintLine += PadLine(oE50.IdentificativoAtto.AnnoEmissioneAtto, oE50.IdentificativoAtto.Length.AnnoEmissioneAtto, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 27-29 Lungh. 3<<TIPOLOGIA ATTO TIPOLOGIA ATTO Vale sempre 005>> Tipo:N Obbl.S Errore:N20-SP N20-SP	
+                sPrintLine += PadLine(oE50.IdentificativoAtto.TipologiaAtto, oE50.IdentificativoAtto.Length.TipologiaAtto, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 30-38 Lungh. 9<<NUMERO PARTITA NUMERO PARTITA Deve essere numerico e crescente nell'ambito della fornitura.>> Tipo:N Obbl.S Errore:N20-SP N20-SP	
+                sPrintLine += PadLine(oE50.IdentificativoAtto.NumeroPartita, oE50.IdentificativoAtto.Length.NumeroPartita, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 39-41 Lungh. 3<<PROGRESSIVO PARTITA PROGRESSIVO PARTITA Vale sempre 001.>> Tipo:N Obbl.S Errore:N20-SP N20-SP	
+                sPrintLine += PadLine(oE50.IdentificativoAtto.ProgressivoPartita, oE50.IdentificativoAtto.Length.ProgressivoPartita, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 42-43 Lungh. 2<<CODICE TIPO ATTO CODICE TIPO ATTO Codice che indica la tipologia dell'atto. Vedi NOTA 3. Fare riferimento alla tabella presente in APPENDICE P>> Tipo:AN Obbl.N Errore:N20-SP N20-SP	
+                sPrintLine += PadLine(oE50.IdentificativoAtto.CodiceTipoAtto, oE50.IdentificativoAtto.Length.CodiceTipoAtto, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 44-51 Lungh. 8<<DATA EMISSIONE ATTO DATA EMISSIONE ATTO Data in cui l'ente ha emesso l'atto nel formato (AAAAMMGG) Deve essere maggiore del 01/01/2020, minore della data di creazione flusso e minore della data di notifica atto.>> Tipo:N Obbl.S Errore:N20-SP N20-SP	
+                sPrintLine += PadLine(oE50.IdentificativoAtto.DataEmissioneAtto, oE50.IdentificativoAtto.Length.DataEmissioneAtto, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 52-63 Lungh. 12<<NUMERO ATTO NUMERO ATTO Estremi dell'atto notificato Non può essere nullo>> Tipo:AN Obbl.S Errore:N20-SP N20-SP	
+                sPrintLine += PadLine(oE50.IdentificativoAtto.NumeroAtto, oE50.IdentificativoAtto.Length.NumeroAtto, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 64-71 Lungh. 8<<DATA NOTIFICA ATTO DATA NOTIFICA ATTO Data di notifica dell'atto al debitore, nella forma AAAAMMGG. Deve essere maggiore del 01/01/2020, maggiore o uguale della data emmissione atto e inferiore alla data creazione file presente sul record E00 di almeno 60 gg. L'anno (AAAA) deve essere maggiore o uguale del valore indicato nel campo anno di emessione atto>> Tipo:N Obbl.S Errore:N20-SP N20-SP	
+                sPrintLine += PadLine(oE50.IdentificativoAtto.DataNotificaAtto, oE50.IdentificativoAtto.Length.DataNotificaAtto, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 72-111 Lungh. 40<<FILLER  FILLER>> Tipo:AN Obbl.S Errore:0	
+                sPrintLine += PadLine(oE50.Filler, oE50.Length.Filler, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 112-114 Lungh. 3<<PROGRESSIVO ARTICOLO PROGRESSIVO ARTICOLO Indica il progressivo del Codice Entrata nell'ambito della stessa partita. Deve essere in stretta sequenza a partire da 1.>> Tipo:N Obbl.S Errore:013-SF 013-SF	
+                sPrintLine += PadLine(oE50.ProgressivoArticolo, oE50.Length.ProgressivoArticolo, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 115-120 Lungh. 6<<PERIODO DI RIFERIMENTO PERIODO DI RIFERIMENTO Indica il periodo di riferimento dell'entrata. Il campo è obbligatorio e deve essere espresso nella forma AAAAPP dove: AAAA indica l'anno, non può essere maggiore dell’anno di emissione atto. PP indica il periodo •  Il campo PP deve essere presente nella "Tabella Periodo infrazione - APPENDICE K" Nel caso in cui non ci sia un periodo, valorizzare PP con "99">> Tipo:N Obbl.S Errore:045-SP 045-SP	
+                sPrintLine += PadLine(oE50.PeriodoRiferimento, oE50.Length.PeriodoRiferimento, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 121-124 Lungh. 4<<CODICE ENTRATA CODICE ENTRATA Codice dell'obbligazione tributaria del debitore. Deve essere presente nella "Tabella Codice Entrata – APPENDICE D">> Tipo:AN Obbl.S Errore:A50-SP A50-SP	
+                sPrintLine += PadLine(oE50.CodiceEntrata, oE50.Length.CodiceEntrata, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 125-125 Lungh. 1<<TIPO CODICE ENTRATA TIPO CODICE ENTRATA Indica la tipologia del Codice entrata. Deve essere presente nella "Tabella Tipo Codice entrata APPENDICE E">> Tipo:AN Obbl.S Errore:055-SP 055-SP	
+                sPrintLine += PadLine(oE50.TipoCodiceEntrata, oE50.Length.TipoCodiceEntrata, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 126-140 Lungh. 15<<IMPORTO ARTICOLO IMPORTO ARTICOLO Importo dovuto dal debitore per l'entrata, espresso in centesimi di Euro. Deve essere maggiore di zero.>> Tipo:N Obbl.S Errore:039-SP 039-SP	
+                sPrintLine += PadLine(oE50.ImportoArticolo, oE50.Length.ImportoArticolo, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 141-600 Lungh. 460<<FILLER>> Tipo:AN Obbl.S Errore:SPAZI	
+                sPrintLine += PadLine(oE50.Filler, oE50.Length.Filler, objAccertamentiEsecutivi.Type.Stringa)
+
+                sPrintLine = New MyUtility().ReplaceCharForFile(sPrintLine)
+                If New MyUtility().WriteFile(sPathNameFile, sPrintLine) <= 0 Then
+                    Return 0
+                End If
+
+                Return 1
+            Catch Err As Exception
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.CreaAccertamentiEsecutivi::PrintLineE50.errore::" + Err.Message)
+                Return -1
+            End Try
+        End Function
+        ''' <summary>
+        ''' 
+        ''' </summary>
+        ''' <param name="sPathNameFile"></param>
+        ''' <param name="oE60"></param>
+        ''' <returns></returns>
+        Public Function PrintLineE60(ByVal sPathNameFile As String, ByVal oE60 As objAccertamentiEsecutivi.E60) As Integer
+            Dim sPrintLine As String = ""
+            Try
+                'Campo Posizione 1-3 Lungh. 3<<TIPO RECORD TIPO RECORD Vale Sempre "E60".>> Tipo:AN Obbl.S Errore:004-SF 004-SF	
+                sPrintLine += oE60.TipoRecord
+                'Campo Posizione 4-10 Lungh. 7<<PROGRESSIVO RECORD PROGRESSIVO RECORD Numero progressivo del record. Deve essere maggiore di una unità rispetto al valore contenuto nel medesimo campo del record immediatamente precedente>> Tipo:N Obbl.S Errore:013-SF 013-SF	
+                sPrintLine += PadLine(oE60.ProgressivoRecord, oE60.Length.ProgressivoRecord, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 11-15 Lungh. 5<<CODICE ENTE CREDITORE CODICE ENTE CREDITORE Deve essere presente nella "Tabella Enti Creditori e Beneficiari"APPENDICE B. Assume lo stesso valore dell'analogo campo del record E00>> Tipo:N Obbl.S Errore:502-SF 502-SF	
+                sPrintLine += PadLine(oE60.IdentificativoAtto.IdentificativoFlusso.CodiceEnteCreditore, oE60.IdentificativoAtto.IdentificativoFlusso.Length.CodiceEnteCreditore, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 16-16 Lungh. 1<<TIPO UFFICIO TIPO UFFICIO Assume lo stesso valore dell'analogo campo del record E00>> Tipo:AN Obbl.S Errore:502-SP 502-SP	
+                sPrintLine += PadLine(oE60.IdentificativoAtto.IdentificativoFlusso.TipoUfficio, oE60.IdentificativoAtto.IdentificativoFlusso.Length.TipoUfficio, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 17-22 Lungh. 6<<CODICE UFFICIO CODICE UFFICIO Assume lo stesso valore dell'analogo campo del record E00>> Tipo:AN Obbl.S Errore:502-SP 502-SP	
+                sPrintLine += PadLine(oE60.IdentificativoAtto.IdentificativoFlusso.CodiceUfficio, oE60.IdentificativoAtto.IdentificativoFlusso.Length.CodiceUfficio, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 23-26 Lungh. 4<<ANNO DI EMISSIONE ATTO ANNO DI EMISSIONE ATTO Indica l'anno in cui è stato emesso l’atto di accertamento, non può essere maggiore dell’anno corrente, e coincide con l’anno del campo data emissione atto.>> Tipo:N Obbl.S Errore:033-SP 033-SP	
+                sPrintLine += PadLine(oE60.IdentificativoAtto.AnnoEmissioneAtto, oE60.IdentificativoAtto.Length.AnnoEmissioneAtto, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 27-29 Lungh. 3<<TIPOLOGIA ATTO TIPOLOGIA ATTO Vale sempre 005>> Tipo:N Obbl.S Errore:039-SP 039-SP	
+                sPrintLine += PadLine(oE60.IdentificativoAtto.TipologiaAtto, oE60.IdentificativoAtto.Length.TipologiaAtto, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 30-38 Lungh. 9<<NUMERO PARTITA NUMERO PARTITA Deve essere numerico e crescente nell'ambito della fornitura.>> Tipo:N Obbl.S Errore:501-SF 501-SF	
+                sPrintLine += PadLine(oE60.IdentificativoAtto.NumeroPartita, oE60.IdentificativoAtto.Length.NumeroPartita, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 39-41 Lungh. 3<<PROGRESSIVO PARTITA PROGRESSIVO PARTITA Vale sempre 001.>> Tipo:N Obbl.S Errore:501-SF 501-SF	
+                sPrintLine += PadLine(oE60.IdentificativoAtto.ProgressivoPartita, oE60.IdentificativoAtto.Length.ProgressivoPartita, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 42-43 Lungh. 2<<CODICE TIPO ATTO CODICE TIPO ATTO Codice che indica la tipologia dell'atto. Vedi NOTA 3 Fare riferimento alla tabella presente in APPENDICE P>> Tipo:AN Obbl.N Errore:055-SP 055-SP	
+                sPrintLine += PadLine(oE60.IdentificativoAtto.CodiceTipoAtto, oE60.IdentificativoAtto.Length.CodiceTipoAtto, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 44-51 Lungh. 8<<DATA EMISSIONE ATTO DATA EMISSIONE ATTO Data in cui l'ente ha emesso l'atto nel formato (AAAAMMGG) Deve essere maggiore del 01/01/2020, minore della data di creazione flusso e minore della data di notifica atto.>> Tipo:N Obbl.S Errore:045-SP 045-SP	
+                sPrintLine += PadLine(oE60.IdentificativoAtto.DataEmissioneAtto, oE60.IdentificativoAtto.Length.DataEmissioneAtto, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 52-63 Lungh. 12<<NUMERO ATTO NUMERO ATTO Estremi dell'atto notificato Non può essere nullo>> Tipo:AN Obbl.S Errore:039-SP 039-SP	
+                sPrintLine += PadLine(oE60.IdentificativoAtto.NumeroAtto, oE60.IdentificativoAtto.Length.NumeroAtto, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 64-71 Lungh. 8<<DATA NOTIFICA ATTO DATA NOTIFICA ATTO Data di notifica dell'atto al debitore, nella forma AAAAMMGG. Deve essere maggiore del 01/01/2020, maggiore o uguale della data emmissione atto e inferiore alla data creazione file presente sul record E00 di almeno 60 gg. L'anno (AAAA) deve essere maggiore o uguale del valore indicato nel campo anno di emessione atto>> Tipo:N Obbl.S Errore:045-SP 045-SP	
+                sPrintLine += PadLine(oE60.IdentificativoAtto.DataNotificaAtto, oE60.IdentificativoAtto.Length.DataNotificaAtto, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 72-111 Lungh. 40<<FILLER  FILLER>> Tipo:AN Obbl.N Errore:0	
+                sPrintLine += PadLine(oE60.Filler, oE60.Length.Filler, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 112-121 Lungh. 10<<NUMERO DELIBERA NUMERO DELIBERA Estremi della delibera con cui l'ente affida la riscossione ai sensi dell'art.2,comma2,D.Lgs n.193 del 2016>> Tipo:AN Obbl.S Errore:039-SP 039-SP	
+                sPrintLine += PadLine(oE60.NumeroDelibera, oE60.Length.NumeroDelibera, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 122-129 Lungh. 8<<DATA DELIBERA DATA DELIBERA Nel formato (AAAAMMGG) Deve essere inferiore alla data di trasmissione del flusso. Deve essere maggiore del 01/10/2016>> Tipo:N Obbl.S Errore:045-SP 045-SP	
+                sPrintLine += PadLine(oE60.DataDelibera, oE60.Length.DataDelibera, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 130-137 Lungh. 8<<DATA FINE VALIDITA' DELIBERA DATA FINE VALIDITA' DELIBERA Nel formato (AAAAMMGG) Se valorizzata deve essere una data valida>> Tipo:N Obbl.N Errore:045-SP 045-SP	
+                sPrintLine += PadLine(oE60.DataFineValiditaDelibera, oE60.Length.DataFineValiditaDelibera, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 138-138 Lungh. 1<<TIPOLOGIA SOSPENSIONE TIPOLOGIA SOSPENSIONE Identifica la tipologia di sospensione applicabile alla riscossione forzata. Può assumere i valori contenuti nell'APPENDICE Q>> Tipo:N Obbl.S Errore:055-SP 055-SP	
+                sPrintLine += PadLine(oE60.TipologiaSospensione, oE60.Length.TipologiaSospensione, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 139-153 Lungh. 15<<IMPORTO TOTALE ATTO IMPORTO TOTALE ATTO Importo totale del carico affidato con l'atto. Somma IMPORTO ARTICOLO, record E50. Deve essere uguale o superiore ad Euro 10.>> Tipo:N Obbl.S Errore:039-SP A60-SP 039-SP A60-SP	
+                sPrintLine += PadLine(oE60.ImportoTotaleAtto, oE60.Length.ImportoTotaleAtto, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 154-160 Lungh. 7<<TOTALE ARTICOLI ATTO TOTALE ARTICOLI ATTO Numero totale degli articoli, record E50, presenti nell'atto affidato.>> Tipo:N Obbl.S Errore:039-SP 039-SP	
+                sPrintLine += PadLine(oE60.TotaleArticoliAtto, oE60.Length.TotaleArticoliAtto, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 161-168 Lungh. 8<<DATA TERMINE ULTIMO PAGAMENTO ATTO DATA TERMINE ULTIMO PAGAMENTO ATTO Corrisponde alla data termine ultimo per il pagamento delle somme intimate con l'atto. Deve essere maggiore della data notifica atto dal parte dell’ente ed espressa nel formato (AAAAMMGG). Non può essere maggiore della data di trasmissione flusso.>> Tipo:N Obbl.S Errore:045-SP B60-SP C60-SP 045-SP B60-SP C60-SP	
+                sPrintLine += PadLine(oE60.DataTermineUltimoPagamentoAtto, oE60.Length.DataTermineUltimoPagamentoAtto, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 169-169 Lungh. 1<<FLAG ENTE TERZO FLAG ENTE TERZO Flag che indica se è presente un’ente terzo diverso dall'ente impositore che ha emesso e notificato l’atto per contro dell’ente impositore S=PRESENTE N=NON PRESENTE Deve essere valorizzato con "S" solo se l'ente terzo è diverso dall'ente impositore>> Tipo:AN Obbl.S Errore:096-SP 096-SP	
+                sPrintLine += PadLine(oE60.FlagEnteTerzo, oE60.Length.FlagEnteTerzo, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 170-229 Lungh. 60<<DENOMINAZIONE ENTE TERZO DENOMINAZIONE ENTE TERZO Denominazione dell’ente terzo che ha notificato l'atto. Se il flag ente terzo è valorizzato ad "S" la denominazione è obbligatoria.>> Tipo:AN Obbl.N Errore:039-SP 039-SP	
+                sPrintLine += PadLine(oE60.DenominazioneEnteTerzo, oE60.Length.DenominazioneEnteTerzo, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 230-600 Lungh. 371<<FILLER>> Tipo:AN Obbl.S Errore:SPAZI	
+                sPrintLine += PadLine(oE60.Filler, oE60.Length.Filler, objAccertamentiEsecutivi.Type.Stringa)
+
+                sPrintLine = New MyUtility().ReplaceCharForFile(sPrintLine)
+                If New MyUtility().WriteFile(sPathNameFile, sPrintLine) <= 0 Then
+                    Return 0
+                End If
+
+                Return 1
+            Catch Err As Exception
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.CreaAccertamentiEsecutivi::PrintLineE60.errore::" + Err.Message)
+                Return -1
+            End Try
+        End Function
+        Public Function PrintLineE99(ByVal sPathNameFile As String, ByVal oE99 As objAccertamentiEsecutivi.E99) As Integer
+            Dim sPrintLine As String = ""
+            Try
+                'Campo Posizione 1-3 Lungh. 3<<TIPO RECORD TIPO RECORD Vale Sempre "E99".>> Tipo:AN Obbl.S Errore:004-SF 004-SF	
+                sPrintLine += oE99.TipoRecord
+                'Campo Posizione 4-8 Lungh. 5<<CODICE ENTE CREDITORE CODICE ENTE CREDITORE Deve essere presente nella "Tabella Enti Creditori e Beneficiari" APPENDICE B Assume lo stesso valore dell'analogo campo del record E00>> Tipo:N Obbl.S Errore:502-SF 502-SF 504-SF	
+                sPrintLine += PadLine(oE99.IdentificativoFlusso.CodiceEnteCreditore, oE99.IdentificativoFlusso.Length.CodiceEnteCreditore, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 9-9 Lungh. 1<<TIPO UFFICIO TIPO UFFICIO Tipologia ufficio ente creditore APPENDICE B. Assume lo stesso valore dell'analogo campo del record E00>> Tipo:AN Obbl.S Errore:502-SF 502-SF 504-SF	
+                sPrintLine += PadLine(oE99.IdentificativoFlusso.TipoUfficio, oE99.IdentificativoFlusso.Length.TipoUfficio, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 10-15 Lungh. 6<<CODICE UFFICIO CODICE UFFICIO Codice ufficio dell'ente creditore APPENDICE B. Assume lo stesso valore dell'analogo campo del record E00>> Tipo:AN Obbl.S Errore:502-SF 502-SF 504-SF	
+                sPrintLine += PadLine(oE99.IdentificativoFlusso.CodiceUfficio, oE99.IdentificativoFlusso.Length.CodiceUfficio, objAccertamentiEsecutivi.Type.Stringa)
+                'Campo Posizione 16-23 Lungh. 8<<DATA CREAZIONE FLUSSO DATA CREAZIONE FLUSSO Data in cui l'ente crea il file di carico espressa nel formato (AAAAMMGG). Deve essere minore o uguale alla data trasmissione e non deve essere antecedente alla data di trasmissione di oltre 15 giorni. Assume lo stesso valore dell'analogo campo del record E00>> Tipo:N Obbl.S Errore:045-SF 045-SF	
+                sPrintLine += PadLine(oE99.DataCreazioneFlusso, oE99.Length.DataCreazioneFlusso, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 24-33 Lungh. 10<<ESTREMI FLUSSO ESTREMI FLUSSO Identificativo del file trasmesso, espresso nella forma AAAA7NNNNN dove AAAA=Anno flusso, 7=fisso per indicare la tipologia accertamento esecutivo NNNNN=Progressivo crescente L’anno AAAA coincide con l’anno di creazione del flusso Assume lo stesso valore dell'analogo campo del record E00>> Tipo:N Obbl.S Errore:501-SF 501-SF	
+                sPrintLine += PadLine(oE99.EstremiFlusso, oE99.Length.EstremiFlusso, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 34-40 Lungh. 7<<TOTALE RECORD TOTALE RECORD Numero di record presenti nel flusso>> Tipo:N Obbl.S Errore:503-SF 503-SF	
+                sPrintLine += PadLine(oE99.TotaleRecord, oE99.Length.TotaleRecord, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 41-47 Lungh. 7<<TOTALE RECORD E20 TOTALE RECORD E20 Numero di record E20 presenti nel flusso>> Tipo:N Obbl.S Errore:503-SF 503-SF	
+                sPrintLine += PadLine(oE99.TotaleRecordE20, oE99.Length.TotaleRecordE20, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 48-54 Lungh. 7<<TOTALE RECORD E23 TOTALE RECORD E23 Numero di record E23 presenti nel flusso>> Tipo:N Obbl.S Errore:503-SF 503-SF	
+                sPrintLine += PadLine(oE99.TotaleRecordE23, oE99.Length.TotaleRecordE23, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 55-61 Lungh. 7<<TOTALE RECORD E50 TOTALE RECORD E50 Numero di record E50 presenti nel flusso>> Tipo:N Obbl.S Errore:503-SF 503-SF	
+                sPrintLine += PadLine(oE99.TotaleRecordE50, oE99.Length.TotaleRecordE50, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 62-68 Lungh. 7<<TOTALE RECORD E60 TOTALE RECORD E60 Numero di record E60 presenti nel flusso>> Tipo:N Obbl.S Errore:503-SF 503-SF	
+                sPrintLine += PadLine(oE99.TotaleRecordE60, oE99.Length.TotaleRecordE60, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 69-83 Lungh. 15<<TOTALE CARICO FLUSSO TOTALE CARICO FLUSSO Contiene la somma totale dei carichi dei singoli atti>> Tipo:N Obbl.S Errore:503-SF 503-SF	
+                sPrintLine += PadLine(oE99.TotaleCaricoFlusso, oE99.Length.TotaleCaricoFlusso, objAccertamentiEsecutivi.Type.Numero)
+                'Campo Posizione 84-600 Lungh. 517<<FILLER>> Tipo:AN Obbl.N Errore:SPAZI	
+                sPrintLine += PadLine(oE99.Filler, oE99.Length.Filler, objAccertamentiEsecutivi.Type.Stringa)
+
+                sPrintLine = New MyUtility().ReplaceCharForFile(sPrintLine)
+                If New MyUtility().WriteFile(sPathNameFile, sPrintLine) <= 0 Then
+                    Return 0
+                End If
+
+                Return 1
+            Catch Err As Exception
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.CreaobjAccertamentiEsecutivi.PrintLineE99.errore::" + Err.Message)
+                Return -1
+            End Try
+        End Function
+        Public Function PadLine(sValLine As String, LenValLine As Integer, TypeValLine As String) As String
+            Dim sPadLine As String = ""
+            Try
+                Select Case TypeValLine
+                    Case objAccertamentiEsecutivi.Type.Numero
+                        sPadLine = sValLine.PadLeft(LenValLine, "0").Substring(0, LenValLine)
+                    Case objAccertamentiEsecutivi.Type.Data
+                        sPadLine = Format(CDate(sValLine), "yyyyMMdd").PadLeft(LenValLine, "0").Substring(0, LenValLine)
+                    Case Else
+                        sPadLine = sValLine.PadRight(LenValLine, " ").Substring(0, LenValLine)
+                End Select
+            Catch Err As Exception
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.CreaobjAccertamentiEsecutivi.PadLine.errore::" + Err.Message)
+                sPadLine = ""
+            End Try
+            Return sPadLine
         End Function
     End Class
 #End Region

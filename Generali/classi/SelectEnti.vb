@@ -202,8 +202,17 @@ Public Class SelectEnti
                 End If
                 '*** ***
                 HttpContext.Current.Session("TributiBollettinoF24") = dv.Item(0)("TributiBollettinoF24")
-                If Not IsDBNull(dv.Item(0).Item("PATHFILEISOLAECOLOGICA")) Then
-                    HttpContext.Current.Session("PathFileIsolaEcologica") = dv.Item(0)("PATHFILEISOLAECOLOGICA").ToString
+                If Not IsDBNull(dv.Item(0).Item("IsolaEcologicaPathFile")) Then
+                    HttpContext.Current.Session("IsolaEcologicaPathFile") = dv.Item(0)("IsolaEcologicaPathFile").ToString
+                End If
+                If Not IsDBNull(dv.Item(0).Item("IsolaEcologicaFTPUser")) Then
+                    HttpContext.Current.Session("IsolaEcologicaFTPUser") = dv.Item(0)("IsolaEcologicaFTPUser").ToString
+                End If
+                If Not IsDBNull(dv.Item(0).Item("IsolaEcologicaFTPPwd")) Then
+                    HttpContext.Current.Session("IsolaEcologicaFTPPwd") = dv.Item(0)("IsolaEcologicaFTPPwd").ToString
+                End If
+                If Not IsDBNull(dv.Item(0).Item("IsolaEcologicaFTP")) Then
+                    HttpContext.Current.Session("IsolaEcologicaFTP") = dv.Item(0)("IsolaEcologicaFTP").ToString
                 End If
                 Log.Debug("SelectEnti per::Session('COD_ENTE')::" & HttpContext.Current.Session("COD_ENTE").ToString & "::Session('DESCRIZIONE_ENTE')::" & HttpContext.Current.Session("DESCRIZIONE_ENTE").ToString & "::Session('NOME_ENTE')::" & HttpContext.Current.Session("NOME_ENTE").ToString & "::Session('COD_BELFIORE')::" & HttpContext.Current.Session("COD_BELFIORE").ToString & "::Session('VisualGIS')::" & HttpContext.Current.Session("VisualGIS").ToString)
 

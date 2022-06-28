@@ -88,6 +88,27 @@
             </table>
         </div>
         &nbsp;
+        <div id="divDatiDelibera" class="col-md-12">
+            <div class="col-md-2">
+                <p>
+                    <label class="Input_Label">Numero Delibera</label>
+                </p>
+                <asp:TextBox ID="TxtNDelibera" runat="server" CssClass="Input_Text col-md-12"></asp:TextBox>
+            </div>
+            <div class="col-md-3">
+                <p>
+                    <label class="Input_Label">Dal-Al</label>
+                </p>
+                <asp:TextBox runat="server" ID="txtInizioDelibera" CssClass="Input_Text_Right TextDate" onblur="txtDateLostfocus(this);VerificaData(this);" onfocus="txtDateGotfocus(this);"></asp:TextBox>
+                <asp:TextBox runat="server" ID="txtFineDelibera" CssClass="Input_Text_Right TextDate" onblur="txtDateLostfocus(this);VerificaData(this);" onfocus="txtDateGotfocus(this);"></asp:TextBox>
+            </div>
+            <div class="col-md-12">
+                <p>
+                    <label class="Input_Label">Estremi della delibera con cui l'ente affida la riscossione ai sensi dell'art.2,comma2,D.Lgs n.193 del 2016. La Data Inizio deve essere maggiore del 01/10/2016</label>
+                </p>
+            </div>
+        </div>
+        &nbsp;
 		<div id="TblRicerca" class="col-md-12">
             <div runat="server" id="DivRiepilogoDaElab" class="col-md-12">
                 <fieldset class="classeFieldSetRicerca col-md-12">

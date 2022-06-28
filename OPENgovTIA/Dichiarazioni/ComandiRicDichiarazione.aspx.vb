@@ -74,7 +74,7 @@ Partial Class ComandiRicDichiarazione
                 sScript += "$('#GIS').addClass('hidden');"
                 RegisterScript(sScript, Me.GetType)
             End If
-            If ConstSession.PathFileIsolaEcologica = "" Then
+            If ConstSession.IsolaEcologicaPathFile = "" Then
                 sScript += "$('#IsolaEco').addClass('DisableBtn');"
                 sScript += "$('#IsolaEco').addClass('hidden');"
                 RegisterScript(sScript, Me.GetType)

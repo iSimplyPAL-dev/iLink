@@ -248,6 +248,16 @@
 						        <asp:radiobutton id="rdbCalcoloNetto" Enabled="false" runat="server" CssClass="Input_Label" Text="Calcolo al netto del Versato" GroupName="OptTipoCalcolo"></asp:radiobutton>
 						    </td>
 				        </tr>
+						<tr>
+							<td class="ERRORSTYLE">
+								<br>N.B.
+							</td>
+				        </tr>
+						<tr>
+							<td class="ERRORSTYLE">
+								L'elaborazione viene fatta in background pertanto, dopo aver lanciato l'esecuzione, si può procedere con altre operazioni da menù.
+							</td>
+						</tr>
 		            </table>
 		        </fieldset>
 			    <table id="tblContrib" style="WIDTH: 100%">

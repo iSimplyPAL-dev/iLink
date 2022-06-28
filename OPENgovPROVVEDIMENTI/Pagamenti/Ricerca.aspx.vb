@@ -167,7 +167,7 @@ Partial Class Ricerca
         Dim cognome, nome, cod_fiscale, NumAtto As String
         Dim DataAl, DataDal As DateTime
 
-        nCol = 14
+        nCol = 16
         Try
             cognome = txtCognome.Text
             nome = txtNome.Text
@@ -204,6 +204,10 @@ Partial Class Ricerca
             aMyHeaders(x) = "Tipologia Atto"
             x += 1
             aMyHeaders(x) = "N. Atto"
+            x += 1
+            aMyHeaders(x) = "Totale €"
+            x += 1
+            aMyHeaders(x) = "Totale Ridotto €"
             x += 1
             aMyHeaders(x) = "Data Pagamento"
             x += 1

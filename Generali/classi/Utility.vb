@@ -352,8 +352,17 @@ Public Class UtilityOPENgov
                 '*** ***
                 HttpContext.Current.Session("TributiBollettinoF24") = dsEnti.Tables(0).Rows(0).Item("TributiBollettinoF24")
 
-                If Not IsDBNull(dsEnti.Tables(0).Rows(0).Item("PATHFILEISOLAECOLOGICA")) Then
-                    HttpContext.Current.Session("PathFileIsolaEcologica") = dsEnti.Tables(0).Rows(0).Item("PATHFILEISOLAECOLOGICA").ToString
+                If Not IsDBNull(dsEnti.Tables(0).Rows(0).Item("IsolaEcologicaPathFile")) Then
+                    HttpContext.Current.Session("IsolaEcologicaPathFile") = dsEnti.Tables(0).Rows(0).Item("IsolaEcologicaPathFile").ToString
+                End If
+                If Not IsDBNull(dsEnti.Tables(0).Rows(0).Item("IsolaEcologicaFTPUser")) Then
+                    HttpContext.Current.Session("IsolaEcologicaFTPUser") = dsEnti.Tables(0).Rows(0)("IsolaEcologicaFTPUser").ToString
+                End If
+                If Not IsDBNull(dsEnti.Tables(0).Rows(0).Item("IsolaEcologicaFTPPwd")) Then
+                    HttpContext.Current.Session("IsolaEcologicaFTPPwd") = dsEnti.Tables(0).Rows(0)("IsolaEcologicaFTPPwd").ToString
+                End If
+                If Not IsDBNull(dsEnti.Tables(0).Rows(0).Item("IsolaEcologicaFTP")) Then
+                    HttpContext.Current.Session("IsolaEcologicaFTP") = dsEnti.Tables(0).Rows(0)("IsolaEcologicaFTP").ToString
                 End If
                 Log.Debug("CaricoPagina per::Session('Ambiente')::" & HttpContext.Current.Session("Ambiente").ToString & "::Session('COD_ENTE')::" & HttpContext.Current.Session("COD_ENTE").ToString & "::Session('DESCRIZIONE_ENTE')::" & HttpContext.Current.Session("DESCRIZIONE_ENTE").ToString & "::Session('NOME_ENTE')::" & HttpContext.Current.Session("NOME_ENTE").ToString & "::Session('COD_BELFIORE')::" & HttpContext.Current.Session("COD_BELFIORE").ToString & "::Session('VisualGIS')::" & HttpContext.Current.Session("VisualGIS").ToString)
 
