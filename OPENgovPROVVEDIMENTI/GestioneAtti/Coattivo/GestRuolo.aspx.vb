@@ -174,15 +174,17 @@ Public Class GestRuolo
         Dim DtDatiStampa As New DataTable
         Dim aMyHeaders As String()
         Dim aListColonne As ArrayList
+        Dim myRuolo As New ObjRuolo
 
-        sNameXLS = ConstSession.IdEnte + "_COATTIVI_" + Format(CType(Session("RuoloCoattivo"), ObjRuolo).tDataInizioConf, "yyyyMMdd") + "-" + Format(CType(Session("RuoloCoattivo"), ObjRuolo).tDataFineConf, "yyyyMMdd") + "_" + Format(Now, "yyyyMMdd_hhmmss") & ".xls"
         If CInt(hfIdRuolo.Value) <= 0 Then
             sScript = "GestAlert('a', 'warning', '', '', 'E\' necessario selezionare un Ruolo!');"
             RegisterScript(sScript, Me.GetType)
         Else
             Try
+                myRuolo = CType(Session("RuoloCoattivo"), ObjRuolo)
+                sNameXLS = ConstSession.IdEnte + "_COATTIVI_" + Format(myRuolo.tDataInizioConf, "yyyyMMdd") + "-" + Format(myRuolo.tDataFineConf, "yyyyMMdd") + "_" + Format(Now, "yyyyMMdd_hhmmss") & ".xls"
                 nCol = 14
-                DtDatiStampa = New clsCoattivo.clsStampa().PrintMinuta(Session("ListCoattivi"), ConstSession.IdEnte & "-" & ConstSession.DescrizioneEnte, nCol, CType(Session("RuoloCoattivo"), ObjRuolo).tDataInizioConf, CType(Session("RuoloCoattivo"), ObjRuolo).tDataFineConf)
+                DtDatiStampa = New clsCoattivo.clsStampa().PrintMinuta(Session("ListCoattivi"), ConstSession.IdEnte & "-" & ConstSession.DescrizioneEnte, nCol, myRuolo.tDataInizioConf, myRuolo.tDataFineConf, myRuolo.sDescrRuolo, myRuolo.sAnno)
             Catch Err As Exception
                 Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Coattivo.GestRuolo.StampaMinuta_Click.errore: ", Err)
                 Response.Redirect("../../../PaginaErrore.aspx")

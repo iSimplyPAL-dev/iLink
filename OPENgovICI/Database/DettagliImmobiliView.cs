@@ -1,6 +1,9 @@
+using Business;
+using log4net;
 using System;
 using System.Data;
 using System.Data.SqlClient;
+using Utility;
 
 namespace DichiarazioniICI.Database
 {
@@ -105,6 +108,7 @@ namespace DichiarazioniICI.Database
     /// <remarks>In ottemperanza alle linee guida di sviluppo 1.0</remarks>
     public class DettagliImmobiliView : Database
 	{
+		private static readonly ILog log = LogManager.GetLogger(typeof(DettagliImmobiliView));
 		/// <summary>
 		/// Costruttore della classe
 		/// </summary>
@@ -120,17 +124,25 @@ namespace DichiarazioniICI.Database
 		/// <param name="idTestata"></param>
         /// <param name="myConn"></param>
 		/// <returns></returns>
-		public DataView ListByIDTestata(int idTestata, string myConn)
+		public DataView ListByIDTestata(int idTestata,int IsPassaggio)
 		{
-			SqlCommand SelectCommand = new SqlCommand();
-			SelectCommand.CommandText = "SELECT * FROM " + this.TableName +
-				" WHERE IDTestata=@idTestata AND Contitolare=0" +
-				" AND AnnullatoDettaglio <> 1 AND AnnullatoImmobile <> 1";
-
-			SelectCommand.Parameters.Add("@idTestata",SqlDbType.Int).Value = idTestata;
-            DataView dv = Query(SelectCommand, new SqlConnection(myConn)).DefaultView; ;
-			kill();
-			return dv;
+			DataView myDataView = new DataView(); 
+			try
+			{
+				string sSQL = string.Empty;
+				using (DBModel ctx = new DBModel(ConstWrapper.DBType, ConstWrapper.StringConnection))
+				{
+					sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_GetListImmobili", "IDTESTATA", "PASSAGGIO");
+					myDataView = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("IDTESTATA", idTestata), ctx.GetParam("PASSAGGIO", IsPassaggio));
+					ctx.Dispose();
+				}
+			}
+			catch (Exception ex)
+			{
+				log.Debug(ConstWrapper.CodiceEnte + "." + ConstWrapper.sUsername + " - DichiarazioniICI.Aliquote.ListaTipoAliquote.errore: ", ex);
+				myDataView = null;
+			}
+			return myDataView;
 		}
 
 		/// <summary>

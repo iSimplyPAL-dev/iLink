@@ -73,6 +73,7 @@ namespace DichiarazioniICI
         {
             try
             {
+                Session["ListUIPassProp"] = null;
                 if (!IsPostBack)
                 {
                     ViewState.Add("SortKey", "");

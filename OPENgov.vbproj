@@ -109,22 +109,22 @@
   <ItemGroup>
     <Reference Include="AnagInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=73a397894a5f6da1, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DLLcomuni\AnagInterface.dll</HintPath>
+      <HintPath>..\..\DLLComuni\AnagInterface.dll</HintPath>
     </Reference>
     <Reference Include="Anagrafica, Version=1.0.1.2, Culture=neutral, PublicKeyToken=978df93f9e14593b, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DLLcomuni\Anagrafica.dll</HintPath>
+      <HintPath>..\..\DLLComuni\Anagrafica.dll</HintPath>
     </Reference>
     <Reference Include="GestioneStradarioVaniDLL">
       <HintPath>..\DLLcomuni\GestioneStradarioVaniDLL.dll</HintPath>
     </Reference>
     <Reference Include="IRemInterfaceOSAP, Version=1.0.6732.20093, Culture=neutral, PublicKeyToken=821c65e4384aa8e2, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DLLcomuni\IRemInterfaceOSAP.dll</HintPath>
+      <HintPath>..\..\DLLComuni\IRemInterfaceOSAP.dll</HintPath>
     </Reference>
     <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DLLcomuni\log4net.dll</HintPath>
+      <HintPath>..\..\DLLComuni\log4net.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\DLLcomuni\MySql.Data.dll</HintPath>
@@ -132,39 +132,39 @@
     <Reference Include="MySql.Data.Entity, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="OggettiComuniStrade, Version=1.0.4.0, Culture=neutral, PublicKeyToken=8e92109ba6c0d037, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DLLcomuni\OggettiComuniStrade.dll</HintPath>
+      <HintPath>..\..\DLLComuni\OggettiComuniStrade.dll</HintPath>
     </Reference>
     <Reference Include="OPENUtility, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DLLcomuni\OPENUtility.dll</HintPath>
+      <HintPath>..\..\DLLComuni\OPENUtility.dll</HintPath>
     </Reference>
     <Reference Include="RemotingInterfaceAnater, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DLLcomuni\RemotingInterfaceAnater.dll</HintPath>
+      <HintPath>..\..\DLLComuni\RemotingInterfaceAnater.dll</HintPath>
     </Reference>
     <Reference Include="RemotingInterfaceMotoreH2O, Version=1.0.0.4, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DLLcomuni\RemotingInterfaceMotoreH2O.dll</HintPath>
+      <HintPath>..\..\DLLComuni\RemotingInterfaceMotoreH2O.dll</HintPath>
     </Reference>
     <Reference Include="RemotingInterfaceMotoreTarsu, Version=1.0.1.0, Culture=neutral, PublicKeyToken=ab7a724589ef7794, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DLLcomuni\RemotingInterfaceMotoreTarsu.dll</HintPath>
+      <HintPath>..\..\DLLComuni\RemotingInterfaceMotoreTarsu.dll</HintPath>
     </Reference>
     <Reference Include="RemotingInterfaceOpenGovStradario, Version=1.0.6241.32443, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DLLcomuni\RemotingInterfaceOpenGovStradario.dll</HintPath>
+      <HintPath>..\..\DLLComuni\RemotingInterfaceOpenGovStradario.dll</HintPath>
     </Reference>
     <Reference Include="Ribes.OPENgov.Utilities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DLLcomuni\Ribes.OPENgov.Utilities.dll</HintPath>
+      <HintPath>..\..\DLLComuni\Ribes.OPENgov.Utilities.dll</HintPath>
     </Reference>
     <Reference Include="Ribes.OPENgov.WebControls, Version=1.2.0.17259, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DLLcomuni\Ribes.OPENgov.WebControls.dll</HintPath>
+      <HintPath>..\..\DLLComuni\Ribes.OPENgov.WebControls.dll</HintPath>
     </Reference>
     <Reference Include="RKLib.ExportData, Version=1.0.0.0, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DLLcomuni\RKLib.ExportData.dll</HintPath>
+      <HintPath>..\..\DLLComuni\RKLib.ExportData.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
@@ -196,11 +196,11 @@
     </Reference>
     <Reference Include="Utility, Version=1.0.7634.18786, Culture=neutral, PublicKeyToken=ae1027569650564c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DLLcomuni\Utility.dll</HintPath>
+      <HintPath>..\..\DLLComuni\Utility.dll</HintPath>
     </Reference>
     <Reference Include="WebChart, Version=1.1.1.4, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DLLcomuni\WebChart.dll</HintPath>
+      <HintPath>..\..\DLLComuni\WebChart.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -774,8 +774,10 @@ Public Class clsCoattivo
         ''' <param name="nCampi"></param>
         ''' <param name="Dal"></param>
         ''' <param name="Al"></param>
+        ''' <param name="ListTributi"></param>
+        ''' <param name="Anno"></param>
         ''' <returns></returns>
-        Public Function PrintMinuta(ByVal ListItem() As ObjCoattivo, ByVal sIntestazioneEnte As String, nCampi As Integer, Dal As Date, Al As Date) As DataTable
+        Public Function PrintMinuta(ByVal ListItem() As ObjCoattivo, ByVal sIntestazioneEnte As String, nCampi As Integer, Dal As Date, Al As Date, ListTributi As String, Anno As Integer) As DataTable
             Dim sDatiStampa As String
             Dim DsStampa As New DataSet
             Dim DtStampa As New DataTable
@@ -806,7 +808,12 @@ Public Class clsCoattivo
                     Return Nothing
                 End If
                 'inserisco l'intestazione del report
-                sDatiStampa = "Minuta Coattivi Notificati dal " + New Formatta.FunctionGrd().FormattaDataGrd(Dal) + " al " + New Formatta.FunctionGrd().FormattaDataGrd(Al)
+                sDatiStampa = "Minuta Coattivi "
+                sDatiStampa += ListTributi.Replace(Utility.Costanti.TRIBUTO_ICI, "IMU").Replace(Utility.Costanti.TRIBUTO_TARSU, "TARI")
+                sDatiStampa += " Notificati dal " + New Formatta.FunctionGrd().FormattaDataGrd(Dal) + " al " + New Formatta.FunctionGrd().FormattaDataGrd(Al)
+                If Anno > 0 Then
+                    sDatiStampa += " per l'anno " + Anno.ToString
+                End If
                 sDatiStampa = sDatiStampa.PadRight(sDatiStampa.Length + nCampi, "|")
                 If AddRowStampa(DtStampa, sDatiStampa) = 0 Then
                     Return Nothing
@@ -1382,7 +1389,7 @@ Public Class clsCoattivo
                     oN2.Filler = Space(4)
                     'prelevo il codice del comune
                     For Each mySped As ObjIndirizziSpedizione In DatiContribuente.ListSpedizioni
-                        If mySped.CodTributo = Utility.Costanti.TRIBUTO_TARSU Then
+                        If mySped.CodTributo = sCodTributo.Replace(Utility.Costanti.TRIBUTO_TASI, Utility.Costanti.TRIBUTO_ICI) Then 'Utility.Costanti.TRIBUTO_TARSU Then
                             If mySped.ComuneRCP <> "" Then
                                 oN2.CodiceIndirizzoDomicilioFiscale = mySped.CodComuneRCP
                             Else
@@ -1404,6 +1411,30 @@ Public Class clsCoattivo
                         End If
                     Next
                     '*** ***
+                    If oN2.CodiceBelfioreDomicilioFiscale = "" And DatiContribuente.Sesso = "G" Then
+                        If DatiContribuente.ComuneResidenza <> "" Then
+                            oN2.CodiceIndirizzoDomicilioFiscale = DatiContribuente.CodiceComuneResidenza
+                        Else
+                            oN2.CodiceIndirizzoDomicilioFiscale = ""
+                        End If
+                        If IsNumeric(DatiContribuente.CivicoResidenza) Then
+                            oN2.IndirizzoDomicilioFiscale = New MyUtility().ReplaceCharForFile(DatiContribuente.ViaResidenza)
+                            If DatiContribuente.CivicoResidenza = -1 Then DatiContribuente.CivicoResidenza = 0
+                            oN2.NumeroCivicoDomicilioFiscale = DatiContribuente.CivicoResidenza
+                        Else
+                            oN2.NumeroCivicoDomicilioFiscale = 0
+                            oN2.IndirizzoDomicilioFiscale = Left(New MyUtility().ReplaceCharForFile(DatiContribuente.ViaResidenza + " " + Replace(DatiContribuente.CivicoResidenza, "/", "")), 30)
+                        End If
+                        oN2.LetteraNumeroCivicoDomicilioFiscale = New MyUtility().ReplaceCharForFile(DatiContribuente.EsponenteCivicoResidenza)
+                        oN2.CapDomicilioFiscale = New MyUtility().ReplaceCharForFile(DatiContribuente.CapResidenza)
+                        'prelevo il codice del comune
+                        If DatiContribuente.ComuneResidenza <> "" Then
+                            oN2.CodiceBelfioreDomicilioFiscale = DatiContribuente.CodiceComuneResidenza
+                        Else
+                            oN2.CodiceBelfioreDomicilioFiscale = ""
+                        End If
+                        oN2.LocalitaDomicilioFiscale = New MyUtility().ReplaceCharForFile(DatiContribuente.FrazioneResidenza)
+                    End If
                 Else
                     sNomeErr = "Anagrafica non trovata x codice::" + nIdContribuente.ToString()
                     Log.Debug(sIdEnteCNC + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290::Anagrafica non trovata - COD_CONTRIBUENTE::" & nIdContribuente)

@@ -49,7 +49,8 @@ namespace DichiarazioniICI.Database
         /// </revisionHistory>
         public DataView ListaTipoAliquote(string Tipo)
         {
-            DataView myDataView = new DataView(); try
+            DataView myDataView = new DataView();
+            try
             {
                 string sSQL = string.Empty;
                 using (DBModel ctx = new DBModel(ConstWrapper.DBType, ConstWrapper.StringConnection))

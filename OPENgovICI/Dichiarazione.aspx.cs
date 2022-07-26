@@ -229,6 +229,8 @@ namespace DichiarazioniICI
 
                 lblMesImmobile.Visible = false;
 
+                    int PassProp = 0;
+                    int.TryParse(Request.QueryString["PassProp"], out PassProp);
                 if (Request.QueryString["IDTestata"] != null)
                 {
                     string sScript = "parent.Comandi.location.href='CDichiarazioneMod.aspx'";
@@ -241,8 +243,6 @@ namespace DichiarazioniICI
                     //btnBonifica.Attributes.Add("onclick", "javascript:window.showModalDialog('PopUpErroriDichiarazione.aspx?IDTestata=" + this.IDTestata + "', window, 'dialogHeight: 400px; dialogWidth: 400px; status: no');return false;");
                     btnElimina.Attributes.Add("onclick", "javascript:return confirm('Confermi la cancellazione?');");
                     //btnSalva.Attributes.Add("onclick", "return VerificaDataNumero();");
-                    int PassProp = 0;
-                    int.TryParse(Request.QueryString["PassProp"], out PassProp);
                     LoadDichiarazione(PassProp);
                 }
                 else
@@ -278,10 +278,10 @@ namespace DichiarazioniICI
                 //str = "Search(" + this.IDTestata + ");";
                 //RegisterScript(sScript,this.GetType());, "msg", str);
                 HtmlControl myFrame = (HtmlControl)(this.FindControl("loadImmobile"));
-                myFrame.Attributes.Add("src", "Immobile.aspx?IdTestata=" + this.IDTestata);
+                myFrame.Attributes.Add("src", "Immobile.aspx?IdTestata=" + this.IDTestata+ "&PassProp="+ PassProp.ToString());
 
                 //*** 20131003 - gestione atti compravendita ***
-                if (this.CompraVenditaId > 0)
+                    if (this.CompraVenditaId > 0)
                 {
                     DataTable myData = new DichiarazioniView().GetCompraVendita(int.Parse(Request.QueryString["IdAttoCompraVendita"]));
                         foreach(DataRow myRow in myData.Rows)
@@ -1737,13 +1737,16 @@ protected void btnElimina_Click(object sender, System.EventArgs e)
         private bool SetPassaggioProp(Utility.DichManagerICI.TestataRow myItem)
         {
             TestataTable Testata = new TestataTable(ConstWrapper.sUsername);
+            string ListUIPassaggio = "";
             try
             {
                 bool retval = true;
                 Session["ListUIPassProp"] = null;
+                if (Session["ListUIPassaggio"] != null)
+                    ListUIPassaggio = Session["ListUIPassaggio"].ToString();
 
                 DataView dvListUI = new DataView();
-                retval = Testata.PassaggioProp(myItem, out dvListUI);
+                retval = Testata.PassaggioProp(myItem,ListUIPassaggio, out dvListUI);
 
                 if (retval)
                 {

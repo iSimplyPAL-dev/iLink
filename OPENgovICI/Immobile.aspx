@@ -30,7 +30,7 @@
 					<td>
 						<Grd:RibesGridView ID="GrdImmobili" runat="server" BorderStyle="None" 
                             BorderWidth="1px" CellPadding="3" GridLines="Vertical" Width="100%"
-                            AutoGenerateColumns="False" AllowPaging="true" AllowSorting="false" PageSize="4"
+                            AutoGenerateColumns="False" AllowPaging="False" AllowSorting="false" PageSize="4"
                             ErrorStyle-Font-Bold="True" ErrorStyle-ForeColor="Red"
                             OnRowCommand="GrdRowCommand" OnPageIndexChanging="GrdPageIndexChanging">
                             <PagerSettings Position="Bottom"></PagerSettings>
@@ -100,6 +100,13 @@
 										</asp:Label>
 									</ItemTemplate>
 								</asp:TemplateField>
+                                <asp:TemplateField HeaderText="Sel.">
+                                    <HeaderStyle HorizontalAlign="Center"></HeaderStyle>
+                                    <ItemStyle HorizontalAlign="Center"></ItemStyle>
+                                    <ItemTemplate>
+                                        <asp:CheckBox ID="chkSel" runat="server" AutoPostBack="true" Checked='<%# Business.CoreUtility.FormattaGrdCheck(DataBinder.Eval(Container, "DataItem.bSel")) %>' />
+                                    </ItemTemplate>
+                                </asp:TemplateField>
 								<asp:TemplateField HeaderText="">
 									<headerstyle horizontalalign="Center"></headerstyle>
 									<itemstyle horizontalalign="Center" Width="40px"></itemstyle>

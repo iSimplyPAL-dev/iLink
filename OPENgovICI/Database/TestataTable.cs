@@ -12,7 +12,7 @@ using Utility;
 
 namespace DichiarazioniICI.Database
 {
-    /**** 201507 - GESTIONE INCROCIATA RIFIUTI/ICI ***
+	/**** 201507 - GESTIONE INCROCIATA RIFIUTI/ICI ***
 	/// <summary>
 	/// Struttura che rappresenta il singolo record della tabella TblTestata.
 	/// </summary>
@@ -39,11 +39,11 @@ namespace DichiarazioniICI.Database
 		public int IDProvenienza;
 	}
 	*/
-    /// <summary>
-    /// Classe di gestione della tabella TblaTestata.
-    /// </summary>
-    /// <remarks>In ottemperanza alle linee guida di sviluppo 1.0</remarks>
-    public class TestataTable : Database
+	/// <summary>
+	/// Classe di gestione della tabella TblaTestata.
+	/// </summary>
+	/// <remarks>In ottemperanza alle linee guida di sviluppo 1.0</remarks>
+	public class TestataTable : Database
 	{
 		private string _username;
 		private static readonly ILog log = LogManager.GetLogger(typeof(ImmobileDettaglio));
@@ -54,7 +54,7 @@ namespace DichiarazioniICI.Database
 			this._username = UserName;
 			this.TableName = "TblTestata";
 		}
-        /**** 201507 - GESTIONE INCROCIATA RIFIUTI/ICI ***
+		/**** 201507 - GESTIONE INCROCIATA RIFIUTI/ICI ***
 		/// <summary>
 		/// Inserisce un nuovo record a partire da una struttura row.
 		/// </summary>
@@ -222,60 +222,62 @@ namespace DichiarazioniICI.Database
                 throw Err;
             }
         */
-        /// <summary>
-        /// 20141110 - passaggio di proprietà
-        /// </summary>
-        /// <param name="myItem"></param>
-        /// <param name="dvListUI"></param>
-        /// <returns></returns>
-        public bool PassaggioProp(Utility.DichManagerICI.TestataRow myItem, out DataView dvListUI)
-        {
-            SqlCommand InsertCommand = new SqlCommand();
-            dvListUI = null;
-            try { 
-            InsertCommand.CommandType = CommandType.StoredProcedure;
-            InsertCommand.CommandText = "prc_SetPassaggioProprieta";
-            InsertCommand.Parameters.Add("@IDTESTATA", SqlDbType.Int).Value = myItem.ID;
-            InsertCommand.Parameters.Add("@DATAPASSAGGIO", SqlDbType.DateTime).Value = myItem.DataFine;
-            InsertCommand.Parameters.Add("@IDCONTRIBUENTE", SqlDbType.Int).Value = myItem.IDContribuente;
-            InsertCommand.Parameters.Add("@OPERATORE", SqlDbType.VarChar).Value = myItem.Operatore;
-            dvListUI = Query(InsertCommand, new SqlConnection(Business.ConstWrapper.StringConnection)).DefaultView;
-            if (dvListUI != null)
-                return true;
-            else
-                return false;
-            }
-            catch (Exception Err)
-            {
-                log.Debug(Business.ConstWrapper.CodiceEnte + "."+ Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.PassaggiProp.errore: ", Err);
-                throw Err;
-            }
-        }
-        //*** ***
+		/// <summary>
+		/// 20141110 - passaggio di proprietà
+		/// </summary>
+		/// <param name="myItem"></param>
+		/// <param name="dvListUI"></param>
+		/// <returns></returns>
+		public bool PassaggioProp(Utility.DichManagerICI.TestataRow myItem, string ListUIPassaggio, out DataView dvListUI)
+		{
+			SqlCommand InsertCommand = new SqlCommand();
+			dvListUI = null;
+			try
+			{
+				InsertCommand.CommandType = CommandType.StoredProcedure;
+				InsertCommand.CommandText = "prc_SetPassaggioProprieta";
+				InsertCommand.Parameters.Add("@IDTESTATA", SqlDbType.Int).Value = myItem.ID;
+				InsertCommand.Parameters.Add("@DATAPASSAGGIO", SqlDbType.DateTime).Value = myItem.DataFine;
+				InsertCommand.Parameters.Add("@IDCONTRIBUENTE", SqlDbType.Int).Value = myItem.IDContribuente;
+				InsertCommand.Parameters.Add("@OPERATORE", SqlDbType.VarChar).Value = myItem.Operatore;
+				InsertCommand.Parameters.Add("@ListUIPassaggio", SqlDbType.VarChar).Value = ListUIPassaggio;
+				dvListUI = Query(InsertCommand, new SqlConnection(Business.ConstWrapper.StringConnection)).DefaultView;
+				if (dvListUI != null)
+					return true;
+				else
+					return false;
+			}
+			catch (Exception Err)
+			{
+				log.Debug(Business.ConstWrapper.CodiceEnte + "." + Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.PassaggiProp.errore: ", Err);
+				throw Err;
+			}
+		}
+		//*** ***
 		/// <summary>
 		/// Ritorna una struttura row che rappresenta un record individuato dall'identity.
 		/// </summary>
 		/// <param name="id"></param>
-        /// <param name="IdOggetto"></param>
-        /// <param name="myConn"></param>
+		/// <param name="IdOggetto"></param>
+		/// <param name="myConn"></param>
 		/// <returns>
 		/// Restituisce un oggetto di tipo TestataRow
 		/// </returns>
-        public Utility.DichManagerICI.TestataRow GetRow(int id, int IdOggetto, string myConn)
+		public Utility.DichManagerICI.TestataRow GetRow(int id, int IdOggetto, string myConn)
 		{
 			//log.Debug ("INIZIO GetRow");
-            Utility.DichManagerICI.TestataRow Testata = new Utility.DichManagerICI.TestataRow();
+			Utility.DichManagerICI.TestataRow Testata = new Utility.DichManagerICI.TestataRow();
 			try
 			{
-                SqlCommand SelectCommand = new SqlCommand();/*= PrepareGetRow(id);*/
-                SelectCommand.CommandType = CommandType.StoredProcedure;
-                SelectCommand.CommandText = "prc_GetTestata";
-                SelectCommand.Parameters.Clear();
-                SelectCommand.Parameters.Add("@IDCONTRIBUENTE", SqlDbType.Int).Value = -1;
-                SelectCommand.Parameters.Add("@IDTESTATA", SqlDbType.Int).Value = (IdOggetto > 0 ? -1:id);
-                SelectCommand.Parameters.Add("@IDOGGETTO", SqlDbType.Int).Value = IdOggetto;
-                SelectCommand.Parameters.Add("@ENTE", SqlDbType.VarChar).Value = ConstWrapper.CodiceEnte;
-                DataTable Tabella = Query(SelectCommand, new SqlConnection(myConn));
+				SqlCommand SelectCommand = new SqlCommand();/*= PrepareGetRow(id);*/
+				SelectCommand.CommandType = CommandType.StoredProcedure;
+				SelectCommand.CommandText = "prc_GetTestata";
+				SelectCommand.Parameters.Clear();
+				SelectCommand.Parameters.Add("@IDCONTRIBUENTE", SqlDbType.Int).Value = -1;
+				SelectCommand.Parameters.Add("@IDTESTATA", SqlDbType.Int).Value = (IdOggetto > 0 ? -1 : id);
+				SelectCommand.Parameters.Add("@IDOGGETTO", SqlDbType.Int).Value = IdOggetto;
+				SelectCommand.Parameters.Add("@ENTE", SqlDbType.VarChar).Value = ConstWrapper.CodiceEnte;
+				DataTable Tabella = Query(SelectCommand, new SqlConnection(myConn));
 				if (Tabella.Rows.Count > 0)
 				{
 					Testata.ID = (int)Tabella.Rows[0]["ID"];
@@ -283,12 +285,12 @@ namespace DichiarazioniICI.Database
 					Testata.NumeroDichiarazione = (int)Tabella.Rows[0]["NumeroDichiarazione"];
 					Testata.AnnoDichiarazione = (string)Tabella.Rows[0]["AnnoDichiarazione"];
 					//Testata.NumeroProtocollo = (string)Tabella.Rows[0]["NumeroProtocollo"];
-					Testata.NumeroProtocollo = Tabella.Rows[0]["NumeroProtocollo"] == DBNull.Value ? String.Empty  : (string)Tabella.Rows[0]["NumeroProtocollo"];
+					Testata.NumeroProtocollo = Tabella.Rows[0]["NumeroProtocollo"] == DBNull.Value ? String.Empty : (string)Tabella.Rows[0]["NumeroProtocollo"];
 					Testata.DataProtocollo = Tabella.Rows[0]["DataProtocollo"] == DBNull.Value ? DateTime.MinValue : (DateTime)Tabella.Rows[0]["DataProtocollo"];
-					Testata.TotaleModelli = Tabella.Rows[0]["TotaleModelli"] == DBNull.Value ? String.Empty: (string)Tabella.Rows[0]["TotaleModelli"];
+					Testata.TotaleModelli = Tabella.Rows[0]["TotaleModelli"] == DBNull.Value ? String.Empty : (string)Tabella.Rows[0]["TotaleModelli"];
 					Testata.DataInizio = Tabella.Rows[0]["DataInizio"] == DBNull.Value ? DateTime.MinValue : Convert.ToDateTime(Tabella.Rows[0]["DataInizio"]);
 					Testata.DataFine = Tabella.Rows[0]["DataFine"] == DBNull.Value ? DateTime.MinValue : Convert.ToDateTime(Tabella.Rows[0]["DataFine"]);
-                    Testata.IDContribuente = Tabella.Rows[0]["IDContribuente"] == DBNull.Value ? 0 : (int)Tabella.Rows[0]["IDContribuente"];
+					Testata.IDContribuente = Tabella.Rows[0]["IDContribuente"] == DBNull.Value ? 0 : (int)Tabella.Rows[0]["IDContribuente"];
 					Testata.IDDenunciante = Tabella.Rows[0]["IDDenunciante"] == DBNull.Value ? 0 : (int)Tabella.Rows[0]["IDDenunciante"];
 					Testata.Bonificato = (bool)Tabella.Rows[0]["Bonificato"];
 					Testata.Annullato = (bool)Tabella.Rows[0]["Annullato"];
@@ -300,39 +302,40 @@ namespace DichiarazioniICI.Database
 					Testata.IDProvenienza = (int)Tabella.Rows[0]["IDProvenienza"];
 				}
 			}
-			catch(Exception Err)
+			catch (Exception Err)
 			{
-                log.Debug(Business.ConstWrapper.CodiceEnte + "."+ Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.GetRow.errore: ", Err);
-                kill();
-				log.Warn  ("Errore ");
-                Testata = new Utility.DichManagerICI.TestataRow();
+				log.Debug(Business.ConstWrapper.CodiceEnte + "." + Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.GetRow.errore: ", Err);
+				kill();
+				log.Warn("Errore ");
+				Testata = new Utility.DichManagerICI.TestataRow();
 			}
-			finally{
+			finally
+			{
 				kill();
 			}
 			//log.Debug ("FINE GetRow");
 			return Testata;
 		}
 
-        private SqlCommand PrepareGetTestata(int idContribuente, string ente)
-        {
-            SqlCommand SelectCommand = new SqlCommand();
-            try
-            {
-                SelectCommand.Connection = new SqlConnection(Business.ConstWrapper.StringConnection);
-                SelectCommand.CommandText = "Select * From " + this.TableName + " Where idContribuente=@idContribuente and ente=@ente";
-                SelectCommand.Parameters.Add("@idContribuente", SqlDbType.Int, 4).Value = idContribuente;
-                SelectCommand.Parameters.Add("@ente", SqlDbType.NVarChar).Value = ente;
-                return SelectCommand;
-            }
+		private SqlCommand PrepareGetTestata(int idContribuente, string ente)
+		{
+			SqlCommand SelectCommand = new SqlCommand();
+			try
+			{
+				SelectCommand.Connection = new SqlConnection(Business.ConstWrapper.StringConnection);
+				SelectCommand.CommandText = "Select * From " + this.TableName + " Where idContribuente=@idContribuente and ente=@ente";
+				SelectCommand.Parameters.Add("@idContribuente", SqlDbType.Int, 4).Value = idContribuente;
+				SelectCommand.Parameters.Add("@ente", SqlDbType.NVarChar).Value = ente;
+				return SelectCommand;
+			}
 
-            catch (Exception Err)
-            {
-                log.Debug(Business.ConstWrapper.CodiceEnte + "."+ Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.PrepareGetTestata.errore: ", Err);
-                throw Err;
-            }
-            }
-		
+			catch (Exception Err)
+			{
+				log.Debug(Business.ConstWrapper.CodiceEnte + "." + Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.PrepareGetTestata.errore: ", Err);
+				throw Err;
+			}
+		}
+
 		/// <summary>
 		/// Ritorna un'array di struttura che rappresenta l'elenco delle testate di un contribuente.
 		/// <param name="idContribuente"> idContribuente del record da cercare </param>
@@ -341,26 +344,26 @@ namespace DichiarazioniICI.Database
 		/// <returns>
 		/// Restituisce un array di oggetti di tipo TestaRow
 		/// </returns>
-        public Utility.DichManagerICI.TestataRow[] GetTestataContribuente(int idContribuente, string ente)
+		public Utility.DichManagerICI.TestataRow[] GetTestataContribuente(int idContribuente, string ente)
 		{
 
-			string pathfileinfo ;
+			string pathfileinfo;
 			pathfileinfo = ConfigurationManager.AppSettings["pathfileconflog4net"].ToString();
-			FileInfo fileconfiglog4net  = new FileInfo(pathfileinfo);
+			FileInfo fileconfiglog4net = new FileInfo(pathfileinfo);
 			XmlConfigurator.ConfigureAndWatch(fileconfiglog4net);
 			ILog log = LogManager.GetLogger(typeof(TestataTable));
 
-			int i=0;
+			int i = 0;
 			try
 			{
-				SqlCommand SelectCommand = PrepareGetTestata(idContribuente,ente);
-                DataTable Tabella = Query(SelectCommand, new SqlConnection(Business.ConstWrapper.StringConnection));
+				SqlCommand SelectCommand = PrepareGetTestata(idContribuente, ente);
+				DataTable Tabella = Query(SelectCommand, new SqlConnection(Business.ConstWrapper.StringConnection));
 				//TestataRow[] Testata = new TestataRow[Tabella.Rows.Count];
-				ArrayList arrTestata=new ArrayList();
-                Utility.DichManagerICI.TestataRow Testata;
-				for (i=0;i<Tabella.Rows.Count;i++)
+				ArrayList arrTestata = new ArrayList();
+				Utility.DichManagerICI.TestataRow Testata;
+				for (i = 0; i < Tabella.Rows.Count; i++)
 				{
-                    Testata = new Utility.DichManagerICI.TestataRow();
+					Testata = new Utility.DichManagerICI.TestataRow();
 					Testata.ID = (int)Tabella.Rows[i]["ID"];
 					Testata.Ente = (string)Tabella.Rows[i]["Ente"];
 					Testata.NumeroDichiarazione = (int)Tabella.Rows[i]["NumeroDichiarazione"];
@@ -370,7 +373,7 @@ namespace DichiarazioniICI.Database
 					Testata.TotaleModelli = (string)Tabella.Rows[i]["TotaleModelli"];
 					Testata.DataInizio = Tabella.Rows[i]["DataInizio"] == DBNull.Value ? DateTime.MinValue : Convert.ToDateTime(Tabella.Rows[i]["DataInizio"]);
 					Testata.DataFine = Tabella.Rows[i]["DataFine"] == DBNull.Value ? DateTime.MinValue : Convert.ToDateTime(Tabella.Rows[i]["DataFine"]);
-					Testata.IDContribuente =  Tabella.Rows[i]["IDContribuente"] == DBNull.Value ? 0 : (int)Tabella.Rows[i]["IDContribuente"];
+					Testata.IDContribuente = Tabella.Rows[i]["IDContribuente"] == DBNull.Value ? 0 : (int)Tabella.Rows[i]["IDContribuente"];
 					Testata.IDDenunciante = Tabella.Rows[i]["IDDenunciante"] == DBNull.Value ? 0 : (int)Tabella.Rows[i]["IDDenunciante"];
 					Testata.Bonificato = (bool)Tabella.Rows[i]["Bonificato"];
 					Testata.Annullato = (bool)Tabella.Rows[i]["Annullato"];
@@ -383,21 +386,22 @@ namespace DichiarazioniICI.Database
 
 					arrTestata.Add(Testata);
 				}
-                return (Utility.DichManagerICI.TestataRow[])arrTestata.ToArray(typeof(Utility.DichManagerICI.TestataRow));
+				return (Utility.DichManagerICI.TestataRow[])arrTestata.ToArray(typeof(Utility.DichManagerICI.TestataRow));
 			}
-			catch (Exception  ex)
+			catch (Exception ex)
 			{
 				kill();
-                log.Debug(Business.ConstWrapper.CodiceEnte + "."+ Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.GetTestataContribuente.errore: ", ex);
-                Utility.DichManagerICI.TestataRow[] vuoto = null;
+				log.Debug(Business.ConstWrapper.CodiceEnte + "." + Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.GetTestataContribuente.errore: ", ex);
+				Utility.DichManagerICI.TestataRow[] vuoto = null;
 				return vuoto;
 			}
-			finally{
+			finally
+			{
 				kill();
-			}			
+			}
 		}
 
-		
+
 		/// <summary>
 		/// Ritorna una struttura row che rappresenta un record individuato dal numero protocollo.
 		/// </summary>
@@ -405,16 +409,16 @@ namespace DichiarazioniICI.Database
 		/// <returns>
 		/// restituisce un oggetto di tipo TestataRow
 		/// </returns>
-        public Utility.DichManagerICI.TestataRow GetRow(string numeroProtocollo)
+		public Utility.DichManagerICI.TestataRow GetRow(string numeroProtocollo)
 		{
-            Utility.DichManagerICI.TestataRow Testata = new Utility.DichManagerICI.TestataRow();
+			Utility.DichManagerICI.TestataRow Testata = new Utility.DichManagerICI.TestataRow();
 			try
 			{
 				SqlCommand SelectCommand = new SqlCommand();
-                SelectCommand.CommandType = CommandType.Text;
-                SelectCommand.CommandText ="Select * from " + this.TableName + " where NumeroProtocollo=@numeroProtocollo";
+				SelectCommand.CommandType = CommandType.Text;
+				SelectCommand.CommandText = "Select * from " + this.TableName + " where NumeroProtocollo=@numeroProtocollo";
 				SelectCommand.Parameters.Add("@numeroProtocollo", SqlDbType.VarChar).Value = numeroProtocollo;
-                DataTable Tabella = Query(SelectCommand, new SqlConnection(Business.ConstWrapper.StringConnection));
+				DataTable Tabella = Query(SelectCommand, new SqlConnection(Business.ConstWrapper.StringConnection));
 				if (Tabella.Rows.Count > 0)
 				{
 					Testata.ID = (int)Tabella.Rows[0]["ID"];
@@ -438,20 +442,21 @@ namespace DichiarazioniICI.Database
 					Testata.IDProvenienza = (int)Tabella.Rows[0]["IDProvenienza"];
 				}
 			}
-			catch(Exception Err)
+			catch (Exception Err)
 			{
-                log.Debug(Business.ConstWrapper.CodiceEnte + "."+ Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.GetTestataContribuente.errore: ", Err);
+				log.Debug(Business.ConstWrapper.CodiceEnte + "." + Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.GetTestataContribuente.errore: ", Err);
 
-                kill();
-                Testata = new Utility.DichManagerICI.TestataRow();
+				kill();
+				Testata = new Utility.DichManagerICI.TestataRow();
 			}
-			finally{
+			finally
+			{
 				kill();
 			}
 			return Testata;
 		}
 
-		
+
 		/// <summary>
 		/// Prende le dichiarazioni non cancellate.
 		/// </summary>
@@ -462,23 +467,24 @@ namespace DichiarazioniICI.Database
 		{
 			DataView dv;
 			SqlCommand SelectCommand = new SqlCommand();
-            try {
-                SelectCommand.CommandType = CommandType.Text;
-			SelectCommand.CommandText = "SELECT * FROM " + this.TableName +
-				" WHERE Annullato <> 1 and ente like @ente";
+			try
+			{
+				SelectCommand.CommandType = CommandType.Text;
+				SelectCommand.CommandText = "SELECT * FROM " + this.TableName +
+					" WHERE Annullato <> 1 and ente like @ente";
 
-			SelectCommand.Parameters.Add("@ente", SqlDbType.VarChar).Value = ConstWrapper.CodiceEnte;
-            dv = Query(SelectCommand, new SqlConnection(Business.ConstWrapper.StringConnection)).DefaultView;
-			kill();
-			return dv;
-            }
+				SelectCommand.Parameters.Add("@ente", SqlDbType.VarChar).Value = ConstWrapper.CodiceEnte;
+				dv = Query(SelectCommand, new SqlConnection(Business.ConstWrapper.StringConnection)).DefaultView;
+				kill();
+				return dv;
+			}
 
-            catch (Exception Err)
-            {
-                log.Debug(Business.ConstWrapper.CodiceEnte + "."+ Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.GetListTestateNonAnnullate.errore: ", Err);
-                throw Err;
-            }
-        }
+			catch (Exception Err)
+			{
+				log.Debug(Business.ConstWrapper.CodiceEnte + "." + Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.GetListTestateNonAnnullate.errore: ", Err);
+				throw Err;
+			}
+		}
 
 		/// <summary>
 		/// 
@@ -492,30 +498,31 @@ namespace DichiarazioniICI.Database
 			SelectCommand.CommandText = "SELECT * FROM viewDichiarazioniDaRibaltareInAnater";
 			SelectCommand.CommandText += " WHERE Ente like @ente and RibaltatoInAnater=0 and Annullato <> 1";
 
-            // RIMUOVO IL FILTRO SU BONIFICATO = 1
-            // SelectCommand.CommandText += " WHERE Ente like @ente and RibaltatoInAnater=0 and bonificato=1 and Annullato <> 1";
-            try { 
-			if(Anno.ToString().CompareTo("-1")!=0)
+			// RIMUOVO IL FILTRO SU BONIFICATO = 1
+			// SelectCommand.CommandText += " WHERE Ente like @ente and RibaltatoInAnater=0 and bonificato=1 and Annullato <> 1";
+			try
 			{
-				SelectCommand.CommandText += " AND AnnoDichiarazione = @Anno";
+				if (Anno.ToString().CompareTo("-1") != 0)
+				{
+					SelectCommand.CommandText += " AND AnnoDichiarazione = @Anno";
+				}
+				SelectCommand.Parameters.Add("@ente", SqlDbType.VarChar).Value = ConstWrapper.CodiceEnte;
+				SelectCommand.Parameters.Add("@Anno", SqlDbType.VarChar).Value = Anno.ToString();
+				SelectCommand.CommandText += " ORDER BY COGNOME_DENOMINAZIONE, NOME";
+
+				dv = Query(SelectCommand, new SqlConnection(Business.ConstWrapper.StringConnection)).DefaultView;
+				kill();
+				return dv;
 			}
-			SelectCommand.Parameters.Add("@ente", SqlDbType.VarChar).Value = ConstWrapper.CodiceEnte;
-			SelectCommand.Parameters.Add("@Anno", SqlDbType.VarChar).Value = Anno.ToString();
-			SelectCommand.CommandText += " ORDER BY COGNOME_DENOMINAZIONE, NOME";
 
-            dv = Query(SelectCommand, new SqlConnection(Business.ConstWrapper.StringConnection)).DefaultView;
-			kill();
-			return dv;
-            }
+			catch (Exception Err)
+			{
+				log.Debug(Business.ConstWrapper.CodiceEnte + "." + Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.GetListTestatePerAnater.errore: ", Err);
+				throw Err;
+			}
+		}
 
-            catch (Exception Err)
-            {
-                log.Debug(Business.ConstWrapper.CodiceEnte + "."+ Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.GetListTestatePerAnater.errore: ", Err);
-                throw Err;
-            }
-        }
 
-		
 		/// <summary>
 		/// Storicizza i dati: modifica i dati vecchi.
 		/// </summary>
@@ -528,25 +535,26 @@ namespace DichiarazioniICI.Database
 		public bool Storicizzazione(int id)
 		{
 			SqlCommand StoricizzaCommand = new SqlCommand();
-            try { 
-			StoricizzaCommand.CommandText = "UPDATE " + this.TableName + " SET " +
-				"Storico=@storico, DataFineValidità=@dataFineValidità WHERE ID=@id";
+			try
+			{
+				StoricizzaCommand.CommandText = "UPDATE " + this.TableName + " SET " +
+					"Storico=@storico, DataFineValidità=@dataFineValidità WHERE ID=@id";
 
-			StoricizzaCommand.Parameters.Add("@id",SqlDbType.Int).Value = id;
-			StoricizzaCommand.Parameters.Add("@storico",SqlDbType.Bit).Value = true;
-			StoricizzaCommand.Parameters.Add("@dataFineValidità",SqlDbType.DateTime).Value = DateTime.Now;
+				StoricizzaCommand.Parameters.Add("@id", SqlDbType.Int).Value = id;
+				StoricizzaCommand.Parameters.Add("@storico", SqlDbType.Bit).Value = true;
+				StoricizzaCommand.Parameters.Add("@dataFineValidità", SqlDbType.DateTime).Value = DateTime.Now;
 
-            return Execute(StoricizzaCommand, new SqlConnection(Business.ConstWrapper.StringConnection));
-            }
+				return Execute(StoricizzaCommand, new SqlConnection(Business.ConstWrapper.StringConnection));
+			}
 
-            catch (Exception Err)
-            {
-                log.Debug(Business.ConstWrapper.CodiceEnte + "."+ Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.Storicizzazione.errore: ", Err);
-                throw Err;
-            }
-        }
+			catch (Exception Err)
+			{
+				log.Debug(Business.ConstWrapper.CodiceEnte + "." + Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.Storicizzazione.errore: ", Err);
+				throw Err;
+			}
+		}
 
-		
+
 		/// <summary>
 		/// Esegue la cancellazione logica dei dati.
 		/// </summary>
@@ -559,22 +567,23 @@ namespace DichiarazioniICI.Database
 		public bool CancellazioneLogica(int id)
 		{
 			SqlCommand DeleteCommand = new SqlCommand();
-            try { 
-			DeleteCommand.CommandText = "UPDATE " + this.TableName + " SET " +
-				"Annullato=1 WHERE ID=@id";
+			try
+			{
+				DeleteCommand.CommandText = "UPDATE " + this.TableName + " SET " +
+					"Annullato=1 WHERE ID=@id";
 
-			DeleteCommand.Parameters.Add("@id",SqlDbType.Int).Value = id;
-            return Execute(DeleteCommand, new SqlConnection(Business.ConstWrapper.StringConnection));
-            }
+				DeleteCommand.Parameters.Add("@id", SqlDbType.Int).Value = id;
+				return Execute(DeleteCommand, new SqlConnection(Business.ConstWrapper.StringConnection));
+			}
 
-            catch (Exception Err)
-            {
-                log.Debug(Business.ConstWrapper.CodiceEnte + "."+ Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.CancellazzioneLogica.errore: ", Err);
-                throw Err;
-            }
-        }
+			catch (Exception Err)
+			{
+				log.Debug(Business.ConstWrapper.CodiceEnte + "." + Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.CancellazzioneLogica.errore: ", Err);
+				throw Err;
+			}
+		}
 
-		
+
 		/// <summary>
 		/// Elimina definitivamente una dichiarazione
 		/// </summary>
@@ -587,20 +596,21 @@ namespace DichiarazioniICI.Database
 		public bool CancellazioneDichiarazione(int id) // eliminazione definitiva di una dichiarazione Ale 12/07/2006
 		{
 			SqlCommand DeleteCommand = new SqlCommand();
-            try { 
-			DeleteCommand.CommandText = "DELETE FROM " + this.TableName +
-				" WHERE ID=@id";
+			try
+			{
+				DeleteCommand.CommandText = "DELETE FROM " + this.TableName +
+					" WHERE ID=@id";
 
-			DeleteCommand.Parameters.Add("@id",SqlDbType.Int).Value = id;
-            return Execute(DeleteCommand, new SqlConnection(Business.ConstWrapper.StringConnection));
-            }
+				DeleteCommand.Parameters.Add("@id", SqlDbType.Int).Value = id;
+				return Execute(DeleteCommand, new SqlConnection(Business.ConstWrapper.StringConnection));
+			}
 
-            catch (Exception Err)
-            {
-                log.Debug(Business.ConstWrapper.CodiceEnte + "."+ Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.Bonifica.errore: ", Err);
-                throw Err;
-            }
-        }
+			catch (Exception Err)
+			{
+				log.Debug(Business.ConstWrapper.CodiceEnte + "." + Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.Bonifica.errore: ", Err);
+				throw Err;
+			}
+		}
 
 		/// <summary>
 		/// Imposta il flag bonificato a true.
@@ -614,20 +624,21 @@ namespace DichiarazioniICI.Database
 		public bool Bonifica(int id)
 		{
 			SqlCommand BonificaCommand = new SqlCommand();
-            try { 
-			BonificaCommand.CommandText = "UPDATE " + this.TableName +
-				" SET Bonificato=1 WHERE ID=@id";
+			try
+			{
+				BonificaCommand.CommandText = "UPDATE " + this.TableName +
+					" SET Bonificato=1 WHERE ID=@id";
 
-			BonificaCommand.Parameters.Add("@id",SqlDbType.Int).Value = id;
-            return Execute(BonificaCommand, new SqlConnection(Business.ConstWrapper.StringConnection));
-            }
+				BonificaCommand.Parameters.Add("@id", SqlDbType.Int).Value = id;
+				return Execute(BonificaCommand, new SqlConnection(Business.ConstWrapper.StringConnection));
+			}
 
-            catch (Exception Err)
-            {
-                log.Debug(Business.ConstWrapper.CodiceEnte + "."+ Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.Bonifica.errore: ", Err);
-                throw Err;
-            }
-        }
+			catch (Exception Err)
+			{
+				log.Debug(Business.ConstWrapper.CodiceEnte + "." + Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.Bonifica.errore: ", Err);
+				throw Err;
+			}
+		}
 
 
 		/// <summary>
@@ -642,20 +653,21 @@ namespace DichiarazioniICI.Database
 		public bool BonificaFalse(int id)
 		{
 			SqlCommand BonificaCommand = new SqlCommand();
-            try { 
-			BonificaCommand.CommandText = "UPDATE " + this.TableName +
-				" SET Bonificato=0 WHERE ID=@id";
+			try
+			{
+				BonificaCommand.CommandText = "UPDATE " + this.TableName +
+					" SET Bonificato=0 WHERE ID=@id";
 
-			BonificaCommand.Parameters.Add("@id",SqlDbType.Int).Value = id;
-            return Execute(BonificaCommand, new SqlConnection(Business.ConstWrapper.StringConnection));
-            }
+				BonificaCommand.Parameters.Add("@id", SqlDbType.Int).Value = id;
+				return Execute(BonificaCommand, new SqlConnection(Business.ConstWrapper.StringConnection));
+			}
 
-            catch (Exception Err)
-            {
-                log.Debug(Business.ConstWrapper.CodiceEnte + "."+ Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.BonificaFalse.errore: ", Err);
-                throw Err;
-            }
-        }
+			catch (Exception Err)
+			{
+				log.Debug(Business.ConstWrapper.CodiceEnte + "." + Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.BonificaFalse.errore: ", Err);
+				throw Err;
+			}
+		}
 
 		/// <summary>
 		/// Torna una DataView con l'elenco delle dichiarazioni filtrate per contribuente.
@@ -669,34 +681,35 @@ namespace DichiarazioniICI.Database
 		{
 			DataView dv;
 			SqlCommand SelectCommand = new SqlCommand();
-            try { 
-			SelectCommand.CommandText = "SELECT * FROM " + this.TableName +
-				" WHERE IDContribuente=@idContribuente AND Annullato=0 and Ente like @ente";
-			
-			switch(bonificato)
+			try
 			{
-				case Bonificato.Bonificate:
-					SelectCommand.CommandText += " AND Bonificato=1";
-					break;
+				SelectCommand.CommandText = "SELECT * FROM " + this.TableName +
+					" WHERE IDContribuente=@idContribuente AND Annullato=0 and Ente like @ente";
 
-				case Bonificato.DaBonificare:
-					SelectCommand.CommandText += " AND Bonificato=0";
-					break;
+				switch (bonificato)
+				{
+					case Bonificato.Bonificate:
+						SelectCommand.CommandText += " AND Bonificato=1";
+						break;
+
+					case Bonificato.DaBonificare:
+						SelectCommand.CommandText += " AND Bonificato=0";
+						break;
+				}
+
+				SelectCommand.Parameters.Add("@idContribuente", SqlDbType.Int).Value = idContribuente;
+				SelectCommand.Parameters.Add("@ente", SqlDbType.VarChar).Value = ConstWrapper.CodiceEnte;
+				dv = Query(SelectCommand, new SqlConnection(ConstWrapper.StringConnection)).DefaultView;
+				kill();
+				return dv;
 			}
 
-			SelectCommand.Parameters.Add("@idContribuente", SqlDbType.Int).Value = idContribuente;
-			SelectCommand.Parameters.Add("@ente", SqlDbType.VarChar).Value = ConstWrapper.CodiceEnte;
-			dv=Query(SelectCommand,new SqlConnection(ConstWrapper.StringConnection)).DefaultView;
-			kill();
-			return dv;
-            }
-
-            catch (Exception Err)
-            {
-                log.Debug(Business.ConstWrapper.CodiceEnte + "."+ Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.List.errore: ", Err);
-                throw Err;
-            }
-        }
+			catch (Exception Err)
+			{
+				log.Debug(Business.ConstWrapper.CodiceEnte + "." + Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.List.errore: ", Err);
+				throw Err;
+			}
+		}
 
 		/// <summary>
 		/// Torna una DataView con l'elenco delle dichiarazioni filtrate per contribuente.
@@ -711,7 +724,8 @@ namespace DichiarazioniICI.Database
 		{
 			DataView dv;
 			SqlCommand SelectCommand = new SqlCommand();
-            try { 
+			try
+			{
 				//dipe 26/04/2010
 				//			SelectCommand.CommandText = "SELECT distinct *, tbldettagliotestata.contitolare FROM " + this.TableName +
 				//				" left outer join tbldettagliotestata on " +
@@ -748,82 +762,82 @@ namespace DichiarazioniICI.Database
 				//	" AND TblTestata.Annullato=0 "+
 				//	" and TblTestata.Ente like @ente";
 
-            SelectCommand.CommandType = CommandType.StoredProcedure;
-            SelectCommand.CommandText = "prc_GetTestata";
-            SelectCommand.Parameters.Clear();
-            SelectCommand.Parameters.Add("@IDCONTRIBUENTE", SqlDbType.Int).Value = idContribuente;
-            SelectCommand.Parameters.Add("@IDTESTATA", SqlDbType.Int).Value = -1;
-            SelectCommand.Parameters.Add("@IDOGGETTO", SqlDbType.Int).Value = -1;
-            SelectCommand.Parameters.Add("@ENTE", SqlDbType.VarChar).Value = ConstWrapper.CodiceEnte;
-			//dv=Query(SelectCommand).DefaultView;
-            dv = Query(SelectCommand, new SqlConnection(ConstWrapper.StringConnection)).DefaultView;
-			SelectCommand.Dispose();
+				SelectCommand.CommandType = CommandType.StoredProcedure;
+				SelectCommand.CommandText = "prc_GetTestata";
+				SelectCommand.Parameters.Clear();
+				SelectCommand.Parameters.Add("@IDCONTRIBUENTE", SqlDbType.Int).Value = idContribuente;
+				SelectCommand.Parameters.Add("@IDTESTATA", SqlDbType.Int).Value = -1;
+				SelectCommand.Parameters.Add("@IDOGGETTO", SqlDbType.Int).Value = -1;
+				SelectCommand.Parameters.Add("@ENTE", SqlDbType.VarChar).Value = ConstWrapper.CodiceEnte;
+				//dv=Query(SelectCommand).DefaultView;
+				dv = Query(SelectCommand, new SqlConnection(ConstWrapper.StringConnection)).DefaultView;
+				SelectCommand.Dispose();
 
 
-/*
+				/*
 
-			SelectCommand.CommandText = "SELECT distinct TblTestata.*, "+
-				" (select distinct contitolare from tbldettagliotestata where idsoggetto=@idContribuente and idtestata=TblTestata.id) as contitolare"+
-				" from TblTestata "+
-				" WHERE idcontribuente=@idContribuente "+
-				" AND TblTestata.Annullato=0 "+
-				" and TblTestata.Ente like @ente";
+							SelectCommand.CommandText = "SELECT distinct TblTestata.*, "+
+								" (select distinct contitolare from tbldettagliotestata where idsoggetto=@idContribuente and idtestata=TblTestata.id) as contitolare"+
+								" from TblTestata "+
+								" WHERE idcontribuente=@idContribuente "+
+								" AND TblTestata.Annullato=0 "+
+								" and TblTestata.Ente like @ente";
 
 
-			switch(bonificato)
+							switch(bonificato)
+							{
+								case Bonificato.Bonificate:
+									SelectCommand.CommandText += " AND Bonificato=1";
+									break;
+
+								case Bonificato.DaBonificare:
+									SelectCommand.CommandText += " AND Bonificato=0";
+									break;
+							}
+
+							SelectCommand.Parameters.Add("@idContribuente", SqlDbType.Int).Value = idContribuente;
+							SelectCommand.Parameters.Add("@ente", SqlDbType.VarChar).Value = ConstWrapper.CodiceEnte;
+							dv=Query(SelectCommand).DefaultView;
+							SelectCommand.Dispose();
+
+							if (dv.Table.Rows.Count    ==0 ){
+
+								SqlCommand SelectCommand1 = new SqlCommand();
+								SelectCommand1.CommandText = "SELECT distinct *, tbldettagliotestata.contitolare FROM " + this.TableName +
+									" left outer join tbldettagliotestata on " +
+									" tbldettagliotestata.idtestata = " + this.TableName +".id" +
+									" and tbldettagliotestata.Ente = " + this.TableName +".Ente" +
+									" WHERE (idcontribuente=@idContribuente or idsoggetto=@idContribuente) "+
+									" AND " + this.TableName +".Annullato=0 "+
+									" and " + this.TableName +".Ente like @ente";
+								switch(bonificato)
+								{
+									case Bonificato.Bonificate:
+										SelectCommand1.CommandText += " AND Bonificato=1";
+										break;
+
+									case Bonificato.DaBonificare:
+										SelectCommand1.CommandText += " AND Bonificato=0";
+										break;
+								}
+								SelectCommand1.Parameters.Add("@idContribuente", SqlDbType.Int).Value = idContribuente;
+								SelectCommand1.Parameters.Add("@ente", SqlDbType.VarChar).Value = ConstWrapper.CodiceEnte;
+								dv=Query(SelectCommand1).DefaultView;
+								SelectCommand1.Dispose() ;
+							}
+				*/
+				kill();
+				return dv;
+			}
+
+			catch (Exception Err)
 			{
-				case Bonificato.Bonificate:
-					SelectCommand.CommandText += " AND Bonificato=1";
-					break;
-
-				case Bonificato.DaBonificare:
-					SelectCommand.CommandText += " AND Bonificato=0";
-					break;
+				log.Debug(Business.ConstWrapper.CodiceEnte + "." + Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.ListCont.errore: ", Err);
+				throw Err;
 			}
+		}
 
-			SelectCommand.Parameters.Add("@idContribuente", SqlDbType.Int).Value = idContribuente;
-			SelectCommand.Parameters.Add("@ente", SqlDbType.VarChar).Value = ConstWrapper.CodiceEnte;
-			dv=Query(SelectCommand).DefaultView;
-			SelectCommand.Dispose();
 
-			if (dv.Table.Rows.Count    ==0 ){
-
-				SqlCommand SelectCommand1 = new SqlCommand();
-				SelectCommand1.CommandText = "SELECT distinct *, tbldettagliotestata.contitolare FROM " + this.TableName +
-					" left outer join tbldettagliotestata on " +
-					" tbldettagliotestata.idtestata = " + this.TableName +".id" +
-					" and tbldettagliotestata.Ente = " + this.TableName +".Ente" +
-					" WHERE (idcontribuente=@idContribuente or idsoggetto=@idContribuente) "+
-					" AND " + this.TableName +".Annullato=0 "+
-					" and " + this.TableName +".Ente like @ente";
-				switch(bonificato)
-				{
-					case Bonificato.Bonificate:
-						SelectCommand1.CommandText += " AND Bonificato=1";
-						break;
-
-					case Bonificato.DaBonificare:
-						SelectCommand1.CommandText += " AND Bonificato=0";
-						break;
-				}
-				SelectCommand1.Parameters.Add("@idContribuente", SqlDbType.Int).Value = idContribuente;
-				SelectCommand1.Parameters.Add("@ente", SqlDbType.VarChar).Value = ConstWrapper.CodiceEnte;
-				dv=Query(SelectCommand1).DefaultView;
-				SelectCommand1.Dispose() ;
-			}
-*/
-			kill();
-			return dv;
-            }
-
-            catch (Exception Err)
-            {
-                log.Debug(Business.ConstWrapper.CodiceEnte + "."+ Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.ListCont.errore: ", Err);
-                throw Err;
-            }
-        }
-
-		
 		/// <summary>
 		/// Modifica l'id questionario della dichiarazione passata.
 		/// </summary>
@@ -837,24 +851,25 @@ namespace DichiarazioniICI.Database
 		public bool SetQuestionario(int idDichiarazione, int idQuestione)
 		{
 			SqlCommand ModifyCommand = new SqlCommand();
-            try { 
-			ModifyCommand.CommandText = "UPDATE " + this.TableName + " SET" +
-				" IDQuestionario=@idQuestionario WHERE ID=@idDichiarazione";
+			try
+			{
+				ModifyCommand.CommandText = "UPDATE " + this.TableName + " SET" +
+					" IDQuestionario=@idQuestionario WHERE ID=@idDichiarazione";
 
-			ModifyCommand.Parameters.Add("@idQuestionario", SqlDbType.Int).Value = idQuestione;
-			ModifyCommand.Parameters.Add("@idDichiarazione", SqlDbType.Int).Value = idDichiarazione;
+				ModifyCommand.Parameters.Add("@idQuestionario", SqlDbType.Int).Value = idQuestione;
+				ModifyCommand.Parameters.Add("@idDichiarazione", SqlDbType.Int).Value = idDichiarazione;
 
-            return Execute(ModifyCommand, new SqlConnection(Business.ConstWrapper.StringConnection));
-            }
+				return Execute(ModifyCommand, new SqlConnection(Business.ConstWrapper.StringConnection));
+			}
 
-            catch (Exception Err)
-            {
-                log.Debug(Business.ConstWrapper.CodiceEnte + "."+ Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.SetQuestionario.errore: ", Err);
-                throw Err;
-            }
-        }
+			catch (Exception Err)
+			{
+				log.Debug(Business.ConstWrapper.CodiceEnte + "." + Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.SetQuestionario.errore: ", Err);
+				throw Err;
+			}
+		}
 
-		
+
 		/// <summary>
 		/// Carica l'elenco degli anni presenti
 		/// </summary>
@@ -863,28 +878,28 @@ namespace DichiarazioniICI.Database
 		/// </returns>
 		public DataView AnniCaricati()
 		{
-            DataView dv;
-            try
-            {
-                SqlCommand SelectCommand = new SqlCommand();
-                SelectCommand.CommandText = "Select AnnoDichiarazione From " + this.TableName + " WHERE ente like @ente GROUP BY AnnoDichiarazione";
+			DataView dv;
+			try
+			{
+				SqlCommand SelectCommand = new SqlCommand();
+				SelectCommand.CommandText = "Select AnnoDichiarazione From " + this.TableName + " WHERE ente like @ente GROUP BY AnnoDichiarazione";
 
-                SelectCommand.Parameters.Add("@ente", SqlDbType.VarChar).Value = ConstWrapper.CodiceEnte;
-                dv = Query(SelectCommand, new SqlConnection(Business.ConstWrapper.StringConnection)).DefaultView;
-                return dv;
-            }
-            catch (Exception ex)
-            {
-                log.Debug(Business.ConstWrapper.CodiceEnte + "."+ Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.AnniCaricati.errore: ", ex);
-                return new DataView();
-            }
-            finally
-            {
-                kill();
-            }
+				SelectCommand.Parameters.Add("@ente", SqlDbType.VarChar).Value = ConstWrapper.CodiceEnte;
+				dv = Query(SelectCommand, new SqlConnection(Business.ConstWrapper.StringConnection)).DefaultView;
+				return dv;
+			}
+			catch (Exception ex)
+			{
+				log.Debug(Business.ConstWrapper.CodiceEnte + "." + Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.AnniCaricati.errore: ", ex);
+				return new DataView();
+			}
+			finally
+			{
+				kill();
+			}
 		}
 
-		
+
 		/// <summary>
 		/// 
 		/// </summary>
@@ -893,59 +908,60 @@ namespace DichiarazioniICI.Database
 		{
 			DataView dv;
 			SqlCommand SelectCommand = new SqlCommand();
-            try { 
-			SelectCommand.CommandText = "SELECT * FROM viewDichiarazioniDaRibaltareInAnater" +
-				" WHERE Ente like @ente and RibaltatoInAnater=1 and Annullato <> 1 and AnagrafeRibaltata = 0";
+			try
+			{
+				SelectCommand.CommandText = "SELECT * FROM viewDichiarazioniDaRibaltareInAnater" +
+					" WHERE Ente like @ente and RibaltatoInAnater=1 and Annullato <> 1 and AnagrafeRibaltata = 0";
 				//" WHERE Ente like @ente and RibaltatoInAnater=1 and bonificato=1 and Annullato <> 1 and AnagrafeRibaltata = 0";
-			
-
-			SelectCommand.Parameters.Add("@ente", SqlDbType.VarChar).Value = ConstWrapper.CodiceEnte;
-
-			SelectCommand.CommandText += " ORDER BY COGNOME_DENOMINAZIONE, NOME";
 
 
-            dv = Query(SelectCommand, new SqlConnection(Business.ConstWrapper.StringConnection)).DefaultView;
-			kill();
-			return dv;
-            }
-            catch (Exception ex)
-            {
-                log.Debug(Business.ConstWrapper.CodiceEnte + "."+ Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.GetListTestateAnagNoRibaltate.errore: ", ex);
-                return new DataView();
-            }
-        }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="IdTestata"></param>
-        /// <returns></returns>
-        public bool CongruenzaEnte(int IdTestata)
-        {
-            DataView myDataView = new DataView();
-            bool myRet = false;
-            try
-            {
-                string sSQL = string.Empty;
-                using (DBModel ctx = new DBModel(ConstWrapper.DBType, ConstWrapper.StringConnection))
-                {
-                    sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_CongruenzaEnte", "IDTESTATA");
-                    myDataView = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("IDTESTATA", IdTestata));
-                    ctx.Dispose();
-                }
-                foreach (DataRowView myRow in myDataView)
-                {
-                    if (StringOperation.FormatInt(myRow["nrc"]) > 1)
-                        myRet= false;
-                    else
-                        myRet= true;
-                }
-            }
-            catch (Exception ex)
-            {
-                log.Debug(ConstWrapper.CodiceEnte + "." + ConstWrapper.sUsername + " - DichiarazioniICI.Database.TestataTable.CongruenzaEnte.errore: ", ex);
-                myRet= false;
-            }
-            return myRet;
-        }
-    }
+				SelectCommand.Parameters.Add("@ente", SqlDbType.VarChar).Value = ConstWrapper.CodiceEnte;
+
+				SelectCommand.CommandText += " ORDER BY COGNOME_DENOMINAZIONE, NOME";
+
+
+				dv = Query(SelectCommand, new SqlConnection(Business.ConstWrapper.StringConnection)).DefaultView;
+				kill();
+				return dv;
+			}
+			catch (Exception ex)
+			{
+				log.Debug(Business.ConstWrapper.CodiceEnte + "." + Business.ConstWrapper.sUsername + " - DichiarazioniICI.TestataTable.GetListTestateAnagNoRibaltate.errore: ", ex);
+				return new DataView();
+			}
+		}
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="IdTestata"></param>
+		/// <returns></returns>
+		public bool CongruenzaEnte(int IdTestata)
+		{
+			DataView myDataView = new DataView();
+			bool myRet = false;
+			try
+			{
+				string sSQL = string.Empty;
+				using (DBModel ctx = new DBModel(ConstWrapper.DBType, ConstWrapper.StringConnection))
+				{
+					sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_CongruenzaEnte", "IDTESTATA");
+					myDataView = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("IDTESTATA", IdTestata));
+					ctx.Dispose();
+				}
+				foreach (DataRowView myRow in myDataView)
+				{
+					if (StringOperation.FormatInt(myRow["nrc"]) > 1)
+						myRet = false;
+					else
+						myRet = true;
+				}
+			}
+			catch (Exception ex)
+			{
+				log.Debug(ConstWrapper.CodiceEnte + "." + ConstWrapper.sUsername + " - DichiarazioniICI.Database.TestataTable.CongruenzaEnte.errore: ", ex);
+				myRet = false;
+			}
+			return myRet;
+		}
+	}
 }
