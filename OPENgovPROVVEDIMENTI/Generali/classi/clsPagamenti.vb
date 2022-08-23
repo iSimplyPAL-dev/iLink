@@ -1230,7 +1230,7 @@ Public Class clsPagamenti
                     'Inserisco arrotondamento sul pagato
                     TotaleDettaglio = GetDettaglioPagamento(id_pagato, listProvv, enumTIPO_CAPITOLO.PROVVEDIMENTO)
                     If TotaleDettaglio > 0 Then
-                        TotaleDettaglio = CDbl(importo_pagato) - TotaleDettaglio
+                        TotaleDettaglio = CDbl(importo_pagato) - TotaleDettaglio - valore
                     End If
                     setDettaglioPagamento(id_pagato, TotaleDettaglio, id_accorpamento, enumTIPO_CAPITOLO.ARROTONDAMENTO_PAGATO, enumTIPO_VOCE.ARROTONDAMENTO_PAGATO)
                 End If
@@ -1509,12 +1509,12 @@ Public Class clsPagamenti
     ''' Modifiche da revisione manuale
     ''' </revision>
     ''' </revisionHistory>
-    Private Sub setDettaglioPagamento(ByVal id_pagato As Integer, ByVal importo As Decimal, ByVal id_capitolo As Integer, ByVal id_tipo_capitolo As enumTIPO_CAPITOLO, ByVal id_tipo_voce As enumTIPO_VOCE)
+    Public Sub setDettaglioPagamento(ByVal id_pagato As Integer, ByVal importo As Decimal, ByVal id_capitolo As Integer, ByVal id_tipo_capitolo As enumTIPO_CAPITOLO, ByVal id_tipo_voce As enumTIPO_VOCE)
         Dim myDataView As New DataView
         Try
             If importo <> 0 Then
                 Using ctx As New DBModel(ConstSession.DBType, ConstSession.StringConnection)
-                    sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure,"prc_PagamentoInsDettaglio", "IDPAGATO", "IDCAPITOLO", "IDTIPOCAPITOLO", "IDTIPOVOCE", "IMPORTO")
+                    sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_PagamentoInsDettaglio", "IDPAGATO", "IDCAPITOLO", "IDTIPOCAPITOLO", "IDTIPOVOCE", "IMPORTO")
                     myDataView = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("IDPAGATO", id_pagato) _
                             , ctx.GetParam("IDCAPITOLO", id_capitolo) _
                             , ctx.GetParam("IDTIPOCAPITOLO", id_tipo_capitolo) _
@@ -1528,7 +1528,7 @@ Public Class clsPagamenti
                 End Using
             End If
         Catch ex As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsPagamenti.setDettaglioPagamento.errore: ", ex)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsPagamenti.setDettaglioPagamento.errore: ", ex)
             Throw New Exception(ex.Message, ex)
         Finally
             myDataView.Dispose()

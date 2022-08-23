@@ -1,4 +1,5 @@
 Imports log4net
+Imports Utility
 ''' <summary>
 ''' Pagina per la gestione ricerca di accorpamenti/rateizzazioni/pagamenti.
 ''' Contiene i parametri di ricerca, le funzioni della comandiera e la griglia per la visualizzazione del risultato. 
@@ -64,10 +65,10 @@ Partial Class Ricerca
                     GrdPagamenti.DataSource = objDS.Tables(0).DefaultView
                 End If
                 Dim fncActionEvent As New Utility.DBUtility(ConstSession.DBType, ConstSession.StringConnectionOPENgov)
-                fncActionEvent.LogActionEvent(DateTime.Now, ConstSession.UserName, New Utility.Costanti.LogEventArgument().Provvedimenti, "Pagamenti", Utility.Costanti.AZIONE_LETTURA.ToString(), Utility.Costanti.TRIBUTO_accertaMENTO, ConstSession.IdEnte, -1)
+                fncActionEvent.LogActionEvent(DateTime.Now, ConstSession.UserName, New Utility.Costanti.LogEventArgument().Provvedimenti, "Pagamenti", Utility.Costanti.AZIONE_LETTURA.ToString(), Utility.Costanti.TRIBUTO_Accertamento, ConstSession.IdEnte, -1)
             End If
         Catch ex As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Ricerca.Page_Load.errore: ", ex)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Ricerca.Page_Load.errore: ", ex)
             Response.Redirect("../../PaginaErrore.aspx")
         End Try
     End Sub
@@ -82,6 +83,7 @@ Partial Class Ricerca
         Dim cognome, nome, cod_fiscale, partita_iva, NumAtto As String
         Dim DataAl, DataDal As DateTime
         Try
+            SplitPaymentRevision()
             DataDal = DateTime.MaxValue : DataAl = DateTime.MaxValue
 
             Session("grdPagamenti") = Nothing
@@ -147,7 +149,7 @@ Partial Class Ricerca
 
             End If
         Catch ex As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Ricerca.btnRicerca_Click.errore: ", ex)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Ricerca.btnRicerca_Click.errore: ", ex)
             Response.Redirect("../../PaginaErrore.aspx")
         Finally
             objPagamenti.kill()
@@ -256,7 +258,7 @@ Partial Class Ricerca
                 e.Row.Attributes.Add("title", "Visualizza il dettaglio dell'accorpamento")
             End If
         Catch ex As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Ricerca.GrdRowDataBound.errore: ", ex)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Ricerca.GrdRowDataBound.errore: ", ex)
             Response.Redirect("../../PaginaErrore.aspx")
         End Try
     End Sub
@@ -288,7 +290,7 @@ Partial Class Ricerca
                                 Session.Add("detthashtable", detthashtable)
                                 RegisterScript("ApriDettaglio(" & cod_contribuente & "," & id_accorpamento & ")", Me.GetType())
                             Catch ex As Exception
-                                Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Ricerca.GrdRowCommand.errore: ", ex)
+                                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Ricerca.GrdRowCommand.errore: ", ex)
                                 Response.Redirect("../../PaginaErrore.aspx")
                             Finally
                                 detthashtable = Nothing
@@ -319,7 +321,7 @@ Partial Class Ricerca
                                 RegisterScript(sScript, Me.GetType())
                                 'RegisterScript("ApriDettaglio()", Me.GetType())
                             Catch ex As Exception
-                                Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Ricerca.GrdRowCommand.errore: ", ex)
+                                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Ricerca.GrdRowCommand.errore: ", ex)
                                 Response.Redirect("../../PaginaErrore.aspx")
                             End Try
                         End If
@@ -327,7 +329,7 @@ Partial Class Ricerca
                 End If
             End If
         Catch ex As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Ricerca.GrdRowCommand.errore: ", ex)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Ricerca.GrdRowCommand.errore: ", ex)
             Response.Redirect("../../PaginaErrore.aspx")
         End Try
     End Sub
@@ -423,7 +425,7 @@ Partial Class Ricerca
                 GrdPagamenti.DataBind()
             End If
         Catch ex As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Ricerca.LoadSearch.errore: ", ex)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Ricerca.LoadSearch.errore: ", ex)
             Response.Redirect("../../PaginaErrore.aspx")
             Throw ex
         End Try
@@ -450,7 +452,7 @@ Partial Class Ricerca
                 End If
             End If
         Catch ex As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Ricerca.annoBarra.errore: ", ex)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Ricerca.annoBarra.errore: ", ex)
             Response.Redirect("../../PaginaErrore.aspx")
         End Try
         Return strTemp
@@ -465,7 +467,7 @@ Partial Class Ricerca
         Dim Giorno As String
         Dim Mese As String
         Dim Anno As String
-        Dim objUtility As New myUtility
+        Dim objUtility As New MyUtility
 
         GiraDataFromDB = ""
         data = objUtility.CToStr(data)
@@ -490,7 +492,7 @@ Partial Class Ricerca
             End If
             Return GiraDataFromDB
         Catch ex As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Ricerca.GiraDataFromDB.errore: ", ex)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Ricerca.GiraDataFromDB.errore: ", ex)
             Response.Redirect("../../PaginaErrore.aspx")
         End Try
     End Function
@@ -516,7 +518,7 @@ Partial Class Ricerca
                 End If
             End If
         Catch ex As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Ricerca.CF_PIVA.errore: ", ex)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Ricerca.CF_PIVA.errore: ", ex)
             Response.Redirect("../../PaginaErrore.aspx")
         End Try
         Return strTemp
@@ -546,8 +548,8 @@ Partial Class Ricerca
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub optAccorpamenti_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles optAccorpamenti.CheckedChanged
-        grdAccorpamenti.Visible = False
-        grdPagamenti.Visible = False
+        GrdAccorpamenti.Visible = False
+        GrdPagamenti.Visible = False
     End Sub
     ''' <summary>
     ''' 
@@ -555,8 +557,8 @@ Partial Class Ricerca
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub optPagamenti_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles optPagamenti.CheckedChanged
-        grdAccorpamenti.Visible = False
-        grdPagamenti.Visible = False
+        GrdAccorpamenti.Visible = False
+        GrdPagamenti.Visible = False
     End Sub
     ''' <summary>
     ''' posizionamento delle colonne della griglia grdAccorpamenti
@@ -609,10 +611,106 @@ Partial Class Ricerca
                 End If
             Next
         Catch ex As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Ricerca.GetTotalizzatori.errore: ", ex)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Ricerca.GetTotalizzatori.errore: ", ex)
             nPosizioni = 0 : impTotale = 0
         End Try
         Return nPosizioni.ToString + " posizioni per € " + impTotale.ToString("#,##0.00")
     End Function
+    Private Sub SplitPaymentRevision()
+        Dim fncPag As New clsPagamenti(ConstSession.StringConnection)
+        Dim sSQL As String
+        Dim myDataView As New DataView()
+        Dim Totale, TotaleDettaglio, nPercentPag, impSpese As Double
+        Dim valore_interesse, valore As Double
+        Dim htHashtable, htValoriProvvedimento As Hashtable
+        Dim myDataSet As DataSet
+        Dim listProvv As New ArrayList
+
+        Try
+            Dim oDbManagerRepository As New DBModel(ConstSession.DBType, ConstSession.StringConnection)
+            Using ctx As DBModel = oDbManagerRepository
+                sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_GetSplitPaymentRevision")
+                myDataView = ctx.GetDataView(sSQL, "TBL")
+                For Each myRow As DataRowView In myDataView
+                    'prima di inserire in tabella dettaglio devo spalmare il valore di importo_pagato sui valori importo_spese,del provvedimento/accorpamento selezionato
+                    Totale = fncPag.getTotaleAccorpamento(myRow("id_accorpamento"))
+                    myDataSet = fncPag.getProvvedimentiAccorpamento(myRow("id_accorpamento"), 0)
+                    If Not IsNothing(myDataSet) Then
+                        For Each myRowProv As DataRow In myDataSet.Tables(0).Rows
+                            listProvv.Add(myRowProv("id_provvedimento"))
+                        Next
+                        'Inserimento dei valori spalmati per ogni provvedimento
+                        'copro le spese dell'accorpamento
+                        Dim HasSpeseCoperte As Boolean = fncPag.haSpesePagate(myRow("id_accorpamento"), impSpese)
+                        If HasSpeseCoperte = False Then
+                            If impSpese < myRow("importo_pagato") Then
+                                'Le spese non sono state pagate
+                                If impSpese > 0 Then
+                                    For Each myItem As Object In listProvv
+                                        htValoriProvvedimento = fncPag.getProvvedimento(CInt(myItem))
+                                        htHashtable = fncPag.setSpalmaImportoProvv(htValoriProvvedimento, 100)
+
+                                        fncPag.setDettaglioPagamento(myRow("id_pagato"), htHashtable("IMPORTO_SPESE"), CInt(myItem), clsPagamenti.enumTIPO_CAPITOLO.PROVVEDIMENTO, clsPagamenti.enumTIPO_VOCE.SPESE)
+                                    Next
+                                    'tolgo dal totale del provvedimento le spese altrimenti il calcolo non risulta corretto
+                                    nPercentPag = (((myRow("importo_pagato") - impSpese) * 100) / (Totale - impSpese))
+                                Else
+                                    nPercentPag = (myRow("importo_pagato") * 100) / Totale
+                                End If
+                            Else
+                                'Le spese sono maggiori dell'importo pagato
+                                fncPag.setDettaglioPagamento(myRow("id_pagato"), impSpese, listProvv(0), clsPagamenti.enumTIPO_CAPITOLO.PROVVEDIMENTO, clsPagamenti.enumTIPO_VOCE.SPESE)
+                                'tolgo dal totale del provvedimento le spese altrimenti il calcolo non risulta corretto
+                                nPercentPag = 0
+                            End If
+                        Else
+                            nPercentPag = (myRow("importo_pagato") * 100) / Totale
+                        End If
+                        If HasSpeseCoperte Then
+                            nPercentPag = (myRow("importo_pagato") * 100) / (Totale - impSpese)
+                        End If
+                        'scorporo ed inserisco
+                        For Each myItem As Object In listProvv
+                            htValoriProvvedimento = fncPag.getProvvedimento(CInt(myItem))
+                            htHashtable = fncPag.setSpalmaImportoProvv(htValoriProvvedimento, nPercentPag)
+
+                            fncPag.setDettaglioPagamento(myRow("id_pagato"), htHashtable("IMPORTO_DIFFERENZA_IMPOSTA"), CInt(myItem), clsPagamenti.enumTIPO_CAPITOLO.PROVVEDIMENTO, clsPagamenti.enumTIPO_VOCE.DIFFERENZA_IMPOSTA)
+                            fncPag.setDettaglioPagamento(myRow("id_pagato"), htHashtable("IMPORTO_TOT_SANZIONI_NON_RIDUCIBILI"), CInt(myItem), clsPagamenti.enumTIPO_CAPITOLO.PROVVEDIMENTO, clsPagamenti.enumTIPO_VOCE.SANZIONI_NON_RIDUCIBILI)
+                            fncPag.setDettaglioPagamento(myRow("id_pagato"), htHashtable("IMPORTO_SANZIONI_RIDOTTO"), CInt(myItem), clsPagamenti.enumTIPO_CAPITOLO.PROVVEDIMENTO, clsPagamenti.enumTIPO_VOCE.SANZIONI_RIDOTTE)
+                            fncPag.setDettaglioPagamento(myRow("id_pagato"), htHashtable("IMPORTO_INTERESSI"), CInt(myItem), clsPagamenti.enumTIPO_CAPITOLO.PROVVEDIMENTO, clsPagamenti.enumTIPO_VOCE.INTERESSI)
+                            fncPag.setDettaglioPagamento(myRow("id_pagato"), htHashtable("IMPORTO_ALTRO"), CInt(myItem), clsPagamenti.enumTIPO_CAPITOLO.PROVVEDIMENTO, clsPagamenti.enumTIPO_VOCE.ALTRO)
+                            fncPag.setDettaglioPagamento(myRow("id_pagato"), htHashtable("IMPORTO_ARROTONDAMENTO_RIDOTTO"), CInt(myItem), clsPagamenti.enumTIPO_CAPITOLO.PROVVEDIMENTO, clsPagamenti.enumTIPO_VOCE.ARROTONDAMENTO_PROVVEDIMENTO)
+                        Next
+                        'End If
+
+                        'Inserimento degli interessi 
+                        valore_interesse = 0
+                        nPercentPag = (myRow("importo_pagato") * 100) / Totale
+                        myDataSet = fncPag.getInteressiAccorpamento(myRow("id_accorpamento"), myRow("id_rata_acc"))
+                        If Not IsNothing(myDataSet) Then
+                            For Each myRowInt As DataRow In myDataSet.Tables(0).Rows
+                                valore_interesse = myRowInt("valore_interesse")
+                                valore = fncPag.calcolaValore(valore_interesse, nPercentPag)
+                                fncPag.setDettaglioPagamento(myRow("id_pagato"), valore, myRow("id_rata_acc"), clsPagamenti.enumTIPO_CAPITOLO.INTERESSI, clsPagamenti.enumTIPO_VOCE.INTERESSI)
+                            Next
+                        End If
+
+                        'Inserisco arrotondamento sul pagato
+                        TotaleDettaglio = fncPag.GetDettaglioPagamento(myRow("id_pagato"), listProvv, clsPagamenti.enumTIPO_CAPITOLO.PROVVEDIMENTO)
+                        If TotaleDettaglio > 0 Then
+                            TotaleDettaglio = CDbl(myRow("importo_pagato")) - TotaleDettaglio - valore
+                        End If
+                        fncPag.setDettaglioPagamento(myRow("id_pagato"), TotaleDettaglio, myRow("id_accorpamento"), clsPagamenti.enumTIPO_CAPITOLO.ARROTONDAMENTO_PAGATO, clsPagamenti.enumTIPO_VOCE.ARROTONDAMENTO_PAGATO)
+                    End If
+                Next
+                ctx.Dispose()
+            End Using
+        Catch ex As Exception
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Ricerca.SplitPaymentRevision.errore: ", ex)
+            Throw New Exception(ex.Message, ex)
+        Finally
+            myDataView.Dispose()
+        End Try
+    End Sub
 End Class
 
