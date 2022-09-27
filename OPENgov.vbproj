@@ -107,20 +107,12 @@
     </WarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AnagInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=73a397894a5f6da1, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="AnagInterface">
       <HintPath>..\..\DLLComuni\AnagInterface.dll</HintPath>
     </Reference>
     <Reference Include="Anagrafica, Version=1.0.1.2, Culture=neutral, PublicKeyToken=978df93f9e14593b, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\DLLComuni\Anagrafica.dll</HintPath>
-    </Reference>
-    <Reference Include="GestioneStradarioVaniDLL">
-      <HintPath>..\DLLcomuni\GestioneStradarioVaniDLL.dll</HintPath>
-    </Reference>
-    <Reference Include="IRemInterfaceOSAP, Version=1.0.6732.20093, Culture=neutral, PublicKeyToken=821c65e4384aa8e2, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DLLComuni\IRemInterfaceOSAP.dll</HintPath>
     </Reference>
     <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -150,16 +142,11 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\DLLComuni\RemotingInterfaceMotoreTarsu.dll</HintPath>
     </Reference>
-    <Reference Include="RemotingInterfaceOpenGovStradario, Version=1.0.6241.32443, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="RemotingInterfaceOpenGovStradario, Version=1.0.7689.28334, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\DLLComuni\RemotingInterfaceOpenGovStradario.dll</HintPath>
     </Reference>
-    <Reference Include="Ribes.OPENgov.Utilities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DLLComuni\Ribes.OPENgov.Utilities.dll</HintPath>
-    </Reference>
-    <Reference Include="Ribes.OPENgov.WebControls, Version=1.2.0.17259, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Ribes.OPENgov.WebControls">
       <HintPath>..\..\DLLComuni\Ribes.OPENgov.WebControls.dll</HintPath>
     </Reference>
     <Reference Include="RKLib.ExportData, Version=1.0.0.0, Culture=neutral">
@@ -194,7 +181,7 @@
     <Reference Include="System.Xml">
       <Name>System.XML</Name>
     </Reference>
-    <Reference Include="Utility, Version=1.0.7634.18786, Culture=neutral, PublicKeyToken=ae1027569650564c, processorArchitecture=MSIL">
+    <Reference Include="Utility, Version=1.0.7867.26342, Culture=neutral, PublicKeyToken=ae1027569650564c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\DLLComuni\Utility.dll</HintPath>
     </Reference>
@@ -872,6 +859,18 @@
     <Folder Include="images\Bottoni\New\" />
   </ItemGroup>
   <ItemGroup>
+    <Analyzer Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.3.3.2\analyzers\dotnet\Microsoft.CodeAnalysis.VersionCheckAnalyzer.dll" />
+    <Analyzer Include="packages\Microsoft.CodeQuality.Analyzers.3.3.2\analyzers\dotnet\vb\Humanizer.dll" />
+    <Analyzer Include="packages\Microsoft.CodeQuality.Analyzers.3.3.2\analyzers\dotnet\vb\Microsoft.CodeQuality.Analyzers.dll" />
+    <Analyzer Include="packages\Microsoft.CodeQuality.Analyzers.3.3.2\analyzers\dotnet\vb\Microsoft.CodeQuality.VisualBasic.Analyzers.dll" />
+    <Analyzer Include="packages\Microsoft.NetCore.Analyzers.3.3.2\analyzers\dotnet\vb\Microsoft.NetCore.Analyzers.dll" />
+    <Analyzer Include="packages\Microsoft.NetCore.Analyzers.3.3.2\analyzers\dotnet\vb\Microsoft.NetCore.VisualBasic.Analyzers.dll" />
+    <Analyzer Include="packages\Microsoft.NetFramework.Analyzers.3.3.2\analyzers\dotnet\vb\Microsoft.NetFramework.Analyzers.dll" />
+    <Analyzer Include="packages\Microsoft.NetFramework.Analyzers.3.3.2\analyzers\dotnet\vb\Microsoft.NetFramework.VisualBasic.Analyzers.dll" />
+    <Analyzer Include="packages\Text.Analyzers.2.6.4\analyzers\dotnet\vb\Text.Analyzers.dll" />
+    <Analyzer Include="packages\Text.Analyzers.2.6.4\analyzers\dotnet\vb\Text.VisualBasic.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="Anagrafica\AnagraficaWEB.vbproj">
       <Project>{c37ee8d6-9ec3-42bf-b6f7-5cf13d5a792e}</Project>
       <Name>AnagraficaWEB</Name>
@@ -900,18 +899,6 @@
       <Project>{04f67387-83d7-4ee2-a91b-6aa6464cc827}</Project>
       <Name>OPENgovTOCO</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Analyzer Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.3.3.2\analyzers\dotnet\Microsoft.CodeAnalysis.VersionCheckAnalyzer.dll" />
-    <Analyzer Include="packages\Microsoft.CodeQuality.Analyzers.3.3.2\analyzers\dotnet\vb\Humanizer.dll" />
-    <Analyzer Include="packages\Microsoft.CodeQuality.Analyzers.3.3.2\analyzers\dotnet\vb\Microsoft.CodeQuality.Analyzers.dll" />
-    <Analyzer Include="packages\Microsoft.CodeQuality.Analyzers.3.3.2\analyzers\dotnet\vb\Microsoft.CodeQuality.VisualBasic.Analyzers.dll" />
-    <Analyzer Include="packages\Microsoft.NetCore.Analyzers.3.3.2\analyzers\dotnet\vb\Microsoft.NetCore.Analyzers.dll" />
-    <Analyzer Include="packages\Microsoft.NetCore.Analyzers.3.3.2\analyzers\dotnet\vb\Microsoft.NetCore.VisualBasic.Analyzers.dll" />
-    <Analyzer Include="packages\Microsoft.NetFramework.Analyzers.3.3.2\analyzers\dotnet\vb\Microsoft.NetFramework.Analyzers.dll" />
-    <Analyzer Include="packages\Microsoft.NetFramework.Analyzers.3.3.2\analyzers\dotnet\vb\Microsoft.NetFramework.VisualBasic.Analyzers.dll" />
-    <Analyzer Include="packages\Text.Analyzers.2.6.4\analyzers\dotnet\vb\Text.Analyzers.dll" />
-    <Analyzer Include="packages\Text.Analyzers.2.6.4\analyzers\dotnet\vb\Text.VisualBasic.Analyzers.dll" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

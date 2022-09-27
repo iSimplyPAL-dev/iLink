@@ -26,7 +26,7 @@
 					<td>
 					    <Grd:RibesGridView ID="GrdImmobiliICI" runat="server" BorderStyle="None" 
                             BorderWidth="1px" CellPadding="3" GridLines="Vertical" Width="100%"
-                            AutoGenerateColumns="False" AllowPaging="true" AllowSorting="false" PageSize="10"
+                            AutoGenerateColumns="False" AllowPaging="false" AllowSorting="false" PageSize="10"
                             ErrorStyle-Font-Bold="True" ErrorStyle-ForeColor="Red"
                             OnPageIndexChanging="GrdPageIndexChanging">
                             <PagerSettings Position="Bottom"></PagerSettings>

@@ -58,26 +58,25 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AnagInterface">
-      <HintPath>..\..\DLLComuni\AnagInterface.dll</HintPath>
+      <HintPath>..\..\..\DLLComuni\AnagInterface.dll</HintPath>
     </Reference>
     <Reference Include="FutureFog.U4N">
-      <HintPath>..\..\DLLComuni\FutureFog.U4N.dll</HintPath>
+      <HintPath>..\..\..\DLLComuni\FutureFog.U4N.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
-      <HintPath>..\..\DLLComuni\log4net.dll</HintPath>
+      <HintPath>..\..\..\DLLComuni\log4net.dll</HintPath>
     </Reference>
     <Reference Include="RemotingInterfaceMotoreTarsu">
-      <HintPath>..\..\DLLComuni\RemotingInterfaceMotoreTarsu.dll</HintPath>
+      <HintPath>..\..\..\DLLComuni\RemotingInterfaceMotoreTarsu.dll</HintPath>
     </Reference>
-    <Reference Include="Ribes.OPENgov.Utilities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DLLComuni\Ribes.OPENgov.Utilities.dll</HintPath>
+    <Reference Include="Ribes.OPENgov.Utilities">
+      <HintPath>..\..\..\DLLComuni\Ribes.OPENgov.Utilities.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.XML" />
     <Reference Include="Utility">
-      <HintPath>..\..\DLLComuni\Utility.dll</HintPath>
+      <HintPath>..\..\..\DLLComuni\Utility.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

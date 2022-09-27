@@ -417,7 +417,7 @@ namespace OPENgov.Acquisizioni.TARES.Configurazione
                         chkPF.Checked= tariffa.hasPF; chkPV.Checked= tariffa.hasPV; chkPC.Checked= tariffa.hasPC; chkPM.Checked= tariffa.hasPM;
                         if (hfTypeCalcolo.Value != string.Empty)
                         {
-                            CategorieAtecoEnte Cat = new CategorieAtecoEnte { Ente = Ente, FromVariabile = FromVariabile, TypeTassazione = TariffeEnte.TypeTassazione_TariffeTributo, TypeCalcolo = hfTypeCalcolo.Value, IdRid=tariffa.IdTariffa };
+                            CategorieAtecoEnte Cat = new CategorieAtecoEnte { Ente = Ente, FromVariabile = FromVariabile, TypeTassazione = TariffeEnte.TypeTassazione_TariffeTributo, TypeCalcolo = hfTypeCalcolo.Value };//, IdRid=tariffa.IdTariffa
                             rgvCat.DataSource = Cat.LoadAll();
                             rgvCat.PageIndex = 0;
                             rgvCat.DataBind();

@@ -106,26 +106,26 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AnagInterface">
-      <HintPath>..\..\DLLcomuni\AnagInterface.dll</HintPath>
+      <HintPath>..\..\..\DLLComuni\AnagInterface.dll</HintPath>
     </Reference>
     <Reference Include="Anagrafica">
-      <HintPath>..\..\DLLcomuni\Anagrafica.dll</HintPath>
+      <HintPath>..\..\..\DLLComuni\Anagrafica.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
-      <HintPath>..\..\DLLcomuni\log4net.dll</HintPath>
+      <HintPath>..\..\..\DLLComuni\log4net.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\..\DLLcomuni\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data.Entity, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="OggettiComuniStrade">
-      <HintPath>..\..\DLLcomuni\OggettiComuniStrade.dll</HintPath>
+      <HintPath>..\..\..\DLLComuni\OggettiComuniStrade.dll</HintPath>
     </Reference>
     <Reference Include="Ribes.OPENgov.WebControls">
-      <HintPath>..\..\DLLcomuni\Ribes.OPENgov.WebControls.dll</HintPath>
+      <HintPath>..\..\..\DLLComuni\Ribes.OPENgov.WebControls.dll</HintPath>
     </Reference>
     <Reference Include="RKLib.ExportData">
-      <HintPath>..\..\DLLcomuni\RKLib.ExportData.dll</HintPath>
+      <HintPath>..\..\..\DLLComuni\RKLib.ExportData.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
@@ -149,9 +149,8 @@
     <Reference Include="System.Xml">
       <Name>System.XML</Name>
     </Reference>
-    <Reference Include="Utility, Version=1.0.7495.28013, Culture=neutral, PublicKeyToken=ae1027569650564c, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DLLcomuni\Utility.dll</HintPath>
+    <Reference Include="Utility">
+      <HintPath>..\..\..\DLLComuni\Utility.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -513,11 +513,11 @@
                                     </asp:Label>
                                 </ItemTemplate>
                             </asp:TemplateField>
-                            <asp:TemplateField HeaderText="C.T.">
+                            <asp:TemplateField HeaderText="C.S.">
                                 <HeaderStyle Wrap="False" Width="5%"></HeaderStyle>
                                 <ItemStyle HorizontalAlign="Right" VerticalAlign="Middle"></ItemStyle>
                                 <ItemTemplate>
-                                    <asp:Label ID="Label8" runat="server" Text='<%# DataBinder.Eval(Container, "DataItem.CONSUMOTEORICO") %>' ToolTip="Consumo Teorico">
+                                    <asp:Label ID="Label8" runat="server" Text='<%# DataBinder.Eval(Container, "DataItem.CONSUMOSUB") %>' ToolTip="Consumo SubContatore">
                                     </asp:Label>
                                 </ItemTemplate>
                             </asp:TemplateField>

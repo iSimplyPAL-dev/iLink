@@ -258,7 +258,8 @@ Public Class GestRuolo
                                 myList.Add(myRuolo)
                                 VisualizzaRiepilogo(CType(myList.ToArray(GetType(ObjRuolo)), ObjRuolo()))
                                 sScript = "GestAlert('a', 'success', '', '', 'Estrazione 290 terminata con successo!');"
-                                sScript += "$('LblFile290').show();$('#FileEstratto').show();" 'sScript += "document.getElementById('LblFile290').style.display = '';$('#FileEstratto').show();"
+                                sScript += "$('LblFile290').show();$('#FileEstratto').show();"
+                                sScript += "document.getElementById('LblFile290').style.display = '';"
                                 LblFile290.Text = sNameFile290 & ".zip"
                             End If
                         End If

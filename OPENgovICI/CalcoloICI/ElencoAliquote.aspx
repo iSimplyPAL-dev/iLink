@@ -25,7 +25,7 @@
 			<!--*** 20130422 - aggiornamento IMU ***--><!--*** 20140509 - TASI ***--><!--*** 20150430 - TASI Inquilino ***-->
 			<Grd:RibesGridView ID="GrdCategorie" runat="server" BorderStyle="None" 
                 BorderWidth="1px" CellPadding="3" GridLines="Vertical" Width="100%"
-                AutoGenerateColumns="False" AllowPaging="true" AllowSorting="false" PageSize="10"
+                AutoGenerateColumns="False" AllowPaging="false" AllowSorting="false" PageSize="10"
                 ErrorStyle-Font-Bold="True" ErrorStyle-ForeColor="Red"
                 OnPageIndexChanging="GrdPageIndexChanging">
                 <PagerSettings Position="Bottom"></PagerSettings>

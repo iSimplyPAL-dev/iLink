@@ -1128,9 +1128,11 @@ Public Class clsCoattivo
                             Return 0
                         End If
                     Else
+                        sNameFile = sIdEnteCredBen + Now.Year.ToString.PadLeft(4, "0") + IdRuolo.ToString.PadLeft(3, "0") + ".txt"
                         Return New clsAccertamentiEsecutivi().CreaAccertamentiEsecutivi(myStringConnection, IdRuolo, sPathFile, sNameFile, ListFile)
                     End If
                 Else
+                    sNameFile = sIdEnteCredBen + Now.Year.ToString.PadLeft(4, "0") + IdRuolo.ToString.PadLeft(3, "0") + ".txt"
                     Return New clsAccertamentiEsecutivi().CreaAccertamentiEsecutivi(myStringConnection, IdRuolo, sPathFile, sNameFile, ListFile)
                 End If
 
@@ -3153,11 +3155,11 @@ Public Class clsCoattivo
                     myE99 = PopolaE99(myIdFlusso, myE00, nTotRC, nTotE20, nTotE23, nTotE50, nTotE60, impTotAccertamentiEsecutivi)
 
                     'scrivo il file
-                    If CreateAccertamentiEsecutivi(sPathFile & sNameFile & ".001", myE00, ListE20, ListE23, ListE50, ListE60, myE99) < 1 Then
+                    If CreateAccertamentiEsecutivi(sPathFile & sNameFile, myE00, ListE20, ListE23, ListE50, ListE60, myE99) < 1 Then
                         Return -1
                     End If
-                    ListFile.Add(sPathFile & sNameFile & ".001")
-                    If New cls290().ZipFile(sPathFile, sNameFile & ".zip", ListFile) = False Then
+                    ListFile.Add(sPathFile & sNameFile)
+                    If New cls290().ZipFile(sPathFile, sNameFile.Replace(".txt", ".zip"), ListFile) = False Then
                         Return 0
                     End If
                 Else
@@ -3481,11 +3483,11 @@ Public Class clsCoattivo
                 'Campo Posizione 42-43 Lungh. 2<<CODICE TIPO ATTO Codice che indica la tipologia dell'atto. Vedi NOTA 3 Fare riferimento alla tabella presente in APPENDICE P>> Tipo:AN Obbl.N Errore:E230-SP	
                 sPrintLine += PadLine(oE20.IdentificativoAtto.CodiceTipoAtto, oE20.IdentificativoAtto.Length.CodiceTipoAtto, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 44-51 Lungh. 8<<DATA EMISSIONE ATTO Data in cui l'ente ha emesso l'atto nel formato (AAAAMMGG) Deve essere maggiore del 01/01/2020, minore della data di creazione flusso e minore della data di notifica atto>> Tipo:N Obbl.S Errore:E230-SP	
-                sPrintLine += PadLine(oE20.IdentificativoAtto.DataEmissioneAtto, oE20.IdentificativoAtto.Length.DataEmissioneAtto, objAccertamentiEsecutivi.Type.Numero)
+                sPrintLine += PadLine(oE20.IdentificativoAtto.DataEmissioneAtto, oE20.IdentificativoAtto.Length.DataEmissioneAtto, objAccertamentiEsecutivi.Type.Data)
                 'Campo Posizione 52-63 Lungh. 12<<NUMERO ATTO Estremi dell'atto notificato Non può essere nullo>> Tipo:AN Obbl.S Errore:E230-SP	
                 sPrintLine += PadLine(oE20.IdentificativoAtto.NumeroAtto, oE20.IdentificativoAtto.Length.NumeroAtto, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 64-71 Lungh. 8<<DATA NOTIFICA ATTO Data di notifica dell'atto al debitore, nella forma AAAAMMGG. Deve essere maggiore del 01/01/2020, maggiore o uguale della data emmissione atto e inferiore alla data creazione file presente sul record E00 di almeno 60 gg L'anno (AAAA) deve essere maggiore o uguale del valore indicato nel campo anno di emessione atto>> Tipo:N Obbl.S Errore:E230-SP T20-SP U20-SP	
-                sPrintLine += PadLine(oE20.IdentificativoAtto.DataNotificaAtto, oE20.IdentificativoAtto.Length.DataNotificaAtto, objAccertamentiEsecutivi.Type.Numero)
+                sPrintLine += PadLine(oE20.IdentificativoAtto.DataNotificaAtto, oE20.IdentificativoAtto.Length.DataNotificaAtto, objAccertamentiEsecutivi.Type.Data)
                 'Campo Posizione 72-111 Lungh. 40<<FILLER >> Tipo:AN Obbl.N	
                 sPrintLine += PadLine(oE20.Filler, oE20.Length.Filler, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 112-112 Lungh. 1<<PRESENZA ULTERIORI SOGGETTI DESTINATARI DELL'ATTO Indica la presenza di ulteriori destinatari per la notifica dell'atto. Deve essere presente nella "Tabella Codici altri soggetti per notifica – APPENDICE O" Deve assumere il valore ‘T’/’R’ in presenza di soggetto minore. Non può assumere il valore ‘T’ in presenza di soggetto giuridico>> Tipo:AN Obbl.S Errore:H20-SP R20-SP	
@@ -3578,11 +3580,11 @@ Public Class clsCoattivo
                 'Campo Posizione 42-43 Lungh. 2<<CODICE TIPO ATTO CODICE TIPO ATTO Codice che indica la tipologia dell'atto. Vedi NOTA 3. Fare riferimento alla tabella presente in APPENDICE P>> Tipo:AN Obbl.N Errore:N20-SP N20-SP	
                 sPrintLine += PadLine(oE23.IdentificativoAtto.CodiceTipoAtto, oE23.IdentificativoAtto.Length.CodiceTipoAtto, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 44-51 Lungh. 8<<DATA EMISSIONE ATTO DATA EMISSIONE ATTO Data in cui l'ente ha emesso l'atto nel formato (AAAAMMGG) Deve essere maggiore del 01/01/2020, minore della data di creazione flusso e minore della data di notifica atto>> Tipo:N Obbl.S Errore:N20-SP N20-SP	
-                sPrintLine += PadLine(oE23.IdentificativoAtto.DataEmissioneAtto, oE23.IdentificativoAtto.Length.DataEmissioneAtto, objAccertamentiEsecutivi.Type.Numero)
+                sPrintLine += PadLine(oE23.IdentificativoAtto.DataEmissioneAtto, oE23.IdentificativoAtto.Length.DataEmissioneAtto, objAccertamentiEsecutivi.Type.Data)
                 'Campo Posizione 52-63 Lungh. 12<<NUMERO ATTO NUMERO ATTO Estremi dell'atto notificato Non può essere nullo>> Tipo:AN Obbl.S Errore:N20-SP N20-SP	
                 sPrintLine += PadLine(oE23.IdentificativoAtto.NumeroAtto, oE23.IdentificativoAtto.Length.NumeroAtto, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 64-71 Lungh. 8<<DATA NOTIFICA ATTO DATA NOTIFICA ATTO Data di notifica dell'atto al debitore, nella forma AAAAMMGG. Deve essere maggiore del 01/01/2020, maggiore o uguale della data emmissione atto e inferiore alla data creazione file presente sul record E00 di almeno 60 gg. L'anno (AAAA) deve essere maggiore o uguale del valore indicato nel campo anno di emessione atto>> Tipo:N Obbl.S Errore:N20-SP N20-SP	
-                sPrintLine += PadLine(oE23.IdentificativoAtto.DataNotificaAtto, oE23.IdentificativoAtto.Length.DataNotificaAtto, objAccertamentiEsecutivi.Type.Numero)
+                sPrintLine += PadLine(oE23.IdentificativoAtto.DataNotificaAtto, oE23.IdentificativoAtto.Length.DataNotificaAtto, objAccertamentiEsecutivi.Type.Data)
                 'Campo Posizione 72-111 Lungh. 40<<FILLER  FILLER>> Tipo:AN Obbl.S Errore:SPAZI SPAZI	
                 sPrintLine += PadLine(oE23.Filler, oE23.Length.Filler, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 112-127 Lungh. 16<<CODICE FISCALE DEL SOGGETTO INTESTATARIO CODICE FISCALE DEL SOGGETTO INTESTATARIO Riporta lo stesso codice fiscale del record E20 dell'intestatario o del cooblicato dell’atto a cui l'ulteriore soggetto riferisce.>> Tipo:AN Obbl.S Errore:506-SF 506-SF	
@@ -3596,7 +3598,7 @@ Public Class clsCoattivo
                 'Campo Posizione 234-234 Lungh. 1<<SESSO SESSO Sesso del soggetto. Assume il valore: "F" = femmina "M" = maschio>> Tipo:AN Obbl.S Errore:039-SP 039-SP 055-SP	
                 sPrintLine += PadLine(oE23.Sesso, oE23.Length.Sesso, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 235-242 Lungh. 8<<DATA DI NASCITA DATA DI NASCITA Data di nascita. Deve essere espressa nella forma AAAAMMGG.>> Tipo:N Obbl.S Errore:045-SP 045-SP 055-SP	
-                sPrintLine += PadLine(oE23.DataNascita, oE23.Length.DataNascita, objAccertamentiEsecutivi.Type.Numero)
+                sPrintLine += PadLine(oE23.DataNascita, oE23.Length.DataNascita, objAccertamentiEsecutivi.Type.Data)
                 'Campo Posizione 243-246 Lungh. 4<<CODICE CATASTALE DEL COMUNE DI NASCITA CODICE CATASTALE DEL COMUNE DI NASCITA Codice Catastale del comune di nascita>> Tipo:AN Obbl.S Errore:039-SP 039-SP 055-SP	
                 sPrintLine += PadLine(oE23.CodiceCatastaleComuneNascita, oE23.Length.CodiceCatastaleComuneNascita, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 247-248 Lungh. 2<<PROVINCIA DI NASCITA PROVINCIA DI NASCITA Sigla provincia del comune di nascita.>> Tipo:AN Obbl.S Errore:039-SP 039-SP 055-SP	
@@ -3671,11 +3673,11 @@ Public Class clsCoattivo
                 'Campo Posizione 42-43 Lungh. 2<<CODICE TIPO ATTO CODICE TIPO ATTO Codice che indica la tipologia dell'atto. Vedi NOTA 3. Fare riferimento alla tabella presente in APPENDICE P>> Tipo:AN Obbl.N Errore:N20-SP N20-SP	
                 sPrintLine += PadLine(oE50.IdentificativoAtto.CodiceTipoAtto, oE50.IdentificativoAtto.Length.CodiceTipoAtto, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 44-51 Lungh. 8<<DATA EMISSIONE ATTO DATA EMISSIONE ATTO Data in cui l'ente ha emesso l'atto nel formato (AAAAMMGG) Deve essere maggiore del 01/01/2020, minore della data di creazione flusso e minore della data di notifica atto.>> Tipo:N Obbl.S Errore:N20-SP N20-SP	
-                sPrintLine += PadLine(oE50.IdentificativoAtto.DataEmissioneAtto, oE50.IdentificativoAtto.Length.DataEmissioneAtto, objAccertamentiEsecutivi.Type.Numero)
+                sPrintLine += PadLine(oE50.IdentificativoAtto.DataEmissioneAtto, oE50.IdentificativoAtto.Length.DataEmissioneAtto, objAccertamentiEsecutivi.Type.Data)
                 'Campo Posizione 52-63 Lungh. 12<<NUMERO ATTO NUMERO ATTO Estremi dell'atto notificato Non può essere nullo>> Tipo:AN Obbl.S Errore:N20-SP N20-SP	
                 sPrintLine += PadLine(oE50.IdentificativoAtto.NumeroAtto, oE50.IdentificativoAtto.Length.NumeroAtto, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 64-71 Lungh. 8<<DATA NOTIFICA ATTO DATA NOTIFICA ATTO Data di notifica dell'atto al debitore, nella forma AAAAMMGG. Deve essere maggiore del 01/01/2020, maggiore o uguale della data emmissione atto e inferiore alla data creazione file presente sul record E00 di almeno 60 gg. L'anno (AAAA) deve essere maggiore o uguale del valore indicato nel campo anno di emessione atto>> Tipo:N Obbl.S Errore:N20-SP N20-SP	
-                sPrintLine += PadLine(oE50.IdentificativoAtto.DataNotificaAtto, oE50.IdentificativoAtto.Length.DataNotificaAtto, objAccertamentiEsecutivi.Type.Numero)
+                sPrintLine += PadLine(oE50.IdentificativoAtto.DataNotificaAtto, oE50.IdentificativoAtto.Length.DataNotificaAtto, objAccertamentiEsecutivi.Type.Data)
                 'Campo Posizione 72-111 Lungh. 40<<FILLER  FILLER>> Tipo:AN Obbl.S Errore:0	
                 sPrintLine += PadLine(oE50.Filler, oE50.Length.Filler, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 112-114 Lungh. 3<<PROGRESSIVO ARTICOLO PROGRESSIVO ARTICOLO Indica il progressivo del Codice Entrata nell'ambito della stessa partita. Deve essere in stretta sequenza a partire da 1.>> Tipo:N Obbl.S Errore:013-SF 013-SF	
@@ -3732,19 +3734,19 @@ Public Class clsCoattivo
                 'Campo Posizione 42-43 Lungh. 2<<CODICE TIPO ATTO CODICE TIPO ATTO Codice che indica la tipologia dell'atto. Vedi NOTA 3 Fare riferimento alla tabella presente in APPENDICE P>> Tipo:AN Obbl.N Errore:055-SP 055-SP	
                 sPrintLine += PadLine(oE60.IdentificativoAtto.CodiceTipoAtto, oE60.IdentificativoAtto.Length.CodiceTipoAtto, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 44-51 Lungh. 8<<DATA EMISSIONE ATTO DATA EMISSIONE ATTO Data in cui l'ente ha emesso l'atto nel formato (AAAAMMGG) Deve essere maggiore del 01/01/2020, minore della data di creazione flusso e minore della data di notifica atto.>> Tipo:N Obbl.S Errore:045-SP 045-SP	
-                sPrintLine += PadLine(oE60.IdentificativoAtto.DataEmissioneAtto, oE60.IdentificativoAtto.Length.DataEmissioneAtto, objAccertamentiEsecutivi.Type.Numero)
+                sPrintLine += PadLine(oE60.IdentificativoAtto.DataEmissioneAtto, oE60.IdentificativoAtto.Length.DataEmissioneAtto, objAccertamentiEsecutivi.Type.Data)
                 'Campo Posizione 52-63 Lungh. 12<<NUMERO ATTO NUMERO ATTO Estremi dell'atto notificato Non può essere nullo>> Tipo:AN Obbl.S Errore:039-SP 039-SP	
                 sPrintLine += PadLine(oE60.IdentificativoAtto.NumeroAtto, oE60.IdentificativoAtto.Length.NumeroAtto, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 64-71 Lungh. 8<<DATA NOTIFICA ATTO DATA NOTIFICA ATTO Data di notifica dell'atto al debitore, nella forma AAAAMMGG. Deve essere maggiore del 01/01/2020, maggiore o uguale della data emmissione atto e inferiore alla data creazione file presente sul record E00 di almeno 60 gg. L'anno (AAAA) deve essere maggiore o uguale del valore indicato nel campo anno di emessione atto>> Tipo:N Obbl.S Errore:045-SP 045-SP	
-                sPrintLine += PadLine(oE60.IdentificativoAtto.DataNotificaAtto, oE60.IdentificativoAtto.Length.DataNotificaAtto, objAccertamentiEsecutivi.Type.Numero)
+                sPrintLine += PadLine(oE60.IdentificativoAtto.DataNotificaAtto, oE60.IdentificativoAtto.Length.DataNotificaAtto, objAccertamentiEsecutivi.Type.Data)
                 'Campo Posizione 72-111 Lungh. 40<<FILLER  FILLER>> Tipo:AN Obbl.N Errore:0	
                 sPrintLine += PadLine(oE60.Filler, oE60.Length.Filler, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 112-121 Lungh. 10<<NUMERO DELIBERA NUMERO DELIBERA Estremi della delibera con cui l'ente affida la riscossione ai sensi dell'art.2,comma2,D.Lgs n.193 del 2016>> Tipo:AN Obbl.S Errore:039-SP 039-SP	
                 sPrintLine += PadLine(oE60.NumeroDelibera, oE60.Length.NumeroDelibera, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 122-129 Lungh. 8<<DATA DELIBERA DATA DELIBERA Nel formato (AAAAMMGG) Deve essere inferiore alla data di trasmissione del flusso. Deve essere maggiore del 01/10/2016>> Tipo:N Obbl.S Errore:045-SP 045-SP	
-                sPrintLine += PadLine(oE60.DataDelibera, oE60.Length.DataDelibera, objAccertamentiEsecutivi.Type.Numero)
+                sPrintLine += PadLine(oE60.DataDelibera, oE60.Length.DataDelibera, objAccertamentiEsecutivi.Type.Data)
                 'Campo Posizione 130-137 Lungh. 8<<DATA FINE VALIDITA' DELIBERA DATA FINE VALIDITA' DELIBERA Nel formato (AAAAMMGG) Se valorizzata deve essere una data valida>> Tipo:N Obbl.N Errore:045-SP 045-SP	
-                sPrintLine += PadLine(oE60.DataFineValiditaDelibera, oE60.Length.DataFineValiditaDelibera, objAccertamentiEsecutivi.Type.Numero)
+                sPrintLine += PadLine(oE60.DataFineValiditaDelibera, oE60.Length.DataFineValiditaDelibera, objAccertamentiEsecutivi.Type.Data)
                 'Campo Posizione 138-138 Lungh. 1<<TIPOLOGIA SOSPENSIONE TIPOLOGIA SOSPENSIONE Identifica la tipologia di sospensione applicabile alla riscossione forzata. Può assumere i valori contenuti nell'APPENDICE Q>> Tipo:N Obbl.S Errore:055-SP 055-SP	
                 sPrintLine += PadLine(oE60.TipologiaSospensione, oE60.Length.TipologiaSospensione, objAccertamentiEsecutivi.Type.Numero)
                 'Campo Posizione 139-153 Lungh. 15<<IMPORTO TOTALE ATTO IMPORTO TOTALE ATTO Importo totale del carico affidato con l'atto. Somma IMPORTO ARTICOLO, record E50. Deve essere uguale o superiore ad Euro 10.>> Tipo:N Obbl.S Errore:039-SP A60-SP 039-SP A60-SP	
@@ -3752,7 +3754,7 @@ Public Class clsCoattivo
                 'Campo Posizione 154-160 Lungh. 7<<TOTALE ARTICOLI ATTO TOTALE ARTICOLI ATTO Numero totale degli articoli, record E50, presenti nell'atto affidato.>> Tipo:N Obbl.S Errore:039-SP 039-SP	
                 sPrintLine += PadLine(oE60.TotaleArticoliAtto, oE60.Length.TotaleArticoliAtto, objAccertamentiEsecutivi.Type.Numero)
                 'Campo Posizione 161-168 Lungh. 8<<DATA TERMINE ULTIMO PAGAMENTO ATTO DATA TERMINE ULTIMO PAGAMENTO ATTO Corrisponde alla data termine ultimo per il pagamento delle somme intimate con l'atto. Deve essere maggiore della data notifica atto dal parte dell’ente ed espressa nel formato (AAAAMMGG). Non può essere maggiore della data di trasmissione flusso.>> Tipo:N Obbl.S Errore:045-SP B60-SP C60-SP 045-SP B60-SP C60-SP	
-                sPrintLine += PadLine(oE60.DataTermineUltimoPagamentoAtto, oE60.Length.DataTermineUltimoPagamentoAtto, objAccertamentiEsecutivi.Type.Numero)
+                sPrintLine += PadLine(oE60.DataTermineUltimoPagamentoAtto, oE60.Length.DataTermineUltimoPagamentoAtto, objAccertamentiEsecutivi.Type.Data)
                 'Campo Posizione 169-169 Lungh. 1<<FLAG ENTE TERZO FLAG ENTE TERZO Flag che indica se è presente un’ente terzo diverso dall'ente impositore che ha emesso e notificato l’atto per contro dell’ente impositore S=PRESENTE N=NON PRESENTE Deve essere valorizzato con "S" solo se l'ente terzo è diverso dall'ente impositore>> Tipo:AN Obbl.S Errore:096-SP 096-SP	
                 sPrintLine += PadLine(oE60.FlagEnteTerzo, oE60.Length.FlagEnteTerzo, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 170-229 Lungh. 60<<DENOMINAZIONE ENTE TERZO DENOMINAZIONE ENTE TERZO Denominazione dell’ente terzo che ha notificato l'atto. Se il flag ente terzo è valorizzato ad "S" la denominazione è obbligatoria.>> Tipo:AN Obbl.N Errore:039-SP 039-SP	
@@ -3783,7 +3785,7 @@ Public Class clsCoattivo
                 'Campo Posizione 10-15 Lungh. 6<<CODICE UFFICIO CODICE UFFICIO Codice ufficio dell'ente creditore APPENDICE B. Assume lo stesso valore dell'analogo campo del record E00>> Tipo:AN Obbl.S Errore:502-SF 502-SF 504-SF	
                 sPrintLine += PadLine(oE99.IdentificativoFlusso.CodiceUfficio, oE99.IdentificativoFlusso.Length.CodiceUfficio, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 16-23 Lungh. 8<<DATA CREAZIONE FLUSSO DATA CREAZIONE FLUSSO Data in cui l'ente crea il file di carico espressa nel formato (AAAAMMGG). Deve essere minore o uguale alla data trasmissione e non deve essere antecedente alla data di trasmissione di oltre 15 giorni. Assume lo stesso valore dell'analogo campo del record E00>> Tipo:N Obbl.S Errore:045-SF 045-SF	
-                sPrintLine += PadLine(oE99.DataCreazioneFlusso, oE99.Length.DataCreazioneFlusso, objAccertamentiEsecutivi.Type.Numero)
+                sPrintLine += PadLine(oE99.DataCreazioneFlusso, oE99.Length.DataCreazioneFlusso, objAccertamentiEsecutivi.Type.Data)
                 'Campo Posizione 24-33 Lungh. 10<<ESTREMI FLUSSO ESTREMI FLUSSO Identificativo del file trasmesso, espresso nella forma AAAA7NNNNN dove AAAA=Anno flusso, 7=fisso per indicare la tipologia accertamento esecutivo NNNNN=Progressivo crescente L’anno AAAA coincide con l’anno di creazione del flusso Assume lo stesso valore dell'analogo campo del record E00>> Tipo:N Obbl.S Errore:501-SF 501-SF	
                 sPrintLine += PadLine(oE99.EstremiFlusso, oE99.Length.EstremiFlusso, objAccertamentiEsecutivi.Type.Numero)
                 'Campo Posizione 34-40 Lungh. 7<<TOTALE RECORD TOTALE RECORD Numero di record presenti nel flusso>> Tipo:N Obbl.S Errore:503-SF 503-SF	

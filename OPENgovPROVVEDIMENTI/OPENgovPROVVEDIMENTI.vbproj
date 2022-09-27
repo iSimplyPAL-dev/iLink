@@ -103,64 +103,51 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AnagInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=73a397894a5f6da1, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DLLcomuni\AnagInterface.dll</HintPath>
+    <Reference Include="AnagInterface">
+      <HintPath>..\..\..\DLLComuni\AnagInterface.dll</HintPath>
     </Reference>
-    <Reference Include="Anagrafica, Version=1.0.1.2, Culture=neutral, PublicKeyToken=978df93f9e14593b, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DLLcomuni\Anagrafica.dll</HintPath>
+    <Reference Include="Anagrafica">
+      <HintPath>..\..\..\DLLComuni\Anagrafica.dll</HintPath>
     </Reference>
-    <Reference Include="ComPlusInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4a09653e5392bcad, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DLLcomuni\ComPlusInterface.dll</HintPath>
+    <Reference Include="ComPlusInterface">
+      <HintPath>..\..\..\DLLComuni\ComPlusInterface.dll</HintPath>
     </Reference>
-    <Reference Include="DAL, Version=1.0.0.0, Culture=neutral">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DLLcomuni\DAL.dll</HintPath>
+    <Reference Include="DAL">
+      <HintPath>..\..\..\DLLComuni\DAL.dll</HintPath>
     </Reference>
-    <Reference Include="ElaborazioneDatiStampeInterface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DLLcomuni\ElaborazioneDatiStampeInterface.dll</HintPath>
+    <Reference Include="ElaborazioneDatiStampeInterface">
+      <HintPath>..\..\..\DLLComuni\ElaborazioneDatiStampeInterface.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DLLcomuni\ICSharpCode.SharpZipLib.dll</HintPath>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\DLLComuni\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="Importer290">
-      <HintPath>..\..\DLLcomuni\Importer290.dll</HintPath>
+      <HintPath>..\..\..\DLLComuni\Importer290.dll</HintPath>
     </Reference>
-    <Reference Include="IRemInterfaceOSAP, Version=1.0.6317.22177, Culture=neutral, PublicKeyToken=821c65e4384aa8e2, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DLLcomuni\IRemInterfaceOSAP.dll</HintPath>
+    <Reference Include="IRemInterfaceOSAP">
+      <HintPath>..\..\..\DLLComuni\IRemInterfaceOSAP.dll</HintPath>
     </Reference>
-    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DLLcomuni\log4net.dll</HintPath>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\DLLComuni\log4net.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\..\DLLcomuni\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data.Entity, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
-    <Reference Include="RemotingInterfaceAnater, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DLLcomuni\RemotingInterfaceAnater.dll</HintPath>
+    <Reference Include="RemotingInterfaceAnater">
+      <HintPath>..\..\..\DLLComuni\RemotingInterfaceAnater.dll</HintPath>
     </Reference>
-    <Reference Include="RemotingInterfaceMotoreTarsu, Version=1.0.1.0, Culture=neutral, PublicKeyToken=ab7a724589ef7794, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DLLcomuni\RemotingInterfaceMotoreTarsu.dll</HintPath>
+    <Reference Include="RemotingInterfaceMotoreTarsu">
+      <HintPath>..\..\..\DLLComuni\RemotingInterfaceMotoreTarsu.dll</HintPath>
     </Reference>
-    <Reference Include="Ribes.OPENgov.WebControls, Version=1.2.0.17259, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DLLcomuni\Ribes.OPENgov.WebControls.dll</HintPath>
+    <Reference Include="Ribes.OPENgov.WebControls">
+      <HintPath>..\..\..\DLLComuni\Ribes.OPENgov.WebControls.dll</HintPath>
     </Reference>
-    <Reference Include="RIBESElaborazioneDocumentiInterface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DLLcomuni\RIBESElaborazioneDocumentiInterface.dll</HintPath>
+    <Reference Include="RIBESElaborazioneDocumentiInterface">
+      <HintPath>..\..\..\DLLComuni\RIBESElaborazioneDocumentiInterface.dll</HintPath>
     </Reference>
-    <Reference Include="RKLib.ExportData, Version=1.0.0.0, Culture=neutral">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DLLcomuni\RKLib.ExportData.dll</HintPath>
+    <Reference Include="RKLib.ExportData">
+      <HintPath>..\..\..\DLLComuni\RKLib.ExportData.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
@@ -181,9 +168,8 @@
     <Reference Include="System.Xml">
       <Name>System.XML</Name>
     </Reference>
-    <Reference Include="Utility, Version=1.0.7495.28013, Culture=neutral, PublicKeyToken=ae1027569650564c, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DLLcomuni\Utility.dll</HintPath>
+    <Reference Include="Utility">
+      <HintPath>..\..\..\DLLComuni\Utility.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -1367,20 +1353,6 @@
     <Folder Include="My Project\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OPENgovICI\DichiarazioniICI.csproj">
-      <Project>{14507f38-eb84-4e90-acd5-21fe02a2dee4}</Project>
-      <Name>DichiarazioniICI</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OPENgovTIA\OPENgovTIA.vbproj">
-      <Project>{815b6680-88b5-4bef-85b5-1c50c5e09adf}</Project>
-      <Name>OPENgovTIA</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OPENgovTOCO\OPENgovTOCO.csproj">
-      <Project>{04f67387-83d7-4ee2-a91b-6aa6464cc827}</Project>
-      <Name>OPENgovTOCO</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -1409,6 +1381,20 @@
     <Analyzer Include="..\packages\Microsoft.NetFramework.Analyzers.3.3.2\analyzers\dotnet\vb\Microsoft.NetFramework.VisualBasic.Analyzers.dll" />
     <Analyzer Include="..\packages\Text.Analyzers.2.6.4\analyzers\dotnet\vb\Text.Analyzers.dll" />
     <Analyzer Include="..\packages\Text.Analyzers.2.6.4\analyzers\dotnet\vb\Text.VisualBasic.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OPENgovICI\DichiarazioniICI.csproj">
+      <Project>{14507f38-eb84-4e90-acd5-21fe02a2dee4}</Project>
+      <Name>DichiarazioniICI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OPENgovTIA\OPENgovTIA.vbproj">
+      <Project>{815b6680-88b5-4bef-85b5-1c50c5e09adf}</Project>
+      <Name>OPENgovTIA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OPENgovTOCO\OPENgovTOCO.csproj">
+      <Project>{04f67387-83d7-4ee2-a91b-6aa6464cc827}</Project>
+      <Name>OPENgovTOCO</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
