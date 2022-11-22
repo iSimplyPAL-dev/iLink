@@ -219,7 +219,6 @@ Partial Class FrameModificaDatoCatasto
                 txtSubalterno.Text = ""
             End If
         Catch ex As Exception
-
             Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovH2O.FrameModificaDatoCatastato.Page_Load.errore: ", ex)
             Response.Redirect("../../PaginaErrore.aspx")
         End Try
@@ -236,10 +235,11 @@ Partial Class FrameModificaDatoCatasto
             Dim estensioneParticella As String = CStr(txtEstParticella.Text.Replace("'", ""))
             Dim tipoParticella As String = CStr(ddlTipoParticella.SelectedValue)
             Dim MyIDCatasto As Integer = Request.Params("IDCatasto")
+            Dim myIdContatore As Integer = Request.Params("IDContatore")
             Dim DBContatori As GestContatori = New GestContatori
             Dim sScript As String = ""
 
-            If DBContatori.SetDatiCatastali(interno, piano, foglio, numero, subalterno, MyIDCatasto, sezione, estensioneParticella, tipoParticella) > 0 Then
+            If DBContatori.SetDatiCatastali(interno, piano, foglio, numero, subalterno, MyIDCatasto, myIdContatore, sezione, estensioneParticella, tipoParticella) > 0 Then
                 sScript += "GestAlert('a', 'success', '', '', 'Modifica effettuata correttamente!');"
                 sScript += "window.opener.location.href='searchResultsCatasto.aspx?ContatoreID=" & Request.Params("IDContatore") & "';"
                 sScript += "window.close();"

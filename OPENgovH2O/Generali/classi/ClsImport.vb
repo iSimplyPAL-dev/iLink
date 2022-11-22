@@ -595,7 +595,7 @@ Public Class ClsImport
     '                    salvato = setLettureAttuali(oDatiContatore, oLettura, sqlConn, WFSessione)
 
     '                    If salvato Then
-    '                        '*** incremanta il numero di record salvati
+    '                        '*** incrementa il numero di record salvati
     '                        oImport.nRcImport += 1
     '                    Else
     '                        oImport.nRcScarti += 1
@@ -1035,6 +1035,22 @@ Public Class ClsImport
     '        Return -1
     '    End Try
     'End Function
+    ''' <summary>
+    ''' 
+    ''' </summary>
+    ''' <param name="sEnteCheck"></param>
+    ''' <param name="sFileCheck"></param>
+    ''' <param name="sNameFileCheck"></param>
+    ''' <param name="sErrCheck"></param>
+    ''' <returns></returns>
+    ''' <revisionHistory>
+    ''' <revision date="12/04/2019">
+    ''' Modifiche da revisione manuale
+    ''' </revision>
+    ''' <revision date="15/11/2022">
+    ''' Abbinamento per Matricola invece che per codice contatore
+    ''' </revision>
+    ''' </revisionHistory>
     Private Function ControllaFile(ByVal sEnteCheck As String, ByVal sFileCheck As String, ByVal sNameFileCheck As String, ByRef sErrCheck As String) As Integer
         '{1= formato corretto; 0= formato non corretto; 2= dati obbligatori mancanti; -1= errore}
         Try
@@ -1053,7 +1069,7 @@ Public Class ClsImport
             'controllo che la struttura sia corretta
             Log.Debug("ClsImport::ControllaFile::aperto il file al percorso::" & sFileCheck)
             Try
-                'CODICE CONTATORE|DATA LETTURA|LETTURA|NUMERO UTENTE
+                'MATRICOLA|DATA LETTURA|LETTURA|NUMERO UTENTE
                 Dim myLine As String
                 Dim PostedFile() As Byte = System.IO.File.ReadAllBytes(sFileCheck)
                 If Not PostedFile Is Nothing Then
@@ -1075,13 +1091,13 @@ Public Class ClsImport
                                         Return 0
                                     End If
                                     If iRiga = 1 Then
-                                        If ListDati(0) <> "CODICE CONTATORE" Then
-                                            sErrCheck = "Manca il campo CODICE CONTATORE. Riga " & iRiga
+                                        If ListDati(0) <> "MATRICOLA" Then
+                                            sErrCheck = "Manca il campo MATRICOLA. Riga " & iRiga
                                             Return 0
                                         End If
                                     Else
                                         If ListDati(0) = "" Then
-                                            sErrCheck = "Codice contatore mancante. Riga " & iRiga
+                                            sErrCheck = "Matricola mancante. Riga " & iRiga
                                             Return 2
                                         End If
                                     End If
@@ -1148,25 +1164,189 @@ Public Class ClsImport
             Return -1
         End Try
     End Function
+    'Private Function ControllaFile(ByVal sEnteCheck As String, ByVal sFileCheck As String, ByVal sNameFileCheck As String, ByRef sErrCheck As String) As Integer
+    '    '{1= formato corretto; 0= formato non corretto; 2= dati obbligatori mancanti; -1= errore}
+    '    Try
+    '        Dim iRiga As Integer = 1
+    '        'non è un file excel
+    '        If Not sNameFileCheck.ToLower.EndsWith(".csv") Then
+    '            sErrCheck = "Non è un file CSV."
+    '            Return 0
+    '        End If
+    '        'non è dell’ente in esame
+    '        If Not sNameFileCheck.ToLower.StartsWith(sEnteCheck) Then
+    '            sErrCheck = "L'ente del file non corrisponde con l'ente in esame."
+    '            Return 0
+    '        End If
 
-    Private Function GetCodiceUtente(ByVal codiceContatore As Integer) As Integer
-        Dim sql As String = ""
+    '        'controllo che la struttura sia corretta
+    '        Log.Debug("ClsImport::ControllaFile::aperto il file al percorso::" & sFileCheck)
+    '        Try
+    '            'CODICE CONTATORE|DATA LETTURA|LETTURA|NUMERO UTENTE
+    '            Dim myLine As String
+    '            Dim PostedFile() As Byte = System.IO.File.ReadAllBytes(sFileCheck)
+    '            If Not PostedFile Is Nothing Then
+    '                Dim MS As New MemoryStream(PostedFile, 0, PostedFile.Length)
+    '                Dim MyFileToRead As New StreamReader(MS)
+    '                Try
+    '                    Do While MyFileToRead.Peek > 1
+    '                        myLine = MyFileToRead.ReadLine()
+    '                        Log.Debug(sEnteCheck + " - OPENgovH2O.ClsImport.ControllaFile.riga:" + iRiga.ToString())
+    '                        Try
+    '                            If myLine = String.Empty Then
+    '                                sErrCheck = "Presenza riga vuota."
+    '                                Return 0
+    '                            Else
+    '                                Dim ListDati As String()
+    '                                ListDati = myLine.Split(CChar(";"))
+    '                                If ListDati.GetUpperBound(0) < 3 Then
+    '                                    sErrCheck = "Numero di Campi non coerenti."
+    '                                    Return 0
+    '                                End If
+    '                                If iRiga = 1 Then
+    '                                    If ListDati(0) <> "CODICE CONTATORE" Then
+    '                                        sErrCheck = "Manca il campo CODICE CONTATORE. Riga " & iRiga
+    '                                        Return 0
+    '                                    End If
+    '                                Else
+    '                                    If ListDati(0) = "" Then
+    '                                        sErrCheck = "Codice contatore mancante. Riga " & iRiga
+    '                                        Return 2
+    '                                    End If
+    '                                End If
+    '                                If iRiga = 1 Then
+    '                                    If ListDati(1) <> "DATA LETTURA" Then
+    '                                        sErrCheck = "Manca il campo DATA LETTURA. Riga " & iRiga
+    '                                        Return 0
+    '                                    End If
+    '                                Else
+    '                                    If ListDati(1) = "" Then
+    '                                        sErrCheck = "Data Lettura non valorizzato. Riga " & iRiga
+    '                                        Return 2
+    '                                    End If
+    '                                End If
+    '                                If iRiga = 1 Then
+    '                                    If ListDati(2) <> "LETTURA" Then
+    '                                        sErrCheck = "Manca il campo LETTURA. Riga " & iRiga
+    '                                        Return 0
+    '                                    End If
+    '                                Else
+    '                                    If ListDati(2) = "" Then
+    '                                        sErrCheck = "Lettura non valorizzato Riga " & iRiga
+    '                                        Return 2
+    '                                    End If
+    '                                End If
+    '                                If iRiga = 1 Then
+    '                                    If ListDati(3) <> "NUMERO UTENTE" Then
+    '                                        sErrCheck = "Manca il campo NUMERO UTENTE. Riga " & iRiga
+    '                                        Return 0
+    '                                    End If
+    '                                Else
+    '                                    If ListDati(3) = "" Then
+    '                                        sErrCheck = "Numero Utente non valorizzato Riga " & iRiga
+    '                                        Return 2
+    '                                    End If
+    '                                End If
+    '                            End If
+    '                        Catch ex As Exception
+    '                            sErrCheck = "Errore lettura file."
+    '                            Return 0
+    '                        End Try
+    '                        iRiga += 1
+    '                    Loop
+    '                Catch ex As Exception
+    '                    sErrCheck = "Errore nel file."
+    '                    Return 0
+    '                Finally
+    '                    MyFileToRead.Close()
+    '                    MS.Close()
+    '                End Try
+    '            Else
+    '                sErrCheck = "Il file è vuoto."
+    '                Return 0
+    '            End If
+    '            Return 1
+    '        Catch Err As Exception
+    '            Log.Debug(sEnteCheck + " - OPENgovH2O.ClsImport.ControllaFile.errore: ", Err)
+    '            sErrCheck = Err.StackTrace
+    '            Return -1
+    '        End Try
+    '    Catch Err As Exception
+    '        Log.Debug(sEnteCheck + " - OPENgovH2O.ClsImport.ControllaFile.errore: ", Err)
+    '        sErrCheck = sFileCheck & "::" & Err.StackTrace & "::" & Err.Message
+    '        Return -1
+    '    End Try
+    'End Function
+    ''' <summary>
+    ''' 
+    ''' </summary>
+    ''' <param name="IdEnte"></param>
+    ''' <param name="Matricola"></param>
+    ''' <param name="DataLettura"></param>
+    ''' <param name="CodContatore"></param>
+    ''' <returns></returns>
+    ''' <revisionHistory>
+    ''' <revision date="12/04/2019">
+    ''' Modifiche da revisione manuale
+    ''' </revision>
+    ''' <revision date="15/11/2022">
+    ''' Abbinamento per Matricola invece che per codice contatore
+    ''' </revision>
+    ''' </revisionHistory>
+    Private Function GetCodiceUtente(IdEnte As String, ByVal Matricola As String, DataLettura As Date, ByRef CodContatore As Integer) As Integer
+        Dim sSQL As String = ""
         Dim dvMyDati As New DataView
+        Dim myRet As Integer
 
         Try
-            sql = "SELECT * FROM TR_CONTATORI_UTENTE WHERE (CODCONTATORE = " & codiceContatore & ")"
-            dvMyDati = iDB.GetDataView(sql)
+            myRet = -1
+            Using ctx As New DBModel(ConstSession.DBType, ConstSession.StringConnection)
+                sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_GetContatoriLetture", "IDENTE", "IDPERIODO", "DAL", "AL", "GIRO", "NUMEROUTENTE", "IDVIA", "ISSUB", "INTESTATARIO", "UTENTE", "MATRICOLA", "LETTURAPRESENTE", "LETTURAMANCANTE")
+                dvMyDati = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("IDENTE", IdEnte) _
+                        , ctx.GetParam("IDPERIODO", 0) _
+                        , ctx.GetParam("DAL", StringOperation.FormatDateTime(DataLettura)) _
+                        , ctx.GetParam("AL", StringOperation.FormatDateTime(DataLettura)) _
+                        , ctx.GetParam("GIRO", -1) _
+                        , ctx.GetParam("NUMEROUTENTE", "") _
+                        , ctx.GetParam("IDVIA", -1) _
+                        , ctx.GetParam("ISSUB", 0) _
+                        , ctx.GetParam("INTESTATARIO", "") _
+                        , ctx.GetParam("UTENTE", "") _
+                        , ctx.GetParam("MATRICOLA", Matricola.Replace("'", "''").Replace("*", "%")) _
+                        , ctx.GetParam("LETTURAPRESENTE", 0) _
+                        , ctx.GetParam("LETTURAMANCANTE", 0)
+                    )
+                ctx.Dispose()
+            End Using
             If Not dvMyDati Is Nothing Then
                 For Each myRow As DataRowView In dvMyDati
-                    codiceContatore = StringOperation.FormatInt(myRow("COD_CONTRIBUENTE"))
+                    myRet = StringOperation.FormatInt(myRow("COD_CONTRIBUENTE"))
+                    CodContatore = StringOperation.FormatInt(myRow("CODCONTATORE"))
                 Next
             End If
-            Return codiceContatore
         Catch Err As Exception
-            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovH2O.ClsImport.GetCodiceUtente.errore: ", Err)
-            Return -1
+            Log.Debug(IdEnte + " - OPENgovH2O.ClsImport.GetCodiceUtente.errore: ", Err)
         End Try
+        Return myRet
     End Function
+    'Private Function GetCodiceUtente(ByVal codiceContatore As Integer) As Integer
+    '    Dim sql As String = ""
+    '    Dim dvMyDati As New DataView
+
+    '    Try
+    '        sql = "SELECT * FROM TR_CONTATORI_UTENTE WHERE (CODCONTATORE = " & codiceContatore & ")"
+    '        dvMyDati = iDB.GetDataView(sql)
+    '        If Not dvMyDati Is Nothing Then
+    '            For Each myRow As DataRowView In dvMyDati
+    '                codiceContatore = StringOperation.FormatInt(myRow("COD_CONTRIBUENTE"))
+    '            Next
+    '        End If
+    '        Return codiceContatore
+    '    Catch Err As Exception
+    '        Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovH2O.ClsImport.GetCodiceUtente.errore: ", Err)
+    '        Return -1
+    '    End Try
+    'End Function
 
     'Private Function AcquisizioneLetture(ByVal sEnteAcq As String, ByVal sFileAcq As String, ByVal nIdFlussoAcq As Integer, ByVal sMyOperatore As String, ByRef oImport As ObjImportazione, ByVal idPeriodo As String) As Integer
     '    Try
@@ -1231,7 +1411,7 @@ Public Class ClsImport
     '                    salvato = setLettureAttuali(oDatiContatore, oLettura, sqlConn)
 
     '                    If salvato Then
-    '                        '*** incremanta il numero di record salvati
+    '                        '*** incrementa il numero di record salvati
     '                        oImport.nRcImport += 1
     '                    Else
     '                        oImport.nRcScarti += 1
@@ -1281,6 +1461,9 @@ Public Class ClsImport
     ''' <revision date="12/04/2019">
     ''' Modifiche da revisione manuale
     ''' </revision>
+    ''' <revision date="15/11/2022">
+    ''' Abbinamento per Matricola invece che per codice contatore
+    ''' </revision>
     ''' </revisionHistory>
     Private Function AcquisizioneLetture(myStringConnection As String, ByVal sEnteAcq As String, ByVal sFileAcq As String, ByVal nIdFlussoAcq As Integer, ByVal sMyOperatore As String, ByRef oImport As ObjImportazione, ByVal idPeriodo As String) As Integer
         Try
@@ -1297,6 +1480,7 @@ Public Class ClsImport
             'apro il file
             Try
                 Utility.Costanti.CreateDir(ConstSession.PathRepository + ConstSession.PathScarti)
+                oImport.sFileScarti = ConstSession.PathRepository + ConstSession.PathScarti + "SCARTI_" + sNameImport
                 Dim line As String
                 Dim PostedFile() As Byte = System.IO.File.ReadAllBytes(sFileAcq)
                 If Not PostedFile Is Nothing Then
@@ -1310,26 +1494,31 @@ Public Class ClsImport
                                 Dim ListDati As String()
                                 ListDati = line.Split(CChar(";"))
                                 'prelevo i dati dal file
-                                If ListDati(0) <> "CODICE CONTATORE" Then
+                                If ListDati(0) <> "MATRICOLA" Then
                                     '*** conta il numero di record nel file excel
                                     oImport.nRcFile += 1
+                                    oLettura = New ObjImportazione.DatiLetture
+                                    oLettura.Provenienza = "Data Entry Massivo"
+                                    oLettura.CodPeriodo = idPeriodo
+                                    oLettura.CodLettura = -1
+                                    oLettura.Storica = 0
+                                    oLettura.Cod_anomalia1 = -1
+                                    oLettura.Cod_anomalia2 = -1
+                                    oLettura.Cod_anomalia3 = -1
                                     Log.Debug(sEnteAcq + " - OPENgovH2O.ClsImport.AcquisizioneLetture.leggo record:" + oImport.nRcFile.ToString())
-                                    If IsNumeric(ListDati(0)) Then
-                                        codiceUtente = GetCodiceUtente(CInt(ListDati(0)))
-                                        oLettura.CodContatore = CInt(ListDati(0))
+                                    codiceUtente = GetCodiceUtente(sEnteAcq, ListDati(0), StringOperation.FormatDateTime(ListDati(1)), oLettura.CodContatore)
+                                    If codiceUtente <= 0 Then
+                                        '*** incrementa il numero di record scartati
+                                        oImport.nRcScarti += 1
+                                        '*** scrive il file degli scarti
+                                        If WriteScartiLetture(line, sFileAcq, oImport.sFileScarti, sEnteAcq, "Utente non trovato") = 0 Then
+                                            Return -1
+                                        End If
+                                    Else
                                         oLettura.CodUtente = codiceUtente
-                                        oLettura.DataLettura = oReplace.GiraData(ListDati(1))
-                                        oLettura.Lettura = CInt(ListDati(2))
+                                        oLettura.DataLettura = oReplace.GiraData(StringOperation.FormatDateTime(ListDati(1)))
+                                        oLettura.Lettura = StringOperation.FormatInt(ListDati(2))
                                         oLettura.NumeroUtente = ListDati(3)
-
-                                        oLettura.Provenienza = "Data Entry Massivo"
-                                        oLettura.CodPeriodo = idPeriodo
-                                        oLettura.CodLettura = -1
-                                        oLettura.Storica = 0
-                                        oLettura.Cod_anomalia1 = -1
-                                        oLettura.Cod_anomalia2 = -1
-                                        oLettura.Cod_anomalia3 = -1
-
                                         If CInt(oLettura.CodContatore) > 0 Then
                                             '*** recupero i dati del contatore attraverso il codice contatore della stampa
                                             oDatiContatore = TrovaContatore(oLettura.CodContatore, "", sEnteAcq, myStringConnection)
@@ -1337,41 +1526,30 @@ Public Class ClsImport
                                                 '*** salvataggio dati lettura
                                                 salvato = setLettureAttuali(oDatiContatore, oLettura, myStringConnection)
                                                 If salvato Then
-                                                    '*** incremanta il numero di record salvati
+                                                    '*** incrementa il numero di record salvati
                                                     oImport.nRcImport += 1
                                                 Else
                                                     oImport.nRcScarti += 1
-                                                    oImport.sFileScarti = ConstSession.PathRepository + ConstSession.PathScarti + "SCARTI_" + sNameImport
                                                     '*** scrive il file degli scarti
-                                                    If WriteScartiLetture(oLettura, sFileAcq, ConstSession.PathRepository + ConstSession.PathScarti + "SCARTI_" + sNameImport, sEnteAcq, "Errore in registrazione lettura") = 0 Then
+                                                    If WriteScartiLetture(line, sFileAcq, oImport.sFileScarti, sEnteAcq, "Errore in registrazione lettura") = 0 Then
                                                         Return -1
                                                     End If
                                                 End If
                                             Else
                                                 '*** incrementa il numero di record scartati
                                                 oImport.nRcScarti += 1
-                                                oImport.sFileScarti = ConstSession.PathRepository + ConstSession.PathScarti + "SCARTI_" + sNameImport
                                                 '*** scrive il file degli scarti
-                                                If WriteScartiLetture(oLettura, sFileAcq, ConstSession.PathRepository + ConstSession.PathScarti + "SCARTI_" + sNameImport, sEnteAcq, "Contatore non trovato") = 0 Then
+                                                If WriteScartiLetture(line, sFileAcq, oImport.sFileScarti, sEnteAcq, "Contatore non trovato") = 0 Then
                                                     Return -1
                                                 End If
                                             End If
                                         Else
                                             '*** incrementa il numero di record scartati
                                             oImport.nRcScarti += 1
-                                            oImport.sFileScarti = ConstSession.PathRepository + ConstSession.PathScarti + "SCARTI_" + sNameImport
                                             '*** scrive il file degli scarti
-                                            If WriteScartiLetture(oLettura, sFileAcq, ConstSession.PathRepository + ConstSession.PathScarti + "SCARTI_" + sNameImport, sEnteAcq, "Contatore non trovato") = 0 Then
+                                            If WriteScartiLetture(line, sFileAcq, oImport.sFileScarti, sEnteAcq, "Contatore non trovato") = 0 Then
                                                 Return -1
                                             End If
-                                        End If
-                                    Else
-                                        '*** incrementa il numero di record scartati
-                                        oImport.nRcScarti += 1
-                                        oImport.sFileScarti = ConstSession.PathRepository + ConstSession.PathScarti + "SCARTI_" + sNameImport
-                                        '*** scrive il file degli scarti
-                                        If WriteScartiLetture(oLettura, sFileAcq, ConstSession.PathRepository + ConstSession.PathScarti + "SCARTI_" + sNameImport, sEnteAcq, "Contatore non numerico") = 0 Then
-                                            Return -1
                                         End If
                                     End If
                                 End If
@@ -1398,7 +1576,7 @@ Public Class ClsImport
             Return -1
         End Try
     End Function
-    'Private Function AcquisizioneLetture(ByVal sEnteAcq As String, ByVal sFileAcq As String, ByVal nIdFlussoAcq As Integer, ByVal sMyOperatore As String, ByRef oImport As ObjImportazione, ByVal idPeriodo As String) As Integer
+    'Private Function AcquisizioneLetture(myStringConnection As String, ByVal sEnteAcq As String, ByVal sFileAcq As String, ByVal nIdFlussoAcq As Integer, ByVal sMyOperatore As String, ByRef oImport As ObjImportazione, ByVal idPeriodo As String) As Integer
     '    Try
     '        Dim oLettura As New ObjImportazione.DatiLetture
     '        Dim oReplace As New ClsGenerale.Generale
@@ -1406,16 +1584,13 @@ Public Class ClsImport
     '        Dim oMyFileInfo As New System.IO.FileInfo(sFileAcq)
     '        Dim sNameImport As String = oMyFileInfo.Name
     '        Dim salvato As Boolean
-    '        Dim sqlConn As New SqlConnection
     '        Dim oDatiContatore As New objContatore
 
     '        'prelevo tutti i dati dal foglio 1
     '        Log.Debug(sEnteAcq + " - OPENgovH2O.ClsImport.AcquisizioneLetture.Inizio")
-    '        sqlConn.ConnectionString = ConstSession.StringConnection
-    '        sqlConn.Open()
-
     '        'apro il file
     '        Try
+    '            Utility.Costanti.CreateDir(ConstSession.PathRepository + ConstSession.PathScarti)
     '            Dim line As String
     '            Dim PostedFile() As Byte = System.IO.File.ReadAllBytes(sFileAcq)
     '            If Not PostedFile Is Nothing Then
@@ -1451,35 +1626,45 @@ Public Class ClsImport
 
     '                                    If CInt(oLettura.CodContatore) > 0 Then
     '                                        '*** recupero i dati del contatore attraverso il codice contatore della stampa
-    '                                        oDatiContatore = TrovaContatore(oLettura.CodContatore, "", sEnteAcq, sqlConn)
-    '                                        '*** salvataggio dati lettura
-    '                                        salvato = setLettureAttuali(oDatiContatore, oLettura, sqlConn)
-    '                                        If salvato Then
-    '                                            '*** incremanta il numero di record salvati
-    '                                            oImport.nRcImport += 1
+    '                                        oDatiContatore = TrovaContatore(oLettura.CodContatore, "", sEnteAcq, myStringConnection)
+    '                                        If oDatiContatore.sMatricola <> "" Then
+    '                                            '*** salvataggio dati lettura
+    '                                            salvato = setLettureAttuali(oDatiContatore, oLettura, myStringConnection)
+    '                                            If salvato Then
+    '                                                '*** incrementa il numero di record salvati
+    '                                                oImport.nRcImport += 1
+    '                                            Else
+    '                                                oImport.nRcScarti += 1
+    '                                                oImport.sFileScarti = ConstSession.PathRepository + ConstSession.PathScarti + "SCARTI_" + sNameImport
+    '                                                '*** scrive il file degli scarti
+    '                                                If WriteScartiLetture(oLettura, sFileAcq, ConstSession.PathRepository + ConstSession.PathScarti + "SCARTI_" + sNameImport, sEnteAcq, "Errore in registrazione lettura") = 0 Then
+    '                                                    Return -1
+    '                                                End If
+    '                                            End If
     '                                        Else
+    '                                            '*** incrementa il numero di record scartati
     '                                            oImport.nRcScarti += 1
-    '                                            oImport.sFileScarti = ConfigurationManager.AppSettings("PATH_SPOSTA_ACQUISIZIONE").ToString() + "SCARTI_" + sNameImport
+    '                                            oImport.sFileScarti = ConstSession.PathRepository + ConstSession.PathScarti + "SCARTI_" + sNameImport
     '                                            '*** scrive il file degli scarti
-    '                                            If WriteScartiLetture(oLettura, sFileAcq, ConfigurationManager.AppSettings("PATH_SPOSTA_ACQUISIZIONE").ToString() + "SCARTI_" + sNameImport, sEnteAcq) = 0 Then
+    '                                            If WriteScartiLetture(oLettura, sFileAcq, ConstSession.PathRepository + ConstSession.PathScarti + "SCARTI_" + sNameImport, sEnteAcq, "Contatore non trovato") = 0 Then
     '                                                Return -1
     '                                            End If
     '                                        End If
     '                                    Else
     '                                        '*** incrementa il numero di record scartati
     '                                        oImport.nRcScarti += 1
-    '                                        oImport.sFileScarti = ConfigurationManager.AppSettings("PATH_SPOSTA_ACQUISIZIONE").ToString() + "SCARTI_" + sNameImport
+    '                                        oImport.sFileScarti = ConstSession.PathRepository + ConstSession.PathScarti + "SCARTI_" + sNameImport
     '                                        '*** scrive il file degli scarti
-    '                                        If WriteScartiLetture(oLettura, sFileAcq, ConfigurationManager.AppSettings("PATH_SPOSTA_ACQUISIZIONE").ToString() + "SCARTI_" + sNameImport, sEnteAcq) = 0 Then
+    '                                        If WriteScartiLetture(oLettura, sFileAcq, ConstSession.PathRepository + ConstSession.PathScarti + "SCARTI_" + sNameImport, sEnteAcq, "Contatore non trovato") = 0 Then
     '                                            Return -1
     '                                        End If
     '                                    End If
     '                                Else
     '                                    '*** incrementa il numero di record scartati
     '                                    oImport.nRcScarti += 1
-    '                                    oImport.sFileScarti = ConfigurationManager.AppSettings("PATH_SPOSTA_ACQUISIZIONE").ToString() + "SCARTI_" + sNameImport
+    '                                    oImport.sFileScarti = ConstSession.PathRepository + ConstSession.PathScarti + "SCARTI_" + sNameImport
     '                                    '*** scrive il file degli scarti
-    '                                    If WriteScartiLetture(oLettura, sFileAcq, ConfigurationManager.AppSettings("PATH_SPOSTA_ACQUISIZIONE").ToString() + "SCARTI_" + sNameImport, sEnteAcq) = 0 Then
+    '                                    If WriteScartiLetture(oLettura, sFileAcq, ConstSession.PathRepository + ConstSession.PathScarti + "SCARTI_" + sNameImport, sEnteAcq, "Contatore non numerico") = 0 Then
     '                                        Return -1
     '                                    End If
     '                                End If
@@ -1500,8 +1685,6 @@ Public Class ClsImport
     '        Catch Err As Exception
     '            Log.Debug(sEnteAcq + " - OPENgovH2O.ClsImport.AcquisizioneLetture.errore: ", Err)
     '            Return -1
-    '        Finally
-    '            sqlConn.Close()
     '        End Try
     '        Return 1
     '    Catch Err As Exception
@@ -4431,10 +4614,26 @@ Public Class ClsImport
     '    End Try
     'End Sub
 #End Region
-
-    Private Function WriteScartiLetture(ByVal oLettura As ObjImportazione.DatiLetture, ByVal sFileOrg As String, ByVal sFileScarti As String, ByVal codEnte As String, Causale As String) As Integer
+    ''' <summary>
+    ''' 
+    ''' </summary>
+    ''' <param name="RejectLine"></param>
+    ''' <param name="sFileOrg"></param>
+    ''' <param name="sFileScarti"></param>
+    ''' <param name="codEnte"></param>
+    ''' <param name="Causale"></param>
+    ''' <returns></returns>
+    ''' <revisionHistory>
+    ''' <revision date="12/04/2019">
+    ''' Modifiche da revisione manuale
+    ''' </revision>
+    ''' <revision date="15/11/2022">
+    ''' Abbinamento per Matricola invece che per codice contatore
+    ''' </revision>
+    ''' </revisionHistory>
+    Private Function WriteScartiLetture(ByVal RejectLine As String, ByVal sFileOrg As String, ByVal sFileScarti As String, ByVal codEnte As String, Causale As String) As Integer
         Try
-            Dim sDatiScarti As String = "Data Acquisizione: " & Now.Date() & ";File Origine: " & sFileOrg & ";Cod.Ente: " & codEnte & ";Cod.Utente: " & CInt(oLettura.CodUtente.ToString()) & ";Data Lettura: " & oReplace.GiraDataFromDB(oLettura.DataLettura.ToString()) & ";Lettura: " & oLettura.Lettura.ToString()
+            Dim sDatiScarti As String = "Data Acquisizione: " & Now.Date() & ";File Origine: " & sFileOrg & ";Riga: " & RejectLine
             sDatiScarti += ";Causale Scarto: " + Causale
 
             If New ClsGenerale.Generale().WriteFile(sFileScarti, sDatiScarti) = 0 Then
@@ -4447,6 +4646,21 @@ Public Class ClsImport
             Return -1
         End Try
     End Function
+    'Private Function WriteScartiLetture(ByVal oLettura As ObjImportazione.DatiLetture, ByVal sFileOrg As String, ByVal sFileScarti As String, ByVal codEnte As String, Causale As String) As Integer
+    '    Try
+    '        Dim sDatiScarti As String = "Data Acquisizione: " & Now.Date() & ";File Origine: " & sFileOrg & ";Cod.Ente: " & codEnte & ";Cod.Utente: " & CInt(oLettura.CodUtente.ToString()) & ";Data Lettura: " & oReplace.GiraDataFromDB(oLettura.DataLettura.ToString()) & ";Lettura: " & oLettura.Lettura.ToString()
+    '        sDatiScarti += ";Causale Scarto: " + Causale
+
+    '        If New ClsGenerale.Generale().WriteFile(sFileScarti, sDatiScarti) = 0 Then
+    '            Return 0
+    '        Else
+    '            Return 1
+    '        End If
+    '    Catch Err As Exception
+    '        Log.Debug(codEnte + " - OPENgovH2O.ClsImport.WriteScartiLetture.errore: ", Err)
+    '        Return -1
+    '    End Try
+    'End Function
 
     'Public Function WriteFile(ByVal sFile As String, ByVal sDatiFile As String) As Integer
     '    Try
@@ -5052,11 +5266,6 @@ Public Class ClsImport
     ''' <param name="codEnte"></param>
     ''' <param name="myStringConnection"></param>
     ''' <returns></returns>
-    ''' <revisionHistory>
-    ''' <revision date="12/04/2019">
-    ''' Modifiche da revisione manuale
-    ''' </revision>
-    ''' </revisionHistory>
     Public Function TrovaContatore(ByVal idContatore As Integer, ByVal sMatricola As String, ByVal codEnte As String, ByVal myStringConnection As String) As objContatore
         Dim dvMyDati As New DataView
         Dim ModDate As New ClsGenerale.Generale

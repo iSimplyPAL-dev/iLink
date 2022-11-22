@@ -96,7 +96,7 @@ Partial Class ResultRicImmobile
             For x = 0 To oListImmobile.GetUpperBound(0)
                 If oListImmobile(x).Selezionato = True Then
                     If CInt(Request.Params("IDContatore")) <> 0 Then
-                        DBContatori.SetDatiCatastali(oListImmobile(x).UniInternoUbi, oListImmobile(x).UniPianoUbi, oListImmobile(x).UniFoglio, oListImmobile(x).UniNumProgrFabbricato, oListImmobile(x).UniSubalterno, CInt(Request.Params("IDContatore")), "", "", "")
+                        DBContatori.SetDatiCatastali(oListImmobile(x).UniInternoUbi, oListImmobile(x).UniPianoUbi, oListImmobile(x).UniFoglio, oListImmobile(x).UniNumProgrFabbricato, oListImmobile(x).UniSubalterno, -1, CInt(Request.Params("IDContatore")), "", "", "")
                         sScript = "parent.parent.opener.document.getElementById('CmdRibaltaUIAnater').click();"
                         sScript += "parent.parent.window.close();"
                     Else

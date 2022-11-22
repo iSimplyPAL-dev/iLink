@@ -69,7 +69,7 @@ Partial Class FrameInserisciDatoCatasto
 
             Dim DBContatori As GestContatori = New GestContatori
             If CInt(Request.Params("IDContatore")) <> 0 Then
-                DBContatori.setDatiCatastali(CStr(txtInterno.Text.Replace("'", "")), CStr(txtPiano.Text.Replace("'", "")), CStr(txtFoglio.Text.Replace("'", "")), CStr(txtNumero.Text.Replace("'", "")), CStr(txtSubalterno.Text), CInt(Request.Params("IDContatore")), CStr(txtSezione.Text.Replace("'", "''")), CStr(txtEstParticella.Text.Replace("'", "''")), CStr(ddlTipoParticella.SelectedValue))
+                DBContatori.SetDatiCatastali(CStr(txtInterno.Text.Replace("'", "")), CStr(txtPiano.Text.Replace("'", "")), CStr(txtFoglio.Text.Replace("'", "")), CStr(txtNumero.Text.Replace("'", "")), CStr(txtSubalterno.Text), -1, CInt(Request.Params("IDContatore")), CStr(txtSezione.Text.Replace("'", "''")), CStr(txtEstParticella.Text.Replace("'", "''")), CStr(ddlTipoParticella.SelectedValue))
                 RegisterScript("GestAlert('a', 'success', '', '', 'Inserimento effettuato correttamente');", Me.GetType)
 
                 mioRiga = mioData.NewRow()
@@ -97,29 +97,29 @@ Partial Class FrameInserisciDatoCatasto
 
             Else
 
-                    mioRiga = mioData.NewRow()
+                mioRiga = mioData.NewRow()
 
-                    '====================================
+                '====================================
 
-                    'Dim row() As DataRow
+                'Dim row() As DataRow
 
-                    'row = mioData.Select("IDCONT_CATAS='" & CInt(Request.Params("IDCatasto")) & "'")
+                'row = mioData.Select("IDCONT_CATAS='" & CInt(Request.Params("IDCatasto")) & "'")
 
-                    'Dim miaprova As String = row(0)("PIANO")
+                'Dim miaprova As String = row(0)("PIANO")
 
-                    'detailsCatasto.foglio = row(0)("FOGLIO")
-                    '====================================
-                    If mioData.Rows.Count = 0 Then
-                        mioRiga.Item(0) = 1
-                    Else
-                        mioRiga.Item(0) = CInt(CType(mioData.Rows(mioData.Rows.Count - 1), System.Data.DataRow).ItemArray(0)) + 1
-                    End If
+                'detailsCatasto.foglio = row(0)("FOGLIO")
+                '====================================
+                If mioData.Rows.Count = 0 Then
+                    mioRiga.Item(0) = 1
+                Else
+                    mioRiga.Item(0) = CInt(CType(mioData.Rows(mioData.Rows.Count - 1), System.Data.DataRow).ItemArray(0)) + 1
+                End If
 
-                    mioRiga.Item(1) = 1
-                    mioRiga.Item(2) = CStr(txtInterno.Text)
-                    mioRiga.Item(3) = CStr(txtPiano.Text)
-                    mioRiga.Item(4) = CStr(txtFoglio.Text)
-                    mioRiga.Item(5) = CStr(txtNumero.Text)
+                mioRiga.Item(1) = 1
+                mioRiga.Item(2) = CStr(txtInterno.Text)
+                mioRiga.Item(3) = CStr(txtPiano.Text)
+                mioRiga.Item(4) = CStr(txtFoglio.Text)
+                mioRiga.Item(5) = CStr(txtNumero.Text)
                 If txtSubalterno.Text <> "" Then
                     mioRiga.Item(6) = CStr(txtSubalterno.Text)
                 Else
@@ -147,7 +147,6 @@ Partial Class FrameInserisciDatoCatasto
             Response.Write("<script language='javascript' type='text/javascript'>window.opener.document.getElementById('loadGrid').src='searchResultsCatasto.aspx?ContatoreID=" & Request.Params("IDContatore") & "';")
             Response.Write("<script language='javascript' type='text/javascript'>window.close();")
         Catch Err As Exception
-
             Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovH2O.FrameInserisciDatoCatastato.btnEvento_Click.errore: ", Err)
             Response.Redirect("../../PaginaErrore.aspx")
         End Try

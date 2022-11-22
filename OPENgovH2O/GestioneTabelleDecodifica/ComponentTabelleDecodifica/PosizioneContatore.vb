@@ -119,7 +119,7 @@ Namespace TabelleDiDecodifica
                     ''''Verifica esistenza descrizione 
 
                     sSQL = ""
-                    sSQL = "SELECT DESCRIZIONE FROM TP_POSIZIONECONTATORE WHERE DESCRIZIONE=" & Utility.StringOperation.FormatString(Replace(Trim(myDetail.Descrizione), "'", "''"))
+                    sSQL = "SELECT DESCRIZIONE FROM TP_POSIZIONECONTATORE WHERE DESCRIZIONE='" & Utility.StringOperation.FormatString(Replace(Trim(myDetail.Descrizione), "'", "''")) & "'"
                     dvMyDati = iDB.GetDataView(sSQL)
                     If Not dvMyDati Is Nothing Then
                         For Each myRow As DataRowView In dvMyDati

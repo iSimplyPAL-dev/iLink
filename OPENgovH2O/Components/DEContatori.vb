@@ -673,21 +673,30 @@ Public Class GestContatori
     'End Function
 
     Public Function GetDataTableContatoreAnater(ByVal CodContatore As Integer) As DataSet
-        Dim sSQL As String
-        Dim oConn As New SqlConnection
+        'Dim sSQL As String
+        'Dim oConn As New SqlConnection
+        'oConn.ConnectionString = ConstSession.StringConnection
+        'sSQL = "SELECT * FROM TP_CONTATORI WHERE CODCONTATORE=" & CodContatore
+        'Dim ds As DataSet
+        'ds = iDB.RunSQLReturnDataSet(sSQL)
+        ''Dim dt As New DataTable
+        'GetDataTableContatoreAnater = ds    '.Tables(0)
+        'Return GetDataTableContatoreAnater
+        Dim sSQL As String = ""
+        Dim dsMyDati As DataSet
 
-        oConn.ConnectionString = ConstSession.StringConnection
-
-        sSQL = "SELECT * FROM TP_CONTATORI WHERE CODCONTATORE=" & CodContatore
-
-        Dim ds As DataSet
-
-        ds = iDB.RunSQLReturnDataSet(sSQL)
-        'Dim dt As New DataTable
-
-        GetDataTableContatoreAnater = ds    '.Tables(0)
-        Return GetDataTableContatoreAnater
-
+        Try
+            Using ctx As New DBModel(ConstSession.DBType, ConstSession.StringConnection)
+                sSQL = "SELECT * FROM TP_CONTATORI WHERE CODCONTATORE=" & CodContatore
+                sSQL = ctx.GetSQL(DBModel.TypeQuery.View, sSQL)
+                dsMyDati = ctx.GetDataSet(sSQL, "TBL")
+                ctx.Dispose()
+            End Using
+            Return dsMyDati
+        Catch Err As Exception
+            Log.Debug(ConstSession.IdEnte + " - OPENgovH2O.GestContatori.GetDataTableContatoreAnater.errore: ", Err)
+            Return Nothing
+        End Try
     End Function
     ''' <summary>
     ''' 
@@ -1055,10 +1064,10 @@ Public Class GestContatori
                                     DetailsContatore.sCodiceFabbricante = StringOperation.FormatString(myRow("CODICEFABBRICANTE"))
 
                                     '*** agenzia entrate
-                                    DetailsContatore.nIdTitoloOccupazione = StringOperation.FormatString(myRow("ID_TITOLO_OCCUPAZIONE"))
+                                    DetailsContatore.nIdTitoloOccupazione = StringOperation.FormatInt(myRow("ID_TITOLO_OCCUPAZIONE"))
                                     DetailsContatore.sTipoUnita = StringOperation.FormatString(myRow("ID_TIPO_UNITA"))
-                                    DetailsContatore.nIdAssenzaDatiCatastali = StringOperation.FormatString(myRow("ID_ASSENZA_DATI_CATASTALI"))
-                                    DetailsContatore.nIdTipoUtenza = StringOperation.FormatString(myRow("ID_TIPO_UTENZA"))
+                                    DetailsContatore.nIdAssenzaDatiCatastali = StringOperation.FormatInt(myRow("ID_ASSENZA_DATI_CATASTALI"))
+                                    DetailsContatore.nIdTipoUtenza = StringOperation.FormatInt(myRow("ID_TIPO_UTENZA"))
                                     '*** /agenzia entrate
                                     '*** 20121217 - calcolo quota fissa acqua+depurazione+fognatura ***
                                     DetailsContatore.bEsenteAcquaQF = StringOperation.FormatBool(myRow("ESENTEACQUAQF"))
@@ -1621,6 +1630,7 @@ Public Class GestContatori
     ''' <param name="foglio"></param>
     ''' <param name="numero"></param>
     ''' <param name="subalterno"></param>
+    ''' <param name="IdCatasto"></param>
     ''' <param name="IDContatore"></param>
     ''' <param name="sezione"></param>
     ''' <param name="estensioneParticella"></param>
@@ -1631,14 +1641,14 @@ Public Class GestContatori
     ''' Modifiche da revisione manuale
     ''' </revision>
     ''' </revisionHistory>
-    Public Function SetDatiCatastali(ByVal interno As String, ByVal piano As String, ByVal foglio As String, ByVal numero As String, ByVal subalterno As String, ByVal IDContatore As Integer, ByVal sezione As String, ByVal estensioneParticella As String, ByVal idTipoParticella As String) As Integer
+    Public Function SetDatiCatastali(ByVal interno As String, ByVal piano As String, ByVal foglio As String, ByVal numero As String, ByVal subalterno As String, IdCatasto As Integer, ByVal IDContatore As Integer, ByVal sezione As String, ByVal estensioneParticella As String, ByVal idTipoParticella As String) As Integer
         Dim dvMyDati As New DataView
         Dim sSQL As String = ""
         Dim myID As Integer = -1
         Try
             Using ctx As New DBModel(ConstSession.DBType, ConstSession.StringConnection)
                 sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_TR_CONTATORI_CATASTALI_IU", "ID", "CODCONTATORE", "INTERNO", "PIANO", "FOGLIO", "NUMERO", "SUBALTERNO", "SEZIONE", "ESTENSIONE_PARTICELLA", "ID_TIPO_PARTICELLA")
-                dvMyDati = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("ID", -1) _
+                dvMyDati = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("ID", IdCatasto) _
                         , ctx.GetParam("CODCONTATORE", IDContatore) _
                         , ctx.GetParam("INTERNO", interno) _
                         , ctx.GetParam("PIANO", piano) _
@@ -1939,58 +1949,66 @@ Public Class GestContatori
             If SetSubContatore(2, Nothing, oMyContatore.nIdContatore) = False Then
                 Return False
             End If
-            'se è stato assegnato un sub-contatore, il contatore avendo ID di quest'ultimo viene segnalato come sub-contatore
-            If Not IsNothing(oMyContatore.oListSubContatori) Then
-                For x = 0 To oMyContatore.oListSubContatori.GetUpperBound(0)
-                    If SetSubContatore(1, oMyContatore.oListSubContatori(x), oMyContatore.nIdContatore) = False Then
-                        Return False
-                    End If
-                Next
-            End If
-
-            'a questo punto, controllo se è stata inserita la data di sostituzione:
-            If StringOperation.FormatDateTime(oMyContatore.sDataSostituzione).ToShortDateString <> Date.MaxValue.ToShortDateString Then
-                'inserisco un nuovo contatore ribaltando tutti i dati di quello precedente, ma:
-                ' - la data di attivazione è uguale alla data di sostituzione inserita + 1
-                ' - contatoreprecedente è uguale all'id del vecchio contatore
-                ' - tipo contatore, cifre contatore, matricola, diametro presa, diametro contatore e codice fabbricante sono da reinserire perchè variano
-                oMyContatore.nTipoContatore = -1
-                oMyContatore.sCifreContatore = ""
-                oMyContatore.sMatricola = ""
-                oMyContatore.nDiametroPresa = -1
-                oMyContatore.nDiametroContatore = -1
-                oMyContatore.sCodiceFabbricante = ""
-                oMyContatore.sDataAttivazione = DateAdd(DateInterval.Day, 1, StringOperation.FormatDateTime(oMyContatore.sDataSostituzione)).ToString
-                oMyContatore.sDataSostituzione = ""
-                oMyContatore.sDataCessazione = ""
-                oMyContatore.nIdContatorePrec = oMyContatore.nIdContatore
-                oMyContatore.tDataInserimento = Now
-                '*** 20130328 - non ribalto tipo utenza perchè potrebbe essere variata la codifica ***
-                oMyContatore.nTipoUtenza = -1
-                '*** ***
-                '***prelevo l'ultimo contatore presente***
-                nMyIdContatore = New MyUtility().GetMaxID("TP_CONTATORI")
-                oMyContatore.nIdContatore = nMyIdContatore
-                '***********************************
-
-                If SetContatore(oMyContatore, 1, -1, -1) = False Then
-                    Return False
-                End If
-
-                'elimino tutti i sub-contatori già associati
-                If SetSubContatore(2, Nothing, oMyContatore.nIdContatore) = False Then
-                    Return False
-                End If
+            Try
                 'se è stato assegnato un sub-contatore, il contatore avendo ID di quest'ultimo viene segnalato come sub-contatore
                 If Not IsNothing(oMyContatore.oListSubContatori) Then
                     For x = 0 To oMyContatore.oListSubContatori.GetUpperBound(0)
-                        oMyContatore.oListSubContatori(x).IdContatorePrincipale = oMyContatore.nIdContatore
                         If SetSubContatore(1, oMyContatore.oListSubContatori(x), oMyContatore.nIdContatore) = False Then
                             Return False
                         End If
                     Next
                 End If
-            End If
+            Catch ex As Exception
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovH2O.GestContatori.SetDatiContatore.ControlloSubContatore.errore: ", ex)
+            End Try
+
+            Try
+                'a questo punto, controllo se è stata inserita la data di sostituzione:
+                If StringOperation.FormatDateTime(oMyContatore.sDataSostituzione).ToShortDateString <> Date.MaxValue.ToShortDateString Then
+                    'inserisco un nuovo contatore ribaltando tutti i dati di quello precedente, ma:
+                    ' - la data di attivazione è uguale alla data di sostituzione inserita + 1
+                    ' - contatoreprecedente è uguale all'id del vecchio contatore
+                    ' - tipo contatore, cifre contatore, matricola, diametro presa, diametro contatore e codice fabbricante sono da reinserire perchè variano
+                    oMyContatore.nTipoContatore = -1
+                    oMyContatore.sCifreContatore = ""
+                    oMyContatore.sMatricola = ""
+                    oMyContatore.nDiametroPresa = -1
+                    oMyContatore.nDiametroContatore = -1
+                    oMyContatore.sCodiceFabbricante = ""
+                    oMyContatore.sDataAttivazione = DateAdd(DateInterval.Day, 1, StringOperation.FormatDateTime(oMyContatore.sDataSostituzione)).ToString
+                    oMyContatore.sDataSostituzione = ""
+                    oMyContatore.sDataCessazione = ""
+                    oMyContatore.nIdContatorePrec = oMyContatore.nIdContatore
+                    oMyContatore.tDataInserimento = Now
+                    '*** 20130328 - non ribalto tipo utenza perchè potrebbe essere variata la codifica ***
+                    oMyContatore.nTipoUtenza = -1
+                    '*** ***
+                    '***prelevo l'ultimo contatore presente***
+                    nMyIdContatore = New MyUtility().GetMaxID("TP_CONTATORI")
+                    oMyContatore.nIdContatore = nMyIdContatore
+                    '***********************************
+
+                    If SetContatore(oMyContatore, 1, -1, -1) = False Then
+                        Return False
+                    End If
+
+                    'elimino tutti i sub-contatori già associati
+                    If SetSubContatore(2, Nothing, oMyContatore.nIdContatore) = False Then
+                        Return False
+                    End If
+                    'se è stato assegnato un sub-contatore, il contatore avendo ID di quest'ultimo viene segnalato come sub-contatore
+                    If Not IsNothing(oMyContatore.oListSubContatori) Then
+                        For x = 0 To oMyContatore.oListSubContatori.GetUpperBound(0)
+                            oMyContatore.oListSubContatori(x).IdContatorePrincipale = oMyContatore.nIdContatore
+                            If SetSubContatore(1, oMyContatore.oListSubContatori(x), oMyContatore.nIdContatore) = False Then
+                                Return False
+                            End If
+                        Next
+                    End If
+                End If
+            Catch ex As Exception
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovH2O.GestContatori.SetDatiContatore.ControlloDataSostituzione.errore: ", ex)
+            End Try
             Return True
         Catch ex As Exception
             Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovH2O.GestContatori.SetDatiContatore.errore: ", ex)

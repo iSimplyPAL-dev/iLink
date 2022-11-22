@@ -954,7 +954,7 @@ Public Class clsCoattivo
         ''' <param name="ListFile"></param>
         ''' <returns></returns>
         ''' <revisionHistory><revision date="20200524">Gli avvisi notificati dal 2020 in poi devono essere estratti secondo il nuovo tracciato</revision></revisionHistory>
-        Public Function Crea290(ByVal myStringConnection As String, ByVal IdEnteCNC As String, CoattivoDal As String, CoattivoAl As String, IdRuolo As Integer, ByVal sIdEnteCredBen As String, ByVal nRate As Integer, sPathFile As String, ByVal sNameFile As String, ByRef ErrAnag As String, ByRef ListFile As ArrayList) As Integer
+        Public Function Crea290(ByVal myStringConnection As String, ByVal IdEnteCNC As String, CoattivoDal As String, CoattivoAl As String, IdRuolo As Integer, ByVal sIdEnteCredBen As String, ByVal nRate As Integer, sPathFile As String, ByRef sNameFile As String, ByRef ErrAnag As String, ByRef ListFile As ArrayList) As Integer
             Dim oListArticoli() As RemotingInterfaceMotoreTarsu.MotoreTarsu.Oggetti.OggettoArticoloRuolo
             Dim x As Integer
             Dim oMyN0 As New Importer290.N0
@@ -1124,6 +1124,7 @@ Public Class clsCoattivo
                             Return -1
                         End If
                         ListFile.Add(sPathFile & sNameFile & TipoPrec & ".001")
+                        sNameFile = sNameFile + IdRuolo.ToString.PadLeft(3, "0")
                         If ZipFile(sPathFile, sNameFile & ".zip", ListFile) = False Then
                             Return 0
                         End If
@@ -1136,7 +1137,7 @@ Public Class clsCoattivo
                     Return New clsAccertamentiEsecutivi().CreaAccertamentiEsecutivi(myStringConnection, IdRuolo, sPathFile, sNameFile, ListFile)
                 End If
 
-                    Return 1
+                Return 1
             Catch Err As Exception
                 Log.Debug(IdEnteCNC + " - OPENgovPROVVEDIMENTI.clsCoattivo.Crea290.errore::" + Err.Message)
                 Return -1

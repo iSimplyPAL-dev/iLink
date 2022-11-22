@@ -554,6 +554,9 @@ Public Class clsFatturaElettronica
                 Log.Debug("scritto header devo scrivere body")
                 myFatEle.FatturaElettronicaBody = fncSdI.GetBody(StringOperation.FormatInt(myrow("idcontribuente")), _nId)
 
+                If File.Exists(ConstSession.PathRepository + PathXML + _IdEnte + "\" + sXMLName) Then
+                    File.Delete(ConstSession.PathRepository + PathXML + _IdEnte + "\" + sXMLName)
+                End If
                 Using writer As New StreamWriter(ConstSession.PathRepository + PathXML + _IdEnte + "\" + sXMLName)
                     Dim serializer As New Serialization.XmlSerializer(myFatEle.GetType())
                     serializer.Serialize(writer, myFatEle)
@@ -562,6 +565,9 @@ Public Class clsFatturaElettronica
                 End Using
                 'divido zip per split e non split
                 If IsPrivato = True And IsPubblico = True Then
+                    If File.Exists(ConstSession.PathRepository + PathXML + _IdEnte + "\" + myFileName.Replace(".zip", "Split.zip")) Then
+                        File.Delete(ConstSession.PathRepository + PathXML + _IdEnte + "\" + myFileName.Replace(".zip", "Split.zip"))
+                    End If
                     If ZipFile(ConstSession.PathRepository + PathXML + _IdEnte + "\", myFileName.Replace(".zip", "Split.zip"), ListFile) = False Then
                         myFileName = ""
                     End If
@@ -570,6 +576,9 @@ Public Class clsFatturaElettronica
                 ListFile.Add(ConstSession.PathRepository + PathXML + _IdEnte + "\" + sXMLName)
             Next
             If ListFile.Count > 0 Then
+                If File.Exists(ConstSession.PathRepository + PathXML + _IdEnte + "\" + myFileName.Replace(".zip", "NoSplit.zip")) Then
+                    File.Delete(ConstSession.PathRepository + PathXML + _IdEnte + "\" + myFileName.Replace(".zip", "NoSplit.zip"))
+                End If
                 If ZipFile(ConstSession.PathRepository + PathXML + _IdEnte + "\", myFileName.Replace(".zip", "NoSplit.zip"), ListFile) = False Then
                     myFileName = ""
                 End If

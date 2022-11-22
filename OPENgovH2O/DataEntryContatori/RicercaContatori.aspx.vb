@@ -141,6 +141,7 @@ Partial Class SearchContatori
     ''' <remarks></remarks>
     Protected Sub CalPageaspx(ByVal IDContatore As Integer)
         Dim sScript As String = ""
+        Log.Debug("Controllo.CalPageaspx->IDCONTATORE=" + IDContatore.ToString)
         sScript += "location.href='DatiGenerali.aspx?IDCONTATORE=" & IDContatore & "';"
         RegisterScript(sScript, Me.GetType())
     End Sub

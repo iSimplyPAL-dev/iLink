@@ -1118,7 +1118,7 @@ Public Class GestContratti
             End If
             Try
                 For Each myCatRow As objDatiCatastali In oDatiContratto.oContatore.oDatiCatastali
-                    If New GestContatori().SetDatiCatastali(myCatRow.sInterno, myCatRow.sPiano, myCatRow.sFoglio, myCatRow.sNumero, myCatRow.nSubalterno, oDatiContratto.oContatore.nIdContatore, myCatRow.sSezione, myCatRow.sEstensioneParticella, myCatRow.sIdTipoParticella) <= 0 Then
+                    If New GestContatori().SetDatiCatastali(myCatRow.sInterno, myCatRow.sPiano, myCatRow.sFoglio, myCatRow.sNumero, myCatRow.nSubalterno, -1, oDatiContratto.oContatore.nIdContatore, myCatRow.sSezione, myCatRow.sEstensioneParticella, myCatRow.sIdTipoParticella) <= 0 Then
                         Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovH2O.GestContratti.SaveContratto.errore in inserimento dati catastali")
                     End If
                 Next

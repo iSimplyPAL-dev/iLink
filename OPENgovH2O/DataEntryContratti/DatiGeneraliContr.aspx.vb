@@ -306,44 +306,7 @@ Partial Class DatiGeneraliContr
                 '**** /GESTIONE DATI AGENZIA ENTRATE
 
                 '***carico i dati del contatore associato***
-                Dim mySQL As String
-                mySQL = "SELECT *"
-                mySQL += " FROM TP_CONTATORI WITH (NOLOCK)"
-                mySQL += " WHERE (TP_CONTATORI.CODCONTRATTO = " & CInt(ContrattoID) & ")"
-                Dim dvMyDati As New DataView
-                dvMyDati = DBAccess.GetDataView(mySQL)
-                If Not dvMyDati Is Nothing Then
-                    For Each myRow As DataRowView In dvMyDati
-                        txtNumeroUtente.Text = StringOperation.FormatString(myRow("NUMEROUTENTE"))
-                        txtCivico.Text = StringOperation.FormatString(myRow("CIVICO_UBICAZIONE"))
-                        txtEsponente.Text = StringOperation.FormatString(myRow("ESPONENTE_CIVICO"))
-                        chkEsenteFognatura.Checked = StringOperation.FormatBool(myRow("ESENTEFOGNATURA"))
-                        chkEsenteDepurazione.Checked = StringOperation.FormatBool(myRow("ESENTEDEPURAZIONE"))
-                        chkEsenteAcqua.Checked = StringOperation.FormatBool(myRow("ESENTEACQUA"))
-                        '*** 20121217 - calcolo quota fissa acqua+depurazione+fognatura ***
-                        chkEsenteAcquaQF.Checked = StringOperation.FormatBool(myRow("ESENTEACQUAQF"))
-                        chkEsenteDepQF.Checked = StringOperation.FormatBool(myRow("ESENTEDEPURAZIONEQF"))
-                        chkEsenteFogQF.Checked = StringOperation.FormatBool(myRow("ESENTEFOGNATURAQF"))
-                        If chkEsenteDepurazione.Checked = True Then
-                            cboDepurazione.Enabled = False
-                        Else
-                            cboDepurazione.Enabled = True
-                        End If
-                        If chkEsenteFognatura.Checked = True Then
-                            cboFognatura.Enabled = False
-                        Else
-                            cboFognatura.Enabled = True
-                        End If
-                        '*** Fabi
-                        codiceVia = StringOperation.FormatString(myRow("COD_STRADA"))
-                        ubicazione = StringOperation.FormatString(myRow("VIA_UBICAZIONE"))
-                        '*** /Fabi
-                    Next
-                Else
-                    codiceVia = -1
-                    ubicazione = ""
-                End If
-                dvMyDati.Dispose()
+                LoadDatiContatore(ContrattoID, codiceVia, ubicazione)
                 '*******************************************
 
                 '*** Fabi
@@ -454,6 +417,52 @@ Partial Class DatiGeneraliContr
             End If
         Catch ex As Exception
             Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovH2O.DatiGeneraliContr.Page_Load.errore: ", ex)
+            Response.Redirect("../../PaginaErrore.aspx")
+        End Try
+    End Sub
+    Private Sub LoadDatiContatore(ByVal IDContratto As Integer, ByRef codiceVia As Integer, ByRef ubicazione As String)
+        Dim sSQL As String
+        Dim dvMyDati As New DataView
+        Try
+            sSQL = "SELECT *"
+            sSQL += " FROM TP_CONTATORI WITH (NOLOCK)"
+            sSQL += " WHERE YEAR(CASE WHEN ISDATE(DATA_VARIAZIONE)=0 THEN '99991231' ELSE DATA_VARIAZIONE END)=9999"
+            sSQL += " AND (TP_CONTATORI.CODCONTRATTO = " & IDContratto & ")"
+            dvMyDati = DBAccess.GetDataView(sSQL)
+            If Not dvMyDati Is Nothing Then
+                For Each myRow As DataRowView In dvMyDati
+                    txtNumeroUtente.Text = StringOperation.FormatString(myRow("NUMEROUTENTE"))
+                    txtCivico.Text = StringOperation.FormatString(myRow("CIVICO_UBICAZIONE"))
+                    txtEsponente.Text = StringOperation.FormatString(myRow("ESPONENTE_CIVICO"))
+                    chkEsenteFognatura.Checked = StringOperation.FormatBool(myRow("ESENTEFOGNATURA"))
+                    chkEsenteDepurazione.Checked = StringOperation.FormatBool(myRow("ESENTEDEPURAZIONE"))
+                    chkEsenteAcqua.Checked = StringOperation.FormatBool(myRow("ESENTEACQUA"))
+                    '*** 20121217 - calcolo quota fissa acqua+depurazione+fognatura ***
+                    chkEsenteAcquaQF.Checked = StringOperation.FormatBool(myRow("ESENTEACQUAQF"))
+                    chkEsenteDepQF.Checked = StringOperation.FormatBool(myRow("ESENTEDEPURAZIONEQF"))
+                    chkEsenteFogQF.Checked = StringOperation.FormatBool(myRow("ESENTEFOGNATURAQF"))
+                    If chkEsenteDepurazione.Checked = True Then
+                        cboDepurazione.Enabled = False
+                    Else
+                        cboDepurazione.Enabled = True
+                    End If
+                    If chkEsenteFognatura.Checked = True Then
+                        cboFognatura.Enabled = False
+                    Else
+                        cboFognatura.Enabled = True
+                    End If
+                    '*** Fabi
+                    codiceVia = StringOperation.FormatInt(myRow("COD_STRADA"))
+                    ubicazione = StringOperation.FormatString(myRow("VIA_UBICAZIONE"))
+                    '*** /Fabi
+                Next
+            Else
+                codiceVia = -1
+                ubicazione = ""
+            End If
+            dvMyDati.Dispose()
+        Catch ex As Exception
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovH2O.DatiGeneraliContr.LoadDatiContatore.errore: ", ex)
             Response.Redirect("../../PaginaErrore.aspx")
         End Try
     End Sub

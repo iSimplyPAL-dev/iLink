@@ -260,7 +260,7 @@ Public Class GestRuolo
                                 sScript = "GestAlert('a', 'success', '', '', 'Estrazione 290 terminata con successo!');"
                                 sScript += "$('LblFile290').show();$('#FileEstratto').show();"
                                 sScript += "document.getElementById('LblFile290').style.display = '';"
-                                LblFile290.Text = sNameFile290 & ".zip"
+                                LblFile290.Text = sNameFile290.Replace(".txt", "") + ".zip"
                             End If
                         End If
                     End If

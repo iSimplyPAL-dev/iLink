@@ -53,9 +53,9 @@
 							    <li>avere il nome che inizia con il codice dell'ente in elaborazione</li>
 							    <li>essere in formato CSV</li>
 							    <li>avere come separatore il carattere <i>;</i>     <em>(punto e virgola)</em></li>
-							    <li>avere come campi, nell'ordine:
+							    <li>avere come campi, nell'ordine e nel formato <em>(maiuscole/minuscole)</em>:
                                     <ul type="disc">
-                                        <li>CODICE CONTATORE</li>
+                                        <li>MATRICOLA</li>
                                         <li>DATA LETTURA</li>
                                         <li>LETTURA</li>
                                         <li>NUMERO UTENTE</li>

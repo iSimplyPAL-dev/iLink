@@ -1,5 +1,7 @@
+Imports System.IO
 Imports System.Threading
 Imports System.Web.Caching
+Imports ICSharpCode.SharpZipLib.Zip
 Imports log4net
 Imports RemotingInterfaceMotoreTarsu.MotoreTarsuVARIABILE.Oggetti
 Imports Utility
@@ -22,7 +24,7 @@ Public Class ClsElabRuolo
     ''' <param name="sCheckAnno"></param>
     ''' <param name="sErrCheck"></param>
     ''' <returns></returns>
-    Public Function CheckTariffe(myStringConnection As string,ByVal TipoRuolo As String, ByVal sCheckEnte As String, ByVal sCheckAnno As String, ByRef sErrCheck As String) As Integer
+    Public Function CheckTariffe(myStringConnection As String, ByVal TipoRuolo As String, ByVal sCheckEnte As String, ByVal sCheckAnno As String, ByRef sErrCheck As String) As Integer
         Dim MyProcedure As String
         Dim sSQL As String = ""
         Dim myDataView As New DataView
@@ -190,7 +192,7 @@ Public Class ClsElabRuolo
             Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.ClsElabRuolo.CalcolaRuoloFromDich.errore: ", Err)
             Return Nothing
         Finally
-        myDataView.Dispose()
+            myDataView.Dispose()
         End Try
     End Function
     'Public Function CalcolaRuoloFromDich(ByVal myStringConnection As String, ByVal sEnte As String, ByVal nAnno As Integer, ByVal TipoTassazione As String, ByVal TipoCalcolo As String, ByVal sDescrTipoCalcolo As String, ByVal PercentTariffe As Double, ByVal HasMaggiorazione As Boolean, ByVal HasConferimenti As Boolean, ByVal TipoMq As String, ByVal impSogliaAvvisi As Double, ByVal nIdTestata As Integer, ByVal nIdContribuente As Long, tDataInizioConf As DateTime, tDataFineConf As DateTime) As ObjRuolo()
@@ -342,7 +344,7 @@ Public Class ClsElabRuolo
                 Next
                 'calcolo i totalizzatori sugli avvisi
                 If Not oNewListAvvisi Is Nothing Then
-                    navvisi = oNewListAvvisi.GetUpperBound(0) + 1
+                    nAvvisi = oNewListAvvisi.GetUpperBound(0) + 1
                     For Each myItem As ObjAvviso In oNewListAvvisi
                         If myItem.IdContribuente <> ContribPrec Then
                             nUtenti += 1
@@ -374,8 +376,8 @@ Public Class ClsElabRuolo
                     End If
                 End If
             Else
-                    'se le note non sono valorizzate è perchè non ho calcolato articoli da supplettivo
-                    If oRuoloCalcolato.sNote = "" Then
+                'se le note non sono valorizzate è perchè non ho calcolato articoli da supplettivo
+                If oRuoloCalcolato.sNote = "" Then
                     oRuoloCalcolato.sNote = "Ruolo non calcolato perchè non sono subentrare variazioni o perché sotto soglia."
                 End If
             End If
@@ -390,7 +392,7 @@ Public Class ClsElabRuolo
             oNewRuolo.ImpDetassazione = impDet
             oNewRuolo.ImpRiduzione = impRid
             oNewRuolo.nArticoli = nArticoli
-            oNewRuolo.nAvvisi = navvisi
+            oNewRuolo.nAvvisi = nAvvisi
             oNewRuolo.nContribuenti = nUtenti
             oNewRuolo.nMQ = nMQ
             oNewRuolo.ImpMinimo = oRuoloCalcolato.ImpMinimo
@@ -541,7 +543,7 @@ Public Class ClsElabRuolo
             End If
             Return 1
         Catch Err As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovTIA.ClsElabRuolo.ValRuoloPerSoglia.errore: ", Err)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.ClsElabRuolo.ValRuoloPerSoglia.errore: ", Err)
             Return 0
         End Try
     End Function
@@ -861,7 +863,7 @@ Public Class ClsElabRuolo
             End If
             Return True
         Catch Err As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovTIA.ClsElabRuolo.DeleteRuolo.errore: ", Err)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.ClsElabRuolo.DeleteRuolo.errore: ", Err)
             Return False
         End Try
     End Function
@@ -1483,7 +1485,7 @@ Public Class ClsElabRuolo
         Dim MaxGG As Integer = 365
 
         Try
-            If DateTime.IsLeapYear(stringoperation.formatint(myArticolo.sAnno)) Then
+            If DateTime.IsLeapYear(StringOperation.FormatInt(myArticolo.sAnno)) Then
                 MaxGG = 365
             End If
             CurrentItem.TipoPartita = myArticolo.TipoPartita
@@ -1509,7 +1511,7 @@ Public Class ClsElabRuolo
             CurrentItem.nNComponenti = myArticolo.nComponenti
             CurrentItem.IdCategoria = myArticolo.sCategoria
             If CurrentItem.tDataFine.Year > myArticolo.sAnno Then
-                CurrentItem.tDataFine = stringoperation.formatdatetime("31/12/" + myArticolo.sAnno)
+                CurrentItem.tDataFine = StringOperation.FormatDateTime("31/12/" + myArticolo.sAnno)
             End If
             If TipoCalcolo = "TARES" Then
                 CurrentItem.nGGTarsu = DateDiff(DateInterval.Day, CurrentItem.tDataInizio, CurrentItem.tDataFine) + 1
@@ -1688,7 +1690,7 @@ Public Class ClsElabRuolo
         Dim MaxGG As Integer = 365
 
         Try
-            If DateTime.IsLeapYear(stringoperation.formatint(myArticolo.sAnno)) Then
+            If DateTime.IsLeapYear(StringOperation.FormatInt(myArticolo.sAnno)) Then
                 MaxGG = 365
             End If
             CurrentItem = New ObjUnitaImmobiliare
@@ -1696,7 +1698,7 @@ Public Class ClsElabRuolo
             CurrentItem.tDataInizio = myArticolo.tDataInizio
             CurrentItem.tDataFine = myArticolo.tDataFine
             If CurrentItem.tDataFine.Year > myArticolo.sAnno Then
-                CurrentItem.tDataFine = stringoperation.formatdatetime("31/12/" + myArticolo.sAnno)
+                CurrentItem.tDataFine = StringOperation.FormatDateTime("31/12/" + myArticolo.sAnno)
             End If
             If myArticolo.sDescrCategoria.ToUpper.StartsWith("DOM") Then
                 CurrentItem.nMQ = 1
@@ -1814,7 +1816,7 @@ Public Class ClsElabRuolo
         Dim MaxGG As Integer = 365
 
         Try
-            If DateTime.IsLeapYear(stringoperation.formatint(myArticolo.sAnno)) Then
+            If DateTime.IsLeapYear(StringOperation.FormatInt(myArticolo.sAnno)) Then
                 MaxGG = 365
             End If
             CurrentItem = New ObjUnitaImmobiliare
@@ -1822,7 +1824,7 @@ Public Class ClsElabRuolo
             CurrentItem.tDataInizio = myArticolo.tDataInizio
             CurrentItem.tDataFine = myArticolo.tDataFine
             If CurrentItem.tDataFine.Year > myArticolo.sAnno Then
-                CurrentItem.tDataFine = stringoperation.formatdatetime("31/12/" + myArticolo.sAnno)
+                CurrentItem.tDataFine = StringOperation.FormatDateTime("31/12/" + myArticolo.sAnno)
             End If
             CurrentItem.nMQ = nMQ
             CurrentItem.IdCategoria = "MAGST"
@@ -2115,9 +2117,9 @@ Public Class ClsElabRuolo
             Return CType(oMyRiepilogo.ToArray(GetType(ObjRuolo)), ObjRuolo())
         Catch Err As Exception
             Log.Debug(sEnte + " - OPENgovTIA.ClsElabRuolo.CalcolaRuoloCartelleInsoluti.errore: ", Err)
-        Return Nothing
+            Return Nothing
         Finally
-        myDataView.Dispose()
+            myDataView.Dispose()
         End Try
     End Function
     'Public Function CalcolaRuoloCartelleInsoluti(ByVal myStringConnection As String, ByVal sEnte As String, ByVal nAnno As Integer, GGScadenza As Integer, sOperatore As String, ByVal oAddizionali() As RemotingInterfaceMotoreTarsu.MotoreTarsu.Oggetti.OggettoAddizionale) As ObjRuolo()
@@ -2669,7 +2671,7 @@ Public Class ClsGestRuolo
 
             Return sNameRuolo
         Catch Err As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovTIA.GestRuolo.GetNameRuolo.errore: ", Err)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.GestRuolo.GetNameRuolo.errore: ", Err)
             Return 0
         End Try
     End Function
@@ -2700,7 +2702,7 @@ Public Class ClsGestRuolo
 
             Return sDescrRuolo
         Catch Err As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovTIA.GestRuolo.GetDescrizioneRuolo.errore: ", Err)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.GestRuolo.GetDescrizioneRuolo.errore: ", Err)
             Return ""
         End Try
     End Function
@@ -3029,7 +3031,7 @@ Public Class ClsGestRuolo
             myAdapter.Fill(dtMyDati)
             Return dtMyDati.DefaultView
         Catch Err As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovTIA.GestRuolo.GetMinutaAvvisi.errore: ", Err)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.GestRuolo.GetMinutaAvvisi.errore: ", Err)
             Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
             Return Nothing
         Finally
@@ -3801,7 +3803,7 @@ Public Class ClsGestRuolo
             myAdapter.Dispose()
             For Each dtMyRow As DataRow In dtMyDati.Rows
                 If Not IsDBNull(dtMyRow("id")) Then
-                    If stringoperation.formatint(dtMyRow("id")) > 0 Then
+                    If StringOperation.FormatInt(dtMyRow("id")) > 0 Then
                         myRet = True
                     Else
                         myRet = False
@@ -3922,7 +3924,7 @@ Public Class ClsGestDocumenti
             '**** 201810 - Calcolo puntuale ****
             oElaborazioneDati.ElaborazioneMassivaDocumenti(ConstSession.DBType, Tributo, IdDocToElab, sAnno, sIDEnte, IdFlussoRuolo, Esclusione, ConnessioneICI, ConnessioneRepository, ConnessioneAnagrafica, PathTemplate, PathTemplateVirtual, ContribuentiPerGruppo, TipoElaborazione, ImpostazioniBollettini, TipoCalcolo, TipoBollettino, bStampaBollettino, bCreaPDF, nettoVersato, nDecimal, bSendByMail, IsSoloBollettino, "", Tributo)
         Catch Err As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovTIA.GestDocumenti.ChaiamElaborazioneAsincrona.errore: ", Err)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.GestDocumenti.ChaiamElaborazioneAsincrona.errore: ", Err)
             Throw Err
         End Try
     End Sub
@@ -3954,7 +3956,7 @@ Public Class ClsGestDocumenti
             Next
             Return oConv
         Catch Err As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovTIA.GestDocumenti.ConvAvvisi.errore: ", Err)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.GestDocumenti.ConvAvvisi.errore: ", Err)
             Return Nothing
         End Try
     End Function
@@ -3985,11 +3987,11 @@ Public Class ClsGestDocumenti
             myAdapter.Fill(dtMyDati)
             myAdapter.Dispose()
             For Each dtMyRow In dtMyDati.Rows
-                nElab = stringoperation.formatint(dtMyRow("docelaborati"))
-                nDaElab = stringoperation.formatint(dtMyRow("docdaelaborare"))
+                nElab = StringOperation.FormatInt(dtMyRow("docelaborati"))
+                nDaElab = StringOperation.FormatInt(dtMyRow("docdaelaborare"))
             Next
         Catch Err As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovTIA.GestDocumenti.GetNDoc.errore: ", Err)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.GestDocumenti.GetNDoc.errore: ", Err)
             Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
         Finally
             dtMyDati.Dispose()
@@ -4024,7 +4026,7 @@ Public Class ClsGestDocumenti
             cmdMyCommand.ExecuteNonQuery()
             MyRet = cmdMyCommand.Parameters("@ID").Value
         Catch Err As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovTIA.GestDocumenti.SetTabGuidaComunicoStorico.errore: ", Err)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.GestDocumenti.SetTabGuidaComunicoStorico.errore: ", Err)
             Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
         Finally
             If (cmdMyCommandOut Is Nothing) Then
@@ -4059,7 +4061,7 @@ Public Class ClsGestDocumenti
             cmdMyCommand.ExecuteNonQuery()
             MyRet = cmdMyCommand.Parameters("@ID").Value
         Catch Err As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovTIA.GestDocumenti.SetTabFilesComunicoElabStorico.errore: ", Err)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.GestDocumenti.SetTabFilesComunicoElabStorico.errore: ", Err)
             Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
         Finally
             If (cmdMyCommandOut Is Nothing) Then
@@ -4590,7 +4592,7 @@ Public Class ClsGestDocumenti
                 End If
             Next
         Catch ex As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovTIA.GestDocumenti.ApprovaRuoloCartelleInsoluti.errore: ", ex)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.GestDocumenti.ApprovaRuoloCartelleInsoluti.errore: ", ex)
             Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
             bRet = False
         Finally
@@ -4601,6 +4603,36 @@ Public Class ClsGestDocumenti
             End If
         End Try
         Return bRet
+    End Function
+    ''' <summary>
+    ''' 
+    ''' </summary>
+    ''' <param name="SourceDir"></param>
+    ''' <param name="ZipFileName"></param>
+    ''' <param name="ListFile"></param>
+    ''' <returns></returns>
+    Public Function ZipFile(SourceDir As String, ZipFileName As String, ListFile As ArrayList) As Boolean
+        Try
+            Dim astrFileNames() As String = Directory.GetFiles(SourceDir)
+            Dim strmZipOutputStream As New ZipOutputStream(File.Create(SourceDir + ZipFileName))
+            For Each myfile As String In astrFileNames
+                For Each NameFile As String In ListFile
+                    If myfile.ToLower = NameFile.ToLower Then
+                        Dim entry As New ZipEntry(Path.GetFileName(myfile))
+                        entry.DateTime = DateTime.Now
+                        strmZipOutputStream.PutNextEntry(entry)
+                        strmZipOutputStream.Write(File.ReadAllBytes(myfile), 0, File.ReadAllBytes(myfile).Length)
+                        Exit For
+                    End If
+                Next
+            Next
+            strmZipOutputStream.Finish()
+            strmZipOutputStream.Close()
+            Return True
+        Catch ex As Exception
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.ZipFile.errore: ", ex)
+            Return False
+        End Try
     End Function
 End Class
 
@@ -4693,7 +4725,7 @@ Public Class ClsCalcoloRuolo
         _URLServiziAccertamenti = URLServiziAccertamenti
         _Operatore = Operatore
         _GGScadenza = GGScadenza
-        _impspeseingiunzione = impSpeseIngiunzione
+        _impSpeseIngiunzione = impSpeseIngiunzione
 
         ' Inizio la transazione e recupero l'istanza della connessione al db
         ' Devo farlo qui visto che sto eseguendo codice ancora nel thread della PostBack da FE, per cui ho il HttpContext disponibile con tutti i suoi oggetti (DichiarazioneSession, HttpSession, ecc.), mentre nel thread non ho queste informazioni
@@ -4990,7 +5022,7 @@ Public Class ClsCalcoloRuolo
             _TipoMQ = TipoMQ
             _impSogliaAvvisi = impSogliaAvvisi
             _IdTestata = nIdTestata
-            _IDCONTRIBUEnte = nIdContribuente
+            _IdContribuente = nIdContribuente
             _isSimula = isSimula
             _DBType = TypeDB
             _StringConnection = myStringConnection
@@ -5110,7 +5142,7 @@ Public Class ClsCalcoloRuolo
         Try
             'calcolo gli articoli di ruolo e il totalizzatore
             '*** 20181011 Dal/Al Conferimenti ***
-            oMyRuolo = elab.CalcolaRuoloFromDich(_StringConnection, _IdEnte, _Anno, _TipoCalcolo, _TipoRuolo, _DescrTipoCalcolo, _PercentTariffe, _HasMaggiorazione, _HasConferimenti, _TipoMQ, _impSogliaAvvisi, _IdTestata, _IDCONTRIBUENTE, _tDataInizioConf, _tDataFineConf)
+            oMyRuolo = elab.CalcolaRuoloFromDich(_StringConnection, _IdEnte, _Anno, _TipoCalcolo, _TipoRuolo, _DescrTipoCalcolo, _PercentTariffe, _HasMaggiorazione, _HasConferimenti, _TipoMQ, _impSogliaAvvisi, _IdTestata, _IdContribuente, _tDataInizioConf, _tDataFineConf)
             'controllo se ho un riepilogo articoli
             If Not oMyRuolo Is Nothing Then
                 'ciclo sugli anni calcolati
@@ -5346,7 +5378,7 @@ Public Class ClsCalcoloRuolo
 
                     myRuolo = elab.CheckSogliaRuolo(ListRuoli(x))
                     If myRuolo Is Nothing Then
-                        Log.Debug(_IdEnte  +"."+ _operatore + " - OPENgovTIA.CalcolaRuolo.CalcoloCartelleInsoluti.errore in CheckSogliaRuolo")
+                        Log.Debug(_IdEnte + "." + _Operatore + " - OPENgovTIA.CalcolaRuolo.CalcoloCartelleInsoluti.errore in CheckSogliaRuolo")
                         HasError = True
                         Exit For
                     End If
@@ -5358,8 +5390,8 @@ Public Class ClsCalcoloRuolo
                         CacheManager.SetAvanzamentoElaborazione(sAvanzamento)
                         myAtto = CreateIngiunzione(myAvviso, ImpSpese)
                         If myAtto Is Nothing Then
-                            Log.Debug(_IdEnte  +"."+ _operatore + " - OPENgovTIA.CalcolaRuolo.CalcoloCartelleInsoluti.errore in CreateIngiunzione.Avanzamento->" + nAvanzamento.ToString)
-                            Log.Debug(_IdEnte  +"."+ _operatore + " - OPENgovTIA.CalcolaRuolo.CalcoloCartelleInsoluti.errore in CreateIngiunzione.IdContribuente->" + myAvviso.IdContribuente.ToString)
+                            Log.Debug(_IdEnte + "." + _Operatore + " - OPENgovTIA.CalcolaRuolo.CalcoloCartelleInsoluti.errore in CreateIngiunzione.Avanzamento->" + nAvanzamento.ToString)
+                            Log.Debug(_IdEnte + "." + _Operatore + " - OPENgovTIA.CalcolaRuolo.CalcoloCartelleInsoluti.errore in CreateIngiunzione.IdContribuente->" + myAvviso.IdContribuente.ToString)
                             HasError = True
                             Exit For
                         Else
@@ -5385,13 +5417,13 @@ Public Class ClsCalcoloRuolo
                                 myAvviso.IdFlussoRuolo = nIdRuolo
                                 myAvviso = PulisciDate(myAvviso)
                                 If FncDB.SetAvvisoCompleto(myAvviso, _bIsFromVariabile, False) = 0 Then
-                                    Log.Debug(_IdEnte  +"."+ _operatore + " - OPENgovTIA.CalcolaRuolo.CalcoloCartelleInsoluti.errore in inserimento avviso.Avanzamento->" + nAvanzamento.ToString)
+                                    Log.Debug(_IdEnte + "." + _Operatore + " - OPENgovTIA.CalcolaRuolo.CalcoloCartelleInsoluti.errore in inserimento avviso.Avanzamento->" + nAvanzamento.ToString)
                                     myRuolo.sNote = "Errore in inserimento Avviso"
                                     HasError = True
                                     Exit For
                                 End If
                                 If FncDB.SetCartella(myAvviso) = 0 Then
-                                    Log.Debug(_IdEnte  +"."+ _operatore + " - OPENgovTIA.CalcolaRuolo.CalcoloCartelleInsoluti.errore in inserimento dati avviso.Avanzamento->" + nAvanzamento.ToString)
+                                    Log.Debug(_IdEnte + "." + _Operatore + " - OPENgovTIA.CalcolaRuolo.CalcoloCartelleInsoluti.errore in inserimento dati avviso.Avanzamento->" + nAvanzamento.ToString)
                                     myRuolo.sNote = "Errore in inserimento Dati Avviso"
                                     HasError = True
                                 End If
@@ -5406,8 +5438,8 @@ Public Class ClsCalcoloRuolo
                                 IdProvvedimento = RemAccertamenti.SetAtto(ConstSession.DBType, myHashTable, myAtto.ListSituazioneBase, myAtto.dsSanzioni, myAtto.ListInteressi, myAtto.Atto, myAtto.ListDettaglio, myAtto.ListDichiarato, myAtto.ListAccertato, ImpSpese, Nothing, _Operatore)
                                 If IdProvvedimento < 1 Then
                                     HasError = True
-                                    Log.Debug(_IdEnte  +"."+ _operatore + " - OPENgovTIA.CalcolaRuolo.CalcoloCartelleInsoluti.errore in SetAtto.Avanzamento->" + nAvanzamento.ToString)
-                                    Log.Debug(_IdEnte  +"."+ _operatore + " - OPENgovTIA.CalcolaRuolo.CalcoloCartelleInsoluti.errore in CreateIngiunzione.IdContribuente->" + myAtto.Atto.COD_CONTRIBUENTE.ToString)
+                                    Log.Debug(_IdEnte + "." + _Operatore + " - OPENgovTIA.CalcolaRuolo.CalcoloCartelleInsoluti.errore in SetAtto.Avanzamento->" + nAvanzamento.ToString)
+                                    Log.Debug(_IdEnte + "." + _Operatore + " - OPENgovTIA.CalcolaRuolo.CalcoloCartelleInsoluti.errore in CreateIngiunzione.IdContribuente->" + myAtto.Atto.COD_CONTRIBUENTE.ToString)
                                 End If
                             Next
                         End If
@@ -5418,7 +5450,7 @@ Public Class ClsCalcoloRuolo
                 HasError = True
             End If
         Catch ex As Exception
-            Log.Debug(_IdEnte  +"."+ _operatore + " - OPENgovTIA.CalcolaRuolo.CalcoloCartelleInsoluti.errore: ", ex)
+            Log.Debug(_IdEnte + "." + _Operatore + " - OPENgovTIA.CalcolaRuolo.CalcoloCartelleInsoluti.errore: ", ex)
             HasError = True
         End Try
         Return HasError
@@ -5583,7 +5615,7 @@ Public Class ClsCalcoloRuolo
             CacheManager.SetRiepilogoCalcoloMassivoArtVSCatPC(CType(listArticoloVSCatPC.ToArray(GetType(ObjArticolo)), ObjArticolo()))
             CacheManager.SetRiepilogoCalcoloMassivoArtVSCatPM(CType(listArticoloVSCatPM.ToArray(GetType(ObjArticolo)), ObjArticolo()))
         Catch ex As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovTIA.CalcolaRuolo.SetArticoliVSCat.errore: ", ex)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.CalcolaRuolo.SetArticoliVSCat.errore: ", ex)
             CacheManager.RemoveRiepilogoCalcoloMassivoArtVSCatPF()
             CacheManager.RemoveRiepilogoCalcoloMassivoArtVSCatPV()
             CacheManager.RemoveRiepilogoCalcoloMassivoArtVSCatPC()
@@ -5663,7 +5695,7 @@ Public Class ClsCalcoloRuolo
             Next
             Return myAvviso
         Catch ex As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovTIA.CalcolaRuolo.PulisciDate.errore: ", ex)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.CalcolaRuolo.PulisciDate.errore: ", ex)
             Throw New Exception("PulisciDate errore->" & ex.Message)
         End Try
     End Function
@@ -5757,7 +5789,7 @@ Public Class ClsCalcoloRuolo
                 End If
             Next
         Catch ex As Exception
-            Log.Debug(_IdEnte  +"."+ _operatore + " - OPENgovTIA.CalcolaRuolo.ImportRuolo.errore: ", ex)
+            Log.Debug(_IdEnte + "." + _Operatore + " - OPENgovTIA.CalcolaRuolo.ImportRuolo.errore: ", ex)
             HasError = True
         End Try
         CacheManager.SetRiepilogoCalcoloMassivo(CType(ListRuoli.ToArray(GetType(ObjRuolo)), ObjRuolo()))
@@ -5777,7 +5809,7 @@ Public Class ClsCalcoloRuolo
                 myList = (New ArrayList).ToArray(GetType(OggettiComuniStrade.OggettoEnte))
             End If
         Catch ex As Exception
-            Log.Debug(_IdEnte  +"."+ _operatore + " - OPENgovTIA.CalcolaRuolo.GetComuni.errore: ", ex)
+            Log.Debug(_IdEnte + "." + _Operatore + " - OPENgovTIA.CalcolaRuolo.GetComuni.errore: ", ex)
         End Try
         Return myList
     End Function
@@ -5797,18 +5829,18 @@ Public Class ClsCalcoloRuolo
                 For Each myAcc As ObjArticoloAccertamento In ListAccertato
                     'se l'anno della data fine<>anno accertamento restituisco l'errore
                     If myAcc.tDataInizio.Year < _Anno Then
-                        myAcc.tDataInizio = stringoperation.formatdatetime("01/01/" & myAcc.sAnno)
+                        myAcc.tDataInizio = StringOperation.FormatDateTime("01/01/" & myAcc.sAnno)
                     End If
                     'Forzo la data fine a fine anno accertamento 
                     If myAcc.tDataFine = Date.MinValue Or myAcc.tDataFine.ToString() = "" Then
-                        myAcc.tDataFine = stringoperation.formatdatetime("31/12/" & myAcc.sAnno)
+                        myAcc.tDataFine = StringOperation.FormatDateTime("31/12/" & myAcc.sAnno)
                     End If
                 Next
                 myItem = ConfrontoAccertatoDichiarato(myAvviso.IdContribuente, myAvviso.sCodiceCartella, myAvviso.tDataEmissione, myAvviso.impCarico, _impSogliaAvvisi, ImpSpese, ListDichiarato, ListAccertato)
             End If
             Return myItem
         Catch ex As Exception
-            Log.Debug(_IdEnte  +"."+ _operatore + " - OPENgovTIA.clsCalcoloRuolo.CreateIngiunzione.errore: ", ex)
+            Log.Debug(_IdEnte + "." + _Operatore + " - OPENgovTIA.clsCalcoloRuolo.CreateIngiunzione.errore: ", ex)
             Return Nothing
         End Try
     End Function
@@ -5881,7 +5913,7 @@ Public Class ClsCalcoloRuolo
             ListAccertato = CType(ListUI.ToArray(GetType(ObjArticoloAccertamento)), ObjArticoloAccertamento())
             Return True
         Catch ex As Exception
-            Log.Debug(_IdEnte + "." + _operatore + " - OPENgovTIA.clsCalcoloRuolo.ConvArtTOAcc.errore: ", ex)
+            Log.Debug(_IdEnte + "." + _Operatore + " - OPENgovTIA.clsCalcoloRuolo.ConvArtTOAcc.errore: ", ex)
             Return False
         End Try
     End Function
@@ -5962,7 +5994,7 @@ Public Class ClsCalcoloRuolo
             If Not dsVersamenti Is Nothing Then
                 If dsVersamenti.Tables.Count > 0 Then
                     For Each myRow As DataRow In dsVersamenti.Tables(0).Rows
-                        myAtto.IMPORTO_PAGATO += stringoperation.formatdouble(myRow("IMPORTOPAGATO").ToString)
+                        myAtto.IMPORTO_PAGATO += StringOperation.FormatDouble(myRow("IMPORTOPAGATO").ToString)
                     Next
                 End If
             End If
@@ -6002,10 +6034,10 @@ Public Class ClsCalcoloRuolo
             myAtto.IMPORTO_INTERESSI = myAtto.IMPORTO_INTERESSI_ACC + myAtto.IMPORTO_INTERESSI_F2
             myAtto.IMPORTO_SPESE = ImpSpese
             myAtto.IMPORTO_TOTALE = (myAtto.IMPORTO_DIFFERENZA_IMPOSTA + myAtto.IMPORTO_SANZIONI + myAtto.IMPORTO_INTERESSI + myAtto.IMPORTO_ALTRO)
-            myAtto.IMPORTO_ARROTONDAMENTO = stringoperation.formatdouble(ImportoArrotondato(myAtto.IMPORTO_TOTALE)) - myAtto.IMPORTO_TOTALE
+            myAtto.IMPORTO_ARROTONDAMENTO = StringOperation.FormatDouble(ImportoArrotondato(myAtto.IMPORTO_TOTALE)) - myAtto.IMPORTO_TOTALE
             myAtto.IMPORTO_TOTALE = myAtto.IMPORTO_TOTALE + myAtto.IMPORTO_ARROTONDAMENTO + myAtto.IMPORTO_SPESE
             myAtto.IMPORTO_TOTALE_RIDOTTO = myAtto.IMPORTO_DIFFERENZA_IMPOSTA + myAtto.IMPORTO_SANZIONI_RIDOTTO + myAtto.IMPORTO_TOT_SANZIONI_NON_RIDUCIBILI + myAtto.IMPORTO_INTERESSI + myAtto.IMPORTO_ALTRO
-            myAtto.IMPORTO_ARROTONDAMENTO_RIDOTTO = stringoperation.formatdouble(ImportoArrotondato(myAtto.IMPORTO_TOTALE_RIDOTTO)) - myAtto.IMPORTO_TOTALE_RIDOTTO
+            myAtto.IMPORTO_ARROTONDAMENTO_RIDOTTO = StringOperation.FormatDouble(ImportoArrotondato(myAtto.IMPORTO_TOTALE_RIDOTTO)) - myAtto.IMPORTO_TOTALE_RIDOTTO
             myAtto.IMPORTO_TOTALE_RIDOTTO = myAtto.IMPORTO_TOTALE_RIDOTTO + myAtto.IMPORTO_ARROTONDAMENTO_RIDOTTO + myAtto.IMPORTO_SPESE
             For Each myAcc As ObjArticoloAccertamento In oAccertato
                 If Year(myAcc.tDataInizio) < myAtto.ANNO Then
@@ -6277,7 +6309,7 @@ Public Class ClsCalcoloRuolo
 
             Return objAnagrafica
         Catch ex As Exception
-            Log.Debug(_IdEnte  +"."+ _operatore + " - OPENgovTIA.clsCalcoloRuolo.addRowsObjAnagrafica.errore: ", ex)
+            Log.Debug(_IdEnte + "." + _Operatore + " - OPENgovTIA.clsCalcoloRuolo.addRowsObjAnagrafica.errore: ", ex)
             Return Nothing
         End Try
     End Function
@@ -6695,7 +6727,7 @@ Public Class ClsCalcoloRuolo
 
             Return objDS
         Catch ex As Exception
-            Log.Debug(_IdEnte  +"."+ _operatore + " - OPENgovTIA.clsCalcoloRuolo.CreateDsPerAnagrafica.errore: ", ex)
+            Log.Debug(_IdEnte + "." + _Operatore + " - OPENgovTIA.clsCalcoloRuolo.CreateDsPerAnagrafica.errore: ", ex)
             Return Nothing
         End Try
     End Function
@@ -6729,7 +6761,7 @@ Public Class ClsCalcoloRuolo
             End If
 
         Catch ex As Exception
-            Log.Debug(_IdEnte  +"."+ _operatore + " - OPENgovTIA.clsCalcoloRuolo.ImportoArrotondato.errore: ", ex)
+            Log.Debug(_IdEnte + "." + _Operatore + " - OPENgovTIA.clsCalcoloRuolo.ImportoArrotondato.errore: ", ex)
         End Try
         Return ImportoOut
     End Function
@@ -6860,7 +6892,7 @@ Public Class CacheManager
                 Return -1
             End If
         Catch ex As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovTIA.CacheManger.GetCalcoloMassivoInCorso.errore: ", ex)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.CacheManger.GetCalcoloMassivoInCorso.errore: ", ex)
         End Try
     End Function
     Public Shared Sub SetCalcoloMassivoInCorso(ByVal Anno As Integer)
@@ -6893,7 +6925,7 @@ Public Class CacheManager
                 Return Nothing
             End If
         Catch ex As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovTIA.CacheManger.GetRiepilogoCalcoloMassivoArtVSCatPF.errore: ", ex)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.CacheManger.GetRiepilogoCalcoloMassivoArtVSCatPF.errore: ", ex)
             Return Nothing
         End Try
     End Function
@@ -6912,7 +6944,7 @@ Public Class CacheManager
                 Return Nothing
             End If
         Catch ex As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovTIA.CacheManger.GetRiepilogoCalcoloMassivoArtVSCatPV.errore: ", ex)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.CacheManger.GetRiepilogoCalcoloMassivoArtVSCatPV.errore: ", ex)
             Return Nothing
         End Try
     End Function
@@ -6931,7 +6963,7 @@ Public Class CacheManager
                 Return Nothing
             End If
         Catch ex As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovTIA.CacheManger.GetRiepilogoCalcoloMassivoArtVSCatPC.errore: ", ex)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.CacheManger.GetRiepilogoCalcoloMassivoArtVSCatPC.errore: ", ex)
             Return Nothing
         End Try
     End Function
@@ -6950,7 +6982,7 @@ Public Class CacheManager
                 Return Nothing
             End If
         Catch ex As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovTIA.CacheManger.GetRiepilogoCalcoloMassivoArtVSCatPM.errore: ", ex)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.CacheManger.GetRiepilogoCalcoloMassivoArtVSCatPM.errore: ", ex)
             Return Nothing
         End Try
     End Function
@@ -6970,7 +7002,7 @@ Public Class CacheManager
                 Return Nothing
             End If
         Catch ex As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovTIA.CacheManger.GetAvanzamentoElaborazione.errore: ", ex)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovTIA.CacheManger.GetAvanzamentoElaborazione.errore: ", ex)
             Return Nothing
         End Try
     End Function
@@ -7118,18 +7150,18 @@ Public Class ClsImportRuolo
                             End If
                         Case "N8"
                             RcN8 += 1
-                            RcN2 = stringoperation.formatint(LineFile.Substring(17, 7))
-                            RcN3 = stringoperation.formatint(LineFile.Substring(24, 7))
-                            RcN4 = stringoperation.formatint(LineFile.Substring(31, 7))
-                            RcN5 = stringoperation.formatint(LineFile.Substring(38, 7))
-                            RcN6 = stringoperation.formatint(LineFile.Substring(45, 7))
-                            RcN7 = stringoperation.formatint(LineFile.Substring(67, 7))
+                            RcN2 = StringOperation.FormatInt(LineFile.Substring(17, 7))
+                            RcN3 = StringOperation.FormatInt(LineFile.Substring(24, 7))
+                            RcN4 = StringOperation.FormatInt(LineFile.Substring(31, 7))
+                            RcN5 = StringOperation.FormatInt(LineFile.Substring(38, 7))
+                            RcN6 = StringOperation.FormatInt(LineFile.Substring(45, 7))
+                            RcN7 = StringOperation.FormatInt(LineFile.Substring(67, 7))
                             If IsNumeric(LineFile.Substring(52, 15).Trim) Then
                                 myRuolo.ImpAvvisi = LineFile.Substring(52, 15) / 100
                             End If
                         Case "N9"
                             RcN9 += 1
-                            RcTotali = stringoperation.formatint(LineFile.Substring(7, 7))
+                            RcTotali = StringOperation.FormatInt(LineFile.Substring(7, 7))
                     End Select
                 End If
             Loop Until LineFile Is Nothing
@@ -7341,7 +7373,7 @@ Public Class ClsImportRuolo
                 myStart += myLength
                 myLength = 8 'data nascita
                 If LineFile.Substring(myStart, myLength).Trim.Replace("0", "") <> "" Then
-                    myItem.DataNascita = stringoperation.formatdatetime(LineFile.Substring(myStart, 2).Trim + "/" + LineFile.Substring(myStart + 2, 2).Trim + "/" + LineFile.Substring(myStart + 4, 4).Trim)
+                    myItem.DataNascita = StringOperation.FormatDateTime(LineFile.Substring(myStart, 2).Trim + "/" + LineFile.Substring(myStart + 2, 2).Trim + "/" + LineFile.Substring(myStart + 4, 4).Trim)
                 End If
                 myStart += myLength
                 myLength = 4 'belfiore nascita
@@ -7405,7 +7437,7 @@ Public Class ClsImportRuolo
                 myItem.ProvinciaRCP = GetProvincia(myItem.CodComuneRCP)
                 If myItem.FrazioneRCP = myItem.ComuneRCP Then
                     myItem.FrazioneRCP = ""
-                ElseIf myItem.Comunercp = "" Then
+                ElseIf myItem.ComuneRCP = "" Then
                     myItem.ComuneRCP = myItem.FrazioneRCP
                 End If
                 ListItem.Add(myItem)
@@ -7443,7 +7475,7 @@ Public Class ClsImportRuolo
             myLength = 30 'periodo
             myStart += myLength
             myLength = 10 'importo netto 
-            If stringoperation.formatint(LineFile.Substring(myStart, myLength).Trim) > 0 Then
+            If StringOperation.FormatInt(LineFile.Substring(myStart, myLength).Trim) > 0 Then
                 myExt = New ObjDetVoci
                 myExt.sCapitolo = ObjDetVoci.Capitolo.Imposta
                 If IsNumeric(LineFile.Substring(myStart, myLength).Trim) Then
@@ -7456,7 +7488,7 @@ Public Class ClsImportRuolo
             End If
             myStart += myLength
             myLength = 10 'importo iva
-            If stringoperation.formatint(LineFile.Substring(myStart, myLength).Trim) > 0 Then
+            If StringOperation.FormatInt(LineFile.Substring(myStart, myLength).Trim) > 0 Then
                 myExt = New ObjDetVoci
                 myExt.sCapitolo = ObjDetVoci.Capitolo.IVA
                 If IsNumeric(LineFile.Substring(myStart, myLength).Trim) Then
@@ -7469,7 +7501,7 @@ Public Class ClsImportRuolo
             End If
             myStart += myLength
             myLength = 10 'importo provinciale
-            If stringoperation.formatint(LineFile.Substring(myStart, myLength).Trim) > 0 Then
+            If StringOperation.FormatInt(LineFile.Substring(myStart, myLength).Trim) > 0 Then
                 myExt = New ObjDetVoci
                 myExt.sCapitolo = ObjDetVoci.Capitolo.Provinciale
                 If IsNumeric(LineFile.Substring(myStart, myLength).Trim) Then
@@ -7489,7 +7521,7 @@ Public Class ClsImportRuolo
             myItem.impDovuto = myItem.impTotale
             myStart += myLength
             myLength = 8 'data emissione
-            myItem.tDataEmissione = stringoperation.formatdatetime(LineFile.Substring(myStart, 2).Trim + "/" + LineFile.Substring(myStart + 2, 2).Trim + "/" + LineFile.Substring(myStart + 4, 4).Trim)
+            myItem.tDataEmissione = StringOperation.FormatDateTime(LineFile.Substring(myStart, 2).Trim + "/" + LineFile.Substring(myStart + 2, 2).Trim + "/" + LineFile.Substring(myStart + 4, 4).Trim)
             myStart += myLength
             myLength = 8 'data scadenza
             myStart += myLength
@@ -7817,7 +7849,7 @@ Public Class ClsImportRuolo
             End If
             myStart += myLength
             myLength = 3 'n occupanti
-            myPF.nComponenti = stringoperation.formatint(LineFile.Substring(myStart, myLength).Trim)
+            myPF.nComponenti = StringOperation.FormatInt(LineFile.Substring(myStart, myLength).Trim)
             myPV.nComponenti = myPF.nComponenti
             myStart += myLength
             myLength = 3 'mesi
@@ -7897,7 +7929,7 @@ Public Class ClsImportRuolo
             myStart += myLength
             myLength = 12 'filler
             If IsNumeric(LineFile.Substring(myStart, myLength).Trim) Then
-                If stringoperation.formatint(LineFile.Substring(myStart, myLength).Trim) > 0 Then
+                If StringOperation.FormatInt(LineFile.Substring(myStart, myLength).Trim) > 0 Then
                     Dim myPM As New ObjArticolo
                     myPM.TipoPartita = ObjArticolo.PARTEMAGGIORAZIONE
                     myPM.IdEnte = myPF.IdEnte
@@ -7911,7 +7943,7 @@ Public Class ClsImportRuolo
                     ListItem.Add(myPM)
                 End If
             End If
-                If impRid <> 0 Then
+            If impRid <> 0 Then
                 myRid.ID = GetIdRid(myRid, myStringConnection)
                 ListRid.Add(myRid)
             End If
@@ -7945,10 +7977,10 @@ Public Class ClsImportRuolo
             DrReturn = cmdMyCommand.ExecuteReader
             Do While DrReturn.Read
                 Dim myCodDescr As New ObjCodDescr
-                myCodDescr.Id = stringoperation.formatint(DrReturn("id"))
-                myCodDescr.IdEnte = stringoperation.formatstring(DrReturn("idente"))
-                myCodDescr.sCodice = stringoperation.formatstring(DrReturn("codice"))
-                myCodDescr.sDescrizione = stringoperation.formatstring(DrReturn("descrizione"))
+                myCodDescr.Id = StringOperation.FormatInt(DrReturn("id"))
+                myCodDescr.IdEnte = StringOperation.FormatString(DrReturn("idente"))
+                myCodDescr.sCodice = StringOperation.FormatString(DrReturn("codice"))
+                myCodDescr.sDescrizione = StringOperation.FormatString(DrReturn("descrizione"))
                 myList.Add(myCodDescr)
             Loop
         Catch ex As Exception

@@ -19,7 +19,7 @@ Imports Utility
 
 Partial Class DatiGenerali
     Inherits BasePage
-    Public ContatoreID As Integer
+    'Public ContatoreID As Integer
     Protected UrlStradario As String = ConstSession.UrlStradario
     Private Shared ReadOnly Log As ILog = LogManager.GetLogger(GetType(DatiGenerali))
     Protected FncGrd As New ClsGenerale.FunctionGrd
@@ -64,6 +64,7 @@ Partial Class DatiGenerali
     Private Sub Page_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Dim codiceVia As Integer
         Dim ubicazioneVia As String
+        Dim myContatoreID As Integer
 
         Try
             Log.Debug("Entrato in Page_Load dati generali contatore")
@@ -90,28 +91,27 @@ Partial Class DatiGenerali
 
             Log.Debug("Chiamata a stradario dati generali contatore")
 
-            ContatoreID = CInt(Request.Params("IDCONTATORE"))
-            If ContatoreID > 0 Then
-                txtidContatore.Text = ContatoreID
-            Else
-                txtidContatore.Text = "0"
-            End If
-            If txtidContatore.Text <> "0" Then
-                ContatoreID = CInt(txtidContatore.Text)
-            End If
-            'carico i dati catastali
-            Dim sScript As String = ""
-            sScript += "document.getElementById('loadGrid').src='searchResultsCatasto.aspx?ContatoreID=" & ContatoreID & "';"
-            RegisterScript(sScript, Me.GetType())
             If Page.IsPostBack = False Then
-                HDtxtCodIntestatario.Text = -1
-                HDTextCodUtente.Text = -1
+                myContatoreID = CInt(Request.Params("IDCONTATORE"))
+                Log.Debug("Controllo.Load->ContatoreID x txtidContatore da Request=" + myContatoreID.ToString)
+                If myContatoreID > 0 Then
+                    txtidContatore.Text = myContatoreID
+                Else
+                    txtidContatore.Text = "0"
+            End If
+                'carico i dati catastali
+                Dim sScript As String = ""
+                sScript += "document.getElementById('loadGrid').src='searchResultsCatasto.aspx?ContatoreID=" & txtidContatore.Text & "';"
+                RegisterScript(sScript, Me.GetType())
+
+            HDtxtCodIntestatario.Text = -1
+            HDTextCodUtente.Text = -1
 
                 '*** controllo se ho una variazione in corso per il contatore ***
                 Log.Debug("controllo se ho una variazione in corso per il contatore")
                 Dim FncVar As New ClsRibaltaVar
                 Dim bIsInVar As Boolean
-                If Not IsNothing(FncVar.GetRicercaVariazioni(ConstSession.IdEnte, ClsRibaltaVar.sTypeRicerca.VARFATT_DAGESTIRE, ContatoreID, -1)) Then
+                If Not IsNothing(FncVar.GetRicercaVariazioni(ConstSession.IdEnte, ClsRibaltaVar.sTypeRicerca.VARFATT_DAGESTIRE, CInt(txtidContatore.Text), -1)) Then
                     bIsInVar = True
                 Else
                     bIsInVar = False
@@ -123,7 +123,7 @@ Partial Class DatiGenerali
                 Log.Debug("Prima di recuparo dati dal db dati generali contatore")
                 'prelevo i dati del contatore
                 Dim DBContatori As GestContatori = New GestContatori
-                Dim myContatore As objContatore = DBContatori.GetDetailsContatori(ContatoreID, -1) ', ConstSession.IdEnte, ConstSession.CodIstat)
+                Dim myContatore As objContatore = DBContatori.GetDetailsContatori(CInt(txtidContatore.Text), -1) ', ConstSession.IdEnte, ConstSession.CodIstat)
                 Session("myContatore") = myContatore
                 '*** Fabi 05032008
                 If Not Page.IsPostBack Then
@@ -146,7 +146,6 @@ Partial Class DatiGenerali
                 LoadHidden(myContatore)
                 '========================================================================================
                 'Gestione parametri di ricerca
-
                 If txtidContatore.Text <> "" Then
                     lblError.Text = "Si può procedere con l'inserimento o la modifica delle letture"
                 End If
@@ -167,11 +166,10 @@ Partial Class DatiGenerali
                 'nonchè la tipologia dell'intestatario
                 '=======================================
                 Dim dvMyDati As New DataView
-                Dim stringsql As String
-                stringsql = ""
-                stringsql = stringsql & "SELECT CODCONTRATTO FROM TP_CONTATORI"
-                stringsql = stringsql & " WHERE CODCONTATORE=" & ContatoreID
-                dvMyDati = iDB.GetDataView(stringsql)
+                Dim sSQL As String
+                sSQL = "SELECT CODCONTRATTO FROM TP_CONTATORI"
+                sSQL += " WHERE CODCONTATORE=" & txtidContatore.Text
+                dvMyDati = iDB.GetDataView(sSQL)
                 If Not dvMyDati Is Nothing Then
                     For Each myRow As DataRowView In dvMyDati
                         If Not IsDBNull(myRow("CODCONTRATTO")) Then
@@ -240,24 +238,20 @@ Partial Class DatiGenerali
                 Exit Sub
             End If
 
-            If txtidContatore.Text <> "" Then
-                ContatoreID = CInt(txtidContatore.Text)
-            Else
-                ContatoreID = 0
-            End If
-
-            If FncContatori.VerificaMatricola(txtMatricola.Text, ContatoreID, ConstSession.CodIstat) Then
-                sScript = "if (confirm('Attenzione, Matricola Esistente!\nSi desidera continuare?')){ document.getElementById('btnSalvaContatore').click() }"
-                RegisterScript(sScript, Me.GetType())
-                lblError.Text = "Attenzione: " & sScript
-                Exit Sub
-            End If
-            If ContatoreID <= 0 Then
-                If FncContatori.VerificaNumeroUtente(txtNumeroUtente.Text, ContatoreID, ConstSession.CodIstat) Then
+            Log.Debug("Controllo.btnEvento->txtidcontatore=" + txtidContatore.Text)
+            'non serve più questo controllo
+            'If FncContatori.VerificaMatricola(txtMatricola.Text, ContatoreID, ConstSession.CodIstat) Then
+            '    sScript = "if (confirm('Attenzione, Matricola Esistente!\nSi desidera continuare?')){ document.getElementById('btnSalvaContatore').click() }"
+            '    RegisterScript(sScript, Me.GetType())
+            '    lblError.Text = "Attenzione: " & sScript
+            '    Exit Sub
+            'End If
+            If CInt(txtidContatore.Text) <= 0 Then
+                If FncContatori.VerificaNumeroUtente(txtNumeroUtente.Text, CInt(txtidContatore.Text), ConstSession.CodIstat) Then
                     sScript = sScript & "  " & "Numero Utente Esistente"
                 End If
             End If
-            If FncContatori.VerificaSequenza(cboGiro.SelectedIndex.ToString, txtSequenza.Text, ContatoreID, ConstSession.CodIstat) Then
+            If FncContatori.VerificaSequenza(cboGiro.SelectedIndex.ToString, txtSequenza.Text, CInt(txtidContatore.Text), ConstSession.CodIstat) Then
                 sScript = sScript & "  " & "Sequenza Esistente"
             End If
             Select Case Len(txtDataAttivazione.Text)
@@ -289,7 +283,6 @@ Partial Class DatiGenerali
                 RegisterScript(sScript, Me.GetType())
             End If
         Catch ex As Exception
-
             Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovH2O.DatiGenerali.btnEvento_Click.errore: ", ex)
             Response.Redirect("../../PaginaErrore.aspx")
         End Try
@@ -300,247 +293,75 @@ Partial Class DatiGenerali
             Dim FncContatori As New GestContatori
             Dim oDatiContatore As New objContatore
             Dim sScript As String = ""
-            Dim NewCodContatore As String = ""
 
-            If Not IsNothing(Session("oListSubContatori")) Then
-                oDatiContatore.oListSubContatori = Session("oListSubContatori")
+            oDatiContatore = SetDatiContatore()
+            If oDatiContatore Is Nothing Then
+                sScript += "GestAlert('a', 'danger', '', '', 'Errore durante il Salvataggio!');"
+                RegisterScript(sScript, Me.GetType())
+                Exit Sub
             End If
-            If txtspesaprev.Text <> 0 Then
-                oDatiContatore.nSpesa = txtspesaprev.Text
-            End If
-            If txtdirittisegr.Text <> 0 Then
-                oDatiContatore.nDiritti = txtdirittisegr.Text
-            End If
-            If txtDataAttivazione.Text <> "" Then
-                oDatiContatore.bIsPendente = 0
-            End If
-            If txtMatricola.Text <> "" Then
-                oDatiContatore.sMatricola = txtMatricola.Text
-            End If
-            If ConstSession.IdEnte <> 0 Or ConstSession.IdEnte <> -1 Then
-                oDatiContatore.sIdEnte = CInt(ConstSession.IdEnte)
-                oDatiContatore.sIdEnteAppartenenza = oDatiContatore.sIdEnte
-            End If
-            If cboImpianto.SelectedItem.Value <> 0 Or cboImpianto.SelectedItem.Value <> -1 Then
-                oDatiContatore.nIdImpianto = cboImpianto.SelectedItem.Value
-            End If
-            If cboGiro.SelectedItem.Value <> 0 Or cboGiro.SelectedItem.Value <> -1 Then
-                oDatiContatore.nGiro = cboGiro.SelectedItem.Value
-            End If
-            If txtSequenza.Text <> "" Then
-                oDatiContatore.sSequenza = txtSequenza.Text
-            End If
-            If cboPosizione.SelectedItem.Value <> 0 Or cboPosizione.SelectedItem.Value <> -1 Then
-                oDatiContatore.nPosizione = cboPosizione.SelectedItem.Value
-            End If
-            If txtProgressivo.Text <> "" Then
-                oDatiContatore.sProgressivo = txtProgressivo.Text
-            End If
-            If txtLatoStrada.Text <> "" Then
-                oDatiContatore.sLatoStrada = txtLatoStrada.Text
-            End If
-            If txtNumeroUtente.Text <> "" Then
-                oDatiContatore.sNumeroUtente = txtNumeroUtente.Text
-            End If
-            If cboTipoContatore.SelectedItem.Value <> 0 Or cboTipoContatore.SelectedItem.Value <> -1 Then
-                oDatiContatore.nTipoContatore = cboTipoContatore.SelectedItem.Value
-            End If
-            If txtContatorePrecedente.Text <> "" Then
-                oDatiContatore.nIdContatorePrec = txtContatorePrecedente.Text
-            End If
-            If txtContatoreSuccessivo.Text <> "" Then
-                oDatiContatore.nIdContatoreSucc = txtContatoreSuccessivo.Text
-            End If
-            If cboFognatura.SelectedItem.Value <> 0 Or cboFognatura.SelectedItem.Value <> -1 Then
-                oDatiContatore.nCodFognatura = cboFognatura.SelectedItem.Value
-            End If
-            If cboDepurazione.SelectedItem.Value <> 0 Or cboDepurazione.SelectedItem.Value <> -1 Then
-                oDatiContatore.nCodDepurazione = cboDepurazione.SelectedItem.Value
-            End If
-            If chkEsenteFognatura.Checked = True Then
-                oDatiContatore.bEsenteFognatura = 1
-            End If
-            If chkEsenteDepurazione.Checked = True Then
-                oDatiContatore.bEsenteDepurazione = 1
-            End If
-            If chkEsenteAcqua.Checked = True Then
-                oDatiContatore.bEsenteAcqua = 1
-            End If
-            '*** 20121217 - calcolo quota fissa acqua+depurazione+fognatura ***
-            If chkEsenteAcquaQF.Checked = True Then
-                oDatiContatore.bEsenteAcquaQF = 1
-            End If
-            If chkEsenteDepQF.Checked = True Then
-                oDatiContatore.bEsenteDepQF = 1
-            End If
-            If chkEsenteFogQF.Checked = True Then
-                oDatiContatore.bEsenteFogQF = 1
-            End If
-            If chkIgnoraMora.Checked = True Then
-                oDatiContatore.bIgnoraMora = 1
-            End If
-            If txtNote.Text <> "" Then
-                oDatiContatore.sNote = txtNote.Text
-            End If
-            If txtDataAttivazione.Text <> "" Then
-                oDatiContatore.sDataAttivazione = txtDataAttivazione.Text
-            End If
-            If txtDataRimTemp.Text <> "" Then
-                oDatiContatore.sDataRimTemp = txtDataRimTemp.Text
-            End If
-            If txtDataCessazione.Text <> "" Then
-                oDatiContatore.sDataCessazione = txtDataCessazione.Text
-            End If
-            If txtDataSostituzione.Text <> "" Then
-                oDatiContatore.sDataSostituzione = txtDataSostituzione.Text
-                oDatiContatore.sDataCessazione = oDatiContatore.sDataSostituzione
-            End If
-            If txtNumeroUtenze.Text <> "" Then
-                oDatiContatore.nNumeroUtenze = txtNumeroUtenze.Text
-            End If
-            If cboTipoUtenze.SelectedItem.Value <> 0 And cboTipoUtenze.SelectedItem.Value <> -1 Then
-                oDatiContatore.nTipoUtenza = cboTipoUtenze.SelectedItem.Value
-            End If
-            If cboDiametroContatore.SelectedItem.Value <> 0 And cboDiametroContatore.SelectedItem.Value <> -1 Then
-                oDatiContatore.nDiametroContatore = cboDiametroContatore.SelectedItem.Value
-            End If
-            If cboDiametroPresa.SelectedItem.Value <> 0 And cboDiametroPresa.SelectedItem.Value <> -1 Then
-                oDatiContatore.nDiametroPresa = cboDiametroPresa.SelectedItem.Value
-            End If
-            If CInt(Request.Params("hdCodAnagrafeIntestatario")) > 0 Then
-                oDatiContatore.nIdIntestatario = CInt(Request.Params("hdCodAnagrafeIntestatario"))
-            End If
-            If CInt(Request.Params("HDTextCodUtente")) > 0 Then
-                oDatiContatore.nIdUtente = CInt(Request.Params("HDTextCodUtente"))
-            End If
-            If txtCivico.Text <> "" And txtCivico.Text <> "-1" And txtCivico.Text <> "0" Then
-                oDatiContatore.sCivico = txtCivico.Text
-            End If
-            If TxtCodVia.Text <> -1 Then
-                oDatiContatore.nIdVia = TxtCodVia.Text
-            Else
-                oDatiContatore.nIdVia = -1
-            End If
-            If TxtVia.Text <> "" Then
-                oDatiContatore.sUbicazione = TxtVia.Text
-            Else
-                oDatiContatore.sUbicazione = ""
-            End If
-            If CInt(Request.Params("hdCodContratto")) > 0 Then
-                oDatiContatore.nIdContratto = CInt(Request.Params("hdCodContratto"))
-            End If
-            If Request.Params("hdConsumoMinimo") <> "" Then
-                oDatiContatore.nConsumoMinimo = Request.Params("hdConsumoMinimo")
-            End If
-            If NewCodContatore <> "" Then
-                oDatiContatore.nIdContatore = NewCodContatore
-            End If
-            If txtDataSospsensioneUtenza.Text <> "" Then
-                oDatiContatore.sDataSospensioneUtenza = txtDataSospsensioneUtenza.Text
-            End If
-            If chkUtenteSospeso.Checked = True Then
-                oDatiContatore.bUtenteSospeso = 1
-            End If
-            If txtQuoteAgevolate.Text <> "" Then
-                oDatiContatore.sQuoteAgevolate = txtQuoteAgevolate.Text
-            End If
-            If txtCodiceFabbricatore.Text <> "" Then
-                oDatiContatore.sCodiceFabbricante = txtCodiceFabbricatore.Text
-            End If
-            If txtNumeroCifreContatore.Text <> "" Then
-                oDatiContatore.sCifreContatore = txtNumeroCifreContatore.Text
-            End If
-            'If cboAssogettamentoIva.SelectedItem.Value <> 0 And cboAssogettamentoIva.SelectedItem.Value <> -1 Then
-            '    oDatiContatore.nCodIva = cboAssogettamentoIva.SelectedItem.Value
-            'End If
-            If cboStatoContatore.SelectedItem.Value <> "" Then
-                oDatiContatore.sStatoContatore = cboStatoContatore.SelectedItem.Value
-            End If
-            'If cboPenalita.SelectedItem.Value <> "" Then
-            '    oDatiContatore.sPenalita = cboPenalita.SelectedItem.Value
-            'End If
-            If ConstSession.CodIstat <> "" Then
-                oDatiContatore.sCodiceISTAT = ConstSession.CodIstat
-            End If
-            If txtEsponente.Text <> "" Then
-                oDatiContatore.sEsponenteCivico = txtEsponente.Text
-            End If
-            If cboMinimi.SelectedItem.Value <> 0 And cboMinimi.SelectedItem.Value <> -1 Then
-                oDatiContatore.nIdMinimo = cboMinimi.SelectedItem.Value
-            End If
-            'If cboAttivita.SelectedItem.Value <> 0 And cboAttivita.SelectedItem.Value <> -1 Then
-            '    oDatiContatore.nIdAttivita = cboAttivita.SelectedItem.Value
-            'End If
-            'agenzia entrate
-            If ddlAssenzaDatiCat.SelectedValue <> "" Then
-                oDatiContatore.nIdAssenzaDatiCatastali = ddlAssenzaDatiCat.SelectedValue
-            End If
-            If ddlTipoUnita.SelectedValue <> "" Then
-                oDatiContatore.sTipoUnita = ddlTipoUnita.SelectedValue
-            End If
-            If ddlTipoUtenza.SelectedValue <> "" Then
-                'es. utenza domestica/non domestica
-                oDatiContatore.nIdTipoUtenza = ddlTipoUtenza.SelectedValue
-            End If
-            If ddlTitOccupazione.SelectedValue <> "" Then
-                'es. proprietario/affittuario
-                oDatiContatore.nIdTitoloOccupazione = ddlTitOccupazione.SelectedValue
-            End If
-            '/agenzia entrate
-            oDatiContatore.tDataInserimento = Now
-            oDatiContatore.tDataVariazione = DateTime.MaxValue
+            Log.Debug("Controllo.btnSalvaContatore->txtidContatore.Text=" + txtidContatore.Text)
             If FncContatori.SetDatiContatore(txtidContatore.Text, oDatiContatore, False) = False Then
                 sScript += "GestAlert('a', 'danger', '', '', 'Errore durante il Salvataggio!');"
                 RegisterScript(sScript, Me.GetType())
                 Exit Sub
             End If           'FncContatori.SetContatore(utility.stringoperation.formatstring(ContatoreID), oDatiContatore)
-            If Not IsNothing(Session("datacatasto")) Then
-                'Dim DtCatasto As System.Data.DataTable
-                'DtCatasto = CType(Session("datacatasto"), System.Data.DataTable)
-                'FncContatori.SetCatastaliDatatable(DtCatasto, oDatiContatore.nIdContatore)
-                Dim IDTipoParticella As String
-                For Each myCatRow As DataRow In CType(Session("datacatasto"), System.Data.DataTable).Rows
-                    If IsDBNull(myCatRow("ID_TIPO_PARTICELLA")) Then
-                        IDTipoParticella = ""
-                    Else
-                        IDTipoParticella = New GestContatori().GetIdTipoParticella(myCatRow("ID_TIPO_PARTICELLA"))
-                    End If
-                    If New GestContatori().SetDatiCatastali(myCatRow("INTERNO"), myCatRow("PIANO"), myCatRow("FOGLIO"), myCatRow("NUMERO"), myCatRow("SUBALTERNO"), oDatiContatore.nIdContatore, myCatRow("SEZIONE"), myCatRow("ESTENSIONE_PARTICELLA"), IDTipoParticella) <= 0 Then
-                        Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovH2O.DatiGenerali.btnSalvaContatore_Click.errore: errore in inserimento dati catastali")
-                    End If
-                Next
-            End If
+            Try
+                If Not IsNothing(Session("datacatasto")) Then
+                    'Dim DtCatasto As System.Data.DataTable
+                    'DtCatasto = CType(Session("datacatasto"), System.Data.DataTable)
+                    'FncContatori.SetCatastaliDatatable(DtCatasto, oDatiContatore.nIdContatore)
+                    Dim IDTipoParticella As String
+                    For Each myCatRow As DataRow In CType(Session("datacatasto"), System.Data.DataTable).Rows
+                        If IsDBNull(myCatRow("ID_TIPO_PARTICELLA")) Then
+                            IDTipoParticella = ""
+                        Else
+                            IDTipoParticella = New GestContatori().GetIdTipoParticella(myCatRow("ID_TIPO_PARTICELLA"))
+                        End If
+                        Log.Debug("Controllo.btnSalvaContatore.Catasto->oDatiContatore.nIdContatore=" + oDatiContatore.nIdContatore.ToString)
+                        If New GestContatori().SetDatiCatastali(myCatRow("INTERNO"), myCatRow("PIANO"), myCatRow("FOGLIO"), myCatRow("NUMERO"), myCatRow("SUBALTERNO"), -1, oDatiContatore.nIdContatore, myCatRow("SEZIONE"), myCatRow("ESTENSIONE_PARTICELLA"), IDTipoParticella) <= 0 Then
+                            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovH2O.DatiGenerali.btnSalvaContatore_Click.errore: errore in inserimento dati catastali")
+                        End If
+                    Next
+                End If
+            Catch ex As Exception
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovH2O.DatiGenerali.btnSalvaContatore_Click.DatiCatasto.errore: ", ex)
+            End Try
             Session("datacatasto") = Nothing
 
             Dim dsDatiContatore As DataSet
+            Log.Debug("Controllo.btnSalvaContatore->oDatiContatore.nIdContatore=" + oDatiContatore.nIdContatore.ToString)
             dsDatiContatore = FncContatori.GetDataTableContatoreAnater(oDatiContatore.nIdContatore)
 
             '==========================================
             'INSERIMENTO PRIMA LETTURA
             '==========================================
-
-            If Not IsDBNull(oDatiContatore.sDataAttivazione) Then
-                'se la data di attivazione non è Null
-                If oDatiContatore.sDataAttivazione <> "" Then
-                    'ed è diversa da una stringa vuota
-                    Dim dvMyDati As New DataView
-                    dvMyDati = iDB.GetDataView("SELECT COUNT(*) AS CONTEGGIO FROM TP_LETTURE WHERE CODCONTATORE=" & oDatiContatore.nIdContatore)
-                    Dim totale As Int16 = -1
-                    If Not dvMyDati Is Nothing Then
-                        For Each myRow As DataRowView In dvMyDati
-                            totale = myRow("conteggio")
-                        Next
-                    End If
-                    dvMyDati.Dispose()
-                    If totale <= 0 Then
-                        'inserisco la prima lettura uguale a 0 per questo contatore
-                        'Dim sqlConn As New SqlConnection
-                        'sqlConn.ConnectionString = ConstSession.StringConnection
-                        'sqlConn.Open()
-                        FncContatori.SetPrimaLettura(oDatiContatore.nIdContatore, ConstSession.IdPeriodo, oDatiContatore.sDataAttivazione, oDatiContatore.nIdContatorePrec, oDatiContatore.nIdUtente, oDatiContatore.sNumeroUtente, 0)
+            Try
+                If Not IsDBNull(oDatiContatore.sDataAttivazione) Then
+                    'se la data di attivazione non è Null
+                    If oDatiContatore.sDataAttivazione <> "" Then
+                        'ed è diversa da una stringa vuota
+                        Dim dvMyDati As New DataView
+                        dvMyDati = iDB.GetDataView("SELECT COUNT(*) AS CONTEGGIO FROM TP_LETTURE WHERE CODCONTATORE=" & oDatiContatore.nIdContatore)
+                        Dim totale As Int16 = -1
+                        If Not dvMyDati Is Nothing Then
+                            For Each myRow As DataRowView In dvMyDati
+                                totale = myRow("conteggio")
+                            Next
+                        End If
+                        dvMyDati.Dispose()
+                        If totale <= 0 Then
+                            'inserisco la prima lettura uguale a 0 per questo contatore
+                            'Dim sqlConn As New SqlConnection
+                            'sqlConn.ConnectionString = ConstSession.StringConnection
+                            'sqlConn.Open()
+                            FncContatori.SetPrimaLettura(oDatiContatore.nIdContatore, ConstSession.IdPeriodo, oDatiContatore.sDataAttivazione, oDatiContatore.nIdContatorePrec, oDatiContatore.nIdUtente, oDatiContatore.sNumeroUtente, 0)
+                        End If
                     End If
                 End If
-            End If
+            Catch ex As Exception
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovH2O.DatiGenerali.btnSalvaContatore_Click.InserimentoPrimaLettura.errore: ", ex)
+            End Try
             '=======================
             '/PRIMA LETTURA
             '=======================
@@ -549,6 +370,7 @@ Partial Class DatiGenerali
             'SE MODIFICO DATA ATTIVAZIONE, MODIFICO ANCHE PRIMA LETTURA
             '=========================================================
             If CStr(UpdPrimaLettura.Text.ToUpper()) = "UPDATE" Then
+                Log.Debug("Controllo.btnSalvaContatore.PrimaLettura->txtidContatore.Text=" + txtidContatore.Text)
                 If txtidContatore.Text <> "" Then
                     FncContatori.UpdatePrimaLettura(CInt(txtidContatore.Text), CStr(txtDataAttivazione.Text))
                 End If
@@ -558,61 +380,67 @@ Partial Class DatiGenerali
             '=========================================================
 
             If txtDataSostituzione.Text <> "" Then
+                Log.Debug("Controllo.btnSalvaContatore.sostituzione->ContatoreID per goContatoreSostituito=" + oDatiContatore.nIdContatore.ToString)
                 goContatoreSostituito(oDatiContatore.nIdContatore)
             End If
             If oDatiContatore.nIdContatore > 0 Then
+                Log.Debug("Controllo.btnSalvaContatore->txtidcontatore prima=" + txtidContatore.Text)
                 txtidContatore.Text = oDatiContatore.nIdContatore
-                ContatoreID = CInt(oDatiContatore.nIdContatore)
+                Log.Debug("Controllo.btnSalvaContatore->txtidcontatoreda oDatiContatore.nIdContatore=" + txtidContatore.Text)
             End If
 
             '*** ribaltamento in Anater se abilitato ***
-            If System.Configuration.ConfigurationManager.AppSettings("USO_ANATER").ToString() = True Then
-                '***AGGANCIO SERVIZIO RIBALTAMENTO IN ANATER ***
-                Dim typeofRI As Type = GetType(IRemotingInterfaceH2O)
-                Dim remObject As IRemotingInterfaceH2O = Activator.GetObject(typeofRI, System.Configuration.ConfigurationManager.AppSettings("URLanaterH2O").ToString())
-                Dim clsTraduci As New ClsTraduciRibaltamento
-                Dim objContatoreAnater As New Anater.Oggetti.DatiContatore
-                Dim oAnagraficaAnater As New Anater.Oggetti.AnagraficaH2O
+            Try
+                If System.Configuration.ConfigurationManager.AppSettings("USO_ANATER").ToString() = True Then
+                    '***AGGANCIO SERVIZIO RIBALTAMENTO IN ANATER ***
+                    Dim typeofRI As Type = GetType(IRemotingInterfaceH2O)
+                    Dim remObject As IRemotingInterfaceH2O = Activator.GetObject(typeofRI, System.Configuration.ConfigurationManager.AppSettings("URLanaterH2O").ToString())
+                    Dim clsTraduci As New ClsTraduciRibaltamento
+                    Dim objContatoreAnater As New Anater.Oggetti.DatiContatore
+                    Dim oAnagraficaAnater As New Anater.Oggetti.AnagraficaH2O
 
-                Dim codiceFiscale As String = ""
+                    Dim codiceFiscale As String = ""
 
-                Dim percorso As String = ""
-                Dim nomeFile As String = ""
+                    Dim percorso As String = ""
+                    Dim nomeFile As String = ""
 
-                Dim dataFile As Date = Date.Now
-                Dim sdata As String = dataFile.ToString().Replace("/", "_")
-                sdata = sdata.Replace(" ", "_")
-                sdata = sdata.Replace(".", "_")
+                    Dim dataFile As Date = Date.Now
+                    Dim sdata As String = dataFile.ToString().Replace("/", "_")
+                    sdata = sdata.Replace(" ", "_")
+                    sdata = sdata.Replace(".", "_")
 
-                percorso = System.Configuration.ConfigurationManager.AppSettings("PATH_LETTURE_NON_ACQUI").ToString()
-                nomeFile = percorso + "Scarti_Ribaltamento_" + sdata + ".txt"
+                    percorso = System.Configuration.ConfigurationManager.AppSettings("PATH_LETTURE_NON_ACQUI").ToString()
+                    nomeFile = percorso + "Scarti_Ribaltamento_" + sdata + ".txt"
 
-                Dim oDettaglioAnagraficaUtente As New DettaglioAnagrafica
-                oDettaglioAnagraficaUtente = clsTraduci.TrovaAnagrafica(CInt(dsDatiContatore.Tables(0).Rows(0)("CODCONTATORE").ToString()))
+                    Dim oDettaglioAnagraficaUtente As New DettaglioAnagrafica
+                    oDettaglioAnagraficaUtente = clsTraduci.TrovaAnagrafica(CInt(dsDatiContatore.Tables(0).Rows(0)("CODCONTATORE").ToString()))
 
-                oAnagraficaAnater = clsTraduci.TraduciAnagraficaAnater(oDettaglioAnagraficaUtente)
-                If oAnagraficaAnater.CodiceFiscale = "" Then
-                    codiceFiscale = oAnagraficaAnater.PartitaIva
-                Else
-                    codiceFiscale = oAnagraficaAnater.CodiceFiscale
+                    oAnagraficaAnater = clsTraduci.TraduciAnagraficaAnater(oDettaglioAnagraficaUtente)
+                    If oAnagraficaAnater.CodiceFiscale = "" Then
+                        codiceFiscale = oAnagraficaAnater.PartitaIva
+                    Else
+                        codiceFiscale = oAnagraficaAnater.CodiceFiscale
+                    End If
+
+                    ''RICAVO IL DT DEI DATI CATASTALI
+                    'Dim WFSessione As OPENUtility.CreateSessione
+                    'Dim WFErrore As String
+
+                    ''inizializzo la connessione
+                    'WFSessione = New OPENUtility.CreateSessione(ConstSession.ParametroEnv, ConstSession.UserName, ConstSession.IdentificativoApplicazione)
+                    'If Not WFSessione.CreaSessione(ConstSession.UserName, WFErrore) Then
+                    '    Throw New Exception("Errore durante l'apertura della sessione di WorkFlow")
+                    'End If
+                    Dim DSCatasto As DataSet
+
+                    DSCatasto = iDB.RunSPReturnDataSet("prc_GetDatiCatastali", "", New SqlParameter("@Id", -1), New SqlParameter("@IdContatore", CInt(dsDatiContatore.Tables(0).Rows(0)("CODCONTATORE").ToString()))) 'FncRif.getListaCatastali(-1, CInt(dsDatiContatore.Tables(0).Rows(0)("CODCONTATORE").ToString())) , WFSessione)
+                    objContatoreAnater = clsTraduci.TraduciContatoreAnater(dsDatiContatore, DSCatasto, codiceFiscale)
+                    remObject.RibaltaInAnaterH2O(objContatoreAnater, oAnagraficaAnater, ConstSession.IdEnte, False, False, 0, nomeFile)
+                    'WFSessione.Kill()
                 End If
-
-                ''RICAVO IL DT DEI DATI CATASTALI
-                'Dim WFSessione As OPENUtility.CreateSessione
-                'Dim WFErrore As String
-
-                ''inizializzo la connessione
-                'WFSessione = New OPENUtility.CreateSessione(ConstSession.ParametroEnv, ConstSession.UserName, ConstSession.IdentificativoApplicazione)
-                'If Not WFSessione.CreaSessione(ConstSession.UserName, WFErrore) Then
-                '    Throw New Exception("Errore durante l'apertura della sessione di WorkFlow")
-                'End If
-                Dim DSCatasto As DataSet
-
-                DSCatasto = iDB.RunSPReturnDataSet("prc_GetDatiCatastali", "", New SqlParameter("@Id", -1), New SqlParameter("@IdContatore", CInt(dsDatiContatore.Tables(0).Rows(0)("CODCONTATORE").ToString()))) 'FncRif.getListaCatastali(-1, CInt(dsDatiContatore.Tables(0).Rows(0)("CODCONTATORE").ToString())) , WFSessione)
-                objContatoreAnater = clsTraduci.TraduciContatoreAnater(dsDatiContatore, DSCatasto, codiceFiscale)
-                remObject.RibaltaInAnaterH2O(objContatoreAnater, oAnagraficaAnater, ConstSession.IdEnte, False, False, 0, nomeFile)
-                'WFSessione.Kill()
-            End If
+            Catch ex As Exception
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovH2O.DatiGenerali.btnSalvaContatore_Click.Antater.errore: ", ex)
+            End Try
 
             sScript += "GestAlert('a', 'success', '', '', 'Salvataggio avvenuto correttamente.');"
             If Request.Item("sProvenienza") <> "AE" Then
@@ -627,6 +455,204 @@ Partial Class DatiGenerali
             Response.Redirect("../../PaginaErrore.aspx")
         End Try
     End Sub
+    Private Function SetDatiContatore() As objContatore
+        Dim myItem As New objContatore
+        Dim NewCodContatore As String = ""
+        Try
+            If Not IsNothing(Session("oListSubContatori")) Then
+                myItem.oListSubContatori = Session("oListSubContatori")
+            End If
+            If txtspesaprev.Text <> 0 Then
+                myItem.nSpesa = txtspesaprev.Text
+            End If
+            If txtdirittisegr.Text <> 0 Then
+                myItem.nDiritti = txtdirittisegr.Text
+            End If
+            If txtDataAttivazione.Text <> "" Then
+                myItem.bIsPendente = 0
+            End If
+            If txtMatricola.Text <> "" Then
+                myItem.sMatricola = txtMatricola.Text
+            End If
+            If ConstSession.IdEnte <> 0 Or ConstSession.IdEnte <> -1 Then
+                myItem.sIdEnte = CInt(ConstSession.IdEnte)
+                myItem.sIdEnteAppartenenza = myItem.sIdEnte
+            End If
+            If cboImpianto.SelectedItem.Value <> 0 Or cboImpianto.SelectedItem.Value <> -1 Then
+                myItem.nIdImpianto = cboImpianto.SelectedItem.Value
+            End If
+            If cboGiro.SelectedItem.Value <> 0 Or cboGiro.SelectedItem.Value <> -1 Then
+                myItem.nGiro = cboGiro.SelectedItem.Value
+            End If
+            If txtSequenza.Text <> "" Then
+                myItem.sSequenza = txtSequenza.Text
+            End If
+            If cboPosizione.SelectedItem.Value <> 0 Or cboPosizione.SelectedItem.Value <> -1 Then
+                myItem.nPosizione = cboPosizione.SelectedItem.Value
+            End If
+            If txtProgressivo.Text <> "" Then
+                myItem.sProgressivo = txtProgressivo.Text
+            End If
+            If txtLatoStrada.Text <> "" Then
+                myItem.sLatoStrada = txtLatoStrada.Text
+            End If
+            If txtNumeroUtente.Text <> "" Then
+                myItem.sNumeroUtente = txtNumeroUtente.Text
+            End If
+            If cboTipoContatore.SelectedItem.Value <> 0 Or cboTipoContatore.SelectedItem.Value <> -1 Then
+                myItem.nTipoContatore = cboTipoContatore.SelectedItem.Value
+            End If
+            If txtContatorePrecedente.Text <> "" Then
+                myItem.nIdContatorePrec = txtContatorePrecedente.Text
+            End If
+            If txtContatoreSuccessivo.Text <> "" Then
+                myItem.nIdContatoreSucc = txtContatoreSuccessivo.Text
+            End If
+            If cboFognatura.SelectedItem.Value <> 0 Or cboFognatura.SelectedItem.Value <> -1 Then
+                myItem.nCodFognatura = cboFognatura.SelectedItem.Value
+            End If
+            If cboDepurazione.SelectedItem.Value <> 0 Or cboDepurazione.SelectedItem.Value <> -1 Then
+                myItem.nCodDepurazione = cboDepurazione.SelectedItem.Value
+            End If
+            If chkEsenteFognatura.Checked = True Then
+                myItem.bEsenteFognatura = 1
+            End If
+            If chkEsenteDepurazione.Checked = True Then
+                myItem.bEsenteDepurazione = 1
+            End If
+            If chkEsenteAcqua.Checked = True Then
+                myItem.bEsenteAcqua = 1
+            End If
+            '*** 20121217 - calcolo quota fissa acqua+depurazione+fognatura ***
+            If chkEsenteAcquaQF.Checked = True Then
+                myItem.bEsenteAcquaQF = 1
+            End If
+            If chkEsenteDepQF.Checked = True Then
+                myItem.bEsenteDepQF = 1
+            End If
+            If chkEsenteFogQF.Checked = True Then
+                myItem.bEsenteFogQF = 1
+            End If
+            If chkIgnoraMora.Checked = True Then
+                myItem.bIgnoraMora = 1
+            End If
+            If txtNote.Text <> "" Then
+                myItem.sNote = txtNote.Text
+            End If
+            If txtDataAttivazione.Text <> "" Then
+                myItem.sDataAttivazione = txtDataAttivazione.Text
+            End If
+            If txtDataRimTemp.Text <> "" Then
+                myItem.sDataRimTemp = txtDataRimTemp.Text
+            End If
+            If txtDataCessazione.Text <> "" Then
+                myItem.sDataCessazione = txtDataCessazione.Text
+            End If
+            If txtDataSostituzione.Text <> "" Then
+                myItem.sDataSostituzione = txtDataSostituzione.Text
+                myItem.sDataCessazione = myItem.sDataSostituzione
+            End If
+            If txtNumeroUtenze.Text <> "" Then
+                myItem.nNumeroUtenze = txtNumeroUtenze.Text
+            End If
+            If cboTipoUtenze.SelectedItem.Value <> 0 And cboTipoUtenze.SelectedItem.Value <> -1 Then
+                myItem.nTipoUtenza = cboTipoUtenze.SelectedItem.Value
+            End If
+            If cboDiametroContatore.SelectedItem.Value <> 0 And cboDiametroContatore.SelectedItem.Value <> -1 Then
+                myItem.nDiametroContatore = cboDiametroContatore.SelectedItem.Value
+            End If
+            If cboDiametroPresa.SelectedItem.Value <> 0 And cboDiametroPresa.SelectedItem.Value <> -1 Then
+                myItem.nDiametroPresa = cboDiametroPresa.SelectedItem.Value
+            End If
+            If CInt(Request.Params("hdCodAnagrafeIntestatario")) > 0 Then
+                myItem.nIdIntestatario = CInt(Request.Params("hdCodAnagrafeIntestatario"))
+            End If
+            If CInt(Request.Params("HDTextCodUtente")) > 0 Then
+                myItem.nIdUtente = CInt(Request.Params("HDTextCodUtente"))
+            End If
+            If txtCivico.Text <> "" And txtCivico.Text <> "-1" And txtCivico.Text <> "0" Then
+                myItem.sCivico = txtCivico.Text
+            End If
+            If TxtCodVia.Text <> -1 Then
+                myItem.nIdVia = TxtCodVia.Text
+            Else
+                myItem.nIdVia = -1
+            End If
+            If TxtVia.Text <> "" Then
+                myItem.sUbicazione = TxtVia.Text
+            Else
+                myItem.sUbicazione = ""
+            End If
+            If CInt(Request.Params("hdCodContratto")) > 0 Then
+                myItem.nIdContratto = CInt(Request.Params("hdCodContratto"))
+            End If
+            If Request.Params("hdConsumoMinimo") <> "" Then
+                myItem.nConsumoMinimo = Request.Params("hdConsumoMinimo")
+            End If
+            If NewCodContatore <> "" Then
+                myItem.nIdContatore = NewCodContatore
+                Log.Debug("Controllo.SetDatiContatore->myItem.nIdContatore da NewCodContatore=" + myItem.nIdContatore.ToString)
+            End If
+            If txtDataSospsensioneUtenza.Text <> "" Then
+                myItem.sDataSospensioneUtenza = txtDataSospsensioneUtenza.Text
+            End If
+            If chkUtenteSospeso.Checked = True Then
+                myItem.bUtenteSospeso = 1
+            End If
+            If txtQuoteAgevolate.Text <> "" Then
+                myItem.sQuoteAgevolate = txtQuoteAgevolate.Text
+            End If
+            If txtCodiceFabbricatore.Text <> "" Then
+                myItem.sCodiceFabbricante = txtCodiceFabbricatore.Text
+            End If
+            If txtNumeroCifreContatore.Text <> "" Then
+                myItem.sCifreContatore = txtNumeroCifreContatore.Text
+            End If
+            'If cboAssogettamentoIva.SelectedItem.Value <> 0 And cboAssogettamentoIva.SelectedItem.Value <> -1 Then
+            '    myItem.nCodIva = cboAssogettamentoIva.SelectedItem.Value
+            'End If
+            If cboStatoContatore.SelectedItem.Value <> "" Then
+                myItem.sStatoContatore = cboStatoContatore.SelectedItem.Value
+            End If
+            'If cboPenalita.SelectedItem.Value <> "" Then
+            '    myItem.sPenalita = cboPenalita.SelectedItem.Value
+            'End If
+            If ConstSession.CodIstat <> "" Then
+                myItem.sCodiceISTAT = ConstSession.CodIstat
+            End If
+            If txtEsponente.Text <> "" Then
+                myItem.sEsponenteCivico = txtEsponente.Text
+            End If
+            If cboMinimi.SelectedItem.Value <> 0 And cboMinimi.SelectedItem.Value <> -1 Then
+                myItem.nIdMinimo = cboMinimi.SelectedItem.Value
+            End If
+            'If cboAttivita.SelectedItem.Value <> 0 And cboAttivita.SelectedItem.Value <> -1 Then
+            '    myItem.nIdAttivita = cboAttivita.SelectedItem.Value
+            'End If
+            'agenzia entrate
+            If ddlAssenzaDatiCat.SelectedValue <> "" Then
+                myItem.nIdAssenzaDatiCatastali = ddlAssenzaDatiCat.SelectedValue
+            End If
+            If ddlTipoUnita.SelectedValue <> "" Then
+                myItem.sTipoUnita = ddlTipoUnita.SelectedValue
+            End If
+            If ddlTipoUtenza.SelectedValue <> "" Then
+                'es. utenza domestica/non domestica
+                myItem.nIdTipoUtenza = ddlTipoUtenza.SelectedValue
+            End If
+            If ddlTitOccupazione.SelectedValue <> "" Then
+                'es. proprietario/affittuario
+                myItem.nIdTitoloOccupazione = ddlTitOccupazione.SelectedValue
+            End If
+            '/agenzia entrate
+            myItem.tDataInserimento = Now
+            myItem.tDataVariazione = DateTime.MaxValue
+        Catch ex As Exception
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovH2O.DatiGenerali.SetDatiContatore.errore: ", ex)
+            myItem = Nothing
+        End Try
+        Return myItem
+    End Function
     Private Sub btnStampa_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnStampa.Click
 
         Try
@@ -736,7 +762,7 @@ Partial Class DatiGenerali
             sScript += "document.getElementById('hdCodAnagrafeIntestatario').value='" & hdCodAnagrafeIntestatario & "';"
             sScript += "document.getElementById('HDTextCodUtente').value='" & HDTextCodUtente & "';"
             sScript += "document.getElementById('hdCodContratto').value='" & hdCodContratto & "';"
-            sScript += "document.getElementById('hdCodContatore').value='" & ContatoreID & "';"
+            sScript += "document.getElementById('hdCodContatore').value='" & txtidContatore.Text & "';"
             sScript += "document.getElementById('hdDataSottoScrizione').value='" & hdDataSottoScrizione & "';"
             sScript += "document.getElementById('hdConsumoMinimo').value='" & hdConsumoMinimo & "';"
             sScript += "document.getElementById('hdTipoUtenzaContratto').value='" & hdTipoUtenzaContratto & "';"
@@ -1223,6 +1249,7 @@ Partial Class DatiGenerali
 
     Public Sub goContatoreSostituito(ByVal codContatore As String)
         RegisterScript("GestAlert('a', 'warning', '', '', 'Il contatore e\' stato sostituito.\n Verrai reindirizzato al nuovo contatore.');", Me.GetType)
+        Log.Debug("Controllo->codcontatore per request goContatoreSostituito=" + codContatore)
         RegisterScript("location.href='DatiGenerali.aspx?IDCONTATORE=" & codContatore & "';", Me.GetType)
     End Sub
 
@@ -1241,7 +1268,7 @@ Partial Class DatiGenerali
         txtCivico.Text = Session("CivicoUIAnater")
         txtEsponente.Text = Session("EsponenteUIAnater")
         Dim sScript As String = ""
-        sScript += "document.getElementById('loadGrid').src='searchResultsCatasto.aspx?ContatoreID=" & ContatoreID & "';"
+        sScript += "document.getElementById('loadGrid').src='searchResultsCatasto.aspx?ContatoreID=" & txtidContatore.Text & "';"
         RegisterScript(sScript, Me.GetType())
     End Sub
 
@@ -1486,12 +1513,13 @@ Partial Class DatiGenerali
     End Sub
     Private Sub LoadHidden(ByVal myContatore As objContatore)
         Try
+            Log.Debug("Controllo->LoadHidden.txtidContatore=" + txtidContatore.Text)
             Dim sScript As String = ""
             sScript += "document.getElementById('hdEnteAppartenenza').value='" & ConstSession.DescrizioneEnte & "';"
             sScript += "document.getElementById('hdCodAnagrafeIntestatario').value='" & myContatore.nIdIntestatario & "';"
             sScript += "document.getElementById('HDTextCodUtente').value='" & myContatore.nIdUtente & "';"
             sScript += "document.getElementById('hdCodContratto').value='" & myContatore.nIdContratto & "';"
-            sScript += "document.getElementById('hdCodContatore').value='" & ContatoreID & "';"
+            sScript += "document.getElementById('hdCodContatore').value='" & txtidContatore.Text & "';"
             sScript += "document.getElementById('hdConsumoMinimo').value='" & myContatore.nConsumoMinimo & "';"
             sScript += "document.getElementById('hdTipoUtenzaContratto').value='" & myContatore.nIdTipoUtenza & "';"
             sScript += "document.getElementById('hdIdDiametroContatoreContratto').value='" & myContatore.nDiametroContatore & "';"
@@ -1505,7 +1533,7 @@ Partial Class DatiGenerali
             'Gestione parametri di ricerca
             '========================================================================================
 
-            sScript = "document.getElementById('IDContatore').value='" & ContatoreID & "';"
+            sScript = "document.getElementById('IDContatore').value='" & txtidContatore.Text & "';"
             sScript += "document.getElementById('hdCodVia').value='" & Request("hdCodiceVia") & "';"
             sScript += "document.getElementById('hdIntestatario').value='" & UCase(Request("hdIntestatario")) & "';"
             sScript += "document.getElementById('hdUtente').value='" & UCase(Request("hdUtente")) & "';"
