@@ -194,8 +194,11 @@
 		<SubMenu id="Gest0000" text="Gestione Atti" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
 			<SubMenu id="RicSemp" text="Ricerca Semplice" urlVisualizza="../../OPENgovPROVVEDIMENTI/GestioneAtti/RicercaSemplice/RicercaSemplice.aspx" urlComandi="../../aspVuotaComandi.aspx" urlBasso="../../aspVuotaComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
 			<SubMenu id="RicAvanz" text="Ricerca avanzata" urlVisualizza="../../OPENgovPROVVEDIMENTI/GestioneAtti/RicercaAvanzata/RicercaAvanzata.aspx" urlComandi="../../aspVuotaComandi.aspx" urlBasso="../../aspVuotaComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
-      <SubMenu id="Coattivo" text="Coattivo" urlVisualizza="../../OPENgovPROVVEDIMENTI/GestioneAtti/Coattivo/GestRuolo.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
-		</SubMenu>
+      <SubMenu id="Coattivo" text="Coattivo" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">
+        <SubMenu id="DECoattivo" text="Data Entry" urlVisualizza="../../OPENgovPROVVEDIMENTI/GestioneAtti/Coattivo/GestDE.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+        <SubMenu id="FlussiCoattivo" text="Generazione Flussi" urlVisualizza="../../OPENgovPROVVEDIMENTI/GestioneAtti/Coattivo/GestRuolo.aspx" urlComandi="../../aspVuotaRemoveComandi.aspx" urlBasso="../../aspVuotaRemoveComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
+      </SubMenu>
+    </SubMenu>
 		<SubMenu id="Pag" text="Pagamenti" urlVisualizza="../../OPENgovProvvedimenti/pagamenti/Ricerca.aspx" urlComandi="../../OPENgovProvvedimenti/pagamenti/cmdRicerca.aspx" urlBasso="../../aspVuotaComandi.aspx" urlNascosto="../../aspSvuota.aspx"></SubMenu>
 	</Menu>
 	<Menu id="Mail" text="Invio Mail" urlVisualizza="" urlComandi="" urlBasso="" urlNascosto="">

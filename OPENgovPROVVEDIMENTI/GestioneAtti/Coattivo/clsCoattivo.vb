@@ -111,7 +111,7 @@ Public Class clsCoattivo
                     myRuolo.tDataCreazione = DateTime.Now
                     myRuolo.tDataOKMinuta = DateTime.MaxValue
                     myRuolo.tDataElabDoc = DateTime.MaxValue
-                    myRuolo.IdFlusso = SetRuolo(Utility.Costanti.AZIONE_NEW, myRuolo, _StringConnection, _cmdMyCommand)
+                    myRuolo.IdFlusso = SetRuolo(Costanti.AZIONE_NEW, myRuolo, _StringConnection, _cmdMyCommand)
                     If myRuolo.IdFlusso > 0 Then
                         nAvanzamento = 0
                         For Each myItem As ObjCoattivo In ListAtti
@@ -121,7 +121,7 @@ Public Class clsCoattivo
                             Soglia = New DBPROVVEDIMENTI.ProvvedimentiDB().GetSogliaMinima(myItem.ANNO, myItem.COD_TRIBUTO, _IdEnte, OggettoAtto.Provvedimento.Coattivo)
                             If myItem.TotaleCoattivo >= Soglia Then
                                 myItem.IdFlusso = myRuolo.IdFlusso
-                                If SetCoattivo(Utility.Costanti.AZIONE_NEW, myItem, _StringConnection, _cmdMyCommand) = False Then
+                                If SetCoattivo(Costanti.AZIONE_NEW, myItem, _StringConnection, _cmdMyCommand) = False Then
                                     MyError = True
                                     Exit For
                                 End If
@@ -184,7 +184,7 @@ Public Class clsCoattivo
             cmdMyCommand.CommandType = CommandType.StoredProcedure
             cmdMyCommand.CommandText = "prc_GetAttiInCoattivo"
             myAdapter.SelectCommand = cmdMyCommand
-            Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
+            Log.Debug(Costanti.LogQuery(cmdMyCommand))
             myAdapter.Fill(dtMyDati)
             For Each dtMyRow In dtMyDati.Rows
                 nAvanzamento += 1
@@ -201,7 +201,7 @@ Public Class clsCoattivo
             Next
         Catch ex As Exception
             Log.Debug(_IdEnte + "." + _Operatore + " - OPENgovPROVVEDIMENTI.clsCoattivo.GetAttiInCoattivo.errore: ", ex)
-            Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
+            Log.Debug(Costanti.LogQuery(cmdMyCommand))
             myList = Nothing
         Finally
             dtMyDati.Dispose()
@@ -367,7 +367,7 @@ Public Class clsCoattivo
     '        cmdMyCommand.CommandType = CommandType.StoredProcedure
     '        cmdMyCommand.CommandText = "prc_GetRuoliCoattivi"
     '        myAdapter.SelectCommand = cmdMyCommand
-    '        Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
+    '        Log.Debug(Costanti.LogQuery(cmdMyCommand))
     '        myAdapter.Fill(dtMyDati)
     '        For Each dtMyRow In dtMyDati.Rows
     '            myRuolo = New ObjRuolo
@@ -411,7 +411,7 @@ Public Class clsCoattivo
     '        Return CType(ListRuoli.ToArray(GetType(ObjRuolo)), ObjRuolo())
     '    Catch Err As Exception
     '        Log.Debug(IdEnte + " - OPENgovPROVVEDIMENTI.clsCoattivo.GetRuolo.errore: ", Err)
-    '        Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
+    '        Log.Debug(Costanti.LogQuery(cmdMyCommand))
     '        Return Nothing
     '    Finally
     '        dtMyDati.Dispose()
@@ -438,12 +438,12 @@ Public Class clsCoattivo
             cmdMyCommand.Parameters.AddWithValue("@IdFlusso", IdFlusso)
             cmdMyCommand.CommandType = CommandType.StoredProcedure
             cmdMyCommand.CommandText = "prc_TBLRUOLICOATTIVI_D"
-            Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
+            Log.Debug(Costanti.LogQuery(cmdMyCommand))
             cmdMyCommand.ExecuteNonQuery()
             Return True
         Catch ex As Exception
             Log.Debug(_IdEnte + "." + _Operatore + " - OPENgovPROVVEDIMENTI.clsCoattivo.DeleteRuolo.errore:  ", ex)
-            Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
+            Log.Debug(Costanti.LogQuery(cmdMyCommand))
             Return False
         Finally
             cmdMyCommand.Dispose()
@@ -473,7 +473,7 @@ Public Class clsCoattivo
             cmdMyCommand.CommandType = CommandType.StoredProcedure
             cmdMyCommand.Parameters.Clear()
             Select Case DBOperation
-                Case Utility.Costanti.AZIONE_NEW, Utility.Costanti.AZIONE_UPDATE
+                Case Costanti.AZIONE_NEW, Costanti.AZIONE_UPDATE
                     cmdMyCommand.Parameters.AddWithValue("@IDFLUSSO", myRuolo.IdFlusso)
                     cmdMyCommand.Parameters.AddWithValue("@IDENTE", myRuolo.sEnte)
                     cmdMyCommand.Parameters.AddWithValue("@ANNO", myRuolo.sAnno)
@@ -490,21 +490,21 @@ Public Class clsCoattivo
                     MyProcedure = "prc_TBLRUOLICOATTIVI_IU"
                     cmdMyCommand.CommandText = MyProcedure
                     cmdMyCommand.Parameters("@IDFLUSSO").Direction = ParameterDirection.InputOutput
-                    Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
+                    Log.Debug(Costanti.LogQuery(cmdMyCommand))
                     cmdMyCommand.ExecuteNonQuery()
                     myRuolo.IdFlusso = cmdMyCommand.Parameters("@IDFLUSSO").Value
-                Case Utility.Costanti.AZIONE_DELETE
+                Case Costanti.AZIONE_DELETE
                     cmdMyCommand.Parameters.AddWithValue("@IDFLUSSO", myRuolo.IdFlusso)
                     MyProcedure = "prc_TBLRUOLICOATTIVI_D"
                     cmdMyCommand.CommandText = MyProcedure
-                    Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
+                    Log.Debug(Costanti.LogQuery(cmdMyCommand))
                     cmdMyCommand.ExecuteNonQuery()
             End Select
 
             Return myRuolo.IdFlusso
         Catch Err As Exception
             Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.SetRuolo.errore: ", Err)
-            Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
+            Log.Debug(Costanti.LogQuery(cmdMyCommand))
             Return 0
         Finally
             If (cmdMyCommandOut Is Nothing) Then
@@ -534,11 +534,19 @@ Public Class clsCoattivo
             cmdMyCommand.CommandType = CommandType.StoredProcedure
             cmdMyCommand.Parameters.Clear()
             Select Case DBOperation
-                Case Utility.Costanti.AZIONE_NEW, Utility.Costanti.AZIONE_UPDATE
+                Case Costanti.AZIONE_NEW, Costanti.AZIONE_UPDATE
                     cmdMyCommand.Parameters.AddWithValue("@ID", myItem.Id)
                     cmdMyCommand.Parameters.AddWithValue("@IDFLUSSO", myItem.IdFlusso)
                     cmdMyCommand.Parameters.AddWithValue("@IDPROVVEDIMENTO", myItem.ID_PROVVEDIMENTO)
+                    cmdMyCommand.Parameters.AddWithValue("@IDCONTRIBUENTE", myItem.COD_CONTRIBUENTE)
+                    cmdMyCommand.Parameters.AddWithValue("@IDTRIBUTO", myItem.COD_TRIBUTO)
+                    cmdMyCommand.Parameters.AddWithValue("@ANNO", myItem.ANNO)
+                    cmdMyCommand.Parameters.AddWithValue("@NUMEROATTO", myItem.NUMERO_ATTO)
+                    cmdMyCommand.Parameters.AddWithValue("@DESCRTRIBUTO", myItem.DescrTributo)
+                    cmdMyCommand.Parameters.AddWithValue("@DATAATTO", StringOperation.FormatDateTime(myItem.DATA_ATTO_DEFINITIVO))
+                    cmdMyCommand.Parameters.AddWithValue("@DATANOTIFICA", StringOperation.FormatDateTime(myItem.DATA_NOTIFICA_AVVISO))
                     cmdMyCommand.Parameters.AddWithValue("@IMPORTO", myItem.ImportoCoattivo)
+                    cmdMyCommand.Parameters.AddWithValue("@SANZIONI", myItem.IMPORTO_SANZIONI)
                     cmdMyCommand.Parameters.AddWithValue("@INTERESSI", myItem.InteressiCoattivo)
                     cmdMyCommand.Parameters.AddWithValue("@SPESE", myItem.SpeseCoattivo)
                     cmdMyCommand.Parameters.AddWithValue("@ARROTONDAMENTO", myItem.ArrotondamentoCoattivo)
@@ -547,7 +555,7 @@ Public Class clsCoattivo
                     cmdMyCommand.Parameters.AddWithValue("@DATAVARIAZIONE", myItem.DataVariazione)
                     cmdMyCommand.CommandText = "prc_TBLCOATTIVO_IU"
                     cmdMyCommand.Parameters("@ID").Direction = ParameterDirection.InputOutput
-                    Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
+                    Log.Debug(Costanti.LogQuery(cmdMyCommand))
                     cmdMyCommand.ExecuteNonQuery()
                     myItem.Id = cmdMyCommand.Parameters("@ID").Value
                     If myItem.Id > 0 Then
@@ -563,7 +571,7 @@ Public Class clsCoattivo
                                 cmdMyCommand.Parameters.AddWithValue("@IMPORTO", myInt.IMPORTO_GIORNI)
                                 cmdMyCommand.CommandText = "prc_TBLCOATTIVOINTERESSI_IU"
                                 cmdMyCommand.Parameters("@ID").Direction = ParameterDirection.InputOutput
-                                Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
+                                Log.Debug(Costanti.LogQuery(cmdMyCommand))
                                 cmdMyCommand.ExecuteNonQuery()
                                 myInt.ID = cmdMyCommand.Parameters("@ID").Value
                                 If myInt.ID < 0 Then
@@ -572,17 +580,17 @@ Public Class clsCoattivo
                             End If
                         Next
                     End If
-                Case Utility.Costanti.AZIONE_DELETE
+                Case Costanti.AZIONE_DELETE
                     cmdMyCommand.Parameters.AddWithValue("@ID", myItem.Id)
                     cmdMyCommand.CommandText = "prc_TBLCOATTIVO_D"
-                    Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
+                    Log.Debug(Costanti.LogQuery(cmdMyCommand))
                     cmdMyCommand.ExecuteNonQuery()
             End Select
 
             Return myItem.Id
         Catch Err As Exception
             Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.SetCoattivo.errore: ", Err)
-            Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
+            Log.Debug(Costanti.LogQuery(cmdMyCommand))
             Return 0
         Finally
             If (cmdMyCommandOut Is Nothing) Then
@@ -609,12 +617,12 @@ Public Class clsCoattivo
             cmdMyCommand.Parameters.AddWithValue("@IDFLUSSO", IdRuolo)
             cmdMyCommand.CommandText = "prc_SetDataCoattivo"
             cmdMyCommand.Parameters("@ID").Direction = ParameterDirection.InputOutput
-            Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
+            Log.Debug(Costanti.LogQuery(cmdMyCommand))
             cmdMyCommand.ExecuteNonQuery()
             Return cmdMyCommand.Parameters("@ID").Value
         Catch Err As Exception
             Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.SetDataCoattivo.errore: ", Err)
-            Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
+            Log.Debug(Costanti.LogQuery(cmdMyCommand))
             Return 0
         Finally
             cmdMyCommand.Dispose()
@@ -646,7 +654,7 @@ Public Class clsCoattivo
             cmdMyCommand.CommandType = CommandType.StoredProcedure
             cmdMyCommand.CommandText = "prc_GetListCoattivi"
             myAdapter.SelectCommand = cmdMyCommand
-            Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
+            Log.Debug(Costanti.LogQuery(cmdMyCommand))
             myAdapter.Fill(dtMyDati)
             For Each dtMyRow In dtMyDati.Rows
                 myItem = New ObjCoattivo
@@ -673,7 +681,7 @@ Public Class clsCoattivo
             Next
         Catch ex As Exception
             Log.Debug(_IdEnte + "." + _Operatore + " - OPENgovPROVVEDIMENTI.clsCoattivo.GetListCoattivi.errore:  ", ex)
-            Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
+            Log.Debug(Costanti.LogQuery(cmdMyCommand))
             myList = Nothing
         Finally
             dtMyDati.Dispose()
@@ -701,12 +709,12 @@ Public Class clsCoattivo
             cmdMyCommand.Parameters.AddWithValue("@Id", Id)
             cmdMyCommand.CommandType = CommandType.StoredProcedure
             cmdMyCommand.CommandText = "prc_TBLCOATTIVO_D"
-            Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
+            Log.Debug(Costanti.LogQuery(cmdMyCommand))
             cmdMyCommand.ExecuteNonQuery()
             Return True
         Catch ex As Exception
             Log.Debug(_IdEnte + "." + _Operatore + " - OPENgovPROVVEDIMENTI.clsCoattivo.DeleteCoattivo.errore:  ", ex)
-            Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
+            Log.Debug(Costanti.LogQuery(cmdMyCommand))
             Return False
         Finally
             cmdMyCommand.Dispose()
@@ -809,7 +817,7 @@ Public Class clsCoattivo
                 End If
                 'inserisco l'intestazione del report
                 sDatiStampa = "Minuta Coattivi "
-                sDatiStampa += ListTributi.Replace(Utility.Costanti.TRIBUTO_ICI, "IMU").Replace(Utility.Costanti.TRIBUTO_TARSU, "TARI")
+                sDatiStampa += ListTributi.Replace(Costanti.TRIBUTO_ICI, "IMU").Replace(Costanti.TRIBUTO_TARSU, "TARI")
                 sDatiStampa += " Notificati dal " + New Formatta.FunctionGrd().FormattaDataGrd(Dal) + " al " + New Formatta.FunctionGrd().FormattaDataGrd(Al)
                 If Anno > 0 Then
                     sDatiStampa += " per l'anno " + Anno.ToString
@@ -897,6 +905,124 @@ Public Class clsCoattivo
                 Return DtStampa
             Catch Err As Exception
                 Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.clsStampa.PrintMinuta.errore: ", Err)
+                Return Nothing
+            End Try
+        End Function
+        Public Function PrintDataEntry(ByVal ListItem() As ObjCoattivo, ByVal sIntestazioneEnte As String, nCampi As Integer) As DataTable
+            Dim sDatiStampa As String
+            Dim DsStampa As New DataSet
+            Dim DtStampa As New DataTable
+            Dim x As Integer
+            Dim nPosizioni As Integer = 0
+            Dim impImposta, impSanzioni, impInteressi, impSpese, impTotale As Double
+
+            Try
+                impImposta = 0 : impSanzioni = 0 : impInteressi = 0 : impSpese = 0 : impTotale = 0
+                'carico il dataset
+                DsStampa.Tables.Add("STAMPA")
+                'carico le colonne nel dataset
+                For x = 0 To nCampi + 1
+                    DsStampa.Tables("STAMPA").Columns.Add("Col" & x.ToString.PadLeft(3, "0"))
+                Next
+                'carico il datatable
+                DtStampa = DsStampa.Tables("STAMPA")
+                'inserisco l'intestazione dell'ente
+                sDatiStampa = sIntestazioneEnte
+                sDatiStampa = sDatiStampa.PadRight(sDatiStampa.Length + nCampi, "|")
+                If AddRowStampa(DtStampa, sDatiStampa) = 0 Then
+                    Return Nothing
+                End If
+                'inserisco una riga vuota
+                sDatiStampa = ""
+                sDatiStampa = sDatiStampa.PadRight(sDatiStampa.Length + nCampi, "|")
+                If AddRowStampa(DtStampa, sDatiStampa) = 0 Then
+                    Return Nothing
+                End If
+                'inserisco l'intestazione del report
+                sDatiStampa = "Data entry Coattivi"
+                sDatiStampa = sDatiStampa.PadRight(sDatiStampa.Length + nCampi, "|")
+                If AddRowStampa(DtStampa, sDatiStampa) = 0 Then
+                    Return Nothing
+                End If
+                'inserisco una riga vuota
+                sDatiStampa = ""
+                sDatiStampa = sDatiStampa.PadRight(sDatiStampa.Length + nCampi, "|")
+                If AddRowStampa(DtStampa, sDatiStampa) = 0 Then
+                    Return Nothing
+                End If
+                'inserisco le intestazioni di colonna
+                sDatiStampa = ""
+                sDatiStampa = "Cognome|Nome|Cod.Fiscale/P.Iva"
+                sDatiStampa += "|N.Atto|Descrizione|Data Emissione Coattivo|Data Notifica"
+                sDatiStampa += "|Imposta|Sanzioni|Interessi|Spese|Totale"
+                If AddRowStampa(DtStampa, sDatiStampa) = 0 Then
+                    Return Nothing
+                End If
+                'ciclo sui dati da stampare
+                For Each myItem As ObjCoattivo In ListItem
+                    sDatiStampa = ""
+                    nPosizioni += 1
+                    sDatiStampa += myItem.COGNOME
+                    sDatiStampa += "|" + myItem.NOME
+                    sDatiStampa += "|'" + New Formatta.FunctionGrd().FormattaCFPIVA(myItem.CODICE_FISCALE, myItem.PARTITA_IVA)
+                    sDatiStampa += "|" + myItem.NUMERO_ATTO
+                    sDatiStampa += "|" + myItem.DescrTributo
+                    sDatiStampa += "|" + New Formatta.FunctionGrd().FormattaDataGrd(myItem.DataInserimento)
+                    sDatiStampa += "|" + myItem.DATA_NOTIFICA_AVVISO
+                    sDatiStampa += "|" + FormatNumber(myItem.ImportoCoattivo, 2)
+                    sDatiStampa += "|" + FormatNumber(myItem.IMPORTO_SANZIONI, 2)
+                    sDatiStampa += "|" + FormatNumber(myItem.InteressiCoattivo, 2)
+                    sDatiStampa += "|" + FormatNumber(myItem.SpeseCoattivo, 2)
+                    sDatiStampa += "|" + FormatNumber(myItem.TotaleCoattivo, 2)
+                    impImposta += myItem.ImportoCoattivo
+                    impSanzioni += myItem.IMPORTO_SANZIONI
+                    impInteressi += myItem.InteressiCoattivo
+                    impSpese += myItem.SpeseCoattivo
+                    impTotale += myItem.TotaleCoattivo
+                    If AddRowStampa(DtStampa, sDatiStampa) = 0 Then
+                        Return Nothing
+                    End If
+                Next
+                'inserisco una riga vuota
+                sDatiStampa = ""
+                sDatiStampa = sDatiStampa.PadRight(sDatiStampa.Length + nCampi, "|")
+                If AddRowStampa(DtStampa, sDatiStampa) = 0 Then
+                    Return Nothing
+                End If
+                'inserisco i totalizzatori
+                sDatiStampa = "Tot.Atti |" & nPosizioni.ToString
+                sDatiStampa = sDatiStampa.PadRight(sDatiStampa.Length + nCampi, "|")
+                If AddRowStampa(DtStampa, sDatiStampa) = 0 Then
+                    Return Nothing
+                End If
+                sDatiStampa = "Tot.Imposta |" & FormatNumber(impImposta, 2)
+                sDatiStampa = sDatiStampa.PadRight(sDatiStampa.Length + nCampi, "|")
+                If AddRowStampa(DtStampa, sDatiStampa) = 0 Then
+                    Return Nothing
+                End If
+                sDatiStampa = "Tot.Sanzioni |" & FormatNumber(impSanzioni, 2)
+                sDatiStampa = sDatiStampa.PadRight(sDatiStampa.Length + nCampi, "|")
+                If AddRowStampa(DtStampa, sDatiStampa) = 0 Then
+                    Return Nothing
+                End If
+                sDatiStampa = "Tot.Interessi |" & FormatNumber(impInteressi, 2)
+                sDatiStampa = sDatiStampa.PadRight(sDatiStampa.Length + nCampi, "|")
+                If AddRowStampa(DtStampa, sDatiStampa) = 0 Then
+                    Return Nothing
+                End If
+                sDatiStampa = "Tot.Spese |" & FormatNumber(impSpese, 2)
+                sDatiStampa = sDatiStampa.PadRight(sDatiStampa.Length + nCampi, "|")
+                If AddRowStampa(DtStampa, sDatiStampa) = 0 Then
+                    Return Nothing
+                End If
+                sDatiStampa = "Totale |" & FormatNumber(impTotale, 2)
+                sDatiStampa = sDatiStampa.PadRight(sDatiStampa.Length + nCampi, "|")
+                If AddRowStampa(DtStampa, sDatiStampa) = 0 Then
+                    Return Nothing
+                End If
+                Return DtStampa
+            Catch Err As Exception
+                Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.clsStampa.PrintDataEntry.errore: ", Err)
                 Return Nothing
             End Try
         End Function
@@ -1214,7 +1340,7 @@ Public Class clsCoattivo
         '        cmdMyCommand.Parameters.Add(New SqlClient.SqlParameter("@CoattivoDal", SqlDbType.VarChar)).Value = oReplace.FormattaData(CoattivoDal, "A")
         '        cmdMyCommand.Parameters.Add(New SqlClient.SqlParameter("@CoattivoAl", SqlDbType.VarChar)).Value = oReplace.FormattaData(CoattivoAl, "A")
         '        cmdMyCommand.Parameters.Add(New SqlClient.SqlParameter("@IdRuolo", SqlDbType.Int)).Value = IdRuolo
-        '        Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
+        '        Log.Debug(Costanti.LogQuery(cmdMyCommand))
         '        myAdapter.SelectCommand = cmdMyCommand
         '        myAdapter.Fill(dtMyDati)
         '        myAdapter.Dispose()
@@ -1392,7 +1518,7 @@ Public Class clsCoattivo
                     oN2.Filler = Space(4)
                     'prelevo il codice del comune
                     For Each mySped As ObjIndirizziSpedizione In DatiContribuente.ListSpedizioni
-                        If mySped.CodTributo = sCodTributo.Replace(Utility.Costanti.TRIBUTO_TASI, Utility.Costanti.TRIBUTO_ICI) Then 'Utility.Costanti.TRIBUTO_TARSU Then
+                        If mySped.CodTributo = sCodTributo.Replace(Costanti.TRIBUTO_TASI, Costanti.TRIBUTO_ICI) Then 'Costanti.TRIBUTO_TARSU Then
                             If mySped.ComuneRCP <> "" Then
                                 oN2.CodiceIndirizzoDomicilioFiscale = mySped.CodComuneRCP
                             Else
@@ -3833,5 +3959,55 @@ Public Class clsCoattivo
             Return sPadLine
         End Function
     End Class
+#End Region
+#Region "Data Entry"
+    Public Function GetCoattivo(myStringConnection As String, Id As Integer) As ObjCoattivo
+        Dim sSQL As String
+        Dim myItem As New ObjCoattivo
+        Dim myDataView As New DataView
+
+        Try
+            Using ctx As New DBModel(ConstSession.DBType, myStringConnection)
+                Try
+                    sSQL = ctx.GetSQL(DBModel.TypeQuery.StoredProcedure, "prc_GetCoattivo", "ID")
+                    myDataView = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("ID", Id))
+                Catch ex As Exception
+                    Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.GetCoattivo.erroreQuery: ", ex)
+                    Return Nothing
+                Finally
+                    ctx.Dispose()
+                End Try
+                For Each myRow As DataRowView In myDataView
+                    myItem = New ObjCoattivo
+                    myItem.Id = StringOperation.FormatInt(myRow("ID"))
+                    myItem.COD_CONTRIBUENTE = StringOperation.FormatInt(myRow("IDCONTRIBUENTE"))
+                    myItem.COD_TRIBUTO = StringOperation.FormatString(myRow("IDTRIBUTO"))
+                    myItem.ANNO = StringOperation.FormatString(myRow("ANNO"))
+                    myItem.DATA_ATTO_DEFINITIVO = StringOperation.FormatString(myRow("DATAATTO"))
+                    myItem.DATA_NOTIFICA_AVVISO = StringOperation.FormatString(myRow("DATANOTIFICA"))
+                    myItem.NUMERO_ATTO = StringOperation.FormatString(myRow("NUMEROATTO"))
+                    myItem.ImportoCoattivo = StringOperation.FormatDouble(myRow("IMPORTO"))
+                    myItem.IMPORTO_SANZIONI = StringOperation.FormatDouble(myRow("SANZIONI"))
+                    myItem.InteressiCoattivo = StringOperation.FormatDouble(myRow("INTERESSI"))
+                    myItem.SpeseCoattivo = StringOperation.FormatDouble(myRow("SPESE"))
+                    myItem.TotaleCoattivo = StringOperation.FormatDouble(myRow("TOTALE"))
+                    myItem.DescrTributo = StringOperation.FormatString(myRow("DESCRTRIBUTO"))
+                    myItem.DataVariazione = StringOperation.FormatDateTime(myRow("DATA_VARIAZIONE"))
+                Next
+            End Using
+            Return myItem
+        Catch Err As Exception
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.GetCoattivo.errore: ", Err)
+            Return Nothing
+        End Try
+    End Function
+    Public Function SetDECoattivo(myStringConnection As String, myItem As ObjCoattivo, DBOperation As Integer) As Integer
+        Try
+            Return SetCoattivo(DBOperation, myItem, myStringConnection, Nothing)
+        Catch ex As Exception
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.clsCoattivo.SetDECoattivo.errore: ", ex)
+            Return Nothing
+        End Try
+    End Function
 #End Region
 End Class

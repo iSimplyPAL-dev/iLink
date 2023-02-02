@@ -1288,9 +1288,7 @@ Namespace DBPROVVEDIMENTI
                 Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
                 Dim result As SqlDataReader = cmdMyCommand.ExecuteReader()
 
-
                 Return result
-
             Catch Err As Exception
                 Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.ProvvedimentiDB.GetTRIBUTIProvvedimenti.errore: ", Err)
                 'If Not IsNothing(objSessione) Then
@@ -1567,10 +1565,15 @@ ReDo:
                 If strDESCtributo <> "" Then
                     sSQL += " and DESCRIZIONE='" & strDESCtributo & "'"
                 End If
-                cmdMyCommand.CommandType = CommandType.Text
+                If cmdMyCommand Is Nothing Then
+                    cmdMyCommand = New SqlCommand
+                    cmdMyCommand.Connection = New SqlClient.SqlConnection(ConstSession.StringConnection)
+                    cmdMyCommand.Connection.Open()
+                End If
                 If cmdMyCommand.Connection.State = ConnectionState.Closed Then
                     cmdMyCommand.Connection.Open()
                 End If
+                cmdMyCommand.CommandType = CommandType.Text
                 cmdMyCommand.CommandText = sSQL
                 Log.Debug(Utility.Costanti.LogQuery(cmdMyCommand))
                 result = cmdMyCommand.ExecuteReader

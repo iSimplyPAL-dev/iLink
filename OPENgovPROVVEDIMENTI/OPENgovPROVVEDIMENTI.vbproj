@@ -260,6 +260,7 @@
     <Content Include="GestioneAtti\AttiAggiornamentoMassivo\AggiornamentoMassivoDate.aspx" />
     <Content Include="GestioneAtti\AttiAggiornamentoMassivo\ComandiAggiornamentoMassivo.aspx" />
     <Content Include="GestioneAtti\AttiAggiornamentoMassivo\StatoAggiornamentoDate.aspx" />
+    <Content Include="GestioneAtti\Coattivo\GestDE.aspx" />
     <Content Include="GestioneAtti\Coattivo\GestRuolo.aspx" />
     <Content Include="GestioneAtti\ComandiGestioneAttiAccertamenti.aspx" />
     <Content Include="GestioneAtti\ComandiGestioneAttiRuoloCoattivo.aspx" />
@@ -837,6 +838,13 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="GestioneAtti\Coattivo\clsCoattivo.vb" />
+    <Compile Include="GestioneAtti\Coattivo\GestDE.aspx.designer.vb">
+      <DependentUpon>GestDE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneAtti\Coattivo\GestDE.aspx.vb">
+      <DependentUpon>GestDE.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="GestioneAtti\Coattivo\GestRuolo.aspx.designer.vb">
       <DependentUpon>GestRuolo.aspx</DependentUpon>
     </Compile>
