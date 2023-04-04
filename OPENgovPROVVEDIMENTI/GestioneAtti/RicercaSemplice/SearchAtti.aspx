@@ -13,11 +13,11 @@
 		marginwidth="0">
 		<form id="Form1" runat="server" method="post">
 			<table cellSpacing="0" cellPadding="0" width="100%" border="0">
-				<TR>
-					<TD colSpan="4"><asp:label id="lblMessage" runat="server" CssClass="NormalRed"></asp:label></TD>
-				</TR>
-				<TR>
-					<TD colSpan="4"><INPUT id="hdEnteAppartenenza" type="hidden" name="hdEnteAppartenenza">
+				<tr>
+					<td colSpan="4"><asp:label id="lblMessage" runat="server" CssClass="NormalRed"></asp:label></td>
+				</tr>
+				<tr>
+					<td colSpan="4"><INPUT id="hdEnteAppartenenza" type="hidden" name="hdEnteAppartenenza">
 						<Grd:RibesGridView ID="GrdAtti" runat="server" BorderStyle="None" 
 						  BorderWidth="1px" CellPadding="3" GridLines="Vertical" Width="100%"
 						  AutoGenerateColumns="False" AllowPaging="true" AllowSorting="false" PageSize="5"
@@ -51,8 +51,8 @@
 					            </asp:TemplateField>
 							</Columns>
 						</Grd:RibesGridView>
-                    </TD>
-				</TR>
+                    </td>
+				</tr>
 			</table>
 			<TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
 				<tr height="20">
@@ -97,7 +97,7 @@
 			<TABLE cellPadding="0" width="100%" border="0">
 				<tr>
 					<td>
-                        <iframe id="loadGrid" src="LoadAtti.aspx" frameBorder="0" width="100%" height="160px"></iframe>
+                        <iframe id="loadGrid" src="LoadAtti.aspx" frameBorder="0" width="100%" height="360px"></iframe>
 					</td>
 				</tr>
 			</TABLE>

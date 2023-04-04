@@ -288,7 +288,8 @@ Public Class GestRuolo
         Dim sScript As String = ""
         Try
             GrdRuoliPrec.Visible = True
-            GrdRuoliPrec.DataSource = New clsCoattivo().GetRuolo(ConstSession.IdEnte, 1, ConstSession.StringConnection)
+            Session("ListRuoli") = New clsCoattivo().GetRuolo(ConstSession.IdEnte, 1, ConstSession.StringConnection)
+            GrdRuoliPrec.DataSource = CType(Session("ListRuoli"), ObjRuolo())
             GrdRuoliPrec.DataBind()
             GrdRuoliPrec.SelectedIndex = -1
             DivRiepilogoDaElab.Visible = False
@@ -512,15 +513,16 @@ Public Class GestRuolo
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Protected Sub GrdPageIndexChanging(ByVal sender As Object, e As GridViewPageEventArgs)
-        LoadSearch(e.NewPageIndex)
+        LoadSearch(CType(sender, Ribes.OPENgov.WebControls.RibesGridView).UniqueID, e.NewPageIndex)
     End Sub
 #End Region
     ''' <summary>
     ''' Funzione per il popolamento della griglia con riposizionamento nella pagina selezionata.
     ''' </summary>
     ''' <param name="page"></param>
-    Private Sub LoadSearch(Optional ByVal page As Integer? = 0)
+    Private Sub LoadSearch(IdGrd As String, Optional ByVal page As Integer? = 0)
         Dim sScript As String = ""
+        Dim myGrd As Ribes.OPENgov.WebControls.RibesGridView
         Try
             DivRiepilogoDaElab.Visible = False
             sScript += "$('#Precedenti').hide();"
@@ -533,14 +535,25 @@ Public Class GestRuolo
             Else
                 sScript += "$('#ElaboraRuolo').hide();$('#Stampa').show();$('#Approva').hide();$('#CreaFile').hide();"
             End If
-            RegisterScript(sScript, Me.GetType)
-            GrdPosizioni.DataSource = CType(Session("ListCoattivi"), ObjCoattivo())
-            If page.HasValue Then
-                GrdPosizioni.PageIndex = page.Value
+            If IdGrd = "GrdRuoliPrec" Then
+                myGrd = GrdRuoliPrec
+                myGrd.DataSource = CType(Session("ListRuoli"), ObjRuolo())
+                DivRiepilogoDaElab.Visible = False
+                sScript += "$('#GrdRuoliPrec').show();"
+            ElseIf IdGrd = "GrdDateElaborazione" Then
+                myGrd = GrdDateElaborazione
+                myGrd.DataSource = CType(Session("ListRuoli"), ObjRuolo())
+            Else
+                myGrd = GrdPosizioni
+                myGrd.DataSource = CType(Session("ListCoattivi"), ObjCoattivo())
             End If
-            GrdPosizioni.DataBind()
+            If page.HasValue Then
+                myGrd.PageIndex = page.Value
+            End If
+            myGrd.DataBind()
+            RegisterScript(sScript, Me.GetType)
         Catch ex As Exception
-            Log.Debug(ConstSession.IdEnte +"."+ ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Coattivo.LoadSearch.errore: ", ex)
+            Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.Coattivo.LoadSearch.errore: ", ex)
             Response.Redirect("../../../PaginaErrore.aspx")
         End Try
     End Sub
@@ -571,6 +584,7 @@ Public Class GestRuolo
                     Session("RuoloCoattivo") = ListRuoli(0)
                     DivRiepilogoDaElab.Visible = False
                     sScript += "$('#ElaboraRuolo').hide();$('#Approva').hide();$('#Stampa').hide();$('#CreaFile').hide();"
+                    Session("ListRuoli") = ListRuoli
                     GrdDateElaborazione.Visible = True
                     GrdDateElaborazione.DataSource = ListRuoli
                     GrdDateElaborazione.DataBind()

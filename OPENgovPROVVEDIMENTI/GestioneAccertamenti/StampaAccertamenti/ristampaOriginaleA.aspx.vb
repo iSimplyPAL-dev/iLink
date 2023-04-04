@@ -6176,6 +6176,7 @@ Partial Class ristampaOriginaleA
     ''' <strong>visualizzazione tutti indirizzi spedizione</strong>
     ''' Nuova gestione indirizzi spedizione
     ''' </revision>
+    ''' <revision date="23/03/2023">Aggiunto gestione PEC per relata di notifica</revision>
     ''' </revisionHistory>
     Private Function FillBookMarkAnagrafica(ByVal ListBookmark As ArrayList, ByVal IdContrib As Integer, ByVal sTributo As String, ByRef FileNameContrib As String) As ArrayList
         Dim oBookmark As New oggettiStampa
@@ -6314,6 +6315,26 @@ Partial Class ristampaOriginaleA
                     oBookmark.Valore = sPV
                     oArrBookmark.Add(oBookmark)
                 Next
+                'PEC
+                Try
+                    Dim sPEC As String = ""
+                    If oAnagrafica.dsContatti.Tables(0).Rows.Count > 0 Then
+                        sPEC = ""
+                        For iContatti As Integer = 0 To oAnagrafica.dsContatti.Tables(0).Rows.Count - 1
+                            If (oAnagrafica.dsContatti.Tables(0).Rows(iContatti)("TIPORIFERIMENTO") = 6) Then
+                                sPEC = FormatStringToEmpty(oAnagrafica.dsContatti.Tables(0).Rows(iContatti)("DATIRIFERIMENTO"))
+                            End If
+                        Next
+                    End If
+                    For x As Integer = 0 To 9
+                        oBookmark = New oggettiStampa
+                        oBookmark.Descrizione = Replace("I_PEC" & x.ToString(), "0", "")
+                        oBookmark.Valore = sPEC
+                        oArrBookmark.Add(oBookmark)
+                    Next
+                Catch ex As Exception
+                    Log.Debug(ConstSession.IdEnte + "." + ConstSession.UserName + " - OPENgovPROVVEDIMENTI.ristampaOriginaleA.FillBookMarkAnagrafica.PEC.errore: ", ex)
+                End Try
                 Return oArrBookmark
             Else
                 Return Nothing

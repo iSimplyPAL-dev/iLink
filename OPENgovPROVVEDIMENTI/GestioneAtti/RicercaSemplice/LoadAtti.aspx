@@ -1,26 +1,25 @@
 <%@ Page Language="vb" AutoEventWireup="false" Codebehind="LoadAtti.aspx.vb" Inherits="Provvedimenti.LoadAtti" EnableEventValidation="false"%>
 <%@ Register Assembly="Ribes.OPENgov.WebControls" Namespace="Ribes.OPENgov.WebControls" TagPrefix="Grd" %>
 <HTML>
-  <HEAD>
+	<HEAD>
 		<link href="../../../Styles.css" type="text/css" rel="stylesheet">
 		<%if Session("SOLA_LETTURA")="1" then%>
 		<link href="../../../solalettura.css" type="text/css" rel="stylesheet">
 		<%end if%>
 	    <script type="text/javascript" src="../../../_js/jquery.min.js?newversion"></script>
         <script type="text/javascript" src="../../../_js/Custom.js?newversion"></script>
-  </HEAD>
-	<BODY class="Sfondo" bottomMargin="0" leftMargin="0" topMargin="0" rightMargin="0" marginheight="0"
-		marginwidth="0">
+	</HEAD>
+	<BODY class="Sfondo" bottomMargin="0" leftMargin="0" topMargin="0" rightMargin="0" marginheight="0" marginwidth="0">
 		<form id="Form1" runat="server" method="post">
 			<table cellSpacing="0" cellPadding="0" width="100%" border="0">
-				<TR>
-					<TD colSpan="4"><asp:label id="lblMessage" runat="server" CssClass="NormalRed"></asp:label></TD>
-				</TR>
-				<TR>
-					<TD colSpan="4"><INPUT id="hdEnteAppartenenza" type="hidden" name="hdEnteAppartenenza">
+				<tr>
+					<td colSpan="4"><asp:label id="lblMessage" runat="server" CssClass="NormalRed"></asp:label></td>
+				</tr>
+				<tr>
+					<td colSpan="4"><INPUT id="hdEnteAppartenenza" type="hidden" name="hdEnteAppartenenza">
 						<Grd:RibesGridView ID="GrdAtti" runat="server" BorderStyle="None" 
 						  BorderWidth="1px" CellPadding="3" GridLines="Vertical" Width="100%"
-						  AutoGenerateColumns="False" AllowPaging="true" AllowSorting="false" PageSize="3"
+						  AutoGenerateColumns="False" AllowPaging="False" AllowSorting="False" PageSize="3"
 						  ErrorStyle-Font-Bold="True" ErrorStyle-ForeColor="Red"
 						  OnRowCommand="GrdRowCommand" OnPageIndexChanging="GrdPageIndexChanging">
 						  <PagerSettings Position="Bottom"></PagerSettings>
@@ -73,9 +72,9 @@
 					            </asp:TemplateField>
 							</Columns>
 						</Grd:RibesGridView>
-					</TD>
-				</TR>
+					</td>
+				</tr>
 			</table>
-		</FORM>
+		</form>
 	</BODY>
 </HTML>

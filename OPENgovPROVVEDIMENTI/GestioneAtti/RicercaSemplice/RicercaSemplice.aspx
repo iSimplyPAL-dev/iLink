@@ -238,7 +238,7 @@
 							</legend>
 							<table cellPadding="0" width="100%" border="0">
 								<tr>
-									<td><iframe id="loadGrid" src="../../../aspVuota.aspx" frameBorder="0" width="100%" height="450"> </iframe>
+									<td><iframe id="loadGrid" src="../../../aspVuota.aspx" frameBorder="0" width="100%" height="650px"> </iframe>
 									</td>
 								</tr>
 							</table>

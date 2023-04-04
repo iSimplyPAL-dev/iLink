@@ -265,7 +265,7 @@
                     BorderWidth="1px" CellPadding="3" GridLines="Vertical" Width="100%"
                     AutoGenerateColumns="False" AllowPaging="true" AllowSorting="false" PageSize="10"
                     ErrorStyle-Font-Bold="True" ErrorStyle-ForeColor="Red"
-                    OnRowCommand="GrdRowCommand">
+                    OnPageIndexChanging="GrdPageIndexChanging" OnRowCommand="GrdRowCommand">
                     <PagerSettings Position="Bottom"></PagerSettings>
                     <PagerStyle CssClass="CartListFooter" />
                     <RowStyle CssClass="CartListItem"></RowStyle>
