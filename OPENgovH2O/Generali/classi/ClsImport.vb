@@ -5272,7 +5272,7 @@ Public Class ClsImport
         Dim oDatiContatore As New objContatore
 
         Try
-            dvMyDati = New GestContatori().GetElencoContrattiContatori(myStringConnection, codEnte, sMatricola, "", "", "", "", "", "", -1, 1, False, idContatore)
+            dvMyDati = New GestContatori().GetElencoContrattiContatori(myStringConnection, codEnte, sMatricola, "", "", "", "", "", "", -1, 0, False, idContatore)
             For Each myRow As DataRowView In dvMyDati
                 oDatiContatore.nIdContatore = StringOperation.FormatString(myRow("CODCONTATORE"))
                 oDatiContatore.nIdUtente = StringOperation.FormatInt(myRow("cod_contribuente"))

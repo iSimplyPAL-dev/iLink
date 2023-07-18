@@ -2223,7 +2223,7 @@ Public Class clsCoattivo
             Public Const TipologiaAtto As Integer = 5
             Public Const ProgressivoPartita As Integer = 1
             Public Const CodiceTipoAtto As String = "AA"
-            Public Const FillerIdentificativoAtto As String = ""
+            Public Const FillerMiddledentificativoAtto As String = ""
             Private _IdentificativoFlusso As IdentificativoFlusso
             Private _AnnoEmissioneAtto As Integer
             Private _NumeroPartita As Integer
@@ -2239,7 +2239,7 @@ Public Class clsCoattivo
                 Public Const DataEmissioneAtto As Integer = 8
                 Public Const NumeroAtto As Integer = 12
                 Public Const DataNotificaAtto As Integer = 8
-                Public Const FillerIdentificativoAtto As Integer = 40
+                Public Const FillerMiddledentificativoAtto As Integer = 40
             End Class
             Public Property IdentificativoFlusso() As IdentificativoFlusso
                 Get
@@ -2379,7 +2379,8 @@ Public Class clsCoattivo
                 Public Const Piano As Integer = 3
                 Public Const Interno As Integer = 4
                 Public Const LocalitaFrazione As Integer = 25
-                Public Const Filler As Integer = 148
+                Public Const FillerMiddle As Integer = 40
+                Public Const FillerBottom As Integer = 148
             End Class
             Public Property ProgressivoRecord() As Integer
                 Get
@@ -2623,7 +2624,8 @@ Public Class clsCoattivo
                 Public Const Piano As Integer = 3
                 Public Const Interno As Integer = 4
                 Public Const LocalitaFrazione As Integer = 25
-                Public Const Filler As Integer = 165
+                Public Const FillerMiddle As Integer = 40
+                Public Const FillerBottom As Integer = 165
             End Class
             Public Property ProgressivoRecord() As Integer
                 Get
@@ -2827,7 +2829,8 @@ Public Class clsCoattivo
                 Public Const CodiceEntrata As Integer = 4
                 Public Const TipoCodiceEntrata As Integer = 1
                 Public Const ImportoArticolo As Integer = 15
-                Public Const Filler As Integer = 460
+                Public Const FillerMiddle As Integer = 40
+                Public Const FillerBottom As Integer = 460
             End Class
             Public Property ProgressivoRecord() As Integer
                 Get
@@ -2903,7 +2906,8 @@ Public Class clsCoattivo
                 Public Const DataTermineUltimoPagamentoAtto As Integer = 8
                 Public Const FlagEnteTerzo As Integer = 1
                 Public Const DenominazioneEnteTerzo As Integer = 60
-                Public Const Filler As Integer = 371
+                Public Const FillerMiddle As Integer = 40
+                Public Const FillerBottom As Integer = 371
             End Class
             Public Property ProgressivoRecord() As Integer
                 Get
@@ -3616,7 +3620,7 @@ Public Class clsCoattivo
                 'Campo Posizione 64-71 Lungh. 8<<DATA NOTIFICA ATTO Data di notifica dell'atto al debitore, nella forma AAAAMMGG. Deve essere maggiore del 01/01/2020, maggiore o uguale della data emmissione atto e inferiore alla data creazione file presente sul record E00 di almeno 60 gg L'anno (AAAA) deve essere maggiore o uguale del valore indicato nel campo anno di emessione atto>> Tipo:N Obbl.S Errore:E230-SP T20-SP U20-SP	
                 sPrintLine += PadLine(oE20.IdentificativoAtto.DataNotificaAtto, oE20.IdentificativoAtto.Length.DataNotificaAtto, objAccertamentiEsecutivi.Type.Data)
                 'Campo Posizione 72-111 Lungh. 40<<FILLER >> Tipo:AN Obbl.N	
-                sPrintLine += PadLine(oE20.Filler, oE20.Length.Filler, objAccertamentiEsecutivi.Type.Stringa)
+                sPrintLine += PadLine(oE20.Filler, oE20.Length.FillerMiddle, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 112-112 Lungh. 1<<PRESENZA ULTERIORI SOGGETTI DESTINATARI DELL'ATTO Indica la presenza di ulteriori destinatari per la notifica dell'atto. Deve essere presente nella "Tabella Codici altri soggetti per notifica – APPENDICE O" Deve assumere il valore ‘T’/’R’ in presenza di soggetto minore. Non può assumere il valore ‘T’ in presenza di soggetto giuridico>> Tipo:AN Obbl.S Errore:H20-SP R20-SP	
                 sPrintLine += PadLine(oE20.PresenzaUlterioriDestinatariAtto, oE20.Length.PresenzaUlterioriDestinatariAtto, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 113-113 Lungh. 1<<PRESENZA COOBLIGATI Indica la presenza di soggetti coobbligati. Assume il valore: "1" = assenza di coobbligati "2" = presenza di coobbligati "C" = coobbligati Deve assumere i valori "1", "2" per i record E20 relativi all’intestatario Deve assumere il valore "C" per i record E20 relativi ai coobbligati>> Tipo:AN Obbl.S Errore:I20-SP O20-SP	
@@ -3664,7 +3668,7 @@ Public Class clsCoattivo
                 'Campo Posizione 428-452 Lungh. 25<<LOCALITA’ – FRAZIONE Se valorizzato contiene la descrizione della frazione o della località del domicilio fiscale.>> Tipo:AN Obbl.N	
                 sPrintLine += PadLine(oE20.LocalitaFrazione, oE20.Length.LocalitaFrazione, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 453-600 Lungh. 148<<FILLER >> Tipo:AN Obbl.S	
-                sPrintLine += PadLine(oE20.Filler, oE20.Length.Filler, objAccertamentiEsecutivi.Type.Stringa)
+                sPrintLine += PadLine(oE20.Filler, oE20.Length.FillerBottom, objAccertamentiEsecutivi.Type.Stringa)
 
                 sPrintLine = New MyUtility().ReplaceCharForFile(sPrintLine)
                 If New MyUtility().WriteFile(sPathNameFile, sPrintLine) <= 0 Then
@@ -3713,7 +3717,7 @@ Public Class clsCoattivo
                 'Campo Posizione 64-71 Lungh. 8<<DATA NOTIFICA ATTO DATA NOTIFICA ATTO Data di notifica dell'atto al debitore, nella forma AAAAMMGG. Deve essere maggiore del 01/01/2020, maggiore o uguale della data emmissione atto e inferiore alla data creazione file presente sul record E00 di almeno 60 gg. L'anno (AAAA) deve essere maggiore o uguale del valore indicato nel campo anno di emessione atto>> Tipo:N Obbl.S Errore:N20-SP N20-SP	
                 sPrintLine += PadLine(oE23.IdentificativoAtto.DataNotificaAtto, oE23.IdentificativoAtto.Length.DataNotificaAtto, objAccertamentiEsecutivi.Type.Data)
                 'Campo Posizione 72-111 Lungh. 40<<FILLER  FILLER>> Tipo:AN Obbl.S Errore:SPAZI SPAZI	
-                sPrintLine += PadLine(oE23.Filler, oE23.Length.Filler, objAccertamentiEsecutivi.Type.Stringa)
+                sPrintLine += PadLine(oE23.Filler, oE23.Length.FillerMiddle, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 112-127 Lungh. 16<<CODICE FISCALE DEL SOGGETTO INTESTATARIO CODICE FISCALE DEL SOGGETTO INTESTATARIO Riporta lo stesso codice fiscale del record E20 dell'intestatario o del cooblicato dell’atto a cui l'ulteriore soggetto riferisce.>> Tipo:AN Obbl.S Errore:506-SF 506-SF	
                 sPrintLine += PadLine(oE23.CodiceFiscaleSoggettoIntestatario, oE23.Length.CodiceFiscaleSoggettoIntestatario, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 128-143 Lungh. 16<<CODICE FISCALE ULTERIORE SOGGETTO NOTIFICA CODICE FISCALE ULTERIORE SOGGETTO NOTIFICA Codice fiscale dell’ulteriore soggetto. Deve essere formalmente corretto (cfr. APPENDICE N). Deve essere obbligatoriamente un soggetto fisico. Per le causali di scarto verificare APPENDICE A>> Tipo:AN Obbl.S Errore:096-SP A-SP B-SP C-SP D-SP E-SP F-SP G-SP H-SP I-SP L-SP M-SP N-SP O-SP Q-SP R-SP A23-SP E23-SP 096-SP A-SP B-SP C-SP D-SP E-SP F-SP G-SP H-SP I-SP L-SP M-SP N-SP O-SP Q-SP R-SP A23-SP E23-SP F23-SP	
@@ -3757,7 +3761,7 @@ Public Class clsCoattivo
                 'Campo Posizione 411-435 Lungh. 25<<LOCALITA’ – FRAZIONE LOCALITA’ – FRAZIONE Se valorizzato contiene la descrizione della frazione o della località del domicilio fiscale.>> Tipo:AN Obbl.N Errore:0	
                 sPrintLine += PadLine(oE23.LocalitaFrazione, oE23.Length.LocalitaFrazione, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 436-600 Lungh. 165<<FILLER>> Tipo:AN Obbl.N Errore:SPAZI	
-                sPrintLine += PadLine(oE23.Filler, oE23.Length.Filler, objAccertamentiEsecutivi.Type.Stringa)
+                sPrintLine += PadLine(oE23.Filler, oE23.Length.FillerBottom, objAccertamentiEsecutivi.Type.Stringa)
 
                 sPrintLine = New MyUtility().ReplaceCharForFile(sPrintLine)
                 If New MyUtility().WriteFile(sPathNameFile, sPrintLine) <= 0 Then
@@ -3806,7 +3810,7 @@ Public Class clsCoattivo
                 'Campo Posizione 64-71 Lungh. 8<<DATA NOTIFICA ATTO DATA NOTIFICA ATTO Data di notifica dell'atto al debitore, nella forma AAAAMMGG. Deve essere maggiore del 01/01/2020, maggiore o uguale della data emmissione atto e inferiore alla data creazione file presente sul record E00 di almeno 60 gg. L'anno (AAAA) deve essere maggiore o uguale del valore indicato nel campo anno di emessione atto>> Tipo:N Obbl.S Errore:N20-SP N20-SP	
                 sPrintLine += PadLine(oE50.IdentificativoAtto.DataNotificaAtto, oE50.IdentificativoAtto.Length.DataNotificaAtto, objAccertamentiEsecutivi.Type.Data)
                 'Campo Posizione 72-111 Lungh. 40<<FILLER  FILLER>> Tipo:AN Obbl.S Errore:0	
-                sPrintLine += PadLine(oE50.Filler, oE50.Length.Filler, objAccertamentiEsecutivi.Type.Stringa)
+                sPrintLine += PadLine(oE50.Filler, oE50.Length.FillerMiddle, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 112-114 Lungh. 3<<PROGRESSIVO ARTICOLO PROGRESSIVO ARTICOLO Indica il progressivo del Codice Entrata nell'ambito della stessa partita. Deve essere in stretta sequenza a partire da 1.>> Tipo:N Obbl.S Errore:013-SF 013-SF	
                 sPrintLine += PadLine(oE50.ProgressivoArticolo, oE50.Length.ProgressivoArticolo, objAccertamentiEsecutivi.Type.Numero)
                 'Campo Posizione 115-120 Lungh. 6<<PERIODO DI RIFERIMENTO PERIODO DI RIFERIMENTO Indica il periodo di riferimento dell'entrata. Il campo è obbligatorio e deve essere espresso nella forma AAAAPP dove: AAAA indica l'anno, non può essere maggiore dell’anno di emissione atto. PP indica il periodo •  Il campo PP deve essere presente nella "Tabella Periodo infrazione - APPENDICE K" Nel caso in cui non ci sia un periodo, valorizzare PP con "99">> Tipo:N Obbl.S Errore:045-SP 045-SP	
@@ -3818,7 +3822,7 @@ Public Class clsCoattivo
                 'Campo Posizione 126-140 Lungh. 15<<IMPORTO ARTICOLO IMPORTO ARTICOLO Importo dovuto dal debitore per l'entrata, espresso in centesimi di Euro. Deve essere maggiore di zero.>> Tipo:N Obbl.S Errore:039-SP 039-SP	
                 sPrintLine += PadLine(oE50.ImportoArticolo, oE50.Length.ImportoArticolo, objAccertamentiEsecutivi.Type.Numero)
                 'Campo Posizione 141-600 Lungh. 460<<FILLER>> Tipo:AN Obbl.S Errore:SPAZI	
-                sPrintLine += PadLine(oE50.Filler, oE50.Length.Filler, objAccertamentiEsecutivi.Type.Stringa)
+                sPrintLine += PadLine(oE50.Filler, oE50.Length.FillerBottom, objAccertamentiEsecutivi.Type.Stringa)
 
                 sPrintLine = New MyUtility().ReplaceCharForFile(sPrintLine)
                 If New MyUtility().WriteFile(sPathNameFile, sPrintLine) <= 0 Then
@@ -3867,7 +3871,7 @@ Public Class clsCoattivo
                 'Campo Posizione 64-71 Lungh. 8<<DATA NOTIFICA ATTO DATA NOTIFICA ATTO Data di notifica dell'atto al debitore, nella forma AAAAMMGG. Deve essere maggiore del 01/01/2020, maggiore o uguale della data emmissione atto e inferiore alla data creazione file presente sul record E00 di almeno 60 gg. L'anno (AAAA) deve essere maggiore o uguale del valore indicato nel campo anno di emessione atto>> Tipo:N Obbl.S Errore:045-SP 045-SP	
                 sPrintLine += PadLine(oE60.IdentificativoAtto.DataNotificaAtto, oE60.IdentificativoAtto.Length.DataNotificaAtto, objAccertamentiEsecutivi.Type.Data)
                 'Campo Posizione 72-111 Lungh. 40<<FILLER  FILLER>> Tipo:AN Obbl.N Errore:0	
-                sPrintLine += PadLine(oE60.Filler, oE60.Length.Filler, objAccertamentiEsecutivi.Type.Stringa)
+                sPrintLine += PadLine(oE60.Filler, oE60.Length.FillerMiddle, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 112-121 Lungh. 10<<NUMERO DELIBERA NUMERO DELIBERA Estremi della delibera con cui l'ente affida la riscossione ai sensi dell'art.2,comma2,D.Lgs n.193 del 2016>> Tipo:AN Obbl.S Errore:039-SP 039-SP	
                 sPrintLine += PadLine(oE60.NumeroDelibera, oE60.Length.NumeroDelibera, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 122-129 Lungh. 8<<DATA DELIBERA DATA DELIBERA Nel formato (AAAAMMGG) Deve essere inferiore alla data di trasmissione del flusso. Deve essere maggiore del 01/10/2016>> Tipo:N Obbl.S Errore:045-SP 045-SP	
@@ -3887,7 +3891,7 @@ Public Class clsCoattivo
                 'Campo Posizione 170-229 Lungh. 60<<DENOMINAZIONE ENTE TERZO DENOMINAZIONE ENTE TERZO Denominazione dell’ente terzo che ha notificato l'atto. Se il flag ente terzo è valorizzato ad "S" la denominazione è obbligatoria.>> Tipo:AN Obbl.N Errore:039-SP 039-SP	
                 sPrintLine += PadLine(oE60.DenominazioneEnteTerzo, oE60.Length.DenominazioneEnteTerzo, objAccertamentiEsecutivi.Type.Stringa)
                 'Campo Posizione 230-600 Lungh. 371<<FILLER>> Tipo:AN Obbl.S Errore:SPAZI	
-                sPrintLine += PadLine(oE60.Filler, oE60.Length.Filler, objAccertamentiEsecutivi.Type.Stringa)
+                sPrintLine += PadLine(oE60.Filler, oE60.Length.FillerBottom, objAccertamentiEsecutivi.Type.Stringa)
 
                 sPrintLine = New MyUtility().ReplaceCharForFile(sPrintLine)
                 If New MyUtility().WriteFile(sPathNameFile, sPrintLine) <= 0 Then
