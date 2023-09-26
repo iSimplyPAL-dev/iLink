@@ -1927,15 +1927,19 @@ Public Class clsFatturaElettronica
             End Try
             Return myItem
         End Function
+        ''' <summary>
+        ''' Funzione per il popolamento del tag DatiGeneraliDocumento
+        ''' </summary>
+        ''' <param name="myRow"></param>
+        ''' <returns></returns>
+        ''' <revisionHistory>
+        ''' <revision date="26/09/2023">Il TipoDocumento viene letto direttamente da query in modo da gestire ad esempio il TD27 per autofattura comune</revision>
+        ''' </revisionHistory>
         Private Function GetDatiGeneraliDocumento(myRow As DataRowView) As DatiGeneraliDocumentoType
             Dim myItem As New DatiGeneraliDocumentoType
             Dim ListCausale As New ArrayList
             Try
-                If StringOperation.FormatString(myRow("tipodocumento")) = "N" Then
-                    myItem.TipoDocumento = TipoDocumentoType.TD04
-                Else
-                    myItem.TipoDocumento = TipoDocumentoType.TD01
-                End If
+                myItem.TipoDocumento = StringOperation.FormatInt(myRow("tipodocumento"))
                 myItem.Divisa = StringOperation.FormatString(myRow("divisa"))
                 myItem.Data = StringOperation.FormatDateTime(myRow("datadocumento"))
                 myItem.Numero = StringOperation.FormatString(myRow("numerodocumento"))
@@ -1956,6 +1960,35 @@ Public Class clsFatturaElettronica
             End Try
             Return myItem
         End Function
+        'Private Function GetDatiGeneraliDocumento(myRow As DataRowView) As DatiGeneraliDocumentoType
+        '    Dim myItem As New DatiGeneraliDocumentoType
+        '    Dim ListCausale As New ArrayList
+        '    Try
+        '        If StringOperation.FormatString(myRow("tipodocumento")) = "N" Then
+        '            myItem.TipoDocumento = TipoDocumentoType.TD04
+        '        Else
+        '            myItem.TipoDocumento = TipoDocumentoType.TD01
+        '        End If
+        '        myItem.Divisa = StringOperation.FormatString(myRow("divisa"))
+        '        myItem.Data = StringOperation.FormatDateTime(myRow("datadocumento"))
+        '        myItem.Numero = StringOperation.FormatString(myRow("numerodocumento"))
+        '        myItem.ImportoTotaleDocumento = StringOperation.FormatDouble(myRow("imptotale")).ToString("0.00").Replace(",", ".")
+        '        myItem.ImportoTotaleDocumentoSpecified = True
+        '        myItem.Arrotondamento = StringOperation.FormatDouble(myRow("imparrotondamento")).ToString("0.00").Replace(",", ".")
+        '        myItem.ArrotondamentoSpecified = True
+        '        If StringOperation.FormatString(myRow("causale")).Length > 200 Then
+        '            ListCausale.Add(StringOperation.FormatString(myRow("causale")).Substring(0, 200))
+        '            ListCausale.Add(StringOperation.FormatString(myRow("causale")).Substring(200))
+        '        Else
+        '            ListCausale.Add(StringOperation.FormatString(myRow("causale")))
+        '        End If
+        '        myItem.Causale = CType(ListCausale.ToArray(GetType(String)), String())
+        '    Catch ex As Exception
+        '        Log.Debug(_IdEnte + "." + _Username + " - OPENgovH2O.clsFatturaElettronica.clsSdI.GetDatiGeneraliDocumento.errore: ", ex)
+        '        Throw New Exception("clsFatturaElettronica.clsSdI.GetDatiGeneraliDocumento" + ex.Message)
+        '    End Try
+        '    Return myItem
+        'End Function
 
 #End Region
 #Region "DatiBeniServizi"
